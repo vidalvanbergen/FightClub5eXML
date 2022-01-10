@@ -716,6 +716,10 @@ Source: Player's Handbook p. 219</text>
 
 A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.
 
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
 Source: Player's Handbook p. 219</text>
     <roll>3d8</roll>
     </spell>
@@ -733,6 +737,13 @@ Source: Player's Handbook p. 219</text>
 
 At Higher Levels:
 When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Deafened:
+	• A deafened creature can't hear and automatically fails any ability check that requires hearing.
 
 Source: Player's Handbook p. 219</text>
     </spell>
@@ -1088,6 +1099,10 @@ Starting with the creature that has the lowest current hit points, each creature
 At Higher Levels:
 When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.
 
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
 Source: Player's Handbook p. 222</text>
     <roll>6d10</roll>
     <roll>8d10</roll>
@@ -1125,6 +1140,11 @@ Halt: The target doesn't move and takes no actions. A flying creature stays alof
 
 At Higher Levels:
 When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
+
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
 
 Source: Player's Handbook p. 223</text>
     </spell>
@@ -1495,6 +1515,15 @@ Mindfire: The creature's mind becomes feverish. The creature has disadvantage on
 Seizure: The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity.
 
 Slimy Doom: The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Stunned:
+    • A stunned creature is incapacitated, meaning it can't take actions or reactions, can't move, and can speak only falteringly.
+    • The creature automatically fails Strength and Dexterity saving throws.
+    • Attack rolls against the creature have advantage.
 
 Source: Player's Handbook p. 227</text>
     </spell>
@@ -1923,7 +1952,13 @@ Source: Player's Handbook p. 231</text>
     <duration>Instantaneous</duration>
     <text>You strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn't knocked prone.
 
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
+
 Source: Player's Handbook p. 231</text>
+    <roll>5d6+5d6</roll>
     <roll>5d6</roll>
     </spell>
   <spell>
@@ -2174,6 +2209,18 @@ Source: Player's Handbook p. 234</text>
 
 Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to your current plane for 24 hours by any means short of a wish spell.
 
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Deafened:
+	• A deafened creature can't hear and automatically fails any ability check that requires hearing.
+
+Stunned:
+    • A stunned creature is incapacitated, meaning it can't take actions or reactions, can't move, and can speak only falteringly.
+    • The creature automatically fails Strength and Dexterity saving throws.
+    • Attack rolls against the creature have advantage.
+
 Source: Player's Handbook p. 234</text>
     </spell>
   <spell>
@@ -2323,11 +2370,14 @@ When you cast this spell and at the end of each turn you spend concentrating on 
 
 This spell can have additional effects depending on the terrain in the area, as determined by the DM.
 
-Fissures: Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the DM. Each is 1d10 x 10 feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens.
-
-A fissure that opens beneath a structure causes it to automatically collapse (see below).
+Fissures: Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the DM. Each is 1d10 x 10 feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens. A fissure that opens beneath a structure causes it to automatically collapse (see below).
 
 Structures: The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall prone or become buried.
+
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
 
 Source: Player's Handbook p. 236</text>
     <roll>1d6</roll>
@@ -2558,6 +2608,17 @@ Panicked: The target is frightened of you. On each of its turns, the frightened 
 
 Sickened: The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends.
 
+Frightened:
+	• A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.
+	• The creature can't willingly move closer to the source of its fear.
+
+Unconscious:
+	• An unconscious creature is incapacitated, meaning it can't take actions or reactions, can't move or speak, and is unaware of its surroundings.
+	• The creature drops whatever it's holding and falls prone.
+	• The creature automatically fails Strength and Dexterity saving throws.
+	• Attack rolls against the creature have advantage.
+	• Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.
+
 Source: Player's Handbook p. 238</text>
     </spell>
   <spell>
@@ -2676,6 +2737,13 @@ Source: Player's Handbook p. 239</text>
     <text>You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.
 
 For the spell's duration, or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target's status. The target is blinded and incapacitated, and its speed drops to 0. The target has resistance to all damage except psychic damage. If the target is diseased or poisoned when you cast the spell, or becomes diseased or poisoned while under the spell's effect, the disease and poison have no effect until the spell ends.
+
+Blinded:
+	• A blinded creature can’t see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Incapacitated:
+	• An incapacitated creature can't take actions or reactions.
 
 Source: Player's Handbook p. 240</text>
     </spell>
@@ -3290,6 +3358,11 @@ Source: Player's Handbook p. 246</text>
 
 When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.
 
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
+
 Source: Player's Handbook p. 246</text>
     </spell>
   <spell>
@@ -3737,6 +3810,10 @@ Source: Player's Handbook p. 251</text>
     <duration>Concentration, up to 1 minute</duration>
     <text>Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends. In addition, when a fiend or an undead hits an affected creature with a melee attack, the aura flashes with brilliant light. The attacker must succeed on a Constitution saving throw or be blinded until the spell ends.
 
+Blinded:
+	• A blinded creature can’t see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.
+
 Source: Player's Handbook p. 251</text>
     </spell>
   <spell>
@@ -3752,6 +3829,10 @@ Source: Player's Handbook p. 251</text>
     <text>You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point within range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are blinded.
 
 The void creates a warp in the fabric of space, and the area is difficult terrain. Any creature that starts its turn in the area takes 2d6 cold damage. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take 2d6 acid damage as milky, otherworldly tentacles rub against it.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
 
 Source: Player's Handbook p. 251</text>
     <roll>2d6</roll>
@@ -4510,6 +4591,11 @@ While merged with the stone, you can't see what occurs outside it, and any Wisdo
 
 Minor physical damage to the stone doesn't harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals 6d6 bludgeoning damage to you. The stone's complete destruction (or transmutation into a different substance) expels you and deals 50 bludgeoning damage to you. If expelled, you fall prone in an unoccupied space closest to where you first entered.
 
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
+
 Source: Player's Handbook p. 259</text>
     <roll>6d6</roll>
     </spell>
@@ -4680,6 +4766,17 @@ Source: Player's Handbook p. 260</text>
 You can use your action to move your illusory double up to twice your speed and make it gesture, speak, and behave in whatever way you choose.
 
 You can see through its eyes and hear through its ears as if you were located where it is. On each of your turns as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Deafened:
+	• A deafened creature can't hear and automatically fails any ability check that requires hearing.
+
+Invisible:
+	• An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.
+	• Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.
 
 Source: Player's Handbook p. 260</text>
     </spell>
@@ -5209,6 +5306,11 @@ Source: Player's Handbook p. 266</text>
 
 The stunned target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends.
 
+Stunned:
+    • A stunned creature is incapacitated, meaning it can't take actions or reactions, can't move, and can speak only falteringly.
+    • The creature automatically fails Strength and Dexterity saving throws.
+    • Attack rolls against the creature have advantage.
+
 Source: Player's Handbook p. 267</text>
     </spell>
   <spell>
@@ -5270,14 +5372,32 @@ Source: Player's Handbook p. 267</text>
     <components>V, S</components>
     <duration>Instantaneous</duration>
     <text>Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it.
-1-Red: The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one.
-2-Orange: The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one.
-3-Yellow: The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.
-4-Green: The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one.
-5-Blue: The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one.
-6-Indigo: On a failed save, the target is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive, keep track of both until the target collects three of a kind.
-7-Violet: On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)
-8-Special: The target is struck by two rays. Roll twice more, rerolling any 8.
+
+1 - Red: The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one.
+2 - Orange: The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one.
+3 - Yellow: The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.
+4 - Green: The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one.
+5 - Blue: The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one.
+6 - Indigo: On a failed save, the target is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive, keep track of both until the target collects three of a kind.
+7 - Violet: On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)
+8 - Special: The target is struck by two rays. Roll twice more, rerolling any 8.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Petrified:
+	• A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.
+	• The creature is incapacitated (meaning it can't take actions or reactions), can't move or speak, and is unaware of its surroundings.
+	• Attack rolls against the creature have advantage.
+	• The creature automatically fails Strength and Dexterity saving throws.
+	• The creature has resistance to all damage.
+	• The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.
 
 Source: Player's Handbook p. 267</text>
     <roll>10d6</roll>
@@ -5315,6 +5435,23 @@ Indigo: On a failed save, the creature is restrained. It must then make a Consti
 While this layer is in place, spells can't be cast through the wall. The layer is destroyed by bright light shed by a daylight spell or a similar spell of equal or higher level.
 
 Violet: On a failed save, the creature is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the DM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Petrified:
+	• A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.
+	• The creature is incapacitated (meaning it can't take actions or reactions), can't move or speak, and is unaware of its surroundings.
+	• Attack rolls against the creature have advantage.
+	• The creature automatically fails Strength and Dexterity saving throws.
+	• The creature has resistance to all damage.
+	• The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.
 
 Source: Player's Handbook p. 267</text>
     <roll>10d6</roll>
@@ -5378,6 +5515,13 @@ You can use your action to move this illusion up to twice your speed, and make i
 You can see through its eyes and hear through its ears as if you were in its space. On your turn as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings.
 
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Deafened:
+	• A deafened creature can't hear and automatically fails any ability check that requires hearing.
 
 Source: Player's Handbook p. 270</text>
     </spell>
@@ -6084,6 +6228,11 @@ The ground in the area is covered with slick ice, making it difficult terrain. W
 
 If a creature starts its turn in the spell's area and is concentrating on a spell, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.
 
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
+
 Source: Player's Handbook p. 276</text>
     </spell>
   <spell>
@@ -6376,6 +6525,10 @@ You can create a new line of radiance as your action on any turn until the spell
 
 For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight.
 
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
 Source: Player's Handbook p. 279</text>
     <roll>6d8</roll>
     </spell>
@@ -6394,6 +6547,10 @@ Source: Player's Handbook p. 279</text>
 A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.
 
 This spell dispels any darkness in its area that was created by a spell.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
 
 Source: Player's Handbook p. 279</text>
     <roll>12d6</roll>
@@ -6466,6 +6623,14 @@ Source: Player's Handbook p. 280</text>
     <text>A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a Wisdom saving throw or fall prone, becoming incapacitated and unable to stand up for the duration. A creature with an Intelligence score of 4 or less isn't affected.
 
 At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. The target has advantage on the saving throw if it's triggered by damage. On a success, the spell ends.
+
+Incapacitated:
+	• An incapacitated creature can't take actions or reactions.
+
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
 
 Source: Player's Handbook p. 280</text>
     </spell>
@@ -6641,6 +6806,11 @@ Source: Player's Handbook p. 282</text>
     <components>V</components>
     <duration>Concentration, up to 1 minute</duration>
     <text>The first time you hit with a melee weapon attack during this spell's duration, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra 2d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone.
+
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
 
 Source: Player's Handbook p. 282</text>
     <roll>2d6</roll>
@@ -7213,6 +7383,10 @@ Source: Player's Handbook p. 289</text>
     <components>V</components>
     <duration>Concentration, up to 1 minute</duration>
     <text>The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell.
+
+Frightened:
+	• A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.
+	• The creature can't willingly move closer to the source of its fear.
 
 Source: Player's Handbook p. 289</text>
     <roll>1d6</roll>
