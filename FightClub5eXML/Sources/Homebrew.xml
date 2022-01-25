@@ -131,6 +131,12 @@
         <tools>Alchemist's supplies</tools>
         <wealth>4d4x10</wealth>
 
+        <autolevel level="3"><slots optional="YES">2, 1</slots></autolevel>
+        <autolevel level="6"><slots optional="YES">2, 2</slots></autolevel>
+        <autolevel level="10"><slots optional="YES">3, 0, 2</slots></autolevel>
+        <autolevel level="13"><slots optional="YES">3, 0, 0, 2</slots></autolevel>
+        <autolevel level="19"><slots optional="YES">3, 0, 0, 0, 2</slots></autolevel>
+
         <autolevel level="1">
             <feature optional="YES">
                 <name>Starting Blood Hunter</name>
@@ -147,12 +153,16 @@
         <autolevel level="1">
             <feature optional="YES">
                 <name>Multiclass Blood Hunter</name>
-                <text>Blood Hunter Multiclassing Prerequisites:</text>
-                <text>Ability Score Minimum: Strength 13 or Dexterity 13, and Intelligence 13</text>
+                <text>To multiclass as a Blood Hunter, you must meet the following prerequisites:</text>
                 <text />
-                <text>Blood Hunter Multiclassing Proficiencies:</text>
-                <text>Proficiencies Gained:</text>
-                <text>Light armor, medium armor, shields, simple weapons, martial weapons, alchemical supplies.</text>
+                <text>	• Strength or Dexterity 13</text>
+                <text>	• Intelligence 13</text>
+                <text />
+                <text>You gain the following proficiencies:</text>
+                <text />
+                <text>	• Armor: light armor, medium armor, shields</text>
+                <text>	• Weapons: simple weapons, martial weapons</text>
+                <text>	• Tools: alchemical supplies</text>
                 <text />
                 <text>Blood Hunter Multiclassing with Warlock:</text>
                 <text>If multiclassing Order of the Profane Soul with Warlock levels, add a third of your blood hunter levels (rounded down) to your Warlock level and consult the Warlock progression table in the Player's Handbook for total Spell Slots, Cantrips known, and Spell Slot Level.</text>
@@ -262,6 +272,7 @@
                 <text>Amplify: In addition, you regain an expended warlock spell slot. Once you've amplified this blood curse, you must finish a long rest before you can amplify it again.</text>
             </feature>
         </autolevel>
+
         <autolevel level="2">
             <feature>
                 <name>Fighting Style</name>
@@ -292,6 +303,7 @@
                 <text>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</text>
                 <text />
                 <text>Source: Player's Handbook p. 72</text>
+                <special>fighting style great weapon fighting</special>
             </feature>
         </autolevel>
         <autolevel level="2">
@@ -300,6 +312,7 @@
                 <text>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</text>
                 <text />
                 <text>Source: Player's Handbook p. 72</text>
+                <special>fighting style two-weapon fighting</special>
             </feature>
         </autolevel>
         <autolevel level="2">
@@ -315,23 +328,18 @@
                 <text />
                 <text>Primal Rites:</text>
                 <text>Choose from the following:</text>
-                <text />
                 <text>Rite of the Flame: Your rite damage is fire damage.</text>
-                <text />
                 <text>Rite of the Frozen: Your rite damage is cold damage.</text>
-                <text />
                 <text>Rite of the Storm: Your rite damage is lightning damage.</text>
                 <text />
                 <text>Esoteric Rites:</text>
                 <text>Choose from the following:</text>
-                <text />
                 <text>Rite of the Dead: Your rite damage is necrotic damage.</text>
-                <text />
                 <text>Rite of the Oracle: Your rite damage is psychic damage.</text>
-                <text />
                 <text>Rite of the Roar: Your rite damage is thunder damage.</text>
             </feature>
         </autolevel>
+
         <autolevel level="3">
             <feature>
                 <name>Blood Hunter Order</name>
@@ -340,7 +348,6 @@
                 <text>At 3rd level, you commit to an order of blood hunter martial focus. Choose Order of the Ghostslayer, Order of the Profane Soul, Order of the Mutant, or Order of the Lycan. The order you choose grants you features at 3rd level, and again at 7th, 11th, 15th, and 18th level.</text>
             </feature>
         </autolevel>
-
         <autolevel level="3">
             <feature optional="YES">
                 <name>Blood Hunter Order: Order of the Ghostslayer</name>
@@ -349,7 +356,7 @@
         </autolevel>
         <autolevel level="3">
             <feature optional="YES">
-                <name>Rite of the Dawn (Ghostslayer)</name>
+                <name>Order of the Ghostslayer: Rite of the Dawn</name>
                 <text>When you join this order at 3rd level, you learn the Rite of the Dawn esoteric rite, detailed below.</text>
                 <text />
                 <text>Rite of the Dawn: Your rite damage is radiant damage. While the rite is active, you gain the following benefits:</text>
@@ -361,7 +368,7 @@
         </autolevel>
         <autolevel level="3">
             <feature optional="YES">
-                <name>Curse Specialist (Ghostslayer)</name>
+                <name>Order of the Ghostslayer: Curse Specialist</name>
                 <text>Beginning at 3rd level, your ancient order teaches advanced mastery over blood curses. You gain an additional use of your blood maledict feature. In addition, your blood curses can target any creature, whether it has blood or not.</text>
             </feature>
         </autolevel>
@@ -374,14 +381,13 @@
         </autolevel>
         <autolevel level="3">
             <feature optional="YES">
-                <name>Otherworldly Patron (Profane Soul)</name>
+                <name>Order of the Profane Soul: Otherworldly Patron</name>
                 <text>When you reach 3rd level, you strike a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each detailed in the Player's Handbook, the Undying within the Sword Coast Adventurer's Guide, and the Celestial or Hexblade in Xanathar's Guide to Everything. Your choice augments some of your order features.</text>
             </feature>
         </autolevel>
         <autolevel level="3">
-            <slots optional="YES">2, 1</slots>
             <feature optional="YES">
-                <name>Pact Magic (Profane Soul)</name>
+                <name>Order of the Profane Soul: Pact Magic</name>
                 <text>When you reach 3rd level, you can augment your combat techniques with the ability to cast spells. See chapter 10 of the Player's Handbook for the general rules of spellcasting and chapter 11 of the Player's Handbook for the Warlock spell list.</text>
                 <text />
                 <text>Cantrips:</text>
@@ -410,7 +416,7 @@
         </autolevel>
         <autolevel level="3">
             <feature optional="YES">
-                <name>Rite Focus (Profane Soul)</name>
+                <name>Order of the Profane Soul: Rite Focus</name>
                 <text>Beginning at 3rd level, your weapon becomes a core to your pact with your chosen dark patron. While you have an active Crimson Rite, you can use your weapon as a spellcasting focus (found in chapter 5 of the Player's Handbook) for your warlock spells, and you gain a specific benefit based on your chosen pact (outlined below).</text>
                 <text />
                 <text>The Archfey: When you deal rite damage to a creature, it glows with faint light until the end of your next turn. For the duration, the creature can't benefit from half cover, three-quarters cover, or being invisible.</text>
@@ -426,9 +432,7 @@
                 <text>The Hexblade: Whenever you target a creature with a blood curse, your next attack against the cursed creature deals additional damage equal to your proficiency modifier.</text>
             </feature>
         </autolevel>
-        <autolevel level="3">
-            <slots optional="YES">2, 1</slots>
-        </autolevel>
+
 
         <autolevel level="3">
             <feature optional="YES">
@@ -438,7 +442,7 @@
         </autolevel>
         <autolevel level="3">
             <feature optional="YES">
-                <name>Formulas (Mutant)</name>
+                <name>Order of the Mutant: Formulas</name>
                 <text>You begin to uncover forbidden alchemical formulas that temporarily alter your mental and physical abilities.</text>
                 <text />
                 <text>Beginning at 3rd level, you choose to learn four mutagen formulas. Your formula options are detailed at the end of this order description. You gain an additional formula at 7th level, 11th level, 15th level, and 18th level.</text>
@@ -448,7 +452,7 @@
         </autolevel>
         <autolevel level="3">
             <feature optional="YES">
-                <name>Mutagencraft (Mutant)</name>
+                <name>Order of the Mutant: Mutagencraft</name>
                 <text>At 3rd level, you can concoct a single mutagen when you finish a short or long rest. Starting at 7th level, the number of mutagens you can create when you finish a rest increases to two, and you can create three mutagens at 15th level.</text>
                 <text />
                 <text>As a bonus action you can consume a single mutagen, and the effects and side effects last until you finish a short or long rest, unless otherwise specified. While one or more mutagens are affecting you, you can use an action to focus and flush the toxins from your system, ending the effects and side effects of all mutagens.</text>
@@ -463,7 +467,7 @@
         </autolevel>
         <autolevel level="3">
             <feature optional="YES">
-                <name>Mutagen List (Mutant)</name>
+                <name>Order of the Mutant: Mutagen List</name>
                 <text>Aether (11th Level Required)</text>
                 <text>You gain a flying speed of 20 feet for 1 hour. As a side effect, you gain disadvantage on Strength and Dexterity ability checks for 1 hour.</text>
                 <text />
@@ -531,13 +535,13 @@
         </autolevel>
         <autolevel level="3">
             <feature optional="YES">
-                <name>Heightened Senses (Lycan)</name>
+                <name>Order of the Lycan: Heightened Senses</name>
                 <text>Starting when you choose this archetype at 3rd level, you begin to adopt the improved abilities of a natural predator. You gain advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
             </feature>
         </autolevel>
         <autolevel level="3">
             <feature optional="YES">
-                <name>Hybrid Transformation (Lycan)</name>
+                <name>Order of the Lycan: Hybrid Transformation</name>
                 <text>Upon choosing this archetype at 3rd level, you begin to learn to control the lycanthropic curse that now lives in your blood. As a bonus action, you can transform into your hybrid form for up to 1 hour. You can speak, use equipment, and wear armor in this form. You can revert to your normal form earlier as a bonus action. You automatically revert to your normal form if you fall unconscious, drop to 0 hit points, or die. This feature replaces the rules for Lycanthropy within the Monster's Manual.</text>
                 <text />
                 <text>Once you use this feature, you must finish a short or long rest before you can use it again. While you are transformed, you gain the following features:</text>
@@ -574,9 +578,7 @@
                 <text>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action.</text>
             </feature>
         </autolevel>
-        <autolevel level="6">
-            <slots optional="YES">2, 2</slots>
-        </autolevel>
+
         <autolevel level="6">
             <feature>
                 <name>Brand of Castigation</name>
@@ -599,6 +601,7 @@
                 <reset>S</reset>
             </counter>
         </autolevel>
+
         <autolevel level="7">
             <feature>
                 <name>Primal Rite</name>
@@ -606,17 +609,14 @@
                 <text />
                 <text>Primal Rites:</text>
                 <text>Choose from the following:</text>
-                <text />
                 <text>Rite of the Flame: Your rite damage is fire damage.</text>
-                <text />
                 <text>Rite of the Frozen: Your rite damage is cold damage.</text>
-                <text />
                 <text>Rite of the Storm: Your rite damage is lightning damage.</text>
             </feature>
         </autolevel>
         <autolevel level="7">
             <feature optional="YES">
-                <name>Ethereal Step (Ghostslayer)</name>
+                <name>Order of the Ghostslayer: Ethereal Step</name>
                 <text>Upon reaching 7th level, at the start of your turn, if you aren't incapacitated, you can choose to magically step into the veil between planes. You can move through other creatures and objects as if they were difficult terrain, as well as see and affect objects on the Ethereal Plane. You take 1d10 force damage if you end your turn inside an object. If you are inside an object when this feature ends, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you moved. This feature lasts for a number of rounds equal to your Intelligence modifier (minimum of one round).</text>
                 <text />
                 <text>You can use this feature once. Beginning at 15th level, you can use your Ethereal step feature twice between rests. You regain all expended uses when you finish a short or long rest.</text>
@@ -629,7 +629,7 @@
         </autolevel>
         <autolevel level="7">
             <feature optional="YES">
-                <name>Mystic Frenzy (Profane Soul)</name>
+                <name>Order of the Profane Soul: Mystic Frenzy</name>
                 <text>Starting at 7th level, when you use your action to cast a cantrip, you can immediately make one weapon attack as a bonus action.</text>
             </feature>
             <feature optional="YES">
@@ -651,7 +651,7 @@
         </autolevel>
         <autolevel level="7">
             <feature optional="YES">
-                <name>Strange Metabolism (Mutant)</name>
+                <name>Order of the Mutant: Strange Metabolism</name>
                 <text>Beginning at 7th level, your body has begun to adapt to toxins and venoms, ignoring their corroding effects. You gain immunity to poison damage and the poisoned condition.</text>
                 <text />
                 <text>In addition, you can instill a burst of adrenaline to temporarily resist the negative effects of a mutagen. As a bonus action, you can choose to ignore the side effect of a mutagen affecting you for 1 minute.</text>
@@ -666,7 +666,7 @@
         </autolevel>
         <autolevel level="7">
             <feature optional="YES">
-                <name>Stalker's Prowess (Lycan)</name>
+                <name>Order of the Lycan: Stalker's Prowess</name>
                 <text>At 7th level, your speed increases by 10 feet. You also can add 10 feet to your long jump distance and 3 feet to your high jump distance. In addition, your hybrid form gains the Improved Predatory Strikes feature.</text>
                 <text />
                 <text>Improved Predatory Strikes</text>
@@ -682,9 +682,6 @@
             </feature>
         </autolevel>
         <autolevel level="10">
-            <slots optional="YES">3, 0, 2</slots>
-        </autolevel>
-        <autolevel level="10">
             <feature>
                 <name>Dark Augmentation</name>
                 <text>Upon reaching 10th level, arcane blood magic suffuses your body, permanently reinforcing your resilience. Your speed increases by 5 feet, and whenever you make a Strength, Dexterity, or Constitution saving throw, you gain a bonus equal to your Intelligence modifier (minimum of one).</text>
@@ -692,25 +689,25 @@
         </autolevel>
         <autolevel level="11">
             <feature optional="YES">
-                <name>Brand of Sundering (Ghostslayer)</name>
+                <name>Order of the Ghostslayer: Brand of Sundering</name>
                 <text>Beginning at 11th level, your Brand of Castigation now exposes a fragment of your foe's essence, leaving them vulnerable to your Crimson Rite. Whenever you damage a branded creature with your Crimson Rite, you reroll one additional hemocraft die. In addition, the branded creature can't move through creatures or objects.</text>
             </feature>
         </autolevel>
         <autolevel level="11">
             <feature optional="YES">
-                <name>Brand of the Sapping Scar (Profane Soul)</name>
+                <name>Order of the Profane Soul: Brand of the Sapping Scar</name>
                 <text>Upon reaching 11th level, your Brand of Castigation feature now digs dark, arcane scars into your target, leaving them vulnerable to your magic. A creature branded by you has disadvantage on their saving throws against your warlock spells.</text>
             </feature>
         </autolevel>
         <autolevel level="11">
             <feature optional="YES">
-                <name>Brand of Axiom (Mutant)</name>
+                <name>Order of the Mutant: Brand of Axiom</name>
                 <text>At 11th level, your hemocraft has altered your Brand of Castigation to enforce a foe's true nature. Any illusions disguising or making a creature invisible when you brand them end, and they can't benefit from such illusions while branded. If a creature branded by you is polymorphed or has changed shape, they must succeed on a Wisdom saving throw or revert to their true form and be stunned until the end of your next turn. Whenever a branded creature attempts to polymorph or change shape, they must succeed on a Wisdom saving throw or the attempt fails, and they are stunned until the end of your next turn.</text>
             </feature>
         </autolevel>
         <autolevel level="11">
             <feature optional="YES">
-                <name>Advanced Transformation (Lycan)</name>
+                <name>Order of the Lycan: Advanced Transformation</name>
                 <text>Starting at 11th level, you learn to unleash and control more of the beast within. You can use your Hybrid Transformation feature twice, regaining all expended uses when you finish a short or long rest. In addition, your hybrid form gains the Lycan Regeneration feature.</text>
                 <text />
                 <text>Lycan Regeneration</text>
@@ -736,7 +733,6 @@
             </counter>
         </autolevel>
         <autolevel level="13">
-            <slots optional="YES">3, 0, 0, 2</slots>
             <feature>
                 <name>Brand of Tethering</name>
                 <text>Starting at 13th level, the psychic damage from your Brand of Castigation feature increases to twice your Intelligence modifier (minimum of 2).</text>
@@ -751,16 +747,14 @@
                 <text />
                 <text>Esoteric Rites:</text>
                 <text>Choose from the following:</text>
-                <text />
                 <text>Rite of the Dead: Your rite damage is necrotic damage.</text>
-                <text />
                 <text>Rite of the Oracle: Your rite damage is psychic damage.</text>
-                <text />
                 <text>Rite of the Roar: Your rite damage is thunder damage.</text>
             </feature>
         </autolevel>
         <autolevel level="14">
-            <feature><name>Hardened Soul</name>
+            <feature>
+                <name>Hardened Soul</name>
                 <text>When you reach 14th level, you have advantage on saving throws against being charmed and frightened.</text>
             </feature>
             <counter>
@@ -771,7 +765,7 @@
         </autolevel>
         <autolevel level="15">
             <feature optional="YES">
-                <name>Curse of the Exorcist (Ghostslayer)</name>
+                <name>Order of the Ghostslayer: Curse of the Exorcist</name>
                 <text>At 15th level, you've honed your hemocraft to tear wicked influence from your allies, punishing those who would infiltrate their body and mind. You gain the Blood Curse of the Exorcist for your Blood Maledict feature. This doesn't count against your number of curses known.</text>
             </feature>
             <counter>
@@ -782,7 +776,7 @@
         </autolevel>
         <autolevel level="15">
             <feature optional="YES">
-                <name>Unsealed Arcana (Profane Soul)</name>
+                <name>Order of the Profane Soul: Unsealed Arcana</name>
                 <text>At 15th level, your patron grants you the rare use of an additional arcane spell based on your pact.</text>
                 <text />
                 <text>The Archfey: You can cast slow once without expending a spell slot.</text>
@@ -802,13 +796,13 @@
         </autolevel>
         <autolevel level="15">
             <feature optional="YES">
-                <name>Blood Curse of Corrosion (Mutant)</name>
+                <name>Order of the Mutant: Blood Curse of Corrosion</name>
                 <text>Starting at 15th level, your blood curse can wrack a creature's body with terrible toxins. You gain the Blood Curse of Corrosion for your Blood Maledict feature. This does not count against your number of blood curses known.</text>
             </feature>
         </autolevel>
         <autolevel level="15">
             <feature optional="YES">
-                <name>Brand of the Voracious (Lycan)</name>
+                <name>Order of the Lycan: Brand of the Voracious</name>
                 <text>At 15th level, you have advantage on your Wisdom saving throws to maintain control of your bloodlust in hybrid form. In addition, your Brand of Castigation now binds your foe to your hunter's thirst for savagery. While in your hybrid form, your attacks have advantage against a creature branded by you.</text>
             </feature>
         </autolevel>
@@ -823,39 +817,45 @@
         </autolevel>
         <autolevel level="18">
             <feature optional="YES">
-                <name>Rite Revival (Ghostslayer)</name>
+                <name>Order of the Ghostslayer: Rite Revival</name>
                 <text>Upon reaching 18th level, you learn to protect your fading life by absorbing your blood rite. When you are reduced to 0 hit points while you have an active crimson rite, but don't die outright, the rite ends and you drop to 1 hit point instead. If you have multiple rites active, you choose which one ends.</text>
             </feature>
         </autolevel>
         <autolevel level="18">
             <feature optional="YES">
-                <name>Blood Curse of the Souleater (Profane Soul)</name>
+                <name>Order of the Profane Soul: Blood Curse of the Souleater</name>
                 <text>Starting at 18th level, you've learned to siphon the soul from your fallen prey. You gain the Blood Curse of the Souleater for your Blood Maledict feature. This does not count against your number of blood curses known.</text>
             </feature>
         </autolevel>
         <autolevel level="18">
             <feature optional="YES">
-                <name>Exalted Mutation (Mutant)</name>
+                <name>Order of the Mutant: Exalted Mutation</name>
                 <text>At 18th level, your body has adapted to produce your toxins naturally in a moment of need. As a reaction, you can choose one mutagen currently affecting you to flush from your system and end, then immediately have a mutagen you know the formula for take effect in its place.</text>
                 <text />
                 <text>You can use this feature a number of times equal to your Intelligence modifier (minimum of 1). You regain all uses of this feature after you finish a long rest.</text>
             </feature>
         </autolevel>
-         <autolevel level="18">
+        <autolevel level="18">
             <feature optional="YES">
-                <name>Hybrid Transformation Mastery (Lycan)</name>
+                <name>Order of the Lycan: Hybrid Transformation Mastery</name>
                 <text>At 18th level, you have wrestled your inner predator and mastered it. You can use your Hybrid Transformation feature an unlimited number of times, and your hybrid form can now last indefinitely.</text>
                 <text />
                 <text>You also gain the Blood Curse of the Howl for your Blood Maledict feature. This does not count against your number of blood curses known.</text>
             </feature>
             <feature optional="YES">
-                <name>Improved Predatory Strikes (Lycan)</name>
+                <name>Order of the Lycan: Improved Predatory Strikes</name>
                 <text>You gain a +3 bonus to attack rolls made with your unarmed strikes.</text>
             </feature>
         </autolevel>
+
         <autolevel level="19" scoreImprovement="YES">
-            <slots optional="YES">3, 0, 0, 0, 2</slots>
+            <feature>
+                <text>When you reach 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
+                <text />
+                <text>If your DM allows the use of feats, you may instead take a feat.</text>
+            </feature>
         </autolevel>
+
         <autolevel level="20">
             <feature>
                 <name>Sanguine Mastery</name>
@@ -874,11 +874,11 @@
                 <name>Martial Archetype: Gunslinger</name>
                 <text>Most warriors and combat specialists spend their years perfecting the classic arts of swordplay, archery, or polearm tactics.  Whether the duelist of infantry martial weapons were seemingly perfected long ago, and the true challenge is to master them.</text>
                 <text />
-                <text>	However, some minds couldn't stop with the innovation of the crossbow.  Experimentation with alchemical components and rare metals have unlocked the secrets of controlled explosive force.  The few who survive these trials of ingenuity may become the first to create, and deftly wield, the first firearms.</text>
+                <text>However, some minds couldn't stop with the innovation of the crossbow.  Experimentation with alchemical components and rare metals have unlocked the secrets of controlled explosive force.  The few who survive these trials of ingenuity may become the first to create, and deftly wield, the first firearms.</text>
                 <text />
-                <text>	This archetype focuses on the ability to design, craft and utilize powerful, yet dangerous ranged weapons.  Through creative innovation and immaculate aim, you become a distant force of death on the battlefield.  However, not being a perfect science, firearms carry an inherent instability that can occasionally leave you without a functional means of attack.  This is the danger of new, untested technologies in a world where the arcane energies that rule the elements are ever present.</text>
+                <text>This archetype focuses on the ability to design, craft and utilize powerful, yet dangerous ranged weapons.  Through creative innovation and immaculate aim, you become a distant force of death on the battlefield.  However, not being a perfect science, firearms carry an inherent instability that can occasionally leave you without a functional means of attack.  This is the danger of new, untested technologies in a world where the arcane energies that rule the elements are ever present.</text>
                 <text />
-                <text>	Should this path of powder, fire and metal call to you, keep your wits about you, hold onto your convictions as a fighter, and let skill meet luck to guide your bullets to strike true.</text>
+                <text>Should this path of powder, fire and metal call to you, keep your wits about you, hold onto your convictions as a fighter, and let skill meet luck to guide your bullets to strike true.</text>
                 <text />
                 <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.3 p. 1</text>
             </feature>
@@ -886,7 +886,18 @@
 
         <autolevel level="3">
             <feature optional="YES">
-                <name>Firearm Proficiency (Gunslinger)</name>
+                <name>Gunslinger: Gunsmith</name>
+                <text>Upon choosing this archetype at 3rd level, you gain proficiency in Tinker's Tools.</text>
+                <text />
+                <text>You may use them to craft ammunition, repair damaged firearms, or even draft and create new ones (DM's discretion). Some extremely intricate and experimental features are only available through crafting.</text>
+                <text />
+                <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
+            </feature>
+        </autolevel>
+
+        <autolevel level="3">
+            <feature optional="YES">
+                <name>Gunslinger: Firearm Proficiency</name>
                 <text>Starting from when you choose this archetype at 3rd level, you gain proficiency in firearms, allowing you to add your proficiency bonus to attacks made with firearms.</text>
                 <text />
                 <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.3 p. 2</text>
@@ -895,25 +906,20 @@
 
         <autolevel level="3">
             <feature optional="YES">
-                <name>Gunsmith (Gunslinger)</name>
-                <text>Upon choosing this archetype at 3rd level, you gain proficiency in Tinker's Tools.  You may use them to craft ammunition, repair damaged firearms, or even draft and create new ones (DM's discretion). Some extremely intricate and experimental features are only available through crafting.</text>
-                <text />
-                <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
-            </feature>
-        </autolevel>
-
-        <autolevel level="3">
-            <feature optional="YES">
                 <name>Firearm Properties</name>
                 <text>Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties.  Some properties are followed by a number, and this number signifies an element of their property.  These properties replace the optional ones presented in the DM guide.  Firearms are ranged weapons.</text>
                 <text />
-                <text>	RELOAD.  The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload.  You must have one free hand to reload a firearm.</text>
+                <text>RELOAD:</text>
+                <text>The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload.  You must have one free hand to reload a firearm.</text>
                 <text />
-                <text>	MISFIRE.  Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than weapon's Misfire score, the weapon misfires.  The attack misses, and the weapon cannot be used again until you spend an action to try and repair it.  To repair your firearm, you must make a successful Tinker's Tools check (DC equal to 8 + Misfire score).  If your check fails, the weapon is broken and must be repaired out of combat at half the cost of the firearm.</text>
+                <text>MISFIRE:</text>
+                <text>Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than weapon's Misfire score, the weapon misfires.  The attack misses, and the weapon cannot be used again until you spend an action to try and repair it.  To repair your firearm, you must make a successful Tinker's Tools check (DC equal to 8 + Misfire score).  If your check fails, the weapon is broken and must be repaired out of combat at half the cost of the firearm.</text>
                 <text />
-                <text>	SCATTER.  An attack is made against each creature within a 30 ft. cone.  These attacks are simultaneous.  If an affected creature is adjacent to you, they suffer double damage on a hit.  This attack cannot be affected by any of your shot features.</text>
+                <text>SCATTER:</text>
+                <text>An attack is made against each creature within a 30 ft. cone.  These attacks are simultaneous.  If an affected creature is adjacent to you, they suffer double damage on a hit.  This attack cannot be affected by any of your shot features.</text>
                 <text />
-                <text>	EXPLOSIVE.  Upon a hit, everything within 5 ft. of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage.  If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.</text>
+                <text>EXPLOSIVE:</text>
+                <text>Upon a hit, everything within 5 ft. of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage.  If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.</text>
                 <text />
                 <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
             </feature>
@@ -921,12 +927,12 @@
 
         <autolevel level="3">
             <feature optional="YES">
-                <name>Adept Marksman (Gunslinger)</name>
+                <name>Gunslinger: Adept Marksman</name>
                 <text>When you choose this archetype at 3rd level, you learn to perform powerful trick shots to disable or damage your opponents using your firearms.</text>
                 <text />
-                <text>	Trick Shots: You learn two trick shots of your choice.  Many maneuvers enhance an attack in some way.  Each use of a trick shot must be declared before the attack roll is made.  You can use only one trick shot per attack.</text>
+                <text>Trick Shots: You learn two trick shots of your choice.  Many maneuvers enhance an attack in some way.  Each use of a trick shot must be declared before the attack roll is made.  You can use only one trick shot per attack.</text>
                 <text />
-                <text>	You learn an additional trick shot of your choice at 7th, 10th, 15th, and 18th level.  Each time you learn a trick shot, you can also replace one trick shot you know with a different one.</text>
+                <text>You learn an additional trick shot of your choice at 7th, 10th, 15th, and 18th level.  Each time you learn a trick shot, you can also replace one trick shot you know with a different one.</text>
                 <text />
                 <text>Grit: You gain a number of grit points equal to your Wisdom modifier (minimum of 1).  You regain 1 expended grit point each time you roll a 20 on the d20 roll with a firearm, or deal a killing blow with a firearm to a creature of significant threat (DM's discretion).  You gain all expended grit points after a short or long rest.</text>
                 <text />
@@ -940,7 +946,7 @@
 
         <autolevel level="7">
             <feature optional="YES">
-                <name>Quickdraw (Gunslinger)</name>
+                <name>Gunslinger: Quickdraw</name>
                 <text>When you reach 7th level, you add your proficiency to your initiative.  You can also stow a firearm, then draw another firearm as a single object interaction on your turn</text>
                 <text />
                 <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.3 p. 2</text>
@@ -949,8 +955,8 @@
 
         <autolevel level="10">
             <feature optional="YES">
-                <name>Rapid Repair (Gunslinger)</name>
-                <text>Upon reaching 10th level, you learn how to quickly attempt to fix a jammed gun.  You can spend a grit point to attempt to repair a misfired (but not broken) firearm as a bonus action.</text>
+                <name>Gunslinger: Rapid Repair</name>
+                <text>Upon reaching 10th level, you learn how to quickly attempt to fix a jammed gun. You can spend a grit point to attempt to repair a misfired (but not broken) firearm as a bonus action.</text>
                 <text />
                 <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
             </feature>
@@ -958,7 +964,7 @@
 
         <autolevel level="15">
             <feature optional="YES">
-                <name>Lightning Reload (Gunslinger)</name>
+                <name>Gunslinger: Lightning Reload</name>
                 <text>Starting at 15th level, you can reload any firearm as a bonus action.</text>
                 <text />
                 <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
@@ -967,7 +973,7 @@
 
         <autolevel level="18">
             <feature optional="YES">
-                <name>Vicious Intent (Gunslinger)</name>
+                <name>Gunslinger: Vicious Intent</name>
                 <text>At 18th level, your firearm attacks score a critical hit on a roll of 19-20, and you regain a grit point on a roll of 19 or 20 on a d20 attack roll with a firearm.</text>
                 <text />
                 <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
@@ -976,7 +982,7 @@
 
         <autolevel level="10">
             <feature optional="YES">
-                <name>Hemorrrhaging Critical (Gunslinger)</name>
+                <name>Gunslinger: Hemorrrhaging Critical</name>
                 <text>Upon reaching 18th level, whenever you score a critical hit on an attack with a firearm, the target additionally suffers half of the damage from the attack at the end of its next turn.</text>
                 <text />
                 <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
@@ -984,108 +990,79 @@
         </autolevel>
     </class>
 
-    <spell>
-        <name>Bullying Shot</name>
-        <level>1</level>
-        <ritual>NO</ritual>
-        <time></time>
-        <range></range>
-        <components>None</components>
-        <duration></duration>
-        <classes>Fighter (Gunslinger)</classes>
-        <text>You can use the powerful blast and thundering sound of your firearm to shake the resolve of a creature.  When making a Charisma (Intimidation) check, you can expend one grit point to gain advantage on the roll.</text>
-        <text />
-        <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
-    </spell>
-    <spell>
-        <name>Dazing Shot</name>
-        <level>1</level>
-        <ritual>NO</ritual>
-        <time></time>
-        <range></range>
-        <components>None</components>
-        <duration></duration>
-        <classes>Fighter (Gunslinger)</classes>
-        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent.  On a hit, the creature suffers normal damage and must make a Constiution saving throw or suffer disadvantage on attacks until the end of your next turn.</text>
-        <text />
-        <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
-    </spell>
-    <spell>
-        <name>Deadeye Shot</name>
-        <level>1</level>
-        <ritual>NO</ritual>
-        <time></time>
-        <range></range>
-        <components>None</components>
-        <duration></duration>
-        <classes>Fighter (Gunslinger)</classes>
-        <text>When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll.</text>
-        <text />
-        <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
-    </spell>
-    <spell>
-        <name>Disarming Shot</name>
-        <level>1</level>
-        <ritual>NO</ritual>
-        <time></time>
-        <range></range>
-        <components>None</components>
-        <duration></duration>
-        <classes>Fighter (Gunslinger)</classes>
-        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands.  On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or drop 1 held object of your choice and have that object pushed 10 feet away from you.</text>
-        <text />
-        <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
-    </spell>
-    <spell>
-        <name>Forceful Shot</name>
-        <level>1</level>
-        <ritual>NO</ritual>
-        <time></time>
-        <range></range>
-        <components>None</components>
-        <duration></duration>
-        <classes>Fighter (Gunslinger)</classes>
-        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back.  On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or be pushed 15 feet away from you.</text>
-        <text />
-        <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
-    </spell>
-    <spell>
-        <name>Piercing Shot</name>
-        <level>1</level>
-        <ritual>NO</ritual>
-        <time></time>
-        <range></range>
-        <components>None</components>
-        <duration></duration>
-        <classes>Fighter (Gunslinger)</classes>
-        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents.  The initial attack gains a +1 to the firearm's misfire score.  On a hit, the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment.  Only the initial attack can misfire.</text>
-        <text />
-        <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
-    </spell>
-    <spell>
-        <name>Violent Shot</name>
-        <level>1</level>
-        <ritual>NO</ritual>
-        <time></time>
-        <range></range>
-        <components>None</components>
-        <duration></duration>
-        <classes>Fighter (Gunslinger)</classes>
-        <text>When you make a fireman attack against a creature, you can expend one or more grit points to enhance the volatility of the attack.  For each grit point expended, the attack gains a +2 to the firearm's misfire score.  If the attack hits, you can roll one additional weapon damage per grit point spent when determining the damage.</text>
-        <text />
-        <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 3</text>
-    </spell>
-    <spell>
-        <name>Winging Shot</name>
-        <level>1</level>
-        <ritual>NO</ritual>
-        <time></time>
-        <range></range>
-        <components>None</components>
-        <duration></duration>
-        <classes>Fighter (Gunslinger)</classes>
-        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to topple a moving target.  On a hit, the creature suffers normal damage and must make a Strength saving throw or be knocked prone.</text>
-        <text />
-        <text>Source: Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
-    </spell>
+
+    <feat>
+        <name>Trick Shot: Bullying Shot</name>
+        <prerequisite>Fighter (Gunslinger)</prerequisite>
+        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent.
+
+On a hit, the creature suffers normal damage and must make a Constiution saving throw or suffer disadvantage on attacks until the end of your next turn.
+
+Source:	Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
+    </feat>
+    <feat>
+        <name>Trick Shot: Dazing Shot</name>
+        <prerequisite>Fighter (Gunslinger)</prerequisite>
+        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent.
+
+On a hit, the creature suffers normal damage and must make a Constiution saving throw or suffer disadvantage on attacks until the end of your next turn.
+
+Source:	Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
+    </feat>
+    <feat>
+        <name>Trick Shot: Deadeye Shot</name>
+        <prerequisite>Fighter (Gunslinger)</prerequisite>
+        <text>When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll.
+
+Source:	Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
+    </feat>
+    <feat>
+        <name>Trick Shot: Disarming Shot</name>
+        <prerequisite>Fighter (Gunslinger)</prerequisite>
+        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands.
+
+On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or drop 1 held object of your choice and have that object pushed 10 feet away from you.
+
+Source:	Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
+    </feat>
+    <feat>
+        <name>Trick Shot: Forceful Shot</name>
+        <prerequisite>Fighter (Gunslinger)</prerequisite>
+        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back.
+
+On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or be pushed 15 feet away from you.
+
+Source:	Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
+    </feat>
+    <feat>
+        <name>Trick Shot: Piercing Shot</name>
+        <prerequisite>Fighter (Gunslinger)</prerequisite>
+        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents.
+
+The initial attack gains a +1 to the firearm's misfire score. On a hit, the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment.
+
+Only the initial attack can misfire.
+
+Source:	Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
+    </feat>
+    <feat>
+        <name>Trick Shot: Violent Shot</name>
+        <prerequisite>Fighter (Gunslinger)</prerequisite>
+        <text>When you make a fireman attack against a creature, you can expend one or more grit points to enhance the volatility of the attack.
+
+For each grit point expended, the attack gains a +2 to the firearm's misfire score.
+
+If the attack hits, you can roll one additional weapon damage per grit point spent when determining the damage.
+
+Source:	Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
+    </feat>
+    <feat>
+        <name>Trick Shot: Winging Shot</name>
+        <prerequisite>Fighter (Gunslinger)</prerequisite>
+        <text>When you make a firearm attack against a creature, you can expend one grit point to attempt to topple a moving target.
+
+On a hit, the creature suffers normal damage and must make a Strength saving throw or be knocked prone.
+
+Source:	Matthew Mercer - Gunslinger Martial Archetype 1.2 p. 2</text>
+    </feat>
 </compendium>
