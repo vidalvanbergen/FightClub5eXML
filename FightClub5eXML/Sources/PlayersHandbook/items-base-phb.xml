@@ -8,6 +8,7 @@
     <value>0.05</value>
     <property></property>
     <text>Ammunition: You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</text>
+    <text />
     <text>Source: Player's Handbook p. 150</text>
   </item>
   <item>
@@ -17,6 +18,8 @@
     <weight>1</weight>
     <value>1.0</value>
     <property></property>
+    <text>Ammunition: You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</text>
+    <text />
     <text>Source: Player's Handbook p. 150</text>
   </item>
   <item>
@@ -29,6 +32,10 @@
     <dmg1>1d8</dmg1>
     <dmg2>1d10</dmg2>
     <dmgType>S</dmgType>
+    <text>Versatile: This weapon can be used with one or two hands. A damage value in parentheses appears with the property — the damage when the weapon is used with two hands to make a melee attack.</text>
+    <text />
+    <text>Proficiency: martial, battleaxe</text>
+    <text />
     <text>Source: Player's Handbook p. 149</text>
   </item>
   <item>
@@ -41,6 +48,16 @@
     <dmg1>1</dmg1>
     <dmgType>P</dmgType>
     <range>25/100</range>
+    <text>Ammunition. You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</text>
+    <text />
+    <text>If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see "Improvised Weapons"). A sling must be loaded to deal any damage when used in this way.</text>
+    <text />
+    <text>Loading: Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.</text>
+    <text />
+    <text>Range: A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.</text>
+    <text />
+    <text>Proficiency: martial, blowgun</text>
+    <text />
     <text>Source: Player's Handbook p. 149</text>
   </item>
   <item>
@@ -50,6 +67,7 @@
     <weight>0.02</weight>
     <value>0.02</value>
     <property></property>
+    <text>Ammunition: You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</text>
     <text>Source: Player's Handbook p. 150</text>
   </item>
   <item>
@@ -63,7 +81,7 @@
   </item>
   <item>
     <name>Breastplate</name>
-    <detail>Medium Armor</detail>
+    <detail>rare</detail>
     <type>MA</type>
     <weight>20</weight>
     <value>400.0</value>
@@ -816,8 +834,9 @@ Source: Tomb of Annihilation p. 32</text>
   </item>
   <item>
     <name>Arrow +1</name>
-    <detail>minor, Ammunition</detail>
+    <detail>uncommon</detail>
     <type>A</type>
+    <magic>YES</magic>
     <weight>0.05</weight>
     <property></property>
     <text>You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.
@@ -829,25 +848,31 @@ Source: Dungeon Master's Guide p. 150</text>
   </item>
   <item>
     <name>Arrows (20) +1</name>
-    <detail>minor, Ammunition</detail>
+    <detail>uncommon</detail>
     <type>A</type>
+    <magic>YES</magic>
     <weight>1</weight>
     <property></property>
     <text>You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.
 
 Found on: Magic Item Table B
 Source: Dungeon Master's Guide p. 150</text>
+    <modifier category="bonus">ranged attacks +1</modifier>
+    <modifier category="bonus">ranged damage +1</modifier>
   </item>
   <item>
     <name>Blowgun Needle +1</name>
-    <detail>minor, Ammunition</detail>
+    <detail>uncommon</detail>
     <type>A</type>
+    <magic>YES</magic>
     <weight>0.02</weight>
     <property></property>
     <text>You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.
 
 Found on: Magic Item Table B
 Source: Dungeon Master's Guide p. 150</text>
+    <modifier category="bonus">ranged attacks +1</modifier>
+    <modifier category="bonus">ranged damage +1</modifier>
   </item>
   <item>
     <name>Blowgun Needles (50) +1</name>
@@ -906,8 +931,9 @@ Source: Dungeon Master's Guide p. 150</text>
   </item>
   <item>
     <name>Breastplate +1</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -916,6 +942,7 @@ Source: Dungeon Master's Guide p. 150</text>
 You have a +1 bonus to AC while wearing this armor.
 
 Source: Dungeon Master's Guide p. 152</text>
+    <modifier category="bonus">ac +1</modifier>
   </item>
   <item>
     <name>Chain Mail +1</name>
@@ -1121,8 +1148,9 @@ Source: Dungeon Master's Guide p. 200</text>
   </item>
   <item>
     <name>Battleaxe +1</name>
-    <detail>major, martial Weapon, Melee Weapon</detail>
+    <detail>uncommon</detail>
     <type>M</type>
+    <magic>YES</magic>
     <weight>4</weight>
     <property>V,M</property>
     <dmg1>1d8</dmg1>
@@ -1130,13 +1158,20 @@ Source: Dungeon Master's Guide p. 200</text>
     <dmgType>S</dmgType>
     <text>You have a +1 bonus to attack and damage rolls made with this magic weapon.
 
+Versatile: This weapon can be used with one or two hands. A damage value in parentheses appears with the property — the damage when the weapon is used with two hands to make a melee attack.
+
+Proficiency: martial, battleaxe
+
 Found on: Magic Item Table F
 Source: Dungeon Master's Guide p. 213</text>
+    <modifier category="bonus">melee attacks +1</modifier>
+    <modifier category="bonus">melee damage +1</modifier>
   </item>
   <item>
     <name>Blowgun +1</name>
-    <detail>major, martial Weapon, Ranged Weapon</detail>
+    <detail>uncommon</detail>
     <type>R</type>
+    <magic>YES</magic>
     <weight>1</weight>
     <property>A,LD,M</property>
     <dmg1>1</dmg1>
@@ -1144,8 +1179,20 @@ Source: Dungeon Master's Guide p. 213</text>
     <range>25/100</range>
     <text>You have a +1 bonus to attack and damage rolls made with this magic weapon.
 
+Ammunition. You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+
+If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see "Improvised Weapons"). A sling must be loaded to deal any damage when used in this way.
+
+Loading: Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.
+
+Range: A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.
+
+Proficiency: martial, blowgun
+
 Found on: Magic Item Table F
 Source: Dungeon Master's Guide p. 213</text>
+    <modifier category="bonus">ranged attacks +1</modifier>
+    <modifier category="bonus">ranged damage +1</modifier>
   </item>
   <item>
     <name>Club +1</name>
@@ -1689,14 +1736,17 @@ Source: Dungeon Master's Guide p. 213</text>
   </item>
   <item>
     <name>Arrow +2</name>
-    <detail>minor, Ammunition</detail>
+    <detail>rare</detail>
     <type>A</type>
+    <magic>YES</magic>
     <weight>0.05</weight>
     <property></property>
     <text>You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.
 
 Found on: Magic Item Table C
 Source: Dungeon Master's Guide p. 150</text>
+    <modifier category="bonus">ranged attacks +2</modifier>
+    <modifier category="bonus">ranged damage +2</modifier>
   </item>
   <item>
     <name>Arrows (20) +2</name>
@@ -1708,28 +1758,36 @@ Source: Dungeon Master's Guide p. 150</text>
 
 Found on: Magic Item Table C
 Source: Dungeon Master's Guide p. 150</text>
+    <modifier category="bonus">ranged attacks +2</modifier>
+    <modifier category="bonus">ranged damage +2</modifier>
   </item>
   <item>
     <name>Blowgun Needle +2</name>
-    <detail>minor, Ammunition</detail>
+    <detail>rare</detail>
     <type>A</type>
+    <magic>YES</magic>
     <weight>0.02</weight>
     <property></property>
     <text>You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.
 
 Found on: Magic Item Table C
 Source: Dungeon Master's Guide p. 150</text>
+    <modifier category="bonus">ranged attacks +2</modifier>
+    <modifier category="bonus">ranged damage +2</modifier>
   </item>
   <item>
     <name>Blowgun Needles (50) +2</name>
-    <detail>minor, Ammunition</detail>
+    <detail>rare</detail>
     <type>A</type>
+    <magic>YES</magic>
     <weight>1</weight>
     <property></property>
     <text>You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.
 
 Found on: Magic Item Table C
 Source: Dungeon Master's Guide p. 150</text>
+    <modifier category="bonus">ranged attacks +2</modifier>
+    <modifier category="bonus">ranged damage +2</modifier>
   </item>
   <item>
     <name>Crossbow Bolt +2</name>
@@ -1777,8 +1835,9 @@ Source: Dungeon Master's Guide p. 150</text>
   </item>
   <item>
     <name>Breastplate +2</name>
-    <detail>major, Medium Armor</detail>
+    <detail>very rare</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -1787,6 +1846,7 @@ Source: Dungeon Master's Guide p. 150</text>
 You have a +2 bonus to AC while wearing this armor.
 
 Source: Dungeon Master's Guide p. 152</text>
+    <modifier category="bonus">ac +2</modifier>
   </item>
   <item>
     <name>Chain Mail +2</name>
@@ -1992,8 +2052,9 @@ Source: Dungeon Master's Guide p. 200</text>
   </item>
   <item>
     <name>Battleaxe +2</name>
-    <detail>major, martial Weapon, Melee Weapon</detail>
+    <detail>rare</detail>
     <type>M</type>
+    <magic>YES</magic>
     <weight>4</weight>
     <property>V,M</property>
     <dmg1>1d8</dmg1>
@@ -2001,13 +2062,20 @@ Source: Dungeon Master's Guide p. 200</text>
     <dmgType>S</dmgType>
     <text>You have a +2 bonus to attack and damage rolls made with this magic weapon.
 
+Versatile: This weapon can be used with one or two hands. A damage value in parentheses appears with the property — the damage when the weapon is used with two hands to make a melee attack.
+
+Proficiency: martial, battleaxe
+
 Found on: Magic Item Table G
 Source: Dungeon Master's Guide p. 213</text>
+    <modifier category="bonus">melee attacks +2</modifier>
+    <modifier category="bonus">melee damage +2</modifier>
   </item>
   <item>
     <name>Blowgun +2</name>
-    <detail>major, martial Weapon, Ranged Weapon</detail>
+    <detail>rare</detail>
     <type>R</type>
+    <magic>YES</magic>
     <weight>1</weight>
     <property>A,LD,M</property>
     <dmg1>1</dmg1>
@@ -2015,8 +2083,20 @@ Source: Dungeon Master's Guide p. 213</text>
     <range>25/100</range>
     <text>You have a +2 bonus to attack and damage rolls made with this magic weapon.
 
+Ammunition. You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+
+If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see "Improvised Weapons"). A sling must be loaded to deal any damage when used in this way.
+
+Loading: Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.
+
+Range: A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.
+
+Proficiency: martial, blowgun
+
 Found on: Magic Item Table G
 Source: Dungeon Master's Guide p. 213</text>
+    <modifier category="bonus">ranged attacks +2</modifier>
+    <modifier category="bonus">ranged damage +2</modifier>
   </item>
   <item>
     <name>Club +2</name>
@@ -2560,25 +2640,31 @@ Source: Dungeon Master's Guide p. 213</text>
   </item>
   <item>
     <name>Arrow +3</name>
-    <detail>minor, Ammunition</detail>
+    <detail>very rare</detail>
     <type>A</type>
+    <magic>YES</magic>
     <weight>0.05</weight>
     <property></property>
     <text>You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.
 
 Found on: Magic Item Table D
 Source: Dungeon Master's Guide p. 150</text>
+    <modifier category="bonus">ranged attacks +3</modifier>
+    <modifier category="bonus">ranged damage +3</modifier>
   </item>
   <item>
     <name>Arrows (20) +3</name>
-    <detail>minor, Ammunition</detail>
+    <detail>very rare</detail>
     <type>A</type>
+    <magic>YES</magic>
     <weight>1</weight>
     <property></property>
     <text>You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.
 
 Found on: Magic Item Table D
 Source: Dungeon Master's Guide p. 150</text>
+    <modifier category="bonus">ranged attacks +3</modifier>
+    <modifier category="bonus">ranged damage +3</modifier>
   </item>
   <item>
     <name>Blowgun Needle +3</name>
@@ -2648,8 +2734,9 @@ Source: Dungeon Master's Guide p. 150</text>
   </item>
   <item>
     <name>Breastplate +3</name>
-    <detail>major, Medium Armor</detail>
+    <detail>legendary</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -2658,6 +2745,7 @@ Source: Dungeon Master's Guide p. 150</text>
 You have a +3 bonus to AC while wearing this armor.
 
 Source: Dungeon Master's Guide p. 152</text>
+    <modifier category="bonus">ac +3</modifier>
   </item>
   <item>
     <name>Chain Mail +3</name>
@@ -2863,8 +2951,9 @@ Source: Dungeon Master's Guide p. 200</text>
   </item>
   <item>
     <name>Battleaxe +3</name>
-    <detail>major, martial Weapon, Melee Weapon</detail>
+    <detail>very rare</detail>
     <type>M</type>
+    <magic>YES</magic>
     <weight>4</weight>
     <property>V,M</property>
     <dmg1>1d8</dmg1>
@@ -2872,13 +2961,20 @@ Source: Dungeon Master's Guide p. 200</text>
     <dmgType>S</dmgType>
     <text>You have a +3 bonus to attack and damage rolls made with this magic weapon.
 
+Versatile: This weapon can be used with one or two hands. A damage value in parentheses appears with the property — the damage when the weapon is used with two hands to make a melee attack.
+
+Proficiency: martial, battleaxe
+
 Found on: Magic Item Table H
 Source: Dungeon Master's Guide p. 213</text>
+    <modifier category="bonus">melee attacks +3</modifier>
+    <modifier category="bonus">melee damage +3</modifier>
   </item>
   <item>
     <name>Blowgun +3</name>
-    <detail>major, martial Weapon, Ranged Weapon</detail>
+    <detail>very rare</detail>
     <type>R</type>
+    <magic>YES</magic>
     <weight>1</weight>
     <property>A,LD,M</property>
     <dmg1>1</dmg1>
@@ -2886,8 +2982,20 @@ Source: Dungeon Master's Guide p. 213</text>
     <range>25/100</range>
     <text>You have a +3 bonus to attack and damage rolls made with this magic weapon.
 
+Ammunition. You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+
+If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see "Improvised Weapons"). A sling must be loaded to deal any damage when used in this way.
+
+Loading: Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.
+
+Range: A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.
+
+Proficiency: martial, blowgun
+
 Found on: Magic Item Table H
 Source: Dungeon Master's Guide p. 213</text>
+    <modifier category="bonus">ranged attacks +3</modifier>
+    <modifier category="bonus">ranged damage +3</modifier>
   </item>
   <item>
     <name>Club +3</name>
@@ -4677,8 +4785,9 @@ Source:	Eberron: Rising from the Last War p. 276,
   </item>
   <item>
     <name>Breastplate of Acid Resistance</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare (requires attunement)</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -4888,8 +4997,9 @@ Source: Dungeon Master's Guide p. 152</text>
   </item>
   <item>
     <name>Breastplate of Cold Resistance</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare (requires attunement)</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -5099,8 +5209,9 @@ Source: Dungeon Master's Guide p. 152</text>
   </item>
   <item>
     <name>Breastplate of Fire Resistance</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare (requires attunement)</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -5310,8 +5421,9 @@ Source: Dungeon Master's Guide p. 152</text>
   </item>
   <item>
     <name>Breastplate of Force Resistance</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare (requires attunement)</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -5521,8 +5633,9 @@ Source: Dungeon Master's Guide p. 152</text>
   </item>
   <item>
     <name>Breastplate of Gleaming</name>
-    <detail>minor, Medium Armor</detail>
+    <detail>common</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -5566,8 +5679,9 @@ Source: Xanathar's Guide to Everything p. 136</text>
   </item>
   <item>
     <name>Half Plate Armor of Gleaming</name>
-    <detail>minor, Medium Armor</detail>
+    <detail>common</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>40</weight>
     <property></property>
     <ac>15</ac>
@@ -5582,8 +5696,9 @@ Source: Xanathar's Guide to Everything p. 136</text>
   </item>
   <item>
     <name>Hide Armor of Gleaming</name>
-    <detail>minor, Medium Armor</detail>
+    <detail>common</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>12</weight>
     <property></property>
     <ac>12</ac>
@@ -5595,8 +5710,9 @@ Source: Xanathar's Guide to Everything p. 136</text>
   </item>
   <item>
     <name>Leather Armor of Gleaming</name>
-    <detail>minor, Light Armor</detail>
+    <detail>common</detail>
     <type>LA</type>
+    <magic>YES</magic>
     <weight>10</weight>
     <property></property>
     <ac>11</ac>
@@ -5608,8 +5724,9 @@ Source: Xanathar's Guide to Everything p. 136</text>
   </item>
   <item>
     <name>Padded Armor of Gleaming</name>
-    <detail>minor, Light Armor</detail>
+    <detail>common</detail>
     <type>LA</type>
+    <magic>YES</magic>
     <weight>8</weight>
     <property></property>
     <ac>11</ac>
@@ -5624,8 +5741,9 @@ Source: Xanathar's Guide to Everything p. 136</text>
   </item>
   <item>
     <name>Plate Armor of Gleaming</name>
-    <detail>minor, Heavy Armor</detail>
+    <detail>common</detail>
     <type>HA</type>
+    <magic>YES</magic>
     <weight>65</weight>
     <property></property>
     <ac>18</ac>
@@ -5675,8 +5793,9 @@ Source: Xanathar's Guide to Everything p. 136</text>
   </item>
   <item>
     <name>Spiked Armor of Gleaming</name>
-    <detail>minor, Medium Armor</detail>
+    <detail>common</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>45</weight>
     <property></property>
     <ac>14</ac>
@@ -5691,8 +5810,9 @@ Source: Xanathar's Guide to Everything p. 136</text>
   </item>
   <item>
     <name>Splint Armor of Gleaming</name>
-    <detail>minor, Heavy Armor</detail>
+    <detail>common</detail>
     <type>HA</type>
+    <magic>YES</magic>
     <weight>60</weight>
     <property></property>
     <ac>17</ac>
@@ -5710,8 +5830,9 @@ Source: Xanathar's Guide to Everything p. 136</text>
   </item>
   <item>
     <name>Studded Leather Armor of Gleaming</name>
-    <detail>minor, Light Armor</detail>
+    <detail>common</detail>
     <type>LA</type>
+    <magic>YES</magic>
     <weight>13</weight>
     <property></property>
     <ac>12</ac>
@@ -5723,8 +5844,9 @@ Source: Xanathar's Guide to Everything p. 136</text>
   </item>
   <item>
     <name>Breastplate of Lightning Resistance</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare (requires attunement)</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -5934,8 +6056,9 @@ Source: Dungeon Master's Guide p. 152</text>
   </item>
   <item>
     <name>Breastplate of Necrotic Resistance</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare (requires attunement)</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -6145,8 +6268,9 @@ Source: Dungeon Master's Guide p. 152</text>
   </item>
   <item>
     <name>Breastplate of Poison Resistance</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare (requires attunement)</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -6356,8 +6480,9 @@ Source: Dungeon Master's Guide p. 152</text>
   </item>
   <item>
     <name>Breastplate of Psychic Resistance</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare (requires attunement)</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -6567,8 +6692,9 @@ Source: Dungeon Master's Guide p. 152</text>
   </item>
   <item>
     <name>Breastplate of Radiant Resistance</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare (requires attunement)</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -6778,8 +6904,9 @@ Source: Dungeon Master's Guide p. 152</text>
   </item>
   <item>
     <name>Breastplate of Thunder Resistance</name>
-    <detail>major, Medium Armor</detail>
+    <detail>rare (requires attunement)</detail>
     <type>MA</type>
+    <magic>YES</magic>
     <weight>20</weight>
     <property></property>
     <ac>14</ac>
@@ -7017,8 +7144,9 @@ Source: Dungeon Master's Guide p. 152</text>
   </item>
   <item>
     <name>Blowgun Needle of Slaying</name>
-    <detail>minor, Ammunition</detail>
+    <detail>very rare</detail>
     <type>A</type>
+    <magic>YES</magic>
     <weight>0.02</weight>
     <property></property>
     <text>A blowgun needle of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both blowgun needles of dragon slaying and blowgun needles of blue dragon slaying. If a creature belonging to the type, race, or group associated with a blowgun needle of slaying takes damage from the blowgun needle, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.
@@ -7291,8 +7419,9 @@ Source: Player's Handbook p. 157</text>
   </item>
   <item>
     <name>Berserker Battleaxe</name>
-    <detail>major, Cursed item, martial Weapon, Melee Weapon</detail>
+    <detail>rare, cursed (requires attunement)</detail>
     <type>M</type>
+    <magic>YES</magic>
     <weight>4</weight>
     <property>V,M</property>
     <dmg1>1d8</dmg1>
@@ -7304,13 +7433,20 @@ Curse: This axe is cursed, and becoming attuned to it extends the curse to you. 
 
 Whenever a hostile creature damages you while the axe is in your possession, you must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, you must use your action each round to attack the creature nearest to you with the axe. If you can make extra attacks as part of the Attack action, you use those extra attacks, moving to attack the next nearest creature after you fell your current target. If you have multiple possible targets, you attack one at random. You are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear.
 
+Versatile: This weapon can be used with one or two hands. A damage value in parentheses appears with the property — the damage when the weapon is used with two hands to make a melee attack.
+
+Proficiency: martial, battleaxe
+
 Found on: Magic Item Table G
 Source: Dungeon Master's Guide p. 155</text>
+    <modifier category="bonus">melee attacks +1</modifier>
+    <modifier category="bonus">melee damage +1</modifier>
   </item>
   <item>
     <name>Berserker Greataxe</name>
-    <detail>major, Cursed item, martial Weapon, Melee Weapon</detail>
+    <detail>rare, cursed (requires attunement)</detail>
     <type>M</type>
+    <magic>YES</magic>
     <weight>7</weight>
     <property>H,2H,M</property>
     <dmg1>1d12</dmg1>
@@ -7321,13 +7457,22 @@ Curse: This axe is cursed, and becoming attuned to it extends the curse to you. 
 
 Whenever a hostile creature damages you while the axe is in your possession, you must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, you must use your action each round to attack the creature nearest to you with the axe. If you can make extra attacks as part of the Attack action, you use those extra attacks, moving to attack the next nearest creature after you fell your current target. If you have multiple possible targets, you attack one at random. You are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear.
 
+Heavy: Creatures that are Small or Tiny have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small or Tiny creature to use effectively.
+
+Two-Handed: This weapon requires two hands when you attack with it.
+
+Proficiency: martial, greataxe
+
 Found on: Magic Item Table G
 Source: Dungeon Master's Guide p. 155</text>
+    <modifier category="bonus">melee attacks +1</modifier>
+    <modifier category="bonus">melee damage +1</modifier>
   </item>
   <item>
     <name>Berserker Handaxe</name>
-    <detail>major, Cursed item, simple Weapon, Melee Weapon</detail>
+    <detail>rare, cursed (requires attunement)</detail>
     <type>M</type>
+    <magic>YES</magic>
     <weight>2</weight>
     <property>L,T</property>
     <dmg1>1d6</dmg1>
@@ -7339,8 +7484,18 @@ Curse: This axe is cursed, and becoming attuned to it extends the curse to you. 
 
 Whenever a hostile creature damages you while the axe is in your possession, you must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, you must use your action each round to attack the creature nearest to you with the axe. If you can make extra attacks as part of the Attack action, you use those extra attacks, moving to attack the next nearest creature after you fell your current target. If you have multiple possible targets, you attack one at random. You are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear.
 
+Light: A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.
+
+Range: A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.
+
+Thrown: If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon. For example, if you throw a handaxe, you use your Strength, but if you throw a dagger, you can use either your Strength or your Dexterity, since the dagger has the finesse property.
+
+Proficiency: simple, handaxe
+
 Found on: Magic Item Table G
 Source: Dungeon Master's Guide p. 155</text>
+    <modifier category="bonus">weapon attacks +1</modifier>
+    <modifier category="bonus">weapon damage +1</modifier>
   </item>
   <item>
     <name>Double-Bladed Scimitar of the Medusa</name>
@@ -15636,8 +15791,9 @@ Source: Xanathar's Guide to Everything p. 139</text>
   </item>
   <item>
     <name>Battleaxe of Certain Death</name>
-    <detail>martial Weapon, Melee Weapon</detail>
+    <detail>rare</detail>
     <type>M</type>
+    <magic>YES</magic>
     <weight>4</weight>
     <property>V,M</property>
     <dmg1>1d8</dmg1>
@@ -15649,8 +15805,9 @@ Source: Explorer's Guide to Wildemount p. 270</text>
   </item>
   <item>
     <name>Blowgun of Certain Death</name>
-    <detail>martial Weapon, Ranged Weapon</detail>
+    <detail>rare</detail>
     <type>R</type>
+    <magic>YES</magic>
     <weight>1</weight>
     <property>A,LD,M</property>
     <dmg1>1</dmg1>
@@ -16151,8 +16308,9 @@ Source: Explorer's Guide to Wildemount p. 270</text>
   </item>
   <item>
     <name>Battleaxe of Warning</name>
-    <detail>major, martial Weapon, Melee Weapon</detail>
+    <detail>uncommon (requires attunement)</detail>
     <type>M</type>
+    <magic>YES</magic>
     <weight>4</weight>
     <property>V,M</property>
     <dmg1>1d8</dmg1>
@@ -16160,19 +16318,34 @@ Source: Explorer's Guide to Wildemount p. 270</text>
     <dmgType>S</dmgType>
     <text>This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be surprised, except when incapacitated by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins.
 
+Versatile: This weapon can be used with one or two hands. A damage value in parentheses appears with the property — the damage when the weapon is used with two hands to make a melee attack.
+
+Proficiency: martial, battleaxe
+
 Found on: Magic Item Table F
 Source: Dungeon Master's Guide p. 213</text>
   </item>
   <item>
     <name>Blowgun of Warning</name>
-    <detail>major, martial Weapon, Ranged Weapon</detail>
+    <detail>uncommon (requires attunement)</detail>
     <type>R</type>
+    <magic>YES</magic>
     <weight>1</weight>
     <property>A,LD,M</property>
     <dmg1>1</dmg1>
     <dmgType>P</dmgType>
     <range>25/100</range>
     <text>This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be surprised, except when incapacitated by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins.
+
+Ammunition. You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+
+If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see "Improvised Weapons"). A sling must be loaded to deal any damage when used in this way.
+
+Loading: Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.
+
+Range: A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.
+
+Proficiency: martial, blowgun
 
 Found on: Magic Item Table F
 Source: Dungeon Master's Guide p. 213</text>

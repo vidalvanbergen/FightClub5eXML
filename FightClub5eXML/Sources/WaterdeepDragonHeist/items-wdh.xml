@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <compendium version="5" auto_indent="NO">
-    <item>
-      <name>Adamantine Bar</name>
+  <item>
+    <name>Adamantine Bar</name>
     <detail>Trade Good</detail>
     <type>G</type>
     <weight>10</weight>
     <value>1000.0</value>
     <property></property>
     <text>Source: Waterdeep: Dragon Heist p. 90</text>
-    </item>
+  </item>
   <item>
-      <name>Adjustable Stilts</name>
+    <name>Adjustable Stilts</name>
     <detail>Other</detail>
     <type>G</type>
     <weight></weight>
@@ -18,11 +18,12 @@
     <text>The stilts take 1 minute to put on or remove. They increase the height of any humanoid wearing them by 2 to 5 feet. Each stilt weighs 8 pounds and is 1 foot long when fully collapsed.
 
 Source: Waterdeep: Dragon Heist p. 47</text>
-    </item>
+  </item>
   <item>
-      <name>Azuredge</name>
-    <detail>Melee Weapon</detail>
+    <name>Azuredge</name>
+    <detail>legendary (requires attunement)</detail>
     <type>M</type>
+    <magic>YES</magic>
     <weight>4</weight>
     <property>V</property>
     <dmg1>1d8</dmg1>
@@ -49,10 +50,12 @@ Personality: Azuredge is sworn to protect Waterdeep, and it desires to be wielde
 If someone tries to use Azuredge against its will, the axe can become ten times heavier than normal, and can magically adhere to any Medium or larger object or surface it comes into contact with. Once it does so, the axe can't be wielded. Nothing short of a wish spell can separate the axe from the item or surface to which it is adhered without destroying one or the other, though the axe can choose to end the effect at any time.
 
 Source: Waterdeep: Dragon Heist p. 189</text>
+    <modifier category="bonus">melee attacks +3</modifier>
+    <modifier category="bonus">melee damage +3</modifier>
     <roll>2d6</roll>
-    </item>
+  </item>
   <item>
-      <name>Backpack Parachute</name>
+    <name>Backpack Parachute</name>
     <detail>Other</detail>
     <type>G</type>
     <weight></weight>
@@ -60,10 +63,10 @@ Source: Waterdeep: Dragon Heist p. 189</text>
     <text>A humanoid wearing this piece of gear can deploy the parachute as a reaction while falling, or as an action otherwise. The parachute requires at least a 10-foot cube of unoccupied space in which to deploy, and it doesn't open fast enough to slow a fall of less than 60 feet. If it has sufficient time and space to deploy properly, the parachute allows its wearer to land without taking falling damage. Once it has been used, the parachute takes 10 minutes to repack.
 
 Source: Waterdeep: Dragon Heist p. 47</text>
-    </item>
+  </item>
   <item>
-      <name>Badge of the Watch</name>
-    <detail>Wondrous item</detail>
+    <name>Badge of the Watch</name>
+    <detail>rare (requires attunement from someone designated by the Open Lord of Waterdeep)</detail>
     <type>W</type>
     <magic>YES</magic>
     <weight></weight>
@@ -77,9 +80,10 @@ If the badge is more than 5 feet away from you for more than 1 minute, it vanish
 As an action, the Open Lord can touch the badge and end your attunement to it.
 
 Source: Waterdeep: Dragon Heist p. 189</text>
-    </item>
+    <modifier category="bonus">ac +2</modifier>
+  </item>
   <item>
-      <name>Barking Box</name>
+    <name>Barking Box</name>
     <detail>Other</detail>
     <type>G</type>
     <weight></weight>
@@ -87,11 +91,12 @@ Source: Waterdeep: Dragon Heist p. 189</text>
     <text>This metal cube, 6 inches on a side, has a crank on top. Using an action to wind the crank activates the box for 8 hours. While activated, the box barks whenever it detects vibrations within 15 feet of it, as long as the box and the source of the vibrations are in contact with the same ground or substance. A switch on one side of the box sets the device to emit either a small dog's bark or a large dog's bark.
 
 Source: Waterdeep: Dragon Heist p. 47</text>
-    </item>
+  </item>
   <item>
-      <name>Blackstaff</name>
-    <detail>Staff</detail>
+    <name>Blackstaff</name>
+    <detail>legendary (requires attunement by the Blackstaff heir, who must be a wizard)</detail>
     <type>ST</type>
+    <magic>YES</magic>
     <weight>4</weight>
     <property>V</property>
     <dmg1>1d6</dmg1>
@@ -115,6 +120,7 @@ Distance from Origin — Effect
 10 ft. away or closer — 8 × the number of charges in the staff
 11 to 20 ft. away — 6 × the number of charges in the staff
 21 to 30 ft. away — 4 × the number of charges in the staff
+
 Animate Walking Statues: You can expend 1 or more of the staff's charges as an action to animate or deactivate one or more of the walking statue of Waterdeep. You must be in the city to use this property, and you can animate or deactivate one statue for each charge expended. An animated statue obeys the telepathic commands of Khelben Arunsun's spirit, which is trapped inside the staff (see "Personality" below). A walking statue becomes inanimate if deactivated or if the staff is broken.
 
 Dispel Magic: You can expend 1 of the staff's charges as a bonus action to cast dispel magic on a creature, an object, or a magical effect that you touch with the tip of the staff. If the target is an unwilling creature or an object in the possession of such a creature, you must hit the creature with a melee attack using the Blackstaff before you can expend the charge to cast the spell.
@@ -130,16 +136,20 @@ Personality: The staff has the spirits of all previous Blackstaffs trapped withi
 In the event that the holder of the office of the Blackstaff no longer serves the staff's wishes, the staff ceases to function until it finds a worthy inheritor—someone whose loyalty to Waterdeep is beyond reproach.
 
 Spirit Trap: When the Blackstaff dies, the spirit of that individual becomes trapped in the staff along with the spirits of the previous Blackstaffs. (A Blackstaff whose spirit is trapped in the staff can't be raised from the dead.)
+
 Destroying the staff would release the spirits trapped inside it, but in that event, Khelben's spirit can lodge itself inside any one piece of the staff that remains. The piece containing Khelben's spirit has the staff's Sentience property but none of its other properties. As long as this piece of the staff exists, Khelben's spirit can make the staff whole again whenever he wishes. When the staff is remade, the spirits of the previous Blackstaffs become trapped inside it again.
 
 Source: Waterdeep: Dragon Heist p. 190</text>
+    <modifier category="bonus">ac +2</modifier>
+    <modifier category="bonus">saving throws +2</modifier>
+    <modifier category="bonus">spell attack +2</modifier>
     <roll>2d8+4</roll>
     <roll>1d8+2</roll>
     <roll>1d6</roll>
-    </item>
+  </item>
   <item>
-      <name>Bracer of Flying Daggers</name>
-    <detail>Wondrous item</detail>
+    <name>Bracers of Flying Daggers</name>
+    <detail>rare (requires attunement)</detail>
     <type>W</type>
     <magic>YES</magic>
     <weight></weight>
@@ -147,9 +157,9 @@ Source: Waterdeep: Dragon Heist p. 190</text>
     <text>This armband appears to have thin dagger strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.
 
 Source: Waterdeep: Dragon Heist p. 190</text>
-    </item>
+  </item>
   <item>
-      <name>Charred Wand of Magic Missiles</name>
+    <name>Charred Wand of Magic Missiles</name>
     <detail>major</detail>
     <type>WD</type>
     <weight>1</weight>
@@ -163,9 +173,10 @@ Each time you expend a charge from this wand, there is a 50 percent chance that 
 Found on: Magic Item Table F
 Source: Waterdeep: Dragon Heist p. 77</text>
     <roll>1d6+1</roll>
-    </item>
+    <roll>1d20</roll>
+  </item>
   <item>
-      <name>Dragon</name>
+    <name>Dragon</name>
     <detail></detail>
     <type>$</type>
     <weight></weight>
@@ -173,9 +184,9 @@ Source: Waterdeep: Dragon Heist p. 77</text>
     <property></property>
     <text>Gold coin, half again as large as a nib (1 dragon = 100 nib)
 Source: Waterdeep: Dragon Heist p. 169</text>
-    </item>
+  </item>
   <item>
-      <name>Dragonstaff of Ahghairon</name>
+    <name>Dragonstaff of Ahghairon</name>
     <detail>Staff</detail>
     <type>ST</type>
     <weight>4</weight>
@@ -191,9 +202,9 @@ The staff has 10 charges. While holding it, you can expend 1 charge as an action
 
 Source: Waterdeep: Dragon Heist p. 191</text>
     <roll>1d10</roll>
-    </item>
+  </item>
   <item>
-      <name>Feather of Diatryma Summoning</name>
+    <name>Feather of Diatryma Summoning</name>
     <detail>Wondrous item</detail>
     <type>W</type>
     <magic>YES</magic>
@@ -206,9 +217,9 @@ When the diatryma reverts to feather form, the magic of the feather can't be use
 The diatryma uses the statistics of an axe beak, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.
 
 Source: Waterdeep: Dragon Heist p. 191</text>
-    </item>
+  </item>
   <item>
-      <name>Harbor Moon</name>
+    <name>Harbor Moon</name>
     <detail></detail>
     <type>$</type>
     <weight></weight>
@@ -216,9 +227,9 @@ Source: Waterdeep: Dragon Heist p. 191</text>
     <property></property>
     <text>Platinum crescent inset with electrum, about three inches long with a hole large enough for a nib to fit in (1 harbor moon = 5,000 nib)
 Source: Waterdeep: Dragon Heist p. 169</text>
-    </item>
+  </item>
   <item>
-      <name>Knave's Eye Patch</name>
+    <name>Knave's Eye Patch</name>
     <detail>Wondrous item</detail>
     <type>W</type>
     <magic>YES</magic>
@@ -231,9 +242,9 @@ Source: Waterdeep: Dragon Heist p. 169</text>
 	• You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.
 
 Source: Waterdeep: Dragon Heist p. 191</text>
-    </item>
+  </item>
   <item>
-      <name>Lord's Ensemble</name>
+    <name>Lord's Ensemble</name>
     <detail>Wondrous item</detail>
     <type>W</type>
     <magic>YES</magic>
@@ -248,9 +259,9 @@ Lord's Amulet: This amulet bears the crest of Waterdeep. It functions as an amul
 Lord's Robe: This elegant robe functions as a ring of free action, and it creates the illusion that you have a nondescript, androgynous humanoid build and stand 6 feet tall.
 
 Source: Waterdeep: Dragon Heist p. 191</text>
-    </item>
+  </item>
   <item>
-      <name>Matchless Pipe</name>
+    <name>Matchless Pipe</name>
     <detail>Other</detail>
     <type>G</type>
     <weight></weight>
@@ -258,9 +269,9 @@ Source: Waterdeep: Dragon Heist p. 191</text>
     <text>A switch made of flint is built into the bowl of this fine wooden smoking pipe. With a few flicks of the switch, the pipe lights itself.
 
 Source: Waterdeep: Dragon Heist p. 47</text>
-    </item>
+  </item>
   <item>
-      <name>Nib</name>
+    <name>Nib</name>
     <detail></detail>
     <type>$</type>
     <weight></weight>
@@ -268,9 +279,9 @@ Source: Waterdeep: Dragon Heist p. 47</text>
     <property></property>
     <text>Copper coin about the size of a thumbnail (1 nib = 1 common copper coin)
 Source: Waterdeep: Dragon Heist p. 169</text>
-    </item>
+  </item>
   <item>
-      <name>Nimblewright Detector</name>
+    <name>Nimblewright Detector</name>
     <detail>Other</detail>
     <type>G</type>
     <weight></weight>
@@ -278,9 +289,9 @@ Source: Waterdeep: Dragon Heist p. 169</text>
     <text>To activate the nimblewright detector, a character must hold down its trigger. When the activated device comes within 500 feet of a nimblewright other than Nim, the umbrella begins to spin, whir, and click. The spinning, whirring, and clicking accelerates as the distance to the target lessens, reaching maximum velocity and volume when a nimblewright other than Nim is within 30 feet of the device.
 
 Source: Waterdeep: Dragon Heist p. 47</text>
-    </item>
+  </item>
   <item>
-      <name>Oversized Longbow</name>
+    <name>Oversized Longbow</name>
     <detail>Ranged Weapon</detail>
     <type>R</type>
     <weight>2</weight>
@@ -292,9 +303,9 @@ Source: Waterdeep: Dragon Heist p. 47</text>
 
 Source: Waterdeep: Dragon Heist p. 201</text>
     <roll>2d6</roll>
-    </item>
+  </item>
   <item>
-      <name>Paper Bird</name>
+    <name>Paper Bird</name>
     <detail>Wondrous item</detail>
     <type>W</type>
     <magic>YES</magic>
@@ -311,9 +322,9 @@ Paper birds usually come in small, flat boxes containing 1d6 + 3 sheets of the p
 Source:	Waterdeep: Dragon Heist p. 191,
 		Infernal Machine Rebuild p. 94</text>
     <roll>1d6+3</roll>
-    </item>
+  </item>
   <item>
-      <name>Ring of Truth Telling</name>
+    <name>Ring of Truth Telling</name>
     <detail></detail>
     <type>RG</type>
     <weight></weight>
@@ -321,9 +332,9 @@ Source:	Waterdeep: Dragon Heist p. 191,
     <text>While wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you.
 
 Source: Waterdeep: Dragon Heist p. 192</text>
-    </item>
+  </item>
   <item>
-      <name>Shard</name>
+    <name>Shard</name>
     <detail></detail>
     <type>$</type>
     <weight></weight>
@@ -331,9 +342,9 @@ Source: Waterdeep: Dragon Heist p. 192</text>
     <property></property>
     <text>Silver coin, slightly smaller than the nib (1 shard = 10 nib)
 Source: Waterdeep: Dragon Heist p. 169</text>
-    </item>
+  </item>
   <item>
-      <name>Smokepowder</name>
+    <name>Smokepowder</name>
     <detail>Wondrous item</detail>
     <type>W</type>
     <magic>YES</magic>
@@ -348,9 +359,9 @@ Casting dispel magic on smokepowder renders it permanently inert.
 Source: Waterdeep: Dragon Heist p. 192</text>
     <roll>1d6</roll>
     <roll>9d6</roll>
-    </item>
+  </item>
   <item>
-      <name>Stone of Golorr</name>
+    <name>Stone of Golorr</name>
     <detail>Wondrous item</detail>
     <type>W</type>
     <magic>YES</magic>
@@ -381,9 +392,9 @@ Destroying the Stone: While in stone form, the aboleth isn't a creature and isn'
 
 Source: Waterdeep: Dragon Heist p. 192</text>
     <roll>1d3</roll>
-    </item>
+  </item>
   <item>
-      <name>Sun</name>
+    <name>Sun</name>
     <detail></detail>
     <type>$</type>
     <weight></weight>
@@ -391,9 +402,9 @@ Source: Waterdeep: Dragon Heist p. 192</text>
     <property></property>
     <text>Platinum coin, twice as large as a nib (1 sun = 1,000 nib)
 Source: Waterdeep: Dragon Heist p. 169</text>
-    </item>
+  </item>
   <item>
-      <name>Taol</name>
+    <name>Taol</name>
     <detail></detail>
     <type>$</type>
     <weight></weight>
@@ -401,9 +412,9 @@ Source: Waterdeep: Dragon Heist p. 169</text>
     <property></property>
     <text>Brass coin, about two inches square with a hold large enough for a nib to fit in (1 taol = 200 nib)
 Source: Waterdeep: Dragon Heist p. 169</text>
-    </item>
+  </item>
   <item>
-      <name>Teleporter Ring</name>
+    <name>Teleporter Ring</name>
     <detail></detail>
     <type>RG</type>
     <weight></weight>
@@ -411,5 +422,5 @@ Source: Waterdeep: Dragon Heist p. 169</text>
     <text>As an action, a creature wearing a teleporter ring can activate the teleportation circle either in area K22 or area E1, teleporting itself and up to six other willing creatures from one circle to the other.
 
 Source: Waterdeep: Dragon Heist p. 157</text>
-    </item>
-  </compendium>
+  </item>
+</compendium>
