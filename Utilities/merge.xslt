@@ -77,7 +77,7 @@
                     <xsl:if test="level">
                         <spell>
                             <xsl:copy-of select="name" />
-                            <!-- <count_dupes><xsl:value-of select="count($spells[name = current()/name])"/></count_dupes> -->
+                            <!-- <count_dupes><xsl:value-of select="count($spells[name = current()/name])"/ /> -->
                             
                             <xsl:copy-of select="level" />
                             <xsl:copy-of select="school" />
