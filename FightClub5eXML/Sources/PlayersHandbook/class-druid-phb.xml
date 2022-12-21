@@ -170,13 +170,29 @@
     <autolevel level="2">
       <feature optional="YES">
         <name>Circle of the Land: Bonus Cantrip</name>
-        <text>You learn one additional druid cantrip of your choice.</text>
+        <text>When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice. This cantrip doesn't count against the number of druid cantrips you know.</text>
         <text/>
         <text>Source:	Player's Handbook p. 68</text>
       </feature>
     </autolevel>
 
     <autolevel level="2">
+      <feature optional="YES">
+        <name>Circle of the Land: Natural Recovery</name>
+        <text>Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest.</text>
+        <text/>
+        <text>For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots.</text>
+        <text/>
+        <text>Source:	Player's Handbook p. 68</text>
+      </feature>
+      <counter>
+        <name>Natural Recovery</name>
+        <value>1</value>
+        <reset>L</reset>
+      </counter>
+    </autolevel>
+
+    <!--autolevel level="2">
       <feature optional="YES">
         <name>Circle of the Land: Circle Spells</name>
         <text>Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid. Choose that land - arctic, coast, desert, forest, grassland, mountain, swamp, or Underdark - and consult the associated list of spells.</text>
@@ -241,23 +257,7 @@
         <text/>
         <text>Source:	Player's Handbook p. 68</text>
       </feature>
-    </autolevel>
-
-    <autolevel level="2">
-      <feature optional="YES">
-        <name>Circle of the Land: Natural Recovery</name>
-        <text>Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest.</text>
-        <text/>
-        <text>For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots.</text>
-        <text/>
-        <text>Source:	Player's Handbook p. 68</text>
-      </feature>
-      <counter>
-        <name>Natural Recovery</name>
-        <value>1</value>
-        <reset>L</reset>
-      </counter>
-    </autolevel>
+    </autolevel-->
 
     <autolevel level="2">
       <feature optional="YES">
@@ -303,6 +303,105 @@
       </feature>
     </autolevel>
 
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Circle of the Land: Circle Spells</name>
+        <text>Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid. Choose that land — arctic, coast, desert, forest, grassland, mountain, swamp, or Underdark — and consult the associated list of spells.
+
+Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.
+
+Source:	Player's Handbook p. 68</text>
+      </feature>
+
+      <feature optional="YES">
+        <name>Circle of the Land: Arctic</name>
+        <text>At each indicated level, add the listed spells to your druid spell list. These spells are always prepared and don't count against the number of spells you prepare each day.
+
+3rd — hold person, spike growth
+5th — sleet storm, slow
+7th — freedom of movement, ice storm
+9th — commune with nature, cone of cold
+
+Source:	Player's Handbook p. 68</text>
+      </feature>
+      <feature optional="YES">
+        <name>Circle of the Land: Coast</name>
+        <text>At each indicated level, add the listed spells to your druid spell list. These spells are always prepared and don't count against the number of spells you prepare each day.
+
+3rd— mirror image, misty step
+5th — water breathing, water walk
+7th — control water, freedom of movement
+9th — conjure elemental, scrying
+
+Source:	Player's Handbook p. 68</text>
+      </feature>
+      <feature optional="YES">
+        <name>Circle of the Land: Desert</name>
+        <text>At each indicated level, add the listed spells to your druid spell list. These spells are always prepared and don't count against the number of spells you prepare each day.
+
+3rd — blur, silence
+5th — create food and water, protection from energy
+7th — blight, hallucinatory terrain
+9th — insect plague, wall of stone
+
+Source:	Player's Handbook p. 68</text>
+      </feature>
+      <feature optional="YES">
+        <name>Circle of the Land: Forest</name>
+        <text>At each indicated level, add the listed spells to your druid spell list. These spells are always prepared and don't count against the number of spells you prepare each day.
+
+3rd — barkskin, spider climb
+5th — call lightning, plant growth
+7th — divination, freedom of movement
+9th — commune with nature, tree stride
+
+Source:	Player's Handbook p. 68</text>
+      </feature>
+      <feature optional="YES">
+        <name>Circle of the Land: Grassland</name>
+        <text>At each indicated level, add the listed spells to your druid spell list. These spells are always prepared and don't count against the number of spells you prepare each day.
+
+3rd — invisibility, pass without trace
+5th — daylight, haste
+7th — divination, freedom of movement
+9th — dream, insect plague
+
+Source:	Player's Handbook p. 68</text>
+      </feature>
+      <feature optional="YES">
+        <name>Circle of the Land: Mountain</name>
+        <text>At each indicated level, add the listed spells to your druid spell list. These spells are always prepared and don't count against the number of spells you prepare each day.
+
+3rd — spider climb, spike growth
+5th — lightning bolt, meld into stone
+7th — stone shape, stoneskin
+9th — passwall, wall of stone
+
+Source:	Player's Handbook p. 68</text>
+      </feature>
+      <feature optional="YES">
+        <name>Circle of the Land: Swamp</name>
+        <text>At each indicated level, add the listed spells to your druid spell list. These spells are always prepared and don't count against the number of spells you prepare each day.
+
+3rd — darkness, Melf's acid arrow
+5th — water walk, stinking cloud
+7th — freedom of movement, locate creature
+9th — insect plague, scrying
+
+Source:	Player's Handbook p. 68</text>
+      </feature>
+      <feature optional="YES">
+        <name>Circle of the Land: Underdark</name>
+        <text>At each indicated level, add the listed spells to your druid spell list. These spells are always prepared and don't count against the number of spells you prepare each day.
+
+3rd — spider climb, web
+5th — gaseous form, stinking cloud
+7th — greater invisibility, stone shape
+9th — cloudkill, insect plague
+
+Source:	Player's Handbook p. 68</text>
+      </feature>
+    </autolevel>
 
     <autolevel level="4">
       <feature>
