@@ -1918,7 +1918,7 @@ Source:	Eberron: Rising from the Last War p. 319</description>
     <type>construct</type>
     <alignment>Any alignment</alignment>
     <ac>15 (natural armor)</ac>
-    <hp>2</hp>
+    <hp>18 (3d8)</hp>
     <speed>walk 40 ft.</speed>
     <str>14</str>
     <dex>12</dex>
@@ -1927,10 +1927,10 @@ Source:	Eberron: Rising from the Last War p. 319</description>
     <wis>10</wis>
     <cha>6</cha>
     <save/>
-    <skill>Athletics +2, Perception +0</skill>
-    <passive>10</passive>
+    <skill>Athletics +3, Perception +4</skill>
+    <passive>14</passive>
     <languages>understands the languages you speak</languages>
-    <cr/>
+    <cr>2</cr>
     <resist/>
     <immune>poison</immune>
     <vulnerable/>
@@ -1938,7 +1938,23 @@ Source:	Eberron: Rising from the Last War p. 319</description>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Hit Points</name>
-      <text>2 + your Intelligence modifier + five times your artificer level (the defender has a number of Hit Dice [ d8s] equal to your artificer level)</text>
+      <text>2 + your Intelligence modifier + five times your artificer level (The defender has a number of Hit Dice [d8s] equal to your artificer level)</text>
+    </trait>
+    <trait>
+      <name>Saving Throws</name>
+      <text>Dex +1 plus PB, Con +2 plus PB</text>
+    </trait>
+    <trait>
+      <name>Skills</name>
+      <text>Athletics +2 plus PB, Perception +0 plus PB × 2</text>
+    </trait>
+    <trait>
+      <name>Passive Perception</name>
+      <text>10 + (PB × 2)</text>
+    </trait>
+    <trait>
+      <name>CR</name>
+      <text>Equals your Proficiency Bonus (PB)</text>
     </trait>
     <trait>
       <name>Vigilant</name>
@@ -1946,18 +1962,19 @@ Source:	Eberron: Rising from the Last War p. 319</description>
     </trait>
     <action>
       <name>Force-Empowered Rend</name>
-      <text>Melee Weapon Attack: {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. 1d8 +, p. force damage.</text>
+      <text>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d8 + PB force damage.</text>
     </action>
     <action>
       <name>Repair (3/Day)</name>
-      <text>The magical mechanisms inside the defender restore 2d8 +, p. hit points to itself or to one construct or object within 5 feet of it.</text>
+      <text>The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it.</text>
     </action>
     <reaction>
       <name>Deflect Attack</name>
       <text>The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.</text>
     </reaction>
     <description>
-Source:	Eberron: Rising from the Last War p. 61</description>
+Source:	Eberron: Rising from the Last War p. 61,
+		Tasha's Cauldron of Everything p. 19</description>
     <environment/>
   </monster>
   <monster>
