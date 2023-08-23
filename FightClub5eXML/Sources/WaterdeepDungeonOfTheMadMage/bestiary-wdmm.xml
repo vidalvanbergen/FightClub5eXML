@@ -1931,9 +1931,9 @@ Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. The target is re
     <environment>underdark, forest, swamp, urban, desert</environment>
   </monster>
   <monster>
-    <name>Drow, Mutated</name>
+    <name>Giant Mutated Drow</name>
     <size>H</size>
-    <type>humanoid (elf)</type>
+    <type>humanoid (elf, giant)</type>
     <alignment>Neutral Good (50%) Neutral Evil (50%)</alignment>
     <ac>14 (natural armor)</ac>
     <hp>200 (16d12+96)</hp>
@@ -1991,9 +1991,11 @@ Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 
       <text>
 Some adult cloud drows have the magical ability to create barriers of gale-force wind around themselves that can deflect incoming missiles. Others like to fling enemies through the air. These abilities are represented by the following action options.
 
-Fling: The drow tries to throw a Small or Medium creature within 10 feet of it. The target must succeed on a DC 20 Dexterity saving throw or be hurled up to 60 feet horizontally in a direction of the drow's choice and land prone, taking 4 (1d8) bludgeoning damage for every 10 feet it was thrown.
+Fling:
+The drow tries to throw a Small or Medium creature within 10 feet of it. The target must succeed on a DC 20 Dexterity saving throw or be hurled up to 60 feet horizontally in a direction of the drow's choice and land prone, taking 4 (1d8) bludgeoning damage for every 10 feet it was thrown.
 
-Wind Aura: A magical aura of wind surrounds the drow. The aura is a 10-foot-radius sphere that lasts as long as the drow maintains concentration on it (as if concentrating on a spell). While the aura is in effect, the drow gains a +2 bonus to its AC against ranged weapon attacks, and all open flames within the aura are extinguished unless they are magical.</text>
+Wind Aura:
+A magical aura of wind surrounds the drow. The aura is a 10-foot-radius sphere that lasts as long as the drow maintains concentration on it (as if concentrating on a spell). While the aura is in effect, the drow gains a +2 bonus to its AC against ranged weapon attacks, and all open flames within the aura are extinguished unless they are magical.</text>
     </action>
     <trait>
       <name>Innate Spellcasting</name>
@@ -2635,7 +2637,7 @@ At will: thaumaturgy
     <environment/>
   </monster>
   <monster>
-    <name>Huge Gray Ooze</name>
+    <name>Gray Ooze, Huge</name>
     <size>H</size>
     <type>ooze</type>
     <alignment>Unaligned</alignment>
@@ -2696,7 +2698,7 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <environment>underdark</environment>
   </monster>
   <monster>
-    <name>Intelligent Black Pudding</name>
+    <name>Black Pudding, Intelligent</name>
     <size>L</size>
     <type>ooze</type>
     <alignment>Unaligned</alignment>
@@ -3114,7 +3116,7 @@ Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 2) bludge
     <environment>underdark</environment>
   </monster>
   <monster>
-    <name>Large Mimic</name>
+    <name>Mimic, Large</name>
     <size>L</size>
     <type>monstrosity (shapechanger)</type>
     <alignment>Neutral</alignment>
@@ -3173,6 +3175,65 @@ Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) pierci
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 76</description>
     <environment>underdark, urban</environment>
+  </monster>
+  <monster>
+    <name>Left Hand of Manshoon</name>
+    <size>T</size>
+    <type>undead</type>
+    <alignment>unaligned</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>63 (18d4 + 18)</hp>
+    <speed>30 ft., fly 30 ft.(hover), canHover true ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>20</int>
+    <wis>15</wis>
+    <cha>16</cha>
+    <save>wis +6, int +9</save>
+    <skill>arcana +13, history +13</skill>
+    <resist>damage from spells; nonmagical bludgeoning, piercing, and slashing (from stoneskin)</resist>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune>blinded, deafened</conditionImmune>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
+    <passive>12</passive>
+    <languages>any six languages</languages>
+    <cr>12</cr>
+    <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 119</description>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>
+The hand has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+The hand is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The hand can cast disguise self and invisibility at will and has the following wizard spells prepared:
+
+At will: disguise self, invisibility
+
+	• Cantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp
+	• 1st level (4 slots): detect magic, identify, mage armor*, magic missile
+	• 2nd level (3 slots): detect thoughts, mirror image, misty step
+	• 3rd level (3 slots): counterspell, fly, lightning bolt
+	• 4th level (3 slots): blight, fire shield, stoneskin*
+	• 5th level (3 slots): cone of cold, scrying, wall of force
+	• 6th level (1 slots): globe of invulnerability
+	• 7th level (1 slots): teleport
+	• 8th level (1 slots): mind blank*
+	• 9th level (1 slots): time stop
+
+*The hand casts these spells on itself before combat.</text>
+    </trait>
+    <action>
+      <name>Dagger</name>
+      <text>
+Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|6|1d4 + 2</attack>
+    </action>
+    <slots>4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, blight, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
   </monster>
   <monster>
     <name>Lava Child</name>
@@ -4196,7 +4257,7 @@ Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeonin
     <environment>arctic, desert, coastal, grassland, hill, urban, forest</environment>
   </monster>
   <monster>
-    <name>Rowboat Mimic</name>
+    <name>Mimic, Rowboat</name>
     <size>L</size>
     <type>monstrosity (shapechanger)</type>
     <alignment>Neutral</alignment>
