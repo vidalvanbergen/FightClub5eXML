@@ -24,21 +24,36 @@
         <text>You start with the following equipment, in addition to the equipment granted by your background:
 
 	• (a) a martial weapon or (b) two simple weapons
-	• a light crossbow and 20 bolts
+	• (a) a light crossbow and 20 bolts or (b) hand crossbow and 20 bolts
 	• (a) studded leather armor or (b) scale mail armor
-	• an explorer's pack and alchemist's supplies</text>
+	• an explorer's pack
+
+Alternatively, you could begin with starting wealth of 4d4x10 gp and purchase starting items of your choice.</text>
       </feature>
     </autolevel>
 
     <autolevel level="1">
       <feature optional="YES">
         <name>Multiclass Blood Hunter</name>
-        <text>Blood Hunter Multiclassing Prerequisites:
-Ability Score Minimum: As a multiclass character, you must have at least a Strength score or Dexterity score of 13 and an Intelligence score of 13 to take a level in this class, or to take a level in another class if you are already a blood hunter.
+        <text>If your group uses the optional rule on multiclassing in the Player's Handbook, here's what you need to know if you choose blood hunter as one of your classes.
 
-Proficiencies Gained: If blood hunter isn't your initial class, you gain the following proficiencies when you take your first level as a blood hunter: light armor, medium armor, shields, simple weapons, martial weapons, and alchemist's supplies.
+Ability Score Minimum:
+As a multiclass character, you must have at least the following ability score(s) to take a level in this class, or to take a level in another class if you are already a blood hunter.
 
-Multiclassing with Warlock: If your blood hunter is part of the Order of the Profane Soul and also has warlock levels, add one-third of your blood hunter levels (rounded down) to your warlock level and consult the warlock progression table in the Player's Handbook for total spell slots, cantrips known, and spell slot level. You should consider aligning your Otherworldly Patron feature between both classes, but your DM might allow you to have two different patrons at their discretion.</text>
+	• Strength or Dexterity 13
+	• Intelligence 13
+
+Proficiencies Gained:
+If blood hunter isn't your initial class, here are the proficiencies you gain when you take your first level as a blood hunter.
+
+	• Armor: light armor, medium armor, shields
+	• Weapons: simple weapons, martial weapons
+	• Tools: alchemical supplies
+
+Blood Hunter Multiclassing with Warlock:
+If your blood hunter is part of the Order of the Profane Soul and also has warlock levels, add one-third of your blood hunter levels (rounded down) to your warlock level and consult the warlock progression table in the Player's Handbook for total spell slots, cantrips known, and spell slot level.
+
+You should consider aligning your Otherworldly Patron feature between both classes, but your DM might allow you to have two different patrons at their discretion.</text>
       </feature>
     </autolevel>
 
@@ -82,6 +97,7 @@ Your hemocraft die starts at 1d4, then becomes 1d6 at 5th level, 1d8 at 11th lev
       <feature>
         <name>Fighting Style</name>
         <text>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a fighting style more than once, even if you later get to choose again.</text>
+        <special>fighting style archery</special>
       </feature>
     </autolevel>
 
@@ -90,7 +106,7 @@ Your hemocraft die starts at 1d4, then becomes 1d6 at 5th level, 1d8 at 11th lev
         <name>Fighting Style: Archery</name>
         <text>You gain a +2 bonus to attack rolls you make with ranged weapons.
 
-Source: Player's Handbook, p. 72</text>
+Source:	Player's Handbook p. 72</text>
         <special>fighting style archery</special>
       </feature>
     </autolevel>
@@ -100,7 +116,7 @@ Source: Player's Handbook, p. 72</text>
         <name>Fighting Style: Dueling</name>
         <text>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
 
-Source: Player's Handbook, p. 72</text>
+Source:	Player's Handbook p. 72</text>
         <special>fighting style dueling</special>
       </feature>
     </autolevel>
@@ -110,7 +126,8 @@ Source: Player's Handbook, p. 72</text>
         <name>Fighting Style: Great Weapon Fighting</name>
         <text>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.
 
-Source: Player's Handbook, p. 72</text>
+Source:	Player's Handbook p. 72</text>
+        <special>fighting style great weapon fighting</special>
       </feature>
     </autolevel>
 
@@ -119,7 +136,8 @@ Source: Player's Handbook, p. 72</text>
         <name>Fighting Style: Two-Weapon Fighting</name>
         <text>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.
 
-Source: Player's Handbook, p. 72</text>
+Source:	Player's Handbook p. 72</text>
+        <special>fighting style two-weapon fighting</special>
       </feature>
     </autolevel>
 
@@ -147,7 +165,9 @@ Rite of the Roar: The extra damage dealt by your rite is thunder damage.</text>
     <autolevel level="3">
       <feature>
         <name>Blood Hunter Order</name>
-        <text>At 3rd level, you commit to an order of blood hunters whose philosophy will guide you throughout your life: the Order of the Ghostslayer, the Order of the Lycan, the Order of the Mutant, or the Order of the Profane Soul, each of which is detailed at the end of the class description. Your choice grants you features at 7th level and again at 11th, 15th, and 18th level.</text>
+        <text>There are a handful of secretive orders of blood hunters that guard their cryptic techniques and rituals. One must adhere to one of these orders to even be granted acess to the Hunter's Bane rite that starts their journey, and only once they've proven their dedication and ability will the secrets of the order begin to be revealed. It's within these small, enigmatic sects that the real power of a blood hunter is learned.
+
+At 3rd level, you commit to an order of blood hunters whose philosophy will guide you throughout your life: the Order of the Ghostslayer, the Order of the Lycan, the Order of the Mutant, or the Order of the Profane Soul, each of which is detailed at the end of the class description. Your choice grants you features at 7th level and again at 11th, 15th, and 18th level.</text>
       </feature>
     </autolevel>
 
@@ -278,7 +298,16 @@ Mutagens are designed for the specific biology of the character who concocted th
     <autolevel level="3">
       <feature optional="YES">
         <name>Order of the Mutant: Formulas</name>
-        <text>The number of mutagens you can concoct when you finish a rest, and the number of formulas you know, increases as you gain levels in the blood hunter class, as shown on the Mutagencraft table above. Additionally, when you learn a new mutagen formula, you can replace one formula you already know with a new mutagen formula. You choose four mutagen formulas to learn from the options detailed at the end of this subclass description (Added as spells in the Mutagens spell list), and you can concoct one mutagen when you finish a short or long rest.</text>
+        <text>The number of mutagens you can concoct when you finish a rest, and the number of formulas you know, increases as you gain levels in the blood hunter class, as shown on the Mutagencraft table. Additionally, when you learn a new mutagen formula, you can replace one formula you already know with a new mutagen formula. You choose four mutagen formulas to learn from the options detailed at the end of this subclass description (Added as spells in the Mutagens spell list), and you can concoct one mutagen when you finish a short or long rest.
+
+Mutagencraft table
+Blood Hunter Level | Mutagens Created | Formulas Known
+3rd | 1 | 4
+7th | 2 | 5
+11th | 2 | 6
+15th | 3 | 7
+18th | 3 | 8
+</text>
       </feature>
     </autolevel>
 
@@ -532,11 +561,12 @@ Using the optional feats rule, you can forgo taking this feature to take a feat 
         <name>Additional Crimson Rite</name>
         <text>Choose a Crimson Rite to learn at 14th level.
 
+Primal Rites:
 Rite of the Flame: The extra damage dealt by your rite is fire damage.
 Rite of the Frozen: The extra damage dealt by your rite is cold damage.
 Rite of the Storm: The extra damage dealt by your rite is lightning damage.
 
-Prerequisite: 14th level
+Esoteric Rites: (Prerequisite: 14th level)
 Rite of the Dead: The extra damage dealt by your rite is necrotic damage.
 Rite of the Oracle: The extra damage dealt by your rite is psychic damage.
 Rite of the Roar: The extra damage dealt by your rite is thunder damage.</text>
