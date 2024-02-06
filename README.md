@@ -110,9 +110,9 @@ A collection file is an XML file that lists which sources you would like to merg
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <collection>
-    <doc href="../FightClub5eXML/Sources/PlayersHandbook.xml" />
-    <doc href="../FightClub5eXML/Sources/DungeonMastersGuide.xml" />
-    <doc href="../FightClub5eXML/Sources/MonsterManual.xml" />
+    <doc href="../Sources/PlayersHandbook.xml" />
+    <doc href="../Sources/DungeonMastersGuide.xml" />
+    <doc href="../Sources/MonsterManual.xml" />
 </collection>
 ```
 You can have one or more `<doc>` tags. Each doc must reference an xml file with a `<compendium>` root element. 
@@ -126,7 +126,7 @@ With your collection in place, you're ready to build your Compendium by merging 
 Execute this line in your shell at the top level of the repo:
 
 ```bash
-for i in Collections/*.xml; do xsltproc -o FightClub5eXML/$i Utilities/merge.xslt $i; done
+for i in Collections/*.xml; do xsltproc -o Compendiums/$i Utilities/merge.xslt $i; done
 ```
 
-This is the same line that is executed in our .travis.yml and will place all combined Compendiums in FightClub5eXML/Collections/
+This is in essence the same line that is executed in our build-collections.sh and will place all combined Compendiums in Compendiums/
