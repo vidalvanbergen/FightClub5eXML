@@ -25,6 +25,7 @@ jobs:
             xsltproc -o "../Compendiums/$f" "../Utilities/merge.xslt" "$f"
           done
           cd ..
+
       - name: Zip up compendiums
         run: zip -r compendiums.zip Compendiums/*.xml
 
