@@ -74,4 +74,6 @@ If you'd like to contribute, feel free to fork the repository and submit pull re
 
 `@sheppe` for the Widows bat file.
 
+`@archivist` for adding various sources to the compendium.
+
 `@vidalvanbergen` for adding various sources to the compendium.
