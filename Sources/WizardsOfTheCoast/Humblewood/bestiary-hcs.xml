@@ -1962,10 +1962,10 @@ The druid can communicate simple ideas to living plants, and is able to interpre
     <text>
 The druid is a 6th-level spellcaster. Their spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The druid has the following spells prepared:
 
-Cantrips (at will): druidcraft, produce flame, shillelagh
-1st level (4 slots): animal friendship, cure wounds, entangle, fog cloud
-2nd level (3 slots): barkskin, gust of wind, moonbeam
-3rd level (3 slots): conjure animals, dispel magic, wind wall</text>
+	• Cantrips (at will): druidcraft, produce flame, shillelagh
+	• 1st level (4 slots): animal friendship, cure wounds, entangle, fog cloud
+	• 2nd level (3 slots): barkskin, gust of wind, moonbeam
+	• 3rd level (3 slots): conjure animals, dispel magic, wind wall</text>
 </trait>
     <trait>
     <name>Spirit Totem (Recharges after a Short or Long Rest)</name>
@@ -2068,6 +2068,528 @@ The monk inspires an ally that can see and hear them. The ally can roll a d4 and
     <description>Gallus who are not content to settle into everyday life in small communities venture out to secluded monasteries and learn the way of the monk. There, a disciplined routine of physical rigours and spiritual contemplation is overseen by wizened masters. After years of training, initiates are deemed ready to journey the land and put their learning to the test. The majority return to the monastery after having had a revelation during their travels. Other continue to wander, sometimes with a few trusted companions, forever finding new meaning.
 
 Source:	Humblewood Campaign Setting p. 196</description>
+    <environment/>
+</monster>
+<monster>
+    <name>Gallus Necromancer</name>
+    <size>M</size>
+    <type>humanoid (gallus)</type>
+    <alignment>Any Non-lawful Alignment</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>49 (9d8 + 9)</hp>
+    <speed>30</speed>
+    <str>9</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>18</int>
+    <wis>14</wis>
+    <cha>10</cha>
+    <save>Int +7, Wis +5</save>
+    <skill>Arcana +7, Deception +3, Medicine +5</skill>
+    <passive>12</passive>
+    <languages>Birdfolk, Hedge, Sylvan. Can also undertand Auran, but cannot speak it.</languages>
+    <cr>6</cr>
+    <exp>2300</exp>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+    <name>Glide</name>
+    <text>
+When falling at least 10 feet, the necromancer can spend a reaction to fly up to their speed in one direction as they descend. The necromancer lands in an unoccupied space at the end of their movement, and takes no falling damage. The necromancer cannot glide while carrying heavy objects, heavy weapons, or shields (though they can drop any held items as part of their reaction).</text>
+</trait>
+    <trait>
+    <name>Wing Flap</name>
+    <text>
+As a bonus action, the necromancer can use their powerful feathered arms to propel themselves upward up to half their movement speed. The necromancer can use it in conjunction with a regular jump, but not while gliding.</text>
+</trait>
+    <trait>
+    <name>Seedspeech</name>
+    <text>
+The necromancer can communicate simple ideas to living plants, and is able to interpret their responses in simple language.</text>
+</trait>
+    <trait>
+    <name>Spellcasting</name>
+    <text>
+The necromancer is a 9th level spellcaster. Their spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The necromancer has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch, light, mage hand, prestidigitation
+	• 1st level (4 slots): sleep, false life, mage armor, magic missile
+	• 2nd level (3 slots): misty step, web, ray of enfeeblement
+	• 3rd level (3 slots): animate dead, counterspell, fear
+	• 4th level (3 slots): black tentacles, blight
+	• 5th level (1 slot): passwall</text>
+</trait>
+    <action>
+    <name>Staff</name>
+    <text>
+Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 + 1) bludgeoning damage or 3 (1d8 + 1) bludgeoning damage if wielded with both hands.</text>
+    <attack>Staff|+2|1d6+1</attack>
+    <attack>Two-Handed Staff|+2||1d8+1</attack>
+</action>
+    <spells>chill touch, light, mage hand, prestidigitation, sleep, false life, mage armor, magic missile, misty step, web, ray of enfeeblement, animate dead, counterspell, fear, black tentacles, blight, passwall</spells>
+    <slots/>
+    <description>Gallus aren't typically drawn down the path of necromancy, but a few mavericks with arcane talent and the inclination to study the darker side of magic have found success in The Avium. More commonly, such necromancers study the art theoretically, learning how it disrupts the balance of life and death so that their students can be taught how to effectively counter such vile spells.
+
+Source:	Humblewood Campaign Setting p. 198</description>
+    <environment/>
+</monster>
+<monster>
+    <name>Glinda Nightseed</name>
+    <ancestry>Gallus Necromancer</ancestry>
+    <size>M</size>
+    <type>humanoid (gallus)</type>
+    <alignment>Chaotic Good</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>49 (9d8 + 9)</hp>
+    <speed>30</speed>
+    <str>9</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>18</int>
+    <wis>14</wis>
+    <cha>10</cha>
+    <save>Int +7, Wis +5</save>
+    <skill>Arcana +7, Deception +3, Medicine +5</skill>
+    <passive>12</passive>
+    <languages>Birdfolk, Hedge, Sylvan. Can also undertand Auran, but cannot speak it.</languages>
+    <cr>6</cr>
+    <exp>2300</exp>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+    <name>Glide</name>
+    <text>
+When falling at least 10 feet, the necromancer can spend a reaction to fly up to their speed in one direction as they descend. The necromancer lands in an unoccupied space at the end of their movement, and takes no falling damage. The necromancer cannot glide while carrying heavy objects, heavy weapons, or shields (though they can drop any held items as part of their reaction).</text>
+</trait>
+    <trait>
+    <name>Wing Flap</name>
+    <text>
+As a bonus action, the necromancer can use their powerful feathered arms to propel themselves upward up to half their movement speed. The necromancer can use it in conjunction with a regular jump, but not while gliding.</text>
+</trait>
+    <trait>
+    <name>Seedspeech</name>
+    <text>
+The necromancer can communicate simple ideas to living plants, and is able to interpret their responses in simple language.</text>
+</trait>
+    <trait>
+    <name>Spellcasting</name>
+    <text>
+The necromancer is a 9th level spellcaster. Their spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The necromancer has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch, light, mage hand, prestidigitation
+	• 1st level (4 slots): sleep, false life, mage armor, magic missile
+	• 2nd level (3 slots): misty step, web, ray of enfeeblement
+	• 3rd level (3 slots): animate dead, counterspell, fear
+	• 4th level (3 slots): black tentacles, blight
+	• 5th level (1 slot): passwall</text>
+</trait>
+    <action>
+    <name>Staff</name>
+    <text>
+Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 + 1) bludgeoning damage or 3 (1d8 + 1) bludgeoning damage if wielded with both hands.</text>
+    <attack>Staff|+2|1d6+1</attack>
+    <attack>Two-Handed Staff|+2||1d8+1</attack>
+</action>
+    <spells>chill touch, light, mage hand, prestidigitation, sleep, false life, mage armor, magic missile, misty step, web, ray of enfeeblement, animate dead, counterspell, fear, black tentacles, blight, passwall</spells>
+    <slots/>
+    <description>Gallus aren't typically drawn down the path of necromancy, but a few mavericks with arcane talent and the inclination to study the darker side of magic have found success in The Avium. More commonly, such necromancers study the art theoretically, learning how it disrupts the balance of life and death so that their students can be taught how to effectively counter such vile spells.
+
+Glinda Nightseed:
+This huden gallus' plumage resembles a ptarmigan, and she usually wears a pince-nez on her beak. A professor of advanced theoretical necromancy, Glinda is known for having strange opinions about her field of study. Unlike most birdfolk, she sees necromancy as a manipulation of life energies on par with druidic magic. She is a kind soul, and only practices the lighter forms of necromancy. However, she has been performing secret experiments on the servitor skeletons in the Avium, hoping to develop a cutting-edge resurrection spell. This violates campus policies, which ban practical necromancy, and could cause her to lose her job. Glinda uses the gallus necromancer stat block. Her alignment is chaotic good.
+
+Stat Block Origin: Gallus Necromancer
+Source:	Humblewood Campaign Setting p. 198</description>
+    <environment/>
+</monster>
+  <monster>
+    <name>Gregor Thornspur, Magistrate of Alderheart</name>
+    <ancestry>Noble</ancestry>
+    <size>M</size>
+    <type>humanoid (sable luma)</type>
+    <alignment>Chaotic Neutral</alignment>
+    <ac>15 (breastplate)</ac>
+    <hp>9 (2d8)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>11</str>
+    <dex>12</dex>
+    <con>11</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>16</cha>
+    <save/>
+    <skill>Deception +5, Insight +4, Persuasion +5</skill>
+    <passive>12</passive>
+    <languages>any two languages</languages>
+    <cr>1/8</cr>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+    <name>Glide</name>
+    <text>
+When falling at least 10 feet, Gregor Thornspur can spend a reaction to fly up to their speed in one direction as they descend. Gregor Thornspur lands in an unoccupied space at the end of their movement, and takes no falling damage. Gregor Thornspur cannot glide while carrying heavy objects, heavy weapons, or shields (though they can drop any held items as part of their reaction).</text>
+</trait>
+    <action>
+      <name>Rapier</name>
+      <text>
+Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.</text>
+      <attack>Rapier|+3|1d8+1</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>
+The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.</text>
+    </reaction>
+    <description>Gregor is a dull-looking sable luma with a single errant feather that sticks out oddly from his brow. Gregor is the Magistrate of Alderheart, and though he appears to be a tired bureaucrat, his demeanour hides a shrewd businessman eager to turn any situation to his advantage. He is not above taking bribes in exchange for expediting requests to see the Birdfolk Council. Gregor uses the noble stat block, adjusted with the racial traits of a sable luma. He is chaotic neutral.
+
+Nobles wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.
+
+The noble's statistics can also be used to represent courtiers who aren't of noble birth.
+
+Source:	Monster Manual p. 348,
+		Curse of Strahd,
+		Hoard of the Dragon Queen,
+		Princes of the Apocalypse,
+		Rise of Tiamat,
+		Storm King's Thunder,
+		Tales from the Yawning Portal,
+		Tomb of Annihilation,
+		Waterdeep: Dragon Heist,
+		Waterdeep: Dungeon of the Mad Mage,
+		Ghosts of Saltmarsh,
+		Essentials Kit: Divine Contention,
+		Essentials Kit: Dragon of Icespire Peak,
+		Baldur's Gate: Descent Into Avernus,
+		Eberron: Rising from the Last War,
+		Infernal Machine Rebuild,
+		Explorer's Guide to Wildemount,
+		Mythic Odysseys of Theros,
+		Icewind Dale: Rime of the Frostmaiden,
+		Humblewood Campaign Setting</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Hedge Bard</name>
+    <size>S</size>
+    <type>humanoid (hedge)</type>
+    <alignment>Any Alignment</alignment>
+    <ac>16 (Natural Armor)</ac>
+    <hp>36 (8d6+8)</hp>
+    <speed>25 ft., burrow 15 ft.</speed>
+    <str>11</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>13</wis>
+    <cha>16</cha>
+    <save>Dex +4, Cha +5</save>
+    <skill>Acrobatics +4, Perception +5, Performance +7</skill>
+    <passive>15</passive>
+    <languages>Birdfolk, Hedge. Can also speak with beasts of any size, which represents spiders, insects, worms or other bugs.</languages>
+    <cr>2</cr>
+    <exp>450</exp>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+    <name>Spellcasting</name>
+    <text>
+The bard is a 4th-level spellcaster. Their spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). They have the following bard spells prepared:
+
+	• Cantrips (at will): gust barrier, prestidigitation, vicious mockery
+	• 1st level (4 slots): charm person, healing word, hideous laughter, thunderwave
+	• 2nd level (3 slots): invisibility, shatter, suggestion</text>
+</trait>
+    <trait>
+    <name>Taunt (2/Day)</name>
+    <text>
+The bard can use a bonus action on their turn to target one creature within 30 feet of them. If the target can hear the bard, the target must succeed on a DC 13 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn.</text>
+</trait>
+    <action>
+    <name>Multiattack</name>
+    <text>
+The bard makes two weapon attacks, one with their rapier and one with their dagger.</text>
+</action>
+    <action>
+    <name>Rapier</name>
+    <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
+    <attack>Rapier|+4|1d6+2</attack>
+</action>
+    <action>
+    <name>Dagger</name>
+    <text>
+Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft., or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage</text>
+    <attack>Dagger|+4|1d4+2</attack>
+</action>
+    <action>
+    <name>Curl Up</name>
+    <text>
+The bard curls up into a spiny ball. While curled up in this way they cannot move, attack, or cast spells with somatic components, and their base armor class becomes 19. Any creature that misses the hedge bard with a melee attack while they are curled up takes 2d4 points of piercing damage from their sharp quills. If a creature hits the bard while they are curled up, however, the bard is knocked prone in their space at the end of the turn. The bard may uncurl themselves at any point during their turn.</text>
+    <attack>Curl Up||2d4</attack>
+</action>
+    <spells>gust barrier, prestidigitation, vicious mockery, charm person, healing word, hideous, invisibility, shatter, suggestion</spells>
+    <slots/>
+    <description>Recognized for being excellent diplomats and mediators, hedges are less well known for their love of music. Those who turn their natural charm towards the talent of entertaining can find great success. Some of the most gifted performers are blessed with magical talents. While most hedges use these powers for good, others choose a more sinister path, using their bardic talents to cheat, dupe, or steal from common folk.
+
+Source:	Humblewood Campaign Setting p. 198</description>
+    <environment/>
+</monster>
+<monster>
+    <name>Hedge Witch</name>
+    <size>S</size>
+    <type>humanoid (hedge)</type>
+    <alignment>Any Chaotic Alignment</alignment>
+    <ac>14 (Natural Armor)</ac>
+    <hp>21 (6d6)</hp>
+    <speed>25 ft., burrow 15 ft.</speed>
+    <str>8</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>14</int>
+    <wis>15</wis>
+    <cha>16</cha>
+    <save/>
+    <skill>Arcana +4, Survival +4</skill>
+    <passive>12</passive>
+    <languages>Abyssal, Birdfolk, Hedge. Can also speak with beasts of any size which represents spiders, insects, worms or other bugs.</languages>
+    <cr>1</cr>
+    <exp>200</exp>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+    <name>Spellcasting</name>
+    <text>
+The witch is a 2th-level spellcaster. Their spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). They have the following warlock spells prepared:
+
+	• Cantrips (at will): eldritch blast, minor illusion
+	• 1st level (2 slots): hellish rebuke, charm person, unseen servant</text>
+</trait>
+    <action>
+    <name>Staff</name>
+    <text>
+Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage.</text>
+    <attack>Staff|+1|1d6-1</attack>
+</action>
+    <action>
+    <name>Fiendish Vigor</name>
+    <text>
+The witch can cast false life at will as a 1st-level spell.</text>
+</action>
+    <action>
+    <name>Curl Up</name>
+    <text>
+The witch curls up into a spiny ball. While curled up in this way they cannot move, attack, or cast spells with somatic components, and their base armor class becomes 19. Any creature that misses the witch with a melee attack while they are curled up takes 2d4 points of piercing damage from their sharp quills. If a creature hits the witch while they are curled up, however, the witch is knocked prone in their space at the end of the turn. The witch may uncurl themselves at any point during their turn.</text>
+    <attack>Curl Up||2d4</attack>
+</action>
+    <spells>eldritch blast, minor illusion, hellish rebuke, charm person, unseen servant, false life</spells>
+    <slots/>
+    <description>Many who apply to study at the Avium are turned away by the prestigious institution. Spurred by their desire for knowledge, rejected candidates sometimes start on a path to become self-taught masters of arcana. Notably in tune with the magic of the forest, hedges pursuing an individualistic path often leverage their connection to these natural forces to make pacts with powerful fey or elemental beings, learning secrets inaccessible to traditional students.
+
+Source:	Humblewood Campaign Setting p. 198</description>
+    <environment/>
+</monster>
+<monster>
+    <name>Susan of the Swamp</name>
+    <ancestry>Hedge Witch</ancestry>
+    <size>S</size>
+    <type>humanoid (hedge)</type>
+    <alignment>Chaotic Good</alignment>
+    <ac>14 (Natural Armor)</ac>
+    <hp>21 (6d6)</hp>
+    <speed>25 ft., burrow 15 ft.</speed>
+    <str>8</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>14</int>
+    <wis>15</wis>
+    <cha>16</cha>
+    <save/>
+    <skill>Arcana +4, Survival +4</skill>
+    <passive>12</passive>
+    <languages>Abyssal, Birdfolk, Hedge. Can also speak with beasts of any size which represents spiders, insects, worms or other bugs.</languages>
+    <cr>1</cr>
+    <exp>200</exp>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+    <name>Spellcasting</name>
+    <text>
+The witch is a 2th-level spellcaster. Their spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). They have the following warlock spells prepared:
+
+	• Cantrips (at will): eldritch blast, minor illusion
+	• 1st level (2 slots): hellish rebuke, charm person, unseen servant</text>
+</trait>
+    <action>
+    <name>Staff</name>
+    <text>
+Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage.</text>
+    <attack>Staff|+1|1d6-1</attack>
+</action>
+    <action>
+    <name>Fiendish Vigor</name>
+    <text>
+The witch can cast false life at will as a 1st-level spell.</text>
+</action>
+    <action>
+    <name>Curl Up</name>
+    <text>
+The witch curls up into a spiny ball. While curled up in this way they cannot move, attack, or cast spells with somatic components, and their base armor class becomes 19. Any creature that misses the witch with a melee attack while they are curled up takes 2d4 points of piercing damage from their sharp quills. If a creature hits the witch while they are curled up, however, the witch is knocked prone in their space at the end of the turn. The witch may uncurl themselves at any point during their turn.</text>
+    <attack>Curl Up||2d4</attack>
+</action>
+    <spells>eldritch blast, minor illusion, hellish rebuke, charm person, unseen servant, false life</spells>
+    <slots/>
+    <description>Many who apply to study at the Avium are turned away by the prestigious institution. Spurred by their desire for knowledge, rejected candidates sometimes start on a path to become self-taught masters of arcana. Notably in tune with the magic of the forest, hedges pursuing an individualistic path often leverage their connection to these natural forces to make pacts with powerful fey or elemental beings, learning secrets inaccessible to traditional students.
+
+Susan of the Swamp:
+Susan is an eccentric hedge whose magical aptitude has always been outclassed by her hunger for knowledge. She studied at the Avium for a short time, but left of her own accord to experiment with magics the Avium found unsavory. Susan recently settled in the swamp in the hopes of pursuing her arcane curiosities in peace. She shares her modest home with her beetle familiar, Normal, and spends her time foraging for ingredients, testing spells, and reading mystery novels in addition to tomes of eldritch lore. Though she performs her rituals a safe distance away from the cities and towns, her presence in the region has made the Magistrate of Winnowing Reach uneasy, and he wants her gone. Susan uses the hedge witch stat block. Her alignment is chaotic good.
+
+Stat Block Origin: Hedge Witch
+Source:	Humblewood Campaign Setting p. 198</description>
+    <environment/>
+</monster>
+<monster>
+    <name>Jerbeen Thief</name>
+    <size>S</size>
+    <type>humanoid (jerbeen)</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>13 (leather armor)</ac>
+    <hp>14 (4d6)</hp>
+    <speed>30 ft.</speed>
+    <str>12</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>8</int>
+    <wis>14</wis>
+    <cha>14</cha>
+    <save/>
+    <skill>Acrobatics +4, Sleight of Hand +4</skill>
+    <passive>12</passive>
+    <languages>Birdfolk, Jerbeen</languages>
+    <cr>1/2</cr>
+    <exp>100</exp>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+    <name>Standing Leap</name>
+    <text>
+The thief's long jump is up to 30 feet and their high jump is up to 15 feet, with or without a running start.</text>
+</trait>
+    <trait>
+    <name>Team Tactics</name>
+    <text>
+The thief can take the Help action as a bonus action.</text>
+</trait>
+    <action>
+    <name>Multiattack</name>
+    <text>
+The thief makes two dagger attacks.</text>
+</action>
+    <action>
+    <name>Dagger</name>
+    <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+    <attack>Dagger|+4|1d4+2</attack>
+</action>
+    <reaction>
+    <name>Opportunist</name>
+    <text>
+When a creature fails a melee attack roll against the thief, the thief can make a Dexterity (Sleight of Hand) check against a DC equal to 10 + the target creature's Dexterity modifier. On a success, the thief steals one item of the GMs choosing from the target. It cannot be an item actively held or worn by the target.</text>
+</reaction>
+    <spells/>
+    <slots/>
+    <description>While criminals can often be found picking pockets in large perch cities, only the most successful end up recruited by the Bandit Coalition. Small of stature, jerbeens can easily move about unnoticed; their swiftness is responsible for the expression "quick as a jerbeen." This, coupled with their natural charm, makes jerbeens perfectly suited for the thieving arts.
+
+Source:	Humblewood Campaign Setting p. 200</description>
+    <environment/>
+</monster>
+<monster>
+    <name>Jerbeen Swashbuckler</name>
+    <size>S</size>
+    <type>humanoid (jerbeen)</type>
+    <alignment>Any Non-lawful Alignment</alignment>
+    <ac>17 (leather armor)</ac>
+    <hp>34 (8d6+6)</hp>
+    <speed>30 ft.</speed>
+    <str>12</str>
+    <dex>18</dex>
+    <con>12</con>
+    <int>14</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save/>
+    <skill>Acrobatics +8, Athletics +5, Persuasion +6</skill>
+    <passive>10</passive>
+    <languages>Birdfolk, Jerbeen</languages>
+    <cr>3</cr>
+    <exp>700</exp>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+    <name>Standing Leap</name>
+    <text>
+The thief's long jump is up to 30 feet and their high jump is up to 15 feet, with or without a running start.</text>
+</trait>
+    <trait>
+    <name>Team Tactics</name>
+    <text>
+The thief can take the Help action as a bonus action.</text>
+</trait>
+    <trait>
+    <name>Sharp Witted Defense</name>
+    <text>
+While the swashbuckler is wearing light or no armor and wielding no shield, their AC includes their Charisma modifier.</text>
+</trait>
+    <action>
+    <name>Multiattack</name>
+    <text>
+The swashbuckler makes three attacks, one with a dagger and two with their rapier.</text>
+</action>
+    <action>
+    <name>Dagger</name>
+    <text>
+Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage.</text>
+    <attack>Dagger|+6|1d4+4</attack>
+</action>
+    <action>
+    <name>Rapier</name>
+    <text>
+Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.</text>
+    <attack>Rapier|+6|1d8+4</attack>
+</action>
+    <reaction>
+    <name>Riposte</name>
+    <text>
+The swashbuckler reduces the damage dealt by one melee attack that would hit them by 4 (1d8), and deals that much piercing damage to their attacker. The swashbuckler must see the attacker and be wielding a melee weapon.</text>
+    <attack>Riposte||1d8</attack>
+</reaction>
+    <spells/>
+    <slots/>
+    <description>A common figure in many jerbeen folktales, a swashbuckler is a champion who fights with finesse and daring. Natural leaders, swashbucklers keep their wits about them during a duel, pressing small advantages to win the day. Jerbeen swashbucklers often train in the tradition of their Amaranthine, Gaspard. Each year swashbucklers participate in fencing matches held in Gaspard's honor. Not all swashbucklers follow this path, with some using their talents for brigandry.
+
+Source:	Humblewood Campaign Setting p. 200</description>
     <environment/>
 </monster>
 </compendium>
