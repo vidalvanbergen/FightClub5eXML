@@ -1,17 +1,15 @@
 # Collections
 
-**Everything**: Newly formatted XML that includes all rulebooks, supplements, adventures, Unearthed Arcana, and some miscellaneous and unofficial content, like Plane Shift and Adventurers League.
+**Complete_Compendium**: Includes all rulebooks, third party suplements, adventures, Unearthed Arcana and some miscellaneous unofficial content.
 
-**CoreRulebooks**: Player's Handbook, Dungeon Master's Guide, and Monster Manual
+**Core_Rulebooks**: Player's Handbook, Dungeon Master's Guide and Monster Manual.
 
-**CoreRulebooksAndSupplements**: _CoreRulebooks_ plus Rulebook Supplements (XGtE, MToF, VGtM, SCAG, GGtR, WGtE, ERftLW, AI, EGtW, MFF, Tortle Package, One Grung Above, MOoT)
+**Sytem_Reference_Document**: Only the core system files of Fight Club 5e.
 
-**CoreOnly**: _CoreRulebooksAndSupplements_ plus Adventures
+**WotC_Only**: Only official Wizards of the coast material available on D&D Beyond.
 
-**CorePlusHomebrew-NoUA**: _CoreOnly_ plus homebrew, which includes the Blood Hunter class and Gunslinger subclass for Fighter
+**WotC+ThirdParty**: Includes official materials, third party adventures and compendiums.
 
-**CorePlusUnreleasedUA**: _CoreOnly_ plus unreleased Unearthed Arcana
+**WotC+ThirdParty+Homebrew**: Includes official, third party and some homebrew content like Matt Mercer's Bloodhunter class and miscellaneous.
 
-**CorePlusUA-NoHomebrew**: _CoreOnly_ plus all Unearthed Arcana
-
-**Complete**: _CorePlusUA-NoHomebrew_ plus homebrew and third party content
+**WotC+ThirdParty+UnearhtedArcana**: Includes official, third party, homebrew and Unearthed Arcana.

@@ -18,11 +18,8 @@ Reorganize the READMEs across the repo to better reflect the purpose of their co
 
 Rename the FightClub5eXML folder to Sources to better reflect its given purpose.
 
-<<<<<<< HEAD
-=======
 Add build-collections.bat for Windows users.
 
->>>>>>> merge-master
 ### 2021-08-04
 
 Removed deployment to Dropbox.
