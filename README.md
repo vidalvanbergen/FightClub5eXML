@@ -52,7 +52,7 @@ The build-collection files are provided for your convenience to compile all coll
 
 ## Custom Content
 
-See the [Sources README](Sources/README.md) to learn how to add your own homebrew content or build your own compendium from select source material.
+See the [Sources README](SOURCES.md) to learn how to add your own homebrew content or build your own compendium from select source material.
 
 ## Contributing
 
