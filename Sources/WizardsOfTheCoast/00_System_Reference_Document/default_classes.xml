@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5">
+    
+    <class><name>Barbarian</name>
+        <hd>12</hd>
+        <proficiency>Strength, Constitution, Animal Handling, Athletics, Intimidation, Nature, Perception, Survival</proficiency>
+        <numSkills>2</numSkills>
+        <armor>Light armor, medium armor, shields</armor>
+        <weapons>Simple weapons, martial weapons</weapons>
+        <tools>None</tools>
+        <wealth>2d4x10</wealth>
+        
+        <autolevel level="1"> <counter><name>Rage</name><value>2</value><reset>L</reset></counter></autolevel>
+        <autolevel level="3"> <counter><name>Rage</name><value>3</value><reset>L</reset></counter></autolevel>
+        <autolevel level="6"> <counter><name>Rage</name><value>4</value><reset>L</reset></counter></autolevel>
+        <autolevel level="12"><counter><name>Rage</name><value>5</value><reset>L</reset></counter></autolevel>
+        <autolevel level="17"><counter><name>Rage</name><value>6</value><reset>L</reset></counter></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Rage</name>
+                <text>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.</text>
+                <text>    While raging, you gain the following benefits if you aren't wearing heavy armor:</text>
+                <text></text>
+                <text>• You have advantage on Strength checks and Strength saving throws.</text>
+                <text>• When you make a melee weapon attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level.</text>
+                <text>• You have resistance to bludgeoning, piercing, and slashing damage.</text>
+                <text></text>
+                <text>If you are able to cast spells, you can't cast them or concentrate on them while raging.</text>
+                <text>    Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.</text>
+                <text>    Once you have raged twice, you must finish a long rest before you can rage again. The number of times you can rage between rages goes up as you level.</text></feature>
+            <feature><name>Unarmored Defense</name>
+                <special>unarmored defense con</special>
+                <text>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Reckless Attack</name><text>Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</text></feature>
+            <feature><name>Danger Sense</name><text>At 2nd level, you gain an uncanny sense of when things nearby aren’t as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded,  deafened, or incapacitated.</text></feature>
+        </autolevel>
+        
+        <autolevel level="3">
+            <feature><name>Primal Path</name><text>At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</text></feature>
+            <feature optional="YES"><name>Path of the Berserker: Frenzy</name><text>Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion.</text></feature>
+        </autolevel>
+        
+        <autolevel level="5">
+            <feature><name>Extra Attack</name><text>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</text></feature>
+            <feature><name>Fast Movement</name><text>Starting at 5th level, your speed increases by 10 feet while you aren’t wearing heavy armor.</text></feature>
+        </autolevel>
+        
+        <autolevel level="6">
+            <feature optional="YES"><name>Path of the Berserker: Mindless Rage</name><text>Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</text></feature>
+        </autolevel>
+        
+        <autolevel level="7">
+            <feature><name>Feral Instinct</name>
+                <text>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</text>
+                <text>    Additionally, if you are surprised at the beginning of combat and aren’t incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.</text></feature>
+        </autolevel>
+        
+        <autolevel level="9">
+            <feature><name>Brutal Critical</name>
+                <text>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</text>
+                <text>    This increases to two additional dice at 13th level and three additional dice at 17th level.</text></feature>
+        </autolevel>
+        
+        <autolevel level="10">
+            <feature optional="YES"><name>Path of the Berserker: Intimidating Presence</name>
+                <text>Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.</text>
+                <text>    If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours.</text></feature>
+        </autolevel>
+        
+        <autolevel level="11">
+            <feature><name>Relentless Rage</name>
+                <text>Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you’re raging and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.</text>
+                <text>    Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</text></feature>
+        </autolevel>
+        
+        <autolevel level="14">
+            <feature optional="YES"><name>Path of the Berserker: Retaliation</name><text>Starting at 14th level, when you take damage from a creature that is within 5 feet of you. you can use your reaction to make a melee weapon attack against that creature.</text></feature>
+        </autolevel>
+        
+        <autolevel level="15">
+            <feature><name>Persistent Rage</name><text>Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.</text></feature>
+        </autolevel>
+        
+        <autolevel level="18">
+            <feature><name>Indomitable Might</name><text>Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.</text></feature>
+        </autolevel>
+        
+        <autolevel level="20">
+            <feature><name>Primal Champion</name><text>At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Bard</name>
+        <hd>8</hd>
+        <proficiency>Dexterity, Charisma</proficiency>
+        <numSkills>3</numSkills>
+        <armor>Light armor</armor>
+        <weapons>Simple weapons, hand crossbows, longswords, rapiers, shortswords</weapons>
+        <tools>Three musical instruments of your choice</tools>
+        <wealth>5d4x10</wealth>
+        <spellAbility>Charisma</spellAbility><slotsReset>L</slotsReset>
+        <autolevel level="1"> <slots>2,2,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="2"> <slots>2,3,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="3"> <slots>2,4,2,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="4"> <slots>3,4,3,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="5"> <slots>3,4,3,2,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="6"> <slots>3,4,3,3,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="7"> <slots>3,4,3,3,1,0,0,0,0,0</slots></autolevel>
+        <autolevel level="8"> <slots>3,4,3,3,2,0,0,0,0,0</slots></autolevel>
+        <autolevel level="9"> <slots>3,4,3,3,3,1,0,0,0,0</slots></autolevel>
+        <autolevel level="10"><slots>4,4,3,3,3,2,0,0,0,0</slots></autolevel>
+        <autolevel level="11"><slots>4,4,3,3,3,2,1,0,0,0</slots></autolevel>
+        <autolevel level="12"><slots>4,4,3,3,3,2,1,0,0,0</slots></autolevel>
+        <autolevel level="13"><slots>4,4,3,3,3,2,1,1,0,0</slots></autolevel>
+        <autolevel level="14"><slots>4,4,3,3,3,2,1,1,0,0</slots></autolevel>
+        <autolevel level="15"><slots>4,4,3,3,3,2,1,1,1,0</slots></autolevel>
+        <autolevel level="16"><slots>4,4,3,3,3,2,1,1,1,0</slots></autolevel>
+        <autolevel level="17"><slots>4,4,3,3,3,2,1,1,1,1</slots></autolevel>
+        <autolevel level="18"><slots>4,4,3,3,3,3,1,1,1,1</slots></autolevel>
+        <autolevel level="19"><slots>4,4,3,3,3,3,2,1,1,1</slots></autolevel>
+        <autolevel level="20"><slots>4,4,3,3,3,3,2,2,1,1</slots></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Bardic Inspiration</name>
+                <text>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.</text>
+                <text>    Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</text>
+                <text>    You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.</text>
+                <text>    Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a dl2 at 15th level.</text></feature>
+            <feature><name>Spellcasting</name>
+                <text>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your Spells are part of your vast repertoire, magic that you can tune to different situations. See chapter 10 for the general rules of Spellcasting and chapter 11 for the bard spell list.</text>
+                <text>    Cantrips. You know two Cantrips of your choice from the bard spell list. You learn additional bard Cantrips of your choice at higher levels, learning a 3rd cantrip at 4th Level and a 4th at 10th level.</text>
+                <text>    Spell Slots. The Bard table shows how many Spell Slots you have to cast your Spells of 1st Level and higher. To cast one of these Spells, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest.</text>
+                <text>    For example, if you know the 1st-level spell Cure Wounds and have a 1st-level and a 2nd-level spell slot available, you can cast Cure Wounds using either slot.</text>
+                <text>    Spells Known of 1st Level and Higher. You know four 1st-level Spells of your choice from the bard spell list.</text>
+                <text>    You learn an additional bard spell of your choice at each level except 12th, 16th, 19th, and 20th. Each of these Spells must be of a level for which you have Spell Slots. For instance, when you reach 3rd Level in this class, you can learn one new spell of 1st or 2nd Level.</text>
+                <text>    Additionally, when you gain a level in this class, you can choose one of the Bard Spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have Spell Slots.</text>
+                <text>    Spellcasting Ability. Charisma is your Spellcasting Ability for your Bard Spells. Your magic comes from the heart and soul you pour into the Performance of your music or oration. You use your Charisma whenever a spell refers to your Spellcasting Ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when Making an Attack roll with one.</text>
+                <text>    Ritual Casting. You can cast any bard spell you know as a ritual if that spell has the ritual tag.</text>
+                <text>    Spellcasting Focus. You can use a musical instrument (see "Equipment") as a Spellcasting focus for your Bard Spells.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Jack of All Trades</name><special>jack of all trades</special><text>Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Song of Rest</name>
+                <text>Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest, each of those creatures regains an extra 1d6 hit points.</text>
+                <text>    The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d 10 at 13th level, and to 1d12 at 17th level.</text></feature>
+        </autolevel>
+        
+        <autolevel level="3">
+            <feature><name>Bard College</name><text>At 3rd level, you delve into the advanced techniques of a bard college of your choice: the College of Lore or the College of Valor, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th and 14th level.</text></feature>
+            <feature optional="YES"><name>College of Lore: Cutting Words</name><text>Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being charmed.</text></feature>
+            <feature><name>Expertise</name>
+                <text>At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</text>
+                <text>    At 10th level, you can choose another two skill proficiencies to gain this benefit.</text></feature>
+        </autolevel>
+        
+        <autolevel level="5">
+            <feature><name>Font of Inspiration</name><text>Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</text></feature>
+        </autolevel>
+        
+        <autolevel level="6">
+            <feature><name>Countercharm</name><text>At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).</text></feature>
+            <feature optional="YES"><name>College of Lore: Additional Magical Secrets</name><text>At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know.</text></feature>
+        </autolevel>
+        
+        <autolevel level="10">
+            <feature><name>Magical Secrets</name>
+                <text>By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.</text>
+                <text>    The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.</text>
+                <text>    You learn two additional spells from any class at 14th level and again at 18th level.</text></feature>
+        </autolevel>
+        
+        <autolevel level="14">
+            <feature optional="YES"><name>College of Lore: Peerless Skill</name><text>Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roil the die for the ability check, but before the DM tells you whether you succeed or fail.</text></feature>
+        </autolevel>
+        
+        <autolevel level="20">
+            <feature><name>Superior Inspiration</name><text>At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Cleric</name>
+        <hd>8</hd>
+        <proficiency>Wisdom, Charisma, History, Insight, Medicine, Persuasion, Religion</proficiency>
+        <numSkills>2</numSkills>
+        <armor>Light armor, medium armor, shields</armor>
+        <weapons>All simple weapons</weapons>
+        <tools>None</tools>
+        <wealth>5d4x10</wealth>
+        <spellAbility>Wisdom</spellAbility><slotsReset>L</slotsReset>
+        <autolevel level="1"> <slots>3,2,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="2"> <slots>3,3,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="3"> <slots>3,4,2,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="4"> <slots>4,4,3,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="5"> <slots>4,4,3,2,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="6"> <slots>4,4,3,3,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="7"> <slots>4,4,3,3,1,0,0,0,0,0</slots></autolevel>
+        <autolevel level="8"> <slots>4,4,3,3,2,0,0,0,0,0</slots></autolevel>
+        <autolevel level="9"> <slots>4,4,3,3,3,1,0,0,0,0</slots></autolevel>
+        <autolevel level="10"><slots>5,4,3,3,3,2,0,0,0,0</slots></autolevel>
+        <autolevel level="11"><slots>5,4,3,3,3,2,1,0,0,0</slots></autolevel>
+        <autolevel level="12"><slots>5,4,3,3,3,2,1,0,0,0</slots></autolevel>
+        <autolevel level="13"><slots>5,4,3,3,3,2,1,1,0,0</slots></autolevel>
+        <autolevel level="14"><slots>5,4,3,3,3,2,1,1,0,0</slots></autolevel>
+        <autolevel level="15"><slots>5,4,3,3,3,2,1,1,1,0</slots></autolevel>
+        <autolevel level="16"><slots>5,4,3,3,3,2,1,1,1,0</slots></autolevel>
+        <autolevel level="17"><slots>5,4,3,3,3,2,1,1,1,1</slots></autolevel>
+        <autolevel level="18"><slots>5,4,3,3,3,3,1,1,1,1</slots></autolevel>
+        <autolevel level="19"><slots>5,4,3,3,3,3,2,1,1,1</slots></autolevel>
+        <autolevel level="20"><slots>5,4,3,3,3,3,2,2,1,1</slots></autolevel>
+        
+        <autolevel level="2"> <counter><name>Channel Divinity</name><value>1</value><reset>S</reset></counter></autolevel>
+        <autolevel level="6"> <counter><name>Channel Divinity</name><value>2</value><reset>S</reset></counter></autolevel>
+        <autolevel level="18"><counter><name>Channel Divinity</name><value>3</value><reset>S</reset></counter></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Spellcasting</name>
+                <text>As a conduit for divine power, you can cast Cleric Spells. See chapter 10 for the general rules of Spellcasting and chapter 11 for a selection of Cleric Spells.</text>
+                <text>    Cantrips. At 1st Level, you know three Cantrips of your choice from the Cleric spell list. You learn additional Cleric Cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table.</text>
+                <text>    Preparing and Casting Spells. The Cleric table shows how many Spell Slots you have to cast your Spells of 1st Level and higher. To cast one of these Spells, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest.</text>
+                <text>    You prepare the list of Cleric Spells that are available for you to cast, choosing from the Cleric spell list. When you do so, choose a number of Cleric Spells equal to your Wisdom modifier + your Cleric level (minimum of one spell). The Spells must be of a level for which you have Spell Slots.</text>
+                <text>    For example, if you are a 3rd-level Cleric, you have four 1st-level and two 2nd-level Spell Slots. With a Wisdom of 16, your list of prepared Spells can include six Spells of 1st or 2nd Level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared Spells.</text>
+                <text>    You can change your list of prepared Spells when you finish a Long Rest. Preparing a new list of Cleric Spells requires time spent in prayer and meditation: at least 1 minute per Spell Level for each spell on your list.</text>
+                <text>    Spellcasting Ability. Wisdom is your Spellcasting Ability for your Cleric Spells. The power of your Spells comes from your devotion to your deity. You use your Wisdom whenever a Cleric spell refers to your Spellcasting Ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Cleric spell you cast and when Making an Attack roll with one.</text>
+                <text>    Ritual Casting. You can cast a Cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared.</text>
+                <text>    Spellcasting Focus. You can use a holy Symbol (see "Equipment") as a Spellcasting focus for your Cleric Spells.</text></feature>
+            <feature optional="YES"><name>Life Domain: Bonus Proficiency</name><text>When you choose this domain at 1st level, you gain proficiency with heavy armor.</text></feature>
+            <feature optional="YES"><name>Life Domain: Disciple of Life</name><text>Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2+the spell's level.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Channel Divinity</name>
+                <text>At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.</text>
+                <text>    When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.</text>
+                <text>    Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.</text>
+                <text>    Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level. you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.</text> </feature>
+            <feature><name>Channel Divinity: Turn Undead</name>
+                <text>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</text>
+                <text>    A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</text></feature>
+            <feature optional="YES"><name>Life Domain Channel Divinity: Preserve Life</name>
+                <text>Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.</text>
+                <text>    As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct.</text></feature>
+        </autolevel>
+        
+        <autolevel level="5">
+            <feature><name>Destroy Undead</name>
+                <text>Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold, as shown in the Destroy Undead table.</text>
+                <text></text>
+                <text>Cleric Level Destroys Undead of CR</text>
+                <text>5th 1/2 or lower</text>
+                <text>8th 1 or lower</text>
+                <text>11th 2 or lower</text>
+                <text>14th 3 or lower</text>
+                <text>17th 4 or lower</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="6">
+            <feature optional="YES"><name>Life Domain: Blessed Healer</name><text>Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2+the spell's level.</text></feature>
+        </autolevel>
+        
+        <autolevel level="8">
+            <feature optional="YES"><name>Life Domain: Divine Strike</name><text>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</text></feature>
+        </autolevel>
+        
+        <autolevel level="10">
+            <feature><name>Divine Intervention</name>
+                <text>Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.</text>
+                <text>    Imploring your deity’s aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.</text>
+                <text>    At 20th level, your call for intervention succeeds automatically, no roll required.</text></feature>
+        </autolevel>
+        
+        <autolevel level="17">
+            <feature optional="YES"><name>Life Domain: Supreme Healing</name><text>Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12.</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Druid</name>
+        <hd>8</hd>
+        <proficiency>Intelligence, Wisdom, Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, Survival</proficiency>
+        <numSkills>2</numSkills>
+        <armor>Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)</armor>
+        <weapons>Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears</weapons>
+        <tools>Herbalism kit</tools>
+        <wealth>2d4x10</wealth>
+        <spellAbility>Wisdom</spellAbility><slotsReset>L</slotsReset>
+        <autolevel level="1"> <slots>2,2,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="2"> <slots>2,3,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="3"> <slots>2,4,2,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="4"> <slots>3,4,3,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="5"> <slots>3,4,3,2,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="6"> <slots>3,4,3,3,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="7"> <slots>3,4,3,3,1,0,0,0,0,0</slots></autolevel>
+        <autolevel level="8"> <slots>3,4,3,3,2,0,0,0,0,0</slots></autolevel>
+        <autolevel level="9"> <slots>3,4,3,3,3,1,0,0,0,0</slots></autolevel>
+        <autolevel level="10"><slots>4,4,3,3,3,2,0,0,0,0</slots></autolevel>
+        <autolevel level="11"><slots>4,4,3,3,3,2,1,0,0,0</slots></autolevel>
+        <autolevel level="12"><slots>4,4,3,3,3,2,1,0,0,0</slots></autolevel>
+        <autolevel level="13"><slots>4,4,3,3,3,2,1,1,0,0</slots></autolevel>
+        <autolevel level="14"><slots>4,4,3,3,3,2,1,1,0,0</slots></autolevel>
+        <autolevel level="15"><slots>4,4,3,3,3,2,1,1,1,0</slots></autolevel>
+        <autolevel level="16"><slots>4,4,3,3,3,2,1,1,1,0</slots></autolevel>
+        <autolevel level="17"><slots>4,4,3,3,3,2,1,1,1,1</slots></autolevel>
+        <autolevel level="18"><slots>4,4,3,3,3,3,1,1,1,1</slots></autolevel>
+        <autolevel level="19"><slots>4,4,3,3,3,3,2,1,1,1</slots></autolevel>
+        <autolevel level="20"><slots>4,4,3,3,3,3,2,2,1,1</slots></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Druidic</name><text>You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom (Perception) check but can’t decipher it without magic.</text></feature>
+            <feature><name>Spellcasting</name>
+                <text>Drawing on the divine essence of Nature itself, you can cast Spells to shape that essence to your will. See chapter 10 for the general rules of Spellcasting and chapter 11 for the druid spell list.</text>
+                <text>    Cantrips. At 1st Level, you know two Cantrips of your choice from the druid spell list. You learn additional druid Cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table.</text>
+                <text>    Preparing and Casting Spells. The Druid table shows how many Spell Slots you have to cast your Spells of 1st Level and higher. To cast one of these Druid Spells, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest.</text>
+                <text>    You prepare the list of Druid Spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of Druid Spells equal to your Wisdom modifier + your druid level (minimum of one spell). The Spells must be of a level for which you have Spell Slots.</text>
+                <text>    For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level Spell Slots. With a Wisdom of 16, your list of prepared Spells can include six Spells of 1st or 2nd Level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can cast it using a 1st-level ar 2nd-level slot. Casting the spell doesn't remove it from your list of prepared Spells.</text>
+                <text>    You can also change your list of prepared Spells when you finish a Long Rest. Preparing a new list of Druid Spells requires time spent in prayer and meditation: at least 1 minute per Spell Level for each spell on your list.</text>
+                <text>    Spellcasting Ability. Wisdom is your Spellcasting Ability for your Druid Spells, since your magic draws upon your devotion and Attunement to Nature. You use your Wisdom whenever a spell refers to your Spellcasting Ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when Making an Attack roll with one.</text>
+                <text>    Ritual Casting. You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared.</text>
+                <text>    Spellcasting Focus. You can use a druidic focus (see "Equipment") as a Spellcasting focus for your Druid Spells.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Wild Shape</name>
+                <text>Starting at 2nd level, you can use your action to  magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</text>
+                <text>    Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn’t have a flying or swimming speed.</text>
+                <text></text>
+                <text>Beast Shapes</text>
+                <text>2nd Level. Max. CR: 1/4, Limitations: No flying or swimming speed, Example: Wolf</text>
+                <text>4th Level. Max. CR: 1/2, Limitations: No flying speed, Example: Crocodile</text>
+                <text>8th Level. Max. CR: 1, Limitations: None, Example: Giant eagle</text>
+                <text></text>
+                <text>    You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</text>
+                <text>    While you are transformed, the following rules apply:</text>
+                <text>• Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature’s bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.</text>
+                <text>• When you transform, you assume the beast’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</text>
+                <text>• You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.</text>
+                <text>• You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision, unless your new form also has that sense.</text>
+                <text>• You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</text></feature>
+            <feature><name>Druidic Shape</name><text>At 2nd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</text></feature>
+            <feature optional="YES"><name>Circle of Land: Bonus Cantrip</name><text>You learn one additional druid cantrip of your choice.</text></feature>
+            <feature optional="YES"><name>Circle of Land: Natural Recovery</name>
+                <text>You can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest</text>
+                <text>    For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots.</text></feature>
+        </autolevel>
+        
+        <autolevel level="6">
+            <feature optional="YES"><name>Circle of Land: Land's' Stride</name>
+                <text>Moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.</text>
+                <text>    In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</text></feature>
+        </autolevel>
+        
+        <autolevel level="10">
+            <feature optional="YES"><name>Circle of Land: Nature's Ward</name><text>You can't be charmed or frightened by elementals or fey, and you are immune to poison and disease.</text></feature>
+        </autolevel>
+        
+        <autolevel level="14">
+            <feature optional="YES"><name>Circle of Land: Nature's Sanctuary</name>
+                <text>Creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.</text>
+                <text>    The creature is aware of this effect before it makes its attack against you.</text></feature>
+        </autolevel>
+        
+        <autolevel level="18">
+            <feature><name>Timeless Body</name><text>Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.</text></feature>
+            <feature><name>Beast Spells</name><text>Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren’t able to provide material components.</text></feature>
+        </autolevel>
+        
+        <autolevel level="20">
+            <feature><name>Archdruid</name>
+                <text>At 20th level, you can use your Wild Shape an unlimited number of times.</text>
+                <text>    Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren’t consumed by a spell. You gain this benefit in both your normal shape and your beast shape from Wild Shape.</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Fighter</name>
+        <hd>10</hd>
+        <proficiency>Strength, Constitution, Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, Survival</proficiency>
+        <numSkills>2</numSkills>
+        <armor>All armor, shields</armor>
+        <weapons>Simple weapons, martial weapons</weapons>
+        <tools>None</tools>
+        <wealth>5d4x10</wealth>
+        <spellAbility>Intelligence</spellAbility><slotsReset>L</slotsReset>
+        <autolevel level="3"> <slots optional="YES">2,2,0,0,0</slots></autolevel>
+        <autolevel level="4"> <slots optional="YES">2,3,0,0,0</slots></autolevel>
+        <autolevel level="5"> <slots optional="YES">2,3,0,0,0</slots></autolevel>
+        <autolevel level="6"> <slots optional="YES">2,3,0,0,0</slots></autolevel>
+        <autolevel level="7"> <slots optional="YES">2,4,2,0,0</slots></autolevel>
+        <autolevel level="8"> <slots optional="YES">2,4,2,0,0</slots></autolevel>
+        <autolevel level="9"> <slots optional="YES">2,4,2,0,0</slots></autolevel>
+        <autolevel level="10"><slots optional="YES">3,4,3,0,0</slots></autolevel>
+        <autolevel level="11"><slots optional="YES">3,4,3,0,0</slots></autolevel>
+        <autolevel level="12"><slots optional="YES">3,4,3,0,0</slots></autolevel>
+        <autolevel level="13"><slots optional="YES">3,4,3,2,0</slots></autolevel>
+        <autolevel level="14"><slots optional="YES">3,4,3,2,0</slots></autolevel>
+        <autolevel level="15"><slots optional="YES">3,4,3,2,0</slots></autolevel>
+        <autolevel level="16"><slots optional="YES">3,4,3,3,0</slots></autolevel>
+        <autolevel level="17"><slots optional="YES">3,4,3,3,0</slots></autolevel>
+        <autolevel level="18"><slots optional="YES">3,4,3,3,0</slots></autolevel>
+        <autolevel level="19"><slots optional="YES">3,4,3,3,1</slots></autolevel>
+        <autolevel level="20"><slots optional="YES">3,4,3,3,1</slots></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="6"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="14" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature optional="YES"><name>Fighting Style: Archery</name><special>fighting style archery</special><text>You gain a +2 bonus to attack rolls you make with ranged weapons.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Defense</name><special>fighting style defense</special><text>While you are wearing armor, you gain a +1 bonus to AC.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Dueling</name><special>fighting style dueling</special><text>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Great Weapon Fighting</name><text>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Protection</name><text>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield. </text></feature>
+            <feature optional="YES"><name>Fighting Style: Two-Weapon Fighting</name><special>fighting style two</special><text>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</text></feature>
+            <feature><name>Second Wind</name>
+                <text>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.</text>
+                <text>    Once you use this feature, you must finish a short or long rest before you can use it again.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Action Surge</name>
+                <text>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</text>
+                <text>    Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</text></feature>
+        </autolevel>
+        
+        <autolevel level="3">
+            <feature optional="YES"><name>Champion: Improved Critical</name><special>improved critical</special><text>Your weapon attacks score a critical hit on a roll of 19 or 20.</text></feature>
+        </autolevel>
+        
+        <autolevel level="5">
+            <feature><name>Extra Attack</name>
+                <text>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</text>
+                <text>    The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</text></feature>
+        </autolevel>
+        
+        <autolevel level="7">
+            <feature optional="YES"><name>Champion: Remarkable Athlete</name>
+                <text>You can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus.</text>
+                <text>    In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier.</text></feature>
+        </autolevel>
+        
+        <autolevel level="9">
+            <feature><name>Indomitable</name>
+                <text>Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest.</text>
+                <text>    You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.</text></feature>
+        </autolevel>
+        
+        <autolevel level="10">
+            <feature optional="YES"><name>Champion: Additional Fighting Style</name><text>You can choose a second option from the Fighting Style class feature.</text></feature>
+        </autolevel>
+        
+        <autolevel level="15">
+            <feature optional="YES"><name>Champion: Superior Critical</name><text>Your weapon attacks score a critical hit on a roll of 18-20.</text></feature>
+        </autolevel>
+        
+        <autolevel level="18">
+            <feature optional="YES"><name>Champion: Survivor</name><text>You attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points.</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Monk</name>
+        <hd>8</hd>
+        <proficiency>Strength, Dexterity, Acrobatics, Athletics, History, Insight, Religion, Stealth</proficiency>
+        <numSkills>2</numSkills>
+        <armor>None</armor>
+        <weapons>Simple weapons, shortswords</weapons>
+        <tools>Choose one type of artisan's tools or one musical instrument</tools>
+        <wealth>5d4</wealth>
+        
+        <autolevel level="2"><counter><name>Ki Points</name><value>2</value><reset>S</reset></counter></autolevel>
+        <autolevel level="3"><counter><name>Ki Points</name><value>3</value><reset>S</reset></counter></autolevel>
+        <autolevel level="4"><counter><name>Ki Points</name><value>4</value><reset>S</reset></counter></autolevel>
+        <autolevel level="5"><counter><name>Ki Points</name><value>5</value><reset>S</reset></counter></autolevel>
+        <autolevel level="6"><counter><name>Ki Points</name><value>6</value><reset>S</reset></counter></autolevel>
+        <autolevel level="7"><counter><name>Ki Points</name><value>7</value><reset>S</reset></counter></autolevel>
+        <autolevel level="8"><counter><name>Ki Points</name><value>8</value><reset>S</reset></counter></autolevel>
+        <autolevel level="9"><counter><name>Ki Points</name><value>9</value><reset>S</reset></counter></autolevel>
+        <autolevel level="10"><counter><name>Ki Points</name><value>10</value><reset>S</reset></counter></autolevel>
+        <autolevel level="11"><counter><name>Ki Points</name><value>11</value><reset>S</reset></counter></autolevel>
+        <autolevel level="12"><counter><name>Ki Points</name><value>12</value><reset>S</reset></counter></autolevel>
+        <autolevel level="13"><counter><name>Ki Points</name><value>13</value><reset>S</reset></counter></autolevel>
+        <autolevel level="14"><counter><name>Ki Points</name><value>14</value><reset>S</reset></counter></autolevel>
+        <autolevel level="15"><counter><name>Ki Points</name><value>15</value><reset>S</reset></counter></autolevel>
+        <autolevel level="16"><counter><name>Ki Points</name><value>16</value><reset>S</reset></counter></autolevel>
+        <autolevel level="17"><counter><name>Ki Points</name><value>17</value><reset>S</reset></counter></autolevel>
+        <autolevel level="18"><counter><name>Ki Points</name><value>18</value><reset>S</reset></counter></autolevel>
+        <autolevel level="19"><counter><name>Ki Points</name><value>19</value><reset>S</reset></counter></autolevel>
+        <autolevel level="20"><counter><name>Ki Points</name><value>20</value><reset>S</reset></counter></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Unarmored Defense</name>
+                <special>unarmored defense wis</special>
+                <text>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</text></feature>
+            <feature><name>Martial Arts</name>
+                <text>At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don’t have the two-handed or heavy property.</text>
+                <text>    You gain the following benefits while you are unarmed or wielding only monk weapons and you aren’t wearing armor or wielding a shield:</text>
+                <text></text>
+                <text>• You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.</text>
+                <text>• You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.</text>
+                <text>• When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.</text>
+                <text></text>
+                <text>    Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wo od connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon in chapter 5.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Ki</name>
+                <text>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.</text>
+                <text>    You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. </text>
+                <text>    When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</text>
+                <text>    Some of your ki features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows: Ki save DC = 8 + your proficiency bonus + your Wisdom modifier</text>
+                <text></text>
+                <text>Flurry of Blows</text>
+                <text>Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.</text>
+                <text></text>
+                <text>Patient Defense</text>
+                <text>You can spend 1 ki point to take the Dodge action as a bonus action on your turn.</text>
+                <text></text>
+                <text>Step of the Wind</text>
+                <text>You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</text></feature>
+            <feature><name>Unarmored Movement</name>
+                <text>Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in the Monk table.</text>
+                <text>    At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</text>
+                <modifier category="bonus">speed +10</modifier></feature>
+        </autolevel>
+        
+        <autolevel level="3">
+            <feature><name>Manastic Tradition</name><text>When you reach 3rd level, you commit yourself to a monastic tradition: the Way of the Open Hand, the Way of Shadow, or the Way of the Four Elements, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.</text></feature>
+            <feature><name>Deflect Missiles</name>
+                <text>Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.</text>
+                <text>    If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the  same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.</text></feature>
+            
+            <feature optional="YES"><name>Way of the Open Hand: Open Hand Technique</name>
+                <text>Starting when you choose this tradition at 3rd level, you can manipulate your enemy’s ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:</text>
+                <text>• It must succeed on a Dexterity saving throw or be knocked prone.</text>
+                <text>• It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.</text>
+                <text>• It can’t take reactions until the end of your next turn.</text></feature>
+        </autolevel>
+        
+        <autolevel level="4">
+            <feature><name>Slow Fall</name><text>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</text></feature>
+        </autolevel>
+        
+        <autolevel level="5">
+            <feature><name>Extra Attack</name><text>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</text></feature>
+            <feature><name>Stunning Strike</name><text>Starting at 5th level, you can interfere with the flow of ki in an opponent’s body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</text></feature>
+        </autolevel>
+        
+        <autolevel level="6">
+            <feature><name>Ki-Empowered Strikes</name><text>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</text></feature>
+            <feature optional="YES"><name>Way of the Open Hand: Wholeness of Body</name><text>At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.</text></feature>
+        </autolevel>
+        
+        <autolevel level="7">
+            <feature><name>Stillness of Mind</name><text>Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</text></feature>
+        </autolevel>
+        
+        <autolevel level="10">
+            <feature><name>Purity of Body</name><text>At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison.</text></feature>
+        </autolevel>
+        
+        <autolevel level="11">
+            <feature optional="YES"><name>Way of the Open Hand: Tranquility</name><text>Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.</text></feature>
+        </autolevel>
+        
+        <autolevel level="13">
+            <feature><name>Tongue of the Sun and Moon</name><text>Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</text></feature>
+        </autolevel>
+        
+        <autolevel level="14">
+            <feature><name>Diamond Soul</name>
+                <text>Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.</text>
+                <text>    Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</text></feature>
+        </autolevel>
+        
+        <autolevel level="15">
+            <feature><name>Timeless Body</name><text>At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water.</text></feature>
+        </autolevel>
+        
+        <autolevel level="17">
+            <feature optional="YES"><name>Way of the Open Hand: Quivering Palm</name>
+                <text>At 17th level, you gain the ability to set up lethal vibrations in someone’s body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.</text>
+                <text>    You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.</text></feature>
+        </autolevel>
+        
+        <autolevel level="18">
+            <feature><name>Empty Body</name>
+                <text>Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.</text>
+                <text>    Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</text></feature>
+        </autolevel>
+        
+        <autolevel level="20">
+            <feature><name>Perfect Soul</name><text>At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points.</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Paladin</name>
+        <hd>10</hd>
+        <proficiency>Wisdom, Charisma, Athletics, Insight, Intimidation, Medicine, Persuasion, Religion</proficiency>
+        <numSkills>2</numSkills>
+        <armor>All armor, shields</armor>
+        <weapons>Simple weapons, martial weapons</weapons>
+        <tools>None</tools>
+        <wealth>5d4x10</wealth>
+        <spellAbility>Charisma</spellAbility><slotsReset>L</slotsReset>
+        <autolevel level="1"> <slots>0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="2"> <slots>0,2,0,0,0,0</slots></autolevel>
+        <autolevel level="3"> <slots>0,3,0,0,0,0</slots></autolevel>
+        <autolevel level="4"> <slots>0,3,0,0,0,0</slots></autolevel>
+        <autolevel level="5"> <slots>0,4,2,0,0,0</slots></autolevel>
+        <autolevel level="6"> <slots>0,4,2,0,0,0</slots></autolevel>
+        <autolevel level="7"> <slots>0,4,3,0,0,0</slots></autolevel>
+        <autolevel level="8"> <slots>0,4,3,0,0,0</slots></autolevel>
+        <autolevel level="9"> <slots>0,4,3,2,0,0</slots></autolevel>
+        <autolevel level="10"><slots>0,4,3,2,0,0</slots></autolevel>
+        <autolevel level="11"><slots>0,4,3,3,0,0</slots></autolevel>
+        <autolevel level="12"><slots>0,4,3,3,0,0</slots></autolevel>
+        <autolevel level="13"><slots>0,4,3,3,1,0</slots></autolevel>
+        <autolevel level="14"><slots>0,4,3,3,1,0</slots></autolevel>
+        <autolevel level="15"><slots>0,4,3,3,2,0</slots></autolevel>
+        <autolevel level="16"><slots>0,4,3,3,2,0</slots></autolevel>
+        <autolevel level="17"><slots>0,4,3,3,3,1</slots></autolevel>
+        <autolevel level="18"><slots>0,4,3,3,3,1</slots></autolevel>
+        <autolevel level="19"><slots>0,4,3,3,3,2</slots></autolevel>
+        <autolevel level="20"><slots>0,4,3,3,3,2</slots></autolevel>
+        
+        <autolevel level="3"><counter><name>Channel Divinity</name><slots>1</slots><reset>S</reset></counter></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Divine Sense</name>
+                <text>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.</text>
+                <text>    You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</text></feature>
+            <feature><name>Lay on Hands</name>
+                <text>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.</text>
+                <text>    As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</text>
+                <text>    Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</text>
+                <text>    This feature has no effect on undead and constructs.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature optional="YES"><name>Fighting Style: Defense</name><special>fighting style defense</special><text>While you are wearing armor, you gain a +1 bonus to AC.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Dueling</name><special>fighting style dueling</special><text>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Great Weapon Fighting</name><text>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Protection</name><text>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</text></feature>
+            <feature><name>Divine Smite</name><text>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one paladin spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.</text></feature>
+            <feature><name>Spellcasting</name>
+                <text>By 2nd Level, you have learned to draw on Divine Magic through meditation and prayer to cast Spells as a Cleric does. See chapter 10 for the general rules of Spellcasting and chapter 11 for the Paladin spell list.</text>
+                <text>    Preparing and Casting Spells. The Paladin table shows how many Spell Slots you have to cast your Spells. To cast one of your Paladin Spells of 1st Level or higher, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest.</text>
+                <text>    You prepare the list of Paladin Spells that are available for you to cast, choosing from the Paladin spell list. When you do so, choose a number of Paladin Spells equal to your Charisma modifier + half your Paladin level, rounded down (minimum of one spell). The Spells must be of a level for which you have Spell Slots.</text>
+                <text>    For example, if you are a 5th-level Paladin, you have four 1st-level and two 2nd-level Spell Slots. With a Charisma of 14, your list of prepared Spells can include four Spells of 1st or 2nd Level, in any combination. If you prepare the 1st-level spell Cure Wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared Spells.</text>
+                <text>    You can change your list of prepared Spells when you finish a Long Rest. Preparing a new list of Paladin Spells requires time spent in prayer and meditation: at least 1 minute per Spell Level for each spell on your list.</text>
+                <text>    Spellcasting Ability. Charisma is your Spellcasting Ability for your Paladin Spells, since their power derives from the Strength of your convictions. You use your Charisma whenever a spell refers to your Spellcasting Ability. In addition, you use your Charisma modifier when setting the saving throw DC for a Paladin spell you cast and when Making an Attack roll with one.</text>
+                <text>    Spellcasting Focus. You can use a holy Symbol as a Spellcasting focus for your Paladin Spells.</text></feature>
+        </autolevel>
+        
+        <autolevel level="3">
+            <feature><name>Divine Health</name><text>By 3rd level, the divine magic flowing through you makes you immune to disease.</text></feature>
+            <feature><name>Sacred Oath</name>
+                <text>When you reach 3rd Level, you swear the oath that binds you as a Paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.</text>
+                <text>    Your choice grants you features at 3rd Level and again at 7th, 15th, and 20th level. Those features include oath Spells and the Channel Divinity feature.</text>
+                <text>    Oath Spells. Each oath has a list of associated Spells. You gain access to these Spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath Spells don’t count against the number of Spells you can prepare each day.</text>
+                <text>    If you gain an oath spell that doesn’t appear on the Paladin spell list, the spell is nonetheless a Paladin spell for you.</text>
+                <text>    Channel Divinity. Your oath allows you to channel divine energy to fuel magical Effects. Each Channel Divinity option provided by your oath explains how to use it.</text>
+                <text>    When you use your Channel Divinity, you choose which option to use. You must then finish a short or Long Rest to use your Channel Divinity again.</text>
+                <text>    Some Channel Divinity Effects require Saving Throws. When you use such an effect from this class, the DC equals your Paladin spell save DC.</text></feature>
+            <feature optional="YES"><name>Oath of Devotion: Tenets of Devotion</name>
+                <text>Though the exact words and strictures of the Oath of Devotion vary, paladins of this oath share these tenets.</text>
+                <text>    Honesty. Don't lie or cheat. Let your word be your promise.</text>
+                <text>    Courage. Never fear to act, though caution is wise.</text>
+                <text>    Compassion. Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom.</text>
+                <text>    Honor. Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.</text>
+                <text>    Duty. Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you.</text></feature>
+            <feature optional="YES"><name>Oath of Devotion Channel Divinity: Sacred Weapon</name>
+                <text>As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.</text>
+                <text>    You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</text></feature>
+            <feature optional="YES"><name>Oath of Devotion Channel Divinity: Turn the Unholy</name>
+                <text>As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</text>
+                <text>    A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</text></feature>
+        </autolevel>
+        
+        <autolevel level="5">
+            <feature><name>Extra Attack</name><text>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</text></feature>
+        </autolevel>
+        
+        <autolevel level="6">
+            <feature><name>Aura of Protection</name>
+                <text>Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.</text>
+                <text>    At 18th level, the range of this aura increases to 30 feet.</text></feature>
+        </autolevel>
+        
+        <autolevel level="7">
+            <feature optional="YES"><name>Oath of Devotion: Aura of Devotion</name>
+                <text>Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.</text>
+                <text>    At 18th level, the range of this aura increases to 30 feet.</text></feature>
+        </autolevel>
+        
+        <autolevel level="10">
+            <feature><name>Aura of Courage</name>
+                <text>Starting at 10th level, you and friendly creatures within 10 feet of you can’t be frightened while you are conscious.</text>
+                <text>    At 18th level, the range of this aura increases to 30 feet.</text></feature>
+        </autolevel>
+        
+        <autolevel level="11">
+            <feature><name>Improved Divine Smite</name><text>By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite.</text></feature>
+        </autolevel>
+        
+        <autolevel level="14">
+            <feature><name>Cleansing Touch</name>
+                <text>Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.</text>
+                <text>    You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.</text></feature>
+        </autolevel>
+        
+        <autolevel level="15">
+            <feature optional="YES"><name>Oath of Devotion: Purity of Spirit</name><text>Beginning at 15th level, you are always under the effects of a protection from evil and good spell.</text></feature>
+        </autolevel>
+        
+        <autolevel level="20">
+            <feature optional="YES"><name>Oath of Devotion: Holy Nimbus</name>
+                <text>At 20th level, as an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.</text>
+                <text>    Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.</text>
+                <text>    In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a long rest.</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Ranger</name>
+        <hd>10</hd>
+        <proficiency>Strength, Dexterity, Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, Survival</proficiency>
+        <numSkills>3</numSkills>
+        <armor>Light armor, medium armor, shields</armor>
+        <weapons>Simple weapons, martial weapons</weapons>
+        <tools>None</tools>
+        <wealth>5d4x10</wealth>
+        <spellAbility>Wisdom</spellAbility><slotsReset>L</slotsReset>
+        <autolevel level="1"> <slots>0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="2"> <slots>0,2,0,0,0,0</slots></autolevel>
+        <autolevel level="3"> <slots>0,3,0,0,0,0</slots></autolevel>
+        <autolevel level="4"> <slots>0,3,0,0,0,0</slots></autolevel>
+        <autolevel level="5"> <slots>0,4,2,0,0,0</slots></autolevel>
+        <autolevel level="6"> <slots>0,4,2,0,0,0</slots></autolevel>
+        <autolevel level="7"> <slots>0,4,3,0,0,0</slots></autolevel>
+        <autolevel level="8"> <slots>0,4,3,0,0,0</slots></autolevel>
+        <autolevel level="9"> <slots>0,4,3,2,0,0</slots></autolevel>
+        <autolevel level="10"><slots>0,4,3,2,0,0</slots></autolevel>
+        <autolevel level="11"><slots>0,4,3,3,0,0</slots></autolevel>
+        <autolevel level="12"><slots>0,4,3,3,0,0</slots></autolevel>
+        <autolevel level="13"><slots>0,4,3,3,1,0</slots></autolevel>
+        <autolevel level="14"><slots>0,4,3,3,1,0</slots></autolevel>
+        <autolevel level="15"><slots>0,4,3,3,2,0</slots></autolevel>
+        <autolevel level="16"><slots>0,4,3,3,2,0</slots></autolevel>
+        <autolevel level="17"><slots>0,4,3,3,3,1</slots></autolevel>
+        <autolevel level="18"><slots>0,4,3,3,3,1</slots></autolevel>
+        <autolevel level="19"><slots>0,4,3,3,3,2</slots></autolevel>
+        <autolevel level="20"><slots>0,4,3,3,3,2</slots></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Favored Enemy</name>
+                <text>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</text>
+                <text>    Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orc s) as favored enemies.</text>
+                <text>    You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</text>
+                <text>    When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.</text>
+                <text>    You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</text></feature>
+            <feature><name>Natural Explorer</name>
+                <text>You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</text>
+                <text>    While traveling for an hour or more in your favored terrain, you gain the following benefits:</text>
+                <text></text>
+                <text>• Difficult terrain doesn’t slow your group’s travel.</text>
+                <text>• Your group can’t become lost except by magical means.</text>
+                <text>• Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</text>
+                <text>• If you are traveling alone, you can move stealthily at a normal pace.</text>
+                <text>• When you forage, you find twice as much food as you normally would.</text>
+                <text>• While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</text>
+                <text></text>
+                <text>    You choose additional favored terrain types at 6th and 10th level.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Spellcasting</name>
+                <text>By the time you reach 2nd Level, you have learned to use the magical essence of Nature to cast Spells, much as a druid does.</text>
+                <text>    Spell Slots. The Ranger table shows how many Spell Slots you have to cast your Spells of 1st Level and higher. To cast one of these Spells, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest.</text>
+                <text>    For example, if you know the 1st-level spell Animal Friendship and have a 1st-level and a 2nd-level spell slot available, you can cast Animal Friendship using either slot.</text>
+                <text>    Spells Known of 1st Level and Higher. You know two 1st-level Spells of your choice from the Ranger spell list.</text>
+                <text>    You learn an additional Ranger spell of your choice at each odd numbered level thereafter. Each of these Spells must be of a level for which you have Spell Slots. For instance, when you reach 5th Level in this class, you can learn one new spell of 1st or 2nd Level.</text>
+                <text>    Additionally, when you gain a level in this class, you can choose one of the Ranger Spells you know and replace it with another spell from the Ranger spell list, which also must be of a level for which you have Spell Slots.</text>
+                <text>    Spellcasting Ability. Wisdom is your Spellcasting Ability for your Ranger Spells, since your magic draws on your Attunement to Nature. You use your Wisdom whenever a spell refers to your Spellcasting Ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Ranger spell you cast and when Making an Attack roll with one.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Archery</name><special>fighting style archery</special><text>You gain a +2 bonus to attack rolls you make with ranged weapons.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Defense</name><special>fighting style defense</special><text>While you are wearing armor, you gain a +1 bonus to AC.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Dueling</name><special>fighting style dueling</special><text>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</text></feature>
+            <feature optional="YES"><name>Fighting Style: Two-Weapon Fighting</name><special>fighting style two</special><text>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</text></feature>
+        </autolevel>
+        
+        <autolevel level="3">
+            <feature optional="YES"><name>Hunter: Hunter's Prey</name>
+                <text>You gain one of the following features of your choice. </text>
+                <text>    Colossus Slayer. Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn. </text>
+                <text>    Giant Killer. When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature. </text>
+                <text>    Horde Breaker. Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</text></feature>
+            <feature><name>Primeval Awareness</name><text>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</text></feature>
+        </autolevel>
+        
+        <autolevel level="5">
+            <feature><name>Extra Attack</name><text>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</text></feature>
+        </autolevel>
+        
+        <autolevel level="7">
+            <feature optional="YES"><name>Hunter: Defensive Tactics</name>
+                <text>You gain one of the following features of your choice. </text>
+                <text>    Escape the Horde. Opportunity attacks against you are made with disadvantage. </text>
+                <text>    Multiattack Defense. When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn. </text>
+                <text>    Steel Will. You have advantage on saving throws against being frightened.</text></feature>
+        </autolevel>
+        
+        <autolevel level="8">
+            <feature><name>Land's Stride</name>
+                <text>Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.</text>
+                <text>    In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</text></feature>
+        </autolevel>
+        
+        <autolevel level="10">
+            <feature><name>Hide in Plain Sight</name>
+                <text>Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally o ccurring materials with which to create your camouflage.</text>
+                <text>    Once you are camouflaged in this way, you can try to hide by p ressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.</text></feature>
+        </autolevel>
+        
+        <autolevel level="11">
+            <feature optional="YES"><name>Hunter: Multiattack</name>
+                <text>At 11th level, you gain one of the following features of your choice. </text>
+                <text>    Volley. You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target. </text>
+                <text>    Whirlwind Attack. You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</text></feature>
+        </autolevel>
+        
+        <autolevel level="14">
+            <feature><name>Vanish</name><text>Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can’t be tracked by nonmagical means, unless you choose to leave a trail.</text></feature>
+        </autolevel>
+        
+        <autolevel level="15">
+            <feature optional="YES"><name>Hunter: Superior Hunter's Defense</name>
+                <text>    You gain one of the following features of your choice. </text>
+                <text>    Evasion. You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. </text>
+                <text>    Stand Against the Tide. When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.</text>
+                <text>    Uncanny Dodge. When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</text></feature>
+        </autolevel>
+        
+        <autolevel level="18">
+            <feature><name>Feral Senses</name><text>At 18th level, you gain preternatural senses that help you fight creatures you can’t see. When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it. You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you aren’t blinded or deafened.</text></feature>
+        </autolevel>
+        
+        <autolevel level="20">
+            <feature><name>Foe Slayer</name><text>At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Rogue</name>
+        <hd>8</hd>
+        <proficiency>Dexterity, Intelligence, Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, Stealth</proficiency>
+        <numSkills>4</numSkills>
+        <armor>Light armor</armor>
+        <weapons>Simple weapons, hand crossbows, longswords, rapiers, shortswords</weapons>
+        <tools>Thieves' tools</tools>
+        <wealth>4d4x10</wealth>
+        <spellAbility>Intelligence</spellAbility><slotsReset>L</slotsReset>
+        <autolevel level="3"> <slots optional="YES">3,2,0,0,0</slots></autolevel>
+        <autolevel level="4"> <slots optional="YES">3,3,0,0,0</slots></autolevel>
+        <autolevel level="5"> <slots optional="YES">3,3,0,0,0</slots></autolevel>
+        <autolevel level="6"> <slots optional="YES">3,3,0,0,0</slots></autolevel>
+        <autolevel level="7"> <slots optional="YES">3,4,2,0,0</slots></autolevel>
+        <autolevel level="8"> <slots optional="YES">3,4,2,0,0</slots></autolevel>
+        <autolevel level="9"> <slots optional="YES">3,4,2,0,0</slots></autolevel>
+        <autolevel level="10"><slots optional="YES">4,4,3,0,0</slots></autolevel>
+        <autolevel level="11"><slots optional="YES">4,4,3,0,0</slots></autolevel>
+        <autolevel level="12"><slots optional="YES">4,4,3,0,0</slots></autolevel>
+        <autolevel level="13"><slots optional="YES">4,4,3,2,0</slots></autolevel>
+        <autolevel level="14"><slots optional="YES">4,4,3,2,0</slots></autolevel>
+        <autolevel level="15"><slots optional="YES">4,4,3,2,0</slots></autolevel>
+        <autolevel level="16"><slots optional="YES">4,4,3,3,0</slots></autolevel>
+        <autolevel level="17"><slots optional="YES">4,4,3,3,0</slots></autolevel>
+        <autolevel level="18"><slots optional="YES">4,4,3,3,0</slots></autolevel>
+        <autolevel level="19"><slots optional="YES">4,4,3,3,1</slots></autolevel>
+        <autolevel level="20"><slots optional="YES">4,4,3,3,1</slots></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="10" scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Expertise</name>
+                <text>At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</text>
+                <text>    At 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit.</text></feature>
+            <feature><name>Sneak Attack</name>
+                <text>Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</text>
+                <text>    You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.</text>
+                <text>    The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.</text></feature>
+            <feature><name>Thieves' Cant</name>
+                <text>During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.</text>
+                <text>    In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Cunning Action</name><text>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can b e used only to take the Dash, Disengage, or Hide action.</text></feature>
+        </autolevel>
+        
+        <autolevel level="3">
+            <feature><name>Roguish Archetype</name><text>At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities: Thief, Assassin, or Arcane Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.</text></feature>
+            <feature optional="YES"><name>Thief: Fast Hands</name><text>Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open a lock, or take the Use an Object action.</text></feature>
+            <feature optional="YES"><name>Thief: Second-Story Work</name>
+                <text>Starting at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.</text>
+                <text>    In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.</text></feature>
+        </autolevel>
+        
+        <autolevel level="5">
+            <feature><name>Uncanny Dodge</name><text>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</text></feature>
+        </autolevel>
+        
+        <autolevel level="7">
+            <feature><name>Evasion</name><text>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</text></feature>
+        </autolevel>
+        
+        <autolevel level="9">
+            <feature optional="YES"><name>Thief: Supreme Sneak</name><text>Starting at 9th level, you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.</text></feature>
+        </autolevel>
+        
+        <autolevel level="11">
+            <feature><name>Reliable Talent</name><text>By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</text></feature>
+        </autolevel>
+        
+        <autolevel level="13">
+            <feature optional="YES"><name>Thief: Use Magic Device</name><text>By 13th level, you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items.</text></feature>
+        </autolevel>
+        
+        <autolevel level="14">
+            <feature><name>Blindsense</name><text>Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.</text></feature>
+        </autolevel>
+        
+        <autolevel level="15">
+            <feature><name>Slippery Mind</name><text>By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</text></feature>
+        </autolevel>
+        
+        <autolevel level="17">
+            <feature optional="YES"><name>Thief: Thief's Reflexes</name><text>When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use this feature when you are surprised.</text></feature>
+        </autolevel>
+        
+        <autolevel level="18">
+            <feature><name>Elusive</name><text>Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren’t incapacitated.</text></feature>
+        </autolevel>
+        
+        <autolevel level="20">
+            <feature><name>Stroke of Luck</name>
+                <text>At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.</text>
+                <text>    Once you use this feature, you can’t use it again until you finish a short or long rest.</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Sorcerer</name>
+        <hd>6</hd>
+        <proficiency>Constitution, Charisma, Arcana, Deception, Insight, Intimidation, Persuasion, Religion</proficiency>
+        <numSkills>2</numSkills>
+        <armor>None</armor>
+        <weapons>Daggers, darts, slings, quarterstaffs, light crossbows</weapons>
+        <tools>None</tools>
+        <wealth>3d4x10</wealth>
+        <spellAbility>Charisma</spellAbility><slotsReset>L</slotsReset>
+        <autolevel level="1"> <slots>4,2,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="2"> <slots>4,3,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="3"> <slots>4,4,2,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="4"> <slots>5,4,3,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="5"> <slots>5,4,3,2,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="6"> <slots>5,4,3,3,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="7"> <slots>5,4,3,3,1,0,0,0,0,0</slots></autolevel>
+        <autolevel level="8"> <slots>5,4,3,3,2,0,0,0,0,0</slots></autolevel>
+        <autolevel level="9"> <slots>5,4,3,3,3,1,0,0,0,0</slots></autolevel>
+        <autolevel level="10"><slots>6,4,3,3,3,2,0,0,0,0</slots></autolevel>
+        <autolevel level="11"><slots>6,4,3,3,3,2,1,0,0,0</slots></autolevel>
+        <autolevel level="12"><slots>6,4,3,3,3,2,1,0,0,0</slots></autolevel>
+        <autolevel level="13"><slots>6,4,3,3,3,2,1,1,0,0</slots></autolevel>
+        <autolevel level="14"><slots>6,4,3,3,3,2,1,1,0,0</slots></autolevel>
+        <autolevel level="15"><slots>6,4,3,3,3,2,1,1,1,0</slots></autolevel>
+        <autolevel level="16"><slots>6,4,3,3,3,2,1,1,1,0</slots></autolevel>
+        <autolevel level="17"><slots>6,4,3,3,3,2,1,1,1,1</slots></autolevel>
+        <autolevel level="18"><slots>6,4,3,3,3,3,1,1,1,1</slots></autolevel>
+        <autolevel level="19"><slots>6,4,3,3,3,3,2,1,1,1</slots></autolevel>
+        <autolevel level="20"><slots>6,4,3,3,3,3,2,2,1,1</slots></autolevel>
+        
+        <autolevel level="2"> <counter><name>Sorcery Points</name><value>2</value><reset>L</reset></counter></autolevel>
+        <autolevel level="3"> <counter><name>Sorcery Points</name><value>3</value><reset>L</reset></counter></autolevel>
+        <autolevel level="4"> <counter><name>Sorcery Points</name><value>4</value><reset>L</reset></counter></autolevel>
+        <autolevel level="5"> <counter><name>Sorcery Points</name><value>5</value><reset>L</reset></counter></autolevel>
+        <autolevel level="6"> <counter><name>Sorcery Points</name><value>6</value><reset>L</reset></counter></autolevel>
+        <autolevel level="7"> <counter><name>Sorcery Points</name><value>7</value><reset>L</reset></counter></autolevel>
+        <autolevel level="8"> <counter><name>Sorcery Points</name><value>8</value><reset>L</reset></counter></autolevel>
+        <autolevel level="9"> <counter><name>Sorcery Points</name><value>9</value><reset>L</reset></counter></autolevel>
+        <autolevel level="10"> <counter><name>Sorcery Points</name><value>10</value><reset>L</reset></counter></autolevel>
+        <autolevel level="11"> <counter><name>Sorcery Points</name><value>11</value><reset>L</reset></counter></autolevel>
+        <autolevel level="12"> <counter><name>Sorcery Points</name><value>12</value><reset>L</reset></counter></autolevel>
+        <autolevel level="13"> <counter><name>Sorcery Points</name><value>13</value><reset>L</reset></counter></autolevel>
+        <autolevel level="14"> <counter><name>Sorcery Points</name><value>14</value><reset>L</reset></counter></autolevel>
+        <autolevel level="15"> <counter><name>Sorcery Points</name><value>15</value><reset>L</reset></counter></autolevel>
+        <autolevel level="16"> <counter><name>Sorcery Points</name><value>16</value><reset>L</reset></counter></autolevel>
+        <autolevel level="17"> <counter><name>Sorcery Points</name><value>17</value><reset>L</reset></counter></autolevel>
+        <autolevel level="18"> <counter><name>Sorcery Points</name><value>18</value><reset>L</reset></counter></autolevel>
+        <autolevel level="19"> <counter><name>Sorcery Points</name><value>19</value><reset>L</reset></counter></autolevel>
+        <autolevel level="20"> <counter><name>Sorcery Points</name><value>20</value><reset>L</reset></counter></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Spellcasting</name>
+                <text>An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with Arcane Magic. This font of magic, whatever its Origin, fuels your Spells. See chapter 10 for the general rules of Spellcasting and chapter 11 for the Sorcerer spell list.</text>
+                <text>    Cantrips. At 1st Level, you know four Cantrips of your choice from the Sorcerer spell list. You learn an additional Sorcerer cantrip of your choice at 4th Level and another at 10th level.</text>
+                <text>    Spell Slots. The Sorcerer table shows how many Spell Slots you have to cast your Spells of 1st Level and higher. To cast one of these Sorcerer Spells, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest.</text>
+                <text>    For example, if you know the 1st-level spell Burning Hands and have a 1st-level and a 2nd-level spell slot available, you can cast Burning Hands using either slot.</text>
+                <text>    Spells Known of 1st Level and Higher. You know two 1st-level Spells of your choice from the Sorcerer spell list.</text>
+                <text>    You learn an additional Sorcerer spell of your choice at each level except 12th, 14th, 16th, 18th, 19th, and 20th. Each of these Spells must be of a level for which you have Spell Slots. For instance, when you reach 3rd Level in this class, you can learn one new spell of 1st or 2nd Level.</text>
+                <text>    Additionally, when you gain a level in this class, you can choose one of the Sorcerer Spells you know and replace it with another spell from the Sorcerer spell list, which also must be of a level for which you have Spell Slots.</text>
+                <text>    Spellcasting Ability. Charisma is your Spellcasting Ability for your Sorcerer Spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your Spellcasting Ability. In addition, you use your Charisma modifier when setting the saving throw DC for a Sorcerer spell you cast and when Making an Attack roll with one.</text>
+                <text>    Spellcasting Focus. You can use an arcane focus as a Spellcasting focus for your Sorcerer Spells.</text></feature>
+            <feature><name>Sorcerous Origin</name>
+                <text>Choose a sorcerous origin, which describes the source of your innate magical power: Draconic Bloodline or Wild Magic, both detailed at the end of the class description.</text>
+                <text>    Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.</text></feature>
+            <feature optional="YES"><name>Draconic Bloodline: Dragon Ancestor</name>
+                <text>At 1st level, you choose one type of dragon as your ancestor. The damage type associated with each dragon is used by features you gain later.</text>
+                <text>    You can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.</text></feature>
+            <feature optional="YES"><name>Draconic Bloodline: Draconic Resilience</name>
+                <modifier category="bonus">unarmored armor class +3</modifier>
+                <text>As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.</text>
+                <text>    Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + your Dexterity modifier.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Sorcery Points</name><text>You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.</text></feature>
+            <feature><name>Flexible Casting</name>
+                <text>You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.</text>
+                <text>    Creating Spell Slots. You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</text>
+                <text></text>
+                <text>Creating Spell Slots</text>
+                <text>Spell Slot Level:Sorcery Point Cost</text>
+                <text>1st: 2</text>
+                <text>2nd: 3</text>
+                <text>3rd: 5</text>
+                <text>4th: 6</text>
+                <text>5th: 7</text>
+                <text></text>
+                <text>    Converting a Spell Slot to Sorcery Points. As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points  equal to the slot’s level.</text></feature>
+        </autolevel>
+        
+        <autolevel level="3">
+            <feature><name>Metamagic</name>
+                <text>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.</text>
+                <text>    You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</text></feature>
+        </autolevel>
+        
+        <autolevel level="6">
+            <feature optional="YES"><name>Draconic Bloodline: Elemental Affinity</name>
+                <text>Starting at 6th level, when you cast a spell that deals damage of the type associated with your draconic ancestry, add your Charisma modifier to that damage.</text>
+                <text>    At the same time, you can spend 1 sorcery point to gain resistance to that damage type for 1 hour.</text></feature>
+        </autolevel>
+        
+        <autolevel level="14">
+            <feature optional="YES"><name>Draconic Bloodline: Dragon Wings</name>
+                <text>At 14th level, you gain the ability to sprout a pair of dragon wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.</text>
+                <text>    You can't manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them.</text></feature>
+        </autolevel>
+        
+        <autolevel level="18">
+            <feature optional="YES"><name>Draconic Bloodline: Draconic Presence</name><text>Beginning at 18th level, you can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or frightened. As an action, you can spend 5 sorcery points to draw on this power and exude an aura of awe or fear (your choice) to a distance of 60 feet. For 1 minute or until you lose your concentration (as if you were casting a concentration spell), each hostile creature that starts its turn in this aura must succeed on a Wisdom saving throw or be charmed (if you chose awe) or frightened (if you chose fear) until the aura ends. A creature that succeeds on this saving throw is immune to your aura for 24 hours.</text></feature>
+        </autolevel>
+        
+        <autolevel level="20">
+            <feature><name>Sorcerous Restoration</name><text>At 20th level, you regain 4 expended sorcery points whenever you finish a short rest.</text></feature>
+        </autolevel>
+        
+        <autolevel level="3">
+            <feature optional="YES"><name>Metamagic: Careful Spell</name><text>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell. </text></feature>
+            <feature optional="YES"><name>Metamagic: Distant Spell</name>
+                <text>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.</text>
+                <text>    When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</text></feature>
+            <feature optional="YES"><name>Metamagic: Empowered Spell</name>
+                <text>When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.</text>
+                <text>    You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</text></feature>
+            <feature optional="YES"><name>Metamagic: Extended Spell</name><text>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.</text></feature>
+            <feature optional="YES"><name>Metamagic: Heightened Spell</name><text>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.</text></feature>
+            <feature optional="YES"><name>Metamagic: Quickened Spell</name><text>When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.</text></feature>
+            <feature optional="YES"><name>Metamagic: Subtle Spell</name><text>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.</text></feature>
+            <feature optional="YES"><name>Metamagic: Twinned Spell</name><text>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Warlock</name>
+        <hd>8</hd>
+        <proficiency>Wisdom, Charisma, Arcana, Deception, History, Intimidation, Investigation, Nature, Religion</proficiency>
+        <numSkills>2</numSkills>
+        <armor>Light armor</armor>
+        <weapons>Simple weapons</weapons>
+        <tools>None</tools>
+        <wealth>4d4x10</wealth>
+        <spellAbility>Charisma</spellAbility><slotsReset>S</slotsReset>
+        
+        <autolevel level="1"> <slots>2,1,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="2"> <slots>2,2,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="3"> <slots>2,0,2,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="4"> <slots>3,0,2,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="5"> <slots>3,0,0,2,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="6"> <slots>3,0,0,2,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="7"> <slots>3,0,0,0,2,0,0,0,0,0</slots></autolevel>
+        <autolevel level="8"> <slots>3,0,0,0,2,0,0,0,0,0</slots></autolevel>
+        <autolevel level="9"> <slots>3,0,0,0,0,2,0,0,0,0</slots></autolevel>
+        <autolevel level="10"><slots>4,0,0,0,0,2,0,0,0,0</slots></autolevel>
+        <autolevel level="11"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
+        <autolevel level="12"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
+        <autolevel level="13"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
+        <autolevel level="14"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
+        <autolevel level="15"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
+        <autolevel level="16"><slots>4,0,0,0,0,3,0,0,0,0</slots></autolevel>
+        <autolevel level="17"><slots>4,0,0,0,0,4,0,0,0,0</slots></autolevel>
+        <autolevel level="18"><slots>4,0,0,0,0,4,0,0,0,0</slots></autolevel>
+        <autolevel level="19"><slots>4,0,0,0,0,4,0,0,0,0</slots></autolevel>
+        <autolevel level="20"><slots>4,0,0,0,0,4,0,0,0,0</slots></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Otherworldly Patron</name><text>At 1st Level, you have struck a bargain with an otherworldly being of your choice, such as The Fiend. Your choice grants you features at 1st Level and again at 6th, 10th, and 14th level.</text></feature>
+            <feature><name>Pact Magic</name>
+                <text>Your arcane Research and the magic bestowed on you by your patron have given you facility with Spells. See chapter 10 for the general rules of Spellcasting and chapter 11 for the Warlock spell list.</text>
+                <text>    Cantrips. You know two Cantrips of your choice from the Warlock spell list. You learn additional Warlock Cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.</text>
+                <text>    Spell Slots. The Warlock table shows how many Spell Slots you have. The table also shows what the level of those slots is; all of your Spell Slots are the same level. To cast one of your Warlock Spells of 1st Level or higher, you must expend a spell slot. You regain all expended Spell Slots when you finish a short or Long Rest.</text>
+                <text>    For example, when you are 5th Level, you have two 3rd-level Spell Slots. To cast the 1st-level spell Thunderwave, you must spend one of those slots, and you cast it as a 3rd-level spell.</text>
+                <text>    Spells Known of 1st Level and Higher. At 1st Level, you know two 1st-level Spells of your choice from the Warlock spell list.</text>
+                <text>    You learn a new Warlock spell every time you gain a level from 2 through 9, as well as at level 19. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new Warlock spell, which can be 1st, 2nd, or 3rd Level.</text>
+                <text>    Additionally, when you gain a level in this class, you can choose one of the Warlock Spells you know and replace it with another spell from the Warlock spell list, which also must be of a level for which you have Spell Slots.</text>
+                <text>    Spellcasting Ability. Charisma is your Spellcasting Ability for your Warlock Spells, so you use your Charisma whenever a spell refers to your Spellcasting Ability. In addition, you use your Charisma modifier when setting the saving throw DC for a Warlock spell you cast and when Making an Attack roll with one.</text>
+                <text>    Spellcasting Focus. You can use an arcane focus as a Spellcasting focus for your Warlock Spells.</text></feature>
+            <feature optional="YES"><name>The Archfey: Fey Presence</name>
+                <text>Starting at 1st level, your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a short or long rest.</text></feature>
+            <feature optional="YES"><name>The Fiend: Dark One's Blessing</name><text>Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).</text></feature>
+            <feature optional="YES"><name>The Great Old One: Awakened Mind</name><text>Starting at 1st level, your alien knowledge gives you the ability to touch the minds of other creatures. You can communicate telepathically with any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Eldritch Invocations</name>
+                <text>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</text>
+                <text>    At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.</text>
+                <text>    Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</text>
+            </feature>
+        </autolevel>
+        
+        <autolevel level="3">
+            <feature optional="YES"><name>Pact of the Chain</name>
+                <text>You learn the find familiar spell and can cast it as a ritual. The spell doesn’t count against your number of spells known.</text>
+                <text>    When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.</text>
+                <text>    Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own.</text></feature>
+            <feature optional="YES"><name>Pact of the Blade</name>
+                <text>You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</text>
+                <text>    Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</text>
+                <text>    You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.</text></feature>
+            <feature optional="YES"><name>Pact of the Tome</name><text>Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class’s spell list. While the book is on your person, you can cast those cantrips at will. They don’t count against your number of cantrips known. If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.</text></feature>
+        </autolevel>
+        
+        <autolevel level="6">
+            <feature optional="YES"><name>The Fiend: Dark One's Own Luck</name>
+                <text>Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a short or long rest</text></feature>
+        </autolevel>
+        
+        <autolevel level="10">
+            <feature optional="YES"><name>The Fiend: Fiendish Resilience</name><text>Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance.</text></feature>
+        </autolevel>
+        
+        <autolevel level="11">
+            <feature><name>Mystic Arcanum</name>
+                <text>At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.</text>
+                <text>    You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.</text>
+                <text>    At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic A rcanum when you finish a long rest.</text></feature>
+        </autolevel>
+        
+        <autolevel level="14">
+            <feature optional="YES"><name>The Fiend: Hurl Through Hell</name>
+                <text>Starting at 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.</text>
+                <text>    At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d 10 psychic damage as it reels from its horrific experience.</text>
+                <text>    Once you use this feature, you can't use it again until you finish a long rest.</text></feature>
+        </autolevel>
+        
+        <autolevel level="20">
+            <feature><name>Eldritch Master</name><text>At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature optional="YES"><name>Agonizing Blast</name><text>When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit.</text></feature>
+            <feature optional="YES"><name>Armor of Shadows</name><text>You can cast mage armor on yourself at will, without expending a spell slot or material components.</text></feature>
+            <feature optional="YES"><name>Ascendant Step</name><text>You can cast levitate on yourself at will, without expending a spell slot or material components.</text></feature>
+            <feature optional="YES"><name>Beast Speech</name><text>You can cast speak with animals at will, without expending a spell slot.</text></feature>
+            <feature optional="YES"><name>Beguiling Influence</name><text>You gain proficiency in the Deception and Persuasion skills.</text></feature>
+            <feature optional="YES"><name>Bewitching Whispers</name><text>You can cast compulsion once using a warlock spell slot. You can’t do so again until you finish a long rest.</text></feature>
+            <feature optional="YES"><name>Book of Ancient Secrets</name>
+                <text>You can now inscribe magical rituals in your Book o f Shadows. Choose two 1st-level spells that have the ritual tag from any class’s spell list. The spells appear in the book and don’t count against the number o f spells you know. With your Book o f Shadows in hand, you can cast the chosen spells as rituals. You can’t cast the spells except as rituals, unless you’ve learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag.</text>
+                <text>    On your adventures, you can add other ritual spells to your Book o f Shadows. When you find such a spell, you can add it to the book if the spell’s level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level o f the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it.</text></feature>
+            <feature optional="YES"><name>Chains of Carceri</name><text>You can cast hold monster at will—targeting a celestial, fiend, or elemental—without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again.</text></feature>
+            <feature optional="YES"><name>Devil's Sight</name><text>You can see normally in darkness, both magical and nonmagical, to a distance o f 120 feet.</text></feature>
+            <feature optional="YES"><name>Dreadful Word</name><text>You can cast confusion once using a warlock spell slot. You can’t do so again until you finish a long rest.</text></feature>
+            <feature optional="YES"><name>Eldritch Sight</name><text>You can cast detect magic at will, without expending a spell slot.</text></feature>
+            <feature optional="YES"><name>Eldritch Spear</name><text>When you cast eldritch blast, its range is 300 feet.</text></feature>
+            <feature optional="YES"><name>Eyes of the Rune Keeper</name><text>You can read all writing.</text></feature>
+            <feature optional="YES"><name>Fiendish Vigor</name><text>You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.</text></feature>
+            <feature optional="YES"><name>Gaze of Two Minds</name><text>You can use your action to touch a willing humanoid and perceive through its senses until the end o f your next turn. As long as the creature is on the same plane o f existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.</text></feature>
+            <feature optional="YES"><name>Lifedrinker</name><text>When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1).</text></feature>
+            <feature optional="YES"><name>Mask of Many Faces</name><text>You can cast disguise self at will, without expending a spell slot.</text></feature>
+            <feature optional="YES"><name>Master of Myriad Forms</name><text>You can cast alter self at will, without expending a spell slot.</text></feature>
+            <feature optional="YES"><name>Minions of Chaos</name><text>You can cast conjure elemental once using a warlock spell slot. You can’t do so again until you finish a long rest.</text></feature>
+            <feature optional="YES"><name>Mire the Mind</name><text>You can cast slow once using a warlock spell slot. You can’t do so again until you finish a long rest.</text></feature>
+            <feature optional="YES"><name>Misty Visions</name><text>You can cast silent image at will, without expending a spell slot or material components.</text></feature>
+            <feature optional="YES"><name>One with Shadows</name><text>When you are in an area o f dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction.</text></feature>
+            <feature optional="YES"><name>Otherworldly Leap</name><text>You can cast jump on yourself at will, without expending a spell slot or material components.</text></feature>
+            <feature optional="YES"><name>Repelling Blast</name><text>When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line.</text></feature>
+            <feature optional="YES"><name>Sculptor of Flesh</name><text>You can cast polymorph once using a warlock spell slot. You can’t do so again until you finish a long rest.</text></feature>
+            <feature optional="YES"><name>Signs of Ill Omen</name><text>You can cast bestow curse once using a warlock spell slot. You can’t do so again until you finish a long rest.</text></feature>
+            <feature optional="YES"><name>Thief of Five Fates</name><text>You can cast bane once using a warlock spell slot. You can’t do so again until you finish a long rest.</text></feature>
+            <feature optional="YES"><name>Thirsting Blade</name><text>You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.</text></feature>
+            <feature optional="YES"><name>Visions of Distant Realms</name><text>You can cast arcane eye at will, without expending a spell slot.</text></feature>
+            <feature optional="YES"><name>Voice of the Chain Master</name><text>You can communicate telepathically with your familiar and perceive through your familiar’s senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar’s senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable o f speech.</text></feature>
+            <feature optional="YES"><name>Whispers of the Grave</name><text>You can cast speak with dead at will, without expending a spell slot.</text></feature>
+            <feature optional="YES"><name>Witch Sight</name><text>You can see the true form o f any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet o f you and within line of sight.</text></feature>
+        </autolevel>
+    </class>
+    
+    <class><name>Wizard</name>
+        <hd>6</hd>
+        <proficiency>Intelligence, Wisdom, Arcana, History, Insight, Investigation, Medicine, Religion</proficiency>
+        <numSkills>2</numSkills>
+        <armor>None</armor>
+        <weapons>Daggers, darts, slings, quarterstaffs, light crossbows</weapons>
+        <tools>None</tools>
+        <wealth>4d4x10</wealth>
+        <spellAbility>Intelligence</spellAbility><slotsReset>L</slotsReset>
+        <autolevel level="1"> <slots>3,2,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="2"> <slots>3,3,0,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="3"> <slots>3,4,2,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="4"> <slots>4,4,3,0,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="5"> <slots>4,4,3,2,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="6"> <slots>4,4,3,3,0,0,0,0,0,0</slots></autolevel>
+        <autolevel level="7"> <slots>4,4,3,3,1,0,0,0,0,0</slots></autolevel>
+        <autolevel level="8"> <slots>4,4,3,3,2,0,0,0,0,0</slots></autolevel>
+        <autolevel level="9"> <slots>4,4,3,3,3,1,0,0,0,0</slots></autolevel>
+        <autolevel level="10"><slots>5,4,3,3,3,2,0,0,0,0</slots></autolevel>
+        <autolevel level="11"><slots>5,4,3,3,3,2,1,0,0,0</slots></autolevel>
+        <autolevel level="12"><slots>5,4,3,3,3,2,1,0,0,0</slots></autolevel>
+        <autolevel level="13"><slots>5,4,3,3,3,2,1,1,0,0</slots></autolevel>
+        <autolevel level="14"><slots>5,4,3,3,3,2,1,1,0,0</slots></autolevel>
+        <autolevel level="15"><slots>5,4,3,3,3,2,1,1,1,0</slots></autolevel>
+        <autolevel level="16"><slots>5,4,3,3,3,2,1,1,1,0</slots></autolevel>
+        <autolevel level="17"><slots>5,4,3,3,3,2,1,1,1,1</slots></autolevel>
+        <autolevel level="18"><slots>5,4,3,3,3,3,1,1,1,1</slots></autolevel>
+        <autolevel level="19"><slots>5,4,3,3,3,3,2,1,1,1</slots></autolevel>
+        <autolevel level="20"><slots>5,4,3,3,3,3,2,2,1,1</slots></autolevel>
+        
+        <autolevel level="4"  scoreImprovement="YES"></autolevel>
+        <autolevel level="8"  scoreImprovement="YES"></autolevel>
+        <autolevel level="12" scoreImprovement="YES"></autolevel>
+        <autolevel level="16" scoreImprovement="YES"></autolevel>
+        <autolevel level="19" scoreImprovement="YES"></autolevel>
+        
+        <autolevel level="1">
+            <feature><name>Spellcasting</name>
+                <text>As a student of Arcane Magic, you have a Spellbook containing Spells that show the first glimmerings of your true power.</text>
+                <text>    Cantrips. At 1st Level, you know three Cantrips of your choice from the Wizard spell list. You learn additional Wizard Cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table.</text>
+                <text>    Spellbook. At 1st Level, you have a Spellbook containing six 1st-level Wizard Spells of your choice. Your Spellbook is the repository of the Wizard Spells you know, except your Cantrips, which are fixed in your mind.</text>
+                <text>    Preparing and Casting Spells. The Wizard table shows how many Spell Slots you have to cast your Spells of 1st Level and higher. To cast one of these Spells, you must expend a slot of the spell's level or higher. You regain all expended Spell Slots when you finish a Long Rest.</text>
+                <text>    You prepare the list of Wizard Spells that are available for you to cast. To do so, choose a number of Wizard Spells from your Spellbook equal to your Intelligence modifier + your Wizard level (minimum of one spell). The Spells must be of a level for which you have Spell Slots.</text>
+                <text>    For example, if you're a 3rd-level Wizard, you have four 1st-level and two 2nd-level Spell Slots. With an Intelligence of 16, your list of prepared Spells can include six Spells of 1st or 2nd Level, in any combination, chosen from your Spellbook. If you prepare the 1st-level spell Magic Missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared Spells.</text>
+                <text>    You can change your list of prepared Spells when you finish a Long Rest. Preparing a new list of Wizard Spells requires time spent studying your Spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per Spell Level for each spell on your list.</text>
+                <text>    Spellcasting Ability. Intelligence is your Spellcasting Ability for your Wizard Spells, since you learn your Spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your Spellcasting Ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Wizard spell you cast and when Making an Attack roll with one.</text>
+                <text>    Ritual Casting. You can cast a Wizard spell as a ritual if that spell has the ritual tag and you have the spell in your Spellbook. You don't need to have the spell prepared.</text>
+                <text>    Spellcasting Focus. You can use an arcane focus as a Spellcasting focus for your Wizard Spells.</text>
+                <text>    Learning Spells of 1st Level and Higher. Each time you gain a Wizard level, you can add two Wizard Spells of your choice to your Spellbook for free. Each of these Spells must be of a level for which you have Spell Slots, as shown on the Wizard table. On your Adventures, you might find other Spells that you can add to your Spellbook (see “Your Spellbook”).</text></feature>
+            <feature><name>Arcane Recovery</name>
+                <text>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</text>
+                <text>    For example, if you’re a 4th-level wizard, you can recover up to two levels worth of spell slots.</text>
+                <text>    You can recover either a 2nd-level spell slot or two 1st-level spell slots.</text></feature>
+        </autolevel>
+        
+        <autolevel level="2">
+            <feature><name>Arcane Tradition</name><text>When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, or Transmutation, all detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</text></feature>
+            <feature optional="YES"><name>School of Evocation: Evocation Savant</name><text>Beginning when you select this school at 2nd level, the gold and time you must spend to copy an evocation spell into your spellbook is halved.</text></feature>
+            <feature optional="YES"><name>School of Evocation: Sculpt Spells</name><text>Beginning at 2nd level, you can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1+the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</text></feature>
+        </autolevel>
+        
+        <autolevel level="6">
+            <feature optional="YES"><name>School of Evocation: Potent Cantrip</name><text>Starting at 6th level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip.</text></feature>
+        </autolevel>
+        
+        <autolevel level="10">
+            <feature optional="YES"><name>School of Evocation: Empowered Evocation</name><text>Beginning at 10th level, you can add your Intelligence modifier to the damage roll of any wizard evocation spell you cast</text></feature>
+        </autolevel>
+        
+        <autolevel level="14">
+            <feature optional="YES"><name>School of Evocation: Overchannel</name>
+                <text>Starting at 14th level, you can increase the power of your simpler spells. When you cast a wizard spell of 5th level or lower that deals damage, you can deal maximum damage with that spell.</text>
+                <text>    The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a long rest, you take 2d12 necrotic damage for each level of the spell, immediately after you cast it. Each time you use this feature again before finishing a long rest, the necrotic damage per spell level increases by 1d12. This damage ignores resistance and immunity.</text></feature>
+        </autolevel>
+        
+        <autolevel level="18">
+            <feature><name>Spell Mastery</name>
+                <text>At 18th level, you have achieved such mastery over certain spells that you can cast them at will. Choose a 1st-level wizard spell and a 2nd-level wizard spell that are in your spellbook. You can cast those spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal. </text>
+                <text>    By spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels.</text></feature>
+        </autolevel>
+        
+        <autolevel level="20">
+            <feature><name>Signature Spells</name>
+                <text>When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two 3rd-level wizard spells in your spellbook as your signature spells. You always have these spells prepared, they don’t count against the number of spells you have prepared, and you can cast each of them once at 3rd level without expending a spell slot. When you do so, you can’t do so again until you finish a short or long rest.</text>
+                <text>    If you want to cast either spell at a higher level, you must expend a spell slot as normal.</text></feature>
+        </autolevel>
+    </class>
+</compendium>

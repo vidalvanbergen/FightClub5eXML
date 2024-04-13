@@ -1,6 +1,16 @@
 ## CHANGE LOG
 
-### 2021-11-02
+### 2024-11-20
+
+Reorganized the various sources by their origin.
+
+Deprecated several UnearthedArcana which have been officially released in other sources.
+
+Added SOURCES to the root-level which explains how to add your own sources.
+
+Updated the README and CHANGELOG
+
+### 2022-11-14
 
 Update the root-level README to provide clear instructions on how to use this repository to import data into Fight Club 5e.
 
@@ -8,6 +18,11 @@ Reorganize the READMEs across the repo to better reflect the purpose of their co
 
 Rename the FightClub5eXML folder to Sources to better reflect its given purpose.
 
+<<<<<<< HEAD
+=======
+Add build-collections.bat for Windows users.
+
+>>>>>>> merge-master
 ### 2021-08-04
 
 Removed deployment to Dropbox.

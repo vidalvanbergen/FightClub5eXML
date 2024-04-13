@@ -38,13 +38,21 @@ You should be able to use your distro's official package manager to install eith
 
 Open a command-line terminal (such as PowerShell on Windows or Terminal on macOS) and navigate to the repository root. You can do so by executing `cd C:\Users\YOUR_USER_NAME\Documents\FightClub5eXML-master` on Windows, or `cd /Users/YOUR_USER_NAME/Documents/FightClub5eXML-master` on macOS.
 
-Next, execute the `xsltproc` program to compile a collection file into a compendium file. For example, if you wanted to compile the `CoreOnly.xml` collection, you would execute the following command:
+Next, execute the `xsltproc` program to compile a collection file into a compendium file. For example, if you wanted to compile the `WotC_only.xml` collection, you would execute the following command:
 
 ```bash
-xsltproc -o Compendiums/CoreOnly.xml Utilities/merge.xslt Collections/CoreOnly.xml
+xsltproc -o Compendiums/WotC_only.xml Utilities/merge.xslt Collections/WotC_only.xml
 ```
 
-After that command has completed, you should see a file called `Compendium.xml` in the newly created `Compendiums` folder. You can then download that file onto your smartphone and import it into Fight Club 5e.
+After that command has completed, you should see a file called `WotC_only.xml` in the newly created `Compendiums` folder. You can then import it into Fight Club 5e.
+
+#### Batching
+
+The build-collection files are provided for your convenience to compile all collections within your Collections directory into compendiums.
+
+## Custom Content
+
+See the [Sources README](Sources/README.md) to learn how to add your own homebrew content or build your own compendium from select source material.
 
 ## Contributing
 
@@ -63,3 +71,9 @@ If you'd like to contribute, feel free to fork the repository and submit pull re
 `@fightclub5exml` and `@dragonahcas` for carrying the mantle.
 
 `@zcdziura` for answering user's questions.
+
+`@sheppe` for the Widows bat file.
+
+`@archivist` for adding various sources to the compendium.
+
+`@vidalvanbergen` for adding various sources to the compendium.

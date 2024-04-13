@@ -46,6 +46,7 @@
                             <xsl:copy-of select="weapons" />
                             <xsl:copy-of select="tools" />
                             <xsl:copy-of select="wealth" />
+                            <xsl:copy-of select="subclass" />
                             
                             <xsl:for-each select="$classes[name = current()/name]">
                                 <xsl:copy-of select="autolevel"/>
