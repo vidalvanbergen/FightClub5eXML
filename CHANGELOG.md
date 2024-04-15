@@ -6,6 +6,8 @@
 * Added some `<recharges>` tags to Humblewood Campaign Setting.
 * Corrected 'Blade of the Wood' weapons, and added missing weapons.
 * Removed empty text tags.
+* Reformatted homebrew weapons and hoopak.
+* Fixed creature trait rolls.
 * Updated Changelog layout.
 
 ### 2024-04-13
