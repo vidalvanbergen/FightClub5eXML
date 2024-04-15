@@ -5,6 +5,7 @@
 * Added proper attribution to Tyranny of Dragons content.
 * Added some `<recharges>` tags to Humblewood Campaign Setting.
 * Corrected 'Blade of the Wood' weapons, and added missing weapons.
+* Removed empty text tags.
 * Updated Changelog layout.
 
 ### 2024-04-13
