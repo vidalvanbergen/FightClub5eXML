@@ -8,6 +8,7 @@
 * Removed empty text tags.
 * Reformatted homebrew weapons and hoopak.
 * Fixed creature trait rolls.
+* Adding `Lairs of Etharis`.
 * Updated Changelog layout.
 
 ### 2024-04-13
