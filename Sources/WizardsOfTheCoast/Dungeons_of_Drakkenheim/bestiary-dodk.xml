@@ -94,7 +94,7 @@ The amalgamation utters a terrible truth within the mind of one creature within 
     <action>
       <name>Contaminating Presence</name>
       <text>
-Humanoid creatures within 120 feet of the amalgamation must succeed on a DC 20 Constitution saving throw or take 10 (3d6) necrotic damage and gain one {@adventure level of contamination|DoDk|12.</text>
+Humanoid creatures within 120 feet of the amalgamation must succeed on a DC 20 Constitution saving throw or take 10 (3d6) necrotic damage and gain one level of contamination.</text>
       <attack>Contaminating Presence||3d6</attack>
     </action>
     <legendary>
@@ -221,7 +221,7 @@ The wraith is an 8th-level spellcaster. Its spellcasting ability is Charisma (sp
     <trait>
       <name>Incorporeal Movement</name>
       <text>
-The wraith can move through other creatures and objects as if they were {@quickref difficult terrain||3. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
+The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
       <attack>Incorporeal Movement||1d10</attack>
     </trait>
     <trait>
@@ -2046,6 +2046,2056 @@ Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludge
     <description>Those who die in the ruins find no respite. The Haze reanimates their remains to wander the streets as shells forever stuck in the terror of their final moments. Billowing eldritch energies emanate from their eyes, mouth, and wounds and delerium fragments are fused into their flesh.
 
 Source:	Dungeons of Drakkenheim p. 197</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Haze Wight</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>14 (studded leather)</ac>
+    <hp>45 (6d8 + 18)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>15</str>
+    <dex>14</dex>
+    <con>16</con>
+    <int>10</int>
+    <wis>13</wis>
+    <cha>15</cha>
+    <save/>
+    <skill>perception +3, stealth +4</skill>
+    <passive>13</passive>
+    <languages>the languages it knew in life</languages>
+    <cr>3</cr>
+    <experience>700</experience>
+    <resist>Necrotic, bludgeoning, Piercing or Slashing damage from nonmagical attacks that aren't silvered</resist>
+    <immune>Poison</immune>
+    <vulnerable/>
+    <conditionImmune>Exhaustion, Poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>
+While in sunlight, the haze wight has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+The haze wight makes two longsword attacks or two longbow attacks. It can use its Contaminated Touch or Create Haze Husk in place of one longsword attack.</text>
+    </action>
+    <action>
+      <name>Contaminated Touch</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or gain one level of contamination.</text>
+      <attack>Contaminated Touch|+4|3d6</attack>
+    </action>
+    <action>
+      <name>Create Haze Husk</name>
+      <text>
+The wight targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. It rises as a haze husk in an unoccupied space within 5 feet. The haze husk is under the wight's control. The wight can have no more than 12 haze husks under its control at one time.</text>
+    </action>
+    <action>
+      <name>Longsword</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands.</text>
+      <attack>Longsword|+4|1d8+2</attack>
+      <attack>Two-Handed|+4|1d10+2</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>
+Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
+      <attack>Longbow|+4|1d8+2</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>A haze wight is more sentient than their haze husk minions, but has still been stripped of their former life. Many were former adventurers, military officers, or mighty warriors who died in the Haze. Many still believe themselves to be great heroes rallying the common folk of Drakkenheim against invaders, but in their madness they see all humanoids as monsters.
+
+Source:	Dungeons of Drakkenheim p. 198</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Hedge Mage</name>
+    <size>M</size>
+    <type>humanoid</type>
+    <alignment>Any Alignment</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>22 (4d8 + 4)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>15</int>
+    <wis>11</wis>
+    <cha>11</cha>
+    <save/>
+    <skill>arcana +4</skill>
+    <passive>10</passive>
+    <languages>Any two</languages>
+    <cr>1</cr>
+    <experience>200</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+The hedge mage is a 4th-level spellcaster that uses Intelligence as its spellcasting ability (spell save DC 12; +4 to hit with spell attacks). The hedge mage has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch, mage hand, shocking grasp
+	• 1st level (4 slots): false life, mage armor, magic missile
+	• 2nd level (3 slots): Melf's acid arrow, web</text>
+      <attack>Spell Attack|+4|</attack>
+    </trait>
+    <action>
+      <name>Dagger</name>
+      <text>
+Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+4|1d4+2</attack>
+    </action>
+    <spells>chill touch, mage hand, shocking grasp, false life, mage armor, magic missile, Melf's acid arrow, web</spells>
+    <slots>4,3</slots>
+    <description>Source:	Dungeons of Drakkenheim p. 219</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Hypnotic Eldritch Blossom</name>
+    <size>M</size>
+    <type>plant</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>5</ac>
+    <hp>18 (4d8)</hp>
+    <speed>walk 5 ft.</speed>
+    <str>3</str>
+    <dex>1</dex>
+    <con>10</con>
+    <int>1</int>
+    <wis>3</wis>
+    <cha>5</cha>
+    <save/>
+    <skill/>
+    <passive>6</passive>
+    <languages/>
+    <cr>1</cr>
+    <experience>200</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune>Blinded, Deafened, Frightened</conditionImmune>
+    <senses>blindsight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>False Appearance</name>
+      <text>
+While the Hypnotic Eldritch Blossom remains motionless, it is indistinguishable from an ordinary flower.</text>
+    </trait>
+    <action>
+      <name>Contaminated Nectar</name>
+      <text>
+The Hypnotic Eldritch Blossom targets one creature it can see within 10 feet of it. The target must succeed on a DC 10 Constitution saving throw or gain one level of contamination.</text>
+    </action>
+    <action>
+      <name>Hypnotic Pollen (recharges on a short or long rest)</name>
+      <text>
+The Hypnotic Eldritch Blossom releases a cloud of glittering pollen out to a radius of 30 feet. Creatures in the area must succeed on a DC 10 Wisdom saving throw or become charmed by the Hypnotic Eldritch Blossom for 1 minute. While charmed, the creature is incapacitated and must use all its movement on its turns to get as close to the Hypnotic Eldritch Blossom as possible.
+
+The effect ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.</text>
+    </action>
+    <reaction>
+      <name>Spell Reflection</name>
+      <text>
+If the hypnotic eldritch blossom makes a successful saving throw against a spell which targets only it and does not have an area of effect, or a spell attack misses it, the blossom can choose another creature (including the spellcaster) it can see within 30 feet of it. The spell targets the chosen creature instead of the hypnotic eldritch blossom. If the spell forces a saving throw, the chosen creature makes its own save. If the spell was an attack, the attack roll is rerolled against the chosen creature.</text>
+    </reaction>
+    <spells/>
+    <slots/>
+    <description>Source:	Dungeons of Drakkenheim p. 205</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Knight-Captain Theodore Marshal</name>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>Lawful Good</alignment>
+    <ac>20 (plate, shield)</ac>
+    <hp>255 (30d8 + 120)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>20</str>
+    <dex>10</dex>
+    <con>18</con>
+    <int>13</int>
+    <wis>15</wis>
+    <cha>19</cha>
+    <save>wis +7, cha +9</save>
+    <skill>animal handling +7, athletics +10, insight +7, persuasion +9</skill>
+    <passive>12</passive>
+    <languages>Celestial, Common</languages>
+    <cr>15</cr>
+    <experience>13000</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune>Charmed, Frightened</conditionImmune>
+    <senses/>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+Theodore Marshal is a 20th-level spellcaster. His spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). He has the following paladin spells prepared:
+
+	• 1st level (4): bless, command, cure wounds, guiding bolt
+	• 2nd level (3): aid, branding smite, lesser restoration
+	• 3rd level (3): beacon of hope, dispel magic
+	• 4th level (3): banishment, death ward
+	• 5th level (2): flame strike, hallow</text>
+      <attack>Spell Attack|+9|</attack>
+    </trait>
+    <trait>
+      <name>Divine Strikes</name>
+      <text>
+Theodore Marshal's weapon attacks are magical. When he hits with any weapon, the weapon deals an extra 4d8 radiant damage (included in the attack).</text>
+      <attack>Divine Strikes||4d8</attack>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>
+If Theodore Marshal fails a saving throw, he can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Special Equipment</name>
+      <text>
+Theodore Marshal wields a holy avenger longsword.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+Theodore Marshal makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Holy Avenger</name>
+      <text>
+Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 12 (1d8 + 8) slashing damage plus 18 (4d8) radiant damage.</text>
+      <attack>Holy Avenger|+13|1d8+8</attack>
+      <attack>Radiant||4d8</attack>
+    </action>
+    <legendary>
+      <text>
+The knight-captain theodore marshal can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The knight-captain theodore marshal regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Attack</name>
+      <text>
+Theodore Marshal makes one weapon attack.</text>
+    </legendary>
+    <legendary>
+      <name>Holy Bolt (Costs 2 actions)</name>
+      <text>
+Theodore Marshal casts guiding bolt without expending a spell slot.</text>
+    </legendary>
+    <spells>bless, command, cure wounds, guiding bolt, aid, branding smite, lesser restoration, beacon of hope, dispel magic, banishment, death ward, flame strike, hallow</spells>
+    <slots>4,3,3,3,2</slots>
+    <description>Knight-Captain Theodore Marshal is a man in his prime. He is athletic and tall with boldly sculpted features, bronzed skin, and unkempt sandy brown hair. Unshaven stubble has grown into a beard over the criss-cross of scars on his face. A leather patch covers his right eye. He wears gleaming silver plate armour etched with golden trim, and carries a shimmering sword and a broad shield engraved with the symbol of the Sacred Flame.
+
+Personality Trait:
+I act with determined calm and respect. Little rouses my anger, instead I respond with disappointment when others incite my ire.
+
+Ideal:
+I believe that good-hearted people can set aside their differences to work together.
+
+Bond:
+I am willing to lay down my life for a just and righteous cause.
+
+Flaw:
+I will never give up on my comrades. I do not trade lives.
+
+Source:	Dungeons of Drakkenheim p. 215</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Lenore von Kessel</name>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>Lawful Evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>127 (17d8 + 51)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>10</str>
+    <dex>15</dex>
+    <con>16</con>
+    <int>12</int>
+    <wis>13</wis>
+    <cha>15</cha>
+    <save/>
+    <skill>deception +5, insight +4, perception +4, stealth +5</skill>
+    <passive>14</passive>
+    <languages>Common</languages>
+    <cr>6</cr>
+    <experience>2300</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Radiant Gaze</name>
+      <text>
+When a creature that can see Lenore's eyes starts its turn within 30 feet of her, Lenore can force it to make a DC 14 Constitution saving throw if she isn't incapacitated and can see the creature. The creature takes 22 (4d10) radiant damage on a failed save, or half as much on a successful one. In addition, creatures who fail this saving throw gain one level of contamination.
+
+Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see Lenore until the start of its next turn, when it can avert its eyes again. If the creature looks at Lenore in the meantime, it must immediately make the save.
+
+If Lenore sees herself reflected on a polished surface within 30 feet of her and in an area of bright light, she becomes blinded and incapacitated for 1d6 hours.</text>
+      <attack>Radiant Gaze||4d10</attack>
+      <attack>Incapacitated||1d6</attack>
+    </trait>
+    <action>
+      <name>Tentacle Hair</name>
+      <text>
+Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 14 (4d6) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or gain one level of contamination.</text>
+      <attack>Tentacle Hair|+5|1d4+2</attack>
+      <attack>Necrotic||4d6</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Transformed by the Haze, Lenore is a mockery of her former self and abhorrently reacts to her own appearance. She dimly remembers seeking shelter in her grotto, but has no recollection of how she escaped the castle.
+
+Personality Trait:
+I speak softly in a perpetual daydream, rhapsodically imagining myself to be in a tragic fairytale while casting others in fictional roles.
+
+Ideal:
+The world is a mirror held up to my own glorious reflection.
+
+Bond:
+I obsessively crave beauty, decadence, and relish in art of all kinds, and especially love my garden and my lilies. They are all I have left.
+
+Flaw:
+I fly into an enraged fury at the sight of my own likeness or the names of my lost family members.
+
+Any character proficient in History can instantly recognize Lenore despite her mutations. Before her transformation, Lenore was extraordinarily vain and narcissistic, though was uncharastically kind and gentle to her servants. She wore outrageously ornamented gowns, hats, makeup, and jewelry, including a famous golden necklace set with eleven emeralds. She loved her children only as extensions of herself, and absolutely despised her husband.
+
+Source:	Dungeons of Drakkenheim p. 134</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Living Deep Haze</name>
+    <size>L</size>
+    <type>elemental</type>
+    <alignment>Unaligned</alignment>
+    <ac>15</ac>
+    <hp>90 (12d10 + 24)</hp>
+    <speed>walk 0 ft., fly 90 ft. (hover)</speed>
+    <str>14</str>
+    <dex>20</dex>
+    <con>14</con>
+    <int>5</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <save/>
+    <skill/>
+    <passive>10</passive>
+    <languages>Deep Speech</languages>
+    <cr>5</cr>
+    <experience>1800</experience>
+    <resist>Bludgeoning, Piercing or Slashing damage from nonmagical attacks</resist>
+    <immune>Necrotic, Poison</immune>
+    <vulnerable/>
+    <conditionImmune>Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Fog Form</name>
+      <text>
+The Living Deep Haze can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.</text>
+    </trait>
+    <trait>
+      <name>Deep Haze</name>
+      <text>
+A creature who enters or starts its turn in the same space as the Living Deep Haze must succeed on a DC 15 Constitution saving throw or take 10 (3d6) necrotic damage and gain one level of contamination.</text>
+      <attack>Deep Haze||3d6</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+The Living Deep Haze makes two slam attacks.</text>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>
+Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.</text>
+      <attack>Slam|+8|2d8+5</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Contaminated Elementals can be found all over Drakkenheim, often in areas where the eldritch magics are especially concentrated. Many who have encountered these elementals have spoken of the city itself coming to life to attack them. Reports of ruins reaching out and crushing adventurers, burning flames moving and hunting with minds of their own, or contaminated pools lurching to engulf passersby have been heard. Even the blowing air itself has mustered parts of the Haze into shifting clouds that stalk adventurers through the streets. These magical creatures are a constant reminder that nothing in the city can be trusted, and that nowhere is truly safe.
+
+Source:	Dungeons of Drakkenheim p. 204</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Lord Commander Elias Drexel</name>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>Lawful Neutral</alignment>
+    <ac>19 (+3 breastplate)</ac>
+    <hp>255 (30d8 + 120)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>18</str>
+    <dex>15</dex>
+    <con>18</con>
+    <int>15</int>
+    <wis>16</wis>
+    <cha>11</cha>
+    <save>str +9, dex +7, wis +8</save>
+    <skill>athletics +9, perception +13, stealth +12, survival +8</skill>
+    <passive>23</passive>
+    <languages>Common</languages>
+    <cr>15</cr>
+    <experience>13000</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>blindsight 10 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+Elias Drexel is a 20th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). He knows the following ranger spells:
+
+	• 1st level (4): cure wounds, fog cloud, hunter's mark
+	• 2nd level (3): pass without trace, protection from poison, spike growth
+	• 3rd level (3): conjure animals, nondetection
+	• 4th level (3): freedom of movement, stoneskin
+	• 5th level (2): tree stride (works on buildings instead of trees)</text>
+      <attack>Spell Attack|+8|</attack>
+    </trait>
+    <trait>
+      <name>Survivor</name>
+      <text>
+At the start of each of his turns, Elias Drexel regains 10 hit points if he has no more than half of his hit points left. He does not gain this benefit if he has 0 hit points.</text>
+    </trait>
+    <trait>
+      <name>Brute</name>
+      <text>
+A melee weapon deals one extra die of its damage when Elias Drexel hits with it (included in the attack).</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>
+If Elias Drexel fails a saving throw, he can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Special Equipment</name>
+      <text>
+Elias Drexel wields a +3 Longsword, wears a +3 breastplate and the Lord Commander's Badge.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+Elias Drexel uses Leadership. He then makes four attacks with either his longsword or his longbow.</text>
+    </action>
+    <action>
+      <name>Longsword</name>
+      <text>
+Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 16 (2d8 + 7) slashing damage.</text>
+      <attack>Longsword|+12|2d8+7</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>
+Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 2) piercing damage.</text>
+      <attack>Longbow|+7|1d8+2</attack>
+    </action>
+    <action>
+      <name>Leadership (Recharges after a Short or Long Rest)</name>
+      <recharge>SHORT</recharge>
+      <text>
+For 1 minute, Elias Drexel can utter a special command or warning whenever a nonhostile creature that he can see within 120 feet of him makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand Elias Drexel. A creature can benefit from only one Leadership die at a time. This effect ends if Elias Drexel is incapacitated.</text>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>
+Elias Drexel adds 5 to his AC against one melee attack that would hit him. To do so, Elias Drexel must see the attacker and be wielding a melee weapon.</text>
+    </reaction>
+    <legendary>
+      <text>
+The lord commander elias drexel can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The lord commander elias drexel regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Attack</name>
+      <text>
+Elias Drexel makes one weapon attack.</text>
+    </legendary>
+    <legendary>
+      <name>Command</name>
+      <text>
+Elias Drexel chooses one ally he can see. If that ally can see and hear him, that ally can make one weapon attack as a reaction and gains advantage on the attack roll. The attack deals an extra 10 (3d6) damage on a hit.</text>
+      <attack>Command||3d6</attack>
+    </legendary>
+    <spells>cure wounds, fog cloud, hunter's mark, pass without trace, protection from poison, spike growth, conjure animals, nondetection, freedom of movement, stoneskin, tree stride (works on buildings instead of trees)</spells>
+    <slots>4,3,3,3,2</slots>
+    <description>Lord Commander Elias Drexel is a man in his early fifties. He is stocky and imposing with a furrowed brow and a grim frown on his wide and angular face. His harsh features are framed with a thick moustache, side chops, and a mane of long braided brown hair. He is garbed in chainmail armour with heavy leather gloves and boots, worn under a fur-lined dark green cloak and iron pauldrons. He wears a pinned brooch the Lord Commander's Badge, the symbol of his office. A quiver, a longbow, and two longswords are strung on his back.
+
+Personality Trait:
+I am blunt and direct, and expect my soldiers to obey my commands and deliver results promptly. I find no humor in anything.
+
+Ideal:
+Loyalty and trust are priceless. They must be carefully given, but staunchly held. There is nothing worse than betrayal and treason.
+
+Bond:
+During the Civil War, I switched sides and killed several scions of House von Kessel who could have claimed the throne. I once believed it was for the right cause, but now I feel personally responsible for breaking the royal line. My mission in Drakkenheim is penance and redemption.
+
+Flaw:
+I'm filled with rage and conflict because of my contradictory actions and beliefs, and I don't take defeat, setbacks, or even missteps lightly.
+
+Lord Commander Elias Drexel was appointed to the office of Lord Commander before the fall of Drakkenheim, and was outside the city leading training drills when the meteor fell. Afterwards, he took part in three military expeditions to reclaim Drakkenheim, and saw firsthand their horrors. He then went on to fight in the Westemär Civil War alongside Mannfred von Kessel. However, the idea that his soldiers died for nothing in Drakkenheim festered in his mind, and made him doubt Mannfred's ability to be a good ruler. He secretly participated in a successful conspiracy to assassinate Mannfred von Kessel. Little did he know that shortly thereafter, tragedy would soon befall Cecilia von Kessel. He isn't exactly proud of his choice to betray Mannfred, and that causes him considerable guilt, regret, and internal self-loathing.
+
+Source:	Dungeons of Drakkenheim p. 214</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Lord of the Feast</name>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>228 (24d10 + 96)</hp>
+    <speed>walk 30 ft., climb 30 ft.</speed>
+    <str>18</str>
+    <dex>18</dex>
+    <con>18</con>
+    <int>11</int>
+    <wis>18</wis>
+    <cha>13</cha>
+    <save>dex +9, con +9, wis +9, cha +6</save>
+    <skill>athletics +9, perception +14, stealth +14, survival +9</skill>
+    <passive>24</passive>
+    <languages>Abyssal</languages>
+    <cr>15</cr>
+    <experience>13000</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>
+If the Lord of the Feast fails a saving throw, he can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>
+The Lord of the Feast regains 20 hit points at the start of his turn if he has at least 1 hit point remaining.</text>
+    </trait>
+    <trait>
+      <name>Close-Quarters Hunter</name>
+      <text>
+Being within 5 feet of a hostile creature doesn't impose disadvantage on the Lord of the Feast's ranged attack rolls.</text>
+    </trait>
+    <trait>
+      <name>Predatory Senses</name>
+      <text>
+The Lord of the Feast has advantage on Wisdom (Perception) checks. He can pinpoint the position of any creature within 120 feet of him that is invisible.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+The Lord of the Feast makes three attacks: either one with each of its different arrow attacks, or one with his bite and two with his claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage plus 18 (4d8) necrotic damage. A target hit by this attack must succeed on a DC 17 Constitution saving throw or gain one level of contamination.</text>
+      <attack>Bite|+9|2d10+4</attack>
+      <attack>Necrotic||4d8</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>
+Melee Weapon Attack: +9 to hit, reach 10 ft, one target. Hit: 11 (2d6 + 4) slashing damage.</text>
+      <attack>Claws|+9|2d6+4</attack>
+    </action>
+    <action>
+      <name>Contaminating Arrow</name>
+      <text>
+Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 13 (2d8 + 4) piercing damage plus 18 (4d8) necrotic damage. A target hit by this attack must succeed on a DC 17 Constitution saving throw or gain one level of contamination.</text>
+      <attack>Contaminating Arrow|+9|2d8+4</attack>
+      <attack>Necrotic||4d8</attack>
+    </action>
+    <action>
+      <name>Ensnaring Arrow</name>
+      <text>
+Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 13 (2d8 + 4) piercing damage. If the target is Large or smaller, it must succeed on a DC 17 Dexterity saving throw or become restrained in a magical snare for 1 minute. A restrained target can use its action to repeat the saving throw, ending the effect on itself on a success.</text>
+      <attack>Ensnaring Arrow|+9|2d8+4</attack>
+    </action>
+    <action>
+      <name>Harpoon Arrow</name>
+      <text>
+Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 13 (2d8 + 4) piercing damage. If the target is a Huge or smaller creature, it must succeed on DC 17 Strength saving throw or be pulled up to 20 feet directly toward the Lord of the Feast.</text>
+      <attack>Harpoon Arrow|+9|2d8+4</attack>
+    </action>
+    <legendary>
+      <text>
+The lord of the feast can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The lord of the feast regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Dash</name>
+      <text>
+The Lord of the Feast moves his speed without provoking opportunity attacks.</text>
+    </legendary>
+    <legendary>
+      <name>Arrow (Costs 2 actions)</name>
+      <text>
+The Lord of the Feast makes one arrow attack of his choice.</text>
+    </legendary>
+    <legendary>
+      <name>Call of the Hunt (costs 3 actions)</name>
+      <text>
+The Lord of the Feast releases a blood-curdling howl which can be heard all across Drakkenheim. Garmyr within 60 feet who can see and hear the Lord of the Feast can use their reaction to move up to half their speed and make one melee or ranged attack with advantage.</text>
+    </legendary>
+    <spells/>
+    <slots/>
+    <description>This horrific albino garmyr stands well over twelve feet tall. He is covered in a mass of yellowish-white mangy fur, bloodstained and scarred from countless battles, and clad in a patchwork armour of leather, chain, and bladed plate with trophies—mummified heads—hanging from his belt. A mane of bony spines and tufts of barbed grey hair jut out from his head and down his back to a long white tail braided with skulls and bone fragments. His snarling visage is filled with long, razor-sharp fangs and smouldering red eyes. The Lord of The Feast holds an oversized longbow, strung with thick sinew. A quiver on his back holds enormous arrows, some bristling with barbed snares, others connected to coils of chains around the beast's wrists, while others are tipped with delerium shards.
+
+Source:	Dungeons of Drakkenheim p. 211</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Lucretia Mathias</name>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>Neutral Good</alignment>
+    <ac>17 (Unarmored Defense)</ac>
+    <hp>90 (20d8)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>8</str>
+    <dex>10</dex>
+    <con>10</con>
+    <int>19</int>
+    <wis>24</wis>
+    <cha>19</cha>
+    <save>wis +12, cha +9</save>
+    <skill>insight +17, perception +17, persuasion +14, religion +14</skill>
+    <passive>26</passive>
+    <languages>all</languages>
+    <cr>15</cr>
+    <experience>13000</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune>Charmed, Frightened</conditionImmune>
+    <senses>truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+Lucretia Mathias is a 20th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 20, +12 to hit with spell attacks). She has the following cleric spells prepared:
+
+	• Cantrips (at will): chill touch, guidance, light, sacred flame, thaumaturgy
+	• 1st level (4): bless, command, guiding bolt, healing word
+	• 2nd level (3): aid, hold person, lesser restoration, spiritual weapon
+	• 3rd level (3): dispel magic, sending, speak with dead, spirit guardians
+	• 4th level (3): banishment, death ward, divination
+	• 5th level (3): commune, flame strike, greater restoration, scrying
+	• 6th level (2): heal, word of recall
+	• 7th level (2): divine word, resurrection
+	• 8th level (1): holy aura
+	• 9th level (1): gate, sacrament of the falling fire</text>
+      <attack>Spell Attack|+12|</attack>
+    </trait>
+    <trait>
+      <name>Prescient</name>
+      <text>
+Lucretia Mathias can't be surprised while she is conscious.</text>
+    </trait>
+    <trait>
+      <name>Unarmoured Defense</name>
+      <text>
+While Lucretia Mathias is wearing no armour and wielding no shield, her AC includes her Wisdom modifier.</text>
+    </trait>
+    <trait>
+      <name>Undeniable Faith</name>
+      <text>
+Lucretia Mathias automatically succeeds on Constitution saving throws to maintain concentration on her spells. Any spell she casts is treated as if it were cast using a 9th level spell slot, regardless of the spell slot used to cast the spell.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>
+If Lucretia Mathias fails a saving throw, she can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Divine Grace</name>
+      <text>
+Any creature who targets Lucretia Mathias with an attack or a harmful spell must first make a DC 20 Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This effect doesn't protect Lucretia Mathias from area effects, such as the explosion of a fireball.
+
+If Lucretia Mathias makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this effect ends until the start of her next turn.</text>
+    </trait>
+    <action>
+      <name>Pacifying Touch</name>
+      <text>
+Melee Spell Attack: +12 to hit, reach 5 ft., one creature. Hit: 10 (3d6) psychic damage. A creature reduced to 0 hit points by this damage is stable at 0 hit points. The target must succeed on a DC 20 Wisdom saving throw or be incapacitated for 1 minute. This effect ends for an affected creature if it takes any damage.</text>
+      <attack>Pacifying Touch|+12|3d6</attack>
+    </action>
+    <action>
+      <name>Divine Intervention (1/week)</name>
+      <recharge>1/Week</recharge>
+      <text>
+Lucretia Mathias calls on the Sacred Flame for aid. The GM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate.</text>
+    </action>
+    <legendary>
+      <text>
+Lucretia can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Lucretia regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Cantrip</name>
+      <text>
+Lucretia Mathias casts a cantrip.</text>
+    </legendary>
+    <legendary>
+      <name>Pacifying Touch (Costs 2 Actions)</name>
+      <text>
+Lucretia Mathias uses her Pacifying Touch.</text>
+    </legendary>
+    <legendary>
+      <name>Cast a Spell (Costs 3 Actions)</name>
+      <text>
+Lucretia Mathias casts a spell using a spell slot.</text>
+    </legendary>
+    <spells>chill touch, guidance, light, sacred flame, thaumaturgy, bless, command, guiding bolt, healing word, aid, hold person, lesser restoration, spiritual weapon, dispel magic, sending, speak with dead, spirit guardians, banishment, death ward, divination, commune, flame strike, greater restoration, scrying, heal, word of recall, divine word, resurrection, holy aura, gate, sacrament of the falling fire</spells>
+    <slots>4,3,3,3,3,2,2,1,1</slots>
+    <description>Lucretia Mathias is a willowy and wizened woman with piercing eyes and pursed lips. She is in her early nineties, and keeps her greying black hair in a coiled bun beneath a linen shawl. She wears simple grey robes, and clutches a heavy leather-bound tome. A glowing golden crystal dangles from a silver chain around her neck. Her garb lightly conceals the delerium shard embedded in her heart.
+
+Personality Trait:
+I speak in proverbs and quote scripture when I speak, inspiring others to interpret my cryptic words and come to their own revelations.
+
+Ideal:
+The brightest lights shine in the darkest of places. None are beyond redemption, and all may find their inner truth and purpose by following the Falling Fire.
+
+Bond:
+I have foreseen the inevitable end of our world, but through our sacred self-sacrifice we shall set alight the Sacred Flame to bring enlightenment and salvation to the universe.
+
+Flaw:
+I only reveal the greatest truths I have seen to those I am certain can grasp them fully, and will understand them as I do.
+
+Source:	Dungeons of Drakkenheim p. 216</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Minazorond</name>
+    <size>G</size>
+    <type>dragon</type>
+    <alignment>Lawful Good</alignment>
+    <ac>22 (natural armor)</ac>
+    <hp>444 (24d20 + 192)</hp>
+    <speed>walk 40 ft., fly 80 ft., swim 40 ft.</speed>
+    <str>29</str>
+    <dex>10</dex>
+    <con>27</con>
+    <int>18</int>
+    <wis>17</wis>
+    <cha>21</cha>
+    <save>dex +7, con +15, wis +10, cha +12</save>
+    <skill>insight +10, perception +17, stealth +7</skill>
+    <passive>27</passive>
+    <languages>Common, Draconic</languages>
+    <cr>22</cr>
+    <experience/>
+    <resist>Poison, Psychic, Bludgeoning, Piercing or Slashing damage from nonmagical attacks that aren't adamantine</resist>
+    <immune>Lightning</immune>
+    <vulnerable/>
+    <conditionImmune>Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned</conditionImmune>
+    <senses>blindsight 60 ft., darkvision 120 ft., truesight 120 ft.</senses>
+    <trait>
+      <name>Amphibious</name>
+      <text>
+Minazorond can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Constructed Nature</name>
+      <text>
+Minazorond doesn't require air, food, drink, or sleep.</text>
+    </trait>
+    <trait>
+      <name>False Appearance</name>
+      <text>
+While Minazorond remains motionless, he is indistinguishable from an inanimate bronze statue.</text>
+    </trait>
+    <trait>
+      <name>Faultless Tracker</name>
+      <text>
+The creature(s) that caused Minazorond to animate becomes his quarry. Minazorond knows the direction and distance to his quarry as long the quarry remains within Drakkenheim or until Minazorond is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Immutable Form</name>
+      <text>
+Minazorond is immune to any spell or effect that would alter his form.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>
+If Minazorond fails a saving throw, he can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>
+Minazorond has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Magic Weapons</name>
+      <text>
+Minazorond's weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Rejuvenation</name>
+      <text>
+If Minazorond is destroyed, he regains all his hit points in 1 hour unless a disintegrate spell is cast on his remains.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+Minazorond can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) piercing damage.</text>
+      <attack>Bite|+16|2d10+9</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>
+Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) slashing damage.</text>
+      <attack>Claw|+16|2d6+9</attack>
+    </action>
+    <action>
+      <name>Tail</name>
+      <text>
+Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 18 (2d8 + 9) bludgeoning damage.</text>
+      <attack>Tail|+16|2d8+9</attack>
+    </action>
+    <action>
+      <name>Frightful Presence</name>
+      <text>
+Each creature of Minazorond's choice that is within 120 feet of Minazorond and aware of him must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Minazorond's Frightful Presence for the next 24 hours.</text>
+    </action>
+    <action>
+      <name>Breath Weapons (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>
+Minazorond uses one of the following breath weapons.</text>
+    </action>
+    <action>
+      <name>Lightning Breath</name>
+      <text>
+Minazorond exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Lightning Breath||16d10</attack>
+    </action>
+    <action>
+      <name>Repulsion Breath</name>
+      <text>
+Minazorond exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 23 Strength saving throw. On a failed save, the creature is pushed 60 feet away from Minazorond.</text>
+    </action>
+    <action>
+      <name>Change Shape</name>
+      <text>
+Minazorond magically polymorphs into a humanoid or beast that has a challenge rating no higher than his own, or back into his true form. He reverts to his true form if he dies. Any equipment he is wearing or carrying is absorbed or borne by the new form (Minazorond's choice).
+
+In a new form, Minazorond retains his alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. His statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.</text>
+    </action>
+    <legendary>
+      <text>
+Minazorond can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Minazorond regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Detect</name>
+      <text>
+Minazorond makes a Wisdom (Perception) check.</text>
+    </legendary>
+    <legendary>
+      <name>Tail Attack</name>
+      <text>
+Minazorond makes a tail attack.</text>
+    </legendary>
+    <legendary>
+      <name>Wing Attack (Costs 2 Actions)</name>
+      <text>
+Minazorond beats his wings. Each creature within 15 feet of Minazorond must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. Minazorond can then fly up to half his flying speed.</text>
+      <attack>Wing Attack||2d6+9</attack>
+    </legendary>
+    <spells/>
+    <slots/>
+    <description>Minazorond is eternally bound to serve as the guardian of Castle Drakken. He roosts atop the Stair Tower of the royal palace with his mind awash in nightmares. The dragon now believes the monstrous creatures dwelling in the castle to be its proper inhabitants, and perceives humanoid creatures as trespassers to be destroyed. Minazorond awakes with a thunderous roar that can be heard for miles away, and attacks if intruders approach within one hundred fifty feet of the royal palace by any means. The dragon does not speak, nor respond to reason or parley. He does not pursue his quarry beyond the castle grounds. However, Minazorond is too large to enter buildings or the palace, and cannot pursue creatures who flee inside.
+
+Minazorond may be rebuked by a creature bearing aSeal of Drakkenheim. Only a wish spell can cure his madness: he interacts as a dutiful, stoic, and wise protector thereafter.
+
+Source:	Dungeons of Drakkenheim p. 183</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Oscar Yoren</name>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>Any Alignment</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>72 (9d8)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>9</str>
+    <dex>14</dex>
+    <con>11</con>
+    <int>17</int>
+    <wis>12</wis>
+    <cha>11</cha>
+    <save>int +6, wis +4</save>
+    <skill>arcana +6, history +6</skill>
+    <passive>11</passive>
+    <languages>Any four languages</languages>
+    <cr>6</cr>
+    <experience>2300</experience>
+    <resist>Necrotic, Poison</resist>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+Oscar Yoren is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Oscar Yoren has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch, mage hand, ray of frost
+	• 1st level (4): false life, mage armor, magic missile, shield
+	• 2nd level (3): invisibility, misty step, web
+	• 3rd level (3): animate dead, counterspell, lightning bolt
+	• 4th level (3): blight, polymorph
+	• 5th level (1): cloudkill</text>
+      <attack>Spell Attack|+6|</attack>
+    </trait>
+    <action>
+      <name>Dagger</name>
+      <text>
+Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <spells>chill touch, mage hand, ray of frost, false life, mage armor, magic missile, shield, invisibility, misty step, web, animate dead, counterspell, lightning bolt, blight, polymorph, cloudkill</spells>
+    <slots>4,3,3,3,1</slots>
+    <description>This malfeasant wizard fled the Amethyst Academy ten years ago. Oscar Yoren has since taken up residence on the north side of Drakkenheim in Reed Manor, and survived on the outskirts of the city through his grim intellect, ruthless self-interest, and willingness to practice unsavoury forms of alchemy and necromancy. Several other outcast mages have since joined him as apprentices.
+
+Oscar Yoren is a short, wide man in his mid-fifties. He wears slovenly leather breeches and a filthy black overcoat. He has shoulder-length greasy black hair and a thick beard of wiry unshaven hair creeping down his flabby neck. His skin is covered in sores and pasty blotches, with bulging blood veins under his neck. His sunken bloodshot eyes glare with a purple-green light. He has yellow teeth and fingernails.
+
+Personality Trait:
+I talk down to anyone who isn't as intelligent as I am which is everyone. I demand attention when I'm speaking, and make thinly-veiled threats when I don't get my way.
+
+Ideal:
+The Amethyst Academy doesn't understand my methods, but I cannot unlock the secrets of delerium if I am hindered by petty morality and useless ethics. If I had proper facilities and resources, unimaginable power would be mine.
+
+Bond:
+My apprentices are useful as long as they are loyal and don't question me, but disposable the moment they aren't. Only my own survival matters.
+
+Flaw:
+I hold vindictive grudges against everyone who ever wronged me. I'll have my revenge someday, but I fear acting against those with more power or resources than me. I must hide for now, as I'm terrified the Academy will send assassins to kill me and steal my brilliant research.
+
+Oscar Yoren's spellbook contains all the spells he has prepared, plus alarm, find familiar, glyph of warding, contact other plane, dispel magic, dimension door, magic circle, and planar binding.
+
+Source:	Dungeons of Drakkenheim p. 99</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Pale Man</name>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>Neutral</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>120 (16d8 + 48)</hp>
+    <speed>walk 30 ft., climb 30 ft.</speed>
+    <str>10</str>
+    <dex>15</dex>
+    <con>17</con>
+    <int>20</int>
+    <wis>15</wis>
+    <cha>12</cha>
+    <save>con +8, int +10, wis +7</save>
+    <skill>arcana +10, history +10, perception +7</skill>
+    <passive>15</passive>
+    <languages>Common and any 5 other languages</languages>
+    <cr>13</cr>
+    <experience>10000</experience>
+    <resist>Bludgeoning, Piercing or Slashing damage from nonmagical attacks</resist>
+    <immune>Necrotic, Poison</immune>
+    <vulnerable/>
+    <conditionImmune>Charmed, Frightened, Paralyzed, Petrified, Poisoned, Restrained</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+The Pale Man is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). The Pale Man has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch, mage hand, mending, prestidigitation, shocking grasp
+	• 1st level (4): delerium orb*, mage armor, magic missile, shield
+	• 2nd level (3): hold person, invisibility, warp bolt*
+	• 3rd level (3): counterspell, lightning bolt, purge contamination*
+	• 4th level (3): delerium blast*, forced evolution*
+	• 5th level (3): conjure the deep haze*
+	• 6th level (1): chain lightning, siphon contamination*
+	• 7th level (1): octarine spray*
+	• 8th level (1): antimagic field</text>
+      <attack>Spell Attack|+10|</attack>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>
+If the Pale Man fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Insect Body</name>
+      <text>
+The Pale Man can occupy another creature's space and vice versa, and the Pale Man can move through any opening large enough for a Tiny insect.</text>
+    </trait>
+    <trait>
+      <name>Crawling Flesh</name>
+      <text>
+When the Pale Man is reduced to 0 hit points, it breaks apart into a swarm of insects in the same space. Unless the swarm is destroyed, the Pale Man swarm returns to its cocoon and reforms 1d6 days later.</text>
+    </trait>
+    <action>
+      <name>Contaminating Touch</name>
+      <text>
+Melee Spell Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (3d6) necrotic damage, and the target must succeed on a DC 16 Constitution saving throw or receive one level of contamination.</text>
+      <attack>Contaminating Touch|+8|3d6</attack>
+    </action>
+    <action>
+      <name>Infest the Flesh (Recharge 6)</name>
+      <recharge>D6</recharge>
+      <text>
+Each creature within 30 feet of the Pale Man must succeed on a DC 16 Dexterity saving throw or take 22 (5d8) necrotic damage and be restrained by masses of swarming fleshy bugs. The affected creature takes 22 (5d8) necrotic damage at the start of each of the Pale Man's turns. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Infest the Flesh||5d8</attack>
+    </action>
+    <legendary>
+      <text>
+The pale man can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The pale man regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Cantrip (Costs 1 Action)</name>
+      <text>
+The Pale Man casts one cantrip.</text>
+    </legendary>
+    <legendary>
+      <name>Slither (Costs 2 Actions)</name>
+      <text>
+The Pale Man moves its speed without provoking opportunity attacks.</text>
+    </legendary>
+    <legendary>
+      <name>Contaminate (Costs 3 Actions)</name>
+      <text>
+Each creature restrained by the Pale Man's Infest the Flesh must succeed on a DC 16 Constitution saving throw or gain one level of contamination.</text>
+    </legendary>
+    <spells>chill touch, mage hand, mending, prestidigitation, shocking grasp, delerium orb, mage armor, magic missile, shield, hold person, invisibility, warp bolt, counterspell, lightning bolt, purge contamination, delerium blast, forced evolution, conjure the deep haze, chain lightning, siphon contamination, octarine spray, antimagic field</spells>
+    <slots>4,3,3,3,3,1,1,1</slots>
+    <description>Friedrich Von Lichten ambitiously explored the mutagenic effects of delerium after Drakkenheim's destruction, and was among the first to fully describe the effects of eldritch contamination upon the human body. He was ejected from the Amethyst Academy when it was discovered he was using apprentices as test subjects. So grave was his trespass, that the Academy notified the Silver Order of his existence, putting a death bounty on his head. Both The Silver Order and the Amethyst Academy have been searching for him since.
+
+Personality Trait:
+Witness my power, understand that I am the future. Some may call me a god, and I would not correct them.
+
+Ideal:
+We must embrace the Haze, and allow contamination to change us, make us better.
+
+Bonds:
+The Amethyst Academy lacks vision. I will show them the true power of delerium.
+
+Flaw:
+It is not enough that I merely outsmart my foes, they must be shown their weakness and failure.
+
+Friedrich von Lichten has fully embraced contamination and transformed into a monster, and is now the Pale Man (see Appendix A ofDungeons of Drakkenheimfor game statistics). He has maintained his intellect, and drapes his hunched and withered figure in a black cloak. Beneath his paper-thin skin are wriggling and writhing things. His lidless eyes are sunken, his teeth are prominent, yellowing and decaying. One can just make out a sickly green tongue that darts out when he speaks. He talks in a stunted, almost exasperated tone.
+
+He presents his estate as a safehouse for the lost and forgotten.
+
+The Pale Man sows the rumours that he can help contaminated people so he can use them as test subjects for his experiments. When he meets a transformed or contaminated creature, he presents himself as a helpful expert, offering to treat any individual left in his care. He never actually cures contamination, but sometimes helps other transformed monsters become somewhat lucid so he can make better use of them as minions. The Pale Man spends most of his time in the repurposed master bedroom of the estate he uses as his laboratory, and gives orders only to his most trusted thralls.
+
+Source:	Dungeons of Drakkenheim p. 212</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Protean Abomination</name>
+    <size>H</size>
+    <type>aberration</type>
+    <alignment>Unaligned</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>168 (16d12 + 64)</hp>
+    <speed>walk 30 ft., climb 10 ft.</speed>
+    <str>21</str>
+    <dex>8</dex>
+    <con>18</con>
+    <int>5</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <save/>
+    <skill/>
+    <passive>10</passive>
+    <languages/>
+    <cr>6</cr>
+    <experience>2300</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune>Charmed, Frightened, Prone</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Absorption</name>
+      <text>
+When the protean abomination kills a creature that is neither a construct nor undead, it absorbs the corpse into its body and regains 20 hit points.</text>
+    </trait>
+    <trait>
+      <name>Amorphous</name>
+      <text>
+The protean abomination can move through a space as narrow as 1 inch wide without squeezing.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>
+The protean abomination can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+The protean abomination makes two slam attacks. If both attacks hit a Large or smaller target, the target is grappled (escape DC 15), and the protean abomination uses Engulf on it.</text>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>
+Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 5) bludgeoning damage.</text>
+      <attack>Slam|+8|3d8+5</attack>
+    </action>
+    <action>
+      <name>Engulf</name>
+      <text>
+The protean abomination engulfs a Large or smaller creature grappled by it. Until the grapple ends the target is blinded, restrained, and unable to breathe, and it must succeed on a DC 15 Constitution saving throw at the start of each of the abomination's turns or take 19 (3d8 + 5) bludgeoning damage. If the abomination moves, the engulfed target moves with it. The abomination can have only one creature engulfed at a time.</text>
+      <attack>Engulf||3d8+5</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Occasionally, a creature's rapid mutations become too much for its body to withstand. In a horrific shower of gore, such wretches explode into a quivering mass of cancerous tumors, babbling mouths, shifting eyes, and grasping limbs that twist, expand, and retract in grotesque and bizarre ways.
+
+Source:	Dungeons of Drakkenheim p. 201</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Queen of Thieves</name>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>23 (canny defense, mage armor)</ac>
+    <hp>120 (20d8 + 20)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>10</str>
+    <dex>20</dex>
+    <con>13</con>
+    <int>20</int>
+    <wis>16</wis>
+    <cha>19</cha>
+    <save>dex +10, int +10</save>
+    <skill>acrobatics +10, arcana +10, deception +14, insight +8, perception +8, persuasion +9, sleight of hand +10, stealth +15</skill>
+    <passive>18</passive>
+    <languages>Common, Dwarvish, Elvish, Undercommon</languages>
+    <cr>15</cr>
+    <experience>13000</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune>Charmed</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+15</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>
+The Queen of Thieves' innate spellcasting ability is Intelligence. She can innately cast the following spells, requiring no material, somatic, or verbal components:
+
+	• At will: detect thoughts, disguise self, suggestion</text>
+      <attack>Spell Attack|+|</attack>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+The Queen of Thieves is a 20th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). She has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch, mage hand, message, minor illusion, prestidigitation
+	• 1st level (4 slots): feather fall, mage armor, shield, sleep
+	• 2nd level (3 slots): mirror image, misty step, see invisibility
+	• 3rd level (3 slots): gaseous form, hypnotic pattern, major image
+	• 4th level (3 slots): dimension door, greater invisibility, polymorph
+	• 5th level (3 slots): dominate person, scrying, seeming
+	• 6th level (2 slots): eyebite, mass suggestion
+	• 7th level (2 slots): forcecage, project image
+	• 8th level (1 slot): feeblemind
+	• 9th level (1 slot): foresight</text>
+      <attack>Spell Attack|+|</attack>
+    </trait>
+    <trait>
+      <name>Special Equipment</name>
+      <text>
+The Queen of Thieves wears an amulet of proof against detection and location and a spymaster's signet. She wields a +3 rapier.</text>
+    </trait>
+    <trait>
+      <name>Canny Defense</name>
+      <text>
+While the Queen of Thieves is wearing light or no armour and wielding no shield, her AC includes her Intelligence modifier.</text>
+    </trait>
+    <trait>
+      <name>Sneak Attack (1/Turn)</name>
+      <recharge>1/Turn</recharge>
+      <text>
+The Queen of Thieves deals an extra 18 (5d6) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Queen of Thieves that isn't incapacitated and she doesn't have disadvantage on the attack roll.</text>
+      <attack>Sneak Attack||5d6</attack>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>
+If the Queen of Thieves fails a saving throw, she can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Memory Thief</name>
+      <text>
+Creatures are not aware when the Queen of Thieves reads their thoughts or charms them. Additionally, when a spell cast by the Queen of Thieves that causes creatures to become charmed ends, she can make the affected creatures lose their memories. They must succeed on a DC 18 Intelligence saving throw or forget up to 8 hours of the time spent charmed by her. These memories can be restored with a heal spell or similar magic.</text>
+    </trait>
+    <action>
+      <name>+3 Rapier</name>
+      <text>
+Melee Weapon Attack: +13 to hit, reach 5 ft., one target Hit: 13 (1d8 + 8) piercing damage.</text>
+      <attack>+3 Rapier|+13|1d8+8</attack>
+    </action>
+    <action>
+      <name>Dagger</name>
+      <text>
+Ranged Weapon Attack: +10 to hit, range 20/60 ft., one target. Hit: 7 (1d4 + 7) piercing damage.</text>
+      <attack>Dagger|+10|1d4+7</attack>
+    </action>
+    <reaction>
+      <name>Misdirection</name>
+      <text>
+When she would take damage, the Queen of Thieves becomes invisible and teleports 60 feet to an unoccupied space she can see. At the same time, an illusory double of her appears where she was standing and lasts for 1 minute. The invisibility ends if the Queen of Thieves attacks or casts a spell, or after 1 minute.</text>
+    </reaction>
+    <legendary>
+      <text>
+The queen of thieves can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The queen of thieves regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Attack</name>
+      <text>
+The Queen of Thieves makes one melee or ranged attack.</text>
+    </legendary>
+    <legendary>
+      <name>Move</name>
+      <text>
+The Queen of Thieves moves up to her speed without provoking opportunity attacks.</text>
+    </legendary>
+    <spells>chill touch, mage hand, message, minor illusion, prestidigitation, feather fall, mage armor, shield, sleep, mirror image, misty step, see invisibility, gaseous form, hypnotic pattern, major image, dimension door, greater invisibility, polymorph, dominate person, scrying, seeming, eyebite, mass suggestion, forcecage, project image, feeblemind, foresight, detect thoughts, disguise self, suggestion</spells>
+    <slots>4,3,3,3,3,2,2,1,1</slots>
+    <description>"Who I am is not as important as what I am. I am quicker than thought, more silent than contemplation, more slippery than a fading memory, and more unshakable than a guilty conscience. I deal in secrets and mendacity as lesser thieves deal in coins and larceny. I can fulfil your wildest dreams, or I can be your worst nightmare."
+— The Queen of Thieves.
+
+The Queen of Thieves is a scheming mastermind who controls the Drakkenheim underworld. She has transformed a hundred squabbling bands of brigands and outlaws into a burgeoning criminal empire. However, none know her true identity or origin, for she wears many faces. Though she is most infamously encountered as a lithe masked woman garbed in swashbuckling attire with a wide-brimmed hat and jewelled rapier, the Queen of Thieves adopts a variety of costumes, facial features, skin and hair colours, body shapes, ages, and genders depending on her mood and circumstances. As such, she typically confirms her identity by revealing some secret about whoever she is speaking with or demonstrating her uncanny ability to change appearance seemingly at-will.
+
+Personality Trait:
+I am never caught unprepared, and have contingencies for my contingencies. I speak with rakish confidence while casually exposing everything I know about others, and flaunt my ability to be anybody or anywhere.
+
+Ideal:
+I indulge in playing mind games and manipulating people with the promise of profit. Instead of spilling blood, I spill secrets. My enemies are worthless as corpses. When I have to steal lives, I spend them dearly first.
+
+Bond:
+Law is powerless in the chaos of the ruins. As long as anarchy reigns, so shall I.
+
+Flaw:
+Anyone who trusts me is a terrible fool. Double-crossing is my nature. I expect everyone to betray me, and I'll relish the opportunity to defeat them when they try.
+
+Few amongst the Queen's Men have met the Queen of Thieves in person, and even fewer have attended the Court of Thieves. Most only know if they get a note attached to a Queen of Diamonds playing card, you better do what it says.
+
+Source:	Dungeons of Drakkenheim p. 217</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Rat Prince</name>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>15 (leather armor)</ac>
+    <hp>66 (12d8 + 12)</hp>
+    <speed>walk 30 ft., swim 30 ft., climb 30 ft.</speed>
+    <str>12</str>
+    <dex>19</dex>
+    <con>13</con>
+    <int>9</int>
+    <wis>15</wis>
+    <cha>9</cha>
+    <save/>
+    <skill>acrobatics +6, athletics +3, perception +6, stealth +8</skill>
+    <passive>15</passive>
+    <languages>Common</languages>
+    <cr>3</cr>
+    <experience>700</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Cunning Action</name>
+      <text>
+The Rat Prince can take the Dash, Disengage, or Hide action as a bonus action on each of its turns.</text>
+    </trait>
+    <trait>
+      <name>Keen Smell</name>
+      <text>
+The Rat Prince has advantage on Wisdom (Perception) checks that rely on smell.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>
+The Rat Prince has advantage on an attack roll against a creature if at least one of his allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
+    </trait>
+    <trait>
+      <name>Contaminated Ammunition</name>
+      <text>
+The Rat Prince carries 2d6 pieces of ammunition laced with delerium fragments. These projectiles cause 1d6 extra damage on a hit, and the target must succeed on a DC 10 Constitution saving throw or gain one level of contamination.</text>
+      <attack>Contaminated Ammunition||1d6</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+The Rat Prince makes three attacks: two with his short swords, and one with his contaminated bite.</text>
+    </action>
+    <action>
+      <name>Short Sword</name>
+      <text>
+Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.</text>
+      <attack>Short Sword|+6|1d6+4</attack>
+    </action>
+    <action>
+      <name>Contaminated Bite</name>
+      <text>
+Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 4) piercing damage, plus an extra 10 (3d6) necrotic damage, and the creature must succeed on a DC 11 Constitution saving throw or gain one level of contamination.</text>
+      <attack>Contaminated Bite|+6|1d4+4</attack>
+      <attack>Necrotic||3d6</attack>
+    </action>
+    <action>
+      <name>Hand Crossbow</name>
+      <text>
+Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage.</text>
+      <attack>Hand Crossbow|+6|1d6+4</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>This ratling stands head-and-shoulders over the others, and has black-brown fur and a wicked grin some of his frontmost teeth are delerium crystals. He wears scavenged bits of light armour, tattered dark blue rags, and a gold crown which is slightly too small for his head.
+
+Source:	Dungeons of Drakkenheim p. 213</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Ratling</name>
+    <size>S</size>
+    <type>monstrosity</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>12</ac>
+    <hp>5 (2d6 - 2)</hp>
+    <speed>walk 30 ft., swim 30 ft., climb 30 ft.</speed>
+    <str>7</str>
+    <dex>15</dex>
+    <con>8</con>
+    <int>8</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <save/>
+    <skill>stealth +6</skill>
+    <passive>10</passive>
+    <languages>Common</languages>
+    <cr>1/8</cr>
+    <experience>25</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Skulker</name>
+      <text>
+The ratling can take the Hide action as a bonus action on each of its turns.</text>
+    </trait>
+    <trait>
+      <name>Keen Smell</name>
+      <text>
+The ratling has advantage on Wisdom (Perception) checks that rely on smell.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>
+The ratling has advantage on an attack roll against a creature if at least one of the ratling's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Bite|+4|1d4+2</attack>
+    </action>
+    <action>
+      <name>Sling</name>
+      <text>
+Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.</text>
+      <attack>Sling|+4|1d4+2</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>"A pair of glinting yellow-purple eyes appear down the dark tunnel ahead, then another, then more. A scurrying mass of furry bodies bound up in mud-spattered cloth and greasy leather surge forward. Their rodent-like claws brandish rust-caked blades as many squeaking voices erupt into a cacophony of chittering, chirping, screeching, and finally a howl of "Kill! Kill! Kill!""
+
+Ratlings are oversized mutated rats imbued with malevolent cunning and driven by a mad compulsion to consume and multiply. These wretched monsters suffer from a constant internal struggle between cowardly survival instincts and violent impulsive urges. Ratlings dream of eating everything, and will eat anything, but love eating people. They especially love eating babies. While they will subsist on carrion, ratlings take captives back to their lairs so they can have fresh food later. Thousands of ratlings dwell in the city. They form warring colonies that dig maze-like burrows featuring multiple entrances and tight looping passages. Successful colonies grow in number quickly, as ratlings mature in a matter of weeks when ample food and delerium are available.
+
+Source:	Dungeons of Drakkenheim p. 202</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Saint Gresha</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>Neutral Good</alignment>
+    <ac>13</ac>
+    <hp>67 (9d8 + 27)</hp>
+    <speed>walk 0 ft., fly 60 ft.</speed>
+    <str>6</str>
+    <dex>16</dex>
+    <con>16</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>15</cha>
+    <save/>
+    <skill/>
+    <passive>12</passive>
+    <languages>The languages it knew in life</languages>
+    <cr>6</cr>
+    <experience>2300</experience>
+    <resist>Acid, Cold, Fire, Lightning, Thunder, Bludgeoning, Piercing or Slashing damage from nonmagical attacks that aren't silvered</resist>
+    <immune>Necrotic, Poison</immune>
+    <vulnerable/>
+    <conditionImmune>Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+Saint Gresha is an 8th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). Saint Gresha knows the following sorcerer spells:
+
+	• At will: guidance, light, sacred flame, thaumaturgy
+	• 3/day each: bless, flame strike, guiding bolt, healing word, prayer of healing, spirit guardians
+	• 1/day each: divine word, harm, heal, holy aura, sacrament of the falling fire*
+
+*new spell described in Appendix D of Dungeons of Drakkenheim.</text>
+      <attack>Spell Attack|+5|</attack>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>
+Saint Gresha can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
+      <attack>Incorporeal Movement||1d10</attack>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>
+While in sunlight, Saint Gresha has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <action>
+      <name>Life Drain</name>
+      <text>
+Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 21 (4d8 + 3) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</text>
+      <attack>Life Drain|+6|4d8+3</attack>
+    </action>
+    <action>
+      <name>Create Specter</name>
+      <text>
+Saint Gresha targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under Saint Gresha's control. Saint Gresha can have no more than seven specters under its control at one time.</text>
+    </action>
+    <spells>guidance, light, sacred flame, thaumaturgy, bless, flame strike, guiding bolt, healing word, prayer of healing, spirit guardians, divine word, harm, heal, holy aura, sacrament of the falling fire</spells>
+    <slots/>
+    <description>Gresha was called back in spirit by Lucretia Mathias to tend her namesake chapel. If Saint Gresha is destroyed, Lucretia Mathias calls her spirit back again as soon as possible.
+
+Source:	Dungeons of Drakkenheim p. 124</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Scoundrel</name>
+    <size>M</size>
+    <type>humanoid</type>
+    <alignment>Any Alignment</alignment>
+    <ac>14 (leather)</ac>
+    <hp>44 (8d8 + 8)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>10</str>
+    <dex>17</dex>
+    <con>12</con>
+    <int>14</int>
+    <wis>10</wis>
+    <cha>15</cha>
+    <save/>
+    <skill>acrobatics +5, deception +6, sleight of hand +5, stealth +7</skill>
+    <passive>10</passive>
+    <languages>Thieves' cant plus any two languages</languages>
+    <cr>3</cr>
+    <experience>700</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+The scoundrel is a 3rd level spellcaster that uses Intelligence as its spellcasting ability (spell save DC 12; +4 to hit with spell attacks). It knows the following spells from the wizard spell list:
+
+	• Cantrips (at will): mage hand (the hand is invisible), minor illusion, prestidigitation
+	• 1st level (4): charm person, disguise self, sleep
+	• 2nd level (2): invisibility, suggestion</text>
+      <attack>Spell Attack|+4|</attack>
+    </trait>
+    <trait>
+      <name>Cunning Action</name>
+      <text>
+On each of its turns, the scoundrel can use a bonus action to take the Dash, Disengage, or Hide action.</text>
+    </trait>
+    <trait>
+      <name>Sneak Attack (1/Turn)</name>
+      <recharge>1/Turn</recharge>
+      <text>
+The scoundrel deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the scoundrel that isn't incapacitated and the scoundrel doesn't have disadvantage on the attack roll.</text>
+      <attack>Sneak Attack (1/Turn)||4d6</attack>
+    </trait>
+    <action>
+      <name>Shortsword</name>
+      <text>
+Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</text>
+      <attack>Shortsword|+5|1d6+3</attack>
+    </action>
+    <action>
+      <name>Hand Crossbow</name>
+      <text>
+Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</text>
+      <attack>Hand Crossbow|+5|1d6+3</attack>
+    </action>
+    <spells>mage hand, minor illusion, prestidigitation, charm person, disguise self, sleep, invisibility, suggestion</spells>
+    <slots>4,2</slots>
+    <description>"When you've been around the beat as long as me, you learn to pick up a trick or two. Take anything you can get, it might mean you win the next big score, or just live another day."
+
+Source:	Dungeons of Drakkenheim p. 219</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Tower Dragon</name>
+    <size>L</size>
+    <type>dragon</type>
+    <alignment>Lawful Good</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>142 (15d10 + 60)</hp>
+    <speed>walk 40 ft., fly 80 ft., swim 40 ft.</speed>
+    <str>21</str>
+    <dex>10</dex>
+    <con>19</con>
+    <int>14</int>
+    <wis>13</wis>
+    <cha>17</cha>
+    <save>dex +3, con +7, wis +4, cha +6</save>
+    <skill>insight +4, perception +7, stealth +3</skill>
+    <passive>17</passive>
+    <languages>Common, Draconic</languages>
+    <cr>10</cr>
+    <experience>5900</experience>
+    <resist>Poison, Psychic, Bludgeoning, Piercing or Slashing damage from nonmagical attacks that aren't adamantine</resist>
+    <immune>Lightning</immune>
+    <vulnerable/>
+    <conditionImmune>Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned</conditionImmune>
+    <senses>blindsight 30 ft., darkvision 120 ft., truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Amphibious</name>
+      <text>
+The dragon can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Constructed Nature</name>
+      <text>
+The dragon doesn't require air, food, drink, or sleep.</text>
+    </trait>
+    <trait>
+      <name>False Appearance</name>
+      <text>
+While the dragon remains motionless, it is indistinguishable from an inanimate bronze statue.</text>
+    </trait>
+    <trait>
+      <name>Faultless Tracker</name>
+      <text>
+The creature(s) that caused the dragon to animate becomes its quarry. The dragon knows the direction and distance to its quarry as long the quarry remains within Drakkenheim or until the dragon is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Immutable Form</name>
+      <text>
+The dragon is immune to any spell or effect that would alter its form.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>
+The dragon has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Magic Weapons</name>
+      <text>
+The dragon's weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Rejuvenation</name>
+      <text>
+If the tower dragon is destroyed, it regains all its hit points in 1 hour unless a disintegrate spell is cast on its remains.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+The dragon makes three attacks: one with its bite and two with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage.</text>
+      <attack>Bite|+8|2d10+5</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>
+Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.</text>
+      <attack>Claw|+8|2d6+5</attack>
+    </action>
+    <action>
+      <name>Breath Weapons (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>
+The dragon uses one of the following breath weapons.
+
+Lightning Breath:
+The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.
+
+Repulsion Breath:
+The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw. On a failed save, the creature is pushed 40 feet away from the dragon.</text>
+      <attack>Lightning Breath||10d10</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>These young bronze dragons perch upon the towers and parapets of the city and Castle Drakken. Once noble protectors of the city, they are now controlled by the will of the Haze.
+
+Source:	Dungeons of Drakkenheim p. 198</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Urban Ranger</name>
+    <size>M</size>
+    <type>humanoid</type>
+    <alignment>Any Alignment</alignment>
+    <ac>15 (studded leather)</ac>
+    <hp>52 (8d8 + 16)</hp>
+    <speed>walk 30 ft., climb 30 ft.</speed>
+    <str>12</str>
+    <dex>17</dex>
+    <con>14</con>
+    <int>11</int>
+    <wis>15</wis>
+    <cha>11</cha>
+    <save/>
+    <skill>athletics +5, perception +6, stealth +7, survival +6</skill>
+    <passive>16</passive>
+    <languages>Any two</languages>
+    <cr>3</cr>
+    <experience>700</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+The urban ranger is an 8th-level spellcaster that uses Wisdom as its spellcasting ability (spell save DC 12; +4 to hit with spell attacks). It knows the following spells from the ranger spell list:
+
+	• 1st level (4): cure wounds, fog cloud, hunter's mark
+	• 2nd level (3): pass without trace, spike growth</text>
+      <attack>Spell Attack|+4|</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+The urban ranger makes two melee attacks or two ranged attacks.</text>
+    </action>
+    <action>
+      <name>Shortsword</name>
+      <text>
+Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</text>
+      <attack>Shortsword|+5|1d6+3</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>
+Ranged Weapon Attack: +5 to hit, ranged 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage.</text>
+      <attack>Longbow|+5|1d8+3</attack>
+    </action>
+    <spells>cure wounds, fog cloud, hunter's mark, pass without trace, spike growth</spells>
+    <slots>4,3</slots>
+    <description>"We train day after day to survive the horrors of the city. More than just your own life is riding on you. A missed shot, a wrong turn, a split-second delay in noticing a lurking monster ahead could be the mistake that costs you everything in these dangerous ruins."
+— Petra Lang of the Hooded Lanterns
+
+Grizzled and grim urban rangers stalk city streets and rooftops like their natural counterparts hunt forest paths and treetops, leaping between buildings and scaling walls with ease.
+
+Source:	Dungeons of Drakkenheim p. 220</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Walking Delerium Geode</name>
+    <size>L</size>
+    <type>elemental</type>
+    <alignment>Unaligned</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>126 (12d10 + 60)</hp>
+    <speed>walk 30 ft., burrow 30 ft.</speed>
+    <str>20</str>
+    <dex>8</dex>
+    <con>20</con>
+    <int>5</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <save/>
+    <skill/>
+    <passive>10</passive>
+    <languages>Deep Speech</languages>
+    <cr>5</cr>
+    <experience>1800</experience>
+    <resist>Bludgeoning, Piercing or Slashing damage from nonmagical attacks</resist>
+    <immune>Necrotic, Poison</immune>
+    <vulnerable>Radiant, Thunder</vulnerable>
+    <conditionImmune>Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious</conditionImmune>
+    <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Death Burst</name>
+      <text>
+If damage reduces the walking delerium geode to 0 hit points, the delerium crystals in its body explode in a burst of contaminated energy, unless the damage was force, radiant, or thunder. Each creature within 30 feet of it must succeed on a DC 15 Constitution saving throw or take 42 (12d6) necrotic damage and gain one level of contamination. In addition, this explosion triggers a random arcane anomaly (see Dungeons of Drakkenheim).</text>
+      <attack>Death Burst||12d6</attack>
+    </trait>
+    <trait>
+      <name>Earth Glide</name>
+      <text>
+The walking delerium geode can burrow through nonmagical, unworked earth and stone. While doing so, the geode doesn't disturb the material it moves through.</text>
+    </trait>
+    <action>
+      <name>Shard Slam</name>
+      <text>
+Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage. A target hit by this attack must succeed on a DC 15 Constitution saving throw or take 10 (3d6) necrotic damage and gain one level of contamination.</text>
+      <attack>Shard Slam|+8|2d8+5</attack>
+      <attack>Necrotic||3d6</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Contaminated Elementals can be found all over Drakkenheim, often in areas where the eldritch magics are especially concentrated. Many who have encountered these elementals have spoken of the city itself coming to life to attack them. Reports of ruins reaching out and crushing adventurers, burning flames moving and hunting with minds of their own, or contaminated pools lurching to engulf passersby have been heard. Even the blowing air itself has mustered parts of the Haze into shifting clouds that stalk adventurers through the streets. These magical creatures are a constant reminder that nothing in the city can be trusted, and that nowhere is truly safe.
+
+Source:	Dungeons of Drakkenheim p. 205</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Wall Gargoyle</name>
+    <size>M</size>
+    <type>elemental</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>52 (7d8 + 21)</hp>
+    <speed>walk 30 ft., fly 60 ft.</speed>
+    <str>15</str>
+    <dex>11</dex>
+    <con>16</con>
+    <int>6</int>
+    <wis>11</wis>
+    <cha>7</cha>
+    <save/>
+    <skill/>
+    <passive>10</passive>
+    <languages>Terran</languages>
+    <cr>2</cr>
+    <experience>450</experience>
+    <resist>Bludgeoning, Piercing or Slashing damage from nonmagical attacks that aren't adamantine</resist>
+    <immune>Poison</immune>
+    <vulnerable/>
+    <conditionImmune>Exhaustion, Petrified, Poisoned</conditionImmune>
+    <senses>darkvision 60 ft., truesight 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>False Appearance</name>
+      <text>
+While the gargoyle remains motionless, it is indistinguishable from an inanimate statue.</text>
+    </trait>
+    <trait>
+      <name>Faultless Tracker</name>
+      <text>
+The creature that caused the gargoyle to animate becomes its quarry. The gargoyle knows the direction and distance to its quarry as long the quarry remains within Drakkenheim or until the gargoyle is destroyed.</text>
+    </trait>
+    <trait>
+      <name>Keen Sight</name>
+      <text>
+The gargoyle has advantage on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Magic Weapons</name>
+      <text>
+The gargoyle's weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Rejuvenation</name>
+      <text>
+If the wall gargoyle is destroyed, it regains all its hit points in 1 hour unless a disintegrate spell is cast on its remains.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+The gargoyle makes two attacks: one with its bite and one with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
+      <attack>Bite|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.</text>
+      <attack>Claws|+4|1d6+2</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>These gargoyles defend the walls of Drakkenheim.
+
+Source:	Dungeons of Drakkenheim p. 198</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Warlock of the Rat God</name>
+    <size>S</size>
+    <type>monstrosity</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>12</ac>
+    <hp>27 (6d6 + 6)</hp>
+    <speed>walk 30 ft., swim 30 ft., climb 30 ft.</speed>
+    <str>7</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>13</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save/>
+    <skill>deception +4, stealth +4</skill>
+    <passive>10</passive>
+    <languages>Common</languages>
+    <cr>2</cr>
+    <experience>450</experience>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>
+The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 12, +4 to hit with spell attacks), requiring no material components:
+
+	• At will: eldritch blast (2 beams), mage armor (self only), minor illusion, thaumaturgy
+	• 1/day each: augury, burning hands, conjure animals (giant rats only), faerie fire, invisibility, misty step</text>
+      <attack>Spell Attack|+4|</attack>
+    </trait>
+    <trait>
+      <name>Skulker</name>
+      <text>
+The ratling can take the Hide action as a bonus action on each of its turns.</text>
+    </trait>
+    <trait>
+      <name>Keen Smell</name>
+      <text>
+The ratling has advantage on Wisdom (Perception) checks that rely on smell.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Bite|+4|1d4+2</attack>
+    </action>
+    <spells>eldritch blast, mage armor, minor illusion, thaumaturgy, augury, burning hands, conjure animals, faerie fire, invisibility, misty step</spells>
+    <slots/>
+    <description>"Once we have all the shiny, the Rat God will come and help us! We'll get food! We will eat! Lots of food! All the food! We will eat the whole world! All the earth! Yes yes yes!"
+
+Many ratlings worship a fiendish entity they call the Rat God. They construct crude effigies to the Rat God, who whispers to the most cunning and intelligent ratlings, granting them magic through eldritch pacts. Ratlings understand surprisingly little about the Rat God, and make up stories and fables about the Rat God's exploits.
+
+Source:	Dungeons of Drakkenheim p. 202</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Warp Witch</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>Any Alignment</alignment>
+    <ac>11</ac>
+    <hp>45 (10d8)</hp>
+    <speed>walk 0 ft., fly 40 ft. (hover)</speed>
+    <str>7</str>
+    <dex>13</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>17</cha>
+    <save/>
+    <skill/>
+    <passive>11</passive>
+    <languages>any languages it knew in life</languages>
+    <cr>4</cr>
+    <experience>1100</experience>
+    <resist>Acid, Fire, Lightning, Thunder, Bludgeoning, Piercing or Slashing damage from nonmagical attacks</resist>
+    <immune>Cold, Necrotic, Poison</immune>
+    <vulnerable/>
+    <conditionImmune>Charmed, Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Ethereal Sight</name>
+      <text>
+The warp witch can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>
+The warp witch can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
+      <attack>Incorporeal Movement||1d10</attack>
+    </trait>
+    <action>
+      <name>Withering Touch</name>
+      <text>
+Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 17 (4d6 + 3) necrotic damage.</text>
+      <attack>Withering Touch|+5|4d6+3</attack>
+    </action>
+    <action>
+      <name>Etherealness</name>
+      <text>
+The warp witch enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.</text>
+    </action>
+    <action>
+      <name>Psychic Wail (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>
+Every creature within 30 feet of the warp witch must succeed on a DC 13 Intelligence saving throw or take 10 (3d6) psychic damage and become incapacitated until the end of the warp witches next turn.</text>
+      <attack>Psychic Wail (Recharge 5-6)||3d6</attack>
+    </action>
+    <action>
+      <name>Mutate Host</name>
+      <text>
+The warp witch can use a bonus action while it is possessing a creature to force mutations upon its host. The possessed creature must succeed on a DC 13 Charisma saving throw or gain one level of contamination|DoDk|12. Rather than rolling to determine if a mutation occurs, the warp witch automatically causes a random mutation.</text>
+    </action>
+    <action>
+      <name>Possession (Recharge 6)</name>
+      <recharge>D6</recharge>
+      <text>
+One humanoid that the warp witch can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the warp witch; the warp witch then disappears, and the target is incapacitated and loses control of its body. The warp witch now controls the body but doesn't deprive the target of awareness. The warp witch can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
+
+The possession lasts until the body drops to 0 hit points, the warp witch ends it as a bonus action, or the warp witch is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the warp witch reappears in an unoccupied space within 5 feet of the body. The target is immune to this warp witch's Possession for 24 hours after succeeding on the saving throw or after the possession ends.</text>
+    </action>
+    <spells/>
+    <slots/>
+    <description>These ethereal phantoms haunt the places where they died, grasping for any memory of their former identities. Their mental anguish breaks the minds of those who hear their wails, and they induce rapid mutations when they possess humanoid bodies.
+
+Source:	Dungeons of Drakkenheim p. 198</description>
     <environment/>
   </monster>
 </compendium>
