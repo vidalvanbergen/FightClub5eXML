@@ -1,6 +1,6 @@
 ## CHANGE LOG
 
-### 2024-??-??
+### 2024-04-17
 
 * Added proper attribution to Tyranny of Dragons content.
 * Added some `<recharges>` tags to Humblewood Campaign Setting.
@@ -9,6 +9,7 @@
 * Reformatted homebrew weapons and hoopak.
 * Fixed creature trait rolls.
 * Added `Lairs of Etharis` content.
+* Added `Dungeons of Drakkenheim` content.
 * Updated Changelog layout.
 
 ### 2024-04-13
