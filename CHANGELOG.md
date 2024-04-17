@@ -1,5 +1,9 @@
 ## CHANGE LOG
 
+### 2024-??-??
+
+* Updated `Book of Many Things` spells.
+
 ### 2024-04-17
 
 * Added proper attribution to Tyranny of Dragons content.
