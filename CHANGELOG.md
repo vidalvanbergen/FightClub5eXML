@@ -3,7 +3,8 @@
 ### 2024-??-??
 
 * Updated `Book of Many Things` spells.
-* Added `Honor Among Thieves - Legendary Magic Items`.
+* Added `Honor Among Thieves - Legendary Magic Items` content.
+* Added `Monstrous Compendium Vol. 2 - Dragonlance Creatures` content.
 
 ### 2024-04-17
 
