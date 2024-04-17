@@ -6,7 +6,7 @@
 * Added `Honor Among Thieves - Legendary Magic Items` content.
 * Added `Monstrous Compendium Vol. 2 - Dragonlance Creatures` content.
 * Added `Monstrous Compendium Vol. 3 - Minecraft Creatures` content.
-* Adding `Monstrous Compendium Vol. 4 - Eldraine Creatures` content.
+* Added `Monstrous Compendium Vol. 4 - Eldraine Creatures` content.
 
 ### 2024-04-17
 
