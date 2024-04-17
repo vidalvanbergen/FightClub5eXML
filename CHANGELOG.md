@@ -3,6 +3,7 @@
 ### 2024-??-??
 
 * Updated `Book of Many Things` spells.
+* Added `Honor Among Thieves - Legendary Magic Items`.
 
 ### 2024-04-17
 
