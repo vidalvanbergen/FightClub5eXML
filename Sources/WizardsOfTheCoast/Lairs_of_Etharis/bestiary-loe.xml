@@ -1155,7 +1155,7 @@ The doomcaller chooses what to summon and attempts a magical summoning. A doomca
 When a creature the doomcaller can see makes an attack roll, a saving throw, or an ability check, the doomcaller can roll a d20 and choose to use this roll in place of the attack roll, saving throw, or ability check.</text>
     </reaction>
     <spells>fire bolt, hunter sense, message, shocking grasp, true strike, detect magic, magic missile, shield, detect thoughts, misty step, bestow curse, fireball, banishment, consume mind, magic mirror, scrying, disintegrate, arboreal curse, mind blank, gate</spells>
-    <slots>4,3,3,3,3,1,1,1,1</slots>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <description>"Despair, the end is nigh!"
 
 Source:	Grim Hollow: Lairs of Etharis p. 47</description>
@@ -1164,9 +1164,9 @@ Source:	Grim Hollow: Lairs of Etharis p. 47</description>
   <monster>
     <name>Downcast Apostate</name>
     <size>M</size>
-    <type>humanoid (downcast)</type>
+    <type>Humanoid (Downcast)</type>
     <alignment>Any Alignment</alignment>
-    <ac>12 (15 with mage armor)</ac>
+    <ac>12</ac>
     <hp>150 (20d8 + 60)</hp>
     <speed>walk 30 ft.</speed>
     <str>15</str>
@@ -1176,11 +1176,11 @@ Source:	Grim Hollow: Lairs of Etharis p. 47</description>
     <wis>12</wis>
     <cha>18</cha>
     <save>wis +5, cha +8</save>
-    <skill>deception +8, intimidation +8, perception +5, persuasion +8, religion +5, stealth +6</skill>
+    <skill>Deception +8, Intimidation +8, Perception +5, Persuasion +8, Religion +5, Stealth +6</skill>
     <passive>15</passive>
     <languages>Celestial and two other languages</languages>
     <cr>11</cr>
-    <exp>7200</exp>
+    <experience>7200</experience>
     <resist>Necrotic</resist>
     <immune/>
     <vulnerable/>
@@ -1191,16 +1191,26 @@ Source:	Grim Hollow: Lairs of Etharis p. 47</description>
       <text>+4</text>
     </trait>
     <trait>
-      <name>Apostate's Weapons</name>
-      <text>
-The downcast apostate's weapon attacks are magical.</text>
-    </trait>
-    <trait>
       <name>Innate Spellcasting</name>
       <text>
 The downcast apostate's spellcasting ability is Charisma. The apostate can innately cast the following spells, requiring no material components:
 
 	• At will: alter self, detect magic, invisibility, jump, mage armor, thaumaturgy</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>
+The downcast apostate is an 18th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:
+
+	• 1/day each: glibness, mass suggestion, plane shift, power word kill
+	• Cantrips (at will): chill touch, light, mage hand, minor illusion, sacred flame
+	• 5th level (4 slots): counterspell, cure wounds, dimension door, dispel magic, flame strike, fly, greater restoration, guiding bolt, insect plague, lesser restoration, suggestion, tongues, vampiric touch, wall of fire</text>
+      <attack>Spell Attack|+8|</attack>
+    </trait>
+    <trait>
+      <name>Apostate's Weapons</name>
+      <text>
+The downcast apostate's weapon attacks are magical.</text>
     </trait>
     <action>
       <name>Morningstar</name>
@@ -1209,7 +1219,7 @@ Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludge
       <attack>Morningstar|+6|1d8+2</attack>
     </action>
     <spells>alter self, detect magic, invisibility, jump, mage armor, thaumaturgy, glibness, mass suggestion, plane shift, power word kill, chill touch, light, mage hand, minor illusion, sacred flame, counterspell, cure wounds, dimension door, dispel magic, flame strike, fly, greater restoration, guiding bolt, insect plague, lesser restoration, suggestion, tongues, vampiric touch, wall of fire</spells>
-    <slots>0, 0, 0, 0, 4</slots>
+    <slots>0, 0, 0, 0, 0, 4</slots>
     <description>"To assume the downcast are good at heart is foolish. Many still cling to delusions of grandeur and do anything to maintain them."
 
 Source:	Grim Hollow: Lairs of Etharis p. 49</description>
@@ -1325,7 +1335,7 @@ Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashi
 The eldritch herald chooses a point it can see within 120 feet of it and rolls on the Eldritch Effects table. Each creature within 15 feet of that point must succeed on a DC 14 Wisdom saving throw or be subjected to an eldritch effect for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <spells>light, sacred flame, thaumaturgy, vicious mockery, bane, Tasha's hideous laughter, inflict wounds, sleep, detect thoughts, hold person, see invisibility, wrack, bestow curse, fear, spirit guardians, tongues, confusion, death ward, phantasmal killer, contact other plane, contagion, dream, true seeing</spells>
-    <slots>4,3,3,3,2,1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <description>Source:	Grim Hollow: Lairs of Etharis p. 41</description>
     <environment/>
   </monster>
@@ -1379,7 +1389,7 @@ Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) bludge
 The eldritch priest chooses a point it can see within 120 feet of it and rolls on the Eldritch Effects table. Each creature within 15 feet of that point must succeed on a DC 12 Wisdom saving throw or be subjected to an eldritch effect for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <spells>eldritch blast, light, sacred flame, thaumaturgy, bane, Tasha's hideous laughter, inflict wounds, sleep, detect thoughts, see invisibility, spiritual weapon</spells>
-    <slots>4,3</slots>
+    <slots>0,4,3</slots>
     <description>"First she spoke of a power greater than the gods. Then there was this ringing in my ears. I don't remember what happened after that, but the nightmares were terrible."
 
 Source:	Grim Hollow: Lairs of Etharis p. 41</description>
@@ -3112,7 +3122,7 @@ The lich troll casts a cantrip.</text>
 The lich troll makes a claw attack.</text>
     </legendary>
     <spells>chill touch, mage hand, prestidigitation, ray of frost, detect magic, magic missile, shield, thunderwave, detect thoughts, invisibility, mirror image, misty step, animate dead, counterspell, dispel magic, haste, blight, dimension door, cloudkill, scrying, create undead</spells>
-    <slots>4,3,3,3,2,1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <description>"Running away from a troll is smart. Running away from a troll that casts spells is wishful thinking."
 
 Source:	Grim Hollow: Lairs of Etharis p. 121</description>
@@ -5997,7 +6007,7 @@ Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) sla
       <attack>Claw|+7|2d6+3</attack>
     </action>
     <spells>druidcraft, guidance, mending, resistance, animal friendship, faerie fire, healing word, hold person, lesser restoration, conjure animals, dispel magic, plant growth, freedom of movement, ice storm, commune with nature, tree stride, wall of thorns, arboreal curse</spells>
-    <slots>4,3,3,3,2,1,1</slots>
+    <slots>0,4,3,3,3,2,1,1</slots>
     <description>"During full moons, inhabitants of Etharis stay inside with the doors barred and windows tightly shut. Even then, they look at those indoors with them with a suspicious eye. One never knows."
 
 Source:	Grim Hollow: Lairs of Etharis p. 37</description>

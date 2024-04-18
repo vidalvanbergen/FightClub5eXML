@@ -7,6 +7,7 @@
 * Added `Monstrous Compendium Vol. 2 - Dragonlance Creatures` content.
 * Added `Monstrous Compendium Vol. 3 - Minecraft Creatures` content.
 * Added `Monstrous Compendium Vol. 4 - Eldraine Creatures` content.
+* Added leading 0 to monster spell slots to account for cantrips.
 
 ### 2024-04-17
 
