@@ -8,6 +8,7 @@
 * Added `Monstrous Compendium Vol. 3 - Minecraft Creatures` content.
 * Added `Monstrous Compendium Vol. 4 - Eldraine Creatures` content.
 * Added leading 0 to monster spell slots to account for cantrips.
+* Fixed up `Humblewood Campaign Setting`'s bestiary, and added both it and the items to collections.
 
 ### 2024-04-17
 
