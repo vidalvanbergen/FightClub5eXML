@@ -9,6 +9,7 @@
 * Added `Monstrous Compendium Vol. 4 - Eldraine Creatures` content.
 * Added leading 0 to monster spell slots to account for cantrips.
 * Fixed up `Humblewood Campaign Setting`'s bestiary, and added both it and the items to collections.
+* Standardized monster spell formatting for casting daily spells.
 
 ### 2024-04-17
 
