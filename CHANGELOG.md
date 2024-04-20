@@ -9,6 +9,8 @@
 * Added `Monstrous Compendium Vol. 4 - Eldraine Creatures` content.
 * Added leading 0 to monster spell slots to account for cantrips.
 * Fixed up `Humblewood Campaign Setting`'s bestiary, and added both it and the items to collections.
+* Addeded additional `Tasha's Crucible of Everything Else Vol. 1` content.
+* Reclassified `Mordenkainen's Codex of Allies` and `Crown of the Oathbreaker` as `Unearthed Arcana`.
 * Standardized monster spell formatting for casting daily spells.
 
 ### 2024-04-17
