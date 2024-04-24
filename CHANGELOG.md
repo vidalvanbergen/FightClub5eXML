@@ -3,6 +3,7 @@
 ### 2024-##-##
 * Added Unearthed Arcana `Fallen` races and feats by /u/Blue4Eternety.
 * Added `Tasha's Crucible of Everything Else Vol. 1` content.
+* Fixed up `Vecna The Archlich` from `The Vecna Dossier`.
 
 ### 2024-04-23
 
