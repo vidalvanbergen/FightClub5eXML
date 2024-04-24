@@ -5,6 +5,7 @@
 * Added `Tasha's Crucible of Everything Else Vol. 1` content.
 * Fixed up `Vecna The Archlich` from `The Vecna Dossier`.
 * Some minor changes to 2 `Book of Many Things` items.
+* Added generic armor and weapon variants.
 
 ### 2024-04-23
 
