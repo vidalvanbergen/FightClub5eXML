@@ -7,6 +7,8 @@
 * Fixed up `Vecna The Archlich` from `The Vecna Dossier`.
 * Some minor changes to 2 `Book of Many Things` items.
 * Added generic armor and weapon variants.
+* Disabled some duplicate UA backgrounds.
+* Fixed some creatures' spellcasting descriptions.
 * Other minor fixes.
 
 ### 2024-04-23
