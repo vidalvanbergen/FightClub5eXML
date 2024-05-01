@@ -9,7 +9,7 @@
 * Added generic armor and weapon variants.
 * Disabled some deprecated UA backgrounds.
 * Fixed some creatures' spellcasting descriptions.
-* Other minor fixes.
+* Many minor fixes.
 
 ### 2024-04-23
 
