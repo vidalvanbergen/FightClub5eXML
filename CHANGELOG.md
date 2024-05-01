@@ -7,6 +7,7 @@
 * Fixed up `Vecna The Archlich` from `The Vecna Dossier`.
 * Some minor changes to 2 `Book of Many Things` items.
 * Added generic armor and weapon variants.
+* Added `Van Richten's Guide to Ravenloft`'s `Haunted One` background variation.
 * Disabled some deprecated UA backgrounds.
 * Fixed some creatures' spellcasting descriptions.
 * Many minor fixes.
