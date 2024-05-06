@@ -10,6 +10,7 @@
 * Added `Van Richten's Guide to Ravenloft`'s `Haunted One` background variation.
 * Disabled some deprecated UA backgrounds.
 * Fixed some creatures' spellcasting descriptions.
+* Fixing up all the backgrounds.
 * Many minor fixes.
 
 ### 2024-04-23
