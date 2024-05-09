@@ -1,5 +1,9 @@
 ## CHANGE LOG
 
+### 2024-??-??
+* Adding `Tasha's Crucible of Everything Else, Volume 2` content.
+* Background updates.
+
 ### 2024-05-08
 * Added Unearthed Arcana `Fallen` races and feats by /u/Blue4Eternety.
 * Added `Tasha's Crucible of Everything Else, Volume 1` content.
