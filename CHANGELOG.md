@@ -2,6 +2,7 @@
 
 ### 2024-??-??
 * Adding `Tasha's Crucible of Everything Else, Volume 2` content.
+* Fixed up feats.
 * Background updates.
 
 ### 2024-05-08
