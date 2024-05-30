@@ -47,7 +47,11 @@ You exhale a dangerous blast in a 15 foot cone. Each creature in that line must 
     </action>
     <spells/>
     <slots/>
-    <description>Source:	Tasha's Crucible of Everything Else, Volume 1 p. 20</description>
+    <description>AC = 11 + your Dexterity modifer + your Wisdom modifier.
+
+HP = your Constitution modifier + five times your druid level.
+
+Source:	Tasha's Crucible of Everything Else, Volume 1 p. 20</description>
     <environment/>
   </monster>
   <monster>
@@ -194,5 +198,151 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 87,
 		Eberron: Rising from the Last War,
 		Infernal Machine Rebuild</description>
     <environment>forest</environment>
+  </monster>
+  <monster>
+    <name>Draconic Avatar</name>
+    <size>H</size>
+    <type>Dragon</type>
+    <alignment>neutral</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>ten times your warlock level</hp>
+    <speed>40 ft., fly 80 ft.</speed>
+    <str>20</str>
+    <dex>12</dex>
+    <con>18</con>
+    <int>16</int>
+    <wis>13</wis>
+    <cha>15</cha>
+    <save>Dex +1, Con +4, Wis +1, Cha +2</save>
+    <skill>Athletics +5, Perception +1, Stealth +1</skill>
+    <passive>11</passive>
+    <languages>Common, Draconic</languages>
+    <cr/>
+    <exp/>
+    <resist>Necrotic, Radiant</resist>
+    <immune>patron's damage type</immune>
+    <vulnerable/>
+    <conditionImmune>Charmed, Frightened, Paralyzed, Petrified, Stunned</conditionImmune>
+    <senses>blindsight 30 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>Your Proficiency Bonus</text>
+    </trait>
+    <trait>
+      <name>Supernatural Avatar</name>
+      <text>
+The draconic avatar doesn't need to eat, breathe, drink, or sleep, and is immune to magical sleep.</text>
+    </trait>
+    <trait>
+      <name>Damage Type</name>
+      <text>
+The draconic avatar has a damage type that affects its breath weapon, bite attack, and damage immunities. It is the same type as your patron's damage type (acid, cold, fire, lightning, or poison).</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: 4 + PB to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage plus (2d6 + PB) damage of your patron's damage type.</text>
+      <attack>Bite|+4|2d10+4</attack>
+      <attack>Patron's Damage Type||2d6</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>
+Melee Weapon Attack: 4 + PB to hit, reach 5 ft., one target. Hit: (2d6 + 4 + PB) slashing damage.</text>
+      <attack>Claw|+4|2d6+4</attack>
+    </action>
+    <action>
+      <name>Breath Weapon (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>
+The draconic avatar exhales a powerful blast of its damage type. If the damage type is acid or lightning, the breath weapon is a 60-foot line that is 5 feet wide and requires a Dexterity save against your spell save DC. If the damage type is cold, fire, or poison, the breath weapon is a 30-foot cone and requires a Constitution saving throw against your spell save DC. On a failed save, a creature takes 38 (11d6) damage of your patron's damage type, or half that on a successful save.</text>
+      <attack>Breath Weapon||11d6</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Add your proficiency bonus to AC, each saving throw, skill, and twice to your passive perception.
+
+The Draconic Avatar's Hit Points are 10 times your warlock level.
+
+Source:	Tasha's Crucible of Everything Else, Volume 2 p. 39</description>
+    <environment/>
+  </monster>
+
+  <monster>
+    <name>Arcane Mimic</name>
+    <size/>
+    <type>Varying size monstrosity (shapechanger)</type>
+    <alignment>neutral</alignment>
+    <ac>your spell save DC</ac>
+    <hp>varies</hp>
+    <speed>15 ft.</speed>
+    <str>varies</str>
+    <dex>12</dex>
+    <con>13</con>
+    <int>10</int>
+    <wis>13</wis>
+    <cha>8</cha>
+    <save/>
+    <skill>Stealth +1</skill>
+    <passive>11</passive>
+    <languages>understands the languages of its creator but can't speak</languages>
+    <cr/>
+    <exp/>
+    <resist/>
+    <immune>Acid</immune>
+    <vulnerable/>
+    <conditionImmune>Prone</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+your Proficiency Bonus</text>
+    </trait>
+    <trait>
+      <name>Shapechanger</name>
+      <text>
+The mimic can use its action to polymorph into an object its size or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</text>
+    </trait>
+    <trait>
+      <name>Adhesive (Object Form Only)</name>
+      <text>
+The mimic adheres to anything that touches it. A creature up to one size larger than the mimic adhered to the mimic is also grappled by it (escape DC equal to your spell save DC). Ability checks made to escape this grapple have disadvantage.</text>
+    </trait>
+    <trait>
+      <name>False Appearance (Object Form Only)</name>
+      <text>
+While the mimic remains motionless, it is indistinguishable from an ordinary object.</text>
+    </trait>
+    <trait>
+      <name>Grappler</name>
+      <text>
+The mimic has advantage on attack rolls against any creature grappled by it.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>
+The mimic can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: your spellcasting attack modifier to hit, reach varies*, one target. Hit: varying piercing damage* plus acid damage equal to a number of d4s equal to the level of the spell slot used.</text>
+      <attack>Bite||1d4</attack>
+    </action>
+    <action>
+      <name>Pseudopod</name>
+      <text>
+Melee Weapon Attack: your spellcasting attack modifier to hit, reach varies*, one target. Hit: varying* bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.</text>
+    </action>
+    <spells/>
+    <slots/>
+    <description>AC = your spell save DC
+HP = varies
+Strength = varies
+Skills = Stealth 1 + Proficiency Bonus
+
+*see the Arcane Mimics and Transmogrification tables
+
+Source:	Tasha's Crucible of Everything Else, Volume 2 p. 39</description>
+    <environment/>
   </monster>
 </compendium>
