@@ -475,9 +475,9 @@ Source:	Player's Handbook p. 111</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self (60-foot cone)</range>
-    <components>V, S, 6 ki points</components>
+    <components>V, S, (6 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 6 ki points to cast cone of cold.
@@ -497,9 +497,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>60 feet</range>
-    <components>V, S, 3 ki points</components>
+    <components>V, S, (3 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>Prerequisite: 6th level
 
 You can spend 3 ki points to cast hold person.
@@ -510,21 +510,30 @@ Choose a humanoid that you can see within range. The target must succeed on a Wi
 Additional Ki Points:
 When you cast this spell using 4 or more ki points, you can target on additional humanoid for each ki point above 3. The humanoids must be within 30 feet of each other when you target them.
 
+Paralyzed:
+	• A paralyzed creature is incapacitated, meaning it can't take actions or reactions, and can't move or speak.
+	• The creature automatically fails Strength and Dexterity saving throws.
+	• Attack rolls against the creature have advantage.
+	• Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.
+
 Source:	Player's Handbook p. 81</text>
   </spell>
   <spell>
     <name>Four Elements: Elemental Attunement</name>
     <level>0</level>
+    <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
-    <range/>
-    <components>None</components>
-    <duration>1 minute</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <range>30 feet</range>
+    <components>V, S</components>
+    <duration>1 hour</duration>
+    <classes>Monk (Four Elements)</classes>
     <text>You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects of your choice:
 
 	• Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.
+
 	• Instantaneously light or snuff out a candle, a torch, or a small campfire.
+
 	• Cause earth, fire, water, or mist that can fit within a 1-foot cube to shape itself into a crude form you designate for 1 minute.
 
 Source:	Player's Handbook p. 81</text>
@@ -536,9 +545,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, 5 ki points</components>
+    <components>V, S, (5 ki points)</components>
     <duration>Concentration, up to 1 hour</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 5 ki points to cast stoneskin, targeting yourself.
@@ -551,12 +560,13 @@ Source:	Player's Handbook p. 81</text>
   <spell>
     <name>Four Elements: Fangs of the Fire Snake</name>
     <level>1</level>
+    <school>EV</school>
     <ritual>NO</ritual>
-    <time>None</time>
+    <time>1 action</time>
     <range>10 feet</range>
-    <components>1 ki point</components>
+    <components>V, S, (1 ki point)</components>
     <duration>1 turn</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>When you use the Attack action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet. Your reach with your unarmed strikes increases by 10 feet for that action, as well as the rest of the turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and if you spend 1 ki point when the attack hits, it also deals an extra 1d10 fire damage.
 
 Source:	Player's Handbook p. 81</text>
@@ -569,9 +579,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self (15-foot cube)</range>
-    <components>V, S, 2 ki points</components>
+    <components>V, S, (2 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>You can spend 2 ki points to cast thunderwave.
 
 Thunderwave:
@@ -583,17 +593,19 @@ Additional Ki Points:
 When you cast this spell by spending 3 or more ki points, the damage increases by 1d8 for each ki point above 2.
 
 Source:	Player's Handbook p. 81</text>
+    <roll>2d8</roll>
     <roll>1d8</roll>
   </spell>
   <spell>
     <name>Four Elements: Fist of Unbroken Air</name>
     <level>1</level>
+    <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>30 feet</range>
-    <components/>
+    <components>V, S, (2 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don't push it or knock it prone.
 
 Prone:
@@ -603,6 +615,7 @@ Prone:
 
 Source:	Player's Handbook p. 81</text>
     <roll>3d10</roll>
+    <roll>1d10</roll>
   </spell>
   <spell>
     <name>Four Elements: Flames of the Phoenix</name>
@@ -611,9 +624,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>150 feet</range>
-    <components>V, S, 4 ki points</components>
+    <components>V, S, (4 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>Prerequisite: 11th level
 
 You can spend 4 ki points to cast fireball.
@@ -623,11 +636,12 @@ A bright streak flashes from your pointing finger to a point you choose within r
 
 The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.
 
-At Higher Levels:
-When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
+Additional Ki Points:
+When you cast this spell by spending 5 or more ki points, the damage increases by 1d6 for each ki point above 4.
 
 Source:	Player's Handbook p. 81</text>
     <roll>8d6</roll>
+    <roll>1d6</roll>
   </spell>
   <spell>
     <name>Four Elements: Gong of the Summit</name>
@@ -636,9 +650,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>60 feet</range>
-    <components>V, S, 3 ki points</components>
+    <components>V, S, (3 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>Prerequisite: 6th level
 
 You can spend 3 ki points to cast shatter.
@@ -653,6 +667,7 @@ When you cast this spell using 4 or more ki points, the damage increases by 1d8 
 
 Source:	Player's Handbook p. 81</text>
     <roll>3d8</roll>
+    <roll>1d8</roll>
   </spell>
   <spell>
     <name>Four Elements: Mist Stance</name>
@@ -661,9 +676,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, 4 ki points</components>
+    <components>V, S, (4 ki points)</components>
     <duration>Concentration, up to 1 hour</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>Prerequisite: 11th level
 
 You can spend 4 ki points to cast gaseous form, targeting yourself.
@@ -684,9 +699,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, 4 ki points</components>
+    <components>V, S, (4 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>Prerequisite: 11th level
 
 You can spend 4 ki points to cast fly, targeting yourself.
@@ -703,9 +718,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, 5 ki points</components>
+    <components>V, S, (5 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 5 ki points to cast wall of fire.
@@ -722,6 +737,7 @@ When you cast this spell using 6 ki points, the damage increases to 6d8.
 
 Source:	Player's Handbook p. 81</text>
     <roll>5d8</roll>
+    <roll>6d8</roll>
   </spell>
   <spell>
     <name>Four Elements: Rush of the Gale Spirits</name>
@@ -730,9 +746,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self (60-foot line)</range>
-    <components>V, S, 2 ki points</components>
+    <components>V, S, (2 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>You can spend 2 ki points to cast gust of wind.
 
 Gust of Wind:
@@ -749,12 +765,13 @@ Source:	Player's Handbook p. 81</text>
   <spell>
     <name>Four Elements: Shape of the Flowing River</name>
     <level>1</level>
+    <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>1 ki point</components>
+    <components>(1 ki point)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high, raise or lower the square's elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can't shape the ice to trap or injure a creature in the area.
 
 Source:	Player's Handbook p. 81</text>
@@ -766,9 +783,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self (15-foot cone)</range>
-    <components>V, S, 2 ki points</components>
+    <components>V, S, (2 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>You can spend 2 ki points to cast burning hands.
 
 Burning Hands:
@@ -781,16 +798,18 @@ When you cast this spell using 3 or more ki points, the damage increases by 1d6 
 
 Source:	Player's Handbook p. 81</text>
     <roll>3d6</roll>
+    <roll>1d6</roll>
   </spell>
   <spell>
     <name>Four Elements: Water Whip</name>
     <level>1</level>
+    <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>30 feet</range>
-    <components>2 ki points</components>
+    <components>(2 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>You can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don't pull it or knock it prone.
 
 Prone:
@@ -800,6 +819,7 @@ Prone:
 
 Source:	Player's Handbook p. 81</text>
     <roll>3d10</roll>
+    <roll>1d10</roll>
   </spell>
   <spell>
     <name>Four Elements: Wave of Rolling Earth</name>
@@ -808,9 +828,9 @@ Source:	Player's Handbook p. 81</text>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, 6 ki points</components>
+    <components>V, S, (6 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Way of the Four Elements)</classes>
+    <classes>Monk (Four Elements)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 6 ki points to cast wall of stone.
