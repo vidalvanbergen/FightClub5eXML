@@ -2,6 +2,7 @@
 
 ### 2024-??-??
 * Adding `Tasha's Crucible of Everything Else, Volume 2` content.
+* Added `Vecna: Eye of Ruin` Contents.
 * Fixed up feats.
 * Background updates.
 
