@@ -5,9 +5,10 @@
 * Complete `Crown of the Oathbreaker` Bestiary.
 
 ### 2024-??-??
-* Added `Tasha's Crucible of Everything Else, Volume 2` content.
 * Added `Vecna: Eye of Ruin` Contents.
+* Added `Tasha's Crucible of Everything Else, Volume 2` content.
 * Re-Reclassified `Mordenkainen's Codex of Allies` and `Crown of the Oathbreaker` as `ThirdParty`.
+* Fixed spellcomponents tag misspelling.
 * Feats updates.
 * Background updates.
 
