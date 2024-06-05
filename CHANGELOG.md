@@ -1,9 +1,14 @@
 ## CHANGE LOG
 
+#### ToDo:
+* Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
+* Complete `Crown of the Oathbreaker` Bestiary.
+
 ### 2024-??-??
-* Adding `Tasha's Crucible of Everything Else, Volume 2` content.
+* Added `Tasha's Crucible of Everything Else, Volume 2` content.
 * Added `Vecna: Eye of Ruin` Contents.
-* Fixed up feats.
+* Re-Reclassified `Mordenkainen's Codex of Allies` and `Crown of the Oathbreaker` as `ThirdParty`.
+* Feats updates.
 * Background updates.
 
 ### 2024-05-08
