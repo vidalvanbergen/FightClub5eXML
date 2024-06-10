@@ -9,6 +9,7 @@
 * Added `Tasha's Crucible of Everything Else, Volume 2` content.
 * Re-Reclassified `Mordenkainen's Codex of Allies` and `Crown of the Oathbreaker` as `ThirdParty`.
 * Added a counter for the Paladin's 'Lay on Hands' feature.
+* Added 'ki points' component to monk spells.
 * Fixed spellcomponents tag misspelling.
 * Feats updates.
 * Background updates.
