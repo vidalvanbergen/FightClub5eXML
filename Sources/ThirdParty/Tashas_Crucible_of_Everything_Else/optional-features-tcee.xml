@@ -1,19 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 <compendium version="5" auto_indent="NO">
   <spell>
-    <name>Way of Mundanity: Arcane Detection</name>
-    <level>1</level>
+    <name>Arcane Detection</name>
+    <level>0</level>
     <school>D</school>
     <ritual>YES</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, (1 ki point)</components>
+    <components>V, S, M (1 ki point)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Mundanity (TCEE))</classes>
+    <classes>Monk (Way of Mundanity)</classes>
     <text>Prerequisite: 3th level
 
 You can spend 1 ki point to cast Detect Magic.
 
+Detect Magic:
 For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.
 
 The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
@@ -21,42 +22,143 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 26</text>
   </spell>
   <spell>
-    <name>Way of Mundanity: Surpressing Ki</name>
-    <level>1</level>
-    <school>D</school>
-    <ritual>YES</ritual>
-    <time>1 action</time>
-    <range>Self</range>
-    <components>V, S, (3 ki points)</components>
-    <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Mundanity (TCEE))</classes>
+    <name>Supressing Ki: Counterspell</name>
+    <level>0</level>
+    <school>A</school>
+    <ritual>NO</ritual>
+    <time>1 reaction</time>
+    <range>60 feet</range>
+    <components>S, M (3 ki points)</components>
+    <duration>Instantaneous</duration>
+    <classes>Monk (Way of Mundanity)</classes>
     <text>Prerequisite: 6th level
 
 You've learned to use your ki to disrupt the magical nature of other creatures or objects.
 
-You can spend 3 ki points to cast counterspell, dispel magic, nondetection, or remove curse, using Wisdom as your spellcasting modifier. Beginning at 17th level, you can also spend 8 ki points to cast antimagic field as an action.
+You can spend 3 ki points to cast counterspell, using Wisdom as your spellcasting modifier.
 
 Counterspell:
 You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.
 
+At Higher Levels:
+When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.
+
+Source:	Player's Handbook p. 228</text>
+  </spell>
+  <spell>
+    <name>Supressing Ki: Dispel Magic</name>
+    <level>0</level>
+    <school>A</school>
+    <ritual>NO</ritual>
+    <time>1 action</time>
+    <range>120 feet</range>
+    <components>V, S, M (3 ki points)</components>
+    <duration>Instantaneous</duration>
+    <classes>Monk (Way of Mundanity)</classes>
+    <text>Prerequisite: 6th level
+
+You've learned to use your ki to disrupt the magical nature of other creatures or objects.
+
+You can spend 3 ki points to cast dispel magic, using Wisdom as your spellcasting modifier.
+
 Dispel Magic:
-Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ab
+Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.
+
+At Higher Levels:
+When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.
+
+Source:	Player's Handbook p. 234</text>
+  </spell>
+  <spell>
+    <name>Supressing Ki: Nondetection</name>
+    <level>0</level>
+    <school>A</school>
+    <ritual>NO</ritual>
+    <time>1 action</time>
+    <range>Touch</range>
+    <components>V, S, M (3 ki points)</components>
+    <duration>8 hours</duration>
+    <classes>Monk (Way of Mundanity)</classes>
+    <text>Prerequisite: 6th level
+
+You've learned to use your ki to disrupt the magical nature of other creatures or objects.
+
+You can spend 3 ki points to cast nondetection, using Wisdom as your spellcasting modifier.
 
 Nondetection:
 For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic or perceived through magical scrying sensors.
 
+Source:	Player's Handbook p. 263</text>
+  </spell>
+  <spell>
+    <name>Supressing Ki: Remove Curse</name>
+    <level>0</level>
+    <school>A</school>
+    <ritual>NO</ritual>
+    <time>1 action</time>
+    <range>Touch</range>
+    <components>V, S, M (3 ki points)</components>
+    <duration>Instantaneous</duration>
+    <classes>Monk (Way of Mundanity)</classes>
+    <text>Prerequisite: 6th level
+
+You've learned to use your ki to disrupt the magical nature of other creatures or objects.
+
+You can spend 3 ki points to cast remove curse, using Wisdom as your spellcasting modifier.
+
 Remove Curse:
 At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.
+
+Source:	Player's Handbook p. 271</text>
+  </spell>
+  <spell>
+    <name>Supressing Ki: Antimagic Field</name>
+    <classes>School: Abjuration, Cleric, Wizard</classes>
+    <level>0</level>
+    <school>A</school>
+    <ritual>NO</ritual>
+    <time>1 action</time>
+    <range>Self (10-foot sphere)</range>
+    <components>V, S, M (8 ki points)</components>
+    <duration>Concentration, up to 1 hour</duration>
+    <text>Prerequisite: 17th level
+
+You've learned to use your ki to disrupt the magical nature of other creatures or objects.
+
+You can spend 8 ki points to cast antimagic field as an action, using Wisdom as your spellcasting modifier.
 
 Antimagic Field:
 A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.
 
 Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.
 
-Source:	Tasha's Crucible of Everything Else, Volume 1 p. 26</text>
+Targeted Effects:
+Spells and other magical effects, such as magic missile and charm person, that target a creature or an object in the sphere have no effect on that target.
+
+Areas of Magic:
+The area of another spell or magical effect, such as fireball, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.
+
+Spells:
+Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it.
+
+Magic Items:
+The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.
+
+A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits.
+
+Magical Travel:
+Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere.
+
+Creatures and Objects:
+A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere.
+
+Dispel Magic:
+Spells and magical effects such as dispel magic have no effect on the sphere. Likewise, the spheres created by different antimagic field spells don't nullify each other.
+
+Source:	Player's Handbook p. 213</text>
   </spell>
 
-  <!-- Sorcerous SLings -->
+  <!-- Sorcerous Slings -->
   <spell>
     <name>Sling: Cautious Caster</name>
     <level>0</level>
@@ -271,7 +373,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 5</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>When you enter a rage using this formula, you mutate in some manner that gives you the ability to make stupendous leaps, whether that is grotesquely muscular legs, vestigial wings, or some other mutation. For the duration of your rage, you can make a running long jump or running high jump after moving only 5 feet on foot, and your jump distance is doubled.
 
 When your rage ends, the mutation caused by this formula ends.
@@ -285,7 +387,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>When you enter a rage using this formula, your body mutates to adapt to aquatic environments. For the duration of your rage, you have a swim speed equal to twice your walking speed, and you can breathe both air and water.
 
 When your rage ends, the mutation caused by this formula ends.
@@ -299,7 +401,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>For the duration of a rage infused with this formula, you have an insatiable thirst for blood or life essence, allowing you to bite a creature as an unarmed strike. Your bite deals piercing damage equal to 1d8 + your Strength modifier when you hit with it. When you hit with your bite, if the target creature is not a construct or undead, you gain a number of temporary hit points equal to your Intelligence modifier.
 
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
@@ -312,7 +414,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>When you learn this formula, choose one of the following damage types: acid, cold, fire, lightning, necrotic, poison, psychic, radiant, or thunder. When you enter a rage using this formula, you gain resistance to the chosen damage type.
 
 Unlike most alchemical formulae, you may learn this formula more than once, to a maximum of 3 times. When you learn this formula for the second and third time, you choose one additional damage type each time, and you gain resistance to all chosen damage types when you enter a rage using this formula.
@@ -326,7 +428,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>For the duration of a rage infused with this formula, you can ignite objects and creatures with the pure, distilled anger of your concentrated will.
 
 When you enter a rage using this formula, and as a bonus action on each of your turns during your rage, you can cause an object or creature within 10 feet of you to combust. The target must make a Constitution saving throw, taking 1d6 fire damage on a failed save, or half as much damage on a successful one. 
@@ -346,7 +448,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>During a rage infused with this formula, when you make a saving throw, you can add your Intelligence modifier to the roll.
 
 You can gain this bonus only once during each rage, and you can choose to apply it after you know if your saving throw succeeded or failed.
@@ -360,7 +462,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>For the duration of a rage infused with this formula, bludgeoning, piercing, and slashing damage that you take from nonmagical weapons is reduced by an amount equal to your Intelligence modifier. You apply this reduction before any damage resistance.
 
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
@@ -372,7 +474,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>When you enter a rage using this formula, your body mutates to lengthen your arms and legs. For the duration of your rage, your reach with melee attacks increases by 5 feet and your walking speed increases by 10 feet. When your rage ends, the mutation caused by this formula ends.
 
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
@@ -384,7 +486,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>When you enter a rage using this formula, you can channel your anger into pure psychokinetic energy through your attacks.
 
 During your rage, the first creature you hit on each of your turns with a melee weapon attack takes extra psychic damage equal to 1d4 + your Intelligence modifier.
@@ -402,7 +504,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>When you enter a rage using this formula, your body mutates to adapt to subterranean environments. For the duration of your rage, you have a burrow speed equal to your walking speed, allowing you to burrow through unworked earth, but not stone, metal, or structures. You do not leave a tunnel behind you as you burrow.
 
 Additionally, for the duration of your rage, you have darkvision out to 60 feet. If you normally have darkvision, the range of your darkvision extends by 30 feet during a rage infused with this formula.
@@ -418,7 +520,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>During a rage infused with this formula, you may release a deafening howl of your alchemically enhanced fury as an action. Each creature in a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage, is deafened for 1 minute, and pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't deafened or pushed.
 
 This damage increases by 1d6 when you reach 6th level (3d6), 9th level (4d6), 12th level (5d6), 15th level (6d6), and 18th level (7d6) in this class.
@@ -440,37 +542,37 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
     <range/>
     <components/>
     <duration/>
-    <classes>Alchemical Formulae (TCEE)</classes>
+    <classes>Alchemical Formulae</classes>
     <text>Once during a rage infused with this formula, you may perceive time quicker than a normal person, allowing you to gain an additional action on your turn. You can use this action to make one melee attack, or take the Dodge, Disengage, or Help actions.
 
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 10</text>
   </spell>
-  <!-- Monk (Four Elements Remastered) -->
+  <!-- Monk (Way of the Four Elements Remastered) -->
   <spell>
-    <name>Four Elements Remastered: Fangs of the Fire Snake</name>
-    <level>1</level>
+    <name>Fangs of the Fire Snake</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>Instantaneous</time>
     <range>10 feet</range>
-    <components>V, S, (1 ki point)</components>
+    <components>V, S, M (1 ki point)</components>
     <duration>1 turn</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>When you use the Attack action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet. Your reach for unarmed strikes increases by 10 feet until the start of your next turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and deals an additional 1d4 fire damage.
 
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
     <roll>1d4</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Fist of Four Thunders</name>
-    <level>1</level>
+    <name>Fist of Four Thunders</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self (15-foot cube)</range>
-    <components>V, S, (2 ki points)</components>
+    <components>V, S, M (2 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>You can spend 2 ki points to cast thunderwave.
 
 Thunderwave:
@@ -489,15 +591,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
     <roll>1d8</roll>
   </spell>
   <spell>
-    <name>Four Elements R.: Fist of Unbroken Air</name>
-    <level>1</level>
+    <name>Fist of Unbroken Air</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>30 feet</range>
-    <components>V, S, (2 ki points)</components>
+    <components>V, S, M (2 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 thunder damage, plus an extra 1d10 thunder damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage and you don't push it or knock it prone.
 
 Prone:
@@ -513,29 +615,29 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
     <roll>1d10</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Rock Block</name>
-    <level>1</level>
+    <name>Rock Block</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 reaction</time>
     <range>self</range>
-    <components>V, S, (2 ki points)</components>
+    <components>V, S, M (2 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>As a reaction when a creature attacks you, you can spend 2 ki points and raise a thick wall of rock to block the attack. This wall grants you half cover and resistance to any bludgeoning, piercing, slashing, acid, cold, fire, lightning, or thunder damage from the triggering attack.
 
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Rush of the Gale Spirits</name>
-    <level>1</level>
+    <name>Rush of the Gale Spirits</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self (60-foot line)</range>
-    <components>V, S, (2 ki points)</components>
+    <components>V, S, M (2 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>You can spend 2 ki points to cast gust of wind.
 
 Gust of Wind:
@@ -550,29 +652,29 @@ As a bonus action on each of your turns before the spell ends, you can change th
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Shape of the Flowing River</name>
-    <level>1</level>
+    <name>Shape of the Flowing River</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
     <components>(1 ki point)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high, raise or lower the square's elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can't shape the ice to trap or injure a creature in the area.
 
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Shuriken of Winter Chill</name>
-    <level>1</level>
+    <name>Shuriken of Winter Chill</name>
+    <level>0</level>
     <school>C</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>60 feet</range>
-    <components>S, (2 ki points)</components>
+    <components>S, M (2 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>You can spend 2 ki points to cast ice knife.
 
 Ice Knife:
@@ -590,15 +692,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
     <roll>1d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Sweeping Cinder Strike</name>
-    <level>1</level>
+    <name>Sweeping Cinder Strike</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self (15-foot cone)</range>
-    <components>V, S, (2 ki points)</components>
+    <components>V, S, M (2 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>You can spend 2 ki points to cast burning hands.
 
 Burning Hands:
@@ -617,15 +719,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
     <roll>1d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Water Whip</name>
-    <level>1</level>
+    <name>Water Whip</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>30 feet</range>
     <components>(2 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>You can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don't pull it or knock it prone.
 
 Prone:
@@ -638,7 +740,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
     <roll>1d10</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Citizen of the Elements</name>
+    <name>Citizen of the Elements</name>
     <level>0</level>
     <school>EN</school>
     <ritual>NO</ritual>
@@ -646,7 +748,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
     <range>Self</range>
     <components/>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequistite: 6th level
 
 When an elemental creature attacks you, that creature must make a Wisdom saving throw. The DC for this save is equal to your ki save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours. The creature is aware of this effect before it makes its attack against you.
@@ -654,15 +756,15 @@ When an elemental creature attacks you, that creature must make a Wisdom saving 
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Clench of the North Wind</name>
-    <level>1</level>
+    <name>Clench of the North Wind</name>
+    <level>0</level>
     <school>EN</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>60 feet</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 6th level
 
 You can spend 3 ki points to cast hold person.
@@ -682,7 +784,7 @@ Paralyzed:
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Fish Technique</name>
+    <name>Fish Technique</name>
     <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
@@ -690,7 +792,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
     <range>self</range>
     <components/>
     <duration/>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 6th level
 
 You can breathe both air and water.
@@ -698,15 +800,15 @@ You can breathe both air and water.
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 29</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Gong of the Summit</name>
-    <level>1</level>
+    <name>Gong of the Summit</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>60 feet</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 6th level
 
 You can spend 3 ki points to cast shatter.
@@ -726,7 +828,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <roll>1d8</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Stride of Free Passage</name>
+    <name>Stride of Free Passage</name>
     <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
@@ -734,7 +836,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <range>self</range>
     <components/>
     <duration/>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 6th level
 
 Moving through nonmagical difficult terrain costs you no extra movement.
@@ -742,15 +844,15 @@ Moving through nonmagical difficult terrain costs you no extra movement.
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Crouching Tiger Hid in Stone</name>
-    <level>1</level>
+    <name>Crouching Tiger Hid in Stone</name>
+    <level>0</level>
     <school>T</school>
     <ritual>YES</ritual>
     <time>1 action</time>
     <range>Touch</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>8 hours</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 9th level
 
 You can spend 3 ki points to cast meld into stone.
@@ -771,15 +873,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <roll>6d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Flames of the Phoenix</name>
-    <level>1</level>
+    <name>Flames of the Phoenix</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>150 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 11th level
 
 You can spend 4 ki points to cast fireball.
@@ -798,15 +900,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <roll>1d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Mist Stance</name>
-    <level>1</level>
+    <name>Mist Stance</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Concentration, up to 1 hour</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 9th level
 
 You can spend 3 ki points to cast gaseous form, targeting yourself.
@@ -821,15 +923,15 @@ While in the form of a misty cloud, you can't talk or manipulate objects, and an
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Ride the Wind</name>
-    <level>1</level>
+    <name>Ride the Wind</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 9th level
 
 You can spend 3 ki points to cast fly, targeting yourself.
@@ -840,15 +942,15 @@ You gain a flying speed of 60 feet for the duration. When the spell ends, you fa
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Step of the North Wind</name>
-    <level>1</level>
+    <name>Step of the North Wind</name>
+    <level>0</level>
     <school>C</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>90 feet</range>
-    <components>V, (3 ki points)</components>
+    <components>V, M (3 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 9th level
 
 You can spend 3 ki points to cast thunder step.
@@ -868,15 +970,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <roll>1d10</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Eternal Mountain Defense</name>
-    <level>1</level>
+    <name>Eternal Mountain Defense</name>
+    <level>0</level>
     <school>A</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 1 hour</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 14th level
 
 You can spend 4 ki points to cast stoneskin, targeting yourself.
@@ -887,15 +989,15 @@ This spell turns your flesh as hard as stone. Until the spell ends, you have res
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Greater Mist Stance</name>
-    <level>1</level>
+    <name>Greater Mist Stance</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 minute</time>
     <range>Self</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>8 hours</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 14th level
 
 You can spend 4 ki points to cast wind walk, targeting yourself only.
@@ -907,15 +1009,15 @@ If a creature is in cloud form and flying when the effect ends, the creature des
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Touch of Liquid Rock</name>
-    <level>1</level>
+    <name>Touch of Liquid Rock</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Touch</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 14th level
 
 You can spend 4 ki points to cast stone shape.
@@ -926,15 +1028,15 @@ You touch a stone object of Medium size or smaller or a section of stone no more
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Wave of Hungry Flame</name>
-    <level>1</level>
+    <name>Wave of Hungry Flame</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 14th level
 
 You can spend 3 ki points to cast wall of fire.
@@ -954,15 +1056,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <roll kipoints="4">6d8</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Bend Blood</name>
-    <level>1</level>
+    <name>Bend Blood</name>
+    <level>0</level>
     <school>EN</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>60 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast dominate person.
@@ -986,15 +1088,15 @@ Charmed:
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Breath of Winter</name>
-    <level>1</level>
+    <name>Breath of Winter</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self (60-foot cone)</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast cone of cold.
@@ -1013,15 +1115,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <roll>1d8</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Cloak of Fire</name>
-    <level>1</level>
+    <name>Cloak of Fire</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast investiture of flame.
@@ -1038,15 +1140,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <roll>4d8</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Cloak of Ice</name>
-    <level>1</level>
+    <name>Cloak of Ice</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast investiture of ice.
@@ -1063,15 +1165,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <roll>4d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Cloak of Stone</name>
-    <level>1</level>
+    <name>Cloak of Stone</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast investiture of stone.
@@ -1096,15 +1198,15 @@ Stunned:
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Cloak of Wind</name>
-    <level>1</level>
+    <name>Cloak of Wind</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast investiture of wind.
@@ -1120,15 +1222,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <roll>2d10</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Mountain Strike</name>
-    <level>1</level>
+    <name>Mountain Strike</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast investiture of wind.
@@ -1152,15 +1254,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
     <roll>6d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Wave of Rolling Earth</name>
-    <level>1</level>
+    <name>Wave of Rolling Earth</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast wall of stone.
@@ -1181,29 +1283,29 @@ If you maintain your concentration on this spell for its whole duration, the wal
 Source:	Tasha's Crucible of Everything Else, Volume 1 p. 30</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Floating Dodge</name>
-    <level>1</level>
+    <name>Floating Dodge</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 reaction</time>
     <range>10 feet</range>
-    <components>V, S, (2 ki point)</components>
+    <components>V, S, M (2 ki point)</components>
     <duration>1 turn</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>As a reaction when a creature first comes within 5 feet of you or starts its turn within 5 feet of you, you can spend 2 ki points to jump a distance equal to your walking speed. This movement does not provoke opportunity attacks.
 
 Source:	Tasha's Crucible of Everything Else, Volume 2 p. 24</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Prison of Ice</name>
-    <level>1</level>
+    <name>Prison of Ice</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>10 feet</range>
-    <components>V, S, (2 ki point)</components>
+    <components>V, S, M (2 ki point)</components>
     <duration>1 turn</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>As an action, you can spend 2 ki points to attempt to restrain a creature in ice. You target a creature you can see that is within 30 feet of you, which must succeed on a Strength saving throw or else be restrained. A creature restrained in this way can use its action to repeat this saving throw, ending the effect on a success. A creature that starts its turn encased in this ice takes 1d6 cold damage. For every additional ki point you spend, you can target an additional creature.
 
 Restrained:
@@ -1215,15 +1317,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25</text>
     <roll>1d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Shroud of the Clouds</name>
-    <level>1</level>
+    <name>Shroud of the Clouds</name>
+    <level>0</level>
     <school>C</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, (1 ki point)</components>
+    <components>V, S, M (1 ki point)</components>
     <duration>Concentration, up to 1 hour</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>You can spend 1 ki point to cast fog cloud.
 
 Fog Cloud:
@@ -1236,15 +1338,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
 		Player's Handbook p. 243</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Stance of Shaking Worlds</name>
-    <level>1</level>
+    <name>Stance of Shaking Worlds</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>10 feet</range>
-    <components>V, S, (1 ki point)</components>
+    <components>V, S, M (1 ki point)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>You can spend 1 ki point to cast earth tremor.
 
 Earth Tremor:
@@ -1269,15 +1371,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>1d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Cyclone of the Seven Winds</name>
-    <level>1</level>
+    <name>Cyclone of the Seven Winds</name>
+    <level>0</level>
     <school>C</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>60 feet</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 6th level
 
 You can spend 1 ki point to cast earth tremor.
@@ -1301,14 +1403,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>1d8</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Fist of the Earth</name>
-    <level>1</level>
+    <name>Fist of the Earth</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>30 feet</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 6th level
 
 You can spend 3 ki points to cast Maximilian's earthen grasp.
@@ -1333,14 +1436,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>2d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Glory of the Morning Sun</name>
-    <level>1</level>
+    <name>Glory of the Morning Sun</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Instantaneous</duration>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 6th level
 
 You can spend 3 ki points to cast scorching ray.
@@ -1358,7 +1462,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>2d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Sight of the Clouds</name>
+    <name>Sight of the Clouds</name>
     <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
@@ -1366,7 +1470,7 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <range>Self</range>
     <components/>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequistite: 6th level
 
 Fog, mist, rain, snow, and similar substances do not obscure your vision.
@@ -1374,15 +1478,15 @@ Fog, mist, rain, snow, and similar substances do not obscure your vision.
 Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Sight of the Metal Master</name>
-    <level>1</level>
+    <name>Sight of the Metal Master</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>30 feet</range>
-    <components>V, S, (1 ki point)</components>
+    <components>V, S, M (1 ki point)</components>
     <duration>1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 6th level
 
 You can spend 1 ki point to gain tremorsense for a range of 30 feet for 1 minute. For every additional ki point you spend, the radius increases by 30 feet.
@@ -1390,15 +1494,15 @@ You can spend 1 ki point to gain tremorsense for a range of 30 feet for 1 minute
 Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Vestment of the Southern Wind</name>
-    <level>1</level>
+    <name>Vestment of the Southern Wind</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, (3 ki points)</components>
+    <components>V, M (3 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 6th level
 
 You can spend 3 ki points to cast warding wind.
@@ -1419,15 +1523,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
 		Elemental Evil Player's Companion p. 23</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Swell of Rising Waters</name>
-    <level>1</level>
+    <name>Swell of Rising Waters</name>
+    <level>0</level>
     <school>C</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 9th level
 
 You can spend 3 ki points to cast tidal wave.
@@ -1446,15 +1550,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>4d8</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Wave of Angered Wind Spirits</name>
-    <level>1</level>
+    <name>Wave of Angered Wind Spirits</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 9th level
 
 You can spend 3 ki points to cast wind wall.
@@ -1471,15 +1575,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>3d8</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Wave of Blinding Sands</name>
-    <level>1</level>
+    <name>Wave of Blinding Sands</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>90 feet</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 9th level
 
 You can spend 3 ki points to cast wall of sand.
@@ -1496,15 +1600,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
 		Elemental Evil Player's Companion p. 23</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Wave of Slowing Waters</name>
-    <level>1</level>
+    <name>Wave of Slowing Waters</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>60 feet</range>
-    <components>V, S, (3 ki points)</components>
+    <components>V, S, M (3 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 9th level
 
 You can spend 3 ki points to cast wall of water.
@@ -1521,15 +1625,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
 		Mythic Odysseys of Theros</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Mastery of Water</name>
-    <level>1</level>
+    <name>Mastery of Water</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>300 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 14th level
 
 You can spend 4 ki points to cast control water.
@@ -1562,15 +1666,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>2d8</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Sphere of Storm</name>
-    <level>1</level>
+    <name>Sphere of Storm</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>150 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 14th level
 
 You can spend 4 ki points to cast storm sphere:
@@ -1595,15 +1699,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>1d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Sphere of Water</name>
-    <level>1</level>
+    <name>Sphere of Water</name>
+    <level>0</level>
     <school>C</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>90 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 14th level
 
 You can spend 4 ki points to cast watery sphere.
@@ -1633,15 +1737,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
 		Elemental Evil Player's Companion p. 23</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Vestment of the Northern Lights</name>
-    <level>1</level>
+    <name>Vestment of the Northern Lights</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 14th level
 
 You can spend 4 ki points to cast fire shield.
@@ -1658,15 +1762,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>2d8</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Cyclone of the Seven Seas</name>
-    <level>1</level>
+    <name>Cyclone of the Seven Seas</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast maelstrom.
@@ -1680,15 +1784,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>6d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Dance of the Four Winds</name>
-    <level>1</level>
+    <name>Dance of the Four Winds</name>
+    <level>0</level>
     <school>C</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>30 feet</range>
-    <components>S, (4 ki points)</components>
+    <components>S, M (4 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast steel wind strike.
@@ -1703,15 +1807,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>6d10</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Grasp of Hungry Fire</name>
-    <level>1</level>
+    <name>Grasp of Hungry Fire</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>90 feet</range>
-    <components>V, (4 ki points)</components>
+    <components>V, M (4 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast immolation.
@@ -1728,15 +1832,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>4d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Mastery of Air</name>
-    <level>1</level>
+    <name>Mastery of Air</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>300 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 1 hour</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast control winds.
@@ -1763,15 +1867,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
 		Elemental Evil Player's Companion p. 16</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Mastery of Earth</name>
-    <level>1</level>
+    <name>Mastery of Earth</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 2 hours</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast move earth.
@@ -1791,15 +1895,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
 		Player's Handbook p. 263</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Prison of Earth</name>
-    <level>1</level>
+    <name>Prison of Earth</name>
+    <level>0</level>
     <school>T</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>60 feet</range>
-    <components>V, S, (5 ki points)</components>
+    <components>V, S, M (5 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 5 ki points to cast flesh to stone.
@@ -1825,15 +1929,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
 		Player's Handbook p. 243</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Sphere of Ice</name>
-    <level>1</level>
+    <name>Sphere of Ice</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>300 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Instantaneous</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisites: 17th level
 
 You can spend 4 ki points to cast Otiluke's freezing sphere.
@@ -1855,15 +1959,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
     <roll>1d6</roll>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Vestments of the Elements</name>
-    <level>1</level>
+    <name>Vestments of the Elements</name>
+    <level>0</level>
     <school>A</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>Self</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 1 minute</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisites: 17th level
 
 You can spend 4 ki points to cast primordial ward.
@@ -1878,15 +1982,15 @@ Source:	Tasha's Crucible of Everything Else, Volume 2 p. 25,
 		Elemental Evil Player's Companion p. 21</text>
   </spell>
   <spell>
-    <name>Four Elements Remastered: Wave of Frozen Tears</name>
-    <level>1</level>
+    <name>Wave of Frozen Tears</name>
+    <level>0</level>
     <school>EV</school>
     <ritual>NO</ritual>
     <time>1 action</time>
     <range>120 feet</range>
-    <components>V, S, (4 ki points)</components>
+    <components>V, S, M (4 ki points)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>Monk (Four Elements Remastered (TCEE))</classes>
+    <classes>Monk (Way of the Four Elements Remastered)</classes>
     <text>Prerequisite: 17th level
 
 You can spend 4 ki points to cast wall of ice.
