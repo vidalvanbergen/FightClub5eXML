@@ -11,8 +11,9 @@
 * Added a counter for the Paladin's 'Lay on Hands' feature.
 * Added 'ki points' component to monk spells.
 * Fixed spellcomponents tag misspelling.
-* Feats updates.
+* Added `(Third Party)` after the source for third party sources.
 * Background updates.
+* Feats updates.
 
 ### 2024-05-08
 * Added Unearthed Arcana `Fallen` races and feats by /u/Blue4Eternety.
