@@ -4,7 +4,9 @@
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
 
-### 2024-??-??
+### 2024-##-##
+
+### 2024-06-13
 * Added `Vecna: Eye of Ruin` Contents.
 * Added `Descent into the Lost Caverns of Tsojcanth` content.
 * Added `Tasha's Crucible of Everything Else, Volume 2` content.
