@@ -5,7 +5,8 @@
 * Complete `Crown of the Oathbreaker` Bestiary.
 
 ### 2024-##-##
-* Adding `Classes that Shouldn't exist v1` (Homebrew) content.
+* Added `Classes that Shouldn't exist v1` (Homebrew) content.
+* Other minor changes.
 
 ### 2024-06-13
 * Added `Vecna: Eye of Ruin` Contents.
