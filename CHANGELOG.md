@@ -7,6 +7,7 @@
 ### 2024-##-##
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
 * Fixed the items from `The Book of Many Things` to have correct formatting and other items.
+* Re-organized `Homebrew` content.
 * Other minor changes.
 
 ### 2024-06-13
