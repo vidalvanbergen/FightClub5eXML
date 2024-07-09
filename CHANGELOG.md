@@ -3,11 +3,13 @@
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
+* Adding `Xanathar's Lost Notes to Everything Else` content.
 
 ### 2024-##-##
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
 * Fixed the items from `The Book of Many Things` to have correct formatting and other items.
 * Re-organized `Homebrew` content.
+* Added `Metamagic` spell list.
 * Other minor changes.
 
 ### 2024-06-13
