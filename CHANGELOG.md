@@ -8,6 +8,8 @@
 ### 2024-##-##
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
 * Fixed the items from `The Book of Many Things` to have correct formatting and other items.
+* Reformatted some class features to be more in line with each other and the source material.
+* Marked magic homebrew weapons as `magic`.
 * Re-organized `Homebrew` content.
 * Added `Metamagic` spell list.
 * Other minor changes.
