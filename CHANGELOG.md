@@ -9,6 +9,7 @@
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
 * Fixed the items from `The Book of Many Things` to have correct formatting and other items.
 * Reformatted some class features to be more in line with each other and the source material.
+* `Order of the Scribes (UA)` has been superseded by `Order of the Scribes` from `Tasha's Cauldron of Everything`.
 * Marked magic homebrew weapons as `magic`.
 * Re-organized `Homebrew` content.
 * Added `Metamagic` spell list.
