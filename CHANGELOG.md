@@ -4,6 +4,7 @@
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
 * Adding `Xanathar's Lost Notes to Everything Else` content.
+* Adding content from `Heliana's Guide to Monster Hunting`.
 
 ### 2024-##-##
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
