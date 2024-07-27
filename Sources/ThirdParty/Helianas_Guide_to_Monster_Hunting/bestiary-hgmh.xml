@@ -46,7 +46,7 @@ Melee Weapon Attack:+4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.<
     <environment/>
   </monster>
 
-  <!--amiliars -->
+  <!-- Familiars -->
   <monster>
     <name>Aboling</name>
     <size>T</size>
@@ -81,6 +81,26 @@ Melee Weapon Attack:+4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.<
       <text>
 The aboling can breathe air and water.</text>
     </trait>
+    <trait>
+      <name>Genetic Memory</name>
+      <text>
+While the aboling is summoned, its tamer has proficiency in the History skill. If the tamer is already proficient in this skill, it can add double its proficiency bonus whenever it makes an ability check using this skill. It cannot benefit from a feature that doubles its proficiency bonus with a skill more than once. The aboling gains this improvement when it becomes a companion; it doesn't cost an improvement.</text>
+    </trait>
+    <trait>
+      <name>Rubbery Hide I</name>
+      <text>
+The aboling gains a +2 bonus to its AC while it isn't wearing armor.</text>
+    </trait>
+    <trait>
+      <name>Rubbery Hide II</name>
+      <text>
+The aboling gains a +2 bonus to its AC while it isn't wearing armor. This improvement is in addition to the bonus from Rubbery Hide I.</text>
+    </trait>
+    <trait>
+      <name>Probing Mind</name>
+      <text>
+The aboling is always under the effects of the detect thoughts spell while it is summoned and can relay these read thoughts directly to its tamer while the aboling is within 100 feet of the tamer.</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>
@@ -97,6 +117,43 @@ Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludge
       <recharge>1/Day</recharge>
       <text>
 The aboling learns the surface thoughts of one creature it can see within 30 feet of it for the next minute. It can attempt to probe deeper into the same creature's mind, using an action to force the target to make a DC 12 Wisdom saving throw. If it fails, the aboling gains insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the effect ends. Either way, the target knows that the aboling was probing deep into its mind.</text>
+    </action>
+    <action>
+      <name>Entrance</name>
+      <text>
+As an action, the aboling can target one creature it can see within 30 feet of it. The target must succeed on a Wisdom saving throw or be magically charmed by the aboling for 1 hour. This effect ends early if the aboling dies, is recalled, is on a different plane of existence from the target, or if you or your companions do anything harmful to the target. The charmed creature regards the aboling as a friendly acquaintance. When the effect ends, the creature knows it was charmed by the aboling.
+
+Once the aboling uses this action, it can't do so again until its tamer finishes a short or long rest.</text>
+    </action>
+    <action>
+      <name>Slime</name>
+      <text>
+The aboling has advantage on any ability checks or saving throws it makes to avoid or escape being grappled or restrained.</text>
+    </action>
+    <action>
+      <name>Inkjet</name>
+      <text>
+As an action, the aboling can squirt ink at a creature within 10 feet of it. The creature must succeed on a Dexterity saving throw or be blinded until the start of its next turn. The aboling can then move up to half its speed as part of the same action. If this action is taken underwater, immediately before the aboling moves, it creates a 5-foot-radius sphere of heavily obscured water that lasts until the start of its next turn.
+
+After the aboling uses this action, it can't do so again until 10 minutes have passed.
+
+When the aboling's tamer reaches 13th level in the tamer class, the aboling can choose to target all creatures within 10 feet of it, instead of just one creature.</text>
+    </action>
+    <action>
+      <name>Infectious Mucous (Bonus Action)</name>
+      <text>
+As a bonus action, the aboling can secrete infectious mucous that lasts until the end of its next turn, choosing one of the diseases from the contagion spell. For the duration, each time the aboling hits a creature with a tentacle attack, the creature must succeed on a Constitution saving throw or be affected by the contagion spell for 1 hour (concentration not required). In addition, a creature that is grappling the aboling, or a creature that the aboling has grappled, must make a Constitution saving throw at the start of each of the aboling's turns as if it had been hit by a tentacle attack.
+
+Once the aboling uses this bonus action, it can't do so again until its tamer finishes a short or long rest.</text>
+    </action>
+    <action>
+      <name>Enthral</name>
+      <text>
+As an action, the aboling can target one humanoid or beast it can see within 30 feet of it. The target must succeed on a Wisdom saving throw or be magically charmed by the aboling for 1 minute. The charmed target follows the aboling's commands and can't take reactions. While charmed in this way, the aboling and the target can communicate telepathically with each other over any distance. The aboling can specify a simple and general course of action, such as "Attack that creature," "Run over there," or "Fetch that object." If the creature completes the order and doesn't receive further direction from the aboling, it defends and preserves itself to the best of its ability.
+
+On its subsequent turns, the aboling must use its action to maintain this effect, or the effect ends. Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. This effect also ends early if the aboling dies, is recalled, or is on a different plane of existence from the target.
+
+Once the aboling uses this action, it can't do so again until its tamer finishes a short or long rest.</text>
     </action>
     <spells/>
     <slots/>
@@ -145,7 +202,7 @@ As an action, the aboling can make two tentacle attacks.
 Rubbery Hide I:
 Prerequisite: 5th-level tamer
 Type: Passive (companion)
-The aboling gains a +2 bonus to its AC while it isn't wearing armour.
+The aboling gains a +2 bonus to its AC while it isn't wearing armor.
 
 Fortified Mind:
 Prerequisite: 9th-level tamer
@@ -171,7 +228,7 @@ Once the aboling uses this action, it can't do so again until its tamer finishes
 Rubbery Hide II:
 Prerequisite: 13th-level tamer, Rubbery Hide I
 Type: Passive (companion)
-The aboling gains a +2 bonus to its AC while it isn't wearing armour. This improvement is in addition to the bonus from Rubbery Hide I.
+The aboling gains a +2 bonus to its AC while it isn't wearing armor. This improvement is in addition to the bonus from Rubbery Hide I.
 
 Probing Mind:
 Prerequisite: 17th-level tamer, Enthral
@@ -220,11 +277,34 @@ Whenever the dragonling first detects treasure worth 100 gp or more that isn't b
       <text>
 When the dragonling's tamer finishes a long rest, the dragonling gains an affinity for the element associated with the first precious metal it touches. This affinity grants the dragonling resistance to that damage type and lasts until its tamer next finishes a long rest. Copper gives acid affinity, gold gives fire, and magnetite &amp; silver give cold.</text>
     </trait>
+    <trait>
+      <name>Blindsight</name>
+      <text>
+The dragonling gains blindsight to a range of 15 feet.</text>
+    </trait>
+    <trait>
+      <name>Harden I</name>
+      <text>
+The dragonling gains a +2 bonus to its AC while it isn't wearing armor.</text>
+    </trait>
+    <trait>
+      <name>Harden II</name>
+      <text>
+The dragonling gains a +2 bonus to its AC while it isn't wearing armor. This improvement is in addition to the bonus from Harden I.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+As an action, the dragonling can make two bite attacks.</text>
+    </action>
     <action>
       <name>Bite</name>
       <text>
 Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
       <attack>Bite|+4|1d6+2</attack>
+      <attack>Bite (Growth I)|+4|1d8+2</attack>
+      <attack>Bite (Growth II)|+4|1d10+2</attack>
+      <attack>Bite (Growth III)|+4|1d12+2</attack>
     </action>
     <action>
       <name>Breath Weapon I</name>
@@ -398,6 +478,13 @@ Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) acid d
       <attack>Pseudopod (Growth IV)|+3|1d12+1</attack>
     </action>
     <action>
+      <name>Reactive Mutations</name>
+      <text>
+As a bonus action, the gelatinooze activates its immune system for the next minute. Immediately after the gelatinooze next takes damage, it gains resistance to that damage type for 1 minute.
+
+After the gelatinooze uses this action, it can't do so again until its tamer finishes a long rest.</text>
+    </action>
+    <action>
       <name>Engulf</name>
       <text>
 As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature's space, the creature must make a Dexterity saving throw.
@@ -434,12 +521,26 @@ As a bonus action, the gelatinooze can return to normal, regaining its normal sp
       <attack>Phalanx||2d6</attack>
     </action>
     <action>
+      <name>Turtle</name>
+      <text>
+As an action while the gelatinooze is not in its Phalanx form, it can hunker in place, reducing its speed to 0 feet and presenting a wall of metal and wood on one of its faces. Choose a direction and project a cone as if casting a cone-shaped spell with infinite length; the gelatinooze gains a +10 bonus to AC against all attacks originating from within that cone.
+
+As a bonus action, the gelatinooze can return to normal, regaining its speed and its normal AC.</text>
+    </action>
+    <action>
+      <name>Sanctuary</name>
+      <text>
+As an action, the gelatinooze can move into the space of an object or willing creature that is smaller than it and encapsulate it within its body. The object or creature can be seen but has total cover. No energy or spell effects that either originate from or target the encapsulated object or creature can pass through the gelatinooze. The gelatinooze naturally diffuses air to the object or creature within it, allowing it to breathe. The gelatinooze can contain up to 1 creature of a size smaller than it, whether it has it engulfed (using the Engulf action) or encapsulated using this trait.
+
+An encapsulated creature can exit the polyhedrooze by expending 2 feet of movement for each foot of gelatinooze that it passes through. As a bonus action, the gelatinooze can expel the object or creature into an adjacent, unoccupied space of the gelatinooze's choice.</text>
+    </action>
+    <action>
       <name>Erupt</name>
       <text>
-As an action, the gelatinooze can fire all the shrapnel, armour, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a Dexterity saving throw. A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.
+As an action, the gelatinooze can fire all the shrapnel, armor, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a Dexterity saving throw. A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.
 
 After the gelatinooze uses this action, it can't use its Erupt, Phalanx, or Turtle actions until it spends 1 hour absorbing rocks, metal, and other bric-a-brac.</text>
-        <attack>Erupt||4d6</attack>
+      <attack>Erupt||4d6</attack>
     </action>
     <spells/>
     <slots/>
@@ -529,7 +630,7 @@ An encapsulated creature can exit the polyhedrooze by expending 2 feet of moveme
 Erupt:
 Prerequisite: 17th-level tamer, Phalanx or Turtle
 Type: Active (action)
-As an action, the gelatinooze can fire all the shrapnel, armour, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a Dexterity saving throw. A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.
+As an action, the gelatinooze can fire all the shrapnel, armor, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a Dexterity saving throw. A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.
 
 After the gelatinooze uses this action, it can't use its Erupt, Phalanx, or Turtle actions until it spends 1 hour absorbing rocks, metal, and other bric-a-brac.
 
@@ -587,6 +688,11 @@ As an action, a creature can eat this mushroom, regaining 2d4 + 2 hit points and
 As an action, a creature can throw this volatile mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of flames. Each creature in the area must make a Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.</text>
       <attack>Bloomshroom 2||4d6</attack>
     </trait>
+    <trait>
+      <name>Damp Dark Dweller</name>
+      <text>
+The hyphan has immunity to necrotic damage. In addition, while the hyphan is summoned, its tamer has darkvision out to a range of 60 feet. If its tamer already has darkvision, the range is increased by 30 feet.</text>
+    </trait>
     <action>
       <name>Poison Spray</name>
       <text>
@@ -601,6 +707,16 @@ One creature within 15 feet of the hyphan must succeed on a DC 12 Constitution s
 One creature within 30 feet of the hyphan must succeed on a DC 12 Charisma saving throw or have its emotions calmed for the next minute. A willing creature can choose to fail this saving throw. The hyphan can choose to suppress any effect causing the target to be charmed or frightened. When this effect ends, any suppressed effect resumes, provided that its duration hasn't expired in the meantime. Alternatively, the hyphan can make the target indifferent about creatures of its choice that the target is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the GM rules otherwise.</text>
     </action>
     <action>
+      <name>Helpful (Bonus Action)</name>
+      <text>
+As a bonus action, the hyphan takes the Help action. The hyphan gains this improvement when it becomes a companion; it doesn't cost an improvement.</text>
+    </action>
+    <action>
+      <name>Detrivore</name>
+      <text>
+As an action, the hyphan can drain one Small or larger corpse within its reach, regaining hit points equal to twice its tamer's level. Once the hyphan has used this action, it can't do so again until its tamer finishes a long rest. A corpse can be drained by this or similar abilities only once.</text>
+    </action>
+    <action>
       <name>Puffballs</name>
       <text>
 As an action, the hyphan can cause two 10-foot squares of dirt, rock, or wood it can see within 60 feet of it to sprout tiny puffball mushrooms, which last for 1 hour or until the hyphan dismisses them as an action. The squares must be contiguous with one another.
@@ -610,6 +726,40 @@ When a creature enters the area, the 10-foot square of puffballs explodes, disap
       <attack>Puffballs II||4d12</attack>
       <attack>Puffballs III||5d12</attack>
     </action>
+    <action>
+      <name>Fungal Fruits</name>
+      <text>
+Over the course of a minute, the hyphan can grow a random assortment of mushrooms on its body. Each time it does this, roll a d4 twice and consult the options below to determine which two mushrooms grow.
+
+1-Bloomshroom. As an action, a creature can eat this mushroom, regaining 2d4 + 2 hit points and gaining advantage on all Constitution saving throws for 1 minute.
+
+2-Boomshroom. As an action, a creature can throw this volatile mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of flames. Each creature in the area must make a Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.
+
+3-Doomshroom. As an action, a creature can throw this dusky mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of purple spores. Each creature in the area must succeed on a Constitution saving throw or become afflicted by the bane spell for 1 minute (concentration not required). An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+4-Gloomshroom. As an action, a creature can eat this mushroom. For the next hour, it gains darkvision out to a range of 60 feet. If it already has darkvision, the range of this vision is increased by 30 feet.
+
+The mushrooms last until the hyphan's tamer next finishes a long rest, but lose all magical effects 10 minutes after they are plucked. You can pluck a mushroom as part of the action to use it. After the hyphan uses this trait, it can't do so again until its tamer finishes a long rest.</text>
+      <attack>Bloomshroom 1||2d4+2</attack>
+      <attack>Bloomshroom 2||4d6</attack>
+    </action>
+    <action>
+      <name>Multihelp</name>
+      <text>
+When the hyphan takes the Disengage action, it can take the Help action up to three times on that turn as part of the same action. After it uses this action, it can't do so again until its tamer finishes a short or long rest.</text>
+    </action>
+    <action>
+      <name>Mycelial Reconstitution</name>
+      <text>
+As an action, the hyphan can dissolve into mycelia, ending the grappled and restrained conditions on it and reappearing in an unoccupied space on the ground it can see within 30 feet of it.</text>
+    </action>
+    <reaction>
+      <name>Hallucispores</name>
+      <text>
+As a reaction when the hyphan takes damage, it can jettison out a cloud of spores. Each creature within 10 feet of it must succeed on a Wisdom saving throw or be charmed by the hyphan until the end of its next turn.
+
+The hyphan has a number of uses of this ability equal to its Constitution modifier (minimum 1) and regains all expended uses when its tamer finishes a long rest.</text>
+    </reaction>
     <spells/>
     <slots/>
     <description>Type: plant Creature
@@ -698,6 +848,1124 @@ Type: Active (action)
 As an action, the hyphan can dissolve into mycelia, ending the grappled and restrained conditions on it and reappearing in an unoccupied space on the ground it can see within 30 feet of it.
 
 Source:	Heliana's Guide to Monster Hunting p. 233 (Third Party)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Mechakobold</name>
+    <size>T</size>
+    <type>Construct</type>
+    <alignment>Neutral Good</alignment>
+    <ac>12</ac>
+    <hp>2 (1d4)</hp>
+    <speed>25 ft., climb 25 ft.</speed>
+    <str>7</str>
+    <dex>14</dex>
+    <con>11</con>
+    <int>12</int>
+    <wis>9</wis>
+    <cha>15</cha>
+    <save/>
+    <skill>Deception +4, Investigation +3, Sleight of Hand +4</skill>
+    <passive>11</passive>
+    <languages/>
+    <cr>1/8</cr>
+    <exp>25</exp>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Helpful-ish</name>
+      <text>
+The mechakobold desires to help other creatures on their ability checks and will always try to take the Help action in non-combat situations. However, if the check on which the mechakobold helps is a failure, the consequences are always catastrophic (GM's discretion).</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>
+While in sunlight, the mechakobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>
+The mechakobold has advantage on an attack roll against a creature if at least one of the mechakobold's allies is within 5 feet of the creature and the ally isn't incapacitated. The mechakobold gains this improvement when it becomes a companion; it doesn't cost an improvement.</text>
+    </trait>
+    <trait>
+      <name>Prehensile Tail</name>
+      <text>
+The mechakobold gains proficiency with thieves' tools. In addition, it can use its bonus action to make a Dexterity (Sleight of Hand) check (for example, to pickpocket a creature), to use a set of thieves' tools to disarm a trap or open a lock, or to take the Use an Object action.</text>
+    </trait>
+    <trait>
+      <name>Proto-Attunement</name>
+      <text>
+The mechakobold can attune to one magic item, gaining the magic item's benefits. If the mechakobold is wearing or holding this item when it is recalled, the item is recalled with it into the vessel. When it attunes to this item, it becomes bonded to it; however this item doesn't count towards the number of items a companion can be bonded to.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+As an action, the mechakobold can make two slingshot attacks.</text>
+    </action>
+    <action>
+      <name>Slingshot</name>
+      <text>
+Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.</text>
+      <attack>Slingshot|+4|1d4+2</attack>
+    </action>
+    <action>
+      <name>Tie Laces</name>
+      <text>
+The mechakobold attempts to tie together the lower limbs of a creature within 5 feet of it using a pair of spare laces. It makes a Dexterity (Sleight of Hand) check contested by the target's Dexterity (Acrobatics) or Strength (Athletics) check. On a success, the target's walking and climbing speeds are halved until it unties its laces as an action, or cuts them with an attack with a slashing weapon.</text>
+    </action>
+    <action>
+      <name>Puppy Dragon Eyes</name>
+      <text>
+As an action, the mechakobold can stare endearingly at one creature it can see within 30 feet of it. If the creature can see it, the creature must make a Wisdom saving throw. On a failed save, the creature is charmed by the mechakobold for 1 minute. This effect ends early if the mechakobold harms the creature. If the creature observes the mechakobold acting contrary to the creature's goals, the creature can repeat the saving throw, ending the effect on a success.
+
+After the mechakobold uses this action, it can't do so again until its tamer finishes a short or long rest.</text>
+    </action>
+    <action>
+      <name>Dynoboom</name>
+      <text>
+As an action, the mechakobold can throw a homemade explosive device at a point it can see within 60 feet of it, where it explodes. Each creature in a 10-foot-radius sphere centred on that point must make a Dexterity saving throw, taking 17 (5d6) thunder damage on a failed save, or half as much damage on a successful one.
+
+After the mechakobold uses this action, it can't do so again until its tamer finishes a short or long rest, during which it crafts a new explosive device using bits, bobs, and pure belief.
+
+When the mechakobold's tamer reaches 9th level in the tamer class, the damage of this action increases to 24 (7d6).</text>
+      <attack>Dynoboom||5d6</attack>
+      <attack>Dynoboom I||7d6</attack>
+      <attack>Dynoboom II||9d6</attack>
+      <attack>Dynoboom III||12d6</attack>
+    </action>
+    <action>
+      <name>Nimble Escape (Bonus Action)</name>
+      <text>
+The mechakobold can take the Disengage or Hide action as a bonus action on each of its turns.</text>
+    </action>
+    <reaction>
+      <name>Uncanny Dodge</name>
+      <text>
+When an attacker that the mechakobold can see hits it with an attack, the mechakobold can use its reaction to halve the attack's damage against it.</text>
+    </reaction>
+    <spells/>
+    <slots/>
+    <description>Type: construct
+Creature Component: koboldzilla
+Bonus Tamer Improvement: Pack Tactics and +2 Hit Dice
+
+From the crude blood-oil of the mecha koboldzilla can be harnessed the progenitor genetic code of the modern kobold. A combination of flesh and metal, the mechakobold retains much of the modern kobold's ingenuity and penchant for mischief. Mechakobolds' belief powers their magical inventions; the force of their personality directly augments their creations. Expect homemade explosions, picked pockets, and the pressing of any big, red buttons.
+
+If any of the mechakobold's traits or actions require a saving throw, it is always against the mechakobold's save DC, as calculated below.
+
+Save DC = 8 + the tamer's proficiency bonus + the mechakobold's Charisma modifier
+
+Monster Trainer:
+In addition to the improvements you can normally give your companions, you can choose to grant the mechakobold the following improvements using your Monster Trainer feature:
+
+Pack Tactics:
+Prerequisite: become a tamer's companion
+Type: Passive (companion)
+The mechakobold has advantage on an attack roll against a creature if at least one of the mechakobold's allies is within 5 feet of the creature and the ally isn't incapacitated. The mechakobold gains this improvement when it becomes a companion; it doesn't cost an improvement.
+
+Puppy Dragon Eyes:
+Prerequisite: 3rd-level tamer
+Type: Active (action)
+As an action, the mechakobold can stare endearingly at one creature it can see within 30 feet of it. If the creature can see it, the creature must make a Wisdom saving throw. On a failed save, the creature is charmed by the mechakobold for 1 minute. This effect ends early if the mechakobold harms the creature. If the creature observes the mechakobold acting contrary to the creature's goals, the creature can repeat the saving throw, ending the effect on a success.
+
+After the mechakobold uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+Dynoboom I:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the mechakobold can throw a homemade explosive device at a point it can see within 60 feet of it, where it explodes. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw, taking 17 (5d6) thunder damage on a failed save, or half as much damage on a successful one.
+
+After the mechakobold uses this action, it can't do so again until its tamer finishes a short or long rest, during which it crafts a new explosive device using bits, bobs, and pure belief.
+
+When the mechakobold's tamer reaches 9th level in the tamer class, the damage of this action increases to 24 (7d6).
+
+Growth:
+Prerequisite: 5th-level tamer
+Type: Passive (companion)
+The mechakobold's size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its slingshot attack increases to a d8.
+
+Multiattack:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the mechakobold can make two slingshot attacks.
+
+Prehensile Tail:
+Prerequisite: 9th-level tamer
+Type: Passive (companion), Active (bonus action)
+The mechakobold gains proficiency with thieves' tools. In addition, it can use its bonus action to make a Dexterity (Sleight of Hand) check (for example, to pickpocket a creature), to use a set of thieves' tools to disarm a trap or open a lock, or to take the Use an Object action.
+
+Nimble Escape:
+Prerequisite: 9th-level tamer
+Type: Active (bonus action)
+The mechakobold can take the Disengage or Hide action as a bonus action on each of its turns.
+
+Dynoboom II:
+Prerequisite: 13th-level tamer, Dynoboom I
+Type: Active (action)
+The damage of the mechakobold's Dynoboom action increases to 31 (9d6), and the size of the explosion increases to a 20-foot-radius sphere. The mechakobold gains a +1 bonus to the save DC of this action.
+
+When the mechakobold's tamer reaches 17th level in the tamer class, the damage of this action increases to 42 (12d6).
+
+Uncanny Dodge:
+Prerequisite: 13th-level tamer, Nimble Escape
+Type: Active (reaction)
+When an attacker that the mechakobold can see hits it with an attack, the mechakobold can use its reaction to halve the attack's damage against it.
+
+Proto-Attunement:
+Prerequisite: 17th-level tamer
+Type: Passive (companion)
+The mechakobold can attune to one magic item, gaining the magic item's benefits. If the mechakobold is wearing or holding this item when it is recalled, the item is recalled with it into the vessel. When it attunes to this item, it becomes bonded to it; however this item doesn't count towards the number of items a companion can be bonded to.
+
+Source:	Heliana's Guide to Monster Hunting p. 236 (Third Party)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Minimic</name>
+    <size>T</size>
+    <type>Monstrosity (shapechanger)</type>
+    <alignment>Unaligned</alignment>
+    <ac>12 (natural armor)</ac>
+    <hp>4 (1d4+2)</hp>
+    <speed>25 ft.</speed>
+    <str>12</str>
+    <dex>11</dex>
+    <con>14</con>
+    <int>4</int>
+    <wis>10</wis>
+    <cha>6</cha>
+    <save/>
+    <skill>Stealth +2</skill>
+    <passive>10</passive>
+    <languages/>
+    <cr>1/8</cr>
+    <exp>25</exp>
+    <resist/>
+    <immune>Acid</immune>
+    <vulnerable/>
+    <conditionImmune>Prone</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Adhesive</name>
+      <text>
+The minimic adheres to anything that touches it. A creature no more than one size larger than the minimic that is adhered to the minimic is also grappled by it (escape DC equals save DC).</text>
+    </trait>
+    <trait>
+      <name>False Appearance (Object Form Only)</name>
+      <text>
+While the minimic remains motionless, it is indistinguishable from an ordinary object.</text>
+    </trait>
+    <trait>
+      <name>Shapechanger</name>
+      <text>
+The minimic can use its action to polymorph into an object equal to it in size, or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</text>
+    </trait>
+    <trait>
+      <name>Grappler</name>
+      <text>
+The minimic has advantage on attack rolls against any creature grappled by it.</text>
+    </trait>
+    <trait>
+      <name>Thick Skin</name>
+      <text>
+The minimic gains a +2 bonus to its AC while it isn't wearing armor.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+As an action, the minimic can make two attacks: one with its pseudopod and one with its bite.</text>
+    </action>
+    <action>
+      <name>Pseudopod</name>
+      <recharge>Pseudopod|+3|1d4+1</recharge>
+      <text>
+Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage. The target is subjected to the minimic's Adhesive trait.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 2 (1d4) acid damage.</text>
+      <attack>Bite|+3|1d4+1</attack>
+    </action>
+    <action>
+      <name>Regurgitate</name>
+      <text>
+As an action, the minimic can regurgitate a torrent of acidic bile. Each creature in a 15-foot cone must make a Dexterity saving throw, taking 17 (5d6) acid damage on a failed save, or half as much damage on a successful one.
+
+After the minimic uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+When the minimic's tamer reaches 9th level in the tamer class, the damage of this action increases to 24 (7d6).</text>
+      <attack>Regurgitate||5d6</attack>
+      <attack>Regurgitate I||7d6</attack>
+      <attack>Regurgitate II||9d6</attack>
+      <attack>Regurgitate III||12d6</attack>
+    </action>
+    <action>
+      <name>Acidic Sweat (bonus action)</name>
+      <text>
+As a bonus action, the minimic can secrete acid. Each creature grappling or grappled by the minimic takes acid damage equal to the minimic's current Hit Die size (1d4, or higher, if it has further Growth improvements).</text>
+      <attack>Acidic Sweat||1d4</attack>
+      <attack>Acidic Sweat (Growth I)||1d6</attack>
+      <attack>Acidic Sweat (Growth II)||1d8</attack>
+      <attack> Acidic Sweat (Growth III)||1d10</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Type: monstrosity (shapechanger)
+Creature Component: any mimic
+Bonus Tamer Improvement: Growth I and +2 Hit Dice
+
+With an appearance like regular household objects and the ability to change shape at will, minimics are easy to lose. Their adhesive epidermis sticks to everything; tamers with minimic companions often have a bottle of solvent on hand. A minimic's ability to keep a foe grappled can be a useful battlefield control tactic, especially when deployed as an inanimate object for ambush operations.
+
+If any of the minimic's traits or actions require a saving throw, it is always against the minimic's save DC, as calculated below.
+
+Save DC = 8 + the tamer's proficiency bonus + the minimic's Constitution modifier.
+
+Monster Tamer:
+In addition to the improvements you can normally give your companions, you can choose to grant the minimic the following improvements using your Monster Trainer feature:
+
+Growth I:
+Prerequisite: become a tamer's companion
+Type: Passive (companion)
+The minimic's size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its bite and pseudopod attacks increase to a d6. The minimic gains this improvement when it becomes a companion; it doesn't cost an improvement.
+
+Grappler:
+Prerequisite: 3rd-level tamer
+Type: Passive (companion)
+The minimic has advantage on attack rolls against any creature grappled by it.
+
+Improved Adhesive:
+Prerequisite: 3rd-level tamer
+Type: Passive (companion)
+Creatures grappled by the minimic have disadvantage on ability checks made to escape its grapple.
+
+Growth II:
+Prerequisite: 5th-level tamer, Growth I
+Type: Passive (companion)
+The minimic's size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its bite and pseudopod attacks increase from a d6 to a d8.
+
+Multiattack:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the minimic can make two attacks:
+one with its pseudopod and one with its bite.
+
+Regurgitate I:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the minimic can regurgitate a torrent of acidic bile. Each creature in a 15-foot cone must make a Dexterity saving throw, taking 17 (5d6) acid damage on a failed save, or half as much damage on a successful one.
+
+After the minimic uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+When the minimic's tamer reaches 9th level in the tamer class, the damage of this action increases to 24 (7d6).
+
+Thick Skin:
+Prerequisite: 9th-level tamer
+Type: Passive (companion)
+The minimic gains a +2 bonus to its AC while it isn't wearing armor.
+
+Acidic Sweat:
+Prerequisite: 13th-level tamer
+Type: Active (bonus action)
+As a bonus action, the minimic can secrete acid. Each creature grappling or grappled by the minimic takes acid damage equal to the minimic's current Hit Die size (1d4, or higher, if it has further Growth improvements).
+
+Regurgitate II:
+Prerequisite: 13th-level tamer, Regurgitate I
+Type: Active (action)
+The damage of the minimic's Regurgitate action increases to 31 (9d6), and the size of the cone increases to 25 feet. The minmic gains a +1 bonus to the save DC of this action.
+
+When the minimic's tamer reaches 17th level in the tamer class, the damage of this action increases to 42 (12d6).
+
+Growth III:
+Prerequisite: 17th-level tamer, Growth II
+Type: Passive (companion)
+The minimic's size increases to Large, its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its bite and pseudopod attacks increase from a d8 to a d10.
+
+Source:	Heliana's Guide to Monster Hunting p. 239 (Third Party)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Peeper</name>
+    <size>T</size>
+    <type>Aberration</type>
+    <alignment>Neutral Good</alignment>
+    <ac>12</ac>
+    <hp>4 (1d4+2)</hp>
+    <speed>0 ft., fly 30 ft. (hover)</speed>
+    <str>5</str>
+    <dex>14</dex>
+    <con>14</con>
+    <int>13</int>
+    <wis>10</wis>
+    <cha>7</cha>
+    <save/>
+    <skill>Perception +4</skill>
+    <passive>14</passive>
+    <languages>Common</languages>
+    <cr>1/8</cr>
+    <exp>25</exp>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune>Prone</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Cone of Encouragement</name>
+      <text>
+The peeper's central eye emits a beatific gaze, creating an area of encouragement in a 30-foot cone. At the end of each of its turns, the peeper decides which way the cone faces. See Reactions for more details.</text>
+    </trait>
+    <trait>
+      <name>Scaredy</name>
+      <text>
+The peeper has disadvantage on ability checks and saving throws against the frightened condition, and automatically fails these saving throws if it can see the source of its fear and the source is two or more size categories larger than it.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Bite|+4|1d4+2</attack>
+      <attack>Bite (Growth)|+4|1d6+2</attack>
+    </action>
+    <reaction>
+      <name>Encourage (2/Day)</name>
+      <recharge>2/Day</recharge>
+      <text>
+As a reaction when a creature within the peeper's cone of encouragement makes an attack roll or saving throw, the peeper can emit verbal or psychic encouragement, granting the target a bonus d4 to its roll.</text>
+      <attack>Encourage||1d4</attack>
+      <attack>Encourage I||1d6</attack>
+      <attack>Encourage II||1d8</attack>
+      <attack>Encourage III||1d10</attack>
+      <attack>Encourage IV||1d12</attack>
+    </reaction>
+    <action>
+      <name>Eye Rays</name>
+      <text>
+The peeper learns to use its eye stalks. As an action, the peeper can shoot one of the following magical eye rays at random (roll a d4), targeting a creature it can see within 60 feet of it:
+
+1. Charm Ray. The target must succeed on a Wisdom saving throw or be charmed by the peeper for 1 minute, or until the peeper harms the target.
+
+2. Fear Ray. The target must succeed on a Wisdom saving throw or be frightened of the peeper until the end of the peeper's next turn.
+
+3. Nightmare Ray. The target must succeed on an Intelligence saving throw or take 5 (2d4) psychic damage as it is assailed by illusory manifestations of its fears.
+
+4. Wounding Ray. The target must make a Constitution saving throw, taking 7 (3d4) necrotic damage on a failed save, or half as much damage on a successful one.
+
+The peeper gains this improvement when it becomes a companion; it doesn't cost an improvement.</text>
+      <attack>Random||1d4</attack>
+      <attack>Nightmare Ray||2d4</attack>
+      <attack>Wounding Ray||2d4</attack>
+      <attack>Nightmare Ray (Growth)||2d6</attack>
+      <attack>Wounding Ray (Growth)||2d6</attack>
+    </action>
+    <action>
+      <name>Slowing Ray</name>
+      <text>
+As an action, the peeper can fire a ray at one creature it can see within range of its eye rays. The target must make a Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. To maintain this effect, the peeper must concentrate on it as if it were concentrating on a spell.
+
+After the peeper uses this action, it can't do so again until its tamer finishes a short or long rest.</text>
+    </action>
+    <action>
+      <name>Telekinetic Ray</name>
+      <text>
+As an action, the peeper can fire a ray at one object or creature it can see within range of its eye rays (see Eye Rays I &amp; II). If the target is a creature, it must succeed on a Strength saving throw or the peeper can move it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the peeper's next turn or until the peeper is incapacitated.
+
+If the target is an object weighing 300 pounds or less that isn't being worn or carried, the peeper can move it up to 30 feet in any direction. The peeper can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.
+
+After the peeper uses this action, it can't do so again until its tamer finishes a short or long rest.</text>
+    </action>
+    <action>
+      <name>Incorporeality (Bonus Action)</name>
+      <text>
+While the peeper is under the effect of its Immaterial trait, it can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
+      <attack>Incorporeality||1d10</attack>
+    </action>
+    <action>
+      <name>Disintegration Ray</name>
+      <text>
+As an action, the peeper can fire a ray at one object or creature it can see within range of its eye rays (see Eye Rays). If the target is a creature, it must succeed on a Dexterity saving throw or take 42 (12d6) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine grey dust.
+
+If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger nonmagical object or creation of magical force, this ray disintegrates a 10-foot cube of it.
+
+After the peeper uses this action, it can't do so again until its tamer finishes a long rest.</text>
+      <attack>Disintegration Ray||12d6</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Type: aberration
+Creature Component: dreamholder or other 'eye tyrant'
+Bonus Tamer Improvement: Eye Rays I and +2 Hit Dice
+
+Peepers are creatures of hope, optimism, and positive vibes. The ultimate cheerleaders, they are as cowardly as they are encouraging. Their overdeveloped survival instincts kick in whenever a large enough source of fear rears its harrowing head, causing them to flee without hesitation.
+
+If any of the peeper's traits or actions require a saving throw, it is always against the peeper's save DC, as calculated below.
+
+Save DC = 8 + the tamer's proficiency bonus + the peeper's Constitution modifier
+
+Monster Trainer:
+In addition to the improvements you can normally give your companions, you can choose to grant the peeper the following improvements using your Monster Trainer feature:
+
+Eye Rays I:
+Prerequisite: become a tamer's companion
+Type: Active (action)
+The peeper learns to use its eye stalks. As an action, the peeper can shoot one of the following magical eye rays at random (roll a d4), targeting a creature it can see within 60 feet of it:
+
+1. Charm Ray. The target must succeed on a Wisdom saving throw or be charmed by the peeper for 1 minute, or until the peeper harms the target.
+
+2. Fear Ray. The target must succeed on a Wisdom saving throw or be frightened of the peeper until the end of the peeper's next turn.
+
+3. Nightmare Ray. The target must succeed on an Intelligence saving throw or take 5 (2d4) psychic damage as it is assailed by illusory manifestations of its fears.
+
+4. Wounding Ray. The target must make a Constitution saving throw, taking 7 (3d4) necrotic damage on a failed save, or half as much damage on a successful one. The peeper gains this improvement when it becomes a companion; it doesn't cost an improvement.
+
+Encourager I:
+Prerequisite: 3rd-level tamer
+Type: Passive (companion)
+The size of the peeper's Cone of Encouragement increases to 60 feet and Encourage's bonus increases to a d6.
+
+When the peeper's tamer reaches 9th level in the tamer class, the bonus increases to a d8 and the peeper gains one additional use of Encourage (3/Day).
+
+Immaterial:
+Prerequisite: 3rd-level tamer
+Type: Active (bonus action)
+As a bonus action, the peeper can turn partially incorporeal. Until the start of its next turn, it has resistance to bludgeoning, piercing, and slashing damage. After the peeper uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+Growth:
+Prerequisite: 5th-level tamer
+Type: Passive (companion)
+The peeper's size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its bite attack and Eye Rays action increase to a d6.
+
+Eye Rays II:
+Prerequisite: 5th-level tamer, Eye Rays I
+Type: Active (action)
+When the peeper uses its Eye Rays action, it shoots two rays at random instead of one (reroll duplicates), choosing one or two targets it can see within 120 feet of it.
+
+Slowing Ray:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the peeper can fire a ray at one creature it can see within range of its eye rays (see Eye Rays I &amp; II). The target must make a Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. To maintain this effect, the peeper must concentrate on it as if it were concentrating on a spell.
+
+After the peeper uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+Telekinetic Ray:
+Prerequisite: 9th-level tamer
+Type: Active (action)
+As an action, the peeper can fire a ray at one object or creature it can see within range of its eye rays (see Eye Rays I &amp; II). If the target is a creature, it must succeed on a Strength saving throw or the peeper can move it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the peeper's next turn or until the peeper is incapacitated.
+
+If the target is an object weighing 300 pounds or less that isn't being worn or carried, the peeper can move it up to 30 feet in any direction. The peeper can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.
+
+After the peeper uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+Encourager II:
+Prerequisite: 13th-level tamer, Encourager I
+Type: Passive (companion)
+The size of the peeper's Cone of Encouragement increases to 120 feet and Encourage's bonus increases to a d10. The peeper gains one additional use of Encourage (4/Day). When the peeper's tamer reaches 17th level in the tamer class, Encourage's bonus increases to a d12 and the peeper gains one additional use of Encourage (5/Day).
+
+Incorporeality:
+Prerequisite: 13th-level tamer, Immaterial
+Type: Passive (companion), Active (bonus action)
+While the peeper is under the effect of its Immaterial trait, it can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.
+
+Disintegration Ray:
+Prerequisite: 17th-level tamer
+Type: Passive (companion)
+As an action, the peeper can fire a ray at one object or creature it can see within range of its eye rays (see Eye Rays I &amp; II). If the target is a creature, it must succeed on a Dexterity saving throw or take 42 (12d6) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine grey dust.
+
+If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger nonmagical object or creation of magical force, this ray disintegrates a 10-foot cube of it.
+
+After the peeper uses this action, it can't do so again until its tamer finishes a long rest.
+
+Source:	Heliana's Guide to Monster Hunting p. 242 (Third Party)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Rakitten</name>
+    <size>T</size>
+    <type>Fiend</type>
+    <alignment>Lawful Evil</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>3 (1d4 + 1)</hp>
+    <speed>35 ft.</speed>
+    <str>11</str>
+    <dex>14</dex>
+    <con>13</con>
+    <int>12</int>
+    <wis>13</wis>
+    <cha>15</cha>
+    <save/>
+    <skill>Deception +4, Insight +3</skill>
+    <passive>11</passive>
+    <languages/>
+    <cr>1/8</cr>
+    <exp>25</exp>
+    <resist/>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Cat's Grace</name>
+      <text>
+When the rakitten falls and isn't incapacitated, it can subtract up to 30 feet from the fall when calculating falling damage. In addition, it has advantage on ability checks and saving throws made to avoid the prone condition.</text>
+    </trait>
+    <trait>
+      <name>Swipey</name>
+      <text>
+While not in combat, the rakitten takes any opportunity it can to knock things off shelves and ledges.</text>
+    </trait>
+    <trait>
+      <name>Limited Antimagic</name>
+      <text>
+The rakitten can't be affected or detected by spells of 1st level or lower unless it wishes to be.
+
+When the rakitten's tamer reaches 9th, 13th, and 17th level in the tamer class, the level of spell against which the rakitten can't be affected or detected increases to 2nd, 3rd, and 5th level, respectively.</text>
+    </trait>
+    <trait>
+      <name>Rakish Resilience</name>
+      <text>
+The rakitten gains a bonus to its AC equal to its Charisma modifier while it isn't wearing armor.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+As an action, the rakitten can make two claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</text>
+      <attack>Claw|+4|1d4+2</attack>
+      <attack>Claw (Growth I)|+4|1d6+2</attack>
+      <attack>Claw (Growth II)|+4|1d8+2</attack>
+      <attack>Claw (Growth III)|+4|1d10+2</attack>
+    </action>
+    <action>
+      <name>Ethereal Paw</name>
+      <text>
+A spectral, magical, floating paw appears at a point the rakitten chooses within 30 feet of it. The paw lasts for 1 minute or until the rakitten dismisses it as a bonus action. The paw vanishes if it is ever more than 30 feet away from the rakitten or if the rakitten uses this action again.
+
+The rakitten can use its action to control the paw. It can use the paw to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. It can move the paw up to 30 feet each time it uses it. The paw can't attack, activate magic items, or carry more than 10 pounds.</text>
+    </action>
+    <action>
+      <name>Cat's Curse (Bonus Action)</name>
+      <text>
+When the rakitten hits a creature with a claw attack on its turn, it can use a bonus action to attempt to afflict the creature with the cat's curse for 1 minute. The creature must succeed on a Charisma saving throw or be unable to benefit from spells of a level lower than the tamer's proficiency bonus. A creature affected by this curse can repeat the saving throw at the end of each of its turns, ending the effect on a success.
+
+After the rakitten has used this action, it can't do so again for 1 minute.
+
+The rakitten gains this improvement when it becomes a companion; it doesn't cost an improvement.</text>
+    </action>
+    <reaction>
+      <name>Weavebender</name>
+      <text>
+As a reaction when a ranged spell attack or a spell with an area of effect centred on a point targets a creature or point within 30 feet of the rakitten, the rakitten can redirect the spell. It can cause a ranged spell attack to target a different creature within 10 feet of the original target (after the attack roll is made but before the outcome is determined), or it can move the area of effect's point of origin up to 10 feet in any direction.
+
+The rakitten can use this reaction a number of times equal to its Charisma modifier. It regains all expended uses when its tamer finishes a long rest.</text>
+    </reaction>
+    <trait>
+      <name>Wind Strike</name>
+      <text>
+For the next minute, the rakitten can use a bonus action to teleport up to 30 feet to a space it can see. If it makes a claw attack immediately after teleporting and the attack hits, the target takes additional force damage equal to the rakitten's Charisma modifier (minimum 1).
+
+After the rakitten uses this action, it can't do so again until its tamer finishes a long rest.</text>
+    </trait>
+    <action>
+      <name>Devil's Purr</name>
+      <text>
+As an action, the rakitten lets out a low, thrumming purr. Each creature of the rakitten's choice within 30 feet of it that can hear it must succeed on a Wisdom saving throw or be charmed by the rakitten until the end of the rakitten's next turn. A creature charmed in this way regards the rakitten as its own offspring, acting protectively towards it.
+
+After the rakitten uses this action, it can't do so again until its tamer finishes a short or long rest.</text>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Type: fiend
+Creature Component: any rakshasa
+Bonus Tamer Improvement: Cat's Curse and +2 Hit Dice
+
+We've all heard of a bull in a porcelain shop, but a rakitten is much worse. They can't help but knock off anything close to an edge, especially if it looks delicate and valuable. Fortunately, they make up for this irritating, fiendish behaviour with an ability to control spellcasters, redirecting their spells and cursing them with antimagic properties.
+
+If any of the rakitten's traits or actions require saving throws, it is always against the rakitten's save DC, as calculated as follows:
+
+Save DC = 8 + the tamer's proficiency bonus + the rakitten's Charisma modifier
+
+Monster Trainer:
+In addition to the improvements you can normally give your companions, you can choose to grant the rakitten the following improvements using your Monster Trainer feature:
+
+Cat's Curse:
+Prerequisite: become a tamer's companion
+Type: Active (bonus action)
+When the rakitten hits a creature with a claw attack on its turn, it can use a bonus action to attempt to afflict the creature with the cat's curse for 1 minute. The creature must succeed on a Charisma saving throw or be unable to benefit from spells of a level lower than the tamer's proficiency bonus. A creature affected by this curse can repeat the saving throw at the end of each of its turns, ending the effect on a success.
+
+After the rakitten has used this action, it can't do so again for 1 minute.
+
+The rakitten gains this improvement when it becomes a companion; it doesn't cost an improvement.
+
+Growth I:
+Prerequisite: 3rd-level tamer
+Type: Passive (companion)
+The rakitten's size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its claw attack increases to a d6.
+
+Limited Antimagic:
+Prerequisite: 3rd-level tamer
+Type: Passive (companion)
+The rakitten can't be affected or detected by spells of 1st level or lower unless it wishes to be.
+
+When the rakitten's tamer reaches 9th, 13th, and 17th level in the tamer class, the level of spell against which the rakitten can't be affected or detected increases to 2nd, 3rd, and 5th level, respectively.
+
+Rakish Resilience:
+Prerequisite: 5th-level tamer
+Type: Passive (companion)
+The rakitten gains a bonus to its AC equal to its Charisma modifier while it isn't wearing armor.
+
+Multiattack:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the rakitten can make two claw attacks.
+
+Weavebender:
+Prerequisite: 5th-level tamer
+Type: Active (reaction)
+As a reaction when a ranged spell attack or a spell with an area of effect centred on a point targets a creature or point within 30 feet of the rakitten, the rakitten can redirect the spell. It can cause a ranged spell attack to target a different creature within 10 feet of the original target (after the attack roll is made but before the outcome is determined), or it can move the area of effect's point of origin up to 10 feet in any direction.
+
+The rakitten can use this reaction a number of times equal to its Charisma modifier. It regains all expended uses when its tamer finishes a long rest.
+
+Growth II:
+Prerequisite: 9th-level tamer, Growth I
+Type: Passive (companion)
+The rakitten's size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its claw attack increases from a d6 to a d8.
+
+Wind Strike:
+Prerequisite: 9th-level tamer
+Type: Active (no action)
+For the next minute, the rakitten can use a bonus action to teleport up to 30 feet to a space it can see. If it makes a claw attack immediately after teleporting and the attack hits, the target takes additional force damage equal to the rakitten's Charisma modifier (minimum 1).
+
+After the rakitten uses this action, it can't do so again until its tamer finishes a long rest.
+
+Devil's Purr:
+Prerequisite: 13th-level tamer
+Type: Active (action)
+As an action, the rakitten lets out a low, thrumming purr. Each creature of the rakitten's choice within 30 feet of it that can hear it must succeed on a Wisdom saving throw or be charmed by the rakitten until the end of the rakitten's next turn. A creature charmed in this way regards the rakitten as its own offspring, acting protectively towards it. After the rakitten uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+Growth III:
+Prerequisite: 17th-level tamer, Growth II
+Type: Passive (companion)
+The rakitten size increases to Large, its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its claw attack increases from a d8 to a d10.
+
+Source:	Heliana's Guide to Monster Hunting p. 245 (Third Party)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Sunsnacker</name>
+    <size>T</size>
+    <type>Fey</type>
+    <alignment>Chaotic Neutral</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>3 (1d4 + 1)</hp>
+    <speed>30 ft.</speed>
+    <str>14</str>
+    <dex>10</dex>
+    <con>12</con>
+    <int>7</int>
+    <wis>11</wis>
+    <cha>14</cha>
+    <save/>
+    <skill>Intimidation +4</skill>
+    <passive>10</passive>
+    <languages/>
+    <cr>1/8</cr>
+    <exp>25</exp>
+    <resist>radiant</resist>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Hungry</name>
+      <text>
+Whenever the sunsnacker first detects the presence of sweet food that isn't being worn or carried, it must succeed on a DC 11 Wisdom saving throw or get distracted. While distracted, it spends its movement and actions trying to get close to the food and eat it. A distracted sunsnacker repeats the saving throw at the end of each of its turns, ending the effect on a success and becoming immune to the allure of that source of food for the next 24 hours.</text>
+    </trait>
+    <trait>
+      <name>Keen Smell</name>
+      <text>
+The sunsnacker has advantage on Wisdom (Perception) checks that rely on smell.</text>
+    </trait>
+    <trait>
+      <name>Flame Retardant</name>
+      <text>
+The sunsnacker has resistance to fire damage.</text>
+    </trait>
+    <trait>
+      <name>Solar Beam I</name>
+      <text>
+As an action, the sunsnacker can unleash a beam of radiant energy from its distended maw. Each creature in a 5-foot-wide, 30-foot-long line must make a Dexterity saving throw, taking 17 (5d6) radiant damage on a failed save, or half as much damage on a successful one.
+
+After the sunsnacker uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+When the sunsnacker's tamer reaches 9th level in the tamer class, the damage of this action increases to 24 (7d6).</text>
+      <attack>Solar Beam||5d6</attack>
+      <attack>Solar Beam I||7d6</attack>
+    </trait>
+    <trait>
+      <name>Solar Beam II</name>
+      <text>
+The damage of the sunsnacker's Solar Beam action increases to 31 (9d6), and the length of the line increases to 60 feet. The sunsnacker gains a +1 bonus to the save DC of this action.
+
+When the sunsnacker's tamer reaches 17th level in the tamer class, the damage of this action increases to 42 (12d6).</text>
+      <attack>Solar Beam II||9d6</attack>
+      <attack>Solar Beam III||12d6</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+As an action, the sunsnacker can make two beak attacks.</text>
+    </action>
+    <action>
+      <name>Beak</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
+      <attack>Beak|+4|1d6+2</attack>
+      <attack>Beak (Growth I)|+4|1d6+2</attack>
+      <attack>Beak (Growth II)|+4|1d8+2</attack>
+      <attack>Beak (Growth III)|+4|1d10+2</attack>
+      <attack>Beak (Growth IV)|+4|1d12+2</attack>
+    </action>
+    <action>
+      <name>Light</name>
+      <text>
+The sunsnacker creates a glowing orb that hovers in the air within 5 feet of it for the next minute, moving with it. The orb sheds bright light in a 10-foot radius, and dim light for an additional 10 feet.</text>
+    </action>
+    <action>
+      <name>Sunstep (Bonus Action)</name>
+      <text>
+As a bonus action when the sunsnacker is in bright sunlight, it can teleport up to 30 feet to an unoccupied space it can see that is also in bright sunlight.</text>
+    </action>
+    <action>
+      <name>Eye Tyrant</name>
+      <text>
+As an action while in dim light or darkness, the sunsnacker can cause its featherfronds to grow luminous and dance, appearing like a floating eye monster. Each creature within 150 feet of the sunsnacker that can see the sunsnacker but that doesn't know that it isn't an eye monster must succeed on a Wisdom saving throw or become frightened of the sunsnacker for 1 hour. A creature frightened in this way must use all its movement to move away from the sunsnacker. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A target that successfully saves is immune to this sunsnacker's Eye Tyrant action for the next 24 hours. The sunsnacker can lower its featherfronds as a bonus action, causing it to cease being luminous and no longer appear like a floating eye monster.
+
+The effect ends early on a creature if the owlbear ceases appearing like a floating eye monster, or if the creature perceives the sunsnacker's true form (for example, if the sunsnacker becomes brightly lit).</text>
+    </action>
+    <reaction>
+      <name>Suneater</name>
+      <text>
+Whenever the sunsnacker would take radiant damage, it can use its reaction to instead take no damage, metabolising the energy and regaining a number of hit points equal to the damage it would have taken after taking into account its resistance to radiant damage. It can use this reaction a number of times equal to its Constitution modifier (minimum of once) and regains all expended uses when its tamer finishes a long rest.</text>
+    </reaction>
+    <spells/>
+    <slots/>
+    <description>Type: fey
+Creature Component: suneater owlbear
+Bonus Tamer Improvement: Growth I and +2 Hit Dice
+
+A ferocious beast when roused, this cutie also likes belly rubs, sunbathing, and sweet treats. Be sure not to leave your dust of deliciousness unattended, or you'll have an extremely easyto-beguile owlbear. Such is the sunsnacker's wont.
+
+If any of the sunsnacker's traits or actions require a saving throw, it is always against the sunsnacker's save DC, as calculated below.
+
+Save DC = 8 + the tamer's proficiency bonus + the sunsnacker's Constitution modifier
+
+Monster Trainer:
+In addition to the improvements you can normally give your companions, you can choose to grant the sunsnacker the following improvements using your Monster Trainer feature:
+
+Growth I:
+Prerequisite: become a tamer's companion
+Type: Passive (companion)
+The sunsnacker's size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its beak attack increases to a d8. The sunsnacker gains this improvement when it becomes a companion; it doesn't cost an improvement.
+
+Flame Retardant:
+Prerequisite: 3rd-level tamer
+Type: Passive (companion)
+The sunsnacker has resistance to fire damage.
+
+Solar Beam I:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the sunsnacker can unleash a beam of radiant energy from its distended maw. Each creature in a 5-foot-wide, 30-foot-long line must make a Dexterity saving throw, taking 17 (5d6) radiant damage on a failed save, or half as much damage on a successful one.
+
+After the sunsnacker uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+When the sunsnacker's tamer reaches 9th level in the tamer class, the damage of this action increases to 24 (7d6).
+
+Multiattack:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the sunsnacker can make two beak attacks.
+
+Growth II:
+Prerequisite: 5th-level tamer, Growth I
+Type: Passive (companion)
+The sunsnacker's size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its beak attack increases from a d8 to d10.
+
+Sunstep:
+Prerequisite: 9th-level tamer
+Type: Active (bonus action)
+As a bonus action when the sunsnacker is in bright sunlight, it can teleport up to 30 feet to an unoccupied space it can see that is also in bright sunlight.
+
+Suneater:
+Prerequisite: 9th-level tamer
+Type: Active (reaction)
+Whenever the sunsnacker would take radiant damage, it can use its reaction to instead take no damage, metabolising the energy and regaining a number of hit points equal to the damage it would have taken after taking into account its resistance to radiant damage. It can use this reaction a number of times equal to its Constitution modifier (minimum of once) and regains all expended uses when its tamer finishes a long rest.
+
+Eye Tyrant:
+Prerequisite: 13th-level tamer
+Type: Active (action)
+As an action while in dim light or darkness, the sunsnacker can cause its featherfronds to grow luminous and dance, appearing like a floating eye monster. Each creature within 150 feet of the sunsnacker that can see the sunsnacker but that doesn't know that it isn't an eye monster must succeed on a Wisdom saving throw or become frightened of the sunsnacker for 1 hour. A creature frightened in this way must use all its movement to move away from the sunsnacker. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A target that successfully saves is immune to this sunsnacker's Eye Tyrant action for the next 24 hours. The sunsnacker can lower its featherfronds as a bonus action, causing it to cease being luminous and no longer appear like a floating eye monster.
+
+The effect ends early on a creature if the owlbear ceases appearing like a floating eye monster, or if the creature perceives the sunsnacker's true form (for example, if the sunsnacker becomes brightly lit).
+
+Growth III:
+Prerequisite: 13th-level tamer, Growth II
+Type: Passive (companion)
+The sunsnacker's size increases to Large, its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its beak attack increases from 1d10 to 2d6.
+
+Solar Beam II:
+Prerequisite: 13th-level tamer, Solar Beam I
+Type: Passive (companion)
+The damage of the sunsnacker's Solar Beam action increases to 31 (9d6), and the length of the line increases to 60 feet. The sunsnacker gains a +1 bonus to the save DC of this action.
+
+When the sunsnacker's tamer reaches 17th level in the tamer class, the damage of this action increases to 42 (12d6).
+
+Growth IV:
+Prerequisite: 17th-level tamer, Growth III
+Type: Passive (companion)
+The sunsnacker's size increases to Huge, its Hit Die size increases to a d12 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its beak attack increases from 2d6 to 2d8.
+
+Source:	Heliana's Guide to Monster Hunting p. 245 (Third Party)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Tarling</name>
+    <size>T</size>
+    <type>Elemental</type>
+    <alignment>Unaligned</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>4 (1d4 + 1)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <str>14</str>
+    <dex>10</dex>
+    <con>15</con>
+    <int>4</int>
+    <wis>10</wis>
+    <cha>8</cha>
+    <save/>
+    <skill/>
+    <passive>10</passive>
+    <languages/>
+    <cr>1/8</cr>
+    <exp>25</exp>
+    <resist>Acid, Piercing, Poison</resist>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Flammable</name>
+      <text>
+If the tarling takes fire damage, it ignites. It and any creature it is grappling take 2 (1d4) fire damage at the start of each of its turns and its weapon attacks deal an additional 2 (1d4) fire damage on a hit. If the tarling is subject to heavy rainfall or it takes 5 or more cold damage in a single instance, the flames are extinguished.</text>
+      <attack>Flammable||1d4</attack>
+    </trait>
+    <trait>
+      <name>Oil Form</name>
+      <text>
+When the tarling tries to move through water, it instead uses its swimming speed to skim along the water's surface; it can't submerge below the surface of water without a powerful detergent.</text>
+    </trait>
+    <trait>
+      <name>Refractive Exterior</name>
+      <text>
+When the tarling is targeted by a magic missile spell or a spell that requires a ranged attack roll, roll a d4. On a 4, the tarling is unaffected and the energy is refracted into a random elemental type and a bolt of energy fires back at the caster as a ranged spell attack, using the caster's spell attack modifier and dealing damage equal to the tarling's current Hit Die size (see Growth improvements) on a hit. Roll another d4 to determine the damage type: 1-acid, 2-cold, 3-fire, 4-lightning.</text>
+      <attack>Refractive Exterior||1d4</attack>
+    </trait>
+    <trait>
+      <name>Titanspawn</name>
+      <text>
+The tarling is immune to the charmed and frightened conditions.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+As an action, the tarling makes two attacks: one with its bite and one with its tail.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Bite|+4|1d4+2</attack>
+      <attack>Bite (Growth I)|+4|1d6+2</attack>
+      <attack>Bite (Growth II)|+4|1d8+2</attack>
+      <attack>Bite (Growth III)|+4|1d10+2</attack>
+      <attack>Bite (Growth IV)|+4|1d12+2</attack>
+    </action>
+    <action>
+      <name>Tail</name>
+      <text>
+Melee Weapon Attack: Str modifier + PB to hit, reach 10 ft., one target. Hit: 1d6 + Str modifier bludgeoning damage.</text>
+      <attack>Tail|+4|1d6+2</attack>
+      <attack>Tail (Growth II)|+4|1d8+2</attack>
+      <attack>Tail (Growth III)|+4|1d10+2</attack>
+      <attack>Tail (Growth IV)|+4|1d12+2</attack>
+    </action>
+    <action>
+      <name>Necrotar Tongue I</name>
+      <text>
+As an action, the tarling can spew a whip-like tongue of elastic tar at a creature no larger than itself that it can see within 20 feet of it. The target must succeed on a Strength saving throw or become grappled (escape DC equals save DC) by the tarling and be pulled up to 15 feet closer to the tarling. Until this grapple ends, the target is restrained, takes 9 (2d8) necrotic damage at the start of each of its turns, and the tarling can't use its bite attack against a different target. On a successful save, the creature takes half as much damage and isn't grappled, pulled, or restrained.
+
+After the tarling uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+When the tarling's tamer reaches 9th level in the tamer class, the recurring damage of this action increases to 13 (3d8).</text>
+      <attack>Necrotar Tongue||2d8</attack>
+      <attack>Necrotar Tongue I||3d8</attack>
+    </action>
+    <action>
+      <name>Necrotar Tongue II</name>
+      <text>
+The range of the tarling's Necrotar Tongue action increases to 40 feet, it can pull the target up to 35 feet closer to it on a failed save, and the damage dealt to the grappled target increases to 18 (4d8) necrotic damage.
+
+When the tarling's tamer reaches 17th level in the tamer class, the recurring damage of this action increases to 22 (5d8).</text>
+      <attack>Necrotar Tongue II|4d8</attack>
+      <attack>Necrotar Tongue III||5d8</attack>
+    </action>
+    <action>
+      <name>Arcane Animation</name>
+      <text>
+As an action, the tarling can reanimate one corpse within 5 feet of it, merging its body with the corpse for the next hour. The corpse must have been a creature with a challenge rating equal to or lower than the tamer's proficiency bonus and been of a size equal to or smaller than the tarling.
+
+For the duration, the tarling gains the non-flying speeds of the corpse's original creature and has two pools of hit points: its own and those from the corpse it inhabits. The corpse's pool of hit points equals half the original creature's hit point maximum. Whenever the tarling takes damage, half of the damage is transferred to the corpse and subtracted from that pool of hit points instead of the tarling's. If the corpse's pool of hit points is reduced to 0, the reanimation ends and the corpse is destroyed.
+
+After the tarling uses this action, it can't do so again until its tamer finishes a long rest.</text>
+    </action>
+    <action>
+      <name>Arcane Activation (Bonus Action)</name>
+      <text>
+As a bonus action, the tarling can activate its arcane power source for 1 minute. For the duration, the tarling has resistance to necrotic damage and deals an additional 3 (1d6) necrotic damage when it hits a target with a melee attack.
+
+After the tarling uses this action, it can't do so again until its tamer finishes a long rest.</text>
+      <attack>Arcane Activation||1d6</attack>
+      <attack>Arcane Activation (Growth II)||1d8</attack>
+      <attack>Arcane Activation (Growth III)||1d10</attack>
+      <attack>Arcane Activation (Growth IV)||1d12</attack>
+    </action>
+    <action>
+      <name>Siege Monster (Bonus Action)</name>
+      <text>
+As a bonus action, the tarling can grow to Gargantuan size for 1 minute. It gains a number of temporary hit points equal to its maximum number of Hit Dice, and the damage dice of its bite and tail attacks increase to 4d4. For the duration, the tarling deals double damage to structures and objects.</text>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Type: elemental
+Creature Component: tar-rasque
+Bonus Tamer Improvement: Growth I and +2 Hit Dice
+
+Tarlings can draw upon the arcane power source around which they're crafted in order to enhance the decompositive powers innate to tar elementals. They can even manipulate the corpses of the deceased, puppeteering them as flesh suits that can absorb incoming blows. Biomancers posit that such companions can even assume the immense size of tarrasques for a short time.
+
+If any of the tarling's traits or actions require a saving throw, it is always against the tarling's save DC, as calculated below.
+
+Save DC = 8 + the tamer's proficiency bonus + the tarling's Constitution modifier
+
+Monster Trainer:
+In addition to the improvements you can normally give your companions, you can choose to grant the tarling the following improvements using your Monster Trainer feature:
+
+Growth I:
+Prerequisite: become a tamer's companion
+Type: Passive (companion)
+The tarling's size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its bite attack increases to a d6. The tarling gains this improvement when it becomes a companion; it doesn't cost an improvement.
+
+Arcane Activation:
+Prerequisite: 3rd-level tamer
+Type: Active (bonus action)
+As a bonus action, the tarling can activate its arcane power source for 1 minute. For the duration, the tarling has resistance to necrotic damage and deals an additional 3 (1d6) necrotic damage when it hits a target with a melee attack. After the tarling uses this action, it can't do so again until its tamer finishes a long rest.
+
+Growth II:
+Prerequisite: 3rd-level tamer, Growth I
+Type: Passive (companion)
+The tarling's size increases to Medium, its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its bite and tail attacks (see below), as well as its Arcane Activation, increase from a d6 to a d8. This growth improvement ignores the normal maximum companion size for a tamer.
+
+Multiattack:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+The tarling gains two new action options:
+Tail and Multiattack. The damage die of the tail attack increases with the specified die size in the tarling's Growth improvements.
+
+Tail. Melee Weapon Attack: Str modifier + PB to hit, reach 10 ft., one target. Hit: 1d6 + Str modifier bludgeoning damage.
+
+Multiattack. As an action, the tarling makes two attacks: one with its bite and one with its tail.
+
+Necrotar Tongue I:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the tarling can spew a whip-like tongue of elastic tar at a creature no larger than itself that it can see within 20 feet of it. The target must succeed on a Strength saving throw or become grappled (escape DC equals save DC) by the tarling and be pulled up to 15 feet closer to the tarling. Until this grapple ends, the target is restrained, takes 9 (2d8) necrotic damage at the start of each of its turns, and the tarling can't use its bite attack against a different target. On a successful save, the creature takes half as much damage and isn't grappled, pulled, or restrained.
+
+After the tarling uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+When the tarling's tamer reaches 9th level in the tamer class, the recurring damage of this action increases to 13 (3d8).
+
+Refractive Exterior:
+Prerequisite: 5th-level tamer
+Type: Passive (companion)
+When the tarling is targeted by a magic missile spell or a spell that requires a ranged attack roll, roll a d4. On a 4, the tarling is unaffected and the energy is refracted into a random elemental type and a bolt of energy fires back at the caster as a ranged spell attack, using the caster's spell attack modifier and dealing damage equal to the tarling's current Hit Die size (see Growth improvements) on a hit. Roll another d4 to determine the damage type: 1-acid, 2-cold, 3-fire, 4-lightning.
+
+Arcane Animation:
+Prerequisite: 9th-level tamer, Arcane Activation
+Type: Active (action)
+As an action, the tarling can reanimate one corpse within 5 feet of it, merging its body with the corpse for the next hour. The corpse must have been a creature with a challenge rating equal to or lower than the tamer's proficiency bonus and been of a size equal to or smaller than the tarling.
+
+For the duration, the tarling gains the non-flying speeds of the corpse's original creature and has two pools of hit points: its own and those from the corpse it inhabits. The corpse's pool of hit points equals half the original creature's hit point maximum. Whenever the tarling takes damage, half of the damage is transferred to the corpse and subtracted from that pool of hit points instead of the tarling's.
+
+If the corpse's pool of hit points is reduced to 0, the reanimation ends and the corpse is destroyed.
+
+After the tarling uses this action, it can't do so again until its tamer finishes a long rest.
+
+Growth III:
+Prerequisite: 9th-level tamer, Growth II
+Type: Passive (companion)
+The tarling's size increases to Large, its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its bite and tail attacks (see below), as well as its Arcane Activation, increase from a d8 to a d10. This growth improvement ignores the normal maximum companion size for a tamer.
+
+Growth IV:
+Prerequisite: 13th-level tamer, Growth III
+Type: Passive (companion)
+The tarling's size increases to Huge, its Hit Die size increases to a d12 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage dice of its bite and tail attacks (see below), as well as its Arcane Activation, increase from a d10 to a d12. This growth improvement ignores the normal maximum companion size for a tamer.
+
+Necrotar Tongue II:
+Prerequisite: 13th-level tamer, Necrotar Tongue I
+Type: Passive (companion)
+The range of the tarling's Necrotar Tongue action increases to 40 feet, it can pull the target up to 35 feet closer to it on a failed save, and the damage dealt to the grappled target increases to 18 (4d8) necrotic damage.
+
+When the tarling's tamer reaches 17th level in the tamer class, the recurring damage of this action increases to 22 (5d8).
+
+Siege Monster:
+Prerequisite: 17th-level tamer, Growth IV
+Type: Active (bonus action)
+As a bonus action, the tarling can grow to Gargantuan size for 1 minute. It gains a number of temporary hit points equal to its maximum number of Hit Dice, and the damage dice of its bite and tail attacks increase to 4d4. For the duration, the tarling deals double damage to structures and objects.
+
+Titanspawn:
+Prerequisite: 17th-level tamer
+Type: Passive (companion)
+The tarling is immune to the charmed and frightened conditions.
+
+Source:	Heliana's Guide to Monster Hunting p. 251 (Third Party)</description>
     <environment/>
   </monster>
 </compendium>
