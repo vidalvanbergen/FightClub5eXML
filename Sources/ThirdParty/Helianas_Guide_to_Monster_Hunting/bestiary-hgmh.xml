@@ -46,7 +46,7 @@ Melee Weapon Attack:+4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.<
     <environment/>
   </monster>
 
-  <!-- Familiars -->
+  <!--amiliars -->
   <monster>
     <name>Aboling</name>
     <size>T</size>
@@ -64,8 +64,7 @@ Melee Weapon Attack:+4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.<
     <save/>
     <skill>Arcana +4, History +4, Insight +2, Perception +2</skill>
     <passive>12</passive>
-    <languages>understands emotions and imagery but doesn’t
-speak, telepathy 30 ft.</languages>
+    <languages>understands emotions and imagery but doesn't speak, telepathy 30 ft.</languages>
     <cr>1/8</cr>
     <exp>25</exp>
     <resist/>
@@ -83,6 +82,11 @@ speak, telepathy 30 ft.</languages>
 The aboling can breathe air and water.</text>
     </trait>
     <action>
+      <name>Multiattack</name>
+      <text>
+As an action, the aboling can make two tentacle attacks.</text>
+    </action>
+    <action>
       <name>Tentacle</name>
       <text>
 Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.</text>
@@ -96,7 +100,18 @@ The aboling learns the surface thoughts of one creature it can see within 30 fee
     </action>
     <spells/>
     <slots/>
-    <description>In addition to the improvements you can normally give your companions, you can choose to grant the aboling the following improvements using your Monster Trainer feature:
+    <description>Type: aberration
+Creature Component: aboleth or broodmother aboleth
+Bonus Tamer Improvement: Genetic Memory and +2 Hit Dice
+
+Encoded within aboleth ichor are the memories of its donor, secreted amongst the fluid's genetic code. In its base state, an aboling makes a functional amphibious companion, with a minor ability to sense the motives of other creatures. Upon bonding and training with a tamer, an aboling can fulfil its potential as a mind reader and repository of knowledge, sharing insights and information its progenitor acquired over its long life.
+
+If any of the aboling's traits or actions require saving throws, it is always against the aboling's save DC, as calculated below.
+
+Save DC = 8 + the tamer's proficiency bonus + the aboling's Constitution modifier
+
+Monster Trainer:
+In addition to the improvements you can normally give your companions, you can choose to grant the aboling the following improvements using your Monster Trainer feature:
 
 Genetic Memory:
 Prerequisite: become a tamer's companion
@@ -163,7 +178,526 @@ Prerequisite: 17th-level tamer, Enthral
 Type: Passive (companion)
 The aboling is always under the effects of the detect thoughts spell while it is summoned and can relay these read thoughts directly to its tamer while the aboling is within 100 feet of the tamer.
 
-Source:	Heliana's Guide to Monster Hunting p. 225</description>
+Source:	Heliana's Guide to Monster Hunting p. 224 (Third Party)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Dragonling</name>
+    <size>T</size>
+    <type>Dragon</type>
+    <alignment>Lawful Good</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>3 (1d4+1)</hp>
+    <speed>25 ft., fly 30 ft.</speed>
+    <str>14</str>
+    <dex>10</dex>
+    <con>12</con>
+    <int>9</int>
+    <wis>11</wis>
+    <cha>13</cha>
+    <save/>
+    <skill>Perception +2</skill>
+    <passive>12</passive>
+    <languages/>
+    <cr>1/8</cr>
+    <exp>25</exp>
+    <resist>see Metallic Character trait</resist>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Greedy</name>
+      <text>
+Whenever the dragonling first detects treasure worth 100 gp or more that isn't being worn or carried, it must succeed on a DC 11 Wisdom saving throw or get distracted. While distracted, it spends its movement and actions trying to get close to, and frolic in, the treasure. A distracted dragonling repeats the saving throw at the end of each of its turns, ending the effect on a success and becoming immune to the allure of that treasure for the next 24 hours.</text>
+    </trait>
+    <trait>
+      <name>Metallic Character</name>
+      <text>
+When the dragonling's tamer finishes a long rest, the dragonling gains an affinity for the element associated with the first precious metal it touches. This affinity grants the dragonling resistance to that damage type and lasts until its tamer next finishes a long rest. Copper gives acid affinity, gold gives fire, and magnetite &amp; silver give cold.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>
+Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
+      <attack>Bite|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Breath Weapon I</name>
+      <text>
+As an action, the dragonling can unleash a torrent of elemental energy. Each creature in an area must make a saving throw, taking 17 (5d6) damage on a failed save, or half as much damage on a successful one. The area, damage type, and saving throw depend on the dragonling's affinity (see its Metallic Character trait):
+
+	• Copper. A 5-foot-wide, 30-foot-long line that requires a Dexterity saving throw and deals acid damage.
+
+	• Gold. A 20-foot cone that requires a Dexterity saving throw and deals fire damage.
+
+	• Magnetite. A 20-foot cone that requires a Dexterity saving throw and deals piercing damage.
+
+	• Silver. A 20-foot cone that requires a Constitution saving throw and deals cold damage.
+
+After the dragonling uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+When the dragonling's tamer reaches 9th level in the tamer class, this action's damage increases to 24 (7d6).</text>
+      <attack>Breath Weapon I||5d6</attack>
+      <attack>Breath Weapon II||7d6</attack>
+    </action>
+    <action>
+      <name>Breath Weapon II</name>
+      <text>
+The damage of the dragonling's Breath Weapon action increases to 31 (9d6), the area of the cones increases to 30 feet, and the length of the line increases to 90 feet. The dragonling gains a +1 bonus to the save DC of this action.
+
+When the dragonling's tamer reaches 17th level in the tamer class, the Breath Weapon's damage increases to 42 (12d6).</text>
+      <attack>Breath Weapon II||9d6</attack>
+      <attack>Breath Weapon II (lvl 17)||12d6</attack>
+    </action>
+    <action>
+      <name>Wing Attack</name>
+      <text>
+As an action, the dragonling can beat its wings. Each creature within 10 feet of the dragonling must succeed on a Strength saving throw (DC = 8 + the tamer's proficiency bonus + the dragonling's Strength modifier) or take bludgeoning damage and be knocked prone. The damage equals 4d6 plus the dragonling's Strength modifier. Creatures larger than the dragonling automatically succeed on this saving throw. The dragonling can then fly up to half its flying speed.</text>
+      <attack>Wing Attack||4d6+%1</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Type: dragon
+Creature Component: any dragon
+Bonus Tamer Improvement: Growth I and +2 Hit Dice
+
+Like a dragon, but a little less greedy and a little more pliant, dragonlings are Humperdink's attempt at retaining a dragon's useful characteristics and limiting the more... tyrannical ones. Able to shift its makeup depending on the metals to which it is exposed, the dragonling is an adaptable, if distractible, companion.
+
+If any of the dragonling's traits or actions require a saving throw, it is always against the dragonling's save DC, as calculated below.
+
+Save DC = 8 + the tamer's proficiency bonus + the dragonling's Constitution modifier
+
+Monster Trainer:
+In addition to the improvements you can normally give your companions, you can choose to grant the dragonling the following improvements using your Monster Trainer feature:
+
+Growth I:
+Prerequisite: become a tamer's companion
+Type: Passive (companion)
+The dragonling's size increases to Small and its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its bite attack increases to a d8. The dragonling gains this improvement when it becomes a companion; it doesn't cost an improvement.
+
+Harden I:
+Prerequisite: 3rd-level tamer
+Type: Passive (companion)
+The dragonling gains a +2 bonus to its AC while it isn't wearing armor.
+
+Breath Weapon I:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the dragonling can unleash a torrent of elemental energy. Each creature in an area must make a saving throw, taking 17 (5d6) damage on a failed save, or half as much damage on a successful one. The area, damage type, and saving throw depend on the dragonling's affinity (see its Metallic Character trait):
+
+	• Copper. A 5-foot-wide, 30-foot-long line that requires a Dexterity saving throw and deals acid damage.
+
+	• Gold. A 20-foot cone that requires a Dexterity saving throw and deals fire damage.
+
+	• Magnetite. A 20-foot cone that requires a Dexterity saving throw and deals piercing damage.
+
+	• Silver. A 20-foot cone that requires a Constitution saving throw and deals cold damage.
+
+After the dragonling uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+When the dragonling's tamer reaches 9th level in the tamer class, this action's damage increases to 24 (7d6).
+
+Multiattack:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the dragonling can make two bite attacks.
+
+Growth II:
+Prerequisite: 5th-level tamer, Growth I
+Type: Passive (companion)
+The dragonling's size increases to Medium and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its bite attack increases from a d8 to a d10.
+
+Blindsight:
+Prerequisite: 9th-level tamer
+Type: Passive (companion)
+The dragonling gains blindsight to a range of 15 feet.
+
+Harden II:
+Prerequisite: 9th-level tamer, Harden I
+Type: Passive (companion)
+The dragonling gains a +2 bonus to its AC while it isn't wearing armor. This improvement is in addition to the bonus from Harden I.
+
+Breath Weapon II:
+Prerequisite: 13th-level tamer, Breath Weapon I
+Type: Active (action)
+The damage of the dragonling's Breath Weapon action increases to 31 (9d6), the area of the cones increases to 30 feet, and the length of the line increases to 90 feet. The dragonling gains a +1 bonus to the save DC of this action.
+
+When the dragonling's tamer reaches 17th level in the tamer class, the Breath Weapon's damage increases to 42 (12d6).
+
+Growth III:
+Prerequisite: 13th-level tamer, Growth II
+Type: Passive (companion)
+The dragonling's size increases to Large and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage die of its bite attack increases from a d10 to 2d6.
+
+Wing Attack:
+Prerequisite: 17th-level tamer
+Type: Active (action)
+As an action, the dragonling can beat its wings. Each creature within 10 feet of the dragonling must succeed on a Strength saving throw (DC = 8 + the tamer's proficiency bonus + the dragonling's Strength modifier) or take bludgeoning damage and be knocked prone. The damage equals 4d6 plus the dragonling's Strength modifier. Creatures larger than the dragonling automatically succeed on this saving throw. The dragonling can then fly up to half its flying speed.
+
+Source:	Heliana's Guide to Monster Hunting p. 227 (Third Party)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Gelatinooze</name>
+    <size>T</size>
+    <type>Ooze</type>
+    <alignment>Unaligned</alignment>
+    <ac>12 (natural armor)</ac>
+    <hp>5 (1d4+3)</hp>
+    <speed>25 ft., climb 25 ft.</speed>
+    <str>13</str>
+    <dex>6</dex>
+    <con>16</con>
+    <int>4</int>
+    <wis>8</wis>
+    <cha>4</cha>
+    <save/>
+    <skill/>
+    <passive>9</passive>
+    <languages/>
+    <cr>1/8</cr>
+    <exp>25</exp>
+    <resist/>
+    <immune>acid</immune>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Acidic Touch</name>
+      <text>
+At the start of the gelatinooze's turn, it can choose to secrete a small dose of acid (no action required). Each creature that is grappling it or that it is grappling takes acid damage equal to the gelatinooze's Constitution modifier.</text>
+    </trait>
+    <trait>
+      <name>Dissolve Metal (Recharges after a Short or Long Rest)</name>
+      <recharge>SHORT</recharge>
+      <text>
+Over the course of 1 minute, the gelatinooze can dissolve up to 1 pound of nonmagical metal it is touching.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>
+As an action, the gelatinooze can make two pseudopod attacks.</text>
+    </action>
+    <action>
+      <name>Pseudopod</name>
+      <text>
+Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) acid damage.</text>
+      <attack>Pseudopod|+3|1d4+1</attack>
+      <attack>Pseudopod (Growth I)|+3|1d6+1</attack>
+      <attack>Pseudopod (Growth II)|+3|1d8+1</attack>
+      <attack>Pseudopod (Growth III)|+3|1d10+1</attack>
+      <attack>Pseudopod (Growth IV)|+3|1d12+1</attack>
+    </action>
+    <action>
+      <name>Engulf</name>
+      <text>
+As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature's space, the creature must make a Dexterity saving throw.
+
+On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.
+
+On a failed save, the gelatinooze enters the creature's space, stops moving and engulfs the creature, which takes 7 (2d6) acid damage. The engulfed creature can't breathe, is restrained, and takes 7 (2d6) acid damage at the start of each of the gelatinooze's turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.
+
+An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze's save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.</text>
+      <attack>Engulf||2d6</attack>
+      <attack>Engulf (Growth II)||3d6</attack>
+      <attack>Engulf (Growth III)||4d6</attack>
+      <attack>Engulf (Growth IV)||5d6</attack>
+    </action>
+    <action>
+      <name>Spit</name>
+      <text>
+Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d6 + Str or Dex modifier acid damage.</text>
+      <attack>Spit (Str)|%1+2|2d6+%1</attack>
+      <attack>Spit (Dex)|%2+2|2d6+%2</attack>
+      <attack>Spit (Str + Growth II)|%1+2|2d8+%1</attack>
+      <attack>Spit (Dex + Growth II)|%2+2|2d8+%2</attack>
+      <attack>Spit (Str + Growth III)|%1+2|2d10+%1</attack>
+      <attack>Spit (Dex + Growth III)|%2+2|2d10+%2</attack>
+      <attack>Spit (Str + Growth IV)|%1+2|2d12+%1</attack>
+      <attack>Spit (Dex + Growth IV)|%2+2|2d12+%2</attack>
+    </action>
+    <action>
+      <name>Phalanx</name>
+      <text>
+As an action while the gelatinooze is not in its Turtle form, it can brace itself in place, reducing its speed to 0 feet and presenting a phalanx of spiky things it has found. A creature that hits the gelatinooze with a melee attack while within 5 feet of it takes 2d6 piercing damage.
+
+As a bonus action, the gelatinooze can return to normal, regaining its normal speed.</text>
+      <attack>Phalanx||2d6</attack>
+    </action>
+    <action>
+      <name>Erupt</name>
+      <text>
+As an action, the gelatinooze can fire all the shrapnel, armour, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a Dexterity saving throw. A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.
+
+After the gelatinooze uses this action, it can't use its Erupt, Phalanx, or Turtle actions until it spends 1 hour absorbing rocks, metal, and other bric-a-brac.</text>
+        <attack>Erupt||4d6</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Type:
+ooze Creature Component: any polyhedrooze
+Bonus Tamer Improvement: Growth I and +2 Hit Dice
+
+A relatively recent creation, the gelatinous polyhedrooze builds on its forebears' mere six sides. Able to more selectively dissolve the objects it engulfs, this companion makes use of the arms and armor found lying around dungeons to form impenetrable barriers of overlapping shields and phalanx-like spears.
+
+If any of the gelatinooze's traits or actions require a saving throw, it is always against the gelatinooze's save DC, as calculated below.
+
+Save DC = 8 + the tamer's proficiency bonus + the gelatinooze's Strength modifier
+
+Monster Trainer:
+In addition to the improvements you can normally give your companions, you can choose to grant the gelatinooze the following improvements using your Monster Trainer feature:
+
+Growth I:
+Prerequisite: become a tamer's companion
+Type: Passive (companion)
+The gelatinooze's size increases to Small, it becomes shaped like a d6, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage die of its pseudopod attack increases to a d6. The gelatinooze gains this improvement when it becomes a companion; it doesn't cost an improvement.
+
+Reactive Mutations:
+Prerequisite: 3rd-level tamer
+Type: Active (bonus action)
+As a bonus action, the gelatinooze activates its immune system for the next minute. Immediately after the gelatinooze next takes damage, it gains resistance to that damage type for 1 minute.
+
+After the gelatinooze uses this action, it can't do so again until its tamer finishes a long rest.
+
+Engulf:
+Prerequisite: 3rd-level tamer
+Type: Active (action)
+As an action, the gelatinooze can move up to its speed. While doing so, it can enter the space of creatures smaller than its size. Whenever the gelatinooze enters a creature's space, the creature must make a Dexterity saving throw.
+
+On a successful save, the creature can choose to be pushed 5 feet back or to the side of the gelatinooze. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.
+
+On a failed save, the gelatinooze enters the creature's space, stops moving and engulfs the creature, which takes 7 (2d6) acid damage. The engulfed creature can't breathe, is restrained, and takes 7 (2d6) acid damage at the start of each of the gelatinooze's turns. When the gelatinooze moves, the engulfed creature moves with it. The gelatinooze can have only one creature engulfed at a time.
+
+An engulfed creature can try to escape by taking an action to make a Strength check against the gelatinooze's save DC. On a success, the creature escapes and enters a space of its choice within 5 feet of the gelatinooze.
+
+Growth II:
+Prerequisite: 5th-level tamer, Growth I
+Type: Passive (companion)
+The gelatinooze's size increases to Medium, it becomes shaped like a d8, and its Hit Die size increases to a d8 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its pseudopod and spit attacks increase from a d6 to a d8, and its Engulf action's damage increases to 10 (3d6).
+
+Multiattack:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the gelatinooze can make two pseudopod attacks.
+
+Spit:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+The gelatinooze gains a ranged weapon attack: Spit. The damage die of the spit attack increases with the specified die size in the gelatinooze's Growth improvements. Spit. 
+
+Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d6 + Str or Dex modifier acid damage.
+
+Phalanx:
+Prerequisite: 9th-level tamer
+Type: Active (action)
+As an action while the gelatinooze is not in its Turtle form, it can brace itself in place, reducing its speed to 0 feet and presenting a phalanx of spiky things it has found. A creature that hits the gelatinooze with a melee attack while within 5 feet of it takes 2d6 piercing damage.
+
+As a bonus action, the gelatinooze can return to normal, regaining its normal speed.
+
+Turtle:
+Prerequisite: 9th-level tamer
+Type: Active (action)
+As an action while the gelatinooze is not in its Phalanx form, it can hunker in place, reducing its speed to 0 feet and presenting a wall of metal and wood on one of its faces. Choose a direction and project a cone as if casting a cone-shaped spell with infinite length; the gelatinooze gains a +10 bonus to AC against all attacks originating from within that cone.
+
+As a bonus action, the gelatinooze can return to normal, regaining its speed and its normal AC.
+
+Growth III:
+Prerequisite: 9th-level tamer, Growth II
+Type: Passive (companion)
+The gelatinooze's size increases to Large, it becomes shaped like a d10, and its Hit Die size increases to a d10 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its pseudopod and spit attacks increase from a d8 to a d10, and its Engulf action's damage increases to 14 (4d6). This growth improvement ignores the normal maximum companion size for a tamer.
+
+Growth IV:
+Prerequisite: 13th-level tamer, Growth III
+Type: Passive (companion)
+The gelatinooze's size increases to Huge, it becomes shaped like a d12, and its Hit Die size increases to a d12 (its hit point maximum consequently increases by 1 for each of its Hit Dice). The damage dice of its pseudopod and spit attacks increase from a d10 to a d12, and its Engulf action's damage increases to 17 (5d6). This growth improvement ignores the normal maximum companion size for a tamer.
+
+Sanctuary:
+Prerequisite: 13th-level tamer, Engulf
+Type: Active (action) As an action, the gelatinooze can move into the space of an object or willing creature that is smaller than it and encapsulate it within its body. The object or creature can be seen but has total cover. No energy or spell effects that either originate from or target the encapsulated object or creature can pass through the gelatinooze. The gelatinooze naturally diffuses air to the object or creature within it, allowing it to breathe. The gelatinooze can contain up to 1 creature of a size smaller than it, whether it has it engulfed (using the Engulf action) or encapsulated using this trait.
+
+An encapsulated creature can exit the polyhedrooze by expending 2 feet of movement for each foot of gelatinooze that it passes through. As a bonus action, the gelatinooze can expel the object or creature into an adjacent, unoccupied space of the gelatinooze's choice.
+
+Erupt:
+Prerequisite: 17th-level tamer, Phalanx or Turtle
+Type: Active (action)
+As an action, the gelatinooze can fire all the shrapnel, armour, and weapons it has accumulated in its body. It can choose to focus this in a 60-foot cone or erupt in all directions in a 20-foot-radius sphere centred on itself. Each creature in the area other than the gelatinooze must make a Dexterity saving throw. A creature takes 14 (4d6) bludgeoning damage, 14 (4d6) piercing damage, 14 (4d6) slashing damage, and 14 (4d6) acid damage on a failed save, or half as much damage on a successful one.
+
+After the gelatinooze uses this action, it can't use its Erupt, Phalanx, or Turtle actions until it spends 1 hour absorbing rocks, metal, and other bric-a-brac.
+
+Source:	Heliana's Guide to Monster Hunting p. 230 (Third Party)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Hyphan</name>
+    <size>T</size>
+    <type>Plant</type>
+    <alignment>Neutral Good</alignment>
+    <ac>11 (natural armor)</ac>
+    <hp>4 (1d4 + 2)</hp>
+    <speed>25 ft., climb 25 ft.</speed>
+    <str>7</str>
+    <dex>10</dex>
+    <con>14</con>
+    <int>12</int>
+    <wis>13</wis>
+    <cha>10</cha>
+    <save/>
+    <skill>Medicine +3, Nature +3</skill>
+    <passive>11</passive>
+    <languages/>
+    <cr>1/8</cr>
+    <exp>25</exp>
+    <resist>necrotic</resist>
+    <immune/>
+    <vulnerable/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>
+The hyphan can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>
+While in sunlight, the hyphan has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Bloomshroom 1</name>
+      <text>
+As an action, a creature can eat this mushroom, regaining 2d4 + 2 hit points and gaining advantage on all Constitution saving throws for 1 minute.</text>
+      <attack>Bloomshroom 1||2d4+2</attack>
+    </trait>
+    <trait>
+      <name>Bloomshroom 2</name>
+      <text>
+As an action, a creature can throw this volatile mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of flames. Each creature in the area must make a Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.</text>
+      <attack>Bloomshroom 2||4d6</attack>
+    </trait>
+    <action>
+      <name>Poison Spray</name>
+      <text>
+One creature within 15 feet of the hyphan must succeed on a DC 12 Constitution saving throw or take 6 (1d12) poison damage.</text>
+      <attack>Poison Spray||1d12</attack>
+      <attack>Poison Spray (Growth I)||2d12</attack>
+    </action>
+    <action>
+      <name>Calming Spores (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>
+One creature within 30 feet of the hyphan must succeed on a DC 12 Charisma saving throw or have its emotions calmed for the next minute. A willing creature can choose to fail this saving throw. The hyphan can choose to suppress any effect causing the target to be charmed or frightened. When this effect ends, any suppressed effect resumes, provided that its duration hasn't expired in the meantime. Alternatively, the hyphan can make the target indifferent about creatures of its choice that the target is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the GM rules otherwise.</text>
+    </action>
+    <action>
+      <name>Puffballs</name>
+      <text>
+As an action, the hyphan can cause two 10-foot squares of dirt, rock, or wood it can see within 60 feet of it to sprout tiny puffball mushrooms, which last for 1 hour or until the hyphan dismisses them as an action. The squares must be contiguous with one another.
+
+When a creature enters the area, the 10-foot square of puffballs explodes, disappearing into a cloud of spores. Each non-hyphan creature in the area or within 5 feet of the area must make a Constitution saving throw, taking 13 (2d12) necrotic damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Puffballs I||2d12</attack>
+      <attack>Puffballs II||4d12</attack>
+      <attack>Puffballs III||5d12</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Type: plant Creature
+Component: fungal heart
+Bonus Tamer Improvement: Helpful and +2 Hit Dice
+
+Always keen to offer aid, hyphans make excellent support companions, both on the battlefield and emotionally. Able to calm intense emotions, charm aggressors, and disappear into the earth, they are experts in de-escalation and can aid a party's escape by lacing large areas with necrotising puffballs.
+
+If any of the hyphan's traits or actions require a saving throw, it is always against the hyphan's save DC, as calculated below.
+
+Save DC = 8 + the tamer's proficiency bonus + the hyphan's Constitution modifier
+
+Monster Trainer:
+In addition to the improvements you can normally give your companions, you can choose to grant the hyphan the following improvements using your Monster Trainer feature:
+
+Helpful:
+Prerequisite: become a tamer's companion
+Type: Active (bonus action)
+As a bonus action, the hyphan takes the Help action. The hyphan gains this improvement when it becomes a companion; it doesn't cost an improvement.
+
+Detritivore:
+Prerequisite: 3rd-level tamer
+Type: Active (action)
+As an action, the hyphan can drain one Small or larger corpse within its reach, regaining hit points equal to twice its tamer's level. Once the hyphen has used this action, it can't do so again until its tamer finishes a long rest. A corpse can be drained by this or similar abilities only once.
+
+Growth:
+Prerequisite: 5th-level tamer
+Type: Passive (companion)
+The hyphan's size increases to Small, its Hit Die size increases to a d6 (its hit point maximum consequently increases by 1 for each of its Hit Dice), and the damage of its Poison Spray increases to 2d12.
+
+Hallucispores:
+Prerequisite: 5th-level tamer
+Type: Active (reaction)
+As a reaction when the hyphan takes damage, it can jettison out a cloud of spores. Each creature within 10 feet of it must succeed on a Wisdom saving throw or be charmed by the hyphan until the end of its next turn.
+
+The hyphan has a number of uses of this ability equal to its Constitution modifier (minimum 1) and regains all expended uses when its tamer finishes a long rest.
+
+Puffballs I:
+Prerequisite: 5th-level tamer
+Type: Active (action)
+As an action, the hyphan can cause two 10-foot squares of dirt, rock, or wood it can see within 60 feet of it to sprout tiny puffball mushrooms, which last for 1 hour or until the hyphan dismisses them as an action. The squares must be contiguous with one another.
+
+When a creature enters the area, the 10-foot square of puffballs explodes, disappearing into a cloud of spores. Each non-hyphan creature in the area or within 5 feet of the area must make a Constitution saving throw, taking 13 (2d12) necrotic damage on a failed save, or half as much damage on a successful one.
+
+After the hyphan uses this action, it can't do so again until the tamer finishes a short or long rest.
+
+When the hyphan's tamer reaches 9th level in the tamer class, the hyphan can create one additional 10-foot square of puffballs (three total), and the damage increases to 19 (3d12).
+
+Damp Dark Dweller:
+Prerequisite: 9th-level tamer, Detritivore
+Type: Passive (companion &amp; tamer)
+The hyphan has immunity to necrotic damage. In addition, while the hyphan is summoned, its tamer has darkvision out to a range of 60 feet. If its tamer already has darkvision, the range is increased by 30 feet.
+
+Fungal Fruits:
+Prerequisite: 9th-level tamer
+Type: Active (1 minute)
+Over the course of a minute, the hyphan can grow a random assortment of mushrooms on its body. Each time it does this, roll a d4 twice and consult the options below to determine which two mushrooms grow.
+
+1-Bloomshroom:
+As an action, a creature can eat this mushroom, regaining 2d4 + 2 hit points and gaining advantage on all Constitution saving throws for 1 minute.
+
+2-Boomshroom:
+As an action, a creature can throw this volatile mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of flames. Each creature in the area must make a Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.
+
+3-Doomshroom:
+As an action, a creature can throw this dusky mushroom at a point it can see within 60 feet of it, where it explodes in a 10-foot-radius sphere of purple spores. Each creature in the area must succeed on a Constitution saving throw or become afflicted by the bane spell for 1 minute (concentration not required). An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+4-Gloomshroom:
+As an action, a creature can eat this mushroom. For the next hour, it gains darkvision out to a range of 60 feet. If it already has darkvision, the range of this vision is increased by 30 feet.
+
+The mushrooms last until the hyphan's tamer next finishes a long rest, but lose all magical effects 10 minutes after they are plucked. You can pluck a mushroom as part of the action to use it. After the hyphan uses this trait, it can't do so again until its tamer finishes a long rest.
+
+Multihelp:
+Prerequisite: 13th-level tamer, Helpful
+Type: Active (action)
+When the hyphan takes the Disengage action, it can take the Help action up to three times on that turn as part of the same action. After it uses this action, it can't do so again until its tamer finishes a short or long rest.
+
+Puffballs II:
+Prerequisite: 13th-level tamer, Puffballs I
+Type: Active (action)
+When the hyphan uses its Puffballs action, it can create an additional 10-foot square of puffball mushrooms, for a total of four 10-foot squares. The damage they deal increases to 26 (4d12). The hyphan gains a +1 bonus to the save DC of this action. When the hyphan's tamer reaches 17th level in the tamer class, the hyphan can create one additional 10-foot square of puffballs (five total), and the damage increases to 32 (5d12).
+
+Mycelial Reconstitution:
+Prerequisite: 17th-level tamer
+Type: Active (action)
+As an action, the hyphan can dissolve into mycelia, ending the grappled and restrained conditions on it and reappearing in an unoccupied space on the ground it can see within 30 feet of it.
+
+Source:	Heliana's Guide to Monster Hunting p. 233 (Third Party)</description>
     <environment/>
   </monster>
 </compendium>
