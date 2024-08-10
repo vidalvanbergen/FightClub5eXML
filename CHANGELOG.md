@@ -3,11 +3,12 @@
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
-* Adding content from `Heliana's Guide to Monster Hunting`.
+* Adding `Heliana's Guide to Monster Hunting` content.
+* Adding `Xanathar's Lost Notes to Everything Else` content.
 
 ### 2024-##-##
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
-* Added `Xanathar's Lost Notes to Everything Else` content.
+* Added `Quests from the Infinite Staircase` content.
 * Fixed the items from `The Book of Many Things` to have correct formatting and other items.
 * Reformatted some class features to be more in line with each other and the source material.
 * `Order of the Scribes (UA)` has been superseded by `Order of the Scribes` from `Tasha's Cauldron of Everything`.
