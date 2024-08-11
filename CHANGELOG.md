@@ -12,8 +12,8 @@
 * Fixed the items from `The Book of Many Things` to have correct formatting and other items.
 * Reformatted some class features to be more in line with each other and the source material.
 * `Order of the Scribes (UA)` has been superseded by `Order of the Scribes` from `Tasha's Cauldron of Everything`.
+* Re-organized `Homebrew` and `Wizards of the Coast` content.
 * Marked magic homebrew weapons as `magic`.
-* Re-organized `Homebrew` content.
 * Added `Metamagic` spell list.
 * Other minor changes.
 
