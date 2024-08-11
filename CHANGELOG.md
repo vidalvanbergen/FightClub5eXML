@@ -13,7 +13,8 @@
 * Reformatted some class features to be more in line with each other and the source material.
 * `Order of the Scribes (UA)` has been superseded by `Order of the Scribes` from `Tasha's Cauldron of Everything`.
 * Re-organized `Homebrew` and `Wizards of the Coast` content.
-* Marked magic homebrew weapons as `magic`.
+* `GiantOptions`'s Outsized Might is UA material.
+* Fixed `magic` homebrew weapons.
 * Added `Metamagic` spell list.
 * Other minor changes.
 
