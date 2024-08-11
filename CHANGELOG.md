@@ -3,19 +3,23 @@
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
+
+#### In Progress:
 * Adding `Heliana's Guide to Monster Hunting` content.
 * Adding `Xanathar's Lost Notes to Everything Else` content.
 
-### 2024-##-##
+### 2024-08-11
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
 * Added `Quests from the Infinite Staircase` content.
 * Fixed the items from `The Book of Many Things` to have correct formatting and other items.
 * Reformatted some class features to be more in line with each other and the source material.
 * `Order of the Scribes (UA)` has been superseded by `Order of the Scribes` from `Tasha's Cauldron of Everything`.
-* Re-organized `Homebrew` and `Wizards of the Coast` content.
-* `GiantOptions`'s Outsized Might is UA material.
-* Fixed `magic` homebrew weapons.
-* Added `Metamagic` spell list.
+* Corrected "Outsized Might" and "Armor of Tools" to be labeled and placed under UnearthedArcana.
+* Re-organized `Homebrew`, `Wizards of the Coast`, `Adventures` and `PartneredContent` materials.
+* Added `Special Adventurers League Forgotten Realms` collection.
+* Added variant `PartneredContent` collections.
+* Added a `Metamagic` spell list.
+* Fixed magic homebrew weapons.
 * Other minor changes.
 
 ### 2024-06-13
