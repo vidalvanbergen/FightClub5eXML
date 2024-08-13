@@ -6,7 +6,6 @@
 
 #### In Progress:
 * Adding `Heliana's Guide to Monster Hunting` content.
-* Adding `Xanathar's Lost Notes to Everything Else` content.
 
 ### 2024-##-##
 * Streamlined some `Ranger` features.
@@ -21,6 +20,7 @@
 * Corrected "Outsized Might" and "Armor of Tools" to be labeled and placed under UnearthedArcana.
 * Re-organized `Homebrew`, `Wizards of the Coast`, `Adventures` and `PartneredContent` materials.
 * Added `Special Adventurers League Forgotten Realms` collection.
+* Added `Xanathar's Lost Notes to Everything Else` content.
 * Added variant `PartneredContent` collections.
 * Added a `Metamagic` spell list.
 * Fixed magic homebrew weapons.
