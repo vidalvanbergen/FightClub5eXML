@@ -10,6 +10,7 @@
 ### 2024-##-##
 * Streamlined some `Ranger` features.
 * Added `Ranger (Primal Awareness)` spell list.
+* Added Matthew Mercer's `College of the Maestro` Bard subclass.
 
 ### 2024-08-11
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
