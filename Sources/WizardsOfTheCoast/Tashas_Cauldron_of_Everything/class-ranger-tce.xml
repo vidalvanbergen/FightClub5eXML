@@ -3,9 +3,11 @@
   <class>
     <name>Ranger</name>
     <autolevel level="1">
-      <feature>
+      <feature optional="YES">
         <name>Favored Foe</name>
-        <text>When you hit a creature with an attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy for 1 minute or until you lose your concentration (as if you were concentrating on a spell).
+        <text>Replaces the Favored Enemy feature and works with the Foe Slayer feature.
+
+When you hit a creature with an attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy for 1 minute or until you lose your concentration (as if you were concentrating on a spell).
 
 The first time on each of your turns that you hit the favored enemy and deal damage to it, including when you mark it, you can increase that damage by 1d4.
 
@@ -14,18 +16,23 @@ You can use this feature to mark a favored enemy a number of times equal to your
 This feature's extra damage increases when you reach certain levels in this class: to 1d6 at 6th level and to 1d8 at 14th level.
 
 Source:	Tasha's Cauldron of Everything p. 56</text>
+        <roll>1d4</roll>
+        <roll>1d6</roll>
+        <roll>1d8</roll>
       </feature>
     </autolevel>
 
     <autolevel level="1">
-      <feature>
+      <feature optional="YES">
         <name>Deft Explorer</name>
-        <text>You are an unsurpassed explorer and survivor, both in the wilderness and in dealing with others on your travels. You gain the Canny benefit below, and you gain an additional benefit below when you reach 6th level and 10th level in this class.
+        <text>Replaces the Natural Explorer feature.
+
+You are an unsurpassed explorer and survivor, both in the wilderness and in dealing with others on your travels. You gain the Canny benefit below, and you gain an additional benefit when you reach 6th level and 10th level in this class.
 
 Source:	Tasha's Cauldron of Everything p. 56</text>
       </feature>
       <feature optional="YES">
-        <name>Deft Explorer: Canny (1st Level)</name>
+        <name>Deft Explorer: Canny</name>
         <text>Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.
 
 You can also speak, read, and write two additional languages of your choice.
@@ -35,6 +42,12 @@ Source:	Tasha's Cauldron of Everything p. 56</text>
     </autolevel>
 
     <autolevel level="2">
+      <feature optional="YES">
+        <name>Spellcasting Focus</name>
+        <text>You can use a druidic focus as a spellcasting focus for your ranger spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals.
+
+Source:	Tasha's Cauldron of Everything p. 56</text>
+      </feature>
       <feature optional="YES">
         <name>Fighting Style: Blind Fighting</name>
         <text>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.
@@ -63,8 +76,7 @@ Source:	Tasha's Cauldron of Everything p. 57</text>
     <autolevel level="4">
       <feature>
         <name>Martial Versatility</name>
-        <text>4th-level ranger optional class features
-Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.
+        <text>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.
 
 Source:	Tasha's Cauldron of Everything p. 57</text>
       </feature>
@@ -72,7 +84,7 @@ Source:	Tasha's Cauldron of Everything p. 57</text>
 
     <autolevel level="6">
       <feature optional="YES">
-        <name>Deft Explorer: Roving (6th Level)</name>
+        <name>Deft Explorer: Roving</name>
         <text>Your walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed.
 
 Source:	Tasha's Cauldron of Everything p. 56</text>
@@ -83,8 +95,7 @@ Source:	Tasha's Cauldron of Everything p. 56</text>
     <autolevel level="8">
       <feature>
         <name>Martial Versatility</name>
-        <text>4th-level ranger optional class features
-Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.
+        <text>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.
 
 Source:	Tasha's Cauldron of Everything p. 57</text>
       </feature>
@@ -92,50 +103,82 @@ Source:	Tasha's Cauldron of Everything p. 57</text>
 
     <autolevel level="10">
       <feature optional="YES">
-        <name>Deft Explorer: Tireless (10th Level)</name>
+        <name>Deft Explorer: Tireless</name>
         <text>As an action, you can give yourself a number of temporary hit points equal to 1d8 + your Wisdom modifier (minimum of 1 temporary hit point). You can use this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
 
 In addition, whenever you finish a short rest, your exhaustion level, if any, is decreased by 1.
 
 Source:	Tasha's Cauldron of Everything p. 56</text>
+          <roll>1d8+%5</roll>
       </feature>
-      </autolevel>
+      <feature optional="YES">
+        <name>Nature's Veil</name>
+        <text>Replaces the Hide in Plain Sight feature.
+
+You draw on the powers of nature to hide yourself from view briefly. As a bonus action, you can magically become invisible, along with any equipment you are wearing or carrying, until the start of your next turn.
+
+You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+
+Source:	Tasha's Cauldron of Everything p. 56</text>
+      </feature>
+      <counter>
+        <name>Tireless</name>
+        <value>4</value>
+        <reset>L</reset>
+      </counter>
+      <counter>
+        <name>Nature's Veil</name>
+        <value>4</value>
+        <reset>L</reset>
+      </counter>
+    </autolevel>
 
     <autolevel level="12">
       <feature>
         <name>Martial Versatility</name>
-        <text>4th-level ranger optional class features
-Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.
+        <text>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.
 
 Source:	Tasha's Cauldron of Everything p. 57</text>
       </feature>
+    </autolevel>
+    <autolevel level="13">
+      <counter>
+        <name>Tireless</name>
+        <value>5</value>
+        <reset>L</reset>
+      </counter>
+      <counter>
+        <name>Nature's Veil</name>
+        <value>5</value>
+        <reset>L</reset>
+      </counter>
     </autolevel>
     <autolevel level="16">
       <feature>
         <name>Martial Versatility</name>
-        <text>4th-level ranger optional class features
-Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.
+        <text>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.
 
 Source:	Tasha's Cauldron of Everything p. 57</text>
       </feature>
+    </autolevel>
+    <autolevel level="17">
+      <counter>
+        <name>Tireless</name>
+        <value>6</value>
+        <reset>L</reset>
+      </counter>
+      <counter>
+        <name>Nature's Veil</name>
+        <value>6</value>
+        <reset>L</reset>
+      </counter>
     </autolevel>
     <autolevel level="19">
       <feature>
         <name>Martial Versatility</name>
-        <text>4th-level ranger optional class features
-Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.
+        <text>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.
 
 Source:	Tasha's Cauldron of Everything p. 57</text>
-      </feature>
-    </autolevel>
-
-    <autolevel level="2">
-      <feature>
-        <name>Spellcasting Focus</name>
-        <text>2nd-level ranger optional class features
-You can use a druidic focus as a spellcasting focus for your ranger spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals.
-
-Source:	Tasha's Cauldron of Everything p. 56</text>
       </feature>
     </autolevel>
 
@@ -314,7 +357,9 @@ Source:	Tasha's Cauldron of Everything p. 59</text>
         <text>Your Gathered Swarm grows mightier in the following ways:
 
 	• The damage of Gathered Swarm increases to 1d8.
+
 	• If a creature fails its saving throw against being moved by Gathered Swarm, you can also cause the swarm to knock the creature prone.
+
 	• When you are moved by Gathered Swarm, it gives you half cover until the start of your next turn.
 
 Source:	Tasha's Cauldron of Everything p. 59</text>
@@ -359,9 +404,11 @@ Source:	Tasha's Cauldron of Everything p. 59</text>
     </autolevel>
 
     <autolevel level="3">
-      <feature>
+      <feature optional="YES">
         <name>Primal Awareness</name>
-        <text>You can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.
+        <text>Replaces the Primeval Awareness feature.
+
+You can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.
 
 Primal Awareness Spells:
 Ranger Level | Spell
@@ -377,7 +424,7 @@ Source:	Tasha's Cauldron of Everything p. 56</text>
       </feature>
       <feature optional="YES">
         <name>Beast Master: Primal Companion</name>
-        <text>3rd-level ranger optional class features, which replaces the Ranger's Companion feature.
+        <text>Replaces the Ranger's Companion feature.
 
 You magically summon a primal beast, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands. Choose its stat block—Beast of the Land, Beast of the Sea, or Beast of the Sky—which uses your proficiency bonus (PB) in several places. You also determine the kind of animal the beast is, choosing a kind appropriate for the stat block. Whatever kind you choose, the beast bears primal markings, indicating its mystical origin.
 
@@ -388,17 +435,6 @@ If the beast has died within the last hour, you can use your action to touch it 
 When you finish a long rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you, and you choose its stat block and appearance. If you already have a beast from this feature, it vanishes when the new beast appears. The beast also vanishes if you die.
 
 Source:	Tasha's Cauldron of Everything p. 61</text>
-      </feature>
-    </autolevel>
-
-    <autolevel level="10">
-      <feature>
-        <name>Nature's Veil</name>
-        <text>You draw on the powers of nature to hide yourself from view briefly. As a bonus action, you can magically become invisible, along with any equipment you are wearing or carrying, until the start of your next turn.
-
-You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
-
-Source:	Tasha's Cauldron of Everything p. 56</text>
       </feature>
     </autolevel>
   </class>

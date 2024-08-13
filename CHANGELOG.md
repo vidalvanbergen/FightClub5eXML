@@ -8,6 +8,10 @@
 * Adding `Heliana's Guide to Monster Hunting` content.
 * Adding `Xanathar's Lost Notes to Everything Else` content.
 
+### 2024-##-##
+* Streamlined some `Ranger` features.
+* Added `Ranger (Primal Awareness)` spell list.
+
 ### 2024-08-11
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
 * Added `Quests from the Infinite Staircase` content.
