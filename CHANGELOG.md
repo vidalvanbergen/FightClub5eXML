@@ -13,6 +13,7 @@
 * Added Matthew Mercer's `College of the Maestro` Bard subclass.
 * Added Matthew Mercer's `Totem of the Duck` Barbarian subclass.
 * Re-organized Unearthed Arcana based on date and `Subclasses That Shouldn't Exist`.
+* Moved `Honor Among Thieves` content to Unearthed Arcana.
 
 ### 2024-08-11
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
@@ -57,7 +58,7 @@
 ### 2024-04-23
 
 * Updated `Book of Many Things` spells.
-* Added `Honor Among Thieves - Legendary Magic Items` content.
+* Added `Thieves' Gallery: Legendary Magic Items` content.
 * Added `Monstrous Compendium Vol. 2 - Dragonlance Creatures` content.
 * Added `Monstrous Compendium Vol. 3 - Minecraft Creatures` content.
 * Added `Monstrous Compendium Vol. 4 - Eldraine Creatures` content.
