@@ -14,6 +14,7 @@
 * Added Matthew Mercer's `Totem of the Duck` Barbarian subclass.
 * Re-organized Unearthed Arcana based on date and `Subclasses That Shouldn't Exist`.
 * Moved `Honor Among Thieves` content to Unearthed Arcana.
+* Added The Dungeon Master Homebrew.
 
 ### 2024-08-11
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
