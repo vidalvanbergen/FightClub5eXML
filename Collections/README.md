@@ -4,6 +4,8 @@
 
 **Core_Rulebooks**: Player's Handbook, Dungeon Master's Guide and Monster Manual.
 
+**Special_Adventurers_League_Forgotten_Realms**: DALL approved source books.
+
 **Sytem_Reference_Document**: Only the core system files of Fight Club 5e.
 
 **WotC_Only**: Only official Wizards of the coast material available on D&D Beyond.
