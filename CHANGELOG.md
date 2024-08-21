@@ -9,6 +9,7 @@
 * Adding `LaserLlama` content.
   * Added LaserLlama's: `Warlock Patrons, Boons & Invocations v2.1.0`.
   * Added LaserLlama's: `Ranger Archetypes v3.0.0`.
+  * Added LaserLlama's: `Wizard Arcane Traditions v2.0.1`.
 
 ### 2024-##-##
 * Streamlined some `Ranger` features.
