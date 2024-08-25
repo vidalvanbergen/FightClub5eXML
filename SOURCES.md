@@ -106,7 +106,7 @@ Spell example:
   <text>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4+1 force damage to its target. The darts all strike simultaneously and you can direct them to hit one creature or several.</text>
   <text/>
   <text>At Higher Levels:</text>
-	<text>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.</text>
+  <text>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.</text>
   <text/>
   <text>Source: Player's Handbook p. 257</text>
   <roll>1d4+1</roll>
@@ -114,7 +114,7 @@ Spell example:
 </spell>
 ```
 
-For the Github repository, if you're adding a new class to a spell or want to add a new spell list, you can create a new xml file with spell names, and the class or classes you would like to add, as shown in the example below:
+For the Github repository, if you're adding a new class to a spell or want to add a new spell list, you can create a new XML file with spell names, and the class or classes you would like to add, as shown in the example below:
 
 ```xml
 <spell>
@@ -447,7 +447,7 @@ A race is defined using an element named race. Its content can consist of the fo
   - **trait** Racial traits. *Multiple traits are allowed. The following elements may be used as content.*
     - **name** (ABC)
     - **text** (ABC) Trait description. *Multiple text elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
-    - **modifier** (ABC [+/-]##) Modifiers. *This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by the its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.*
+    - **modifier** (ABC [+/-]##) Modifiers. *This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.*
 
 Race example:
 ```xml
@@ -558,7 +558,7 @@ A class is defined using an element named class. Its content can consist of the 
         - **reset** (S | L) Reset type
           - **S** = short rests
           - **L** = long rests
-      - **modifier** (ABC [+/-]##) Modifiers. *This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by the its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.*
+      - **modifier** (ABC [+/-]##) Modifiers. *This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.*
 
 Class example:
 ```xml
@@ -686,7 +686,7 @@ Class example:
 </class>
 ```
 
-For the Github repository, when you're adding a new subclass, you can create a new xml file with class features using the same name as the base class you want to add them to as shown in the example below:
+For the Github repository, when you're adding a new subclass, you can create a new XML file with class features using the same name as the base class you want to add them to as shown in the example below:
 
 ```xml
 <class>
@@ -727,7 +727,7 @@ A backgrounds is defined using an element named background. Its content can cons
   - **trait** Background traits. Multiple traits are allowed. *The following elements may be used as content.*
     - **name** (ABC)
     - **text** (ABC) Trait description. *Multiple text elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
-    - **modifier** (ABC [+/-]##) Modifiers. *This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by the its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.*
+    - **modifier** (ABC [+/-]##) Modifiers. *This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.*
 
 Background example:
 ```xml
@@ -797,11 +797,11 @@ Background example:
 
 A feat is defined using an element named feat. Its content can consist of the following elements:
 
-  - name (ABC)
-  - prerequisite (ABC)
-  - special (ABC) Special traits. See the app for the list of available traits.
-  - text (ABC) Feat description. Multiple text elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.
-  - modifier (ABC [+/-]##) Modifiers. This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by the its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.
+  - **name** (ABC)
+  - **prerequisite** (ABC)
+  - **special** (ABC) Special traits. *See the app for the list of available traits.*
+  - **text** (ABC) Feat description. *Multiple text elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
+  - **modifier** (ABC [+/-]##) Modifiers. *This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.*
 
 Feat example:
 ```xml
@@ -846,7 +846,7 @@ Add the specific elements under the appropriate comment (e.g. `<item>...</item>`
 
 When merged with other sources (see "Build Your Own Compendium" below), items, races, feats, backgrounds, and monsters are all added to the resulting Compendium. It's recommended that subraces be added as their own race. Classes and spells, however, are merged when their names match, making it easier to add subclasses without modifying existing sources.
 
-For the repository, it's recommended to split the content of the sources into separate files, and put them into a subfolder named after the content you're adding to make them more manageable. The folder name may not contain spaces or quotes to be imported, files are tagged with an abbreviation of the content's name.
+For the repository, it's recommended to split the content of the sources into separate files, and put them into a subfolder named after the content you're adding to make them more manageable. The folder and file names may not contain spaces or quotes to be imported, files are tagged with an abbreviation of the content's name.
 
 Example:  
 - Tashas_Cauldron_of_Everything
@@ -857,7 +857,7 @@ Example:
   - items-tce.xml
   - optionalfeatures-tce.xml (Used for special features such as fighting maneuvers, warlock invocations, monk techniques, etc. Usually as level 0 spells.)
   - races-tce.xml
-  - spells-phb+tce.xml (Spellists for subclasses or other spells that are merged with PHB content.)
+  - spells-phb+tce.xml (Spell lists for subclasses that are merged with PHB content.)
   - spells-tce.xml
 
 ### [Subclasses](#fightclub5e-xml)
@@ -910,7 +910,7 @@ While you add to XML source files, you can manually validate the XML to catch an
 
 You can find an online XML Linter or use xmllint in the command line. The schema files are in the Utilities folder.
 
-Here is an example, running xmllint at the top level of the repo, using the compendium schema to validate an xml file in Sources:
+Here is an example, running xmllint at the top level of the repo, using the compendium schema to validate an XML file in Sources:
 
 ```bash
 xmllint --noout --schema Utilities/compendium.xsd Sources/CoreRulebooks.xml
@@ -925,13 +925,13 @@ A collection file is an XML file that lists which sources you would like to merg
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <collection>
-    <doc href="../Sources/WizardsOfTheCoast/01_PlayersHandbook.xml" />
-    <doc href="../Sources/WizardsOfTheCoast/02_DungeonMastersGuide.xml" />
-    <doc href="../Sources/WizardsOfTheCoast/03_MonsterManual.xml" />
+  <doc href="../Sources/WizardsOfTheCoast/01_PlayersHandbook.xml" />
+  <doc href="../Sources/WizardsOfTheCoast/02_DungeonMastersGuide.xml" />
+  <doc href="../Sources/WizardsOfTheCoast/03_MonsterManual.xml" />
 </collection>
 ```
 
-You can have one or more `<doc>` tags. Each doc must reference an xml file with a `<compendium>` root element.
+You can have one or more `<doc>` tags. Each doc must reference an XML file with a `<compendium>` root element.
 
 The name of the collection file will be the name of the final Compendium.
 
