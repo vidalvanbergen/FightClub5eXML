@@ -693,12 +693,24 @@ For the Github repository, when you're adding a new subclass, you can create a n
   <name>Bard</name>
   <autolevel level="3">
     <feature optional="YES">
-      <name>Bard College: College of Creation</name>
-      <text>Bards believe the cosmos is a work of art—the creation of the first dragons and gods. That creative work included harmonies that continue to resound through existence today, a power known as the Song of Creation. The bards of the College of Creation draw on that primeval song through dance, music, and poetry, and their teachers share this lesson: "Before the sun and the moon, there was the Song, and its music awoke the first dawn. Its melodies so delighted the stones and trees that some of them gained a voice of their own. And now they sing too. Learn the Song, students, and you too can teach the mountains to sing and dance."</text>
+      <name>Bard College: College of ...</name>
+      <text>...</text>
       <text/>
-      <text>Dwarves and gnomes often encourage their bards to become students of the Song of Creation. And among dragonborn, the Song of Creation is revered, for legends portray Bahamut and Tiamat—the greatest of dragons—as two of the song's first singers.</text>
+      <text>Source:	Tasha's Crucible of Everything Else p. 28</text>
+    </feature>
+    <feature optional="YES">
+      <name>College of ...:</name>
+      <text>...</text>
       <text/>
-      <text>Source:	Tasha's Cauldron of Everything p. 28</text>
+      <text>Source:	Tasha's Crucible of Everything Else p. 28</text>
+    </feature>
+  </autolevel>
+  <autolevel level="6">
+    <feature optional="YES">
+      <name>College of ...:</name>
+      <text>...</text>
+      <text/>
+      <text>Source:	Tasha's Crucible of Everything Else p. 28</text>
     </feature>
   </autolevel>
 </class>
