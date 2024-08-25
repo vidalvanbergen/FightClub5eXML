@@ -19,6 +19,7 @@
 * Added Matthew Mercer's `College of the Maestro` Homebrew Bard subclass.
 * Added Matthew Mercer's `Totem of the Duck` Homebrew Barbarian subclass.
 * Re-organized Unearthed Arcana based on date and `Subclasses That Shouldn't Exist`.
+* Added a more comprehensive overview on how to add your own content to the repository. (See [SOURCES.md](/SOURCES.md))
 
 ### 2024-08-11
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
