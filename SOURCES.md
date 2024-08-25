@@ -103,11 +103,13 @@ Spell example:
   <range>120 feet</range>
   <components>V, S</components>
   <duration>Instantaneous</duration>
-  <text>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4+1 force damage to its target. The darts all strike simultaneously and you can direct them to hit one creature or several. </text>
-  <text />
-  <text>At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.</text>
+  <text>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4+1 force damage to its target. The darts all strike simultaneously and you can direct them to hit one creature or several.</text>
+  <text/>
+  <text>At Higher Levels:</text>
+	<text>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.</text>
   <text/>
   <text>Source: Player's Handbook p. 257</text>
+  <roll>1d4+1</roll>
   <roll>(1d4+1)+(1d4+1)+(1d4+1)</roll>
 </spell>
 ```
