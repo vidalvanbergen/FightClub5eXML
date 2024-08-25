@@ -809,14 +809,14 @@ Feat example:
   <name>Actor</name>
   <prerequisite/>
   <text>Skilled at mimicry and dramatics, you gain the following benefits:</text>
-    <text/>
-    <text>	• Increase your Charisma score by 1, to a maximum of 20.</text>
-    <text/>
-    <text>	• You have advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.</text>
-    <text/>
-    <text>	• You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked.</text>
-    <text/>
-    <text>Source:	Player's Handbook p. 165</text>
+  <text/>
+  <text>	• Increase your Charisma score by 1, to a maximum of 20.</text>
+  <text/>
+  <text>	• You have advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.</text>
+  <text/>
+  <text>	• You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked.</text>
+  <text/>
+  <text>Source:	Player's Handbook p. 165</text>
   <modifier category="ability score">Charisma +1</modifier>
 </feat>
 ```
