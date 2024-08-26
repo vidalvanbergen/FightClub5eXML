@@ -15,6 +15,7 @@
 * Streamlined some `Ranger` features.
 * Added `The Dungeon Master` Homebrew.
 * Added `Ranger (Primal Awareness)` spell list.
+* Added `Misplaced Monsters: Volume One` content.
 * Moved `Honor Among Thieves` content to Unearthed Arcana.
 * Added Matthew Mercer's `College of the Maestro` Homebrew Bard subclass.
 * Added Matthew Mercer's `Totem of the Duck` Homebrew Barbarian subclass.
