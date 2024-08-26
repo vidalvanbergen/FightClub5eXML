@@ -287,7 +287,7 @@ Monsters, beast shapes, companions, familiars, etc. are defined using an element
       - **SHORT** = Once per short rest
       - **LONG** = Once per long rest
       - **#/Day** = # times per day
-      - **D#** = Roll a D6, if the number is # or higher the action is available. Only available in Game Master.
+      - **D#** = Roll a D6, if the number is # or higher the action is available.
     - **text** (ABC) Item description. *Multiple text elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
     - **attack** (ABC|[+/-]##|D20) *Attacks consist of three parts, separated by the '|' character. The first part is the attack label, which takes a text string. The s second is a number representing the attack roll bonus. The last is the damage roll. All of these parts are optional and can be left empty.*
   - **spells** (ABC, ABC, ...) Spells prepared or known. *The spells need to be imported first for these to be shown.*
