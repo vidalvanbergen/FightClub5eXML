@@ -3,24 +3,24 @@
 This page is dedicated to helping you make your own XML files to be imported in the FightClub5e app. This is the tutorial found in the app but modified a bit, plus advice on how to add your own sources or homebrew to the repository.
 
 - [FightClub5e XML](#fightclub5e-xml)
-	- [Elements and Tags](#elements-and-tags)
-	- [Terminology](#terminology)
-	- [Creating an XML file](#creating-an-xml-file)
-	- [Spells](#spells)
-	- [Items and Equipment](#items-and-equipment)
-	- [Bestiary](#bestiary)
-	- [Races](#races)
-	- [Classes](#classes)
-	- [Backgrounds](#backgrounds)
-	- [Feats](#feats)
+  - [Elements and Tags](#elements-and-tags)
+  - [Terminology](#terminology)
+  - [Creating an XML file](#creating-an-xml-file)
+  - [Spells](#spells)
+  - [Items and Equipment](#items-and-equipment)
+  - [Bestiary](#bestiary)
+  - [Races](#races)
+  - [Classes](#classes)
+  - [Backgrounds](#backgrounds)
+  - [Feats](#feats)
 - [The FightClub5eXML Github Repository](#the-fightclub5exml-github-repository)
-	- [Adding a Source](#adding-a-source)
-		- [Subclasses](#subclasses)
-		- [Spells](#spells-1)
-	- [Manual Validation](#manual-validation)
-	- [Build Your Own Compendium](#build-your-own-compendium)
-		- [Create a collection file](#create-a-collection-file)
-		- [Execute the merge](#execute-the-merge)
+  - [Adding a Source](#adding-a-source)
+    - [Subclasses](#subclasses)
+    - [Spells](#spells-1)
+  - [Manual Validation](#manual-validation)
+  - [Build Your Own Compendium](#build-your-own-compendium)
+    - [Create a collection file](#create-a-collection-file)
+    - [Execute the merge](#execute-the-merge)
 
 ## [Elements and Tags](#fightclub5e-xml)
 
@@ -50,7 +50,7 @@ For example, when you see "name (ABC)" throughout the tutorial, that says the el
 
 Making your own file is an easy but time-consuming job. But you've come to the right place if you want to learn how to do it!
 
-First off you'll need a Text Editor. You can definitely write everything using the default text editor on your machine, but there are applications that make the process much easier. I recommend using [Visual Studio Code](https://code.visualstudio.com/), which is free or [Sublime Text](https://www.sublimetext.com/) since they are easy to use and have a lot of great features. Now that you've downloaded a text editor, let's begin!
+First off you'll need a Text Editor. You can definitely write everything using the default text editor on your machine, but there are applications that make the process much easier. I recommend using [Visual Studio Code](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/) since they are easy to use and have a lot of great features. Now that you've downloaded a text editor, let's begin!
 
 The file must begin with the following line: ```<?xml version="1.0" encoding="UTF-8"?>```. The first element needed is, "compendium". The element must contain an attribute named, "version" with its value set to "5". The content for the compendium element will be your lists of spells, items, creatures, races, classes, backgrounds, and/or feats.
 
@@ -549,16 +549,16 @@ A class is defined using an element named class. Its content can consist of the 
     - **L** = long rests
   - **autolevel** Defines the spell slots and features attained at the given level. *To specify the level, declare an attribute named "level" with a number value. You can also specify if this level has the Ability Score Improvement feature using the "scoreImprovement" attribute with its value set to "YES".*
     - **slots** (##,##, ...) Spells slots. *Up to 10 numbers separated by commas that define the number spell slots available at this level. The first number is the number of cantrips known, followed by spell slots at 1st level, 2nd level, and so on. If spells are an option, the "optional" attribute can be used with its value set to "YES" (i.e. ```<slots optional="YES">```)."*
-      - **feature** Class features gained at this level. *If feature is an option, the "optional" attribute can be used with its value set to "YES" (i.e. ```<feature optional="YES">```). Subclass features should be set to optional.*
+    - **feature** Class features gained at this level. *If feature is an option, the "optional" attribute can be used with its value set to "YES" (i.e. ```<feature optional="YES">```). Subclass features should be set to optional.*
       - **name** (ABC)
       - **text** (ABC) Feature description. *Multiple text elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
-      - **counter** Tracker usage of class features (i.e. Rage or Ki Points)
-        - **name** (ABC)
-        - **value** (##) Starting value
-        - **reset** (S | L) Reset type
-          - **S** = short rests
-          - **L** = long rests
       - **modifier** (ABC [+/-]##) Modifiers. *This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.*
+    - **counter** Tracker usage of class features (i.e. Rage or Ki Points)
+      - **name** (ABC)
+      - **value** (##) Starting value
+      - **reset** (S | L) Reset type
+        - **S** = short rests
+        - **L** = long rests
 
 Class example:
 ```xml
