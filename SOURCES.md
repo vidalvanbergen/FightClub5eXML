@@ -393,15 +393,15 @@ On initiative count 20 (losing initiative ties), the dragon takes a lair action 
   <legendary>
     <name>Regional Effects</name>
     <text>
-The region containing a legendary red dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:</text>
-<text/>
-<text>	• Small earthquakes are common within 6 miles of the dragon's lair.</text>
-<text/>
-<text>	• Water sources within 1 mile of the lair are supernaturally warm and tainted by sulfur.</text>
-<text/>
-<text>	• Rocky fissures within 1 mile of the dragon's lair form portals to the Elemental Plane of Fire, allowing creatures of elemental fire into the world to dwell nearby.</text>
-<text/>
-<text>If the dragon dies, these effects fade over the course of 1d10 days.</text>
+The region containing a legendary red dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:
+
+	• Small earthquakes are common within 6 miles of the dragon's lair.
+
+	• Water sources within 1 mile of the lair are supernaturally warm and tainted by sulfur.
+
+	• Rocky fissures within 1 mile of the dragon's lair form portals to the Elemental Plane of Fire, allowing creatures of elemental fire into the world to dwell nearby.
+
+If the dragon dies, these effects fade over the course of 1d10 days.</text>
   </legendary>
   <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
 
