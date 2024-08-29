@@ -14,7 +14,7 @@
   * Added LaserLlama's: `Sorcerous Origins v2.0.0`.
   * Added LaserLlama's: `Warlock Patrons, Boons & Invocations v2.1.0`.
   * Added LaserLlama's: `Wizard Arcane Traditions v2.0.1`.
-  * Adding LaserLlama's: `New & Alternate Races v2.0.0`.
+  * Added LaserLlama's: `New & Alternate Races v2.0.0`.
 
 ### 2024-##-##
 * Streamlined some `Ranger` features.
