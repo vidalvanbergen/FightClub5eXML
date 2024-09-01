@@ -43,6 +43,7 @@ Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 − 1) blud
     </action>
     <action>
       <name>Burning Hands (1st-Level Spell; 2/Day)</name>
+      <recharge>2/Day</recharge>
       <text>
 You shoot forth a 15-foot cone of fire. Each creature in that area must make a DC 11 Dexterity saving throw. A creature takes 10 (3d6) fire damage on a failed save, or half as much damage on a successful one The fire ignites any flammable objects in the area that aren't being worn or carried.</text>
       <attack/>
@@ -230,7 +231,8 @@ If the target is Undead, it also has disadvantage on attack rolls against the br
       <attack>Chill Touch||3d8</attack>
     </action>
     <action>
-      <name>Mind Blast (Recharge 5–6)</name>
+      <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The brain magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 14 Intelligence saving throw or take 17 (3d8 + 4) psychic damage and be stunned for 1 minute. A stunnedcreature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
       <attack>Mind Blast||3d8+4</attack>
@@ -723,7 +725,8 @@ Ranged Spell Attack: +15 to hit, range 120 ft., one creature. Hit: 27 (3d12 + 8)
       <attack>Psychic Orb|+15|3d12+8</attack>
     </action>
     <action>
-      <name>Unearthly Bile (Recharge 5–6)</name>
+      <name>Unearthly Bile (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The emissary expels bile that splashes all creatures in a 30-foot-radius sphere centered on a point within 120 feet of the emissary. Each creature in that area must make a DC 23 Dexterity saving throw, taking 55 (10d10) acid damage on a failed save, or half as much damage on a successful one. For each creature that fails the saving throw, a gibbering mouther (see its entry in the Monster Manual) appears in an unoccupied space on a surface that can support it within 30 feet of that creature. The gibbering mouthers act right after the emissary on the same initiative count, gaining a +7 bonus to their attack and damage rolls, and fighting until they are destroyed. They disappear when the emissary dies.</text>
       <attack/>
@@ -847,7 +850,8 @@ The inquisitor targets one creature it can see within 120 feet of it. The target
       <attack>Mind Fire||3d8+4</attack>
     </action>
     <action>
-      <name>Inquisitor's Command (Recharge 5–6)</name>
+      <name>Inquisitor's Command (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Each creature of the inquisitor's choice that it can see within 60 feet of it must succeed on a DC 15 Wisdom saving throw or be charmed until the start of the inquisitor's next turn. On the charmed target's turn, the inquisitor can telepathically control the target's move, action, or both. When controlled in this way, the target can take only the Attack (inquisitor chooses the target) or Dash action.</text>
       <attack/>
@@ -967,7 +971,8 @@ Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashi
       <attack>Silver Longsword (Two-Handed)|+7|1d10+4+4d8</attack>
     </action>
     <action>
-      <name>Implode (Recharge 4–6)</name>
+      <name>Implode (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Each creature in a 20-foot-radius sphere centered on a point the inquisitor can see within 120 feet of it must succeed on a DC 15 Constitution saving throw or take 31 (6d8 + 4) force damage and be knocked prone and moved to the unoccupied space closest to the sphere's center. Large and smaller objects that aren't being worn or carried in the sphere automatically take the damage and are similarly moved.</text>
       <attack>Implode||6d8+4</attack>
@@ -1369,6 +1374,7 @@ Ranged Spell Attack: +6 to hit, range 120 ft., one creature. Hit: 12 (2d8 + 3) n
     </action>
     <action>
       <name>Blood Puppeteering (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The necrichor targets a creature it can see within 5 feet of it that is missing any of its hit points. If the target isn't a Construct or an Undead, it must succeed on a DC 14 Constitution saving throw or the necrichor enters the target's space and attaches itself to the target for 1 minute. While attached, the necrichor takes only half damage dealt to it (round down), and the target takes the remaining damage.
 
@@ -1446,7 +1452,8 @@ The target's hit point maximum is reduced by an amount equal to the necrotic dam
       <attack>Bite|+8|1d8+5+2d6</attack>
     </action>
     <action>
-      <name>Blood Disgorge (Recharge 5–6)</name>
+      <name>Blood Disgorge (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The nosferatu vomits blood in a 15-foot cone. Each creature in that area must make a DC 16 Constitution saving throw. On a failed save, a creature takes 18 (4d8) necrotic damage, and it can't regain hit points for 1 minute. On a successful save, the creature takes half as much damage with no additional effects.</text>
       <attack>Blood Disgorge||4d8</attack>
@@ -1618,7 +1625,8 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit:11 (1d10 + 6) blud
       <attack>Fist</attack>
     </action>
     <action>
-      <name>Deadly Shaping (Recharge 5–6)</name>
+      <name>Deadly Shaping (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The juggernaut magically shapes a feature of its surroundings into a deadly implement. A creature the juggernaut can see within 60 feet of it must make a DC 18 Dexterity saving throw. If the saving throw fails, the targeted creature is struck by one of the following (juggernaut's choice):
 
@@ -1626,7 +1634,7 @@ Flying Stone. The target takes 22 (5d8) bludgeoning damage and is incapacitated 
 Scything Shrapnel. The target takes 14 (4d6) slashing damage, and the implement vanishes.
 
 At the start of each of its turns, the target takes 10 (3d6) necrotic damage from the wound left by the shrapnel. The wound ends if the target regains any hit points or if a creature uses an action to stanch the wound, which requires a successful DC 15 Wisdom (Medicine) check.</text>
-      <attack>Deadly Shaping (Recharge 5–6)</attack>
+      <attack>Deadly Shaping</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -2109,7 +2117,8 @@ Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 21 (3d10 + 5) blud
       <attack>Limbs|+8|3d10+5</attack>
     </action>
     <action>
-      <name>Hex Blast (Recharge 5–6)</name>
+      <name>Hex Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The horror expels necrotic energy in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (7d12) necrotic damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Hex Blast||7d12</attack>
@@ -2314,7 +2323,8 @@ Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) blud
       <attack>Slam|+8|3d8+5</attack>
     </action>
     <action>
-      <name>Flesh Entomb (Recharge 5–6)</name>
+      <name>Flesh Entomb (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The zombie flings a detached clump of corpses at a creature it can see within 30 feet of it. The target must succeed on a DC 16 Strength saving throw or take 16 (3d10) bludgeoning damage, and if the target is a Large or smaller creature, it becomes entombed in dead flesh.
 

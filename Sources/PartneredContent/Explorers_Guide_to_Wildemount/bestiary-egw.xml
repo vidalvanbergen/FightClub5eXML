@@ -298,6 +298,7 @@ The target can repeat the saving throw at the end of each of its turns, ending t
     </action>
     <action>
       <name>Cold Breath (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The yeti exhales a 30-foot cone of frigid air. Each creature in that area must make a DC 18 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Cold Breath||10d8</attack>
@@ -595,6 +596,8 @@ Ranged Spell Attack: +4 to hit, range 120 ft., one target. Hit: 7 (1d10 + 2) for
       <attack>Eldritch Blast (Cantrip)|+4|1d10+2</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (2/Turn)</name>
+      <recharge>2/Turn</recharge>
       <text>The humanoid (goblinoid) can take 2 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The humanoid (goblinoid) regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -785,6 +788,7 @@ The emissary emits a dreadful yet alluring hum. Each creature within 20 feet of 
     </action>
     <action>
       <name>Crystal Spores (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 A 15-foot-radius cloud of toxic crystalline spores extends out from the emissary. The spores spread around corners. Each creature in the area must succeed on a DC 14 Constitution saving throw or become poisoned. While poisoned in this way, a creature takes 11 (2d10) poison damage at the start of each of its turns. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
       <attack>Crystal Spores||2d10</attack>
@@ -1246,6 +1250,7 @@ Ranged Weapon Attack: +9 to hit, range 90 ft., one target. Hit: 12 (2d6 + 5) pie
     </action>
     <action>
       <name>Shrapnel Blast (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The gearkeeper jettisons a spray of jagged metal in a 30-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw, taking 21 (6d6) piercing damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Shrapnel Blast||6d6</attack>
@@ -1314,6 +1319,7 @@ While grappled in this way, the target is restrained.</text>
     </action>
     <action>
       <name>Shriek (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The gloomstalker emits a terrible shriek. Each enemy within 60 feet of the gloomstalker that can hear it must succeed on a DC 13 Constitution saving throw or be paralyzed until the end of the enemy's next turn.</text>
     </action>
@@ -1422,6 +1428,7 @@ Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 28 (3d12 + 9) bl
     </action>
     <action>
       <name>Shell Defense (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The tortoise withdraws into its shell, falls prone, and gains a +5 bonus to AC. While the tortoise is in its shell, its speed is 0 and can't increase. The tortoise can emerge from its shell as an action, whereupon it is no longer prone.</text>
     </action>
@@ -1688,11 +1695,12 @@ Each creature of the dragon's choice that is within 120 feet of the dragon and a
     </action>
     <action>
       <name>Breath Weapons (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The dragon uses one of the following breath weapons.
 
 	• Necrotic Breath. The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 (15d8) necrotic damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Breath Weapons (Recharge 5-6)||15d8</attack>
+      <attack>Breath Weapons||15d8</attack>
       <text>	• Paralyzing Breath. The dragon exhales paralyzing gas in a 90-foot cone. Each creature in that area must succeed on a DC 24 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <action>
@@ -1703,6 +1711,8 @@ The dragon magically polymorphs into a humanoid or beast that has a challenge ra
 In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -1952,6 +1962,7 @@ Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 28 (3d12 + 9) bl
     </action>
     <action>
       <name>Shell Defense (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Mossback Steward withdraws into its shell, falls prone, and gains a +5 bonus to AC. While Mossback Steward is in its shell, its speed is 0 and can't increase. Mossback Steward can emerge from its shell as an action, whereupon it is no longer prone.</text>
     </action>
@@ -2008,11 +2019,12 @@ Melee Weapon Attack: +6 to hit, reach 20 ft., one target. Hit: 10 (1d12 + 4) blu
     </action>
     <action>
       <name>Siphon Life (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The nergaliid magically draws the life from a humanoid it can see within 40 feet of it. The target must make a DC 15 Wisdom saving throw. An incapacitated target fails the save automatically. On a failed save, the creature takes 10 (3d6) psychic damage, and the nergaliid gains temporary hit points equal to the damage taken. On a successful save, the target takes half as much damage, and the nergaliid doesn't gain temporary hit points.
 
 If this damage kills the target, its body rises at the end of the nergaliid's current turn as a husk zombie (see earlier in this chapter).</text>
-      <attack>Siphon Life (Recharge 4-6)||3d6</attack>
+      <attack>Siphon Life||3d6</attack>
     </action>
     <description>Corpulent, scaled, and utterly repulsive, these vicious devils stalk the dark edges of society away from prying eyes, subsisting on the life force of unsuspecting humanoids. Creatures that die to the nergaliid's feeding leave a corrupted undead corpse behind known as a husk zombie (see earlier in this chapter).
 
@@ -2177,11 +2189,14 @@ Each creature of the dracolich's choice that is within 120 feet of the dracolich
     </action>
     <action>
       <name>Acid Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The dracolich exhales acid in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 22 Dexterity saving throw, taking 67 (15d8) acid damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Acid Breath (Recharge 5-6)||15d8</attack>
+      <attack>Acid Breath||15d8</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The undead can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The undead regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -2467,6 +2482,8 @@ Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slash
 The sea fury targets one frightened creature it can see within 30 feet of it. The target must succeed on a DC 16 Wisdom saving throw or drop to 0 hit points.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The fey can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The fey regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>

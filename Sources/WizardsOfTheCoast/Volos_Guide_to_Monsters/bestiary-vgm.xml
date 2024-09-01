@@ -102,9 +102,10 @@ Melee Spell Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (3d6) cold damag
     </action>
     <action>
       <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The alhoon magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 16 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Mind Blast (Recharge 5-6)||4d8+4</attack>
+      <attack>Mind Blast||4d8+4</attack>
     </action>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
@@ -1808,11 +1809,12 @@ Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 21 (5d6 + 4) blud
     </action>
     <action>
       <name>Death Ray (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The catoblepas targets a creature that it can see within 30 feet of it. The target must make a DC 16 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one. If the saving throw fails by 5 or more, the target instead takes 64 necrotic damage.
 
 The target dies if reduced to 0 hit points by this ray.</text>
-      <attack>Death Ray (Recharge 5-6)||8d8</attack>
+      <attack>Death Ray||8d8</attack>
     </action>
     <description>The catoblepas is as loathsome as the vile swamplands in which it lives. Like such wastelands, this conglomeration of bloated buffalo, dinosaur, warthog, and hippopotamus parts has few redeeming qualities. Few travelers willingly traverse the territory of a catoblepas.
 
@@ -2105,6 +2107,7 @@ Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one ta
     </action>
     <action>
       <name>Web (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Ranged Weapon Attack: +5 to hit, range 30/60 ft., one Large or smaller creature. The target is restrained by webbing. As an action, the restrained target can make a DC 11 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; 5 hit points; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</text>
     </action>
@@ -2788,6 +2791,7 @@ The devourer chooses a living humanoid with 0 hit points that it can see within 
     </action>
     <action>
       <name>Soul Rend (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The devourer creates a vortex of life-draining energy in a 20-foot radius centered on itself. Each humanoid in that area must make a DC 18 Constitution saving throw, taking 44 (8d10) necrotic damage on a failed save, or half as much damage on a successful one. Increase the damage by 10 for each living humanoid with 0 hit points in that area.</text>
       <attack>Soul Rend||8d10</attack>
@@ -3079,9 +3083,10 @@ If the target is a Huge or smaller creature, it is grappled (escape DC 15) and t
     </action>
     <action>
       <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The elder brain magically emits psychic energy. Creatures of the elder brain's choice within 60 feet of it must succeed on a DC 18 Intelligence saving throw or take 32 (5d10 + 5) psychic damage and be stunned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Mind Blast (Recharge 5-6)||5d10+5</attack>
+      <attack>Mind Blast||5d10+5</attack>
     </action>
     <action>
       <name>Psychic Link</name>
@@ -3097,6 +3102,8 @@ The psychic link also ends if the target and the elder brain are more than 5 mil
 The elder brain targets a creature with which it has a psychic link. The elder brain gains insight into the target's reasoning, its emotional state, and thoughts that loom large in its mind (including things the target worries about, loves, or hates). The elder brain can also make a Charisma (Deception) check with advantage to deceive the target's mind into thinking it believes one idea or feels a particular emotion. The target contests this attempt with a Wisdom (Insight) check. If the elder brain succeeds, the mind believes the deception for 1 hour or until evidence of the lie is presented to the target.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (4/Turn)</name>
+      <recharge>4/Turn</recharge>
       <text>The aberration can take 4 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The aberration regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -3992,9 +3999,10 @@ Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) pierci
     </action>
     <action>
       <name>Fire Burst (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The giant strider hurls a gout of flame at a point it can see within 60 feet of it. Each creature in a 10-foot-radius sphere centered on that point must make a DC 12 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. The fire spreads around corners, and it ignites flammable objects in that area that aren't being worn or carried.</text>
-      <attack>Fire Burst (Recharge 5-6)||4d6</attack>
+      <attack>Fire Burst||4d6</attack>
     </action>
     <description>In regions that contain hot springs, volcanic activity, or similar hot and wet conditions, firenewts might be found. These humanoid amphibians live in a militaristic theocracy that reveres elemental fire in its worst incarnation.
 
@@ -4517,6 +4525,7 @@ Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) 
     </action>
     <action>
       <name>Mesmerizing Chirr (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The grung makes a chirring noise to which grungs are immune. Each humanoid or beast that is within 15 feet of the grung and able to hear it must succeed on a DC 12 Wisdom saving throw or be stunned until the end of the grung's next turn.</text>
     </action>
@@ -4976,11 +4985,14 @@ If this damage reduces the target to 0 hit points, the lich kills the target by 
     </action>
     <action>
       <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The illithilich magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 18 Intelligence saving throw or take 27 (5d8 + 5) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Mind Blast (Recharge 5-6)||5d8+5</attack>
+      <attack>Mind Blast||5d8+5</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (4/Turn)</name>
+      <recharge>4/Turn</recharge>
       <text>The undead can take 4 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The undead regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -5232,6 +5244,8 @@ Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) pierc
       <attack>Horn|+9|2d8+5</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The celestial can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The celestial regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -5989,6 +6003,7 @@ While in bright light, the meenlock has disadvantage on attack rolls, as well as
     </trait>
     <trait>
       <name>Shadow Teleport (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 As a bonus action, the meenlock can teleport to an unoccupied space within 30 feet of it, provided that both the space it's teleporting from and its destination are in dim light or darkness. The destination need not be within line of sight.</text>
     </trait>
@@ -6070,9 +6085,10 @@ If this damage reduces the target to 0 hit points, the mind flayer kills the tar
     </action>
     <action>
       <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Mind Blast (Recharge 5-6)||4d8+4</attack>
+      <attack>Mind Blast||4d8+4</attack>
     </action>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
@@ -6736,9 +6752,10 @@ If the target is a Large or smaller creature, it must succeed on a DC 18 Strengt
     </action>
     <action>
       <name>Acid Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The neothelid exhales acid in a 60-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 35 (10d6) acid damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Acid Breath (Recharge 5-6)||10d6</attack>
+      <attack>Acid Breath||10d6</attack>
     </action>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
@@ -8100,6 +8117,8 @@ Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 40 (9d6 + 9) lig
 The giant coalesces wind into a javelin-like form and hurls it at a creature it can see within 600 feet of it. The javelin is considered a magic weapon and deals 19 (3d6 + 9) piercing damage to the target, striking unerringly. The javelin disappears after it hits.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The giant (storm giant) can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The giant (storm giant) regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -8721,9 +8740,10 @@ If this damage reduces the target to 0 hit points, the ulitharid kills the targe
     </action>
     <action>
       <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The ulitharid magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 17 Intelligence saving throw or take 31 (4d12 + 5) psychic damage and be stunned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Mind Blast (Recharge 5-6)||4d12+5</attack>
+      <attack>Mind Blast||4d12+5</attack>
     </action>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
@@ -9310,6 +9330,8 @@ Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) 
       <attack>Shortbow|+7|1d6+3</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The humanoid (any race) can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The humanoid (any race) regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>

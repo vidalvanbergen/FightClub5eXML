@@ -42,6 +42,7 @@ Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) fire d
     </action>
     <action>
       <name>Scalding Breath (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The fume drake exhales a 15-foot cone of scalding steam. Each creature in that area must make a DC 11 Dexterity saving throw, taking 4 (1d8) fire damage on a failed save, or half as much damage on a successful one.</text>
     </action>
@@ -94,6 +95,7 @@ Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one ta
     </action>
     <action>
       <name>Alchemical Flame (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The kobold unleashes fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 10 (3d6) fire damage on a failed saving throw, or half as much damage on a successful one.</text>
     </action>
@@ -146,6 +148,7 @@ Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one ta
     </action>
     <action>
       <name>Alchemical Flame (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 Myla unleashes fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 10 (3d6) fire damage on a failed saving throw, or half as much damage on a successful one.</text>
     </action>
@@ -209,10 +212,16 @@ Each creature of Runara's choice that is within 120 feet of Runara and aware of 
     </action>
     <action>
       <name>Breath Weapons (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Runara uses one of the following breath weapons.
-Lightning Breath. Runara exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.
-Repulsion Breath. Runara exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 19 Strength saving throw. On a failed save, the creature is pushed 60 feet away from Runara.</text>
+
+Lightning Breath:
+Runara exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.
+
+Repulsion Breath:
+Runara exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 19 Strength saving throw. On a failed save, the creature is pushed 60 feet away from Runara.</text>
+      <attack>Lightning Breath||12d10</attack>
     </action>
     <action>
       <name>Change Shape</name>

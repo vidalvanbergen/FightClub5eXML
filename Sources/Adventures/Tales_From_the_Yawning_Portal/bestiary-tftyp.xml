@@ -372,9 +372,10 @@ Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) pierc
     </action>
     <action>
       <name>Cold Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The dragon exhales an icy blast of hail in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Cold Breath (Recharge 5-6)||5d8</attack>
+      <attack>Cold Breath||5d8</attack>
     </action>
     <description>The smallest, least intelligent, and most animalistic of the chromatic dragons, white dragons dwell in frigid climes, favoring arctic areas or icy mountains. They are vicious, cruel reptiles driven by hunger and greed.
 
@@ -1843,11 +1844,12 @@ Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) pierc
     </action>
     <action>
       <name>Lightning Jolt (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 One creature the eel touches within 5 feet of it outside water, or each creature within 15 feet of it in a body of water, must make a DC 12 Constitution saving throw. On failed save, a target takes 13 (3d8) lightning damage.
 
 If the target takes any of this damage, the target is stunned until the end of the eel's next turn. On a successful save, a target takes half as much damage and isn't stunned.</text>
-      <attack>Lightning Jolt (Recharge 5-6)||3d8</attack>
+      <attack>Lightning Jolt||3d8</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 236</description>
     <environment/>
@@ -3473,6 +3475,8 @@ If the target is a creature, it must succeed on a DC 16 Constitution saving thro
 The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a DC 16 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies and mummy lords for the next 24 hours.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (5/Turn)</name>
+      <recharge>5/Turn</recharge>
       <text>The undead can take 5 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The undead regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -3944,11 +3948,12 @@ ms,rs +5 to hit, reach 5 ft. or range 30 ft., one target. Hit: 16 (2d12 + 3) aci
     </action>
     <action>
       <name>Drowning Kiss (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The nereid touches one creature it can see within 5 feet of it. The target must succeed on a DC 13 Constitution saving throw or take 22 (3d12 + 3) acid damage.
 
 On a failure, it also runs out of breath and can't speak for 1 minute. At the end of each of its turns, it can repeat the save, ending the effect on itself on a success.</text>
-      <attack>Drowning Kiss (Recharge 5-6)||3d12+3</attack>
+      <attack>Drowning Kiss||3d12+3</attack>
     </action>
     <action>
       <name>Water Lash</name>
@@ -4460,6 +4465,8 @@ The aboleth targets one creature it can see within 30 feet of it. The target mus
 Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The aberration can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The aberration regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -4547,6 +4554,8 @@ Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) pierc
       <attack>Bite|+3|2d6+3</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -4590,11 +4599,14 @@ Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) pie
     </action>
     <action>
       <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Lightning Breath (Recharge 5-6)||12d10</attack>
+      <attack>Lightning Breath||12d10</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -4671,6 +4683,8 @@ The target dies if the ray reduces it to 0 hit points.</text>
       <attack>Eye Rays||10d10</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The beholder can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The beholder regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -4764,6 +4778,8 @@ In addition, nonmagical armor worn by the target is partly dissolved and takes a
 When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding.</text>
     </reaction>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The ooze can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The ooze regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -4824,6 +4840,8 @@ Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) pierci
       <attack>Bite|+2|2d4+2</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -4894,10 +4912,13 @@ If the target is a creature, it must succeed on a DC 13 Constitution saving thro
     </action>
     <action>
       <name>Haste (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The construct can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The construct regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -4956,6 +4977,8 @@ A creature can detach the darkmantle by making a successful DC 11 Strength check
 A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5008,6 +5031,8 @@ Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) bludg
       <attack>Tentacle|+4|1d6+4</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5062,11 +5087,14 @@ Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 16 (2d8 + 7) sla
     </action>
     <action>
       <name>Steam Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 16 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.</text>
-      <attack>Steam Breath (Recharge 5-6)||15d6</attack>
+      <attack>Steam Breath||15d6</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The dragon can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5133,6 +5161,7 @@ Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashi
     </action>
     <action>
       <name>Web (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Ranged Weapon Attack: +2 to hit, range 30/60 ft., one Large or smaller creature. The creature is restrained by webbing. As an action, the restrained creature can make a DC 9 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, is vulnerable to fire damage and immune to bludgeoning, poison and psychic damage.</text>
     </action>
@@ -5144,6 +5173,8 @@ Melee Weapon Attack: +2 to hit, reach 5 ft., one Medium or Small creature agains
 Until this grapple ends, the target can't breathe, and the ettercap has advantage on attack rolls against it.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5218,6 +5249,8 @@ Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludg
       <attack>Slam|+5|2d8+4</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The construct can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The construct regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5283,6 +5316,8 @@ A glabrezu has a 30 chance of summoning 1d3 vrock, 1d2 hezrou, or one glabrezu.
 A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The fiend (demon) can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The fiend (demon) regains spent legendary action at the start of its turn.</text>
     </legendary>
     <trait>
@@ -5356,6 +5391,8 @@ A psionic gray ooze has an intelligence score of 6 (-2), as well as the followin
 Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense within 60 feet of it. The target must make a DC +8 Intelligence saving throw, taking 10 (3d6) psychic damage on a failed save, or half as much damage on a successful one.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The ooze can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The ooze regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5408,6 +5445,8 @@ Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashi
       <attack>Longsword|+4|1d8+4</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The construct can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The construct regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5476,6 +5515,8 @@ A hezrou has a 30 chance of summoning 2d6 dretch or one hezrou.
 A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The fiend (demon) can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The fiend (demon) regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5528,6 +5569,8 @@ Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) pier
       <attack>Hook|+4|2d6+4</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5580,6 +5623,8 @@ Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludge
 When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.</text>
     </reaction>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The ooze can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The ooze regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5635,6 +5680,8 @@ Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 7 (1d8 + 3) bludg
       <attack>Tentacle|+4|1d8+3</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The aberration can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The aberration regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5688,6 +5735,8 @@ Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slash
       <attack>Claws|+5|2d8+5</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5751,6 +5800,8 @@ Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) pierci
       <attack>Talons|+3|2d4+3</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5802,6 +5853,8 @@ The remorhaz makes one bite attack against a Medium or smaller creature it is gr
 If the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 13 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet oft he remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5860,10 +5913,13 @@ Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludg
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 15 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The construct can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The construct regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -5918,6 +5974,7 @@ Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) slas
     </action>
     <action>
       <name>Spores (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 A 15-foot-radius cloud of toxic spores extends out from the vrock. The spores spread around corners. Each creature in that area must succeed on a DC 12 Constitution saving throw or become poisoned. While poisoned in this way, a target takes 5 (1d10) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Emptying a vial of holy water on the target also ends the effect on it.</text>
       <attack>Spores||1d10</attack>
@@ -5939,6 +5996,8 @@ A vrock has a 30 chance of summoning 2d4 dretch or one vrock.
 A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The fiend (demon) can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The fiend (demon) regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -6001,6 +6060,8 @@ Ranged Weapon Attack: +2 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2)
       <attack>Longbow|+2|1d8+2</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The undead can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The undead regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -6058,6 +6119,8 @@ The target must make a DC 13 Constitution saving throw, taking 24 (7d6) poison d
       <attack>Stinger||7d6</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (0/Turn)</name>
+      <recharge>0/Turn</recharge>
       <text>The dragon can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary action at the start of its turn.</text>
     </legendary>
     <spells/>
@@ -6860,6 +6923,7 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) blud
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The statue targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -6925,6 +6989,8 @@ The target must succeed on a DC 17 Constitution saving throw or be paralyzed for
 Var teleports up to 30 feet to an unoccupied space he can see. Alternatively, he can choose a space within range that is occupied by a Small or Medium creature. If that creature is willing, both creatures teleport, swapping places. Var can use this feature again only after he finishes a long rest or casts a conjuration spell of 1st level or higher.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>Tarul can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Tarul regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -7024,9 +7090,10 @@ Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) blud
     </action>
     <action>
       <name>Spit Acid (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Tecuziztecatl exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 13 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Spit Acid (Recharge 4-6)||4d8</attack>
+      <attack>Spit Acid||4d8</attack>
     </action>
     <description>A giant slug named Tecuziztecatl, the Lord of Snails. Tecuziztecatl (TayCOO-zeez-tay-COT-el) is highly intelligent and quite the boaster. In ancient lore it was considered to be related to the moon, a fact of which it is quite proud. During combat the slug will detail, in Olman, what it has in store for the characters and how hopeless their situation is.
 

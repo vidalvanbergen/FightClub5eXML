@@ -49,6 +49,7 @@ Melee Weapon Attack: +11 to hit, reach 5ft., one target. Hit: 10 (1d8 + 6) slash
     </action>
     <action>
       <name>Divine Wave (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 Ramius strikes the ground and causes holy energy to radiate outwards. Each creature of his choice within 30 feet of him must make a DC 17 Constitution saving throw. Targets take 21 (6d6) thunder damage plus 21 (6d6) radiant damage on a failed save, or half as much damage on a successful one. Creatures that fail the save are knocked down (have the prone condition).</text>
       <attack>Thunder Damage||6d6</attack>
@@ -127,7 +128,8 @@ Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 27 (4d10 + 5) r
       <attack>Arcane Burst|10|4d10+5</attack>
     </action>
     <action>
-      <name>Spirit Fissure (Recharge 4–6)</name>
+      <name>Spirit Fissure (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Zythan causes a disruption in arcane energies in a 300-foot line that is 5 feet wide. Each creature in the line must make a DC 18 Constitution saving throw, taking 65 (10d12) radiant damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Spirit Fissure||10d12</attack>
@@ -344,7 +346,8 @@ Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) slash
       <attack>Acid Damage||3d8</attack>
     </action>
     <action>
-      <name>Insect Gorge (Recharge 4–6)</name>
+      <name>Insect Gorge (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The avatar disgorges a swarm of biting flies at a point it can see within 300 feet of itself. Each creature within a 20-foot-radius sphere centered on that point must make a DC 19 Constitution saving throw. A creature takes 55 (10d10) piercing damage on a failed save, or half as much damage on a successful one. The biting flies persist for 1 minute or until the avatar is slain. A creature must also make this saving throw when it enters the insects' area for the first time on a turn or ends its turn there.</text>
       <attack>Insect Gorge||10d10</attack>
@@ -679,6 +682,7 @@ Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) pier
     </action>
     <action>
       <name>Acid Spray (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Ekengarik spits acid at one creature within 60 feet of her, or two creatures within 60 feet of her and 5 feet of each other. Targets must make a DC 18 Dexterity saving throw, taking 33 (6d10) acid damage on a failed saving throw, or half as much on a successful one.</text>
       <attack>Acid Spray||6d10</attack>
@@ -693,7 +697,8 @@ Ekengarik casts one of the following spells, requiring no material components an
 	• 1/Day each: Black Tentacles, Cone of Cold, Confusion, Dimension Door, Geas, Invisibility, Prismatic Wall, Slow</text>
     </action>
     <reaction>
-      <name>Hardened Carapace (Recharge 4–6)</name>
+      <name>Hardened Carapace (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 When hit with an attack, Ekengarik temporarily hardens her carapace, reducing her speed to 0 and increasing her AC by 5 until the start of her next turn.</text>
       <recharge>D4</recharge>
@@ -869,7 +874,8 @@ Waeloquay makes three Slam attacks.</text>
 Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 26 (4d8 + 8) bludgeoning damage.</text>
     </action>
     <action>
-      <name>Whelm (Recharge 4–6)</name>
+      <name>Whelm (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Each creature in Waeloquay's space must make a DC 22 Strength saving throw. On a failed save, a target takes 21 (3d8 + 8) bludgeoning damage. If it is Large or smaller, it also has the grappled condition (escape DC 20). Until this grapple ends, the target is restrained and unable to breathe, unless it can breathe water. If the save is successful, the target is pushed out of Waeloquay's space. Waeloquay can grapple one Large creature or up to four Medium or smaller creatures at one time. At the start of each of Waeloquay's turns, each target grappled by it takes 21 (3d8 + 8) bludgeoning damage. A creature within 5 feet of Waeloquay can pull a creature or object out of it by taking an action to make a DC 22 Strength check and succeeding.</text>
       <attack>Whelm||3d8+8</attack>
@@ -961,14 +967,16 @@ Adramalech attempts to overload the brain of a creature he can see within 60 fee
       <attack>Brain Freeze||4d10</attack>
     </action>
     <action>
-      <name>Cone of Madness (Recharge 4–6)</name>
+      <name>Cone of Madness (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Adramalech unleashes visions in a 30-foot cone in front of him. All creatures in the cone must make a DC 22 Wisdom saving throw, taking 17 (5d6) psychic damage on a failed save, or half as much on a successful one. For up to 1 minute, creatures that failed the save can't take reactions and each turn must use their action to make a melee attack against the nearest creature. Creatures may repeat the saving throw at the end of each of their turns, ending the effect on a success.</text>
       <attack>Cone of Madness||5d6</attack>
       <recharge>D4</recharge>
     </action>
     <action>
-      <name>Conjure Effigy (Recharge 6) (bonus action)</name>
+      <name>Conjure Effigy (Recharge 6) (Bonus Action)</name>
+      <recharge>D6</recharge>
       <text>
 Adramalech targets a creature, reading its thoughts and creating an effigy of a loved one in an unoccupied space that he can see within 60 feet of Adramalech. The effigy has 55 (10d10) hit points, an AC of 10, and ability scores of 10. It occasionally shouts for help, but otherwise takes no actions. While the effigy is alive, the target creature has disadvantage on attacks targeting Adramalech and any time the effigy takes damage, the target creature also takes an equal amount as psychic damage. If the effigy is killed, the target creature gains a level of exhaustion. If Adramalech is killed while effigies exist, they harmlessly melt into a warm sludge.</text>
       <attack>Conjure Effigy||10d10</attack>
@@ -1072,6 +1080,7 @@ Morax immediately deals Brittle Spine ongoing damage to all creatures that have 
     </action>
     <action>
       <name>Bone Spikes (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 Morax shoves an arm into the ground, rapidly growing bones that erupt at a point he can see within 100 feet of him. Each creature in a 60-foot-radius sphere centered on that point must make a DC 21 Dexterity saving throw, taking 28 (8d6) piercing damage on a failed save, or half as much damage on a successful one. Creatures that fail the save gain 2 Brittle Spines, while creatures that succeed only gain 1 Brittle Spine.</text>
       <attack>Bone Spikes||8d6</attack>
@@ -1160,7 +1169,8 @@ Ranged Weapon Attack: +15 to hit, range 30/60 ft., one target. Hit: 17 (2d8 + 8)
       <attack>Thunder Damage||1d6</attack>
     </action>
     <action>
-      <name>Thunderous Slam (Recharge 5–6)</name>
+      <name>Thunderous Slam (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Abigor causes all its hammers left on the battlefield to bristle with thunderous energy, exploding outwards with a roar. All creatures within a 10-foot-radius sphere centered on each hammer must make a DC 22 Constitution saving throw. Targets take 26 (4d12) thunder damage on a failed save, or half as much damage on a successful one. If a creature is within multiple spheres, it must make the save multiple times, taking damage from each source.</text>
       <attack>Thunderous Slam||4d12</attack>
@@ -1394,7 +1404,8 @@ Ranged Spell Attack: +14 to hit, range 60 ft., one target. Hit: 35 (6d8 + 8) psy
       <attack>Oration|14|6d8+8</attack>
     </action>
     <action>
-      <name>Legal Jargon (Recharge 4–6)</name>
+      <name>Legal Jargon (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Zagum chooses a point he can see within 90 feet of him. All creatures within a 20-foot-radius sphere centered on that point must make a DC 22 Wisdom saving throw. Creatures that fail the save are confused for up to 1 minute and must roll a d10 at the start of each of their turns.
 
@@ -1468,6 +1479,7 @@ Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 19 (2d12 + 6) blu
     </action>
     <action>
       <name>Spectral Reaping (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 Buer focuses her ethereal form, dashing up to 50 feet in a straight line through the ethereal plane. Any creatures in the line must make a DC 21 Constitution saving throw, taking 42 (12d6) force damage on a failed save, or half as much damage on a successful one. Buer may reappear at any unoccupied space along the line. For 1 minute after using Spectral Reaping, Buer is empowered by ethereal essence. Her Cleansing Bite attack now deals force damage instead of bludgeoning.</text>
       <attack>Spectral Reaping||12d6</attack>
@@ -1583,21 +1595,24 @@ Asmodeus targets a creature he can see within 300 feet of him, calling down a bo
       <attack>Fire Damage||4d6</attack>
     </action>
     <action>
-      <name>Infernal Word: Stun (Recharge 4–6)</name>
+      <name>Infernal Word: Stun (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Asmodeus targets a creature he can see within 120 feet of him. The target must make a DC 24 Intelligence saving throw, taking 45 (10d8) force damage on a failed save, or half as much damage on a successful one. A creature that failed the save is stunned for up to 1 minute. The stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success, but taking the damage again on a failed save.</text>
       <attack>Infernal Word: Stun||10d8</attack>
       <recharge>D4</recharge>
     </action>
     <action>
-      <name>Hell-Lord's Suggestion (Recharge 5–6)</name>
+      <name>Hell-Lord's Suggestion (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Asmodeus targets a creature he can see within 120 feet of him. The target must make a DC 24 Charisma saving throw, taking 44 (8d10) psychic damage on a failed save, or half as much damage on a successful one. A creature that failed the save has the charmed condition for up to 1 minute. While charmed, a creature is controlled by Asmodeus, performing only actions that he suggests. A charmed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success, but taking the damage again on a failed save.</text>
       <attack>Hell-Lord's Suggestion||8d10</attack>
       <recharge>D5</recharge>
     </action>
     <action>
-      <name>Fires of the Nine Hells (Recharge 5–6)</name>
+      <name>Fires of the Nine Hells (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Asmodeus chooses a point he can see within 500 feet of him, which explodes into a roaring inferno. All creatures within a 60-foot-radius sphere centered on that point must make a DC 24 Dexterity saving throw, taking 70 (20d6) fire damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Fires of the Nine Hells||20d6</attack>
@@ -1715,7 +1730,8 @@ Baalzebul causes refuse and caustic liquid to spill from the ground at a point h
       <attack>Pungent Eruption||8d8</attack>
     </action>
     <action>
-      <name>Heart of Pestilence (Recharge 5–6)</name>
+      <name>Heart of Pestilence (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Baalzebul channels pestilence into his body, sickening creatures within 50 feet that can see him. Sickened creatures must make a DC 21 Charisma saving throw, followed by a DC 21 Constitution saving throw. Failing the Charisma save makes a creature have the frightened condition, while failing the Constitution save makes a creature weak. While weakened, a creature deals half damage on melee attacks. Both effects last for 1 minute or until a Greater Restoration spell or similar is cast.</text>
       <recharge>D5</recharge>
@@ -1842,7 +1858,8 @@ Belial creates a wall of fire on a solid surface within 120 feet of him. The wal
       <attack>Walls of Phlegethos||8d8</attack>
     </action>
     <action>
-      <name>Symbol of Insanity (Recharge 4–6)</name>
+      <name>Symbol of Insanity (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Belial draws a magic symbol at a point he can see within 120 feet of him. All creatures within a 20-foot-radius sphere centered on the symbol must make a DC 25 Intelligence saving throw. Targets take 45 (10d8) psychic damage on a failed save, or half as much damage on a successful one. Creatures that fail the save immediately use their reaction to make a melee attack against a random creature within their reach, then move their full movement in a random direction.</text>
       <attack>Symbol of Insanity||10d8</attack>
@@ -1955,7 +1972,8 @@ Melee Weapon Attack: +20 to hit, reach 10 ft., one target. Hit: 21 (2d8 + 12) bl
 Ranged Spell Attack: +15 to hit, range 60 ft., one target. Hit: 21 (2d8 + 12) bludgeoning damage plus 7 (2d6) fire damage. Dispater may replace the bludgeoning damage with damage of a type that the target is vulnerable to instead.</text>
     </action>
     <action>
-      <name>Superheat Metal (Recharge 4–6)</name>
+      <name>Superheat Metal (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Dispater targets a metal object he can see within 90 feet of him. The metal glows white-hot, burning all that touches it. If the object was held by a creature, the creature must succeed on a DC 23 Dexterity saving throw to drop the object or take 45 (10d8) fire damage. If the object is attached to a creature, or they couldn't feasibly drop it, they automatically fail the save. The object returns to room temperature at the end of Dispater's turn.</text>
       <attack>Superheat Metal||10d8</attack>
@@ -2278,7 +2296,8 @@ Ranged Spell Attack: +15 to hit, range 120 ft., one target. Hit: 23 (3d10 + 7) c
       <attack>Ice Bolt|15|3d10+7</attack>
     </action>
     <action>
-      <name>Blizzard (Recharge 4–6)</name>
+      <name>Blizzard (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Levistus chooses a point he can see within 300 feet of him. Each creature in a 20-foot-radius, 40-foot-high cylinder centered on that point must make a DC 23 Dexterity saving throw. Targets take 13 (3d8) force damage plus 13 (3d8) cold damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Force Damage||3d8</attack>
@@ -2395,6 +2414,7 @@ Mammon tightens his grip around a creature he has grappled. The target takes 35 
     </action>
     <action>
       <name>Golden Gaze (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 Mammon attempts to turn one creature he can see within 60 feet of him into solid gold. The target must make a DC 23 Constitution saving throw. On a failed save, the target's flesh begins to harden, and it has the restrained condition. A restrained creature must repeat the saving throw at the end of each turn. If it successfully saves three times, the effect ends. If it fails three times, it turns to gold and now has the petrified condition. Successes and failures don't need to be consecutive.</text>
       <recharge>D6</recharge>
@@ -2501,14 +2521,16 @@ Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 20 (2d10 + 9) pi
       <attack>Fire or Cold Damage||4d8</attack>
     </action>
     <action>
-      <name>Hellfire Implosion (Recharge 4–6)</name>
+      <name>Hellfire Implosion (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 A bright streak of Hellfire appears at a point that Mephistopheles can see within 150 feet of him. Each creature in a 20-foot-radius sphere centered on that point must make a DC 22 Dexterity saving throw. Targets take 31 (9d6) fire damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Hellfire Implosion||9d6</attack>
       <recharge>D4</recharge>
     </action>
     <action>
-      <name>Hellfire Lash (Recharge 5–6)</name>
+      <name>Hellfire Lash (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Mephistopheles unleashes a 60-foot-long, 5-foot-wide lash of Hellfire that ignites a 5-foot-radius sphere around where it strikes. Any targets in the area of effect must make a DC 22 Dexterity saving throw, taking 36 (8d8) fire damage on a failed save, or half as much on a successful one.</text>
       <attack>Hellfire Lash||8d8</attack>
@@ -2778,6 +2800,7 @@ Melee Weapon Attack: +11 to hit, reach 0 ft., one target. Hit: 27 (8d4 + 7) pier
     </action>
     <action>
       <name>Burrow (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The ayperobo swarm makes a Bite attack. On a hit, the swarm burrows inside the creature, dealing an additional 35 (10d6) necrotic damage and taking control of the creature. At the start of each of its turns, the target may make a DC 17 Constitution saving throw, expelling the ayperobo swarm and taking 14 (4d6) piercing damage on a success.
 
@@ -3034,7 +3057,8 @@ Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 16 (3d6 + 6) pie
       <attack>Trunk|11|3d6+6</attack>
     </action>
     <action>
-      <name>Noxious Breath (Recharge 5–6)</name>
+      <name>Noxious Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The maelephant releases a cloud of noxious gas. All creatures in a 30-foot cone in front of the maelephant must make a DC 16 Constitution saving throw. Targets take 42 (12d6) acid damage on a failed save, or half as much damage on a successful one. In addition, on a failed save, the creature's Intelligence and Charisma scores become 1. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them. A feebled creature can repeat the save every minute, ending the effect on a success.</text>
       <attack>Noxious Breath||12d6</attack>
@@ -3116,7 +3140,8 @@ Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) blud
       <attack>Slashing Damage|8|2d8+4</attack>
     </action>
     <action>
-      <name>Storm of Steel (Recharge 4–6)</name>
+      <name>Storm of Steel (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The excruciarch swings its scourge wildly around itself. All creatures within 15 feet of the excruciarch must make a DC 16 Dexterity saving throw. Targets take 31 (6d8 + 4) slashing damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Storm of Steel||6d8+4</attack>
@@ -3176,7 +3201,8 @@ Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slash
       <attack>Poison Damage||2d6</attack>
     </action>
     <action>
-      <name>Burrow (Recharge 5–6)</name>
+      <name>Burrow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 On a hit, the creature takes an additional 32 (5d12) slashing damage as the wings merge with it. While merged, the creature moves with the shredwing, takes 19 (3d12) necrotic damage at the start of each of its turn, and has the grappled condition. The shredwing can unmerge at any time, leaving the creature and dropping it if airborne. The only other way to end the merge is to kill the shredwing.
 
@@ -3267,7 +3293,8 @@ The dragon tightens its grip on a creature grappled by its tail. The creature ta
 Each creature of the dragon's choice that is within 120 feet of the dragon must succeed on a DC 18 Wisdom saving throw or have the frightened condition for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.</text>
     </action>
     <action>
-      <name>Stygian Breath (Recharge 5–6)</name>
+      <name>Stygian Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The dragon exhales poisonous Styx water in a 60-foot-long, 10-foot-wide line. Each creature in that line must make a DC 19 Dexterity saving throw, taking 54 (12d8) poison damage on a failed save, or half as much on a successful one. Creatures that fail the save contract Stygian Wasting.</text>
       <attack>Stygian Breath||12d8</attack>
@@ -3426,6 +3453,7 @@ The shadow attempts to form a link between itself and a creature it can see. The
     </action>
     <action>
       <name>Shadows of Death (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The shadow discharges inky-black shadows in a 90-foot-radius sphere around itself. Creatures in the shadows must succeed on a DC 19 Wisdom saving throw or take 27 (6d8) necrotic damage and have the frightened condition for 1 minute. A frightened creature may repeat the saving throw at the end of each of its turns, ending the effect on a successful save, but taking the damage again on a failed save.</text>
       <attack>Shadows of Death||6d8</attack>
@@ -3519,7 +3547,8 @@ The shadow attempts to form a link between itself and a creature it can see. The
       <attack>Empathic Link||4d12</attack>
     </action>
     <action>
-      <name>Shadows of Death (Recharge 5–6)</name>
+      <name>Shadows of Death (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The shadow discharges inky-black shadows in a 90-foot-radius sphere around itself. Creatures in the shadows must succeed on a DC 22 Wisdom saving throw or take 36 (8d8) necrotic damage and have the frightened condition for 1 minute. A frightened creature may repeat the saving throw at the end of each of its turns, ending the effect on a successful save, but taking the damage again on a failed save.</text>
       <attack>Shadows of Death||8d8</attack>
@@ -3607,7 +3636,8 @@ Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 4) pierc
       <attack>Necrotic Damage||4d6</attack>
     </action>
     <action>
-      <name>Rend Armor (Recharge 4–6)</name>
+      <name>Rend Armor (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The vorvolaka makes a Talon attack against a creature. On a hit, the creature's AC is reduced by 2 for 1 minute. Creatures not wearing armor are immune to this effect, and the total reduction can't bring a creature below an AC of 10.</text>
       <recharge>D4</recharge>
@@ -3840,7 +3870,8 @@ Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slash
       <attack>Radiant Damage||5d8</attack>
     </action>
     <action>
-      <name>Purifying Flames (Recharge 4–6)</name>
+      <name>Purifying Flames (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Barachiel wreathes his sword in white flame, then makes a Greatsword attack. On a hit, the target takes an additional 45 (7d12) fire damage plus 45 (7d12) radiant damage. The target must succeed on a DC 18 Charisma saving throw or have the stunned condition until the end of their next turn.</text>
       <attack>Purifying Flames||7d12+7d12</attack>
@@ -3959,7 +3990,8 @@ Koh Tam judges a creature within 60 feet of him. The target must succeed on a DC
       <attack>Extra Damage||10d12+5</attack>
     </action>
     <action>
-      <name>Arbiter's Light (Recharge 4–6)</name>
+      <name>Arbiter's Light (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Ranged Spell Attack: +9 to hit, range 120 ft., one target. Hit: 70 (10d12 + 5) radiant damage, and the target has the blinded condition until the start of Koh Tam's next turn.
 
@@ -4037,7 +4069,8 @@ Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) sl
       <attack>Fire Damage||3d6</attack>
     </action>
     <action>
-      <name>Draining Grasp (Recharge 4–6)</name>
+      <name>Draining Grasp (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The paeliryon makes a Claw attack. On a hit, the target's Charisma score is reduced by 2 (1d4). This reduction lasts until the target finishes a short or long rest. A creature whose Charisma is reduced to 3 or less because of this ability, has the stunned condition for 1 minute.</text>
       <attack>Draining Grasp||1d4</attack>
@@ -4112,7 +4145,8 @@ Ranged Weapon Attack: +11 to hit, range 60/120 ft., one target. Hit: 16 (3d6 + 6
       <attack>Flechette|11|3d6+6</attack>
     </action>
     <action>
-      <name>Flechette Spray (Recharge 5–6)</name>
+      <name>Flechette Spray (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The miasmorne launches flechettes from its fins in a 90-foot cone in front of it. All creatures in the cone must make a DC 19 Dexterity saving throw, taking 21 (6d6) acid damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Flechette Spray||6d6</attack>
@@ -4163,7 +4197,8 @@ Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 16 (2d12 + 3) for
       <attack>Stomp|7|2d12+3</attack>
     </action>
     <action>
-      <name>Realize Nightmares (Recharge 4–6)</name>
+      <name>Realize Nightmares (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The oneirovore manipulates the perception of nearby creatures, sending them into a panic. Creatures of the oneirovore's choice that it can see within 60 feet must make a DC 19 Charisma saving throw. On a failed save, the creature has the charmed condition, their vision distorted such that they view their allies as creatures of pure fear and hatred. While charmed, a creature will use their actions to attack their allies with intent to kill. A charmed creature may repeat the saving throw at the end of each turn, ending the effect on a success.</text>
       <recharge>D4</recharge>

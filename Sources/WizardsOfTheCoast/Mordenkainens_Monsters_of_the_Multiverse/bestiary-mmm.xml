@@ -56,7 +56,8 @@ The abjurer casts one of the following spells, using Intelligence as the spellca
 	• 1/Day each: arcane lock, banishment, globe of invulnerability, invisibility, wall of force</text>
     </action>
     <reaction>
-      <name>Arcane Ward (Recharge 4–6)</name>
+      <name>Arcane Ward (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 When the abjurer or a creature it can see within 30 feet of it takes damage, the abjurer magically creates a protective barrier around itself or the other creature. The barrier reduces the damage to the protected creature by 26 (4d10 + 4), to a minimum of O, and then vanishes.</text>
     </reaction>
@@ -252,6 +253,7 @@ Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) force 
     </action>
     <action>
       <name>Lightning Strike (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The myrmidon makes one Flail attack. On a hit, the target takes an extra 18 (4d8) lightning damage, and the target must succeed on a DC 13 Constitution saving throw or be stunned until the end of the myrmidon's next turn.</text>
       <attack>Lightning Strike|+7|4d8</attack>
@@ -315,7 +317,8 @@ Ranged Spell Attack: +8 to hit, range 120 ft., one target. Hit: 28 (8d6) force d
       <attack>Arcane Bolt|+8|8d6</attack>
     </action>
     <action>
-      <name>Mind Blast (Recharge 5–6)</name>
+      <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The alhoon magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 16 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -461,6 +464,7 @@ Melee Spell Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (4d6 + 3) psychi
     </action>
     <action>
       <name>Howling Babble (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 Each creature within 30 feet of the allip that can hear it must make a DC 14 Wisdom saving throw. On a failed save, a target takes 12 (2d8 + 3) psychic damage, and it is stunned until the end of its next turn. On a successful save, it takes half as much damage and isn't stunned. Constructs and Undead are immune to this effect.</text>
     </action>
@@ -528,6 +532,7 @@ The amnizu targets one or two creatures that it can see within 60 feet of it. Ea
     </action>
     <action>
       <name>Forgetfulness (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The amnizu targets one creature it can see within 60 feet of it. That creature must succeed on a DC 18 Intelligence saving throw or take 26 (4d12) psychic damage and become stunned for 1 minute. A stunned creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target is stunned for the full minute, it forgets everything it sensed, experienced, and learned during the last 5 hours.</text>
     </action>
@@ -770,8 +775,10 @@ The archdruid casts one of the following spells, using Wisdom as the spellcastin
       <name>Change Shape (2/Day) (bonus action)</name>
       <text>
 The archdruid magically transforms into a Beast or an Elemental with a challenge rating of 6 or less and can remain in that form for up to 9 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls unconscious. The archdruid can revert to its true form using a bonus action.
-  While in a new form, the archdruid's stat block is replaced by the stat block of that form, except the archdruid keeps its current hit points, its hit point maximum, this bonus action, its languages and ability to speak, and its Spellcasting action.
-  The new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks.</text>
+
+While in a new form, the archdruid's stat block is replaced by the stat block of that form, except the archdruid keeps its current hit points, its hit point maximum, this bonus action, its languages and ability to speak, and its Spellcasting action.
+
+The new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks.</text>
     </action>
     <spells>beast sense, entangle, speak with animals, animal messenger, dominate beast, faerie fire, tree stride, commune with nature, mass cure wounds</spells>
   </monster>
@@ -889,7 +896,8 @@ Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) sla
       <attack>Serrated Tail|+8|2d10+5</attack>
     </action>
     <action>
-      <name>Lightning Lance (Recharge 5–6)</name>
+      <name>Lightning Lance (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The armanite looses a bolt of lightning in a line that is 60 feet long and 10 feet wide. Each creature in the line must make a DC 15 Dexterity saving throw, taking 36 (8d8) lightning damage on a failed save, or half as much damage on a successful one.</text>
     </action>
@@ -1427,7 +1435,8 @@ The banderhobb teleports up to 30 feet to an un occupied space of dim light or d
 Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or smaller creature grappled by the banderhobb. Hit: 15 (3d6 + 5) piercing damage.
 
 The creature is also swallowed, and the grapple ends. The swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the banderhobb, and it takes 10 (3d6) necrotic damage at the start of each of the banderhobb's turns. A creature reduced to 0 hit points in this way stops taking the necrotic damage and becomes stable.
-  The banderhobb can have only one creature swallowed at a time. While the banderhobb isn't incapacitated, it can regurgitate the creature at any time (no action required) in a space within 5 feet of it. The creature exits prone. If the banderhobb dies, it likewise regurgitates a swallowed creature.</text>
+
+The banderhobb can have only one creature swallowed at a time. While the banderhobb isn't incapacitated, it can regurgitate the creature at any time (no action required) in a space within 5 feet of it. The creature exits prone. If the banderhobb dies, it likewise regurgitates a swallowed creature.</text>
       <attack>Swallow|+8|3d6+5+3d6</attack>
     </action>
     <action>
@@ -1598,7 +1607,8 @@ Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) 
       <attack>Shortbow|+4|1d6+2</attack>
     </action>
     <action>
-      <name>Cacophony (Recharge 4–6)</name>
+      <name>Cacophony (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Each creature in a 15-foot cube originating from the bard must make a DC 12 Constitution saving throw. On a failed save, a creature takes 9 (2d8) thunder damage and is pushed up to 10 feet away from the bard. On a successful save, a creature takes half as much damage and isn't pushed.</text>
     </action>
@@ -1748,7 +1758,8 @@ The berbalang casts one of the following spells, requiring no material component
       <name>Spectral Duplicate (Recharges after a Short or Long Rest) (bonus action)</name>
       <text>
 The berbalang creates one spectral duplicate of itself in an unoccupied space it can see within 60 feet of it. While the duplicate exists, the berbalang is unconscious. A berbalang can have only one duplicate at a time. The duplicate disappears when it or the berbalang drops to 0 hit points or when the berbalang dismisses it (no action required).
-  The duplicate has the same statistics and knowledge as the berbalang, and everything experienced by the duplicate is known by the berbalang. All damage dealt by the duplicate's attacks is psychic damage.</text>
+
+The duplicate has the same statistics and knowledge as the berbalang, and everything experienced by the duplicate is known by the berbalang. All damage dealt by the duplicate's attacks is psychic damage.</text>
     </action>
     <spells>speak with dead, plane shift</spells>
   </monster>
@@ -1891,6 +1902,7 @@ Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) force 
     </action>
     <action>
       <name>Creeping Darkness (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The abishai casts darkness at a point within 120 feet of it, requiring no spell components or concentration. Wisdom is its spellcasting ability for this spell. While the spell persists, the abishai can move the area of darkness up to 60 feet as a bonus action.</text>
     </action>
@@ -2221,7 +2233,8 @@ If the target is a creature, the boneclaw can pull the target up to 10 feet towa
       <attack>Piercing Claw|+8|3d10+4+2d10</attack>
     </action>
     <action>
-      <name>Shadow Jump (Recharge 5–6)</name>
+      <name>Shadow Jump (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 If the boneclaw is in dim light or darkness, each creature of the boneclaw's choice within 15 feet of it must succeed on a DC 14 Constitution saving throw or take 34 (5d12 + 2) necrotic damage.
 
@@ -2387,7 +2400,8 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) blud
       <attack>Slam|+10|3d8+5+3d10</attack>
     </action>
     <action>
-      <name>Paralyzing Breath (Recharge 5–6)</name>
+      <name>Paralyzing Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The collector releases paralyzing gas in a 30-foot cone. Each creature in that area must make a successful DC 18 Constitution saving throw or be paralyzed for 1 minute. A paralyzed creature repeats the saving throw at the end of each of its turns, ending the effect on itself with a success.</text>
     </action>
@@ -2510,7 +2524,8 @@ Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 21 (5d6 + 4) blud
       <attack>Tail|+7|5d6 + 4</attack>
     </action>
     <action>
-      <name>Death Ray (Recharge 5–6)</name>
+      <name>Death Ray (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The catoblepas targets one creature it can see within 30 feet of it. The target must make a DC 16 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one. If the saving throw fails by 5 or more, the target instead takes 64 necrotic damage.
 
@@ -2822,7 +2837,8 @@ Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one ta
       <attack>Dagger|+5|1d4 + 3+3d6</attack>
     </action>
     <action>
-      <name>Web (Recharge 5–6)</name>
+      <name>Web (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Ranged Weapon Attack: +5 to hit, range 30/60 ft., one Large or smaller creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 11 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; 5 hit points; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</text>
     </action>
@@ -2838,7 +2854,8 @@ The choldrith casts one of the following spells, using Wisdom as the spellcastin
       <name>Spectral Dagger (Recharges after a Short or Long Rest) (bonus action)</name>
       <text>
 The choldrith conjures a floating, spectral dagger within 60 feet of itself. The choldrith can make a melee spell attack (+4 to hit) against one creature within 5 feet of the dagger. On a hit, the target takes 6 (1d8 + 2) force damage.
-  The dagger lasts for 1 minute. As a bonus action on later turns, the choldrith can move the dagger up to 20 feet and repeat the attack against one creature within 5 feet of the dagger.</text>
+
+The dagger lasts for 1 minute. As a bonus action on later turns, the choldrith can move the dagger up to 20 feet and repeat the attack against one creature within 5 feet of the dagger.</text>
     </action>
     <spells>guidance, thaumaturgy, bane, hold person</spells>
   </monster>
@@ -3012,7 +3029,8 @@ While grappled in this way, a creature's speed isn't reduced, but it can move on
       <attack>Harpoon|+7|1d10+4</attack>
     </action>
     <action>
-      <name>Explosive Bolt (Recharge 5–6)</name>
+      <name>Explosive Bolt (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The clockwork launches an explosive charge at a point within 120 feet. Each creature in a 20-foot-radius sphere centered on that point must make a DC 15 Dexterity saving throw, taking 17 (5d6) fire damage on a failed save, or half as much damage on a successful one.</text>
     </action>
@@ -4144,6 +4162,7 @@ The devourer chooses a living Humanoid with 0 hit points that it can see within 
     </action>
     <action>
       <name>Soul Rend (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The devourer creates a vortex of life-draining energy in a 20-foot radius centered on itself. Each creature in that area must make a DC 18 Constitution saving throw, taking 44 (8d10) necrotic damage on a failed save, or half as much damage on a successful one.</text>
     </action>
@@ -4195,7 +4214,8 @@ Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) force
       <attack>Claw|+6|2d8+3</attack>
     </action>
     <action>
-      <name>Flailing Claws (Recharge 5–6)</name>
+      <name>Flailing Claws (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The dhergoloth moves up to its speed in a straight line and targets each creature within 5 feet of it during its movement. Each target must succeed on a DC 14 Dexterity saving throw or take 22 (3d12 + 3) force damage.</text>
     </action>
@@ -4303,7 +4323,8 @@ Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 16 (3d6 + 6) sla
       <attack>Claws|+11|3d6+6</attack>
     </action>
     <action>
-      <name>Whirlwind of Claws (Recharge 5–6)</name>
+      <name>Whirlwind of Claws (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Each creature within 10 feet of the troll must make a DC 19 Dexterity saving throw, taking 44 (8d10) slashing damage on a failed save, or half as much damage on a successful one.</text>
     </action>
@@ -4350,7 +4371,8 @@ Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 120 ft., one targe
       <attack>Arcane Burst|+7|3d10+4</attack>
     </action>
     <action>
-      <name>Overwhelming Revelation (Recharge 5–6)</name>
+      <name>Overwhelming Revelation (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The diviner magically creates a burst of illumination in a 10-foot-radius sphere centered on a point within 120 feet of it. Each creature in that area must make a DC 15 Wisdom saving throw. On a failed save, a creature takes 45 (10d8) psychic damage and is stunned until the end of the diviner's next turn. On a successful save, the creature takes half as much damage and isn't stunned.</text>
     </action>
@@ -4851,7 +4873,8 @@ The drow's casts one of the following spells, requiring no material components a
       <name>Spectral Dagger (Recharges after a Short or Long Rest) (bonus action)</name>
       <text>
 The drow conjures a floating, spectral dagger within 60 feet of itself. The drow can make a melee spell attack (+10 to hit) against one creature within 5 feet of the dagger. On a hit, the target takes 9 (1d8 + 5) force damage.
-  The dagger lasts for 1 minute. As a bonus action on later turns, the drow can move the dagger up to 20 feet and repeat the attack against one creature within 5 feet of the dagger.</text>
+
+The dagger lasts for 1 minute. As a bonus action on later turns, the drow can move the dagger up to 20 feet and repeat the attack against one creature within 5 feet of the dagger.</text>
     </action>
     <spells>dancing lights, detect magic, message, thaumaturgy, clairvoyance, darkness, detect thoughts, dispel magic, faerie fire, levitate, silence, suggestion, true seeing</spells>
   </monster>
@@ -5319,7 +5342,8 @@ Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) pierci
       <attack>Mind-Poison Dagger|+5|1d4+3+3d6</attack>
     </action>
     <action>
-      <name>Invisibility (Recharge 4–6)</name>
+      <name>Invisibility (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The duergar magically turns invisible for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.</text>
     </action>
@@ -5586,7 +5610,8 @@ Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 30/120 ft., one t
 Up to three allies within 120 feet of this duergar that can hear it can each use their reaction to make one weapon attack.</text>
     </action>
     <action>
-      <name>Invisibility (Recharge 4–6)</name>
+      <name>Invisibility (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The duergar magically turns invisible for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.</text>
     </action>
@@ -5649,7 +5674,8 @@ Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) pier
       <attack>Fire Lance (Enlarged)|+5|2d12 + 3+1d6</attack>
     </action>
     <action>
-      <name>Fire Spray (Recharge 5–6)</name>
+      <name>Fire Spray (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 From its fire lance, the duergar shoots a 15-foot cone of fire or a line of fire 30 feet long and 5 feet wide. Each creature in that area must make a DC 12 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one.</text>
     </action>
@@ -5715,6 +5741,7 @@ If the target is a creature, its hit point maximum is also reduced by 3 (1d6). T
     </action>
     <action>
       <name>Possess Corpse (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The dybbuk disappears into an intact corpse within 5 feet of it that belonged to a Large or smaller Beast or Humanoid. The dybbuk gains 20 temporary hit points. While possessing the corpse, the dybbuk adopts the corpse's size and can't use Incorporeal Movement. Its game statistics otherwise remain the same. The possession lasts until the temporary hit points are lost or the dybbuk ends it as a bonus action. When the possession ends, the dybbuk appears in an unoccupied space within 5 feet of the corpse.</text>
     </action>
@@ -5776,6 +5803,7 @@ Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) force
     </action>
     <action>
       <name>Thunderous Strike (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The myrmidon makes one Maul attack. On a hit, the target takes an extra 22 (4d10) thunder damage, and the target must succeed on a DC 14 Strength saving throw or be knocked prone.</text>
     </action>
@@ -5816,7 +5844,8 @@ The myrmidon makes one Maul attack. On a hit, the target takes an extra 22 (4d10
 The eidolon can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object other than a sacred statue.</text>
     </trait>
     <trait>
-      <name>Sacred Animation (Recharge 5–6)</name>
+      <name>Sacred Animation (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 When the eidolon moves into a space occupied by a sacred statue, the eidolon can disappear, causing the statue to become a creature under the eidolon's control. The eidolon uses the sacred statue's stat block in place of its own.</text>
     </trait>
@@ -5896,7 +5925,8 @@ If the target is a Huge or smaller creature, it is grappled (escape DC 15) and t
       <attack>Tentacle|+7|4d8 + 2</attack>
     </action>
     <action>
-      <name>Mind Blast (Recharge 5–6)</name>
+      <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Creatures of the elder brain's choice within 60 feet of it must succeed on a DC 18 Intelligence saving throw or take 32 (5d10 + 5) psychic damage and be stunned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -6110,6 +6140,7 @@ Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 23 (4d6 + 9) thu
     </action>
     <action>
       <name>Lightning Storm (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 Each creature within 120 feet of the tempest must make a DC 21 Dexterity saving throw, taking 27 (6d8) lightning damage on a failed save, or half as much damage on a successful one. If a target's saving throw fails by 5 or more, the creature is also stunned until the end of its next turn.</text>
     </action>
@@ -6187,7 +6218,8 @@ The enchanter casts one of the following spells, using Intelligence as the spell
 	• 2/Day each: charm person, mage armor, hold person, invisibility, suggestion, tongues</text>
     </action>
     <reaction>
-      <name>Instinctive Charm (Recharge 4–6)</name>
+      <name>Instinctive Charm (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 When a visible creature within 30 feet of the enchanter makes an attack roll against it, the enchanter forces the attacker to make a DC 14 Wisdom saving throw. On a failed save, the attacker redirects the attack roll to the creature closest to it, other than the enchanter or itself. If multiple eligible creatures are closest, the attacker chooses which one to target.</text>
     </reaction>
@@ -6235,7 +6267,8 @@ Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 120 ft., one targe
       <attack>Arcane Burst|+7|3d10+4</attack>
     </action>
     <action>
-      <name>Sculpted Explosion (Recharge 4–6)</name>
+      <name>Sculpted Explosion (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The evoker unleashes a magical explosion of a particular damage type: cold, fire, lightning, or thunder. The magic erupts in a 20-foot-radius sphere centered on a point within 150 feet of the evoker. Each creature in that area must make a DC 15 Dexterity saving throw. The evoker can select up to three creatures it can see in the area to ignore the spell, as the evoker sculpts the spell's energy around them. On a failed save, a creature takes 40 (9d8) damage of the chosen type and is knocked prone. On a successful save, a creature takes half as much damage and isn't knocked prone.</text>
     </action>
@@ -6357,6 +6390,7 @@ Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) force 
     </action>
     <action>
       <name>Fiery Strikes (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The myrmidon uses Multiattack. Each attack that hits deals an extra 7 (2d6) fire damage.</text>
     </action>
@@ -6414,7 +6448,8 @@ Ranged Weapon Attack: +13 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 
       <attack>Rock|+13|4d10+8</attack>
     </action>
     <action>
-      <name>Shield Charge (Recharge 5–6)</name>
+      <name>Shield Charge (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The giant moves up to 30 feet in a straight line and can move through the space of any creature smaller than Huge. The first time it enters a creature's space during this move, that creature must succeed on a DC 21 Strength saving throw or take 36 (8d6 + 8) bludgeoning damage plus 14 (4d6) fire damage and be pushed up to 30 feet and knocked prone.</text>
     </action>
@@ -6831,7 +6866,8 @@ The froghemoth makes one Bite attack and two Tentacle attacks, and it can use To
 Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 22 (3d10 + 6) piercing damage, and the target is swallowed if it is a Medium or smaller creature.
 
 A swallowed creature is blinded and restrained, has total cover against attacks and other effects outside the froghemoth, and takes 10 (3d6) acid damage at the start of each of the froghemoth's turns.
-  The froghemoth's gullet can hold up to two creatures at a time. If the froghemoth takes 20 damage or more on a single turn from a creature inside it, the froghemoth must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls prone in a space within 10 feet of the froghemoth. If the froghemoth dies, any swallowed creature is no longer restrained by it and can escape from the corpse using 10 feet of movement, exiting prone.</text>
+
+The froghemoth's gullet can hold up to two creatures at a time. If the froghemoth takes 20 damage or more on a single turn from a creature inside it, the froghemoth must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls prone in a space within 10 feet of the froghemoth. If the froghemoth dies, any swallowed creature is no longer restrained by it and can escape from the corpse using 10 feet of movement, exiting prone.</text>
       <attack>Bite|+10|3d10+6+3d6</attack>
     </action>
     <action>
@@ -6970,6 +7006,7 @@ Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 8 (1d6 + 5) pierc
     </action>
     <action>
       <name>Freezing Breath (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The salamander exhales chill wind in a 60-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 44 (8d10) cold damage on a failed save, or half as much damage on a successful one.</text>
     </action>
@@ -7245,7 +7282,8 @@ Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) pierci
       <attack>Bite|+6|1d8 + 4</attack>
     </action>
     <action>
-      <name>Fire Burst (Recharge 5–6)</name>
+      <name>Fire Burst (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The giant strider hurls a gout of flame at a point it can see within 60 feet of it. Each creature in a 10-foot-radius sphere centered on that point must make a DC 12 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one. The fire spreads around corners, and it ignites flammable objects in that area that aren't being worn or carried</text>
     </action>
@@ -7732,6 +7770,7 @@ Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludg
     </action>
     <action>
       <name>Temporal Strike (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 13 (2d8 + 4) bludgeoning damage plus 52 (8d12) psychic damage.
 
@@ -8062,7 +8101,8 @@ Graz'zt teleports, along with any equipment he is wearing or carrying, up to 120
 Graz'zt transforms into a form that resembles a Medium Humanoid or back into his true form. Aside from his size, his statistics are the same in each form. Any equipment he is wearing or carrying isn't transformed.</text>
     </action>
     <reaction>
-      <name>Negate Spell (Recharge 5–6)</name>
+      <name>Negate Spell (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Graz'zt tries to interrupt a spell he sees a creature casting within 60 feet of him. If the spell is 3rd level or lower, the spell fails and has no effect. If the spell is 4th level or higher, Graz'zt makes a Charisma check against a DC of 10 + the spell's level. On a success, the spell fails and has no effect.</text>
     </reaction>
@@ -8285,6 +8325,7 @@ Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) 
     </action>
     <action>
       <name>Mesmerizing Chirr (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The grung makes a chirring noise to which grungs are immune. Each Humanoid or Beast that is within 15 feet of the grung and able to hear it must succeed on a DC 12 Wisdom saving throw or be stunned until the end of the grung's next turn.</text>
     </action>
@@ -8696,7 +8737,8 @@ Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) pierc
       <attack>Rending Bite|+6|2d6+3+4d10</attack>
     </action>
     <action>
-      <name>Mind-Breaking Howl (Recharge 4–6)</name>
+      <name>Mind-Breaking Howl (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The howler emits a keening howl in a 60-foot cone. Each creature in that area must succeed on a DC 13 Wisdom saving throw or take 16 (3d10) psychic damage and be frightened until the end of the howler's next turn. While a creature is frightened in this way, its speed is halved, and it is incapacitated. A target that successfully saves is immune to the Mind-Breaking Howl of all howlers for the next 24 hours.</text>
     </action>
@@ -8852,7 +8894,8 @@ Hutijin casts one of the following spells, requiring no material components and 
 Hutijin teleports, along with any equipment he is wearing and carrying, up to 120 feet to an unoccupied space he can see.</text>
     </action>
     <reaction>
-      <name>Fearful Voice (Recharge 5–6)</name>
+      <name>Fearful Voice (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 In response to taking damage, Hutijin utters a dreadful word of power. Each creature within 30 feet of him that isn't a devil must succeed on a DC 22 Wisdom saving throw or become frightened of him for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that saves against this effect is immune to his Fearful Voice for 24 hours.</text>
     </reaction>
@@ -9092,7 +9135,8 @@ Any creature killed by this attack is drawn into Juiblex's body, where the corps
       <attack>Acid Lash|+14|4d6+7</attack>
     </action>
     <action>
-      <name>Eject Slime (Recharge 5–6)</name>
+      <name>Eject Slime (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Juiblex spews out a corrosive slime, targeting one creature that it can see within 60 feet of it. The target must succeed on a DC 21 Dexterity saving throw or take 55 (10d10) acid damage.
 
@@ -9637,7 +9681,8 @@ Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 7 (1d6 + 4) 
       <attack>Spike|+6|1d6+4</attack>
     </action>
     <action>
-      <name>Acid Spray (Recharge 5–6)</name>
+      <name>Acid Spray (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The kruthik sprays acid in a 15-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 22 (4d10) acid damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Acid Spray||4d10</attack>
@@ -9778,6 +9823,7 @@ Melee Weapon Attack: +14 to hit, reach 20 ft., one target. Hit: 19 (2d10 + 8) bl
     </action>
     <action>
       <name>Tidal Wave (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The leviathan magically creates a wave of water that extends from a point it can see within 120 feet of itself. The wave is up to 250 feet long, up to 250 feet tall, and up to 50 feet wide. Each creature in the wave must make a DC 24 Strength saving throw. On a failed save, a creature takes 45 (7d12) bludgeoning damage and is knocked prone. On a successful save, a creature takes half as much damage and isn't knocked prone. The water spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 250 feet of it, and then it vanishes.</text>
     </action>
@@ -9899,12 +9945,13 @@ Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (2d10 + 3) pie
       <attack>Arm Spike|+6|2d10+3</attack>
     </action>
     <action>
-      <name>Embrace (Recharge 4–6)</name>
+      <name>Embrace (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 25 (4d10 + 3) piercing damage, and the target is grappled (escape DC 14) if it is a Medium or smaller creature.
 
 Until the grapple ends, the target is frightened, and it takes 27 (6d8) psychic damage at the end of each of its turns. The sorrowsworn can grapple only one creature at a time.</text>
-      <attack>Embrace (Recharge 4–6)|+6|4d10+3</attack>
+      <attack>Embrace|+6|4d10+3</attack>
     </action>
     <reaction>
       <name>Tightening Embrace</name>
@@ -10074,7 +10121,8 @@ The marut makes two Unerring Slam attacks.</text>
 Melee Weapon Attack: automatic hit, reach 5 ft., one target. Hit: 60 force damage, and the target is pushed up to 5 feet away from the marut if it is Huge or smaller.</text>
     </action>
     <action>
-      <name>Blazing Edict (Recharge 5–6)</name>
+      <name>Blazing Edict (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Arcane energy emanates from the marut's chest in a 60-foot cube. Every creature in that area takes 45 radiant damage.
 
@@ -10212,7 +10260,8 @@ If the target is a creature other than an Undead, it must succeed on a DC 12 Con
       <attack>Claw|+6|2d8+3</attack>
     </action>
     <action>
-      <name>Raise Ghoul (Recharge 5–6)</name>
+      <name>Raise Ghoul (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The maurezhi targets one dead ghoul or ghast it can see within 30 feet of it. The target is revived with all its hit points.</text>
     </action>
@@ -10255,6 +10304,7 @@ Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) pierc
     </action>
     <action>
       <name>Disgorge (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The demon vomits in a 15-foot cube. Each creature in that area must succeed on a DC 11 Dexterity saving throw or take 11 (2d10) acid damage and fall prone in the spew.</text>
     </action>
@@ -10304,7 +10354,8 @@ Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) pierci
       <attack>Shortsword|+5|1d6+3+1d6</attack>
     </action>
     <action>
-      <name>Shadow Teleport (Recharge 5–6)</name>
+      <name>Shadow Teleport (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The meazel, any equipment it is wearing or carrying, and any creature it is grappling teleport to an unoccupied space within 500 feet of it, provided that the starting space and the destination are in dim light or darkness. The destination must be a place the meazel has seen before, but it need not be within line of sight. If the destination space is occupied, the teleportation leads to the nearest unoccupied space.
   Any other creature the meazel teleports becomes cursed for 1 hour or until the curse is ended by remove curse or greater restoration. Until this curse ends, every Undead and every creature native to the Shadowfell within 300 feet of the cursed creature can sense it, which prevents that creature from hiding from them.</text>
@@ -10648,7 +10699,8 @@ If the target is a creature, it must succeed on a DC 24 Strength saving throw or
       <attack>Many-Tailed Whip|+15|2d4+8+2d10</attack>
     </action>
     <action>
-      <name>Breath of Despair (Recharge 5–6)</name>
+      <name>Breath of Despair (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Moloch exhales in a 30-foot cube. Each creature in that area must succeed on a DC 21 Wisdom saving throw or take 27 (5d10) psychic damage, drop whatever it is holding, and become frightened of Moloch for 1 minute. While frightened in this way, a creature must take the Dash action and move away from Moloch by the safest available route on each of its turns, unless there is nowhere to move, in which case it needn't take the Dash action. If the creature ends its turn in a location where it doesn't have line of sight to Moloch, the creature can repeat the saving throw, ending the effect on itself on a success.</text>
     </action>
@@ -11058,7 +11110,8 @@ The nagpa casts one of the following spells, using Intelligence as the spellcast
 The nagpa targets one creature it can see within 90 feet of it. The target must make a DC 20 Charisma saving throw. An evil creature makes the save with disadvantage. On a failed save, the target is charmed by the nagpa until the start of the nagpa's next turn. On a successful save, the target becomes immune to the nagpa's Corruption for the next 24 hours.</text>
     </action>
     <action>
-      <name>Paralysis (Recharge 6) (bonus action)</name>
+      <name>Paralysis (Recharge 6) (Bonus Action)</name>
+      <recharge>D6</recharge>
       <text>
 The nagpa forces each creature within 30 feet of it to make a DC 20 Wisdom saving throw, excludingUndead and Constructs. On a failed save, a target is paralyzed for 1 minute. A paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -11446,7 +11499,8 @@ If the target is a Large or smaller creature, it must succeed on a DC 18 Strengt
       <attack>Tentacles|+13|3d8 + 8+2d10</attack>
     </action>
     <action>
-      <name>Acid Breath (Recharge 5–6)</name>
+      <name>Acid Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The neothelid exhales acid in a 60- foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 35 (10d6) acid damage on a failed save, or half as much damage on a successful one.</text>
     </action>
@@ -11522,6 +11576,7 @@ The target must succeed on a DC 21 Constitution saving throw or its hit point ma
     </action>
     <action>
       <name>Finger of Doom (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The nightwalker points at one creature it can see within 300 feet of it. The target must succeed on a DC 21 Wisdom saving throw or take 39 (6d12) necrotic damage and become frightened until the end of the nightwalker's next turn. While frightened in this way, the creature is also paralyzed. If a target's saving throw is successful, the target is immune to the nightwalker's Finger of Doom for the next 24 hours.</text>
     </action>
@@ -11560,7 +11615,8 @@ The nightwalker points at one creature it can see within 300 feet of it. The tar
       <name>Nilbogism</name>
       <text>
 Any creature that attempts to damage the nilbog must first succeed on a DC 12 Charisma saving throw or be charmed until the end of the creature's next turn. A creature charmed in this way must use its action praising the nilbog.
-  The nilbog can't regain hit points, including through magical healing, except through its Reversal of Fortune reaction.</text>
+
+The nilbog can't regain hit points, including through magical healing, except through its Reversal of Fortune reaction.</text>
     </trait>
     <action>
       <name>Fool's Scepter</name>
@@ -11827,6 +11883,7 @@ Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludge
     </action>
     <action>
       <name>Chain Smash (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage, and the target must make a DC 14 Constitution saving throw or be stunned for 1 minute.
 
@@ -11929,6 +11986,7 @@ Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) slash
     </action>
     <action>
       <name>Corrupted Healing (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The oinoloth touches one willing creature within 5 feet of it. The target regains all its hit points. In addition, the oinoloth can end one disease on the target or remove one of the following conditions from it: blinded, deafened, paralyzed, or poisoned. The target then gains 1 level of exhaustion, and its hit point maximum is reduced by 7 (2d6). This reduction can be removed only by a wish spell or by casting greater restoration on the target three times within the same hour. The target dies if its hit point maximum is reduced to 0.</text>
     </action>
@@ -11950,7 +12008,8 @@ The oinoloth teleports, along with any equipment it is wearing or carrying, up t
       <text>
 The oinoloth blights the area in a 30-foot-radius sphere centered on itself. The blight lasts for 24 hours. While the area is blighted, all normal plants there wither and die.
   Furthermore, when a creature moves into the blighted area or starts its turn there, that creature must make a DC 16 Constitution saving throw. On a failed save, the creature takes 14 (4d6) poison damage and is poisoned. On a successful save, the creature is immune to the oinoloth's Bringer of Plagues for the next 24 hours.
-  The poisoned creature can't regain hit points. After every 24 hours that elapse, the poisoned creature can repeat the saving throw. On a failed save, the creature's hit point maximum is reduced by 5 (1d10). This reduction lasts until the poison ends, and the target dies if its hit point maximum is reduced to 0. The poison ends after the creature successfully saves against it three times.</text>
+
+The poisoned creature can't regain hit points. After every 24 hours that elapse, the poisoned creature can repeat the saving throw. On a failed save, the creature's hit point maximum is reduced by 5 (1d10). This reduction lasts until the poison ends, and the target dies if its hit point maximum is reduced to 0. The poison ends after the creature successfully saves against it three times.</text>
     </action>
     <spells>darkness, detect magic, dispel magic, hold monster, invisibility, feeblemind, globe of invulnerability</spells>
   </monster>
@@ -12232,7 +12291,8 @@ If the ox moved at least 20 feet straight toward the target immediately before t
       <name>Fiery Death and Rebirth</name>
       <text>
 If the phoenix dies, it explodes. Each creature in 60-foot-radius sphere centered on the phoenix must make a DC 20 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.
-  The explosion destroys the phoenix's body and leaves behind an egg-shaped cinder, which weighs 5 pounds. The cinder deals 21 (6d6) fire damage to any creature that touches it, though no more than once per round. The cinder is immune to all damage, and after 1d6 days, it hatches a new phoenix.</text>
+
+The explosion destroys the phoenix's body and leaves behind an egg-shaped cinder, which weighs 5 pounds. The cinder deals 21 (6d6) fire damage to any creature that touches it, though no more than once per round. The cinder is immune to all damage, and after 1d6 days, it hatches a new phoenix.</text>
     </trait>
     <trait>
       <name>Fire Form</name>
@@ -12583,7 +12643,8 @@ Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) sla
 The retriever targets one creature it can see within 60 feet of it. The target must make a DC 16 Dexterity saving throw, taking 27 (5d10) force damage on a failed save, or half as much damage on a successful one.</text>
     </action>
     <action>
-      <name>Paralyzing Beam (Recharge 5–6)</name>
+      <name>Paralyzing Beam (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The retriever targets one creature it can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
   If the paralyzed creature is Medium or smaller, the retriever can pick it up as part of the retriever's move and walk or climb with it at full speed.</text>
@@ -12885,6 +12946,7 @@ The shadar-kai casts one of the following spells, requiring no material componen
     </action>
     <reaction>
       <name>Misty Escape (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 When the shadar-kai takes damage, it turns invisible and teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see. It remains invisible until the start of its next turn or until it attacks or casts a spell.</text>
     </reaction>
@@ -13020,7 +13082,8 @@ The shadar-kai casts one of the following spells, requiring no material componen
 	• 1/Day each: bestow curse, finger of death, gaseous form, seeming</text>
     </action>
     <action>
-      <name>Wave of Weariness (Recharge 4–6)</name>
+      <name>Wave of Weariness (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The shadar-kai emits weariness in a 60-foot cube. Each creature in that area must make a DC 16 Constitution saving throw. On a failed save, a creature takes 45 (10d8) psychic damage and suffers 1 level of exhaustion. On a successful save, it takes half as much damage and doesn't gain a level of exhaustion.</text>
     </action>
@@ -13076,6 +13139,7 @@ If the target is a creature, it must succeed on a DC 13 Strength saving throw or
     </action>
     <action>
       <name>Terrifying Howl (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The shadow mastiff howls. Any Beast or Humanoid within 300 feet of it must succeed on a DC 11 Wisdom saving throw or be frightened of it for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's save is successful or the effect ends for it, the target is immune to any shadow mastiff's Terrifying Howl for the next 24 hours.</text>
     </action>
@@ -13500,7 +13564,8 @@ Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) bludg
       <name>Life Leech</name>
       <text>
 One Large or smaller creature that the slithering tracker can see within 5 feet of it must succeed on a DC 13 Dexterity saving throw or be grappled (escape DC 13). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. In addition, the grappled target takes 16 (3d10) necrotic damage at the start of each of its turns. The slithering tracker can grapple only one target at a time.
-  While grappling the target, the slithering tracker takes only half any damage dealt to it (rounded down), and the target takes the other half.</text>
+
+While grappling the target, the slithering tracker takes only half any damage dealt to it (rounded down), and the target takes the other half.</text>
     </action>
     <action>
       <name>Watery Stealth (bonus action)</name>
@@ -13795,7 +13860,8 @@ Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) blud
       <attack>Slam|+9|2d8+5</attack>
     </action>
     <action>
-      <name>Reaping Arms (Recharge 5–6)</name>
+      <name>Reaping Arms (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The hulk makes a separate Slam attack against each creature within 10 feet of it. Each creature that is hit must also succeed on a DC 17 Dexterity saving throw or be knocked prone.</text>
     </action>
@@ -13854,6 +13920,7 @@ Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 19 (3d10 + 3) for
     </action>
     <action>
       <name>Plague of Worms (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 Each creature other than a star spawn within 10 feet of the mage must succeed on a DC 19 Dexterity saving throw or take 22 (5d8) necrotic damage and be blinded and restrained by masses of swarming worms. The affected creature takes 22 (5d8) necrotic damage at the start of each of the mage's turns. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -13942,7 +14009,8 @@ If the attack roll has advantage, the target also takes 7 (2d6) psychic damage.<
       <attack>Claw|+7|1d8+4+2d6</attack>
     </action>
     <action>
-      <name>Flurry of Claws (Recharge 5–6)</name>
+      <name>Flurry of Claws (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The mangier makes six Claw attacks. Either before or after these attacks, it can move up to its speed without provoking opportunity attacks.</text>
     </action>
@@ -13987,7 +14055,8 @@ While in dim light or darkness, the mangier takes the Hide action.</text>
       <text>
 The seer can move through other creatures and objects as if they were difficult terrain, and its movement doesn't provoke opportunity attacks.
   Each creature it moves through takes 5 (1d10) psychic damage; no creature can take this damage more than once per turn.
-  The seer takes 5 (1d10) force damage if it ends its turn inside an object.</text>
+
+The seer takes 5 (1d10) force damage if it ends its turn inside an object.</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -14008,6 +14077,7 @@ Ranged Spell Attack: +11 to hit, range 120 feet, one creature. Hit: 27 (5d10) ps
     </action>
     <action>
       <name>Collapse Distance (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The seer warps space around one creature it can see within 30 feet of it. That creature must make a DC 19 Wisdom saving throw. On a failed save, the target, along with any equipment it is wearing or carrying, is teleported up to 60 feet to an unoccupied space the seer can see, and then each creature within 10 feet of the target's original space takes 39 (6d12) psychic damage. On a successful save, the target takes 19 (3d12) psychic damage and isn't teleported.</text>
     </action>
@@ -14082,7 +14152,8 @@ The steel predator casts one of the following spells, requiring no spell compone
 	• 3/Day each: dimension door (self only), plane shift (self only)</text>
     </action>
     <action>
-      <name>Stunning Roar (Recharge 5–6)</name>
+      <name>Stunning Roar (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The steel predator emits a roar in a 60-foot cone. Each creature in that area must make a DC 19 Constitution saving throw. On a failed save, a creature takes 33 (6d10) thunder damage, drops everything it's holding, and is stunned for 1 minute. The stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. On a successful save, a creature takes half as much damage and isn't stunned.</text>
     </action>
@@ -15308,7 +15379,8 @@ If this damage reduces the target to 0 hit points, the ulitharid kills the targe
       <attack>Extract Brain|+9|10d10</attack>
     </action>
     <action>
-      <name>Mind Blast (Recharge 5–6)</name>
+      <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The ulitharid magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 17 Intelligence saving throw or take 31 (4d12 + 5) psychic damage and be stunned for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -15425,7 +15497,8 @@ Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) pierci
 The vargouille targets one incapacitated Humanoid within 5 feet of it. The target must succeed on a DC 12 Charisma saving throw or become cursed. The cursed target loses 1 point of Charisma after each hour, as its head takes on fiendish aspects. The curse doesn't advance while the target is in sunlight or the area of a daylight spell; don't count that time. When the cursed target's Charisma becomes 2, it dies, and its head tears from its body and becomes a new vargouille. Casting remove curse, greater restoration, or a similar spell on the target before the transformation is complete can end the curse. Doing so undoes the changes made to the target by the curse.</text>
     </action>
     <action>
-      <name>Stunning Shriek (Recharge 5–6)</name>
+      <name>Stunning Shriek (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The vargouille shrieks. Each Humanoid and Beast within 30 feet of the vargouille and able to hear it must succeed on a DC 12 Wisdom saving throw or be frightened of the vargouille until the end of the vargouille's next turn. While frightened in this way, a target is stunned. If a target's saving throw is successful or the effect ends for it, the target is immune to the Stunning Shriek of all vargouilles for 1 hour.</text>
     </action>
@@ -15660,6 +15733,7 @@ Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slash
     </action>
     <action>
       <name>Venom Spray (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The troll slices itself with a claw, releasing a spray of poison in a 15-foot cube. The troll takes 7 (2d6) slashing damage (this damage can't be reduced in any way). Each creature in the area must make a DC 16 Constitution saving throw. On a failed save, a creature takes 18 (4d8) poison damage and is poisoned for 1 minute. On a successful save, the creature takes half as much damage and isn't poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -16115,6 +16189,7 @@ Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one ta
     </action>
     <action>
       <name>Freezing Strikes (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The myrmidon uses Multiattack. Each attack that hits deals an extra 5 (1d10) cold damage.
 
@@ -16374,7 +16449,8 @@ The sorrowsworn has advantage on an attack roll against a creature if at least o
 Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) piercing damage, and the sorrowsworn attaches to the target.
 
 While attached, the sorrowsworn can't attack, and at the start of each of the sorrowsworn's turns, the target takes 6 (1d10 + 1) necrotic damage.
-  The attached sorrowsworn moves with the target whenever the target moves, requiring none of the sorrowsworn's movement. The sorrowsworn can detach itself by spending 5 feet of its movement on its turn. A creature, including the target, can use its action to detach the sorrowsworn.</text>
+
+The attached sorrowsworn moves with the target whenever the target moves, requiring none of the sorrowsworn's movement. The sorrowsworn can detach itself by spending 5 feet of its movement on its turn. A creature, including the target, can use its action to detach the sorrowsworn.</text>
       <attack>Bite|+3|1d10 + 1</attack>
     </action>
   </monster>
@@ -16560,7 +16636,8 @@ If the target is a creature, it must succeed on a DC 16 Constitution saving thro
       <attack>Massive Arm|+8|3d12+4</attack>
     </action>
     <action>
-      <name>Battlefield Cunning (Recharge 4–6)</name>
+      <name>Battlefield Cunning (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 Up to two allied yugoloths within 60 feet of the yagnoloth that can hear it can use their reactions to make one melee attack each.</text>
     </action>
@@ -17088,7 +17165,8 @@ Ranged Spell Attack: +5 to hit, range 120 ft., one target. Hit: 16 (3d8 + 3) nec
       <recharge>SHORT</recharge>
       <text>
 The yuan-ti taps into the nightmares of one creature it can see within 60 feet of it and creates an illusory, immobile manifestation of the creature's deepest fears, visible only to that creature.
-  The target must make a DC 13 Intelligence saving throw. On a failed save, the target takes 22 (4d10) psychic damage and is frightened of the manifestation, believing it to be real. The yuan-ti must concentrate to maintain the illusion (as if concentrating on a spell), which lasts for up to 1 minute and can't be harmed. The target can repeat the saving throw at the end of each of its turns, ending the illusion on a success or taking 11 (2d10) psychic damage on a failure.</text>
+
+The target must make a DC 13 Intelligence saving throw. On a failed save, the target takes 22 (4d10) psychic damage and is frightened of the manifestation, believing it to be real. The yuan-ti must concentrate to maintain the illusion (as if concentrating on a spell), which lasts for up to 1 minute and can't be harmed. The target can repeat the saving throw at the end of each of its turns, ending the illusion on a success or taking 11 (2d10) psychic damage on a failure.</text>
     </action>
     <action>
       <name>Spellcasting (Yuan-ti Form Only)</name>
@@ -17252,7 +17330,8 @@ Ranged Weapon Attack: +17 to hit, range 120 ft./240 ft., one target. Hit: 31 (6d
       <attack>Spit Rock|+17|6d8 + 10</attack>
     </action>
     <action>
-      <name>Spew Debris (Recharge 5–6)</name>
+      <name>Spew Debris (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The zaratan exhales rocky debris in a 90-foot cube. Each creature in that area must make a DC 25 Dexterity saving throw. A creature takes 33 (6d10) bludgeoning damage on a failed save, or half as much damage on a successful one. A creature that fails the save by 5 or more is knocked prone.</text>
     </action>
@@ -17370,7 +17449,8 @@ Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) rad
       <attack>Longsword (Two-Handed)|+16|2d10+8+8d8</attack>
     </action>
     <action>
-      <name>Horrid Touch (Recharge 5–6)</name>
+      <name>Horrid Touch (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Zariel touches one creature within 10 feet of her. The target must succeed on a DC 26 Constitution saving throw or take 44 (8d10) necrotic damage and be poisoned for 1 minute. While poisoned in this way, the target is blinded and deafened. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>

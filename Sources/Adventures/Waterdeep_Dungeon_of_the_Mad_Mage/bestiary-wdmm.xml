@@ -226,6 +226,7 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) blud
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The statue targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -264,9 +265,10 @@ Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) bludg
     </action>
     <action>
       <name>Belch Fire (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>
 The stove belches fire in a 15-foot cone. Each creature in the area must make a DC 10 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Belch Fire (Recharge 4-6)||4d10</attack>
+      <attack>Belch Fire||4d10</attack>
     </action>
     <description>The stove was given a semblance of life through an animate objects spell made permanent by a wish spell.
 
@@ -369,6 +371,8 @@ The target must succeed on a DC 18 Constitution saving throw or be paralyzed for
       <attack>Paralyzing Touch|+12|3d6</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (4/Turn)</name>
+      <recharge>4/Turn</recharge>
       <text>The undead can take 4 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The undead regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -485,11 +489,14 @@ Each creature of Ashtyrranthor's choice that is within 120 feet of Ashtyrranthor
     </action>
     <action>
       <name>Fire Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Ashtyrranthor exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) fire damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Fire Breath (Recharge 5-6)||18d6</attack>
+      <attack>Fire Breath||18d6</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -896,9 +903,10 @@ If this damage reduces the target to 0 hit points, Captain N'ghathrod kills the 
     </action>
     <action>
       <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Captain N'ghathrod magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Mind Blast (Recharge 5-6)||4d8+4</attack>
+      <attack>Mind Blast||4d8+4</attack>
     </action>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
@@ -1231,6 +1239,7 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) blud
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -1582,6 +1591,8 @@ The target must succeed on a DC 18 Constitution saving throw or be paralyzed for
       <attack>Paralyzing Touch|+12|3d6</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (4/Turn)</name>
+      <recharge>4/Turn</recharge>
       <text>The undead can take 4 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The undead regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -1753,6 +1764,7 @@ Each non-undead creature within 60 feet of Fidelio that can see it must succeed 
     </action>
     <action>
       <name>Possession (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 One humanoid that Fidelio can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by Fidelio; Fidelio then disappears, and the target is incapacitated and loses control of its body. Fidelio now controls the body but doesn't deprive the target of awareness. Fidelio can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
 
@@ -1931,6 +1943,7 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     </action>
     <action>
       <name>Web (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</text>
     </action>
@@ -2090,11 +2103,12 @@ Each creature of Glyster's choice that is within 120 feet of Glyster and aware o
     </action>
     <action>
       <name>Breath Weapons (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Glyster uses one of the following breath weapons.
 
 	• Lightning Breath. Glyster exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Breath Weapons (Recharge 5-6)||12d10</attack>
+      <attack>Breath Weapons||12d10</attack>
       <text>	• Repulsion Breath. Glyster exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 19 Strength saving throw. On a failed save, the creature is pushed 60 feet away from Glyster.</text>
     </action>
     <action>
@@ -2105,6 +2119,8 @@ Glyster magically polymorphs into a humanoid or beast that has a challenge ratin
 In a new form, Glyster retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -2216,6 +2232,8 @@ The stalagmite in the northwest alcove is hollow and serves as Gorka Tharn's sar
 At the bottom of the stalagmite's hollow cavity, four 1-foot-tall clay urns contain Gorka Tharn's preserved internal organs, including the mummy lord's shriveled heart. Only by destroying the heart can the characters prevent the mummy lord from rejuvenating. The heart is a Tiny object with AC 5, 25 hit points, and immunity to all damage except fire.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (5/Turn)</name>
+      <recharge>5/Turn</recharge>
       <text>The undead can take 5 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The undead regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -2402,6 +2420,8 @@ If Halaster dies in Undermountain, he revives after 1d10 days, with all his hit 
 Halaster uses his blast scepter to cast thunderwave as a 4th-level spell. Each creature in a 15-foot cube originating from him must make a DC 16 Constitution saving throw. On a failed save, a creature takes 5d8 thunder damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn't pushed</text>
     </action>
     <legendary>
+      <name>Legendary Actions (2/Turn)</name>
+      <recharge>2/Turn</recharge>
       <text>Halaster can take 2 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Halaster regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -3033,6 +3053,8 @@ Each time Keresta or Keresta's companions do anything harmful to the target, it 
 The vampire magically calls 2d4 swarms of swarm of bats or swarm of rats, provided that the sun isn't up. While outdoors, the vampire can call 3d6 giant centipede instead. The called creatures arrive in 1d4 rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The undead (shapechanger) can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The undead (shapechanger) regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -3404,6 +3426,7 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 24 (4d8 + 6) blud
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -3745,6 +3768,8 @@ The target must make a DC 16 Constitution saving throw, taking 27 (6d8) poison d
       <attack>Sting||6d8</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>Muiral can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Muiral regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -4012,6 +4037,7 @@ Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 2d6 + 4 piercing d
     </action>
     <action>
       <name>Euphoria Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The dragon exhales a puff of euphoria gas at one creature within 5 feet of it. The target must succeed on a DC 11 Wisdom saving throw, or for 1 minute, the target can't take reactions and must roll a d6 at the start of each of its turns to determine its behavior during the turn:
 1–4. The target takes no action or bonus action and uses all of its movement to move in a random direction.
@@ -4387,9 +4413,10 @@ The target is grappled (escape DC 16) if the behir isn't already constricting a 
     </action>
     <action>
       <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Lightning Breath (Recharge 5-6)||12d10</attack>
+      <attack>Lightning Breath||12d10</attack>
     </action>
     <action>
       <name>Swallow</name>
@@ -4877,11 +4904,12 @@ Each creature of the dragon's choice that is within 120 feet of the dragon and a
     </action>
     <action>
       <name>Breath Weapons (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The dragon uses one of the following breath weapons.
 
 	• Acid Breath. The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 58 (13d8) acid damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Breath Weapons (Recharge 5-6)||13d8</attack>
+      <attack>Breath Weapons||13d8</attack>
       <text>	• Paralyzing Breath. The dragon exhales paralyzing gas in a 60-foot cone. Each creature in that area must succeed on a DC 20 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <action>
@@ -4892,6 +4920,8 @@ The dragon magically polymorphs into a humanoid or beast that has a challenge ra
 In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -4993,6 +5023,7 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) blud
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The statue targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -5051,6 +5082,7 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) blud
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The stonecloak targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -5379,9 +5411,10 @@ Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 23 (3d10 + 7) sl
     </action>
     <action>
       <name>Poison Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Trobriand exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Poison Breath (Recharge 5-6)||10d8</attack>
+      <attack>Poison Breath||10d8</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 294</description>
     <environment/>
@@ -5466,11 +5499,12 @@ Each creature of the dragon's choice that is within 120 feet of the dragon and a
     </action>
     <action>
       <name>Breath Weapons (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The dragon uses one of the following breath weapons.
 
 	• Necrotic Breath. The dragon exhales necrotic in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) necrotic damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Breath Weapons (Recharge 5-6)||12d10</attack>
+      <attack>Breath Weapons||12d10</attack>
       <text>	• Repulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 19 Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon.</text>
     </action>
     <action>
@@ -5481,6 +5515,8 @@ The dragon magically polymorphs into a humanoid or beast that has a challenge ra
 In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -6156,6 +6192,8 @@ Each time Zorak or Zorak's companions do anything harmful to the target, it can 
 Zorak magically calls 2d4 swarms of swarm of bats or swarm of rats, provided that the sun isn't up. While outdoors, Zorak can call 3d6 wolf instead. The called creatures arrive in 1d4 rounds, acting as allies of Zorak and obeying his spoken commands. The beasts remain for 1 hour, until Zorak dies, or until Zorak dismisses them as a bonus action.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>Zorak can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Zorak regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>

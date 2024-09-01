@@ -1697,6 +1697,7 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) slas
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The statue targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -1988,9 +1989,10 @@ If this damage reduces the target to 0 hit points, Grazilaxx kills the target by
     </action>
     <action>
       <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Grazilaxx magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Mind Blast (Recharge 5-6)||4d8+4</attack>
+      <attack>Mind Blast||4d8+4</attack>
     </action>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
@@ -2449,6 +2451,7 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) blud
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The spider targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
@@ -2916,6 +2919,8 @@ The beholder shoots three of the following magical eye rays at random (reroll du
 If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>Lorthuun can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. Lorthuun regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -3981,6 +3986,7 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     </action>
     <action>
       <name>Web (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</text>
     </action>
@@ -4221,11 +4227,14 @@ Each creature of Themberchaud's choice that is within 120 feet of Themberchaud a
     </action>
     <action>
       <name>Fire Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Themberchaud exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) fire damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Fire Breath (Recharge 5-6)||18d6</attack>
+      <attack>Fire Breath||18d6</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -4401,6 +4410,7 @@ Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludge
     </action>
     <action>
       <name>Acid Spray (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The troglodyte spits acid in a line 15 feet long and 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Acid Spray||3d6</attack>
@@ -4862,6 +4872,8 @@ The target dies if the ray reduces it to 0 hit points.</text>
       <attack>Eye Rays||10d10</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>Xazax can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. Xazax regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -5000,6 +5012,8 @@ Yestabrod releases spores in a 30-foot cone. Each creature in that area must suc
 Yestabrod releases spores that burst out in a cloud that fills a 10-foot-radius sphere centered on it, and the cloud lingers for 1 minute. Any flesh-and-blood creature in the cloud when it appears, or that enters it later, must make a DC 12 Constitution saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy and also gains a random form of indefinite madness (determined by rolling on the Madness of Zuggtmoy table in appendix D) that lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must be repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies and is reanimated as a spore servant if it's a type of creature that can be (see the "Myconids" entry in the Monster Manual).</text>
     </action>
     <legendary>
+      <name>Legendary Actions (2/Turn)</name>
+      <recharge>2/Turn</recharge>
       <text>Yestabrod can take 2 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Yestabrod regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>

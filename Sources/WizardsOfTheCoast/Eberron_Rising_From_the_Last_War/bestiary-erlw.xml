@@ -97,6 +97,8 @@ Blinding Ray: The target and each creature within 10 feet of it must succeed on 
       <attack>4||3d12</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>Belashyrra can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Belashyrra regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -698,6 +700,8 @@ If this damage reduces the target to 0 hit points, Dyrrn kills the target by ext
       <attack>Extract Brain|+15|10d10</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>Dyrrn can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Dyrrn regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -842,6 +846,7 @@ Source:	Eberron: Rising from the Last War p. 293</description>
     <senses/>
     <trait>
       <name>Quickness (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The fastieth can take the Dodge action as a bonus action.</text>
     </trait>
@@ -940,6 +945,7 @@ The quori targets a creature it can see within 60 feet of it. The target must ma
     </action>
     <action>
       <name>Possession (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 One humanoid that the quori can see within 5 feet of it must succeed on a DC 16 Charisma saving throw or be possessed by the quori; the quori then disappears, and the target is incapacitated and loses control of its body. The quori now controls the body but doesn't deprive the target of awareness. The quori can't be targeted by any attack, spell, or other effect, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
 
@@ -1216,12 +1222,14 @@ The cursed target suffers 1 level of exhaustion every 24 hours, and finishing a 
     </action>
     <action>
       <name>Swarm of Eyes (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The quori creates a swarm of spectral eyes that fills a 30-foot-radius sphere centered on a point it can see within 60 feet of it. Each creature in that area must make a DC 21 Wisdom saving throw. On a failure, a creature takes 45 (10d8) psychic damage, and it is blinded for 1 minute. On a success, a creature takes half as much damage and isn't blinded. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
       <attack>Swarm of Eyes||10d8</attack>
     </action>
     <action>
       <name>Possession (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 One humanoid that the quori can see within 5 feet of it must succeed on a DC 21 Charisma saving throw or be possessed by the quori; the quori then disappears, and the target is incapacitated and loses control of its body. The quori now controls the body but doesn't deprive the target of awareness. The quori can't be targeted by any attack, spell, or other effect, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
 
@@ -1423,12 +1431,15 @@ The target can repeat the saving throw at the end of each of its turns, ending t
     </action>
     <action>
       <name>Poison Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 Illmarrow exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 20 Constitution saving throw. On a failed save, a creature takes 35 (10d6) poison damage and is poisoned for 1 minute. While poisoned in this way, the creature can't regain hit points. On a successful save, the creature takes half as much damage and isn't poisoned.</text>
-      <attack>Poison Breath (Recharge 5-6)||10d6</attack>
+      <attack>Poison Breath||10d6</attack>
       <text>A humanoid reduced to 0 hit points by this damage dies and rises at the start of Illmarrow's next turn as a zombie. The zombie acts immediately after Illmarrow in the initiative count and is permanently under her command, following her verbal orders.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (4/Turn)</name>
+      <recharge>4/Turn</recharge>
       <text>Lady can take 4 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Lady regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -1541,9 +1552,10 @@ Melee Spell Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) fire da
     </action>
     <action>
       <name>Spell Mimicry (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The living spell unleashes a thin sheet of flames in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Spell Mimicry (Recharge 5-6)||3d6</attack>
+      <attack>Spell Mimicry||3d6</attack>
     </action>
     <description>Constructed Nature. A living spell doesn't require air, food, drink, or sleep.
 
@@ -1623,9 +1635,10 @@ Melee Spell Attack: +8 to hit, reach 10 ft., one target. Hit: 22 (5d6 + 5) poiso
     </action>
     <action>
       <name>Spell Mimicry (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The living spell creates a 40-foot-diameter sphere of fog within 60 feet of it (the fog spreads around corners). When a creature enters the fog for the first time on a turn or starts its turn there, it must make a DC 16 Constitution saving throw, taking 22 (5d8) poison damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Spell Mimicry (Recharge 5-6)||5d8</attack>
+      <attack>Spell Mimicry||5d8</attack>
       <text>The fog moves 10 feet away from the living spell at the start of each of its turns, rolling along the ground and through openings. The fog lasts for 10 minutes or until the living spell's concentration ends (as if concentrating on a spell).</text>
     </action>
     <description>Constructed Nature. A living spell doesn't require air, food, drink, or sleep.
@@ -1706,9 +1719,10 @@ Melee Spell Attack: +7 to hit, reach 10 ft., one target. Hit: 21 (5d6 + 4) light
     </action>
     <action>
       <name>Spell Mimicry (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The living spell unleashes a stroke of lightning in a line 100 feet long and 5 feet wide. Each creature in the line must make a DC 15 Dexterity saving throw, taking 28 (8d6) lightning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Spell Mimicry (Recharge 5-6)||8d6</attack>
+      <attack>Spell Mimicry||8d6</attack>
     </action>
     <description>Constructed Nature. A living spell doesn't require air, food, drink, or sleep.
 
@@ -1846,6 +1860,8 @@ Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slas
 Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 13 (3d8) damage of a type chosen by Mordakhesh: acid, cold, fire, lightning, poison, or thunder.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>Mordakhesh can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Mordakhesh regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -2026,6 +2042,8 @@ Rak Tulkhesh magically polymorphs into a humanoid, beast, or giant that has a ch
 In a new form, Rak Tulkhesh retains his alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. His statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>Rak can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Rak regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -2256,6 +2274,8 @@ Sul Khatesh magically polymorphs into a humanoid, beast, or giant that has a cha
 In a new form, Sul Khatesh retains her alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, and Intelligence, Wisdom, and Charisma scores, as well as this action. Her statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.</text>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
       <text>Sul can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Sul regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -2448,6 +2468,8 @@ Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 22 (4d10) fire 
       <attack>Fire Bolt (Cantrip)|+10|4d10</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (4/Turn)</name>
+      <recharge>4/Turn</recharge>
       <text>The can take 4 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -2547,6 +2569,7 @@ The target can repeat the saving throw at the end of each of its turns, ending t
     </action>
     <action>
       <name>Possession (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 One humanoid that the quori can see within 5 feet of it must succeed on a DC 14 Charisma saving throw or be possessed by the quori; the quori then disappears, and the target is incapacitated and loses control of its body. The quori now controls the body but doesn't deprive the target of awareness. The quori can't be targeted by any attack, spell, or other effect, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
 
@@ -2624,6 +2647,8 @@ The councilor chooses a point it can see within 60 feet of it. Each creature in 
       <attack>Flame Strike (5th-Level Spell; Requires a Spell Slot)||4d6</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (2/Turn)</name>
+      <recharge>2/Turn</recharge>
       <text>The undead can take 2 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The undead regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
@@ -3002,9 +3027,10 @@ The colossus stomps one of its feet at a point on the ground within 20 feet of i
     </action>
     <action>
       <name>Incinerating Beam (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>
 The colossus fires a beam of light in a 150-foot line that is 10 feet wide. Each creature in the line must make a DC 26 Dexterity saving throw, taking 60 (11d10) radiant damage on a failed save, or half as much damage on a successful one. A creature reduced to 0 hit points by this beam is disintegrated, leaving behind anything it was wearing or carrying.</text>
-      <attack>Incinerating Beam (Recharge 5-6)||11d10</attack>
+      <attack>Incinerating Beam||11d10</attack>
     </action>
     <description>In the final days of the Last War, House Cannith unleashed its mightiest creations: the warforged colossi. These enormous mechanical warriors thundered across Cyre, crushing everything in their paths and leaving ruin behind them. Meant to end the war decisively, the colossi pulverized hundreds of soldiers beneath their feet and incinerated whole legions with beams of fiery light that shot from their mouths. This rampage was cut short on the Day of Mourning. The arcane cataclysm that engulfed Cyre destroyed most of the warforged colossi, causing them to collapse into lifeless heaps.
 
@@ -3140,6 +3166,7 @@ If the target is a creature, it must succeed on a DC 17 Strength saving throw or
     </action>
     <action>
       <name>Sweeping Axe (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>
 The warforged titan makes a sweep with its axehand, and each creature within 10 feet of it must make a DC 17 Dexterity saving throw. A creature takes 19 (3d8 + 6) slashing damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Sweeping Axe||3d8+6</attack>
