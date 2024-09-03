@@ -7,14 +7,15 @@
 #### In Progress:
 * Adding `Heliana's Guide to Monster Hunting` content.
 * Adding `LaserLlama` content.
+  * Added LaserLlama's: `Artificer Specialists v2.1.0`.
   * Added LaserLlama's: `Barbarian Primal Paths v2.1.1`.
   * Added LaserLlama's: `Bard Colleges v2.1.0`.
   * Added LaserLlama's: `Cleric Divine Domains v1.5.0`.
+  * Added LaserLlama's: `New & Alternate Races v2.0.0`.
   * Added LaserLlama's: `Ranger Archetypes v3.0.0`.
   * Added LaserLlama's: `Sorcerous Origins v2.0.0`.
   * Added LaserLlama's: `Warlock Patrons, Boons & Invocations v2.1.0`.
   * Added LaserLlama's: `Wizard Arcane Traditions v2.0.1`.
-  * Added LaserLlama's: `New & Alternate Races v2.0.0`.
 
 ### 2024-##-##
 * Streamlined some `Ranger` features.
@@ -26,6 +27,7 @@
 * Added Matthew Mercer's `Totem of the Duck` Homebrew Barbarian subclass.
 * Re-organized Unearthed Arcana based on date and `Subclasses That Shouldn't Exist`.
 * Added a more comprehensive overview on how to add your own content to the repository. (See [SOURCES.md](/SOURCES.md))
+* Other minor changes.
 
 ### 2024-08-11
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
