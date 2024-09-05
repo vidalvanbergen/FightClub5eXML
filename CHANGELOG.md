@@ -12,6 +12,7 @@
   * Added LaserLlama's: `Bard Colleges v2.1.0`.
   * Added LaserLlama's: `Cleric Divine Domains v1.5.0`.
   * Added LaserLlama's: `LaserLlama: Druid Circles v2.1.0`.
+  * Added LaserLlama's: `LaserLlama: Fighter Martial Achetypes v2.1.0`.
   * Added LaserLlama's: `New & Alternate Races v2.0.0`.
   * Added LaserLlama's: `Ranger Archetypes v3.0.0`.
   * Added LaserLlama's: `Sorcerous Origins v2.0.0`.
