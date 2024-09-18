@@ -13,9 +13,11 @@
   * Added LaserLlama's: `Cleric Divine Domains v1.5.0`.
   * Added LaserLlama's: `Druid Circles v2.1.0`.
   * Added LaserLlama's: `Fighter Martial Achetypes v2.1.0`.
+  * Added LaserLlama's: `Monastic Traditions v4.0.0`.
   * Added LaserLlama's: `New & Alternate Races v2.0.0`.
   * Added LaserLlama's: `Paladin Sacred Oaths v2.5.1`.
   * Added LaserLlama's: `Ranger Archetypes v3.0.0`.
+  * Added LaserLlama's: `Roguish Archetypes v2.0.1`.
   * Added LaserLlama's: `Sorcerous Origins v2.0.0`.
   * Added LaserLlama's: `Warlock Patrons, Boons & Invocations v2.1.0`.
   * Added LaserLlama's: `Wizard Arcane Traditions v2.0.1`.
