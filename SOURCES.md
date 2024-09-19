@@ -78,7 +78,7 @@ A spell is defined using an element named spell. Its content will consist of sev
     - **EV** = evocation
     - **I** = illusion
     - **N** = necromancy
-    - **T** = transmutation<
+    - **T** = transmutation
   - **classes** (ABC, ABC, ...)
   - **ritual** (YES | NO) *This element may be left out if the spell is not a ritual.*
   - **time** (ABC) Casting time
@@ -618,9 +618,6 @@ Class example:
       <text/>
       <text>Source:	Player's Handbook p. 89</text>
     </feature>
-  </autolevel>
-
-  <autolevel level="1">
     <feature optional="YES">
       <name>Multiclass Ranger</name>
       <text>If your group uses the optional rule on multiclassing in the Player's Handbook, here's what you need to know if you choose ranger as one of your classes.</text>
