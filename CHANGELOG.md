@@ -23,6 +23,7 @@
   * Added LaserLlama's: `New & Alternate Races v2.0.0`.
   * Adding LaserLama's: `Compendium of Spells`.
   * Added LaserLlama's: `The Magus Class v4.2.1`.
+  * Added LaserLlama's: `The Magus Expanded v4.2.1`.
 
 ### 2024-##-##
 * Streamlined some `Ranger` features.
