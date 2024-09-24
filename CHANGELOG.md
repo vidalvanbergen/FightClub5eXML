@@ -5,7 +5,19 @@
 * Complete `Crown of the Oathbreaker` Bestiary.
 
 #### In Progress:
-* Adding `Heliana's Guide to Monster Hunting` content.
+* Adding `LaserLlama` content.
+
+### 2024-##-##
+* Streamlined some `Ranger` features.
+* Added `The Dungeon Master` Homebrew.
+* Added `Ranger (Primal Awareness)` spell list.
+* Added `Misplaced Monsters: Volume One` content.
+* Added `Heliana's Guide to Monster Hunting` content.
+* Moved `Honor Among Thieves` content to Unearthed Arcana.
+* Added Matthew Mercer's `College of the Maestro` Homebrew Bard subclass.
+* Added Matthew Mercer's `Totem of the Duck` Homebrew Barbarian subclass.
+* Re-organized Unearthed Arcana based on date and `Subclasses That Shouldn't Exist`.
+* Added a more comprehensive overview on how to add your own content to the repository. (See [SOURCES.md](/SOURCES.md))
 * Adding `LaserLlama` content.
   * Added LaserLlama's: `Artificer Specialists v2.1.0`.
   * Added LaserLlama's: `Barbarian Primal Paths v2.1.1`.
@@ -24,17 +36,6 @@
   * Adding LaserLama's: `Compendium of Spells`.
   * Added LaserLlama's: `The Magus Class v4.2.1`.
   * Added LaserLlama's: `The Magus Expanded v4.2.1`.
-
-### 2024-##-##
-* Streamlined some `Ranger` features.
-* Added `The Dungeon Master` Homebrew.
-* Added `Ranger (Primal Awareness)` spell list.
-* Added `Misplaced Monsters: Volume One` content.
-* Moved `Honor Among Thieves` content to Unearthed Arcana.
-* Added Matthew Mercer's `College of the Maestro` Homebrew Bard subclass.
-* Added Matthew Mercer's `Totem of the Duck` Homebrew Barbarian subclass.
-* Re-organized Unearthed Arcana based on date and `Subclasses That Shouldn't Exist`.
-* Added a more comprehensive overview on how to add your own content to the repository. (See [SOURCES.md](/SOURCES.md))
 * Other minor changes.
 
 ### 2024-08-11
