@@ -36,6 +36,7 @@
   * Added LaserLlama's: `Compendium of Spells`.
   * Added LaserLlama's: `The Magus Class v4.2.1`.
   * Added LaserLlama's: `The Magus Expanded v4.2.1`.
+  * Adding LaserLlama's: `The Psion v2.3.0`.
 * Other minor changes.
 
 ### 2024-08-11
