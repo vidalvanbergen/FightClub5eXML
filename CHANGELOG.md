@@ -33,7 +33,7 @@
   * Added LaserLlama's: `Warlock Patrons, Boons & Invocations v2.1.0`.
   * Added LaserLlama's: `Wizard Arcane Traditions v2.0.1`.
   * Added LaserLlama's: `New & Alternate Races v2.0.0`.
-  * Adding LaserLama's: `Compendium of Spells`.
+  * Added LaserLlama's: `Compendium of Spells`.
   * Added LaserLlama's: `The Magus Class v4.2.1`.
   * Added LaserLlama's: `The Magus Expanded v4.2.1`.
 * Other minor changes.
