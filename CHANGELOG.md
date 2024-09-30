@@ -37,7 +37,8 @@
   * Added LaserLlama's: `The Magus Class v4.2.1`.
   * Added LaserLlama's: `The Magus Expanded v4.2.1`.
   * Adding LaserLlama's: `The Psion v2.3.0`.
-* Other minor changes.
+* Some reorganization of sources.
+* Other changes and fixes.
 
 ### 2024-08-11
 * Added `Classes that Shouldn't exist v1` (Homebrew) content.
