@@ -38,6 +38,7 @@
   * Added LaserLlama's: `The Magus Expanded v4.2.1`.
   * Added LaserLlama's: `The Psion v2.3.0`.
   * Added LaserLlama's: `The Savant v5.2.0`.
+  * Added LaserLlama's: `The Savant Expanded v5.2.0`.
 * Some reorganization of sources.
 * Other changes and fixes.
 
