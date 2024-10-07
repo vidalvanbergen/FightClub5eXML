@@ -52,7 +52,7 @@
     <environment>any</environment>
   </monster> <!-- Cerebrax -->
   <monster>
-    <name>Oswald Myrr</name>
+    <name>Great Eight, Oswald Myrr</name>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>chaotic good</alignment>
@@ -243,6 +243,156 @@
   </monster> <!-- Edmund Myrr, Lich King -->
   <!-- Ocean Region -->
   <monster>
+    <name>The Waugan</name>
+    <size>G</size>
+    <type>monstrosity (titan)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>21 (natural armor)</ac>
+    <hp>518 (28d20 + 224)</hp>
+    <speed>0 ft., swim 60 ft.</speed>
+    <str>30</str><dex>20</dex><con>27</con><int>10</int><wis>15</wis><cha>5</cha>
+    <save>Str +18, Dex +13, Con +16, Wis +10</save>
+    <skill>Athletics +18, Perception +10</skill>
+    <immune>cold, fire, lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, deafened, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
+    <senses>truesight 120 ft.</senses><passive>20</passive>
+    <languages>Terran</languages>
+    <cr>26</cr>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If the Waugan fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Magical Weapons</name>
+      <text>The Waugan’s weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The Waugan does double damage to objects and structures.</text>
+    </trait>
+    <trait>
+      <name>Undertow</name>
+      <text>As a bonus action when the Waugan is underwater, it can cause all water within 90 feet of it to be difficult terrain for other creatures until the start of its next turn.</text>
+    </trait>
+    <trait>
+      <name>Water Breathing</name>
+      <text>The Waugan can breathe only underwater.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Waugan makes one bite attack and two fist attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +18 to hit, reach 5 ft., one target. Hit: 32 (5d8 + 10) piercing damage.</text>
+      <attack>Bite|18|5d8 + 10</attack>
+    </action>
+    <action>
+      <name>Fist</name>
+      <text>Melee Weapon Attack: +18 to hit, reach 20 ft., one target. Hit: 23 (3d8 + 10) bludgeoning damage.</text>
+      <attack>Fist|18|3d8 + 10</attack>
+    </action>
+    <action>
+      <name>Wave Attack (Recharge 5–6)</name>
+      <text>The Waugan creates waves and sends them out in a 90-foot cone. Any creatures in the area must make a DC 21 Constitution saving throw or take 42 (12d6) bludgeoning damage, half as much damage on a save.</text>
+      <attack>Wave Attack (Recharge 5–6)||12d6</attack>
+    </action>
+    <reaction>
+      <name>Swat Away</name>
+      <text>In response to being hit by a ranged weapon attack, the Waugan can swat the projectile away with its tail and take no damage.</text>
+    </reaction>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
+      <text>The Waugan can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Waugan regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Detect</name>
+      <text>Detect. The Waugan makes a Wisdom (Percep- tion) check.</text>
+    </legendary>
+    <legendary>
+      <name>Ink Jet</name>
+      <text>The Waugan shoots out of jet of ink from its mouth in a 120 ft. line, 5 feet wide. Any creatures in range must make a DC 21 Dexterity saving throw or take 35 (10d6) bludgeoning damage. In addition, the target is blinded until the end of its next turn.</text>
+    </legendary>
+    <legendary>
+      <name>Tail Attack (Costs 2 Actions)</name>
+      <text>Melee Weapon Attack: +18 to hit, reach 20 ft., one target. Hit: 23 (3d8 + 10) bludgeoning damage.</text>
+    </legendary>
+    <spells/><slots/>
+    <description>The only creature larger than krakens is the Waugan. This immense titan travels around the entire ocean. At times it can also be found swimming through huge sea caves. It is a solitary creature and has no allies except for an aquarian wizard named Kairos (page 12).
+      
+      There’s Always a Bigger Fish. This massive monster hunts constantly and needs a great deal of nourishment. It feeds on whales, killer whales, dolphins, seals, sea lions, and pretty much anything it wants.
+
+      Sizeable Impact. The Waugan is so powerful it can devastate an undersea castle or settlement in minutes. Some people say that it does more damage than an earthquake or tsunami. Entire sahuagin and merfolk colonies have been destroyed by this titan.
+      
+      Secluded Sea Cave. Legends say that the Waugan inhabits a mammoth sea cave. The creature has looted many of the ships it has sunk and taken the bounty. Therefore, most scholars believe a sizeable treasure hoard must be stowed in its cave.
+      
+      Source: Cawood, Monsters of the Wilderness p. 10 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Titan, The Waugan -->
+  <monster>
+    <name>Great Eight, Kairos</name>
+    <size>M</size>
+    <type>humanoid (aquarian)</type>
+    <alignment>neutral evil</alignment>
+    <ac>13 (16 with mage armor)</ac>
+    <hp>60 (8d8 + 24)</hp>
+    <speed>30 ft., swim 40 ft.</speed>
+    <str>14</str><dex>16</dex><con>17</con><int>25</int><wis>16</wis><cha>18</cha>
+    <save>Con +7, Int +11</save>
+    <skill>Arcana +11, History +11, Investigation +11, Perception +7</skill>
+    <sense>darkvision 90 ft.</sense><passive>17</passive>
+    <languages>Aquan, Common, Sahuagin</languages>
+    <cr>7</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>Kairos can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Empowered Evocation</name>
+      <text>Kairos adds +7 to the damage rolls of any wizard evocation spell he casts.</text>
+    </trait>
+    <trait>
+      <name>Potent Cantrip</name>
+      <text>His damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against his cantrip, the creature takes half the cantrip’s damage (if any) but suffers no additional effect from the cantrip.</text>
+    </trait>
+    <trait>
+      <name>Sculpt Spells</name>
+      <text>Kairos can create pockets of relative safety within the effects of his evocation spells. When he casts an evocation spell that affects other creatures that he can see, he can choose a number of them equal to 1 + the spell’s level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</text>
+    </trait>
+    <trait>
+      <name>Slippery</name>
+      <text>Kairos has advantage on ability checks and saving throws made to escape a grapple.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Kairos is a 10th-level wizard. His spellcasting ability is Intelligence (spell save DC 19, +11 to hit with spell attacks). He has the following wizard spells prepared:</text>
+      <text>Cantrips (at will): fire bolt, light, mage hand, message, prestidigitation</text>
+      <text>1st level (4 slots): detect magic, mage armor, magic missile, shield</text>
+      <text>2nd level (3 slots): darkvision, detect thoughts, scorching ray, see invisibility</text>
+      <text>3rd level (3 slots): dispel magic, lightning bolt, water breathing</text>
+      <text>4th level (3 slots): control water, dimension door, greater invisibility</text>
+      <text>5th level (2 slots): cone of cold, conjure elemental</text>
+    </trait>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage.</text>
+      <attack>Quarterstaff|5|1d8 + 2</attack>
+    </action>
+    <spells>fire bolt, light, mage hand, message, prestidigitation, detect magic, mage armor, magic missile, shield, darkvision, detect thoughts, scorching ray, see invisibility, dispel magic, lightning bolt, water breathing, control water, dimension door, greater invisibility, cone of cold, conjure elemental</spells><slots>4,3,3,3,2</slots>
+    <description>Kairos is a member of the Wizard Council who exiled Oswald Myrr. He is also a master of the School of Evocation. This aquarian has big ambitions and is constantly scheming from his lair in a sunken ship. A rival of King Nemos (page 22), he is well-connected in the merfolk community.
+
+      Thought Bubble. This highly intelligent aquarian can be his own worst enemy. His mind never seems to rest and he has got lost in his thoughts on more than a few occasions.
+      
+      Scheming Seaman. Kairos is seeking to overthrow King Nemos with the help of sahuagin and aquarian rebels. He uses a unique conch shell to summon the Waugan.
+      
+      Source: Cawood, Monsters of the Wilderness p. 12 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Mountain: The Great Eight, Kairos -->
+  
+  
+  
+  <monster>
     <name>Coroctopus</name>
     <size>L</size>
     <type>monstrosity</type>
@@ -286,7 +436,7 @@
       Fishermen’s Friend. Local fishermen can actually benefit from the presence of this monster. It doesn’t usually attack them and the coroctopus scares fish, crabs, and other creatures into the open.
 
       Source: Cawood, Monsters of the Wilderness p. 15 (ThirdParty)</description>
-    <environment>Coastal, Underwater</environment>
+    <environment>coastal, underwater</environment>
   </monster> <!-- Ocean: Coroctopus -->
   <monster>
     <name>Coral Eel</name>
@@ -327,31 +477,24 @@
       Gregarious Gangs. Coral eels often travel in groups of about ten. Although they can be found in the hundreds near the coast. They mainly eat cod, halibut, shrimp, salmon, and octopi. However, their magical bubbles enable them to hunt larger prey such as seals.
 
       Source: Cawood, Monsters of the Wilderness p. 16 (ThirdParty)</description>
-    <environment>Coastal, Underwater</environment>
+    <environment>coastal, underwater</environment>
   </monster> <!-- Ocean: Coral Eel -->
-  <!-- Arctic Region -->
-  <!-- Desert Region -->
-  <!-- Jungle/Swamp Region -->
-  <!-- Forest Region -->
-  <!-- Hills/Lakes Region -->
-  <!-- Mountain Region -->
   
   
   
-  <!-- Arctic -->
-  <monster> <!-- Arctic: Titan, The Ragnar -->
+  <!-- Arctic Region -->  
+  <monster>
     <name>The Ragnar</name>
-    <size>H</size>
+    <size>G</size>
     <type>monstrosity (titan)</type>
     <alignment>chaotic evil</alignment>
     <ac>18 (natural armor)</ac>
-    <hp>378 (28d12 + 196)</hp>
+    <hp>296 (17d20 + 119)</hp>
     <speed>40 ft., climb 20 ft.</speed>
-    <str>22</str><dex>9</dex><con>25</con><int>7</int><wis>12</wis><cha>3</cha>
+    <str>26</str><dex>9</dex><con>25</con><int>7</int><wis>12</wis><cha>3</cha>
     <save>Con +13, Wis +7</save>
     <skill>Perception +7</skill>
-    <resist>cold</resist>
-    <immune>poison</immune>
+    <immune>cold, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
     <conditionImmune>charmed, frightened, paralyzed, poisoned, prone</conditionImmune>
     <senses>darkvision 90 ft.</senses><passive>17</passive>
     <languages>-</languages>
@@ -363,6 +506,10 @@
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <text>If the Ragnar fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The Ragnar has advantage on saving throws against spells and other magical effects.</text>
     </trait>
     <trait>
       <name>Siege Monster</name>
@@ -383,6 +530,11 @@
       <attack>Slam|13|2d10 + 6</attack>
     </action>
     <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
+      <text>The Ragnar can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Ragnar regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
       <name>Swat Away</name>
       <text>The Ragnar makes a slam attack. If the attack hits, the target must succeed on a DC 17 Strength saving throw or be pushed 15 feet in a straight line away from the Ragnar. If the saving throw fails by 8 or more, the target falls prone.</text>
     </legendary>
@@ -394,11 +546,19 @@
       <name>Bite Attack (Costs 3 Actions)</name>
       <text>The Ragnar makes a bite attack.</text>
     </legendary>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Varga the Ice Witch -->
-    <name>Varga the Ice Witch</name>
+    <description>Wandering across the snowy landscape is a massive, menacing creature. It is so large it seems as if the land itself has come to life. The Ragnar is an unstoppable force that dominates a large territory. Most other creatures flee at the sight of this gigantic terror.
+
+      Ready to Rumble. The ground literally shakes when the Ragnar is in the vicinity. It can cause avalanches and leaves a trail of destruction in its wake. Even its huge footprints make a sizeable impact on the environment.
+
+      Brutal Behemoth. This creature is a pure predator and stands at the very top of the food chain. Even the mighty snow elves, also known as the vothdar, have trouble handling this titan. They will often escape to their airships if the Ragnar is in the area.
+
+      Roaming Around. This titan usually feeds on ozlogs. It’s an incredible sight to see the enormous Ragnar chasing a herd of the beasts across an expansive glacier. Only Varga the Ice Witch knows that that this monster was created when dark magic came through a portal. These strange magical gates are known as Riftgates. The witch has a close bond with the fearsome creature.
+      
+      Source: Cawood, Monsters of the Wilderness p. 32 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Titan, The Ragnar -->
+  <monster>
+    <name>Great Eight, Varga the Ice Witch</name>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>chaotic evil</alignment>
@@ -408,7 +568,7 @@
     <str>15</str><dex>15</dex><con>20</con><int>25</int><wis>18</wis><cha>7</cha>
     <save>Int +12, Wis +9</save>
     <skill>Arcana +12, History +12, Perception +9, Survival +9</skill>
-    <senses></senses><passive>19</passive>
+    <sense/><passive>19</passive>
     <languages>Common, Primordial</languages>
     <cr>10</cr>
     <trait>
@@ -445,11 +605,119 @@
       <text>Melee Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage plus 22 (5d8) cold damage.</text>
       <attack>Staff|7|1d8 + 2 + 5d8</attack>
     </action>
-    <spells>blade ward, dancing lights, minor illusion, ray of frost, resistance, mage armor, protection from evil and good, shield, witch bolt, darkvision, misty step, see invisibility, counterspell, dispel magic, glyph of warding, nondetection, banishment, confusion, ice storm, cone of cold, planar binding, globe of invulnerability, etherealness, reverse gravity, control weather</spells>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Dragon, Ice -->
+    <spells>blade ward, dancing lights, minor illusion, ray of frost, resistance, mage armor, protection from evil and good, shield, witch bolt, darkvision, misty step, see invisibility, counterspell, dispel magic, glyph of warding, nondetection, banishment, confusion, ice storm, cone of cold, planar binding, globe of invulnerability, etherealness, reverse gravity, control weather</spells><slots>4,3,3,3,3,2,2,1</slots>
+    <description>Drumming echoes from deep inside an ice cave. Wrapped in furs, an old woman communes with dark spirits through her instrument. Varga the Ice Witch knows what part of the cave is solid enough to stand the waves of sound. A large white wolf is curled up nearby on a pile of furs.
+
+      Cold Crone. Those creatures that live in this frozen wasteland should pray they never cross Varga’s path. Her twisted heart is as cold as the land itself. She is forever bound to the Ragnar, a massive titan that lives in the Arctic. The dark magic that brought the creature to life helps her to commune with it.
+      
+      Magical Protection. Varga is a master of abjuration magic and the cold climate doesn’t affect her. She is able to ward off many dangers, natural and unnatural. A recluse, Varga rarely ever sees other humans and feels at home in the wilderness.
+
+      Wolf Mount. She usually travels around the frozen land on her wolf named Ulfar. The wolf’s pack and other beasts help protect Varga’s cave.
+      
+      Source: Cawood, Monsters of the Wilderness p. 34 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: The Great Eight, Varga the Ice Witch -->
+  <monster>
+    <name>Crystal Spider</name>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>42 (5d10 + 15)</hp>
+    <speed>30 ft., climb 40 ft.</speed>
+    <str>18</str><dex>16</dex><con>16</con><int>2</int><wis>11</wis><cha>4</cha>
+    <resist>cold</resist>
+    <senses>blindsight 20 ft., darkvision 60 ft.</senses><passive>13</passive>
+    <languages>-</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Frozen Climber</name>
+      <text>The crystal spider can climb difficult surfaces, including upside down in icy and snowy areas, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Snow Camouflage</name>
+      <text>The crystal spider has advantage on Dexterity (Stealth) checks made to hide in icy or snowy terrain.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The crystal spider does double damage to objects and structures.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The crystal spider makes two attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 2 (1d4) cold damage.</text>
+      <attack>Bite|6|2d6 + 4 + 1d4</attack>
+    </action>
+    <action>
+      <name>Freezing Secretion</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 30/80 ft., one target. Hit: 4 (1d8) bludgeoning damage, and target must make a DC 13 Constitution saving throw or become paralyzed for 1 minute. The target can repeat the saving throw at the end of each of their turns.</text>
+      <attack>Secretion|5|1d8</attack>
+    </action>
+    <description>Clinging to an icy wall is a bizarre creature. The disturbing crystal spider lives in areas that most other monsters cannot reach. It can even scale sheer ice cliffs with its strong legs. Swarms of young crystal spiders have also been seen with these monstrosities.
+
+      Snow Spider. Crystal spiders can hide in the snowy terrain and surprise their victims. It’s quite the sight to see this massive spider make its presence known.
+
+      Patient Predator. Ambushing other creatures is what the crystal spider does best. They are very patient and will wait hours and hours for prey to wander by. Then the crystal spider spits a cold paralyzing liquid. Once the target is immobilized, the monster will drag the victim off to its lair.
+
+      Icy Inhabitants. The spider’s crystal caves are usually hidden far away from other creatures. These lairs are littered with crystals, gemstones, bones, and furs. Finding these lairs is an adventure in itself.
+      
+      Source: Cawood, Monsters of the Wilderness p. 35 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Crystal Spider -->
+  <monster>
+    <name> Crystal Spider, Young Swarm</name>
+    <size>M</size>
+    <type>swarm of Medium beasts</type>
+    <alignment>Unaligned</alignment>
+    <ac>12 (natural armor)</ac>
+    <hp>22 (5d8)</hp>
+    <speed>walk 40 ft., climb 30 ft.</speed>
+    <str>3</str>
+    <dex>13</dex>
+    <con>10</con>
+    <int>1</int>
+    <wis>7</wis>
+    <cha>1</cha>
+    <save/>
+    <skill/>
+    <passive>8</passive>
+    <languages/>
+    <cr>1</cr>
+    <resist>cold; bludgeoning, piercing, slashing</resist>
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>blindsight 10 ft.</senses>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.</text>
+    </trait>
+    <trait>
+      <name>Frozen Climber</name>
+      <text>The young crystal spider swarm can climb difficult surfaces, including upside down in icy or snowy areas, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Snow Camouflage</name>
+      <text>The young crystal spider swarm has advantage on Dexterity (Stealth) checks made to hide in icy or snowy terrain.</text>
+    </trait>
+    <action>
+      <name>Bites</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.</text>
+      <attack>Bites|+3|4d4</attack>
+    </action>
+    <description>Clinging to an icy wall is a bizarre creature. The disturbing crystal spider lives in areas that most other monsters cannot reach. It can even scale sheer ice cliffs with its strong legs. Swarms of young crystal spiders have also been seen with these monstrosities.
+
+      Snow Spider. Crystal spiders can hide in the snowy terrain and surprise their victims. It’s quite the sight to see this massive spider make its presence known.
+
+      Patient Predator. Ambushing other creatures is what the crystal spider does best. They are very patient and will wait hours and hours for prey to wander by. Then the crystal spider spits a cold paralyzing liquid. Once the target is immobilized, the monster will drag the victim off to its lair.
+
+      Icy Inhabitants. The spider’s crystal caves are usually hidden far away from other creatures. These lairs are littered with crystals, gemstones, bones, and furs. Finding these lairs is an adventure in itself.
+      
+      Source: Cawood, Monsters of the Wilderness p. 35 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Crystal Spider, Young Swarm -->
+  <monster>
     <name>Ice Dragon</name>
     <size>H</size>
     <type>dragon</type>
@@ -457,7 +725,7 @@
     <ac>19 (natural armor)</ac>
     <hp>195 (17d12 + 85)</hp>
     <speed>40 ft., fly 80 ft.</speed>
-    <str>22</str><dex>14</dex><con>20</con><int>16</int><wis>12</wis><cha>4</cha>
+    <str>22</str><dex>14</dex><con>20</con><int>16</int><wis>12</wis><cha>16</cha>
     <save>Dex +7, Con +10, Int +8, Wis +6</save>
     <skill>Perception +6, Stealth +7</skill>
     <immune>cold</immune>
@@ -494,11 +762,17 @@
     <action>
       <name>Freezing Breath</name>
       <text>The dragon exhales an icy breath in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 28 (8d6) cold damage on a failure half damage on a success. If the target fails their saving throw, they are also paralyzed for 1 minute. The target can make a DC 17 Constitution saving throw to end the paralysis at the end of each of their turns.</text>
+      <attack>Freezing Breath||8d6</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
       <text>Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 14 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours.</text>
     </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
+      <text>The ice dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The ice dragon regains spent legendary actions at the start of its turn.</text>
+    </legendary>
     <legendary>
       <name>Detect</name>
       <text>The dragon makes a Wisdom (Perception) check.</text>
@@ -511,10 +785,18 @@
       <name>Claw Attack (Costs 3 Actions)</name>
       <text>The dragon makes one claw attack.</text>
     </legendary>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Norvan, King Harald -->
+    <description>A party of adventurers cautiously makes its way across a snowy crevasse. Without warning, a bluish-white dragon drops from the sky and breathes a blast of freezing cold air. Half of the heroes are literally frozen in their tracks.
+      
+      Cool Intellect. Unlike its white dragon cousin, the ice dragon is rather intelligent. In fact, it is a wily and clever creature. These dragons know when they’re outmatched and won’t hesitate to fight again another day. An ice dragon will usually make its home in a large ice cavern. It makes sure to choose a strategic location it can defend.
+
+      Frozen in Their Tracks. Their powerful breath can freeze victims and make them easy targets. The ice dragon will use its breath weapon at a great distance and then move in to attack with its jaws and claws. However, the sight of the dragon is so terrifying that most creatures don’t get close enough to feel its icy breath.
+
+      Snow Problem. Snow elf forces often hunt these dragons. The two foes don’t feel they can share the Arctic peacefully. Ferocious air battles between the snow elves’ airships and ice dragons are legendary. The elves are always working on new ways to protect their craft from these creatures.
+      
+      Source: Cawood, Monsters of the Wilderness p. 37 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Dragon, Ice -->
+  <monster>
     <name>Norvan, King Harald</name>
     <size>M</size>
     <type>humanoid (human)</type>
@@ -557,10 +839,18 @@
       <name>Battle Cry (2/day)</name>
       <text>Each creature of Harald’s choice that is within 30 feet of him, can hear him, and not already affected by Battle Cry gain advantage on attack rolls until the start of Harald’s next turn. He can then make one attack as a bonus action.</text>
     </action>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Norvan, Shaman -->
+    <description>A convoy of armored polar bears comes to a halt. The lead rider has signalled a warning to the group. This is Harald the Norvan King, the ruler of his northern tribe. He is a beast of a man, towering over most of his people.
+
+      Barbarian King. The king is a confident, free-thinker and doesn’t get caught up in his emotions. Harald is armed with a magical hammer and is always protected by a large contingent of Norvan soldiers.
+
+      Inner Conflict. His ruling Snow Eagles clan are named for the giant eagles who live in the Arctic. The opposing clan are led by a younger group of men and are known as the Iron Bears. Both clans live in Norvald and have recently settled on the continent of Myrr. Their rivalry has come close to open warfare in the new land.
+
+      Formidable Fortress. Harald makes his home in a massive castle near the sea. He has a force of over 2000 soldiers, spellcasters, many ships, and hundreds of armored polar bears.
+      
+      Source: Cawood, Monsters of the Wilderness p. 38 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Norvan, King Harald -->
+  <monster>
     <name>Norvan, Shaman</name>
     <size>M</size>
     <type>humanoid (human)</type>
@@ -571,7 +861,7 @@
     <str>12</str><dex>12</dex><con>15</con><int>13</int><wis>19</wis><cha>11</cha>
     <save>Con +5, Wis +7</save>
     <skill>History +4, Insight +7, Nature +4, Perception +7, Survival +7</skill>
-    <senses></senses><passive>17</passive>
+    <senses/><passive>17</passive>
     <languages>Common</languages>
     <cr>8</cr>
     <trait>
@@ -610,11 +900,19 @@
       <text>The shaman magically polymorphs into a beast with a CR of 3 or less, and can remain in this form for up to 6 hours. The shaman can choose whether their equipment falls to the ground, melds with their new form, or is worn by the new form. The shaman reverts to their true form if they die or fall unconscious. The shaman can revert to their true form using a bonus action on their turn.</text>
       <text>    While in a new form, the shaman retains their game statistics and ability to speak, but their AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and they gain any special senses, proficiencies, traits, actions, and reactions that the new form has but that they lack.</text>
     </action>
-    <spells>druidcraft, guidance, produce flame, shillelagh, animal friendship, beast sense, cure wounds, speak with animals, animal restoration, darkvision, lesser restoration, pass without trace, feign death, sleet storm, wind wall, confusion, ice storm, freedom of movement, reincarnate, scrying</spells>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Norvan, Soldier -->
+    <spells>druidcraft, guidance, produce flame, shillelagh, animal friendship, beast sense, cure wounds, speak with animals, animal restoration, darkvision, lesser restoration, pass without trace, feign death, sleet storm, wind wall, confusion, ice storm, freedom of movement, reincarnate, scrying</spells><slots>4,3,3,3,2</slots>
+    <description>When a young member of the Norvan tribe begins to have visions, the community knows another shaman has been chosen. These individuals are called by nature to heal the world. They are profoundly present and can only speak the truth. There are only a handful of shamans in the frozen lands.
+
+      Wise Elder. These wise men and women don’t ally themselves with any clan. They remain outside of everyday life and avoid politics in the settlements. Most of these seers don’t marry and they enjoy their solitude.
+
+      Wilderness Homes. Shamans live away from the Norvan settlements in huts or caves, far from other people. They are close to the beasts in the area and can call on their help if they need it. Many of the healers have strong relationships with the giant eagles who live in the North.
+
+      Natural Cycle. They are extraordinary people, deeply in tune with nature and the inner lives of humans. Some shamans spend more time in their animal form than their human shape. Other elders say that shamans even know of future events that haven’t manifested yet.
+      
+      Source: Cawood, Monsters of the Wilderness p. 42 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Norvan, Shaman -->
+  <monster>
     <name>Norvan, Soldier</name>
     <size>M</size>
     <type>humanoid (human)</type>
@@ -624,13 +922,13 @@
     <speed>30 ft.</speed>
     <str>16</str><dex>14</dex><con>14</con><int>10</int><wis>10</wis><cha>10</cha>
     <skill>Perception +2, Survival +2</skill>
-    <senses></senses><passive>12</passive>
+    <senses/><passive>12</passive>
     <languages>Common</languages>
     <cr>1/2</cr>
     <trait>
       <name>Brave</name>
       <text>The Norvan has advantage on saving throws against being frightened.</text>
-    </trait>
+      </trait>
     <action>
       <name>Greataxe</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.</text>
@@ -641,11 +939,398 @@
       <text>Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
       <attack>Crossbow|4|1d8 + 2</attack>
     </action>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <description>Living in the far north are a tribe of humans called the Norvans. They are people who value their personal freedom very highly. At the same time, they work together to survive in the harsh region. Their culture is rich in history and the Norvans have begun to expand their influence.
+
+      Tough Northerners. Their snowy and mountainous home continent of Norvald is not an easy place to live. Norvans are usually clothed in thick furs and regularly use armored polar bears to move around the challenging terrain.
+
+      Two Factions. Over time the Norvans have split into two clans: the older more patient Snow Eagles and the young impulsive Iron Bears. The Snow Eagles have held power for many years, but some of the younger faction have seized power on the continent of Myrr.
+      
+      Southern Settlements. The tribe lives in several settlements on the continents of Norvald, Zogg, and Myrr. Most Norvans live in a few well-protected, large cities near the sea. Sailing the turbulent, dangerous oceans is a central part of their culture.
+      
+      Source: Cawood, Monsters of the Wilderness p. 43 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Norvan, Soldier -->
+  <monster>
+    <name>Icebreaker</name>
+    <size>H</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>157 (15d12 + 60)</hp>
+    <speed>0 ft., swim 40 ft.</speed>
+    <str>24</str><dex>14</dex><con>19</con><int>7</int><wis>15</wis><cha>5</cha>
+    <skill>Perception +5</skill>
+    <immune>cold</immune>
+    <conditionImmune>charmed, prone</conditionImmune>
+    <senses>darkvision 60 ft., tremorsense 60 ft.</senses><passive>15</passive>
+    <languages>-</languages>
+    <cr>8</cr>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The ice breaker can hold its breath for 1 hour.</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing</name>
+      <text>The ice breaker has advantage on Wisdom (Perception) checks that rely on hearing.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The ice breaker does double damage to objects and structures.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 29 (4d10 + 7) piercing damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the ice breaker can’t bite another target.</text>
+      <attack>Bite|8|4d10 + 5</attack>
+    </action>
+    <action>
+      <name>Swallow</name>
+      <text>The ice breaker makes one bite attack against a Large or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the ice breaker, and it takes 9 (2d8) acid damage at the start of each of the ice breaker’s turns. The ice breaker can have only one target swallowed at a time.</text>
+      <text>If the ice breaker takes 20 damage or more on a single turn from the swallowed creature, the ice breaker must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the ice breaker. If the ice breaker dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 10 feet of movement, exiting prone.</text>
+    </action>
+    <description>A sole fisherman has ventured out onto the sea ice. As he unpacks his gear, he feels the heavy ice move underneath him. Without warning, a massive creature smashes through the thick ice and rears up above the stunned man. This is the ice breaker, a terrifying monster that lives in the frozen waters of the Arctic.
+
+      On Thin Ice. Ice breakers love to lurk under the ice, hunting for prey. They can see in the dark waters and sense their prey by listening or feeling the ice move. These fierce killers frequently live near the coast where animals are more likely to wander onto the ice.
+
+      Hard-Headed. Their large heads are solid and can easily smash through solid ice. Many of their prey are surprised as the monster can attack without warn- ing. An ice breaker isn’t very bright, but it is aware of its surroundings.
+      
+      Local Fare. These monstrosities feed on any- thing they can find. They prefer to hunt seals, polar bears, nordaks, ozlogs, and other beasts. However, they will also dive deep down and feed on plants on the sea floor.
+      
+      Source: Cawood, Monsters of the Wilderness p. 39 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Icebreaker -->
+  <monster>
+    <name>Mammoth, Undead</name>
+    <size>H</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>12 (natural armor)</ac>
+    <hp>87 (7d12 + 42)</hp>
+    <speed>30 ft.</speed>
+    <str>24</str><dex>7</dex><con>22</con><int>1</int><wis>7</wis><cha>3</cha>
+    <resist>cold</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>8</passive>
+    <languages>-</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The undead mammoth does double damage to objects and structures.</text>
+    </trait>
+    <trait>
+      <name>Trampling Charge</name>
+      <text>If the undead mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone.</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the undead mammoth to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the undead mammoth drops to 1 hit point instead.</text>
+    </trait>
+    <action>
+      <name>Gore</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 20 (3d8 + 7) piercing damage plus 3 (1d6) necrotic damage.</text>
+      <attack>Gore|9|3d8 + 7 + 1d6</attack>
+    </action>
+    <action>
+      <name>Stomp</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one prone creature. Hit: 23 (3d10 + 7) bludgeoning damage.</text>
+      <attack>Stomp|9|3d10 + 7</attack>
+    </action>
+    <description>Enormous shadows can be seen moving through a foggy pass. Then several huge, dark mammoths begin to emerge from the mist. These undead mammoths are the result of dark magic that came through Riftgates. Necrotic energy that entered this region twists the souls of some mammoths when they die.
+
+      Hulking Horror. The vothdar will use these undead creatures as pack animals. Their necromancers, the blizzard wizards, can command the sizable creatures to do their bidding. However, the undead horrors can only take simple directions from the snow elves.
+
+      Herd Immunity. Undead mammoths usually stick together in groups. The region is a very dangerous place, and they will try to remain in their herd. Since they can see in the dark and don’t have the requirements of living creatures, some herds can be seen on the move in the middle of the night.
+
+      Undead Nature. An undead mammoth doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 40 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Mammoth, Undead -->
+  <monster>
+    <name>Nordak</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>neutral</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>30 (4d10 + 8)</hp>
+    <speed>50 ft.</speed>
+    <str>18</str><dex>14</dex><con>15</con><int>3</int><wis>12</wis><cha>7</cha>
+    <skill>Perception +3</skill>
+    <resist>cold</resist>
+    <senses/><passive>13</passive>
+    <languages>-</languages>
+    <cr>1</cr>
+    <trait>
+      <name>Heated Body</name>
+      <text>The nordak has a very warm inner temperature. If their stomachs are cut open, heat from their innards can keep a humanoid warm for eight hours. Of course, the nordak won’t survive the injury.</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing and Smell</name>
+      <text>The nordak has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
+    </trait>
+    <trait>
+      <name>Pack Animal</name>
+      <text>The nordak can carry 200 lbs. of equipment.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.</text>
+      <attack>Bite|6|2d6 + 4</attack>
+    </action>
+    <description>Traveling across the snowy wasteland is much easier while riding a nordak. These hardy beasts are sought after by many humanoids in the coldest climates. The beasts are well suited to the terrain and its extremely cold temperatures.
+
+      Sole Survivors. These creatures are at home in this stark landscape. Nordaks feed off small animals and native plants. They can be found in small groups or on their own. Unlike many beasts, they don’t need the company of others of their species.
+
+      Chilled Out. Nordaks are very relaxed creatures and nothing seems to bother them. There are stories of avalanches crashing down around them as they calmly travel through the area. These northern creatures will even assist their riders in combat, as they are wise enough to work together.
+
+      Inner Warmth. When a nordak is cut open it can be used to keep a humanoid warm. During this process, a number of interesting items have been found in the stomachs of these beasts. The vothdar also make a warming potion from the creature’s blood.
+      
+      Source: Cawood, Monsters of the Wilderness p. 44 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Nordak -->
+  <monster>
+    <name>Ozlog</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>neutral</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>15 (2d10 + 4)</hp>
+    <speed>40 ft.</speed>
+    <str>16</str><dex>10</dex><con>14</con><int>1</int><wis>5</wis><cha>3</cha>
+    <immune>cold</immune>
+    <senses>darkvision 60 ft.</senses><passive>7</passive>
+    <languages>-</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Charge</name>
+      <text>If the ozlog moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 3 (1d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The ozlog has advantage on an attack roll against a creature if at least one of the ozlog’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
+    </trait>
+    <action>
+      <name>Gore</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.</text>
+      <attack>Gore|5|1d8 + 3</attack>
+    </action>
+    <description>A herd of odd horned beasts thunder across a thick icy plain. The ground quakes as the mass of northern cattle are on the move. Ozlogs populate much of the Arctic region. Their life is usually brutal and short.
+      
+      Ice Cattle. They are hunted by numerous predators and provide sustenance to others in this harsh land. These beasts provide a lot of meat for the snow elves who hunt them on nordaks and their smaller airships.
+
+      Inhospitable Herd. Ozlogs are bad-tempered beasts and will attack any intruders in their territory. The strongest ozlog is the leader and fights determine the hierarchy for the species. Two of the larger of the species will usually lock horns and attempt to subdue each other.
+      
+      Home on the Range. Ozlogs live off plants in the tundra and must keep moving to find food. Their thick skin and hardy coats provide them good protection from the elements.
+      
+      Source: Cawood, Monsters of the Wilderness p. 44 (ThirdParty)</description>
     <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Voth -->
-    <name>Voth</name>
+  </monster> <!-- Arctic: Ozlog -->
+  <monster>
+    <name>People of the Sky</name>
+    <size>H</size>
+    <type>fey</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>126 (11d12 + 55)</hp>
+    <speed>0 ft. fly 80 ft. (hover)</speed>
+    <str>18</str><dex>20</dex><con>20</con><int>18</int><wis>20</wis><cha>18</cha>
+    <skill>Perception +9, Persuasion +8</skill>
+    <resist>acid, cold; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, grappled, poisoned, prone, restrained</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>19</passive>
+    <languages>Elvish, Primordial, Sylvan</languages>
+    <cr>10</cr>
+    <trait>
+      <name>Incorporeal Movement (Light Form)</name>
+      <text>The people of the sky can move through other creatures and objects as if they were difficult terrain. They take 5 (1d10) force damage if they end their turn inside an object.</text>
+    </trait>
+    <trait>
+      <name>Northern Light Form</name>
+      <text>The people of the sky can use an action to change their form into pure light or back into their true form. All their statistics remain the same, except their AC is 17 and they have the incorporeal movement trait. They revert back into their fey form if they are killed. People of the sky often choose vivid colors for their light form such as bright blue, pink, purple, yellow, and green.</text>
+    </trait>
+    <trait>
+      <name>Open Riftgate</name>
+      <text>The people of the sky can open Riftgates at will. However, the Riftgate must already be in place as they can’t create them.</text>
+    </trait>
+    <action>
+      <name>Cold Blast</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 21 (3d10 + 5) cold damage.</text>
+      <attack>Blast|9|3d10 + 5</attack>
+    </action>
+    <action>
+      <name>Lure of the Lights</name>
+      <text>Once a Riftgate is open, the people of the sky can attempt to lure targets into the gate. They send out a pattern of blue and green lights and any creatures within 100 feet must make a DC 16 Wisdom saving throw. If a target fails their saving throw, they are compelled to follow the light patterns into the Riftgate.</text>
+      <text>If this action fails to lure the target, the people of the sky will speak directly to the creature and attempt to persuade them.</text>
+    </action>
+    <description>One of the great mysteries of the mortal realm is the Northern Lights. The source of this phenomenon are the people of the sky. These huge fey beings cross over from Feyland to lure creatures into other worlds.
+
+      Mesmerizing Lights. The evil fey can take the form of brightly colored lights and dance through the sky. Their mysterious and breath-taking forms are almost too beautiful to describe. In their true forms, these fey appear as giant-like creatures.
+
+      On the Threshold. People of the sky search for Riftgates and open them in order to bring creatures into Feyland and other domains. After Oswald Myrr created the Riftgates by accident, these highly intelligent fey quickly found a use for them.
+
+      The Far Away. Nobody has found their true home, believed to be deep inside Feyland. There is no doubt the cruel creatures are members of the Unseelie Court. Rumors persist that this malevolent court are using the people of the sky to further their agenda.
+      
+      Source: Cawood, Monsters of the Wilderness p. 45 (ThirdParty)</description>
+    <environment>Arctic</environment>
+  </monster> <!-- Arctic: People of the Sky -->
+  <monster>
+    <name>Polar Bear, Armored</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>neutral</alignment>
+    <ac>16 (half-plate)</ac>
+    <hp>63 (6d10 + 30)</hp>
+    <speed>40 ft.</speed>
+    <str>22</str><dex>12</dex><con>20</con><int>9</int><wis>12</wis><cha>9</cha>
+    <skill>Perception +3</skill>
+    <immune>cold</immune>
+    <senses/><passive>13</passive>
+    <languages>Understands Common but can’t speak</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Keen Smell</name>
+      <text>The armored polar bear has advantage on Wisdom (Perception) checks that rely on smell.</text>
+    </trait>
+    <trait>
+      <name>Pack Animal</name>
+      <text>Armored polar bears can carry at least 300 pounds of gear.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The armored polar bear makes two attacks: one with its bite and one with its claws</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) piercing damage.</text>
+      <attack>Bite|8|2d10 + 6</attack>
+    </action>
+    <action>
+      <name>Iron Claw</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage.</text>
+      <attack>Claw|8|3d8 + 6</attack>
+    </action>
+    <description>Some polar bears are more intelligent and wiser than others. These large beasts are chosen as mounts by the Norvans. Once chosen they are fitted with thick half-plate armor. The armored polar bear is a fierce opponent and the epitome of bravery. With metal fitted on their impressive claws the bears become even more lethal.
+
+      Loyal Mount. Once a rider and bear form a bond it can’t be broken. Clever and sage, the armored polar bears are more companions than domesticated animals. In fact, the Norvans honor and respect these creatures in many ways.
+
+      Heavy Burden. Armored polar bears can carry huge loads. The Norvans load up the bears with gear for battle or transport goods from one settlement to another. Convoys of the bears can often be seen traveling across the snowy land.
+      
+      Big Bad Bear King. An armored polar bear named Karhu Nan considers himself to be the ruler of his species. This evil creature plots to take control of the bears and rebel against their Norvan masters.
+      
+      Source: Cawood, Monsters of the Wilderness p. 46 (ThirdParty)</description>
+    <environment>Arctic</environment>
+  </monster> <!-- Arctic: Polar Bear, Armored -->
+  <monster>
+    <name>The Shapeshifter</name>
+    <size>M</size>
+    <type>aberration (shapechanger)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>190 (20d8 + 100)</hp>
+    <speed>40 ft.</speed>
+    <str>20</str><dex>18</dex><con>20</con><int>20</int><wis>18</wis><cha>18</cha>
+    <skill>Deception +9, Perception +9, Stealth +9, Survival +9</skill>
+    <vulnerable>fire</vulnerable>
+    <resist>bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune>cold</immune>
+    <conditionImmune>charmed, exhaustion</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>19</passive>
+    <languages>the languages of the form it has assumed</languages>
+    <cr>15</cr>
+    <trait>
+      <name>Ambusher</name>
+      <text>In the first round of a combat, the shapeshifter has advantage on attack rolls against any creature it surprises.</text>
+    </trait>
+    <trait>
+      <name>Assume Form</name>
+      <text>The shapeshifter can assume the appearance of any Medium (or smaller) humanoid or beast it has eaten. It also feels and sounds exactly like the victim, speaking the languages it knows. Only a successful DC 18 Wisdom (Insight) check will reveal it to be a fake.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The shapeshifter has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The shapeshifter regains 10 hit points at the beginning of each of its turns. It is only destroyed if it starts its turn with 0 hit points and doesn’t regenerate.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The shapeshifter can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The shapeshifter can make one attack with its bite and two attacks with tendrils that emerge from inside its body.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) piercing damage.</text>
+      <attack>Bite|10|3d8 + 5</attack>
+    </action>
+    <action>
+      <name>Tendrils</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) slashing damage.</text>
+      <attack>Tendrils|10|3d8 + 5</attack>
+    </action>
+    <reaction>
+      <name>Aversion to Fire</name>
+      <text>If it can, the shapeshifter will use its reaction to move 10 feet away from any fire source.</text>
+    </reaction>
+    <description>Where the shapeshifter came from, nobody really knows. Its true form is something very alien. The shapeshifter’s goal is to eliminate all other life forms. If left unchecked, it could take over the entire world.
+
+      Odd Infiltrator. This aberration uses every trick to find a way into communities of other creatures. It will take the forms of other creatures that are most useful and begin its campaign. As it moves through the world it leaves a trail of corpses, usually hidden from view.
+
+      Serious Survivor. Identifying this monster is the initial challenge, the next is trying to eradicate it. The shapeshifter can survive almost anything. However, it does have a fear of fire and will avoid it if possible. This is the main reason is has traveled to the Arctic region.
+
+      Like the Plague. A shapeshifter has caused all kinds of havoc in the vothdar community. Many, many snow elves died before they got the shapeshifter out of their settlements. However, it survived and continues to spread its influence.
+      
+      Source: Cawood, Monsters of the Wilderness p. 47 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: The Shapeshifter -->
+  <monster>
+    <name>Snogre</name>
+    <size>L</size>
+    <type>giant</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>95 (10d10 + 40)</hp>
+    <speed>40 ft.</speed>
+    <str>20</str><dex>12</dex><con>18</con><int>5</int><wis>7</wis><cha>3</cha>
+    <immune>cold</immune>
+    <senses>darkvision 90 ft.</senses><passive>8</passive>
+    <languages>Giant</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Keen Smell</name>
+      <text>The snogre has advantage on Wisdom (Perception) checks that rely on smell.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The snogre makes two attacks: one with its bite and one with its club.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing damage.</text>
+      <attack>Bite|8|1d10 + 5</attack>
+    </action>
+    <action>
+      <name>Ice Club</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.</text>
+      <attack>Club|8|2d8 + 5</attack>
+    </action>
+    <description>Living deep inside dark, snowy caverns are cousins of the ogre. These snogres have adapted to the Arctic and are more powerful than normal ogres. They have thick hide and arm themselves with deadly ice weapons.
+
+      Angry Aggressor. Snogres are incredibly aggressive and territorial. They will attack any creatures that get near their cave. Blessed with a good sense of smell, they are generally able to find intruders in their territory.
+
+      Slow Kill. They often string up their victims and toy with them for hours. After torturing their victims over an extended period, the snogre will kill and eat them. These giants are particularly fond of eating humanoids. Survivors who escape a snogre’s cavern tell horrific tales.
+
+      Wild Kingdom. When these creatures can’t find ozlogs or nordaks to eat, they explore the many caves in the Arctic. They will attempt to survive on snow hares and other smaller animals if they have to. Most snogres live and hunt alone.
+      
+      Source: Cawood, Monsters of the Wilderness p. 48 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Snogre -->
+  <monster>
+    <name>Vothdar</name>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>lawful evil</alignment>
@@ -682,11 +1367,19 @@
       <attack>Longbow|3|1d8 + 3 + 1d4</attack>
     </action>
     <spells>ray of frost</spells>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Voth, Blizzard Wizard -->
-    <name>Voth, Blizzard Wizard</name>
+    <description>Living on a far northerly continent is a race of evil snow elves. The vothdar are actually descended from high elves who began to worship devils. This was another consequence of Riftgates opening up. Thanks to the actions of Oswald Myrr, devils made their way to the continent of Naern. Eventually they corrupted a group of the high elves.
+
+      Infernal Allies. These elves were banished from the continent of Naern for devil-worshipping. They are cold-hearted creatures that have created a patriarchal society on the northern land of Voth. King Vuthar rules with an iron fist and his loyal blizzard wizards relay his orders to the rest of the snow elves. Ancient noble houses from their time in Naern still dominate the society. The powerful vothdar rule almost all of the snowy land. They have developed new technologies, including magically powered airships.
+      
+      Snow Elves. These elves are well-adapted to living in the cold. When not traveling in airships, they usually use nordaks as mounts. Oswald Myrr named their frozen continent after their race.
+
+      New World Order. The vothdar have plans to conquer the entire world. Their scouts have already ventured onto the continents of Naern and Norvald. They plan to invade by using their massive airships to ferry soldiers over to neighboring lands. They despise other elves and will attack them on sight.
+      
+      Source: Cawood, Monsters of the Wilderness p. 49 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Vothdar -->
+  <monster>
+    <name>Vothdar, Blizzard Wizard</name>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>lawful evil</alignment>
@@ -727,19 +1420,27 @@
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) bludgeoning damage plus 5 (2d4) cold damage.</text>
       <attack>Staff|4|2d6 + 1 + 2d4</attack>
     </action>
-    <spells>chill touch, ray of frost, fog cloud, chill touch, dancing lights, message, minor illusion, charm person, feather fall, mage armor, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, ice storm</spells>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Voth, Vothlock -->
-    <name>Voth, Vothlock</name>
+    <spells>chill touch, ray of frost, fog cloud, chill touch, dancing lights, message, minor illusion, charm person, feather fall, mage armor, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, ice storm</spells><slots>4,3,3,1</slots>
+    <description>Blizzard wizards are the necromancers of the vothdar. These spellcasters are high-ranking members of the evil snow elf race. They are closely allied with the king and pilot all the vothdar’s airships.
+      
+      Elf Necromancers. These wizards craft the magical vithral armor that most of the vothdar wear. It is made from adamantine, a material found in large quantities in the Arctic. The armor is then altered by magic to make it lighter. They also make potions for sick elves from the blood of the nordak.
+
+      Sky Pilots. The vothdar’s airships are powered by the magic wielded by these wizards. Blizzard wizards will cast wind spells to control the sails.
+
+      Rival Casters. There is an ongoing rivalry between the blizzard wizards and the vothlocks. The necromancers are part of the king’s inner circle and have a higher rank than the warlocks. A few female vothdar are vothlocks, but only male vothdar can become wizards.
+      
+      Source: Cawood, Monsters of the Wilderness p. 50 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Vothdar, Blizzard Wizard -->
+  <monster>
+    <name>Vothdar, Vothlock</name>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>lawful evil</alignment>
     <ac>12 (15 with mage armor)</ac>
     <hp>44 (8d8 + 8)</hp>
     <speed>30 ft.</speed>
-    <str>12</str><dex>14</dex><con>12</con><int>12</int><wis>10</wis><cha>16</cha>
+    <str>12</str><dex>14</dex><con>12</con><int>14</int><wis>10</wis><cha>16</cha>
     <skill>Arcana +4, Deception +6, Perception +3, Persuasion +6, Survival +3</skill>
     <resist>cold</resist>
     <senses>darkvision 90 ft.</senses><passive>13</passive>
@@ -774,24 +1475,32 @@
       <name>Summon Devil (1/day)</name>
       <text>The vothlock can use an action to summon an imp. It appears in an occupied space within 30 feet of the vothlock. The imp obeys the vothlock for one hour and then dies. It is reborn in Hell with the knowledge of its summoning.</text>
     </action>
-    <spells>chill touch, mage armor, ray of frost, bestow curse, slow, eldritch blast, minor illusion, prestidigitation, shocking grasp, counterspell, enthrall, hellish rebuke, invisibility, suggestion, vampiric touch</spells>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Voth, King Vuthar -->
-    <name>Voth, King Vuthar</name>
+    <spells>chill touch, mage armor, ray of frost, bestow curse, slow, eldritch blast, minor illusion, prestidigitation, shocking grasp, counterspell, enthrall, hellish rebuke, invisibility, suggestion, vampiric touch</spells><slots>4, 4, 4</slots>
+    <description>As a shimmering red pentagram glows, a red-skinned monster appears out of the thin air. A white-haired snow elf laughs manically nearby and claps their hands. This is the vothlock, a snow elf warlock.
+
+      Power Play. These warlocks covet any position where they can influence the king. Each of them serves a devil patron and the fiends want the vothdar to take over the world. Of course, the devils want the world for themselves and plan to eventually betray the snow elves.
+
+      Knowledge Seeker. The vothlocks are always attempting to learn more about the Arctic, the world, and the multiverse. They will pass along this information to their infernal patrons. At times they might also give this knowledge to the vothdar hierarchy. 
+      
+      Gory Details. The vothlock take charge of any interrogations and run the vothdar prisons. They love nothing more than toying with prisoners, especially other races. The king won’t think twice about having the vothlocks do his dirty work.
+      
+      Source: Cawood, Monsters of the Wilderness p. 51 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Vothdar, Vothlock -->
+  <monster>
+    <name>Vothdar, King Vuthar</name>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>lawful evil</alignment>
     <ac>19 (vithral armor)</ac>
     <hp>150 (20d8 + 60)</hp>
     <speed>30 ft.</speed>
-    <str>20</str><dex>18</dex><con>16</con><int>18</int><wis>17</wis><cha>20</cha>
-    <skill>Arcana +9, Intimidation +10, Perception +8, Survival +8</skill>
+    <str>20</str><dex>18</dex><con>16</con><int>20</int><wis>17</wis><cha>20</cha>
+    <skill>Arcana +10, Intimidation +10, Perception +8, Survival +8</skill>
     <resist>cold</resist>
-    <senses>darkvision 90 ft.</senses><passive>15</passive>
+    <senses>darkvision 90 ft.</senses><passive>18</passive>
     <languages>Elvish, Infernal</languages>
-    <cr>18</cr>
+    <cr>15</cr>
     <trait>
       <name>Devil’s Sight</name>
       <text>Magical darkness doesn’t impede his darkvision.</text>
@@ -837,719 +1546,1570 @@
       <text>Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage and 2 (1d4) cold damage.</text>
       <attack>Longbow|9|1d8 + 4 + 1d4</attack>
     </action>
-    <spells>chill touch, ray of frost, fog cloud, dancing lights, message, ray of frost, shocking grasp, charm person, feather fall, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, blight, dimension door, ice storm, animate objects, cone of cold, chain lightning, create undead, finger of death, control weather</spells>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Crystal Spider -->
-    <name>Crystal Spider</name>
-    <size>L</size>
-    <type>monstrosity</type>
-    <alignment>unaligned</alignment>
-    <ac>16 (natural armor)</ac>
-    <hp>37 (5d10 + 10)</hp>
-    <speed>30 ft., climb 40 ft.</speed>
-    <str>18</str><dex>16</dex><con>14</con><int>2</int><wis>11</wis><cha>4</cha>
-    <resist>cold</resist>
-    <senses>blindsight 20 ft., darkvision 60 ft.</senses><passive>13</passive>
-    <languages>-</languages>
-    <cr>3</cr>
-    <trait>
-      <name>Frozen Climber</name>
-      <text>The crystal spider can climb difficult surfaces, including upside down in icy and snowy areas, without needing to make an ability check.</text>
-    </trait>
-    <trait>
-      <name>Snow Camouflage</name>
-      <text>The crystal spider has advantage on Dexterity (Stealth) checks made to hide in icy or snowy terrain.</text>
-    </trait>
-    <trait>
-      <name>Siege Monster</name>
-      <text>The crystal spider does double damage to objects and structures.</text>
-    </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>The crystal spider makes two attacks.</text>
-    </action>
-    <action>
-      <name>Bite</name>
-      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 2 (1d4) cold damage.</text>
-      <attack>Bite|6|2d6 + 4 + 1d4</attack>
-    </action>
-    <action>
-      <name>Freezing Secretion</name>
-      <text>Ranged Weapon Attack: +5 to hit, range 30/80 ft., one target. Hit: 4 (1d8) bludgeoning damage, and target must make a DC 13 Constitution saving throw or become paralyzed for 1 minute. The target can repeat the saving throw at the end of each of their turns.</text>
-      <attack>Secretion|5|1d8</attack>
-    </action>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Young Crystal Spider Swarm -->
-    <name>Swarm of Spiders</name>
-    <size>M</size>
-    <type>swarm of Medium beasts</type>
-    <alignment>Unaligned</alignment>
-    <ac>12 (natural armor)</ac>
-    <hp>22 (5d8)</hp>
-    <speed>40 ft., climb 30 ft.</speed>
-    <str>3</str><dex>13</dex><con>10</con><int>1</int><wis>7</wis><cha>1</cha>
-    <resist>cold</resist>
-    <senses></senses><passive>8</passive>
-    <languages>-</languages>
-    <cr>1</cr>
-    <resist>bludgeoning, piercing, slashing</resist>
-    <immune></immune>
-    <vulnerable></vulnerable>
-    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
-    <senses>blindsight 10 ft.</senses>
-    <trait>
-      <name>Swarm</name>
-      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.</text>
-    </trait>
-    <trait>
-      <name>Frozen Climber</name>
-      <text>The young crystal spider swarm can climb difficult surfaces, including upside down in icy or snowy areas, without needing to make an ability check.</text>
-    </trait>
-    <trait>
-      <name>Snow Camouflage</name>
-      <text>The young crystal spider swarm has advantage on Dexterity (Stealth) checks made to hide in icy or snowy terrain.</text>
-    </trait>
-    <action>
-      <name>Bites</name>
-      <text>Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.</text>
-      <attack>Bites|+3|4d4</attack>
-    </action>
-    <description>The Nature of Swarms. 
-    ------
-    The swarms presented here aren't ordinary or benign assemblies of little creatures. They form as a result of some sinister or unwholesome influence. A vampire can summon swarms of bats and rats from the darkest corners of the night, while the very presence of a mummy lord can cause scarab beetles to boil up from the sand-filled depths of its tomb. A hag might have the power to turn swarms of ravens against her enemies, while a yuan-ti abomination might have swarms of poisonous snakes slithering in its wake. Even druids can't charm these swarms, and their aggressiveness is borderline unnatural.
-    ------
-    Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Icebreaker -->
-    <name>Icebreaker</name>
-    <size>H</size>
-    <type>monstrosity</type>
-    <alignment>unaligned</alignment>
-    <ac>15 (natural armor)</ac>
-    <hp>157 (15d12 + 60)</hp>
-    <speed>0 ft., swim 40 ft.</speed>
-    <str>20</str><dex>14</dex><con>19</con><int>7</int><wis>15</wis><cha>5</cha>
-    <skill>Perception +5</skill>
-    <immune>cold</immune>
-    <conditionImmune>charmed, prone</conditionImmune>
-    <senses>darkvision 60 ft., tremorsense 60 ft.</senses><passive>15</passive>
-    <languages>-</languages>
-    <cr>8</cr>
-    <trait>
-      <name>Hold Breath</name>
-      <text>The ice breaker can hold its breath for 1 hour.</text>
-    </trait>
-    <trait>
-      <name>Keen Hearing</name>
-      <text>The ice breaker has advantage on Wisdom (Perception) checks that rely on hearing.</text>
-    </trait>
-    <trait>
-      <name>Siege Monster</name>
-      <text>The ice breaker does double damage to objects and structures.</text>
-    </trait>
-    <action>
-      <name>Bite</name>
-      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 27 (4d10 + 5) piercing damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the ice breaker can’t bite another target.</text>
-      <attack>Bite|8|4d10 + 5</attack>
-    </action>
-    <action>
-      <name>Swallow</name>
-      <text>The ice breaker makes one bite attack against a Large or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the ice breaker, and it takes 9 (2d8) acid damage at the start of each of the ice breaker’s turns. The ice breaker can have only one target swallowed at a time.</text>
-      <text>    If the ice breaker takes 20 damage or more on a single turn from the swallowed creature, the ice breaker must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the ice breaker. If the ice breaker dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 10 feet of movement, exiting prone.</text>
-    </action>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Mammoth, Undead -->
-    <name>Mammoth, Undead</name>
-    <size>H</size>
-    <type>undead</type>
-    <alignment>neutral evil</alignment>
-    <ac>12 (natural armor)</ac>
-    <hp>87 (7d12 + 42)</hp>
-    <speed>30 ft.</speed>
-    <str>24</str><dex>7</dex><con>22</con><int>1</int><wis>7</wis><cha>3</cha>
-    <resist>cold</resist>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses><passive>8</passive>
-    <languages>-</languages>
-    <cr>5</cr>
-    <trait>
-      <name>Siege Monster</name>
-      <text>The undead mammoth does double damage to objects and structures.</text>
-    </trait>
-    <trait>
-      <name>Trampling Charge</name>
-      <text>If the undead mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone.</text>
-    </trait>
-    <trait>
-      <name>Undead Fortitude</name>
-      <text>If damage reduces the undead mammoth to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the undead mammoth drops to 1 hit point instead.</text>
-    </trait>
-    <action>
-      <name>Gore</name>
-      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 20 (3d8 + 7) piercing damage plus 3 (1d6) necrotic damage.</text>
-      <attack>Gore|9|3d8 + 7 + 1d6</attack>
-    </action>
-    <action>
-      <name>Stomp</name>
-      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one prone creature. Hit: 23 (3d10 + 7) bludgeoning damage.</text>
-      <attack>Stomp|9|3d10 + 7</attack>
-    </action>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Nordak -->
-    <name>Nordak</name>
+    <reaction>
+      <name>Parry</name>
+      <text>Vuthar adds 2 to his AC against one melee attack that would hit him. To do so, Vuthar must see the attacker and be wielding a melee weapon.</text>
+    </reaction>
+    <spells>chill touch, ray of frost, fog cloud, dancing lights, message, ray of frost, shocking grasp, charm person, feather fall, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, blight, dimension door, ice storm, animate objects, cone of cold, chain lightning, create undead, finger of death, control weather</spells><slots>4,3,3,3,2,2,1,1</slots>
+    <description>As an enormous airship flies through a blizzard, a cloaked vothdar barks out orders to his troops. This is Vuthar, the powerful king of the vothdar. An extremely tall and handsome snow elf, he stands out in a crowd. In his grasp is a legendary weapon known as the Greatsword of Hell. Legends say the weapon was gifted to him by a very influential arch-devil.
+
+      Evil Emperor. Vuthar is a nasty, wrathful male elf. He is only interested in power and his ego has no bounds. This king believes the vothdar are the master race and should rule the entire world. He isn’t aware that the devils are simply using his people to further their agenda.
+      
+      Pyramid Scheme. The king sits at the apex of vothdar society, with his blizzard wizards next in the hierarchy. Next are the military commanders and elite vothdar soldiers. A dozen vothdar consorts usually accompany the monarch, also serving as bodyguards.
+
+      Imminent Invasion. Vuthar plans to invade the neighbouring lands of Naern and Norvald soon. The vothdar believe they need to take the two smaller continents before starting any war with Myrr or Zogg. Soldiers are training for the war and the tools of war are being built at a rapid pace.
+      
+      Source: Cawood, Monsters of the Wilderness p. 52 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Vothdar, King Vuthar -->
+  <monster>
+    <name>Yarr Beak</name>
     <size>L</size>
     <type>beast</type>
-    <alignment>neutral</alignment>
-    <ac>14 (natural armor)</ac>
-    <hp>30 (4d10 + 8)</hp>
-    <speed>50 ft.</speed>
-    <str>18</str><dex>14</dex><con>15</con><int>3</int><wis>12</wis><cha>7</cha>
-    <resist>cold</resist>
-    <senses></senses><passive>13</passive>
-    <languages>-</languages>
-    <cr>1</cr>
-    <trait>
-      <name>Heated Body</name>
-      <text>The nordak has a very warm inner temperature. If their stomachs are cut open, heat from their innards can keep a humanoid warm for eight hours. Of course, the nordak won’t survive the injury.</text>
-    </trait>
-    <trait>
-      <name>Keen Hearing and Smell</name>
-      <text>The nordak has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
-    </trait>
-    <trait>
-      <name>Pack Animal</name>
-      <text>The nordak can carry 200 lbs. of equipment.</text>
-    </trait>
-    <action>
-      <name>Bite</name>
-      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.</text>
-      <attack>Bite|6|2d6 + 4</attack>
-    </action>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Ozlog -->
-    <name>Ozlog</name>
-    <size>L</size>
-    <type>beast</type>
-    <alignment>neutral</alignment>
-    <ac>13 (natural armor)</ac>
-    <hp>15 (2d10 + 4)</hp>
-    <speed>40 ft.</speed>
-    <str>16</str><dex>10</dex><con>14</con><int>1</int><wis>5</wis><cha>3</cha>
-    <immune>cold</immune>
-    <senses>darkvision 60 ft.</senses><passive>7</passive>
-    <languages>-</languages>
-    <cr>1/4</cr>
-    <trait>
-      <name>Charge</name>
-      <text>If the ozlog moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 3 (1d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
-    </trait>
-    <trait>
-      <name>Pack Tactics</name>
-      <text>The ozlog has advantage on an attack roll against a creature if at least one of the ozlog’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
-    </trait>
-    <action>
-      <name>Gore</name>
-      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.</text>
-      <attack>Gore|5|1d8 + 3</attack>
-    </action>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: People of the Sky -->
-    <name>People of the Sky</name>
-    <size>H</size>
-    <type>fey</type>
-    <alignment>neutral evil</alignment>
-    <ac>15</ac>
-    <hp>103 (9d12 + 45)</hp>
-    <speed>0 ft. fly 80 ft. (hover)</speed>
-    <str>18</str><dex>20</dex><con>20</con><int>18</int><wis>20</wis><cha>18</cha>
-    <skill>Perception +9, Persuasion +8</skill>
-    <resist>acid, cold; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, exhaustion, grappled, poisoned, prone, restrained</conditionImmune>
-    <senses>darkvision 60 ft.</senses><passive>19</passive>
-    <languages>Elvish, Primordial, Sylvan</languages>
-    <cr>10</cr>
-    <trait>
-      <name>Incorporeal Movement (Light Form)</name>
-      <text>The people of the sky can move through other creatures and objects as if they were difficult terrain. They take 5 (1d10) force damage if they end their turn inside an object.</text>
-    </trait>
-    <trait>
-      <name>Northern Light Form</name>
-      <text>The people of the sky can use an action to change their form into pure light or back into their true form. All their statistics remain the same, except their AC is 17 and they have the incorporeal movement trait. They revert back into their fey form if they are killed. People of the sky often choose vivid colors for their light form such as bright blue, pink, purple, yellow, and green.</text>
-    </trait>
-    <trait>
-      <name>Open Riftgate</name>
-      <text>The people of the sky can open Riftgates at will. However, the Riftgate must already be in place as they can’t create them.</text>
-    </trait>
-    <action>
-      <name>Cold Blast</name>
-      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 21 (3d10 + 5) cold damage.</text>
-      <attack>Blast|9|3d10 + 5</attack>
-    </action>
-    <action>
-      <name>Lure of the Lights</name>
-      <text>Once a Riftgate is open, the people of the sky can attempt to lure targets into the gate. They send out a pattern of blue and green lights and any creatures within 100 feet must make a DC 16 Wisdom saving throw. If a target fails their saving throw, they are compelled to follow the light patterns into the Riftgate.</text>
-      <text>    If this action fails to lure the target, the people of the sky will speak directly to the creature and attempt to persuade them.</text>
-    </action>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: Polar Bear, Armored -->
-    <name>Polar Bear, Armored</name>
-    <size>L</size>
-    <type>beast</type>
-    <alignment>neutral</alignment>
-    <ac>16 (half-plate)</ac>
-    <hp>63 (6d10 + 30)</hp>
-    <speed>40 ft.</speed>
-    <str>22</str><dex>12</dex><con>20</con><int>9</int><wis>12</wis><cha>9</cha>
-    <skill>Perception +3</skill>
-    <immune>cold</immune>
-    <senses></senses><passive>13</passive>
-    <languages>Understands Common but can’t speak</languages>
-    <cr>4</cr>
-    <trait>
-      <name>Keen Smell</name>
-      <text>The armored polar bear has advantage on Wisdom (Perception) checks that rely on smell.</text>
-    </trait>
-    <trait>
-      <name>Pack Animal</name>
-      <text>Armored polar bears can carry at least 300 pounds of gear.</text>
-    </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>The armored polar bear makes two attacks: one with its bite and one with its claws</text>
-    </action>
-    <action>
-      <name>Bite</name>
-      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) piercing damage.</text>
-      <attack>Bite|8|2d10 + 6</attack>
-    </action>
-    <action>
-      <name>Iron Claw</name>
-      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage.</text>
-      <attack>Claw|8|3d8 + 6</attack>
-    </action>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-  <monster> <!-- Arctic: The Shapeshifter -->
-    <name>The Shapeshifter</name>
-    <size>M</size>
-    <type>aberration (shapechanger)</type>
     <alignment>chaotic evil</alignment>
-    <ac>17 (natural armor)</ac>
-    <hp>190 (20d8 + 100)</hp>
-    <speed>40 ft.</speed>
-    <str>20</str><dex>18</dex><con>20</con><int>20</int><wis>18</wis><cha>18</cha>
-    <skill>Deception +9, Perception +9, Stealth +9, Survival +9</skill>
-    <vulnerable>fire</vulnerable>
-    <resist>bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-    <immune>cold</immune>
-    <conditionImmune>charmed, exhaustion</conditionImmune>
-    <senses>darkvision 60 ft.</senses><passive>19</passive>
-    <languages>the languages of the form it has assumed</languages>
-    <cr>12</cr>
+    <ac>14 (natural armor)</ac>
+    <hp>37 (5d10 + 10)</hp>
+    <speed>20 ft., fly 80 ft.</speed>
+    <str>18</str><dex>17</dex><con>14</con><int>11</int><wis>15</wis><cha>10</cha>
+    <skill>Perception +4</skill>
+    <resist>cold</resist>
+    <senses>darkvision 60 ft.</senses><passive>14</passive>
+    <languages>understands Auran but can't speak it</languages>
+    <cr>2</cr>
     <trait>
-      <name>Ambusher</name>
-      <text>In the first round of a combat, the shapeshifter has advantage on attack rolls against any creature it surprises.</text>
+      <name>Agile Aviators</name>
+      <text>The Yarr beak ignores any effects from high winds, blizzards, and storms.</text>
     </trait>
     <trait>
-      <name>Assume Form</name>
-      <text>The shapeshifter can assume the appearance of any Medium (or smaller) humanoid or beast it has eaten. It also feels and sounds exactly like the victim, speaking the languages it knows. Only a successful DC 18 Wisdom (Insight) check will reveal it to be a fake.</text>
+      <name>Keen Sight</name>
+      <text>The Yarr beak has advantage on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Snow Camouflage</name>
+      <text>The Yarr beak has advantage on Dexterity (Stealth) checks made to hide in icy or snowy terrain.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Yarr beak makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Beak</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
+      <attack>Beak|4|1d8 + 2</attack>
+    </action>
+    <action>
+      <name>Talons</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.</text>
+      <attack>Talons|4|1d8 + 2</attack>
+    </action>
+    <description>Perched high atop distant snowy peaks are the Yarr beaks. These evil birds hunt from their lofty homes, swooping down to attack their victims. Powerful wings enable the large creatures to fly in the difficult conditions of the Arctic. They are also tough to spot as they can easily hide in the frozen terrain.
+
+      Rapacious Raptor. The Yarr beak is always hungry and on the hunt. It sleeps more than half the day and needs to feed a lot during its waking hours. However, their eyes are bigger than their stomachs, so they’ll attack almost anything.
+
+      Air Superiority. Their position high above the land gives them an advantage over most other creatures. Yarr beaks can see their prey from great distances and hunt in a wide area.
+
+      Adaptable Avian. The large birds will also hunt for fish in the lakes, rivers, and coastal areas. Yarr beaks boldly dive into the water after spotting fish, seals, and other creatures from high above.
+      
+      Source: Cawood, Monsters of the Wilderness p. 54 (ThirdParty)</description>
+    <environment>arctic</environment>
+  </monster> <!-- Arctic: Yarr Beak -->
+  <!-- Desert Region -->
+  <monster>
+    <name>Giant Sand Shark</name>
+    <size>G</size>
+    <type>monstrosity (titan)</type>
+    <alignment>unaligned</alignment>
+    <ac>20 (natural armor)</ac>
+    <hp>350 (20d20 + 140)</hp>
+    <speed>40 ft., burrow 40 ft.</speed>
+    <str>26</str><dex>12</dex><con>24</con><int>7</int><wis>12</wis><cha>3</cha>
+    <save>Con +15, Int +6, Wis +9</save>
+    <skill>Perception +7</skill>
+    <immune>poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, frightened, prone</conditionImmune>
+    <senses>blindsight 90 ft., tremorsense 90 ft.</senses><passive>17</passive>
+    <languages>Terran</languages>
+    <cr>25</cr>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If the giant sand shark fails a saving throw, it can choose to succeed instead.</text>
     </trait>
     <trait>
       <name>Magic Resistance</name>
-      <text>The shapeshifter has advantage on saving throws against spells and other magical effects.</text>
+      <text>The giant sand shark has advantage on saving throws against spells and other magical effects.</text>
     </trait>
     <trait>
-      <name>Regeneration</name>
-      <text>The shapeshifter regains 10 hit points at the beginning of each of its turns. It is only destroyed if it starts its turn with 0 hit points and doesn’t regenerate.</text>
+      <name>Siege Monster</name>
+      <text>The giant sand shark deals double damage to objects and structures.</text>
     </trait>
     <trait>
-      <name>Spider Climb</name>
-      <text>The shapeshifter can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+      <name>Tunneler</name>
+      <text>The giant sand shark can burrow through solid rock at half its burrow speed and leaves a 10-foot diameter tunnel in its wake.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 43 (6d10 + 10) piercing damage. If the target is Large or smaller it must succeed on a DC 18 Dexterity saving throw or be swallowed by the giant sand shark. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the giant sand shark, and it takes 21 (6d6) acid damage at the start of each of the giant sand shark’s turns. If the giant sand shark takes 40 or more damage in one turn from a creature inside it, the giant sand shark must succeed on a DC 19 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone within 10 feet of the giant sand shark. If the giant sand shark dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 20 feet of movement, exiting prone.</text>
+      <attack>Bite|16|6d10 + 10</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
+      <text>The giant sand shark can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The giant sand shark regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Detect</name>
+      <text>The giant sand shark makes a Wisdom (Perception) check.</text>
+    </legendary>
+    <legendary>
+      <name>Bite Attack (Costs 2 Actions)</name>
+      <text>The giant sand shark makes a bite attack.</text>
+    </legendary>
+    <legendary>
+      <name>Move (Costs 3 Actions)</name>
+      <text>The giant sand shark moves up to its speed without provoking opportunity attacks.</text>
+    </legendary>
+    <spells/><slots/>
+    <description>Silence fills the air near a busy oasis. Animals listen more intently as they know a predator has moved into the area. Then without warning, an immense creature smashes out of the ground. The giant sand shark has surfaced to hunt anything and everything.
+
+      Sum of All Fears. Many that live in the desert tell tales of a monster too big to believe. However, the stories are true. The giant sand shark travels under the sand hunting for its next meal.
+
+      On the Move. It is almost always on the move. However, this titan does rest for periods, slumbering deep below the dunes. Some say its lair is a gigantic, subterranean cavern. An eccentric gnome wizard named Quora Yav (page 58) is said to visit the monstrosity.
+
+      Desert Diet. This carnivorous titan will feed on beasts, humanoids, and even other monsters. It has no interest in feeding on plants, so it's well-suited to the desert.
+      
+      Source: Cawood, Monsters of the Wilderness p. 56 (ThirdParty)</description>
+    <environment>desert</environment>
+  </monster> <!-- Desert: Titan, Giant Sand Shark -->
+  <monster>
+    <name>Great Eight, Quora Yav</name>
+    <size>S</size>
+    <type>humanoid (gnome)</type>
+    <alignment>lawful evil</alignment>
+    <ac>13 (16 with mage armor)</ac>
+    <hp>84 (13d6 + 39)</hp>
+    <speed>25 ft.</speed>
+    <str>9</str><dex>16</dex><con>17</con><int>24</int><wis>9</wis><cha>7</cha>
+    <save>Int +11, Wis +3, Cha +2</save>
+    <skill>Arcana +11, History +11, Perception +3</skill>
+    <sense>darkvision 60 ft.</sense><passive>13</passive>
+    <languages>Common, Gnomish, Terran</languages>
+    <cr>9</cr>
+    <trait>
+      <name>Gnome Cunning</name>
+      <text>Quora has advantage on Intelligence, Wisdom, and Charisma saving throws against magic.</text>
+    </trait>
+    <trait>
+      <name>Illusory Self</name>
+      <text>He can create an illusory duplicate of himself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against him, he can use his reaction to interpose the illusory duplicate between the attacker and himself. The attack automatically misses him, then the illusion dissipates. Once he uses this feature, he can’t use it again until he finishes a short or long rest.</text>
+    </trait>
+    <trait>
+      <name>Malleable Illusions</name>
+      <text>When he casts an illusion spell that has a duration of 1 minute or longer, he can use his action to change the nature of that illusion (using the normal parameters for the illusion), provided that he can see the illusion.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Quora Yav is a 13th-level wizard. His spellcasting ability is Intelligence (spell save DC 19, +11 to hit with spell attacks). He has the following wizard spells prepared:</text>
+      <text>Cantrips (at will): acid splash, dancing lights, fire bolt, mage hand, minor illusion, poison spray</text>
+      <text>1st level (4 slots): color spray, disguise self, mage armor, magic missile</text>
+      <text>2nd level (3 slots): invisibility, mirror image, misty step, phantasmal force</text>
+      <text>3rd level (3 slots): hypnotic pattern, major image, phantom steed</text>
+      <text>4th level (3 slots): greater invisibility, hallucinatory terrain, phantasmal killer</text>
+      <text>5th level (2 slots): mislead, seeming</text>
+      <text>6th level (1 slot): programmed illusion</text>
+      <text>7th level (1 slot): mirage arcane</text>
+    </trait>
+    <action>
+      <name>+3 Quarterstaff</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage.</text>
+      <attack>+3 Quarterstaff|6|1d8 + 2</attack>
+    </action>
+    <spells>acid splash, dancing lights, fire bolt, mage hand, minor illusion, poison spray, color spray, disguise self, mage armor, magic missile, invisibility, mirror image, misty step, phantasmal force, hypnotic pattern, major image, phantom steed, greater invisibility, hallucinatory terrain, phantasmal killer, mislead, seeming, programmed illusion, mirage arcane</spells><slots>4,3,3,3,2,1,1</slots>
+    <description>The least respected of the wizard council is Quora Yav. He is a master in the School of Illusion. This coward travelled to the desert through a Riftgate upon drawing the shortest straw on the council. He is furious he had to go to the barren wasteland. Quora lives in an ancient ruin near a small human settlement. He casts illusions around his lair to keep it hidden from view.
+
+      Unpopular Illusionist. This gnome is a spineless, selfish wizard who acts before he thinks. If Quora is ever in danger in the desert, he’ll use his illusion magic to turn invisible and head for the closest Riftgate. Once there, he’ll travel to his home city in Zogg and take refuge in his well-protected manor.
+      
+      Source: Cawood, Monsters of the Wilderness p. 58 (ThirdParty)</description>
+    <environment>desert</environment>
+  </monster> <!-- Mountain: The Great Eight, Quora Yav -->
+  
+  
+  
+  <monster>
+    <name>Arthrop</name>
+    <size>M</size>
+    <type>humanoid (arthrop)</type>
+    <alignment>lawful evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>32 (5d8 + 10)</hp>
+    <speed>35 ft., fly 30 ft.</speed>
+    <str>15</str><dex>16</dex><con>15</con><int>12</int><wis>13</wis><cha>6</cha>
+    <skill>Perception +3, Stealth +5, Survival +3</skill>
+    <resist>poison, psychic</resist>
+    <conditionImmune>poisoned, charmed</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>13</passive>
+    <languages>Arthrop</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Crystal Clarity</name>
+      <text>The arthrop has crystals embedded inside it. These crystals enable it to speak and give immunity against any charm magic.</text>
+    </trait>
+    <trait>
+      <name>Keen Sight</name>
+      <text>The arthrop has advantage on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The arthrop has advantage on an attack roll against a creature if at least one of the arthrop's allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
     </trait>
     <action>
       <name>Multiattack</name>
-      <text>The shapeshifter can make one attack with its bite and two attacks with tendrils that emerge from inside its body.</text>
+      <text>The arthrop makes two attacks, only one of which can be a bite attack.</text>
     </action>
     <action>
       <name>Bite</name>
-      <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) piercing damage.</text>
-      <attack>Bite|10|3d8 + 5</attack>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage plus 1 poison damage.</text>
+      <attack>Bite|4|1d8 + 2 + 1</attack>
     </action>
     <action>
-      <name>Tendrils</name>
-      <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) slashing damage.</text>
-      <attack>Tendrils|10|3d8 + 5</attack>
+      <name>Sand Spear</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft., range 30/70 ft., one target. Hit: 6 (1d6 + 2) piercing damage plus 1 poison damage, or 8 (1d8 + 2) piercing damage plus 1 poison damage if used with two claws to make a melee attack.</text>
+      <attack>Spear|5|1d6 + 2 + 1</attack>
+    </action>
+    <description>A buzzing sound fills the air above lonely desert dunes. The crescent moon illuminates a glistening procession of flying creatures. A raiding party of arthrops is heading towards a nearby oasis. The bizarre insect-like humanoids break formation as their leader touches a crystal in his throat. Moments later, shouts break out in nearby tents as the raid begins.
+      
+      Hive Hierarchy. Arthrops have lived in the desert for thousands of years. They have a strict hierarchy and the queen is their supreme leader. The hive lives in an extensive system of hidden tunnels underground. Their queen is heavily protected by an elite group of guards.
+
+      Desert Warriors. These unusual creatures fashion their weapons out of items from the natural world. Remains of giant insects, plants, and anything stolen on raids are used by the resourceful humanoids. They know every inch of the desert world and use the terrain to their advantage.
+
+      New Voices. When the Riftgates opened, Oswald’s curse took away their ability to speak. Arthrops used to speak in clicks and other natural sounds. Chaos tore apart their close society until healing crystals were found. Magical energy from the gems gave the arthrops a new voice and immunity against being charmed.
+      
+      Source: Cawood, Monsters of the Wilderness p. 60 (ThirdParty)</description>
+    <environment>desert</environment>
+  </monster> <!-- Desert: Arthrop -->
+  
+  
+  
+  <!-- Jungle/Swamp Region -->
+  <monster>
+    <name>Volcan</name>
+    <size>G</size>
+    <type>monstrosity (titan)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>21 (natural armor)</ac>
+    <hp>313 (19d20 + 114)</hp>
+    <speed>40 ft.</speed>
+    <str>26</str><dex>17</dex><con>22</con><int>7</int><wis>16</wis><cha>5</cha>
+    <save>Con +13, Wis +10</save>
+    <skill>Perception +10</skill>
+    <immune>fire, poison, psychic;
+bludgeoning, piercing, and slashing from
+nonmagical attacks</immune>
+    <conditionImmune>blinded, charmed, deafened,
+exhausted, poisoned, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>20</passive>
+    <languages>Ignan</languages>
+    <cr>24</cr>
+    <trait>
+      <name>Frightful Presence</name>
+      <text>Each creature of Volcan’s choice
+that is within 120 feet of Volcan and aware of it must
+succeed on a DC 16 Wisdom saving throw or become
+frightened for 1 minute. A creature can repeat the
+saving throw at the end of each of its turns, ending
+the effect on itself on a success. If a creature’s saving
+throw is unsuccessful or the effect ends for it, the
+creature is immune to Volcan’s Frightful Presence for
+the next 24 hours.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If Volcan fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Heated Body</name>
+      <text>A creature that touches Volcan or hits
+it with a melee attack while within 10 feet of it takes
+7 (2d6) fire damage.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>Volcan does double damage to objects and structures.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Volcan makes two fist attacks and two
+
+fireball attacks.</text>
+    </action>
+    <action>
+      <name>Fiery Fist</name>
+      <text>Melee Weapon Attack: +15 to hit, reach 5 ft.,
+one target. Hit: 21 (3d8 + 8) bludgeoning damage plus
+9 (2d8) fire damage.</text>
+      <attack>Fiery Fist|15|3d8 + 8</attack>
+    </action>
+    <action>
+      <name>Fiery Blast</name>
+      <text>Ranged Weapon Attack: +15 to hit, range
+150/400 ft., one target. Hit: 21 (3d8 + 8) fire damage.</text>
+      <attack>Fiery Blast|15|3d8 + 8</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
+      <text>Volcan can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Volcan regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Detect</name>
+      <text>Volcan makes a Wisdom (Perception) check.</text>
+    </legendary>
+    <legendary>
+      <name>Toxic Breath Attack (Costs 2 Actions)</name>
+      <text>Volcan
+breathes out noxious gas in a 90-ft. cone. All
+creatures in the area must make a successful DC 20
+Constitution saving throw or take 27 (6d8) poison
+damage, half damage on a success.</text>
+    </legendary>
+    <legendary>
+      <name>Fiery Blast Attack (Costs 3 Actions)</name>
+      <text>Volcan makes
+a fiery blast attack.</text>
+    </legendary>
+    <description>Fire and smoke pour from a mountaintop. Villagers
+flee as they fear the gigantic volcano. However, this
+time it is even worse than an eruption. A titan known
+as Volcan has awoken.
+Formidable Foe. This monstrosity is a walking
+volcano and destruction is the only thing it knows.
+The titan hurls fireballs, smashes with fiery fists, and
+breathes out poisonous gases.
+
+Reign of Fire. The only being that seems to calm
+the inferno is the dwarf Aimar (page 132). If it
+wasn’t for the wizened wizard, this monster might just
+destroy the world. It is an almost unstoppable force
+once it arrives on the scene.
+Lava Homeland. Volcan enjoys its home in the
+volcanic region of the world. It bathes in lava and rests
+
+on the sides of mountains. Fire elementals, salaman-
+ders, and mephits are often found nearby.
+      
+      Source: Cawood, Monsters of the Wilderness p. 130 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountain: Titan, ... -->
+  <monster>
+    <name>Great Eight, Aimar the Seer</name>
+    <size>M</size>
+    <type>humanoid (dwarf)</type>
+    <alignment>lawful good</alignment>
+    <ac>11 (14 with mage armor)</ac>
+    <hp>82 (11d8 + 33)</hp>
+    <speed>25 ft.</speed>
+    <str>14</str><dex>13</dex><con>17</con><int>30</int><wis>16</wis><cha>18</cha>
+    <save>Con +8, Wis +8, Int +15</save>
+    <skill>Arcana +15, History +15, Insight +8, Perception +8</skill>
+    <sense>darkvision 60 ft.</sense><passive>18</passive>
+    <languages>Common, Dwarvish, Giant, Ignan, Terran</languages>
+    <cr>10</cr>
+    <trait>
+      <name>Dwarven Resilience</name>
+      <text>Aimar has advantage on saves against poison and resistance against poison damage.</text>
+    </trait>
+    <trait>
+      <name>Expert Divination</name>
+      <text>When he casts a divination spell of 2nd level or higher using a spell slot, he regains one expended spell slot. The slot he regains must be of a level lower than the spell he cast and can’t be higher than 5th level.</text>
+    </trait>
+    <trait>
+      <name>Greater Portent</name>
+      <text>After he finishes a long rest, he can roll three d20s and record the rolls. He can replace any attack roll, saving throw, or ability check made by him (or a creature he can see) with any of these rolls. Each foretelling roll can be used only once and any unused rolls are lost when he finishes a long rest.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Aimar is a 14th-level wizard. His spellcasting ability is Intelligence (spell save DC 23, +15 to hit with spell attacks). He has the following wizard spells prepared:</text>
+      <text>Cantrips (at will): light, mage hand, message, prestidigitation, ray of frost</text>
+      <text>1st level (4 slots): feather fall, fog cloud, mage armor, magic missile</text>
+      <text>2nd level (3 slots): gust of wind, invisibility, misty step</text>
+      <text>3rd level (3 slots): lightning bolt, meld into stone. sleet storm</text>
+      <text>4th level (3 slots): banishment, ice storm, stone shape</text>
+      <text>5th level (3 slots): cone of cold, legend lore, scrying</text>
+      <text>6th level (1 slot): true seeing</text>
+      <text>7th level (1 slot): project image</text>
+    </trait>
+    <trait>
+      <name>The Third Eye</name>
+      <text>He can use an action to choose one of the following benefits, which lasts until he is incapacitated or he takes a short or long rest. He can’t use this feature again until he finishes a rest.</text>
+    </trait>
+    <trait>
+      <name>Ethereal Sight</name>
+      <text>He can see into the Ethereal Plane within 60 feet of him.</text>
+    </trait>
+    <trait>
+      <name>Greater Comprehension</name>
+      <text>He can read any language.</text>
+    </trait>
+    <trait>
+      <name>See Invisibility</name>
+      <text>He can see invisible creatures and objects within 10 feet of him that are within line of sight.</text>
+    </trait>
+    <action>
+      <name>+2 Warhammer</name>
+      <text>Melee Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage.</text>
+      <attack>+2 Warhammer|9|1d10 + 4</attack>
+    </action>
+    <spells>light, mage hand, message, prestidigitation, ray of frost, feather fall, fog cloud, mage armor, magic missile, gust of wind, invisibility, misty step, lightning bolt, meld into stone. sleet storm, banishment, ice storm, stone shape, cone of cold, legend lore, scrying, true seeing, project image</spells><slots>4,3,3,3,3,1,1</slots>
+    <description>Living in a cabin high up the mountains is a wise old dwarf wizard. Aimar the Seer watches the world from above. The ancient dwarf is a master of the School of Divination.
+
+      View from the Top. His great view matches his extraordinary vision. He seems able to know of events happening all around the world. Aimar travels regularly from his small cottage in Zogg to his mountaintop home on Ma Zaan by using a Riftgate.
+
+      Ancient Knowledge. Sage and kind, this dwarf is often sought after for advice. Good-aligned beings will even travel from other continents to visit the seer. The mountain Aimar lives on is extremely difficult to traverse. A long winding path is the only route to the top and numerous monsters inhabit the area.
+      
+      Source: Cawood, Monsters of the Wilderness p. 132 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountain: The Great Eight,... -->
+  
+  
+  
+  <monster>
+    <name>Bog Hopper</name>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14</ac>
+    <hp>60 (8d8 + 24)</hp>
+    <speed>40 ft., swim 30 ft.</speed>
+    <str>16</str><dex>18</dex><con>16</con><int>7</int><wis>12</wis><cha>4</cha>
+    <skill>Perception +3, Stealth +6</skill>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses><passive>13</passive>
+    <languages>Sylvan</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>The bog hopper can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing</name>
+      <text>The bog hopper has advantage on Wisdom (Perception) checks that rely on hearing.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The bog hopper has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Slippery</name>
+      <text>The bog hopper has advantage on ability checks and saving throws made to escape a grapple.</text>
+    </trait>
+    <trait>
+      <name>Standing Leap</name>
+      <text>The bog hopper's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the bog hopper has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Surprise Attack</name>
+      <text>If the bog hopper surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.</text>
+    </trait>
+    <trait>
+      <name>Swamp Camouflage</name>
+      <text>The bog hopper has advantage on Dexterity (Stealth) checks made to hide in swampy terrain.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bog hopper makes two attacks: one with its bite and one with its horn.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.</text>
+      <attack>Bite|5|1d8 + 3</attack>
+    </action>
+    <action>
+      <name>Horn</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage.</text>
+      <attack>Horn|5|2d8 + 3</attack>
+    </action>
+    <action>
+      <name>Shoot Spikes</name>
+      <text>Ranged Weapon Attack: +6 to hit, range 30/80 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 2 (1d4) poison damage.</text>
+      <attack>Spikes|6|1d10 + 4 + 1d4</attack>
     </action>
     <reaction>
-      <name>Aversion to Fire</name>
-      <text>If it can, the shapeshifter will use its reaction to move 10 feet away from any fire source.</text>
+      <name>Dodge</name>
+      <text>The bog hopper adds +1 to its AC against one melee attack. To do so, the bog hopper must be able to see the attacker.</text>
     </reaction>
-    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-    <environment>Arctic</environment>
-  </monster>
-		<monster> <!-- Arctic: Snogre -->
-			<name>Snogre</name>
-			<size>L</size>
-			<type>giant</type>
-			<alignment>chaotic evil</alignment>
-			<ac>15 (natural armor)</ac>
-			<hp>95 (10d10 + 40)</hp>
-			<speed>40 ft.</speed>
-			<str>20</str><dex>12</dex><con>18</con><int>5</int><wis>7</wis><cha>3</cha>
-			<resist>cold</resist>
-			<senses>darkvision 90 ft.</senses><passive>15</passive>
-			<languages>Giant</languages>
-			<cr>5</cr>
-			<trait>
-        <name>Keen Smell</name>
-        <text>The snogre has advantage on Wisdom (Perception) checks that rely on smell.</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The snogre makes two attacks: one with its bite and one with its club.</text>
-			</action>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing damage.</text>
-				<attack>Bite|8|1d10 + 5</attack>
-			</action>
-			<action>
-				<name>Ice Club</name>
-				<text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.</text>
-				<attack>Club|8|2d8 + 5</attack>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Yarr Beak -->
-			<name>Yarr Beak</name>
-			<size>L</size>
-			<type>beast</type>
-			<alignment>chaotic evil</alignment>
-			<ac>14</ac>
-			<hp>37 (5d10 + 10)</hp>
-			<speed>20 ft., fly 80 ft.</speed>
-			<str>18</str><dex>17</dex><con>14</con><int>11</int><wis>15</wis><cha>10</cha>
-			<skill>Perception +4</skill>
-			<resist>cold</resist>
-			<senses>darkvision 60 ft.</senses><passive>14</passive>
-			<languages>understands Auran but can't speak it</languages>
-			<cr>2</cr>
-			<trait>
-        <name>Agile Aviators</name>
-        <text>The Yarr beak ignores any effects from high winds, blizzards, and storms.</text>
-      </trait>
-			<trait>
-				<name>Keen Sight</name>
-				<text>The Yarr beak has advantage on Wisdom (Perception) checks that rely on sight.</text>
-			</trait>
-			<trait>
-				<name>Snow Camouflage</name>
-				<text>The Yarr beak has advantage on Dexterity (Stealth) checks made to hide in icy or snowy terrain.</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The Yarr beak makes two melee attacks.</text>
-			</action>
-			<action>
-				<name>Beak</name>
-				<text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
-				<attack>Beak|4|1d8 + 2</attack>
-			</action>
-			<action>
-				<name>Talons</name>
-				<text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.</text>
-				<attack>Talons|4|1d8 + 2</attack>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<!-- Desert -->
-		<monster> <!-- Desert: Giant Sand Shark -->
-			<name>Giant Sand Shark</name>
-			<size>G</size>
-			<type>monstrosity (titan)</type>
-			<alignment>unaligned</alignment>
-			<ac>20 (natural armor)</ac>
-			<hp>350 (20d20 + 140)</hp>
-			<speed>40 ft., burrow 40 ft.</speed>
-			<str>20</str><dex>12</dex><con>24</con><int>7</int><wis>12</wis><cha>3</cha>
-			<save>Con +13, Int +4, Wis +7</save>
-			<conditionImmune>charmed, frightened, prone</conditionImmune>
-			<senses>blindsight 90 ft., tremorsense 90 ft.</senses><passive>8</passive>
-			<languages>-</languages>
-			<cr>24</cr>
-			<trait>
-				<name>Legendary Resistance (3/Day)</name>
-				<text>If the giant sand shark fails a saving throw, it can choose to succeed instead.</text>
-			</trait>
-			<trait>
-				<name>Siege Monster</name>
-				<text>The giant sand shark deals double damage to objects and structures.</text>
-			</trait>
-			<trait>
-				<name>Magic Resistance</name>
-				<text>The giant sand shark has advantage on saving throws against spells and other magical effects.</text>
-			</trait>
-			<trait>
-				<name>Tunneler</name>
-				<text>The giant sand shark can burrow through solid rock at half its burrow speed and leaves a 10-foot diameter tunnel in its wake.</text>
-			</trait>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 43 (6d10 + 10) piercing damage. If the target is Large or smaller it must succeed on a DC 18 Dexterity saving throw or be swallowed by the giant sand shark. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the giant sand shark, and it takes 21 (6d6) acid damage at the start of each of the giant sand shark’s turns. If the giant sand shark takes 40 or more damage in one turn from a creature inside it, the giant sand shark must succeed on a DC 19 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone within 10 feet of the giant sand shark. If the giant sand shark dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 20 feet of movement, exiting prone.</text>
-				<attack>Bite|16|6d10 + 10</attack>
-			</action>
-			<legendary>
-				<name>Detect</name>
-				<text>The giant sand shark makes a Wisdom (Perception) check.</text>
-			</legendary>
-			<legendary>
-				<name>Bite Attack (Costs 2 Actions)</name>
-				<text>The giant sand shark makes a bite attack.</text>
-			</legendary>
-			<legendary>
-				<name>Move (Costs 3 Actions)</name>
-				<text>The giant sand shark moves up to its speed without provoking opportunity attacks.</text>
-			</legendary>
-			<description>Source: Cawood, Monsters of the Wilderness (Desert, p. ...)</description>
-			<environment>Desert</environment>
-    </monster>
-		<monster> <!-- Desert: Arthrop -->
-			<name>Arthrop</name>
-			<size>M</size>
-			<type>humanoid (arthrop)</type>
-			<alignment>lawful evil</alignment>
-			<ac>16 (natural armor)</ac>
-			<hp>32 (5d8 + 10)</hp>
-			<speed>35 ft., fly 30 ft.</speed>
-			<str>15</str><dex>16</dex><con>15</con><int>12</int><wis>13</wis><cha>6</cha>
-			<skill>Perception +3, Stealth +5, Survival +3</skill>
-			<resist>poison, psychic</resist>
-			<conditionImmune>poisoned, charmed</conditionImmune>
-			<senses>darkvision 60 ft.</senses><passive>13</passive>
-			<languages>Arthrop</languages>
-			<cr>2</cr>
-			<trait>
-        <name>Crystal Clarity</name>
-        <text>The arthrop has crystals embedded inside it. These crystals enable it to speak and give immunity against any charm magic.</text>
-      </trait>
-			<trait>
-				<name>Keen Sight</name>
-				<text>The arthrop has advantage on Wisdom (Perception) checks that rely on sight.</text>
-			</trait>
-			<trait>
-        <name>Pack Tactics</name>
-        <text>The arthrop has advantage on an attack roll against a creature if at least one of the arthrop's allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The arthrop makes two attacks, only one of which can be a bite attack.</text>
-			</action>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage plus 1 poison damage.</text>
-				<attack>Bite|4|1d8 + 2 + 1</attack>
-			</action>
-			<action>
-				<name>Sand Spear</name>
-				<text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft., range 30/70 ft., one target. Hit: 6 (1d6 + 2) piercing damage plus 1 poison damage, or 8 (1d8 + 2) piercing damage plus 1 poison damage if used with two claws to make a melee attack.</text>
-				<attack>Spear|5|1d6 + 2 + 1</attack>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Desert, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<!-- Swamp/Jungle -->
-		<monster> <!-- Swamp/Jungle: Bog Hopper -->
-			<name>Bog Hopper</name>
-			<size>M</size>
-			<type>fey</type>
-			<alignment>chaotic evil</alignment>
-			<ac>14</ac>
-			<hp>60 (8d8 + 24)</hp>
-			<speed>40 ft., swim 30 ft.</speed>
-			<str>16</str><dex>18</dex><con>16</con><int>7</int><wis>12</wis><cha>4</cha>
-			<skill>Perception +3, Stealth +6</skill>
-			<immune>poison</immune>
-			<conditionImmune>poisoned</conditionImmune>
-			<senses>darkvision 90 ft.</senses><passive>13</passive>
-			<languages>Sylvan</languages>
-			<cr>4</cr>
-			<trait>
-				<name>Amphibious</name>
-				<text>The bog hopper can breathe air and water.</text>
-			</trait>
-			<trait>
-				<name>Keen Hearing</name>
-				<text>The bog hopper has advantage on Wisdom (Perception) checks that rely on hearing.</text>
-			</trait>
-			<trait>
-				<name>Magic Resistance</name>
-				<text>The bog hopper has advantage on saving throws against spells and other magical effects.</text>
-			</trait>
-			<trait>
-				<name>Slippery</name>
-				<text>The bog hopper has advantage on ability checks and saving throws made to escape a grapple.</text>
-			</trait>
-			<trait>
-				<name>Standing Leap</name>
-				<text>The bog hopper's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</text>
-			</trait>
-			<trait>
-				<name>Sunlight Sensitivity</name>
-				<text>While in sunlight, the bog hopper has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
-			</trait>
-			<trait>
-				<name>Surprise Attack</name>
-				<text>If the bog hopper surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.</text>
-			</trait>
-			<trait>
-				<name>Swamp Camouflage</name>
-				<text>The bog hopper has advantage on Dexterity (Stealth) checks made to hide in swampy terrain.</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The bog hopper makes two attacks: one with its bite and one with its horn.</text>
-			</action>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.</text>
-				<attack>Bite|5|1d8 + 3</attack>
-			</action>
-			<action>
-				<name>Horn</name>
-				<text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage.</text>
-				<attack>Horn|5|2d8 + 3</attack>
-			</action>
-			<action>
-				<name>Shoot Spikes</name>
-				<text>Ranged Weapon Attack: +6 to hit, range 30/80 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 2 (1d4) poison damage.</text>
-				<attack>Spikes|6|1d10 + 4 + 1d4</attack>
-			</action>
-			<reaction>
-				<name>Dodge</name>
-				<text>The bog hopper adds 1 to its AC against one melee attack. To do so, the bog hopper must be able to see the attacker.</text>
-			</reaction>
-			<description>Source: Cawood, Monsters of the Wilderness (Swamp/Jungle, p. ...)</description>
-			<environment>any</environment>
-    </monster>
-		<!-- Forest -->
-		<!-- Hills/Lakes --> 
-		<monster> <!-- Hills/Lakes: Jackalops -->
-			<name>Jackalops</name>
-			<size>S</size>
-			<type>aberration</type>
-			<alignment>chaotic evil</alignment>
-			<ac>14</ac>
-			<hp>40 (9d6 + 9)</hp>
-			<speed>40 ft., burrow 20 ft.</speed>
-			<str>12</str><dex>18</dex><con>12</con><int>7</int><wis>14</wis><cha>7</cha>
-			<skill>Perception +4, Stealth +4</skill>
-			<conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
-			<senses>darkvision 60 ft.</senses><passive>14</passive>
-			<languages>Jackolops, telepathy 90 ft.</languages>
-			<cr>3</cr>
-			<trait>
-				<name>Charge</name>
-				<text>If the jackalops moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</text>
-			</trait>
-			<trait>
-				<name>Nimble Escape</name>
-				<text>The jackalops can use a bonus action to take the Disengage, or Hide action.</text>
-			</trait>
-			<trait>
-				<name>Pack Tactics</name>
-				<text>The jackalops has advantage on attack rolls against a creature if at least one of the jackalops' allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
-			</trait>
-			<trait>
-				<name>Standing Leap</name>
-				<text>The jackalops’ long jump is up to 15 feet and its high jump is up to 10 feet, with or without a running start.</text>
-			</trait>
-			<trait>
-        <name>Telepathic Ray</name>
-        <text>The jackalops uses a green telepathic ray from its eye to communicate with other jackalopses.</text>
-      </trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The jackalops makes two melee attacks: one bite and one ram attack.</text>
-			</action>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.</text>
-				<attack>Bite|7|1d6 + 1</attack>
-			</action>
-			<action>
-				<name>Ram</name>
-				<text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.</text>
-				<attack>Ram|6|1d6 + 1</attack>
-			</action>
-			<action>
-				<name>Eye Ray</name>
-				<text>The jackalops can target one creature within 60 feet of it with a red eye ray. The targeted creature must make a DC 14 Constitution saving throw or take 10 (3d6) force damage.</text>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Hills/Lakes, p. ...)</description>
-			<environment>any</environment>
-		  </monster>
-		<!-- Mountains -->
-		<monster> <!-- Mountains: Grim Roc -->
-			<name>Grim Roc</name>
-			<size>G</size>
-			<type>undead</type>
-			<alignment>chaotic evil</alignment>
-			<ac>16 (natural armor)</ac>
-			<hp>350 (20d20 + 140)</hp>
-			<speed>30 ft., fly 120 ft.</speed>
-			<str>30</str><dex>10</dex><con>24</con><int>1</int><wis>7</wis><cha>3</cha>
-			<immune>poison</immune>
-			<conditionImmune>charmed, exhaustion, frightened, poisoned, prone</conditionImmune>
-			<senses>darkvision 120 ft.</senses><passive>13</passive>
-			<languages>-</languages>
-			<cr>18</cr>
-			<trait>
-				<name>Keen Sight</name>
-				<text>The grim roc has advantage on Wisdom (Perception) checks that rely on sight.</text>
-			</trait>
-			<trait>
-				<name>Turn Defiance</name>
-				<text>The grim roc has advantage on saving throws against effects that turn undead.</text>
-			</trait>
-			<trait>
-				<name>Sunlight Sensitivity</name>
-				<text>While in sunlight, the grim roc has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The shadow rabbit makes two attacks.</text>
-			</action>
-			<action>
-				<name>Bite</name>
-				<text>. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage plus 3 (1d6) necrotic damage.</text>
-				<attack>Bite|5|2d6 + 2 + 1d6</attack>
-			</action>
-			<action>
-				<name>Dark Egg</name>
-				<text>Ranged Weapon Attack: +6 to hit, range 30/80 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 2 (1d4) necrotic damage.</text>
-				<attack>Egg|6|1d8 + 3 + 1d4</attack>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Mountains, p. ...)</description>
-			<environment>mountain</environment>
-		  </monster>
+    <description>A concerned paladin counts all his party members as they emerge from a trek through the swamp. The adventurers realize one companion is missing. Then their bearded leader notices several spikes in the cleric’s chain mail. Frowning, the older man declares that a bog hopper is at work.
+
+      Swamp Stalker. This odd fey creature spends its time hunting in swampy terrain. It is a carnivore and will feed on insects, beasts, humanoids, and any other available meat. They can attack with their horn, jaws, or by shooting poisonous spikes.
+
+      Dark Cover. Bog hoppers prefer to hunt in dimly lit areas or at night. These stealthy monsters like to lurk in the water or thick foliage and listen for the movements of any prey.
+
+      Wild Fey. Scholars believe that bog hoppers crossed into the world from Feyland. Most experts think the fey horrors came through a Riftgate or one of the other entrances to the fey world. The phrase “those crazy boggers” comes from dealings with these peculiar creatures.
+      
+      Source: Cawood, Monsters of the Wilderness p. 77 (ThirdParty)</description>
+    <environment>forest, swamp</environment>
+  </monster> <!-- Swamp/Jungle: Bog Hopper -->
+  
+  
+  
+  <!-- Forest Region -->
+  <monster>
+    <name>Volcan</name>
+    <size>G</size>
+    <type>monstrosity (titan)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>21 (natural armor)</ac>
+    <hp>313 (19d20 + 114)</hp>
+    <speed>40 ft.</speed>
+    <str>26</str><dex>17</dex><con>22</con><int>7</int><wis>16</wis><cha>5</cha>
+    <save>Con +13, Wis +10</save>
+    <skill>Perception +10</skill>
+    <immune>fire, poison, psychic;
+bludgeoning, piercing, and slashing from
+nonmagical attacks</immune>
+    <conditionImmune>blinded, charmed, deafened,
+exhausted, poisoned, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>20</passive>
+    <languages>Ignan</languages>
+    <cr>24</cr>
+    <trait>
+      <name>Frightful Presence</name>
+      <text>Each creature of Volcan’s choice
+that is within 120 feet of Volcan and aware of it must
+succeed on a DC 16 Wisdom saving throw or become
+frightened for 1 minute. A creature can repeat the
+saving throw at the end of each of its turns, ending
+the effect on itself on a success. If a creature’s saving
+throw is unsuccessful or the effect ends for it, the
+creature is immune to Volcan’s Frightful Presence for
+the next 24 hours.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If Volcan fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Heated Body</name>
+      <text>A creature that touches Volcan or hits
+it with a melee attack while within 10 feet of it takes
+7 (2d6) fire damage.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>Volcan does double damage to objects and structures.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Volcan makes two fist attacks and two
+
+fireball attacks.</text>
+    </action>
+    <action>
+      <name>Fiery Fist</name>
+      <text>Melee Weapon Attack: +15 to hit, reach 5 ft.,
+one target. Hit: 21 (3d8 + 8) bludgeoning damage plus
+9 (2d8) fire damage.</text>
+      <attack>Fiery Fist|15|3d8 + 8</attack>
+    </action>
+    <action>
+      <name>Fiery Blast</name>
+      <text>Ranged Weapon Attack: +15 to hit, range
+150/400 ft., one target. Hit: 21 (3d8 + 8) fire damage.</text>
+      <attack>Fiery Blast|15|3d8 + 8</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
+      <text>Volcan can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Volcan regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Detect</name>
+      <text>Volcan makes a Wisdom (Perception) check.</text>
+    </legendary>
+    <legendary>
+      <name>Toxic Breath Attack (Costs 2 Actions)</name>
+      <text>Volcan
+breathes out noxious gas in a 90-ft. cone. All
+creatures in the area must make a successful DC 20
+Constitution saving throw or take 27 (6d8) poison
+damage, half damage on a success.</text>
+    </legendary>
+    <legendary>
+      <name>Fiery Blast Attack (Costs 3 Actions)</name>
+      <text>Volcan makes
+a fiery blast attack.</text>
+    </legendary>
+    <description>Fire and smoke pour from a mountaintop. Villagers
+flee as they fear the gigantic volcano. However, this
+time it is even worse than an eruption. A titan known
+as Volcan has awoken.
+Formidable Foe. This monstrosity is a walking
+volcano and destruction is the only thing it knows.
+The titan hurls fireballs, smashes with fiery fists, and
+breathes out poisonous gases.
+
+Reign of Fire. The only being that seems to calm
+the inferno is the dwarf Aimar (page 132). If it
+wasn’t for the wizened wizard, this monster might just
+destroy the world. It is an almost unstoppable force
+once it arrives on the scene.
+Lava Homeland. Volcan enjoys its home in the
+volcanic region of the world. It bathes in lava and rests
+
+on the sides of mountains. Fire elementals, salaman-
+ders, and mephits are often found nearby.
+      
+      Source: Cawood, Monsters of the Wilderness p. 130 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountain: Titan, ...-->
+  <monster>
+    <name>Great Eight, Aimar the Seer</name>
+    <size>M</size>
+    <type>humanoid (dwarf)</type>
+    <alignment>lawful good</alignment>
+    <ac>11 (14 with mage armor)</ac>
+    <hp>82 (11d8 + 33)</hp>
+    <speed>25 ft.</speed>
+    <str>14</str><dex>13</dex><con>17</con><int>30</int><wis>16</wis><cha>18</cha>
+    <save>Con +8, Wis +8, Int +15</save>
+    <skill>Arcana +15, History +15, Insight +8, Perception +8</skill>
+    <sense>darkvision 60 ft.</sense><passive>18</passive>
+    <languages>Common, Dwarvish, Giant, Ignan, Terran</languages>
+    <cr>10</cr>
+    <trait>
+      <name>Dwarven Resilience</name>
+      <text>Aimar has advantage on saves against poison and resistance against poison damage.</text>
+    </trait>
+    <trait>
+      <name>Expert Divination</name>
+      <text>When he casts a divination spell of 2nd level or higher using a spell slot, he regains one expended spell slot. The slot he regains must be of a level lower than the spell he cast and can’t be higher than 5th level.</text>
+    </trait>
+    <trait>
+      <name>Greater Portent</name>
+      <text>After he finishes a long rest, he can roll three d20s and record the rolls. He can replace any attack roll, saving throw, or ability check made by him (or a creature he can see) with any of these rolls. Each foretelling roll can be used only once and any unused rolls are lost when he finishes a long rest.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Aimar is a 14th-level wizard. His spellcasting ability is Intelligence (spell save DC 23, +15 to hit with spell attacks). He has the following wizard spells prepared:</text>
+      <text>Cantrips (at will): light, mage hand, message, prestidigitation, ray of frost</text>
+      <text>1st level (4 slots): feather fall, fog cloud, mage armor, magic missile</text>
+      <text>2nd level (3 slots): gust of wind, invisibility, misty step</text>
+      <text>3rd level (3 slots): lightning bolt, meld into stone. sleet storm</text>
+      <text>4th level (3 slots): banishment, ice storm, stone shape</text>
+      <text>5th level (3 slots): cone of cold, legend lore, scrying</text>
+      <text>6th level (1 slot): true seeing</text>
+      <text>7th level (1 slot): project image</text>
+    </trait>
+    <trait>
+      <name>The Third Eye</name>
+      <text>He can use an action to choose one of the following benefits, which lasts until he is incapacitated or he takes a short or long rest. He can’t use this feature again until he finishes a rest.</text>
+    </trait>
+    <trait>
+      <name>Ethereal Sight</name>
+      <text>He can see into the Ethereal Plane within 60 feet of him.</text>
+    </trait>
+    <trait>
+      <name>Greater Comprehension</name>
+      <text>He can read any language.</text>
+    </trait>
+    <trait>
+      <name>See Invisibility</name>
+      <text>He can see invisible creatures and objects within 10 feet of him that are within line of sight.</text>
+    </trait>
+    <action>
+      <name>+2 Warhammer</name>
+      <text>Melee Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage.</text>
+      <attack>+2 Warhammer|9|1d10 + 4</attack>
+    </action>
+    <spells>light, mage hand, message, prestidigitation, ray of frost, feather fall, fog cloud, mage armor, magic missile, gust of wind, invisibility, misty step, lightning bolt, meld into stone. sleet storm, banishment, ice storm, stone shape, cone of cold, legend lore, scrying, true seeing, project image</spells><slots>4,3,3,3,3,1,1</slots>
+    <description>Living in a cabin high up the mountains is a wise old dwarf wizard. Aimar the Seer watches the world from above. The ancient dwarf is a master of the School of Divination.
+
+      View from the Top. His great view matches his extraordinary vision. He seems able to know of events happening all around the world. Aimar travels regularly from his small cottage in Zogg to his mountaintop home on Ma Zaan by using a Riftgate.
+
+      Ancient Knowledge. Sage and kind, this dwarf is often sought after for advice. Good-aligned beings will even travel from other continents to visit the seer. The mountain Aimar lives on is extremely difficult to traverse. A long winding path is the only route to the top and numerous monsters inhabit the area.
+      
+      Source: Cawood, Monsters of the Wilderness p. 132 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountain: The Great Eight, ... -->
+  
+  
+  
+  <!-- Hills/Lakes Region -->
+  <monster>
+    <name>The Hakkon</name>
+    <size>G</size>
+    <type>monstrosity (titan)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>20 (natural armor)</ac>
+    <hp>330 (20d20 + 120)</hp>
+    <speed>40 ft.</speed>
+    <str>26</str><dex>16</dex><con>22</con><int>11</int><wis>14</wis><cha>7</cha>
+    <save>Con +13, Wis +9</save>
+    <skill>Perception +9</skill>
+    <immune>cold, lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, paralyzed, poisoned, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>19</passive>
+    <languages>Terran</languages>
+    <cr>22</cr>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If the Hakkon fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Magical Weapons</name>
+      <text>The Hakkon’s weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Multiple Heads</name>
+      <text>The Hakkon has five heads. While it has more than one head, the Hakkon has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.</text>
+      <text>Whenever the Hakkon takes 40 or more damage in a single turn, one of its heads dies. At the end of each turn, it regrows one head if any have died since its last turn. The Hakkon regains 20 hit points for each head regrown in the way.</text>
+    </trait>
+    <trait>
+      <name>Reactive Heads</name>
+      <text>For each head the Hakkon has beyond one, it gets an extra reaction that can be used only for opportunity attacks.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The Hakkon does double damage to objects and structures.</text>
+    </trait>
+    <trait>
+      <name>Wakeful Monster</name>
+      <text>While the Hakkon sleeps, at least one of its heads is awake.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Hakkon makes as many bite attacks as it has heads.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 21 (3d8 + 8) piercing damage.</text>
+      <attack>Bite|15|3d8 + 8</attack>
+    </action>
+    <action>
+      <name>Earth Shake (Recharge 5–6)</name>
+      <text>The Hakkon can stamp on the earth and cause it to shake. Any creatures within 90 ft. of the monster must make a successful DC 20 Dexterity save or be knocked prone.</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
+      <text>The Hakkon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Hakkon regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Detect</name>
+      <text>The Hakkon makes a Wisdom (Perception) check.</text>
+    </legendary>
+    <legendary>
+      <name>Tail Attack (Costs 2 Actions)</name>
+      <text>Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) bludgeoning damage.</text>
+    </legendary>
+    <legendary>
+      <name>Swat Away (Costs 3 Actions)</name>
+      <text>The Hakkon makes a tail attack. If the attack hits, the target must succeed on a DC 20 Strength saving throw or be pushed back 15 ft. If the target fails the save by 5 or more, the target falls prone.</text>
+    </legendary>
+    <description>Numerous boulders are smashed to pieces as a gigantic creature smashes through the wilderness. Its five heads look in every direction. Several halfling scouts flee with looks of utter terror on their little faces. Charging over the hills after them is the massive five-headed monster. The Hakkon is the largest creature known to exist in the hills.
+
+      Seismic Shift. When the bulky Hakkon is on the move, the ground shakes. Many inhabitants in the hills believe these monstrosities are responsible for earthquakes. Even the beasts in the area will run for their lives when the titan arrives.
+
+      Clash of the Titans. This monster is rumored to be from a faraway land. Oswald Myrr found evidence that numerous titans have arrived from this mysterious realm. The wizard knows that it would be disastrous if more creatures like the Hakkon entered the world.
+      
+      Source: Cawood, Monsters of the Wilderness p. 112 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Mountain: Titan, The Hakkon -->
+  <monster>
+    <name>Great Eight, Jacob Ladda</name>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>neutral evil</alignment>
+    <ac>13 (16 with mage armor)</ac>
+    <hp>65 (10d8 + 20)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str><dex>17</dex><con>15</con><int>26</int><wis>16</wis><cha>7</cha>
+    <save>Con +6, Wis +7, Int +12</save>
+    <skill>Arcana +12, History +12, Perception +7, Stealth +7</skill>
+    <sense/><passive>17</passive>
+    <languages>Common, Dwarvish, Giant, Gnomish, Orcish, Terran</languages>
+    <cr>9</cr>
+    <trait>
+      <name>Grim Harvest</name>
+      <text>Once per turn when Jacob kills one or more creatures with a spell of 1st level or higher, he regains hit points equal to twice the spell’s level, or three times its level if the spell belongs to the School of Necromancy. He doesn’t gain this benefit for killing constructs or undead.</text>
+    </trait>
+    <trait>
+      <name>Inured to Undeath</name>
+      <text>He has resistance to necrotic damage, and his hit point maximum can’t be reduced.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Jacob is a 13th-level wizard. His spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). He has the following wizard spells prepared:</text>
+      <text>Cantrips (at will): light, mage hand, message, prestidigitation, ray of frost</text>
+      <text>1st level (4 slots): false life, mage armor, magic missile, ray of sickness</text>
+      <text>2nd level (3 slots): blindness/deafness, darkvision, ray of enfeeblement</text>
+      <text>3rd level (3 slots): animate dead, fireball, vampiric touch</text>
+      <text>4th level (3 slots): blight, dimension door, greater invisibility</text>
+      <text>5th level (2 slots): animate objects, wall of stone</text>
+      <text>6th level (1 slot): eyebite</text>
+      <text>7th level (1 slot): finger of death</text>
+    </trait>
+    <trait>
+      <name>Undead Thralls</name>
+      <text>When he casts animate dead, he can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate. Whenever he creates an undead using a necromancy spell, it has additional benefits:</text>
+      <text>- The creature’s hit point maximum is increased by 13 hit points.</text>
+      <text>- The creature adds +4 to its weapon damage rolls.</text>
+    </trait>
+    <action>
+      <name>+2 Dagger</name>
+      <text>Melee Attack: +9 to hit, reach 5 ft., one target. Hit: 7 (1d4 + 5) piercing damage plus 17 (5d6) poison damage.</text>
+      <attack>+2 Dagger|9|1d4 + 5 + 5d6</attack>
+    </action>
+    <spells>chill touch, dancing lights, fire bolt, poison spray, shocking grasp, false life, mage armor, magic missile, ray of sickness, blindness/deafness, darkvision, ray of enfeeblement, animate dead, fireball, vampiric touch, blight, dimension door, greater invisibility, animate objects, wall of stone, eyebite, finger of death</spells><slots>4,3,3,3,3,2,1,1</slots>
+    <description>Jacob is a soft-spoken member of the Wizard Council. He is incredibly calm and doesn’t speak much. The old wizard is a master of the School of Necromancy.
+      
+      Undead Army. Jacob has ambitious plans. However, he is extremely patient. The necromancer has been creating an unseen army for over thirty years. It now contains wights, zombies, ogre zombies, skeletons, and numerous other undead abominations. He has also begun to communicate with the Hakkon and hopes it will join his army.
+
+      Hilltop Headquarters. Jacob lives in a hilltop wilderness compound. Inside is a beautiful manor, barracks for his undead soldiers, stables, a forge, and an armory. Hidden underground passages lead to tunnels that can access different areas in the hills. The entire place is built to withstand an attack by a large military force.
+      
+      Source: Cawood, Monsters of the Wilderness p. 114 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Mountain: The Great Eight, Jacob Ladda -->
+  
+  
+  
+  <monster>
+    <name>Jackalops</name>
+    <size>S</size>
+    <type>aberration</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14</ac>
+    <hp>40 (9d6 + 9)</hp>
+    <speed>40 ft., burrow 20 ft.</speed>
+    <str>16</str><dex>18</dex><con>12</con><int>7</int><wis>14</wis><cha>7</cha>
+    <skill>Perception +4, Stealth +4</skill>
+    <immune>poison</immune>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>14</passive>
+    <languages>Jackolops, telepathy 120 ft.</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Charge</name>
+      <text>If the jackalops moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</text>
+    </trait>
+    <trait>
+      <name>Mimicry</name>
+      <text>The jackolops can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 15 Wisdom (Insight) check.</text>
+    </trait>
+    <trait>
+      <name>Nimble Escape</name>
+      <text>The jackalops can use a bonus action to take the Disengage, or Hide action.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The jackalops has advantage on attack rolls against a creature if at least one of the jackalops' allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
+    </trait>
+    <trait>
+      <name>Standing Leap</name>
+      <text>The jackalops’ long jump is up to 15 feet and its high jump is up to 10 feet, with or without a running start.</text>
+    </trait>
+    <trait>
+      <name>Telepathic Ray</name>
+      <text>The jackalops uses a green telepathic ray from its eye to communicate with other jackalopses.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The jackalops makes two melee attacks: one bite and one ram attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.</text>
+      <attack>Bite|7|1d6 + 1</attack>
+    </action>
+    <action>
+      <name>Ram</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.</text>
+      <attack>Ram|6|1d6 + 1</attack>
+    </action>
+    <action>
+      <name>Eye Ray</name>
+      <text>The jackalops can target one creature within 60 feet of it with a red eye ray. The targeted creature must make a DC 14 Constitution saving throw or take 10 (3d6) force damage.</text>
+      <attack>Eye Ray||3d6</attack>
+    </action>
+    <description>A party of adventurers flees for their lives, screaming as they run over the crest of a hill. Pursuing them are a pack of bizarre monsters blasting them with red rays from their eyes. Rampaging jackolopses have scared the living daylights out of the heroes.
+
+      Rampant Rabbit. The chaotic, killer rabbits can cause pandemonium when they arrive on the scene. Working with others of their kind, they are formidable opponents. Some evildoers have begun to use packs of jackolopses to protect their territories.
+
+      One-Eyed Menace. Jackolops can take over large parts of the hills. They are a threat to hunters and farmers alike. Their homes are large hidden burrows, although their sentries can give away the location.
+
+      Odd Origin. Some folks believe these monsters were banished from Feyland. Others believe they hail from another plane of existence. There are also rumors that jackolops were created by Oswald Myrr to guard his many properties.
+      
+      Source: Cawood, Monsters of the Wilderness p. 121 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Jackalops -->
+  
+  
+  
+  <!-- Mountain Region -->
+  <monster>
+    <name>Volcan</name>
+    <size>G</size>
+    <type>monstrosity (titan)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>21 (natural armor)</ac>
+    <hp>313 (19d20 + 114)</hp>
+    <speed>40 ft.</speed>
+    <str>26</str><dex>17</dex><con>22</con><int>7</int><wis>16</wis><cha>5</cha>
+    <save>Con +13, Wis +10</save>
+    <skill>Perception +10</skill>
+    <immune>fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>blinded, charmed, deafened, exhausted, poisoned, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>20</passive>
+    <languages>Ignan</languages>
+    <cr>24</cr>
+    <trait>
+      <name>Frightful Presence</name>
+      <text>Each creature of Volcan’s choice that is within 120 feet of Volcan and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is unsuccessful or the effect ends for it, the creature is immune to Volcan’s Frightful Presence for the next 24 hours.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If Volcan fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Heated Body</name>
+      <text>A creature that touches Volcan or hits it with a melee attack while within 10 feet of it takes 7 (2d6) fire damage.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>Volcan does double damage to objects and structures.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Volcan makes two fist attacks and two fireball attacks.</text>
+    </action>
+    <action>
+      <name>Fiery Fist</name>
+      <text>Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 21 (3d8 + 8) bludgeoning damage plus 9 (2d8) fire damage.</text>
+      <attack>Fiery Fist|15|3d8 + 8</attack>
+    </action>
+    <action>
+      <name>Fiery Blast</name>
+      <text>Ranged Weapon Attack: +15 to hit, range 150/400 ft., one target. Hit: 21 (3d8 + 8) fire damage.</text>
+      <attack>Fiery Blast|15|3d8 + 8</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/Turn</recharge>
+      <text>Volcan can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Volcan regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Detect</name>
+      <text>Volcan makes a Wisdom (Perception) check.</text>
+    </legendary>
+    <legendary>
+      <name>Toxic Breath Attack (Costs 2 Actions)</name>
+      <text>Volcan breathes out noxious gas in a 90-ft. cone. All creatures in the area must make a successful DC 20 Constitution saving throw or take 27 (6d8) poison damage, half damage on a success.</text>
+    </legendary>
+    <legendary>
+      <name>Fiery Blast Attack (Costs 3 Actions)</name>
+      <text>Volcan makes a fiery blast attack.</text>
+    </legendary>
+    <description>Fire and smoke pour from a mountaintop. Villagers flee as they fear the gigantic volcano. However, this time it is even worse than an eruption. A titan known as Volcan has awoken.
+
+      Formidable Foe. This monstrosity is a walking volcano and destruction is the only thing it knows. The titan hurls fireballs, smashes with fiery fists, and breathes out poisonous gases.
+      
+      Reign of Fire. The only being that seems to calm the inferno is the dwarf Aimar (page 132). If it wasn’t for the wizened wizard, this monster might just destroy the world. It is an almost unstoppable force once it arrives on the scene.
+
+      Lava Homeland. Volcan enjoys its home in the volcanic region of the world. It bathes in lava and rests on the sides of mountains. Fire elementals, salamanders, and mephits are often found nearby.
+      
+      Source: Cawood, Monsters of the Wilderness p. 130 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountain: Titan, Volcan -->
+  <monster>
+    <name>Great Eight, Aimar the Seer</name>
+    <size>M</size>
+    <type>humanoid (dwarf)</type>
+    <alignment>lawful good</alignment>
+    <ac>11 (14 with mage armor)</ac>
+    <hp>82 (11d8 + 33)</hp>
+    <speed>25 ft.</speed>
+    <str>14</str><dex>13</dex><con>17</con><int>30</int><wis>16</wis><cha>18</cha>
+    <save>Con +8, Wis +8, Int +15</save>
+    <skill>Arcana +15, History +15, Insight +8, Perception +8</skill>
+    <sense>darkvision 60 ft.</sense><passive>18</passive>
+    <languages>Common, Dwarvish, Giant, Ignan, Terran</languages>
+    <cr>10</cr>
+    <trait>
+      <name>Dwarven Resilience</name>
+      <text>Aimar has advantage on saves against poison and resistance against poison damage.</text>
+    </trait>
+    <trait>
+      <name>Expert Divination</name>
+      <text>When he casts a divination spell of 2nd level or higher using a spell slot, he regains one expended spell slot. The slot he regains must be of a level lower than the spell he cast and can’t be higher than 5th level.</text>
+    </trait>
+    <trait>
+      <name>Greater Portent</name>
+      <text>After he finishes a long rest, he can roll three d20s and record the rolls. He can replace any attack roll, saving throw, or ability check made by him (or a creature he can see) with any of these rolls. Each foretelling roll can be used only once and any unused rolls are lost when he finishes a long rest.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Aimar is a 14th-level wizard. His spellcasting ability is Intelligence (spell save DC 23, +15 to hit with spell attacks). He has the following wizard spells prepared:</text>
+      <text>Cantrips (at will): light, mage hand, message, prestidigitation, ray of frost</text>
+      <text>1st level (4 slots): feather fall, fog cloud, mage armor, magic missile</text>
+      <text>2nd level (3 slots): gust of wind, invisibility, misty step</text>
+      <text>3rd level (3 slots): lightning bolt, meld into stone. sleet storm</text>
+      <text>4th level (3 slots): banishment, ice storm, stone shape</text>
+      <text>5th level (3 slots): cone of cold, legend lore, scrying</text>
+      <text>6th level (1 slot): true seeing</text>
+      <text>7th level (1 slot): project image</text>
+    </trait>
+    <trait>
+      <name>The Third Eye</name>
+      <text>He can use an action to choose one of the following benefits, which lasts until he is incapacitated or he takes a short or long rest. He can’t use this feature again until he finishes a rest.</text>
+    </trait>
+    <trait>
+      <name>Ethereal Sight</name>
+      <text>He can see into the Ethereal Plane within 60 feet of him.</text>
+    </trait>
+    <trait>
+      <name>Greater Comprehension</name>
+      <text>He can read any language.</text>
+    </trait>
+    <trait>
+      <name>See Invisibility</name>
+      <text>He can see invisible creatures and objects within 10 feet of him that are within line of sight.</text>
+    </trait>
+    <action>
+      <name>+2 Warhammer</name>
+      <text>Melee Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage.</text>
+      <attack>+2 Warhammer|9|1d10 + 4</attack>
+    </action>
+    <spells>light, mage hand, message, prestidigitation, ray of frost, feather fall, fog cloud, mage armor, magic missile, gust of wind, invisibility, misty step, lightning bolt, meld into stone. sleet storm, banishment, ice storm, stone shape, cone of cold, legend lore, scrying, true seeing, project image</spells><slots>4,3,3,3,3,1,1</slots>
+    <description>Living in a cabin high up the mountains is a wise old dwarf wizard. Aimar the Seer watches the world from above. The ancient dwarf is a master of the School of Divination.
+
+      View from the Top. His great view matches his extraordinary vision. He seems able to know of events happening all around the world. Aimar travels regularly from his small cottage in Zogg to his mountaintop home on Ma Zaan by using a Riftgate.
+
+      Ancient Knowledge. Sage and kind, this dwarf is often sought after for advice. Good-aligned beings will even travel from other continents to visit the seer. The mountain Aimar lives on is extremely difficult to traverse. A long winding path is the only route to the top and numerous monsters inhabit the area.
+      
+      Source: Cawood, Monsters of the Wilderness p. 132 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountain: The Great Eight, Aimar the Seer -->
+  <monster>
+    <name>Biclops</name>
+    <size>H</size>
+    <type>giant</type>
+    <alignment>chaotic evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>200 (16d12 + 96)</hp>
+    <speed>40 ft.</speed>
+    <str>21</str><dex>11</dex><con>19</con><int>5</int><wis>13</wis><cha>4</cha>
+    <skill>Athletics +11, Perception +3</skill>
+    <senses>darkvision 60 ft.</senses><passive>13</passive>
+    <languages>Giant</languages>
+    <cr>10</cr>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The biclops deals double damage to objects and structures.</text>
+    </trait>
+    <trait>
+      <name>Two Heads</name>
+      <text>The biclops has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.</text>
+    </trait>
+    <trait>
+      <name>Wakeful</name>
+      <text>When one of the biclops’ heads is asleep, its other head is awake.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The biclops makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Metal Club</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 20 (3d8 + 7) bludgeoning damage.</text>
+      <attack>Metal Club|11|3d8 + 7</attack>
+    </action>
+    <action>
+      <name>Chaotic Gaze</name>
+      <text>The biclops can use a bonus action on its turn to target one creature within 30 feet of it. If the target can see the biclops, the target must succeed on a DC 16 Wisdom saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the biclops’ next turn. If the target makes a successful saving throw, they are immune to the biclops’ chaotic gaze.</text>
+    </action>
+    <description>Some folks wonder what’s worse than a cyclops. The gregarious two-headed biclops is the answer. The strange giants are extremely rare and lair in mountain ranges near humanoid settlements. Some scholars believe these giants are a result of cyclopes breeding with ettins.
+
+      Double Vision. Biclopes are much more capable than their one-eyed cousins. They are brighter and usually find a large, well-protected cave to live in. Wanting to gather as many minions as possible, these creatures seek areas filled with other monsters and humanoids.
+
+      Social Network. Unlike some giants, biclops are rather social and enjoy the company of other creatures. They often have hill giants, ogres, and orcs in their large social circle. The two-headed giants have great senses of humor and are popular with most giants.
+
+      Cozy Caverns. Biclopes’ caves are lined with large furs to keep the giants warm. Large sacks filled with food and treasures are usually hidden nearby.
+      
+      Source: Cawood, Monsters of the Wilderness p. 133 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountains: Biclops -->
+  <monster>
+    <name>Cliffhanger</name>
+    <size>L</size>
+    <type>fey</type>
+    <alignment>chaotic evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>84 (8d10 + 40)</hp>
+    <speed>40 ft., climb 30 ft., fly 80 ft.</speed>
+    <str>22</str><dex>17</dex><con>20</con><int>12</int><wis>12</wis><cha>4</cha>
+    <skill>Acrobatics +6, Perception +4, Stealth +6</skill>
+    <resist>cold</resist>
+    <senses>darkvision 120 ft.</senses><passive>14</passive>
+    <languages>Terran</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The cliffhanger can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Stone Camouflage</name>
+      <text>The cliffhanger has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The cliffhanger makes two melee attacks: only one of which can be a bite attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft. one target. Hit: 15 (2d8 + 6) piercing damage.</text>
+      <attack>Bite|11|3d8 + 7</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 10 ft. one target. Hit: 10 (1d8 + 6) slashing damage.</text>
+      <attack>Claws|11|3d8 + 7</attack>
+    </action>
+    <action>
+      <name>Tail</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 15 ft. one target. Hit: 10 (1d8 + 6) bludgeoning damage.</text>
+      <attack>Tail|11|3d8 + 7</attack>
+    </action>
+    <action>
+      <name>Wind Breath</name>
+      <text>The cliffhanger exhales a blast of wind in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 7 (2d6) force damage on a failure, half damage on a success. If the target fails their saving throw, they are also thrown off the cliff and take falling damage.</text>
+      <attack>Wind Breath||2d6</attack>
+    </action>
+    <description>A grappling hook attaches onto the stone ledge above. Several dwarf scouts continue their ascent up a rock face. All of a sudden, a bizarre, winged creature crawled out of a cave and heads towards them. The surprising cliffhanger can ruin someone’s day.
+
+      Mountain Menace. Clinging to the sheer face of mountains, cliffhangers look for any prey they can find. These fey feed on birds, rodents, goats, and other creatures.
+      
+      Rock Climber. Adept at moving around exceptionally steep terrain, cliffhangers can live anywhere in the mountains. Some expert climbers have even begun to study their techniques. Of course, the climbers will be in trouble if they get too close.
+
+      New Land. Cliffhangers are originally from Feyland. Over time they have adapted to their new home. They speak Terran now and have forgotten how to speak Sylvan.
+      
+      Source: Cawood, Monsters of the Wilderness p. 134 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountains: Cliffhanger -->
+  <monster>
+    <name>Deadly Path</name>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>47 (5d10 + 20)</hp>
+    <speed>25 ft.</speed>
+    <str>21</str><dex>11</dex><con>19</con><int>5</int><wis>13</wis><cha>4</cha>
+    <skill>Athletics +11, Perception +3</skill>
+    <senses>darkvision 60 ft.</senses><passive>13</passive>
+    <languages>Giant</languages>
+    <cr>10</cr>
+    <trait>
+      <name>False Appearance</name>
+      <text>While the deadly path remains motionless, it is indistinguishable from a mountain path.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage.</text>
+      <attack>Bite|5|1d6 + 3</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage, and the target is grappled (escape DC 13). Until this grapple ends, the creature is restrained. The deadly path can grapple two Medium or smaller targets at the same time.</text>
+      <attack>Constrict|5|1d8 + 3</attack>
+    </action>
+    <description>Finding a way through the mountains can be challenging. This undead monster makes the journey even more difficult. It lies in wait for prey, indistinguishable from an ordinary mountain path.
+      
+      Terrible Trap. Mountain passes and picturesque trails through meadows are just some of their favorite haunts. However, deadly paths are most active on cloudy days or at night.
+
+      Perilous Path. This monster surprises its victims and wraps itself around their bodies. Then the undead horror will squeeze its prey to death. Afterwards it will drag the victim into a cave and devour it.
+
+      Undead Nature. The deadly path doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 135 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountains: Deadly Path -->
+  <monster>
+    <name>Fire Dancer</name>
+    <size>S</size>
+    <type>fey</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>13</ac>
+    <hp>19 (3d6 + 9)</hp>
+    <speed>30 ft.</speed>
+    <str>7</str><dex>16</dex><con>16</con><int>12</int><wis>14</wis><cha>8</cha>
+    <immune>fire</immune>
+    <senses>darkvision 60 ft.</senses><passive>12</passive>
+    <languages>Sylvan, Ignan</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>False Appearance</name>
+      <text>While the fire dancer remains motionless, it is indistinguishable from a fire.</text>
+    </trait>
+    <trait>
+      <name>Heated Body</name>
+      <text>A creature that touches the fire dancer or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage.</text>
+    </trait>
+    <trait>
+      <name>Illumination</name>
+      <text>The fire dancer sheds bright light in a 10-foot-radius and dim light for an additional 10 feet.</text>
+    </trait>
+    <trait>
+      <name>Nimble Escape</name>
+      <text>The fire dancer can take the Disengage or Hide action as a bonus action on each of its turns.</text>
+    </trait>
+    <action>
+      <name>Flame Strike</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) fire damage.</text>
+      <attack>Flame Strike|5|1d4 + 3</attack>
+    </action>
+    <reaction>
+      <name>Flame Shield</name>
+      <text>The fire dancer forms a fire shield and adds 1 to its AC against one melee attack that would hit it.</text>
+    </reaction>
+    <description>As a youthful cleric makes dinner at a campsite, his companions flatten their bedrolls. Without warning, the holy man calls out and his allies rush to his defence. They all stare in shock as they see a small humanoid dancing in the campfire.
+
+      Shocking Surprise. Most creatures can’t believe their eyes when they discover one of these unique fey. If a fire dancer stands still in a fire, it can blend in with the flames.
+
+      Foul Fey. These fey creatures love to play tricks on those who venture into the mountains. Some of their nasty games end in disaster.
+      
+      Harsh Hearth. On rare occasions, fire dancers can also be found indoors. As they enjoy hot flames, they have been known to live in fireplaces.
+      
+      Source: Cawood, Monsters of the Wilderness p. 136 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountains: Fire Dancer -->
+  <monster>
+    <name>The Griffon</name>
+    <size>L</size>
+    <type>celestial</type>
+    <alignment>lawful good</alignment>
+    <ac>20 (natural armor)</ac>
+    <hp>243 (18d10 + 144)</hp>
+    <speed>40 ft., fly 120 ft.</speed>
+    <str>22</str><dex>20</dex><con>26</con><int>20</int><wis>25</wis><cha>25</cha>
+    <save>Int +11, Wis +13, Cha +13</save>
+    <skill>History +11, Insight +13, Perception +13</skill>
+    <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, poisoned</conditionImmune>
+    <senses>truesight 90 ft.</senses><passive>23</passive>
+    <languages>all, telepathy 120 ft.</languages>
+    <cr>18</cr>
+    <trait>
+      <name>Divine Awareness</name>
+      <text>The Griffon knows if he hears a lie.</text>
+    </trait>
+    <trait>
+      <name>Turn Defiance</name>
+      <text>Innate Spellcasting. The Griffon’s innate spellcasting ability is Wisdom (spell save DC 21, +11 to hit with spell attacks). He can innately cast the following spells, requiring no material components:</text>
+      <text>At will: bless, detect evil and good, detect magic, spare the dying</text>
+      <text>3/day each: call lightning, dispel evil and good, gust of wind, thunderwave</text>
+      <text>1/day each: commune, control weather, mass cure wounds, plane shift</text>
+    </trait>
+    <trait>
+      <name>Keen Sight</name>
+      <text>The Griffon has advantage on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The Griffon has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Shielded Mind</name>
+      <text>The Griffon is immune to scrying and to any effect that would sense his emotions, read his thoughts, or detect his location.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Griffon makes one bite attack and two attacks with his talons.</text>
+    </action>
+    <action>
+      <name>Beak</name>
+      <text>Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) piercing damage plus 17 (5d6) radiant damage.</text>
+      <attack>Beak|12|1d8 + 6 + 5d6</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage plus 17 (5d6) radiant damage.</text>
+      <attack>Claws|12|2d6 + 8 + 5d6</attack>
+    </action>
+    <action>
+      <name>Healing Touch (4/Day)</name>
+      <text>The Griffon touches another creature. The target magically regains 32 (6d8 + 5) hit points and is freed from any curse, disease, poison, blindness, or deafness.</text>
+      <attack>Healing Touch||6d8 + 5</attack>
+    </action>
+    <spells>bless, detect evil and good, detect magic, spare the dying, call lightning, dispel evil and good, gust of wind, thunderwave, commune, control weather, mass cure wounds, plane shift</spells>
+    <description>The most secretive member of the Alliance of the Griffon is its leader. The Griffon is a powerful celestial who lives in a cloud castle high above the everyday world. Most creatures never see this being or his fantastical abode.
+
+      Good versus Evil. There are about a dozen members in the mysterious faction. They fight evil throughout the multiverse.
+
+      Divine Intervention. Dealing with the forces of darkness is a constant struggle for this celestial and his followers. He sends the heroes on quests suited to their talents.
+
+      Cloud Castle. A Riftgate is located at the center of his cloud fortress. The Griffon and his allies use the portal to travel around the multiverse.
+      
+      Source: Cawood, Monsters of the Wilderness p. 137 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountains: The Griffon -->
+  <monster>
+    <name>Grim Roc</name>
+    <size>G</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>350 (20d20 + 140)</hp>
+    <speed>30 ft., fly 120 ft.</speed>
+    <str>30</str><dex>10</dex><con>24</con><int>1</int><wis>7</wis><cha>3</cha>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, poisoned, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>13</passive>
+    <languages>-</languages>
+    <cr>17</cr>
+    <trait>
+      <name>Keen Sight</name>
+      <text>The grim roc has advantage on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Turn Defiance</name>
+      <text>The grim roc has advantage on saving throws against effects that turn undead.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the grim roc has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The grim roc makes three attacks: one with its beak and two with its talons.</text>
+    </action>
+    <action>
+      <name>Beak</name>
+      <text>Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 32 (5d8 + 10) piercing damage.</text>
+      <attack>Beak|16|5d8 + 10</attack>
+    </action>
+    <action>
+      <name>Talons</name>
+      <text>Melee Weapon Attack: +16 to hit, reach 5 ft., one target. Hit: 27 (5d6 + 10) slashing damage, and the target is grappled (escape DC 20). Until this grapple ends, the target is restrained, and the grim roc can’t use its talons on another target.</text>
+      <attack>Talons|16|5d6 + 10</attack>
+    </action>
+    <action>
+      <name>Evil Eye from the Sky (Recharge 2–3)</name>
+      <text>The roc shoots green rays out of its eyes in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 45 (10d8) necrotic damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Evil Eye from the Sky||10d8</attack>
+    </action>
+    <description>A bright flash of green light can be seen up in the mountains. All the villagers down below know a grim roc is in the area. This undead monster is one of the most dangerous creatures in the world. Its enormous shadow and glowing green eyes strike fear into the hearts of those who dwell in the mountains.
+
+      Winged Horror. When the Riftgates were opened, several dead rocs arose as these monsters. Malevolent necrotic energies reanimated the creatures. The massive evil bird can destroy a city on its own. It simply annihilates everything in its path.
+
+      Distant Peaks. Grim rocs live high up in the mountains and can take over large portions of the world. Only the bravest adventurers will go on quests to deal with this menace.
+
+      Undead Nature. The grim roc doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 138 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountains: Grim Roc -->
+  <monster>
+    <name>Lava Dog</name>
+    <size>L</size>
+    <type>elemental</type>
+    <alignment>chaotic evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>60 (8d10 + 16)</hp>
+    <speed>40 ft.</speed>
+    <str>17</str><dex>14</dex><con>15</con><int>5</int><wis>11</wis><cha>5</cha>
+    <vulnerable>cold</vulnerable>
+    <resist>bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <senses>darkvision 60 ft.</senses><passive>14</passive>
+    <languages>Ignan</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Heated Body</name>
+      <text>A creature that touches the lava dog or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage.</text>
+    </trait>
+    <trait>
+      <name>Illumination</name>
+      <text>The lava dog sheds bright red light in a 20-foot-radius and dim light for an additional 10 feet.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 3 (1d6) fire damage.</text>
+      <attack>Bite|5|1d8 + 3 + 2d6</attack>
+    </action>
+    <action>
+      <name>Spit Lava</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 7 (2d6) fire damage.</text>
+      <attack>Spit Lava|5|1d8 + 3 + 2d6</attack>
+    </action>
+    <description>Looking down from his pegasus, a paladin sees a bizarre sight. Racing through rivers of lava on a mountainside is a large dog-like monster. The bulky yellow and black creature seems unaffected by the searing hot temperatures.
+
+      Peak Experiences. Living in a volcano is a harsh life. However, for an elemental from a fiery world it feels just right. It is unlikely that this elemental will be found far from a volcano.
+
+      Lava their Owners. A number of lava dogs have become companions for fire giants. They are highly sought after by giants to guard their lairs.
+
+      Hot-Tempered. Although some are trained by fire giants, these monsters are generally in a bad mood. It doesn’t take much to get a lava dog enraged.
+      
+      Source: Cawood, Monsters of the Wilderness p. 139 (ThirdParty)</description>
+    <environment>mountain, underdark</environment>
+  </monster> <!-- Mountains: Lava Dog -->
+  <monster>
+    <name>Rift Wraith</name>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>95 (10d10 + 40)</hp>
+    <speed>0 ft., fly 80 ft. (hover)</speed>
+    <str>16</str><dex>20</dex><con>18</con><int>12</int><wis>15</wis><cha>3</cha>
+    <skill>Stealth +8</skill>
+    <resist>acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons</resist>
+    <immune>necrotic, poison, psychic</immune>
+    <conditionImmune>charmed, exhaustion, grappled, paralyzed, poisoned, prone, restrained</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>8</passive>
+    <languages>the languages it knew in life</languages>
+    <cr>7</cr>
+    <trait>
+      <name>Detect Life</name>
+      <text>The rift wraith can magically sense the presence of creatures up to 1 mile away that aren’t undead or constructs. It knows the direction they’re in but not their exact locations.</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>The rift wraith can move through other creatures and objects as if they were difficult terrain. It takes 6 (1d12) force damage if it ends its turn inside an object.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the rift wraith has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <action>
+      <name>Life Drain</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 27 (5d8 + 5) necrotic damage. The target must succeed on a DC 15 saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</text>
+      <attack>Life Drain|8|5d8 + 5</attack>
+    </action>
+    <description>One monster that came through the Riftgates still haunts their thresholds. Rift wraiths prey on creatures on either side of the portals. They are formed from the tormented souls of creatures that didn’t survive the trip through a Riftgate. These undead appear in mountainous regions more than any other part of the wilderness.
+      
+      Cursed Threshold. The area around the Riftgates is usually shrouded in dim light and shadows move in strange ways. Plants don’t grow near the portals, and many believe it’s because of the presence of rift wraiths.
+      
+      Vampiric Vultures. These horrors can sense living creatures and feed off their energy. Rift wraiths drain the life out of their victims.
+
+      Undead Nature. A rift wraith doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 140 (ThirdParty)</description>
+    <environment>any</environment>
+  </monster> <!-- Mountains: Rift Wraith -->
+  <monster>
+    <name>Stoneshaper</name>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>66 (7d10 + 28)</hp>
+    <speed>30 ft., burrow 40 ft.</speed>
+    <str>21</str><dex>11</dex><con>19</con><int>5</int><wis>13</wis><cha>4</cha>
+    <skill>Perception +4, Stealth +3</skill>
+    <immune>poison</immune>
+    <conditionImmune>exhausted, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>14</passive>
+    <languages>Terran</languages>
+    <cr>6</cr>
+    <trait>
+      <name>Earth Glide</name>
+      <text>The stoneshaper can burrow through nonmagical, unworked earth and stone. While doing so, the stoneshaper doesn’t disturb the material it moves through.</text>
+    </trait>
+    <trait>
+      <name>Earth Regeneration</name>
+      <text>The stoneshaper regains 10 hit points at the start of its turn if it has at least 1 hit point. It must be touching the earth for this trait to function.</text>
+    </trait>
+    <trait>
+      <name>Stone Camouflage</name>
+      <text>The stoneshaper has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.</text>
+    </trait>
+    <trait>
+      <name>Stoneshaper</name>
+      <text>The stoneshaper can use a bonus action to polymorph into any stone form and additionally: 1) It can change its size from Medium to Large or back. 2) It can appear any color it wants. 3) The stoneshaper can also polymorph into a Large stone hybrid humanoid. It retains all its statistics in all forms. Any items it is wearing or carrying aren’t transformed. It reverts to its fey form if it dies.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The stoneshaper makes three attacks: one with its bite and two with its fists.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage or 23 (4d8 + 5) piercing damage in stone hybrid form.</text>
+      <attack>Bite|8|2d8 + 5</attack>
+      <attack>Hybrid Bite|8|4d8 + 5</attack>
+    </action>
+    <action>
+      <name>Fist</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage or 18 (3d8 + 5) bludgeoning damage in stone hybrid form.</text>
+      <attack>Fist|8|2d8 + 5</attack>
+      <attack>Fist|8|3d8 + 5</attack>
+    </action>
+    <description>Stoneshapers are rare fey that can alter their forms in many ways. In their true form, they appear as a tall, gray humanoid. Living deep in the mountains, they are rarely ever seen.
+
+      Enemy Mine. Stoneshapers don’t approve of anyone or anything digging into the earth and treating it as a resource. They will do whatever they can to disrupt and destroy any mining or construction operations. Some mines have hired guards to try to deal with stoneshapers.
+
+      Down to Earth. These fey can shapechange into a rock or a stony humanoid. Stoneshapers are very good at traversing the mountain region. They can even burrow through solid rock.
+      
+      Source: Cawood, Monsters of the Wilderness p. 141 (ThirdParty)</description>
+    <environment>mountain, underdark</environment>
+  </monster> <!-- Mountains: Stoneshaper -->
+  <monster>
+    <name>Thunder Paw</name>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>68 (8d10 + 24)</hp>
+    <speed>50 ft.</speed>
+    <str>19</str><dex>16</dex><con>17</con><int>12</int><wis>17</wis><cha>10</cha>
+    <skill>Acrobatics +6, Athletics +7, Perception +6, Stealth +6</skill>
+    <immune>poison, thunder</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>16</passive>
+    <languages>-</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Brave</name>
+      <text>The thunder paw has advantage on saving throws against being frightened.</text>
+    </trait>
+    <trait>
+      <name>Pounce</name>
+      <text>If the thunder paw moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the thunder paw can make one bite attack against it as a bonus action.</text>
+    </trait>
+    <trait>
+      <name>Stone Camouflage</name>
+      <text>The thunder paw has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>—The thunder paw makes one bite attack and one claws attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.</text>
+      <attack>Bite|7|2d8 + 4</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage.</text>
+      <attack>Claws|7|1d8 + 4</attack>
+    </action>
+    <action>
+      <name>Thunder Growl (Recharge 2–3)</name>
+      <text>The thunder paw lets out a loud, low growl. Every creature within 30 ft. must make a successful DC 14 Constitution saving throw or take 10 (3d6) thunder damage.</text>
+      <attack>Thunder Growl||3d6</attack>
+    </action>
+    <description>Tales are told of a giant cat who appears during mountain storms. Living far away from most other creatures is the mysterious thunder paw. This monstrosity is from another land and crossed over through one of Oswald Myrr’s Riftgates.
+
+      Ferocious Feline. The thunder paw is heavily built and won’t back down from any opponent. They are wild, unpredictable monsters that enjoy their freedom.
+
+      Silent Stalker. These monstrosities are able to move quickly and quietly, especially adept at hiding in the mountains. With the ability to see in the dark, they can go almost anywhere. The stealthy creatures are known to ambush unsuspecting travellers on mountain paths.
+
+      Cat Cave. Thunder paws live in hidden caves. They use furs to line their lair and sleep most of the day.
+      
+      Source: Cawood, Monsters of the Wilderness p. 142 (ThirdParty)</description>
+    <environment>mountain</environment>
+  </monster> <!-- Mountains: Thunder Paw -->
 </compendium>
