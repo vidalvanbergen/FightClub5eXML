@@ -15,10 +15,10 @@ Cantrip Upgrade:
 The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).
 
 Source:	Player's Handbook 2024 p. 239</text>
-    <roll>1d6</roll>
-    <roll>2d6</roll>
-    <roll>3d6</roll>
-    <roll>4d6</roll>
+    <roll level="1">1d6</roll>
+    <roll level="5">2d6</roll>
+    <roll level="11">3d6</roll>
+    <roll level="17">4d6</roll>
   </spell>
   <spell>
     <name>Aid</name>
@@ -77,6 +77,7 @@ Natural Weapons:
 You grow claws (Slashing), fangs (Piercing), horns (Piercing), or hooves (Bludgeoning). When you use your Unarmed Strike to deal damage with that new growth, it deals 1d6 damage of the type in parentheses instead of dealing the normal damage for your Unarmed Strike, and you use your spellcasting ability modifier for the attack and damage rolls rather than using Strength.
 
 Source:	Player's Handbook 2024 p. 239</text>
+    <roll>1d6+SPELL</roll>
   </spell>
   <spell>
     <name>Animal Friendship</name>
@@ -321,15 +322,15 @@ Using a Higher-Level Spell Slot:
 The damage increases by 2d6 for each spell slot level above 1.
 
 Source:	Player's Handbook 2024 p. 243</text>
-    <roll>2d6</roll>
-    <roll>4d6</roll>
-    <roll>6d6</roll>
-    <roll>8d6</roll>
-    <roll>10d6</roll>
-    <roll>12d6</roll>
-    <roll>14d6</roll>
-    <roll>16d6</roll>
-    <roll>18d6</roll>
+    <roll level="1">2d6</roll>
+    <roll level="2">4d6</roll>
+    <roll level="3">6d6</roll>
+    <roll level="4">8d6</roll>
+    <roll level="5">10d6</roll>
+    <roll level="6">12d6</roll>
+    <roll level="7">14d6</roll>
+    <roll level="8">16d6</roll>
+    <roll level="9">18d6</roll>
   </spell>
   <spell>
     <name>Astral Projection</name>
@@ -411,6 +412,7 @@ Source:	Player's Handbook 2024 p. 244</text>
     <text>An aura radiates from you in a 30-foot Emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d6 Hit Points to one creature in it.
 
 Source:	Player's Handbook 2024 p. 244</text>
+    <roll>2d6</roll>
   </spell>
   <spell>
     <name>Awaken</name>
@@ -456,6 +458,7 @@ Source:	Player's Handbook 2024 p. 245</text>
     <text>The target hit by the attack roll takes an extra 5d10 Force damage from the attack. If the attack reduces the target to 50 Hit Points or fewer, the target must succeed on a Charisma saving throw or be transported to a harmless demiplane for the duration. While there, the target has the Incapacitated condition. When the spell ends, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.
 
 Source:	Player's Handbook 2024 p. 245</text>
+    <roll>5d10</roll>
   </spell>
   <spell>
     <name>Banishment</name>
@@ -556,6 +559,7 @@ Using a Higher-Level Spell Slot:
 If you cast this spell using a level 4 spell slot, you can maintain Concentration on it for up to 10 minutes. If you use a level 5+ spell slot, the spell doesn't require Concentration, and the duration becomes 8 hours (level 5-6 slot) or 24 hours (level 7-8 slot). If you use a level 9 spell slot, the spell lasts until dispelled.
 
 Source:	Player's Handbook 2024 p. 246</text>
+    <roll>1d8</roll>
   </spell>
   <spell>
     <name>Bigby's Hand</name>
@@ -588,16 +592,16 @@ Using a Higher-Level Spell Slot:
 The damage of the Clenched Fist increases by 4d8 and the damage of the Grasping Hand increases by 2d6 for each spell slot level above 5.
 
 Source:	Player's Handbook 2024 p. 245</text>
-    <roll>5d8</roll>
-    <roll>9d8</roll>
-    <roll>13d8</roll>
-    <roll>17d8</roll>
-    <roll>21d8</roll>
-    <roll>4d6</roll>
-    <roll>6d6</roll>
-    <roll>8d6</roll>
-    <roll>10d6</roll>
-    <roll>12d6</roll>
+    <roll level="5">5d8</roll>
+    <roll level="6">9d8</roll>
+    <roll level="7">13d8</roll>
+    <roll level="8">17d8</roll>
+    <roll level="9">21d8</roll>
+    <roll level="5">4d6</roll>
+    <roll level="6">6d6</roll>
+    <roll level="7">8d6</roll>
+    <roll level="8">10d6</roll>
+    <roll level="9">12d6</roll>
   </spell>
   <spell>
     <name>Blade Barrier</name>
@@ -613,6 +617,7 @@ Source:	Player's Handbook 2024 p. 245</text>
 Any creature in the wall's space makes a Dexterity saving throw, taking 6d10 Force damage on a failed save or half as much damage on a successful one. A creature also makes that save if it enters the wall's space or ends it turn there. A creature makes that save only once per turn.
 
 Source:	Player's Handbook 2024 p. 247</text>
+    <roll>6d10</roll>
   </spell>
   <spell>
     <name>Blade Ward</name>
@@ -643,6 +648,7 @@ Using a Higher-Level Spell Slot:
 You can target one additional creature for each spell slot level above 1.
 
 Source:	Player's Handbook 2024 p. 247</text>
+    <roll>1d4</roll>
   </spell>
   <spell>
     <name>Blight</name>
@@ -661,11 +667,12 @@ Using a Higher-Level Spell Slot:
 The damage increases by 8d8 for each spell slot level above 4.
 
 Source:	Player's Handbook 2024 p. 247</text>
-    <roll>8d8</roll>
-    <roll>16d8</roll>
-    <roll>24d8</roll>
-    <roll>32d8</roll>
-    <roll>40d8</roll>
+    <roll spell="4">8d8</roll>
+    <roll spell="5">16d8</roll>
+    <roll spell="6">24d8</roll>
+    <roll spell="7">32d8</roll>
+    <roll spell="8">40d8</roll>
+    <roll spell="9">48d8</roll>
   </spell>
   <spell>
     <name>Blinding Smite</name>
@@ -682,13 +689,13 @@ Using a Higher-Level Spell Slot:
 The extra damage increases by 3d8 for each spell slot level above 3.
 
 Source:	Player's Handbook 2024 p. 247</text>
-    <roll>3d8</roll>
-    <roll>6d8</roll>
-    <roll>9d8</roll>
-    <roll>12d8</roll>
-    <roll>15d8</roll>
-    <roll>18d8</roll>
-    <roll>21d8</roll>
+    <roll level="3">3d8</roll>
+    <roll level="4">6d8</roll>
+    <roll level="5">9d8</roll>
+    <roll level="6">12d8</roll>
+    <roll level="7">15d8</roll>
+    <roll level="8">18d8</roll>
+    <roll level="9">21d8</roll>
   </spell>
   <spell>
     <name>Blindness/Deafness</name>
@@ -752,15 +759,15 @@ Using a Higher-Level Spell Slot:
 The damage increases by 3d6 for each spell slot level above 1.
 
 Source:	Player's Handbook 2024 p. 248</text>
-    <roll>3d6</roll>
-    <roll>6d6</roll>
-    <roll>9d6</roll>
-    <roll>12d6</roll>
-    <roll>15d6</roll>
-    <roll>18d6</roll>
-    <roll>21d6</roll>
-    <roll>24d6</roll>
-    <roll>27d6</roll>
+    <roll level="1">3d6</roll>
+    <roll level="2">6d6</roll>
+    <roll level="3">9d6</roll>
+    <roll level="4">12d6</roll>
+    <roll level="5">15d6</roll>
+    <roll level="6">18d6</roll>
+    <roll level="7">21d6</roll>
+    <roll level="8">24d6</roll>
+    <roll level="9">27d6</roll>
   </spell>
   <spell>
     <name>Call Lightning</name>
@@ -783,6 +790,13 @@ Using a Higher-Level Spell Slot:
 The damage increases by 3d10 for each spell slot level above 3.
 
 Source:	Player's Handbook 2024 p. 248</text>
+    <roll level="3">3d10</roll>
+    <roll level="4">6d10</roll>
+    <roll level="5">9d10</roll>
+    <roll level="6">12d10</roll>
+    <roll level="7">15d10</roll>
+    <roll level="8">18d10</roll>
+    <roll level="9">21d10</roll>
   </spell>
   <spell>
     <name>Calm Emotions</name>
@@ -865,6 +879,10 @@ Cantrip Upgrade:
 The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).
 
 Source:	Player's Handbook 2024 p. 249</text>
+    <roll level="1">1d10</roll>
+    <roll level="5">2d10</roll>
+    <roll level="11">3d10</roll>
+    <roll level="17">4d10</roll>
   </spell>
   <spell>
     <name>Chromatic Orb</name>
@@ -883,6 +901,15 @@ Using a Higher-Level Spell Slot:
 The damage increases by 3d8 for each spell slot level above 1. The orb can leap a maximum number of times equal to the level of the slot expended, and a creature can be targeted only once by each casting of this spell.
 
 Source:	Player's Handbook 2024 p. 249</text>
+    <roll level="1">3d8</roll>
+    <roll level="2">6d8</roll>
+    <roll level="3">9d8</roll>
+    <roll level="4">12d8</roll>
+    <roll level="5">15d8</roll>
+    <roll level="6">18d8</roll>
+    <roll level="7">21d8</roll>
+    <roll level="8">24d8</roll>
+    <roll level="9">27d8</roll>
   </spell>
   <spell>
     <name>Circle of Death</name>
@@ -899,6 +926,10 @@ Using a Higher-Level Spell Slot:
 The damage increases by 8d8 for each spell slot level above 6.
 
 Source:	Player's Handbook 2024 p. 250</text>
+    <roll level="6">8d8</roll>
+    <roll level="7">16d8</roll>
+    <roll level="8">24d8</roll>
+    <roll level="9">32d8</roll>
   </spell>
   <spell>
     <name>Circle of Power</name>
@@ -962,6 +993,14 @@ Using a Higher-Level Spell Slot:
 The damage increases by 4d4 for each spell slot level above 2.
 
 Source:	Player's Handbook 2024 p. 251</text>
+    <roll level="2">4d4</roll>
+    <roll level="3">8d4</roll>
+    <roll level="4">12d4</roll>
+    <roll level="5">16d4</roll>
+    <roll level="6">20d4</roll>
+    <roll level="7">24d4</roll>
+    <roll level="8">28d4</roll>
+    <roll level="9">32d4</roll>
   </spell>
   <spell>
     <name>Cloudkill</name>
@@ -982,6 +1021,11 @@ Using a Higher-Level Spell Slot:
 The damage increases by 5d8 for each spell slot level above 5.
 
 Source:	Player's Handbook 2024 p. 251</text>
+    <roll level="5">5d8</roll>
+    <roll level="6">10d8</roll>
+    <roll level="7">15d8</roll>
+    <roll level="8">20d8</roll>
+    <roll level="9">25d8</roll>
   </spell>
   <spell>
     <name>Color Spray</name>
@@ -1124,6 +1168,11 @@ Using a Higher-Level Spell Slot:
 The damage increases by 8d8 for each spell slot level above 5.
 
 Source:	Player's Handbook 2024 p. 253</text>
+    <roll level="5">8d8</roll>
+    <roll level="6">16d8</roll>
+    <roll level="7">24d8</roll>
+    <roll level="8">32d8</roll>
+    <roll level="9">40d8</roll>
   </spell>
   <spell>
     <name>Confusion</name>
@@ -1148,6 +1197,8 @@ Using a Higher-Level Spell Slot:
 The Sphere's radius increases by 5 feet for each spell slot level above 4.
 
 Source:	Player's Handbook 2024 p. 253</text>
+    <roll>1d10</roll>
+    <roll>1d4</roll>
   </spell>
   <spell>
     <name>Conjure Animals</name>
@@ -1168,6 +1219,13 @@ Using a Higher-Level Spell Slot:
 The damage increases by 3d10 for each spell slot level above 3.
 
 Source:	Player's Handbook 2024 p. 254</text>
+    <roll level="3">3d10</roll>
+    <roll level="4">6d10</roll>
+    <roll level="5">9d10</roll>
+    <roll level="6">12d10</roll>
+    <roll level="7">15d10</roll>
+    <roll level="8">18d10</roll>
+    <roll level="9">21d10</roll>
   </spell>
   <spell>
     <name>Conjure Barrage</name>
@@ -1184,6 +1242,13 @@ Using a Higher-Level Spell Slot:
 The damage increases by 5d8 for each spell slot level above 3.
 
 Source:	Player's Handbook 2024 p. 254</text>
+    <roll spell="3">5d8</roll>
+    <roll spell="4">10d8</roll>
+    <roll spell="5">15d8</roll>
+    <roll spell="6">20d8</roll>
+    <roll spell="7">25d8</roll>
+    <roll spell="8">30d8</roll>
+    <roll spell="9">35d8</roll>
   </spell>
   <spell>
     <name>Conjure Celestial</name>
@@ -1198,13 +1263,18 @@ Source:	Player's Handbook 2024 p. 254</text>
 
 Healing Light:
 The target regains Hit Points equal to 4d12 plus your spellcasting ability modifier.
+
 Searing Light:
-The target makes a Dexterity saving throw, taking 6d12 Radiant damage on a failed save or half as much damage on a successful one.Until the spell ends, Bright Light fills the Cylinder, and when you move on your turn, you can also move the Cylinder up to 30 feet.Whenever the Cylinder moves into the space of a creature you can see and whenever a creature you can see enters the Cylinder or ends its turn there, you can bathe it in one of the lights. A creature can be affected by this spell only once per turn.
+The target makes a Dexterity saving throw, taking 6d12 Radiant damage on a failed save or half as much damage on a successful one. Until the spell ends, Bright Light fills the Cylinder, and when you move on your turn, you can also move the Cylinder up to 30 feet.Whenever the Cylinder moves into the space of a creature you can see and whenever a creature you can see enters the Cylinder or ends its turn there, you can bathe it in one of the lights. A creature can be affected by this spell only once per turn.
 
 Using a Higher-Level Spell Slot:
 The healing and damage increase by 6d12 for each spell slot level above 7.
 
 Source:	Player's Handbook 2024 p. 254</text>
+    <roll>4d12+SPELL</roll>
+    <roll level="7">6d12</roll>
+    <roll level="8">12d12</roll>
+    <roll level="9">18d12</roll>
   </spell>
   <spell>
     <name>Conjure Elemental</name>
@@ -1223,6 +1293,16 @@ Using a Higher-Level Spell Slot:
 The damage increases by 8d8;4d8 for each spell slot level above 5.
 
 Source:	Player's Handbook 2024 p. 254</text>
+    <spell level="5">8d8</spell>
+    <spell level="6">16d8</spell>
+    <spell level="7">24d8</spell>
+    <spell level="8">32d8</spell>
+    <spell level="9">40d8</spell>
+    <spell level="5">4d8</spell>
+    <spell level="6">8d8</spell>
+    <spell level="7">12d8</spell>
+    <spell level="8">16d8</spell>
+    <spell level="9">20d8</spell>
   </spell>
   <spell>
     <name>Conjure Fey</name>
@@ -1241,6 +1321,10 @@ Using a Higher-Level Spell Slot:
 The damage increases by 3d12 for each spell slot level above 6.
 
 Source:	Player's Handbook 2024 p. 255</text>
+    <roll level="6">3d12</roll>
+    <roll level="7">6d12</roll>
+    <roll level="8">9d12</roll>
+    <roll level="9">12d12</roll>
   </spell>
   <spell>
     <name>Conjure Minor Elementals</name>
@@ -1259,6 +1343,12 @@ Using a Higher-Level Spell Slot:
 The damage increases by 2d8 for each spell slot level above 4.
 
 Source:	Player's Handbook 2024 p. 255</text>
+    <roll level="4">2d8</roll>
+    <roll level="5">4d8</roll>
+    <roll level="6">6d8</roll>
+    <roll level="7">8d8</roll>
+    <roll level="8">10d8</roll>
+    <roll level="9">12d8</roll>
   </spell>
   <spell>
     <name>Conjure Volley</name>
@@ -1272,6 +1362,7 @@ Source:	Player's Handbook 2024 p. 255</text>
     <text>You brandish the weapon used to cast the spell and choose a point within range. Hundreds of similar spectral weapons (or ammunition appropriate to the weapon) fall in a volley and then disappear. Each creature of your choice that you can see in a 40-foot-radius, 20-foot-high Cylinder centered on that point makes a Dexterity saving throw. A creature takes 8d8 Force damage on a failed save or half as much damage on a successful one.
 
 Source:	Player's Handbook 2024 p. 255</text>
+    <roll>8d8</roll>
   </spell>
   <spell>
     <name>Conjure Woodland Beings</name>
@@ -1290,6 +1381,12 @@ Using a Higher-Level Spell Slot:
 The damage increases by 5d8 for each spell slot level above 4.
 
 Source:	Player's Handbook 2024 p. 255</text>
+    <roll level="4">5d8</roll>
+    <roll level="5">10d8</roll>
+    <roll level="6">15d8</roll>
+    <roll level="7">20d8</roll>
+    <roll level="8">25d8</roll>
+    <roll level="9">30d8</roll>
   </spell>
   <spell>
     <name>Contact Other Plane</name>
@@ -1306,6 +1403,7 @@ Source:	Player's Handbook 2024 p. 255</text>
 On a failed save, you take 6d6 Psychic damage and have the Incapacitated condition until you finish a Long Rest. A Greater Restoration spell cast on you ends this effect.
 
 Source:	Player's Handbook 2024 p. 255</text>
+    <roll>6d6</roll>
   </spell>
   <spell>
     <name>Contagion</name>
@@ -1323,6 +1421,7 @@ The target must repeat the saving throw at the end of each of its turns until it
 Whenever the Poisoned target receives an effect that would end the Poisoned condition, the target must succeed on a Constitution saving throw, or the Poisoned condition doesn't end on it.
 
 Source:	Player's Handbook 2024 p. 256</text>
+    <roll>11d8</roll>
   </spell>
   <spell>
     <name>Contingency</name>
@@ -1379,6 +1478,7 @@ Whirlpool:
 You cause a whirlpool to form in the center of the area, which must be at least 50 feet square and 25 feet deep. The whirlpool lasts until you choose a different effect or the spell ends. The whirlpool is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature in the water and within 25 feet of the whirlpool is pulled 10 feet toward it. When a creature enters the whirlpool for the first time on a turn or ends its turn there, it makes a Strength saving throw. On a failed save, the creature takes 2d8 Bludgeoning damage. On a successful save, the creature takes half as much damage. A creature can swim away from the whirlpool only if it first takes an action to pull away and succeeds on a Strength (Athletics) check against your spell save DC.
 
 Source:	Player's Handbook 2024 p. 256</text>
+    <roll>2d8</roll>
   </spell>
   <spell>
     <name>Control Weather</name>
@@ -1400,19 +1500,17 @@ Stage | Condition
 2 | Light clouds
 3 | Overcast or ground fog
 4 | Rain, hail, or snow
-5 | Torrential rain, driving hail, or blizzard</text>
-    <text />
-    <text />
-    <text>Stage | Condition
+5 | Torrential rain, driving hail, or blizzard
+
+Stage | Condition
 1 | Heat wave
 2 | Hot
 3 | Warm
 4 | Cool
 5 | Cold
-6 | Freezing</text>
-    <text />
-    <text />
-    <text>Stage | Condition
+6 | Freezing
+
+Stage | Condition
 1 | Calm
 2 | Moderate wind
 3 | Strong wind
@@ -1420,6 +1518,7 @@ Stage | Condition
 5 | Storm
 
 Source:	Player's Handbook 2024 p. 257</text>
+    <roll>4d10x10</roll>
   </spell>
   <spell>
     <name>Cordon of Arrows</name>
@@ -1438,6 +1537,7 @@ Using a Higher-Level Spell Slot:
 The amount of ammunition that can be affected increases by two for each spell slot level above 2.
 
 Source:	Player's Handbook 2024 p. 258</text>
+    <roll>2d4</roll>
   </spell>
   <spell>
     <name>Counterspell</name>
@@ -1560,6 +1660,7 @@ Source:	Player's Handbook 2024 p. 259</text>
     <text>You radiate a magical aura in a 30-foot Emanation. While in the aura, you and your allies each deal an extra 1d4 Radiant damage when hitting with a weapon or an Unarmed Strike.
 
 Source:	Player's Handbook 2024 p. 259</text>
+    <roll>1d4</roll>
   </spell>
   <spell>
     <name>Cure Wounds</name>
@@ -1576,6 +1677,15 @@ Using a Higher-Level Spell Slot:
 The healing increases by 2d8 for each spell slot level above 1.
 
 Source:	Player's Handbook 2024 p. 259</text>
+    <roll level="1">2d8+SPELL</roll>
+    <roll level="2">4d8+SPELL</roll>
+    <roll level="3">6d8+SPELL</roll>
+    <roll level="4">8d8+SPELL</roll>
+    <roll level="5">10d8+SPELL</roll>
+    <roll level="6">12d8+SPELL</roll>
+    <roll level="7">14d8+SPELL</roll>
+    <roll level="8">16d8+SPELL</roll>
+    <roll level="9">18d8+SPELL</roll>
   </spell>
   <spell>
     <name>Dancing Lights</name>
@@ -1675,6 +1785,10 @@ Using a Higher-Level Spell Slot:
 The base damage increases by 12d6 for each spell slot level above 7.
 
 Source:	Player's Handbook 2024 p. 261</text>
+    <roll>1d6</roll>
+    <roll level="7">12d6</roll>
+    <roll level="8">24d6</roll>
+    <roll level="9">36d6</roll>
   </spell>
   <spell>
     <name>Demiplane</name>
@@ -1705,6 +1819,8 @@ Source:	Player's Handbook 2024 p. 261</text>
     <text>Destructive energy ripples outward from you in a 30-foot Emanation. Each creature you choose in the Emanation makes a Constitution saving throw. On a failed save, a target takes 5d6 Thunder damage and 5d6 Radiant or Necrotic damage (your choice) and has the Prone condition. On a successful save, a target takes half as much damage only.
 
 Source:	Player's Handbook 2024 p. 261</text>
+    <roll>5d6</roll>
+    <roll>5d6+5d6</roll>
   </spell>
   <spell>
     <name>Detect Evil and Good</name>
@@ -1792,6 +1908,7 @@ You can also teleport one willing creature. The creature must be within 5 feet o
 If you, the other creature, or both would arrive in a space occupied by a creature or completely filled by one or more objects, you and any creature traveling with you each take 4d6 Force damage, and the teleportation fails.
 
 Source:	Player's Handbook 2024 p. 262</text>
+    <roll>4d6</roll>
   </spell>
   <spell>
     <name>Disguise Self</name>
@@ -1829,6 +1946,10 @@ Using a Higher-Level Spell Slot:
 The damage increases by 10d6 + 40 for each spell slot level above 6.
 
 Source:	Player's Handbook 2024 p. 263</text>
+    <roll level="6">10d6+40</roll>
+    <roll level="7">20d6+80</roll>
+    <roll level="8">30d6+120</roll>
+    <roll level="9">40d6+160</roll>
   </spell>
   <spell>
     <name>Dispel Evil and Good</name>
@@ -1880,6 +2001,15 @@ Using a Higher-Level Spell Slot:
 The damage increases by 3d6 for each spell slot level above 1.
 
 Source:	Player's Handbook 2024 p. 264</text>
+    <roll level="1">3d6</roll>
+    <roll level="2">6d6</roll>
+    <roll level="3">9d6</roll>
+    <roll level="4">12d6</roll>
+    <roll level="5">15d6</roll>
+    <roll level="6">18d6</roll>
+    <roll level="7">21d6</roll>
+    <roll level="8">24d6</roll>
+    <roll level="9">27d6</roll>
   </spell>
   <spell>
     <name>Divination</name>
@@ -1909,6 +2039,7 @@ Source:	Player's Handbook 2024 p. 264</text>
     <text>Until the spell ends, your attacks with weapons deal an extra 1d4 Radiant damage on a hit.
 
 Source:	Player's Handbook 2024 p. 265</text>
+    <roll>1d4</roll>
   </spell>
   <spell>
     <name>Divine Smite</name>
@@ -1925,6 +2056,24 @@ Using a Higher-Level Spell Slot:
 The damage increases by 2d8 for each spell slot level above 1.
 
 Source:	Player's Handbook 2024 p. 265</text>
+    <roll level="1">2d8</roll>
+    <roll level="1">3d8</roll>
+    <roll level="2">4d8</roll>
+    <roll level="2">5d8</roll>
+    <roll level="3">6d8</roll>
+    <roll level="3">7d8</roll>
+    <roll level="4">8d8</roll>
+    <roll level="4">9d8</roll>
+    <roll level="5">10d8</roll>
+    <roll level="5">11d8</roll>
+    <roll level="6">12d8</roll>
+    <roll level="6">13d8</roll>
+    <roll level="7">14d8</roll>
+    <roll level="7">15d8</roll>
+    <roll level="8">16d8</roll>
+    <roll level="8">17d8</roll>
+    <roll level="9">18d8</roll>
+    <roll level="9">19d8</roll>
   </spell>
   <spell>
     <name>Divine Word</name>
@@ -1937,6 +2086,7 @@ Source:	Player's Handbook 2024 p. 265</text>
     <classes>Cleric</classes>
     <text>You utter a word imbued with power from the Upper Planes. Each creature of your choice in range makes a Charisma saving throw. On a failed save, a target that has 50 Hit Points or fewer suffers an effect based on its current Hit Points, as shown in the Divine Word Effects table. Regardless of its Hit Points, a Celestial, an Elemental, a Fey, or a Fiend target that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to the current plane for 24 hours by any means short of a Wish spell.
 
+Divine Word Effects:
 Hit Points | Effect
 0-20 | The target dies.
 21-30 | The target has the Blinded, Deafened, and Stunned conditions for 1 hour.
@@ -2020,6 +2170,14 @@ Using a Higher-Level Spell Slot:
 The damage increases by 3d6 for each spell slot level above 2.
 
 Source:	Player's Handbook 2024 p. 266</text>
+    <roll level="2">3d6</roll>
+    <roll level="3">6d6</roll>
+    <roll level="4">9d6</roll>
+    <roll level="5">12d6</roll>
+    <roll level="6">15d6</roll>
+    <roll level="7">18d6</roll>
+    <roll level="8">21d6</roll>
+    <roll level="9">24d6</roll>
   </spell>
   <spell>
     <name>Drawmij's Instant Summons</name>
@@ -2057,6 +2215,7 @@ If the target is awake when you cast the spell, the messenger knows it and can e
 You can make the messenger terrifying to the target. If you do so, the messenger can deliver a message of no more than ten words, and then the target makes a Wisdom saving throw. On a failed save, the target gains no benefit from its rest, and it takes 3d6 Psychic damage when it wakes up.
 
 Source:	Player's Handbook 2024 p. 266</text>
+    <roll>3d6</roll>
   </spell>
   <spell>
     <name>Druidcraft</name>
@@ -2107,6 +2266,9 @@ The tremor deals 50 Bludgeoning damage to any structure in contact with the grou
 A creature within a distance from a collapsing structure equal to half the structure's height makes a Dexterity saving throw. On a failed save, the creature takes 12d6 Bludgeoning damage, has the Prone condition, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. On a successful save, the creature takes half as much damage only.
 
 Source:	Player's Handbook 2024 p. 267</text>
+    <roll>1d6</roll>
+    <roll>1d10x10</roll>
+    <roll>12d6</roll>
   </spell>
   <spell>
     <name>Eldritch Blast</name>
@@ -2123,6 +2285,8 @@ Cantrip Upgrade:
 The spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.
 
 Source:	Player's Handbook 2024 p. 267</text>
+    <roll>1d10</roll>
+    <roll>1d10+SPELL</roll>
   </spell>
   <spell>
     <name>Elemental Weapon</name>
@@ -2139,6 +2303,7 @@ Using a Higher-Level Spell Slot:
 If you use a level 5-6 spell slot, the bonus to attack rolls increases to +2, and the extra damage increases to 2d4. If you use a level 7+ spell slot, the bonus increases to +3, and the extra damage increases to 3d4.
 
 Source:	Player's Handbook 2024 p. 268</text>
+    <roll>1d4</roll>
   </spell>
   <spell>
     <name>Elementalism</name>
@@ -2204,6 +2369,7 @@ Reduce:
 The target's size decreases by one category—from Medium to Small, for example. The target also has Disadvantage on Strength checks and Strength saving throws. The target's attacks with its reduced weapons or Unarmed Strikes deal 1d4 less damage on a hit (this can't reduce the damage below 1).
 
 Source:	Player's Handbook 2024 p. 268</text>
+    <roll>1d4</roll>
   </spell>
   <spell>
     <name>Ensnaring Strike</name>
@@ -2222,6 +2388,15 @@ Using a Higher-Level Spell Slot:
 The damage increases by 1d6 for each spell slot level above 1.
 
 Source:	Player's Handbook 2024 p. 268</text>
+    <roll level="1">1d6</roll>
+    <roll level="2">2d6</roll>
+    <roll level="3">3d6</roll>
+    <roll level="4">4d6</roll>
+    <roll level="5">5d6</roll>
+    <roll level="6">6d6</roll>
+    <roll level="7">7d6</roll>
+    <roll level="8">8d6</roll>
+    <roll level="9">9d6</roll>
   </spell>
   <spell>
     <name>Entangle</name>
@@ -2289,6 +2464,7 @@ Each creature in that area makes a Strength saving throw. On a failed save, it t
 A Restrained creature can take an action to make a Strength (Athletics) check against your spell save DC, ending the condition on itself on a success.
 
 Source:	Player's Handbook 2024 p. 270</text>
+    <roll>3d6</roll>
   </spell>
   <spell>
     <name>Expeditious Retreat</name>
@@ -2374,6 +2550,15 @@ Using a Higher-Level Spell Slot:
 You gain 5 additional Temporary Hit Points for each spell slot level above 1.
 
 Source:	Player's Handbook 2024 p. 271</text>
+    <roll level="1">2d4+4</roll>
+    <roll level="2">2d4+4+5</roll>
+    <roll level="3">2d4+4+10</roll>
+    <roll level="4">2d4+4+15</roll>
+    <roll level="5">2d4+4+20</roll>
+    <roll level="6">2d4+4+25</roll>
+    <roll level="7">2d4+4+30</roll>
+    <roll level="8">2d4+4+35</roll>
+    <roll level="9">2d4+4+40</roll>
   </spell>
   <spell>
     <name>Fear</name>
@@ -2517,6 +2702,7 @@ Source:	Player's Handbook 2024 p. 273</text>
 A Humanoid killed by this spell rises at the start of your next turn as a Zombie that follows your verbal orders.
 
 Source:	Player's Handbook 2024 p. 273</text>
+    <roll>7d8+30</roll>
   </spell>
   <spell>
     <name>Fire Bolt</name>
@@ -2533,6 +2719,10 @@ Cantrip Upgrade:
 The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).
 
 Source:	Player's Handbook 2024 p. 274</text>
+    <roll level="1">1d10</roll>
+    <roll level="5">2d10</roll>
+    <roll level="11">3d10</roll>
+    <roll level="17">4d10</roll>
   </spell>
   <spell>
     <name>Fire Shield</name>
@@ -2550,6 +2740,7 @@ The flames provide you with a warm shield or a chill shield, as you choose. The 
 In addition, whenever a creature within 5 feet of you hits you with a melee attack roll, the shield erupts with flame. The attacker takes 2d8 Fire damage from a warm shield or 2d8 Cold damage from a chill shield.
 
 Source:	Player's Handbook 2024 p. 274</text>
+    <roll>2d8</roll>
   </spell>
   <spell>
     <name>Fire Storm</name>
@@ -2565,6 +2756,7 @@ Source:	Player's Handbook 2024 p. 274</text>
 Flammable objects in the area that aren't being worn or carried start burning.
 
 Source:	Player's Handbook 2024 p. 275</text>
+    <roll>7d10</roll>
   </spell>
   <spell>
     <name>Fireball</name>
@@ -2583,6 +2775,13 @@ Using a Higher-Level Spell Slot:
 The damage increases by 8d6 for each spell slot level above 3.
 
 Source:	Player's Handbook 2024 p. 274</text>
+    <roll level="3">8d6</roll>
+    <roll level="4">16d6</roll>
+    <roll level="5">24d6</roll>
+    <roll level="6">32d6</roll>
+    <roll level="7">40d6</roll>
+    <roll level="8">48d6</roll>
+    <roll level="9">56d6</roll>
   </spell>
   <spell>
     <name>Flame Blade</name>
@@ -2603,6 +2802,14 @@ Using a Higher-Level Spell Slot:
 The damage increases by 3d6 for each spell slot level above 2.
 
 Source:	Player's Handbook 2024 p. 275</text>
+    <roll level="2">3d6+SPELL</roll>
+    <roll level="3">6d6+SPELL</roll>
+    <roll level="4">9d6+SPELL</roll>
+    <roll level="5">12d6+SPELL</roll>
+    <roll level="6">15d6+SPELL</roll>
+    <roll level="7">18d6+SPELL</roll>
+    <roll level="8">21d6+SPELL</roll>
+    <roll level="9">24d6+SPELL</roll>
   </spell>
   <spell>
     <name>Flame Strike</name>
@@ -2619,6 +2826,16 @@ Using a Higher-Level Spell Slot:
 The Fire damage and the Radiant damage increase by 5d6 for each spell slot level above 5.
 
 Source:	Player's Handbook 2024 p. 275</text>
+    <roll level="5">5d6</roll>
+    <roll level="6">10d6</roll>
+    <roll level="7">15d6</roll>
+    <roll level="8">20d6</roll>
+    <roll level="9">25d6</roll>
+    <roll level="5">5d6+5d6</roll>
+    <roll level="6">10d6+10d6</roll>
+    <roll level="7">15d6+15d6</roll>
+    <roll level="8">20d6+20d6</roll>
+    <roll level="9">25d6+25d6</roll>
   </spell>
   <spell>
     <name>Flaming Sphere</name>
@@ -2639,6 +2856,14 @@ Using a Higher-Level Spell Slot:
 The damage increases by 2d6 for each spell slot level above 2.
 
 Source:	Player's Handbook 2024 p. 275</text>
+    <roll level="2">2d6</roll>
+    <roll level="3">4d6</roll>
+    <roll level="4">6d6</roll>
+    <roll level="5">8d6</roll>
+    <roll level="6">10d6</roll>
+    <roll level="7">12d6</roll>
+    <roll level="8">14d6</roll>
+    <roll level="9">16d6</roll>
   </spell>
   <spell>
     <name>Flesh to Stone</name>
@@ -2708,6 +2933,7 @@ You can designate a password when you cast the spell. A creature that speaks the
 The spell's area can't overlap with the area of another Forbiddance spell. If you cast Forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the Material components are consumed on the last casting.
 
 Source:	Player's Handbook 2024 p. 276</text>
+    <roll>5d10</roll>
   </spell>
   <spell>
     <name>Forcecage</name>
@@ -2759,6 +2985,7 @@ Until the spell ends, you have Resistance to Radiant damage, and your melee atta
 In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.
 
 Source:	Player's Handbook 2024 p. 277</text>
+    <roll>2d6</roll>
   </spell>
   <spell>
     <name>Freedom of Movement</name>
@@ -2853,6 +3080,7 @@ Using a Higher-Level Spell Slot:
 If you use a level 7 or 8 spell slot, the duration is 365 days. If you use a level 9 spell slot, the spell lasts until it is ended by one of the spells mentioned above.
 
 Source:	Player's Handbook 2024 p. 278</text>
+    <roll>5d10</roll>
   </spell>
   <spell>
     <name>Gentle Repose</name>
@@ -2951,6 +3179,13 @@ Using a Higher-Level Spell Slot:
 The damage of an explosive rune increases by 5d8 for each spell slot level above 3. If you create a spell glyph, you can store any spell of up to the same level as the spell slot you use for the Glyph of Warding.
 
 Source:	Player's Handbook 2024 p. 279</text>
+    <roll level="3">5d8</roll>
+    <roll level="4">10d8</roll>
+    <roll level="5">15d8</roll>
+    <roll level="6">20d8</roll>
+    <roll level="7">25d8</roll>
+    <roll level="8">30d8</roll>
+    <roll level="9">35d8</roll>
   </spell>
   <spell>
     <name>Goodberry</name>
@@ -5243,10 +5478,9 @@ Source:	Player's Handbook 2024 p. 314</text>
 Your Knowledge of the Target Is... | Save Modifier
 Secondhand (heard of the target) | +5
 Firsthand (met the target) | +0
-Extensive (know the target well) | -5</text>
-    <text />
-    <text />
-    <text>You Have the Target's... | Save Modifier
+Extensive (know the target well) | -5
+
+You Have the Target's... | Save Modifier
 Picture or other likeness | -2
 Garment or other possession | -4
 Body part, lock of hair, or bit of nail | -10
@@ -6185,10 +6419,10 @@ Linked object | — | — | — | 01-00
 Very familiar | 01-05 | 06-13 | 14-24 | 25-00
 Seen casually | 01-33 | 34-43 | 44-53 | 54-00
 Viewed once or described | 01-43 | 44-53 | 54-73 | 74-00
-False destination | 01-50 | 51-00 | — | —</text>
-    <text />
-    <text />
-    <text>	Familiarity. Here are the meanings of the terms in the table's Familiarity column:
+False destination | 01-50 | 51-00 | — | —
+
+Familiarity:
+Here are the meanings of the terms in the table's Familiarity column:
 
 	• "Permanent circle" means a permanent teleportation circle whose sigil sequence you know.
 	• "Linked object" means you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library.
