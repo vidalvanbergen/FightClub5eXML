@@ -339,872 +339,872 @@
   
   
   <!-- Arctic -->
-		<monster> <!-- Arctic: Titan, The Ragnar -->
-			<name>The Ragnar</name>
-			<size>H</size>
-			<type>monstrosity (titan)</type>
-			<alignment>chaotic evil</alignment>
-			<ac>18 (natural armor)</ac>
-			<hp>378 (28d12 + 196)</hp>
-			<speed>40 ft., climb 20 ft.</speed>
-			<str>22</str><dex>9</dex><con>25</con><int>7</int><wis>12</wis><cha>3</cha>
-			<save>Con +13, Wis +7</save>
-			<skill>Perception +7</skill>
-			<resist>cold</resist>
-			<immune>poison</immune>
-			<conditionImmune>charmed, frightened, paralyzed, poisoned, prone</conditionImmune>
-			<senses>darkvision 90 ft.</senses><passive>17</passive>
-			<languages>-</languages>
-			<cr>20</cr>
-			<trait>
-        <name>Keen Smell</name>
-        <text>The Ragnar has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
-			</trait>
-			<trait>
-        <name>Legendary Resistance (3/Day)</name>
-        <text>If the Ragnar fails a saving throw, it can choose to succeed instead.</text>
-			</trait>
-			<trait>
-        <name>Siege Monster</name>
-        <text>The Ragnar does double damage to objects and structures.</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The Ragnar makes one bite attack and two slam attacks.</text>
-			</action>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) piercing damage.</text>
-				<attack>Bite|13|3d10 + 6</attack>
-			</action>
-			<action>
-				<name>Slam</name>
-				<text>Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 17 (2d10 + 6) bludgeoning damage.</text>
-				<attack>Slam|13|2d10 + 6</attack>
-			</action>
-			<legendary>
-				<name>Swat Away</name>
-				<text>The Ragnar makes a slam attack. If the attack hits, the target must succeed on a DC 17 Strength saving throw or be pushed 15 feet in a straight line away from the Ragnar. If the saving throw fails by 8 or more, the target falls prone.</text>
-			</legendary>
-			<legendary>
-				<name>Tail Attack (Costs 2 Actions)</name>
-				<text>Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.</text>
-			</legendary>
-			<legendary>
-				<name>Bite Attack (Costs 3 Actions)</name>
-				<text>The Ragnar makes a bite attack.</text>
-			</legendary>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-		  </monster>
-		<monster> <!-- Arctic: Varga the Ice Witch -->
-			<name>Varga the Ice Witch</name>
-			<size>M</size>
-			<type>humanoid (human)</type>
-			<alignment>chaotic evil</alignment>
-			<ac>12 (15 with mage armor)</ac>
-			<hp>133 (14d8 + 70)</hp>
-			<speed>30 ft.</speed>
-			<str>15</str><dex>15</dex><con>20</con><int>25</int><wis>18</wis><cha>7</cha>
-			<save>Int +12, Wis +9</save>
-			<skill>Arcana +12, History +12, Perception +9, Survival +9</skill>
-			<senses></senses><passive>19</passive>
-			<languages>Common, Primordial</languages>
-			<cr>10</cr>
-			<trait>
-        <name>Arcane Ward</name>
-        <text>When she casts an abjuration spell of 1st level or higher, she can simultaneously use a strand of the spell’s magic to create a magical ward on herself that lasts until she finishes a long rest. The ward has 39 hit points. Whenever she takes damage, the ward takes the damage instead. If this damage reduces the ward to 0 hit points, she takes any remaining damage. While the ward has 0 hit points, it can’t absorb damage, but its magic remains. Whenever she casts an abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell. Once she creates the ward, she can’t create it again until she finishes a long rest.</text>
-      </trait>
-      <trait>
-        <name>Improved Abjuration</name>
-        <text>When she casts an abjuration spell that requires her to make an ability check as a part of casting that spell, she adds +5 to that ability check.</text>
-      </trait>
-      <trait>
-        <name>Projected Ward</name>
-        <text>When a creature that she can see within 30 feet of her takes damage, she can use her reaction to cause her Arcane Ward to absorb that damage. If this damage reduces the ward to 0 hit points, the warded creature takes any remaining damage.</text>
-      </trait>
-      <trait>
-          <name>Spellcasting</name>
-          <text>Varga is a 16th level wizard. Her spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). She can cast the following spells:</text>
-          <text>Cantrips (at will): blade ward, dancing lights, minor illusion, ray of frost, resistance</text>
-          <text>1st level (4 slots): mage armor, protection from evil and good, shield, witch bolt</text>
-          <text>2nd level (3 slots): darkvision, misty step, see invisibility</text>
-          <text>3rd level (3 slots): counterspell, dispel magic, glyph of warding, nondetection</text>
-          <text>4th level (3 slots): banishment, confusion, ice storm</text>
-          <text>5th level (3 slots): cone of cold, planar binding</text>
-          <text>6th level (2 slots): globe of invulnerability</text>
-          <text>7th level (2 slots): etherealness, reverse gravity</text>
-          <text>8th level (1 slot): control weather</text>
-      </trait>
-      <trait>
-        <name>Spell Resistance</name>
-        <text>She has advantage on saving throws against spells. Furthermore, she has resistance against the damage of spells.</text>
-      </trait>
-			<action>
-				<name>Ice Staff</name>
-				<text>Melee Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage plus 22 (5d8) cold damage.</text>
-				<attack>Staff|7|1d8 + 2 + 5d8</attack>
-			</action>
-			<spells>blade ward, dancing lights, minor illusion, ray of frost, resistance, mage armor, protection from evil and good, shield, witch bolt, darkvision, misty step, see invisibility, counterspell, dispel magic, glyph of warding, nondetection, banishment, confusion, ice storm, cone of cold, planar binding, globe of invulnerability, etherealness, reverse gravity, control weather</spells>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Dragon, Ice -->
-			<name>Ice Dragon</name>
-			<size>H</size>
-			<type>dragon</type>
-			<alignment>chaotic evil</alignment>
-			<ac>19 (natural armor)</ac>
-			<hp>195 (17d12 + 85)</hp>
-			<speed>40 ft., fly 80 ft.</speed>
-			<str>22</str><dex>14</dex><con>20</con><int>16</int><wis>12</wis><cha>4</cha>
-			<save>Dex +7, Con +10, Int +8, Wis +6</save>
-			<skill>Perception +6, Stealth +7</skill>
-			<immune>cold</immune>
-			<senses>blindsight 60 ft., darkvision 120 ft.</senses><passive>16</passive>
-			<languages>Common, Draconic</languages>
-			<cr>15</cr>
-			<trait>
-        <name>Ice Walk</name>
-        <text>The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra movement.</text>
-			</trait>
-			<trait>
-        <name>Legendary Resistance (3/Day)</name>
-        <text>If the dragon fails a saving throw, it can choose to succeed instead.</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The dragon makes two melee attacks.</text>
-			</action>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 5 (1d10) cold damage.</text>
-				<attack>Bite|11|2d10 + 6 + 1d10</attack>
-			</action>
-			<action>
-				<name>Claw</name>
-				<text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage.</text>
-				<attack>Claw|11|2d8 + 6</attack>
-			</action>
-			<action>
-				<name>Tail</name>
-				<text>Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.</text>
-				<attack>Tail|11|2d8 + 6</attack>
-			</action>
-			<action>
-				<name>Freezing Breath</name>
-				<text>The dragon exhales an icy breath in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 28 (8d6) cold damage on a failure half damage on a success. If the target fails their saving throw, they are also paralyzed for 1 minute. The target can make a DC 17 Constitution saving throw to end the paralysis at the end of each of their turns.</text>
-			</action>
-			<action>
-				<name>Frightful Presence</name>
-				<text>Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 14 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours.</text>
-			</action>
-			<legendary>
-				<name>Detect</name>
-				<text>The dragon makes a Wisdom (Perception) check.</text>
-			</legendary>
-			<legendary>
-				<name>Wing Attack (Costs 2 Actions)</name>
-				<text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) slashing damage.</text>
-			</legendary>
-			<legendary>
-				<name>Claw Attack (Costs 3 Actions)</name>
-				<text>The dragon makes one claw attack.</text>
-			</legendary>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Norvan, King Harald -->
-			<name>Norvan, King Harald</name>
-			<size>M</size>
-			<type>humanoid (human)</type>
-			<alignment>chaotic neutral</alignment>
-			<ac>18 (plate)</ac>
-			<hp>165 (22d8 + 66)</hp>
-			<speed>30 ft.</speed>
-			<str>20</str><dex>16</dex><con>16</con><int>18</int><wis>20</wis><cha>20</cha>
-			<save>Str +9, Wis +9, Cha +9</save>
-			<skill>Athletics +9, Insight +9, Intimidation +9, Perception +9, Survival +9</skill>
-			<senses/><passive>19</passive>
-			<languages>Common</languages>
-			<cr>11</cr>
-			<trait>
-        <name>Brave</name>
-        <text>The Norvan has advantage on saving throws against being frightened.</text>
-      </trait>
-      <trait>
-        <name>Action Surge (1/day)</name>
-        <text>Harald can take an extra action.</text>
-      </trait>
-      <trait>
-        <name>Indomitable (2/day)</name>
-        <text>Harald can reroll a failed saving throw.</text>
-      </trait>
-      <trait>
-        <name>Second Wind (Recharges after a Short or Long Rest)</name>
-        <text>As a bonus action, he can regain 20 hit points.</text>
-      </trait>
-      <action>
-				<name>Multiattack</name>
-				<text>Harald makes three melee attacks.</text>
-			</action>
-			<action>
-				<name>Hammer of the North</name>
-				<text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) bludgeoning damage plus 5 (2d4) cold damage.</text>
-				<attack>Hammer|9|1d12 + 5 + 2d4</attack>
-			</action>
-			<action>
-				<name>Battle Cry (2/day)</name>
-				<text>Each creature of Harald’s choice that is within 30 feet of him, can hear him, and not already affected by Battle Cry gain advantage on attack rolls until the start of Harald’s next turn. He can then make one attack as a bonus action.</text>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Norvan, Shaman -->
-			<name>Norvan, Shaman</name>
-			<size>M</size>
-			<type>humanoid (human)</type>
-			<alignment>chaotic neutral</alignment>
-			<ac>11 (14 with frostskin)</ac>
-			<hp>65 (10d8 + 20)</hp>
-			<speed>30 ft.</speed>
-			<str>12</str><dex>12</dex><con>15</con><int>13</int><wis>19</wis><cha>11</cha>
-			<save>Con +5, Wis +7</save>
-			<skill>History +4, Insight +7, Nature +4, Perception +7, Survival +7</skill>
-			<senses></senses><passive>17</passive>
-			<languages>Common</languages>
-			<cr>8</cr>
-			<trait>
-        <name>Brave</name>
-        <text>The Norvan has advantage on saving throws against being frightened.</text>
-      </trait>
-      <trait>
-        <name>Frostskin (2/day)</name>
-        <text>The shaman creates a magical hard frost on their skin which increases their AC to 14 for 1 minute.</text>
-      </trait>
-      <trait>
-        <name>Iron Will</name>
-        <text>The shaman has advantage on saving throws against being charmed.</text>
-      </trait>
-      <trait>
-        <name>Keen Hearing and Sight</name>
-        <text>The shaman has advantage on Wisdom (Perception) checks that rely on hearing or sight.</text>
-      </trait>
-      <trait>
-        <name>Spellcasting</name>
-        <text>The shaman is a 10th-level spellcaster. Their spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). The shaman has the following spells:</text>
-        <text>Cantrips (at will): druidcraft, guidance, produce flame, shillelagh</text>
-        <text>1st level (4 slots): animal friendship, beast sense, cure wounds, speak with animals</text>
-        <text>2nd level (3 slots): animal restoration, darkvision, lesser restoration, pass without trace</text>
-        <text>3rd level (3 slots): feign death, sleet storm, wind wall</text>
-        <text>4th level (3 slots): confusion, ice storm, freedom of movement</text>
-        <text>5th level (2 slots): reincarnate, scrying</text>
-      </trait>
-			<action>
-				<name>Quarterstaff</name>
-				<text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) bludgeoning damage.</text>
-				<attack>Quarterstaff|4|1d8 + 1</attack>
-			</action>
-			<action>
-				<name>Change Shape (1/day)</name>
-				<text>The shaman magically polymorphs into a beast with a CR of 3 or less, and can remain in this form for up to 6 hours. The shaman can choose whether their equipment falls to the ground, melds with their new form, or is worn by the new form. The shaman reverts to their true form if they die or fall unconscious. The shaman can revert to their true form using a bonus action on their turn.</text>
-				<text>    While in a new form, the shaman retains their game statistics and ability to speak, but their AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and they gain any special senses, proficiencies, traits, actions, and reactions that the new form has but that they lack.</text>
-			</action>
-			<spells>druidcraft, guidance, produce flame, shillelagh, animal friendship, beast sense, cure wounds, speak with animals, animal restoration, darkvision, lesser restoration, pass without trace, feign death, sleet storm, wind wall, confusion, ice storm, freedom of movement, reincarnate, scrying</spells>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Norvan, Soldier -->
-			<name>Norvan, Soldier</name>
-			<size>M</size>
-			<type>humanoid (human)</type>
-			<alignment>chaotic neutral</alignment>
-			<ac>16 (chain mail)</ac>
-			<hp>13 (2d8 + 4)</hp>
-			<speed>30 ft.</speed>
-			<str>16</str><dex>14</dex><con>14</con><int>10</int><wis>10</wis><cha>10</cha>
-			<skill>Perception +2, Survival +2</skill>
-			<senses></senses><passive>12</passive>
-			<languages>Common</languages>
-			<cr>1/2</cr>
-			<trait>
-        <name>Brave</name>
-        <text>The Norvan has advantage on saving throws against being frightened.</text>
-      </trait>
-			<action>
-				<name>Greataxe</name>
-				<text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.</text>
-				<attack>Greataxe|4|2d6 + 3</attack>
-			</action>
-			<action>
-				<name>Light Crossbow</name>
-				<text>Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
-				<attack>Crossbow|4|1d8 + 2</attack>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Voth -->
-			<name>Voth</name>
-			<size>M</size>
-			<type>humanoid (elf)</type>
-			<alignment>lawful evil</alignment>
-			<ac>16 (vithral armor)</ac>
-			<hp>22 (4d8 + 4)</hp>
-			<speed>30 ft.</speed>
-			<str>14</str><dex>12</dex><con>12</con><int>12</int><wis>10</wis><cha>10</cha>
-			<skill>Perception +2, Survival +2</skill>
-			<resist>cold</resist>
-			<senses>darkvision 90 ft.</senses><passive>12</passive>
-			<languages>Elvish, Infernal</languages>
-			<cr>1</cr>
-			<trait>
-        <name>Devil’s Sight</name>
-        <text>Magical darkness doesn’t impede the voth's darkvision.</text>
-      </trait>
-			<trait>
-				<name>Fey Ancestry</name>
-				<text>The voth has advantage on saving throws against being charmed, and magic can’t put it to sleep.</text>
-			</trait>
-			<trait>
-				<name>Innate Spellcasting</name>
-				<text>The voth’s innate spellcasting ability is Intelligence (spell save DC 11, +3 to hit with spell attacks). The voth can innately cast the following spells:</text>
-				<text>At will: ray of frost</text>
-			</trait>
-			<action>
-				<name>Adamantine Sword</name>
-				<text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) slashing damage plus 2 (1d4) cold damage.</text>
-				<attack>Sword|4|1d10 + 2 + 1d4</attack>
-			</action>
-			<action>
-				<name>Longbow</name>
-				<text>Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 2 (1d4) cold damage.</text>
-				<attack>Longbow|3|1d8 + 3 + 1d4</attack>
-			</action>
-			<spells>ray of frost</spells>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Voth, Blizzard Wizard -->
-			<name>Voth, Blizzard Wizard</name>
-			<size>M</size>
-			<type>humanoid (elf)</type>
-			<alignment>lawful evil</alignment>
-			<ac>11 (14 with mage armor)</ac>
-			<hp>52 (8d8 + 16)</hp>
-			<speed>30 ft.</speed>
-			<str>12</str><dex>12</dex><con>14</con><int>18</int><wis>12</wis><cha>12</cha>
-			<skill>Arcana +7, Perception +4, Survival +4</skill>
-			<resist>cold</resist>
-			<senses>darkvision 90 ft.</senses><passive>14</passive>
-			<languages>Elvish, Infernal</languages>
-			<cr>5</cr>
-			<trait>
-        <name>Devil’s Sight</name>
-        <text>Magical darkness doesn’t impede the voth's darkvision.</text>
-      </trait>
-			<trait>
-				<name>Fey Ancestry</name>
-				<text>The voth has advantage on saving throws against being charmed, and magic can’t put it to sleep.</text>
-			</trait>
-			<trait>
-				<name>Innate Spellcasting</name>
-				<text>The voth’s innate spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The voth can innately cast the following spells:</text>
-				<text>At will: chill touch, ray of frost</text>
-				<text>1/day each: fog cloud</text>
-			</trait>
-			<trait>
-				<name>Spellcasting</name>
-				<text>The voth is a 7th level wizard. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The voth can cast the following spells:</text>
-				<text>Cantrips (at will): chill touch, dancing lights, message, minor illusion</text>
-				<text>1st level (slots): charm person, feather fall, mage armor, ray of sickness</text>
-				<text>2nd level (slots): gust of wind, misty step, suggestion</text>
-				<text>3rd level (slots): animate dead, lightning bolt, sleet storm</text>
-				<text>4th level (slots): ice storm</text>
-			</trait>
-			<action>
-				<name>Frost Staff</name>
-				<text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) bludgeoning damage plus 5 (2d4) cold damage.</text>
-				<attack>Staff|4|2d6 + 1 + 2d4</attack>
-			</action>
-			<spells>chill touch, ray of frost, fog cloud, chill touch, dancing lights, message, minor illusion, charm person, feather fall, mage armor, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, ice storm</spells>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Voth, Vothlock -->
-			<name>Voth, Vothlock</name>
-			<size>M</size>
-			<type>humanoid (elf)</type>
-			<alignment>lawful evil</alignment>
-			<ac>12 (15 with mage armor)</ac>
-			<hp>44 (8d8 + 8)</hp>
-			<speed>30 ft.</speed>
-			<str>12</str><dex>14</dex><con>12</con><int>12</int><wis>10</wis><cha>16</cha>
-			<skill>Arcana +4, Deception +6, Perception +3, Persuasion +6, Survival +3</skill>
-			<resist>cold</resist>
-			<senses>darkvision 90 ft.</senses><passive>13</passive>
-			<languages>Elvish, Infernal</languages>
-			<cr>4</cr>
-			<trait>
-        <name>Devil’s Sight</name>
-        <text>Magical darkness doesn’t impede the vothlock's darkvision.</text>
-      </trait>
-			<trait>
-				<name>Fey Ancestry</name>
-				<text>The vothlock has advantage on saving throws against being charmed, and magic can’t put it to sleep.</text>
-			</trait>
-			<trait>
-				<name>Innate Spellcasting</name>
-				<text>The vothlock’s innate spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The vothlock can innately cast the following spells:</text>
-				<text>At will: chill touch, mage armor (self only), ray of frost</text>
-				<text>1/day each: bestow curse, slow</text>
-			</trait>
-			<trait>
-				<name>Spellcasting</name>
-				<text>The vothlock is a 7th-level warlock. Their spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It regains expended spell slots when it finishes a short or long rest. The vothlock knows the following spells:</text>
-				<text>Cantrips (at will): eldritch blast, minor illusion, prestidigitation, shocking grasp</text>
-				<text>1st–4th level (3 4th-level slots): counterspell, enthrall, hellish rebuke, invisibility, suggestion, vampiric touch</text>
-			</trait>
-			<action>
-				<name>Ice Mace</name>
-				<text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage and 7 (2d6) cold damage.</text>
-				<attack>Mace|4|1d6 + 1 + 2d6</attack>
-			</action>
-			<action>
-				<name>Summon Devil (1/day)</name>
-				<text>The vothlock can use an action to summon an imp. It appears in an occupied space within 30 feet of the vothlock. The imp obeys the vothlock for one hour and then dies. It is reborn in Hell with the knowledge of its summoning.</text>
-			</action>
-			<spells>chill touch, mage armor, ray of frost, bestow curse, slow, eldritch blast, minor illusion, prestidigitation, shocking grasp, counterspell, enthrall, hellish rebuke, invisibility, suggestion, vampiric touch</spells>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Voth, King Vuthar -->
-			<name>Voth, King Vuthar</name>
-			<size>M</size>
-			<type>humanoid (elf)</type>
-			<alignment>lawful evil</alignment>
-			<ac>19 (vithral armor)</ac>
-			<hp>150 (20d8 + 60)</hp>
-			<speed>30 ft.</speed>
-			<str>20</str><dex>18</dex><con>16</con><int>18</int><wis>17</wis><cha>20</cha>
-			<skill>Arcana +9, Intimidation +10, Perception +8, Survival +8</skill>
-			<resist>cold</resist>
-			<senses>darkvision 90 ft.</senses><passive>15</passive>
-			<languages>Elvish, Infernal</languages>
-			<cr>18</cr>
-			<trait>
-        <name>Devil’s Sight</name>
-        <text>Magical darkness doesn’t impede his darkvision.</text>
-      </trait>
-			<trait>
-				<name>Fey Ancestry</name>
-				<text>Vuthar has advantage on saving throws against being charmed, and magic can’t put him to sleep.</text>
-			</trait>
-			<trait>
-				<name>Hellish Weapons</name>
-				<text>Vuthar’s weapon attacks are magical.</text>
-			</trait>
-			<trait>
-				<name>Innate Spellcasting</name>
-				<text>Vuthar’s innate spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). He can innately cast the following spells:</text>
-				<text>At will: chill touch, ray of frost</text>
-				<text>1/day each: fog cloud</text>
-			</trait>
-			<trait>
-				<name>Spellcasting</name>
-				<text>Vuthar is a 15th-level wizard. His spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). He can cast the following spells:</text>
-				<text>Cantrips (at will): dancing lights, message, ray of frost, shocking grasp</text>
-				<text>1st level (4 slots): charm person, feather fall, ray of sickness</text>
-				<text>2nd level (3 slots): gust of wind, misty step, suggestion</text>
-				<text>3rd level (3 slots): animate dead, lightning bolt, sleet storm</text>
-				<text>4th level (3 slots): blight, dimension door, ice storm</text>
-				<text>5th level (2 slots): animate objects, cone of cold</text>
-				<text>6th level (2 slots): chain lightning, create undead</text>
-				<text>7th level (1 slot): finger of death</text>
-				<text>8th level (1 slot): control weather</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>Vuthar makes three attacks.</text>
-			</action>
-			<action>
-				<name>Greatsword of Hell</name>
-				<text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 5 (4d4) cold damage.</text>
-				<attack>Greatsword|10|2d6 + 5 + 4d4</attack>
-			</action>
-			<action>
-				<name>Longbow</name>
-				<text>Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage and 2 (1d4) cold damage.</text>
-				<attack>Longbow|9|1d8 + 4 + 1d4</attack>
-			</action>
-			<spells>chill touch, ray of frost, fog cloud, dancing lights, message, ray of frost, shocking grasp, charm person, feather fall, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, blight, dimension door, ice storm, animate objects, cone of cold, chain lightning, create undead, finger of death, control weather</spells>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Crystal Spider -->
-			<name>Crystal Spider</name>
-			<size>L</size>
-			<type>monstrosity</type>
-			<alignment>unaligned</alignment>
-			<ac>16 (natural armor)</ac>
-			<hp>37 (5d10 + 10)</hp>
-			<speed>30 ft., climb 40 ft.</speed>
-			<str>18</str><dex>16</dex><con>14</con><int>2</int><wis>11</wis><cha>4</cha>
-			<resist>cold</resist>
-			<senses>blindsight 20 ft., darkvision 60 ft.</senses><passive>13</passive>
-			<languages>-</languages>
-			<cr>3</cr>
-			<trait>
-        <name>Frozen Climber</name>
-        <text>The crystal spider can climb difficult surfaces, including upside down in icy and snowy areas, without needing to make an ability check.</text>
-			</trait>
-			<trait>
-        <name>Snow Camouflage</name>
-        <text>The crystal spider has advantage on Dexterity (Stealth) checks made to hide in icy or snowy terrain.</text>
-			</trait>
-			<trait>
-        <name>Siege Monster</name>
-        <text>The crystal spider does double damage to objects and structures.</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The crystal spider makes two attacks.</text>
-			</action>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 2 (1d4) cold damage.</text>
-				<attack>Bite|6|2d6 + 4 + 1d4</attack>
-			</action>
-			<action>
-				<name>Freezing Secretion</name>
-				<text>Ranged Weapon Attack: +5 to hit, range 30/80 ft., one target. Hit: 4 (1d8) bludgeoning damage, and target must make a DC 13 Constitution saving throw or become paralyzed for 1 minute. The target can repeat the saving throw at the end of each of their turns.</text>
-				<attack>Secretion|5|1d8</attack>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Young Crystal Spider Swarm -->
-      <name>Swarm of Spiders</name>
-      <size>M</size>
-      <type>swarm of Medium beasts</type>
-      <alignment>Unaligned</alignment>
-      <ac>12 (natural armor)</ac>
-      <hp>22 (5d8)</hp>
-      <speed>40 ft., climb 30 ft.</speed>
-      <str>3</str><dex>13</dex><con>10</con><int>1</int><wis>7</wis><cha>1</cha>
-      <resist>cold</resist>
-      <senses></senses><passive>8</passive>
-      <languages>-</languages>
-      <cr>1</cr>
-      <resist>bludgeoning, piercing, slashing</resist>
-      <immune></immune>
-      <vulnerable></vulnerable>
-      <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
-      <senses>blindsight 10 ft.</senses>
-      <trait>
-        <name>Swarm</name>
-        <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.</text>
-      </trait>
-      <trait>
-        <name>Frozen Climber</name>
-        <text>The young crystal spider swarm can climb difficult surfaces, including upside down in icy or snowy areas, without needing to make an ability check.</text>
-      </trait>
-      <trait>
-        <name>Snow Camouflage</name>
-        <text>The young crystal spider swarm has advantage on Dexterity (Stealth) checks made to hide in icy or snowy terrain.</text>
-      </trait>
-      <action>
-        <name>Bites</name>
-        <text>Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.</text>
-        <attack>Bites|+3|4d4</attack>
-      </action>
-      <description>The Nature of Swarms. 
-			------
-			The swarms presented here aren't ordinary or benign assemblies of little creatures. They form as a result of some sinister or unwholesome influence. A vampire can summon swarms of bats and rats from the darkest corners of the night, while the very presence of a mummy lord can cause scarab beetles to boil up from the sand-filled depths of its tomb. A hag might have the power to turn swarms of ravens against her enemies, while a yuan-ti abomination might have swarms of poisonous snakes slithering in its wake. Even druids can't charm these swarms, and their aggressiveness is borderline unnatural.
-			------
-			Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-      <environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Icebreaker -->
-			<name>Icebreaker</name>
-			<size>H</size>
-			<type>monstrosity</type>
-			<alignment>unaligned</alignment>
-			<ac>15 (natural armor)</ac>
-			<hp>157 (15d12 + 60)</hp>
-			<speed>0 ft., swim 40 ft.</speed>
-			<str>20</str><dex>14</dex><con>19</con><int>7</int><wis>15</wis><cha>5</cha>
-			<skill>Perception +5</skill>
-			<immune>cold</immune>
-			<conditionImmune>charmed, prone</conditionImmune>
-			<senses>darkvision 60 ft., tremorsense 60 ft.</senses><passive>15</passive>
-			<languages>-</languages>
-			<cr>8</cr>
-			<trait>
-        <name>Hold Breath</name>
-        <text>The ice breaker can hold its breath for 1 hour.</text>
-			</trait>
-			<trait>
-        <name>Keen Hearing</name>
-        <text>The ice breaker has advantage on Wisdom (Perception) checks that rely on hearing.</text>
-			</trait>
-			<trait>
-        <name>Siege Monster</name>
-        <text>The ice breaker does double damage to objects and structures.</text>
-			</trait>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 27 (4d10 + 5) piercing damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the ice breaker can’t bite another target.</text>
-				<attack>Bite|8|4d10 + 5</attack>
-			</action>
-			<action>
-				<name>Swallow</name>
-				<text>The ice breaker makes one bite attack against a Large or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the ice breaker, and it takes 9 (2d8) acid damage at the start of each of the ice breaker’s turns. The ice breaker can have only one target swallowed at a time.</text>
-				<text>    If the ice breaker takes 20 damage or more on a single turn from the swallowed creature, the ice breaker must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the ice breaker. If the ice breaker dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 10 feet of movement, exiting prone.</text>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Mammoth, Undead -->
-			<name>Mammoth, Undead</name>
-			<size>H</size>
-			<type>undead</type>
-			<alignment>neutral evil</alignment>
-			<ac>12 (natural armor)</ac>
-			<hp>87 (7d12 + 42)</hp>
-			<speed>30 ft.</speed>
-			<str>24</str><dex>7</dex><con>22</con><int>1</int><wis>7</wis><cha>3</cha>
-			<resist>cold</resist>
-			<immune>poison</immune>
-			<conditionImmune>poisoned</conditionImmune>
-			<senses>darkvision 60 ft.</senses><passive>8</passive>
-			<languages>-</languages>
-			<cr>5</cr>
-			<trait>
-        <name>Siege Monster</name>
-        <text>The undead mammoth does double damage to objects and structures.</text>
-			</trait>
-			<trait>
-        <name>Trampling Charge</name>
-        <text>If the undead mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone.</text>
-			</trait>
-			<trait>
-        <name>Undead Fortitude</name>
-        <text>If damage reduces the undead mammoth to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the undead mammoth drops to 1 hit point instead.</text>
-			</trait>
-			<action>
-				<name>Gore</name>
-				<text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 20 (3d8 + 7) piercing damage plus 3 (1d6) necrotic damage.</text>
-				<attack>Gore|9|3d8 + 7 + 1d6</attack>
-			</action>
-			<action>
-				<name>Stomp</name>
-				<text>Melee Weapon Attack: +9 to hit, reach 5 ft., one prone creature. Hit: 23 (3d10 + 7) bludgeoning damage.</text>
-				<attack>Stomp|9|3d10 + 7</attack>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Nordak -->
-			<name>Nordak</name>
-			<size>L</size>
-			<type>beast</type>
-			<alignment>neutral</alignment>
-			<ac>14 (natural armor)</ac>
-			<hp>30 (4d10 + 8)</hp>
-			<speed>50 ft.</speed>
-			<str>18</str><dex>14</dex><con>15</con><int>3</int><wis>12</wis><cha>7</cha>
-			<resist>cold</resist>
-			<senses></senses><passive>13</passive>
-			<languages>-</languages>
-			<cr>1</cr>
-			<trait>
-        <name>Heated Body</name>
-        <text>The nordak has a very warm inner temperature. If their stomachs are cut open, heat from their innards can keep a humanoid warm for eight hours. Of course, the nordak won’t survive the injury.</text>
-			</trait>
-			<trait>
-        <name>Keen Hearing and Smell</name>
-        <text>The nordak has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
-			</trait>
-			<trait>
-        <name>Pack Animal</name>
-        <text>The nordak can carry 200 lbs. of equipment.</text>
-			</trait>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.</text>
-				<attack>Bite|6|2d6 + 4</attack>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Ozlog -->
-			<name>Ozlog</name>
-			<size>L</size>
-			<type>beast</type>
-			<alignment>neutral</alignment>
-			<ac>13 (natural armor)</ac>
-			<hp>15 (2d10 + 4)</hp>
-			<speed>40 ft.</speed>
-			<str>16</str><dex>10</dex><con>14</con><int>1</int><wis>5</wis><cha>3</cha>
-			<immune>cold</immune>
-			<senses>darkvision 60 ft.</senses><passive>7</passive>
-			<languages>-</languages>
-			<cr>1/4</cr>
-			<trait>
-        <name>Charge</name>
-        <text>If the ozlog moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 3 (1d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
-			</trait>
-			<trait>
-        <name>Pack Tactics</name>
-        <text>The ozlog has advantage on an attack roll against a creature if at least one of the ozlog’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
-			</trait>
-			<action>
-				<name>Gore</name>
-				<text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.</text>
-				<attack>Gore|5|1d8 + 3</attack>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: People of the Sky -->
-			<name>People of the Sky</name>
-			<size>H</size>
-			<type>fey</type>
-			<alignment>neutral evil</alignment>
-			<ac>15</ac>
-			<hp>103 (9d12 + 45)</hp>
-			<speed>0 ft. fly 80 ft. (hover)</speed>
-			<str>18</str><dex>20</dex><con>20</con><int>18</int><wis>20</wis><cha>18</cha>
-			<skill>Perception +9, Persuasion +8</skill>
-			<resist>acid, cold; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-			<immune>necrotic, poison</immune>
-			<conditionImmune>charmed, exhaustion, grappled, poisoned, prone, restrained</conditionImmune>
-			<senses>darkvision 60 ft.</senses><passive>19</passive>
-			<languages>Elvish, Primordial, Sylvan</languages>
-			<cr>10</cr>
-			<trait>
-        <name>Incorporeal Movement (Light Form)</name>
-        <text>The people of the sky can move through other creatures and objects as if they were difficult terrain. They take 5 (1d10) force damage if they end their turn inside an object.</text>
-			</trait>
-			<trait>
-        <name>Northern Light Form</name>
-        <text>The people of the sky can use an action to change their form into pure light or back into their true form. All their statistics remain the same, except their AC is 17 and they have the incorporeal movement trait. They revert back into their fey form if they are killed. People of the sky often choose vivid colors for their light form such as bright blue, pink, purple, yellow, and green.</text>
-			</trait>
-			<trait>
-        <name>Open Riftgate</name>
-        <text>The people of the sky can open Riftgates at will. However, the Riftgate must already be in place as they can’t create them.</text>
-			</trait>
-			<action>
-				<name>Cold Blast</name>
-				<text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 21 (3d10 + 5) cold damage.</text>
-				<attack>Blast|9|3d10 + 5</attack>
-			</action>
-			<action>
-				<name>Lure of the Lights</name>
-				<text>Once a Riftgate is open, the people of the sky can attempt to lure targets into the gate. They send out a pattern of blue and green lights and any creatures within 100 feet must make a DC 16 Wisdom saving throw. If a target fails their saving throw, they are compelled to follow the light patterns into the Riftgate.</text>
-				<text>    If this action fails to lure the target, the people of the sky will speak directly to the creature and attempt to persuade them.</text>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: Polar Bear, Armored -->
-			<name>Polar Bear, Armored</name>
-			<size>L</size>
-			<type>beast</type>
-			<alignment>neutral</alignment>
-			<ac>16 (half-plate)</ac>
-			<hp>63 (6d10 + 30)</hp>
-			<speed>40 ft.</speed>
-			<str>22</str><dex>12</dex><con>20</con><int>9</int><wis>12</wis><cha>9</cha>
-			<skill>Perception +3</skill>
-			<immune>cold</immune>
-			<senses></senses><passive>13</passive>
-			<languages>Understands Common but can’t speak</languages>
-			<cr>4</cr>
-			<trait>
-        <name>Keen Smell</name>
-        <text>The armored polar bear has advantage on Wisdom (Perception) checks that rely on smell.</text>
-			</trait>
-			<trait>
-        <name>Pack Animal</name>
-        <text>Armored polar bears can carry at least 300 pounds of gear.</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The armored polar bear makes two attacks: one with its bite and one with its claws</text>
-			</action>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) piercing damage.</text>
-				<attack>Bite|8|2d10 + 6</attack>
-			</action>
-			<action>
-				<name>Iron Claw</name>
-				<text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage.</text>
-				<attack>Claw|8|3d8 + 6</attack>
-			</action>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
-		<monster> <!-- Arctic: The Shapeshifter -->
-			<name>The Shapeshifter</name>
-			<size>M</size>
-			<type>aberration (shapechanger)</type>
-			<alignment>chaotic evil</alignment>
-			<ac>17 (natural armor)</ac>
-			<hp>190 (20d8 + 100)</hp>
-			<speed>40 ft.</speed>
-			<str>20</str><dex>18</dex><con>20</con><int>20</int><wis>18</wis><cha>18</cha>
-			<skill>Deception +9, Perception +9, Stealth +9, Survival +9</skill>
-			<vulnerable>fire</vulnerable>
-			<resist>bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-			<immune>cold</immune>
-			<conditionImmune>charmed, exhaustion</conditionImmune>
-			<senses>darkvision 60 ft.</senses><passive>19</passive>
-			<languages>the languages of the form it has assumed</languages>
-			<cr>12</cr>
-			<trait>
-        <name>Ambusher</name>
-        <text>In the first round of a combat, the shapeshifter has advantage on attack rolls against any creature it surprises.</text>
-			</trait>
-			<trait>
-        <name>Assume Form</name>
-        <text>The shapeshifter can assume the appearance of any Medium (or smaller) humanoid or beast it has eaten. It also feels and sounds exactly like the victim, speaking the languages it knows. Only a successful DC 18 Wisdom (Insight) check will reveal it to be a fake.</text>
-			</trait>
-			<trait>
-        <name>Magic Resistance</name>
-        <text>The shapeshifter has advantage on saving throws against spells and other magical effects.</text>
-			</trait>
-			<trait>
-        <name>Regeneration</name>
-        <text>The shapeshifter regains 10 hit points at the beginning of each of its turns. It is only destroyed if it starts its turn with 0 hit points and doesn’t regenerate.</text>
-			</trait>
-			<trait>
-        <name>Spider Climb</name>
-        <text>The shapeshifter can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
-			</trait>
-			<action>
-				<name>Multiattack</name>
-				<text>The shapeshifter can make one attack with its bite and two attacks with tendrils that emerge from inside its body.</text>
-			</action>
-			<action>
-				<name>Bite</name>
-				<text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) piercing damage.</text>
-				<attack>Bite|10|3d8 + 5</attack>
-			</action>
-			<action>
-				<name>Tendrils</name>
-				<text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) slashing damage.</text>
-				<attack>Tendrils|10|3d8 + 5</attack>
-			</action>
-			<reaction>
-				<name>Aversion to Fire</name>
-				<text>If it can, the shapeshifter will use its reaction to move 10 feet away from any fire source.</text>
-			</reaction>
-			<description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
-			<environment>Arctic</environment>
-    </monster>
+  <monster> <!-- Arctic: Titan, The Ragnar -->
+    <name>The Ragnar</name>
+    <size>H</size>
+    <type>monstrosity (titan)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>378 (28d12 + 196)</hp>
+    <speed>40 ft., climb 20 ft.</speed>
+    <str>22</str><dex>9</dex><con>25</con><int>7</int><wis>12</wis><cha>3</cha>
+    <save>Con +13, Wis +7</save>
+    <skill>Perception +7</skill>
+    <resist>cold</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, frightened, paralyzed, poisoned, prone</conditionImmune>
+    <senses>darkvision 90 ft.</senses><passive>17</passive>
+    <languages>-</languages>
+    <cr>20</cr>
+    <trait>
+      <name>Keen Smell</name>
+      <text>The Ragnar has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If the Ragnar fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The Ragnar does double damage to objects and structures.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Ragnar makes one bite attack and two slam attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) piercing damage.</text>
+      <attack>Bite|13|3d10 + 6</attack>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 17 (2d10 + 6) bludgeoning damage.</text>
+      <attack>Slam|13|2d10 + 6</attack>
+    </action>
+    <legendary>
+      <name>Swat Away</name>
+      <text>The Ragnar makes a slam attack. If the attack hits, the target must succeed on a DC 17 Strength saving throw or be pushed 15 feet in a straight line away from the Ragnar. If the saving throw fails by 8 or more, the target falls prone.</text>
+    </legendary>
+    <legendary>
+      <name>Tail Attack (Costs 2 Actions)</name>
+      <text>Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.</text>
+    </legendary>
+    <legendary>
+      <name>Bite Attack (Costs 3 Actions)</name>
+      <text>The Ragnar makes a bite attack.</text>
+    </legendary>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Varga the Ice Witch -->
+    <name>Varga the Ice Witch</name>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>133 (14d8 + 70)</hp>
+    <speed>30 ft.</speed>
+    <str>15</str><dex>15</dex><con>20</con><int>25</int><wis>18</wis><cha>7</cha>
+    <save>Int +12, Wis +9</save>
+    <skill>Arcana +12, History +12, Perception +9, Survival +9</skill>
+    <senses></senses><passive>19</passive>
+    <languages>Common, Primordial</languages>
+    <cr>10</cr>
+    <trait>
+      <name>Arcane Ward</name>
+      <text>When she casts an abjuration spell of 1st level or higher, she can simultaneously use a strand of the spell’s magic to create a magical ward on herself that lasts until she finishes a long rest. The ward has 39 hit points. Whenever she takes damage, the ward takes the damage instead. If this damage reduces the ward to 0 hit points, she takes any remaining damage. While the ward has 0 hit points, it can’t absorb damage, but its magic remains. Whenever she casts an abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell. Once she creates the ward, she can’t create it again until she finishes a long rest.</text>
+    </trait>
+    <trait>
+      <name>Improved Abjuration</name>
+      <text>When she casts an abjuration spell that requires her to make an ability check as a part of casting that spell, she adds +5 to that ability check.</text>
+    </trait>
+    <trait>
+      <name>Projected Ward</name>
+      <text>When a creature that she can see within 30 feet of her takes damage, she can use her reaction to cause her Arcane Ward to absorb that damage. If this damage reduces the ward to 0 hit points, the warded creature takes any remaining damage.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Varga is a 16th level wizard. Her spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). She can cast the following spells:</text>
+      <text>Cantrips (at will): blade ward, dancing lights, minor illusion, ray of frost, resistance</text>
+      <text>1st level (4 slots): mage armor, protection from evil and good, shield, witch bolt</text>
+      <text>2nd level (3 slots): darkvision, misty step, see invisibility</text>
+      <text>3rd level (3 slots): counterspell, dispel magic, glyph of warding, nondetection</text>
+      <text>4th level (3 slots): banishment, confusion, ice storm</text>
+      <text>5th level (3 slots): cone of cold, planar binding</text>
+      <text>6th level (2 slots): globe of invulnerability</text>
+      <text>7th level (2 slots): etherealness, reverse gravity</text>
+      <text>8th level (1 slot): control weather</text>
+    </trait>
+    <trait>
+      <name>Spell Resistance</name>
+      <text>She has advantage on saving throws against spells. Furthermore, she has resistance against the damage of spells.</text>
+    </trait>
+    <action>
+      <name>Ice Staff</name>
+      <text>Melee Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage plus 22 (5d8) cold damage.</text>
+      <attack>Staff|7|1d8 + 2 + 5d8</attack>
+    </action>
+    <spells>blade ward, dancing lights, minor illusion, ray of frost, resistance, mage armor, protection from evil and good, shield, witch bolt, darkvision, misty step, see invisibility, counterspell, dispel magic, glyph of warding, nondetection, banishment, confusion, ice storm, cone of cold, planar binding, globe of invulnerability, etherealness, reverse gravity, control weather</spells>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Dragon, Ice -->
+    <name>Ice Dragon</name>
+    <size>H</size>
+    <type>dragon</type>
+    <alignment>chaotic evil</alignment>
+    <ac>19 (natural armor)</ac>
+    <hp>195 (17d12 + 85)</hp>
+    <speed>40 ft., fly 80 ft.</speed>
+    <str>22</str><dex>14</dex><con>20</con><int>16</int><wis>12</wis><cha>4</cha>
+    <save>Dex +7, Con +10, Int +8, Wis +6</save>
+    <skill>Perception +6, Stealth +7</skill>
+    <immune>cold</immune>
+    <senses>blindsight 60 ft., darkvision 120 ft.</senses><passive>16</passive>
+    <languages>Common, Draconic</languages>
+    <cr>15</cr>
+    <trait>
+      <name>Ice Walk</name>
+      <text>The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost it extra movement.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If the dragon fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 5 (1d10) cold damage.</text>
+      <attack>Bite|11|2d10 + 6 + 1d10</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage.</text>
+      <attack>Claw|11|2d8 + 6</attack>
+    </action>
+    <action>
+      <name>Tail</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.</text>
+      <attack>Tail|11|2d8 + 6</attack>
+    </action>
+    <action>
+      <name>Freezing Breath</name>
+      <text>The dragon exhales an icy breath in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 28 (8d6) cold damage on a failure half damage on a success. If the target fails their saving throw, they are also paralyzed for 1 minute. The target can make a DC 17 Constitution saving throw to end the paralysis at the end of each of their turns.</text>
+    </action>
+    <action>
+      <name>Frightful Presence</name>
+      <text>Each creature of the dragon’s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 14 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the dragon’s Frightful Presence for the next 24 hours.</text>
+    </action>
+    <legendary>
+      <name>Detect</name>
+      <text>The dragon makes a Wisdom (Perception) check.</text>
+    </legendary>
+    <legendary>
+      <name>Wing Attack (Costs 2 Actions)</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) slashing damage.</text>
+    </legendary>
+    <legendary>
+      <name>Claw Attack (Costs 3 Actions)</name>
+      <text>The dragon makes one claw attack.</text>
+    </legendary>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Norvan, King Harald -->
+    <name>Norvan, King Harald</name>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>18 (plate)</ac>
+    <hp>165 (22d8 + 66)</hp>
+    <speed>30 ft.</speed>
+    <str>20</str><dex>16</dex><con>16</con><int>18</int><wis>20</wis><cha>20</cha>
+    <save>Str +9, Wis +9, Cha +9</save>
+    <skill>Athletics +9, Insight +9, Intimidation +9, Perception +9, Survival +9</skill>
+    <senses/><passive>19</passive>
+    <languages>Common</languages>
+    <cr>11</cr>
+    <trait>
+      <name>Brave</name>
+      <text>The Norvan has advantage on saving throws against being frightened.</text>
+    </trait>
+    <trait>
+      <name>Action Surge (1/day)</name>
+      <text>Harald can take an extra action.</text>
+    </trait>
+    <trait>
+      <name>Indomitable (2/day)</name>
+      <text>Harald can reroll a failed saving throw.</text>
+    </trait>
+    <trait>
+      <name>Second Wind (Recharges after a Short or Long Rest)</name>
+      <text>As a bonus action, he can regain 20 hit points.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Harald makes three melee attacks.</text>
+    </action>
+    <action>
+      <name>Hammer of the North</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) bludgeoning damage plus 5 (2d4) cold damage.</text>
+      <attack>Hammer|9|1d12 + 5 + 2d4</attack>
+    </action>
+    <action>
+      <name>Battle Cry (2/day)</name>
+      <text>Each creature of Harald’s choice that is within 30 feet of him, can hear him, and not already affected by Battle Cry gain advantage on attack rolls until the start of Harald’s next turn. He can then make one attack as a bonus action.</text>
+    </action>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Norvan, Shaman -->
+    <name>Norvan, Shaman</name>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>11 (14 with frostskin)</ac>
+    <hp>65 (10d8 + 20)</hp>
+    <speed>30 ft.</speed>
+    <str>12</str><dex>12</dex><con>15</con><int>13</int><wis>19</wis><cha>11</cha>
+    <save>Con +5, Wis +7</save>
+    <skill>History +4, Insight +7, Nature +4, Perception +7, Survival +7</skill>
+    <senses></senses><passive>17</passive>
+    <languages>Common</languages>
+    <cr>8</cr>
+    <trait>
+      <name>Brave</name>
+      <text>The Norvan has advantage on saving throws against being frightened.</text>
+    </trait>
+    <trait>
+      <name>Frostskin (2/day)</name>
+      <text>The shaman creates a magical hard frost on their skin which increases their AC to 14 for 1 minute.</text>
+    </trait>
+    <trait>
+      <name>Iron Will</name>
+      <text>The shaman has advantage on saving throws against being charmed.</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing and Sight</name>
+      <text>The shaman has advantage on Wisdom (Perception) checks that rely on hearing or sight.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The shaman is a 10th-level spellcaster. Their spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). The shaman has the following spells:</text>
+      <text>Cantrips (at will): druidcraft, guidance, produce flame, shillelagh</text>
+      <text>1st level (4 slots): animal friendship, beast sense, cure wounds, speak with animals</text>
+      <text>2nd level (3 slots): animal restoration, darkvision, lesser restoration, pass without trace</text>
+      <text>3rd level (3 slots): feign death, sleet storm, wind wall</text>
+      <text>4th level (3 slots): confusion, ice storm, freedom of movement</text>
+      <text>5th level (2 slots): reincarnate, scrying</text>
+    </trait>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) bludgeoning damage.</text>
+      <attack>Quarterstaff|4|1d8 + 1</attack>
+    </action>
+    <action>
+      <name>Change Shape (1/day)</name>
+      <text>The shaman magically polymorphs into a beast with a CR of 3 or less, and can remain in this form for up to 6 hours. The shaman can choose whether their equipment falls to the ground, melds with their new form, or is worn by the new form. The shaman reverts to their true form if they die or fall unconscious. The shaman can revert to their true form using a bonus action on their turn.</text>
+      <text>    While in a new form, the shaman retains their game statistics and ability to speak, but their AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and they gain any special senses, proficiencies, traits, actions, and reactions that the new form has but that they lack.</text>
+    </action>
+    <spells>druidcraft, guidance, produce flame, shillelagh, animal friendship, beast sense, cure wounds, speak with animals, animal restoration, darkvision, lesser restoration, pass without trace, feign death, sleet storm, wind wall, confusion, ice storm, freedom of movement, reincarnate, scrying</spells>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Norvan, Soldier -->
+    <name>Norvan, Soldier</name>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>16 (chain mail)</ac>
+    <hp>13 (2d8 + 4)</hp>
+    <speed>30 ft.</speed>
+    <str>16</str><dex>14</dex><con>14</con><int>10</int><wis>10</wis><cha>10</cha>
+    <skill>Perception +2, Survival +2</skill>
+    <senses></senses><passive>12</passive>
+    <languages>Common</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Brave</name>
+      <text>The Norvan has advantage on saving throws against being frightened.</text>
+    </trait>
+    <action>
+      <name>Greataxe</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.</text>
+      <attack>Greataxe|4|2d6 + 3</attack>
+    </action>
+    <action>
+      <name>Light Crossbow</name>
+      <text>Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
+      <attack>Crossbow|4|1d8 + 2</attack>
+    </action>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Voth -->
+    <name>Voth</name>
+    <size>M</size>
+    <type>humanoid (elf)</type>
+    <alignment>lawful evil</alignment>
+    <ac>16 (vithral armor)</ac>
+    <hp>22 (4d8 + 4)</hp>
+    <speed>30 ft.</speed>
+    <str>14</str><dex>12</dex><con>12</con><int>12</int><wis>10</wis><cha>10</cha>
+    <skill>Perception +2, Survival +2</skill>
+    <resist>cold</resist>
+    <senses>darkvision 90 ft.</senses><passive>12</passive>
+    <languages>Elvish, Infernal</languages>
+    <cr>1</cr>
+    <trait>
+      <name>Devil’s Sight</name>
+      <text>Magical darkness doesn’t impede the voth's darkvision.</text>
+    </trait>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>The voth has advantage on saving throws against being charmed, and magic can’t put it to sleep.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The voth’s innate spellcasting ability is Intelligence (spell save DC 11, +3 to hit with spell attacks). The voth can innately cast the following spells:</text>
+      <text>At will: ray of frost</text>
+    </trait>
+    <action>
+      <name>Adamantine Sword</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) slashing damage plus 2 (1d4) cold damage.</text>
+      <attack>Sword|4|1d10 + 2 + 1d4</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 2 (1d4) cold damage.</text>
+      <attack>Longbow|3|1d8 + 3 + 1d4</attack>
+    </action>
+    <spells>ray of frost</spells>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Voth, Blizzard Wizard -->
+    <name>Voth, Blizzard Wizard</name>
+    <size>M</size>
+    <type>humanoid (elf)</type>
+    <alignment>lawful evil</alignment>
+    <ac>11 (14 with mage armor)</ac>
+    <hp>52 (8d8 + 16)</hp>
+    <speed>30 ft.</speed>
+    <str>12</str><dex>12</dex><con>14</con><int>18</int><wis>12</wis><cha>12</cha>
+    <skill>Arcana +7, Perception +4, Survival +4</skill>
+    <resist>cold</resist>
+    <senses>darkvision 90 ft.</senses><passive>14</passive>
+    <languages>Elvish, Infernal</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Devil’s Sight</name>
+      <text>Magical darkness doesn’t impede the voth's darkvision.</text>
+    </trait>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>The voth has advantage on saving throws against being charmed, and magic can’t put it to sleep.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The voth’s innate spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The voth can innately cast the following spells:</text>
+      <text>At will: chill touch, ray of frost</text>
+      <text>1/day each: fog cloud</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The voth is a 7th level wizard. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The voth can cast the following spells:</text>
+      <text>Cantrips (at will): chill touch, dancing lights, message, minor illusion</text>
+      <text>1st level (slots): charm person, feather fall, mage armor, ray of sickness</text>
+      <text>2nd level (slots): gust of wind, misty step, suggestion</text>
+      <text>3rd level (slots): animate dead, lightning bolt, sleet storm</text>
+      <text>4th level (slots): ice storm</text>
+    </trait>
+    <action>
+      <name>Frost Staff</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) bludgeoning damage plus 5 (2d4) cold damage.</text>
+      <attack>Staff|4|2d6 + 1 + 2d4</attack>
+    </action>
+    <spells>chill touch, ray of frost, fog cloud, chill touch, dancing lights, message, minor illusion, charm person, feather fall, mage armor, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, ice storm</spells>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Voth, Vothlock -->
+    <name>Voth, Vothlock</name>
+    <size>M</size>
+    <type>humanoid (elf)</type>
+    <alignment>lawful evil</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>44 (8d8 + 8)</hp>
+    <speed>30 ft.</speed>
+    <str>12</str><dex>14</dex><con>12</con><int>12</int><wis>10</wis><cha>16</cha>
+    <skill>Arcana +4, Deception +6, Perception +3, Persuasion +6, Survival +3</skill>
+    <resist>cold</resist>
+    <senses>darkvision 90 ft.</senses><passive>13</passive>
+    <languages>Elvish, Infernal</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Devil’s Sight</name>
+      <text>Magical darkness doesn’t impede the vothlock's darkvision.</text>
+    </trait>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>The vothlock has advantage on saving throws against being charmed, and magic can’t put it to sleep.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The vothlock’s innate spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The vothlock can innately cast the following spells:</text>
+      <text>At will: chill touch, mage armor (self only), ray of frost</text>
+      <text>1/day each: bestow curse, slow</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The vothlock is a 7th-level warlock. Their spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It regains expended spell slots when it finishes a short or long rest. The vothlock knows the following spells:</text>
+      <text>Cantrips (at will): eldritch blast, minor illusion, prestidigitation, shocking grasp</text>
+      <text>1st–4th level (3 4th-level slots): counterspell, enthrall, hellish rebuke, invisibility, suggestion, vampiric touch</text>
+    </trait>
+    <action>
+      <name>Ice Mace</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage and 7 (2d6) cold damage.</text>
+      <attack>Mace|4|1d6 + 1 + 2d6</attack>
+    </action>
+    <action>
+      <name>Summon Devil (1/day)</name>
+      <text>The vothlock can use an action to summon an imp. It appears in an occupied space within 30 feet of the vothlock. The imp obeys the vothlock for one hour and then dies. It is reborn in Hell with the knowledge of its summoning.</text>
+    </action>
+    <spells>chill touch, mage armor, ray of frost, bestow curse, slow, eldritch blast, minor illusion, prestidigitation, shocking grasp, counterspell, enthrall, hellish rebuke, invisibility, suggestion, vampiric touch</spells>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Voth, King Vuthar -->
+    <name>Voth, King Vuthar</name>
+    <size>M</size>
+    <type>humanoid (elf)</type>
+    <alignment>lawful evil</alignment>
+    <ac>19 (vithral armor)</ac>
+    <hp>150 (20d8 + 60)</hp>
+    <speed>30 ft.</speed>
+    <str>20</str><dex>18</dex><con>16</con><int>18</int><wis>17</wis><cha>20</cha>
+    <skill>Arcana +9, Intimidation +10, Perception +8, Survival +8</skill>
+    <resist>cold</resist>
+    <senses>darkvision 90 ft.</senses><passive>15</passive>
+    <languages>Elvish, Infernal</languages>
+    <cr>18</cr>
+    <trait>
+      <name>Devil’s Sight</name>
+      <text>Magical darkness doesn’t impede his darkvision.</text>
+    </trait>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>Vuthar has advantage on saving throws against being charmed, and magic can’t put him to sleep.</text>
+    </trait>
+    <trait>
+      <name>Hellish Weapons</name>
+      <text>Vuthar’s weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Vuthar’s innate spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). He can innately cast the following spells:</text>
+      <text>At will: chill touch, ray of frost</text>
+      <text>1/day each: fog cloud</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Vuthar is a 15th-level wizard. His spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). He can cast the following spells:</text>
+      <text>Cantrips (at will): dancing lights, message, ray of frost, shocking grasp</text>
+      <text>1st level (4 slots): charm person, feather fall, ray of sickness</text>
+      <text>2nd level (3 slots): gust of wind, misty step, suggestion</text>
+      <text>3rd level (3 slots): animate dead, lightning bolt, sleet storm</text>
+      <text>4th level (3 slots): blight, dimension door, ice storm</text>
+      <text>5th level (2 slots): animate objects, cone of cold</text>
+      <text>6th level (2 slots): chain lightning, create undead</text>
+      <text>7th level (1 slot): finger of death</text>
+      <text>8th level (1 slot): control weather</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Vuthar makes three attacks.</text>
+    </action>
+    <action>
+      <name>Greatsword of Hell</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 5 (4d4) cold damage.</text>
+      <attack>Greatsword|10|2d6 + 5 + 4d4</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage and 2 (1d4) cold damage.</text>
+      <attack>Longbow|9|1d8 + 4 + 1d4</attack>
+    </action>
+    <spells>chill touch, ray of frost, fog cloud, dancing lights, message, ray of frost, shocking grasp, charm person, feather fall, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, blight, dimension door, ice storm, animate objects, cone of cold, chain lightning, create undead, finger of death, control weather</spells>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Crystal Spider -->
+    <name>Crystal Spider</name>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>37 (5d10 + 10)</hp>
+    <speed>30 ft., climb 40 ft.</speed>
+    <str>18</str><dex>16</dex><con>14</con><int>2</int><wis>11</wis><cha>4</cha>
+    <resist>cold</resist>
+    <senses>blindsight 20 ft., darkvision 60 ft.</senses><passive>13</passive>
+    <languages>-</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Frozen Climber</name>
+      <text>The crystal spider can climb difficult surfaces, including upside down in icy and snowy areas, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Snow Camouflage</name>
+      <text>The crystal spider has advantage on Dexterity (Stealth) checks made to hide in icy or snowy terrain.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The crystal spider does double damage to objects and structures.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The crystal spider makes two attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 2 (1d4) cold damage.</text>
+      <attack>Bite|6|2d6 + 4 + 1d4</attack>
+    </action>
+    <action>
+      <name>Freezing Secretion</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 30/80 ft., one target. Hit: 4 (1d8) bludgeoning damage, and target must make a DC 13 Constitution saving throw or become paralyzed for 1 minute. The target can repeat the saving throw at the end of each of their turns.</text>
+      <attack>Secretion|5|1d8</attack>
+    </action>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Young Crystal Spider Swarm -->
+    <name>Swarm of Spiders</name>
+    <size>M</size>
+    <type>swarm of Medium beasts</type>
+    <alignment>Unaligned</alignment>
+    <ac>12 (natural armor)</ac>
+    <hp>22 (5d8)</hp>
+    <speed>40 ft., climb 30 ft.</speed>
+    <str>3</str><dex>13</dex><con>10</con><int>1</int><wis>7</wis><cha>1</cha>
+    <resist>cold</resist>
+    <senses></senses><passive>8</passive>
+    <languages>-</languages>
+    <cr>1</cr>
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune></immune>
+    <vulnerable></vulnerable>
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>blindsight 10 ft.</senses>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.</text>
+    </trait>
+    <trait>
+      <name>Frozen Climber</name>
+      <text>The young crystal spider swarm can climb difficult surfaces, including upside down in icy or snowy areas, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Snow Camouflage</name>
+      <text>The young crystal spider swarm has advantage on Dexterity (Stealth) checks made to hide in icy or snowy terrain.</text>
+    </trait>
+    <action>
+      <name>Bites</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.</text>
+      <attack>Bites|+3|4d4</attack>
+    </action>
+    <description>The Nature of Swarms. 
+    ------
+    The swarms presented here aren't ordinary or benign assemblies of little creatures. They form as a result of some sinister or unwholesome influence. A vampire can summon swarms of bats and rats from the darkest corners of the night, while the very presence of a mummy lord can cause scarab beetles to boil up from the sand-filled depths of its tomb. A hag might have the power to turn swarms of ravens against her enemies, while a yuan-ti abomination might have swarms of poisonous snakes slithering in its wake. Even druids can't charm these swarms, and their aggressiveness is borderline unnatural.
+    ------
+    Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Icebreaker -->
+    <name>Icebreaker</name>
+    <size>H</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>157 (15d12 + 60)</hp>
+    <speed>0 ft., swim 40 ft.</speed>
+    <str>20</str><dex>14</dex><con>19</con><int>7</int><wis>15</wis><cha>5</cha>
+    <skill>Perception +5</skill>
+    <immune>cold</immune>
+    <conditionImmune>charmed, prone</conditionImmune>
+    <senses>darkvision 60 ft., tremorsense 60 ft.</senses><passive>15</passive>
+    <languages>-</languages>
+    <cr>8</cr>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The ice breaker can hold its breath for 1 hour.</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing</name>
+      <text>The ice breaker has advantage on Wisdom (Perception) checks that rely on hearing.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The ice breaker does double damage to objects and structures.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 27 (4d10 + 5) piercing damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the ice breaker can’t bite another target.</text>
+      <attack>Bite|8|4d10 + 5</attack>
+    </action>
+    <action>
+      <name>Swallow</name>
+      <text>The ice breaker makes one bite attack against a Large or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the ice breaker, and it takes 9 (2d8) acid damage at the start of each of the ice breaker’s turns. The ice breaker can have only one target swallowed at a time.</text>
+      <text>    If the ice breaker takes 20 damage or more on a single turn from the swallowed creature, the ice breaker must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the ice breaker. If the ice breaker dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 10 feet of movement, exiting prone.</text>
+    </action>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Mammoth, Undead -->
+    <name>Mammoth, Undead</name>
+    <size>H</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>12 (natural armor)</ac>
+    <hp>87 (7d12 + 42)</hp>
+    <speed>30 ft.</speed>
+    <str>24</str><dex>7</dex><con>22</con><int>1</int><wis>7</wis><cha>3</cha>
+    <resist>cold</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>8</passive>
+    <languages>-</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The undead mammoth does double damage to objects and structures.</text>
+    </trait>
+    <trait>
+      <name>Trampling Charge</name>
+      <text>If the undead mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone.</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the undead mammoth to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the undead mammoth drops to 1 hit point instead.</text>
+    </trait>
+    <action>
+      <name>Gore</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 20 (3d8 + 7) piercing damage plus 3 (1d6) necrotic damage.</text>
+      <attack>Gore|9|3d8 + 7 + 1d6</attack>
+    </action>
+    <action>
+      <name>Stomp</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one prone creature. Hit: 23 (3d10 + 7) bludgeoning damage.</text>
+      <attack>Stomp|9|3d10 + 7</attack>
+    </action>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Nordak -->
+    <name>Nordak</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>neutral</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>30 (4d10 + 8)</hp>
+    <speed>50 ft.</speed>
+    <str>18</str><dex>14</dex><con>15</con><int>3</int><wis>12</wis><cha>7</cha>
+    <resist>cold</resist>
+    <senses></senses><passive>13</passive>
+    <languages>-</languages>
+    <cr>1</cr>
+    <trait>
+      <name>Heated Body</name>
+      <text>The nordak has a very warm inner temperature. If their stomachs are cut open, heat from their innards can keep a humanoid warm for eight hours. Of course, the nordak won’t survive the injury.</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing and Smell</name>
+      <text>The nordak has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
+    </trait>
+    <trait>
+      <name>Pack Animal</name>
+      <text>The nordak can carry 200 lbs. of equipment.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.</text>
+      <attack>Bite|6|2d6 + 4</attack>
+    </action>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Ozlog -->
+    <name>Ozlog</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>neutral</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>15 (2d10 + 4)</hp>
+    <speed>40 ft.</speed>
+    <str>16</str><dex>10</dex><con>14</con><int>1</int><wis>5</wis><cha>3</cha>
+    <immune>cold</immune>
+    <senses>darkvision 60 ft.</senses><passive>7</passive>
+    <languages>-</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Charge</name>
+      <text>If the ozlog moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 3 (1d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The ozlog has advantage on an attack roll against a creature if at least one of the ozlog’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
+    </trait>
+    <action>
+      <name>Gore</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.</text>
+      <attack>Gore|5|1d8 + 3</attack>
+    </action>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: People of the Sky -->
+    <name>People of the Sky</name>
+    <size>H</size>
+    <type>fey</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>103 (9d12 + 45)</hp>
+    <speed>0 ft. fly 80 ft. (hover)</speed>
+    <str>18</str><dex>20</dex><con>20</con><int>18</int><wis>20</wis><cha>18</cha>
+    <skill>Perception +9, Persuasion +8</skill>
+    <resist>acid, cold; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, grappled, poisoned, prone, restrained</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>19</passive>
+    <languages>Elvish, Primordial, Sylvan</languages>
+    <cr>10</cr>
+    <trait>
+      <name>Incorporeal Movement (Light Form)</name>
+      <text>The people of the sky can move through other creatures and objects as if they were difficult terrain. They take 5 (1d10) force damage if they end their turn inside an object.</text>
+    </trait>
+    <trait>
+      <name>Northern Light Form</name>
+      <text>The people of the sky can use an action to change their form into pure light or back into their true form. All their statistics remain the same, except their AC is 17 and they have the incorporeal movement trait. They revert back into their fey form if they are killed. People of the sky often choose vivid colors for their light form such as bright blue, pink, purple, yellow, and green.</text>
+    </trait>
+    <trait>
+      <name>Open Riftgate</name>
+      <text>The people of the sky can open Riftgates at will. However, the Riftgate must already be in place as they can’t create them.</text>
+    </trait>
+    <action>
+      <name>Cold Blast</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 21 (3d10 + 5) cold damage.</text>
+      <attack>Blast|9|3d10 + 5</attack>
+    </action>
+    <action>
+      <name>Lure of the Lights</name>
+      <text>Once a Riftgate is open, the people of the sky can attempt to lure targets into the gate. They send out a pattern of blue and green lights and any creatures within 100 feet must make a DC 16 Wisdom saving throw. If a target fails their saving throw, they are compelled to follow the light patterns into the Riftgate.</text>
+      <text>    If this action fails to lure the target, the people of the sky will speak directly to the creature and attempt to persuade them.</text>
+    </action>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: Polar Bear, Armored -->
+    <name>Polar Bear, Armored</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>neutral</alignment>
+    <ac>16 (half-plate)</ac>
+    <hp>63 (6d10 + 30)</hp>
+    <speed>40 ft.</speed>
+    <str>22</str><dex>12</dex><con>20</con><int>9</int><wis>12</wis><cha>9</cha>
+    <skill>Perception +3</skill>
+    <immune>cold</immune>
+    <senses></senses><passive>13</passive>
+    <languages>Understands Common but can’t speak</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Keen Smell</name>
+      <text>The armored polar bear has advantage on Wisdom (Perception) checks that rely on smell.</text>
+    </trait>
+    <trait>
+      <name>Pack Animal</name>
+      <text>Armored polar bears can carry at least 300 pounds of gear.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The armored polar bear makes two attacks: one with its bite and one with its claws</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) piercing damage.</text>
+      <attack>Bite|8|2d10 + 6</attack>
+    </action>
+    <action>
+      <name>Iron Claw</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) slashing damage.</text>
+      <attack>Claw|8|3d8 + 6</attack>
+    </action>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
+  <monster> <!-- Arctic: The Shapeshifter -->
+    <name>The Shapeshifter</name>
+    <size>M</size>
+    <type>aberration (shapechanger)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>190 (20d8 + 100)</hp>
+    <speed>40 ft.</speed>
+    <str>20</str><dex>18</dex><con>20</con><int>20</int><wis>18</wis><cha>18</cha>
+    <skill>Deception +9, Perception +9, Stealth +9, Survival +9</skill>
+    <vulnerable>fire</vulnerable>
+    <resist>bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune>cold</immune>
+    <conditionImmune>charmed, exhaustion</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>19</passive>
+    <languages>the languages of the form it has assumed</languages>
+    <cr>12</cr>
+    <trait>
+      <name>Ambusher</name>
+      <text>In the first round of a combat, the shapeshifter has advantage on attack rolls against any creature it surprises.</text>
+    </trait>
+    <trait>
+      <name>Assume Form</name>
+      <text>The shapeshifter can assume the appearance of any Medium (or smaller) humanoid or beast it has eaten. It also feels and sounds exactly like the victim, speaking the languages it knows. Only a successful DC 18 Wisdom (Insight) check will reveal it to be a fake.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The shapeshifter has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The shapeshifter regains 10 hit points at the beginning of each of its turns. It is only destroyed if it starts its turn with 0 hit points and doesn’t regenerate.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The shapeshifter can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The shapeshifter can make one attack with its bite and two attacks with tendrils that emerge from inside its body.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) piercing damage.</text>
+      <attack>Bite|10|3d8 + 5</attack>
+    </action>
+    <action>
+      <name>Tendrils</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) slashing damage.</text>
+      <attack>Tendrils|10|3d8 + 5</attack>
+    </action>
+    <reaction>
+      <name>Aversion to Fire</name>
+      <text>If it can, the shapeshifter will use its reaction to move 10 feet away from any fire source.</text>
+    </reaction>
+    <description>Source: Cawood, Monsters of the Wilderness (Arctic, p. ...)</description>
+    <environment>Arctic</environment>
+  </monster>
 		<monster> <!-- Arctic: Snogre -->
 			<name>Snogre</name>
 			<size>L</size>
