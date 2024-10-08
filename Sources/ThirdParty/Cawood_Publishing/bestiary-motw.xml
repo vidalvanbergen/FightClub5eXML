@@ -108,7 +108,7 @@
       <text>Melee Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d12 + 1) bludgeoning damage plus 22 (5d8) force damage.</text>
       <attack>Staff of Myrr|6|1d12 + 1 + 5d8</attack>
     </action>
-    <spells>fire bolt, light, mage hand, message, prestidigitation, expeditious retreat, feather fall, longstrider, magic missile, shield, alter self, darkvision, invisibility, misty step, scorching ray, spider climb, counterspell, fireball, gaseous form, haste, meld into stone, water breathing, fabricate, polymorph, stone shape, animate objects, control wind, modify memory, passwall, raise dead, flesh to stone, wind walk, etherealness, reverse gravity, control weather, mind blank, gate</spells>
+    <spells>fire bolt, light, mage hand, message, prestidigitation, expeditious retreat, feather fall, longstrider, magic missile, shield, alter self, darkvision, invisibility, misty step, scorching ray, spider climb, counterspell, fireball, gaseous form, haste, meld into stone, water breathing, fabricate, polymorph, stone shape, animate objects, control wind, modify memory, passwall, raise dead, flesh to stone, wind walk, etherealness, reverse gravity, control weather, mind blank, gate</spells><slots>4,3,3,3,3,2,2,1,1</slots>
     <description>Oswald Myrr is a legendary wizard and a new member of the Alliance of the Griffon. Some call him the Wizard of Zogg, after his homeland. Oswald currently lives in a secret woodland manor on the continent of Naern. The people of Zogg and Myrr believe the wizard died 500 years ago. However, he is still alive and on a path of redemption. Long ago he was banished from the Wizard Council for his hazardous experiments. After causing so much turmoil, the ancient mage has joined the Alliance to try to make things right. He usually rides a pegasus as his mount.
 
       Source: Cawood, Monsters of the Wilderness p. 147 (ThirdParty)</description>
@@ -233,7 +233,7 @@
       <name>Disrupt Life (Costs 3 Actions)</name>
       <text>Each non-undead creature within 30 feet of Edmund must make a DC 20 Constitution saving throw against this magic, taking 35 (10d6) necrotic damage on a failed save, or half as much damage on a successful one.</text>
     </legendary>
-    <spells>chill touch, fire bolt, mage hand, prestidigitation, ray of frost, detect magic, magic missile, shield, thunderwave, detect thoughts, invisibility, mirror image, animate dead, counterspell, dispel magic, fireball, blight, dimension door, ice storm, cloudkill, contagion, scrying, create undead, disintegrate, globe of invulnerability, finger of death, plane shift, dominate monster, power word stun, power word kill</spells>
+    <spells>chill touch, fire bolt, mage hand, prestidigitation, ray of frost, detect magic, magic missile, shield, thunderwave, detect thoughts, invisibility, mirror image, animate dead, counterspell, dispel magic, fireball, blight, dimension door, ice storm, cloudkill, contagion, scrying, create undead, disintegrate, globe of invulnerability, finger of death, plane shift, dominate monster, power word stun, power word kill</spells><slots>4,3,3,3,3,2,2,1,1</slots>
     <description>Edmund Myrr is Oswald’s father, a broken and disillusioned wizard who turned to the dark side and became a lich.
 
       Dark Path. Fed up with the restrictions of the Wizard Council, Edmund took drastic action. He met with necromancers from the Void and threw himself off Grim Rock. Then the evil spellcasters helped him return to the world as a Lich King. Over a short period of time, Edmund took his place as one of the seven undead Kings of the Void.
@@ -2057,151 +2057,126 @@ ders, and mephits are often found nearby.
   
   <!-- Forest Region -->
   <monster>
-    <name>Volcan</name>
+    <name>The Arborian</name>
     <size>G</size>
     <type>monstrosity (titan)</type>
     <alignment>chaotic evil</alignment>
-    <ac>21 (natural armor)</ac>
-    <hp>313 (19d20 + 114)</hp>
+    <ac>18 (natural armor)</ac>
+    <hp>248 (16d20 + 80)</hp>
     <speed>40 ft.</speed>
-    <str>26</str><dex>17</dex><con>22</con><int>7</int><wis>16</wis><cha>5</cha>
-    <save>Con +13, Wis +10</save>
-    <skill>Perception +10</skill>
-    <immune>fire, poison, psychic;
-bludgeoning, piercing, and slashing from
-nonmagical attacks</immune>
-    <conditionImmune>blinded, charmed, deafened,
-exhausted, poisoned, prone</conditionImmune>
-    <senses>darkvision 120 ft.</senses><passive>20</passive>
-    <languages>Ignan</languages>
-    <cr>24</cr>
-    <trait>
-      <name>Frightful Presence</name>
-      <text>Each creature of Volcan’s choice
-that is within 120 feet of Volcan and aware of it must
-succeed on a DC 16 Wisdom saving throw or become
-frightened for 1 minute. A creature can repeat the
-saving throw at the end of each of its turns, ending
-the effect on itself on a success. If a creature’s saving
-throw is unsuccessful or the effect ends for it, the
-creature is immune to Volcan’s Frightful Presence for
-the next 24 hours.</text>
-    </trait>
+    <str>24</str><dex>17</dex><con>20</con><int>18</int><wis>14</wis><cha>25</cha>
+    <save>Con +12, Wis +9, Cha +14</save>
+    <skill>Deception +14, Perception +9, Persuasion +14</skill>
+    <immune>poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>19</passive>
+    <languages>Terran, Sylvan</languages>
+    <cr>20</cr>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
-      <text>If Volcan fails a saving throw, it can choose to succeed instead.</text>
+      <text>If the Arborian fails a saving throw, it can choose to succeed instead.</text>
     </trait>
     <trait>
-      <name>Heated Body</name>
-      <text>A creature that touches Volcan or hits
-it with a melee attack while within 10 feet of it takes
-7 (2d6) fire damage.</text>
+      <name>Magic Weapons</name>
+      <text>The Arborian’s weapon attacks are magical.</text>
     </trait>
     <trait>
       <name>Siege Monster</name>
-      <text>Volcan does double damage to objects and structures.</text>
+      <text>The Arborian does double damage to objects and structures.</text>
     </trait>
     <action>
       <name>Multiattack</name>
-      <text>Volcan makes two fist attacks and two
-
-fireball attacks.</text>
+      <text>The Arborian makes three melee attacks: one with its bite and two with its hooves.</text>
     </action>
     <action>
-      <name>Fiery Fist</name>
-      <text>Melee Weapon Attack: +15 to hit, reach 5 ft.,
-one target. Hit: 21 (3d8 + 8) bludgeoning damage plus
-9 (2d8) fire damage.</text>
-      <attack>Fiery Fist|15|3d8 + 8</attack>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 29 (4d10 + 7) piercing damage.</text>
+      <attack>Bite|14|4d10 + 7</attack>
     </action>
     <action>
-      <name>Fiery Blast</name>
-      <text>Ranged Weapon Attack: +15 to hit, range
-150/400 ft., one target. Hit: 21 (3d8 + 8) fire damage.</text>
-      <attack>Fiery Blast|15|3d8 + 8</attack>
+      <name>Hooves</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 23 (3d10 + 7) bludgeoning damage.</text>
+      <attack>Hooves|14|3d10 + 7</attack>
+    </action>
+    <action>
+      <name>Euphoria Breath (Recharge 5–6)</name>
+      <text>The Arborian exhales a cloud of euphoria gas in a 90-foot cone. Any creatures in that area must succeed on a DC 18 Wisdom saving throw, or for 1 minute, the target can’t take reactions and must roll a d10 at the start of each turn to determine its behavior during the turn:</text>
+      <text/>
+      <text>d10 Effect</text>
+      <text>1–3 The target takes no action or bonus action and uses all of its movement to move in a random direction</text>
+      <text>4–6 The target doesn’t move and can’t take any actions</text>
+      <text>7–10 The target falls under the affects of a sleep spell</text>
+    </action>
+    <action>
+      <name>Frightful Presence</name>
+      <text>Each creature of the Arborian’s choice that is within 120 feet of the Arborian and aware of it must succeed on a DC 22 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the Arborian’s Frightful Presence for the next 24 hours.</text>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
       <recharge>3/Turn</recharge>
-      <text>Volcan can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Volcan regains spent legendary actions at the start of its turn.</text>
+      <text>The Arborian can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Arborian regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
       <name>Detect</name>
-      <text>Volcan makes a Wisdom (Perception) check.</text>
+      <text>The Arborian makes a Wisdom (Perception) check.</text>
     </legendary>
     <legendary>
-      <name>Toxic Breath Attack (Costs 2 Actions)</name>
-      <text>Volcan
-breathes out noxious gas in a 90-ft. cone. All
-creatures in the area must make a successful DC 20
-Constitution saving throw or take 27 (6d8) poison
-damage, half damage on a success.</text>
+      <name>Entangle (Costs 2 Actions)</name>
+      <text>Casts the entangle spell (DC 16).</text>
     </legendary>
     <legendary>
-      <name>Fiery Blast Attack (Costs 3 Actions)</name>
-      <text>Volcan makes
-a fiery blast attack.</text>
+      <name>Stomp (Costs 2 Actions)</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one prone target. Hit: 23 (3d10 + 7) bludgeoning damage.</text>
     </legendary>
-    <description>Fire and smoke pour from a mountaintop. Villagers
-flee as they fear the gigantic volcano. However, this
-time it is even worse than an eruption. A titan known
-as Volcan has awoken.
-Formidable Foe. This monstrosity is a walking
-volcano and destruction is the only thing it knows.
-The titan hurls fireballs, smashes with fiery fists, and
-breathes out poisonous gases.
+    <description>Living in the most remote of forests is a powerful titan. It closely resembles a giant beast. However, this is no beast, but a terrifying monstrosity known as the Arborian.
 
-Reign of Fire. The only being that seems to calm
-the inferno is the dwarf Aimar (page 132). If it
-wasn’t for the wizened wizard, this monster might just
-destroy the world. It is an almost unstoppable force
-once it arrives on the scene.
-Lava Homeland. Volcan enjoys its home in the
-volcanic region of the world. It bathes in lava and rests
-
-on the sides of mountains. Fire elementals, salaman-
-ders, and mephits are often found nearby.
+      Towering Titan. Most creatures that encounter the Arborian flee at the sight of it. It is so tall it dwarfs any giants. The creature can see above the canopy and is able to see survey the area for miles.
       
-      Source: Cawood, Monsters of the Wilderness p. 130 (ThirdParty)</description>
-    <environment>mountain</environment>
-  </monster> <!-- Mountain: Titan, ...-->
+      All Time High. The Arborian breathes out a strange, colorful cloud. It is filled with gas that causes euphoria. These strange fumes make victims act in abnormal ways.
+
+      Resting Place. The Arborian sleeps underneath an enormous, old tree deep in the woods. Beasts and forest dwellers make sure to stay far away from the titan. Rolen Xiloscient (page 94), a powerful elf mage, is the only creature on good terms with this terror.
+      
+      Source: Cawood, Monsters of the Wilderness p. 92 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Mountain: Titan, The Arborian -->
   <monster>
-    <name>Great Eight, Aimar the Seer</name>
+    <name>Great Eight, Rolen Xiloscient</name>
     <size>M</size>
-    <type>humanoid (dwarf)</type>
-    <alignment>lawful good</alignment>
-    <ac>11 (14 with mage armor)</ac>
-    <hp>82 (11d8 + 33)</hp>
-    <speed>25 ft.</speed>
-    <str>14</str><dex>13</dex><con>17</con><int>30</int><wis>16</wis><cha>18</cha>
-    <save>Con +8, Wis +8, Int +15</save>
-    <skill>Arcana +15, History +15, Insight +8, Perception +8</skill>
-    <sense>darkvision 60 ft.</sense><passive>18</passive>
-    <languages>Common, Dwarvish, Giant, Ignan, Terran</languages>
-    <cr>10</cr>
+    <type>humanoid (high elf)</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>13 (18 with mage armor)</ac>
+    <hp>76 (9d8 + 36)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str><dex>16</dex><con>18</con><int>22</int><wis>16</wis><cha>9</cha>
+    <save>Int +10, Wis +7</save>
+    <skill>Arcana +10, History +10, Nature +10, Perception +7</skill>
+    <sense>darkvision 60 ft.</sense><passive>17</passive>
+    <languages>Common, Elvish, Sylvan, Giant</languages>
+    <cr>8</cr>
     <trait>
-      <name>Dwarven Resilience</name>
-      <text>Aimar has advantage on saves against poison and resistance against poison damage.</text>
+      <name>Fey Ancestry</name>
+      <text>Rolen has advantage on saving throws against being charmed, and magic can’t put him to sleep.</text>
     </trait>
     <trait>
-      <name>Expert Divination</name>
-      <text>When he casts a divination spell of 2nd level or higher using a spell slot, he regains one expended spell slot. The slot he regains must be of a level lower than the spell he cast and can’t be higher than 5th level.</text>
+      <name>Hypnotic Gaze</name>
+      <text>As an action, he can choose one creature that he can see within 5 feet of him. If the target can see or hear him, it must succeed on a Wisdom saving throw against DC 18 or be charmed by him until the end of his next turn. The charmed creature’s speed drops to 0, and the creature is incapacitated and visibly dazed.</text>
+      <text>On subsequent turns, he can use his action to maintain this effect, extending its duration until the end of his next turn. However, the effect ends if he moves more than 5 feet away from the creature, if the creature can neither see nor hear him, or if the creature takes damage.</text>
+      <text>Once the effect ends, or if the creature succeeds on its initial saving throw against this effect, he can’t use this feature on that creature again until he finishes a long rest.</text>
     </trait>
     <trait>
-      <name>Greater Portent</name>
-      <text>After he finishes a long rest, he can roll three d20s and record the rolls. He can replace any attack roll, saving throw, or ability check made by him (or a creature he can see) with any of these rolls. Each foretelling roll can be used only once and any unused rolls are lost when he finishes a long rest.</text>
+      <name>Instinctive Charm</name>
+      <text>When a creature he can see within 30 feet of him makes an attack roll against him, he can use his reaction to divert the attack, provided that another creature is within the attack’s range. The attacker must make a Wisdom saving throw against DC 18. On a failed save, the attacker must target the creature that is closest to it, not including him or itself. If multiple creatures are closest, the attacker chooses which one to target. On a successful save, he can’t use this feature on the attacker again until he finishes a long rest. He must choose to use this feature before knowing whether the attack hits or misses. Creatures that can’t be charmed are immune to this effect.</text>
     </trait>
     <trait>
       <name>Spellcasting</name>
-      <text>Aimar is a 14th-level wizard. His spellcasting ability is Intelligence (spell save DC 23, +15 to hit with spell attacks). He has the following wizard spells prepared:</text>
-      <text>Cantrips (at will): light, mage hand, message, prestidigitation, ray of frost</text>
-      <text>1st level (4 slots): feather fall, fog cloud, mage armor, magic missile</text>
-      <text>2nd level (3 slots): gust of wind, invisibility, misty step</text>
-      <text>3rd level (3 slots): lightning bolt, meld into stone. sleet storm</text>
-      <text>4th level (3 slots): banishment, ice storm, stone shape</text>
-      <text>5th level (3 slots): cone of cold, legend lore, scrying</text>
-      <text>6th level (1 slot): true seeing</text>
-      <text>7th level (1 slot): project image</text>
+      <text>Rolen is a 12th-level wizard. His spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). He has the following wizard spells prepared:</text>
+      <text>Cantrips (at will): chill touch, dancing lights, light, message, prestidigitation</text>
+      <text>1st level (4 slots): charm person, mage armor, magic missile, sleep</text>
+      <text>2nd level (3 slots): crown of madness, hold person, misty step, suggestion</text>
+      <text>3rd level (3 slots): counterspell, fireball, lightning bolt</text>
+      <text>4th level (3 slots): banishment, blight, confusion</text>
+      <text>5th level (3 slots): dominate person, modify memory</text>
+      <text>6th level (1 slot): mass suggestion</text>
     </trait>
     <trait>
       <name>The Third Eye</name>
@@ -2216,24 +2191,23 @@ ders, and mephits are often found nearby.
       <text>He can read any language.</text>
     </trait>
     <trait>
-      <name>See Invisibility</name>
-      <text>He can see invisible creatures and objects within 10 feet of him that are within line of sight.</text>
+      <name>Split Enchantment</name>
+      <text>When he casts an enchantment
+        spell of 1st level or higher that targets only one creature, he can have it target a second creature.</text>
     </trait>
     <action>
-      <name>+2 Warhammer</name>
-      <text>Melee Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage.</text>
-      <attack>+2 Warhammer|9|1d10 + 4</attack>
+      <name>+3 Longsword</name>
+      <text>Melee Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) slashing damage.</text>
+      <attack>+3 Longsword|7|1d10 + 3</attack>
     </action>
-    <spells>light, mage hand, message, prestidigitation, ray of frost, feather fall, fog cloud, mage armor, magic missile, gust of wind, invisibility, misty step, lightning bolt, meld into stone. sleet storm, banishment, ice storm, stone shape, cone of cold, legend lore, scrying, true seeing, project image</spells><slots>4,3,3,3,3,1,1</slots>
-    <description>Living in a cabin high up the mountains is a wise old dwarf wizard. Aimar the Seer watches the world from above. The ancient dwarf is a master of the School of Divination.
-
-      View from the Top. His great view matches his extraordinary vision. He seems able to know of events happening all around the world. Aimar travels regularly from his small cottage in Zogg to his mountaintop home on Ma Zaan by using a Riftgate.
-
-      Ancient Knowledge. Sage and kind, this dwarf is often sought after for advice. Good-aligned beings will even travel from other continents to visit the seer. The mountain Aimar lives on is extremely difficult to traverse. A long winding path is the only route to the top and numerous monsters inhabit the area.
+    <spells>chill touch, dancing lights, light, message, prestidigitation, charm person, mage armor, magic missile, sleep, crown of madness, hold person, misty step, suggestion, counterspell, fireball, lightning bolt, banishment, blight, confusion, dominate person, modify memory, mass suggestion</spells><slots>4,3,3,3,3,1</slots>
+    <description>This opinionated, aggressive elf doesn’t back down from anyone. He is a master of the School of Enchantment. Rolen spends much of his time experimenting with magic in his forest home.
       
-      Source: Cawood, Monsters of the Wilderness p. 132 (ThirdParty)</description>
-    <environment>mountain</environment>
-  </monster> <!-- Mountain: The Great Eight, ... -->
+      Aloof Elf. The high elf isn’t too interested in the opinions of others. He doesn’t get along with many of the other members of the Wizard Council. Rolen doesn’t even keep a home in Zogg anymore, preferring to live in the woods on the beautiful continent of Naern.
+      
+      Source: Cawood, Monsters of the Wilderness p. 94 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Mountain: The Great Eight, Rolen Xiloscient -->
   
   
   
@@ -2445,9 +2419,341 @@ ders, and mephits are often found nearby.
       Source: Cawood, Monsters of the Wilderness p. 121 (ThirdParty)</description>
     <environment>grassland, hill</environment>
   </monster> <!-- Hills/Lakes: Jackalops -->
-  
-  
-  
+  <monster>
+    <name>Kelpie</name>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>27 (5d8 + 5)</hp>
+    <speed>20 ft., swim 40 ft.</speed>
+    <str>16</str><dex>15</dex><con>12</con><int>13</int><wis>16</wis><cha>12</cha>
+    <skill>Perception +5</skill>
+    <resist>cold, poison</resist>
+    <senses>darkvision 60 ft.</senses><passive>15</passive>
+    <languages>Common, Sylvan</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>The kelpie can breathe air or water.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The kelpie has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Mounting Challenges</name>
+      <text>The kelpie can be tamed briefly. A humanoid must make a successful DC 15 Animal Handling check. If successful, the humanoid can command the kelpie for 1 minute. However, the fey will not take any action that would harm itself.</text>
+    </trait>
+    <trait>
+      <name>Shapechange</name>
+      <text>The kelpie can use a bonus action to polymorph into a Large riding horse or back into its true humanoid form. Its statistics, other than its size, are the same in either from. Any equipment it is wearing or carrying isn’t transformed. It reverts back to its humanoid form if it dies.</text>
+    </trait>
+    <trait>
+      <name>Slippery</name>
+      <text>The kelpie has advantage on ability checks and saving throws made to escape a grapple.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.</text>
+      <attack>Bite|5|1d8 + 3</attack>
+    </action>
+    <action>
+      <name>Hooves (Horse Form)</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.</text>
+      <attack>Hooves|5|1d8 + 3</attack>
+    </action>
+    <action>
+      <name>Drown</name>
+      <text>The kelpie can choose to grapple (escape DC 13) a target they hit with a bite attack and drag it underwater.</text>
+    </action>
+    <description>One of the most unusual creatures to encounter in a lake or river is the kelpie. This dark horse appears harmless at first glance. However, the nasty fey will attempt to drown anyone who gets close. Its true form is a fey humanoid that appears quite human.
+
+      Soaked to the Bone. When in horse form it always appears wet. In addition, the humanoid form of the kelpie has smooth, wet, and cold skin. These are clues that point to the creature’s true nature.
+
+      Bridled Rage. Some humanoids will attempt to ride these fey. This is a challenging task and can result in the rider being drowned. If a kelpie is successfully tamed, it only lasts for a brief period of time.
+
+      Water Horses. Horses born from the mating of kelpies and horses can breathe underwater.
+      
+      Source: Cawood, Monsters of the Wilderness p. 122 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Kelpie -->
+  <monster>
+    <name>Knucker</name>
+    <size>H</size>
+    <type>dragon</type>
+    <alignment>chaotic evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>157 (15d12 + 60)</hp>
+    <speed>30 ft., fly 80 ft., swim 40 ft.</speed>
+    <str>22</str><dex>16</dex><con>18</con><int>16</int><wis>18</wis><cha>12</cha>
+    <save>Con +7, Wis +7</save>
+    <skill>Deception +6, Perception +7, Stealth +6</skill>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>17</passive>
+    <languages>Common, Draconic</languages>
+    <cr>9</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>The knucker can breathe air or water.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The knucker makes three attacks: one with its bite and two with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.</text>
+      <attack>Bite|9|2d10 + 6</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.</text>
+      <attack>Claw|9|2d6 + 6</attack>
+    </action>
+    <action>
+      <name>Fog Breath (Recharge 5–6)</name>
+      <text>The knucker exhales poisonous fog in a 60-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one. The area is also heavily obscured for 1 minute; however, the knucker can still see clearly.</text>
+      <attack>Fog Breath||9d6</attack>
+    </action>
+    <description>A strange water dragon lives near lakes and rivers. The monster is known as a knucker and its home is called a knuckerhole. These round holes are filled with water, and nobody has ever discovered how deep they are.
+
+      Perpetual Pandemonium. The water dragons eat livestock, beasts, and humanoids. They don’t usually live too far from humanoid settlements so they can have access to a constant supply of food.
+
+      Foggy Ideas. Knuckers are able to breathe out a large cloud of fog. This makes it very difficult to see anything and the monster can make its escape if necessary.
+
+      Unwanted Attention. Most of these dragons found near rural communities get a lot of attention. Townsfolk will organize and send out armed militia to deal with the threat. They often attempt to destroy the monster’s knuckerhole.
+      
+      Source: Cawood, Monsters of the Wilderness p. 123 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Knucker -->
+  <monster>
+    <name>Odd Sod</name>
+    <size>S</size>
+    <type>plant</type>
+    <alignment>neutral evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>9 (2d6 + 2)</hp>
+    <speed>30 ft., burrow 20 ft.</speed>
+    <str>12</str><dex>14</dex><con>12</con><int>5</int><wis>14</wis><cha>5</cha>
+    <skill>Perception +4</skill>
+    <senses>tremorsense 30 ft.</senses><passive>14</passive>
+    <languages>-</languages>
+    <cr>1/4</cr>
+    <trait>
+      <name>Hills and Grasslands Camouflage</name>
+      <text>The odd sod has advantage on Dexterity (Stealth) checks made to hide in hills or grassland.</text>
+    </trait>
+    <trait>
+      <name>Lose Your Way</name>
+      <text>If a creature steps on an odd sod they must make a successful DC 12 Wisdom saving throw or begin to lose their way. The creature wanders aimlessly in the wrong direction for 1d4 hours.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: — +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.</text>
+      <attack>Bite|3|1d6 + 1</attack>
+    </action>
+    <description>Hidden on hills or in open fields are a strange type of fey. Odd sods resemble a clump of grass and dirt with two legs. They will often be found in large numbers, burying their feet in the ground and appearing to be ordinary wild grass.
+      
+      Natural Wisdom. Odd sods aren’t very bright, but they are wiser than you’d imagine. They are rather perceptive and use their instincts to survive.
+
+      Strange Sounds. This creature makes sounds like frogs, crickets, and other small beasts. If those creatures wander too close, they become a tasty meal.
+      
+      Hidden from View. Odd sods will also feed on beasts from the surrounding area. They will eat cattle, rabbits, badgers, and rodents. Some farming communities have been decimated by these monsters. The cause of such attacks can go undiscovered for months, or even years.
+      
+      Source: Cawood, Monsters of the Wilderness p. 124 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Odd Sod -->
+  <monster>
+    <name>Sinker</name>
+    <size>L</size>
+    <type>fey</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>52 (7d10 + 14)</hp>
+    <speed>0 ft., swim 40 ft.</speed>
+    <str>17</str><dex>13</dex><con>15</con><int>13</int><wis>15</wis><cha>9</cha>
+    <skill>Perception +4, Stealth +3</skill>
+    <senses>darkvision 60 ft.</senses><passive>14</passive>
+    <languages>Sylvan</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Lake Camouflage</name>
+      <text>The sinker has advantage on Dexterity (Stealth) checks made to hide on the bottom of lakes and rivers.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The sinker has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Water Breathing</name>
+      <text>The sinker can breathe only underwater.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The sinker makes one bite attack and one unarmed attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage.</text>
+      <attack>Bite|5|2d6 + 2</attack>
+    </action>
+    <action>
+      <name>Unarmed Attack</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage. If the target is Medium or smaller, it is grappled (DC 13) and pulled 5 feet toward the sinker. Until this grapple ends, the target is restrained, the sinker tries to drown it, and the sinker can only grapple one more target.</text>
+      <attack>Unarmed Attack|5|2d6 + 3</attack>
+    </action>
+    <description>As the sun shines down, a group of travelers rests on the shore of a peaceful lake. Suddenly a piercing scream fills the air. One of their companions disappears under the water, struggling for their life. A sinker has grabbed another innocent victim. 
+      
+      Bottom Feeder. These disgusting fey live on the bottom of lakes and constantly hunt for new sources of food. They walk around, watching creatures swimming above them. Then they’ll reach up with their long arms and grab their prey.
+      
+      Surprise Attack. Hiding in the lake, sinkers are able to surprise the majority of their victims. They will often blend in with underwater plants such as reeds and other grasses.
+      
+      Out of Sight. Sinkers make their lairs in many different places. Some sinkers live in sunken boats, others live in caves dug into the side of riverbanks.
+      
+      Source: Cawood, Monsters of the Wilderness p. 125 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Sinker -->
+  <monster>
+    <name>Swarm of Zombies</name>
+    <size>H</size>
+    <type>swarm of medium zombies (undead)</type>
+    <alignment>neutral evil</alignment>
+    <ac>9</ac>
+    <hp>38 (4d12 + 12)</hp>
+    <speed>30 ft.</speed>
+    <str>16</str><dex>9</dex><con>17</con><int>3</int><wis>6</wis><cha>5</cha>
+    <save>Wis +0</save>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>8</passive>
+    <languages>the languages it knew in life</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the zombie swarm has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The zombie swarm can occupy another creature’s space and vice versa, and it can move through any opening large enough for a Medium zombie. The zombie swarm can’t regain hit points or gain temporary hit points.</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the zombie swarm to 0 hit points, it must make a Constitution saving throw with a DC of 1 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie swarm drops to 1 hit point instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The swarm of zombies makes four melee attacks.</text>
+    </action>
+    <action>
+      <name>Improvised Weapon</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage.</text>
+      <attack>Improvised Weapon|5|1d4 + 3</attack>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.</text>
+      <attack>Slam|5|1d8 + 3</attack>
+    </action>
+    <description>Hiding in a small, abandoned village seemed like a good idea. However, something is obviously wrong. Strange groaning sounds can be heard throughout the rural settlement. Then the adventuring party begins to see humanoid shapes moving in the moonlight. A swarm of zombies has attacked the village.
+
+      Wave after Wave. The walking dead will raid wilderness settlements, causing absolute chaos. At times, several swarms of zombies will work together.
+      
+      Resourceful Raiders. Zombies can attack by slamming body parts into their opponents. However, the undead monsters will also pick up objects to use as improvised weapons. Some will even use limbs from other zombies or other humanoids.
+
+      Mission Control. Most swarms are mindless and just wander aimlessly. There are also swarms under the control of necromancers or other foul beings.
+
+      Undead Nature. A swarm of zombies doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 126 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Swarm of Zombies -->
+  <monster>
+    <name>Trow</name>
+    <size>S</size>
+    <type>fey</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14</ac>
+    <hp>10 (3d6)</hp>
+    <speed>30 ft.</speed>
+    <str>7</str><dex>18</dex><con>11</con><int>12</int><wis>14</wis><cha>12</cha>
+    <skill>Deception +3, Perception +4, Sleight of Hand +6, Stealth +6</skill>
+    <senses>darkvision 60 ft.</senses><passive>14</passive>
+    <languages>Common, Sylvan</languages>
+    <cr>1</cr>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>The trow has advantage on saving throws against being charmed, and magic can’t put it to sleep.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The trow’s innate spellcasting ability is Wisdom (spell save DC 12). It can innately cast the following spells, requiring no material components:</text>
+      <text>At will: minor illusion</text>
+      <text>1/day each: darkness, silent image</text>
+    </trait>
+    <trait>
+      <name>Nimble Escape</name>
+      <text>The trow can take the Disengage or Hide action as a bonus action on each of its turns.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 piercing damage and 3 (1d6) poison damage.</text>
+      <attack>Bite|2|1d6</attack>
+    </action>
+    <action>
+      <name>Sling</name>
+      <text>Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.</text>
+      <attack>Sling|6|1d6 + 4</attack>
+    </action>
+    <spells>minor illusion, darkness, silent image</spells>
+    <description>This trickster fey lives in remote parts of the hills. They are small fey and have been mistaken for brownies or gnomes before.
+
+      Nocturnal Nightmares. Trow are nocturnal and aren’t usually seen during the day. They are also quite introverted and don’t like to socialize. However, many are able to infiltrate humanoid communities and spread fake news. The tricksters have even spread false rumors that it is dangerous to see trow or even to speak about them.
+
+      Music Lovers. All trow enjoy music, especially performances with string music. Now and then, they will kidnap talented bards and keep them for personal entertainment. Some of these musicians are never seen again. Other bards return to their communities, unable to remember what happened to them.
+
+      Mound on the Moors. Most trow make their homes in earthen mounds in the hills. Other creatures that live nearby, such as badgers and foxes, can’t stand the little troublemakers. They detest the noises and odors that come from the trow lairs.
+      
+      Source: Cawood, Monsters of the Wilderness p. 127 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Trow -->
+  <monster>
+    <name>War Boar</name>
+    <size>M</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>14 (studded leather)</ac>
+    <hp>27 (5d8 + 5)</hp>
+    <speed>40 ft.</speed>
+    <str>14</str><dex>14</dex><con>13</con><int>2</int><wis>9</wis><cha>5</cha>
+    <senses/><passive>9</passive>
+    <languages>-</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Charge</name>
+      <text>If the war boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 4 (1d8) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
+    </trait>
+    <trait>
+      <name>Relentless (Recharges after a Short Rest)</name>
+      <text>If the war boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.</text>
+    </trait>
+    <action>
+      <name>Tusk</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.</text>
+      <attack>Tusk|4|1d8 + 2</attack>
+    </action>
+    <description>A posse of small humanoids riding sturdy boar rides over a nearby hill. They chase a group of frightened goblins. Halfling cowboys often ride these war boars as mounts.
+
+      Tough-Skinned. These beasts are tough and can be ridden over long distances. They are also surprisingly quick on their feet. Their halfling riders choose the toughest, strongest boars they can find. To give them more protection, their riders fit them with studded leather armor.
+
+      Rough Riders. A number of farms and ranches have war boar patrols and others end up in elite cavalry units. They were originally wild beasts and some don’t enjoy the civilized life. There are stories of war boars going wild and rampaging through farms and ranches.
+
+      Favored Food. War boars usually feed on nuts, berries, seeds, roots, bark, leaves, earthworms, frogs, rodents, lizards, and snakes. However, they will take on larger prey.
+      
+      Source: Cawood, Monsters of the Wilderness p. 128 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: War Boar -->
   <!-- Mountain Region -->
   <monster>
     <name>Volcan</name>
@@ -2465,10 +2771,6 @@ ders, and mephits are often found nearby.
     <senses>darkvision 120 ft.</senses><passive>20</passive>
     <languages>Ignan</languages>
     <cr>24</cr>
-    <trait>
-      <name>Frightful Presence</name>
-      <text>Each creature of Volcan’s choice that is within 120 feet of Volcan and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is unsuccessful or the effect ends for it, the creature is immune to Volcan’s Frightful Presence for the next 24 hours.</text>
-    </trait>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <text>If Volcan fails a saving throw, it can choose to succeed instead.</text>
@@ -2489,6 +2791,10 @@ ders, and mephits are often found nearby.
       <name>Fiery Fist</name>
       <text>Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 21 (3d8 + 8) bludgeoning damage plus 9 (2d8) fire damage.</text>
       <attack>Fiery Fist|15|3d8 + 8</attack>
+    </action>
+    <action>
+      <name>Frightful Presence</name>
+      <text>Each creature of Volcan’s choice that is within 120 feet of Volcan and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is unsuccessful or the effect ends for it, the creature is immune to Volcan’s Frightful Presence for the next 24 hours.</text>
     </action>
     <action>
       <name>Fiery Blast</name>
