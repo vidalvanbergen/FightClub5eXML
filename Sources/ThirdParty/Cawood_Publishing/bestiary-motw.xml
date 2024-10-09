@@ -341,7 +341,7 @@
     <str>14</str><dex>16</dex><con>17</con><int>25</int><wis>16</wis><cha>18</cha>
     <save>Con +7, Int +11</save>
     <skill>Arcana +11, History +11, Investigation +11, Perception +7</skill>
-    <sense>darkvision 90 ft.</sense><passive>17</passive>
+    <senses>darkvision 90 ft.</senses><passive>17</passive>
     <languages>Aquan, Common, Sahuagin</languages>
     <cr>7</cr>
     <trait>
@@ -399,7 +399,7 @@
     <speed>30 ft., swim 50 ft.</speed>
     <str>14</str><dex>15</dex><con>12</con><int>10</int><wis>12</wis><cha>10</cha>
     <skill>Perception +3, Stealth +4</skill>
-    <sense>darkvision 90 ft.</sense><passive>13</passive>
+    <senses>darkvision 90 ft.</senses><passive>13</passive>
     <languages>Aquan, Common, Sahuagin</languages>
     <cr>1</cr>
     <trait>
@@ -448,7 +448,7 @@
     <speed>30 ft., swim 40 ft.</speed>
     <str>22</str><dex>15</dex><con>20</con><int>17</int><wis>16</wis><cha>19</cha>
     <skill>History +6, Intimidation +7, Perception +6</skill>
-    <sense>darkvision 90 ft.</sense><passive>16</passive>
+    <senses>darkvision 90 ft.</senses><passive>16</passive>
     <languages>Aquan, Common, Sahuagin</languages>
     <cr>7</cr>
     <trait>
@@ -1790,7 +1790,7 @@
     <str>9</str><dex>16</dex><con>17</con><int>24</int><wis>9</wis><cha>7</cha>
     <save>Int +11, Wis +3, Cha +2</save>
     <skill>Arcana +11, History +11, Perception +3</skill>
-    <sense>darkvision 60 ft.</sense><passive>13</passive>
+    <senses>darkvision 60 ft.</senses><passive>13</passive>
     <languages>Common, Gnomish, Terran</languages>
     <cr>9</cr>
     <trait>
@@ -2255,7 +2255,7 @@
     <str>10</str><dex>16</dex><con>18</con><int>22</int><wis>16</wis><cha>9</cha>
     <save>Int +10, Wis +7</save>
     <skill>Arcana +10, History +10, Nature +10, Perception +7</skill>
-    <sense>darkvision 60 ft.</sense><passive>17</passive>
+    <senses>darkvision 60 ft.</senses><passive>17</passive>
     <languages>Common, Elvish, Sylvan, Giant</languages>
     <cr>8</cr>
     <trait>
@@ -2396,7 +2396,7 @@
       
       Source: Cawood, Monsters of the Wilderness p. 112 (ThirdParty)</description>
     <environment>grassland, hill</environment>
-  </monster> <!-- Mountain: Titan, The Hakkon -->
+  </monster> <!-- Hills/Lakes: Titan, The Hakkon -->
   <monster>
     <name>Great Eight, Jacob Ladda</name>
     <size>M</size>
@@ -2408,7 +2408,7 @@
     <str>10</str><dex>17</dex><con>15</con><int>26</int><wis>16</wis><cha>7</cha>
     <save>Con +6, Wis +7, Int +12</save>
     <skill>Arcana +12, History +12, Perception +7, Stealth +7</skill>
-    <sense/><passive>17</passive>
+    <senses/><passive>17</passive>
     <languages>Common, Dwarvish, Giant, Gnomish, Orcish, Terran</languages>
     <cr>9</cr>
     <trait>
@@ -2451,10 +2451,345 @@
       
       Source: Cawood, Monsters of the Wilderness p. 114 (ThirdParty)</description>
     <environment>grassland, hill</environment>
-  </monster> <!-- Mountain: The Great Eight, Jacob Ladda -->
-  
-  
-  
+  </monster> <!-- Hills/Lakes: The Beastmaster -->
+  <monster>
+    <name>The Beastmaster</name>
+    <size>M</size>
+    <type>humanoid (human, shapechanger)</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>14 (hide) in humanoid form, 15 (natural armor) in bear form</ac>
+    <hp>133 (14d8 + 70)</hp>
+    <speed>30 ft., (40 ft., climb 40 ft. in bear form)</speed>
+    <str>20</str><dex>14</dex><con>20</con><int>12</int><wis>19</wis><cha>9</cha>
+    <skill>Athletics +8, Animal Handling +7, Perception +7, Survival +7</skill>
+    <senses/><passive>17</passive>
+    <languages>Common, Primordial (can’t speak in bear form)</languages>
+    <cr>7</cr>
+    <trait>
+      <name>Animal Awareness</name>
+      <text>Any beasts that spend at least a week in his company have their Intelligence and Wisdom scores raised to a minimum of 10.</text>
+    </trait>
+    <trait>
+      <name>Brave</name>
+      <text>The Beastmaster has advantage on saving throws against being frightened.</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing, Sight, and Smell</name>
+      <text>The Beastmaster has advantage on Wisdom (Perception) checks that rely on hearing, sight, and smell.</text>
+    </trait>
+    <trait>
+      <name>Reckless</name>
+      <text>At the start of his turn, the Beastmaster can gain advantage on all melee weapon attack rolls, during that turn, but attack rolls against him have advantage until the start of his next turn.</text>
+    </trait>
+    <trait>
+      <name>Shapechange</name>
+      <text>The Beastmaster can use his action to polymorph into a Large bear, or back to his true form, which is humanoid. His statistics are the same in each form. Any equipment he is wearing or carrying isn’t transformed. He reverts to his true form if he dies.</text>
+    </trait>
+    <trait>
+      <name>Speak with Beasts</name>
+      <text>The Beastmaster can communicate with beasts as if they shared a language.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Beastmaster makes two attacks, only one of which can be a bite attack.</text>
+    </action>
+    <action>
+      <name>Bite (Bear Form Only)</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing damage.</text>
+      <attack>Bite|8|1d10 + 5</attack>
+    </action>
+    <action>
+      <name>Claw (Bear Form Only)</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage.</text>
+      <attack>Claw|8|2d8 + 5</attack>
+    </action>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage.</text>
+      <attack>Quarterstaff|8|1d8 + 5</attack>
+    </action>
+    <action>
+      <name>Summon Bears (1/day)</name>
+      <text>The Beastmaster can summon 1d4 brown bears. They arrive in 1d4 turns and obey the Beastmaster’s commands.</text>
+    </action>
+    <spells/><slots/>
+    <description>The Beastmaster is a human who has the ability to change into a large bear. A cousin of the werebears, he gets along with most non-evil lycanthropes. The tall, muscled man protects the hill region from evil creatures. He especially dislikes goblins, orcs, and worgs.
+
+      Wild Man. The Beastmaster usually appears as a strongly built man with a black beard and long black hair. He resides in a large home in the hills.
+
+      Wilderness Home. Many animals live at the Beastmaster’s wooden lodge. Dogs, goats, sheep, and other beasts live with the solitary human. However, they are no ordinary beasts. Their time with the extraordinary shapechanger has raised their awareness and intellectual capacity.
+
+      Friends in Need. A few adventurers have sought refuge at the Beastmaster’s lodge. These heroes reported that the shapechanger was a kind but aloof host.
+      
+      Source: Cawood, Monsters of the Wilderness p. 115 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: The Beastmaster -->
+  <monster>
+    <name>Demon Goat</name>
+    <size>L</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>68 (8d10 + 24)</hp>
+    <speed>40 ft., climb 30 ft.</speed>
+    <str>20</str><dex>18</dex><con>17</con><int>11</int><wis>12</wis><cha>3</cha>
+    <skill>Perception +3</skill>
+    <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses><passive>13</passive>
+    <languages>Abyssal, telepathy 120 ft.</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The demon has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The demon regains 10 hit points at the start of its turn if it has at least 1 hit point.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The demon makes two attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) piercing damage.</text>
+      <attack>Bite|7|1d12 + 5</attack>
+    </action>
+    <action>
+      <name>Ram</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) bludgeoning damage.</text>
+      <attack>Ram|7|1d12 + 5</attack>
+    </action>
+    <spells/><slots/>
+    <description>Goats are one of the oldest domesticated animals in the world. Their milk, skin, meat, and fur have been used for many years to support humanoid communities. This goat is an exception, a horrifying fiend that prowls the hills.
+
+      Horned Horror. Like other goats, these monsters will eat absolutely anything and everything. Searching through the contents of their stomachs one can discover coins or even magic items.
+
+      Night Terror. The demon goat is most active at night. Hiding in the inky blackness it can surprise most prey because of its ability to see in the dark.
+
+      Alchemical Aids. Some witches, hags, cultists, and alchemists use the parts of a demon goat to create bizarre potions. Its milk is said to enable the drinker to speak Abyssal for a day. At times, evildoers will hire an unsuspecting party to kill a demon goat in order to use the fiend as an alchemical resource.
+      
+      Source: Cawood, Monsters of the Wilderness p. 116 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Demon Goat -->
+  <monster>
+    <name>Grabbit</name>
+    <size>L</size>
+    <type>fey</type>
+    <alignment>neutral evil</alignment>
+    <ac>14</ac>
+    <hp>66 (7d10 + 28)</hp>
+    <speed>40 ft.</speed>
+    <str>17</str><dex>18</dex><con>18</con><int>11</int><wis>15</wis><cha>6</cha>
+    <skill>Perception +3</skill>
+    <senses>darkvision 90 ft.</senses><passive>13</passive>
+    <languages>Sylvan</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The grabbit’s innate spellcasting ability is Wisdom (spell save DC 12). It can innately cast the following spells, requiring no components:</text>
+      <text>At will: knock</text>
+      <text>3/day each: invisibility</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The grabbit has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Standing Leap</name>
+      <text>The grabbit’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The grabbit makes two attacks: only one of which can be a bite attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.</text>
+      <attack>Bite|5|1d10 + 3</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage and the target grappled (escape DC 14).</text>
+      <attack>Claws|5|1d10 + 3</attack>
+    </action>
+    <spells>knock, invisibility</spells>
+    <description>Several people have gone missing from an isolated village in the hills. The only clues are large rabbit-like footprints in the mud. An elder says she believes a grabbit is at work. The giant purple fey are a sight to behold, however many folks don’t believe the stories about them.
+      
+      Kidnapping Rabbits. These foul fey are infamous for kidnapping people from rural areas. They are often hired by witches, hags, necromancers, and other evildoers.
+
+      Disappearing Act. The grabbit is able to get around by using its ability to turn invisible. Many villagers question their vision when they see the giant purple rabbit suddenly appear in front of them.
+      
+      Feared Fey. Other fey aren’t fond of these cowardly scoundrels. The Seelie Court sends out fey rangers to hunt them down when they’re spotted. At times, the trackers will follow grabbits into the ordinary world.
+      
+      Source: Cawood, Monsters of the Wilderness p. 117 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Grabbit -->
+  <monster>
+    <name>Grim Giant</name>
+    <size>H</size>
+    <type>giant</type>
+    <alignment>neutral evil</alignment>
+    <ac>14 (hide armor)</ac>
+    <hp>138 (12d12 + 60)</hp>
+    <speed>40 ft.</speed>
+    <str>23</str><dex>12</dex><con>21</con><int>10</int><wis>14</wis><cha>8</cha>
+    <skill>Athletics +9, Perception +5, Stealth +4</skill>
+    <senses>darkvision 60 ft.</senses><passive>15</passive>
+    <languages>Common, Giant</languages>
+    <cr>7</cr>
+    <trait>
+      <name>Hill Camouflage</name>
+      <text>The giant has advantage on Stealth (Dexterity) checks to hide at the top of hills, or similar terrain. It crouches down and blends in with the surroundings.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The giant makes two fist attacks.</text>
+    </action>
+    <action>
+      <name>Fist</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.</text>
+      <attack>Fist|9|3d8 + 6</attack>
+    </action>
+    <action>
+      <name>Rock</name>
+      <text>Ranged Weapon Attack: +4 to hit, range 60/240 ft., one target. Hit: 22 (3d10 + 6) bludgeoning damage.</text>
+      <attack>Rock|4|3d10 + 6</attack>
+    </action>
+    <reaction>
+      <name>Rock Catchin</name>
+      <text>If a rock or similar object is hurled at the giant., the giant can, with a successful DC 13 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.</text>
+    </reaction>
+    <spells/>
+    <description>A storm crackles over large, rolling hills. Thunder booms and lightning paints the sky. Suddenly, one of the hills begins to move. A creature had been lying down on the crest and it slowly stands up. The grim giant uses the terrain of this region to hide its bulk.
+
+      Mister Crouch. These giants can crouch down on the top of hills for hours and hours. They are smarter than most their kind and are very aware of their surroundings.
+
+      Surprise Party. Grim giants will often ambush caravans of wagons or attack villages at night. They are more aggressive than most of their giant cousins.
+
+      Hungry Hunters. Able to hunt large prey, these giants are a threat to the entire region. However, if they can’t find bigger prey, they will eat cattle, horses, and other beasts.
+      
+      Source: Cawood, Monsters of the Wilderness p. 118 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Grim Giant -->
+  <monster>
+    <name>Hill Hound</name>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>45 (6d10 + 12)</hp>
+    <speed>35 ft.</speed>
+    <str>16</str><dex>14</dex><con>14</con><int>3</int><wis>12</wis><cha>4</cha>
+    <immune>poison</immune>
+    <conditionImmune>charmed, frightened, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>11</passive>
+    <languages>-</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the hound has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Turn Resistance</name>
+      <text>The hill hound has advantage on saving throws against any effect that turns undead.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft. one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) necrotic damage.</text>
+      <attack>Bite|5|1d8 + 3 + 2d6</attack>
+    </action>
+    <action>
+      <name>Howl of the Hills (Recharge 2–3)</name>
+      <text>Each creature within 60 ft. of the hound and is able to hear it must succeed on a DC 13 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the hound’s Fearful Presence for the next 24 hours.</text>
+    </action>
+    <description>Years ago, an evil noble sold his soul to a devil. During his life he did monstrous things, including killing his wife. The night he died; a large black dog appeared outside his tomb. This is the hill hound, created by a devil from the twisted soul of the evil man. Distant howls and strange sightings haunt the area near the man’s country estate.
+
+      Devilish Deeds. When the noble had gained assistance from the fiend, his soul was the eternal payment. Now in its undead form, the hound carries out the wishes of the nefarious devil.
+
+      Family Curse. What the noble didn’t know was the deal included all of his family. He didn’t read the fine print in the contract. Now all his family and future generations come back from the dead as hill hounds.
+
+      Moor Problems. These hounds are active on a particularly gloomy moor with imposing hills. Gray clouds seem to hang permanently over the place. The barren land is also dotted with patches of dangerous quicksand.
+      
+      Undead Nature. A hill hound doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 119 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: Hill Hound -->
+  <monster>
+    <name>The Hunter</name>
+    <size>L</size>
+    <type>aberration</type>
+    <alignment>chaotic evil</alignment>
+    <ac>19 (natural armor)</ac>
+    <hp>133 (14d10 + 56)</hp>
+    <speed>40 ft., climb 35 ft.</speed>
+    <str>20</str><dex>20</dex><con>19</con><int>18</int><wis>19</wis><cha>6</cha>
+    <skill>Acrobatics +10, Athletics +10, Perception +9, Stealth +10, Survival +9</skill>
+    <resist>bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhausted, frightened, poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses><passive>19</passive>
+    <languages>all, telepathy 120 ft.</languages>
+    <cr>13</cr>
+    <trait>
+      <name>Fear the Reaper</name>
+      <text>Any beasts stay at least a mile away from the Hunter. The instinctively fear the aberration, sensing its dark power.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The Hunter has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Magic Weapons</name>
+      <text>The Hunter’s weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The Hunter regains 10 hit points at the start of its turn if it has at least 1 hit point.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The Hunter can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the Hunter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Hunter makes one bite attack and two claw attacks.</text>
+    </action>
+    <action>
+      <name>Bite (Bear Form Only)</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage.</text>
+      <attack>Bite|10|2d10 + 5</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage.</text>
+      <attack>Claw|10|2d8 + 5</attack>
+    </action>
+    <action>
+      <name>Telekinetic Control</name>
+      <text>The Hunter can target up to three creatures within 90 feet and cause their ranged weapons to malfunction and disrupt spellcasting. Creatures targeted must make successful DC 18 Wisdom saves or have their ranged weapons, or spells of 4th level or lower fail. Creatures can repeat the saving throw again at the end of each of the Hunter’s turns.</text>
+    </action>
+    <reaction>
+      <name>Bloody Rampage</name>
+      <text>When the Hunter takes damage, it makes one attack with its unarmed attack against a random creature within its reach.</text>
+    </reaction>
+    <spells/><slots/>
+    <description>The Hunter arrived in this world from a faraway land. It crossed through a Riftgate into the hills. A highly intelligent, resourceful monster; it has quickly left a trail of destruction in its wake. It is eager to find any way back home.
+
+      Six-Legged Freak. It has six legs and can stand up on its back two legs. The Hunter is also able to use its front two legs to manipulate objects. It is naturally a subterranean creature and lives in an extensive underground lair. At times it will keep victims tied up in the massive cavern. An intricate system of tunnels enables it to travel around the region.
+
+      Unwanted Disruptions. The Hunter is able to harness psionic power to disrupt ranged weapons and spells. Archers and spellcasters are very surprised when encountering this monster.
+      
+      Source: Cawood, Monsters of the Wilderness p. 120 (ThirdParty)</description>
+    <environment>grassland, hill</environment>
+  </monster> <!-- Hills/Lakes: The Hunter -->
   <monster>
     <name>Jackalops</name>
     <size>S</size>
@@ -2945,7 +3280,7 @@
     <str>14</str><dex>13</dex><con>17</con><int>30</int><wis>16</wis><cha>18</cha>
     <save>Con +8, Wis +8, Int +15</save>
     <skill>Arcana +15, History +15, Insight +8, Perception +8</skill>
-    <sense>darkvision 60 ft.</sense><passive>18</passive>
+    <senses>darkvision 60 ft.</senses><passive>18</passive>
     <languages>Common, Dwarvish, Giant, Ignan, Terran</languages>
     <cr>10</cr>
     <trait>
