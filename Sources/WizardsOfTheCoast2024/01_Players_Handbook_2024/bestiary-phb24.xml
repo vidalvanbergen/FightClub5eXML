@@ -5,8 +5,8 @@
     <size>M</size>
     <type>aberration</type>
     <alignment>neutral</alignment>
-    <ac>15</ac>
-    <hp>44</hp>
+    <ac>11</ac>
+    <hp>40</hp>
     <speed>30 ft., fly 30 ft.(hover; Beholderkin only)</speed>
     <str>16</str>
     <dex>10</dex>
@@ -14,12 +14,12 @@
     <int>16</int>
     <wis>10</wis>
     <cha>6</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>10</passive>
     <languages>Deep Speech, understands the languages you know</languages>
@@ -44,6 +44,7 @@
     <trait>
       <name>Whispering Aura (Mind Flayer Only)</name>
       <text>At the start of each of the spirit's turns, the spirit emits psionic energy if it doesn't have the Incapacitated condition. Wisdom Saving Throw: DC equals your spell save DC, each creature (other than you) within 5 feet of the spirit. Failure: 2d6 Psychic damage.</text>
+      <attack>Whispering Aura||2d6</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -51,15 +52,18 @@
     </action>
     <action>
       <name>Claw (Slaad Only)</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d10 + 3 + summonSpellLevel Slashing damage, and the target can't regain Hit Points until the start of the spirit's next turn.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d10 + 3 + the spell's level Slashing damage, and the target can't regain Hit Points until the start of the spirit's next turn.</text>
+      <attack>Claw|0|1d10+3</attack>
     </action>
     <action>
       <name>Eye Ray (Beholderkin Only)</name>
-      <text>Ranged Attack Roll: Bonus equals your spell attack modifier, range 150 ft. Hit: 1d8 + 3 + summonSpellLevel Psychic damage.</text>
+      <text>Ranged Attack Roll: Bonus equals your spell attack modifier, range 150 ft. Hit: 1d8 + 3 + the spell's level Psychic damage.</text>
+      <attack>Eye Ray|0|1d8+3</attack>
     </action>
     <action>
       <name>Psychic Slam (Mind Flayer Only)</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + summonSpellLevel Psychic damage.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + the spell's level Psychic damage.</text>
+      <attack>Psychic Slam|0|1d8+3</attack>
     </action>
   </monster>
   <monster>
@@ -68,7 +72,7 @@
     <type>construct</type>
     <alignment>unaligned</alignment>
     <ac>15</ac>
-    <hp>15</hp>
+    <hp>10</hp>
     <speed>30 ft.</speed>
     <str>16</str>
     <dex>10</dex>
@@ -76,17 +80,17 @@
     <int>3</int>
     <wis>3</wis>
     <cha>1</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <passive>6</passive>
     <languages>understands the languages you know</languages>
     <cr>0</cr>
-    <description>Source:	Player's Handbook 2024 p. 240</description>
+    <description>Source:	Player's Handbook 2024 p. 241</description>
     <trait>
       <name>Proficiency Bonus</name>
       <text>equals your Proficiency Bonus</text>
@@ -102,6 +106,9 @@
     <action>
       <name>Slam</name>
       <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: Force damage equal to 1d4 + 3 + your spellcasting ability modifier (Medium or smaller), 2d6 + 3 + your spellcasting ability modifier (Large), or 2d12 + 3 + your spellcasting ability modifier (Huge).</text>
+      <attack>Slam (Medium or smaller)|0|1d4+3</attack>
+      <attack>Slam (Large)|0|2d6+3</attack>
+      <attack>Slam (Huge)|0|2d12+3</attack>
     </action>
   </monster>
   <monster>
@@ -118,15 +125,15 @@
     <int>6</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save></save>
+    <save/>
     <skill>athletics +5, perception +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>13</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/2</cr>
     <description>Source:	Player's Handbook 2024 p. 346</description>
     <trait>
@@ -140,13 +147,13 @@
     <action>
       <name>Fist</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Bludgeoning damage.</text>
-      <attack>Fist|5|1d4 + 3</attack>
+      <attack>Fist|5|1d4+3</attack>
     </action>
     <action>
       <name>Rock (Recharge 6)</name>
       <recharge>D6</recharge>
       <text>Ranged Attack Roll: +5, range 25/50 ft. Hit: 10 (2d6 + 3) Bludgeoning damage.</text>
-      <attack>Rock|5|2d6 + 3</attack>
+      <attack>Rock|5|2d6+3</attack>
     </action>
   </monster>
   <monster>
@@ -163,12 +170,12 @@
     <int>2</int>
     <wis>12</wis>
     <cha>5</cha>
-    <save></save>
+    <save/>
     <skill>perception +3</skill>
     <resist>poison</resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 30 ft.</senses>
     <passive>13</passive>
     <languages>None</languages>
@@ -198,15 +205,15 @@
     <int>2</int>
     <wis>12</wis>
     <cha>4</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 60 ft.</senses>
     <passive>11</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 346</description>
     <trait>
@@ -233,12 +240,12 @@
     <int>8</int>
     <wis>14</wis>
     <cha>11</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>understands the languages you know</languages>
@@ -263,6 +270,8 @@
     <action>
       <name>Beast's Strike</name>
       <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 2 plus your Wisdom modifier Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast). If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra 1d6 damage of the same type, and the target has the Prone condition if it is a Large or smaller creature.</text>
+      <attack>Beast's Strike|0|1d8+2</attack>
+      <attack>Moved 20 feet|0|1d6</attack>
     </action>
   </monster>
   <monster>
@@ -273,18 +282,18 @@
     <ac>13</ac>
     <hp>5</hp>
     <speed>5 ft., swim 60 ft.</speed>
-    <str>6</str>
-    <dex>16</dex>
-    <con>13</con>
+    <str>14</str>
+    <dex>14</dex>
+    <con>15</con>
     <int>8</int>
     <wis>14</wis>
     <cha>11</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 90 ft.</senses>
     <passive>12</passive>
     <languages>understands the languages you know</languages>
@@ -313,6 +322,7 @@
     <action>
       <name>Beast's Strike</name>
       <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d6 + 2 plus your Wisdom modifier Bludgeoning or Piercing damage (your choice when you summon the beast), and the target has the Grappled condition (escape DC equals your spell save DC).</text>
+      <attack>Beast's Strike|0|1d6+2</attack>
     </action>
   </monster>
   <monster>
@@ -323,18 +333,18 @@
     <ac>13</ac>
     <hp>4</hp>
     <speed>10 ft., fly 60 ft.</speed>
-    <str>14</str>
-    <dex>14</dex>
-    <con>15</con>
+    <str>6</str>
+    <dex>16</dex>
+    <con>14</con>
     <int>8</int>
     <wis>14</wis>
     <cha>11</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>understands the languages you know</languages>
@@ -363,6 +373,7 @@
     <action>
       <name>Beast's Strike</name>
       <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d4 + 3 plus your Wisdom modifier Slashing damage.</text>
+      <attack>Beast's Strike|0|1d4+3</attack>
     </action>
   </monster>
   <monster>
@@ -370,8 +381,8 @@
     <size>S</size>
     <type>beast</type>
     <alignment>neutral</alignment>
-    <ac>13</ac>
-    <hp>22</hp>
+    <ac>11</ac>
+    <hp>20</hp>
     <speed>30 ft., climb 30 ft.(Land only), fly 60 ft.(Air only), swim 30 ft.(Water only)</speed>
     <str>18</str>
     <dex>11</dex>
@@ -379,12 +390,12 @@
     <int>4</int>
     <wis>14</wis>
     <cha>5</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>understands the languages you know</languages>
@@ -420,7 +431,8 @@
     </action>
     <action>
       <name>Rend</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 4 + summonSpellLevel Piercing damage.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 4 + the spell's level Piercing damage.</text>
+      <attack>Rend|0|1d8+4</attack>
     </action>
   </monster>
   <monster>
@@ -437,15 +449,15 @@
     <int>2</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save></save>
+    <save/>
     <skill>perception +5</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/2</cr>
     <description>Source:	Player's Handbook 2024 p. 346</description>
     <trait>
@@ -459,7 +471,7 @@
     <action>
       <name>Rend</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage.</text>
-      <attack>Rend|4|1d6 + 2</attack>
+      <attack>Rend|4|1d6+2</attack>
     </action>
   </monster>
   <monster>
@@ -476,15 +488,15 @@
     <int>2</int>
     <wis>9</wis>
     <cha>5</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>9</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/4</cr>
     <description>Source:	Player's Handbook 2024 p. 347</description>
     <trait>
@@ -498,7 +510,7 @@
     <action>
       <name>Gore</name>
       <text>Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage. If the boar moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 3 (1d6) Piercing damage and, if it is Large or smaller, has the Prone condition.</text>
-      <attack>Gore|3|1d6 + 1</attack>
+      <attack>Gore|3|1d6+1</attack>
     </action>
   </monster>
   <monster>
@@ -515,12 +527,12 @@
     <int>2</int>
     <wis>13</wis>
     <cha>7</cha>
-    <save></save>
+    <save/>
     <skill>perception +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>None</languages>
@@ -537,12 +549,12 @@
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage.</text>
-      <attack>Bite|5|1d8 + 3</attack>
+      <attack>Bite|5|1d8+3</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage, and the target has the Prone condition if it is Huge or smaller.</text>
-      <attack>Claw|5|1d4 + 3</attack>
+      <attack>Claw|5|1d4+3</attack>
     </action>
   </monster>
   <monster>
@@ -559,15 +571,15 @@
     <int>2</int>
     <wis>11</wis>
     <cha>5</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save>Con +2</save>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>10</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/8</cr>
     <description>Source:	Player's Handbook 2024 p. 347</description>
     <trait>
@@ -577,7 +589,7 @@
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage.</text>
-      <attack>Bite|4|1d4 + 2</attack>
+      <attack>Bite|4|1d4+2</attack>
     </action>
   </monster>
   <monster>
@@ -596,13 +608,13 @@
     <cha>7</cha>
     <save>dex +4</save>
     <skill>stealth +4, perception +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 347</description>
     <trait>
@@ -624,8 +636,8 @@
     <size>L</size>
     <type>celestial</type>
     <alignment>neutral</alignment>
-    <ac>16</ac>
-    <hp>45</hp>
+    <ac>11</ac>
+    <hp>40</hp>
     <speed>30 ft., fly 40 ft.</speed>
     <str>16</str>
     <dex>14</dex>
@@ -633,11 +645,11 @@
     <int>10</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save></save>
-    <skill></skill>
+    <save/>
+    <skill/>
     <resist>radiant</resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
+    <vulnerable/>
+    <immune/>
     <conditionImmune>charmed, frightened</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
@@ -662,16 +674,19 @@
     </action>
     <action>
       <name>Radiant Bow (Avenger Only)</name>
-      <text>Ranged Attack Roll: Bonus equals your spell attack modifier, range 600 ft. Hit: 2d6 + 2 + summonSpellLevel Radiant damage.</text>
+      <text>Ranged Attack Roll: Bonus equals your spell attack modifier, range 600 ft. Hit: 2d6 + 2 + the spell's level Radiant damage.</text>
+      <attack>Radiant Bow|0|2d6+2</attack>
     </action>
     <action>
       <name>Radiant Mace (Defender Only)</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d10 + 3 + summonSpellLevel Radiant damage, and the spirit can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains 1d10 Temporary Hit Points.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d10 + 3 + the spell's level Radiant damage, and the spirit can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains 1d10 Temporary Hit Points.</text>
+      <attack>Radiant Mace|0|1d10+3</attack>
     </action>
     <action>
       <name>Healing Touch (1/Day)</name>
       <recharge>1/Day</recharge>
-      <text>The spirit touches another creature. The target regains Hit Points equal to 2d8 + summonSpellLevel.</text>
+      <text>The spirit touches another creature. The target regains Hit Points equal to 2d8 + the spell's level.</text>
+      <attack>Healing Touch||2d8</attack>
     </action>
   </monster>
   <monster>
@@ -688,15 +703,15 @@
     <int>1</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save></save>
+    <save/>
     <skill>stealth +4, perception +2</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft.</senses>
     <passive>12</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/4</cr>
     <description>Source:	Player's Handbook 2024 p. 348</description>
     <trait>
@@ -706,11 +721,12 @@
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage.</text>
-      <attack>Bite|4|1d8 + 2</attack>
+      <attack>Bite|4|1d8+2</attack>
     </action>
     <action>
       <name>Constrict</name>
       <text>Strength Saving Throw: DC 12, one Medium or smaller creature the snake can see within 5 feet. Failure: 7 (3d4) Bludgeoning damage, and the target has the Grappled condition (escape DC 12).</text>
+      <attack>Constrict||3d4</attack>
     </action>
   </monster>
   <monster>
@@ -718,8 +734,8 @@
     <size>M</size>
     <type>construct</type>
     <alignment>neutral</alignment>
-    <ac>17</ac>
-    <hp>44</hp>
+    <ac>13</ac>
+    <hp>40</hp>
     <speed>30 ft.</speed>
     <str>18</str>
     <dex>10</dex>
@@ -727,11 +743,11 @@
     <int>14</int>
     <wis>11</wis>
     <cha>5</cha>
-    <save></save>
-    <skill></skill>
+    <save/>
+    <skill/>
     <resist>poison</resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
+    <vulnerable/>
+    <immune/>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <passive>10</passive>
@@ -753,6 +769,7 @@
     <trait>
       <name>Heated Body (Metal Only)</name>
       <text>A creature that hits the spirit with a melee attack or that starts its turn in a grapple with the spirit takes 1d10 Fire damage.</text>
+      <attack>Heated Body||1d10</attack>
     </trait>
     <trait>
       <name>Stony Lethargy (Stone Only)</name>
@@ -764,7 +781,8 @@
     </action>
     <action>
       <name>Slam</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 4 + summonSpellLevel Bludgeoning damage.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 4 + the spell's level Bludgeoning damage.</text>
+      <attack>Slam|0|1d8+4</attack>
     </action>
     <reaction>
       <name>Berserk Lashing (Clay Only)</name>
@@ -785,15 +803,15 @@
     <int>1</int>
     <wis>8</wis>
     <cha>2</cha>
-    <save></save>
+    <save/>
     <skill>stealth +2</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <passive>9</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 348</description>
     <trait>
@@ -824,15 +842,15 @@
     <int>2</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save></save>
+    <save>Con +2</save>
     <skill>stealth +2</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>10</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/2</cr>
     <description>Source:	Player's Handbook 2024 p. 348</description>
     <trait>
@@ -846,7 +864,7 @@
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Piercing damage. If the target is Medium or smaller, it has the Grappled condition (escape DC 12). While Grappled, the target has the Restrained condition.</text>
-      <attack>Bite|4|1d8 + 2</attack>
+      <attack>Bite|4|1d8+2</attack>
     </action>
   </monster>
   <monster>
@@ -863,12 +881,12 @@
     <int>3</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save></save>
+    <save/>
     <skill>stealth +4, perception +5</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>None</languages>
@@ -885,7 +903,7 @@
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 8 (1d10 + 3) Piercing damage, and the target has the Prone condition if it is Huge or smaller.</text>
-      <attack>Bite|5|1d10 + 3</attack>
+      <attack>Bite|5|1d10+3</attack>
     </action>
   </monster>
   <monster>
@@ -893,8 +911,8 @@
     <size>L</size>
     <type>dragon</type>
     <alignment>neutral</alignment>
-    <ac>19</ac>
-    <hp>55</hp>
+    <ac>14</ac>
+    <hp>50</hp>
     <speed>30 ft., fly 60 ft., swim 30 ft.</speed>
     <str>19</str>
     <dex>14</dex>
@@ -902,11 +920,11 @@
     <int>10</int>
     <wis>14</wis>
     <cha>14</cha>
-    <save></save>
-    <skill></skill>
+    <save/>
+    <skill/>
     <resist>acid, cold, fire, lightning, poison</resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
+    <vulnerable/>
+    <immune/>
     <conditionImmune>charmed, frightened, poisoned</conditionImmune>
     <senses>blindsight 30 ft., darkvision 60 ft.</senses>
     <passive>12</passive>
@@ -935,11 +953,13 @@
     </action>
     <action>
       <name>Rend</name>
-      <text>Melee Attack: Bonus equals your spell attack modifier, reach 10 feet. Hit: 1d6 + 4 + summonSpellLevel Piercing damage.</text>
+      <text>Melee Attack: Bonus equals your spell attack modifier, reach 10 feet. Hit: 1d6 + 4 + the spell's level Piercing damage.</text>
+      <attack>Rend|0|1d6+4</attack>
     </action>
     <action>
       <name>Breath Weapon</name>
       <text>Dexterity Saving Throw: DC equals your spell save DC, each creature in a 30-foot Cone. Failure: 2d6 damage of a type this spirit has Resistance to (your choice when you cast the spell). Success: Half damage.</text>
+      <attack>Breath Weapon|0|2d6</attack>
     </action>
   </monster>
   <monster>
@@ -956,15 +976,15 @@
     <int>2</int>
     <wis>11</wis>
     <cha>7</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>10</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/4</cr>
     <description>Source:	Player's Handbook 2024 p. 349</description>
     <trait>
@@ -974,7 +994,7 @@
     <action>
       <name>Hooves</name>
       <text>Melee Attack Roll: +6, reach 5 ft. Hit: 6 (1d4 + 4) Bludgeoning damage.</text>
-      <attack>Hooves|6|1d4 + 4</attack>
+      <attack>Hooves|6|1d4+4</attack>
     </action>
   </monster>
   <monster>
@@ -982,8 +1002,8 @@
     <size>M</size>
     <type>elemental</type>
     <alignment>neutral</alignment>
-    <ac>15</ac>
-    <hp>54</hp>
+    <ac>11</ac>
+    <hp>50</hp>
     <speed>40 ft., fly 40 ft.(hover; Air only), burrow 40 ft.(Earth only), swim 40 ft.(Water only)</speed>
     <str>18</str>
     <dex>15</dex>
@@ -991,10 +1011,10 @@
     <int>4</int>
     <wis>10</wis>
     <cha>16</cha>
-    <save></save>
-    <skill></skill>
+    <save/>
+    <skill/>
     <resist>lightning, thunder (Air only); piercing, slashing (Earth only); acid (Water only)</resist>
-    <vulnerable></vulnerable>
+    <vulnerable/>
     <immune>poison; fire (Fire only)</immune>
     <conditionImmune>exhaustion, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
@@ -1024,7 +1044,8 @@
     </action>
     <action>
       <name>Slam</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d10 + 4 + summonSpellLevel Bludgeoning (Earth only), Cold (Water only), Lightning (Air only), or Fire (Fire only) damage.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d10 + 4 + the spell's level Bludgeoning (Earth only), Cold (Water only), Lightning (Air only), or Fire (Fire only) damage.</text>
+      <attack>Slam|0|1d10+4</attack>
     </action>
   </monster>
   <monster>
@@ -1041,13 +1062,13 @@
     <int>3</int>
     <wis>11</wis>
     <cha>6</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>10</passive>
     <languages>None</languages>
     <cr>4</cr>
@@ -1063,12 +1084,12 @@
     <action>
       <name>Gore</name>
       <text>Melee Attack Roll: +8, reach 5 ft. Hit: 15 (2d8 + 6) Piercing damage. If the elephant moved at least 20 feet straight toward the target immediately before the hit, the target also has the Prone condition.</text>
-      <attack>Gore|8|2d8 + 6</attack>
+      <attack>Gore|8|2d8+6</attack>
     </action>
     <action>
       <name>Trample (bonus action)</name>
       <text>Dexterity Saving Throw: DC 16, one creature within 5 feet that has the Prone condition. Failure: 17 (2d10 + 6) Bludgeoning damage. Success: Half damage.</text>
-      <attack>Trample||2d10 + 6</attack>
+      <attack>Trample||2d10+6</attack>
     </action>
   </monster>
   <monster>
@@ -1085,15 +1106,15 @@
     <int>2</int>
     <wis>10</wis>
     <cha>6</cha>
-    <save></save>
+    <save/>
     <skill>perception +2</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/4</cr>
     <description>Source:	Player's Handbook 2024 p. 349</description>
     <trait>
@@ -1103,7 +1124,7 @@
     <action>
       <name>Ram</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage. If the elk moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 3 (1d6) Bludgeoning damage and, if it is Huge or smaller, has the Prone condition.</text>
-      <attack>Ram|5|1d6 + 3</attack>
+      <attack>Ram|5|1d6+3</attack>
     </action>
   </monster>
   <monster>
@@ -1111,8 +1132,8 @@
     <size>S</size>
     <type>fey</type>
     <alignment>neutral</alignment>
-    <ac>15</ac>
-    <hp>33</hp>
+    <ac>12</ac>
+    <hp>30</hp>
     <speed>30 ft., fly 30 ft.</speed>
     <str>13</str>
     <dex>16</dex>
@@ -1120,12 +1141,12 @@
     <int>14</int>
     <wis>11</wis>
     <cha>16</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune>Charmed</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <passive>10</passive>
     <languages>Sylvan, understands the languages you know</languages>
@@ -1149,7 +1170,8 @@
     </action>
     <action>
       <name>Fey Blade</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 2d6 + 3 + summonSpellLevel Force damage.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 2d6 + 3 + the spell's level Force damage.</text>
+      <attack>Fey Blade|0|2d6+3</attack>
     </action>
     <action>
       <name>Fey Step (bonus action)</name>
@@ -1179,10 +1201,10 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>10</int>
     <wis>10</wis>
     <cha>16</cha>
-    <save></save>
-    <skill></skill>
+    <save/>
+    <skill/>
     <resist>fire</resist>
-    <vulnerable></vulnerable>
+    <vulnerable/>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
@@ -1220,15 +1242,18 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     </action>
     <action>
       <name>Bite (Demon Only)</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d12 + 3 + summonSpellLevel Necrotic damage.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d12 + 3 + the spell's level Necrotic damage.</text>
+      <attack>Bite|0|1d12+3</attack>
     </action>
     <action>
       <name>Claws (Yugoloth Only)</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + summonSpellLevel Slashing damage. Immediately after the attack hits or misses, the spirit can teleport up to 30 feet to an unoccupied space it can see.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + the spell's level Slashing damage. Immediately after the attack hits or misses, the spirit can teleport up to 30 feet to an unoccupied space it can see.</text>
+      <attack>Claws|0|1d8+3</attack>
     </action>
     <action>
       <name>Fiery Strike (Devil Only)</name>
-      <text>Melee or Ranged Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. or range 150 ft. Hit: 2d6 + 3 + summonSpellLevel Fire damage.</text>
+      <text>Melee or Ranged Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. or range 150 ft. Hit: 2d6 + 3 + the spell's level Fire damage.</text>
+      <attack>Fiery Strike|0|2d6+3</attack>
     </action>
   </monster>
   <monster>
@@ -1245,15 +1270,15 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>1</int>
     <wis>8</wis>
     <cha>3</cha>
-    <save></save>
+    <save/>
     <skill>stealth +3, perception +1</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 30 ft.</senses>
     <passive>11</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 349</description>
     <trait>
@@ -1288,15 +1313,15 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>2</int>
     <wis>12</wis>
     <cha>5</cha>
-    <save></save>
+    <save/>
     <skill>perception +3</skill>
     <resist>poison</resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/4</cr>
     <description>Source:	Player's Handbook 2024 p. 350</description>
     <trait>
@@ -1306,7 +1331,7 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +3, reach 5 ft. Hit: 6 (2d4 + 1) Piercing damage.</text>
-      <attack>Bite|3|2d4 + 1</attack>
+      <attack>Bite|3|2d4+1</attack>
     </action>
   </monster>
   <monster>
@@ -1323,15 +1348,15 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>1</int>
     <wis>9</wis>
     <cha>3</cha>
-    <save></save>
+    <save/>
     <skill>stealth +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <passive>9</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/8</cr>
     <description>Source:	Player's Handbook 2024 p. 350</description>
     <trait>
@@ -1345,7 +1370,7 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <action>
       <name>Claw</name>
       <text>Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Bludgeoning damage. If the target is Medium or smaller, it has the Grappled condition (escape DC 11). The crab has two claws, each of which can grapple one target.</text>
-      <attack>Claw|3|1d6 + 1</attack>
+      <attack>Claw|3|1d6+1</attack>
     </action>
   </monster>
   <monster>
@@ -1362,15 +1387,15 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>3</int>
     <wis>12</wis>
     <cha>6</cha>
-    <save></save>
+    <save>Str +2</save>
     <skill>perception +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/2</cr>
     <description>Source:	Player's Handbook 2024 p. 350</description>
     <trait>
@@ -1380,7 +1405,7 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <action>
       <name>Ram</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Bludgeoning damage. If the goat moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the Prone condition.</text>
-      <attack>Ram|5|1d6 + 3</attack>
+      <attack>Ram|5|1d6+3</attack>
     </action>
   </monster>
   <monster>
@@ -1388,8 +1413,8 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <size>L</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
-    <ac>15</ac>
-    <hp>34</hp>
+    <ac>11</ac>
+    <hp>30</hp>
     <speed>40 ft., climb 40 ft., fly 40 ft.(Wasp only)</speed>
     <str>17</str>
     <dex>13</dex>
@@ -1397,12 +1422,12 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>4</int>
     <wis>14</wis>
     <cha>3</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>understands the languages you know</languages>
@@ -1430,11 +1455,13 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     </action>
     <action>
       <name>Poison Jab</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 10 ft. Hit: 1d6 + 3 + summonSpellLevel Piercing damage plus 1d4 Poison damage.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 10 ft. Hit: 1d6 + 3 + the spell's level Piercing damage plus 1d4 Poison damage.</text>
+      <attack>Poison Jab|0|1d6+3</attack>
     </action>
     <action>
       <name>Web Bolt (Spider Only)</name>
-      <text>Ranged Attack Roll: Bonus equals your spell attack modifier, range 60 ft. Hit: 1d10 + 3 + summonSpellLevel Bludgeoning damage, and the target's Speed is reduced to 0 until the start of the insect's next turn.</text>
+      <text>Ranged Attack Roll: Bonus equals your spell attack modifier, range 60 ft. Hit: 1d10 + 3 + the spell's level Bludgeoning damage, and the target's Speed is reduced to 0 until the start of the insect's next turn.</text>
+      <attack>Web Bolt|0|1d10+3</attack>
     </action>
     <action>
       <name>Venomous Spew (Centipede Only) (bonus action)</name>
@@ -1455,15 +1482,15 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>2</int>
     <wis>12</wis>
     <cha>5</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>11</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/2</cr>
     <description>Source:	Player's Handbook 2024 p. 350</description>
     <trait>
@@ -1477,7 +1504,7 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <action>
       <name>Ram</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 9 (2d6 + 2) Bludgeoning damage, or the seahorse deals 11 (2d8 + 2) Bludgeoning damage if it moved at least 20 feet straight toward the target immediately before the hit.</text>
-      <attack>Ram|4|2d6 + 2</attack>
+      <attack>Ram|4|2d6+2</attack>
     </action>
     <action>
       <name>Bubble Dash (bonus action)</name>
@@ -1498,12 +1525,12 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>2</int>
     <wis>11</wis>
     <cha>4</cha>
-    <save></save>
+    <save/>
     <skill>stealth +7, perception +4</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>None</languages>
@@ -1524,6 +1551,8 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +5 , reach 5 ft. Hit: 7 (1d8 + 3) Piercing damage plus 7 (2d6) Poison damage.</text>
+      <attack>Bite|+5|1d8+3</attack>
+      <attack>Poison||2d6</attack>
     </action>
     <action>
       <name>Web (Recharge 5-6)</name>
@@ -1545,15 +1574,15 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>4</int>
     <wis>12</wis>
     <cha>5</cha>
-    <save></save>
+    <save/>
     <skill>stealth +5, acrobatics +5, perception +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/8</cr>
     <description>Source:	Player's Handbook 2024 p. 351</description>
     <trait>
@@ -1563,7 +1592,7 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Piercing damage.</text>
-      <attack>Bite|5|1d4 + 3</attack>
+      <attack>Bite|5|1d4+3</attack>
     </action>
   </monster>
   <monster>
@@ -1580,15 +1609,15 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>2</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save></save>
+    <save>Str +2</save>
     <skill>perception +2</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 351</description>
     <trait>
@@ -1615,15 +1644,15 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>2</int>
     <wis>14</wis>
     <cha>6</cha>
-    <save></save>
+    <save/>
     <skill>perception +6</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>16</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 352</description>
     <trait>
@@ -1650,10 +1679,10 @@ The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which
     <int>11</int>
     <wis>12</wis>
     <cha>14</cha>
-    <save></save>
+    <save/>
     <skill>insight +3, deception +4, stealth +5</skill>
     <resist>cold</resist>
-    <vulnerable></vulnerable>
+    <vulnerable/>
     <immune>fire, poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
@@ -1682,13 +1711,14 @@ At will: Invisibility</text>
     <action>
       <name>Sting</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage plus 7 (2d6) Poison damage.</text>
-      <attack>Sting|5|1d6 + 3+2d6</attack>
+      <attack>Sting|5|1d6+3</attack>
+      <attack>Poison||2d6</attack>
     </action>
     <action>
       <name>Change Shape</name>
       <text>The imp changes into a form that resembles a rat (Speed 20 ft.), a raven (20 ft., Fly 60 ft.), or a spider (20 ft., Climb 20 ft.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it's wearing or carrying isn't transformed. The imp reverts to its true form if it dies.</text>
     </action>
-    <slots></slots>
+    <slots/>
     <spells>invisibility</spells>
   </monster>
   <monster>
@@ -1705,15 +1735,15 @@ At will: Invisibility</text>
     <int>3</int>
     <wis>12</wis>
     <cha>8</cha>
-    <save></save>
+    <save/>
     <skill>stealth +4, perception +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
-    <languages></languages>
+    <languages/>
     <cr>1</cr>
     <description>Source:	Player's Handbook 2024 p. 352</description>
     <trait>
@@ -1735,7 +1765,7 @@ At will: Invisibility</text>
     <action>
       <name>Rend</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Slashing damage.</text>
-      <attack>Rend|5|1d8 + 3</attack>
+      <attack>Rend|5|1d8+3</attack>
     </action>
     <action>
       <name>Roar</name>
@@ -1756,15 +1786,15 @@ At will: Invisibility</text>
     <int>1</int>
     <wis>8</wis>
     <cha>3</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 30 ft.</senses>
     <passive>9</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 353</description>
     <trait>
@@ -1795,15 +1825,15 @@ At will: Invisibility</text>
     <int>3</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save></save>
+    <save>Wis +2</save>
     <skill>perception +5</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/8</cr>
     <description>Source:	Player's Handbook 2024 p. 353</description>
     <trait>
@@ -1813,7 +1843,7 @@ At will: Invisibility</text>
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage, and the target has the Prone condition if it is Large or smaller.</text>
-      <attack>Bite|3|1d6 + 1</attack>
+      <attack>Bite|3|1d6+1</attack>
     </action>
   </monster>
   <monster>
@@ -1830,15 +1860,15 @@ At will: Invisibility</text>
     <int>2</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>10</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/8</cr>
     <description>Source:	Player's Handbook 2024 p. 353</description>
     <trait>
@@ -1852,7 +1882,7 @@ At will: Invisibility</text>
     <action>
       <name>Hooves</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage.</text>
-      <attack>Hooves|4|1d4 + 2</attack>
+      <attack>Hooves|4|1d4+2</attack>
     </action>
   </monster>
   <monster>
@@ -1869,12 +1899,12 @@ At will: Invisibility</text>
     <int>3</int>
     <wis>10</wis>
     <cha>4</cha>
-    <save></save>
+    <save/>
     <skill>stealth +6, perception +2</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 30 ft.</senses>
     <passive>12</passive>
     <languages>None</languages>
@@ -1908,8 +1938,8 @@ At will: Invisibility</text>
     <size>L</size>
     <type>varies</type>
     <alignment>neutral</alignment>
-    <ac>12</ac>
-    <hp>7</hp>
+    <ac>10</ac>
+    <hp>5</hp>
     <speed>60 ft., fly 60 ft.(requires level 4+ spell)</speed>
     <str>18</str>
     <dex>12</dex>
@@ -1917,13 +1947,13 @@ At will: Invisibility</text>
     <int>6</int>
     <wis>12</wis>
     <cha>8</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>11</passive>
     <languages>telepathy 1 mile (works only with you)</languages>
     <cr>0</cr>
@@ -1950,7 +1980,8 @@ At will: Invisibility</text>
     </trait>
     <action>
       <name>Otherworldly Slam</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + summonSpellLevel of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage.</text>
+      <attack>Otherwordly Slam||1d8</attack>
     </action>
     <action>
       <name>Fell Glare (Fiend Only; Recharges after a Long Rest) (bonus action)</name>
@@ -1962,7 +1993,8 @@ At will: Invisibility</text>
     </action>
     <action>
       <name>Healing Touch (Celestial Only; Recharges after a Long Rest) (bonus action)</name>
-      <text>One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 + summonSpellLevel.</text>
+      <text>One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 + the spell's level.</text>
+      <attack>Healing Touch||2d8</attack>
     </action>
   </monster>
   <monster>
@@ -1979,15 +2011,15 @@ At will: Invisibility</text>
     <int>2</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save></save>
+    <save/>
     <skill>stealth +5, perception +5</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <passive>15</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 354</description>
     <trait>
@@ -2018,15 +2050,15 @@ At will: Invisibility</text>
     <int>3</int>
     <wis>14</wis>
     <cha>7</cha>
-    <save></save>
+    <save/>
     <skill>stealth +6, perception +4</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/4</cr>
     <description>Source:	Player's Handbook 2024 p. 354</description>
     <trait>
@@ -2040,8 +2072,8 @@ At will: Invisibility</text>
     <action>
       <name>Pounce</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Slashing damage, or the panther deals 7 (2d4 + 2) Slashing damage if it had Advantage on the attack roll.</text>
-      <attack>Pounce|4|1d4 + 2+</attack>
-      <attack>Pounce (Advantage)|4|2d4 + 2</attack>
+      <attack>Pounce|4|1d4+2</attack>
+      <attack>Pounce (Advantage)|4|2d4+2</attack>
     </action>
     <action>
       <name>Prowl</name>
@@ -2062,15 +2094,15 @@ At will: Invisibility</text>
     <int>2</int>
     <wis>11</wis>
     <cha>7</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <save>Str +2</save>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>10</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/8</cr>
     <description>Source:	Player's Handbook 2024 p. 354</description>
     <trait>
@@ -2097,12 +2129,12 @@ At will: Invisibility</text>
     <int>10</int>
     <wis>12</wis>
     <cha>10</cha>
-    <save></save>
+    <save/>
     <skill>stealth +4, perception +5</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft., darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>understands Common and Draconic but can't speak</languages>
@@ -2128,6 +2160,7 @@ At will: Invisibility</text>
     <action>
       <name>Sting</name>
       <text>Constitution Saving Throw: DC 12, one creature the pseudodragon can see within 5 feet. Failure: 5 (2d4) Poison damage, and the target has the Poisoned condition for 1 hour. Failure by 5 or More: The Poisoned target also has the Unconscious condition until it takes damage or another creature takes an action to shake it awake.</text>
+      <attack>Poison||2d4</attack>
     </action>
   </monster>
   <monster>
@@ -2144,10 +2177,10 @@ At will: Invisibility</text>
     <int>7</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save></save>
+    <save/>
     <skill>stealth +5</skill>
     <resist>cold, fire, lightning</resist>
-    <vulnerable></vulnerable>
+    <vulnerable/>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
@@ -2172,7 +2205,7 @@ At will: Invisibility</text>
     <action>
       <name>Rend</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 5 (1d4 + 3) Slashing damage, and the target has the Poisoned condition until the start of the quasit's next turn.</text>
-      <attack>Rend|5|1d4 + 3</attack>
+      <attack>Rend|5|1d4+3</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -2183,7 +2216,7 @@ At will: Invisibility</text>
       <recharge>1/Day</recharge>
       <text>Wisdom Saving Throw: DC 10, one creature within 20 feet. Failure: The target has the Frightened condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically</text>
     </action>
-    <slots></slots>
+    <slots/>
     <spells>invisibility</spells>
   </monster>
   <monster>
@@ -2200,15 +2233,15 @@ At will: Invisibility</text>
     <int>2</int>
     <wis>10</wis>
     <cha>4</cha>
-    <save></save>
+    <save/>
     <skill>perception +2</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 30 ft.</senses>
     <passive>12</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 355</description>
     <trait>
@@ -2239,15 +2272,15 @@ At will: Invisibility</text>
     <int>5</int>
     <wis>13</wis>
     <cha>6</cha>
-    <save></save>
+    <save/>
     <skill>perception +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>13</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 355</description>
     <trait>
@@ -2278,12 +2311,12 @@ At will: Invisibility</text>
     <int>1</int>
     <wis>10</wis>
     <cha>4</cha>
-    <save></save>
+    <save/>
     <skill>perception +2</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <passive>12</passive>
     <languages>None</languages>
@@ -2304,7 +2337,7 @@ At will: Invisibility</text>
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Piercing damage.</text>
-      <attack>Bite|4|2d4 + 2</attack>
+      <attack>Bite|4|2d4+2</attack>
     </action>
   </monster>
   <monster>
@@ -2321,15 +2354,15 @@ At will: Invisibility</text>
     <int>2</int>
     <wis>11</wis>
     <cha>7</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>10</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/4</cr>
     <description>Source:	Player's Handbook 2024 p. 356</description>
     <trait>
@@ -2339,7 +2372,7 @@ At will: Invisibility</text>
     <action>
       <name>Hooves</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage.</text>
-      <attack>Hooves|5|1d8 + 3</attack>
+      <attack>Hooves|5|1d8+3</attack>
     </action>
   </monster>
   <monster>
@@ -2356,12 +2389,12 @@ At will: Invisibility</text>
     <int>1</int>
     <wis>8</wis>
     <cha>2</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft.</senses>
     <passive>9</passive>
     <languages>None</languages>
@@ -2391,10 +2424,10 @@ At will: Invisibility</text>
     <int>6</int>
     <wis>8</wis>
     <cha>5</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
     <immune>poison</immune>
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
@@ -2409,12 +2442,12 @@ At will: Invisibility</text>
     <action>
       <name>Shortsword</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Piercing damage.</text>
-      <attack>Shortsword|5|1d6 + 3</attack>
+      <attack>Shortsword|5|1d6+3</attack>
     </action>
     <action>
       <name>Shortbow</name>
       <text>Ranged Attack Roll: +5, range 80/320 ft. Hit: 6 (1d6 + 3) Piercing damage.</text>
-      <attack>Shortbow|5|1d6 + 3</attack>
+      <attack>Shortbow|5|1d6+3</attack>
     </action>
   </monster>
   <monster>
@@ -2431,12 +2464,12 @@ At will: Invisibility</text>
     <int>3</int>
     <wis>5</wis>
     <cha>3</cha>
-    <save></save>
+    <save/>
     <skill>stealth +4</skill>
     <resist>acid, cold, fire, lightning, thunder</resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>7</passive>
     <languages>understands Slaad but can't speak</languages>
@@ -2453,7 +2486,7 @@ At will: Invisibility</text>
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.</text>
-      <attack>Bite|4|1d6 + 2</attack>
+      <attack>Bite|4|1d6+2</attack>
     </action>
   </monster>
   <monster>
@@ -2470,12 +2503,12 @@ At will: Invisibility</text>
     <int>15</int>
     <wis>12</wis>
     <cha>11</cha>
-    <save></save>
+    <save/>
     <skill>stealth +5, arcana +4, religion +4</skill>
     <resist>necrotic, psychic, radiant</resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>11</passive>
     <languages>Celestial, Common</languages>
@@ -2514,15 +2547,15 @@ At will: Invisibility</text>
     <int>1</int>
     <wis>10</wis>
     <cha>2</cha>
-    <save></save>
+    <save/>
     <skill>stealth +4</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 30 ft.</senses>
     <passive>10</passive>
-    <languages></languages>
+    <languages/>
     <cr>0</cr>
     <description>Source:	Player's Handbook 2024 p. 357</description>
     <trait>
@@ -2557,13 +2590,13 @@ At will: Invisibility</text>
     <int>14</int>
     <wis>13</wis>
     <cha>11</cha>
-    <save></save>
+    <save/>
     <skill>stealth +8, perception +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>13</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>1/4</cr>
@@ -2581,7 +2614,7 @@ At will: Invisibility</text>
     <action>
       <name>Needle Sword</name>
       <text>Melee Attack Roll: +6, reach 5 ft. Hit: 6 (1d4 + 4) Piercing damage.</text>
-      <attack>Needle Sword|6|1d4 + 4</attack>
+      <attack>Needle Sword|6|1d4+4</attack>
     </action>
     <action>
       <name>Enchanting Bow</name>
@@ -2592,7 +2625,7 @@ At will: Invisibility</text>
       <name>Heart Sight</name>
       <text>Charisma Saving Throw: DC 10, one creature within 5 feet the sprite can see. Celestials, Fiends, and Undead automatically fail the save. Failure: The sprite knows the target's emotions and alignment.</text>
     </action>
-    <slots></slots>
+    <slots/>
     <spells>invisibility</spells>
   </monster>
   <monster>
@@ -2609,15 +2642,15 @@ At will: Invisibility</text>
     <int>3</int>
     <wis>12</wis>
     <cha>8</cha>
-    <save></save>
+    <save/>
     <skill>stealth +7, perception +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
-    <languages></languages>
+    <languages/>
     <cr>1</cr>
     <description>Source:	Player's Handbook 2024 p. 358</description>
     <trait>
@@ -2631,7 +2664,8 @@ At will: Invisibility</text>
     <action>
       <name>Pounce</name>
       <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage. If the tiger had Advantage on the attack roll, the target takes an extra 3 (1d6) Slashing damage and, if it is Huge or smaller, has the Prone condition.</text>
-      <attack>Pounce|5|1d6 + 3+1d6</attack>
+      <attack>Pounce|5|1d6+3</attack>
+      <attack>Pounce (Advantage)|5|1d6</attack>
     </action>
     <action>
       <name>Prowl</name>
@@ -2643,8 +2677,8 @@ At will: Invisibility</text>
     <size>M</size>
     <type>undead</type>
     <alignment>neutral</alignment>
-    <ac>14</ac>
-    <hp>33</hp>
+    <ac>11</ac>
+    <hp>30</hp>
     <speed>30 ft., fly 40 ft.(hover; Ghostly only)</speed>
     <str>12</str>
     <dex>16</dex>
@@ -2652,10 +2686,10 @@ At will: Invisibility</text>
     <int>4</int>
     <wis>10</wis>
     <cha>9</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
     <immune>necrotic, poison</immune>
     <conditionImmune>exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
@@ -2689,15 +2723,18 @@ At will: Invisibility</text>
     </action>
     <action>
       <name>Deathly Touch (Ghostly Only)</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + summonSpellLevel Necrotic damage, and the target has the Frightened condition until the end of its next turn.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + the spell's level Necrotic damage, and the target has the Frightened condition until the end of its next turn.</text>
+      <attack>Deathly Touch|0|1d8+3</attack>
     </action>
     <action>
       <name>Grave Bolt (Skeletal Only)</name>
-      <text>Ranged Attack Roll: Bonus equals your spell attack modifier, range 150 ft. Hit: 2d4 + 3 + summonSpellLevel Necrotic damage.</text>
+      <text>Ranged Attack Roll: Bonus equals your spell attack modifier, range 150 ft. Hit: 2d4 + 3 + the spell's level Necrotic damage.</text>
+      <attack>Grave Bolt|0|2d4+3</attack>
     </action>
     <action>
       <name>Rotting Claw (Putrid Only)</name>
-      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d6 + 3 + summonSpellLevel Slashing damage. If the target has the Poisoned condition, it has the Paralyzed condition until the end of its next turn.</text>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d6 + 3 + the spell's level Slashing damage. If the target has the Poisoned condition, it has the Paralyzed condition until the end of its next turn.</text>
+      <attack>Rotting Claw|0|1d6+3</attack>
     </action>
   </monster>
   <monster>
@@ -2714,15 +2751,15 @@ At will: Invisibility</text>
     <int>1</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <save/>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft.</senses>
     <passive>10</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/8</cr>
     <description>Source:	Player's Handbook 2024 p. 358</description>
     <trait>
@@ -2732,7 +2769,8 @@ At will: Invisibility</text>
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage plus 3 (1d6) Poison damage.</text>
-      <attack>Bite|4|1d4 + 2+1d6</attack>
+      <attack>Bite|4|1d4+2</attack>
+      <attack>Poison||1d6</attack>
     </action>
   </monster>
   <monster>
@@ -2749,15 +2787,15 @@ At will: Invisibility</text>
     <int>2</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
-    <senses></senses>
+    <save>Wis +2</save>
+    <skill/>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <passive>11</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/2</cr>
     <description>Source:	Player's Handbook 2024 p. 359</description>
     <trait>
@@ -2767,7 +2805,8 @@ At will: Invisibility</text>
     <action>
       <name>Hooves</name>
       <text>Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Bludgeoning damage. If the horse moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and, if it is Huge or smaller, has the Prone condition.</text>
-      <attack>Hooves|6|2d4 + 4</attack>
+      <attack>Hooves|6|2d4+4</attack>
+      <attack>Moves 20 feet||2d4</attack>
     </action>
   </monster>
   <monster>
@@ -2784,12 +2823,12 @@ At will: Invisibility</text>
     <int>2</int>
     <wis>12</wis>
     <cha>3</cha>
-    <save></save>
+    <save/>
     <skill>stealth +5, acrobatics +5, perception +3</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>None</languages>
@@ -2819,15 +2858,15 @@ At will: Invisibility</text>
     <int>3</int>
     <wis>12</wis>
     <cha>6</cha>
-    <save></save>
+    <save/>
     <skill>stealth +4, perception +5</skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
-    <immune></immune>
-    <conditionImmune></conditionImmune>
+    <resist/>
+    <vulnerable/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
-    <languages></languages>
+    <languages/>
     <cr>1/4</cr>
     <description>Source:	Player's Handbook 2024 p. 359</description>
     <trait>
@@ -2841,7 +2880,7 @@ At will: Invisibility</text>
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage, and the target has the Prone condition if it is Medium or smaller.</text>
-      <attack>Bite|4|1d6 + 2</attack>
+      <attack>Bite|4|1d6+2</attack>
     </action>
   </monster>
   <monster>
@@ -2858,10 +2897,10 @@ At will: Invisibility</text>
     <int>3</int>
     <wis>6</wis>
     <cha>5</cha>
-    <save></save>
-    <skill></skill>
-    <resist></resist>
-    <vulnerable></vulnerable>
+    <save>Wis +2</save>
+    <skill/>
+    <resist/>
+    <vulnerable/>
     <immune>poison</immune>
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
@@ -2880,7 +2919,7 @@ At will: Invisibility</text>
     <action>
       <name>Slam</name>
       <text>Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Bludgeoning damage.</text>
-      <attack>Slam|3|1d6 + 1</attack>
+      <attack>Slam|3|1d6+1</attack>
     </action>
   </monster>
 </compendium>
