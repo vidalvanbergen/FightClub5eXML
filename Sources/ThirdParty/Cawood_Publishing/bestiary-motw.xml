@@ -437,9 +437,9 @@
       
       Source: Cawood, Monsters of the Wilderness p. 13 (ThirdParty)</description>
     <environment>coastal, underwater</environment>
-  </monster> <!-- Mountain: The Great Eight, Aquarian -->
+  </monster> <!-- Ocean: Aquarian -->
   <monster>
-    <name>Great Eight, Atlantia the Aquarian Queen</name>
+    <name>Atlantia the Aquarian Queen</name>
     <size>L</size>
     <type>humanoid (aquarian)</type>
     <alignment>lawful evil</alignment>
@@ -468,11 +468,11 @@
     </trait>
     <action>
       <name>Multiattack</name>
-      <text>Atlantia makes four tentacle attacks</text>
+      <text>Atlantia makes four tentacle attacks.</text>
     </action>
     <action>
       <name>Tentacles</name>
-      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 10 (1d8 + 6) blud- geoning damage.</text>
+      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 10 (1d8 + 6) bludgeoning damage.</text>
       <attack>Tentacles|9|1d8 + 6</attack>
     </action>
     <action>
@@ -490,7 +490,7 @@
       
       Source: Cawood, Monsters of the Wilderness p. 14 (ThirdParty)</description>
     <environment>coastal, underwater</environment>
-  </monster> <!-- Mountain: The Great Eight, Atlantia the Aquarian Queen -->
+  </monster> <!-- Ocean: Atlantia the Aquarian Queen -->
   <monster>
     <name>Coroctopus</name>
     <size>L</size>
@@ -578,9 +578,769 @@
       Source: Cawood, Monsters of the Wilderness p. 16 (ThirdParty)</description>
     <environment>coastal, underwater</environment>
   </monster> <!-- Ocean: Coral Eel -->
-  
-  
-  
+  <monster>
+    <name>The Deep One</name>
+    <size>H</size>
+    <type>aberration</type>
+    <alignment>neutral evil</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>172 (15d12 + 75)</hp>
+    <speed>0 ft., swim 40 ft.</speed>
+    <str>21</str><dex>11</dex><con>20</con><int>24</int><wis>23</wis><cha>21</cha>
+    <save>Con +10, Wis +12, Cha +10</save>
+    <skill>Deception +10, Insight +12, Perception +12</skill>
+    <resist>bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <conditionImmune>charmed, exhaustion, poisoned, prone</conditionImmune>
+    <senses>darkvision 90 ft.</senses><passive>22</passive>
+    <languages>all, telepathy 120 ft.</languages>
+    <cr>14</cr>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The Deep One’s innate spellcasting ability is Wisdom (spell save DC 20, +12 to spell attacks). It can innately cast the following spells, requiring no material components:</text>
+      <text>At will: command, detect magic</text>
+      <text>3/day each: detect thoughts, suggestion, zone of truth</text>
+      <text>1/day each: conjure elemental (water elemental), control water, dream, scrying</text>
+    </trait>
+    <trait>
+      <name>Inscrutable</name>
+      <text>The Deep One is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the Deep One’s intentions or sincerity have disadvantage.</text>
+    </trait>
+    <trait>
+      <name>Water Breathing</name>
+      <text>The Deep One can breathe only underwater.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage. If a target is trapped in one of its bubbles, the coral eel makes its bite attack with advantage.</text>
+      <attack>Bite|6|2d8 + 4</attack>
+    </action>
+    <action>
+      <name>Bubble</name>
+      <text>The coral eel breathes out a magical bubble towards a Medium or smaller creature within 60 ft. The target must make a successful DC 15 Dexterity save or become restrained inside the bubble (escape DC 14). Inside the bubble, the target can breathe air. The bubble can be attacked (AC 8) from the outside. Any successful hit will destroy it and free the restrained creature.</text>
+    </action>
+    <spells>command, detect magic, detect thoughts, suggestion, zone of truth, conjure elemental, control water, dream, scrying</spells><slots/>
+    <description>Using magic to breathe underwater, adventurers swim through a dense kelp forest. Suddenly one of the leaders sees two enormous eyes appear from behind the green plants. A strange sensation travels quickly through the adventurer’s body.
+
+      Eye-Opening. The Deep One crossed through an underwater Riftgate into the ordinary world. It has powerful magic and can affect other creatures miles away. This strange aberration schemes to take control by enthralling those in power.
+
+      Deep Magic. Even though it swims far from royal palaces and other seats of power, the Deep One uses magic to enter the minds of unsuspecting creatures. It will use its scrying and dream spells, as well as telepathy to influence others. At times, the monster will have its victims make an undersea journey to meet face-to-face.
+
+      Source: Cawood, Monsters of the Wilderness p. 17 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: The Deep One -->
+  <monster>
+    <name>Demon Crab</name>
+    <size>L</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>76 (8d10 + 32)</hp>
+    <speed>30 ft., swim 40 ft.</speed>
+    <str>18</str><dex>16</dex><con>18</con><int>6</int><wis>10</wis><cha>4</cha>
+    <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>10</passive>
+    <languages>understands Abyssal but can’t speak</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>The demon can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The demon has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The demon makes three attacks: one with its bite and two with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage.</text>
+      <attack>Bite|7|2d10 + 4</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. If the target is a Medium or smaller creature, it is grappled (escape DC 14). The demon has two claws, each of which can only grapple one target.</text>
+      <attack>Claw|7|2d6 + 4</attack>
+    </action>
+    <action>
+      <name>Ray of Mutilation</name>
+      <text>Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 7 (2d6) psychic damage and the target must make a DC 14 Constitution saving throw. On a failed save, the target is also cursed with magical deformities. While deformed, the target has its speed halved and has disadvantage on attacks based on Strength or Dexterity. The target can repeat the saving throw whenever it finishes a short or long rest, ending the effect on a success.</text>
+    </action>
+    <description>Strange waves crossed over from the home of the demons into the ordinary world. These waves corrupted some of the biggest giant crabs and turned them into disgusting fiends.
+
+      Sand Crawlers. Although they are usually in the sea, demon crabs also venture onto beaches and other areas around the coast. There have been recent tales of raids on small fishing villages by these horrid creatures.
+
+      Evil Eye. The fiend’s large eye can shoot out a bizarre green ray. This magical beam can cause a creature to be mutilated in strange ways. The unfortunate victims are often ostracized when they return to their communities.
+
+      Source: Cawood, Monsters of the Wilderness p. 18 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Demon Crab -->
+  <monster>
+    <name>The Fathomer</name>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>neutral evil</alignment>
+    <ac>14 (17 with mage armor)</ac>
+    <hp>66 (7d8 + 35)</hp>
+    <speed>30 ft., swim 60 ft.</speed>
+    <str>10</str><dex>18</dex><con>20</con><int>20</int><wis>20</wis><cha>24</cha>
+    <save>Con +8, Wis +8, Cha +10</save>
+    <skill>Deception +10, Insight +8, Perception +8, Stealth +7, Survival +8</skill>
+    <senses/><passive>18</passive>
+    <languages>Aquan, Common, telepathy 120 ft.</languages>
+    <cr>8</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>The Fathomer can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Metamagic</name>
+      <text>Once a day the Fathomer can use each one of these spell features:</text>
+      <text/>
+      <text>Distant Spell. When he casts a spell that has a range of 5 feet or greater, he can double the range of the spell.</text>
+      <text/>
+      <text>Quickened Spell. When he casts a spell that has a casting time of 1 action, he can instead use a bonus action.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The Fathomer regains 10 hit points at the start of its turn if it has at least 1 hit point.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The Fathomer is a 9th-level sorcerer. His spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). He has the following sorcerer spells prepared:</text>
+      <text>Cantrips (at will): blade ward, chill touch, light, message, minor illusion</text>
+      <text>1st level (4 slots): charm person, mage armor, magic missile, thunderwave</text>
+      <text>2nd level (3 slots): darkvision, mirror image, scorching ray, suggestion</text>
+      <text>3rd level (3 slots): counterspell, fear, haste</text>
+      <text>4th level (3 slots): banishment, blight, confusion</text>
+      <text>5th level (1 slot): teleportation circle</text>
+    </trait>
+    <action>
+      <name>+3 Dagger</name>
+      <text>Melee Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d4 + 7) piercing damage.</text>
+      <attack>+3 Dagger|7|2d8 + 4</attack>
+    </action>
+    <spells>blade ward, chill touch, light, message, minor illusion, charm person, mage armor, magic missile, thunderwave, darkvision, mirror image, scorching ray, suggestion, counterspell, fear, haste, banishment, blight, confusion, teleportation circle</spells><slots>4,3,3,3,1</slots>
+    <description>The Fathomer is a sorcerer who was transformed into a fish man. A ray of mutilation from a demon crab changed his life. His entire body was permanently altered during the attack.
+
+      Hateful Homeland. The sorcerer’s friends and family were horrified and they turned against him. Labeled a mutant, he was banished from his hometown. The broken, miserable creature fled to the sea.
+
+      New Beginning. The Fathomer’s life span has been extended by the transformation and he could live for several hundred years. He now lives in a sunken ruin on a mysterious island.
+
+      Sea of Love. Recently the Fathomer has fallen in love with a mermaid. Although she is drawn to the tormented creature, she is scared of his unpredictable nature.
+
+      Source: Cawood, Monsters of the Wilderness p. 19 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: The Fathomer -->
+  <monster>
+    <name>Ghost Whale</name>
+    <size>H</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>8</ac>
+    <hp>230 (20d12 + 100)</hp>
+    <speed>0 ft., swim 40 ft.</speed>
+    <str>25</str><dex>7</dex><con>20</con><int>7</int><wis>17</wis><cha>3</cha>
+    <skill>Perception +7</skill>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>blindsight 120 ft.</senses><passive>17</passive>
+    <languages>-</languages>
+    <cr>9</cr>
+    <trait>
+      <name>Echolocation</name>
+      <text>The ghost whale can’t use its blindsight while deafened.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The ghost whale does double damage to objects and structures.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the ghost whale has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Turn Resistance</name>
+      <text>The ghost whale has advantage on saving throws against any effect that turns undead.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 29 (4d10 + 7) piercing damage. If the target is a Large or smaller creature, it must succeed on a DC 16 Dexterity saving throw or be swallowed by the ghost whale. A swallowed creature has total cover against attacks and other effects outside the ghost whale. If the ghost whale dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement.</text>
+      <attack>Bite|11|4d10 + 7</attack>
+    </action>
+    <action>
+      <name>Sonic Wave (Recharge 2–3)</name>
+      <text>The ghost whale sings an eerie whale song in a 90-foot cone. Each creature in that area must succeed on a DC 16 Constitution saving throw or take 24 (7d6) force damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>onic Wave||7d6</attack>
+    </action>
+    <description>Swimming under the surface of the sea are enormous undead whales. Encountering one of the horrors can be one of the most terrifying moments for an adventurer.
+
+      Second Life. These whales have returned from the land of the dead with a vengeance. Ghost whales will target whalers and fisherfolk first. However, they will attack almost any ship and attempt to sink it.
+
+      Below the Surface. Ghost whales are one of the biggest creatures in the sea, usually about 100 feet long. Intelligent mammals like whales and dolphins can sense something is wrong with these grim creatures and avoid them.
+      
+      Undead Nature. The ghost whale doesn’t require air, food, drink, or sleep.
+
+      Source: Cawood, Monsters of the Wilderness p. 20 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Ghost Whale -->
+  <monster>
+    <name>Giant Shark Zombie</name>
+    <size>H</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>87 (7d12 + 42)</hp>
+    <speed>0 ft., swim 50 ft.</speed>
+    <str>21</str><dex>10</dex><con>23</con><int>1</int><wis>9</wis><cha>3</cha>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>blindsight 60 ft.</senses><passive>9</passive>
+    <languages>-</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Blood Frenzy</name>
+      <text>The shark has advantage on melee attack rolls against any creature that doesn’t have all its hit points.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The shark has advantage on an attack roll against a creature if at least one of the shark’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the shark has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the shark to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the shark drops to 1 hit point instead.</text>
+    </trait>
+    <trait>
+      <name>Water Breathing</name>
+      <text>The shark can breathe only underwater.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage.</text>
+      <attack>Bite|7|2d10 + 5</attack>
+    </action>
+    <description>A large fin pierces the blue of the sea. Lurking just out of sight is a powerful predator. However, this is no ordinary sea creature. This is the giant shark zombie, a lethal killing machine. Shark zombies resemble living sharks, but they also show the wounds that killed them.
+
+      Great Guardian. These undead horrors are used by sahuagin to guard important locations. The sharks are able to follow simple commands from the sea devils.
+
+      Powerful Predator. They are at least 30 feet long and have sizeable jaws. Giant shark zombies always take the shortest route to their prey. Groups of shark zombies often work together to swarm victims.
+
+      Sahuagin Servant. Some sahuagin also use these undead as mounts. Many mariners believe sahuagin necromancers are responsible for bringing the fearsome sharks back from the dead.
+      
+      Undead Nature. A giant shark zombie doesn’t require air, food, drink, or sleep.
+
+      Source: Cawood, Monsters of the Wilderness p. 21 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Giant Shark Zombie -->
+  <monster>
+    <name>King Nemos</name>
+    <size>L</size>
+    <type>humanoid (merfolk)</type>
+    <alignment>lawful good</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>133 (14d10 + 56)</hp>
+    <speed>0 ft., swim 50 ft.</speed>
+    <str>20</str><dex>20</dex><con>18</con><int>18</int><wis>18</wis><cha>22</cha>
+    <skill>Athletics +9, Insight +9, Intimidation +10, Perception +9</skill>
+    <senses/><passive>19</passive>
+    <languages>Aquan, Common, Primordial</languages>
+    <cr>11</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>Nemos can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Brave</name>
+      <text>He has advantage on saving throws against being frightened.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>Nemos has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Nemos makes three melee attacks.</text>
+    </action>
+    <action>
+      <name>Great Trident</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) piercing damage.</text>
+      <attack>Great Trident|9|2d8 + 5</attack>
+    </action>
+    <action>
+      <name>Call of the Sea (3/day)</name>
+      <text>Each creature of his choice that is within 60 ft. of him and can hear him, gains advantage on their attack rolls until the start of his next turn. He can then make one attack as a bonus action.</text>
+    </action>
+    <action>
+      <name>Summon Sharks (1/day)</name>
+      <text>Nemos can summon 1d8 reef sharks. The sharks will arrive in 1d4 rounds and obey his commands.</text>
+    </action>
+    <spells/><slots/>
+    <description>Far beneath the waves is a different world. A stunning, white city carved out of coral sits on the sea floor. At the center of this remote settlement is a magnificent castle. Sitting on its throne is the ruler of the merfolk, King Nemos.
+
+      Regal Royal. The king is a brave, honest merman and loved by his people. He is also a fierce, gruff warrior and few ever challenge his power. King Nemos doesn’t deal with change well and wants the merfolk community to follow the ancient traditions.
+
+      Family Fishman. Sorrow grows in his heart as his wife was killed in a sahuagin raid. He now focuses on raising his seven daughters. All seven are precocious mermaid princesses who want their independence.
+
+      Undersea Palace. His large family, including the many princesses, all live in Coral Castle. A company of merfolk knights are based at the castle with a stable of dolphins and sea horses.
+      
+      Source: Cawood, Monsters of the Wilderness p. 22 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: King Nemos -->
+  <monster>
+    <name>Merfolk Knight</name>
+    <size>M</size>
+    <type>humanoid (merfolk)</type>
+    <alignment>lawful good</alignment>
+    <ac>16 (merfolk armor)</ac>
+    <hp>65 (10d8 + 20)</hp>
+    <speed>0 ft., swim 40 ft.</speed>
+    <str>18</str><dex>18</dex><con>14</con><int>12</int><wis>16</wis><cha>14</cha>
+    <skill>Athletics +7, Perception +6, Survival +6</skill>
+    <senses/><passive>16</passive>
+    <languages>Aquan, Common</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>The merfolk can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Brave</name>
+      <text>The merfolk has advantage on saving throws against being frightened.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The merfolk makes two attacks with its lance or one with its crossbow.</text>
+    </action>
+    <action>
+      <name>Lance</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 10 (1d12 + 4) piercing damage.</text>
+      <attack>Lance|7|1d12 + 4</attack>
+    </action>
+    <action>
+      <name>Coral Crossbow</name>
+      <text>Ranged Weapon Attack: +7 to hit, range 100/400 ft., one target. Hit: 9 (1d10 + 4) piercing damage.</text>
+      <attack>Coral Crossbow|7|1d10 + 4</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>The merfolk adds 2 to its AC against one melee attack that would hit it. To do so, the merfolk must see the attacker and be wielding a melee weapon.</text>
+    </reaction>
+    <spells/><slots/>
+    <description>The elite troops of the merfolk are the knights. These highly trained warriors can handle almost any opponent. Only the largest, toughest merman are chosen to be a part of this brotherhood.
+
+      Serious Soldiers. King Nemos always has merfolk knights guarding him. A sizeable garrison of knights is stationed at the king’s home, known as Coral Castle.
+
+      Wise Warriors. These knights are experts in underwater combat. They are also patient, thoughtful creatures, the finest soldiers of the merfolk community.
+
+      Underwater Cavalry. Merfolk knights are often mounted on dolphins or giant sea horses.
+      
+      Source: Cawood, Monsters of the Wilderness p. 23 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Merfolk Knight -->
+  <monster>
+    <name>Mermaid Princess</name>
+    <size>M</size>
+    <type>humanoid (merfolk, shapechanger)</type>
+    <alignment>chaotic good</alignment>
+    <ac>14</ac>
+    <hp>44 (8d8 + 8)</hp>
+    <speed>30 ft. (human form), swim 40 ft.</speed>
+    <str>12</str><dex>18</dex><con>12</con><int>12</int><wis>17</wis><cha>20</cha>
+    <skill>Athletics +3, Perception +5, Performance +7</skill>
+    <senses/><passive>15</passive>
+    <languages>Aquan, Common</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>The mermaid can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Shapechanger</name>
+      <text>The mermaid can use her action to polymorph into any Medium human, or back into her true form. Her statistics are the same in each form. Any equipment she is wearing or carrying isn’t transformed. She reverts to her true form if she dies.</text>
+    </trait>
+    <trait>
+      <name>Speak with Sea Creatures</name>
+      <text>The mermaid can communicate with beasts from the sea as if they shared a language.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>the mermaid makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Coral Dagger</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage.</text>
+      <attack>Coral Dagger|6|1d4 + 5</attack>
+    </action>
+    <action>
+      <name>Undersea Song (3/day)</name>
+      <text>The mermaid sings a beautiful song. Any creature within 60 feet of her must succeed on a DC 15 Wisdom saving throw or is charmed by the mermaid for 1 minute. If the mermaid or any of her companions harms the creature, the effect on it ends immediately.</text>
+    </action>
+    <spells/><slots/>
+    <description>Swimming past a coral reef is a gorgeous creature. She has the torso of a human female and a long tail like a fish. This is the mermaid princess, one of the many daughters of King Nemos. They are part of the merfolk community under the sea.
+
+      Precocious Princess. Mermaids are usually quite self-absorbed and egocentric. However, they are also usually very curious and are especially interested in those creatures that live on land.
+
+      Under the Sea. These beautiful merfolk usually live inside underwater castles or caves deep beneath the waves. They make jewelry and tools out of shells and bones.
+
+      Loyal Companions. Mermaids often have sea creatures as close companions. Dolphins, seals, crabs, and other beasts often befriend them.
+      
+      Source: Cawood, Monsters of the Wilderness p. 24 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Mermaid Princess -->
+  <monster>
+    <name>Sea Serpent</name>
+    <size>G</size>
+    <type>monstrosity (titan)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>19 (natural armor)</ac>
+    <hp>296 (16d20 + 128)</hp>
+    <speed>0 ft., swim 50 ft.</speed>
+    <str>28</str><dex>21</dex><con>26</con><int>12</int><wis>17</wis><cha>5</cha>
+    <skill>Perception +8</skill>
+    <immune>bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, frightened, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>18</passive>
+    <languages>-</languages>
+    <cr>15</cr>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The sea serpent does double damage to objects and structures.</text>
+    </trait>
+    <trait>
+      <name>Water Breathing</name>
+      <text>The sea serpent can breathe only underwater.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The sea serpent makes one bite attack and one constrict attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 42 (6d10 + 9) piercing damage.</text>
+      <attack>Bite|14|6d10 + 9</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) bludgeoning damage, and the target is grappled (escape DC 18). Until this grapple ends, the creature is restrained. The sea serpent can grapple up to three Large or smaller creatures.</text>
+      <attack>Constrict|14|2d10 + 9</attack>
+    </action>
+    <action>
+      <name>Stench Breath (Recharge 5–6)</name>
+      <text>The sea serpent exhales a foul, poisonous gas in a 120-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or take 55 (10d10) poison damage and be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the sea serpent’s breath for 24 hours.</text>
+      <attack>Stench Breath||10d10</attack>
+    </action>
+    <description>One of the largest monsters in the sea is the legendary sea serpent. It makes any journey across the ocean a perilous voyage.
+
+      Powerful Swimmers. Sea serpents are strong swimmers and are surprisingly agile in the water. They seem to be more active in wild, intense storms. Their superior swimming ability lets them easily navigate these wild waves.
+
+      Ocean Hazard. Those adventurers brave enough to travel across wide stretches of ocean might have to face this nightmare. Some maps mark the locations where a sea serpent has been sighted.
+
+      Salty Mouth. A sea serpent’s breath is so awful it will harm any nearby creatures. The odor is rumored to smell like a salty dead whale.
+
+      Source: Cawood, Monsters of the Wilderness p. 25 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Sea Serpent -->
+  <monster>
+    <name>Selkie</name>
+    <size>M</size>
+    <type>fey (shapechanger)</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>13</ac>
+    <hp>45 (7d8 + 14)</hp>
+    <speed>30 ft. (human form), swim 40 ft.</speed>
+    <str>14</str><dex>16</dex><con>14</con><int>11</int><wis>15</wis><cha>16</cha>
+    <skill>Deception +5, Perception +4, Persuasion +5</skill>
+    <vulnerable>fire</vulnerable>
+    <senses>darkvision 60 ft.</senses><passive>14</passive>
+    <languages>Aquan, Common</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The selkie can hold its breath for 30 minutes.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The selkie has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Shapechange</name>
+      <text>The selkie can use its action to polymorph into a seal, or back into its true form of a fey creature. Its statistics, other than those for the Hold Breath feature, are the same in each form. They shed their seal skins after transforming. The selkie reverts to its true form if it dies.</text>
+    </trait>
+    <trait>
+      <name>Speak with Beasts</name>
+      <text>The selkie can communicate with beasts as if they shared a language.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The selkie’s innate spellcasting ability is Charisma (spell save DC 13, +5 to spell attacks). It can innately cast the following spells, requiring no material components:</text>
+      <text>At will: detect magic</text>
+      <text>3/day each: charm person, cure wounds</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft. one target. Hit: 6 (1d8 + 2) piercing damage.</text>
+      <attack>Bite|4|1d8 + 2</attack>
+    </action>
+    <action>
+      <name>Unarmed Strike</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft. one target. Hit: 5 (1d6 + 2) bludgeoning damage.</text>
+      <attack>Unarmed Strike|4|1d6 + 2</attack>
+    </action>
+    <spells>detect magic, charm person, cure wounds</spells><slots/>
+    <description>Sailors swear that some seals can turn into humans. This is close to the truth, selkies are actually fey creatures that can shapechange into seals.
+
+      Rocky Romance. Selkies have been known to fall in love with humans who find their seal skin. If someone possesses their skin, the selkie’s magic doesn’t work on them. The fey aren’t the best judge of character and find it hard to escape unhealthy relationships. Children born from marriages with selkies have webbed toes and fingers.
+
+      Seven Year Hitch. Every seven years there is a chance a selkie can’t return to its humanoid form and remains in seal form. These shapechangers are usually shunned by other fey creatures and forgotten about.
+
+      Source: Cawood, Monsters of the Wilderness p. 26 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Selkie -->
+  <monster>
+    <name>Undead Pirate</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>14 (armor scraps)</ac>
+    <hp>19 (3d8 + 6)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <str>15</str><dex>16</dex><con>15</con><int>7</int><wis>8</wis><cha>12</cha>
+    <skill>Acrobatics +5, Athletics +4, Deception +3, Intimidation +3</skill>
+    <vulnerable>bludgeoning</vulnerable>
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>9</passive>
+    <languages>the languages it knew in life</languages>
+    <cr>1</cr>
+    <trait>
+      <name>Lightfooted</name>
+      <text>The undead pirate can take the Dash or Disengage action as a bonus action on each of its turns.</text>
+    </trait>
+    <trait>
+      <name>Pull Themselves Together</name>
+      <text>If the undead pirate loses a limb or other body part, it can reattach it.</text>
+    </trait>
+    <trait>
+      <name>Sea Legs</name>
+      <text>The undead pirate has advantage on ability checks and saving throws to resist being knocked prone.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the undead pirate has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>The Moon Doesn’t Lie</name>
+      <text>Only moonlight reveals the undead pirate’s true skeletal form.</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the undead pirate to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the undead pirate drops to 1 hit point instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The undead pirate makes two attacks.</text>
+    </action>
+    <action>
+      <name>Scimitar</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.</text>
+      <attack>Scimitar|5|1d6 + 3</attack>
+    </action>
+    <action>
+      <name>Light Crossbow</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage.</text>
+      <attack>Light Crossbow|5|1d8 + 3</attack>
+    </action>
+    <description>A ghost ship pulls alongside a galley under a full moon. Out of nowhere, an armed skeleton appears. It leaps onto the vessel with its weapon raised. More of the undead crew climb up from below deck with wooden planks to board the galley.
+
+      Brutal Buccaneer. Undead pirates are even worse than living pirates. Raiding ships and taking the bounty is all they know. They seem to continue to live their lives as if they’d never died.
+
+      Dark Tides. These monsters are pirates who were betrayed by their own evil crews. Angry and vengeful, they continue to plunder.
+
+      Ghost Ships. Most undead pirates sail on board ghost ships. Some guard treasure on remote islands. Others haunt ancient shipwrecks or abandoned docks.
+
+      Undead Nature. An undead pirate doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 27 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Undead Pirate -->
+  <monster>
+    <name>Undead Pirate Captain</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>17 (armor scraps)</ac>
+    <hp>102 (12d8 + 48)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <str>18</str><dex>18</dex><con>19</con><int>18</int><wis>19</wis><cha>17</cha>
+    <skill>Athletics +7, Deception +6, Intimidation +6, Perception +7, Persuasion +6, Stealth +7</skill>
+    <vulnerable>bludgeoning</vulnerable>
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>17</passive>
+    <languages>the languages it knew in life</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Lightfooted</name>
+      <text>The undead pirate can take the Dash or Disengage action as a bonus action on each of its turns.</text>
+    </trait>
+    <trait>
+      <name>Pull Themselves Together</name>
+      <text>If the undead pirate loses a limb or other body part, it can reattach it.</text>
+    </trait>
+    <trait>
+      <name>Sea Legs</name>
+      <text>The undead pirate has advantage on ability checks and saving throws to resist being knocked prone.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the undead pirate has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>The Moon Doesn’t Lie</name>
+      <text>Only moonlight reveals the undead pirate’s true skeletal form.</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the undead pirate to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the undead pirate drops to 1 hit point instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The undead pirate makes two sword and two tentacle attacks.</text>
+    </action>
+    <action>
+      <name>Longsword</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) slashing damage.</text>
+      <attack>Longsword|7|1d10 + 4</attack>
+    </action>
+    <action>
+      <name>Tentacles</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.</text>
+      <attack>Tentacles. |7|2d6 + 4</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>The undead pirate adds 2 to its AC against one melee attack that would hit it. To do so, the undead pirate must see the attacker and be wielding a melee weapon or have a free tentacle.</text>
+    </reaction>
+    <description>Skeletal pirates kidnap the crew of a flagship. After the prisoners are taken to the deck of a pirate ship, a tall figure pushes past the strange crew. It is the notorious undead pirate captain.
+
+      Curious Captain. This clever, devious monster is a terrifying opponent. The hidden tentacles in his back only reveal themselves when he attacks.
+
+      Legendary Leader. His rowdy band of pirates are very loyal. The captain assembled the motley crew, and they will do anything for him. Every band of undead pirates has their own captain.
+
+      Undead Nature. An undead pirate doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 28 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Undead Pirate Captain -->
+  <monster>
+    <name>Wave Rider</name>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>neutral evil</alignment>
+    <ac>13</ac>
+    <hp>52 (8d8 + 16)</hp>
+    <speed>40 ft., swim 40 ft.</speed>
+    <str>14</str><dex>16</dex><con>14</con><int>11</int><wis>14</wis><cha>12</cha>
+    <skill>Perception +4, Stealth +5, Survival +4</skill>
+    <senses>darkvision 60 ft.</senses><passive>14</passive>
+    <languages>Aquan, Common</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>The wave rider can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Brave</name>
+      <text>The wave rider has advantage on saving throws against being frightened.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The wave rider’s innate spellcasting ability is Wisdom (spell save DC 12, +4 to spell attacks). It can innately cast the following spells, requiring no material components:</text>
+      <text>At will: detect magic, water walk (surfing the waves)</text>
+      <text>1/day each: conjure elemental (water elemental), control water</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The wave rider has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The wave rider makes two melee attacks or one ranged attack.</text>
+    </action>
+    <action>
+      <name>Unarmed Strike</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage.</text>
+      <attack>Unarmed Strike|4|1d8 + 2</attack>
+    </action>
+    <action>
+      <name>Water Jet</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 30/80 ft., one target. Hit: 10 (2d6 + 3) force damage.</text>
+      <attack>Water Jet|5|2d6 + 3</attack>
+    </action>
+    <reaction>
+      <name>Water Shield</name>
+      <text>The waver rider adds 2 to its AC against one melee or ranged attack that would hit it by creating a water shield.</text>
+    </reaction>
+    <spells>detect magic, water walk, conjure elemental, control water</spells><slots/>
+    <description>A ship’s crew watches the waves crash against the side of their vessel. The sea is rough and the hatches are battened down. All of a sudden one of the men sees something in a white swell. A humanoid creature is surfing on the waves.
+
+      Feyland Foreigner. Wave riders crossed over from Feyland through underwater Riftgates. They have found the ordinary world is unprepared for creatures such as themselves and are beginning to take advantage.
+
+      Peculiar Pirate. These fey engage in piracy and also make life difficult for ordinary pirates. A group of wave riders can easily overwhelm a ship’s crew. Sailors and pirates alike are trying to find a way to deal with this new threat.
+
+      Source: Cawood, Monsters of the Wilderness p. 29 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Wave Rider -->
+  <monster>
+    <name>Wicked Tuna</name>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>chaotic evil</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>26 (4d10 + 4)</hp>
+    <speed>swim 30 ft.</speed>
+    <str>18</str><dex>12</dex><con>13</con><int>3</int><wis>10</wis><cha>3</cha>
+    <skill>Perception +2</skill>
+    <senses/><passive>12</passive>
+    <languages>-</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Aggressive</name>
+      <text>As a bonus action, the wicked tuna can move up to its speed toward a hostile creature that it can see.</text>
+    </trait>
+    <trait>
+      <name>Blood Frenzy</name>
+      <text>The wicked tuna has advantage on melee attack rolls against any creature that doesn’t have all its hit points.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The wicked tuna has advantage on an attack roll against a creature if at least one of the wicked tuna’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
+    </trait>
+    <trait>
+      <name>Water Breathing</name>
+      <text>The wicked tuna can breathe only underwater.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.</text>
+      <attack>Bite|6|2d8 + 4</attack>
+    </action>
+    <description>There are a number of strange monsters in the ocean. The wicked tuna is one of the most bizarre. It hunts in groups and can be a menace to any seaside community.
+      
+      Sizeable Sea Creature. Many fisherfolk and sailors are surprised at the size of the wicked tuna. This creature is almost the size of a small whale. Coastal communities have begun to fear them as much as sharks.
+
+      Wild Waves. Wicked tuna cause mayhem with fishing fleets. They sink boats, rip nets apart, and eat fisherfolk. Most people know to pull in their nets and head back to land if a wicked tuna arrives on the scene.
+
+      Source: Cawood, Monsters of the Wilderness p. 30 (ThirdParty)</description>
+    <environment>coastal, underwater</environment>
+  </monster> <!-- Ocean: Wicked Tuna -->
   <!-- Arctic Region -->  
   <monster>
     <name>The Ragnar</name>
