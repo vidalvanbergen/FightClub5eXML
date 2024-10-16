@@ -4314,9 +4314,940 @@
       Source: Cawood, Monsters of the Wilderness p. 94 (ThirdParty)</description>
     <environment>forest</environment>
   </monster> <!-- Forest: The Great Eight, Rolen Xiloscient -->
-  
-  
-  
+  <monster>
+    <name>Baba Yaga</name>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>neutral evil</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>190 (20d8 + 100)</hp>
+    <speed>30 ft.</speed>
+    <str>20</str><dex>18</dex><con>21</con><int>25</int><wis>23</wis><cha>19</cha>
+    <save>Con +10, Int +12, Wis +11, Cha +9</save>
+    <skill>Arcana +12, Deception +9, Insight +11, Perception +11, Persuasion +9</skill>
+    <resist>fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <senses>truesight 120 ft.</senses><passive>21</passive>
+    <languages>Common, Abyssal, Elvish, Infernal, Sylvan</languages>
+    <cr>13</cr>
+    <trait>
+      <name>Assassinate</name>
+      <text>Baba Yaga has advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit she scores against a creature that is surprised is a critical hit.</text>
+    </trait>
+    <trait>
+      <name>Horrific Appearance</name>
+      <text>Any humanoid that starts its turn within 30 feet of Baba Yaga and can see her true form must make a DC 18 Wisdom saving throw. On a failed save, the creature is frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if Baba Yaga is within line of sight, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to Baba Yaga’s Horrific Appearance for the next 24 hours.
+        
+        Unless the target is surprised or the revelation of the witch’s true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against Baba Yaga.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Baba Yaga’s innate spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). She can innately cast the following spells, requiring no material components:</text>
+      <text>At will: comprehend languages, dancing lights, detect magic, minor illusion, vicious mockery</text>
+      <text>2/day each: blight, charm person, dispel magic, fear, fireball, misty step, ray of enfeeblement, sleep, witch bolt</text>
+      <text>1/day each: circle of death, darkness, detect thoughts, finger of death, hallucinatory terrain, hex, see invisibility, silence</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>Baba Yaga has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Mimicry</name>
+      <text>Baba Yaga can mimic the sounds of beasts or humanoids.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>Baba Yaga regains 10 hit points at the start of her turn if she has at least 1 hit point.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Baba Yaga makes one bite attack and two claw attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) piercing damage plus 13 (3d8) necrotic damage.</text>
+      <attack>Bite|10|3d8 + 5</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) slashing damage plus 13 (3d8) necrotic damage.</text>
+      <attack>Claw|10|1d8 + 5</attack>
+    </action>
+    <spells>comprehend languages, dancing lights, detect magic, minor illusion, vicious mockery, blight, charm person, dispel magic, fear, fireball, misty step, ray of enfeeblement, sleep, witch bolt, circle of death, darkness, detect thoughts, finger of death, hallucinatory terrain, hex, see invisibility, silence</spells><slots/>
+    <description>Adventurers head to their tents after a delicious meal. As they are beginning to lie down for the night, the ranger in their party hears an unusual raven’s call. He shouts a warning to his companions, “something wicked is coming this way!”
+      
+      Wild Witch. Baba Yaga is one of the most famous witches in the world. The cunning, clever old woman is hideously ugly. Some say she is related to hags as she enjoys dining on humanoids.
+
+      The Little Grandmother. Even though she is truly a horrifying monster, many folks seek her out. Baba Yaga’s wisdom is legendary, and sages, scholars, and explorers seek her advice. However, there is a price to be paid for her assistance. The witch will ask for a favor in return, usually in the form of a dangerous quest.
+      
+      Source: Cawood, Monsters of the Wilderness p. 95 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Baba Yaga -->
+  <monster>
+    <name>Baba Yaga’s Hut</name>
+    <size>H</size>
+    <type>construct</type>
+    <alignment>unaligned</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>92 (8d12 + 40)</hp>
+    <speed>40 ft.</speed>
+    <str>20</str><dex>14</dex><con>20</con><int>1</int><wis>6</wis><cha>1</cha>
+    <immune>poison, psychic</immune>
+    <conditionImmune>blinded, charmed, deafened, exhausted, frightened, paralyzed, petrified, poisoned, prone</conditionImmune>
+    <senses>blindsight 90 ft.</senses><passive>8</passive>
+    <languages>-</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Immutable Form</name>
+      <text>Baba Yaga’s Hut is immune to any spell or effect that would alter its form.</text>
+    </trait>
+    <trait>
+      <name>Unhealthy Boundaries</name>
+      <text>When Baba Yaga’s Hut sits on the ground, a fence made of human bones rises up out of the ground and surrounds the construct. Menacing human skulls decorate the ghastly fence.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Baba Yaga’s Hut makes two kick attacks with its chicken legs.</text>
+    </action>
+    <action>
+      <name>Kick</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage.</text>
+      <attack>Kick|10|3d8 + 5</attack>
+    </action>
+    <action>
+      <name>Entrap</name>
+      <text>Baba Yaga’s Hut front door is unlocked, but once inside it locks. Any creature inside must succeed in a Strength contest or remain trapped inside for 1d8 hours.</text>
+    </action>
+    <description>A clump of trees is parted on the edge of the woods and a wooden hut with long chicken legs appears. It pauses for a moment and then races through the woods. This is Baba Yaga’s hut, the mobile home of the infamous witch.
+      
+      Dead and Breakfast. Some legends speak of people who found their way into the hut and never came out. Whether these unfortunates died, or if they’re still inside is an open question.
+
+      Spacious Home. Baba Yaga’s Hut is filled with numerous chambers, as well as her minions. It is much larger inside than it appears on the outside. There are sleeping quarters, sitting rooms, grand halls, gardens, servants’ quarters, alchemical storage rooms, and more.
+
+      Mortar and Pestle. The witch also stores her magical mortar inside her hut. When Baba Yaga flies around in this smaller construct, she sweeps the air with a birch broom to cover up the tracks she leaves behind.
+      
+      Source: Cawood, Monsters of the Wilderness p. 99 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Baba Yaga’s Hut -->
+  <monster>
+    <name>Black Stag</name>
+    <size>L</size>
+    <type>fey</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>42 (5d10 + 15)</hp>
+    <speed>40 ft.</speed>
+    <str>18</str><dex>12</dex><con>16</con><int>14</int><wis>13</wis><cha>12</cha>
+    <skill>Investigation +4, Perception +3, Stealth +3</skill>
+    <senses>darkvision 90 ft.</senses><passive>13</passive>
+    <languages>Sylvan</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Brave</name>
+      <text>The black stag has advantage on saving throws against being frightened.</text>
+    </trait>
+    <trait>
+      <name>Charge</name>
+      <text>If the black stag moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</text>
+    </trait>
+    <trait>
+      <name>Creeping Darkness</name>
+      <text>If the black stag spends a week in a forest, the trees and plants will slowly start to die. This process can be stopped by the presence of a good-aligned druid or a unicorn.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The black stag’s innate spellcasting ability is Intelligence (spell save DC 12). It can innately cast the following spells, requiring no material components:</text>
+      <text>At will: minor illusion</text>
+      <text>1/day each: darkness, silent image</text>
+    </trait>
+    <trait>
+      <name>Shifting Shadows</name>
+      <text>All the shadows within a mile of the black stag move independently.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The black stag makes two ram attacks, or one hooves attack on a prone creature.</text>
+    </action>
+    <action>
+      <name>Ram</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.</text>
+      <attack>Ram|6|2d8 + 4</attack>
+    </action>
+    <action>
+      <name>Hooves</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one prone creature. Hit: 17 (3d8 + 4) bludgeoning damage.</text>
+      <attack>Hooves|6|3d8 + 4</attack>
+    </action>
+    <spells>minor illusion, darkness, silent image</spells><slots/>
+    <description>While walking through the woods a sense of uneasiness fills your gut. Then you notice shadows around you seem to be moving independently. The cleric in your adventuring party suspects that the black stag is near. Then the druid notices that something is wrong with the trees and plants.
+      
+      Double Trouble. These evil fey usually spread fear and hate in the darkest part of Feyland. However, some have now passed through Riftgates into the ordinary world.
+
+      Sickening Shadows. When a black stag arrives, forests start to rot and turn an inky, black color. After they’ve decomposed, the cruel fey will search for new woods to corrupt and destroy.
+
+      Horrible Henchmen. At times evil druids and other nefarious characters fall into league with this fey. If it’s in a good mood, the black stag will even let these villains use it as a mount.
+      
+      Source: Cawood, Monsters of the Wilderness p. 97 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Black Stag -->
+  <monster>
+    <name>Briar Moon</name>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic good</alignment>
+    <ac>13 (16 with barkskin)</ac>
+    <hp>102 (12d8 + 48)</hp>
+    <speed>30 ft.</speed>
+    <str>15</str><dex>16</dex><con>18</con><int>12</int><wis>20</wis><cha>19</cha>
+    <skill>Athletics +5, Insight +8, Perception +8, Stealth +6, Survival +8</skill>
+    <senses>darkvision 60 ft.</senses><passive>18</passive>
+    <languages>Common, Elvish, Sylvan, Primordial</languages>
+    <cr>6</cr>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>Briar has advantage on saving throws against being charmed, and magic can’t put her to sleep.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Briar’s innate spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). She can innately cast the following spells, requiring no material components</text>
+      <text>At will: barkskin, druidcraft, produce flame, shillelagh, thorn whip</text>
+      <text>3/day each: faerie fire, fog cloud, moonbeam, pass without trace, speak with animals, thunderwave</text>
+      <text>1/day each: call lightning, dispel magic</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>Briar has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Speak to Beasts and Plants</name>
+      <text>Briar can communicate with beasts and plants as if they shared a language.</text>
+    </trait>
+    <trait>
+      <name>Tree Stride</name>
+      <text>Once on each of her turns, Briar can use 10 feet of her movement to step magically into one living tree within 5 feet of her and emerge from a second living tree within 60 feet of it that she can see, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Briar makes two melee or ranged attacks.</text>
+    </action>
+    <action>
+      <name>Sword of Power</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage. (See insert)</text>
+      <attack>Sword of Power|7|2d6 + 4</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage.</text>
+      <attack>Longbow|6|1d8 + 3</attack>
+    </action>
+    <spells>barkskin, druidcraft, produce flame, shillelagh, thorn whip, faerie fire, fog cloud, moonbeam, pass without trace, speak with animals, thunderwave, call lightning, dispel magic</spells><slots/>
+    <description>Legend says fey energies passed through a Riftgate and blessed a baby. The child was imbued by these forces and born a fey. Briar Moon is destined to cleanse the wilderness of evil. She was feared by those in her village because of strange events surrounding her birth. Her home was then destroyed by cultists, and she was hidden away by forest creatures.
+      
+      Wild Guardian. Briar Moon has fled into the wilderness to fulfill her destiny. She is deeply connected to nature and fearlessly fights evil of any kind.
+
+      Natural Warrior. Seeing herself as part of the natural world, Briar is at home in the wild. She uses her magic and her powerful sword against evil foes. The Sword of Power is legendary and many creatures would love to get their hands on it.
+      
+      Source: Cawood, Monsters of the Wilderness p. 98 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Briar Moon -->
+  <monster>
+    <name>Creeping Shadow</name>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>60 (8d10 + 16)</hp>
+    <speed>30 ft.</speed>
+    <str>16</str><dex>19</dex><con>14</con><int>10</int><wis>14</wis><cha>11</cha>
+    <skill>Perception +4, Stealth +4</skill>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses><passive>14</passive>
+    <languages>the languages it knew in life</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Amorphous</name>
+      <text>The creeping shadow can move through a space as narrow as 1 inch wide without squeezing.</text>
+    </trait>
+    <trait>
+      <name>Faultless Tracker</name>
+      <text>The creeping shadow is given its quarry by an evil creature. The creeping shadow knows the direction and distance to its quarry as long as the two of them are in the same forest.</text>
+    </trait>
+    <trait>
+      <name>Shadow Stealth</name>
+      <text>While in dim light or darkness, the creeping shadow can take the Hide action as a bonus action.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the creeping shadow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The creeping shadow makes two attacks: only one of which can be a bite attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.</text>
+      <attack>Bite|5|2d6 + 3</attack>
+    </action>
+    <action>
+      <name>Unarmed</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage, and target is grappled (escape DC 13). The creeping shadow has two hands. Each hand can grapple one Medium or smaller target.</text>
+      <attack>Unarmed|5|2d8 + 3</attack>
+    </action>
+    <description>Climbing over a large fallen tree, a party of heroes moves cautiously through the forest. The paladin lifts the halfling rogue over the natural obstacle. Just then, a gnome druid sees something out of the corner of his eye. He thought he saw a creeping shadow, one of the last creatures one would ever want to lay their eyes on.
+
+      Stealthy Stalker. These callous undead monsters hunt down their prey in the shadowy regions of the woods. The creeping shadow will track its victims for hours, days, or weeks. It is very patient and will wait for just the right moment to strike.
+
+      Shady Character. This creature is usually created to hunt someone by a necromancer, witch, or hag. However, the creeping shadow is a coward and will flee any fight that isn’t going its way.
+
+      Lost Souls. This undead horror is made from the souls of those who perished in the darkest areas of the forest. Some folks swear they hear many different voices coming from the monster.
+
+      Undead Nature. The creeping shadow doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 99 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Creeping Shadow -->
+  <monster>
+    <name>Dimspriggan</name>
+    <size>L</size>
+    <type>fey</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>67 (9d10 + 18)</hp>
+    <speed>30 ft.</speed>
+    <str>18</str><dex>17</dex><con>15</con><int>11</int><wis>16</wis><cha>7</cha>
+    <skill>Perception +6, Stealth +6</skill>
+    <vulnerable>fire</vulnerable>
+    <resist>bludgeoning, piercing</resist>
+    <senses>darkvision 60 ft.</senses><passive>16</passive>
+    <languages>Sylvan</languages>
+    <cr>5</cr>
+    <trait>
+      <name>False Appearance</name>
+      <text>If the dimspriggan remains motionless it appears to be a normal tree.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The dimspriggan’s innate spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components</text>
+      <text>At will: thorn whip</text>
+      <text>2/day each: invisibility</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The dimspriggan regains 10 hit points at the start of its turn as long as it has at least 1 hit point.</text>
+    </trait>
+    <trait>
+      <name>Tree Stride</name>
+      <text>Once on each of its turns, the dimspriggan can use 10 feet of its movement to step magically into one living tree within 5 feet of it and emerge from a second living tree within 60 feet of it that it can see, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Huge or bigger.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dimspriggan makes two claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.</text>
+      <attack>Claw|7|2d8 + 4</attack>
+    </action>
+    <action>
+      <name>Breathe Insect Cloud (Recharge 2–3). </name>
+      <text>Swarming, biting locusts fill a 30-foot-radius sphere centered on the dimspriggan. The sphere spreads around corners. The sphere remains for 1 minute, and the terrain is lightly obscured. The sphere’s area is also difficult terrain. When the area appears, each creature in it must make a DC 14 Constitution saving throw. A creature takes 5 (1d10) piercing damage on a failed save, or half as much damage on a successful save. A creature must also make this saving throw when it enters the spell’s area for the first time on a turn or ends its turn there.</text>
+    </action>
+    <spells>thorn whip, invisibility</spells><slots/>
+    <description>Tons of flying insects pour into a cluster of tents, chasing away the inhabitants. Appearing out of thin air in the clearing, a dimspriggan begins ripping people to shreds.
+
+      Grove Guardian. Most dimspriggans are found in ruins guarding a hoard of treasure. As the guardian of the treasure, they will kill anyone who enters their territory. They are wicked, mischievous fey who also enjoy spreading misery and destruction. Dimspriggans love chasing newcomers out of the woods, making sure the scared explorers will never return again.
+      
+      Dark Cloud. The clouds of insects breathed out by dimspriggans make a great deal of noise. Deep, buzzing sounds continue to haunt any survivors long after an encounter with these fey.
+      
+      Source: Cawood, Monsters of the Wilderness p. 100 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Dimspriggan -->
+  <monster>
+    <name>Faun of the Dead</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>85 (10d8 + 40)</hp>
+    <speed>35 ft.</speed>
+    <str>16</str><dex>14</dex><con>18</con><int>3</int><wis>9</wis><cha>7</cha>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>9</passive>
+    <languages>Common, Elvish, Sylvan</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Fear Aura</name>
+      <text>Any beast or humanoid that starts its turn within 15 feet of the faun must succeed on a DC 13 Wisdom saving throw or be frightened until the start of their next turn.</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the faun to 0 hit points, it must make a Constitution saving throw with a DC of 2 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the faun drops to 1 hit point instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The faun makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Double-Bladed Quarterstaff</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) slashing damage.</text>
+      <attack>Double-Bladed Quarterstaff|5|1d10 + 3</attack>
+    </action>
+    <action>
+      <name>Gore</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.</text>
+      <attack>Gore|5|1d8 + 3</attack>
+    </action>
+    <description>Several brownies are picking glowing berries in the woods. One of them hears a branch break and alerts the others. Then they see it. A horned creature is slowing creeping through the dense foliage towards them. “It’s the Faun of the Dead!” screams one of the little fey and they all faint.
+
+      Broken Heart. The faun had a fallout with his family and then its lover married someone else. An emotional wreck, it wandered into the most dangerous part of the woods. Zombies quickly killed it and a fey necromancer raised it to join the evil Unseelie Court.
+      
+      New World. Stumbling around Feyland, the monster accidentally passed through a Riftgate into the ordinary world. It is even more confused now, lost in an alien landscape. Its beautiful, yet sad memories of Feyland still rest within its tortured soul.
+
+      Scary Faerie. The faun is on the war path and won’t stop until it is destroyed. Most creatures in the forest will flee the moment they see it.
+
+      Undead Nature. The faun doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 101 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Faun of the Dead -->
+  <monster>
+    <name>Gloom Owl</name>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic evil</alignment>
+    <ac>13</ac>
+    <hp>32 (5d8 + 10)</hp>
+    <speed>20 ft., fly 80 ft.</speed>
+    <str>15</str><dex>16</dex><con>15</con><int>15</int><wis>16</wis><cha>11</cha>
+    <skill>Perception +5, Stealth +5</skill>
+    <senses>darkvision 60 ft.</senses><passive>15</passive>
+    <languages>Sylvan</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Reckless</name>
+      <text>At the start of its turn, the gloom owl can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the gloom owl has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The gloom owl makes one bite attack and one talon attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage.</text>
+      <attack>Bite|4|2d6 + 2</attack>
+    </action>
+    <action>
+      <name>Talons</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.</text>
+      <attack>Talons|4|1d8 + 2</attack>
+    </action>
+    <action>
+      <name>Hoot of Horror (1/day)</name>
+      <text>The gloom owl lets out a deep hoot in a 30-foot cone. Any creature in the area must succeed on a DC 12 Constitution save or take 4 (1d8) psychic damage.</text>
+      <attack>Hoot of Horror||1d8</attack>
+    </action>
+    <description>The sound of large wings flapping cuts through the night air. Other creatures in the forest are alerted that a gloom owl is on the move. Small beasts scatter, looking for cover from the dangerous predator.
+
+      Aggressive Fey. Gloom owls are extremely aggressive and act in a hostile fashion to every creature except grim squirrels (page 103). The tiny fey warriors help the owls hunt for food and have been loyal to them for many years.
+
+      Air Cavalry. These creatures are allies of the evil squirrels and work together to create a formidable air force. The sight of dive-bombing owls with squirrel riders can scare much bigger creatures. Two or three of the squirrels usually ride each owl.
+
+      Tree House. Gloom Owls make their homes in large cavities of huge trees. Some of these homes are also filled with the remains of their victims and hidden treasures.
+      
+      Source: Cawood, Monsters of the Wilderness p. 102 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Gloom Owl -->
+  <monster>
+    <name>Grim Squirrel</name>
+    <size>T</size>
+    <type>fey</type>
+    <alignment>lawful evil</alignment>
+    <ac>14</ac>
+    <hp>7 (2d4 + 2)</hp>
+    <speed>35 ft., climb 30 ft.</speed>
+    <str>7</str><dex>18</dex><con>12</con><int>11</int><wis>12</wis><cha>7</cha>
+    <skill>Perception +3, Stealth +6</skill>
+    <senses>darkvision 60 ft.</senses><passive>13</passive>
+    <languages>Sylvan</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Keen Hearing</name>
+      <text>The grim squirrel has advantage on Wisdom (Perception) checks that rely on hearing.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The grim squirrel has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The grim squirrel has advantage on an attack roll against a creature if at least one of the grim squirrel’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
+    </trait>
+    <action>
+      <name>Barksword</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 3 piercing damage.</text>
+      <attack>Barksword|6|3</attack>
+    </action>
+    <action>
+      <name>Nut Sling</name>
+      <text>Ranged Weapon Attack: +6 to hit, reach 20/40 ft., one target. Hit: 2 bludgeoning damage.</text>
+      <attack>Nut Sling|6|2</attack>
+    </action>
+    <description>A group of fey warriors walks quietly through the moonlit woods. They watch a nearby elf village and signal two scouts to move into position. Grim squirrels are raiding the village in the middle of the night. Elves, humans, halflings, orcs, goblins, and many other humanoids hate these unpleasant little creatures.
+      
+      Fearless Fey. Grim squirrels are often underestimated. The tiny fey are rather dangerous in large groups. Armed with swords and slings, the squirrels take on much larger foes.
+
+      Hidden Hideouts. These evil fey live in hollow trees and have their headquarters in a large burrow. They carefully store their food and treasure and have enough extra supplies to stay in their lair for a long time.
+
+      Flying Mounts. Noble and elite warriors ride gloom owls as their mounts. The bold owls enable these dark fey to conduct daring raids.
+      
+      Source: Cawood, Monsters of the Wilderness p. 103 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Grim Squirrel -->
+  <monster>
+    <name>Mothman</name>
+    <size>M</size>
+    <type>aberration,</type>
+    <alignment>neutral evil</alignment>
+    <ac>15</ac>
+    <hp>71 (11d8 + 22)</hp>
+    <speed>30 ft., fly 60 ft.</speed>
+    <str>17</str><dex>20</dex><con>14</con><int>16</int><wis>15</wis><cha>9</cha>
+    <skill>Insight +5, Perception +5, Stealth +8</skill>
+    <immune>psychic</immune>
+    <senses>darkvision 60 ft.</senses><passive>15</passive>
+    <languages>all, telepathy 120 ft.</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The Mothman’s innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no material components:</text>
+      <text>At will: charm person, detect evil and good, dissonant whispers, minor illusion</text>
+      <text>1/day each: crown of madness, enthrall, hypnotic pattern, silence</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The Mothman has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Shadow Stealth</name>
+      <text>While in dim light or darkness, the Mothman can take the Hide action as a bonus action.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Mothman man makes two attacks: one bite attack and one claws attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft. one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) necrotic damage.</text>
+      <attack>Bite|6|1d8 + 3</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 3 (1d6) necrotic damage.</text>
+      <attack>Claws|6|2d6 + 3 + 1d6</attack>
+    </action>
+    <action>
+      <name>Haunt Mind (Recharge 5–6)</name>
+      <text>The Mothman chooses up to three creatures it can see within 60 feet of it. Each target must succeed on a DC 15 Wisdom saving throw, or it takes 7 (1d8 + 3) psychic damage and is haunted by paranoid visions for one week. Constructs and undead are immune to this effect.</text>
+      <attack>Haunt Mind||1d8 + 3</attack>
+    </action>
+    <spells>charm person, detect evil and good, dissonant whispers, minor illusion, crown of madness, enthrall, hypnotic pattern, silence</spells><slots/>
+    <description>A tall, gray creature with two glowing red eyes flies in front of a carriage. The two young couples inside scream and run for their lives. Soon the tale of the Mothman reaches their small town. The witnesses explain they saw a large humanoid with a 10-foot wingspan.
+
+      Otherworldly Creature. This monster is not from the ordinary world. The Mothman passed through one of Oswald Myrr’s Riftgates and got lost.
+
+      Mind-Altering. There is no doubt the monster is dangerous, but the most horrifying effect is psychological. Somehow the Mothman is able to enter the minds of multiple creatures and torment them.
+
+      Homesick Horror. The Mothman longs to return home to its world. It has attempted to use Riftgates to get there. But the portals are rare, and the creature can’t seem to find its way home. It has become frustrated and plans to enlist the aid of a spellcaster.
+      
+      Source: Cawood, Monsters of the Wilderness p. 104 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Mothman -->
+  <monster>
+    <name>Phooka</name>
+    <size>S</size>
+    <type>fey (shapechanger)</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>13</ac>
+    <hp>33 (6d6 + 12)</hp>
+    <speed>30 ft.</speed>
+    <str>12</str><dex>16</dex><con>14</con><int>16</int><wis>13</wis><cha>17</cha>
+    <skill>Deception +5, Perception +3, Persuasion +5, Stealth +5</skill>
+    <senses>darkvision 60 ft.</senses><passive>13</passive>
+    <languages>Common, Elvish, Sylvan</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>The phooka has advantage on saving throws against being charmed, and magic can’t put it to sleep.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The phooka’s innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components</text>
+      <text>At will: druidcraft, thorn whip</text>
+      <text>1/day each: dancing lights, invisibility</text>
+    </trait>
+    <trait>
+      <name>Shapechanger</name>
+      <text>The phooka can use an action to shapechange into a human, goblin, horse, cat, rabbit, raven, fox, wolf, goat, or dog. It usually shapechanges into a horse.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.</text>
+      <attack>Bite|3|1d6 + 1</attack>
+    </action>
+    <action>
+      <name>Fey Charm</name>
+      <text>The phooka targets one humanoid or beast that it can see withing 30 feet of it. If the target can see the phooka, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the phooka as a trusted friend to be heeded and protected.
+
+        Each time the phooka or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts for 10 minutes or until the phooka dies, or ends the effect as a bonus action. If a target’s saving throw is successful, the target is immune to the phooka’s Fey Charm for the next 24 hours. The phooka can have no more than one humanoid and up to 3 beasts charmed at a time.</text>
+    </action>
+    <spells>druidcraft, thorn whip, dancing lights, invisibility</spells><slots/>
+    <description>The phooka is a michevous fey shapechanger. Its true form is a small black creature, a strange combination of a rabbit, goat, and fox. These tricksters crossed into the world from Feyland. They aren’t popular in either realm.
+
+      Off the Beaten Path. These fey often surprise travelers on remote forest trails. Phookas move through the trees and spy on their victims before they reveal themselves. However, the form they choose won’t be anything like their true self.
+
+      Terrible Trickster. This creature enjoys playing elaborate jokes on humanoids. They will be patient and draw their victims into difficult situations.
+
+      Rocky Ride. One of the phooka’s favorite trick is talking a humanoid into riding them in horse form. The fey takes the foolish victim on a wild, dangerous ride and then returns them back to the place they started from.
+      
+      Source: Cawood, Monsters of the Wilderness p. 105 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Phooka -->
+  <monster>
+    <name>Phooka, Grim</name>
+    <size>S</size>
+    <type>fey (shapechanger)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>13</ac>
+    <hp>33 (6d6 + 12)</hp>
+    <speed>30 ft.</speed>
+    <str>12</str><dex>16</dex><con>14</con><int>16</int><wis>13</wis><cha>17</cha>
+    <skill>Deception +5, Perception +3, Persuasion +5, Stealth +5</skill>
+    <senses>darkvision 60 ft.</senses><passive>13</passive>
+    <languages>Common, Elvish, Sylvan</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>The phooka has advantage on saving throws against being charmed, and magic can’t put it to sleep.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The phooka’s innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components</text>
+      <text>At will: druidcraft, thorn whip</text>
+      <text>1/day each: dancing lights, invisibility</text>
+    </trait>
+    <trait>
+      <name>Shapechanger</name>
+      <text>The phooka can use an action to shapechange into a human, goblin, horse, cat, rabbit, raven, fox, wolf, goat, or dog. It usually shapechanges into a horse.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.</text>
+      <attack>Bite|3|1d6 + 1</attack>
+    </action>
+    <action>
+      <name>Fey Charm</name>
+      <text>The phooka targets one humanoid or beast that it can see withing 30 feet of it. If the target can see the phooka, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the phooka as a trusted friend to be heeded and protected.
+
+        Each time the phooka or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts for 10 minutes or until the phooka dies, or ends the effect as a bonus action. If a target’s saving throw is successful, the target is immune to the phooka’s Fey Charm for the next 24 hours. The phooka can have no more than one humanoid and up to 3 beasts charmed at a time.</text>
+    </action>
+    <spells>druidcraft, thorn whip, dancing lights, invisibility</spells><slots/>
+    <description>The phooka is a michevous fey shapechanger. Its true form is a small black creature, a strange combination of a rabbit, goat, and fox. These tricksters crossed into the world from Feyland. They aren’t popular in either realm.
+
+      Off the Beaten Path. These fey often surprise travelers on remote forest trails. Phookas move through the trees and spy on their victims before they reveal themselves. However, the form they choose won’t be anything like their true self.
+
+      Terrible Trickster. This creature enjoys playing elaborate jokes on humanoids. They will be patient and draw their victims into difficult situations.
+
+      Rocky Ride. One of the phooka’s favorite trick is talking a humanoid into riding them in horse form. The fey takes the foolish victim on a wild, dangerous ride and then returns them back to the place they started from.
+      
+      Source: Cawood, Monsters of the Wilderness p. 105 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Phooka, Grim -->
+  <monster>
+    <name>Pumpkin King</name>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic evil</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>112 (15d8 + 45)</hp>
+    <speed>35 ft.</speed>
+    <str>19</str><dex>18</dex><con>16</con><int>18</int><wis>20</wis><cha>21</cha>
+    <skill>Deception +9, Perception +9, Stealth +8</skill>
+    <senses>darkvision 60 ft.</senses><passive>19</passive>
+    <languages>Common, Elvish, Sylvan</languages>
+    <cr>10</cr>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>The pumpkin king has advantage on saving throws against being charmed, and magic can’t put him to sleep.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The pumpkin king’s innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). He can innately cast the following spells, requiring no material components:</text>
+      <text>At will: dancing lights, minor illusion, vicious mockery</text>
+      <text>3/day each: charm person, crown of madness, darkness, faerie fire, hold person, sleep, thunderwave</text>
+      <text>1/day each: animate dead, dispel magic, feign death, mislead, see invisibility, silence</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The pumpkin king has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The pumpkin king makes one attack with its scythe and two pumpkin attacks.</text>
+    </action>
+    <action>
+      <name>Scythe</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) slashing damage.</text>
+      <attack>Scythe|8|1d10 + 4</attack>
+    </action>
+    <action>
+      <name>Flaming Pumpkins</name>
+      <text>Ranged Weapon Attack: +8 to hit, range 40/120 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage and 7 (2d6) fire damage. (See sidebar.)</text>
+      <attack>Flaming Pumpkins|8|1d6 + 4 + 2d6</attack>
+    </action>
+    <spells>dancing lights, minor illusion, vicious mockery, charm person, crown of madness, darkness, faerie fire, hold person, sleep, thunderwave, animate dead, dispel magic, feign death, mislead, see invisibility, silence</spells><slots/>
+    <description>The most dangerous trickster in the woods is the Pumpkin King. He rules a gloomy, eerie forest far from most settlements. This fey is like an out-of-control teenager and causes chaos wherever he goes. In one hand he wields a great black scythe, in his other he holds a flaming pumpkin.
+
+      Forgotten Fey. The pumpkin king longs to return to Feyland and the Unseelie Court. He was banished long ago for challenging the power of the Queen of the Darkness.
+
+      Rotten Plans. Together with his minions, the king wants to spread darkness from his forest across the world. Until he can return home, he wants to create a never-ending dark wood.
+
+      Dark Castle. Several oddballs have joined the pumpkin king in a bizarre version of a royal court. Black stags, other evil fey, rogues, and foul spellcasters have allied with the pumpkin king. They live together in an abandoned castle far from any forest trails.
+      
+      Source: Cawood, Monsters of the Wilderness p. 106 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Pumpkin King -->
+  <monster>
+    <name>Three Skulls</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>78 (12d8 + 24)</hp>
+    <speed>35 ft.</speed>
+    <str>18</str><dex>18</dex><con>15</con><int>19</int><wis>18</wis><cha>11</cha>
+    <skill>Perception +7</skill>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>17</passive>
+    <languages>Common, Elvish</languages>
+    <cr>8</cr>
+    <trait>
+      <name>Detect Life</name>
+      <text>Three Skulls can magically sense the presence of creatures up to 5 miles away that aren’t undead or constructs. It knows the direction they’re in but not their exact locations.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Three Skull’s innate spellcasting ability is Intelligence (spell save DC 16, +8). It can innately cast the following spells, requiring no material components:</text>
+      <text>At will: chill touch, poison spray, ray of frost</text>
+      <text>3/day each: fog cloud, ray of sickness, witch bolt</text>
+      <text>1/day each: blight, counterspell, darkness</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>Three Skulls has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Turn Immunity</name>
+      <text>Three Skulls is immune to effects that turn undead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>Three Skulls makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Corrupting Touch</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) necrotic damage.</text>
+      <attack>Corrupting Touch|7|1d10 + 4</attack>
+    </action>
+    <action>
+      <name>Unarmed</name>
+      <text>Skull Gaze. Three Skulls can use a bonus action to switch what skull is activated.</text>
+      <text/>
+      <text>Father Skull: Frightening Gaze. Three skulls fixes its gaze on one creature it can see within 30 feet of it. The target must succeed on a DC 15 Wisdom saving throw against this magic or become frightened for 1 minute.</text>
+      <text/>
+      <text>Mother Skull: Paralyzing Gaze. Three skulls fixes its gaze on one creature it can see within 30 feet of it. The target must succeed on a DC 15 Constitution saving throw against this magic or become paralyzed for 1 minute.</text>
+      <text/>
+      <text>Grandmother Skull: Weakening Gaze. Three skulls fixes its gaze on one creature it can see within 30 feet of it. The target must succeed on a DC 15 Constitution saving throw against this magic or have their Strength score reduced by 1d4. The target dies if this reduces its Strength to 0.</text>
+    </action>
+    <spells>chill touch, poison spray, ray of frost, fog cloud, ray of sickness, witch bolt, blight, counterspell, darkness</spells><slots/>
+    <description>A horrible family of three died a tragic death. The trio of wealthy nobles lived in a wilderness manor and exploited the forest every way they could. Eventually, the woodland creatures rose up and destroyed them.
+      
+      Return Engagement. However, a diabolical necromancer brought all three nobles back in the same form. These three twisted souls are contained in the bizarre form of Three Skulls. The four-armed horror now haunts their former forest home.
+      
+      Three Faces. This undead creature carries two extra skulls in its hands. It can swap the skulls and acquire new powers.
+
+      Undead Nature. Three Skulls doesn’t require air, food, drink, or sleep.
+      
+      Source: Cawood, Monsters of the Wilderness p. 107 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Three Skulls -->
+  <monster>
+    <name>Twiggy Stardust</name>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic good</alignment>
+    <ac>16 (+2 leather armor)</ac>
+    <hp>82 (11d8 + 33)</hp>
+    <speed>30 ft.</speed>
+    <str>10</str><dex>16</dex><con>16</con><int>13</int><wis>17</wis><cha>20</cha>
+    <skill>Insight +6, Nature +4, Performance +8, Persuasion +8</skill>
+    <senses>truesight 60 ft.</senses><passive>13</passive>
+    <languages>Common, Elvish, Sylvan</languages>
+    <cr>6</cr>
+    <trait>
+      <name>Bardic Inspiration (5/day)</name>
+      <text>Twiggy can inspire others through stirring words or music. They can use a bonus action to choose one creature within 60 feet who can hear them. That creature gains one Bardic Inspiration die, a d8. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes.</text>
+    </trait>
+    <trait>
+      <name>Countercharm</name>
+      <text>As an action, they can start a performance that lasts until the end of their next turn. During that time, Twiggy and any friendly creatures within 30 feet of them have advantage on saving throws against being frightened or charmed. A creature must be able to hear Twiggy to gain this benefit.</text>
+    </trait>
+    <trait>
+      <name>Cutting Words</name>
+      <text>When a creature that they can see within 60 feet of them make an attack roll, an ability check, or a damage roll, Twiggy can use their reaction to expend a Bardic Inspiration. Rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll.</text>
+    </trait>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>They have advantage on saving throws against being charmed, and magic can’t put them to sleep.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Twiggy is an 8th-level bard. Their spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). Twiggy can cast the following spells:</text>
+      <text>Cantrips (at will): dancing lights, friends, prestidigitation, vicious mockery</text>
+      <text>1st level (4 slots): charm person, cure wounds, disguise self, healing word</text>
+      <text>2nd level (3 slots): calm emotions, enthrall, suggestion</text>
+      <text>3rd level (3 slots): dispel magic, hypnotic pattern, tongues</text>
+      <text>4th level (2 slots): dimension door, hallucinatory terrain</text>
+    </trait>
+    <action>
+      <name>Rapier</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.</text>
+      <attack>Rapier|6|1d8 + 3</attack>
+    </action>
+    <action>
+      <name>Healing Message (2/day)</name>
+      <text>Twiggy can use a bonus action on their turn to target up to four creatures within 60 feet of them. If the target can hear Twiggy, the target regains 13 (3d8) temporary hit points and is freed from any blindness, or deafness.</text>
+    </action>
+    <spells>dancing lights, friends, prestidigitation, vicious mockery, charm person, cure wounds, disguise self, healing word, calm emotions, enthrall, suggestion, dispel magic, hypnotic pattern, tongues, dimension door, hallucinatory terrain</spells><slots>4,3,3,2</slots>
+    <description>Twiggy was sent to the world to warn of a coming disaster. A seer told the eternally curious fey about a curse unleashed upon a faraway land. Twiggy used a Riftgate hidden in an ancient tree to travel to the everyday world.
+
+      Fey Homeland. The imaginative creature hails from the mysterious Feyland. They are an extremely talented musician and deeply connected to nature.
+
+      Fervent Following. Twiggy has become popular in the many forests of the world. They put on performances to warn about the curse. The fey has gained a legion of fans who would do anything for them.
+      
+      Source: Cawood, Monsters of the Wilderness p. 108 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Twiggy Stardust -->
+  <monster>
+    <name>Twisted Sisters</name>
+    <size>L</size>
+    <type>plant</type>
+    <alignment>neutral evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>85 (10d10 + 30)</hp>
+    <speed>30 ft.</speed>
+    <str>19</str><dex>13</dex><con>16</con><int>10</int><wis>13</wis><cha>5</cha>
+    <skill>Perception +3, Stealth +3</skill>
+    <senses>darkvision 60 ft.</senses><passive>13</passive>
+    <languages>-</languages>
+    <cr>4</cr>
+    <trait>
+      <name>False Appearance</name>
+      <text>If the twisted sisters remains motionless it appears to be a clump of trees.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The twisted sisters has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The twisted sisters makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) slashing damage.</text>
+      <attack>Slam|6|1d10 + 4</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage, and the target is grappled (escape DC 15). Until this grapple ends, the creature is restrained. The twisted sisters can constrict up to two Medium or smaller targets.</text>
+      <attack>Constrict|6|1d8 + 4</attack>
+    </action>
+    <description>Navigating a dense forest can be challenging at times. If the twisted sisters is nearby, that could become a life-or-death struggle. These ancient trees might be the last thing a visitor to the forest ever sees.
+
+      Grim Grove. This monster resembles a natural grouping of withered, gnarled trees. As long as they remain still, they will surprise any prey.
+
+      Tight Squeeze. If any creature gets near them, the trees will slowly encircle it. Then the trees will strike out and constrict the unsuspecting victim with their branches.
+
+      Terrible Teamwork. The twisted sisters works with other evil creatures that can communicate with plants. However, the plant doesn’t always remain loyal to its new allies.
+      
+      Source: Cawood, Monsters of the Wilderness p. 109 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Twisted Sisters -->
+  <monster>
+    <name>Witch of the Nine</name>
+    <size>M</size>
+    <type>fey (shapechanger)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>13 (16 with barkskin)</ac>
+    <hp>75 (10d8 + 30)</hp>
+    <speed>30 ft.</speed>
+    <str>16</str><dex>17</dex><con>16</con><int>18</int><wis>16</wis><cha>16</cha>
+    <skill>Deception +6, Insight +6, Perception +6</skill>
+    <senses>darkvision 60 ft.</senses><passive>16</passive>
+    <languages>Common, Elvish, Sylvan, Abyssal</languages>
+    <cr>8</cr>
+    <trait>
+      <name>Fey Ancestry</name>
+      <text>The witch have advantage on saving throws against being charmed, and magic can’t put them to sleep.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The witch’s innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no material components:</text>
+      <text>Cantrips (at will): dancing lights, friends, prestidigitation, vicious mockery</text>
+      <text>3/day each: entangle, fog cloud, fly, hold person, scorching ray, sleep, thorn whip</text>
+      <text>1/day each: barkskin, call lightning, dispel magic, pass without trace</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The witch has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Shapechanger</name>
+      <text>The witch can use an action to polymorph into a Medium humanoid, or back into its true form. Its statistics are the same in each form. Any equipment the witch is carrying or wearing is also transformed. It reverts to its true form if it dies.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The witch makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.</text>
+      <attack>Quarterstaff|6|1d8 + 3</attack>
+    </action>
+    <action>
+      <name>Breath Attack (Recharge 2–3)</name>
+      <text>The witch exhales fire in a 15 ft. cone, each creature in this area must make a DC 15 Dexterity saving throw. A creature takes 10 (3d6) fire damage on a failed save, and half as much damage on a successful one.</text>
+      <attack>Breath Attack||3d6</attack>
+    </action>
+    <spells>charm person, detect evil and good, minor illusion, entangle, fog cloud, fly, hold person, scorching ray, sleep, thorn whip, barkskin, call lightning, dispel magic, pass without trace</spells><slots/>
+    <description>Nine wild witches approach a fast-flowing river in the forest. The women are clad in black robes and together they are carrying an unconscious victim. The evil women reach the river and hurl the handsome young nobleman into the river.
+      
+      Spreading Misery. These horrid witches have cursed the land and work to destroy the civilized world. They target the leaders of each territory, especially monarchies.
+      
+      Shining Fortress. All nine witches live in a mountain castle in the woods. Within the walls of the old fortress the witches hide a powerful cauldron and their sizeable treasure hoard.
+
+      Wicked Witches. Many of the kingdoms affected by the witches’ terrible acts want them hunted down. There are a number of bounties on the witches and several adventurers have sought out these horrid creatures.
+      
+      Source: Cawood, Monsters of the Wilderness p. 110 (ThirdParty)</description>
+    <environment>forest</environment>
+  </monster> <!-- Forest: Witch of the Nine -->
   <!-- Hills/Lakes Region -->
   <monster>
     <name>The Hakkon</name>
