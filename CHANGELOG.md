@@ -9,6 +9,7 @@
 
 ### 2024-##-##
 * Streamlined some `Ranger` features.
+* Added `Player's Handbook 2024` content.
 * Added `The Dungeon Master` Homebrew.
 * Added `Ranger (Primal Awareness)` spell list.
 * Added `Misplaced Monsters: Volume One` content.
