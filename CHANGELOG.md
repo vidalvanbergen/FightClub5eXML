@@ -10,7 +10,7 @@
 ### 2024-##-##
 * Streamlined some `Ranger` features.
 * Added `Player's Handbook 2024` content.
-* `@nikjft`: Merged `2014` + `2024` content.
+* Merged legacy 2014 + 2024 content by @nikjft in https://github.com/vidalvanbergen/FightClub5eXML/pull/6
 * Added `The Dungeon Master` Homebrew.
 * Added `Ranger (Primal Awareness)` spell list.
 * Added `Misplaced Monsters: Volume One` content.
