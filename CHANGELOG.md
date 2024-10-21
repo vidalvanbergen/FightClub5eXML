@@ -3,6 +3,9 @@
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
+* LaserLlama:
+  * Alternate Classes.
+  * Commoner, Shaman, Vessel, Warlord Classes.
 
 #### In Progress:
 * Adding `LaserLlama` content.
@@ -18,6 +21,7 @@
 * Moved `Honor Among Thieves` content to Unearthed Arcana.
 * Added Matthew Mercer's `College of the Maestro` Homebrew Bard subclass.
 * Added Matthew Mercer's `Totem of the Duck` Homebrew Barbarian subclass.
+* Added `Monster_A_Day_Creatures_Day100_20160416` Homebrew monsters.
 * Re-organized Unearthed Arcana based on date and `Subclasses That Shouldn't Exist`.
 * Added a more comprehensive overview on how to add your own content to the repository. (See [SOURCES.md](/SOURCES.md))
 * Adding `LaserLlama` content.
