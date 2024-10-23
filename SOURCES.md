@@ -41,8 +41,6 @@ Here are the content we'll be using :
   - **D20**. A dice roll formula. For example, "1d10+5", "5d6", or "3d3+1d7-2". Use 'd' to denote a die. + and - operators are acceptable. Remove any white spaces.
   - The | denotes that the element can take a specific value from the given list. Acceptable values are separated the | character.
   - Some elements take multiple values. Acceptable values are separated by commas.
-  
-</ul>
 
 For example, when you see "name (ABC)" throughout the tutorial, that says the element's name is "name" and it takes text as its content, as in ```<name>Gandalf the Grey</name>```. "classes (ABC, ABC, ...)" says the classes element takes multiple text strings, as in, ```<classes>Fighter, Wizard</classes>```.
 
