@@ -9,6 +9,7 @@
 
 ### 2024-##-##
 * Fixed an issue where properties weren't shown correctly, pointed out by @designbot in https://github.com/vidalvanbergen/FightClub5eXML/issues/8.
+* Streamlined item details formatting.
 
 ### 2024-10-23
 * Streamlined some `Ranger` features.
