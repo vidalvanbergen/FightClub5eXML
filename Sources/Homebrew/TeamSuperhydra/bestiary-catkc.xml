@@ -1,9 +1,272 @@
 <?xml version='1.0' encoding='utf-8'?>
 <compendium version="5" auto_indent="NO">
-  
-  
-  
-  
+  <monster>
+    <name>Kobold Booze Server</name>
+    <size>S</size>
+    <type>humanoid (kobold)</type>
+    <alignment>lawful evil</alignment>
+    <ac>13</ac>
+    <hp>5 (2d6 - 2)</hp>
+    <speed>30 ft.</speed>
+    <str>7</str><dex>16</dex><con>9</con><int>7</int><wis>6</wis><cha>10</cha>
+    <save>Dex +5</save>
+    <skill>Acrobatics +5</skill>
+    <senses>darkvision 60 ft.</senses><passive>8</passive>
+    <languages>Common, Draconic</languages>
+    <cr>1</cr>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
+    </trait>
+    <trait>
+      <name>Flammable Spirits</name>
+      <text>The kobold carries many bottles filled with highly-flammable alcohol. As a bonus action on each of its turns, the kobold can stuff a rag into the opening of an alcohol bottle it is carrying and ignite it using a nearby open flame, causing its next Hurl Bottle attack to use its ignited effects.</text>
+    </trait>
+    <action>
+      <name>Broken Bottle</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 5 (1d4 + 3) slashing damage.</text>
+      <attack>Broken Bottle|5|1d4 + 3</attack>
+    </action>
+    <action>
+      <name>Hurl Bottle</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage.
+        
+        If the bottle was not ignited, the target is soaked in flammable alcohol. The next time a soaked target takes any fire damage, that fire damage is increased by 3 (1d6) as the alcohol burns away. If not ignited, the alcohol evaporates harmlessly after 1 minute.
+        
+        If the bottle was ignited, hit or miss, it shatters in a fiery explosion. The target and each creature within 5 feet of it must make a DC 13 Dexterity saving throw. A creature takes 5 (2d4) fire damage and is ignited on a failed save, or takes half as much fire damage and is not ignited on a successful one. An ignited target takes 2 (1d4) fire damage at the start of each of its turns, and can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames. A flammable object in the area ignites if it isn't being worn or carried.</text>
+      <attack>Hurl Bottle|5|1d4 + 3 + 2d4</attack>
+    </action>
+    <description>The kobolds that run the Kobolds' Cauldron seemingly have absolutely zero awareness of the hazardous conditions under which they work day in and day out. Stills filled with explosive, high-proof liquor rest on the building's dry, splintered wood floors. These ramshackle vessels then steam and rattle next to uncovered torches and open chasms of flowing magma.
+
+      The kobolds themselves are similarly cavalier with their combat tactics, rolling casks filled with unstable moonshine at attackers, and hurling flaming cocktails of booze with reckless abandon.
+
+      Source: Team Superhydra, The Kobolds' Cauldron</description>
+    <environment>forest, swamp, hill, urban, desert, coastal, arctic, mountain, underdark</environment>
+  </monster> <!-- Kobold, Booze Server -->
+  <monster>
+    <name>Kobold Booze Server (Simple)</name>
+    <size>S</size>
+    <type>humanoid (kobold)</type>
+    <alignment>lawful evil</alignment>
+    <ac>13</ac>
+    <hp>5 (2d6 - 2)</hp>
+    <speed>30 ft.</speed>
+    <str>7</str><dex>16</dex><con>9</con><int>7</int><wis>6</wis><cha>10</cha>
+    <save>Dex +5</save>
+    <skill>Acrobatics +5</skill>
+    <senses>darkvision 60 ft.</senses><passive>8</passive>
+    <languages>Common, Draconic</languages>
+    <cr>1</cr>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
+    </trait>
+    <trait>
+      <name>Flammable Spirits</name>
+      <text>The kobold carries many bottles filled with highly-flammable alcohol. As a bonus action on each of its turns, the kobold can stuff a rag into the opening of an alcohol bottle it is carrying and ignite it using a nearby open flame, causing its next Hurl Bottle attack to use its ignited effects.</text>
+    </trait>
+    <action>
+      <name>Broken Bottle</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 5 (1d4 + 3) slashing damage.</text>
+      <attack>Broken Bottle|5|1d4 + 3</attack>
+    </action>
+    <action>
+      <name>Burning Spirit (Recharge 4–6)</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage. Hit or miss, the bottle then shatters in a fiery explosion. The target and each creature within 5 feet of it must make a DC 13 Dexterity saving throw. A creature takes 5 (2d4) fire damage and is ignited on a failed save, or takes half as much fire damage and is not ignited on a successful one. An ignited target takes 2 (1d4) fire damage at the start of each of its turns, and can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames. A flammable object in the area ignites if it isn't being worn or carried.</text>
+      <attack>Burning Spirit|5|1d4 + 3 + 2d4</attack>
+    </action>
+    <description>The kobolds that run the Kobolds' Cauldron seemingly have absolutely zero awareness of the hazardous conditions under which they work day in and day out. Stills filled with explosive, high-proof liquor rest on the building's dry, splintered wood floors. These ramshackle vessels then steam and rattle next to uncovered torches and open chasms of flowing magma.
+
+      The kobolds themselves are similarly cavalier with their combat tactics, rolling casks filled with unstable moonshine at attackers, and hurling flaming cocktails of booze with reckless abandon.
+
+      Source: Team Superhydra, The Kobolds' Cauldron</description>
+    <environment>forest, swamp, hill, urban, desert, coastal, arctic, mountain, underdark</environment>
+  </monster> <!-- Kobold, Booze Server (Simple) -->
+  <monster>
+    <name>Kobold Cask Hauler</name>
+    <size>S</size>
+    <type>humanoid (kobold)</type>
+    <alignment>lawful evil</alignment>
+    <ac>12</ac>
+    <hp>7 (2d6)</hp>
+    <speed>25 ft.</speed>
+    <str>9</str><dex>15</dex><con>10</con><int>7</int><wis>6</wis><cha>10</cha>
+    <save>Str +1</save>
+    <skill>Athletics +3</skill>
+    <senses>darkvision 60 ft.</senses><passive>8</passive>
+    <languages>Common, Draconic</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
+    </trait>
+    <trait>
+      <name>Volatile Cask</name>
+      <text>The kobold carries a cask of flammable alcohol on its back. While it does so, the kobold can't use its hands to make attacks or use actions, and fire damage the kobold takes is also taken by the cask.
+
+        When the cask takes fire damage, roll a d10. If the result is less than the fire damage dealt, the cask erupts in a 10-foot radius explosion. Each creature in the area must make a DC 13 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much on a successful one. Flammable objects in the area not being worn or carried ignite.</text>
+    </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|4|1d4 + 2</attack>
+    </action>
+    <action>
+      <name>Roll Cask (1/Day)</name>
+      <text>The Kobold rolls its carried cask in a straight line 15 feet in a direction of its choice. The cask then continues to roll 15 feet at the start of each of the kobold's turns, accelerating, decelerating, or changing direction with the terrain at the GM's discretion.
+
+        The cask is an object with an AC of 10 and 10 hit points (immunity to poison and psychic damage, vulnerability to fire damage), and which retains the applicable portion of the Volatile Cask trait above. If the cask collides with a creature or a solid surface, both it and what it collides with take 5 (1d10) bludgeoning damage for every 10 feet it moved this turn.
+
+        If the cask is destroyed by fire damage, the Volatile Cask trait is triggered automatically. If it is destroyed by damage of a different type, it creates a 5-foot radius pool of flammable alcohol on the ground where it was destroyed. Any fire damage dealt in the pool's area ignites it, forcing each creature in the area to succeed on a DC 13 Dexterity saving throw or take 7 (2d6) fire damage as the alcohol burns up.</text>
+      <attack>Roll Cask||2d6</attack>
+    </action>
+    <description>The kobolds that run the Kobolds' Cauldron seemingly have absolutely zero awareness of the hazardous conditions under which they work day in and day out. Stills filled with explosive, high-proof liquor rest on the building's dry, splintered wood floors. These ramshackle vessels then steam and rattle next to uncovered torches and open chasms of flowing magma.
+
+      The kobolds themselves are similarly cavalier with their combat tactics, rolling casks filled with unstable moonshine at attackers, and hurling flaming cocktails of booze with reckless abandon.
+
+      Source: Team Superhydra, The Kobolds' Cauldron</description>
+    <environment>forest, swamp, hill, urban, desert, coastal, arctic, mountain, underdark</environment>
+  </monster> <!-- Kobold, Cask Hauler -->
+  <monster>
+    <name>Kobold Cask Hauler (Simple)</name>
+    <size>S</size>
+    <type>humanoid (kobold)</type>
+    <alignment>lawful evil</alignment>
+    <ac>12</ac>
+    <hp>7 (2d6)</hp>
+    <speed>25 ft.</speed>
+    <str>9</str><dex>15</dex><con>10</con><int>7</int><wis>6</wis><cha>10</cha>
+    <save>Str +1</save>
+    <skill>Athletics +3</skill>
+    <senses>darkvision 60 ft.</senses><passive>8</passive>
+    <languages>Common, Draconic</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
+    </trait>
+    <trait>
+      <name>Volatile Cask</name>
+      <text>If the kobold takes fire damage, roll a d10. If the result on the d10 is less than the fire damage dealt, the kobold's cask erupts in a 10-foot radius explosion. Each creature in the area must make a DC 13 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much on a successful one. A flammable object in the area ignites if it isn't being worn or carried.</text>
+    </trait>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 3 (1 + 2) slashing damage.</text>
+      <attack>Claws|4|1 + 2</attack>
+    </action>
+    <action>
+      <name>Ignite Cask</name>
+      <text>The kobold ignites the cask it carries on its back, triggering its Volatile Cask trait as if it had taken 10 or more fire damage.</text>
+    </action>
+    <description>The kobolds that run the Kobolds' Cauldron seemingly have absolutely zero awareness of the hazardous conditions under which they work day in and day out. Stills filled with explosive, high-proof liquor rest on the building's dry, splintered wood floors. These ramshackle vessels then steam and rattle next to uncovered torches and open chasms of flowing magma.
+
+      The kobolds themselves are similarly cavalier with their combat tactics, rolling casks filled with unstable moonshine at attackers, and hurling flaming cocktails of booze with reckless abandon.
+
+      Source: Team Superhydra, The Kobolds' Cauldron</description>
+    <environment>forest, swamp, hill, urban, desert, coastal, arctic, mountain, underdark</environment>
+  </monster> <!-- Kobold, Cask Hauler (Simple) -->
+  <monster>
+    <name>Kobold Wing Sorcerer</name>
+    <size>S</size>
+    <type>humanoid (kobold)</type>
+    <alignment>lawful evil</alignment>
+    <ac>15 (studded leather)</ac>
+    <hp>36 (8d6 + 8)</hp>
+    <speed>30 ft., fly 30 ft.</speed>
+    <str>7</str><dex>16</dex><con>12</con><int>10</int><wis>9</wis><cha>16</cha>
+    <save>Dex +6, Int +3, Cha +6</save>
+    <skill>Acrobatics +5, Arcana +2</skill>
+    <senses>darkvision 60 ft.</senses><passive>8</passive>
+    <languages>Common, Draconic</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
+    </trait>
+    <trait>
+      <name>Sorcery Points</name>
+      <text>The kobold has 5 sorcery points. It can spend 1 or more sorcery points as a bonus action to gain one of the following benefits:
+
+        Heightened Spell: When it casts a spell that forces a creature to make a saving throw to resist the spell’s effects, the kobold can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw against the spell.
+        
+        Subtle Spell: When the kobold casts a spell, it can spend 1 sorcery point to cast the spell without any somatic or verbal components.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>Spellcasting. The kobold is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It has the following sorcerer spells prepared:</text>
+      <text>Cantrips (at-will): acid splash, fire bolt, mage hand, minor illusion, prestidigitation</text>
+      <text>1st level (4 slots): burning hands, expeditious retreat</text>
+      <text>2nd level (3 slots): misty step, scorching ray</text>
+      <text>3rd level (2 slots): counterspell, fireball</text>
+    </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.</text>
+      <attack>Dagger|5|1d4 + 3</attack>
+    </action>
+    <action>
+      <name>Dropped Rock</name>
+      <text>Ranged Weapon Attack: +5 to hit, one target directly beneath the kobold. Hit: 6 (1d6 + 3) bludgeoning damage.</text>
+      <attack>Dropped Rock|5|1d6 + 3</attack>
+    </action>
+    <spells>acid splash, fire bolt, mage hand, minor illusion, prestidigitation, burning hands, expeditious retreat, misty step, scorching ray, counterspell, fireball</spells><slots>4, 3, 2</slots>
+    <description>Supervising the Cauldron's sizable brewing workforce are a handful of winged kobold sorcerers. These middle-manager kobolds use their flight to keep watch over the laborers, and use their magic to repel attackers—as well as to keep lazy or insubordinate kobolds in line.
+
+      Source: Team Superhydra, The Kobolds' Cauldron</description>
+    <environment>forest, swamp, hill, urban, desert, coastal, arctic, mountain, underdark</environment>
+  </monster> <!-- Kobold, Wing Sorcerer -->
+  <monster>
+    <name>Dire Weasel</name>
+    <size>M</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>32 (5d8 + 10)</hp>
+    <speed>40 ft.</speed>
+    <str>15</str><dex>18</dex><con>14</con><int>4</int><wis>12</wis><cha>5</cha>
+    <skill>Perception +3, Stealth +6</skill>
+    <senses>darkvision 60 ft.</senses><passive>8</passive>
+    <languages>-</languages>
+    <cr>1</cr>
+    <trait>
+      <name>Keen Hearing and Smell</name>
+      <text>The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage. If the target is a creature, it is grappled (escape DC 12).</text>
+      <attack>Bite|6|1d6 + 4</attack>
+    </action>
+    <action>
+      <name>Violent Shake</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one Small or Tiny creature grappled by the weasel. Hit: 14 (3d6 + 4) piercing damage.</text>
+      <attack>Violent Shake|6|3d6 + 4</attack>
+    </action>
+    <description>As deadly as they are adorable, dire weasels are used by the kobolds at the distillery as mounts and beasts of burden. In the wild, dire weasels primarily hunt small game such as jackrabbits and wild dogs, but have also been known to kill and eat individuals of the smaller humanoid races.
+
+      Source: Team Superhydra, The Kobolds' Cauldron</description>
+    <environment>forest, swamp, hill, urban, desert, coastal, arctic, mountain, underdark</environment>
+  </monster> <!-- Dire Weasel -->
   <monster>
     <name>Molten Ooze</name>
     <size>L</size>
