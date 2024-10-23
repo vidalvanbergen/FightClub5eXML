@@ -22,7 +22,8 @@
 * Added Matthew Mercer's `College of the Maestro` Homebrew Bard subclass.
 * Added Matthew Mercer's `Totem of the Duck` Homebrew Barbarian subclass.
 * Added `Monster_A_Day_Creatures_Day100_20160416` Homebrew monsters.
-* Re-organized Unearthed Arcana based on date and `Subclasses That Shouldn't Exist`.
+* Added `Subclasses That Shouldn't Exist` content.
+* Re-organized Unearthed Arcana based on date
 * Added a more comprehensive overview on how to add your own content to the repository. (See [SOURCES.md](/SOURCES.md))
 * Adding `LaserLlama` content.
   * Added LaserLlama's: `Artificer Specialists v2.1.0`.
