@@ -5,7 +5,7 @@
 * Complete `Crown of the Oathbreaker` Bestiary.
 * LaserLlama:
   * Alternate Classes.
-  * Commoner, Shaman, Vessel, Warlord Classes.
+  * Commoner, Shaman, Warlord Classes.
 
 #### In Progress:
 * Adding `LaserLlama` content.
