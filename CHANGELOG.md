@@ -7,10 +7,7 @@
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
 
-#### In Progress:
-* Adding `LaserLlama` content.
-
-### 2024-##-##
+### 2024-10-23
 * Streamlined some `Ranger` features.
 * Added `Player's Handbook 2024` content.
 * Merged legacy 2014 + 2024 content by @nikjft in https://github.com/vidalvanbergen/FightClub5eXML/pull/6
