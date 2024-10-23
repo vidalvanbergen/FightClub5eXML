@@ -7,6 +7,9 @@
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
 
+### 2024-##-##
+* Fixed an issue where properties weren't shown correctly, pointed out by @designbot in https://github.com/vidalvanbergen/FightClub5eXML/issues/8.
+
 ### 2024-10-23
 * Streamlined some `Ranger` features.
 * Added `Player's Handbook 2024` content.
