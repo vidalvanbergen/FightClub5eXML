@@ -88,7 +88,7 @@ A spell is defined using an element named spell. Its content will consist of sev
     - **(ABC)** = A description of the material used by the spell. *Must be enclosed in parentheses.*
   - **duration** (ABC)
   - **text** (ABC) Spell description. *Multiple text elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
-  - **roll** (D20) Dice roll formulas. *Ability modifiers can be inputted using STR, DEX, CON, INT, WIS, and CHA. To input the class spell ability modifier, use SPELL.*
+  - **roll** (D20) Dice roll formulas. *Ability modifiers can be inputted using STR, DEX, CON, INT, WIS, and CHA. To input the class spell ability modifier, use SPELL, and to add your proficiency bonus, add PROF.*
 
 Spell example:
 ```xml
@@ -110,6 +110,23 @@ Spell example:
   <roll>1d4+1</roll>
   <roll>(1d4+1)+(1d4+1)+(1d4+1)</roll>
 </spell>
+```
+
+Roll modifiers:
+```xml
+  <roll>xdx+%0</roll> <!-- add Spellcasting Ability -->
+  <roll>xdx+%1</roll> <!-- add STR MOD -->
+  <roll>xdx+%2</roll> <!-- add DEX MOD -->
+  <roll>xdx+%3</roll> <!-- add CON MOD -->
+  <roll>xdx+%4</roll> <!-- add INT MOD -->
+  <roll>xdx+%5</roll> <!-- add WIS MOD -->
+  <roll>xdx+%6</roll> <!-- add CHA MOD -->
+  <roll>xdx+%7</roll> <!-- add LVL -->
+  <roll>xdx+%8</roll> <!-- add PROF -->
+  <roll>xdx+%9</roll> <!-- add current HP -->
+  <roll>xdx+%10</roll> <!-- add LVL 1/2 -->
+  <roll>xdx+1o</roll> <!-- add 1wo -->
+  <roll>xdx+1w</roll> <!-- add 1w -->
 ```
 
 For the Github repository, if you're adding a new class to a spell or want to add a new spell list, you can create a new XML file with spell names, and the class or classes you would like to add, as shown in the example below:
@@ -793,7 +810,8 @@ Background example:
 A feat is defined using an element named feat. Its content can consist of the following elements:
 
   - **name** (ABC)
-  - **prerequisite** (ABC)
+  - **prerequisite** (ABC) *Description of what prerequisites should be met by the player character before choosing this feat.*
+  - **proficiency** (ABC) *Choose a skill or saving throw stat to add proficiency to.*
   - **special** (ABC) Special traits. *See the app for the list of available traits.*
   - **text** (ABC) Feat description. *Multiple text elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
   - **modifier** (ABC [+/-]##) Modifiers. *This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.*
@@ -801,18 +819,22 @@ A feat is defined using an element named feat. Its content can consist of the fo
 Feat example:
 ```xml
 <feat>
-  <name>Actor</name>
-  <prerequisite/>
-  <text>Skilled at mimicry and dramatics, you gain the following benefits:</text>
-  <text/>
-  <text>	• Increase your Charisma score by 1, to a maximum of 20.</text>
-  <text/>
-  <text>	• You have advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.</text>
-  <text/>
-  <text>	• You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked.</text>
-  <text/>
-  <text>Source:	Player's Handbook p. 165</text>
-  <modifier category="ability score">Charisma +1</modifier>
+  <name>Squat Nimbleness (Dexterity + Acrobatics)</name>
+  <prerequisite>Dwarf, Gnome, Halfling, Small Race</prerequisite>
+  <proficiency>Acrobatics</proficiency>
+  <text>You are uncommonly nimble for your race. You gain the following benefits:
+
+	• Increase your Strength or Dexterity score by 1, to a maximum of 20.
+
+	• Increase your walking speed by 5 feet.
+
+	• You gain proficiency in the Acrobatics or Athletics skill (your choice). If you're already proficient in the skill, your proficiency bonus is doubled for any check you make with it.
+
+	• You have advantage on any Strength (Athletics) or Dexterity (Acrobatics) check you make to escape from being grappled.
+
+Source:	Xanathar's Guide to Everything p. 75</text>
+  <modifier category="ability score">Dexterity +1</modifier>
+  <modifier category="bonus">Speed +5</modifier>
 </feat>
 ```
 
@@ -827,13 +849,13 @@ Each source is like its own Compendium, and could potentially be imported on its
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
-	<!-- Items -->
-	<!-- Races -->
-	<!-- Classes -->
-	<!-- Feats -->
-	<!-- Backgrounds -->
-	<!-- Spells -->
-	<!-- Monsters -->
+  <!-- Items -->
+  <!-- Races -->
+  <!-- Classes -->
+  <!-- Feats -->
+  <!-- Backgrounds -->
+  <!-- Spells -->
+  <!-- Monsters -->
 </compendium>
 ```
 
