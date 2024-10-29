@@ -6,6 +6,7 @@
 * LaserLlama:
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
+* Adding `The Griffon's Saddlebag, Book 1` content.
 
 ### 2024-##-##
 * Added HeavyArm's: `Gunslinger` class.
