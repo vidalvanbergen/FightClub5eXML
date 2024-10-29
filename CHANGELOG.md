@@ -10,8 +10,9 @@
 ### 2024-##-##
 * Added HeavyArm's: `Gunslinger` class.
 * Fixed an issue where properties weren't shown correctly, pointed out by @designbot in https://github.com/vidalvanbergen/FightClub5eXML/issues/8.
-* Streamlined item details formatting.
 * Fixed where I forgot to add scoreImprovement to the Vessel class.
+* Streamlined item details formatting.
+* Added `Core Supplements` collection.
 * Other changes and fixes.
 
 ### 2024-10-23
