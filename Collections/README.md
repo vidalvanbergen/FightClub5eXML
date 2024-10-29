@@ -6,6 +6,8 @@
 
 **Core_Rulebooks**: Player's Handbook, Dungeon Master's Guide, and Monster Manual.
 
+**Core_Supplements**: Core Rulebooks, Xanathar's Guide to Everything, and Tasha's Cauldron of Everything.
+
 **Special_Adventurers_League_Forgotten_Realms**: DALL approved source books.
 
 **Sytem_Reference_Document**: Only the core system files of Fight Club 5e.
