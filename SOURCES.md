@@ -280,6 +280,7 @@ Monsters, beast shapes, companions, familiars, etc. are defined using an element
   - **ac** (## (ABC)) *Armor class followed by armor type enclosed in parentheses.*
   - **hp** (## (D20)) *Default hp followed by hit dice formula enclosed in parentheses.*
   - **speed** (ABC)
+  - **init** (##) Initiative bonus
   - **str** (##) Strength score
   - **dex** (##) Dexterity score
   - **con** (##) Constitution score
