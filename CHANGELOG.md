@@ -3,12 +3,23 @@
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
-
-#### In Progress:
-* Adding `LaserLlama` content.
+* LaserLlama:
+  * Alternate Classes.
+  * Commoner, Shaman, Warlord Classes.
+* Adding `The Griffon's Saddlebag, Book 1` content.
 
 ### 2024-##-##
+* Added HeavyArm's: `Gunslinger` class.
+* Fixed an issue where properties weren't shown correctly, pointed out by @designbot in https://github.com/vidalvanbergen/FightClub5eXML/issues/8.
+* Fixed where I forgot to add scoreImprovement to the Vessel class.
+* Streamlined item details formatting.
+* Added `Core Supplements` collection.
+* Other changes and fixes.
+
+### 2024-10-23
 * Streamlined some `Ranger` features.
+* Added `Player's Handbook 2024` content.
+* Merged legacy 2014 + 2024 content by @nikjft in https://github.com/vidalvanbergen/FightClub5eXML/pull/6
 * Added `The Dungeon Master` Homebrew.
 * Added `Ranger (Primal Awareness)` spell list.
 * Added `Misplaced Monsters: Volume One` content.
@@ -16,7 +27,9 @@
 * Moved `Honor Among Thieves` content to Unearthed Arcana.
 * Added Matthew Mercer's `College of the Maestro` Homebrew Bard subclass.
 * Added Matthew Mercer's `Totem of the Duck` Homebrew Barbarian subclass.
-* Re-organized Unearthed Arcana based on date and `Subclasses That Shouldn't Exist`.
+* Added `Monster_A_Day_Creatures_Day100_20160416` Homebrew monsters.
+* Added `Subclasses That Shouldn't Exist` content.
+* Re-organized Unearthed Arcana based on date
 * Added a more comprehensive overview on how to add your own content to the repository. (See [SOURCES.md](/SOURCES.md))
 * Adding `LaserLlama` content.
   * Added LaserLlama's: `Artificer Specialists v2.1.0`.
@@ -39,6 +52,7 @@
   * Added LaserLlama's: `The Psion v2.3.0`.
   * Added LaserLlama's: `The Savant v5.2.0`.
   * Added LaserLlama's: `The Savant Expanded v5.2.0`.
+  * Added LaserLlama's: `The Vessel v2.2.0`.
 * Some reorganization of sources.
 * Other changes and fixes.
 
