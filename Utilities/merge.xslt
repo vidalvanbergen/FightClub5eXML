@@ -50,6 +50,11 @@
               <xsl:copy-of select="wealth" />
               <xsl:copy-of select="subclass" />
 
+              <!-- Not supported by Fight Club 5e -->
+              <xsl:for-each select="$classes[name = current()/name]">
+                <xsl:copy-of select="trait" />
+              </xsl:for-each>
+
               <xsl:for-each select="$classes[name = current()/name]">
                 <xsl:copy-of select="autolevel" />
               </xsl:for-each>
