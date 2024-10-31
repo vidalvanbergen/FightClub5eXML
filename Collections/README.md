@@ -1,8 +1,8 @@
 # Collections
 
-**Complete_Compendium**: Includes all rulebooks, third party suplements, adventures, partnered content, unearthed arcana, homebrew and unofficial third party content.
+**Complete_Compendium**: Includes all 2014 compatible rulebooks, third party suplements, adventures, partnered content, unearthed arcana, and homebrew content.
 
-**Complete_Compendium_2024**: Includes the 2024 Player's Handbook, more will be added when the new books become available.
+**Complete_Compendium_2024**: Includes all 2024 compatible rulebooks.
 
 **Core_Rulebooks**: Player's Handbook, Dungeon Master's Guide, and Monster Manual.
 

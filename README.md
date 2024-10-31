@@ -1,6 +1,6 @@
 # Fight Club 5e XML
 
-Creating XML files of all official D&D sources compatible with Fight Club 5e and Game Master 5e apps for iOS and Android.
+Creating XML files for all official D&D sources and unofficial homebrew compatible with Fight Club 5e and Game Master 5e apps for macOS, iOS, and Android.
 
 ## How-to Use This Repository
 
