@@ -256,11 +256,12 @@
   <xs:complexType name="traitType">
     <xs:choice maxOccurs="unbounded">
       <xs:element type="xs:string" name="name" minOccurs="0"/>
-      <xs:element type="xs:string" name="text" maxOccurs="unbounded" minOccurs="0"/>
-      <xs:element type="attackType" name="attack" maxOccurs="unbounded" minOccurs="0"/>
-      <xs:element type="skillList" name="proficiency" minOccurs="0" />
-      <xs:element type="xs:string" name="special" minOccurs="0"/>
       <xs:element type="rechargeType" name="recharge" minOccurs="0"/>
+      <xs:element type="skillList" name="proficiency" minOccurs="0" />
+      <xs:element type="xs:string" name="text" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="special" minOccurs="0"/>
+      <xs:element type="attackType" name="attack" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="roll" name="roll" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
   </xs:complexType>
 
@@ -279,12 +280,14 @@
   <xs:complexType name="monsterType">
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="xs:string" name="name"/>
+      <xs:element type="boolean" name="npc"/>
       <xs:element type="sizeEnum" name="size"/>
       <xs:element type="xs:string" name="type"/>
       <xs:element type="xs:string" name="alignment"/>
       <xs:element type="acType" name="ac"/>
       <xs:element type="hpType" name="hp"/>
       <xs:element type="xs:string" name="speed"/>
+      <xs:element type="xs:integer" name="init"/>
       <xs:element type="xs:integer" name="str"/>
       <xs:element type="xs:integer" name="dex"/>
       <xs:element type="xs:integer" name="con"/>
@@ -293,8 +296,8 @@
       <xs:element type="xs:integer" name="cha"/>
       <xs:element type="abilityBonusList" name="save"/>
       <xs:element type="skillBonusList" name="skill"/>
-      <xs:element type="xs:string" name="resist"/>
       <xs:element type="xs:string" name="vulnerable"/>
+      <xs:element type="xs:string" name="resist"/>
       <xs:element type="xs:string" name="immune"/>
       <xs:element type="xs:string" name="conditionImmune"/>
       <xs:element type="xs:string" name="senses"/>
@@ -303,8 +306,8 @@
       <xs:element type="crType" name="cr"/>
       <xs:element type="traitType" name="trait"/>
       <xs:element type="traitType" name="action"/>
-      <xs:element type="traitType" name="legendary"/>
       <xs:element type="traitType" name="reaction"/>
+      <xs:element type="traitType" name="legendary"/>
       <xs:element type="xs:string" name="spells"/>
       <xs:element type="slotsType" name="slots"/>
       <xs:element type="xs:string" name="description"/>
@@ -341,6 +344,7 @@
     <xs:choice maxOccurs="unbounded">
       <xs:element type="xs:string" name="name"/>
       <xs:element type="skillList" name="proficiency"/>
+      <xs:element type="modifierType" name="modifier"/>
       <xs:element type="traitType" name="trait" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
   </xs:complexType>
@@ -378,6 +382,7 @@
   <xs:complexType name="counterType">
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="subclass"/><!-- Not supported by FightClub -->
       <xs:element type="xs:integer" name="value"/>
       <xs:element type="resetEnum" name="reset"/>
     </xs:choice>
@@ -397,16 +402,17 @@
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="xs:string" name="name"/>
       <xs:element type="xs:integer" name="hd"/>
-      <xs:element type="abilityAndSkillList" name="proficiency"/>
       <xs:element type="abilityEnum" name="spellAbility"/>
-      <xs:element type="integer" name="numSkills"/>
-      <xs:element type="xs:string" name="subclass"/>
-      <xs:element type="autolevelType" name="autolevel"/>
+      <xs:element type="resetEnum" name="slotsReset"/>
+      <xs:element type="rollFormula" name="wealth"/>
+      <xs:element type="abilityAndSkillList" name="proficiency"/>
       <xs:element type="xs:string" name="armor"/>
       <xs:element type="xs:string" name="weapons"/>
       <xs:element type="xs:string" name="tools"/>
-      <xs:element type="resetEnum" name="slotsReset"/>
-      <xs:element type="rollFormula" name="wealth"/>
+      <xs:element type="integer" name="numSkills"/>
+      <xs:element type="xs:string" name="subclass"/><!-- Not supported by FightClub -->
+      <xs:element type="traitType" name="trait"/>
+      <xs:element type="autolevelType" name="autolevel"/>
     </xs:choice>
   </xs:complexType>
 
@@ -417,14 +423,11 @@
   <xs:complexType name="itemType">
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="detail"/>
       <xs:element type="itemEnum" name="type"/>
       <xs:element type="boolean" name="magic"/>
-      <xs:element type="xs:string" name="detail"/>
       <xs:element type="double" name="weight"/>
-      <xs:element type="xs:string" name="text"/>
-      <xs:element type="roll" name="roll"/>
       <xs:element type="double" name="value"/>
-      <xs:element type="modifierType" name="modifier"/>
       <xs:element type="xs:integer" name="ac"/>
       <xs:element type="integer" name="strength"/>
       <xs:element type="boolean" name="stealth"/>
@@ -433,6 +436,9 @@
       <xs:element type="damageEnum" name="dmgType"/>
       <xs:element type="propertyList" name="property"/>
       <xs:element type="xs:string" name="range"/>
+      <xs:element type="xs:string" name="text"/>
+      <xs:element type="modifierType" name="modifier"/>
+      <xs:element type="roll" name="roll"/>
     </xs:choice>
   </xs:complexType>
 
@@ -445,11 +451,12 @@
       <xs:element type="xs:string" name="name"/>
       <xs:element type="sizeEnum" name="size"/>
       <xs:element type="xs:integer" name="speed"/>
-      <xs:element type="abilityBonusList" name="ability"/>
-      <xs:element type="abilityEnum" name="spellAbility"/>
       <xs:element type="skillList" name="proficiency"/>
-      <xs:element type="traitType" name="trait" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="abilityEnum" name="spellAbility"/>
+      <xs:element type="xs:string" name="spells"/>
+      <xs:element type="abilityBonusList" name="ability"/>
       <xs:element type="modifierType" name="modifier" minOccurs="0"/>
+      <xs:element type="traitType" name="trait" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
   </xs:complexType>
 
