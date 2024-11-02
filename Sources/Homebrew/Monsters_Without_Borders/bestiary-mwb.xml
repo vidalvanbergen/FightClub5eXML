@@ -1,0 +1,955 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compendium version="5" auto_indent="NO">
+  <monster>
+    <name>Arcane Ooze</name>
+    <size>H</size>
+    <type>ooze</type>
+    <alignment>unaligned</alignment>
+    <ac>7</ac>
+    <hp>95 (10d12 + 30)</hp>
+    <speed>20 ft., climb 20 ft.</speed>
+    <str>16</str><dex>5</dex><con>16</con><int>1</int><wis>6</wis><cha>1</cha>
+    <immune>acid, cold, fire, lightning, slashing</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
+    <senses>blindsight 60ft. (blind beyond this radius)</senses><passive>8</passive>
+    <languages>understands Dwarven but can’t speak</languages>
+    <cr>6</cr>
+    <trait>
+      <name>Amorphous</name>
+      <text>The ooze can move through a space as narrow as 1 inch wide without squeezing.</text>
+    </trait>
+    <trait>
+      <name>Corrosive Form</name>
+      <text>A creature that touches the ooze or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the ooze corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the ooze is destroyed after dealing damage. The ooze can eat through 2-inch thick, nonmagical wood or metal in 1 round.</text>
+    </trait>
+    <trait>
+      <name>Flammable</name>
+      <text>If the ooze is subjected to fire damage, it ignites. At the start of each of the ooze’s turns, each creature within 5 feet of it takes 10 (3d6) fire damage, and flammable objects within 5 feet that aren’t being worn or carried ignite. A creature that touches the ooze or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Pseudopod</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.</text>
+      <attack>Pseudopod|5|1d6 + 3 + 4d8</attack>
+    </action>
+    <reaction>
+      <name>Spell Reflection</name>
+      <text>If the ooze makes a successful saving throw against a spell, or a spell attack misses it, the ooze can choose another creature (including the spellcaster) it can see within 30 feet of it. The spell targets the chosen creature instead of the ooze. If the spell forced a saving throw, the chosen creature makes its own save. If the spell was an attack, the attack roll is rerolled against the chosen creature.</text>
+    </reaction>
+    <description>An arcane ooze is a black pudding, magically enhanced by dwarven arcanists, which appears as a huge pile of oily, purple-black slime. These oozes are incredibly docile, often only attacking at the specific command of their creator. Some powerful dwarven mages can imbue commands within the ooze which last centuries, despite their complete lack of intelligence. Because of this, arcane oozes are often deployed as guards for treasure.
+      
+      Treasure Protectors. Arcane oozes are most frequently encountered outside treasure hoards or other rooms that require long-term protection. Unlike other guard creatures, these oozes can persist for centuries with very little sustenance. Not only this, the oozes can slide through cracks in walls and floors, patrolling corridors and stairwells that other creatures would be incapable of.
+      
+      Spell Turning. After much experimentation, dwarves finally managed to imbue a black pudding with a spell reflecting effect. This was achieved by feeding black puddings dozens of rings of spell turning. Eventually, the oozes absorbed the effect from these magic rings. Now, should a spell be cast against these oozes, there is a chance that the curse will be reflected straight back against the caster.
+      
+      Highly Flammable. One of the oozes biggest flaws, which remained unnoticed by its dwarven creators, is that it is incredibly likely to catch fire. Although the ooze itself resists the damage, they can catch alight from the smallest spark, turning a corridor decorated with tapestries and rugs to a smoldering waste in a matter of moments. This feature has been exploited by canny adventurers, who set them alight from afar to cause distractions.
+      
+      Source: Monsters Without Borders v1.2, p.6</description>
+    <environment>Any</environment>
+  </monster> <!-- Arcane Ooze -->
+  <monster>
+    <name>Beholder, Eye of the Deep</name>
+    <size>L</size>
+    <type>aberration</type>
+    <alignment>lawful evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>144 (16d10+48)</hp>
+    <speed>0 ft., swim 30ft.</speed>
+    <str>18</str><dex>14</dex><con>17</con><int>12</int><wis>15</wis><cha>14</cha>
+    <save>Int +4, Wis +5, Cha +5</save>
+    <skill>Perception +5</skill>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>15</passive>
+    <languages>Aquan, Deep Speech</languages>
+    <cr>8</cr>
+    <trait>
+      <name>Amphibious</name>
+      <text>The eye of the deep can breathe air and water.</text>
+    </trait>
+    <trait>
+      <name>Blinding Cone</name>
+      <text>The eye of the deep’s central eye emits a 120-foot cone of blinding light. At the start of each of its turns, the eye of the deep decides which way the cone faces and whether the cone is active. Creatures that start their turn in the cone must make a successful DC 14 Constitution saving throw or be blinded until the beginning of their next turn.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The eye of the deep makes three melee attacks, one with its bite and two with its pincers.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8+4) piercing damage.</text>
+      <attack>Bite|7|2d8 + 4</attack>
+    </action>
+    <action>
+      <name>Pincers</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft. one target. Hit: 11 (2d6+4) slashing damage</text>
+      <attack>Pincers|7|2d6 + 4</attack>
+    </action>
+    <action>
+      <name>Eye Rays</name>
+      <text>The eye of the deep shoots both of its magical eye rays, choosing targets for each it can see within 120 feet of it.</text>
+      <text/>
+      <text>1. Paralyzing Ray. The targeted creature must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <text/>
+      <text>2. Slowing Ray. The targeted creature must succeed on a DC 13 Dexterity saving throw. On a failed save, the target’s speed is halved for 1 minute. In addition, the creature can’t take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+    </action>
+    <description>The Eye of the Deep is an offshoot of the beholder race spawned in the deepest chasms of the Plane of Water by some malevolent intelligence. It appears as a spherical crustacean, roughly eight feet across, with thick chitinous plates covering its bulk. A single central eye sits in its center from which it can emit a blinding light, particularly effective in the shadows of the Darkened Depths. It possesses two large pincers and a mouth full of crooked, razor-sharp teeth, which it uses to rend flesh from blinded or stunned opponents. Unlike a normal beholder, it only has two eye stalks, but both are tuned to help it hunt in the deep waters.
+
+      Solitary Hunters. Eyes of the Deep lurk in the aquatic depths of the Plane of Water, stalking prey for days on end when necessary. Like all beholders, they are xenophobic and each believes they are the pinnacle of beholder perfection. The darkness of their territory drives them to solitude, so rarely are they ever encountered with minions.
+
+      Shiny Objects. If an Eye of the Deep has one key weakness, it is for shiny objects. Their lairs are often decorated with the pilfered treasures of their past meals, but only if they reflect their blinding light. Mirrors are prized above all else – they are shiny and they let the eye of the deep admire their own perfect form.
+      
+      Source: Monsters Without Borders v1.2, p.8</description>
+    <environment>Any</environment>
+  </monster> <!-- Beholder, Eye of the Deep -->
+  <monster>
+    <name>Bone Giant</name>
+    <size>H</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12</ac>
+    <hp>145 (13d12 + 52)</hp>
+    <speed>10 ft.</speed>
+    <str>21</str><dex>8</dex><con>19</con><int>5</int><wis>8</wis><cha>5</cha>
+    <save>Str +8, Con +7</save>
+    <vulnerable>bludgeoning</vulnerable>
+    <conditionImmune>blinded, charmed, exhaustion, deafened, paralyzed, poisoned</conditionImmune>
+    <senses>blindsight 50 ft.</senses><passive>9</passive>
+    <languages>understands Common and Giant but can’t speak</languages>
+    <cr>6</cr>
+    <action>
+      <name>Multiattack</name>
+      <text>The bone giant makes two bone club attacks.</text>
+    </action>
+    <action>
+      <name>Bone Club</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10ft., one target. Hit: 19 (3d8 + 5) bludgeoning damage.</text>
+      <attack>Club|8|3d8 + 5</attack>
+    </action>
+    <description>Unlike its smaller skeleton cousins, the Bone Giant - the animated bones of a Hill Giant - was not originally created using dark magic. Ulrich, the dwarven cleric of Lathandar, created the giant to guard a powerful magic item against evil forces.
+
+      Lumbering Hulk. The Bone Giant is a slow, yet powerful animation. Those who battle a Bone Giant had better keep their distance or risk being pummeled by a massive bone club.
+
+      Grand Guardians. Due to their slow speed, Bone Giants are typically only used in dungeons or as guardians. They don’t make for good group troops seeing as how most other creatures walk three times faster than the white hulks. However, they do make practical guards in castles and other structures where movement is limited.
+      
+      Source: Monsters Without Borders v1.2, p.9</description>
+    <environment>Any</environment>
+  </monster> <!-- Bone Giant -->
+  <monster>
+    <name>Bound Colossus</name>
+    <size>G</size>
+    <type>elemental</type>
+    <alignment>lawful evil</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>396 (18d20 + 180)</hp>
+    <speed>0 ft.</speed>
+    <str>26</str><dex>15</dex><con>30</con><int>11</int><wis>16</wis><cha>10</cha>
+    <save>Str +14, Con +16</save>
+    <skill>Athletics +14</skill>
+    <vulnerable>thunder</vulnerable>
+    <resist>acid, bludgeoning, piercing and slashing damage from nonmagical weapons</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned, prone, restrained, unconscious</conditionImmune>
+    <senses>tremorsense 240 ft., darkvision 120 ft.</senses><passive>13</passive>
+    <languages>Terran</languages>
+    <cr>21</cr>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The magnetic field surrounding the colossus slightly bends the weave of magic around it, granting it advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Earth Glide</name>
+      <text>The colossus can burrow through nonmagical, unworked earth and stone. While doing so, the colossus doesn’t disturb the material it moves through.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The colossus deals double damage to objects and structures.</text>
+    </trait>
+    <trait>
+      <name>Elasticity</name>
+      <text>By morphing, the arms of the colossus can reach out to incredible distances. For every sixty feet, that is between the base of the colossus and its target, its attacks lose 1 die of damage to a minimum of 2.</text>
+    </trait>
+    <trait>
+      <name>Magnetism</name>
+      <text>The colossus emits its own magnetic field to a radius of 240 feet. If a creature that is wearing or carrying metal equipment enters this space or begins its turn there, they must make a DC 14 Strength saving throw. On a failure, they are drawn 30 feet closer to the base of the colossus. A creature who fails this saving throw may choose to drop the worn or carried items to automatically succeed on this check instead. If a creature hits the base of the colossus after failing this saving throw, they are restrained and must succeed a DC 14 Strength saving throw in order to escape.</text>
+    </trait>
+    <trait>
+      <name>Multiple Arms</name>
+      <text>The bound colossus has four arms. Each arm can be attacked (AC 17; 30 hit points; vulnerability to thunder damage). Destroying an arm deals 15 damage to the colossus. The colossus can construct a new arm by using an action to pull one out of its body but it must have a free arm to do so.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Bound Colossus makes as many slam or earthen grasp attacks as it has remaining arms.</text>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>Melee or Ranged Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 26 (5d6+8) bludgeoning damage.</text>
+      <attack>Slam|14|5d6 + 8</attack>
+    </action>
+    <action>
+      <name>Earthen Grasp</name>
+      <text>The colossus reaches through the ground and reaches for one creature within 5 feet of its hand. The target must succeed on a contested grapple check. On a failed check, the target takes 26 (5d6+8) bludgeoning damage and is restrained. On subsequent turns, the colossus can attempt to crush a restrained target, which must make a DC 22 Strength saving throw. The target takes 26 (5d6+8) on a failed save, or half as much damage on a successful one. A restrained target can use their action to attempt to escape by making another contested grapple check and succeeding.</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3)</name>
+      <text>The Bound Colossus can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature’s turn. The Bound Colossus regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Attack</name>
+      <text>The colossus makes one slam attack.</text>
+    </legendary>
+    <legendary>
+      <name>Magnetic Pulse (Costs 2 Actions)</name>
+      <text>The colossus emits a sudden magnetic pulse (see Magnetism).</text>
+    </legendary>
+    <legendary>
+      <name>Grow Arm (Costs 3 Actions)</name>
+      <text>The colossus regrows one of the arms it has lost; it doesn’t need a free arm in order to do so.</text>
+    </legendary>
+    <description>The colossus is a weapon of elemental destruction created by the proto-gods in a bid for power over a realm where magic flowed raw, unbridled, and unchecked. Standing nearly forty feet tall when on its feet, the colossus dwarfs modern-day giants and is rivaled only by the sheer size of the tarrasque. The bipedal tower has a natural armor that resembles a mountainous landscape and gives off its own magnetic aura. As the gods settled into their portfolios, the need for these beings passed and they soon fell into obscurity. This bound specimen may very well be the last one in existence.
+      
+      Forgotten Master. Although it is not clear why the colossus is bound to its location, tomes of old purport of a malicious wizard who may be the cause. Ancient scribes sought to omit his name, letting it fade into the annals of history, but do tell of a unique gemstone created through what must be a powerful variant of the imprisonment spell. Nicknamed “Maximilian” by the unlikeable master, the colossus served him as it did thegods; as a weapon. When the time came for the wizard to pass on, it was thought best for the realm if the weapon was put to rest alongside him.
+
+      Earthen Grasp. Spellcasters that know the spell Maximilian’s Earthen Grasp regularly pay homage to this being, though not in the way they would expect. As the books tell, Maximilian was not pleased to be the puppet of a mere wizard and often attempted to reach out for the gemstone that kept the elemental in its prison. Though it seems unlikely, the legends state that the hand that bursts forth as a result of the casting of this spell is actually the hand of Maximilian, still in search of that gemstone. As the creator of Maximilian’s Earthen Grasp, that was the wizard’s legacy, the eternal taunting of a planar weapon. How foolish...
+      
+      Source: Monsters Without Borders v1.2, p.10</description>
+    <environment>Any</environment>
+  </monster> <!-- Bound Colossus -->
+  <monster>
+    <name>Demon Blight</name>
+    <size>M</size>
+    <type>fiend</type>
+    <alignment>neutral evil</alignment>
+    <ac>16 (natural barkskin)</ac>
+    <hp>72 (9d10+27)</hp>
+    <speed>20 ft.</speed>
+    <str>17</str><dex>9</dex><con>17</con><int>8</int><wis>13</wis><cha>8</cha>
+    <conditionImmune>blinded, deafened</conditionImmune>
+    <senses>blindsight 60 ft.</senses><passive>12</passive>
+    <languages>understands common and infernal but can’t speak</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Entangling Plants (Recharge 5-6)</name>
+      <text>Grasping roots and vines sprout in a 15 ft. radius centered on the Demon Blight, withering away after one minute. For the duration, that area is difficult terrain for non-plant characters. In addition, when first invoked, each creature (as chosen by the Demon Blight) must succeed on a DC 12 Strength saving throw or become restrained. A creature restrained may take its action to free itself with a DC 12 Strength check, freeing itself or others entangled within reach on a success.</text>
+    </trait>
+    <trait>
+      <name>False Appearance</name>
+      <text>When the Demon Blight is motionless, it is indistinguishable from a dead shrub.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Demon Blight makes 2 melee attacks or 1 ranged attack.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 12 (2d8 + 3) piercing damage.</text>
+      <attack>Claw|5|2d8 + 3</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 10 ft., one creature. Hit: 11 (3d6 + 1) bludgeoning damage. If the target is medium or smaller, it is grappled (escape DC 13) and pulled 5 ft. toward the Demon Blight. Target is re-strained until grapple is broken.</text>
+      <attack>Constrict|4|3d6 + 1</attack>
+    </action>
+    <description>A Kaolahr, or Demon Blight, can blame its existence on druids with evil intent. Usually, these horrendous fiends are summoned during a ritual which combines the hatred for lush green forests, several blood sacrifices and the power from the roots of a Gulthias Tree. These creatures are then put to work protecting the Gulthias Tree’s supplicant army as it spreads its evil across the land.
+
+      Twisted Limbs. Demon Blights move in an almost bi-pedal fashion, it’s long branch-like arms and fists pushing and pulling it along with its trunk like legs. When hunched over the Demon Blight is approximately 6ft. in height, but when it stands tall and fully extends its body, it is more like 9 ft. Its appearance is very much a mass of animated branches, twigs and vines with pseudo wings and long twisting horns on its forehead.
+
+      Silent Killers. It does not speak, but it makes a clacking sound, which speeds up as it coils up ready to attack. This sound can be perceived on a DC 10 Wisdom (Perception) check, but its source cannot be determined, especially if a Kaolahr is motionless in large shrubs.
+      
+      Source: Monsters Without Borders v1.2, p.12</description>
+    <environment>Any</environment>
+  </monster> <!-- Demon Blight -->
+  <monster>
+    <name>Eelfolk</name>
+    <size>M</size>
+    <type>humanoid (eelfolk)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15 (hide armor, shield)</ac>
+    <hp>19 (3d8 + 6)</hp>
+    <speed>30 ft., swim 40 ft.</speed>
+    <str>10</str><dex>13</dex><con>14</con><int>6</int><wis>10</wis><cha>7</cha>
+    <skill>Stealth +3</skill>
+    <immune>lightning</immune>
+    <senses>blindsight 60 ft.</senses><passive>10</passive>
+    <languages>Eelfolk</languages>
+    <cr>1/2</cr>
+    <trait>
+      <name>Death Burst</name>
+      <text>When the eelfolk dies, it explodes in a burst of pent-up electricity. Each creature within 10 feet of it must make a DC 12 Dexterity saving throw, taking 7 (2d6) lightning damage on a failed save, or half as much on a successful one.</text>
+    </trait>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The eelfolk can hold its breath for 1 hour.</text>
+    </trait>
+    <trait>
+      <name>Lunge</name>
+      <text>If the eelfolk moves at least 20 feet straight toward a target and then hits it with a long knife attack on the same turn, the target takes an extra 7 (2d6) piercing damage.</text>
+    </trait>
+    <action>
+      <name>Long Knife</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.</text>
+      <attack>Long Knife|3|1d6 + 1</attack>
+    </action>
+    <description>Eelfolk are a piscine race with rubbery skin and patterned coloration meant to provide camouflage amid shifting underwater light. They slink and hunt through caves and shoals, carving out territory in bursts of aggressive expansion. Eelfolk often lair along shorelines and submerged caverns, never too far from the surface where they must occasionally gulp great mouthfuls of air.
+      
+      Ambushers. Eelfolk keep to the fringes of the sea and ambush any who encroach upon their territory. While hunting, they prefer to lie in wait for prey to draw close before lunging out to attack. Two pouches behind their necks generate an electrical charge they use to sense their quarry, even in the murkiest depths.
+
+      Storm Worshippers. Eelfolk worship the squalls of the sea as though they were gods, viewing all storms as divinely inspired. Sailors at sea have reported seeing dozens of eelfolk cavorting through the water during tempests.
+
+      Growing Pains. Eelfolk grow larger and more powerful with age, shifting from stealthy hunters to vicious brutes. Fully matured eelfolk grow extra electrical pouches that cover their bodies in crackling energy. These scourges are more cunning and aggressive than their younger brethren. They lead surprise raids along shoreline settlements in order to satiate their ever-growing hunger for violence and food.
+
+      Storm’s Fury. During raging ocean storms, the strongest and most cunning eelfolk fight with each other to throw themselves in the path of a lightning strike. Rarely, one lucky creature will be enveloped in a great blast of energy. The lighting burns the eelfolk’s bulky body away, replacing it with a gaunt form housing magnificent power. These eelfolk stormcallers gain the ability to channel the tempest’s might, summoning lightning bolts and gales of wind to pummel their foes.
+      
+      Source: Monsters Without Borders v1.2, p.13</description>
+    <environment>Any</environment>
+  </monster> <!-- Eelfolk -->
+  <monster>
+    <name>Firefly Golem</name>
+    <size>L</size>
+    <type>swarm of Tiny beasts</type>
+    <alignment>unaligned</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>75 (10d8+30)</hp>
+    <speed>30 ft.</speed>
+    <str>16</str><dex>5</dex><con>16</con><int>1</int><wis>6</wis><cha>1</cha>
+    <save>Con +6, Wis +1</save>
+    <skill>Athletics +8</skill>
+    <resist>bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <conditionImmune>charmed, frightened, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses/><passive>10</passive>
+    <languages>understands Sylvan but can’t speak</languages>
+    <cr>6</cr>
+    <trait>
+      <name>Magic Weapons</name>
+      <text>The firefly golem’s attacks are considered magical for overcoming magic resistances</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The firefly golem regains 10 hit points at the start of its turn if it has at least 1 hit point. If it takes fire damage, this trait doesn’t function at the start of its next turn.</text>
+    </trait>
+    <trait>
+      <name>Immutable Form</name>
+      <text>The firefly golem is immune to any spell or effect that would alter its form.</text>
+    </trait>
+    <trait>
+      <name>Sudden Reform</name>
+      <text>As a bonus action, the firefly golem splits into hundreds of tiny insects, flies away 30 ft. and takes its physical form once more without provoking attacks of opportunity.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The firefly golem makes two slam attacks</text>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 5 (2d4) poison damage.</text>
+      <attack>Slam|8|2d8 + 5 + 2d4</attack>
+    </action>
+    <description>Legends describe Dareu, the Queen of Forests, as awe-inspiring, possessing such beauty that weak beings go blind from beholding her countenance. A popular legend tells the story of her mercy and gratitude, and how she gives back sight to loyal pilgrims who travel to her oak castle just to see her. Queen Dareu is often seen visiting the Material Plane in the form of a grand white unicorn. She travels the lands healing wounded beasts and sometimes the lesser races with her healing powers.
+      
+      Queen Dareu crafted a powerful artifact eons before elves roamed the land; a mighty goblet that she infused with the life-force of a dying Archfey just like herself. This was the Queen of Bees and Insects, Anaralla. She perished from her wounds in one of the Feywild wars, with her spirit and might preserved in a new form, inside a magical goblet. The Goblet of Fireflies is the only way to create a firefly golem.
+      A firefly golem is not a construct or even solid. They are actually swarms of fireflies with the gift of sentience. Each insect is nothing but an appendage while the swarm is intelligent and sentient. The firefly golem is usually dispersed and only coalesces into golem form when it needs to perform its creator’s will. Queen Dareu created hundreds of firefly golems and gave them tasks. Most of them serve their queen as guardians and protectors. A few have been stolen and repurposed for other nefarious things.
+
+      Swarm Density. When a swarm of fireflies gets together to form the firefly golem, the insects are so tightly packed that they form a full physical being. The firefly golem’s abilities and attacks are only available to it once it takes physical form.
+
+      Insect Intelligence. Firefly golems are somewhat intelligent but are unable to abandon their insect-like nature. The only language they understand is sylvan, but they cannot speak it.
+      
+      Territorial Nature. Firefly golems are fearsome protectors. The area they guard is their sole priority. It is not apparent to the observer that the place is closely guarded because the fireflies are dispersed, but as soon as a threat arises, the firefly golem condenses into physical form and attacks.
+      
+      Source: Monsters Without Borders v1.2, p.14</description>
+    <environment>Any</environment>
+  </monster> <!-- Golem, Firefly -->
+  <monster>
+    <name>Gulabus</name>
+    <size>M</size>
+    <type>fiend (demon)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15 (natural barkskin)</ac>
+    <hp>82 (11d8 + 33)</hp>
+    <speed>20 ft.</speed>
+    <str>16</str><dex>10</dex><con>17</con><int>17</int><wis>13</wis><cha>16</cha>
+    <save>Str +6, Cha +6</save>
+    <skill>Deception +6, Perception +4, Persuasion +6</skill>
+    <resist>cold, lightning</resist>
+    <immune>fire, poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>13</passive>
+    <languages>Common, Abyssal, telepathy 60 ft. (works only with creatures that understand Common or Abyssal)</languages>
+    <cr>5</cr>
+    <action>
+      <name>Multiattack</name>
+      <text>The gulabus can make three attacks: one with its bite, and two with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d10+3) piercing damage.</text>
+      <attack>Bite|6|1d10 + 3</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d4+3) slashing damage plus 10 (3d6) poison damage. The target can make a DC 14 Constitution saving throw to halve the poison damage.</text>
+      <attack>Claw|6|1d4 + 3 + 3d6</attack>
+    </action>
+    <description>Gulabuses are repulsive creatures who look like morbidly obese humans with deformed facial traits. They mostly live in the Abyss but are occasionally encountered in the rest of the Lower Planes. They only come to the Material Plane when summoned, and most of the time, nobody ever knows they were there.
+
+      Masters of Rituals. Gulabuses, also known as demons of gluttony, use succulent dishes and fine drinks to corrupt the souls of sentient humanoids. They’re masters of ritual magic and know how to make demonic food and beverages which gives them control over the people who consume them. Every gulabus has its own tricks so feel free to make up your own. If the demon is corrupting people with tainted cookies or wine, you’re doing it right!
+
+      Secretive and Deceitful. Demons of gluttony prefer to stay out of sight and act from the shadows. A gulabus typically infiltrates a small community without anyone noticing it, corrupts a handful of people to act as its proxies, and then spread its influence to the entire village. By the time the local authorities realize what’s going on, it’s usually too late and the gulabus has an army of peasants to protect it. Because the demon of gluttony uses food and drinks to control people, anyone is a potential threat. Even an old lady selling cookies to buy her medicine might, in fact, be a gulabus’s agent spreading its corruption.
+      
+      Source: Monsters Without Borders v1.2, p.16</description>
+    <environment>Any</environment>
+  </monster> <!-- Gulabus -->
+  <monster>
+    <name>Jungle Walker</name>
+    <size>L</size>
+    <type>aberration</type>
+    <alignment>unaligned</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>135 (18d10+36)</hp>
+    <speed>0 ft., fly 35 ft. (hover)</speed>
+    <str>12</str><dex>15</dex><con>14</con><int>16</int><wis>14</wis><cha>16</cha>
+    <save>Int +6, Wis +5, Cha +6</save>
+    <resist>psychic; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
+    <conditionImmune>charmed, deafened, frightened, grappled, prone</conditionImmune>
+    <senses>blindsight 60 ft., darkvision 60 ft.</senses><passive>12</passive>
+    <languages>-</languages>
+    <cr>8</cr>
+    <trait>
+      <name>Frightful Presence</name>
+      <text>Each creature that can see the jungle walker at the start of its turn must succeed on a DC 12 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect early on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the jungle walker’s Frightful Presence for the next 24 hours.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>he jungle walker makes two attacks with its tendrils.</text>
+    </action>
+    <action>
+      <name>Tendril</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 8 (2d4+3) slashing damage plus an additional 7 (2d6) psychic damage.</text>
+      <attack>Tendril|5|2d4 + 3 + 2d6</attack>
+    </action>
+    <action>
+      <name>Deafening Chimes</name>
+      <text>The jungle walker’s piping wail reaches excruciating levels for a brief moment. Each creature within 30 feet of the jungle-walker who can hear it must succeed on a DC 14 Wisdom saving throw or take 10 (3d6) psychic damage on a failed save, or half as much damage on a successful one.</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3)</name>
+      <text>The jungle walker can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature’s turn. The jungle walker regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Possess Jungle</name>
+      <text>The jungle walker makes a tendril attack against an enemy within 120 feet of it, possessing mundane a mundane plant.</text>
+    </legendary>
+    <legendary>
+      <name>Discordant Pulse (Costs 2 Actions)</name>
+      <text>The jungle walker makes its Deafening Chimes action, though creatures make their saving throw with advantage.</text>
+    </legendary>
+    <description>In the deepest, wildest jungles of the world, fearful tales surround creatures who let no man or beast survive their presence.
+
+      Otherworldly Beings. Known only as Jungle Walkers, these alien entities are marked by the unearthly chiming that resounds throughout the area as they move. The few who have actually seen these creatures and lived to tell about it describe not a creature that walks, but one that hovers strangely over the ground. The hunched, oval-shaped thing is covered in an insect’s chitinous plates and sets of dark, glassy eyes gleam with a hungering intelligence. No mouth or mandible is visible; only wet tendrils that sway and search from below those dark eyes.
+
+      Tropical Terrors. Those that overhear such stories scoff, remarking that these creatures are only the stuff of legend. But on the rare and dark nights when the chimes can be heard, these brave doubters still douse their fires and pray that it stays away.
+      
+      Source: Monsters Without Borders v1.2, p.17</description>
+    <environment>Any</environment>
+  </monster> <!-- Jungle Walker -->
+  <monster>
+    <name>Kenning</name>
+    <size>M</size>
+    <type>fey</type>
+    <alignment>chaotic good</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>30 (4d10 + 8)</hp>
+    <speed>10 ft., fly 80 ft.</speed>
+    <str>14</str><dex>16</dex><con>14</con><int>8</int><wis>14</wis><cha>8</cha>
+    <skill>Perception +4</skill>
+    <senses>darkvision 60 ft.</senses><passive>14</passive>
+    <languages>Kenning; understands Common and Sylvan but can’t speak</languages>
+    <cr>1</cr>
+    <trait>
+      <name>Keen Sight</name>
+      <text>The kenning has advantage on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The kenning has advantage on an attack roll against a creature if at least one of the kenning’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The kenning makes two attacks: one with its beak, and one with its claws.</text>
+    </action>
+    <action>
+      <name>Beak</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 5 (1d4 + 3) piercing damage.</text>
+      <attack>Beak|5|1d4 + 3</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.</text>
+      <attack>Claw|5|1d6 + 3</attack>
+    </action>
+    <description>Kennings are known as protectors of sylvan forests. They are giant ravens that communicate with each other using their own language.
+
+      Giant Aerial Protectors. These creatures are similar to giant eagles in size. They understand but cannot speak Common and Sylvan. They usually patrol the treetops at the fringes of sylvan forests looking for trespassers.
+
+      Flocking Birds. If intruders are caught defiling a protected forest, kennings will band together and attack as a flock. They will also send one or more of their number to alert local druids or elves to perceived threats.
+      
+      Source: Monsters Without Borders v1.2, p.18</description>
+    <environment>Any</environment>
+  </monster> <!-- Kenning -->
+  <monster>
+    <name>Mind Flayer Cenomorph</name>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>lawful evil</alignment>
+    <ac>11</ac>
+    <hp>36 (8d8)</hp>
+    <speed>20 ft.</speed>
+    <str>9</str><dex>12</dex><con>10</con><int>15</int><wis>15</wis><cha>15</cha>
+    <skill>Perception +4, Stealth +3</skill>
+    <senses>darkvision 120 ft.</senses><passive>14</passive>
+    <languages>Deep Speech, telepathy 60 ft.</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The mind flayer cenomorph has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting (Psionics)</name>
+      <text>The mind flayer cenomorph’s innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no components:</text>
+      <text>At will: detect thoughts</text>
+    </trait>
+    <action>
+      <name>Tentacles</name>
+      <text>Melee Weapon Attack: +1 to hit, reach 5 ft., one creature. Hit:15 (2d10+4) psychic damage. If the target is Medium or smaller, it is grappled (escape DC 10) and must succeed on a DC 12 Intelligence saving throw or be stunned until the grapple ends.</text>
+      <attack>Tentacles|1|2d10 + 4</attack>
+    </action>
+    <action>
+      <name>Mind Blast (Recharge 6)</name>
+      <text>Each creature in a 60-foot cone emanating from the mind flayer cenomorph must succeed on a DC 12 Intelligence saving throw or take 16 (3d8+2) psychic damage and be stunned for 1 minute. A creature may repeat the save at the end of each of its turns, ending the effect on itself on a success.</text>
+    </action>
+    <spells>detect thoughts</spells>
+    <description>The Mind Flayer Cenomorph represents the stage in an Illithid’s life while it is in mid-metamorphosis from its initial humanoid form to that of an adult Mind Flayer. These wretches still retain some of the physical traits of their previous species, giving them a wholly disturbing and foul appearance. Their flesh is twisted and stretched as juvenile tentacles emerge from their faces. Their skin is moist and runny, in places sloughing off on a sheet of mucus, with the gray, lumpy skin of the illithid emerging from beneath.
+
+      Agony and Confusion. The Mind Flayer Cenomorph is in the process of a transformation that is both physical and mental in nature. As such, the Cenomorph spends much of its time confused and enraged. Much of the time, the adult Mind Flayers of the colony will leave the Cenomorphs in isolation as the last vestiges of their humanoid life fade into madness and change. However, if the Cenomorphs are needed for some purpose, the adult Illithids will calm them psionically. The transformation is incredibly painful for the Cenomorph, so much so that some do not survive the process.
+      
+      Source: Monsters Without Borders v1.2, p.21</description>
+    <environment>Any</environment>
+  </monster> <!-- Mind Flayer, Cenomorph -->
+  <monster>
+    <name>Ooze Dragon</name>
+    <size>H</size>
+    <type>dragon (ooze)</type>
+    <alignment>unaligned</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>172 (15d12+75)</hp>
+    <speed>20 ft., climb 20 ft.</speed>
+    <str>23</str><dex>10</dex><con>21</con><int>14</int><wis>13</wis><cha>17</cha>
+    <save>Dex +5, Con +10, Wis +6, Cha +8</save>
+    <skill>Perception +11</skill>
+    <immune>acid, lightning</immune>
+    <senses>blindsight 120ft. (blind beyond this radius)</senses><passive>21</passive>
+    <languages>Common, Draconic</languages>
+    <cr>20</cr>
+    <trait>
+      <name>Legendary Resistance (3/day)</name>
+      <text>If the dragon fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dragon can use its Amorphous Presence. It then makes three attacks: one with its bite and two with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 10ft., one target. Hit: 11 (2d4+6 ) piercing damage plus 7 (2d6) acid damage.</text>
+      <attack>Bite|11|2d4 + 6 + 2d6</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 5ft., one target. Hit: 8 (1d4+6) slashing damage plus 5 (2d4) acid damage.</text>
+      <attack>Claw|11|21d4 + 6 + 2d4</attack>
+    </action>
+    <action>
+      <name>Tail</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 15ft., one target. Hit: 15 (2d8+6) bludgeoning damage.</text>
+      <attack>Tail|11|2d8 + 6</attack>
+    </action>
+    <action>
+      <name>Amorphous Presence</name>
+      <text>Each creature, of the dragon’s choice, that is within 5 feet of the dragon must succeed on a DC 18 Dexterity saving throw. On a successful save, nothing happens. On a failed save, the creature takes 14 (4d6) acid damage and is engulfed within the dragons form. Engulfed creatures cannot breathe, are grappled and restrained, and take 28 (8d6) acid damage at the start of each of the dragons turns. An engulfed creature can try to escape by taking an action to make a DC 18 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the dragon.</text>
+    </action>
+    <action>
+      <name>Digesting Breath (Recharge 5-6)</name>
+      <text>The dragon exhales gelatinous ooze in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 21 (6d6) acid damage on a failed save, or half as much on a successful save. Any nonmagical weapons or armor that is worn by a creature that fails the save begin to corrode, taking a permanent and cumulative -1 penalty to either damage or AC dependant on the item.</text>
+    </action>
+    <reaction>
+      <name>Split</name>
+      <text>When the dragon that is Huge or larger would take more than 30 lightning or slashing damage from one spell or attack, it splits into two new dragons. Each new dragon has hit points equal to half of the original dragon at the point of it splitting, rounded down. New dragons are one size smaller than the original dragon. Any creatures under the effects of the dragons Amorphous Presence are freed.</text>
+    </reaction>
+    <legendary>
+      <name>Legendary Actions (3)</name>
+      <text>The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The dragon regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Detect</name>
+      <text>The dragon makes a Wisdom (Perception) check.</text>
+    </legendary>
+    <legendary>
+      <name>Tail Attack</name>
+      <text>The dragon makes a tail attack.</text>
+    </legendary>
+    <legendary>
+      <name>Loose Form (Costs 2 Actions)</name>
+      <text>The dragon loses its defined shape and spreads out as a pool of acidic ooze. Each creature within 60ft of the dragons current position must make a DC 18 Dexterity saving throw or take 14 (4d6) acid damage and have their movement speed halved whilst in this effect. In this form, the dragon can no longer attack and has its speed reduced to 0. At the beginning of its next turn, the dragon reforms in the space it occupied prior to activating this action. Any creatures under the effects of the dragons Amorphous Presence are freed.</text>
+    </legendary>
+    <description>No matter the difference in honor between chromatic and metallic dragons, one would be hard-pressed to argue that they aren’t noble creatures. The inverse is true of the Ooze Dragon; a being so strange that not even the ever-changing layers of Limbo could spit it out. Only one ooze dragon is known to exist, born as an experiment of a crazed alchemist who sought to create a weapon so powerful none could oppose them. Over years of work and arcane horrors, a wyrmlings flesh and blood was warped to become translucent and gelatinous. The dragon was driven mad by this process, however, eventually killing its creator and escaping into the wild.
+
+      Digestive Tactics. Those few who claim to have met with the Ooze Dragon, and lived to tell the tell the tale, usually do not come back whole. Due to its amorphous body, the ooze dragon can absorb creatures and eat away at their flesh with its caustic ichor, melting those who cannot escape within minutes. Trails of half-digested flora and fauna can be found in the wake of the dragon and entire skeletons are commonly found here too.
+
+      Terrible Reminder. The body of the ooze dragon is entirely molded out of a translucent blue gel that loosely grips the last remaining elements of a vestigial skeleton. An entire skull is present but missing its bottom jaw, its spine and ribcage float aimlessly in its malformed torso and the claws in its feet remain. Empty eye sockets peer out of the skull but it is clear the creature can still see. In the center of the beast, a large heart has ceased beating and crystallized into a deep red gem that glistens in the light.
+
+      Without Purpose. None are sure what the ooze dragon wants, but most agree that neither does the dragon itself. It takes nopermanent lair, does not attempt to communicate with other dragons and seems to have no interest in collecting treasure or relics of importance. It ignores humanoids when it can and swiftly deals with any threats without attempting diplomacy. Most regard it as a force of nature now and simply try to stay out of its way, but others have noticed from its pattern of movement that it seems to be searching for something; no one knows quite what.
+      
+      Source: Monsters Without Borders v1.2, p.22</description>
+    <environment>Any</environment>
+  </monster> <!-- Dragon, Ooze -->
+  <monster>
+    <name>Storm Hound</name>
+    <size>M</size>
+    <type>elemental</type>
+    <alignment>lawful evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>45 (7d8 + 14)</hp>
+    <speed>50 ft.</speed>
+    <str>17</str><dex>12</dex><con>14</con><int>6</int><wis>13</wis><cha>6</cha>
+    <skill>Perception +3</skill>
+    <immune>lightning</immune>
+    <senses>darkvision 60 ft.</senses><passive>13</passive>
+    <languages>understands Primordial but can’t speak</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Keen Hearing and Smell</name>
+      <text>The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The hound has advantage on an attack roll against a creature if at least one of the hound’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5ft., one creature. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) lightning damage.</text>
+      <attack>Bite|5|1d8 + 3 + 2d6</attack>
+    </action>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <text>The hound exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) lightning damage on a failed save, or half as much on a successful one.</text>
+    </action>
+    <action>
+      <name>Thunderous Transport (Recharge 4-6)</name>
+      <text>The storm hound turns into a bolt of lightning and magically teleports up to 40 feet to an unoccupied space it can see.</text>
+      <text>    Upon arrival, a thunderous force explodes from the storm hound. Each creature in a 15-foot cube originating from the storm hound must succeed on a DC 12 Constitution saving throw. On a failed save, a creature takes 9 (2d8) thunder damage and is pushed 10 feet away from the storm hound. On a successful save, a target takes half damage and isn’t pushed.</text>
+      <text>    In addition, unsecured objects that are completely within the area are automatically pushed 10 feet away from the storm hound. Using this action emits a thunderous boom audible out to 300 feet.</text>
+    </action>
+    <description>Storm Hounds are companions often used by the Aarakocra. These wolf-like creatures appear to be made of wisps of cloud-like smoke with crackling lightning constantly surging through their bodies. They are often used to hunt down foes, gather meat for meals, or just additional protection. When found in the wild they quickly become vicious.
+
+      Elemental Forces. Storm hounds are beings of pure elemental force, who mimic their element to a key. Storm hounds have tempers that seem to appear like thunderous squalls, surging throughout an area in tempestuous rages. These elementals have the ability to teleport as a bolt of lighting, smashing through buildings, markets and people without thought.
+      
+      Source: Monsters Without Borders v1.2, p.24</description>
+    <environment>Any</environment>
+  </monster> <!-- Storm Hound -->
+  <monster>
+    <name>Tempest Beast</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>102 (12d10+36)</hp>
+    <speed>30 ft., swim 30 ft.</speed>
+    <str>18</str><dex>15</dex><con>16</con><int>2</int><wis>12</wis><cha>5</cha>
+    <skill>Perception +3, Stealth +4</skill>
+    <immune>lightning</immune>
+    <senses/><passive>13</passive>
+    <languages>-</languages>
+    <cr>4</cr>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The tempest beast can hold its breath for one hour.</text>
+    </trait>
+    <trait>
+      <name>Charged Body</name>
+      <text>A creature that touches the tempest beast or hits it with a melee attack while within 5 feet of it takes 7 (2d6) lightning damage. This damage is increased by 4 (1d6) if the creature is at least partially submerged in water.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The tempest beast makes two attacks: one with its bite and one with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10+4) piercing damage.</text>
+      <attack>Bite|6|1d10 + 4</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6+4) slashing damage.</text>
+      <attack>Claws|6|2d6 + 4</attack>
+    </action>
+    <action>
+      <name>Thunderous Sweep (Recharge 6)</name>
+      <text>Two creatures within 10 feet of each other and five feet of the tempest beast must succeed in a DC 14 Dexterity saving throw. On a failed save, the target takes 9 (2d4+4) slashing damage and 4 (1d6) thunder damage and is pushed 10 feet away from the tempest beast. If successful, the target takes half the damage and is not pushed back.</text>
+    </action>
+    <description>These dinosaur-like creatures resemble large crocodiles but with shorter snouts and longer necks. They have a ridge of blue plates running down their backs and a gaping maw containing rows of sharp teeth. Their initial proximity to magic imbued in them elemental power, which was then bred into the species.
+
+      Shock &amp; Awe. Tempest beasts are aware of their elemental powers and make ample use of their unique capabilities in order to slay their prey. With being dangerous while in water, tempest beasts usually lie in wait on shores or within shallow water. Once their target gets too close, they home in on their target.
+
+      Caring Mothers. Despite their ferocious behavior, tempest beast mothers care and guard for their young. They share part of their game with their children in order to nurture them. There is only one thing more dangerous than a tempest beast on the hunt; a tempest beast mother guarding her young.
+      
+      Source: Monsters Without Borders v1.2, p.25</description>
+    <environment>Any</environment>
+  </monster> <!-- Tempest Beast -->
+  <monster>
+    <name>Terracotta Soldier</name>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>unaligned</alignment>
+    <ac>21 (natural armor)</ac>
+    <hp>15 (2d8 + 6)</hp>
+    <speed>30 ft.</speed>
+    <str>19</str><dex>10</dex><con>16</con><int>3</int><wis>11</wis><cha>2</cha>
+    <skill>Perception +2</skill>
+    <immune>poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks that aren’t adamantine.</immune>
+    <conditionImmune>charmed, exhausted, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses><passive>12</passive>
+    <languages>understands the languages of its creator but can’t speak.</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Immutable Form</name>
+      <text>The terracotta soldier is immune to any spell or effect that would alter its form.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The terracotta soldier has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Magic Weapons</name>
+      <text>The terracotta soldier’s weapon attacks are magical.</text>
+    </trait>
+    <action>
+      <name>Spear</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage.</text>
+      <attack>Spear|6|1d6 + 4</attack>
+    </action>
+    <action>
+      <name>Slow (Recharge 5-6)</name>
+      <text>The terracotta soldier targets one or more creatures it can see within 10 feet of it. Each target must make a DC 14 Wisdom saving throw against this magic. On a failed save, a target can’t use reactions, its speed is halved, and it can’t make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+    </action>
+    <description>An illustrious emperor, the founder of a powerful dynasty, commissioned this army of constructs from the wizards of his court. They were made not to serve him in life, but to guard him in death. Platoons of terracotta sculptures in the shape of armed warriors were buried with the emperor in his massive mausoleum, to defend him during his eternal rest.
+
+      Eternal Guardians. Hidden for millennia, these stone guardians were thought by scholars to be merely decorative statues — until someone tried to move the emperor’s remains.
+      
+      Source: Monsters Without Borders v1.2, p.26</description>
+    <environment>Any</environment>
+  </monster> <!-- Terracotta Soldier -->
+  <monster>
+    <name>The Evil Doll</name>
+    <size>T</size>
+    <type>construct</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14</ac>
+    <hp>119 (14d10+42)</hp>
+    <speed>20 ft.</speed>
+    <str>7</str><dex>18</dex><con>17</con><int>8</int><wis>10</wis><cha>16</cha>
+    <vulnerable>fire</vulnerable>
+    <resist>piercing and slashing from nonmagical weapons</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned, unconscious</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>10</passive>
+    <languages>Common</languages>
+    <cr>4</cr>
+    <trait>
+      <name>False Appearance</name>
+      <text>While the Evil Doll remains motionless, it is indistinguishable from an ordinary, inanimate children’s doll.</text>
+    </trait>
+    <trait>
+      <name>Frightening Lullaby</name>
+      <text>Once per day, the Evil Doll can use a bonus action to sing a creepy children’s lullaby. All creatures within a 30 ft. radius that can hear it must succeed a DC 15 Wisdom saving throw.</text>
+      <text>    On a failed saving throw the creature will become frightened and must succeed on another DC 15 Wisdom saving throw to break the enchantment at the end of their next turn. On a second failed save, the creature will become paralyzed, and can attempt a DC 15 Wisdom saving throw on each turn. Once it has succeeded a saving throw, the creature will no longer be paralyzed.</text>
+    </trait>
+    <trait>
+      <name>Shadow Blend (Recharge 5-6)</name>
+      <text>As a bonus action, the Evil Doll can disappear to the evil places that lurk in the shadows. Use this feature as an escape mechanism.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The evil doll makes two attacks: one with its knife and one with its claw.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit 7 (1d6 + 4) slashing damage.</text>
+      <attack>Claw|6|1d6 + 4</attack>
+    </action>
+    <action>
+      <name>Knife</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit 11 (2d6 + 4) piercing damage.</text>
+      <attack>Knife|6|2d6 + 4</attack>
+    </action>
+    <description>An insane and murderous spirit trapped within a porcelain body, the Evil Doll hates all living creatures, especially those of a good alignment. It hungers to deal death and must kill to satisfy that hunger.
+
+      Sly Deceiver. Often mistaken for the toy it once was, the Evil Doll utilizes this false appearance to gain the upper hand, and trust, of unsuspecting victims, before slaying them in order to satisfy its internal lust for murder.
+
+      Terrifying Foreshadow. It is said that one might hear the evil doll’s lullaby, and childish giggles, in the night well before they see her, though by that time, it is already too late. There have been few who have survived an encounter with such a being, and even less that are left psychologically unscarred. The Evil Doll is absolutely terrifying!
+      
+      Source: Monsters Without Borders v1.2, p.27</description>
+    <environment>Any</environment>
+  </monster> <!-- The Evil Doll -->
+  <monster>
+    <name>The Hood</name>
+    <size>T</size>
+    <type>undead</type>
+    <alignment>unaligned</alignment>
+    <ac>12</ac>
+    <hp>27 (6d8)</hp>
+    <speed>0 ft.</speed>
+    <str>16</str><dex>16</dex><con>16</con><int>12</int><wis>14</wis><cha>14</cha>
+    <save>Wis +5, Cha +5</save>
+    <skill>Deception +5, Perception +5, Persuasion +5</skill>
+    <resist>necrotic</resist>
+    <immune>cold, radiant</immune>
+    <conditionImmune>charmed, paralyzed, prone</conditionImmune>
+    <senses>darkvision 60 ft.</senses><passive>15</passive>
+    <languages>Abyssal, Common</languages>
+    <cr>6</cr>
+    <trait>
+      <name>False Appearance</name>
+      <text>While it remains motionless, The Hood is indistinguishable from a normal red hooded cloak.</text>
+    </trait>
+    <trait>
+      <name>Symbiosis</name>
+      <text>The wearer of The Hood becomes involved in a symbiotic relationship with it. All The Hood’s statistics replace those of the wearer unless they are inferior. This includes hit points.</text>
+    </trait>
+    <action>
+      <name>Hooded Charming</name>
+      <text>As an action, the fiendish will of The Hood exerts its will on another. The victim, who must be touching the cloak, must succeed on a DC 15 Wisdom saving throw; failure results in The Hood taking full control of the target. A successful save means the target is immune to the Hooded Charming for the next 24 hours. If the attempted possession fails, the target can make a DC 15 Wisdom (Insight) or (Perception) check. Only on a success does the target know or realize that The Hood attempted a possession.</text>
+    </action>
+    <description>The Hood is an unusual type of fiend that existence relies upon a close relationship with another host creature. Hoods are normally transported to The Material Plane by demonic lords during the planning stages of an abyssal invasion to cause chaos and havoc within the invasion zone. With so many Hoods being released and so many invasions never happening, many Hoods now roam freely of their own will.
+
+      Symbiotic Connection. The Hood’s existence relies upon a host to survive. The will of The Hood is near absolute, usually resulting in the host’s emotional status turning vile and murderous, resulting in the death of the host and The Hood moving to a new area.
+
+      Mindless Chant. Though The Hood’s will is strong, any host capable of speech has the tendency of betraying The Hood with its uncontrollable chant. Once the host becomes hungry, a chant of “Feed the hood … Feed the hood” will be heard moments before the host strikes. Many a Hood has met its doom at the mindless betrayal of its host.
+
+      Hooded Color. Most Hood’s don’t have a preferred color. Most choose to adopt a color appealing to the intended host. Red is popular due to blood stains, resulting from the host’s murderous sprees, not being immediately visible.
+      
+      Source: Monsters Without Borders v1.2, p.28</description>
+    <environment>Any</environment>
+  </monster> <!-- The Hood -->
+  <monster>
+    <name>Tomb Spider</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>neutral evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>52 (8d10+8)</hp>
+    <speed>30ft., climb 30ft.</speed>
+    <str>14</str><dex>16</dex><con>12</con><int>8</int><wis>11</wis><cha>4</cha>
+    <skill>Stealth +7, Perception +4</skill>
+    <immune>necrotic</immune>
+    <senses>blindsight 10ft., darkvision 60ft.</senses><passive>14</passive>
+    <languages>-</languages>
+    <cr>3</cr>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The tomb spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Tomb-Tainted</name>
+      <text>If the spider is dealt necrotic damage, it instead takes no damage and regains hit points equal to the damage taken.</text>
+    </trait>
+    <trait>
+      <name>Web Sense</name>
+      <text>While in contact with a web, the tomb spider knows the exact location of any other creature in contact with the web.</text>
+    </trait>
+    <trait>
+      <name>Web Walker</name>
+      <text>The tomb spider ignores movement restrictions caused by webbing.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The spider makes two bite attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5ft., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 13 (3d8) poison damage on a failed save, or half as much damage on a successful one. Any creature that fails the save is poisoned for 1 hour. While poisoned in this way, any effect that would heal the creature instead deals necrotic damage, and any effect that would deal necrotic damage instead heals the creature.</text>
+      <attack>Bite|6|1d8 + 3</attack>
+    </action>
+    <action>
+      <name>Web (Recharge 5-6)</name>
+      <text>Melee Weapon Attack: +5 to hit, range 30/60ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, piercing and psychic damage).</text>
+    </action>
+    <description>Tomb spiders are arachnids infused with negative energies that have the power to reanimate corpses as hosts for their offspring.
+
+      Complex Lifecycle. A tomb spider’s life cycle is a bizarre process that depends entirely on dead bodies. Once a tomb spider has mated, it selects a suitable corpse and deposits its eggs inside the cadaver. The eggs are infused with negative energy, which leaks out into the corpse and reanimating it as an undead known as a web mummy. This zombified corpse defends the mother spider from harm. As the eggs mature, they sap the nutrients from the mummy. Eventually, the eggs will hatch and the broodswarm within devours the undead for its first meal. The web mummy and broodswarm stat blocks can be found in ‘Monsters of the Guild’ (please see the final page of this pdf).
+
+      Potent Venom. The poison possessed by tomb spiders and their brood swarm is dangerous, not only because of its ability to burn through a creature’s vascular system, but also because it carries with it some of the negative energy that the tomb spider holds. As it invades a bitten creature, it alters their physiology so that healing magic and necrotic damage are reversed.
+
+      Graveyard Denizens. Tomb spiders live on the outskirts of civilization, in dark woods on the edge of burial grounds or in unexplored depths of ancient mausoleums. Their dependency on corpses means that they can never stray too far from other living creatures. Despite this, some aggressive tomb spiders that are capable of killing enough creatures, such as horses and unfortunate travelers, do exist further out into the wilderness.
+      
+      Source: Monsters Without Borders v1.2, p.29</description>
+    <environment>Any</environment>
+  </monster> <!-- Tomb Spider -->
+  <monster>
+    <name>Werespider</name>
+    <size>M</size>
+    <type>humanoid (human, shapechanger)</type>
+    <alignment>neutral evil</alignment>
+    <ac>14 in humanoid form, 15 in spider or hybrid form</ac>
+    <hp>71 (11d8 + 22)</hp>
+    <speed>30 ft. (climb 30 ft. in spider or hybrid forms)</speed>
+    <str>10</str><dex>19</dex><con>14</con><int>10</int><wis>11</wis><cha>10</cha>
+    <skill>Perception +3, Stealth +10</skill>
+    <immune>bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t silvered</immune>
+    <senses>blindsight 10 ft., darkvision 60 ft.</senses><passive>13</passive>
+    <languages>Common (can’t speak in spider form)</languages>
+    <cr>5</cr>
+    <trait>
+      <name>Shapechanger</name>
+      <text>The werespider can use its action to morph into a spider-humanoind hybrid or into a giant spider, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. It reverts to its true form if it dies.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb (Spider and Hybrid Form Only)</name>
+      <text>The werespider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Web Sense (Spider or Hybrid Form Only)</name>
+      <text>While in contact with a web, the werespider knows the exact location of any other creature in contact with the same web.</text>
+    </trait>
+    <trait>
+      <name>Web Walker (Spider or Hybrid Form Only)</name>
+      <text>The werespider ignores movement restrictions caused by webbing.</text>
+    </trait>
+    <action>
+      <name>Multiattack (Humanoid or Hybrid Form Only)</name>
+      <text>The werespider makes two attacks, one of which can be a bite attack.</text>
+    </action>
+    <action>
+      <name>Bite (Spider and Hybrid Form Only)</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way. If the target is a humanoid, it must succeed on a second DC 13 Constitution saving throw or be cursed with werespider lycanthropy.</text>
+      <attack>Bite|6|1d8 + 4</attack>
+    </action>
+    <action>
+      <name>Rapier (Human and Hybrid Form Only)</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.</text>
+      <attack>Rapier|7|1d8 + 4</attack>
+    </action>
+    <action>
+      <name>Web (Spider or Hybrid Form Only)</name>
+      <text>Ranged Weapon Attack: +7 to hit, range 30/60 ft., one target. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 11 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</text>
+    </action>
+    <description>Werespiders are graceful, slender lycanthropes straight from many people’s worst nightmares. When they are at rest, werespiders sit perfectly still in dark corners.
+
+      Patient Assassins. Werespiders are stealthy assassins with cold and distant personalities. They are extremely patient and can wait unmoving for days in a small space to ambush their prey. In their humanoid and hybrid forms, werespiders prefer light and ranged weapons and use surprise to bring down enemies.
+      
+      Scourge of the Underdark. Werespiders are most common in the Underdark. Duergar and svirfneblin who become werespiders will usually leave their cities and wander the tunnels of the Underdark, staying in their hybrid or beast form to keep away predators. Some even head to the surface where finding prey is easier. Drow who become cursed remain in civilization and are open about their lycanthropy, claiming the condition is a blessing from Lolth.
+      
+      Source: Monsters Without Borders v1.2, p.31</description>
+    <environment>Any</environment>
+  </monster> <!-- Werespider -->
+</compendium>
