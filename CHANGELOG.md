@@ -9,6 +9,10 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 * Adding `Tenares` content.
 
+### 2024-##-##
+* Tagged `Vessel v2.2.0`, and Added `Vessel v3.0.1` by LaserLlama.
+* Other changes and fixes.
+
 ### 2024-11-22
 * Added HeavyArm's: `Gunslinger` class.
 * Fixed an issue where properties weren't shown correctly, pointed out by @designbot in https://github.com/vidalvanbergen/FightClub5eXML/issues/8.
