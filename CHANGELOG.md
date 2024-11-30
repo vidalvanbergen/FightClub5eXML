@@ -18,6 +18,7 @@
 * Fixed an issue where properties weren't shown correctly, pointed out by @designbot in https://github.com/vidalvanbergen/FightClub5eXML/issues/8.
 * Fixed where I forgot to add scoreImprovement to the Vessel class.
 * Updated LaserLlama's Magus & Magus Extended classes.
+* Fixed misspelled spells and duplicates.
 * Added `The Illrigger Revised` content.
 * Added `Core Supplements` collection.
 * Streamlined item details formatting.
