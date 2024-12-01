@@ -7,13 +7,21 @@
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
+* Adding `Tenares` content.
 
 ### 2024-##-##
+* Tagged `Vessel v2.2.0`, and Added `Vessel v3.0.1` by LaserLlama.
+* Other changes and fixes.
+
+### 2024-11-22
 * Added HeavyArm's: `Gunslinger` class.
 * Fixed an issue where properties weren't shown correctly, pointed out by @designbot in https://github.com/vidalvanbergen/FightClub5eXML/issues/8.
 * Fixed where I forgot to add scoreImprovement to the Vessel class.
-* Streamlined item details formatting.
+* Updated LaserLlama's Magus & Magus Extended classes.
+* Fixed misspelled spells and duplicates.
+* Added `The Illrigger Revised` content.
 * Added `Core Supplements` collection.
+* Streamlined item details formatting.
 * Other changes and fixes.
 
 ### 2024-10-23
