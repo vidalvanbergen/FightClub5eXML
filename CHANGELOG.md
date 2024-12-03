@@ -10,6 +10,27 @@
 * Adding `Tenares` content.
 
 ### 2024-##-##
+* Added Homebrew content by @reccho:
+  * Added `Winghorn Press: The Wild Sheep Chase`.
+  * Added `Winghorn Press: The Wolves of Welton`.
+  * Added `Winghorn Press: The Low Crater`.
+  * Added `Winghorn Press: A Most Potent Brew`.
+  * Added `Tony Petrecca: Journey to the Center of the Underdark`.
+  * Added `Tony Petrecca: Journey to the Center of the Underdark 2: The Darklake Strikes Back`.
+  * Added `Tony Petrecca: Killer Kobolds!`.
+  * Added `Benjamin Huffman: Pugilist Class`.
+  * Added `Monsters without Borders v1.2`.
+  * Added `Cawood: Monsters of Feyland`.
+  * Added `Cawood: Monsters of the Underworld`.
+  * Added `Cawood: Monsters of the City: Sins & Virtues`.
+  * Added `Cawood: Monsters of the Wilderness: Oswald's Curse`.
+  * Added `Cawood: Monsters of Feyland 2: The Well of Dreams`.
+  * Added `Cawood: Monsters of the Dungeon: Brave the Darkness`.
+  * Added various homebrew by `DMDave`.
+  * Added `Shmeckerel - Gourdon Applegrove and Jack`.
+  * Added `Spectre Creations`.
+  * Added `Stormchasers`.
+  * Added `Team Superhydra: The Kobolds' Cauldron`.
 * Tagged `Vessel v2.2.0`, and Added `Vessel v3.0.1` by LaserLlama.
 * Other changes and fixes.
 
