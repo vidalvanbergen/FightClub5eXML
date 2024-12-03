@@ -37,16 +37,17 @@
     <trait>
       <name>Spellcasting</name>
       <text>Gourdon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Gourdon can cast detect magic and misty Step at will and has the following wizard spells prepared:
-Cantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp
-1st level (4 slots): shield, identify, feather fall magic missile
-2nd level (3 slots): detect thoughts, mirror image, hold person
-3rd level (3 slots): counterspell, fly, lightning bolt
-4th level (3 slots): banishment, fire shield, stoneskin
-5th level (3 slots): cone of cold, scrying, wall of force
-6th level (1 slot): globe of invulnerability
-7th level (1 slot): teleport
-8th level (1 slot): mind blank
-9th level (1 slot): time stop</text>
+
+	• Cantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp
+	• 1st level (4 slots): shield, identify, feather fall magic missile
+	• 2nd level (3 slots): detect thoughts, mirror image, hold person
+	• 3rd level (3 slots): counterspell, fly, lightning bolt
+	• 4th level (3 slots): banishment, fire shield, stoneskin
+	• 5th level (3 slots): cone of cold, scrying, wall of force
+	• 6th level (1 slot): globe of invulnerability
+	• 7th level (1 slot): teleport
+	• 8th level (1 slot): mind blank
+	• 9th level (1 slot): time stop</text>
     </trait>
     <action>
       <name>Headbutt</name>
@@ -54,7 +55,7 @@ Cantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking gras
       <attack>Headbutt|6|2d10+1</attack>
     </action>
     <spells>fire bolt, light, mage hand, prestidigitation, shocking grasp, shield, identify, feather fall magic missile, detect thoughts, mirror image, hold person, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
-    <slots>4,3,3,3,3,1,1,1,1</slots>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <description>Gourdon Applegrove, once upon a time, would have been indistinguishable from your everyday, run-of-the-mill wizardfolk. Old, bearded, robed, he was an unassuming man, naive despite the fact that his experience had left him something of a master of the arcane arts. Everyone knew him, and they should; he had been around for ages, and was as much a part of the town as the trees that grew there.
 
 The only skill Gourdon seemed incapable of mastering was the craft of not growing old and dying like most people his age seemed to be keen on. Sure, he had colleagues that dabbled in necromancy, but there must be less unsavoury ways to keep from kicking the bucket. All his research led him to one place, the untapped world of magic that belonged to The Fey.
@@ -109,7 +110,7 @@ Cantrips (at will): dancing lights, fire bolt, mage hand, produce flame, thaumat
 6th level (1 slot): irresistible dance</text>
     </trait>
     <spells>dancing lights, fire bolt, mage hand, produce flame, thaumaturgy, burning hands, faerie fire, hellish rebuke, sleep, flaming sphere, heat metal, scorching ray, counterspell, dispel magic, fireball, polymorph, wall of fire, telekinesis, irresistible dance</spells>
-    <slots>4,3,3,3,2,1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <description>Gourdon Applegrove, once upon a time, would have been indistinguishable from your everyday, run-of-the-mill wizardfolk. Old, bearded, robed, he was an unassuming man, naive despite the fact that his experience had left him something of a master of the arcane arts. Everyone knew him, and they should; he had been around for ages, and was as much a part of the town as the trees that grew there.
 
 The only skill Gourdon seemed incapable of mastering was the craft of not growing old and dying like most people his age seemed to be keen on. Sure, he had colleagues that dabbled in necromancy, but there must be less unsavoury ways to keep from kicking the bucket. All his research led him to one place, the untapped world of magic that belonged to The Fey.
@@ -176,7 +177,9 @@ Source:	Shmeckerel, Gourdon Applegrove &amp; Jack</description>
     </action>
     <action>
       <name>Water Jet (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>The draxolotl exhales a jet of water in a 60-foot line that is 10 feet wide. Each creature in that line must make a DC 20 Dexterity saving throw, taking 52 (8d12) bludgeoning damage on a failed save and is pushed to the end of the 60 ft line. A creature that collides with a solid object during this movement takes an additional d6 bludgeoning damage for every 5 ft travelled. A creature that succeeds the saving throw takes half as much damage and is not pushed.</text>
+      <attack>Water Jet||8d12</attack>
     </action>
     <action>
       <name>Vacuum (Recharge 5-6).</name>
@@ -187,11 +190,12 @@ A swallowed creature can attempt a DC 25 Strength saving throw to escape from th
 If the draxolotl dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
 
 The use of this action automatically recharges the water jet action.</text>
+      <attack>Vacuum||3d12</attack>
     </action>
     <spells/>
     <description>Draxolotls tend to be fair tempered and curious in nature, though they can get upset and throw tantrums over seemingly innocuous incidents. Depending on the personality of the draxolotl, this tantrum could be anything from pouting and refusing to leave their underwater cave lair for years on end to full on aggression towards anything unfortunate enough to cross its path.
 
-A draxolotl shares the desire to hoard treasure with many of its draconic kin. However, there is one key difference: a draxolotl sees great value in any object from the surface, but sees no advantage to having more than one of the same object. To have a coin would be wonderful, but a pile of coins just seems messy. Many ship captains will take advantage of this trait and carry a slew of mundane objects on their vessel on the chance they come across a draxolotl. They will barter for protection or passage through the draxolotl's territories. A clever individual may be able to convince a draxolotl that one object is somehow different from another object of the same type, for example by stressing the difference between a fork with 4 prongs and a fork with 3. After all, a fork with only 3 prongs is a trident – completely different.     
+A draxolotl shares the desire to hoard treasure with many of its draconic kin. However, there is one key difference: a draxolotl sees great value in any object from the surface, but sees no advantage to having more than one of the same object. To have a coin would be wonderful, but a pile of coins just seems messy. Many ship captains will take advantage of this trait and carry a slew of mundane objects on their vessel on the chance they come across a draxolotl. They will barter for protection or passage through the draxolotl's territories. A clever individual may be able to convince a draxolotl that one object is somehow different from another object of the same type, for example by stressing the difference between a fork with 4 prongs and a fork with 3. After all, a fork with only 3 prongs is a trident - completely different.
 
 One species not often found near a draxolotl's lair are whales. To a draxolotl, whale blubber is the most high quality delicacy imaginable. They will hunt down and consume any whales that come anywhere near their territories. A whale carcass is always an acceptable tribute to a draxolotl.
 
@@ -299,7 +303,8 @@ On a successful saving throw, the creature is immune to the swarm of froggoth's 
     <action>
       <name>Psychic Shock</name>
       <text>Ranged Spell Attack: +8 to hit, range 20 ft., one target. Hit: 27 (6d8) psychic damage. (3d8 psychic damage if the swarm is below half HP). The swarm of froggoth can only use this action against a target that is charmed by Psychic Miasma.</text>
-      <attack>Shock|8|6d8</attack>
+      <attack>Psychic Shock|8|6d8</attack>
+      <attack>Half Swarm|8|3d8</attack>
     </action>
     <description>Froggoths, while larger than a typical frog, share a similar level of intelligence and instinct. Assumed to be from the Far Realm, these amphibians have become folded around themselves, creating a circlet of eyes and legs that allow it to see all.
 

@@ -23,9 +23,10 @@
     <trait>
       <name>Spellcasting</name>
       <text>Gaea is a 3rd-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). She has the following wizard spells prepared:
-Cantrips (at will): mage hand, message, shocking grasp
-1st level (4 slots): comprehend languages, mage armor,   shield, silent image
-2nd level (2 slots): blur, enlarge/reduce</text>
+
+	• Cantrips (at will): mage hand, message, shocking grasp
+	• 1st level (4 slots): comprehend languages, mage armor, shield, silent image
+	• 2nd level (2 slots): blur, enlarge/reduce</text>
     </trait>
     <trait>
       <name>Brave</name>
@@ -39,7 +40,7 @@ Cantrips (at will): mage hand, message, shocking grasp
       <name>Portent</name>
       <text>Gaea has two portent dice which are d20s and are rolled at the end of a long rest. She can replace any attack roll, skill check, or saving throw made by herself or a creature she can see with one of these dice.</text>
     </reaction>
-    <spells>mage hand, message, shocking grasp, comprehend languages, mage armor,   shield, silent image, blur, enlarge/reduce</spells>
+    <spells>mage hand, message, shocking grasp, comprehend languages, mage armor, shield, silent image, blur, enlarge/reduce</spells>
     <description>Source:	Stormchasers by u/Selachian</description>
     <environment>Any</environment>
   </monster>  <!-- Stormchasers, Gaea Trout -->
@@ -71,16 +72,15 @@ Cantrips (at will): mage hand, message, shocking grasp
     <trait>
       <name>Planar Warrior</name>
       <text>Toosday's attacks ignore damage resistances and also deal an extra 1d6 force damage (included in the description).</text>
+      <attack>Force Damage||1d6</attack>
     </trait>
     <trait>
       <name>Natural Explorer</name>
-      <text>Toosday's explorational training have given him the following benefits.
+      <text>Toosday's explorational training have given him the following benefits:
 
-Toosday ignores difficult terrtain.
-
-Toosday has advantage on initiative rolls.
-
-On the first round of combat, Toosday has advantage on attacks made against creatures that have not taken a yet acted.</text>
+	• Toosday ignores difficult terrtain.
+	• Toosday has advantage on initiative rolls.
+	• On the first round of combat, Toosday has advantage on attacks made against creatures that have not taken a yet acted.</text>
     </trait>
     <trait>
       <name>Gnome Cunning</name>
@@ -94,6 +94,7 @@ On the first round of combat, Toosday has advantage on attacks made against crea
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target, Hit: 6 (1d6 + 3) piercing damage plus 3 (1d6) force damage.</text>
       <attack>Shortsword|5|1d6 + 3</attack>
+      <attack>Force Damage||1d6</attack>
     </action>
     <spells>animal friendship, cure wounds, hunter's mark, protection from evil and good</spells>
     <description>Source:	Stormchasers by u/Selachian</description>
@@ -164,11 +165,9 @@ On the first round of combat, Toosday has advantage on attacks made against crea
       <name>Body of the Storm</name>
       <text>A strong wind blows around the elemental in a 10 foot radius, confering the following effects:
 
-Unprotected flames in that area are extinguished.
-
-The area is difficult terrtain for all other creatures.
-
-Ranged weapon attack rolls have disadvantage if they pass in or out of the range.</text>
+	• Unprotected flames in that area are extinguished.
+	• The area is difficult terrtain for all other creatures.
+	• Ranged weapon attack rolls have disadvantage if they pass in or out of the range.</text>
     </trait>
     <trait>
       <name>Heart of the Storm</name>
@@ -177,6 +176,7 @@ Ranged weapon attack rolls have disadvantage if they pass in or out of the range
     <trait>
       <name>Rage of the Storm</name>
       <text>A creature that starts its turn in the elemental's space takes 4 (1d8) lightning damage and 4 (1d8) thunder damage.</text>
+      <attack>Rage of the Storm||1d8</attack>
     </trait>
     <trait>
       <name>Seige Monster</name>
@@ -188,8 +188,10 @@ Ranged weapon attack rolls have disadvantage if they pass in or out of the range
       <attack>Slam|8|2d8 + 5</attack>
     </action>
     <action>
-      <name>Ball Lightning(Recharge 6)</name>
+      <name>Ball Lightning (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>The elemental summons 2 (1d4) Motes of Lightning in unoccupied spaces within 60 feet.</text>
+      <attack>Ball Lightning||1d4</attack>
     </action>
     <action>
       <name>Disperse</name>
@@ -197,7 +199,10 @@ Ranged weapon attack rolls have disadvantage if they pass in or out of the range
     </action>
     <action>
       <name>Whirlwind (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>Each creature in the elemental's space must make a DC 16 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 40 feet away from the elemental and knocked prone. If a Thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was Thrown. If the target is Thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone. If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</text>
+      <attack>Whirlwind||3d8+2</attack>
+      <attack>Thrown||1d6</attack>
     </action>
     <reaction>
       <name>Storm Surge</name>
@@ -242,6 +247,7 @@ Source:	Stormchasers by u/Selachian</description>
     <trait>
       <name>Electrostatic Cloud</name>
       <text>At the start of each of the mote's turns, each creature within 5 feet of it takes 4 (1d8) lightning damage. A Large or smaller creature damaged this way must succeed on a DC 11 Constitution save or become stunned until the end of the creature's next turn.</text>
+      <attack>Electrostatic Cloud||1d8</attack>
     </trait>
     <action>
       <name>Shock</name>

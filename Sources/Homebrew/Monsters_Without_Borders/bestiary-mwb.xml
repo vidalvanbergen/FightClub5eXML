@@ -27,10 +27,12 @@
     <trait>
       <name>Corrosive Form</name>
       <text>A creature that touches the ooze or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the ooze corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the ooze is destroyed after dealing damage. The ooze can eat through 2-inch thick, nonmagical wood or metal in 1 round.</text>
+      <attack>Corrosive Form||1d8</attack>
     </trait>
     <trait>
       <name>Flammable</name>
       <text>If the ooze is subjected to fire damage, it ignites. At the start of each of the ooze's turns, each creature within 5 feet of it takes 10 (3d6) fire damage, and flammable objects within 5 feet that aren't being worn or carried ignite. A creature that touches the ooze or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.</text>
+      <attack>Flammable||3d6</attack>
     </trait>
     <trait>
       <name>Spider Climb</name>
@@ -39,7 +41,8 @@
     <action>
       <name>Pseudopod</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.</text>
-      <attack>Pseudopod|5|1d6 + 3 + 4d8</attack>
+      <attack>Pseudopod|5|1d6 + 3</attack>
+      <attack>Acid Damage||4d8</attack>
     </action>
     <reaction>
       <name>Spell Reflection</name>
@@ -215,6 +218,7 @@ Source:	Monsters Without Borders v1.2, p.9</description>
     <action>
       <name>Earthen Grasp</name>
       <text>The colossus reaches through the ground and reaches for one creature within 5 feet of its hand. The target must succeed on a contested grapple check. On a failed check, the target takes 26 (5d6+8) bludgeoning damage and is restrained. On subsequent turns, the colossus can attempt to crush a restrained target, which must make a DC 22 Strength saving throw. The target takes 26 (5d6+8) on a failed save, or half as much damage on a successful one. A restrained target can use their action to attempt to escape by making another contested grapple check and succeeding.</text>
+      <attack>Earthen Grasp||5d6+8</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3)</name>
@@ -262,6 +266,7 @@ Source:	Monsters Without Borders v1.2, p.10</description>
     <cr>3</cr>
     <trait>
       <name>Entangling Plants (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>Grasping roots and vines sprout in a 15 ft. radius centered on the Demon Blight, withering away after one minute. For the duration, that area is difficult terrain for non-plant characters. In addition, when first invoked, each creature (as chosen by the Demon Blight) must succeed on a DC 12 Strength saving throw or become restrained. A creature restrained may take its action to free itself with a DC 12 Strength check, freeing itself or others entangled within reach on a success.</text>
     </trait>
     <trait>
@@ -314,6 +319,7 @@ Source:	Monsters Without Borders v1.2, p.12</description>
     <trait>
       <name>Death Burst</name>
       <text>When the eelfolk dies, it explodes in a burst of pent-up electricity. Each creature within 10 feet of it must make a DC 12 Dexterity saving throw, taking 7 (2d6) lightning damage on a failed save, or half as much on a successful one.</text>
+      <attack>Death Burst||2d6</attack>
     </trait>
     <trait>
       <name>Hold Breath</name>
@@ -322,6 +328,7 @@ Source:	Monsters Without Borders v1.2, p.12</description>
     <trait>
       <name>Lunge</name>
       <text>If the eelfolk moves at least 20 feet straight toward a target and then hits it with a long knife attack on the same turn, the target takes an extra 7 (2d6) piercing damage.</text>
+      <attack>Lunge||2d6</attack>
     </trait>
     <action>
       <name>Long Knife</name>
@@ -386,11 +393,13 @@ Source:	Monsters Without Borders v1.2, p.13</description>
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 5 (2d4) poison damage.</text>
-      <attack>Slam|8|2d8 + 5 + 2d4</attack>
+      <attack>Slam|8|2d8 + 5</attack>
+      <attack>Poison Damage||2d4</attack>
     </action>
     <description>Legends describe Dareu, the Queen of Forests, as awe-inspiring, possessing such beauty that weak beings go blind from beholding her countenance. A popular legend tells the story of her mercy and gratitude, and how she gives back sight to loyal pilgrims who travel to her oak castle just to see her. Queen Dareu is often seen visiting the Material Plane in the form of a grand white unicorn. She travels the lands healing wounded beasts and sometimes the lesser races with her healing powers.
 
 Queen Dareu crafted a powerful artifact eons before elves roamed the land; a mighty goblet that she infused with the life-force of a dying Archfey just like herself. This was the Queen of Bees and Insects, Anaralla. She perished from her wounds in one of the Feywild wars, with her spirit and might preserved in a new form, inside a magical goblet. The Goblet of Fireflies is the only way to create a firefly golem.
+
 A firefly golem is not a construct or even solid. They are actually swarms of fireflies with the gift of sentience. Each insect is nothing but an appendage while the swarm is intelligent and sentient. The firefly golem is usually dispersed and only coalesces into golem form when it needs to perform its creator's will. Queen Dareu created hundreds of firefly golems and gave them tasks. Most of them serve their queen as guardians and protectors. A few have been stolen and repurposed for other nefarious things.
 
 Swarm Density. When a swarm of fireflies gets together to form the firefly golem, the insects are so tightly packed that they form a full physical being. The firefly golem's abilities and attacks are only available to it once it takes physical form.
@@ -437,7 +446,8 @@ Source:	Monsters Without Borders v1.2, p.14</description>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d4+3) slashing damage plus 10 (3d6) poison damage. The target can make a DC 14 Constitution saving throw to halve the poison damage.</text>
-      <attack>Claw|6|1d4 + 3 + 3d6</attack>
+      <attack>Claw|6|1d4 + 3</attack>
+      <attack>Poison Damage||3d6</attack>
     </action>
     <description>Gulabuses are repulsive creatures who look like morbidly obese humans with deformed facial traits. They mostly live in the Abyss but are occasionally encountered in the rest of the Lower Planes. They only come to the Material Plane when summoned, and most of the time, nobody ever knows they were there.
 
@@ -480,11 +490,13 @@ Source:	Monsters Without Borders v1.2, p.16</description>
     <action>
       <name>Tendril</name>
       <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 8 (2d4+3) slashing damage plus an additional 7 (2d6) psychic damage.</text>
-      <attack>Tendril|5|2d4 + 3 + 2d6</attack>
+      <attack>Tendril|5|2d4 + 3</attack>
+      <attack>Psychic Damage||2d6</attack>
     </action>
     <action>
       <name>Deafening Chimes</name>
       <text>The jungle walker's piping wail reaches excruciating levels for a brief moment. Each creature within 30 feet of the jungle-walker who can hear it must succeed on a DC 14 Wisdom saving throw or take 10 (3d6) psychic damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Deafening Chimes||3d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3)</name>
@@ -592,7 +604,9 @@ At will: detect thoughts</text>
     </action>
     <action>
       <name>Mind Blast (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>Each creature in a 60-foot cone emanating from the mind flayer cenomorph must succeed on a DC 12 Intelligence saving throw or take 16 (3d8+2) psychic damage and be stunned for 1 minute. A creature may repeat the save at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Mind Blast||3d8+2</attack>
     </action>
     <spells>detect thoughts</spells>
     <description>The Mind Flayer Cenomorph represents the stage in an Illithid's life while it is in mid-metamorphosis from its initial humanoid form to that of an adult Mind Flayer. These wretches still retain some of the physical traits of their previous species, giving them a wholly disturbing and foul appearance. Their flesh is twisted and stretched as juvenile tentacles emerge from their faces. Their skin is moist and runny, in places sloughing off on a sheet of mucus, with the gray, lumpy skin of the illithid emerging from beneath.
@@ -634,12 +648,14 @@ Source:	Monsters Without Borders v1.2, p.21</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +11 to hit, reach 10ft., one target. Hit: 11 (2d4+6 ) piercing damage plus 7 (2d6) acid damage.</text>
-      <attack>Bite|11|2d4 + 6 + 2d6</attack>
+      <attack>Bite|11|2d4 + 6</attack>
+      <attack>Acid Damage||2d6</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5ft., one target. Hit: 8 (1d4+6) slashing damage plus 5 (2d4) acid damage.</text>
-      <attack>Claw|11|21d4 + 6 + 2d4</attack>
+      <attack>Claw|11|1d4 + 6</attack>
+      <attack>Acid Damage||2d4</attack>
     </action>
     <action>
       <name>Tail</name>
@@ -649,10 +665,14 @@ Source:	Monsters Without Borders v1.2, p.21</description>
     <action>
       <name>Amorphous Presence</name>
       <text>Each creature, of the dragon's choice, that is within 5 feet of the dragon must succeed on a DC 18 Dexterity saving throw. On a successful save, nothing happens. On a failed save, the creature takes 14 (4d6) acid damage and is engulfed within the dragons form. Engulfed creatures cannot breathe, are grappled and restrained, and take 28 (8d6) acid damage at the start of each of the dragons turns. An engulfed creature can try to escape by taking an action to make a DC 18 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the dragon.</text>
+      <attack>Amorphous Presence||4d6</attack>
+      <attack>Acid Damage||8d6</attack>
     </action>
     <action>
       <name>Digesting Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>The dragon exhales gelatinous ooze in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 21 (6d6) acid damage on a failed save, or half as much on a successful save. Any nonmagical weapons or armor that is worn by a creature that fails the save begin to corrode, taking a permanent and cumulative -1 penalty to either damage or AC dependant on the item.</text>
+      <attack>Digesting Breath||6d6</attack>
     </action>
     <reaction>
       <name>Split</name>
@@ -673,6 +693,7 @@ Source:	Monsters Without Borders v1.2, p.21</description>
     <legendary>
       <name>Loose Form (Costs 2 Actions)</name>
       <text>The dragon loses its defined shape and spreads out as a pool of acidic ooze. Each creature within 60ft of the dragons current position must make a DC 18 Dexterity saving throw or take 14 (4d6) acid damage and have their movement speed halved whilst in this effect. In this form, the dragon can no longer attack and has its speed reduced to 0. At the beginning of its next turn, the dragon reforms in the space it occupied prior to activating this action. Any creatures under the effects of the dragons Amorphous Presence are freed.</text>
+      <attack>Loose Form||4d6</attack>
     </legendary>
     <description>No matter the difference in honor between chromatic and metallic dragons, one would be hard-pressed to argue that they aren't noble creatures. The inverse is true of the Ooze Dragon; a being so strange that not even the ever-changing layers of Limbo could spit it out. Only one ooze dragon is known to exist, born as an experiment of a crazed alchemist who sought to create a weapon so powerful none could oppose them. Over years of work and arcane horrors, a wyrmlings flesh and blood was warped to become translucent and gelatinous. The dragon was driven mad by this process, however, eventually killing its creator and escaping into the wild.
 
@@ -716,19 +737,24 @@ Source:	Monsters Without Borders v1.2, p.22</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5ft., one creature. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) lightning damage.</text>
-      <attack>Bite|5|1d8 + 3 + 2d6</attack>
+      <attack>Bite|5|1d8 + 3</attack>
+      <attack>Lightning Damage||2d6</attack>
     </action>
     <action>
       <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>The hound exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) lightning damage on a failed save, or half as much on a successful one.</text>
+      <attack>Lightning Breath||6d6</attack>
     </action>
     <action>
       <name>Thunderous Transport (Recharge 4-6)</name>
+      <recharge>D4</recharge>
       <text>The storm hound turns into a bolt of lightning and magically teleports up to 40 feet to an unoccupied space it can see.
 
 Upon arrival, a thunderous force explodes from the storm hound. Each creature in a 15-foot cube originating from the storm hound must succeed on a DC 12 Constitution saving throw. On a failed save, a creature takes 9 (2d8) thunder damage and is pushed 10 feet away from the storm hound. On a successful save, a target takes half damage and isn't pushed.
 
 In addition, unsecured objects that are completely within the area are automatically pushed 10 feet away from the storm hound. Using this action emits a thunderous boom audible out to 300 feet.</text>
+      <attack>Thunderous Transport||2d8</attack>
     </action>
     <description>Storm Hounds are companions often used by the Aarakocra. These wolf-like creatures appear to be made of wisps of cloud-like smoke with crackling lightning constantly surging through their bodies. They are often used to hunt down foes, gather meat for meals, or just additional protection. When found in the wild they quickly become vicious.
 
@@ -764,6 +790,8 @@ Source:	Monsters Without Borders v1.2, p.24</description>
     <trait>
       <name>Charged Body</name>
       <text>A creature that touches the tempest beast or hits it with a melee attack while within 5 feet of it takes 7 (2d6) lightning damage. This damage is increased by 4 (1d6) if the creature is at least partially submerged in water.</text>
+      <attack>Charged Body||2d6</attack>
+      <attack>Charged Body in Water||3d6</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -781,7 +809,10 @@ Source:	Monsters Without Borders v1.2, p.24</description>
     </action>
     <action>
       <name>Thunderous Sweep (Recharge 6)</name>
+      <recharge>D6</recharge>
       <text>Two creatures within 10 feet of each other and five feet of the tempest beast must succeed in a DC 14 Dexterity saving throw. On a failed save, the target takes 9 (2d4+4) slashing damage and 4 (1d6) thunder damage and is pushed 10 feet away from the tempest beast. If successful, the target takes half the damage and is not pushed back.</text>
+      <attack>Thunderous Sweep||2d4+4</attack>
+      <attack>Thunder Damage||1d6</attack>
     </action>
     <description>These dinosaur-like creatures resemble large crocodiles but with shorter snouts and longer necks. They have a ridge of blue plates running down their backs and a gaping maw containing rows of sharp teeth. Their initial proximity to magic imbued in them elemental power, which was then bred into the species.
 
@@ -832,6 +863,7 @@ Source:	Monsters Without Borders v1.2, p.25</description>
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>The terracotta soldier targets one or more creatures it can see within 10 feet of it. Each target must make a DC 14 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>An illustrious emperor, the founder of a powerful dynasty, commissioned this army of constructs from the wizards of his court. They were made not to serve him in life, but to guard him in death. Platoons of terracotta sculptures in the shape of armed warriors were buried with the emperor in his massive mausoleum, to defend him during his eternal rest.
@@ -875,6 +907,7 @@ On a failed saving throw the creature will become frightened and must succeed on
     </trait>
     <trait>
       <name>Shadow Blend (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>As a bonus action, the Evil Doll can disappear to the evil places that lurk in the shadows. Use this feature as an escape mechanism.</text>
     </trait>
     <action>
@@ -990,9 +1023,11 @@ Source:	Monsters Without Borders v1.2, p.28</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5ft., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 13 (3d8) poison damage on a failed save, or half as much damage on a successful one. Any creature that fails the save is poisoned for 1 hour. While poisoned in this way, any effect that would heal the creature instead deals necrotic damage, and any effect that would deal necrotic damage instead heals the creature.</text>
       <attack>Bite|6|1d8 + 3</attack>
+      <attack>Poison Damage||3d8</attack>
     </action>
     <action>
       <name>Web (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>Melee Weapon Attack: +5 to hit, range 30/60ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, piercing and psychic damage).</text>
     </action>
     <description>Tomb spiders are arachnids infused with negative energies that have the power to reanimate corpses as hosts for their offspring.
@@ -1050,6 +1085,7 @@ Source:	Monsters Without Borders v1.2, p.29</description>
       <name>Bite (Spider and Hybrid Form Only)</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way. If the target is a humanoid, it must succeed on a second DC 13 Constitution saving throw or be cursed with werespider lycanthropy.</text>
       <attack>Bite|6|1d8 + 4</attack>
+      <attack>Poison Damage||2d8</attack>
     </action>
     <action>
       <name>Rapier (Human and Hybrid Form Only)</name>

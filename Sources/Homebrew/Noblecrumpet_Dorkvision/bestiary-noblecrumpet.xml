@@ -22,7 +22,7 @@
     <cr>8</cr>
     <trait>
       <name>Candleborn</name>
-      <text>The candles on the golem's head can be snuffed with water or  a strong wind. While its candles are unlit, the golem gains disadvantage on attack rolls until it uses its Cone of Fire action or otherwise relights its candles. If the golem would take fire damage, it instead heals an amount equal to the damage taken and relights its candles if they are unlit.</text>
+      <text>The candles on the golem's head can be snuffed with water ora strong wind. While its candles are unlit, the golem gains disadvantage on attack rolls until it uses its Cone of Fire action or otherwise relights its candles. If the golem would take fire damage, it instead heals an amount equal to the damage taken and relights its candles if they are unlit.</text>
     </trait>
     <trait>
       <name>Illumination</name>
@@ -42,7 +42,9 @@
     </trait>
     <action>
       <name>Cone of Fire (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>The golems candles flare as it unleashes a 30-foot cone of fire from its mouth. Each creature in the area must make a DC 16 Dexterity saving throw, taking 22 (5d8) fire damage on a failed save or half as much on a success. If the golem's candles are unlit, they become lit.</text>
+      <attack>Cone of Fire||5d8</attack>
     </action>
     <action>
       <name>Multiattack</name>
@@ -51,7 +53,9 @@
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage and 4 (1d8) fire damage. The target becomes grappled (escape DC 16). Until the grapple ends, the creature takes 9 (2d8) fire damage at the start of each of the golem's turns. The golem can grapple two creatures, one in each hand.</text>
-      <attack>Slam|7|2d10 + 1d8 + 5</attack>
+      <attack>Slam|7|2d10 + 5</attack>
+      <attack>Fire Damage||1d8</attack>
+      <attack>Grapped Target||2d8</attack>
     </action>
     <description>Source:	Noblecrumpet's Dorkvision Blog</description>
     <environment>Any</environment>
@@ -79,7 +83,7 @@
     <cr>3</cr>
     <trait>
       <name>Candleborn</name>
-      <text>The candle on the golem's head can be snuffed with water or  a strong wind. While its candle is unlit, the golem gains disadvantage on attack rolls until it uses its Ball of Fire action or otherwise relights its candle. If the golem would take fire damage, it instead heals an amount equal to the damage taken and relights its candle if it is unlit.</text>
+      <text>The candle on the golem's head can be snuffed with water ora strong wind. While its candle is unlit, the golem gains disadvantage on attack rolls until it uses its Ball of Fire action or otherwise relights its candle. If the golem would take fire damage, it instead heals an amount equal to the damage taken and relights its candle if it is unlit.</text>
     </trait>
     <trait>
       <name>Illumination</name>
@@ -99,7 +103,9 @@
     </trait>
     <action>
       <name>Ball of Fire (Recharge 5-6)</name>
+      <recharge>D5</recharge>
       <text>The golems candle flare as it spits a ball of molten wax at a creature up to 30 feet away. The creature must make a DC 14 Dexterity saving throw. On a failed save, the creature takes 18 (4d8) fire damage. If the golem's candle is unlit, it becomes lit.</text>
+      <attack>Ball of Fire||4d8</attack>
     </action>
     <action>
       <name>Multiattack</name>
@@ -108,7 +114,8 @@
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage and 4 (1d8) fire damage.</text>
-      <attack>Slam|5|2d8 + 3</attack>
+      <attack>Slam|5|1d8 + 3</attack>
+      <attack>Fire Damage||1d8</attack>
     </action>
     <description>Source:	Noblecrumpet's Dorkvision Blog</description>
     <environment>Any</environment>
