@@ -10,6 +10,8 @@
 * Adding `Tenares` content.
 
 ### 2024-##-##
+* Added `Dungeon Master's Guide 2024` content by @TheArchivist.
+* Updated `Player's Handbook 2024` content.
 * Added Homebrew content by @reccho:
   * Added `Winghorn Press: The Wild Sheep Chase`.
   * Added `Winghorn Press: The Wolves of Welton`.
