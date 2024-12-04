@@ -9,7 +9,7 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 * Adding `Tenares` content.
 
-### 2024-##-##
+### 2024-12-04
 * Added `Dungeon Master's Guide 2024` content by @TheArchivist.
 * Updated `Player's Handbook 2024` content, which are now tagged with [2024].
 * Added a mixed 2014+2024 collection with the new content tagged with [2024].
