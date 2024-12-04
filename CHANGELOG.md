@@ -11,7 +11,8 @@
 
 ### 2024-##-##
 * Added `Dungeon Master's Guide 2024` content by @TheArchivist.
-* Updated `Player's Handbook 2024` content.
+* Updated `Player's Handbook 2024` content, which are now tagged with [2024].
+* Added a mixed 2014+2024 collection with the new content tagged with [2024].
 * Added Homebrew content by @reccho:
   * Added `Winghorn Press: The Wild Sheep Chase`.
   * Added `Winghorn Press: The Wolves of Welton`.
