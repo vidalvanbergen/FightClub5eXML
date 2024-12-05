@@ -9,6 +9,11 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 * Adding `Tenares` content.
 
+### 2024-##-##
+* Added [2024] weapon proficiencies and dice rolls.
+* Tagged [2024] Spell lists.
+* Other changes and fixes.
+
 ### 2024-12-04
 * Added `Dungeon Master's Guide 2024` content by @TheArchivist.
 * Updated `Player's Handbook 2024` content, which are now tagged with [2024].
