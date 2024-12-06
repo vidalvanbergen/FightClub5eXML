@@ -48,6 +48,7 @@
               <xsl:copy-of select="weapons" />
               <xsl:copy-of select="tools" />
               <xsl:copy-of select="wealth" />
+              <xsl:copy-of select="slotsReset" />
               <xsl:copy-of select="subclass" />
 
               <!-- Not supported by Fight Club 5e -->
