@@ -114,7 +114,6 @@
                 </xsl:for-each>
               </classes>
 
-              <xsl:copy-of select="source" />
               <xsl:copy-of select="text" />
               <xsl:copy-of select="roll" />
             </spell>
