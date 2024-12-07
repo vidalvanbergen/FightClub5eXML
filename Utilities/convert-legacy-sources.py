@@ -33,13 +33,14 @@ for root, _, files in os.walk(master_dir):
                 for item in list(compendium):
                     name = item.find("name")
                     if name is not None:
-                        normalized_name = normalize_text(name.text)
+                        normalized_name = normalize_text(name.text.replace(" [2024]", ""))
                         item_key = (item.tag, normalized_name)
                         master_data[item_key] = item
             except ET.ParseError as e:
                 logging.error(f"XML parsing error in master file {file_path}: {e}")
 
 # Exclusion lists
+base_classes = ["Cleric","Wizard","Bard","Barbarian","Ranger","Sorcerer","Warlock","Fighter","Paladin","Druid"]
 excluded_subclasses = [
     "Eldritch Knight", "Champion", "Battlemaster", "Battle Master", "Psi Warrior", "Psi-Warrior", 
     "Hunter", "Beastmaster", "Beast Master", "Gloomstalker", "Gloom Stalker", "Fey Wanderer",
@@ -116,7 +117,7 @@ for root, _, files in os.walk(legacy_dir):
 
                     if name is not None:
                         original_name = name.text
-                        normalized_name = normalize_text(original_name.replace(" [2014]", ""))
+                        normalized_name = normalize_text(original_name)
                         item_key = (item.tag, normalized_name)
 
                         if item.tag == "class":
@@ -142,9 +143,6 @@ for root, _, files in os.walk(legacy_dir):
                                                 features_to_remove.append(feature)
                                             elif feature.get("optional") != "YES":
                                                 features_to_remove.append(feature)
-                                            else:
-                                                if not feature_name.text.endswith(" [2014]"):
-                                                    feature_name.text += " [2014]"
 
                                             # Remove feature if it starts with "Starting [class]" or "Multiclass [class]"
                                             if feature_text.startswith(f"starting {class_name}") or feature_text.startswith(f"multiclass {class_name}"):
@@ -152,8 +150,6 @@ for root, _, files in os.walk(legacy_dir):
 
                                     for feature in features_to_remove:
                                         autolevel.remove(feature)
-
-                                    
 
                                     # Remove empty autolevels
                                     if len(autolevel.findall("feature")) == 0:
@@ -175,7 +171,7 @@ for root, _, files in os.walk(legacy_dir):
                                         feature_name = feature.find("name")
                                         if feature_name is not None:
                                             feature_text = normalize_text(feature_name.text)
-                                            if "pact boon" in feature_text and not feature_text.endswith(" [2014]"):
+                                            if "pact boon" in feature_text:
                                                 if re.match(r"pact boon: pact of the (blade|tome|chain)", feature_text):
                                                     features_to_remove.append(feature)
                                             if level < 3 and "pact boon" not in feature_text:
@@ -186,7 +182,7 @@ for root, _, files in os.walk(legacy_dir):
                                     level = int(autolevel.get("level", "0"))
                                     for feature in autolevel.findall("feature"):
                                         feature_name = feature.find("name")
-                                        if feature_name is not None and (("arcane tradition" in normalize_text(feature_name.text)) or ("school of" in normalize_text(feature_name.text))) or ("mage of" in normalize_text(feature_name.text)) or ("Bladesing" in normalize_text(feature_name.text)) or ("order of" in normalize_text(feature_name.text)) and level < 3:
+                                        if feature_name is not None and ("arcane tradition" in normalize_text(feature_name.text) or "school of" in normalize_text(feature_name.text) or "mage of" in normalize_text(feature_name.text) or "Bladesing" in normalize_text(feature_name.text) or "order of" in normalize_text(feature_name.text)) and level < 3:
                                             autolevel.set("level", "3")
 
                             if class_name == "paladin":
@@ -204,64 +200,37 @@ for root, _, files in os.walk(legacy_dir):
                                         if feature_text is not None and feature_text.text.startswith("Replaces the "):
                                             autolevel.remove(feature)
 
-                            #  # New logic for counter handling
-                            # for counter in list(autolevel.findall("counter")):
-                            #     counter_name = counter.find("name")
-                            #     if counter_name is not None:
-                            #         normalized_counter_name = normalize_text(counter_name.text)
-
-                            #         # Check for matching class name in the master data
-                            #         class_name_element = item.find("name")
-                            #         if class_name_element is not None:
-                            #             normalized_class_name = normalize_text(class_name_element.text)
-                            #             master_class_key = ("class", normalized_class_name)
-
-                            #             if master_class_key in master_data:
-                            #                 master_class = master_data[master_class_key]
-
-                            #                 # Check if a matching counter exists in the master data's class <autolevel> elements
-                            #                 for master_autolevel in master_class.findall("autolevel"):
-                            #                     for master_counter in master_autolevel.findall("counter"):
-                            #                         master_counter_name = master_counter.find("name")
-                            #                         if master_counter_name is not None:
-                            #                             normalized_master_counter_name = normalize_text(master_counter_name.text)
-                            #                             if normalized_counter_name == normalized_master_counter_name:
-                            #                                 # Remove duplicate counter from the legacy file
-                            #                                 autolevel.remove(counter)
-                            #                                 break  # No need to check further
-
                             updated = True
 
                         elif item.tag == "spell":
                             text = item.find("text")
                             classes = item.find("classes")
+                            legacy_spell_classes = ["Eldritch Knight", "Arcane Trickster"]
                             if classes is not None:
                                 original_classes = classes.text.split(",") if classes.text else []
-                                updated_classes = [cls.strip() for cls in original_classes if normalize_text(cls) not in excluded_casters]
-                                if updated_classes:
-                                    classes.text = ", ".join(updated_classes)
-                                else:
-                                    classes.text = "Legacy [2014]"
+                                updated_classes = []
+                                for cls in original_classes:
+                                    cls_cleaned = cls.strip()
+                                    if cls_cleaned not in legacy_spell_classes:
+                                        if cls_cleaned in base_classes:
+                                            updated_classes.append(f"{cls_cleaned} [2024]")
+                                        else:
+                                            updated_classes.append(cls_cleaned)
+                                classes.text = ", ".join(updated_classes)
                             if text is None:
                                 if item_key not in master_data:
-                                    if not name.text.endswith(" [2014]"):
-                                        name.text += " [2014]"
                                     updated = True
                             else:
                                 if item_key in master_data:
                                     compendium.remove(item)
                                 else:
-                                    if not name.text.endswith(" [2014]"):
-                                        name.text += " [2014]"
                                     updated = True
                                 
                         else:
 
                             if item_key in master_data:
                                 compendium.remove(item)
-                            elif not original_name.endswith(" [2014]"):
-                                name.text = original_name + " [2014]"
-                                updated = True
+                            updated = True
 
                 if updated:
                     tree.write(file_path, encoding="utf-8", xml_declaration=True)
