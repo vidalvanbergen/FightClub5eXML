@@ -53,7 +53,7 @@ base_classes = ["Cleric","Wizard","Bard","Barbarian","Ranger","Sorcerer","Warloc
 excluded_subclasses = {
     "fighter": ["Eldritch Knight", "Champion", "Battlemaster", "Battle Master", "Psi Warrior", "Psi-Warrior"], 
     "ranger": ["Hunter", "Beastmaster", "Beast Master", "Gloomstalker", "Gloom Stalker", "Fey Wanderer"],
-    "wizard": ["Evoker", "Evocation", "Abjuration", "Illusion", "Illusionist", "Abjurer", "Diviner"], 
+    "wizard": ["Evoker", "Evocation", "Abjuration", "Illusion", "Illusionist", "Abjurer", "Diviner", "Divination"], 
     "cleric": ["Light Domain", "Life Domain", "Trickery Domain", "War Domain"],
     "druid": ["Circle of the Moon", "Circle of Moon", "Circle of the Stars", "Circle of Stars", "Circle of the Land", "Circle of Land"],
     "barbarian": ["Berserker", "Zealot", "Path of the Totem"],
