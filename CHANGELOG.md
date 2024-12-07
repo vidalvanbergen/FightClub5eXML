@@ -12,6 +12,7 @@
 ### 2024-##-##
 * Added [2024] weapon proficiencies and dice rolls.
 * Tagged [2024] Spell lists.
+* Added [2024] Gemstones.
 * Other changes and fixes.
 
 ### 2024-12-04
