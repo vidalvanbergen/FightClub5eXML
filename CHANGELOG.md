@@ -7,13 +7,51 @@
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
+* Adding `Tenares` content.
 
 ### 2024-##-##
+* Added [2024] weapon proficiencies and dice rolls.
+* Tagged [2024] Spell lists.
+* Added [2024] Gemstones.
+* Other changes and fixes.
+
+### 2024-12-04
+* Added `Dungeon Master's Guide 2024` content by @TheArchivist.
+* Updated `Player's Handbook 2024` content, which are now tagged with [2024].
+* Added a mixed 2014+2024 collection with the new content tagged with [2024].
+* Added Homebrew content by @reccho:
+  * Added `Winghorn Press: The Wild Sheep Chase`.
+  * Added `Winghorn Press: The Wolves of Welton`.
+  * Added `Winghorn Press: The Low Crater`.
+  * Added `Winghorn Press: A Most Potent Brew`.
+  * Added `Tony Petrecca: Journey to the Center of the Underdark`.
+  * Added `Tony Petrecca: Journey to the Center of the Underdark 2: The Darklake Strikes Back`.
+  * Added `Tony Petrecca: Killer Kobolds!`.
+  * Added `Benjamin Huffman: Pugilist Class`.
+  * Added `Monsters without Borders v1.2`.
+  * Added `Cawood: Monsters of Feyland`.
+  * Added `Cawood: Monsters of the Underworld`.
+  * Added `Cawood: Monsters of the City: Sins & Virtues`.
+  * Added `Cawood: Monsters of the Wilderness: Oswald's Curse`.
+  * Added `Cawood: Monsters of Feyland 2: The Well of Dreams`.
+  * Added `Cawood: Monsters of the Dungeon: Brave the Darkness`.
+  * Added various homebrew by `DMDave`.
+  * Added `Shmeckerel - Gourdon Applegrove and Jack`.
+  * Added `Spectre Creations`.
+  * Added `Stormchasers`.
+  * Added `Team Superhydra: The Kobolds' Cauldron`.
+* Tagged `Vessel v2.2.0`, and Added `Vessel v3.0.1` by LaserLlama.
+* Other changes and fixes.
+
+### 2024-11-22
 * Added HeavyArm's: `Gunslinger` class.
 * Fixed an issue where properties weren't shown correctly, pointed out by @designbot in https://github.com/vidalvanbergen/FightClub5eXML/issues/8.
 * Fixed where I forgot to add scoreImprovement to the Vessel class.
-* Streamlined item details formatting.
+* Updated LaserLlama's Magus & Magus Extended classes.
+* Fixed misspelled spells and duplicates.
+* Added `The Illrigger Revised` content.
 * Added `Core Supplements` collection.
+* Streamlined item details formatting.
 * Other changes and fixes.
 
 ### 2024-10-23

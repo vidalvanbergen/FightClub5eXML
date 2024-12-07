@@ -4,6 +4,8 @@
 
 **Complete_Compendium_2024**: Includes all 2024 compatible rulebooks.
 
+**Complete_Compendium_2014+2024**: Includes both 2014 and 2024 complete compendiums, with new material tagged with [2024].
+
 **Core_Rulebooks**: Player's Handbook, Dungeon Master's Guide, and Monster Manual.
 
 **Core_Supplements**: Core Rulebooks, Xanathar's Guide to Everything, and Tasha's Cauldron of Everything.
