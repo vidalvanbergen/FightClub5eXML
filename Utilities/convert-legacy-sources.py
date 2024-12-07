@@ -4,6 +4,8 @@ import logging
 import re
 import unicodedata
 import html
+import subprocess
+
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -48,20 +50,20 @@ for master_dir in master_dirs:
 
 # Exclusion lists
 base_classes = ["Cleric","Wizard","Bard","Barbarian","Ranger","Sorcerer","Warlock","Fighter","Paladin","Druid"]
-excluded_subclasses = [
-    "Eldritch Knight", "Champion", "Battlemaster", "Battle Master", "Psi Warrior", "Psi-Warrior", 
-    "Hunter", "Beastmaster", "Beast Master", "Gloomstalker", "Gloom Stalker", "Fey Wanderer",
-    "Evoker", "Evocation", "Abjuration", "Illusion", "Illusionist", "Abjurer", "Diviner", 
-    "Light Domain", "Life Domain", "Trickery Domain", "War Domain",
-    "Circle of the Moon", "Circle of Moon", "Circle of the Stars", "Circle of Stars", "Circle of the Land", "Circle of Land",
-    "Berserker", "Zealot", "Path of the Totem",
-    "The Fiend", "Great Old One", "The Celestial", "The Archfey",
-    "Aberrant Mind", "Wild Magic", "Draconic Sorcerer","Draconic Sorcery","Draconic Bloodline", "Shadow Magic", "Clockwork Soul",
-    "Open Hand", "Four Elements", "Way of Shadow","Way of Mercy",
-    "Thief", "Assassin", "Arcane Trickster","Soulknife",
-    "College of Lore", "College of Glamour", "College of Valor",
-    "Oath of Vengeance", "Oath of the Ancients", "Oath of Devotion", "Oath of Glory"
-]
+excluded_subclasses = {
+    "fighter": ["Eldritch Knight", "Champion", "Battlemaster", "Battle Master", "Psi Warrior", "Psi-Warrior"], 
+    "ranger": ["Hunter", "Beastmaster", "Beast Master", "Gloomstalker", "Gloom Stalker", "Fey Wanderer"],
+    "wizard": ["Evoker", "Evocation", "Abjuration", "Illusion", "Illusionist", "Abjurer", "Diviner"], 
+    "cleric": ["Light Domain", "Life Domain", "Trickery Domain", "War Domain"],
+    "druid": ["Circle of the Moon", "Circle of Moon", "Circle of the Stars", "Circle of Stars", "Circle of the Land", "Circle of Land"],
+    "barbarian": ["Berserker", "Zealot", "Path of the Totem"],
+    "warlock": ["The Fiend", "Great Old One", "The Celestial", "The Archfey"],
+    "sorcerer": ["Aberrant Mind", "Wild Magic", "Draconic Sorcerer","Draconic Sorcery","Draconic Bloodline", "Shadow Magic", "Clockwork Soul"],
+    "monk": ["Open Hand", "Four Elements", "Way of Shadow","Way of Mercy"],
+    "rogue": ["Thief", "Assassin", "Arcane Trickster","Soulknife"],
+    "bard": ["College of Lore", "College of Glamour", "College of Valor"],
+    "paladin": ["Oath of Vengeance", "Oath of the Ancients", "Oath of Devotion", "Oath of Glory"]
+}
 excluded_casters = [
     "Arcane Trickster", 
     "Eldritch Knight"
@@ -148,8 +150,9 @@ for root, _, files in os.walk(legacy_dir):
                                         if feature_name is not None:
                                             feature_text = normalize_text(feature_name.text)
 
-                                            # Check if feature name matches any excluded subclass
-                                            if any(normalize_text(subclass) in feature_text for subclass in excluded_subclasses):
+                                            # Check if feature name matches excluded subclasses for this class
+                                            excluded_for_class = excluded_subclasses.get(class_name, [])
+                                            if any(normalize_text(subclass) in feature_text for subclass in excluded_for_class):
                                                 features_to_remove.append(feature)
                                             elif feature.get("optional") != "YES":
                                                 features_to_remove.append(feature)
@@ -225,18 +228,7 @@ for root, _, files in os.walk(legacy_dir):
                                         if cls_cleaned in base_classes:
                                             updated_classes.append(f"{cls_cleaned} [2024]")
                                         else:
-                                            updated_classes.append(cls_cleaned)
-                                classes.text = ", ".join(updated_classes)
-                                logging.debug(f"Updated spell classes: {classes.text}")
-                            if text is None:
-                                if item_key not in master_data:
-                                    updated = True
-                            else:
-                                if item_key in master_data:
-                                    compendium.remove(item)
-                                else:
-                                    updated = True
-
+                                            updated
                         elif item.tag == "race":
                             for ability in list(item.findall("ability")):
                                 logging.debug(f"Removing <ability> element from race: {name.text}")
@@ -255,3 +247,12 @@ for root, _, files in os.walk(legacy_dir):
 
             except ET.ParseError as e:
                 logging.error(f"XML parsing error in legacy file {file_path}: {e}")
+
+
+# Build compendium
+result = subprocess.run("xsltproc -o ../Compendiums/WotC_only_2024+Legacy.xml merge.xslt ../Collections/WotC_only_2024+Legacy.xml", shell=True, capture_output=True, text=True)
+
+# Print output
+print("STDOUT:", result.stdout)
+print("STDERR:", result.stderr)
+print("Return Code:", result.returncode)
