@@ -165,7 +165,7 @@ for root, _, files in os.walk(legacy_dir):
                                         autolevel.remove(feature)
 
                                     # Remove empty autolevels
-                                    if len(autolevel.findall("feature")) == 0:
+                                    if len(autolevel.findall("feature")) == 0 and len(autolevel.findall("counter")) == 0:
                                         item.remove(autolevel)
 
                             # Special class handling rules for autolevels
