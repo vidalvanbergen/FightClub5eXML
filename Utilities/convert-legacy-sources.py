@@ -236,7 +236,13 @@ for root, _, files in os.walk(legacy_dir):
                                     compendium.remove(item)
                                 else:
                                     updated = True
-                                
+
+                        elif item.tag == "race":
+                            for ability in list(item.findall("ability")):
+                                logging.debug(f"Removing <ability> element from race: {name.text}")
+                                item.remove(ability)
+                            updated = True
+
                         else:
 
                             if item_key in master_data:
