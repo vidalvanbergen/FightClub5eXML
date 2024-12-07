@@ -27,10 +27,12 @@ legacy_dir = os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/Homebre
 # Read master files into memory
 master_data = {}
 for master_dir in master_dirs:
+    logging.info(f"Processing master directory: {master_dir}")
     for root, _, files in os.walk(master_dir):
         for file in files:
             if file.endswith(".xml"):
                 file_path = os.path.join(root, file)
+                logging.info(f"Reading master file: {file_path}")
                 try:
                     tree = ET.parse(file_path)
                     compendium = tree.getroot()
@@ -40,6 +42,7 @@ for master_dir in master_dirs:
                             normalized_name = normalize_text(name.text.replace(" [2024]", ""))
                             item_key = (item.tag, normalized_name)
                             master_data[item_key] = item
+                            logging.debug(f"Added master item: {item_key}")
                 except ET.ParseError as e:
                     logging.error(f"XML parsing error in master file {file_path}: {e}")
 
@@ -107,10 +110,12 @@ excluded_counters = ["Ki",
                      ]
 
 # Process legacy files
+logging.info(f"Processing legacy directory: {legacy_dir}")
 for root, _, files in os.walk(legacy_dir):
     for file in files:
         if file.endswith(".xml"):
             file_path = os.path.join(root, file)
+            logging.info(f"Processing legacy file: {file_path}")
             try:
                 tree = ET.parse(file_path)
                 compendium = tree.getroot()
@@ -128,6 +133,7 @@ for root, _, files in os.walk(legacy_dir):
                             class_name = normalize_text(name.text)
 
                             if item_key in master_data:
+                                logging.debug(f"Found duplicate class in master: {original_name}")
                                 updated = True
                                 for child in list(item):
                                     if child.tag not in ["name", "autolevel"]:
@@ -221,6 +227,7 @@ for root, _, files in os.walk(legacy_dir):
                                         else:
                                             updated_classes.append(cls_cleaned)
                                 classes.text = ", ".join(updated_classes)
+                                logging.debug(f"Updated spell classes: {classes.text}")
                             if text is None:
                                 if item_key not in master_data:
                                     updated = True
@@ -238,6 +245,7 @@ for root, _, files in os.walk(legacy_dir):
 
                 if updated:
                     tree.write(file_path, encoding="utf-8", xml_declaration=True)
+                    logging.info(f"Updated legacy file written: {file_path}")
 
             except ET.ParseError as e:
                 logging.error(f"XML parsing error in legacy file {file_path}: {e}")
