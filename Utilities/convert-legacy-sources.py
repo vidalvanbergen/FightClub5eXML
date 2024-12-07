@@ -68,48 +68,6 @@ excluded_casters = [
     "Arcane Trickster", 
     "Eldritch Knight"
 ]
-excluded_counters = ["Ki", 
-                     "Rage", 
-                     "Bardic Inspiration",
-                     "Warrior Of The Gods",
-                     "Channel Divinity",
-                     "Divine Intervention",
-                     "Wild Resurgence",
-                     "Natural Recovery",
-                     "Second Wind",
-                     "Action Surge",
-                     "Indomitable",
-                     "Superiority Dice",
-                     "Know Your Enemy",
-                     "Psionic Energy",
-                     "Sorcery Points",
-                     "Wild Shape",
-                     "Wholeness of Body",
-                     "Lay on Hands",
-                     "Undying Sentinel",
-                     "Elder Champion",
-                     "Spell Thief",
-                     "Stroke of Luck"
-                     "Tides of Chaos",
-                     "Sorcery Points",
-                     "Misty Escape",
-                     "Dark One's Luck",
-                     "Entropic Ward",
-                     "Dark Delirium",
-                     "Hurl Through Hell",
-                     "Eldritch Master",
-                     "Arcane Recovery",
-                     "Arcane Ward",
-                     "Portents",
-                     "Third Eye",
-                     "Illusory Step",
-                     "Cosmic Omen",
-                     "Nature's Veil",
-                     "Tireless",
-                     "Mantle of Majesty",
-                     "Unbreakable Majesty",
-                     "Searing Vengeance"
-                     ]
 
 # Process legacy files
 logging.info(f"Processing legacy directory: {legacy_dir}")
