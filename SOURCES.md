@@ -106,7 +106,7 @@ Spell example:
   <text>At Higher Levels:</text>
   <text>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.</text>
   <text/>
-  <text>Source: Player's Handbook p. 257</text>
+  <text>Source:	Player's Handbook p. 257</text>
   <roll>1d4+1</roll>
   <roll>(1d4+1)+(1d4+1)+(1d4+1)</roll>
 </spell>
