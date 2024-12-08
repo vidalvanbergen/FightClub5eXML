@@ -10,7 +10,9 @@
 
 **Core_Supplements**: Core Rulebooks, Xanathar's Guide to Everything, and Tasha's Cauldron of Everything.
 
-**Special_Adventurers_League_Forgotten_Realms**: DALL approved source books.
+**Special_Adventurers_League_Forgotten_Realms_2014**: 2014 DALL approved source books.
+
+**Special_Adventurers_League_Forgotten_Realms_2024**: 2024 DALL approved source books.
 
 **Sytem_Reference_Document**: Only the core system files of Fight Club 5e.
 

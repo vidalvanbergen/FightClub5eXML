@@ -13,6 +13,9 @@
 * Added [2024] weapon proficiencies and dice rolls.
 * Tagged [2024] Spell lists.
 * Added [2024] Gemstones.
+* @nikjft updated [2024] Homebrew Legacy content.
+* @nikjft Updated 2024 DDAL collection.
+* Moved old DDAL collection to `Special_Adventurers_League_Forgotten_Realms_2014.xml`.
 * Other changes and fixes.
 
 ### 2024-12-04
