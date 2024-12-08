@@ -1,8 +1,8 @@
 # Collections
 
-**Complete_Compendium**: Includes all 2014 compatible rulebooks, third party suplements, adventures, partnered content, unearthed arcana, and homebrew content.
+**Complete_Compendium_2014**: Includes all 2014 compatible rulebooks, third party suplements, adventures, partnered content, unearthed arcana, and homebrew content.
 
-**Complete_Compendium_2024**: Includes all 2024 compatible rulebooks.
+**Complete_Compendium_2024**: Includes all 2024 compatible rulebooks and homebrew legacy content updated to work with the 2024 sourcebooks.
 
 **Complete_Compendium_2014+2024**: Includes both 2014 and 2024 complete compendiums, with new material tagged with [2024].
 
@@ -14,11 +14,9 @@
 
 **Sytem_Reference_Document**: Only the core system files of Fight Club 5e.
 
-**WotC_Only**: Only official Wizards of the Coast material.
+**WotC_2014_Only**: Only official Wizards of the Coast (2014) material.
 
-**WotC_only_converted_2014_to_2024**: Official WotC 2014 tagged with \[2014\] and converted to work with PHB2024.
-
-**WotC_only_converted_2014+2024**: Official WotC 2014 tagged with \[2014\] and converted to work with PHB2024 and the 2024 Player's Handbook.
+**WotC_2024_Only**: Only official Wizards of the Coast (2024) material.
 
 ## Additions
 
