@@ -16,6 +16,7 @@
 * @nikjft updated [2024] Homebrew Legacy content.
 * @nikjft Updated 2024 DDAL collection.
 * Moved old DDAL collection to `Special_Adventurers_League_Forgotten_Realms_2014.xml`.
+* Name tagged Monk Elemental Disciplines spells.
 * Other changes and fixes.
 
 ### 2024-12-04
