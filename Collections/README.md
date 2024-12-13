@@ -2,7 +2,7 @@
 
 **Complete_Compendium_2014**: Includes all 2014 compatible rulebooks, third party suplements, adventures, partnered content, unearthed arcana, and homebrew content.
 
-**Complete_Compendium_2024**: Includes all 2024 compatible rulebooks and homebrew legacy content updated to work with the 2024 sourcebooks.
+**Complete_Compendium_2024**: Includes all 2024 compatible rulebooks and homebrew legacy content updated to work with the 2024 sourcebooks. You will want to delete your app compendium before importing this one to avoid conflicts with SRD content.
 
 **Complete_Compendium_2014+2024**: Includes both 2014 and 2024 complete compendiums, with new material tagged with [2024].
 
@@ -18,7 +18,7 @@
 
 **WotC_2014_Only**: Only official Wizards of the Coast (2014) material.
 
-**WotC_2024_Only**: Only official Wizards of the Coast (2024) material.
+**WotC_2024_Only**: Only official Wizards of the Coast (2024) material. You will want to delete your app compendium before importing this one to avoid conflicts with SRD content.
 
 ## Additions
 
