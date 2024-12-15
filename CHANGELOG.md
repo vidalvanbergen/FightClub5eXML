@@ -3,6 +3,7 @@
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
+* Complete `Heliana's Guide to Monster Hunting` items.
 * LaserLlama:
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
@@ -10,6 +11,8 @@
 * Adding `Tenares` content.
 
 ### 2024-##-##
+* Added `Compendium Compiler` app to utilities. (Win/Mac/Linux)
+* Added more magical variant items of base items.
 * Added [2024] weapon proficiencies and dice rolls.
 * Tagged [2024] Spell lists.
 * Added [2024] Gemstones.
