@@ -48,7 +48,17 @@ After that command has completed, you should see a file called `WotC_only.xml` i
 
 #### Batching
 
-The build-collection files are provided for your convenience to compile all collections within your Collections directory into compendiums.
+The build-collection files are provided for your convenience to compile all the collections within your Collections directory into compendiums.
+
+```bash
+./build_collections.sh
+```
+
+Alternately, pass the name of individual collections to compile more than one at a time.
+
+```bash
+./build_collections.sh WotC_only.xml Complete_Compendium.xml
+```
 
 ## Custom Content
 
