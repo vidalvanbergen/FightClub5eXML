@@ -637,7 +637,7 @@ Class example:
       <text>	• Wisdom 13</text>
       <text/>
       <text>Proficiencies Gained:</text>
-      <text>If ranger isn't your initial class, here are the proficiencies you gain when you take your first level as a ranger.</text>
+      <text>When you gain your first level in a class other than your initial class, you gain only some of your new class's starting proficiencies, here are the proficiencies you gain when you take your first level as a ranger.</text>
       <text/>
       <text>	• Armor: light armor, medium armor, shields</text>
       <text>	• Weapons: simple weapons, martial weapons</text>
