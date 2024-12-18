@@ -45,15 +45,11 @@
     </action>
     <description>Aarakocra range the Howling Gyre, an endless storm of mighty winds and lashing rains that surrounds the tranquil realm of Aaqa in the Elemental Plane of Air. Making aerial patrols, these birdlike humanoids guard the windy borders of their home against invaders from the Elemental Plane of Earth, such as gargoyles, their sworn enemies.
 
-Enemies of Elemental Evil:
-In service to the Wind Dukes of Aaqa, aarakocra scout the planes in search of temples of Elemental Evil. They spy on malign elemental creatures and then either take the fight to those creatures or report back to the Wind Dukes.
+Enemies of Elemental Evil: In service to the Wind Dukes of Aaqa, aarakocra scout the planes in search of temples of Elemental Evil. They spy on malign elemental creatures and then either take the fight to those creatures or report back to the Wind Dukes.
+	On the Material Plane, aarakocra create aeries atop the highest mountains, especially peaks near portals to the Elemental Plane of Air. From such heights, aarakocra watch for signs of elemental incursions, as well as for nascent threats to their home plane. Aarakocra prefer to live their lives like the wind-unburdened and ever moving-yet they watch over a region for years if that's what it takes to guard against the incursions of Elemental Evil.
+	Aarakocra have no concept of political borders or property ownership, and the value of gems, gold, and other precious materials means little to aarakocra. In their eyes, a creature should use what is necessary and then cast what is left on the wind for others to use.
 
-On the Material Plane, aarakocra create aeries atop the highest mountains, especially peaks near portals to the Elemental Plane of Air. From such heights, aarakocra watch for signs of elemental incursions, as well as for nascent threats to their home plane. Aarakocra prefer to live their lives like the wind-unburdened and ever moving-yet they watch over a region for years if that's what it takes to guard against the incursions of Elemental Evil.
-
-Aarakocra have no concept of political borders or property ownership, and the value of gems, gold, and other precious materials means little to aarakocra. In their eyes, a creature should use what is necessary and then cast what is left on the wind for others to use.
-
-Search for the Seven Shards:
-The Wind Dukes of Aaqa come from a race of elemental beings called the vaati, which once ruled many worlds. A creature known as the Queen of Chaos arose and initiated an interplanar war against vaati rule. To combat the threat, seven vaati heroes combined their powers to create the mighty Rod of Law. In a battle against the queen's greatest general, Mishka the Wolf Spider, a vaati killed Mishka by thrusting the rod into him like a spear. The rod shattered into seven shards that scattered across the multiverse. Aaracokra seek signs of the pieces' locations in order to rebuild what is now known as the Rod of Seven Parts.
+Search for the Seven Shards: The Wind Dukes of Aaqa come from a race of elemental beings called the vaati, which once ruled many worlds. A creature known as the Queen of Chaos arose and initiated an interplanar war against vaati rule. To combat the threat, seven vaati heroes combined their powers to create the mighty Rod of Law. In a battle against the queen's greatest general, Mishka the Wolf Spider, a vaati killed Mishka by thrusting the rod into him like a spear. The rod shattered into seven shards that scattered across the multiverse. Aaracokra seek signs of the pieces' locations in order to rebuild what is now known as the Rod of Seven Parts.
 
 Source:	Monster Manual p. 12,
 		Princes of the Apocalypse,
@@ -105,13 +101,9 @@ Source:	Monster Manual p. 12,
     </action>
     <action>
       <name>Tentacle</name>
-      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage.
-
-If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher.
-
-When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.</text>
+      <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.</text>
       <attack>Tentacle|+9|2d6+5</attack>
-      <attack>Tentacle||1d12</attack>
+      <attack>Acid Damage||1d12</attack>
     </action>
     <action>
       <name>Tail</name>
@@ -122,8 +114,7 @@ When the creature is outside a body of water, it takes 6 (1d12) acid damage ever
       <name>Enslave (3/Day)</name>
       <recharge>3/Day</recharge>
       <text>The aboleth targets one creature it can see within 30 feet of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.
-
-Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.</text>
+	Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.</text>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -141,6 +132,7 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
     <legendary>
       <name>Psychic Drain (Costs 2 Actions)</name>
       <text>One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.</text>
+      <attack>Psychic Drain||3d6</attack>
     </legendary>
     <legendary>
       <name>Lair Actions</name>
@@ -153,6 +145,7 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 	• Water in the aboleth's lair magically becomes a conduit for the creature's rage. The aboleth can target any number of creatures it can see in such water within 90 feet of it. A target must succeed on a DC 14 Wisdom saving throw or take 7 (2d6) psychic damage.
 
 The aboleth can't use this lair action again until it has used a different one.</text>
+      <attack>Psychic Damage||2d6</attack>
     </legendary>
     <legendary>
       <name>Regional Effects</name>
@@ -165,23 +158,21 @@ The aboleth can't use this lair action again until it has used a different one.<
 	• As an action, the aboleth can create an illusory image of itself within 1 mile of the lair. The copy can appear at any location the aboleth has seen before or in any location a creature charmed by the aboleth can currently see. Once created, the image lasts for as long as the aboleth maintains concentration, as if concentrating on a spell. Although the image is intangible, it looks, sounds, and can move like the aboleth. The aboleth can sense, speak, and use telepathy from the image's position as if present at that position. If the image takes any damage, it disappears.
 
 If the aboleth dies, the first two effects fade over the course of 3d10 days.</text>
+      <attack>Regional Effects Fade||3d10</attack>
     </legendary>
     <description>Before the coming of the gods, aboleths lurked in primordial oceans and underground lakes. They reached out with their minds and seized control of the burgeoning life-forms of the mortal realm, making those creatures their slaves. Their dominance made them like gods. Then the true gods appeared, smashing the aboleths' empire and freeing their slaves. Aboleths have never forgotten.
 
-Eternal Memories:
-Aboleths have flawless memories. They pass on their knowledge and experience from generation to generation. Thus, the injury of their defeat by the gods remains perfectly preserved in their minds.
+Eternal Memories: Aboleths have flawless memories. They pass on their knowledge and experience from generation to generation. Thus, the injury of their defeat by the gods remains perfectly preserved in their minds.
+	Aboleths' minds are treasure troves of ancient lore, recalling moments from prehistory with perfect clarity. They plot patiently and intricately across eons. Few creatures can conceive of the extent of an aboleth's plan.
 
-Aboleths' minds are treasure troves of ancient lore, recalling moments from prehistory with perfect clarity. They plot patiently and intricately across eons. Few creatures can conceive of the extent of an aboleth's plan.
+Gods in the Lake: Aboleths dwell in watery environments, including ocean abysses, deep lakes, and the Elemental Plane of Water. In these domains and the lands that adjoin them, aboleths are like gods, demanding worship and obedience from their subjects. When they consume other creatures, aboleths add the knowledge and experiences of their prey to their eternal memories.
+	Aboleths use their telepathic powers to read the minds of creatures and know their desires. An aboleth uses this knowledge to gain a creature's loyalty, promising to fulfill such wants in exchange for obedience. Within its lair, the aboleth can further use its powers to override senses, granting creatures, such as its followers, the illusion of promised rewards.
 
-Gods in the Lake:
-Aboleths dwell in watery environments, including ocean abysses, deep lakes, and the Elemental Plane of Water. In these domains and the lands that adjoin them, aboleths are like gods, demanding worship and obedience from their subjects. When they consume other creatures, aboleths add the knowledge and experiences of their prey to their eternal memories. Aboleths use their telepathic powers to read the minds of creatures and know their desires. An aboleth uses this knowledge to gain a creature's loyalty, promising to fulfill such wants in exchange for obedience. Within its lair, the aboleth can further use its powers to override senses, granting creatures, such as its followers, the illusion of promised rewards.
+Enemies of the Gods: The aboleths' fall from power is written in stark clarity on their flawless memories, for aboleths never truly die. If an aboleth's body is destroyed, its spirit returns to the Elemental Plane of Water, where a new body coalesces for it over days or months.
+	Ultimately, aboleths dream of overthrowing the gods and regaining control of the world. Aboleths have had untold eons to plot and to prepare their plans for perfect execution.
 
-Enemies of the Gods:
-The aboleths' fall from power is written in stark clarity on their flawless memories, for aboleths never truly die. If an aboleth's body is destroyed, its spirit returns to the Elemental Plane of Water, where a new body coalesces for it over days or months.
-
-Ultimately, aboleths dream of overthrowing the gods and regaining control of the world. Aboleths have had untold eons to plot and to prepare their plans for perfect execution.
-
-An Aboleth's Lair. Aboleths lair in subterranean lakes or the rocky depths of the ocean, often surrounded by the ruins of an ancient, fallen aboleth city. An aboleth spends most of its existence underwater, surfacing occasionally to treat with visitors or deranged worshipers.
+An Aboleth's Lair:
+Aboleths lair in subterranean lakes or the rocky depths of the ocean, often surrounded by the ruins of an ancient, fallen aboleth city. An aboleth spends most of its existence underwater, surfacing occasionally to treat with visitors or deranged worshipers.
 
 Source:	Monster Manual p. 13,
 		Princes of the Apocalypse,
@@ -192,6 +183,7 @@ Source:	Monster Manual p. 13,
   </monster>
   <monster>
     <name>Abominable Yeti</name>
+    <sortname>Yeti, Abominable</sortname>
     <size>H</size>
     <type>monstrosity</type>
     <alignment>Chaotic Evil</alignment>
@@ -237,9 +229,7 @@ Source:	Monster Manual p. 13,
     </action>
     <action>
       <name>Chilling Gaze</name>
-      <text>The yeti targets one creature it can see within 30 feet of it. If the target can see the yeti, the target must succeed on a DC 18 Constitution saving throw against this magic or take 21 (6d6) cold damage and then be paralyzed for 1 minute, unless it is immune to cold damage.
-
-The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target's saving throw is successful, or if the effect ends on it, the target is immune to this yeti's gaze for 1 hour.</text>
+      <text>The yeti targets one creature it can see within 30 feet of it. If the target can see the yeti, the target must succeed on a DC 18 Constitution saving throw against this magic or take 21 (6d6) cold damage and then be paralyzed for 1 minute, unless it is immune to cold damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target's saving throw is successful, or if the effect ends on it, the target is immune to this yeti's gaze for 1 hour.</text>
       <attack>Chilling Gaze||6d6</attack>
     </action>
     <action>
@@ -250,21 +240,15 @@ The target can repeat the saving throw at the end of each of its turns, ending t
     </action>
     <description>A yeti's windborne howl sounds out across remote mountains, striking fear into the hearts of the scattered miners and herders that dwell there. These hulking creatures stalk alpine peaks in a ceaseless hunt for food. Their snow-white fur lets them move like ghosts against the frozen landscape. A yeti's icy simian eyes can freeze its prey in place.
 
-Keen Hunters:
-Folk of the high peaks travel in groups and go armed, knowing that yetis can smell living flesh from miles away. When it finds prey, a yeti moves quickly over ice and stone to claim its meal, howling to the thrill of the hunt. Even in a blizzard, the scent of its quarry draws the yeti through the cold and snow.
+Keen Hunters: Folk of the high peaks travel in groups and go armed, knowing that yetis can smell living flesh from miles away. When it finds prey, a yeti moves quickly over ice and stone to claim its meal, howling to the thrill of the hunt. Even in a blizzard, the scent of its quarry draws the yeti through the cold and snow.
+	Yetis hunt in solitude or in small family groups. When creatures flee from a yeti or engage it in battle, other yetis might catch the scent of blood and close in. The territorial yetis fight one another for the spoils of such battles, and yetis slain in the fight are also eaten, amid euphoric howls.
 
-Yetis hunt in solitude or in small family groups. When creatures flee from a yeti or engage it in battle, other yetis might catch the scent of blood and close in. The territorial yetis fight one another for the spoils of such battles, and yetis slain in the fight are also eaten, amid euphoric howls.
+Terrifying Howlers: Before an avalanche, a blizzard, or a deadly frost, the yetis' howls sweep down the mountain slopes on the icy wind. Some people of the alpine peaks believe that the voices of loved ones killed in avalanches and blizzards sound out in the wails of the yetis, crying warnings of ill omen. More pragmatic folk attest that the yeti's howl is a reminder that, despite the great accomplishments of civilization, the civilized become the hunted in nature's untamed domain.
 
-Terrifying Howlers:
-Before an avalanche, a blizzard, or a deadly frost, the yetis' howls sweep down the mountain slopes on the icy wind. Some people of the alpine peaks believe that the voices of loved ones killed in avalanches and blizzards sound out in the wails of the yetis, crying warnings of ill omen. More pragmatic folk attest that the yeti's howl is a reminder that, despite the great accomplishments of civilization, the civilized become the hunted in nature's untamed domain.
+Brutal Rampagers: When mountain herds are abundant, yetis stay clear of humanoid realms. Driven by hunger, they attack humanoid settlements in waves, breaking down gates and stockade walls that once might have daunted them, then devouring the creatures within.
+	Devious mountain folk sometimes use the yetis as unwitting weapons. A warlord might lay down slaughtered sheep or goats to draw yetis into an enemy's camp, sowing chaos and thinning the ranks before battle. Mountain clan chiefs, wanting to expand their territory, overhunt local game to diminish the yetis' food supplies, inspiring attacks on humanoid settlements that are swiftly annexed in the aftermath.
 
-Brutal Rampagers:
-When mountain herds are abundant, yetis stay clear of humanoid realms. Driven by hunger, they attack humanoid settlements in waves, breaking down gates and stockade walls that once might have daunted them, then devouring the creatures within.
-
-Devious mountain folk sometimes use the yetis as unwitting weapons. A warlord might lay down slaughtered sheep or goats to draw yetis into an enemy's camp, sowing chaos and thinning the ranks before battle. Mountain clan chiefs, wanting to expand their territory, overhunt local game to diminish the yetis' food supplies, inspiring attacks on humanoid settlements that are swiftly annexed in the aftermath.
-
-Abominable Yetis:
-An abominable yeti is larger than a normal yeti, standing three times as tall as a human. It typically lives and hunts alone, though a pair of abominable yetis might live together long enough to raise young. These towering yetis are highly territorial and savage, attacking and devouring any warm-blooded creatures they encounter, then scattering the bones across the ice and snow.
+Abominable Yetis: An abominable yeti is larger than a normal yeti, standing three times as tall as a human. It typically lives and hunts alone, though a pair of abominable yetis might live together long enough to raise young. These towering yetis are highly territorial and savage, attacking and devouring any warm-blooded creatures they encounter, then scattering the bones across the ice and snow.
 
 Source:	Monster Manual p. 306,
 		Storm King's Thunder,
@@ -275,6 +259,7 @@ Source:	Monster Manual p. 306,
   </monster>
   <monster>
     <name>Acolyte</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -309,7 +294,7 @@ Source:	Monster Manual p. 306,
 	• Cantrips (at will): light, sacred flame, thaumaturgy
 	• 1st level (3 slots): bless, cure wounds, sanctuary</text>
     </trait>
-    <slots>3</slots>
+    <slots>0,3</slots>
     <spells>light, sacred flame, thaumaturgy, bless, cure wounds, sanctuary</spells>
     <description>Acolytes are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.
 
@@ -330,6 +315,7 @@ Source:	Monster Manual p. 342,
   </monster>
   <monster>
     <name>Adult Black Dragon</name>
+    <sortname>Black Dragon, Adult</sortname>
     <size>H</size>
     <type>dragon</type>
     <alignment>Chaotic Evil</alignment>
@@ -406,6 +392,11 @@ Source:	Monster Manual p. 342,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
+      <attack>Wing Attack||2d6+6</attack>
+    </legendary>
+    <legendary>
+      <name>Black Dragon's Lair</name>
+      <text>Black dragons dwell in swamps on the frayed edges of civilization. A black dragon's lair is a dismal cave, grotto, or ruin that is at least partially flooded, providing pools where the dragon rests, and where its victims can ferment. The lair is littered with the acid-pitted bones of previous victims and the fly-ridden carcasses of fresh kills, watched over by crumbling statues. Centipedes, scorpions, and snakes infest the lair, which is filled with the stench of death and decay.</text>
     </legendary>
     <legendary>
       <name>Lair Actions</name>
@@ -416,6 +407,7 @@ Source:	Monster Manual p. 342,
 	• A cloud of swarming insects fills a 20-foot-radius sphere centered on a point the dragon chooses within 120 feet of it. The cloud spreads around corners and remains until the dragon dismisses it as an action, uses this lair action again, or dies. The cloud is lightly obscured. Any creature in the cloud when it appears must make on a DC 15 Constitution saving throw, taking 10 (3d6) piercing damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the cloud takes 10 (3d6) piercing damage.
 
 	• Magical darkness spreads from a point the dragon chooses within 60 feet of it, filling a 15-foot-radius sphere until the dragon dismisses it as an action, uses this lair action again, or dies. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. If any of the effect's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</text>
+      <attack>Cloud of Swarming Insects||3d6</attack>
     </legendary>
     <legendary>
       <name>Regional Effects</name>
@@ -429,20 +421,46 @@ Source:	Monster Manual p. 342,
 
 If the dragon dies, vegetation remains as it has grown, but other effects fade over 1d10 days.</text>
     </legendary>
-    <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+    <description>Dragons:
+True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
+
+Black Dragons:
+The most evil-tempered and vile of the chromatic dragons, black dragons collect the wreckage and treasures of fallen peoples. These dragons loathe seeing the weak prosper and revel in the collapse of humanoid kingdoms. They make their homes in fetid swamps and crumbling ruins where kingdoms once stood.
+	With deep-socketed eyes and broad nasal openings, a black dragon's face resembles a skull. Its curving, segmented horns are bone-colored near the base and darken to dead black at the tips. As a black dragon ages, the flesh around its horns and cheekbones deteriorates as though eaten by acid, leaving thin layers of hide that enhance its skeletal appearance. A black dragon's head is marked by spikes and horns. Its tongue is flat with a forked tip, drooling slime whose acidic scent adds to the dragon's reek of rotting vegetation and foul water.
+	When it hatches, a black dragon has glossy black scale. As it ages, its scales become thicker and duller, helping it blend in to the marshes and blasted ruins that are its home.
+
+Brutal and Cruel: All chromatic dragons are evil, but black dragons stand apart for their sadistic nature. A black dragon lives to watch its prey beg for mercy, and will often offer the illusion of respite or escape before finishing off its enemies.
+	A black dragon strikes at its weakest enemies first, ensuring a quick and brutal victory, which bolsters its ego as it terrifies its remaining foes. On the verge of defeat, a black dragon does anything it can to save itself, but it accepts death before allowing any other creature to claim mastery over it.
+
+Foes and Servants: Black dragons hate and fear other dragons. They spy on draconic rivals from afar, looking for opportunities to slay weaker dragons and avoid stronger ones. If a stronger dragon threatens it, a black dragon abandons its lair and seeks out new territory.
+	Evil lizardfolk venerate and serve black dragons, raiding humanoid settlements for treasure and food to give as tribute and building crude draconic effigies along the borders of their dragon master's domain.
+	A black dragon's malevolent influence might also cause the spontaneous creation of evil shambling mounds that seek out and slay good creatures approaching the dragon's lair.
+	Kobolds infest the lairs of many black dragons like vermin. They become as cruel as their dark masters, often torturing and weakening captives with centipede bites and scorpion stings before delivering them to sate the dragon's hunger.
+	Wealth of the Ancients: Black dragons hoard the treasures and magic items of crumbled empires and conquered kingdoms to remind themselves of their greatness. The more civilizations a dragon outlasts, the more entitled it feels to claim the wealth of current civilizations for itself.
+
+Chromatic Dragons:
+The black, blue, green, red, and white dragons represent the evil side of dragonkind. Aggressive, gluttonous, and vain, chromatic dragons are dark sages and powerful tyrants feared by all creatures-including each other.
+
+Driven by Greed: Chromatic dragons lust after treasure, and this greed colors their every scheme and plot. They believe that the world's wealth belongs to them by right, and a chromatic dragon seizes that wealth without regard for the humanoids and other creatures that have "stolen" it. With its piles of coins, gleaming gems, and magic items, a dragon's hoard is the stuff of legend. However, chromatic dragons have no interest in commerce, amassing wealth for no other reason than to have it.
+
+Creatures of Ego: Chromatic dragons are united by their sense of superiority, believing themselves the most powerful and worthy of all mortal creatures. When they interact with other creatures, it is only to further their own interests. They believe in their innate right to rule, and this belief is the cornerstone of every chromatic dragon's personality and worldview. Trying to humble a chromatic dragon is like trying to convince the wind to stop blowing. To these creatures, humanoids are animals, fit to serve as prey or beasts of burden, and wholly unworthy of respect.
+
+Dangerous Lairs: A dragon's lair serves as the seat of its power and a vault for its treasure. With its innate toughness and tolerance for severe environmental effects, a dragon selects or builds a lair not for shelter but for defense, favoring multiple entrances and exits, and security for its hoard.
+	Most chromatic dragon lairs are hidden in dangerous and remote locations to prevent all but the most audacious mortals from reaching them. A black dragon might lair in the heart of a vast swamp, while a red dragon might claim the caldera of an active volcano. In addition to the natural defenses of their lairs, powerful chromatic dragons use magical guardians, traps, and subservient creatures to protect their treasures.
+
+Queen of Evil Dragons: Tiamat the Dragon Queen is the chief deity of evil dragonkind. She dwells on Avernus, the first layer of the Nine Hells. As a lesser god, Tiamat has the power to grant spells to her worshipers, though she is loath to share her power. She epitomizes the avarice of evil dragons, believing that the multiverse and all its treasures will one day be hers and hers alone.
+	Tiamat is a gigantic dragon whose five heads reflect the forms of the chromatic dragons that worship her-black, blue, green, red, and white. She is a terror on the battlefield, capable of annihilating whole armies with her five breath weapons, her formidable spellcasting, and her fearsome claws.
+	Tiamat's most hated enemy is Bahamut the Platinum Dragon, with whom she shares control of the faith of dragonkind. She also holds a special enmity for Asmodeus, who long ago stripped her of the rule of Avernus and who continues to curb the Dragon Queen's power.
 
 Source:	Monster Manual p. 88,
 		Hoard of the Dragon Queen,
@@ -492,6 +510,7 @@ Source:	Monster Manual p. 88,
       <name>Bite</name>
       <text>Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d10) lightning damage.</text>
       <attack>Bite|+13|2d10+7</attack>
+      <attack>Lightning Damage||1d10</attack>
     </action>
     <action>
       <name>Claw</name>
@@ -529,6 +548,13 @@ Source:	Monster Manual p. 88,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dracolich beats its tattered wings. Each creature within 10 feet of the dracolich must succeed on a DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. After beating its wings this way, the dracolich can fly up to half its flying speed.</text>
+      <attack>Wing Attack||2d6+7</attack>
+    </legendary>
+    <legendary>
+      <name>Blue Dragon's Lair</name>
+      <text>Blue dragons make their lairs in barren places, using their lightning breath and their burrowing ability to carve out crystallized caverns and tunnels beneath the sands.
+	Thunderstorms rage around a legendary blue dragon's lair, and narrow tubes lined with glassy sand ventilate the lair, all the while avoiding the deadly sinkholes that are the dragon's first line of defense.
+	A blue dragon will collapse the caverns that make up its lair if that lair is invaded. The dragon then burrows out, leaving its attackers to be crushed and suffocated. When it returns later, it collects its possessions — along with the wealth of the dead intruders.</text>
     </legendary>
     <legendary>
       <name>Lair Actions</name>
@@ -539,6 +565,16 @@ Source:	Monster Manual p. 88,
 	• A cloud of sand swirls about in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners. Each creature in the cloud must succeed on a DC 15 Constitution saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 	• Lightning arcs, forming a 5-foot-wide line between two of the lair's solid surfaces that the dragon can see. They must be within 120 feet of the dragon and 120 feet of each other. Each creature in that line must succeed on a DC 15 Dexterity saving throw or take 10 (3d6) lightning damage.</text>
+      <attack>Ceiling Collapse||3d6</attack>
+      <attack>Lightning Arcs||3d6</attack>
+    </legendary>
+    <legendary>
+      <name>Additional Lair Actions</name>
+      <text>At your discretion, a legendary (adult or ancient) blue dragon can use one or both of the following additional lair actions while in its lair:
+
+Misleading Mirage: Until initiative count 20 on the next round, at each intersection or branching passage in the lair, a creature other than the dragon has a 50 percent chance of going in a different direction from the direction it intends.
+
+Sudden Sinkhole: The dragon chooses a point on the ground that it can see within 120 feet of it. A 5-foot-radius, 20-foot-deep pit forms centered on that point. A creature on the ground above where the pit formed must make a DC 15 Dexterity saving throw. On a failed save, a creature falls to the bottom of the pit, taking 7 (2d6) bludgeoning damage and landing prone. On a successful save, a creature moves to the nearest unoccupied space instead of falling in the pit.</text>
     </legendary>
     <legendary>
       <name>Regional Effects</name>
@@ -551,38 +587,39 @@ Source:	Monster Manual p. 88,
 	• Hidden sinkholes form in and around the dragon's lair. A sinkhole can be spotted from a safe distance with a successful DC 20 Wisdom (Perception) check. Otherwise, the first creature to step on the thin crust covering the sinkhole must succeed on a DC 15 Dexterity saving throw or fall 1d6 × 10 feet into the sinkhole.
 
 If the dragon dies, the dust devils disappear immediately, and the thunderstorms abate within 1d10 days. Any sinkholes remain where they are.</text>
+      <attack>Hidden Sinkhole||1d6x10</attack>
+      <attack>Regional Effects Fades||1d10</attack>
+    </legendary>
+    <legendary>
+      <name>Additional Regional Effects</name>
+      <text>Any of these effects might appear in the area around a blue dragon's lair, in addition to or instead of the effects described in the Monster Manual:
+
+Blue Luster: Creatures that spend a year within 1 mile of the dragon's lair find blue objects fascinating and feel compelled to acquire them at every opportunity.
+
+Mirage Terrain: The area immediately surrounding the lair appears to be a lush oasis. A creature carefully examining the illusion can attempt a DC 15 Intelligence (Investigation) check to disbelieve it. A creature who disbelieves the illusion sees it as a vague image superimposed on the underlying terrain.
+
+Sandstorm: A sandstorm blows constantly within 1 mile of the dragon's lair.</text>
     </legendary>
     <description>Even as long-lived as they are, all dragons must eventually die. This thought doesn't sit well with many dragons, some of which allow themselves to be transformed by necromantic energy and ancient rituals into powerful undead dracoliches. Only the most narcissistic dragons choose this path, knowing that by doing so, they sever all ties to their kin and the dragon gods.
 
-Beyond Death:
-A dracolich retains its shape and size upon transforming, its skin and scales drawing tight to its bones or sloughing away to leave a skeletal form behind. Its eyes appear as glowing points of light floating in shadowy sockets, hinting at the malevolence of its undead mind.
+Beyond Death: A dracolich retains its shape and size upon transforming, its skin and scales drawing tight to its bones or sloughing away to leave a skeletal form behind. Its eyes appear as glowing points of light floating in shadowy sockets, hinting at the malevolence of its undead mind.
+	Though many dragons pursue vain goals of destruction and dominance, dracoliches are more nefarious than the most evil dragons, driven to rule over all. A dracolich is a fiendishly intelligent tyrant that crafts complex webs of foul schemes, attracting servants motivated by greed and a lust for power. Acting from the shadows and actively plotting to keep its existence a secret, a dracolich is a cunning and challenging foe.
 
-Though many dragons pursue vain goals of destruction and dominance, dracoliches are more nefarious than the most evil dragons, driven to rule over all. A dracolich is a fiendishly intelligent tyrant that crafts complex webs of foul schemes, attracting servants motivated by greed and a lust for power. Acting from the shadows and actively plotting to keep its existence a secret, a dracolich is a cunning and challenging foe.
+Dracolich Phylacteries: Creating a dracolich requires the cooperation of the dragon and a group of mages or cultists that can perform the proper ritual. During the ritual, the dragon consumes a toxic brew that slays it instantly. The attendant spellcasters then ensnare its spirit and transfer it to a special gemstone that functions like a lich's phylactery. As the dragon's flesh rots away, the spirit inside the gem returns to animate the dragon's bones.
+	If a dracolich's physical form is ever destroyed, its spirit returns to the gem as long as the two are on the same plane. If the gem comes into contact with another dragon's corpse, the dracolich's spirit can take possession of that corpse to become a new dracolich. If the dracolich's spirit gem is taken to another plane, the dracolich's spirit has nowhere to go when its undead body is destroyed and simply passes into the afterlife.
 
-Dracolich Phylacteries:
-Creating a dracolich requires the cooperation of the dragon and a group of mages or cultists that can perform the proper ritual. During the ritual, the dragon consumes a toxic brew that slays it instantly. The attendant spellcasters then ensnare its spirit and transfer it to a special gemstone that functions like a lich's phylactery. As the dragon's flesh rots away, the spirit inside the gem returns to animate the dragon's bones.
+Dracolich Template: Only an ancient or adult true dragon can be transformed into a dracolich. Younger dragons that attempt to undergo the transformation die, as do other creatures that aren't true dragons but possess the dragon type, such as pseudodragons and wyverns. A shadow dragon can't be transformed into a dracolich, for it has already lost too much of its physical form.
+	When a dragon becomes a dracolich, it retains its statistics except as described below. The dragon loses any trait, such as Amphibious, that assumes a living physiology. The dracolich might retain or lose any or all of its lair actions or inherit new ones, as the DM sees fit.
 
-If a dracolich's physical form is ever destroyed, its spirit returns to the gem as long as the two are on the same plane. If the gem comes into contact with another dragon's corpse, the dracolich's spirit can take possession of that corpse to become a new dracolich. If the dracolich's spirit gem is taken to another plane, the dracolich's spirit has nowhere to go when its undead body is destroyed and simply passes into the afterlife.
+Type: The dracolich's type changes from dragon to undead, and it no longer requires air, food, drink, or sleep.
 
-Dracolich Template:
-Only an ancient or adult true dragon can be transformed into a dracolich. Younger dragons that attempt to undergo the transformation die, as do other creatures that aren't true dragons but possess the dragon type, such as pseudodragons and wyverns. A shadow dragon can't be transformed into a dracolich, for it has already lost too much of its physical form.
+Damage Resistance: The dracolich has resistance to necrotic damage.
 
-When a dragon becomes a dracolich, it retains its statistics except as described below. The dragon loses any trait, such as Amphibious, that assumes a living physiology. The dracolich might retain or lose any or all of its lair actions or inherit new ones, as the DM sees fit.
+Damage Immunities: The dracolich has immunity to poison. It also retains any immunities it had prior to becoming a dracolich.
 
-Type:
-The dracolich's type changes from dragon to undead, and it no longer requires air, food, drink, or sleep.
+Condition Immunities: The dracolich can't be charmed, frightened, paralyzed, or poisoned. It also doesn't suffer from exhaustion.
 
-Damage Resistance:
-The dracolich has resistance to necrotic damage.
-
-Damage Immunities:
-The dracolich has immunity to poison. It also retains any immunities it had prior to becoming a dracolich.
-
-Condition Immunities:
-The dracolich can't be charmed, frightened, paralyzed, or poisoned. It also doesn't suffer from exhaustion.
-
-Magic Resistance:
-The dracolich has advantage on saving throws against spells and other magical effects.
+Magic Resistance: The dracolich has advantage on saving throws against spells and other magical effects.
 
 Source:	Monster Manual p. 84,
 		Waterdeep: Dungeon of the Mad Mage</description>
@@ -686,18 +723,15 @@ Source:	Monster Manual p. 84,
 If the dragon dies, the dust devils disappear immediately, and the thunderstorms abate within 1d10 days. Any sinkholes remain where they are.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 91,
@@ -807,18 +841,15 @@ Source:	Monster Manual p. 91,
 If the dragon dies, the tracks fade in 1d10 days, but the other effects fade immediately.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 105,
@@ -934,18 +965,15 @@ In a new form, the dragon retains its alignment, hit points, Hit Dice, ability t
 If the dragon dies, changed weather reverts to normal, as described in the spell, and the other effects fade in 1d10 days.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 108,
@@ -1055,18 +1083,15 @@ Source:	Monster Manual p. 108,
 If the dragon dies, the magic carvings fade over the course of 1d10 days. The other effects end immediately.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 112,
@@ -1182,18 +1207,15 @@ In a new form, the dragon retains its alignment, hit points, Hit Dice, ability t
 If the dragon dies, these effects end immediately.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 114,
@@ -1307,18 +1329,15 @@ The wall sinks back into the ground when the dragon uses this lair action again 
 If the dragon dies, the rodents and birds lose their supernatural link to it. The thickets remain, but within 1d10 days, they become mundane plants and normal difficult terrain, losing their thorns.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 94,
@@ -1424,18 +1443,15 @@ Source:	Monster Manual p. 94,
 If the dragon dies, these effects fade over the course of 1d10 days.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 98,
@@ -1553,18 +1569,15 @@ Gases and vapors are dispersed by the wind, and unprotected flames are extinguis
 If the dragon dies, changed weather reverts to normal, as described in the spell, and the other effects fade in 1d10 days.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 117,
@@ -1680,18 +1693,15 @@ The wall disappears when the dragon uses this lair action again or when the drag
 If the dragon dies, the fog and precipitation fade within 1 day. The ice walls melt over the course of 1d10 days.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 101,
@@ -1932,18 +1942,15 @@ Source:	Monster Manual p. 79,
 If the dragon dies, vegetation remains as it has grown, but other effects fade over 1d10 days.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 87</description>
@@ -2047,18 +2054,15 @@ Source:	Monster Manual p. 87</description>
 If the dragon dies, the dust devils disappear immediately, and the thunderstorms abate within 1d10 days. Any sinkholes remain where they are.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 90,
@@ -2171,18 +2175,15 @@ In a new form, the dragon retains its alignment, hit points, Hit Dice, ability t
 If the dragon dies, the tracks fade in 1d10 days, but the other effects fade immediately.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 104</description>
@@ -2297,18 +2298,15 @@ In a new form, the dragon retains its alignment, hit points, Hit Dice, ability t
 If the dragon dies, changed weather reverts to normal, as described in the spell, and the other effects fade in 1d10 days.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 107,
@@ -2420,18 +2418,15 @@ In a new form, the dragon retains its alignment, hit points, Hit Dice, ability t
 If the dragon dies, the magic carvings fade over the course of 1d10 days. The other effects end immediately.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 110,
@@ -2547,18 +2542,15 @@ In a new form, the dragon retains its alignment, hit points, Hit Dice, ability t
 If the dragon dies, these effects end immediately.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 113</description>
@@ -2670,18 +2662,15 @@ The wall sinks back into the ground when the dragon uses this lair action again 
 If the dragon dies, the rodents and birds lose their supernatural link to it. The thickets remain, but within 1d10 days, they become mundane plants and normal difficult terrain, losing their thorns.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 93,
@@ -2787,18 +2776,15 @@ Source:	Monster Manual p. 93,
 If the dragon dies, these effects fade over the course of 1d10 days.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 97,
@@ -2914,18 +2900,15 @@ Gases and vapors are dispersed by the wind, and unprotected flames are extinguis
 If the dragon dies, changed weather reverts to normal, as described in the spell, and the other effects fade in 1d10 days.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 116</description>
@@ -3039,18 +3022,15 @@ The wall disappears when the dragon uses this lair action again or when the drag
 If the dragon dies, the fog and precipitation fade within 1 day. The ice walls melt over the course of 1d10 days.</text>
     </legendary>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 100,
@@ -3153,7 +3133,7 @@ Source:	Monster Manual p. 100,
 	• 5th level (2 slots): flame strike, greater restoration
 	• 6th level (1 slots): heroes' feast</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>sacred flame, spare the dying, thaumaturgy, command, detect evil and good, detect magic, lesser restoration, zone of truth, dispel magic, tongues, banishment, freedom of movement, flame strike, greater restoration, heroes' feast</spells>
     <description>An androsphinx bears the head of a humanoid male on its lion's body. Outwardly gruff and downcast, it often begins conversations with insults or negative observations. Beneath this gruff exterior, however, an androsphinx has a noble heart. It has no wish to lie or deceive, but it doesn't give away information readily, choosing its words as wisely as it guards its secrets.
 
@@ -3464,7 +3444,7 @@ A summoned yugoloth appears in an unoccupied space within 60 feet of its summone
 	• 7th level (1 slots): finger of death
 	• 8th level (1 slots): mind blank</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1, 1, 1</slots>
+    <slots>0,4,3,3,3,2,1,1,1</slots>
     <spells>alter self, darkness, heat metal, invisibility, magic missile, fire bolt, mage hand, minor illusion, prestidigitation, detect magic, identify, shield, Tenser's floating disk, detect thoughts, mirror image, phantasmal force, suggestion, counterspell, fear, fireball, banishment, dimension door, contact other plane, hold monster, chain lightning, finger of death, mind blank</spells>
     <description>Yugoloths are fickle fiends that inhabit the planes of Acheron, Gehenna, Hades, and Carceri. They act as mercenaries and are notorious for their shifting loyalties. They are the embodiments of avarice. Before serving under anyone's banner, a yugoloth asks the only question on its mind: What's in it for me?
 
@@ -3556,7 +3536,7 @@ Source:	Monster Manual p. 313,
 
 *The archmage casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.
 
@@ -5335,18 +5315,15 @@ Source:	Monster Manual p. 344,
       <attack>Acid Breath||5d8</attack>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 88,
@@ -5571,18 +5548,15 @@ Source:	Monster Manual p. 319,
       <attack>Lightning Breath||4d10</attack>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 91,
@@ -5909,7 +5883,7 @@ Source:	Monster Manual p. 71,
 	• 2nd level (3 slots): calm emotions, hold person
 	• 3rd level (2 slots): bestow curse</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>mending, sacred flame, thaumaturgy, command, shield of faith, calm emotions, hold person, bestow curse</spells>
     <description>In response to the long history of conflict between the yuan-ti and the nagas, yuan-ti created a necromantic ritual that could halt a naga's resurrection by transforming the living naga into a skeletal undead servitor. A bone naga retains only a few of the spells it knew in life.
 
@@ -5972,7 +5946,7 @@ Source:	Monster Manual p. 233,
 	• 2nd level (3 slots): detect thoughts, hold person
 	• 3rd level (2 slots): lightning bolt</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>mage hand, minor illusion, ray of frost, charm person, sleep, detect thoughts, hold person, lightning bolt</spells>
     <description>In response to the long history of conflict between the yuan-ti and the nagas, yuan-ti created a necromantic ritual that could halt a naga's resurrection by transforming the living naga into a skeletal undead servitor. A bone naga retains only a few of the spells it knew in life.
 
@@ -6034,18 +6008,15 @@ Source:	Monster Manual p. 233</description>
       <text>	• Sleep Breath. The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.</text>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 106</description>
@@ -6094,18 +6065,15 @@ Source:	Monster Manual p. 106</description>
       <text>	• Repulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw. On a failed save, the creature is pushed 30 feet away from the dragon.</text>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 109</description>
@@ -7694,18 +7662,15 @@ Until this grapple ends, the creature is restrained, and the snake can't constri
       <text>	• Slowing Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.</text>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 111</description>
@@ -7984,7 +7949,7 @@ Until this grapple ends, the target is restrained, and the crocodile can't bite 
 	• 1st level (4 slots): command, inflict wounds, shield of faith
 	• 2nd level (3 slots): hold person, spiritual weapon</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <slots>0,4,3</slots>
     <spells>light, sacred flame, thaumaturgy, command, inflict wounds, shield of faith, hold person, spiritual weapon</spells>
     <description>Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else
 
@@ -8411,7 +8376,7 @@ Source:	Monster Manual p. 321,
 	• 4th level (3 slots): banishment, staggering smite
 	• 5th level (2 slots): destructive wave (necrotic)</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <slots>0,4,3,3,3,2</slots>
     <spells>command, compelled duel, searing smite, hold person, magic weapon, dispel magic, elemental weapon, banishment, staggering smite, destructive wave</spells>
     <description>When a paladin that falls from grace dies without seeking atonement, dark powers can transform the once-mortal knight into a hateful undead creature. A death knight is a skeletal warrior clad in fearsome plate armor. Beneath its helmet, one can see the knight's skull with malevolent pinpoints of light burning in its eye sockets.
 
@@ -9955,7 +9920,7 @@ Source:	Monster Manual p. 128,
 	• 4th level (3 slots): Evard's black tentacles, greater invisibility
 	• 5th level (2 slots): cloudkill</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <slots>0,4,3,3,3,2</slots>
     <spells>dancing lights, darkness, faerie fire, levitate, mage hand, minor illusion, poison spray, ray of frost, mage armor, magic missile, shield, witch bolt, alter self, misty step, web, fly, lightning bolt, Evard's black tentacles, greater invisibility, cloudkill</spells>
     <description>Tens of thousands of years ago, the elves were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves-the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.
 
@@ -10080,7 +10045,7 @@ A drow priestess of lolth wearing +3 scale mail has AC 19.</text>
 	• 4th level (3 slots): divination, freedom of movement
 	• 5th level (2 slots): insect plague, mass cure wounds</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <slots>0,4,3,3,3,2</slots>
     <spells>dancing lights, darkness, faerie fire, levitate, guidance, poison spray, resistance, spare the dying, thaumaturgy, animal friendship, cure wounds, detect poison and disease, ray of sickness, lesser restoration, protection from poison, web, conjure animals, dispel magic, divination, freedom of movement, insect plague, mass cure wounds</spells>
     <description>Tens of thousands of years ago, the elves were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves-the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.
 
@@ -10164,7 +10129,7 @@ Source:	Monster Manual p. 129,
 	• 1st level (4 slots): entangle, longstrider, speak with animals, thunderwave
 	• 2nd level (3 slots): animal messenger, barkskin</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <slots>0,4,3</slots>
     <spells>druidcraft, produce flame, shillelagh, entangle, longstrider, speak with animals, thunderwave, animal messenger, barkskin</spells>
     <description>Druids dwell in forests and other secluded wilderness locations, where they protect the natural world from monsters and the encroachment of civilization. Some are tribal shamans who heal the sick, pray to animal spirits, and provide spiritual guidance.
 
@@ -12298,7 +12263,7 @@ Source:	Monster Manual p. 265,
 	• 2nd level (2 slots): blur, flaming sphere
 	• 3rd level (1 slots): fireball</text>
     </trait>
-    <slots>3, 2, 1</slots>
+    <slots>0,3,2,1</slots>
     <spells>mage hand, magic missile, shield, blur, flaming sphere, fireball</spells>
     <description>Blazing green flames and mad, echoing laughter follow a disembodied skull as it patrols its demesne. When the undead flameskull discovers trespassers, it blasts the intruders with fiery rays from its eyes and dreadful spells called up from the dark recesses of its memory.
 
@@ -15818,18 +15783,15 @@ Source:	Monster Manual p. 166,
       <text>	• Weakening Breath. The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 115</description>
@@ -16329,18 +16291,15 @@ Source:	Monster Manual p. 277,
       <attack>Poison Breath||6d6</attack>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 95</description>
@@ -16424,7 +16383,7 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
 
 For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>dancing lights, minor illusion, vicious mockery, identify, ray of sickness, hold person, locate object, bestow curse, counterspell, lightning bolt, phantasmal killer, polymorph, contact other plane, scrying, eyebite</spells>
     <description>Faces of Evil:
 Ancient beings with origins in the Feywild, hags are cankers on the mortal world. Their withered faces are framed by long, frayed hair, horrid moles and warts dot their blotchy skin, and their long, skinny fingers are tipped by claws that can slice open flesh with a touch. Their simple clothes are always tattered and filthy.
@@ -16998,7 +16957,7 @@ Source:	Monster Manual p. 347,
 	• 5th level (2 slots): flame strike, geas
 	• 6th level (1 slots): true seeing</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>mending, sacred flame, thaumaturgy, command, cure wounds, shield of faith, calm emotions, hold person, bestow curse, clairvoyance, banishment, freedom of movement, flame strike, geas, true seeing</spells>
     <description>Wise and good, the beautiful guardian nagas protect sacred places and items of magical power from falling into evil hands. In their hidden redoubts, they research spells and hatch convoluted plots to thwart the evil designs of their enemies.
 
@@ -17106,7 +17065,7 @@ Source:	Monster Manual p. 234,
 	• 4th level (3 slots): banishment, greater invisibility
 	• 5th level (1 slots): legend lore</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <slots>0,4,3,3,3,1</slots>
     <spells>mage hand, minor illusion, prestidigitation, detect magic, identify, shield, darkness, locate object, suggestion, dispel magic, remove curse, tongues, banishment, greater invisibility, legend lore</spells>
     <description>A gynosphinx bears the head of a humanoid female. Many have the regal countenances of worldly queens, but some are marked with wild, leonine features. A gynosphinx's eyes see beyond the present time and place, and penetrate veils of invisibility and magic.
 
@@ -19913,7 +19872,7 @@ Source:	Monster Manual p. 199,
 	• 4th level (3 slots): control water, divination
 	• 5th level (2 slots): mass cure wounds, scrying</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <slots>0,4,3,3,3,2</slots>
     <spells>guidance, sacred flame, thaumaturgy, detect magic, sanctuary, shield of faith, hold person, spiritual weapon, spirit guardians, tongues, control water, divination, mass cure wounds, scrying</spells>
     <description>Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.
 
@@ -20114,7 +20073,7 @@ If the target is a Medium or smaller creature, it is grappled (escape DC 14). Un
 	• Cantrips (at will): sacred flame, thaumaturgy
 	• 1st level (3 slots): bane, shield of faith</text>
     </trait>
-    <slots>3</slots>
+    <slots>0,3</slots>
     <spells>sacred flame, thaumaturgy, bane, shield of faith</spells>
     <description>Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.
 
@@ -20452,7 +20411,7 @@ This tether lasts until initiative count 20 on the next round or until the lich 
 	• 8th level (1 slots): dominate monster, power word stun
 	• 9th level (1 slots): power word kill</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>mage hand, prestidigitation, ray of frost, detect magic, magic missile, shield, thunderwave, detect thoughts, invisibility, Melf's acid arrow, mirror image, animate dead, counterspell, dispel magic, fireball, blight, dimension door, cloudkill, scrying, disintegrate, globe of invulnerability, finger of death, plane shift, dominate monster, power word stun, power word kill</spells>
     <description>Liches are the remains of great wizards who embrace undeath as a means of preserving themselves. They further their own power at any cost, having no interest in the affairs of the living except where those affairs interfere with their own. Scheming and insane, they hunger for long-forgotten knowledge and the most terrible secrets. Because the shadow of death doesn't hang over them, they can conceive plans that take years, decades, or centuries to come to fruition.
 
@@ -20898,7 +20857,7 @@ Source:	Monster Manual p. 204,
 	• 2nd level (3 slots): heat metal, spike growth
 	• 3rd level (2 slots): conjure animals (reptiles only), plant growth</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>druidcraft, produce flame, thorn whip, entangle, fog cloud, heat metal, spike growth, conjure animals, plant growth</spells>
     <description>Lizardfolk are primitive reptilian humanoids that lurk in the swamps and jungles of the world. Their hut villages thrive in forbidding grottos, half-sunken ruins, and watery caverns.
 
@@ -20979,7 +20938,7 @@ Source:	Monster Manual p. 205,
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.
 
@@ -22308,7 +22267,7 @@ If this damage reduces the target to 0 hit points, the mind flayer kills the tar
 	• 4th level (3 slots): confusion, hallucinatory terrain
 	• 5th level (2 slots): telekinesis, wall of force</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <slots>0,4,3,3,3,2</slots>
     <spells>detect thoughts, levitate, dominate monster, plane shift, blade ward, dancing lights, mage hand, shocking grasp, detect magic, disguise self, shield, sleep, blur, invisibility, ray of enfeeblement, clairvoyance, lightning bolt, sending, confusion, hallucinatory terrain, telekinesis, wall of force</spells>
     <description>Mind flayers, also called illithids, are the scourge of sentient creatures across countless worlds. Psionic tyrants, slavers, and interdimensional voyagers, they are insidious masterminds that harvest entire races for their own twisted ends. Four tentacles snake from their octopus-like heads, flexing in hungry anticipation when sentient creatures come near.
 
@@ -22844,7 +22803,7 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
 	• 5th level (2 slots): contagion, insect plague
 	• 6th level (1 slots): harm</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>sacred flame, thaumaturgy, command, guiding bolt, shield of faith, hold person, silence, spiritual weapon, animate dead, dispel magic, divination, guardian of faith, contagion, insect plague, harm</spells>
     <description>In the tombs of the ancients, tyrannical monarchs and the high priests of dark gods lie in dreamless rest, waiting for the time when they might reclaim their thrones and reforge their ancient empires. The regalia of their terrible rule still adorns their linen-wrapped bodies, their moldering robes stitched with evil symbols and bronze armor etched with devices of dynasties that fell a thousand years before.
 
@@ -23445,7 +23404,7 @@ A hag coven can have only one hag eye at a time, and creating a new one requires
 
 For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>detect magic, magic missile, plane shift, ray of enfeeblement, sleep, identify, ray of sickness, hold person, locate object, bestow curse, counterspell, lightning bolt, phantasmal killer, polymorph, contact other plane, scrying, eyebite</spells>
     <description>Faces of Evil
 Ancient beings with origins in the Feywild, hags are cankers on the mortal world. Their withered faces are framed by long, frayed hair, horrid moles and warts dot their blotchy skin, and their long, skinny fingers are tipped by claws that can slice open flesh with a touch. Their simple clothes are always tattered and filthy.
@@ -24268,7 +24227,7 @@ Source:	Monster Manual p. 246,
 	• 1st level (4 slots): bless, command
 	• 2nd level (2 slots): augury, spiritual weapon (spear)</text>
     </trait>
-    <slots>0, 4, 2</slots>
+    <slots>0,4,2</slots>
     <spells>guidance, resistance, thaumaturgy, bless, command, augury, spiritual weapon</spells>
     <description>When an orc slays an elf in Gruumsh's name and offers the corpse of its foe as a sacrifice to the god of slaughter, an aspect of the god might appear. This aspect demands an additional sacrifice: one of the orc's eyes, symbolizing the loss Gruumsh suffered at the hands of his greatest enemy, Corellon Larethian.
 
@@ -25622,7 +25581,7 @@ Source:	Monster Manual p. 279,
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
     <description>Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites. A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.
 
@@ -26548,18 +26507,15 @@ Source:	Monster Manual p. 257,
       <attack>Fire Breath||7d6</attack>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 98,
@@ -27462,7 +27418,7 @@ Source:	Monster Manual p. 264,
 	• 2nd level (3 slots): hold person, spiritual weapon (trident)
 	• 3rd level (3 slots): mass healing word, tongues</text>
     </trait>
-    <slots>0, 4, 3, 3</slots>
+    <slots>0,4,3,3</slots>
     <spells>guidance, thaumaturgy, bless, detect magic, guiding bolt, hold person, spiritual weapon, mass healing word, tongues</spells>
     <description>Across fog-shrouded coasts or endless ocean swells, an ominous drone sounded on a conch shell chills the blood of all who hear it. This is the sound of the sahuagin hunting horn-a call to raid and battle. Coastal settlers refer to sahuagin as "sea devils," for sahuagin have no compassion in them, slaughtering the crews of ships and decimating coastal villages.
 
@@ -27863,7 +27819,7 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
 
 For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>identify, ray of sickness, hold person, locate object, bestow curse, counterspell, lightning bolt, phantasmal killer, polymorph, contact other plane, scrying, eyebite</spells>
     <description>Faces of Evil
 Ancient beings with origins in the Feywild, hags are cankers on the mortal world. Their withered faces are framed by long, frayed hair, horrid moles and warts dot their blotchy skin, and their long, skinny fingers are tipped by claws that can slice open flesh with a touch. Their simple clothes are always tattered and filthy.
@@ -28451,18 +28407,15 @@ Source:	Monster Manual p. 138,
       <text>	• Paralyzing Breath. The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 118,
@@ -29168,7 +29121,7 @@ Source:	Monster Manual p. 78,
 	• 4th level (3 slots): blight, dimension door
 	• 5th level (2 slots): dominate person</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <slots>0,4,3,3,3,2</slots>
     <spells>mage hand, minor illusion, ray of frost, charm person, detect magic, sleep, detect thoughts, hold person, lightning bolt, water breathing, blight, dimension door, dominate person</spells>
     <description>Spirit nagas live in gloom and spitefulness, constantly plotting vengeance against creatures that have wronged them-or that they believe have wronged them. Lairing in dismal caverns and ruins, they devote their time to developing new spells and enslaving the mortals with which they surround themselves. A spirit naga likes to charm its foes, drawing them close so that it can sink its poisonous fangs into their flesh.
 
@@ -31844,7 +31797,7 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
 	• 4th level (3 slots): blight, greater invisibility
 	• 5th level (1 slots): dominate person</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <slots>0,4,3,3,3,1</slots>
     <spells>mage hand, prestidigitation, ray of frost, comprehend languages, fog cloud, sleep, detect thoughts, gust of wind, mirror image, animate dead, bestow curse, nondetection, blight, greater invisibility, dominate person</spells>
     <description>Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.
 
@@ -33282,18 +33235,15 @@ Source:	Monster Manual p. 211,
       <attack>Cold Breath||5d8</attack>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 102,
@@ -34226,18 +34176,15 @@ Source:	Monster Manual p. 65,
       <attack>Acid Breath||11d8</attack>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 88,
@@ -34292,18 +34239,15 @@ Source:	Monster Manual p. 88,
       <attack>Lightning Breath||10d10</attack>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 91,
@@ -34362,18 +34306,15 @@ Source:	Monster Manual p. 91,
       <text>	• Sleep Breath. The dragon exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw or fall unconscious for 5 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.</text>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 105,
@@ -34432,18 +34373,15 @@ Source:	Monster Manual p. 105,
       <text>	• Repulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw. On a failed save, the creature is pushed 40 feet away from the dragon.</text>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 108,
@@ -34499,18 +34437,15 @@ Source:	Monster Manual p. 108,
       <text>	• Slowing Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 14 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.</text>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 112,
@@ -34569,18 +34504,15 @@ Source:	Monster Manual p. 112,
       <text>	• Weakening Breath. The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 115</description>
@@ -34635,18 +34567,15 @@ Source:	Monster Manual p. 115</description>
       <attack>Poison Breath||12d6</attack>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 94,
@@ -34702,18 +34631,15 @@ Source:	Monster Manual p. 94,
       <attack>Fire Breath||16d6</attack>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 98,
@@ -34906,18 +34832,15 @@ Source:	Monster Manual p. 258,
       <text>	• Paralyzing Breath. The dragon exhales paralyzing gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 118,
@@ -34973,18 +34896,15 @@ Source:	Monster Manual p. 118,
       <attack>Cold Breath||10d8</attack>
     </action>
     <description>True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
-
-Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
-
-Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
-
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
+	Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+	Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+	True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.
 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Source:	Monster Manual p. 101,
