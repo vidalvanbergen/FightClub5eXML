@@ -1,5 +1,7 @@
 ## CHANGE LOG
 
+* Added `Compendium Compiler` app to utilities. (Win/Mac/Linux)
+
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
@@ -11,7 +13,6 @@
 * Adding `Tenares` content.
 
 ### 2024-##-##
-* Added `Compendium Compiler` app to utilities. (Win/Mac/Linux)
 * Added more magical variant items of base items.
 * Added [2024] weapon proficiencies and dice rolls.
 * Tagged [2024] Spell lists.
@@ -20,6 +21,7 @@
 * @nikjft updated 2024 DDAL collection.
 * @reccho added `John Olsen's: Gloom's Shrooms v1.1` content.
 * Moved old DDAL collection to `Special_Adventurers_League_Forgotten_Realms_2014.xml`.
+* Added `Multiclass features` class features to describe what happens with certain features when multiclassing.
 * Moved Metamagic option's sorcery points to components tag.
 * Other changes and fixes.
 
