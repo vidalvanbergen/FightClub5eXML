@@ -22,6 +22,7 @@
 * @reccho added `John Olsen's: Gloom's Shrooms v1.1` content.
 * Moved old DDAL collection to `Special_Adventurers_League_Forgotten_Realms_2014.xml`.
 * Added `Multiclass features` class features to describe what happens with certain features when multiclassing.
+* Fixed Cleric and Warlock subclass spell lists.
 * Moved Metamagic option's sorcery points to components tag.
 * Other changes and fixes.
 
