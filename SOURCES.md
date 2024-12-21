@@ -340,65 +340,58 @@ Monster example:
   <trait>
     <name>Legendary Resistance (3/Day)</name>
     <recharge>3/Day</recharge>
-    <text>
-If the dragon fails a saving throw, it can choose to succeed instead.</text>
+    <text>If the dragon fails a saving throw, it can choose to succeed instead.</text>
   </trait>
   <action>
     <name>Multiattack</name>
-    <text>
-The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.</text>
+    <text>The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.</text>
   </action>
   <action>
     <name>Bite</name>
-    <text>
-Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 7 (2d6) fire damage.</text>
+    <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 7 (2d6) fire damage.</text>
     <attack>Bite|+14|2d10+8</attack>
   </action>
   <action>
     <name>Claw</name>
-    <text>
-Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage.</text>
+    <text>Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage.</text>
     <attack>Claw|+14|2d6+8</attack>
   </action>
   <action>
     <name>Tail</name>
-    <text>
-Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
+    <text>Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
     <attack>Tail|+14|2d8+8</attack>
   </action>
   <action>
     <name>Frightful Presence</name>
-    <text>
-Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.</text>
+    <text>Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.</text>
   </action>
   <action>
     <name>Fire Breath (Recharge 5-6)</name>
-    <text>
-The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) fire damage on a failed save, or half as much damage on a successful one.</text>
+    <recharge>D5</recharge>
+    <text>The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) fire damage on a failed save, or half as much damage on a successful one.</text>
     <attack>Fire Breath (Recharge 5-6)||18d6</attack>
   </action>
   <legendary>
+    <name>Legendary Actions (3/Turn)</name>
+    <recharge>3/Turn</recharge>
     <text>The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.</text>
   </legendary>
   <legendary>
     <name>Detect</name>
-    <text>
-The dragon makes a Wisdom (Perception) check.</text>
+    <text>The dragon makes a Wisdom (Perception) check.</text>
   </legendary>
   <legendary>
     <name>Tail Attack</name>
-    <text>
-The dragon makes a tail attack.</text>
+    <text>The dragon makes a tail attack.</text>
   </legendary>
   <legendary>
     <name>Wing Attack (Costs 2 Actions)</name>
-    <text>
-The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
+    <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
+    <attack>Wing Attack||2d6+8</attack>
   </legendary>
   <legendary>
     <name>Lair Actions</name>
-    <text>
-On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:
+    <text>On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:
 
 	• Magma erupts from a point on the ground the dragon can see within 120 feet of it, creating a 20-foot-high, 5-foot-radius geyser. Each creature in the geyser's area must make a DC 15 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.
 
@@ -408,8 +401,7 @@ On initiative count 20 (losing initiative ties), the dragon takes a lair action 
   </legendary>
   <legendary>
     <name>Regional Effects</name>
-    <text>
-The region containing a legendary red dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:
+    <text>The region containing a legendary red dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:
 
 	• Small earthquakes are common within 6 miles of the dragon's lair.
 
@@ -481,7 +473,7 @@ Race example:
     <text>Like other elves, sea elves can live to be over 750 years old.</text>
     <text/>
     <text>Source:	Player's Handbook p. 23,</text>
-    <text>		Mordenkainen's Tome of Foes p. 62,<text>
+    <text>		Mordenkainen's Tome of Foes p. 62,</text>
     <text>		Mordenkainen Presents: Monsters of the Multiverse p. 30</text>
   </trait>
   <trait>
@@ -645,7 +637,7 @@ Class example:
       <text>	• Wisdom 13</text>
       <text/>
       <text>Proficiencies Gained:</text>
-      <text>If ranger isn't your initial class, here are the proficiencies you gain when you take your first level as a ranger.</text>
+      <text>When you gain your first level in a class other than your initial class, you gain only some of your new class's starting proficiencies, here are the proficiencies you gain when you take your first level as a ranger.</text>
       <text/>
       <text>	• Armor: light armor, medium armor, shields</text>
       <text>	• Weapons: simple weapons, martial weapons</text>
