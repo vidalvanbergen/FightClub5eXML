@@ -12,7 +12,8 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 * Adding `Tenares` content.
 
-### 2024-##-##
+### 2024-12-31
+* Added `Artificer (UA) [2024]` class.
 * Added more magical variant items of base items.
 * Added [2024] weapon proficiencies and dice rolls.
 * Tagged [2024] Spell lists.
