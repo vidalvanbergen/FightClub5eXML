@@ -50,7 +50,8 @@ After that command has completed, you should see a file called `WotC_only.xml` i
 
 The build-collection files are provided for your convenience to compile all the collections within your Collections directory into compendiums.
 
-```Usage: 
+```
+Usage: 
 
 collections.sh [-2024] [-h/-?] [collection_names...]
 ./build-
@@ -63,7 +64,8 @@ Examples:
   ./build-collections.sh                Compile all collections.
   ./build-collections.sh -2024          Compile all collections and remove '[2024]'.
   ./build-collections.sh collection1.xml  Compile only 'collection1.xml'.
-  ./build-collections.sh -2024 collection1.xml collection2.xml  Compile 'collection1.xml' and 'collection2.xml' and remove '[2024]'.```
+  ./build-collections.sh -2024 collection1.xml collection2.xml  Compile 'collection1.xml' and 'collection2.xml' and remove '[2024]'.
+  ```
 
 For Windows, use `WIN-build-collections.bat  [-2024] [-h/-?] [collection_names...]`.
 
