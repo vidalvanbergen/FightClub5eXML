@@ -16,6 +16,8 @@
 * Fixed some Artificer (UA24) features and items.
 * Name tagged Monk Elemental Disciplines spells.
 * Added counters for 'Spells Known'.
+* @nikjft added extra functionality to the build utilities.
+* @nikjft updated the homebrew legacy classes for 2024 content.
 * Other changes and fixes.
 
 ### 2024-12-31
