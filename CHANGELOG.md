@@ -13,6 +13,7 @@
 * Adding `Tenares` content.
 
 ### 2025-##-##
+* Added Unearthed Arcana: Forgotten Realms Subclasses.
 * Fixed some Artificer (UA24) features and items.
 * Name tagged Monk Elemental Disciplines spells.
 * Added counters for 'Spells Known'.
