@@ -10,7 +10,7 @@
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
-* Adding `Tenares` content.
+* Adding `Tanares` content.
 
 ### 2025-##-##
 * Added Unearthed Arcana: Forgotten Realms Subclasses.
