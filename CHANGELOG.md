@@ -13,7 +13,9 @@
 * Adding `Tanares` content.
 
 ### 2025-##-##
-* Added Unearthed Arcana: Forgotten Realms Subclasses.
+* Added `Unearthed Arcana: Forgotten Realms Subclasses`.
+* Added `Player's Handbook to Tanares` content.
+* u/probablyblocked added a homebrew `Troll` race by StarSailGames.
 * Fixed some Artificer (UA24) features and items.
 * Name tagged Monk Elemental Disciplines spells.
 * Added counters for 'Spells Known'.
