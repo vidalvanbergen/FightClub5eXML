@@ -1,7 +1,5 @@
 ## CHANGE LOG
 
-* Added `Compendium Compiler` app to utilities. (Win/Mac/Linux)
-
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
@@ -12,7 +10,7 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 * Adding `Tanares` content.
 
-### 2025-##-##
+### 2025-##-## Nightly
 * Added `Unearthed Arcana: Forgotten Realms Subclasses`.
 * Added `Player's Handbook to Tanares` content.
 * u/probablyblocked added a homebrew `Troll` race by StarSailGames.
