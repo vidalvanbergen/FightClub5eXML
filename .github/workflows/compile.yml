@@ -30,7 +30,7 @@ jobs:
         run: zip -r compendiums.zip Compendiums/*.xml
 
       - name: Store resulting compendiums as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with: 
           name: compendiums
           path: compendiums.zip
