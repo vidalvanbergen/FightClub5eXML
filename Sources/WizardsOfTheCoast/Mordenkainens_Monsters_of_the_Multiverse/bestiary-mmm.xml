@@ -2971,9 +2971,12 @@ The clockwork doesn't require air, food, drink, or sleep.</text>
 Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
 
 If the target is a creature, it must succeed on a DC 13 Constitution saving throw or suffer one random effect (roll a d6):
-  1–2: Confusion On its next turn, the target must use its action to make one weapon attack against a random creature it can see within 30 feet of it, using whatever weapon it has in hand and moving beforehand if necessary to get in range. If it's holding no weapon, it makes an unarmed strike. If no creature is visible within 30 feet, it takes the Dash action, moving toward the nearest creature.
-  3–4: Paralysis The target is paralyzed until the end of its next turn.
-  5–6: Poison The target takes 13 (3d8) poison damage.</text>
+
+Random Effect:
+d6 | Effect
+1-2 | Confusion: On its next turn, the target must use its action to make one weapon attack against a random creature it can see within 30 feet of it, using whatever weapon it has in hand and moving beforehand if necessary to get in range. If it's holding no weapon, it makes an unarmed strike. If no creature is visible within 30 feet, it takes the Dash action, moving toward the nearest creature.
+3-4 | Paralysis: The target is paralyzed until the end of its next turn.
+5-6 | Poison: The target takes 13 (3d8) poison damage.</text>
       <attack>Bite|+5|1d6 + 3</attack>
     </action>
   </monster>
@@ -3225,7 +3228,7 @@ The conjurer casts one of the following spells, using Intelligence as the spellc
 	• 1/Day each: fly, stinking cloud, web</text>
     </action>
     <action>
-      <name>Benign Transportation (Recharge 4–6) (Bonus Action)</name>
+      <name>Benign Transportation (Recharge 4-6) (Bonus Action)</name>
       <recharge>D4</recharge>
       <text>
 The conjurer teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space that it can see. If it instead chooses a space within range that is occupied by a willing Small or Medium creature, they both teleport, swapping places.</text>
@@ -3958,9 +3961,12 @@ If the target is a creature, it must succeed on a DC 23 Constitution saving thro
       <name>Gaze</name>
       <text>
 Demogorgon turns his magical gaze toward one creature he can see within 120 feet of him. The target must succeed on a DC 23 Wisdom saving throw or suffer one of the following effects (choose one or roll a d6):
-1–2: Beguiling Gaze The target is stunned until the start of Demogorgon's next turn or until Demogorgon is no longer within line of sight.
-3–4: Confusing Gaze The target suffers the effect of the confusion spell without making a saving throw. The effect lasts until the start of Demogorgon's next turn. Demogorgon doesn't need to concentrate on the spell.
-5–6: Hypnotic Gaze The target is charmed by Demogorgon until the start of Demogorgon's next turn. Demogorgon chooses how the charmed target uses its action, reaction, and movement.</text>
+
+Gaze Effect:
+d6 | Effect
+1-2 | Beguiling Gaze: The target is stunned until the start of Demogorgon's next turn or until Demogorgon is no longer within line of sight.
+3-4 | Confusing Gaze: The target suffers the effect of the confusion spell without making a saving throw. The effect lasts until the start of Demogorgon's next turn. Demogorgon doesn't need to concentrate on the spell.
+5-6 | Hypnotic Gaze: The target is charmed by Demogorgon until the start of Demogorgon's next turn. Demogorgon chooses how the charmed target uses its action, reaction, and movement.</text>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -4493,7 +4499,7 @@ Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludge
       <attack>Dazzling Slam|+4|1d6+2+2d6</attack>
     </action>
     <action>
-      <name>Delightful Light (Recharge 5–6) (Bonus Action)</name>
+      <name>Delightful Light (Recharge 5-6) (Bonus Action)</name>
       <recharge>D5</recharge>
       <text>
 The dolphin magically emanates light in a 10-foot radius for a moment. The dolphin and each creature of its choice in that light gain 11 (2d10) temporary hit points.</text>
@@ -4636,7 +4642,7 @@ Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 35 (10d6) poison d
       <attack>Poisonous Touch|+8|10d6</attack>
     </action>
     <action>
-      <name>Web (Spider Form Only; (Recharge 5–6))</name>
+      <name>Web (Spider Form Only; (Recharge 5-6))</name>
       <text>
 Ranged Weapon Attack: +8 to hit, range 30/60 ft., one target. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 15 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</text>
     </action>
@@ -8568,15 +8574,13 @@ The hellfire engine moves up to its speed in a straight line. During this move, 
       <text>
 The hellfire engine uses one of the following options (choose one or roll a d6):
 
-1–2: Bonemelt Sprayer:
+Hellfire Engine Options:
+d6 | Option
+1-2: Bonemelt Sprayer:
 The hellfire engine spews acidic flame in a 60-foot cone. Each creature in the cone must make a DC 20 Dexterity saving throw, taking 11 (2d10) fire damage plus 18 (4d8) acid damage on a failed save, or half as much damage on a successful one. Creatures that fail the saving throw are drenched in burning acid and take 5 (1d10) fire damage plus 9 (2d8) acid damage at the end of their turns. An affected creature or another creature within 5 feet of it can take an action to scrape off the burning fuel.
-
-3–4: Lightning Flail:
-Melee Weapon Attack: +10 to hit, reach 15 ft., one creature. Hit: 18 (3d8 + 5) bludgeoning damage plus 22 (5d8) lightning damage.
-
-Up to three other creatures of the hellfire engine's choice that it can see within 30 feet of the target must each make a DC 20 Dexterity saving throw, taking 22 (5d8) lightning damage on a failed save, or half as much damage on a successful one.
-
-5–6: Thunder Cannon:
+3-4: Lightning Flail:
+Melee Weapon Attack: +10 to hit, reach 15 ft., one creature. Hit: 18 (3d8 + 5) bludgeoning damage plus 22 (5d8) lightning damage. Up to three other creatures of the hellfire engine's choice that it can see within 30 feet of the target must each make a DC 20 Dexterity saving throw, taking 22 (5d8) lightning damage on a failed save, or half as much damage on a successful one.
+5-6: Thunder Cannon:
 The hellfire engine targets a point within 120 feet of it that it can see. Each creature within 30 feet of that point must make a DC 20 Dexterity saving throw, taking 27 (5d10) bludgeoning damage plus 19 (3d12) thunder damage on a failed save, or half as much damage on a successful one.
 
 If the chosen option kills a creature, the creature's soul rises from the River Styx as a lemure in Avernus in 1d4 hours. If the creature isn't revived before then, only a wish spell or killing the lemure and casting true resurrection on the creature's original body can restore it to life. Constructs and devils are immune to this effect.</text>
@@ -9081,7 +9085,7 @@ The illusionist casts one of the following spells, using Intelligence as the spe
 	• 2/Day each: disguise self, invisibility, mage armor, major image, phantasmal force, phantom steed</text>
     </action>
     <action>
-      <name>Displacement (Recharge 5–6) (Bonus Action)</name>
+      <name>Displacement (Recharge 5-6) (Bonus Action)</name>
       <recharge>D5</recharge>
       <text>
 The illusionist projects an illusion that makes the illusionist appear to be standing in a place a few inches from its actual location, causing any creature to have disadvantage on attack rolls against the illusionist. The effect lasts for 1 minute, and it ends early if the illusionist takes damage, if it is incapacitated, or if its speed becomes 0.</text>
@@ -9335,7 +9339,7 @@ The ki-rin makes one Hoof, Horn, or Sacred Fire attack.</text>
     <trait>
       <name>Dragon's Resistance</name>
       <text>
-The kobold has resistance to a type of damage based on the color of dragon that invested it with power (choose or roll a d10): 1–2, acid (black or copper); 3–4, cold (silver or white); 5–6, fire (brass, gold, or red); 7–8, lightning (blue or bronze); 9–10, poison (green).</text>
+The kobold has resistance to a type of damage based on the color of dragon that invested it with power (choose or roll a d10): 1-2, acid (black or copper); 3-4, cold (silver or white); 5-6, fire (brass, gold, or red); 7-8, lightning (blue or bronze); 9-10, poison (green).</text>
     </trait>
     <trait>
       <name>Heart of the Dragon</name>
@@ -10438,7 +10442,7 @@ The target can repeat the saving throw at the end of each of its turns, ending t
       <attack>Claw|+4|2d4+2</attack>
     </action>
     <action>
-      <name>Shadow Teleport (Recharge 5–6) (Bonus Action)</name>
+      <name>Shadow Teleport (Recharge 5-6) (Bonus Action)</name>
       <recharge>D5</recharge>
       <text>
 The meenlock teleports to an unoccupied space within 30 feet of it, provided that both the space it's teleporting from and its destination are in dim light or darkness. The destination need not be within line of sight.</text>
@@ -10979,15 +10983,15 @@ If the morkoth makes a successful saving throw against a spell or a spell attack
       <name>Mouth of Chaos</name>
       <text>
 The giant is immune to the confusion spell.
-  On each of its turns, the giant uses all its movement to move toward the nearest creature or whatever else it might perceive as food. Roll a d10 at the start of each of the giant's turns to determine its action for that turn:
 
-1–3: The giant makes three Fist attacks against one random creature within reach. If no creatures are within reach, the giant flies into a rage and gains advantage on all attack rolls until the end of its next turn.
+On each of its turns, the giant uses all its movement to move toward the nearest creature or whatever else it might perceive as food. Roll a d10 at the start of each of the giant's turns to determine its action for that turn:
 
-4–5: The giant makes one Fist attack against each creature within reach. If no creatures are within reach, the giant makes one Fist attack against itself.
-
-6–7: The giant makes one Bite attack against one random creature within reach. If no other creatures are within reach, its eyes glaze over and it is stunned until the start of its next turn.
-
-8–10: The giant makes one Bite attack and two Fist attacks against one random creature within reach. If no creatures are within reach, the giant flies into a rage and gains advantage on all attack rolls until the end of its next turn.</text>
+Mouth of Chaos:
+d10 | Action
+1-3 | The giant makes three Fist attacks against one random creature within reach. If no creatures are within reach, the giant flies into a rage and gains advantage on all attack rolls until the end of its next turn.
+4-5 | The giant makes one Fist attack against each creature within reach. If no creatures are within reach, the giant makes one Fist attack against itself.
+6-7 | The giant makes one Bite attack against one random creature within reach. If no other creatures are within reach, its eyes glaze over and it is stunned until the start of its next turn.
+8-10 | The giant makes one Bite attack and two Fist attacks against one random creature within reach. If no creatures are within reach, the giant flies into a rage and gains advantage on all attack rolls until the end of its next turn.</text>
     </trait>
     <action>
       <name>Bite</name>
@@ -12031,7 +12035,7 @@ The oinoloth casts one of the following spells, requiring no material components
 The oinoloth teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see.</text>
     </action>
     <action>
-      <name>Bringer of Plagues (Recharge 5–6) (Bonus Action)</name>
+      <name>Bringer of Plagues (Recharge 5-6) (Bonus Action)</name>
       <recharge>D5</recharge>
       <text>
 The oinoloth blights the area in a 30-foot-radius sphere centered on itself. The blight lasts for 24 hours. While the area is blighted, all normal plants there wither and die.
@@ -12902,11 +12906,11 @@ Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludge
       <text>
 The sea spawn uses one of the following options (choose one or roll a d6):
 
-1–2: Bite Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
-3–4: Poison Quills Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 3 (1d6) poison damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute.
-
-The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
-5–6: Tentacle Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage, and the target is grappled (escape DC 12) if it is a Medium or smaller creature.
+Piscine Anatomy:
+d6 | Attack
+1-2 | Bite Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
+3-4 | Poison Quills Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 3 (1d6) poison damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+5-6 | Tentacle Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage, and the target is grappled (escape DC 12) if it is a Medium or smaller creature.
 
 Until this grapple ends, the sea spawn can't use this tentacle on another target.</text>
       <attack>Piscine Anatomy|+4|1d4+2</attack>
@@ -13029,9 +13033,11 @@ Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) pier
 
 The target must succeed on a DC 14 Dexterity saving throw or suffer one of the following effects (choose one or roll a d6):
 
-1–2: Decay The target takes 22 (4d10) necrotic damage.
-3–4: Grapple The target is grappled (escape DC 14) if it is a Medium or smaller creature. Until the grapple ends, the target is restrained, and the shadar-kai can't grapple another target.
-5–6: Topple The target is knocked prone.</text>
+Spiked Chain Effects:
+d6 | Effect
+1-2 | Decay: The target takes 22 (4d10) necrotic damage.
+3-4 | Grapple: The target is grappled (escape DC 14) if it is a Medium or smaller creature. Until the grapple ends, the target is restrained, and the shadar-kai can't grapple another target.
+5-6 | Topple: The target is knocked prone.</text>
       <attack>Spiked Chain|+6|2d6+3</attack>
     </action>
     <action>
@@ -17595,7 +17601,7 @@ Zuggtmoy casts one of the following spells, requiring no material components and
 Zuggtmoy releases spores that burst out in a cloud that fills a 20-foot-radius sphere centered on her, and it lingers for 1 minute. Any creature in the cloud when it appears, or that enters it later, must make a DC 19 Constitution saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy, which lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies and is reanimated as a spore servant if it's a type of creature that can be.</text>
     </action>
     <action>
-      <name>Mind Control Spores (Recharge 5–6) (Bonus Action)</name>
+      <name>Mind Control Spores (Recharge 5-6) (Bonus Action)</name>
       <recharge>D5</recharge>
       <text>
 Zuggtmoy releases spores that burst out in a cloud that fills a 20-foot-radius sphere centered on her, and it lingers for 1 minute. Humanoids and Beasts in the cloud when it appears, or that enter it later, must make a DC 19 Wisdom saving throw. On a successful save, a creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the influence of Zuggtmoy for 24 hours. While infected in this way, the creature is charmed by her and can't be reinfected by these spores.</text>
