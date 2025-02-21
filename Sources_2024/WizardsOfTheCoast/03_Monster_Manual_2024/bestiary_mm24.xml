@@ -6256,7 +6256,8 @@ Source:	Monster Manual 2024 p. 64</description>
     <action>
       <name>Claw</name>
       <text>Melee Attack Roll: +7, reach 5 ft. Hit: 8 (1d8 + 4) Slashing damage plus 7 (2d6) Fire damage.</text>
-      <attack>Claw|+7|1d8+4+2d6</attack>
+      <attack>Claw|+7|1d8+4</attack>
+      <attack>Fire||2d6</attack>
     </action>
     <action>
       <name>Fire Ray</name>
@@ -6267,11 +6268,26 @@ Source:	Monster Manual 2024 p. 64</description>
       <name>Spellcasting</name>
       <text>The cambion casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 14):
 
-2/day each: Alter Self, Command (level 3 version), Detect Magic
-
-1/day each: Dominate Person (level 8 version), Plane Shift (self only)</text>
+	• 2/day each: Alter Self, Command (level 3 version), Detect Magic
+	• 1/day each: Dominate Person (level 8 version), Plane Shift (self only)</text>
     </action>
-    <description>Source:	Monster Manual 2024 p. 65</description>
+    <spells>Alter Self [2024], Command [2024], Detect Magic [2024], Dominate Person [2024], Plane Shift [2024]</spells>
+    <description>Cambions are former mortals corrupted by fiendish power or possessed by insidious forces. While tieflings are free-willed individuals with a hint of fiendish ancestry, cambions are inherently tied to or remade by the wicked magic of the Lower Planes.
+
+Many cambions serve the malevolent forces that are the source of their powers. Others seek to claim the might of whatever created them or to seize otherworldly powers of their own. Among the most notorious of such cambions is Iuz, a villain who became an evil demigod and whose villainous nation threatens the Free City of Greyhawk on Oerth.
+
+Cambions come into being in disparate ways. Roll on or choose a result from the Cambion Origins table to determine the source of a cambion's fiendish might.
+
+Cambion Origins:
+1d6 | The Cambion Gained Its Power After...
+1 | Being possessed by a fiendish being.
+2 | Being resurrected by an evil magic-user.
+3 | Lengthy exposure to a Lower Plane.
+4 | Making a bargain with a Fiend.
+5 | Suffering a god's curse.
+6 | Taking part in fiendish rituals.
+
+Source:	Monster Manual 2024 p. 65</description>
     <environment>any</environment>
   </monster>
   <monster>
@@ -6352,13 +6368,22 @@ Source:	Monster Manual 2024 p. 64</description>
     <action>
       <name>Bite</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Piercing damage plus 3 (1d6) Poison damage.</text>
-      <attack>Bite|+4|2d4+2+1d6</attack>
+      <attack>Bite|+4|2d4+2</attack>
+      <attack>Poison||1d6</attack>
     </action>
     <action>
       <name>Paralyzing Tentacles</name>
       <text>Dexterity Saving Throw: DC 12, one creature the carrion crawler can see within 10 feet. Failure: The target has the Poisoned condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Poisoned, the target has the Paralyzed condition.</text>
     </action>
-    <description>Source:	Monster Manual 2024 p. 66</description>
+    <description>Ravenous corpse eaters, carrion crawlers gravitate toward places of slaughter and decay. In such charnel environs, they feast on the dead with no qualms about their meals' origins or freshness.
+
+Carrion crawlers have segmented bodies like gigantic cutworms. From beneath their multipart maws protrude eight thin, lashing tentacles. Creatures struck by these tentacles risk being paralyzed and consumed.
+
+Carrion crawlers scour sewers, battlefields, necropolises, and fetid wildernesses for corpses, clinging to ceilings to ambush smaller prey and to avoid competing hunters. They're drawn to light and the scent of blood, recognizing them as signs of food.
+
+These scavengers avoid ingesting inorganic material. Crypts with funeral armors sucked clean of their corpses and eerily pristine catacombs are signs of infestation by carrion crawlers.
+
+Source:	Monster Manual 2024 p. 66</description>
     <environment>underdark, urban</environment>
   </monster>
   <monster>
@@ -6397,7 +6422,7 @@ Source:	Monster Manual 2024 p. 64</description>
     <action>
       <name>Scratch</name>
       <text>Melee Attack Roll: +4, reach 5 ft. Hit: 1 Slashing damage.</text>
-      <attack>Scratch|+4|</attack>
+      <attack>Scratch|+4|1</attack>
     </action>
     <description>Source:	Monster Manual 2024 p. 351,
 		Player's Handbook 2024 p. 347</description>
@@ -6457,10 +6482,15 @@ Individual: The monster doesn't have a treasure hoard, but it might keep monetar
     </action>
     <action>
       <name>Trampling Charge (Recharge 5-6) (Bonus Action)</name>
-      <text>The centaur moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. Strength Saving Throw: DC 14. Failure: 7 (1d6 + 4) Bludgeoning damage, and the target has the Prone condition.</text>
       <recharge>D5</recharge>
+      <text>The centaur moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. Strength Saving Throw: DC 14. Failure: 7 (1d6 + 4) Bludgeoning damage, and the target has the Prone condition.</text>
+      <attack>Trampling Charge||1d6+4</attack>
     </action>
-    <description>Source:	Monster Manual 2024 p. 67</description>
+    <description>Centaurs are defenders of forests, plains, and sites of primeval power. With upper bodies like humans' and the lower bodies of horses, centaurs charge into battle against those who would harm their allies.
+
+Centaur troopers are knight-like guardians. Many are suspicious of non-Fey creatures.
+
+Source:	Monster Manual 2024 p. 67</description>
     <environment>forest, grassland, planar (feywild)</environment>
   </monster>
   <monster>
@@ -6504,7 +6534,8 @@ Individual: The monster doesn't have a treasure hoard, but it might keep monetar
     <action>
       <name>Forest Staff</name>
       <text>Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Bludgeoning damage plus 14 (4d6) Poison damage.</text>
-      <attack>Forest Staff|+7|2d8+4+4d6</attack>
+      <attack>Forest Staff|+7|2d8+4</attack>
+      <attack>Poison||4d6</attack>
     </action>
     <action>
       <name>Sun Ray</name>
@@ -6515,14 +6546,20 @@ Individual: The monster doesn't have a treasure hoard, but it might keep monetar
       <name>Spellcasting</name>
       <text>The centaur casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 15):
 
-At will: Druidcraft, Speak with Animals</text>
+	• At will: Druidcraft, Speak with Animals</text>
     </action>
     <action>
       <name>Entangling Trail (Recharge 5-6) (Bonus Action)</name>
-      <text>The centaur moves up to its Speed without provoking Opportunity Attacks. Each creature within 5 feet of the centaur as it moves is targeted once by the following effect. Strength Saving Throw: DC 15. Failure: 11 (2d6 + 4) Bludgeoning damage, and the target has the Restrained condition until the end of its next turn.</text>
       <recharge>D5</recharge>
+      <text>The centaur moves up to its Speed without provoking Opportunity Attacks. Each creature within 5 feet of the centaur as it moves is targeted once by the following effect. Strength Saving Throw: DC 15. Failure: 11 (2d6 + 4) Bludgeoning damage, and the target has the Restrained condition until the end of its next turn.</text>
+      <attack>Entangling Trail||2d6+4</attack>
     </action>
-    <description>Source:	Monster Manual 2024 p. 67</description>
+    <spells>Druidcraft [2024], Speak With Animals [2024]</spells>
+    <description>Centaurs are defenders of forests, plains, and sites of primeval power. With upper bodies like humans' and the lower bodies of horses, centaurs charge into battle against those who would harm their allies.
+
+Centaur wardens often lead groups of centaur troopers and act as intermediaries between Fey creatures and trespassers into their territories.
+
+Source:	Monster Manual 2024 p. 67</description>
     <environment>forest, grassland, planar (feywild)</environment>
   </monster>
   <monster>
@@ -6578,12 +6615,24 @@ At will: Druidcraft, Speak with Animals</text>
     <action>
       <name>Conjure Infernal Chain</name>
       <text>The devil conjures a fiery chain to bind a creature. Dexterity Saving Throw: DC 15, one creature the devil can see within 60 feet. Failure: 9 (2d4 + 4) Fire damage, and the target has the Restrained condition until the end of the devil's next turn, at which point the chain disappears. If the target is Large or smaller, the devil moves the target up to 30 feet straight toward itself. Success: The chain disappears.</text>
+      <attack>Conjure Infernal Chain||2d4+2</attack>
     </action>
     <reaction>
       <name>Unnerving Gaze</name>
       <text>Trigger: A creature the devil can see starts its turn within 30 feet of the devil and can see the devil. Response: dWisdom Saving Throw: DC 15, the triggering creature. Failure: The target has the Frightened condition until the end of its turn. Success: The target is immune to this devil's Unnerving Gaze for 24 hours.</text>
     </reaction>
-    <description>Source:	Monster Manual 2024 p. 68</description>
+    <description>Also known as kytons, chain devils consider themselves morbid artisans who use deception, menace, and vicious metal to coerce prisoners into betraying themselves. Many serve powerful devils, wrenching secrets from imprisoned souls using deadly, animate chains. Left to their own devices, chain devils encourage ruthless individuals to pursue forbidden magic, leading their pupils down paths to the Nine Hells.
+
+Along with psychological threats and physical harm, a chain devil uses its unnerving gaze to make its victims perceive their worst fear rather than the monster. Roll on or choose a result from the Chain Devil Masks table to inspire a chain devil's fearful appearance.
+
+Chain Devil Masks:
+1d4 | To a Viewer, the Chain Devil Looks Like...
+1 | The corpse of a loved one.
+2 | A disapproving deity.
+3 | A harsh instructor or superior.
+4 | The viewer at their lowest point in life.
+
+Source:	Monster Manual 2024 p. 68</description>
     <environment>planar (nine hells)</environment>
   </monster>
   <monster>
