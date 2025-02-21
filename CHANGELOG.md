@@ -11,6 +11,7 @@
 * Adding `Tanares` content.
 
 ### 2025-##-## Nightly
+* Added `Monster Manual 2024`.
 * Added `Unearthed Arcana: Forgotten Realms Subclasses`.
 * Added `Player's Handbook to Tanares` content.
 * u/probablyblocked added a homebrew `Troll` race by StarSailGames.
