@@ -12,6 +12,9 @@
 
 ### 2025-##-## Nightly
 * Added `Monster Manual 2024`.
+  * Added monster descriptions.
+  * Added monster lair actions.
+  * Moved PHB24 monsters that are in MM24.
 * Added `Unearthed Arcana: Forgotten Realms Subclasses`.
 * Added `Player's Handbook to Tanares` content.
 * u/probablyblocked added a homebrew `Troll` race by StarSailGames.
