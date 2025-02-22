@@ -2,7 +2,7 @@
 
 # Function to remove '[2024]' from the compendium
 remove_2024() {
-  sed -i 's/\(\w\) \[2024\]\([,<]\)/\1\2/g' "$1"
+sed -i 's/ \[2024\]//g' "$1"
 }
 
 # Function to display help text
