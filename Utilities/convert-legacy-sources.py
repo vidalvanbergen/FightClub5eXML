@@ -22,7 +22,7 @@ def normalize_text(text):
 current_dir = os.getcwd()
 master_dirs = [
     os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/01_Players_Handbook_2024"),
-    os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/02_Dungeon_Masters_Guide_2024")
+    os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/02_Dungeon_Masters_Guide_2024"),
     os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/03_Monster_Manual_2024")
 
 ]
