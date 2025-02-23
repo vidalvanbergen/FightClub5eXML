@@ -16,13 +16,15 @@ def normalize_text(text):
         return ""
     decoded_text = html.unescape(text)
     normalized = unicodedata.normalize("NFD", decoded_text).encode("ascii", "ignore").decode("utf-8")
-    return re.sub(r'\s+', ' ', normalized).strip().lower()
+    return re.sub(r'[^a-z0-9\[\]]', ' ', normalized).strip().lower()
 
 # Paths to directories
 current_dir = os.getcwd()
 master_dirs = [
     os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/01_Players_Handbook_2024"),
     os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/02_Dungeon_Masters_Guide_2024")
+    os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/03_Monster_Manual_2024")
+
 ]
 legacy_dir = os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/Homebrew_2014_legacy")
 
