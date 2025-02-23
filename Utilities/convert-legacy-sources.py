@@ -27,7 +27,7 @@ master_dirs = [
 
 ]
 #legacy_dir = os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/WotC_2014_legacy")
-legacy_dir = os.path.join(current_dir, "../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/03_Monster_Manual")
+legacy_dir = os.path.join(current_dir, "../Sources_2024/Homebrew/WotC_2014_legacy")
 
 # Read master files into memory
 master_data = {}
