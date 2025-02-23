@@ -16,17 +16,18 @@ def normalize_text(text):
         return ""
     decoded_text = html.unescape(text)
     normalized = unicodedata.normalize("NFD", decoded_text).encode("ascii", "ignore").decode("utf-8")
-    return re.sub(r'[^a-z0-9\[\]]', ' ', normalized).strip().lower()
+    return re.sub(r'\s+', ' ', normalized).strip().lower()
 
 # Paths to directories
 current_dir = os.getcwd()
 master_dirs = [
-    os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/01_Players_Handbook_2024"),
-    os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/02_Dungeon_Masters_Guide_2024"),
-    os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/03_Monster_Manual_2024")
+    #os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/01_Players_Handbook_2024"),
+    #os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/02_Dungeon_Masters_Guide_2024"),
+    os.path.join(current_dir, "../Sources_2024/WizardsOfTheCoast/03_Monster_Manual_2024")
 
 ]
-legacy_dir = os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/Homebrew_2014_legacy")
+#legacy_dir = os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/WotC_2014_legacy")
+legacy_dir = os.path.join(current_dir, "../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/03_Monster_Manual")
 
 # Read master files into memory
 master_data = {}
@@ -210,9 +211,9 @@ for root, _, files in os.walk(legacy_dir):
 
 
 # Build compendium
-result = subprocess.run("xsltproc -o ../Compendiums/WotC_only_2024+Legacy.xml merge.xslt ../Collections/WotC_only_2024+Legacy.xml", shell=True, capture_output=True, text=True)
+#result = subprocess.run("xsltproc -o ../Compendiums/WotC_only_2024+Legacy.xml merge.xslt ../Collections/WotC_only_2024+Legacy.xml", shell=True, capture_output=True, text=True)
 
 # Print output
-print("STDOUT:", result.stdout)
-print("STDERR:", result.stderr)
-print("Return Code:", result.returncode)
+#print("STDOUT:", result.stdout)
+#print("STDERR:", result.stderr)
+#print("Return Code:", result.returncode)
