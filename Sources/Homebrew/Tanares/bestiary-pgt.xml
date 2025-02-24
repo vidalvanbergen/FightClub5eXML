@@ -688,7 +688,7 @@ Source:	Player's Guide to Tanares p. 165 (Homebrew)</description>
     <ancestry>Aberrant Arachnid Shape</ancestry>
     <size>M</size>
     <type>Aberration</type>
-    <alignment>Neutral</alignment>
+    <alignment>Neutral Evil</alignment>
     <ac>14 (natural armor)</ac>
     <hp>15 (2d10+2)</hp>
     <speed>30 ft., climb 30 ft.</speed>
@@ -1144,16 +1144,16 @@ Source:	Player's Guide to Tanares p. 169 (Homebrew)</description>
     <hp>76 (9d12+18)</hp>
     <speed>30 ft., climb 30 ft.</speed>
     <str>14</str>
-    <dex>20</dex>
+    <dex>21</dex>
     <con>15</con>
-    <int>11</int>
-    <wis>13</wis>
-    <cha>16</cha>
-    <save>Dex +7, Cha +5</save>
-    <skill>Stealth +9</skill>
-    <passive>11</passive>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>17</cha>
+    <save>Dex +8, Cha +6</save>
+    <skill>Stealth +11</skill>
+    <passive>12</passive>
     <languages>Common, Deep Speech</languages>
-    <cr>4</cr>
+    <cr>6</cr>
     <vulnerable/>
     <resist>psychic</resist>
     <immune>poison</immune>
@@ -1161,7 +1161,7 @@ Source:	Player's Guide to Tanares p. 169 (Homebrew)</description>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
-      <text>+2</text>
+      <text>+3</text>
     </trait>
     <trait>
       <name>Prowlers</name>
@@ -1217,9 +1217,1091 @@ All Arachne monsters have this feature, but the madwalker cannot use it.</text>
       <attack>Fire||1d6</attack>
     </action>
     <spells>Charm Person, Mage Hand, Poison Spray, Sleep, Fear, Invisibility, See Invisibility, Dimensional Door</spells>
-    <description>Madwalker 11th Level
+    <description>Madwalker 13th Level
 
 Source:	Player's Guide to Tanares p. 169 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Arachne Commander</name>
+    <sortname>Aberrant Arachnid Shape, Arache Commander</sortname>
+    <ancestry>Aberrant Arachnid Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>127 (15d12+30)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <str>14</str>
+    <dex>21</dex>
+    <con>15</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>18</cha>
+    <save>Dex +8, Cha +7</save>
+    <skill>Stealth +11, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Common, Deep Speech</languages>
+    <cr>7</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Prowlers</name>
+      <text>The creature has advantage on Dexterity (Stealth) checks made to hide.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Web Sense</name>
+      <text>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</text>
+    </trait>
+    <trait>
+      <name>Web Walker</name>
+      <text>The creature ignores movement restrictions caused by webbing.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The arachne commander makes three Poisonous Claw attacks.</text>
+    </action>
+    <action>
+      <name>Poisonous Claw</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) poison damage. A hit creature must make a DC 15 Constitution saving throw or be poisoned for 1 minute.</text>
+      <attack>Poisonous Claw|+8|1d10+5</attack>
+      <attack>Poison||2d6</attack>
+    </action>
+    <action>
+      <name>Poison Jet</name>
+      <text>The arachne commander sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</text>
+      <attack>Poison Jet||10d8</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The Arachne casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks):
+
+	• At will: charm person, mage hand, poison spray
+	• 3/day each: fear, invisibility, see invisibility, sleep
+	• 1/day each: dimensional door, dominate person, greater invisibility</text>
+    </action>
+    <action>
+      <name>Web (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one target. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</text>
+      <attack>Web|+8|0</attack>
+    </action>
+    <action>
+      <name>Web Spinning</name>
+      <text>The creature can spin webs to create difficult terrain or to restrain creatures. It can create webs to cover a 20-foot square for every 10 minutes of work. The terrain becomes difficult, and all creatures that touch the web must succeed on a DC 12 Strength saving throw or become restrained. The webbing can also be attacked and destroyed (each 20-foot square section has AC 10, hp 15, vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage; if it takes fire damage, all linked web sections take the same damage on the following round and all creatures in the area take 1d6 fire damage).
+
+Arachne Special Powers:
+All Arachne monsters have this feature, but the madwalker cannot use it.</text>
+      <attack>Fire||1d6</attack>
+    </action>
+    <spells>Charm Person, Mage Hand, Poison Spray, Fear, Invisibility, See Invisibility, Sleep, Dimensional Door, Dominate Person, Greater Invisibility</spells>
+    <description>Madwalker 15th Level
+
+Source:	Player's Guide to Tanares p. 170 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Arachne Overlord</name>
+    <sortname>Aberrant Arachnid Shape, Arache Overlord</sortname>
+    <ancestry>Aberrant Arachnid Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>144 (17d12+34)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <str>14</str>
+    <dex>21</dex>
+    <con>15</con>
+    <int>13</int>
+    <wis>15</wis>
+    <cha>19</cha>
+    <save>Dex +8, Cha +7</save>
+    <skill>Stealth +11, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Common, Deep Speech</languages>
+    <cr>8</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Prowlers</name>
+      <text>The creature has advantage on Dexterity (Stealth) checks made to hide.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Web Sense</name>
+      <text>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</text>
+    </trait>
+    <trait>
+      <name>Web Walker</name>
+      <text>The creature ignores movement restrictions caused by webbing.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The arachne overlord makes four Poisonous Claw attacks</text>
+    </action>
+    <action>
+      <name>Poisonous Claw</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) poison damage. A creature hit by the attack must make a Constitution saving throw with a DC of 15 or become poisoned for 1 minute.</text>
+      <attack>Poisonous Claw|+8|1d10+5</attack>
+      <attack>Poison||2d6</attack>
+    </action>
+    <action>
+      <name>Poison Jet</name>
+      <text>The arachne overlord sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</text>
+      <attack>Poison Jet||10d8</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The arachne overlord casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks):
+
+	• At will: charm person, mage hand, poison spray
+	• 3/day each: fear, invisibility, see invisibility, sleep
+	• 1/day each: dimensional door, dominate person, greater invisibility</text>
+    </action>
+    <action>
+      <name>Web (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one target. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</text>
+      <attack>Web|+8|0</attack>
+    </action>
+    <action>
+      <name>Web Spinning</name>
+      <text>The creature can spin webs to create difficult terrain or to restrain creatures. It can create webs to cover a 20-foot square for every 10 minutes of work. The terrain becomes difficult, and all creatures that touch the web must succeed on a DC 12 Strength saving throw or become restrained. The webbing can also be attacked and destroyed (each 20-foot square section has AC 10, hp 15, vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage; if it takes fire damage, all linked web sections take the same damage on the following round and all creatures in the area take 1d6 fire damage).
+
+Arachne Special Powers:
+All Arachne monsters have this feature, but the madwalker cannot use it.</text>
+      <attack>Fire||1d6</attack>
+    </action>
+    <spells>Charm Person, Mage Hand, Poison Spray, Fear, Invisibility, See Invisibility, Sleep, Dimensional Door, Dominate Person, Greater Invisibility</spells>
+    <description>Madwalker 15th Level
+
+Source:	Player's Guide to Tanares p. 170 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Arachne Overlord</name>
+    <sortname>Aberrant Arachnid Shape, Arache Overlord</sortname>
+    <ancestry>Aberrant Arachnid Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>144 (17d12+34)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <str>14</str>
+    <dex>21</dex>
+    <con>15</con>
+    <int>13</int>
+    <wis>15</wis>
+    <cha>19</cha>
+    <save>Dex +8, Cha +7</save>
+    <skill>Stealth +11, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Common, Deep Speech</languages>
+    <cr>8</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Prowlers</name>
+      <text>The creature has advantage on Dexterity (Stealth) checks made to hide.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Web Sense</name>
+      <text>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</text>
+    </trait>
+    <trait>
+      <name>Web Walker</name>
+      <text>The creature ignores movement restrictions caused by webbing.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The arachne overlord makes four Poisonous Claw attacks</text>
+    </action>
+    <action>
+      <name>Poisonous Claw</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) poison damage. A creature hit by the attack must make a Constitution saving throw with a DC of 15 or become poisoned for 1 minute.</text>
+      <attack>Poisonous Claw|+8|1d10+5</attack>
+      <attack>Poison||2d6</attack>
+    </action>
+    <action>
+      <name>Poison Jet</name>
+      <text>The arachne overlord sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</text>
+      <attack>Poison Jet||10d8</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The arachne overlord casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks):
+
+	• At will: charm person, mage hand, poison spray
+	• 3/day each: fear, invisibility, see invisibility, sleep
+	• 1/day each: dimensional door, dominate person, greater invisibility</text>
+    </action>
+    <action>
+      <name>Web (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Ranged Weapon Attack: +8 to hit, range 30/60 ft., one target. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 13 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</text>
+      <attack>Web|+8|0</attack>
+    </action>
+    <action>
+      <name>Web Spinning</name>
+      <text>The creature can spin webs to create difficult terrain or to restrain creatures. It can create webs to cover a 20-foot square for every 10 minutes of work. The terrain becomes difficult, and all creatures that touch the web must succeed on a DC 12 Strength saving throw or become restrained. The webbing can also be attacked and destroyed (each 20-foot square section has AC 10, hp 15, vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage; if it takes fire damage, all linked web sections take the same damage on the following round and all creatures in the area take 1d6 fire damage).
+
+Arachne Special Powers:
+All Arachne monsters have this feature, but the madwalker cannot use it.</text>
+      <attack>Fire||1d6</attack>
+    </action>
+    <spells>Charm Person, Mage Hand, Poison Spray, Fear, Invisibility, See Invisibility, Sleep, Dimensional Door, Dominate Person, Greater Invisibility</spells>
+    <description>Madwalker 17th Level
+
+Source:	Player's Guide to Tanares p. 170 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Arachne Matriarch</name>
+    <sortname>Aberrant Arachnid Shape, Arache Matriarch</sortname>
+    <ancestry>Aberrant Arachnid Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>19 (natural armor)</ac>
+    <hp>180 (19d12+57)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <str>17</str>
+    <dex>22</dex>
+    <con>17</con>
+    <int>14</int>
+    <wis>16</wis>
+    <cha>20</cha>
+    <save>Dex +10, Cha +9</save>
+    <skill>Stealth +14, Perception +9</skill>
+    <passive>21</passive>
+    <languages>Common, Deep Speech</languages>
+    <cr>10</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Prowlers</name>
+      <text>The creature has advantage on Dexterity (Stealth) checks made to hide.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <trait>
+      <name>Web Sense</name>
+      <text>While in contact with a web, the creature knows the exact location of any other creature in contact with the same web.</text>
+    </trait>
+    <trait>
+      <name>Web Walker</name>
+      <text>The creature ignores movement restrictions caused by webbing.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The arachne matriarch makes four Poisonous Claw attacks.</text>
+    </action>
+    <action>
+      <name>Poisonous Claw</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 6) slashing damage plus 7 (2d6) poison damage. A hit creature must make a DC 17 Constitution saving throw or become poisoned for 1 minute.</text>
+      <attack>Poisonous Claw|+10|1d10+6</attack>
+      <attack>Poison||2d6</attack>
+    </action>
+    <action>
+      <name>Poison Spray</name>
+      <text>The arachne matriarch sprays magic poison gas in a 40-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 45 (10d8) poison damage and being poisoned on a failed save, or half as much damage and not getting poisoned on a successful one. At the end of each of its turns, a poisoned target can make a Constitution saving throw, ending the effect on a success.</text>
+      <attack>Poison Spray||10d8</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The arachne matriarch casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks):
+
+	• At will: charm person, mage hand, poison spray
+	• 3/day each: dispel magic, sleep, fear, invisibility, see invisibility
+	• 1/day each: dimensional door, dominate person, greater invisibility, mass suggestion, teleportation circle</text>
+    </action>
+    <action>
+      <name>Web (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Ranged Weapon Attack: +9 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 15 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 10; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</text>
+      <attack>Web|+9|0</attack>
+    </action>
+    <action>
+      <name>Web Spinning</name>
+      <text>The creature can spin webs to create difficult terrain or to restrain creatures. It can create webs to cover a 20-foot square for every 10 minutes of work. The terrain becomes difficult, and all creatures that touch the web must succeed on a DC 12 Strength saving throw or become restrained. The webbing can also be attacked and destroyed (each 20-foot square section has AC 10, hp 15, vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage; if it takes fire damage, all linked web sections take the same damage on the following round and all creatures in the area take 1d6 fire damage).
+
+Arachne Special Powers:
+All Arachne monsters have this feature, but the madwalker cannot use it.</text>
+      <attack>Fire||1d6</attack>
+    </action>
+    <spells>Charm Person, Mage Hand, Poison Spray, Dispel Magic, Sleep, Fear, Invisibility, See Invisibility, Dimensional Door, Dominate Person, Greater Invisibility, Mass Suggestion, Teleportation Circle</spells>
+    <description>Madwalker 19th Level
+
+Source:	Player's Guide to Tanares p. 171 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Lurker</name>
+    <sortname>Nightmare Augury Shape, Nightmare Lurker</sortname>
+    <ancestry>Nightmare Augury Shape</ancestry>
+    <size>L</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>17 (2d10+6)</hp>
+    <speed>0 ft., fly 20 ft. (hover)</speed>
+    <str>14</str>
+    <dex>12</dex>
+    <con>16</con>
+    <int>12</int>
+    <wis>17</wis>
+    <cha>11</cha>
+    <save>Int +3, Wis +6</save>
+    <skill>Perception +8</skill>
+    <passive>18</passive>
+    <languages>Common, Deep Speech, Telepathy 60 ft.</languages>
+    <cr>1/2</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 90 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Future Omen (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</text>
+    </trait>
+    <trait>
+      <name>Sixth Sense</name>
+      <text>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</text>
+    </trait>
+    <trait>
+      <name>Precognition</name>
+      <text>The creature can see into the future and react to it, never being surprised.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nightmare lurker makes two Force Blast attacks.</text>
+    </action>
+    <action>
+      <name>Force Blast</name>
+      <text>Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 6 (1d6 + 3) force damage.</text>
+      <attack>Force Blast|+6|1d6+3</attack>
+    </action>
+    <reaction>
+      <name>Future Guard (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</text>
+    </reaction>
+    <description>Madwalker 2nd Level
+
+Source:	Player's Guide to Tanares p. 172 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Keeper</name>
+    <sortname>Nightmare Augury Shape, Nightmare Keeper</sortname>
+    <ancestry>Nightmare Augury Shape</ancestry>
+    <size>L</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>25 (3d10+9)</hp>
+    <speed>0 ft., fly 20 ft. (hover)</speed>
+    <str>14</str>
+    <dex>12</dex>
+    <con>16</con>
+    <int>12</int>
+    <wis>18</wis>
+    <cha>13</cha>
+    <save>Int +3, Wis +6</save>
+    <skill>Perception +8</skill>
+    <passive>18</passive>
+    <languages>Common, Deep Speech, Telepathy 60 ft.</languages>
+    <cr>1</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 90 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Future Omen (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</text>
+    </trait>
+    <trait>
+      <name>Sixth Sense</name>
+      <text>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</text>
+    </trait>
+    <trait>
+      <name>Precognition</name>
+      <text>The creature can see into the future and react to it, never being surprised.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nightmare keeper makes two Force Blast attacks.</text>
+    </action>
+    <action>
+      <name>Force Blast</name>
+      <text>Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 7 (1d6 + 4) force damage.</text>
+      <attack>Force Blast|+6|1d6+4</attack>
+    </action>
+    <reaction>
+      <name>Future Guard (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</text>
+    </reaction>
+    <description>Madwalker 3rd Level
+
+Source:	Player's Guide to Tanares p. 172 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Guardian</name>
+    <sortname>Nightmare Augury Shape, Nightmare Guardian</sortname>
+    <ancestry>Nightmare Augury Shape</ancestry>
+    <size>L</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>25 (3d10+9)</hp>
+    <speed>0 ft., fly 20 ft. (hover)</speed>
+    <str>14</str>
+    <dex>12</dex>
+    <con>16</con>
+    <int>13</int>
+    <wis>19</wis>
+    <cha>13</cha>
+    <save>Int +3, Wis +6</save>
+    <skill>Perception +8</skill>
+    <passive>18</passive>
+    <languages>Common, Deep Speech, Telepathy 60 ft.</languages>
+    <cr>2</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 90 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Future Omen (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</text>
+    </trait>
+    <trait>
+      <name>Sixth Sense</name>
+      <text>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</text>
+    </trait>
+    <trait>
+      <name>Precognition</name>
+      <text>The creature can see into the future and react to it, never being surprised.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nightmare guardian makes two Frightening Force Blast attacks.</text>
+    </action>
+    <action>
+      <name>Frightening Force Blast</name>
+      <text>Ranged Spell Attack: +6 to hit, range 60 ft., one target. Hit: 7 (1d6 + 4) force damage and the target must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Frightening Force Blast|+6|1d6+4</attack>
+    </action>
+    <reaction>
+      <name>Future Guard (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</text>
+    </reaction>
+    <description>Madwalker 5th Level
+
+Source:	Player's Guide to Tanares p. 173 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Warrior</name>
+    <sortname>Nightmare Augury Shape, Nightmare Warrior</sortname>
+    <ancestry>Nightmare Augury Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>66 (7d12+21)</hp>
+    <speed>0 ft., fly 30 ft. (hover)</speed>
+    <str>16</str>
+    <dex>12</dex>
+    <con>17</con>
+    <int>14</int>
+    <wis>20</wis>
+    <cha>13</cha>
+    <save>Int +4, Wis +6</save>
+    <skill>Perception +9</skill>
+    <passive>19</passive>
+    <languages>Common, Deep Speech, Telepathy 60 ft.</languages>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 90 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Future Omen (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</text>
+    </trait>
+    <trait>
+      <name>Sixth Sense</name>
+      <text>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</text>
+    </trait>
+    <trait>
+      <name>Precognition</name>
+      <text>The creature can see into the future and react to it, never being surprised.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nightmare warrior makes two Frightening Force Blast attacks.</text>
+    </action>
+    <action>
+      <name>Frightening Force Blast</name>
+      <text>Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 9 (1d8 + 5) force damage and the target must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Frightening Force Blast|+7|1d8+5</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The nightmare warrior casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks):
+
+	• At will: clairvoyance, command, comprehend languages
+	• 3/day each: levitate, suggestion
+	• 1/day each: counterspell</text>
+    </action>
+    <reaction>
+      <name>Future Guard (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</text>
+    </reaction>
+    <spells>Clairvoyance, Command, Comprehend Languages, Levitate, Suggestion, Counterspell</spells>
+    <description>Madwalker 7th Level
+
+Source:	Player's Guide to Tanares p. 173 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Overseer</name>
+    <sortname>Nightmare Augury Shape, Nightmare Overseer</sortname>
+    <ancestry>Nightmare Augury Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>85 (9d12+27)</hp>
+    <speed>0 ft., fly 30 ft. (hover)</speed>
+    <str>16</str>
+    <dex>12</dex>
+    <con>17</con>
+    <int>14</int>
+    <wis>20</wis>
+    <cha>14</cha>
+    <save>Int +4, Wis +7</save>
+    <skill>Perception +9</skill>
+    <passive>19</passive>
+    <languages>Common, Deep Speech, Telepathy 60 ft.</languages>
+    <cr>4</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 90 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Future Omen (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</text>
+    </trait>
+    <trait>
+      <name>Sixth Sense</name>
+      <text>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</text>
+    </trait>
+    <trait>
+      <name>Precognition</name>
+      <text>The creature can see into the future and react to it, never being surprised.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nightmare overseer makes three Frightening Force Blast attacks.</text>
+    </action>
+    <action>
+      <name>Frightening Force Blast</name>
+      <text>Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 9 (1d8 + 5) force damage and the target must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Frightening Force Blast|+7|1d8+5</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The nightmare overseer casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks):
+
+	• At will: clairvoyance, command, comprehend languages
+	• 3/day each: levitate, suggestion
+	• 1/day each: counterspell</text>
+    </action>
+    <reaction>
+      <name>Future Guard (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</text>
+    </reaction>
+    <spells>Clairvoyance, Command, Comprehend Languages, Levitate, Suggestion, Counterspell</spells>
+    <description>Madwalker 9th Level
+
+Source:	Player's Guide to Tanares p. 174 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Eye</name>
+    <sortname>Nightmare Augury Shape, Nightmare Eye</sortname>
+    <ancestry>Nightmare Augury Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>115 (11d12+44)</hp>
+    <speed>0 ft., fly 30 ft. (hover)</speed>
+    <str>16</str>
+    <dex>12</dex>
+    <con>18</con>
+    <int>15</int>
+    <wis>21</wis>
+    <cha>14</cha>
+    <save>Int +5, Wis +8</save>
+    <skill>Perception +11</skill>
+    <passive>21</passive>
+    <languages>Common, Deep Speech, Telepathy 60 ft.</languages>
+    <cr>5</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 90 ft., truesight 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Future Omen (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</text>
+    </trait>
+    <trait>
+      <name>Sixth Sense</name>
+      <text>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</text>
+    </trait>
+    <trait>
+      <name>Precognition</name>
+      <text>The creature can see into the future and react to it, never being surprised.</text>
+    </trait>
+    <trait>
+      <name>Prediction Gaze (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>When the nightmare eye locks eyes with a creature, as a free action, it can see the creature's immediate future. The creature must make a DC 16 Wisdom saving throw. On a failure, for one minute, the creature has disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare eye.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nightmare eye makes three Force Blast attacks.</text>
+    </action>
+    <action>
+      <name>Frightening Force Blast</name>
+      <text>Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 9 (1d8 + 5) force damage and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Frightening Force Blast|+8|1d8+5</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The nightmare eye casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 16, +8 to hit with spell attacks):
+
+	• At will: clairvoyance, command, comprehend languages, levitate
+	• 3/day each: counterspell, suggestion
+	• 1/day each: arcane eye, locate creature</text>
+    </action>
+    <reaction>
+      <name>Future Guard (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</text>
+    </reaction>
+    <spells>Clairvoyance, Command, Comprehend Languages, Levitate, Counterspell, Suggestion, Arcane Eye, Locate Creature</spells>
+    <description>Madwalker 11th Level
+
+Source:	Player's Guide to Tanares p. 174 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Oppressor</name>
+    <sortname>Nightmare Augury Shape, Nightmare Oppressor</sortname>
+    <ancestry>Nightmare Augury Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>136 (13d12+52)</hp>
+    <speed>0 ft., fly 30 ft. (hover)</speed>
+    <str>16</str>
+    <dex>12</dex>
+    <con>18</con>
+    <int>16</int>
+    <wis>21</wis>
+    <cha>15</cha>
+    <save>Int +6, Wis +8</save>
+    <skill>Perception +11</skill>
+    <passive>21</passive>
+    <languages>Common, Deep Speech, Telepathy 90 ft.</languages>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 90 ft., truesight 45 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Future Omen (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</text>
+    </trait>
+    <trait>
+      <name>Sixth Sense</name>
+      <text>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</text>
+    </trait>
+    <trait>
+      <name>Precognition</name>
+      <text>The creature can see into the future and react to it, never being surprised.</text>
+    </trait>
+    <trait>
+      <name>Prediction Gaze (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>When the nightmare oppressor locks eyes with a creature, as a free action, it can see the creature's immediate future. The creature must make a DC 16 Wisdom saving throw. On a failure, for one minute, the creature will have disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare oppressor.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nightmare oppressor makes three Frightening Force Blast attacks.</text>
+    </action>
+    <action>
+      <name>Frightening Force Blast</name>
+      <text>Ranged Spell Attack: +8 to hit, range 60 ft., one target. Hit: 10 (1d10 + 5) force damage and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Frightening Force Blast|+8|1d10+5</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The nightmare oppressor casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 16, +8 to hit with spell attacks):
+
+	• At will: clairvoyance, command, comprehend languages, levitate
+	• 3/day each: counterspell, suggestion
+	• 1/day each: arcane eye, locate creature</text>
+    </action>
+    <reaction>
+      <name>Future Guard (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</text>
+    </reaction>
+    <spells>Clairvoyance, Command, Comprehend Languages, Levitate, Counterspell, Suggestion, Arcane Eye, Locate Creature</spells>
+    <description>Madwalker 13th Level
+
+Source:	Player's Guide to Tanares p. 175 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Lord</name>
+    <sortname>Nightmare Augury Shape, Nightmare Lord</sortname>
+    <ancestry>Nightmare Augury Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>19 (natural armor)</ac>
+    <hp>157 (15d12+60)</hp>
+    <speed>0 ft., fly 30 ft. (hover)</speed>
+    <str>16</str>
+    <dex>13</dex>
+    <con>18</con>
+    <int>17</int>
+    <wis>22</wis>
+    <cha>15</cha>
+    <save>Int +6, Wis +9</save>
+    <skill>Perception +12</skill>
+    <passive>22</passive>
+    <languages>Common, Deep Speech, Telepathy 120 ft.</languages>
+    <cr>7</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 90 ft., truesight 45 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Future Omen (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</text>
+    </trait>
+    <trait>
+      <name>Sixth Sense</name>
+      <text>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</text>
+    </trait>
+    <trait>
+      <name>Precognition</name>
+      <text>The creature can see into the future and react to it, never being surprised.</text>
+    </trait>
+    <trait>
+      <name>Prediction Gaze (2/Day)</name>
+      <recharge>2/Day</recharge>
+      <text>When a nightmare lord locks eyes with a creature, as a free action, it can see the creature's immediate future. The creature must make a DC 17 Wisdom saving throw. On a failure, for one minute, the creature will have disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare lord.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nightmare lord makes three Force Blast attacks.</text>
+    </action>
+    <action>
+      <name>Frightening Force Blast</name>
+      <text>Ranged Spell Attack: +9 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage, and the target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Frightening Force Blast|+9|1d10+6</attack>
+    </action>
+    <action>
+      <name>Maelstrom of Madness (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The nightmare lord can create a momentary 20-foot radius area of unstable psychic energy up to 90 feet away. The Maelstrom deals 49 (9d10) psychic damage and scrambles the senses of creatures within the area. They must make a DC 17 Wisdom saving throw. On a success, the damage is halved, and they are not affected by the sense-scrambling effect. On a failure, creatures have disadvantage on attack rolls and Wisdom (Perception) checks for one minute.</text>
+      <attack>Maelstrom of Madness||9d10</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>Spellcasting. The nightmare lord casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks):
+
+	• At will: clairvoyance, command, comprehend languages, levitate
+	• 3/day each: counterspell, locate creature, suggestion
+	• 1/day each: animate objects, arcane eye, telekinesis</text>
+    </action>
+    <reaction>
+      <name>Future Guard (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</text>
+    </reaction>
+    <spells>Clairvoyance, Command, Comprehend Languages, Levitate, Counterspell, Locate Creature, Suggestion, Animate Objects, Arcane Eye, Telekinesis</spells>
+    <description>Madwalker 15th Level
+
+Source:	Player's Guide to Tanares p. 175 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Vizier</name>
+    <sortname>Nightmare Augury Shape, Nightmare Vizier</sortname>
+    <ancestry>Nightmare Augury Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>19 (natural armor)</ac>
+    <hp>178 (17d12+68)</hp>
+    <speed>0 ft., fly 30 ft. (hover)</speed>
+    <str>16</str>
+    <dex>13</dex>
+    <con>18</con>
+    <int>18</int>
+    <wis>22</wis>
+    <cha>15</cha>
+    <save>Int +7, Wis +9</save>
+    <skill>Perception +12</skill>
+    <passive>22</passive>
+    <languages>Common, Deep Speech, Telepathy 120 ft.</languages>
+    <cr>8</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 90 ft., truesight 45 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Future Omen (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</text>
+    </trait>
+    <trait>
+      <name>Sixth Sense</name>
+      <text>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</text>
+    </trait>
+    <trait>
+      <name>Precognition</name>
+      <text>The creature can see into the future and react to it, never being surprised.</text>
+    </trait>
+    <trait>
+      <name>Prediction Gaze (2/Day)</name>
+      <recharge>2/Day</recharge>
+      <text>When a nightmare vizier locks eyes with a creature, as a free action, it can see the creature's immediate future. The creature must make a DC 17 Wisdom saving throw. On a failure, for one minute, the creature will have disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare vizier.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nightmare vizier makes four Force Blast attacks.</text>
+    </action>
+    <action>
+      <name>Frightening Force Blast</name>
+      <text>Ranged Spell Attack: +9 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage and the target must succeed on a DC 17 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Frightening Force Blast|+9|1d10+6</attack>
+    </action>
+    <action>
+      <name>Maelstrom of Madness (recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The nightmare vizier can create a momentary 20-foot radius area of unstable psychic energy up to 90 feet away. The maelstrom deals 49 (9d10) psychic damage and scrambles the senses of creatures within the area. They must make a Wisdom saving throw DC 17. On a success, the damage is halved, and they are not affected by the sense-scrambling effect. On a failure, creatures have disadvantage on attack rolls and Wisdom (Perception) checks for one minute.</text>
+      <attack>Maelstrom of Madness||9d10</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>Spellcasting. The nightmare vizier casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks):
+
+	• At will: clairvoyance, command, comprehend languages, levitate
+	• 3/day each: counterspell, locate creature, suggestion
+	• 1/day each: animate objects, arcane eye, telekinesis</text>
+    </action>
+    <reaction>
+      <name>Future Guard (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</text>
+    </reaction>
+    <spells>Clairvoyance, Command, Comprehend Languages, Levitate, Counterspell, Locate Creature, Suggestion, Animate Objects, Arcane Eye, Telekinesis</spells>
+    <description>Madwalker 17th Level
+
+Source:	Player's Guide to Tanares p. 176 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Tyrant</name>
+    <sortname>Nightmare Augury Shape, Nightmare Tyrant</sortname>
+    <ancestry>Nightmare Augury Shape</ancestry>
+    <size>H</size>
+    <type>Aberration</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>20 (natural armor)</ac>
+    <hp>218 (19d12+95)</hp>
+    <speed>0 ft., fly 40 ft. (hover)</speed>
+    <str>18</str>
+    <dex>14</dex>
+    <con>20</con>
+    <int>20</int>
+    <wis>22</wis>
+    <cha>16</cha>
+    <save>Int +9, Wis +10</save>
+    <skill>Perception +14</skill>
+    <passive>24</passive>
+    <languages>Common, Deep Speech, Telepathy 120 ft.</languages>
+    <cr>10</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 90 ft., truesight 45 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Future Omen (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>Due to its ability to see the future, the creature can better the odds of fate. As a free action, the creature can re-roll a single saving throw, skill check, or attack roll made by any creature, either an ally or an enemy.</text>
+    </trait>
+    <trait>
+      <name>Sixth Sense</name>
+      <text>The creature uses double its proficiency bonus for Wisdom (Perception) checks.</text>
+    </trait>
+    <trait>
+      <name>Precognition</name>
+      <text>The creature can see into the future and react to it, never being surprised.</text>
+    </trait>
+    <trait>
+      <name>Prediction Gaze (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>When a nightmare tyrant locks eyes with a creature, as a free action, it can see the creature's immediate future. The creature must make a DC 18 Wisdom saving throw. On a failure, for one minute, the creature will have disadvantage on all attacks, ability checks, and saving throws it makes against the nightmare tyrant.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The nightmare tyrant makes four Frightening Force Blast attacks.</text>
+    </action>
+    <action>
+      <name>Frightening Force Blast</name>
+      <text>Ranged Spell Attack: +10 to hit, range 60 ft., one target. Hit: 11 (1d10 + 6) force damage and the target must succeed on a DC 18 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Frightening Force Blast|+10|1d10+6</attack>
+    </action>
+    <action>
+      <name>Maelstrom of Madness (recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The nightmare tyrant can create a momentary 20-foot radius area of unstable psychic energy up to 90 feet away. The maelstrom deals 49 (9d10) psychic damage and scrambles the senses of creatures within the area. They must make a DC 18 Wisdom saving throw. On a success, the damage is halved, and they are not affected by the sense-scrambling effect. On a failure, creatures have disadvantage on attack rolls and Wisdom (Perception) checks for one minute.</text>
+      <attack>Maelstrom of Madness||9d10</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>Spellcasting. The nightmare tyrant casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 18, +9 to hit with spell attacks):
+
+	• At will: clairvoyance, command, comprehend languages, levitate
+	• 3/day each: animate objects, arcane eye, counterspell, locate creature, suggestion
+	• 1/day each: eye bite, telekinesis</text>
+    </action>
+    <reaction>
+      <name>Future Guard (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>Due to its foresight, the creature can better dodge attacks. Using its reaction, the creature can add 2 to its AC against an attack made against it, after seeing the result of the roll.</text>
+    </reaction>
+    <spells>Clairvoyance, Command, Comprehend Languages, Levitate, Animate Objects, Arcane Eye, Counterspell, Locate Creature, Suggestion, Eye Bite, Telekinesis</spells>
+    <description>Madwalker 19th Level
+
+Source:	Player's Guide to Tanares p. 177 (Homebrew)</description>
     <environment/>
   </monster>
   <monster>
