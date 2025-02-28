@@ -8,7 +8,6 @@
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
-* Adding `Tanares` content.
 
 ### 2025-##-## Nightly
 * Added `Monster Manual 2024`.
