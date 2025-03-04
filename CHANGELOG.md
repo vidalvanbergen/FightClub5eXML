@@ -9,6 +9,9 @@
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
+### 2025-##-##
+* Fixed a few mistakes in the new UA artificer classes.
+
 ### 2025-03-04
 * Added `Monster Manual 2024`.
   * Added monster descriptions.
