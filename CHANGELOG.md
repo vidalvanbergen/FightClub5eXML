@@ -12,6 +12,7 @@
 ### 2025-##-##
 * Added missing Artificer Cartographer subclass.
 * Fixed a few mistakes in the new UA artificer classes.
+* Named (2014) sources.
 
 ### 2025-03-04
 * Added `Monster Manual 2024`.
