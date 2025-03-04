@@ -1,10 +1,8 @@
 name: Compile all collections into compendiums
 on: 
   push:
-    # branches: [ master ]
   workflow_dispatch:
   pull_request:
-    # branches: [ master ]
 
 jobs:
   compile_collections:
@@ -41,12 +39,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Compendiums/*
-
-      - name: Update nightly release
-        uses: pyTooling/Actions/releaser@main
-        with:
-          tag: nightly
-          rm: true
-          token: ${{ secrets.GITHUB_TOKEN }}
           files: Compendiums/*
