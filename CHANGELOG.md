@@ -14,7 +14,8 @@
   * Added monster descriptions.
   * Added monster lair actions.
   * Moved PHB24 monsters that are in MM24.
-* Added `Unearthed Arcana: Forgotten Realms Subclasses`.
+* Added `Unearthed Arcana [2024]: Forgotten Realms Subclasses`.
+* Added `Unearthed Arcana [2024]: Eberron Updates`.
 * Added `Player's Handbook to Tanares` content.
 * u/probablyblocked added a homebrew `Troll` race by StarSailGames.
 * Fixed some Artificer (UA24) features and items.
