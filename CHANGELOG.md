@@ -10,6 +10,7 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
 ### 2025-##-##
+* Added missing Artificer Cartographer subclass.
 * Fixed a few mistakes in the new UA artificer classes.
 
 ### 2025-03-04
