@@ -40,3 +40,11 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: Compendiums/*
+
+      - name: Update nightly release
+        uses: pyTooling/Actions/releaser@main
+        with:
+          tag: nightly
+          rm: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: Compendiums/*
