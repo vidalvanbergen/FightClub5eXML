@@ -23,6 +23,7 @@
 * Added counters for 'Spells Known'.
 * @nikjft added extra functionality to the build utilities.
 * @nikjft updated the homebrew legacy classes for 2024 content.
+* Some cleanup and new utilities by @nikjft in https://github.com/vidalvanbergen/FightClub5eXML/pull/18
 * Other changes and fixes.
 
 ### 2024-12-31
