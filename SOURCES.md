@@ -485,7 +485,7 @@ Race example:
     <text>You are a Humanoid. You are also considered an elf for any prerequisite or effect that requires you to be an elf.</text>
   </trait>
   <trait>
-    <name>Life Span</name>
+    <name>Age</name>
     <text>Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old.</text>
   </trait>
   <trait>
