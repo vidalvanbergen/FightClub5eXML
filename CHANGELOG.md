@@ -10,6 +10,7 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
 ### 2025-##-##
+* Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
 * Added missing Artificer Cartographer subclass.
 * Fixed a few mistakes in the new UA artificer classes.
 * Named (2014) sources.
