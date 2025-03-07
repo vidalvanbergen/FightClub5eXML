@@ -4174,6 +4174,7 @@ Summon Yugoloth (1/Day): The yugoloth attempts a magical summoning.
 	• An arcanaloth has a 40 percent chance of summoning one arcanaloth.
 
 A summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, does as it pleases, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it.</text>
+      <attack>Magical Summoning||1d10</attack>
     </action>
     <slots>0,4,3,3,3,2,1,1,1</slots>
     <spells>alter self, darkness, heat metal, invisibility, magic missile, fire bolt, mage hand, minor illusion, prestidigitation, detect magic, identify, shield, Tenser's floating disk, detect thoughts, mirror image, phantasmal force, suggestion, counterspell, fear, fireball, banishment, dimension door, contact other plane, hold monster, chain lightning, finger of death, mind blank</spells>
@@ -4697,13 +4698,13 @@ Source:	Monster Manual (2014) p. 22,
 	• A balor has a 50 percent chance of summoning 1d8 vrock, 1d6 hezrou, 1d4 glabrezu, 1d3 nalfeshnee, 1d2 marilith, or one goristro.
 
 A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d2</attack>
       <attack>Vrock||1d8</attack>
       <attack>Hezrou||1d6</attack>
       <attack>Glabrezu||1d4</attack>
       <attack>Nalfeshnee||1d3</attack>
       <attack>Marilith||1d2</attack>
       <attack>Goristro||1</attack>
-      <attack>Magical Summoning||1d2</attack>
     </action>
     <description>Figures of ancient and terrible evil, balors rule as generals over demonic armies, yearning to seize power while destroying any creatures that oppose them.
 	Wielding a flaming whip and a longsword that channels the power of the storm, a balor's battle prowess is fueled by hatred and rage. It channels this demonic fury in its death throes, falling within a blast of fire that can destroy even the hardiest foes.
@@ -5054,11 +5055,12 @@ Source:	Monster Manual (2014) p. 23,
     <action>
       <name>Variant: Devil Summoning (1/Day)</name>
       <recharge>1/Day</recharge>
-      <text>The devil chooses what to summon and attempts a magical summoni ng.
+      <text>The devil chooses what to summon and attempts a magical summoning.
 
 	• A barbed devil has a 30 percent chance of summoning one barbed devil.
 
 A summoned devil appears in an unoccupied space with in 60 feet of its summoner, acts as an ally of its summoner, and can't summon other devils. It remains for l minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d10</attack>
     </action>
     <description>Barbed Devil (Hamatula):
 Creatures of unbridled greed and desire, barbed devils act as guards to the more powerful denizens of the Nine Hells and their vaults. Resembling a tall humanoid covered in sharp barbs, spines, and hooks, a barbed devil has gleaming eyes that are ever watchful for objects and creatures it might claim for itself. These fiends welcome any chance to fight when victory promises reward.
@@ -5209,7 +5211,7 @@ Source:	Monster Manual (2014) p. 70,
 	• A barlgura has a 30 percent chance of summoning one barlgura.
 
 A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
-      <attack>Variant: Summon Demon||1d10</attack>
+      <attack>Magical Summoning||1d10</attack>
     </action>
     <spells>entangle, phantasmal force, disguise self, invisibility</spells>
     <description>The barlgura represents the savagery and brutality of the Abyss. Barlguras gather in packs to take down tougher foes, keep gruesome trophies from their victories, and decorate their territory with such objects.
@@ -5412,6 +5414,8 @@ Source:	Monster Manual (2014) p. 24,
   </monster>
   <monster>
     <name>Bearded Devil</name>
+    <sortname>Devil, Bearded</sortname>
+    <ancestry>Devil</ancestry>
     <size>M</size>
     <type>fiend (devil)</type>
     <alignment>Lawful Evil</alignment>
@@ -5464,6 +5468,16 @@ While poisoned in this way, the target can't regain hit points. The target can r
 If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.</text>
       <attack>Glaive|+5|1d10+3</attack>
       <attack>Glaive||1d10</attack>
+    </action>
+    <action>
+      <name>Variant: Devil Summoning (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>The devil chooses what to summon and attempts a magical summoning.
+
+	• A bearded devil has a 30 percent chance of summoning one bearded devil. 
+
+A summoned devil appears in an unoccupied space with in 60 feet of its summoner, acts as an ally of its summoner, and can't summon other devils. It remains for l minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d10</attack>
     </action>
     <description>Devils personify tyranny, with a totalitarian society dedicated to the domination of mortal life. The shadow of the Nine Hells of Baator extends far across the multiverse, and Asmodeus, the dark lord of Nessus, strives to subjugate the cosmos to satisfy his thirst for power. To do so, he must continually expand his infernal armies, sending his servants to the mortal realm to corrupt the souls from which new devils are spawned.
 
@@ -6414,6 +6428,8 @@ If the target is a creature, it must succeed on a DC 11 Strength saving throw or
   </monster>
   <monster>
     <name>Bone Devil</name>
+    <sortname>Devil, Bone</sortname>
+    <ancestry>Devil</ancestry>
     <size>L</size>
     <type>fiend (devil)</type>
     <alignment>Lawful Evil</alignment>
@@ -6466,9 +6482,19 @@ The target can repeat the saving throw at the end of each of its turns, ending t
 
 Multiattack: The devil makes two attacks: one with its hooked polearm and one with its sting.
 
-Hooked Polearm: Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 17 (2d12 + 4) piercing damage.
+Hooked Polearm: Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 17 (2d12 + 4) piercing damage. If the target is a Huge or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the devil can't use its polearm on another target.</text>
+      <attack>Hooked Polearm|+8|2d12+4</attack>
+    </action>
+    <action>
+      <name>Variant: Devil Summoning (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>The devil chooses what to summon and attempts a magical summoning.
 
-If the target is a Huge or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the devil can't use its polearm on another target.</text>
+	•  A bone devil has a 40 percent chance of summoning 2d6 spined devils or one bone devil.
+
+A summoned devil appears in an unoccupied space with in 60 feet of its summoner, acts as an ally of its summoner, and can't summon other devils. It remains for l minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d10</attack>
+      <attack>Spined Devils||2d6</attack>
     </action>
     <description>Devils personify tyranny, with a totalitarian society dedicated to the domination of mortal life. The shadow of the Nine Hells of Baator extends far across the multiverse, and Asmodeus, the dark lord of Nessus, strives to subjugate the cosmos to satisfy his thirst for power. To do so, he must continually expand his infernal armies, sending his servants to the mortal realm to corrupt the souls from which new devils are spawned.
 
@@ -7724,6 +7750,7 @@ If this effect reduces a creature's hit point maximum to 0, the creature dies. T
 	• A chasme has a 30 percent chance of summoning one chasme.
 
 A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d10</attack>
     </action>
     <description>This loathsome demon resembles an unspeakable crossing of humanoid and fly. A chasme shuffles about on four spindly legs that can find purchase on walls and ceilings. A droning sound precedes the approach of a chasme, inflicting foes with a terrible lethargy that leaves them open to attack.
 	The lowly chasmes serve more powerful masters as interrogators or taskmasters. A chasme lives to dole out torture as punishment, and has a knack for spotting demons that have deserted their lords. Capturing and returning such traitors allows a chasme to torment the victim without fear of reprisal.
@@ -11168,6 +11195,8 @@ Source:	Monster Manual (2014) p. 225</description>
       <name>Variant: Summon Mephits (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>The mephit has a 25 chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d4</attack>
+      <attack>Mephits||1d10</attack>
     </action>
     <spells>sleep</spells>
     <description>Elemental Nature. A mephit doesn't require food, drink, or sleep.
@@ -15908,6 +15937,7 @@ If the target is a Medium or smaller creature, it is grappled (escape DC 15). Th
 	• A glabrezu has a 30 percent chance of summoning 1d3 vrock, 1d2 hezrou, or one glabrezu.
 
 A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d10</attack>
       <attack>Vrock||1d3</attack>
       <attack>Hezrou||1d2</attack>
       <attack>Glabrezu||1</attack>
@@ -18330,6 +18360,7 @@ Source:	Monster Manual (2014) p. 183,
 	• A hezrou has a 30 percent chance of summoning 2d6 dretch or one hezrou.
 
 A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d10</attack>
       <attack>Dretch||2d6</attack>
       <attack>Hezrou||1</attack>
     </action>
@@ -19475,6 +19506,8 @@ Source:	Monster Manual (2014) p. 75,
       <name>Variant: Summon Mephits (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>The mephit has a 25 chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d4</attack>
+      <attack>Mephits||1d4</attack>
     </action>
     <spells>fog cloud</spells>
     <description>Elemental Nature. A mephit doesn't require food, drink, or sleep.
@@ -21744,6 +21777,8 @@ Source:	Monster Manual (2014) p. 347,
       <name>Variant: Summon Mephits (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>The mephit has a 25 chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d4</attack>
+      <attack>Mephits||1d10</attack>
     </action>
     <spells>heat metal</spells>
     <description>Elemental Nature. A mephit doesn't require food, drink, or sleep.
@@ -22650,11 +22685,12 @@ Source:	Monster Manual (2014) p. 219,
       <name>Variant: Yugoloth Summoning</name>
       <text>Some yugoloths have an action option that allows them to summon other yugoloths.
 
-Summon Yugoloth (1/Day). The yugoloth attempts a magical summoning.
+Summon Yugoloth (1/Day): The yugoloth attempts a magical summoning.
 
-A mezzoloth has a 30 percent chance of summoning one mezzoloth.
+	• A mezzoloth has a 30 percent chance of summoning one mezzoloth.
 
 A summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, does as it pleases, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it.</text>
+      <attack>Magical Summoning||1d10</attack>
     </action>
     <spells>cloudkill, darkness, dispel magic</spells>
     <description>Yugoloths are fickle fiends that inhabit the planes of Acheron, Gehenna, Hades, and Carceri. They act as mercenaries and are notorious for their shifting loyalties. They are the embodiments of avarice. Before serving under anyone's banner, a yugoloth asks the only question on its mind: What's in it for me?
@@ -23224,6 +23260,8 @@ Source:	Monster Manual (2014) p. 224,
       <name>Variant: Summon Mephits (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>The mephit has a 25 chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d4</attack>
+      <attack>Mephits||1d4</attack>
     </action>
     <description>Elemental Nature. A mephit doesn't require food, drink, or sleep.
 
@@ -24339,11 +24377,13 @@ If the target is a creature, it must succeed on a DC 16 Constitution saving thro
       <name>Variant: Yugoloth Summoning</name>
       <text>Some yugoloths have an action option that allows them to summon other yugoloths.
 
-Summon Yugoloth (1/Day). The yugoloth chooses what to summon and attempts a magical summoning.
+Summon Yugoloth (1/Day): The yugoloth chooses what to summon and attempts a magical summoning.
 
-A nycaloth has a 50 percent chance of summoning 1d4 mezzoloth or one nycaloth.
+	• A nycaloth has a 50 percent chance of summoning 1d4 mezzoloth or one nycaloth.
 
 A summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, does as it pleases, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it.</text>
+      <attack>Magical Summoning||1d2</attack>
+      <attack>Mezzoloth||1d4</attack>
     </action>
     <spells>darkness, detect magic, dispel magic, invisibility, mirror image</spells>
     <description>Yugoloths are fickle fiends that inhabit the planes of Acheron, Gehenna, Hades, and Carceri. They act as mercenaries and are notorious for their shifting loyalties. They are the embodiments of avarice. Before serving under anyone's banner, a yugoloth asks the only question on its mind: What's in it for me?
@@ -29218,6 +29258,8 @@ Source:	Monster Manual (2014) p. 276,
       <name>Variant: Summon Mephits (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>The mephit has a 25 chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d4</attack>
+      <attack>Mephits||1d4</attack>
     </action>
     <spells>dancing lights</spells>
     <description>Elemental Nature. A mephit doesn't require food, drink, or sleep.
@@ -29946,6 +29988,8 @@ Source:	Monster Manual (2014) p. 349,
       <name>Variant: Summon Mephits (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>The mephit has a 25 chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d4</attack>
+      <attack>Mephits||1d4</attack>
     </action>
     <spells>blur</spells>
     <description>Elemental Nature. A mephit doesn't require food, drink, or sleep.
@@ -31760,11 +31804,15 @@ Source:	Monster Manual (2014) p. 80,
       <name>Variant: Yugoloth Summoning</name>
       <text>Some yugoloths have an action option that allows them to summon other yugoloths.
 
-Summon Yugoloth (1/Day). The yugoloth chooses what to summon and attempts a magical summoning.
+Summon Yugoloth (1/Day): The yugoloth chooses what to summon and attempts a magical summoning.
 
-An ultroloth has a 50 percent chance of summoning 1d6 mezzoloth, 1d4 nycaloth, or one ultroloth.
+	• An ultroloth has a 50 percent chance of summoning 1d6 mezzoloth, 1d4 nycaloth, or one ultroloth.
 
 A summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it.</text>
+      <attack>Magical Summoning||1d2</attack>
+      <attack>Mezzoloth||1d6</attack>
+      <attack>Nycaloth||1d4</attack>
+      <attack>Ultroloth||1</attack>
     </action>
     <spells>alter self, clairvoyance, darkness, detect magic, detect thoughts, dispel magic, invisibility, suggestion, dimension door, fear, wall of fire, fire storm, mass suggestion</spells>
     <description>Yugoloths are fickle fiends that inhabit the planes of Acheron, Gehenna, Hades, and Carceri. They act as mercenaries and are notorious for their shifting loyalties. They are the embodiments of avarice. Before serving under anyone's banner, a yugoloth asks the only question on its mind: What's in it for me?
@@ -32874,6 +32922,7 @@ Source:	Monster Manual (2014) p. 138,
 	• A vrock has a 30 percent chance of summoning 2d4 dretch or one vrock.
 
 A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+      <attack>Magical Summoning||1d10</attack>
       <attack>Dretch||2d4</attack>
       <attack>Vrock||1</attack>
     </action>
