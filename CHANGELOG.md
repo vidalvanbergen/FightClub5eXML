@@ -13,6 +13,8 @@
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
 * Added missing Artificer Cartographer subclass.
 * Fixed a few mistakes in the new UA artificer classes.
+* Reformatted content to match original formatting a bit closer.
+* Added missing creature details.
 * Named (2014) sources.
 
 ### 2025-03-04
