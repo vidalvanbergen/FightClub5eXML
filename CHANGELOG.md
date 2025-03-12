@@ -14,7 +14,7 @@
 * Added missing Artificer Cartographer subclass.
 * Fixed a few mistakes in the new UA artificer classes.
 * Reformatted content to match original formatting a bit closer.
-* Added missing creature details.
+* Reformatted and reworked the bestiaries, adding missing creature details and dice rolls.
 * Named (2014) sources.
 
 ### 2025-03-04
