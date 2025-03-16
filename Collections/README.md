@@ -1,14 +1,16 @@
 # Collections
 
-**Complete_Compendium_2014**: Includes all 2014 compatible rulebooks, third party suplements, adventures, partnered content, unearthed arcana, and homebrew content.
+**Complete_Compendium_2014**: Includes all 2014 compatible rulebooks, third party supplements, adventures, partnered content, unearthed arcana, and homebrew content.
 
-**Complete_Compendium_2024**: Includes all 2024 compatible rulebooks and homebrew legacy content updated to work with the 2024 sourcebooks. You will want to delete your app compendium before importing this one to avoid conflicts with SRD content.
+**Complete_Compendium_2024**: Includes all 2024 compatible rulebooks, 2024 unearthed arcana and homebrew legacy content updated to work with the 2024 sourcebooks. You will want to delete your app compendium before importing this one to avoid conflicts with SRD content.
 
 **Complete_Compendium_2014+2024**: Includes both 2014 and 2024 complete compendiums, with new material tagged with [2024].
 
-**Core_Rulebooks**: Player's Handbook, Dungeon Master's Guide, and Monster Manual.
+**Core_Rulebooks_2014**: 2014 Player's Handbook, Dungeon Master's Guide, and Monster Manual.
 
-**Core_Supplements**: Core Rulebooks, Xanathar's Guide to Everything, and Tasha's Cauldron of Everything.
+**Core_Rulebooks_2024**: 2024 Player's Handbook, Dungeon Master's Guide, and Monster Manual.
+
+**Core_Supplements_2014**: 2014 Core Rulebooks, Xanathar's Guide to Everything, and Tasha's Cauldron of Everything.
 
 **Special_Adventurers_League_Forgotten_Realms_2014**: 2014 DALL approved source books.
 
