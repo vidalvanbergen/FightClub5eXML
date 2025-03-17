@@ -11,6 +11,7 @@
 
 ### 2025-##-##
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
+* @recco added `Remley Farr`'s homebrew content.
 * Added missing Artificer Cartographer subclass.
 * Fixed a few mistakes in the new UA artificer classes.
 * Named (2014) sources.

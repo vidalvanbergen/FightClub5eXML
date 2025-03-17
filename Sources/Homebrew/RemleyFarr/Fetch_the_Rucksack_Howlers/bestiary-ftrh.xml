@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Howler</name>
@@ -8,44 +8,65 @@
     <ac>13 (natural armor)</ac>
     <hp>16 (2d8+2)</hp>
     <speed>50 ft.</speed>
-    <str>12</str><dex>14</dex><con>12</con><int>4</int><wis>12</wis><cha>6</cha>
+    <str>12</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>4</int>
+    <wis>12</wis>
+    <cha>6</cha>
+    <save/>
     <skill>Perception +3</skill>
+    <passive>13</passive>
+    <languages>understands commands given in any language but can't speak.</languages>
+    <cr>1/4</cr>
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
-    <senses>-</senses><passive>13</passive>
-    <languages>understands commands given in any language but can’t speak.</languages>
-    <cr>1/4</cr>
+    <senses>-</senses>
     <trait>
       <name>Keen Hearing and Smell</name>
       <text>The howler has advantage on all Wisdom (Perception) checks that rely on hearing or smell.</text>
     </trait>
     <trait>
       <name>Pack Tactics</name>
-      <text>The howler has advantage on an attack roll against a creature if at least one of the howler’s allies is within 5 feet of the creature and the ally isn’t incapacitated.</text>
+      <text>The howler has advantage on an attack roll against a creature if at least one of the howler's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
     </trait>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) piercing damage.</text>
       <attack>Bite|3|1d6+1</attack>
     </action>
-    <description>Source:	Remley Farr, Fetch the Rucksack Howlers (Homebrew)</description>
+    <description>Source:	Remley Farr - Fetch the Rucksack Howlers (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Howler -->
+  </monster>
+  <!-- Howler -->
   <monster>
     <name>Simon Rucksack</name>
+    <sortname>Rucksack, Simon</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>lawful evil</alignment>
     <ac>15 (chainmail)</ac>
     <hp>20 (3d8+3)</hp>
     <speed>30 ft.</speed>
-    <str>10</str><dex>12</dex><con>16</con><int>5</int><wis>12</wis><cha>16</cha>
+    <str>10</str>
+    <dex>12</dex>
+    <con>16</con>
+    <int>5</int>
+    <wis>12</wis>
+    <cha>16</cha>
     <save>Wis +3</save>
+    <skill/>
+    <passive>11</passive>
+    <languages>understands common, Halfling, and Gnoll but can't speak</languages>
+    <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses><passive>11</passive>
-    <languages>understands common, Halfling, and Gnoll but can’t speak</languages>
-    <cr>1/2</cr>
+    <senses>darkvision 60 ft.</senses>
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) slashing damage.</text>
@@ -55,29 +76,43 @@
       <name>Domesticate Gnoll</name>
       <text>Simon charms a gnoll that he can see within 30 feet. The charmed gnoll regards Simon as an ally and will fight for him until he dies.</text>
     </action>
-    <description>Source:	Remley Farr, Fetch the Rucksack Howlers (Homebrew)</description>
+    <description>Source:	Remley Farr - Fetch the Rucksack Howlers (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Simon Rucksack -->
+  </monster>
+  <!-- Simon Rucksack -->
   <monster>
     <name>Underfang</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (gnoll)</type>
     <alignment>chaotic evil</alignment>
     <ac>13 (leather armor)</ac>
     <hp>28 (4d8+8)</hp>
     <speed>30 ft.</speed>
-    <str>16</str><dex>14</dex><con>15</con><int>12</int><wis>14</wis><cha>11</cha>
+    <str>16</str>
+    <dex>14</dex>
+    <con>15</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>11</cha>
     <save>Str +6, Wis +5</save>
-    <senses>darkvision 60 ft.</senses><passive>12</passive>
+    <skill/>
+    <passive>12</passive>
     <languages>Abyssal, Common, Gnoll</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Spellcasting</name>
       <text>Underfang is a 4th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 12, +5 to hit with spell attacks). Underfang has the following cleric spells prepared:
-        
-        • Cantrips (at will): guidance, spare the dying, thaumaturgy
-        • 1st level (4 slots): bane, command, inflict wounds
-        • 2nd level (3 slots): aid, hold person, spiritual weapon (flail)</text>
+
+	• Cantrips (at will): guidance, spare the dying, thaumaturgy
+	• 1st level (4 slots): bane, command, inflict wounds
+	• 2nd level (3 slots): aid, hold person, spiritual weapon (flail)</text>
+      <attack>Spellcasting|+5|0</attack>
     </trait>
     <trait>
       <name>Unlife</name>
@@ -92,8 +127,10 @@
       <name>Risen Infantry</name>
       <text>Underfang resurrects a dead gnoll to fight for him. Any gnolls brought back to life this way are brought back as gnoll witherlings. Underfang cannot use this ability to bring gnoll witherlings back to life.</text>
     </action>
-    <spells>guidance, spare the dying, thaumaturgy, bane, command, inflict wounds, aid, hold person, spiritual weapon</spells><slots>4,3</slots>
-    <description>Source:	Remley Farr, Fetch the Rucksack Howlers (Homebrew)</description>
+    <slots>0,4,3</slots>
+    <spells>guidance, spare the dying, thaumaturgy, bane, command, inflict wounds, aid, hold person, spiritual weapon</spells>
+    <description>Source:	Remley Farr - Fetch the Rucksack Howlers (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Underfang -->
+  </monster>
+  <!-- Underfang -->
 </compendium>
