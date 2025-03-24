@@ -13,7 +13,7 @@
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
 * Added LaserLlama: `Psion Mystic Talents` spell list.
 * @recco added `Remley Farr`'s homebrew content.
-* @Garras fixed some important typos.
+* @Garras fixed some important typos in https://github.com/vidalvanbergen/FightClub5eXML/pull/21.
 * Added missing Artificer Cartographer subclass.
 * Fixed a few mistakes in the new UA artificer classes.
 * Reformatted content to match original formatting a bit closer.
@@ -34,7 +34,7 @@
 * Added counters for 'Spells Known'.
 * @nikjft added extra functionality to the build utilities.
 * @nikjft updated the homebrew legacy classes for 2024 content.
-* Some cleanup and new utilities by @nikjft in https://github.com/vidalvanbergen/FightClub5eXML/pull/18
+* Some cleanup and new utilities by @nikjft in https://github.com/vidalvanbergen/FightClub5eXML/pull/18.
 * Other changes and fixes.
 
 ### 2024-12-31
