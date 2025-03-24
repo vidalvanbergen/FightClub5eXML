@@ -13,6 +13,7 @@
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
 * Added LaserLlama: `Psion Mystic Talents` spell list.
 * @recco added `Remley Farr`'s homebrew content.
+* @Garras fixed some important typos.
 * Added missing Artificer Cartographer subclass.
 * Fixed a few mistakes in the new UA artificer classes.
 * Reformatted content to match original formatting a bit closer.

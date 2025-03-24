@@ -332,6 +332,8 @@
       <xs:element type="xs:string" name="classes"/>
       <xs:element type="xs:string" name="source" minOccurs="0"/>
       <xs:element type="xs:string" name="text" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="special" minOccurs="0"/>
+      <xs:element type="modifierType" name="modifier"/>
       <xs:element type="roll" name="roll" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
   </xs:complexType>
@@ -372,7 +374,7 @@
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="xs:string" name="name"/>
       <xs:element type="xs:string" name="text"/>
-      <xs:element type="xs:string" name="special"/>
+      <xs:element type="xs:string" name="special" minOccurs="0"/>
       <xs:element type="modifierType" name="modifier"/>
       <xs:element type="xs:string" name="proficiency"/>
     </xs:choice>
@@ -455,6 +457,7 @@
       <xs:element type="abilityEnum" name="spellAbility"/>
       <xs:element type="xs:string" name="spells"/>
       <xs:element type="abilityBonusList" name="ability"/>
+      <xs:element type="xs:string" name="resist"/>
       <xs:element type="modifierType" name="modifier" minOccurs="0"/>
       <xs:element type="traitType" name="trait" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
