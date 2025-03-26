@@ -241,8 +241,8 @@ Lever | Up | Down
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 151</text>
-    <roll>1d20+8</roll>
-    <roll>2d6</roll>
+    <roll description="Attack Bonus">1d20+8</roll>
+    <roll description="Bludgeoning Damage">2d6</roll>
   </item>
   <item>
     <name>Aquamarine</name>
@@ -351,7 +351,7 @@ Source:	Dungeon Master's Guide (2014) p. 152</text>
 Ingested: A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You might decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save.
 
 Source:	Dungeon Master's Guide (2014) p. 258</text>
-    <roll>1d12</roll>
+    <roll description="Poison Damage">1d12</roll>
   </item>
   <item>
     <name>Axe of the Dwarvish Lords</name>
@@ -421,6 +421,7 @@ Source:	Dungeon Master's Guide (2014) p. 134</text>
 	If you dump the bag's contents out on the ground, they explode in a 10-foot radius, extending from the beans. Each creature in the area, including you, must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.
 	If you remove a bean from the bag, plant it in dirt or sand, and then water it, the bean produces an effect 1 minute later from the ground where it was planted. The DM can choose an effect from the following table, determine it randomly, or create an effect.
 
+Bean Effects:
 d100 | Effect
 01 | 5d4 toadstools sprout. If a creature eats a toadstool, roll any die. On an odd roll, the eater must succeed on a DC 15 Constitution saving throw or take 5d6 poison damage and become poisoned for 1 hour. On an even roll, the eater gains 5d6 temporary hit points for 1 hour.
 02-10 | A geyser erupts and spouts water, beer, berry juice, tea, vinegar, wine, or oil (DM's choice) 30 feet into the air for 1d12 rounds.
@@ -437,16 +438,18 @@ d100 | Effect
 
 Found on: Magic Item Table C
 Source:	Dungeon Master's Guide (2014) p. 152</text>
-    <roll>3d4</roll>
-    <roll>5d4</roll>
-    <roll>5d6</roll>
-    <roll>1d12</roll>
-    <roll>1d6+6</roll>
-    <roll>1d4+8</roll>
-    <roll>1d10+20</roll>
-    <roll>1d8</roll>
-    <roll>1d4+3</roll>
-    <roll>10d6</roll>
+    <roll description="Bean Effects">1d100</roll>
+    <roll description="Dry Beans">3d4</roll>
+    <roll description="Fire Damage">5d4</roll>
+    <roll description="Toadstools">5d4</roll>
+    <roll description="Poison Damage">5d6</roll>
+    <roll description="Rounds">1d12</roll>
+    <roll description="Shriekers">1d6+6</roll>
+    <roll description="Bright pink toads">1d4+8</roll>
+    <roll description="Fruit">1d10+20</roll>
+    <roll description="Randomly determiend magic potions">1d8</roll>
+    <roll description="Eggs">1d4+3</roll>
+    <roll description="Force Damage">10d6</roll>
   </item>
   <item>
     <name>Bag of Devouring</name>
@@ -499,7 +502,7 @@ d8 | Creature
 
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 154</text>
-    <roll>1d8</roll>
+    <roll description="Creature">1d8</roll>
   </item>
   <item>
     <name>Bag of Tricks, Rust</name>
@@ -525,7 +528,7 @@ d8 | Creature
 
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 154</text>
-    <roll>1d8</roll>
+    <roll description="Creature">1d8</roll>
   </item>
   <item>
     <name>Bag of Tricks, Tan</name>
@@ -551,7 +554,7 @@ d8 | Creature
 
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 154</text>
-    <roll>1d8</roll>
+    <roll description="Creature">1d8</roll>
   </item>
   <item>
     <name>Banded Agate</name>
@@ -574,8 +577,8 @@ Source:	Dungeon Master's Guide (2014) p. 134</text>
 
 Found on: Magic Item Table C
 Source:	Dungeon Master's Guide (2014) p. 154</text>
-    <roll>1d4+4</roll>
-    <roll>5d4</roll>
+    <roll description="Beads of Force">1d4+4</roll>
+    <roll description="Force Damage">5d4</roll>
   </item>
   <item>
     <name>Bejeweled ivory drinking horn with gold filigree</name>
@@ -749,7 +752,8 @@ Proficiency: martial, greatsword
 Source:	Dungeon Master's Guide (2014) p. 216</text>
     <modifier category="bonus">Melee Attacks +3</modifier>
     <modifier category="bonus">Melee Damage +3</modifier>
-    <roll>1d10</roll>
+    <roll description="Necrotic Damage">1d10</roll>
+    <roll description="Heal">1d10</roll>
   </item>
   <item>
     <name>Bloodstone</name>
@@ -829,8 +833,8 @@ Destroying the Book: It is rumored that the Book of Exalted Deeds can't be destr
 
 Source:	Dungeon Master's Guide (2014) p. 222</text>
     <modifier category="ability score">Wisdom +2</modifier>
-    <roll>24d6</roll>
-    <roll>1d100</roll>
+    <roll description="Radiant Damage">24d6</roll>
+    <roll description="Years">1d100</roll>
   </item>
   <item>
     <name>Book of Vile Darkness</name>
@@ -869,10 +873,10 @@ Destroying the Book: The Book of Vile Darkness allows pages to be torn from it, 
 	If all evil in the multiverse is wiped out, the book turns to dust and is forever destroyed.
 
 Source:	Dungeon Master's Guide (2014) p. 222</text>
-    <roll>1d12</roll>
-    <roll>3d6</roll>
-    <roll>1d100</roll>
-    <roll>1d10</roll>
+    <roll description="Psychic Damage">1d12</roll>
+    <roll description="Psychic Damage">3d6</roll>
+    <roll description="Years">1d100</roll>
+    <roll description="Years">1d10x100</roll>
   </item>
   <item>
     <name>Boots of Elvenkind</name>
@@ -1063,8 +1067,8 @@ Source:	Dungeon Master's Guide (2014) p. 156</text>
 Inhaled: These poisons are powders or gases that take effect when inhaled. Blowing the powder or releasing the gas subjects creatures in a 5-foot cube to its effect. The resulting cloud dissipates immediately afterward. Holding one's breath is ineffective against inhaled poisons, as they affect nasal membranes, tear ducts, and other parts of the body.
 
 Source:	Dungeon Master's Guide (2014) p. 258</text>
-    <roll>3d6</roll>
-    <roll>1d6</roll>
+    <roll description="Poison Damage">3d6</roll>
+    <roll description="Poison Damage">1d6</roll>
   </item>
   <item>
     <name>Candle of Invocation</name>
@@ -1092,6 +1096,7 @@ Alternatively, when you light the candle for the first time, you can cast the ga
 
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 157</text>
+    <roll description="Alignment">1d20</roll>
   </item>
   <item>
     <name>Cap of Water Breathing</name>
@@ -1258,7 +1263,7 @@ Source:	Dungeon Master's Guide (2014) p. 134</text>
 
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 158</text>
-    <roll>1d20+5</roll>
+    <roll description="Attack Bonus">1d20+5</roll>
   </item>
   <item>
     <name>Citrine</name>
@@ -1461,11 +1466,12 @@ Wall of fire | 1d4
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 159</text>
-    <roll>1d20</roll>
-    <roll>1d12</roll>
-    <roll>1d10</roll>
-    <roll>1d6</roll>
-    <roll>1d4</roll>
+    <roll description="Recharge">1d20</roll>
+    <roll description="Disintegrate">1d12</roll>
+    <roll description="Horn of Blasting">1d10</roll>
+    <roll description="Passwall">1d6</roll>
+    <roll description="Prismatic Spray">1d20</roll>
+    <roll description="Wall of Fire">1d4</roll>
   </item>
   <item>
     <name>Cubic Gate</name>
@@ -1478,7 +1484,7 @@ Source:	Dungeon Master's Guide (2014) p. 159</text>
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 160</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Daern's Instant Fortress</name>
@@ -1492,7 +1498,7 @@ Source:	Dungeon Master's Guide (2014) p. 160</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 160</text>
-    <roll>10d10</roll>
+    <roll description="Bludgeoning Damage">10d10</roll>
   </item>
   <item>
     <name>Dagger of Venom</name>
@@ -1521,7 +1527,7 @@ Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 161</text>
     <modifier category="bonus">Weapon Attacks +1</modifier>
     <modifier category="bonus">Weapon Damage +1</modifier>
-    <roll>2d10</roll>
+    <roll description="Poison Damage">2d10</roll>
   </item>
   <item>
     <name>Decanter of Endless Water</name>
@@ -1588,8 +1594,8 @@ Deck of Illusions:
 
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 161</text>
-    <roll>1d20-1</roll>
-    <roll>1d33</roll>
+    <roll description="Missing Cards">1d20-1</roll>
+    <roll description="Deck of Illusions">1d33</roll>
   </item>
   <item>
     <name>Deck of Many Things</name>
@@ -1603,6 +1609,7 @@ Source:	Dungeon Master's Guide (2014) p. 161</text>
 A Question of Enmity: Two of the cards in a deck of many things can earn a character the enmity of another being. With the Flames card, the enmity is overt. The character should experience the devil's malevolent efforts on multiple occasions. Seeking out the fiend shouldn't be a simple task, and the adventurer should clash with the devil's allies and followers a few times before being able to confront the devil itself.
 	In the case of the Rogue card, the enmity is secret and should come from someone thought to be a friend or an ally. As Dungeon Master, you should wait for a dramatically appropriate moment to reveal this enmity, leaving the adventurer guessing who is likely to become a betrayer.
 
+Deck of Many Things:
 1d22 | Playing Card | Card
 1 | Ace of diamonds | Vizier*
 2 | King of diamonds | Sun
@@ -1674,9 +1681,8 @@ The Void: This black card spells disaster. Your soul is drawn from your body and
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 162</text>
-    <roll>1d22</roll>
-    <roll>1d3</roll>
-    <roll>1d4+1</roll>
+    <roll description="Deck of Many Things">1d22</roll>
+    <roll description="Reduced Intelligence">1d4+1</roll>
   </item>
   <item>
     <name>Demon Armor</name>
@@ -1698,7 +1704,7 @@ If the wearer has a Strength score lower than 15, their speed is reduced by 10 f
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 165</text>
     <modifier category="bonus">ac +1</modifier>
-    <roll>1d8</roll>
+    <roll description="Damage Die">1d8</roll>
   </item>
   <item>
     <name>Diamond</name>
@@ -1752,7 +1758,7 @@ Source:	Dungeon Master's Guide (2014) p. 258</text>
 
 Found on: Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 166</text>
-    <roll>2d4</roll>
+    <roll description="Minutes">2d4</roll>
   </item>
   <item>
     <name>Dust of Dryness</name>
@@ -1765,8 +1771,8 @@ Source:	Dungeon Master's Guide (2014) p. 166</text>
 
 Found on: Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 166</text>
-    <roll>1d6+4</roll>
-    <roll>10d6</roll>
+    <roll description="Pinches of Dust">1d6+4</roll>
+    <roll description="Necrotic Damage">10d6</roll>
   </item>
   <item>
     <name>Dust of Sneezing and Choking</name>
@@ -1822,8 +1828,8 @@ Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 167</text>
     <modifier category="bonus">Melee Attacks +3</modifier>
     <modifier category="bonus">Melee Damage +3</modifier>
-    <roll>1d8</roll>
-    <roll>2d8</roll>
+    <roll description="Extra Damage">1d8</roll>
+    <roll description="Extra Damage">2d8</roll>
   </item>
   <item>
     <name>Efreeti Bottle</name>
@@ -2016,8 +2022,8 @@ Properties of the Eye and Hand: If you are attuned to both the hand and eye, you
 Destroying the Eye and Hand: If the Eye of Vecna and the Hand of Vecna are both attached to the same creature, and that creature is slain by the Sword of Kas, both the eye and the hand burst into flame, turn to ash, and are destroyed forever. Any other attempt to destroy the eye or hand seems to work, but the artifact reappears in one of Vecna's many hidden vaults, where it waits to be rediscovered.
 
 Source:	Dungeon Master's Guide (2014) p. 224</text>
-    <roll>1d4+4</roll>
-    <roll>1d10</roll>
+    <roll description="Recharge">1d4+4</roll>
+    <roll description="Heal">1d10</roll>
   </item>
   <item>
     <name>Eye patch with a mock eye set in blue sapphire and moonstone</name>
@@ -2293,7 +2299,7 @@ Source:	Dungeon Master's Guide (2014) p. 171</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 172</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Glamoured Studded Leather</name>
@@ -2317,7 +2323,7 @@ Source:	Dungeon Master's Guide (2014) p. 172</text>
 
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 172</text>
-    <roll>1d10+%2</roll>
+    <roll description="Damage Reduction">1d10+%2</roll>
   </item>
   <item>
     <name>Gloves of Swimming and Climbing</name>
@@ -2452,7 +2458,7 @@ Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 173</text>
     <modifier category="bonus">Melee Attacks +1</modifier>
     <modifier category="bonus">Melee Damage +1</modifier>
-    <roll>1d4+1</roll>
+    <roll description="Recharge">1d4+1</roll>
   </item>
   <item>
     <name>Hand of Vecna</name>
@@ -2490,9 +2496,9 @@ Properties of the Eye and Hand: If you are attuned to both the hand and eye, you
 Destroying the Eye and Hand: If the Eye of Vecna and the Hand of Vecna are both attached to the same creature, and that creature is slain by the Sword of Kas, both the eye and the hand burst into flame, turn to ash, and are destroyed forever. Any other attempt to destroy the eye or hand seems to work, but the artifact reappears in one of Vecna's many hidden vaults, where it waits to be rediscovered.
 
 Source:	Dungeon Master's Guide (2014) p. 224</text>
-    <roll>2d8</roll>
-    <roll>1d4+4</roll>
-    <roll>1d10</roll>
+    <roll description="Cold Damage">2d8</roll>
+    <roll description="Recharge">1d4+4</roll>
+    <roll description="Heal">1d10</roll>
   </item>
   <item>
     <name>Hat of Disguise</name>
@@ -2534,11 +2540,11 @@ Roll a d20 if you are wearing the helm and take fire damage as a result of faili
 
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 173</text>
-    <roll>1d10</roll>
-    <roll>2d10</roll>
-    <roll>3d10</roll>
-    <roll>4d10</roll>
-    <roll>1d6</roll>
+    <roll description="Diamonds">1d10</roll>
+    <roll description="Rubies">2d10</roll>
+    <roll description="Fire Opals">3d10</roll>
+    <roll description="Opals">4d10</roll>
+    <roll description="Fire Damage">1d6</roll>
   </item>
   <item>
     <name>Helm of Comprehending Languages</name>
@@ -2570,7 +2576,7 @@ Source:	Dungeon Master's Guide (2014) p. 174</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 174</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Hematite</name>
@@ -2606,8 +2612,8 @@ Source:	Dungeon Master's Guide (2014) p. 174</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 174</text>
-    <roll>5d6</roll>
-    <roll>10d6</roll>
+    <roll description="Thunder Damage">5d6</roll>
+    <roll description="Fire Damage">10d6</roll>
   </item>
   <item>
     <name>Horn of Valhalla, Brass</name>
@@ -2621,7 +2627,7 @@ Source:	Dungeon Master's Guide (2014) p. 174</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 175</text>
-    <roll>3d4+3</roll>
+    <roll description="Summon Berserker">3d4+3</roll>
   </item>
   <item>
     <name>Horn of Valhalla, Bronze</name>
@@ -2635,7 +2641,7 @@ Source:	Dungeon Master's Guide (2014) p. 175</text>
 
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 175</text>
-    <roll>4d4+4</roll>
+    <roll description="Summon Berserker">4d4+4</roll>
   </item>
   <item>
     <name>Horn of Valhalla, Iron</name>
@@ -2649,7 +2655,7 @@ Source:	Dungeon Master's Guide (2014) p. 175</text>
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 175</text>
-    <roll>5d4+5</roll>
+    <roll description="Summon Berserker">5d4+5</roll>
   </item>
   <item>
     <name>Horn of Valhalla, Silver</name>
@@ -2663,7 +2669,7 @@ Source:	Dungeon Master's Guide (2014) p. 175</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 175</text>
-    <roll>2d4+2</roll>
+    <roll description="Summon Berserker">2d4+2</roll>
   </item>
   <item>
     <name>Horseshoes of a Zephyr</name>
@@ -2727,7 +2733,7 @@ Improvise a tune | 20
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 176,
 		Xanathar's Guide to Everything p. 83</text>
-    <roll>2d4</roll>
+    <roll description="Psychic Damage">2d4</roll>
   </item>
   <item>
     <name>Instrument of the Bards, Canaith Mandolin</name>
@@ -2761,7 +2767,7 @@ Improvise a tune | 20
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 176,
 		Xanathar's Guide to Everything p. 83</text>
-    <roll>2d4</roll>
+    <roll description="Psychic Damage">2d4</roll>
   </item>
   <item>
     <name>Instrument of the Bards, Cli Lyre</name>
@@ -2795,7 +2801,7 @@ Improvise a tune | 20
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 176,
 		Xanathar's Guide to Everything p. 83</text>
-    <roll>2d4</roll>
+    <roll description="Psychic Damage">2d4</roll>
   </item>
   <item>
     <name>Instrument of the Bards, Doss Lute</name>
@@ -2829,7 +2835,7 @@ Improvise a tune | 20
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 176,
 		Xanathar's Guide to Everything p. 83</text>
-    <roll>2d4</roll>
+    <roll description="Psychic Damage">2d4</roll>
   </item>
   <item>
     <name>Instrument of the Bards, Fochlucan Bandore</name>
@@ -2863,7 +2869,7 @@ Improvise a tune | 20
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 176,
 		Xanathar's Guide to Everything p. 83</text>
-    <roll>2d4</roll>
+    <roll description="Psychic Damage">2d4</roll>
   </item>
   <item>
     <name>Instrument of the Bards, Mac-Fuirmidh Cittern</name>
@@ -2897,7 +2903,7 @@ Improvise a tune | 20
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 176,
 		Xanathar's Guide to Everything p. 83</text>
-    <roll>2d4</roll>
+    <roll description="Psychic Damage">2d4</roll>
   </item>
   <item>
     <name>Instrument of the Bards, Ollamh Harp</name>
@@ -2931,7 +2937,7 @@ Improvise a tune | 20
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 176,
 		Xanathar's Guide to Everything p. 83</text>
-    <roll>2d4</roll>
+    <roll description="Psychic Damage">2d4</roll>
   </item>
   <item>
     <name>Ioun Stone, Absorption</name>
@@ -2947,7 +2953,7 @@ While this pale lavender ellipsoid orbits your head, you can use your reaction t
 
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 176</text>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Agility</name>
@@ -2963,7 +2969,7 @@ Your Dexterity score increases by 2, to a maximum of 20, while this deep red sph
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 176</text>
     <modifier category="ability score">dexterity +2</modifier>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Awareness</name>
@@ -2978,7 +2984,7 @@ You can't be surprised while this dark blue rhomboid orbits your head.
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 176</text>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Fortitude</name>
@@ -2994,7 +3000,7 @@ Your Constitution score increases by 2, to a maximum of 20, while this pink rhom
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 176</text>
     <modifier category="ability score">constitution +2</modifier>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Greater Absorption</name>
@@ -3009,7 +3015,7 @@ While this marbled lavender and green ellipsoid orbits your head, you can use yo
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 176</text>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Insight</name>
@@ -3025,7 +3031,7 @@ Your Wisdom score increases by 2, to a maximum of 20, while this incandescent bl
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 176</text>
     <modifier category="ability score">wisdom +2</modifier>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Intellect</name>
@@ -3041,7 +3047,7 @@ Your Intelligence score increases by 2, to a maximum of 20, while this marbled s
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 176</text>
     <modifier category="ability score">intelligence +2</modifier>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Leadership</name>
@@ -3056,7 +3062,7 @@ Your Charisma score increases by 2, to a maximum of 20, while this marbled pink 
 
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 176</text>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Mastery</name>
@@ -3071,7 +3077,7 @@ Your proficiency bonus increases by 1 while this pale green prism orbits your he
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 176</text>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Protection</name>
@@ -3087,7 +3093,7 @@ You gain a +1 bonus to AC while this dusty rose prism orbits your head.
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 176</text>
     <modifier category="bonus">ac +1</modifier>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Regeneration</name>
@@ -3102,7 +3108,7 @@ You regain 15 hit points at the end of each hour this pearly white spindle orbit
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 176</text>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Reserve</name>
@@ -3119,8 +3125,8 @@ This vibrant purple prism stores spells cast into it, holding them until you use
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 176</text>
-    <roll>1d3</roll>
-    <roll>1d4-1</roll>
+    <roll description="Distance">1d3</roll>
+    <roll description="Levels of Stored Spells">1d4-1</roll>
   </item>
   <item>
     <name>Ioun Stone, Strength</name>
@@ -3136,7 +3142,7 @@ Your Strength score increases by 2, to a maximum of 20, while this pale blue rho
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 176</text>
     <modifier category="ability score">strength +2</modifier>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Ioun Stone, Sustenance</name>
@@ -3151,7 +3157,7 @@ You don't need to eat or drink while this clear spindle orbits your head.
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 176</text>
-    <roll>1d3</roll>
+    <roll description="Distance">1d3</roll>
   </item>
   <item>
     <name>Iron Bands of Bilarro</name>
@@ -3334,8 +3340,8 @@ Source:	Dungeon Master's Guide (2014) p. 119</text>
 
 Found on: Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 179</text>
-    <roll>1d4+1</roll>
-    <roll>2d8+2</roll>
+    <roll description="Doses">1d4+1</roll>
+    <roll description="Heal">2d8+2</roll>
   </item>
   <item>
     <name>Lantern of Revealing</name>
@@ -3496,7 +3502,7 @@ Source:	Dungeon Master's Guide (2014) p. 180</text>
 	Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands. See the Monster Manual for its game statistics.
 
 Source:	Dungeon Master's Guide (2014) p. 180</text>
-    <roll>6d6</roll>
+    <roll description="Psychic Damage">6d6</roll>
   </item>
   <item>
     <name>Manual of Flesh Golems</name>
@@ -3509,7 +3515,7 @@ Source:	Dungeon Master's Guide (2014) p. 180</text>
 	Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands. See the Monster Manual for its game statistics.
 
 Source:	Dungeon Master's Guide (2014) p. 180</text>
-    <roll>6d6</roll>
+    <roll description="Psychic Damage">6d6</roll>
   </item>
   <item>
     <name>Manual of Gainful Exercise</name>
@@ -3533,7 +3539,7 @@ Source:	Dungeon Master's Guide (2014) p. 180</text>
 	Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands. See the Monster Manual for its game statistics.
 
 Source:	Dungeon Master's Guide (2014) p. 180</text>
-    <roll>6d6</roll>
+    <roll description="Psychic Damage">6d6</roll>
   </item>
   <item>
     <name>Manual of Quickness of Action</name>
@@ -3557,7 +3563,7 @@ Source:	Dungeon Master's Guide (2014) p. 181</text>
 	Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands. See the Monster Manual for its game statistics.
 
 Source:	Dungeon Master's Guide (2014) p. 180</text>
-    <roll>6d6</roll>
+    <roll description="Psychic Damage">6d6</roll>
   </item>
   <item>
     <name>Medallion of Thoughts</name>
@@ -3569,7 +3575,7 @@ Source:	Dungeon Master's Guide (2014) p. 180</text>
 
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 181</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Midnight Tears</name>
@@ -3581,7 +3587,7 @@ Source:	Dungeon Master's Guide (2014) p. 181</text>
 Ingested: A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You might decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save.
 
 Source:	Dungeon Master's Guide (2014) p. 258</text>
-    <roll>9d6</roll>
+    <roll description="Poison Damage">9d6</roll>
   </item>
   <item>
     <name>Mirror of Life Trapping</name>
@@ -3644,9 +3650,9 @@ Proficiency: martial, longsword
 Source:	Dungeon Master's Guide (2014) p. 217</text>
     <modifier category="bonus">Melee Attacks +1</modifier>
     <modifier category="bonus">Melee Damage +1</modifier>
-    <roll>1d6+1</roll>
-    <roll>1d6</roll>
-    <roll>1d100</roll>
+    <roll description="First Rune">1d6+1</roll>
+    <roll description="Moonblade Properties">1d100</roll>
+    <roll description="Slashing Damage">1d6</roll>
   </item>
   <item>
     <name>Moonstone</name>
@@ -3687,7 +3693,7 @@ Source:	Dungeon Master's Guide (2014) p. 182</text>
 	You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first.
 Found on: Magic Item Table C
 Source:	Dungeon Master's Guide (2014) p. 182</text>
-    <roll>1d6+3</roll>
+    <roll description="Beads">1d6+3</roll>
   </item>
   <item>
     <name>Necklace of Prayer Beads</name>
@@ -3709,8 +3715,8 @@ d20 | Bead of... | Spell
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 182</text>
-    <roll>1d4+2</roll>
-    <roll>1d20</roll>
+    <roll description="Magic Beads">1d4+2</roll>
+    <roll description="Necklace of Prayer Beads">1d20</roll>
   </item>
   <item>
     <name>Necklace string of small pink pearls</name>
@@ -3732,7 +3738,7 @@ Source:	Dungeon Master's Guide (2014) p. 182</text>
 
 Found on: Magic Item Table D
 Source:	Dungeon Master's Guide (2014) p. 183</text>
-    <roll>1d4</roll>
+    <roll description="Pots">1d4</roll>
   </item>
   <item>
     <name>Oathbow</name>
@@ -3870,7 +3876,7 @@ Call Dragons: While you control the orb, you can use an action to cause the arti
 Destroying an Orb: An Orb of Dragonkind appears fragile but is impervious to most damage, including the attacks and breath weapons of dragons. A disintegrate spell or one good hit from a +3 magic weapon is sufficient to destroy an orb, however.
 
 Source:	Dungeon Master's Guide (2014) p. 225</text>
-    <roll>1d4+3</roll>
+    <roll description="Recharge">1d4+3</roll>
   </item>
   <item>
     <name>Painted gold child's sarcophagus</name>
@@ -3900,7 +3906,7 @@ Source:	Dungeon Master's Guide (2014) p. 225</text>
 Inhaled: These poisons are powders or gases that take effect when inhaled. Blowing the powder or releasing the gas subjects creatures in a 5-foot cube to its effect. The resulting cloud dissipates immediately afterward. Holding one's breath is ineffective against inhaled poisons, as they affect nasal membranes, tear ducts, and other parts of the body.
 
 Source:	Dungeon Master's Guide (2014) p. 258</text>
-    <roll>1d6</roll>
+    <roll description="Poison Damage">1d6</roll>
   </item>
   <item>
     <name>Pearl</name>
@@ -3998,7 +4004,7 @@ Improvise a tune | 20
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 185,
 		Xanathar's Guide to Everything p. 83</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Pipes of the Sewers</name>
@@ -4027,7 +4033,7 @@ Improvise a tune | 20
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 185,
 		Xanathar's Guide to Everything p. 83</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Plate Armor of Etherealness</name>
@@ -4135,7 +4141,7 @@ Source:	Dungeon Master's Guide (2014) p. 188</text>
 
 Found on: Magic Item Table C
 Source:	Dungeon Master's Guide (2014) p. 187</text>
-    <roll>1d4</roll>
+    <roll description="Hours">1d4</roll>
   </item>
   <item>
     <name>Potion of Fire Breath</name>
@@ -4146,7 +4152,7 @@ Source:	Dungeon Master's Guide (2014) p. 187</text>
 
 Found on: Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 187</text>
-    <roll>4d6</roll>
+    <roll description="Fire Damage">4d6</roll>
   </item>
   <item>
     <name>Potion of Fire Giant Strength</name>
@@ -4217,7 +4223,7 @@ Source:	Dungeon Master's Guide (2014) p. 187</text>
 
 Found on: Magic Item Table A, Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 187</text>
-    <roll>4d4+4</roll>
+    <roll description="Heal">4d4+4</roll>
   </item>
   <item>
     <name>Potion of Growth</name>
@@ -4228,7 +4234,7 @@ Source:	Dungeon Master's Guide (2014) p. 187</text>
 
 Found on: Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 187</text>
-    <roll>1d4</roll>
+    <roll description="Hours">1d4</roll>
   </item>
   <item>
     <name>Potion of Healing</name>
@@ -4242,7 +4248,7 @@ Source:	Dungeon Master's Guide (2014) p. 187</text>
 Found on: Magic Item Table A
 Source:	Dungeon Master's Guide (2014) p. 187,
 		Player's Handbook (2014) p. 153</text>
-    <roll>2d4+2</roll>
+    <roll description="Heal">2d4+2</roll>
   </item>
   <item>
     <name>Potion of Heroism</name>
@@ -4303,8 +4309,7 @@ Source:	Dungeon Master's Guide (2014) p. 188</text>
 
 Found on: Magic Item Table D
 Source:	Dungeon Master's Guide (2014) p. 188</text>
-    <roll>1d6+6</roll>
-    <roll>1d6+6</roll>
+    <roll description="Years">1d6+6</roll>
   </item>
   <item>
     <name>Potion of Mind Reading</name>
@@ -4335,8 +4340,10 @@ Source:	Dungeon Master's Guide (2014) p. 188</text>
 
 Found on: Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 188</text>
-    <roll>3d6</roll>
-    <roll>1d6</roll>
+    <roll description="Poison Damage">3d6</roll>
+    <roll description="Poison Damage">2d6</roll>
+    <roll description="Poison Damage">1d6</roll>
+    <roll description="Damage Decrease">1d6</roll>
   </item>
   <item>
     <name>Potion of Poison Resistance</name>
@@ -4406,7 +4413,7 @@ Source:	Dungeon Master's Guide (2014) p. 187</text>
 
 Found on: Magic Item Table C
 Source:	Dungeon Master's Guide (2014) p. 187</text>
-    <roll>8d4+8</roll>
+    <roll description="Heal">8d4+8</roll>
   </item>
   <item>
     <name>Potion of Supreme Healing</name>
@@ -4417,7 +4424,7 @@ Source:	Dungeon Master's Guide (2014) p. 187</text>
 
 Found on: Magic Item Table D, Magic Item Table E
 Source:	Dungeon Master's Guide (2014) p. 187</text>
-    <roll>10d4+20</roll>
+    <roll description="Heal">10d4+20</roll>
   </item>
   <item>
     <name>Potion of Thunder Resistance</name>
@@ -4458,7 +4465,7 @@ Source:	Dungeon Master's Guide (2014) p. 188</text>
 Injury: Injury poison can be applied to weapons, ammunition, trap components, and other objects that deal piercing or clashing damage and remains potent until delivered through a wound or washed off. A creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects.
 
 Source:	Dungeon Master's Guide (2014) p. 258</text>
-    <roll>12d6</roll>
+    <roll description="Poison Damage">12d6</roll>
   </item>
   <item>
     <name>Quaal's Feather Token, Anchor</name>
@@ -4526,7 +4533,7 @@ Whip: You can use an action to throw the token to a point within 10 feet of you.
 	As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die.
 
 Source:	Dungeon Master's Guide (2014) p. 188</text>
-    <roll>1d6+5</roll>
+    <roll description="Force Damage">1d6+5</roll>
   </item>
   <item>
     <name>Quartz</name>
@@ -4600,7 +4607,7 @@ You can expend 2 of the ring's charges to cast dominate monster on an air elemen
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 190</text>
-    <roll>1d4+1</roll>
+    <roll description="Recharge">1d4+1</roll>
   </item>
   <item>
     <name>Ring of Animal Influence</name>
@@ -4615,7 +4622,7 @@ Source:	Dungeon Master's Guide (2014) p. 190</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 189</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Ring of Cold Resistance</name>
@@ -4655,7 +4662,7 @@ You can expend 2 of the ring's charges to cast dominate monster on an earth elem
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 190</text>
-    <roll>1d4+1</roll>
+    <roll description="Recharge">1d4+1</roll>
   </item>
   <item>
     <name>Ring of Evasion</name>
@@ -4666,7 +4673,7 @@ Source:	Dungeon Master's Guide (2014) p. 190</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 191</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Ring of Feather Falling</name>
@@ -4694,7 +4701,7 @@ You can expend 2 of the ring's charges to cast dominate monster on a fire elemen
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 190</text>
-    <roll>1d4+1</roll>
+    <roll description="Recharge">1d4+1</roll>
   </item>
   <item>
     <name>Ring of Fire Resistance</name>
@@ -4822,8 +4829,8 @@ Source:	Dungeon Master's Guide (2014) p. 192</text>
 
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 191</text>
-    <roll>1d6</roll>
-    <roll>1d6+1</roll>
+    <roll description="Heal">1d6</roll>
+    <roll description="Days">1d6+1</roll>
   </item>
   <item>
     <name>Ring of Shooting Stars</name>
@@ -4843,11 +4850,11 @@ Shooting Stars: You can expend 1 to 3 charges as an action. For every charge you
 
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 192</text>
-    <roll>1d6</roll>
-    <roll>2d4</roll>
-    <roll>2d6</roll>
-    <roll>5d4</roll>
-    <roll>4d12</roll>
+    <roll description="Recharge">1d6</roll>
+    <roll description="4 Spheres">2d4</roll>
+    <roll description="3 Spheres">2d6</roll>
+    <roll description="2 Spheres">5d4</roll>
+    <roll description="1 Sphere">4d12</roll>
   </item>
   <item>
     <name>Ring of Spell Storing</name>
@@ -4860,7 +4867,7 @@ Source:	Dungeon Master's Guide (2014) p. 192</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 192</text>
-    <roll>1d6-1</roll>
+    <roll description="Levels of Stored Spells">1d6-1</roll>
   </item>
   <item>
     <name>Ring of Spell Turning</name>
@@ -4902,8 +4909,8 @@ Source:	Dungeon Master's Guide (2014) p. 193</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 193</text>
-    <roll>1d3</roll>
-    <roll>2d10</roll>
+    <roll description="Recharge">1d3</roll>
+    <roll description="Force Damage">2d10</roll>
   </item>
   <item>
     <name>Ring of Three Wishes</name>
@@ -4950,7 +4957,7 @@ You can expend 2 of the ring's charges to cast dominate monster on a water eleme
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 190</text>
-    <roll>1d4+1</roll>
+    <roll description="Recharge">1d4+1</roll>
   </item>
   <item>
     <name>Ring of Water Walking</name>
@@ -4999,7 +5006,7 @@ Source:	Dungeon Master's Guide (2014) p. 193</text>
 
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 194</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Robe of Stars</name>
@@ -5013,7 +5020,7 @@ Source:	Dungeon Master's Guide (2014) p. 194</text>
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 194</text>
     <modifier category="bonus">Saving Throws +1</modifier>
-    <roll>1d6</roll>
+    <roll description="Recharge">1d6</roll>
   </item>
   <item>
     <name>Robe of the Archmagi</name>
@@ -5047,6 +5054,7 @@ Source:	Dungeon Master's Guide (2014) p. 194</text>
 
 In addition, the robe has 4d4 other patches. The DM chooses the patches or determines them randomly.
 
+Patches:
 d100 | Patch
 01-08 | Bag of 100 gp
 09-15 | Silver coffer (1 foot long, 6 inches wide and deep) worth 500 gp
@@ -5064,8 +5072,8 @@ d100 | Patch
 
 Found on: Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 195</text>
-    <roll>4d4</roll>
-    <roll>1d100</roll>
+    <roll description="Other Patches">4d4</roll>
+    <roll description="Patches">1d100</roll>
   </item>
   <item>
     <name>Rod of Absorption</name>
@@ -5080,7 +5088,7 @@ Source:	Dungeon Master's Guide (2014) p. 195</text>
 
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 195</text>
-    <roll>1d10</roll>
+    <roll description="Levels of Spell Energy Stored">1d10</roll>
   </item>
   <item>
     <name>Rod of Alertness</name>
@@ -5124,7 +5132,7 @@ Terrify: While holding the rod, you can use an action to force each creature you
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 196</text>
-    <roll>4d6</roll>
+    <roll description="Necrotic Damage">4d6</roll>
   </item>
   <item>
     <name>Rod of Resurrection</name>
@@ -5410,7 +5418,7 @@ Source:	Dungeon Master's Guide (2014) p. 199</text>
 Injury: Injury poison can be applied to weapons, ammunition, trap components, and other objects that deal piercing or clashing damage and remains potent until delivered through a wound or washed off. A creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects.
 
 Source:	Dungeon Master's Guide (2014) p. 258</text>
-    <roll>3d6</roll>
+    <roll description="Poison Damage">3d6</roll>
   </item>
   <item>
     <name>Shield of Missile Attraction</name>
@@ -5522,7 +5530,7 @@ Source:	Dungeon Master's Guide (2014) p. 200</text>
 
 Found on: Magic Item Table E
 Source:	Dungeon Master's Guide (2014) p. 200</text>
-    <roll>1d6+1</roll>
+    <roll description="Ounces of Glue">1d6+1</roll>
   </item>
   <item>
     <name>Spell Scroll (1st Level)</name>
@@ -5538,8 +5546,8 @@ Copying a Scroll into a Spellbook: A wizard spell on a spell scroll can be copie
 
 Found on: Magic Item Table A
 Source:	Dungeon Master's Guide (2014) p. 200</text>
-    <roll>1d20+%0</roll>
-    <roll>1d20+5</roll>
+    <roll description="Succesfull Casting">1d20+%0</roll>
+    <roll description="Attack Bonus">1d20+5</roll>
   </item>
   <item>
     <name>Spell Scroll (2nd Level)</name>
@@ -5555,8 +5563,8 @@ Copying a Scroll into a Spellbook: A wizard spell on a spell scroll can be copie
 
 Found on: Magic Item Table A, Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 201</text>
-    <roll>1d20+%0</roll>
-    <roll>1d20+5</roll>
+    <roll description="Succesfull Casting">1d20+%0</roll>
+    <roll description="Attack Bonus">1d20+5</roll>
   </item>
   <item>
     <name>Spell Scroll (3rd Level)</name>
@@ -5572,8 +5580,8 @@ Copying a Scroll into a Spellbook: A wizard spell on a spell scroll can be copie
 
 Found on: Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 202</text>
-    <roll>1d20+%0</roll>
-    <roll>1d20+7</roll>
+    <roll description="Succesfull Casting">1d20+%0</roll>
+    <roll description="Attack Bonus">1d20+7</roll>
   </item>
   <item>
     <name>Spell Scroll (4th Level)</name>
@@ -5589,8 +5597,8 @@ Copying a Scroll into a Spellbook: A wizard spell on a spell scroll can be copie
 
 Found on: Magic Item Table C
 Source:	Dungeon Master's Guide (2014) p. 203</text>
-    <roll>1d20+%0</roll>
-    <roll>1d20+7</roll>
+    <roll description="Succesfull Casting">1d20+%0</roll>
+    <roll description="Attack Bonus">1d20+7</roll>
   </item>
   <item>
     <name>Spell Scroll (5th Level)</name>
@@ -5606,8 +5614,8 @@ Copying a Scroll into a Spellbook: A wizard spell on a spell scroll can be copie
 
 Found on: Magic Item Table C
 Source:	Dungeon Master's Guide (2014) p. 204</text>
-    <roll>1d20+%0</roll>
-    <roll>1d20+9</roll>
+    <roll description="Succesfull Casting">1d20+%0</roll>
+    <roll description="Attack Bonus">1d20+9</roll>
   </item>
   <item>
     <name>Spell Scroll (6th Level)</name>
@@ -5623,8 +5631,8 @@ Copying a Scroll into a Spellbook: A wizard spell on a spell scroll can be copie
 
 Found on: Magic Item Table D
 Source:	Dungeon Master's Guide (2014) p. 205</text>
-    <roll>1d20+%0</roll>
-    <roll>1d20+9</roll>
+    <roll description="Succesfull Casting">1d20+%0</roll>
+    <roll description="Attack Bonus">1d20+9</roll>
   </item>
   <item>
     <name>Spell Scroll (7th Level)</name>
@@ -5640,8 +5648,8 @@ Copying a Scroll into a Spellbook: A wizard spell on a spell scroll can be copie
 
 Found on: Magic Item Table D
 Source:	Dungeon Master's Guide (2014) p. 206</text>
-    <roll>1d20+%0</roll>
-    <roll>1d20+10</roll>
+    <roll description="Succesfull Casting">1d20+%0</roll>
+    <roll description="Attack Bonus">1d20+10</roll>
   </item>
   <item>
     <name>Spell Scroll (8th Level)</name>
@@ -5657,8 +5665,8 @@ Copying a Scroll into a Spellbook: A wizard spell on a spell scroll can be copie
 
 Found on: Magic Item Table D, Magic Item Table E
 Source:	Dungeon Master's Guide (2014) p. 207</text>
-    <roll>1d20+%0</roll>
-    <roll>1d20+10</roll>
+    <roll description="Succesfull Casting">1d20+%0</roll>
+    <roll description="Attack Bonus">1d20+10</roll>
   </item>
   <item>
     <name>Spell Scroll (9th Level)</name>
@@ -5674,8 +5682,8 @@ Copying a Scroll into a Spellbook: A wizard spell on a spell scroll can be copie
 
 Found on: Magic Item Table E
 Source:	Dungeon Master's Guide (2014) p. 208</text>
-    <roll>1d20+%0</roll>
-    <roll>1d20+11</roll>
+    <roll description="Succesfull Casting">1d20+%0</roll>
+    <roll description="Attack Bonus">1d20+11</roll>
   </item>
   <item>
     <name>Spell Scroll (Cantrip)</name>
@@ -5689,8 +5697,8 @@ A spell cast from this scroll has a save DC of 13 and an attack bonus of +5.
 
 Found on: Magic Item Table A
 Source:	Dungeon Master's Guide (2014) p. 199</text>
-    <roll>1d20+%0</roll>
-    <roll>1d20+5</roll>
+    <roll description="Succesfull Casting">1d20+%0</roll>
+    <roll description="Attack Bonus">1d20+5</roll>
   </item>
   <item>
     <name>Spellguard Shield</name>
@@ -5723,8 +5731,8 @@ d100 | Result
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 201</text>
-    <roll>4d10</roll>
-    <roll>1d100</roll>
+    <roll description="Force Damage">4d10</roll>
+    <roll description="Sphere of Annihilation">1d100</roll>
   </item>
   <item>
     <name>Spinel</name>
@@ -5779,7 +5787,7 @@ Arcane Focus: An arcane focus is a special item designed to channel the power of
 Proficiency: simple, staff, quarterstaff
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 201</text>
-    <roll>1d6+4</roll>
+    <roll description="Recharge">1d6+4</roll>
   </item>
   <item>
     <name>Staff of Frost</name>
@@ -5802,7 +5810,7 @@ Arcane Focus: An arcane focus is a special item designed to channel the power of
 Proficiency: simple, staff, quarterstaff
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 202</text>
-    <roll>1d6+4</roll>
+    <roll description="Recharge">1d6+4</roll>
   </item>
   <item>
     <name>Staff of Healing</name>
@@ -5824,7 +5832,7 @@ Arcane Focus: An arcane focus is a special item designed to channel the power of
 Proficiency: simple, staff, quarterstaff
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 202</text>
-    <roll>1d6+4</roll>
+    <roll description="Recharge">1d6+4</roll>
   </item>
   <item>
     <name>Staff of Power</name>
@@ -5864,9 +5872,9 @@ Source:	Dungeon Master's Guide (2014) p. 202</text>
     <modifier category="bonus">ac +2</modifier>
     <modifier category="bonus">Saving Throws +2</modifier>
     <modifier category="bonus">Spell Attack +2</modifier>
-    <roll>2d8+4</roll>
-    <roll>1d8+2</roll>
-    <roll>1d6</roll>
+    <roll description="Recharge">2d8+4</roll>
+    <roll description="Recharge">1d8+2</roll>
+    <roll description="Force Damage">1d6</roll>
   </item>
   <item>
     <name>Staff of Striking</name>
@@ -5890,8 +5898,8 @@ Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 203</text>
     <modifier category="bonus">Melee Attacks +3</modifier>
     <modifier category="bonus">Melee Damage +3</modifier>
-    <roll>1d6</roll>
-    <roll>1d6+4</roll>
+    <roll description="Force Damage">1d6</roll>
+    <roll description="Recharge">1d6+4</roll>
   </item>
   <item>
     <name>Staff of Swarming Insects</name>
@@ -5916,7 +5924,7 @@ Arcane Focus: An arcane focus is a special item designed to channel the power of
 Proficiency: simple, staff, quarterstaff
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 203</text>
-    <roll>1d6+4</roll>
+    <roll description="Recharge">1d6+4</roll>
   </item>
   <item>
     <name>Staff of the Adder</name>
@@ -5939,8 +5947,8 @@ Arcane Focus: An arcane focus is a special item designed to channel the power of
 Proficiency: simple, staff, quarterstaff
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 203</text>
-    <roll>1d6</roll>
-    <roll>3d6</roll>
+    <roll description="Piercing Damage">1d6</roll>
+    <roll description="Poison Damage">3d6</roll>
   </item>
   <item>
     <name>Staff of the Magi</name>
@@ -5979,8 +5987,8 @@ Source:	Dungeon Master's Guide (2014) p. 203</text>
     <modifier category="bonus">Melee Attacks +2</modifier>
     <modifier category="bonus">Melee Damage +2</modifier>
     <modifier category="bonus">Spell Attack +2</modifier>
-    <roll>4d6+2</roll>
-    <roll>1d12+1</roll>
+    <roll description="Recharge">4d6+2</roll>
+    <roll description="Recharge">1d12+1</roll>
   </item>
   <item>
     <name>Staff of the Python</name>
@@ -6032,7 +6040,7 @@ Source:	Dungeon Master's Guide (2014) p. 204</text>
     <modifier category="bonus">Melee Attacks +2</modifier>
     <modifier category="bonus">Melee Damage +2</modifier>
     <modifier category="bonus">Spell Attack +2</modifier>
-    <roll>1d6+4</roll>
+    <roll description="Recharge">1d6+4</roll>
   </item>
   <item>
     <name>Staff of Thunder and Lightning</name>
@@ -6063,8 +6071,8 @@ Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 204</text>
     <modifier category="bonus">Melee Attacks +2</modifier>
     <modifier category="bonus">Melee Damage +2</modifier>
-    <roll>2d6</roll>
-    <roll>9d6</roll>
+    <roll description="Lightning Damage">2d6</roll>
+    <roll description="Lightning Damage">9d6</roll>
   </item>
   <item>
     <name>Staff of Withering</name>
@@ -6086,8 +6094,8 @@ Arcane Focus: An arcane focus is a special item designed to channel the power of
 Proficiency: simple, staff, quarterstaff
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 205</text>
-    <roll>1d3</roll>
-    <roll>2d10</roll>
+    <roll description="Recharge">1d3</roll>
+    <roll description="Necrotic Damage">2d10</roll>
   </item>
   <item>
     <name>Star rose quartz</name>
@@ -6432,8 +6440,8 @@ Source:	Dungeon Master's Guide (2014) p. 226,
 		Vecna Dossier p. 9</text>
     <modifier category="bonus">Melee Attacks +3</modifier>
     <modifier category="bonus">Melee Damage +3</modifier>
-    <roll>2d10</roll>
-    <roll>3d6</roll>
+    <roll description="Slashing Damage">2d10</roll>
+    <roll description="Psychic Damage">3d6</roll>
   </item>
   <item>
     <name>Talisman of Pure Good</name>
@@ -6448,8 +6456,8 @@ Source:	Dungeon Master's Guide (2014) p. 226,
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 207</text>
     <modifier category="bonus">Spell Attack +2</modifier>
-    <roll>6d6</roll>
-    <roll>8d6</roll>
+    <roll description="Radiant Damage">6d6</roll>
+    <roll description="Radiant Damage">8d6</roll>
   </item>
   <item>
     <name>Talisman of the Sphere</name>
@@ -6475,8 +6483,8 @@ Source:	Dungeon Master's Guide (2014) p. 207</text>
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 207</text>
     <modifier category="bonus">Spell Attack +2</modifier>
-    <roll>6d6</roll>
-    <roll>8d6</roll>
+    <roll description="Necrotic Damage">6d6</roll>
+    <roll description="Necrotic Damage">8d6</roll>
   </item>
   <item>
     <name>Tentacle Rod</name>
@@ -6487,7 +6495,7 @@ Source:	Dungeon Master's Guide (2014) p. 207</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 208</text>
-    <roll>1d6</roll>
+    <roll description="Bludgeoning Damage">1d6</roll>
   </item>
   <item>
     <name>Tiger Eye</name>
@@ -6566,7 +6574,7 @@ Poisoned: A poisoned creature has disadvantage on attack rolls and ability check
 Ingested: A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You might decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save.
 
 Source:	Dungeon Master's Guide (2014) p. 258</text>
-    <roll>4d6</roll>
+    <roll description="Poisoned">4d6</roll>
   </item>
   <item>
     <name>Tourmaline</name>
@@ -6599,7 +6607,7 @@ Versatile: This weapon can be used with one or two hands. A damage value in pare
 Proficiency: simple, trident
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 209</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Truth Serum</name>
@@ -6645,7 +6653,7 @@ Assisted Escape: While holding the wand, you can use your reaction to expend 1 c
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 209</text>
-    <roll>1d6+1</roll>
+    <roll description="Recharge">1d6+1</roll>
   </item>
   <item>
     <name>Wand of Enemy Detection</name>
@@ -6658,7 +6666,7 @@ Source:	Dungeon Master's Guide (2014) p. 209</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 210</text>
-    <roll>1d6+1</roll>
+    <roll description="Recharge">1d6+1</roll>
   </item>
   <item>
     <name>Wand of Fear</name>
@@ -6678,7 +6686,8 @@ Frightened:
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 210</text>
-    <roll>1d6+1</roll>
+    <roll description="Recharge">1d6+1</roll>
+    <roll description="Last Charge Expended">1d20</roll>
   </item>
   <item>
     <name>Wand of Fireballs</name>
@@ -6691,14 +6700,14 @@ Source:	Dungeon Master's Guide (2014) p. 210</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 210</text>
-    <roll>1d6+1</roll>
-    <roll>8d6</roll>
-    <roll>9d6</roll>
-    <roll>10d6</roll>
-    <roll>11d6</roll>
-    <roll>12d6</roll>
-    <roll>13d6</roll>
-    <roll>14d6</roll>
+    <roll description="Recharge">1d6+1</roll>
+    <roll description="Fire Damage">8d6</roll>
+    <roll description="Fire Damage">9d6</roll>
+    <roll description="Fire Damage">10d6</roll>
+    <roll description="Fire Damage">11d6</roll>
+    <roll description="Fire Damage">12d6</roll>
+    <roll description="Fire Damage">13d6</roll>
+    <roll description="Fire Damage">14d6</roll>
   </item>
   <item>
     <name>Wand of Lightning Bolts</name>
@@ -6711,14 +6720,14 @@ Source:	Dungeon Master's Guide (2014) p. 210</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 211</text>
-    <roll>1d6+1</roll>
-    <roll>8d6</roll>
-    <roll>9d6</roll>
-    <roll>10d6</roll>
-    <roll>11d6</roll>
-    <roll>12d6</roll>
-    <roll>13d6</roll>
-    <roll>14d6</roll>
+    <roll description="Recharge">1d6+1</roll>
+    <roll description="Lightning Damage">8d6</roll>
+    <roll description="Lightning Damage">9d6</roll>
+    <roll description="Lightning Damage">10d6</roll>
+    <roll description="Lightning Damage">11d6</roll>
+    <roll description="Lightning Damage">12d6</roll>
+    <roll description="Lightning Damage">13d6</roll>
+    <roll description="Lightning Damage">14d6</roll>
   </item>
   <item>
     <name>Wand of Magic Detection</name>
@@ -6730,7 +6739,7 @@ Source:	Dungeon Master's Guide (2014) p. 211</text>
 
 Found on: Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 211</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Wand of Magic Missiles</name>
@@ -6743,15 +6752,9 @@ Source:	Dungeon Master's Guide (2014) p. 211</text>
 
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 211</text>
-    <roll>1d6+1</roll>
-    <roll>1d4+1</roll>
-    <roll>(1d4+1)+(1d4+1)+(1d4+1)</roll>
-    <roll>(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)</roll>
-    <roll>(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)</roll>
-    <roll>(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)</roll>
-    <roll>(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)</roll>
-    <roll>(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)</roll>
-    <roll>(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)+(1d4+1)</roll>
+    <roll description="Recharge">1d6+1</roll>
+    <roll description="Force Damage">1d4+1</roll>
+    <roll description="Last Charge">1d20</roll>
   </item>
   <item>
     <name>Wand of Orcus</name>
@@ -6792,9 +6795,9 @@ Source:	Dungeon Master's Guide (2014) p. 227</text>
     <modifier category="bonus">ac +3</modifier>
     <modifier category="bonus">Melee Attacks +3</modifier>
     <modifier category="bonus">Melee Damage +3</modifier>
-    <roll>10d6</roll>
-    <roll>2d12</roll>
-    <roll>1d4+3</roll>
+    <roll description="Necrotic Damage">10d6</roll>
+    <roll description="Necrotic Damage">2d12</roll>
+    <roll description="Recharge">1d4+3</roll>
   </item>
   <item>
     <name>Wand of Paralysis</name>
@@ -6807,7 +6810,7 @@ Source:	Dungeon Master's Guide (2014) p. 227</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 211</text>
-    <roll>1d6+1</roll>
+    <roll description="Recharge">1d6+1</roll>
   </item>
   <item>
     <name>Wand of Polymorph</name>
@@ -6820,7 +6823,7 @@ Source:	Dungeon Master's Guide (2014) p. 211</text>
 
 Found on: Magic Item Table H
 Source:	Dungeon Master's Guide (2014) p. 211</text>
-    <roll>1d6+1</roll>
+    <roll description="Recharge">1d6+1</roll>
   </item>
   <item>
     <name>Wand of Secrets</name>
@@ -6832,7 +6835,7 @@ Source:	Dungeon Master's Guide (2014) p. 211</text>
 
 Found on: Magic Item Table B
 Source:	Dungeon Master's Guide (2014) p. 211</text>
-    <roll>1d3</roll>
+    <roll description="Recharge">1d3</roll>
   </item>
   <item>
     <name>Wand of Web</name>
@@ -6845,7 +6848,7 @@ Source:	Dungeon Master's Guide (2014) p. 211</text>
 
 Found on: Magic Item Table F
 Source:	Dungeon Master's Guide (2014) p. 212</text>
-    <roll>1d6+1</roll>
+    <roll description="Recharge">1d6+1</roll>
   </item>
   <item>
     <name>Wand of Wonder</name>
@@ -6885,10 +6888,12 @@ d100 | Effect
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 212</text>
-    <roll>1d6+1</roll>
-    <roll>1d6</roll>
-    <roll>1d4</roll>
-    <roll>1d10</roll>
+    <roll description="Recharge">1d6+1</roll>
+    <roll description="Last Charge">1d20</roll>
+    <roll description="Wand of Wonder">1d100</roll>
+    <roll description="Psychic Damage">1d6</roll>
+    <roll description="Gems">1d4x10</roll>
+    <roll description="Days">1d10</roll>
   </item>
   <item>
     <name>Warship (Vehicle)</name>
@@ -6959,7 +6964,7 @@ Source:	Dungeon Master's Guide (2014) p. 218</text>
 
 Found on: Magic Item Table I
 Source:	Dungeon Master's Guide (2014) p. 213</text>
-    <roll>1d8</roll>
+    <roll description="Hours">1d8</roll>
   </item>
   <item>
     <name>Whelm</name>
@@ -6996,8 +7001,8 @@ Proficiency: martial, warhammer
 Source:	Dungeon Master's Guide (2014) p. 218</text>
     <modifier category="bonus">Melee Attacks +3</modifier>
     <modifier category="bonus">Melee Damage +3</modifier>
-    <roll>1d8</roll>
-    <roll>2d8</roll>
+    <roll description="Bludgeoning Damage">1d8</roll>
+    <roll description="Bludgeoning Damage to Giants">2d8</roll>
   </item>
   <item>
     <name>White Dragon Scale Mail</name>
@@ -7045,7 +7050,7 @@ Source:	Dungeon Master's Guide (2014) p. 214</text>
 
 Found on: Magic Item Table G
 Source:	Dungeon Master's Guide (2014) p. 214</text>
-    <roll>1d12</roll>
+    <roll description="Hours">1d12</roll>
   </item>
   <item>
     <name>Wyvern Poison</name>
@@ -7057,7 +7062,7 @@ Source:	Dungeon Master's Guide (2014) p. 214</text>
 Injury: Injury poison can be applied to weapons, ammunition, trap components, and other objects that deal piercing or clashing damage and remains potent until delivered through a wound or washed off. A creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects.
 
 Source:	Dungeon Master's Guide (2014) p. 258</text>
-    <roll>7d6</roll>
+    <roll description="Poison Damage">7d6</roll>
   </item>
   <item>
     <name>Yellow Sapphire</name>
@@ -7384,7 +7389,7 @@ d100 | Feather Token
 
 Found on: Magic Item Table C
 Source:	Dungeon Master's Guide (2014) p. 188</text>
-    <roll>1d100</roll>
+    <roll description="Quaal's Feather Token">1d100</roll>
   </item>
   <item>
     <name>Ring of Elemental Command</name>

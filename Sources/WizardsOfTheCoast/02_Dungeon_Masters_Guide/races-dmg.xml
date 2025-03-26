@@ -36,10 +36,12 @@ Weight in pounds = 70 + (1d4 × your size modifier)</text>
     <trait category="species">
       <name>Dive Attack</name>
       <text>If you are flying and dive at least 30 ft. straight toward a target and then hit it with a melee weapon attack, the attack deals an extra 1d6 damage to the target.</text>
+      <roll description="Extra Damage">1d6</roll>
     </trait>
     <trait category="species">
       <name>Talons</name>
       <text>You are proficient with your unarmed strikes, which deal 1d4 slashing damage on a hit.</text>
+      <roll description="Slashing Damage">1d4</roll>
     </trait>
     <trait>
       <name>Languages</name>
@@ -51,6 +53,7 @@ Weight in pounds = 70 + (1d4 × your size modifier)</text>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Wis +1</ability>
+    <resist>necrotic, radiant</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -146,6 +149,7 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
     <speed>30</speed>
     <ability>Dex +2, Int +1</ability>
     <proficiency>Perception</proficiency>
+    <weapons>Longsword, Shortsword, Longbow, Shortbow</weapons>
     <trait category="description">
       <name>Description</name>
       <text>Elves are a magical people of otherworldly grace, living in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry.
@@ -251,6 +255,7 @@ Weight in pounds = 90 + (1d4 × your size modifier)</text>
     <trait category="species">
       <name>Bite</name>
       <text>Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Piercing Damage">1d4+%1</roll>
     </trait>
     <trait category="species">
       <name>Darkvision</name>
@@ -450,6 +455,7 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
     <trait category="species">
       <name>Martial Advantage</name>
       <text>Once per turn, you can deal an extra 2d6 damage to a creature you hit with a weapon attack if that creature is within 5 ft. of an ally of yours that isn't incapacitated.</text>
+      <roll description="Extra Damage">2d6</roll>
     </trait>
     <trait>
       <name>Languages</name>
@@ -618,6 +624,7 @@ d8 | Quirk
     <trait category="species">
       <name>Natural Armor</name>
       <text>Your scales function as natural armor, granting you a +3 bonus to Armor Class.</text>
+      <modifier category="bonus">ac +3</modifier>
     </trait>
     <trait>
       <name>Languages</name>
