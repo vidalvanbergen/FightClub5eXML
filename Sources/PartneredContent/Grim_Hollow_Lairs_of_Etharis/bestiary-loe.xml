@@ -47,7 +47,7 @@ A creature that starts its turn in the cloud must make a DC 16 Constitution savi
 
 After 24 hours, corpses of beasts or humanoids that were in the spore area rise as zombies loyal to the ancient corpse walker. If such a corpse is that of an evil humanoid, it instead rises as a corpse walker loyal to the ancient corpse walker. These spores can animate a corpse only once.</text>
       <attack>Spore Cloud||3d8</attack>
-      <attack>Necrotic||3d8</attack>
+      <attack>Necrotic Damage||3d8</attack>
     </trait>
     <trait>
       <name>Spore Fortitude</name>
@@ -71,7 +71,7 @@ If the ancient corpse walker takes damage while at 0 hit points, if able, it mak
       <name>Slam</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage and 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw, or its hit point maximum is reduced by an amount equal to the necrotic damage taken, and the ancient corpse walker regains hit points equal to that amount. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain this way rises 24 hours later as a zombie, but it rises as a corpse walker if it was evil. These undead are loyal to the ancient corpse walker.</text>
       <attack>Slam|+8|2d6+4</attack>
-      <attack>Necrotic||3d6</attack>
+      <attack>Necrotic Damage||3d6</attack>
     </action>
     <spells/>
     <slots/>
@@ -140,15 +140,15 @@ Creatures who start their turn in the aura gain 15 temporary hit points, cannot 
       <name>Holy Avenger</name>
       <text>Melee Weapon Attack: +24 to hit, reach 10 ft., one target. Hit: 23 (4d6 + 9) slashing damage plus 27 (6d8) radiant damage. If the target is a fiend or undead, it takes an additional 22 (4d10) radiant damage.</text>
       <attack>Holy Avenger|+24|3d6+9</attack>
-      <attack>Radiant||6d8</attack>
+      <attack>Radiant Damage||6d8</attack>
       <attack>Fiend or Undead||4d10</attack>
     </action>
     <action>
       <name>Blazing Radiance (Recharge 5-6).</name>
       <recharge>D5</recharge>
       <text>The Angel of Empyreus unleashes holy fire in a 60-foot cone. Each creature in that area must succeed on a DC 25 Dexterity saving throw or take 35 10d6 fire and 35 (10d6) radiant damage. Creatures take half damage on a success.</text>
-      <attack>Fire||10d6</attack>
-      <attack>Radiant||10d6</attack>
+      <attack>Fire Damage||10d6</attack>
+      <attack>Radiant Damage||10d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -167,7 +167,7 @@ Creatures who start their turn in the aura gain 15 temporary hit points, cannot 
       <name>Hurl Sword (2 actions)</name>
       <text>The Angel of Empyreus hurls its sword in a 30-foot line that is 5-feet wide. Each creature in that line must succeed on a DC 24 Dexterity saving throw or take 23 (4d6 + 9) slashing damage plus 27 (6d8) radiant damage. The sword immediately returns to its hand.</text>
       <attack>Hurl Sword||3d6+9</attack>
-      <attack>Radiant||6d8</attack>
+      <attack>Radiant Damage||6d8</attack>
     </legendary>
     <legendary>
       <name>Recharge</name>
@@ -235,7 +235,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 104</description>
       <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage, or 8 (1d6 + 5) slashing damage in Small or Medium form, and 18 (4d8) radiant damage.</text>
       <attack>Scimitar|+10|2d6+5</attack>
       <attack>Small||1d6+5</attack>
-      <attack>Radiant||4d8</attack>
+      <attack>Radiant Damage||4d8</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -559,13 +559,13 @@ Source:	Grim Hollow: Lairs of Etharis p. 13</description>
       <name>Claw</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage and 4 (1d8) fire damage.</text>
       <attack>Claw|+7|2d6+3</attack>
-      <attack>Fire||1d8</attack>
+      <attack>Fire Damage||1d8</attack>
     </action>
     <action>
       <name>Gore</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage and 4 (1d8) fire damage.</text>
       <attack>Gore|+7|2d8+3</attack>
-      <attack>Fire||1d8</attack>
+      <attack>Fire Damage||1d8</attack>
     </action>
     <action>
       <name>Hurl Fire</name>
@@ -859,7 +859,7 @@ Unless surprised, a creature can avert its eyes to avoid the saving throw. If th
       <name>Slam</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage and 5 (2d4) necrotic damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw, or its hit point maximum is reduced by an amount equal to the necrotic damage taken, and the corpse walker regains hit points equal to that amount. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. An evil humanoid slain this way rises 24 hours later as a corpse walker.</text>
       <attack>Slam|+6|1d6+4</attack>
-      <attack>Necrotic||2d4</attack>
+      <attack>Necrotic Damage||2d4</attack>
     </action>
     <spells/>
     <slots/>
@@ -979,7 +979,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 92</description>
       <name>Slam</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage and 7 (2d6) cold damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or be blinded until the end of the dawndrinker's next turn.</text>
       <attack>Slam|+7|1d8+4</attack>
-      <attack>Cold||2d6</attack>
+      <attack>Cold Damage||2d6</attack>
     </action>
     <spells/>
     <slots/>
@@ -1349,7 +1349,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 41</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one creature. Hit: 15 (2d8 + 6) piercing damage and 17 (5d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried rises the following night as a vampire spawn under this vampire's control.</text>
       <attack>Bite|+11|2d8+6</attack>
-      <attack>Necrotic||5d6</attack>
+      <attack>Necrotic Damage||5d6</attack>
     </action>
     <action>
       <name>Fey Majesty</name>
@@ -1423,8 +1423,8 @@ While it has 0 hit points in mist form, the vampire dies if it takes damage thre
     <trait>
       <name>Death Throes</name>
       <text>When the Empyrean brazen bull dies, it explodes, and each creature within 20 feet of it must make a DC 17 Dexterity saving throw, taking 21 6d6 fire and 21 (6d6) radiant damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Fire||6d6</attack>
-      <attack>Radiant||6d6</attack>
+      <attack>Fire Damage||6d6</attack>
+      <attack>Radiant Damage||6d6</attack>
     </trait>
     <trait>
       <name>Soulfire Nimbus</name>
@@ -1443,19 +1443,19 @@ While it has 0 hit points in mist form, the vampire dies if it takes damage thre
       <name>Bite</name>
       <text>Melee Weapon Attack: +12 to hit, reach 10 ft., one target., Hit: 24 (3d10 + 8) bludgeoning damage plus 18 (4d8) radiant damage. If the target is a creature, it is grappled (escape DC 20). Until this grapple ends, the target is restrained, and the Empyrean brazen bull can't bite another target.</text>
       <attack>Bite|+12|3d10+8</attack>
-      <attack>Radiant||4d8</attack>
+      <attack>Radiant Damage||4d8</attack>
     </action>
     <action>
       <name>Gore</name>
       <text>Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 27 (3d12 + 8) piercing damage and 18 (4d8) radiant damage.</text>
       <attack>Gore|+12|3d12+8</attack>
-      <attack>Radiant||4d8</attack>
+      <attack>Radiant Damage||4d8</attack>
     </action>
     <action>
       <name>Hooves</name>
       <text>Melee Weapon Attack: +12 to hit, reach 5 feet., one target. Hit: 24 (3d10 + 8) bludgeoning damage and 18 (4d8) radiant damage.</text>
       <attack>Hooves|+12|3d10+8</attack>
-      <attack>Radiant||4d8</attack>
+      <attack>Radiant Damage||4d8</attack>
     </action>
     <action>
       <name>Swallow</name>
@@ -1682,7 +1682,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 9</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 17 (5d6) necrotic damage and is stunned until the end of its next turn. A humanoid slain after being bitten rises the following night as a fzeglaich under the fzeg's control.</text>
       <attack>Bite|+9|2d6+4</attack>
-      <attack>Necrotic||5d6</attack>
+      <attack>Necrotic Damage||5d6</attack>
     </action>
     <action>
       <name>Claws</name>
@@ -1774,7 +1774,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 80</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) necrotic damage, and the target must succeed on a DC 14 Constitution saving throw or be incapacitated until the end of its next turn. The fzeglaich regains hit points equal to the amount of necrotic damage dealt.</text>
       <attack>Bite|+6|1d8+3</attack>
-      <attack>Necrotic||2d6</attack>
+      <attack>Necrotic Damage||2d6</attack>
     </action>
     <action>
       <name>Claws</name>
@@ -1850,8 +1850,8 @@ Poisoned:
       <name>Bite</name>
       <text>Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 21 (2d12 + 8) piercing damage, 9 (2d8) cold damage and 9 (2d8) necrotic damage.</text>
       <attack>Bite|+15|2d12+8</attack>
-      <attack>Cold||2d8</attack>
-      <attack>Necrotic||2d8</attack>
+      <attack>Cold Damage||2d8</attack>
+      <attack>Necrotic Damage||2d8</attack>
     </action>
     <action>
       <name>Claw</name>
@@ -1876,7 +1876,7 @@ Frightened:
       <recharge>D5</recharge>
       <text>Gegazol exhales frozen material and rot in a 90-foot cone. Each creature in that area must make a DC 23 Constitution saving throw, taking 45 (10d8) cold damage and 45 (10d8) necrotic damage on a failed save, or half as much damage on a successful one. Those who fail the save also gain two levels of exhaustion until the end of Gegazol's next turn, and those who fail by 5 or more are also blinded for 1 minute. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
       <attack>Breath of Long Night||10d8</attack>
-      <attack>Necrotic||10d8</attack>
+      <attack>Necrotic Damage||10d8</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -1895,7 +1895,7 @@ Frightened:
       <name>Wings of Winter (Costs 2 Actions)</name>
       <text>Gegazol beats her wings. Each creature within 30 feet of her must succeed on a DC 23 Dexterity saving throw or take 17 (2d8 + 8) bludgeoning damage and 9 (2d8) cold damage, and then fall prone. Gegazol can then fly up to half her flying speed.</text>
       <attack>Wings of Winter||2d8+8</attack>
-      <attack>Cold||2d8</attack>
+      <attack>Cold Damage||2d8</attack>
     </legendary>
     <spells/>
     <slots/>
@@ -1960,7 +1960,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 117</description>
     <trait>
       <name>Seraphic Weapons</name>
       <text>The seraph's weapon attacks are magical. When the seraph hits with any weapon, the weapon deals an extra (2d8) radiant damage (included in the attacks).</text>
-      <attack>Radiant||2d8</attack>
+      <attack>Radiant Damage||2d8</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -1970,7 +1970,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 117</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 24 (3d12 + 5) piercing damage and 9 (2d8) radiant damage. If the target is a Large or smaller creature, it is grappled (escape DC 18). Until this grapple ends, the target is restrained, and the seraph can't bite another target.</text>
       <attack>Bite|+10|3d12+5</attack>
-      <attack>Radiant||2d8</attack>
+      <attack>Radiant Damage||2d8</attack>
     </action>
     <action>
       <name>Claw</name>
@@ -1981,7 +1981,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 117</description>
       <name>Tongue</name>
       <text>Melee Weapon Attack: +10 to hit, reach 20 ft., one creature. Hit: 10 (2d4 + 5) bludgeoning damage and 9 (2d8) radiant damage, and the target is grappled (escape DC 18) and pulled to within 5 feet of the seraph. Until the grapple ends, the target is restrained, and the seraph can't use its tongue or bite on another target.</text>
       <attack>Tongue|+10|2d4+5</attack>
-      <attack>Radiant||2d8</attack>
+      <attack>Radiant Damage||2d8</attack>
     </action>
     <action>
       <name>Swallow</name>
@@ -1989,7 +1989,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 117</description>
 
 If the seraph takes 35 damage or more on a single turn from a creature inside it, the seraph must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls prone in a space within 10 feet of the seraph. If the seraph dies, the swallowed creature is no longer restrained by it and can escape the corpse by using 10 feet of movement, exiting prone.</text>
       <attack>Swallow||4d8</attack>
-      <attack>Radiant||2d8</attack>
+      <attack>Radiant Damage||2d8</attack>
     </action>
     <spells>detect evil and good, detect magic, light, thaumaturgy, suggestion, create food and water</spells>
     <slots/>
@@ -2424,7 +2424,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 72</description>
       <name>Greatsword</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage and 7 (2d6) fire damage.</text>
       <attack>Greatsword|+7|2d6+4</attack>
-      <attack>Fire||2d6</attack>
+      <attack>Fire Damage||2d6</attack>
     </action>
     <action>
       <name>Infernal Leash (Recharge 6)</name>
@@ -2623,7 +2623,7 @@ Once the lenchtahg goes berserk, it remains so until destroyed or it has more th
       <name>Claw</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage and 9 (2d8) fire damage.</text>
       <attack>Claw|+7|2d4+4</attack>
-      <attack>Fire||2d8</attack>
+      <attack>Fire Damage||2d8</attack>
     </action>
     <action>
       <name>Radiant Gaze</name>
@@ -2680,7 +2680,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 51</description>
     <trait>
       <name>Seraphic Weapons</name>
       <text>The seraph's weapon attacks are magical. When the seraph hits with any weapon, the weapon deals an extra (2d8) radiant damage (included in the attack).</text>
-      <attack>Radiant||2d8</attack>
+      <attack>Radiant Damage||2d8</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2690,7 +2690,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 51</description>
       <name>Scimitar</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage and 9 (2d8) radiant damage.</text>
       <attack>Scimitar|+7|1d6+3</attack>
-      <attack>Radiant||2d8</attack>
+      <attack>Radiant Damage||2d8</attack>
     </action>
     <action>
       <name>Tempting Call</name>
@@ -2747,7 +2747,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 94</description>
     <trait>
       <name>Seraphic Weapons</name>
       <text>The seraph's weapon attacks are magical. When the seraph hits with any weapon, the weapon deals an extra (1d8) radiant damage (included in the attacks).</text>
-      <attack>Radiant||1d8</attack>
+      <attack>Radiant Damage||1d8</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2757,19 +2757,19 @@ Source:	Grim Hollow: Lairs of Etharis p. 94</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage and 4 (1d8) radiant damage. If the target is a Medium or smaller creature, it is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the seraph can't bite another target.</text>
       <attack>Bite|+7|2d10+4</attack>
-      <attack>Radiant||1d8</attack>
+      <attack>Radiant Damage||1d8</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage and 4 (1d8) radiant damage.</text>
       <attack>Claw|+7|2d4+4</attack>
-      <attack>Radiant||1d8</attack>
+      <attack>Radiant Damage||1d8</attack>
     </action>
     <action>
       <name>Tongue</name>
       <text>Melee Weapon Attack: +7 to hit, reach 15 ft., one creature. Hit: 6 (1d4 + 4) bludgeoning damage and 4 (1d8) radiant damage, and the target is grappled (escape DC 15) and pulled to within 5 feet of the seraph. Until the grapple ends, the target is restrained, and the seraph can't use its tongue or bite on another target.</text>
       <attack>Tongue|+7|1d4+4</attack>
-      <attack>Radiant||1d8</attack>
+      <attack>Radiant Damage||1d8</attack>
     </action>
     <spells>detect evil and good, detect magic, light, thaumaturgy, create food and water, suggestion</spells>
     <slots/>
@@ -2836,7 +2836,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 94</description>
       <name>Claw</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 7 (2d6) cold damage.</text>
       <attack>Claw|+9|2d6+4</attack>
-      <attack>Cold||2d6</attack>
+      <attack>Cold Damage||2d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (2/Turn)</name>
@@ -2904,7 +2904,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 121</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 22 (3d10 + 6) piercing damage and the target must make a DC 18 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. On a hit, the target is also grappled (escape DC 18). Until this grapple ends, the target is restrained, and the lindwyrm can't bite another target.</text>
       <attack>Bite|+11|3d10+6</attack>
-      <attack>Poison||4d8</attack>
+      <attack>Poison Damage||4d8</attack>
     </action>
     <action>
       <name>Claw</name>
@@ -2917,7 +2917,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 121</description>
 
 If the lindwyrm takes 40 damage or more on a single turn from the swallowed creature, the lindwyrm must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the lindwyrm. If the lindwyrm dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.</text>
       <attack>Swallow|+11|3d10+6</attack>
-      <attack>Acid||6d8</attack>
+      <attack>Acid Damage||6d8</attack>
     </action>
     <legendary>
       <name>Legendary Actions (2/Turn)</name>
@@ -2980,7 +2980,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 58</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage and 7 (2d6) poison damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or become poisoned and restrained while poisoned in this way. The creature must repeat the saving throw at the end of its next turn. On a success, the effect ends. If the save fails again, the creature is petrified for 24 hours. At that time, it can repeat the saving throw, becoming permanently petrified on a failure or ending the effect on a success.</text>
       <attack>Bite|+5|2d6+3</attack>
-      <attack>Poison||2d6</attack>
+      <attack>Poison Damage||2d6</attack>
     </action>
     <spells/>
     <slots/>
@@ -3030,7 +3030,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 61</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage and 9 (2d8) poison damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or become poisoned and restrained while poisoned in this way. The creature must repeat the saving throw at the end of its next turn. On a success, the effect ends. If the save fails again, the creature is permanently petrified.</text>
       <attack>Bite|+7|2d8+4</attack>
-      <attack>Poison||2d8</attack>
+      <attack>Poison Damage||2d8</attack>
     </action>
     <action>
       <name>Pack Attack (Recharge 5-6)</name>
@@ -3085,7 +3085,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 62</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage and 5 (2d4) poison damage. If the target is a creature, it must succeed on a DC 11 Constitution saving throw or become poisoned and restrained while poisoned in this way. The creature must repeat the saving throw at the end of its next turn. On a success, the effect ends. If the save fails again, the creature is petrified for 24 hours.</text>
       <attack>Bite|+4|2d4+2</attack>
-      <attack>Poison||2d4</attack>
+      <attack>Poison Damage||2d4</attack>
     </action>
     <spells/>
     <slots/>
@@ -3142,7 +3142,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 62</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: -1 to hit, reach 0 ft., one target. Hit: 1 (1d4 - 2) piercing damage and the target must succeed on a DC 10 Constitution saving throw or take 7 (2d6) poison damage.</text>
       <attack>Bite|-1|1d4-2</attack>
-      <attack>Poison||2d6</attack>
+      <attack>Poison Damage||2d6</attack>
     </action>
     <action>
       <name>Invisibility</name>
@@ -3209,7 +3209,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 109</description>
       <name>Slam</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage and 3 (1d6) fire damage.</text>
       <attack>Slam|+4|1d8+2</attack>
-      <attack>Fire||1d6</attack>
+      <attack>Fire Damage||1d6</attack>
     </action>
     <spells/>
     <slots/>
@@ -4361,7 +4361,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 51</description>
       <name>Claw</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage and 7 (2d6) necrotic damage. A cursed target must make an escalation check. If a target drops to 0 hit points due to this damage and isn't already cursed, they are randomly afflicted with one from among any of the curses in the Grim Hollow Campaign Guide (GM's choice).</text>
       <attack>Claw|+6|2d8+3</attack>
-      <attack>Necrotic||2d6</attack>
+      <attack>Necrotic Damage||2d6</attack>
     </action>
     <spells>chill touch, shocking grasp, counterspell, misty step, shield, bestow curse</spells>
     <slots/>
@@ -4419,7 +4419,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 84</description>
       <name>Claw</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage and 5 (2d4) necrotic damage. A cursed target must make an escalation check. If a target drops to 0 hit points due to this damage and isn't already cursed, roll 1d4, and the target is afflicted with a curse based on the result: 1-2 Curse of Damned Aging, 3-4 Curse of Foul Blight. (See Grim Hollow Campaign Guide for information on curses and escalation.)</text>
       <attack>Claw|+5|2d6+3</attack>
-      <attack>Necrotic||2d4</attack>
+      <attack>Necrotic Damage||2d4</attack>
       <attack>Cursed||1d4</attack>
     </action>
     <spells/>
@@ -4478,7 +4478,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 84</description>
       <name>Slam</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage and 2 (1d4) piercing damage.</text>
       <attack>Slam|+3|1d6+1</attack>
-      <attack>Piercing||1d4</attack>
+      <attack>Piercing Damage||1d4</attack>
     </action>
     <action>
       <name>Volley of Glass (Recharge 6)</name>
@@ -4631,20 +4631,20 @@ Source:	Grim Hollow: Lairs of Etharis p. 85</description>
 
 Alternatively, the cannoneer can choose the cannon as the point of fire. Doing so means the shot goes off inside the cannon, destroying it and increasing each type of damage by 3 (1d6).</text>
       <attack>Dead Cannon||2d6</attack>
-      <attack>Necrotic||2d6</attack>
+      <attack>Necrotic Damage||2d6</attack>
       <attack>Inside Cannon||3d6</attack>
     </action>
     <action>
       <name>Pistol Club</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage and 3 (1d6) necrotic damage.</text>
       <attack>Pistol Club|+5|1d6+2</attack>
-      <attack>Necrotic||1d6</attack>
+      <attack>Necrotic Damage||1d6</attack>
     </action>
     <action>
       <name>Dead Pistol</name>
       <text>Ranged Weapon Attack: +5 to hit, range 30/90 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) necrotic damage.</text>
       <attack>Dead Pistol|+5|1d10+3</attack>
-      <attack>Necrotic||1d6</attack>
+      <attack>Necrotic Damage||1d6</attack>
     </action>
     <spells/>
     <slots/>
@@ -4690,7 +4690,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 87</description>
       <name>Pike</name>
       <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 8 (1d10 + 3) piercing damage and 5 (2d4) necrotic damage.</text>
       <attack>Pike|+5|1d10+3</attack>
-      <attack>Necrotic||2d4</attack>
+      <attack>Necrotic Damage||2d4</attack>
     </action>
     <action>
       <name>Warlord Strike (Recharge 5-6)</name>
@@ -4746,13 +4746,13 @@ Source:	Grim Hollow: Lairs of Etharis p. 87</description>
       <name>Bayonet</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage and 3 (1d6) necrotic damage.</text>
       <attack>Bayonet|+4|1d6+2</attack>
-      <attack>Necrotic||1d6</attack>
+      <attack>Necrotic Damage||1d6</attack>
     </action>
     <action>
       <name>Dead Rifle</name>
       <text>Ranged Weapon Attack: +4 to hit, range 40/120 ft., one target. Hit: 8 (1d12 + 2) piercing damage and 3 (1d6) necrotic damage.</text>
       <attack>Dead Rifle|+4|1d12+2</attack>
-      <attack>Necrotic||1d6</attack>
+      <attack>Necrotic Damage||1d6</attack>
     </action>
     <spells/>
     <slots/>
@@ -4870,7 +4870,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 30</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) piercing damage and 5 (2d4) lightning damage.</text>
       <attack>Bite|+6|2d6+4</attack>
-      <attack>Lightning||2d4</attack>
+      <attack>Lightning Damage||2d4</attack>
     </action>
     <action>
       <name>Claws</name>
@@ -5087,7 +5087,7 @@ Source:	Grim Hollow: Lairs of Etharis p. 31</description>
       <name>Bites</name>
       <text>Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 10 (4d4) piercing damage and 9 (2d8) lightning damage, or 5 (2d4) piercing damage and 4 (1d8) lightning damage if the swarm has half of its hit points or fewer.</text>
       <attack>Bites|+5|4d4</attack>
-      <attack>Lightning||2d8</attack>
+      <attack>Lightning Damage||2d8</attack>
       <attack>Half Swarm|+5|2d4</attack>
       <attack>Half Swarm Lightning||1d8</attack>
     </action>
@@ -5220,20 +5220,20 @@ Source:	Grim Hollow: Lairs of Etharis p. 32</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 21 (3d10 + 5) slashing damage and 9 (2d8) lightning damage.</text>
       <attack>Bite|+9|3d10+5</attack>
-      <attack>Lightning||2d8</attack>
+      <attack>Lightning Damage||2d8</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage and 7 (2d6) thunder damage. If the target is a Large or smaller creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained, and the stormborn ithjar can't use its tail on another target.</text>
       <attack>Tail|+9|3d8+5</attack>
-      <attack>Thunder||2d6</attack>
+      <attack>Thunder Damage||2d6</attack>
     </action>
     <action>
       <name>Storm Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The stormborn ithjar exhales a 30-foot cone of lightning and thunder. Each creature in that area must make a DC 16 Dexterity saving throw. On a failure, a creature takes 31 (7d8) lightning damage and 31 (7d8) thunder damage and falls prone. If the save succeeds, the creature takes half the lightning and thunder damage and doesn't fall prone. The discharge of this breath weapon is audible for 1 mile outside and 300 feet inside.</text>
-      <attack>Lightning||7d8</attack>
-      <attack>Thunder||7d8</attack>
+      <attack>Lightning Damage||7d8</attack>
+      <attack>Thunder Damage||7d8</attack>
     </action>
     <spells/>
     <slots/>
@@ -5370,19 +5370,19 @@ Source:	Grim Hollow: Lairs of Etharis p. 73</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage and 2 (1d4) poison damage.</text>
       <attack>Bite|+4|1d4+2</attack>
-      <attack>Poison||1d4</attack>
+      <attack>Poison Damage||1d4</attack>
     </action>
     <action>
       <name>Claws</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage and 2 (1d4) poison damage.</text>
       <attack>Claws|+4|1d6+2</attack>
-      <attack>Poison||1d4</attack>
+      <attack>Poison Damage||1d4</attack>
     </action>
     <action>
       <name>Spine Spike</name>
       <text>Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage and 2 (1d4) poison damage.</text>
       <attack>Spine Spike|+4|1d4+2</attack>
-      <attack>Poison||1d4</attack>
+      <attack>Poison Damage||1d4</attack>
     </action>
     <spells/>
     <slots/>
@@ -5697,20 +5697,20 @@ Source:	Grim Hollow: Lairs of Etharis p. 73</description>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) piercing damage and 5 (2d4) necrotic damage.</text>
       <attack>Bite|+7|2d8+4</attack>
-      <attack>Necrotic||2d4</attack>
+      <attack>Necrotic Damage||2d4</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage and 2 (1d4) poison damage.</text>
       <attack>Claw|+7|2d4+4</attack>
-      <attack>Poison||1d4</attack>
+      <attack>Poison Damage||1d4</attack>
     </action>
     <action>
       <name>Swarm Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales a 30-foot cone of poisonous insects and vile gas. Each creature in that area must make a DC 15 Constitution saving throw, taking 14 (4d6) piercing damage and 28 (8d6) poison damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Swarm Breath||4d6</attack>
-      <attack>Poison||8d6</attack>
+      <attack>Poison Damage||8d6</attack>
     </action>
     <spells/>
     <slots/>
