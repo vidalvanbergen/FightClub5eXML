@@ -25,6 +25,16 @@ If you load no ammunition in the weapon, it produces its own, automatically crea
     <roll>1d6</roll>
   </itemtemplate-->
   <itemtemplate>
+    <name>Dragon Wing %name%</name>
+    <detail>rare (requires attunement)</detail>
+    <match>Longbow,Shortbow,bow</match>
+    <text>The limb tips of this magic bow are shaped like a dragon's wings, and the weapon is infused with the essence of a chromatic, gem, or metallic dragon's breath. When you hit with an attack roll using this magic bow, the target takes an extra 1d6 damage of the same type as the breath infused in the bow.
+	If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you pull back the string. The ammunition created by the bow vanishes the instant after it hits or misses a target.</text>
+    <source>Fizban's Treasury of Dragons p. 23</source>
+    <roll description="Acid Damage">1d6</roll>
+  </itemtemplate>
+
+  <!--itemtemplate>
     <name>Dragon Wing %name% (Acid Breath)</name>
     <detail>rare (requires attunement)</detail>
     <match>Longbow,Shortbow</match>
@@ -103,7 +113,7 @@ If you load no ammunition in the weapon, it produces its own, automatically crea
     <text>The limb tips of this magic bow are shaped like a dragon's wings, and the weapon is infused with the essence of a chromatic, gem, or metallic dragon's breath. When you hit with an attack roll using this magic bow, the target takes an extra 1d6 damage of the same type as the breath infused in the bow.
 	If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you pull back the string. The ammunition created by the bow vanishes the instant after it hits or misses a target.</text>
     <source>Fizban's Treasury of Dragons p. 23</source>
-    <roll>1d6</roll>
+    <roll description="Radiant Damage">1d6</roll>
   </itemtemplate>
   <itemtemplate>
     <name>Dragon Wing %name% (Thunder Breath)</name>
@@ -113,32 +123,27 @@ If you load no ammunition in the weapon, it produces its own, automatically crea
 	If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you pull back the string. The ammunition created by the bow vanishes the instant after it hits or misses a target.</text>
     <source>Fizban's Treasury of Dragons p. 23</source>
     <roll description="Thunder Damage">1d6</roll>
-  </itemtemplate>
+  </itemtemplate-->
 
   <!-- Dragon's Wrath Weapon -->
-  <!--itemtemplate>
+  <itemtemplate>
     <name>Dragon's Wrath %name%</name>
     <detail>varies (requires attunement)</detail>
     <type>M,R</type>
     <text>This weapon is decorated with dragon heads, claws, wings, scales, or Draconic letters. When it steeps in a dragon's hoard, it absorbs the energy of the dragon's breath weapon and deals damage of that type with its special properties.
 
-Slumbering (Uncommon):
-Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 damage of the type dealt by the dragon's breath weapon.
+Slumbering (Uncommon): Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 damage of the type dealt by the dragon's breath weapon.
 
-Stirring (Rare):
-The Stirring weapon has the Slumbering property. In addition, you gain a +1 bonus to attack and damage rolls made using the weapon. On a hit, the weapon deals an extra 1d6 damage of the type dealt by the dragon's breath weapon.
+Stirring (Rare): The Stirring weapon has the Slumbering property. In addition, you gain a +1 bonus to attack and damage rolls made using the weapon. On a hit, the weapon deals an extra 1d6 damage of the type dealt by the dragon's breath weapon.
 
-Wakened (Very Rare):
-The Wakened weapon has the Slumbering property, and it improves on the Stirring property. The bonus to attack and damage rolls increases to +2, and the extra damage dealt by the weapon increases to 2d6.
+Wakened (Very Rare): The Wakened weapon has the Slumbering property, and it improves on the Stirring property. The bonus to attack and damage rolls increases to +2, and the extra damage dealt by the weapon increases to 2d6.
+	As an action, you can unleash a 30-foot cone of destructive energy from the weapon. Each creature in that area must make a DC 16 Dexterity saving throw, taking 8d6 damage of the type dealt by the dragon's breath weapon on a failed save, or half as much damage on a successful one. Once this action is used, it can't be used again until the next dawn.
 
-As an action, you can unleash a 30-foot cone of destructive energy from the weapon. Each creature in that area must make a DC 16 Dexterity saving throw, taking 8d6 damage of the type dealt by the dragon's breath weapon on a failed save, or half as much damage on a successful one. Once this action is used, it can't be used again until the next dawn.
-
-Ascendant (Legendary):
-The Ascendant weapon has the Slumbering property, and it improves on the Stirring and Wakened properties. The bonus to attack and damage rolls increases to +3, and the extra damage dealt by the weapon increases to 3d6.
-
-The cone of destructive energy the weapon creates increases to a 60-foot cone, the save DC increases to 18, and the damage increases to 12d6.</text>
+Ascendant (Legendary): The Ascendant weapon has the Slumbering property, and it improves on the Stirring and Wakened properties. The bonus to attack and damage rolls increases to +3, and the extra damage dealt by the weapon increases to 3d6.
+	The cone of destructive energy the weapon creates increases to a 60-foot cone, the save DC increases to 18, and the damage increases to 12d6.</text>
     <source>Fizban's Treasury of Dragons p. 25</source>
-  </itemtemplate-->
+  </itemtemplate>
+
   <itemtemplate>
     <name>Slumbering Dragon's Wrath %name%</name>
     <detail>uncommon (requires attunement)</detail>
@@ -157,7 +162,7 @@ The cone of destructive energy the weapon creates increases to a 60-foot cone, t
     <source>Fizban's Treasury of Dragons p. 25</source>
     <modifier category="bonus">Weapon Attacks +1</modifier>
     <modifier category="bonus">Weapon Damage +1</modifier>
-    <roll>1d6</roll>
+    <roll description="Dragon Breath's Damage">1d6</roll>
   </itemtemplate>
   <itemtemplate>
     <name>Wakened Dragon's Wrath %name%</name>
@@ -170,8 +175,8 @@ The cone of destructive energy the weapon creates increases to a 60-foot cone, t
     <source>Fizban's Treasury of Dragons p. 25</source>
     <modifier category="bonus">Weapon Attacks +2</modifier>
     <modifier category="bonus">Weapon Damage +2</modifier>
-    <roll>2d6</roll>
-    <rolll>8d6</rolll>
+    <roll description="Dragon Breath's Damage">2d6</roll>
+    <roll description="Dragon Breath's Damage">8d6</roll>
   </itemtemplate>
   <itemtemplate>
     <name>Ascendant Dragon's Wrath %name%</name>
@@ -184,8 +189,8 @@ The cone of destructive energy the weapon creates increases to a 60-foot cone, t
     <source>Fizban's Treasury of Dragons p. 25</source>
     <modifier category="bonus">Weapon Attacks +3</modifier>
     <modifier category="bonus">Weapon Damage +3</modifier>
-    <roll>3d6</roll>
-    <rolll>12d6</rolll>
+    <roll description="Dragon Breath's Damage">3d6</roll>
+    <roll description="Dragon Breath's Damage">12d6</roll>
   </itemtemplate>
 
   <!-- Dragonlance -->
