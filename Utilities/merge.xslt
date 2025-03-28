@@ -116,6 +116,8 @@
               </classes>
 
               <xsl:copy-of select="text" />
+              <xsl:copy-of select="special" />
+              <xsl:copy-of select="modifier" />
               <xsl:copy-of select="roll" />
             </spell>
           </xsl:if>
