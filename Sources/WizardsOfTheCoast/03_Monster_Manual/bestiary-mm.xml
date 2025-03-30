@@ -33,12 +33,12 @@
     <action>
       <name>Talon</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</text>
-      <attack>Talon|+4|1d4+2</attack>
+      <attack>Slashing Damage|+4|1d4+2</attack>
     </action>
     <action>
       <name>Javelin</name>
       <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
-      <attack>Javelin|+4|1d6+2</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Summon Air Elemental</name>
@@ -93,6 +93,7 @@ Source:	Monster Manual (2014) p. 12,
     <trait>
       <name>Mucous Cloud</name>
       <text>While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 feet of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.</text>
+      <attack>Hours||</attack>
     </trait>
     <trait>
       <name>Probing Telepathy</name>
@@ -105,13 +106,14 @@ Source:	Monster Manual (2014) p. 12,
     <action>
       <name>Tentacle</name>
       <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.</text>
-      <attack>Tentacle|+9|2d6+5</attack>
+      <attack>Tentacle|+9|(2d6+5)+(1d12)</attack>
+      <attack>Bludgeoning Damage|+9|2d6+5</attack>
       <attack>Acid Damage||1d12</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 15 (3d6 + 5) bludgeoning damage.</text>
-      <attack>Tail|+9|3d6+5</attack>
+      <attack>Bludgeoning Damage|+9|3d6+5</attack>
     </action>
     <action>
       <name>Enslave (3/Day)</name>
@@ -135,7 +137,7 @@ Source:	Monster Manual (2014) p. 12,
     <legendary>
       <name>Psychic Drain (Costs 2 Actions)</name>
       <text>One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.</text>
-      <attack>Psychic Drain||3d6</attack>
+      <attack>Psychic Damage||3d6</attack>
     </legendary>
     <legendary category="lair">
       <name>Lair Actions</name>
@@ -159,7 +161,7 @@ Source:	Monster Manual (2014) p. 12,
 	• As an action, the aboleth can create an illusory image of itself within 1 mile of the lair. The copy can appear at any location the aboleth has seen before or in any location a creature charmed by the aboleth can currently see. Once created, the image lasts for as long as the aboleth maintains concentration, as if concentrating on a spell. Although the image is intangible, it looks, sounds, and can move like the aboleth. The aboleth can sense, speak, and use telepathy from the image's position as if present at that position. If the image takes any damage, it disappears.
 
 If the aboleth dies, the first two effects fade over the course of 3d10 days.</text>
-      <attack>Regional Effects Fade||3d10</attack>
+      <attack>Days||3d10</attack>
     </legendary>
     <legendary category="lair">
       <name>An Aboleth's Lair</name>
@@ -232,19 +234,20 @@ Source:	Monster Manual (2014) p. 13,
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage plus 7 (2d6) cold damage.</text>
-      <attack>Claw|+11|2d6+7</attack>
+      <attack>Claw|+11|(2d6+7)+(2d6)</attack>
+      <attack>Slashing Damage|+11|2d6+7</attack>
       <attack>Cold Damage||2d6</attack>
     </action>
     <action>
       <name>Chilling Gaze</name>
       <text>The yeti targets one creature it can see within 30 feet of it. If the target can see the yeti, the target must succeed on a DC 18 Constitution saving throw against this magic or take 21 (6d6) cold damage and then be paralyzed for 1 minute, unless it is immune to cold damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target's saving throw is successful, or if the effect ends on it, the target is immune to this yeti's gaze for 1 hour.</text>
-      <attack>Chilling Gaze||6d6</attack>
+      <attack>Cold Damage||6d6</attack>
     </action>
     <action>
       <name>Cold Breath (Recharge 6)</name>
       <recharge>D6</recharge>
       <text>The yeti exhales a 30-foot cone of frigid air. Each creature in that area must make a DC 18 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Cold Breath||10d8</attack>
+      <attack>Cold Damage||10d8</attack>
     </action>
     <description>A yeti's windborne howl sounds out across remote mountains, striking fear into the hearts of the scattered miners and herders that dwell there. These hulking creatures stalk alpine peaks in a ceaseless hunt for food. Their snow-white fur lets them move like ghosts against the frozen landscape. A yeti's icy simian eyes can freeze its prey in place.
 
@@ -300,12 +303,12 @@ Source:	Monster Manual (2014) p. 306,
 
 	• Cantrips (at will): light, sacred flame, thaumaturgy
 	• 1st level (3 slots): bless, cure wounds, sanctuary</text>
-      <attack>Spellcasting|+4|0</attack>
+      <attack>Spellcasting|+4|</attack>
     </trait>
     <action>
       <name>Club</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
-      <attack>Club|+2|1d4</attack>
+      <attack>Bludgeoning Damage|+2|1d4</attack>
     </action>
     <slots>0,3</slots>
     <spells>light, sacred flame, thaumaturgy, bless, cure wounds, sanctuary</spells>
@@ -368,18 +371,19 @@ Source:	Monster Manual (2014) p. 342,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 4 (1d8) acid damage.</text>
-      <attack>Bite|+11|2d10+6</attack>
+      <attack>Bite|+11|(2d10+6)+(1d8)</attack>
+      <attack>Piercing Damage|+11|2d10+6</attack>
       <attack>Acid Damage||1d8</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.</text>
-      <attack>Claw|+11|2d6+6</attack>
+      <attack>Slashing Damage|+11|2d6+6</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.</text>
-      <attack>Tail|+11|2d8+6</attack>
+      <attack>Bludgeoning Damage|+11|2d8+6</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -389,7 +393,7 @@ Source:	Monster Manual (2014) p. 342,
       <name>Acid Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Acid Breath||12d8</attack>
+      <attack>Acid Damage||12d8</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -407,7 +411,7 @@ Source:	Monster Manual (2014) p. 342,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+6</attack>
+      <attack>Bludgeoning Damage||2d6+6</attack>
     </legendary>
     <legendary category="lair">
       <name>A Black Dragon's Lair</name>
@@ -419,7 +423,10 @@ Source:	Monster Manual (2014) p. 342,
 
 	• Pools of water that the dragon can see within 120 feet of it surge outward in a grasping tide. Any creature on the ground within 20 feet of such a pool must succeed on a DC 15 Strength saving throw or be pulled up to 20 feet into the water and knocked prone.
 
-	• A cloud of swarming insects fills a 20-foot-radius sphere centered on a point the dragon chooses within 120 feet of it. The cloud spreads around corners and remains until the dragon dismisses it as an action, uses this lair action again, or dies. The cloud is lightly obscured. Any creature in the cloud when it appears must make on a DC 15 Constitution saving throw, taking 10 (3d6) piercing damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the cloud takes 10 (3d6) piercing damage. 	• Magical darkness spreads from a point the dragon chooses within 60 feet of it, filling a 15-foot-radius sphere until the dragon dismisses it as an action, uses this lair action again, or dies. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. If any of the effect's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</text>
+	• A cloud of swarming insects fills a 20-foot-radius sphere centered on a point the dragon chooses within 120 feet of it. The cloud spreads around corners and remains until the dragon dismisses it as an action, uses this lair action again, or dies. The cloud is lightly obscured. Any creature in the cloud when it appears must make on a DC 15 Constitution saving throw, taking 10 (3d6) piercing damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the cloud takes 10 (3d6) piercing damage. 
+
+	• Magical darkness spreads from a point the dragon chooses within 60 feet of it, filling a 15-foot-radius sphere until the dragon dismisses it as an action, uses this lair action again, or dies. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. If any of the effect's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</text>
+      <attack>Piercing Damage||3d6</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -432,7 +439,7 @@ Source:	Monster Manual (2014) p. 342,
 	• Fog lightly obscures the land within 6 miles of the lair.
 
 If the dragon dies, vegetation remains as it has grown, but other effects fade over 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The most evil-tempered and vile of the chromatic dragons, black dragons collect the wreckage and treasures of fallen peoples. These dragons loathe seeing the weak prosper and revel in the collapse of humanoid kingdoms. They make their homes in fetid swamps and crumbling ruins where kingdoms once stood.
 	With deep-socketed eyes and broad nasal openings, a black dragon's face resembles a skull. Its curving, segmented horns are bone-colored near the base and darken to dead black at the tips. As a black dragon ages, the flesh around its horns and cheekbones deteriorates as though eaten by acid, leaving thin layers of hide that enhance its skeletal appearance. A black dragon's head is marked by spikes and horns. Its tongue is flat with a forked tip, drooling slime whose acidic scent adds to the dragon's reek of rotting vegetation and foul water.
@@ -524,18 +531,19 @@ Source:	Monster Manual (2014) p. 88,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d10) lightning damage.</text>
-      <attack>Bite|+13|2d10+7</attack>
+      <attack>Bite|+13|(2d10+7)+(1d10)</attack>
+      <attack>Piercing Damage|+13|2d10+7</attack>
       <attack>Lightning Damage||1d10</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage.</text>
-      <attack>Claw|+13|2d6+7</attack>
+      <attack>Slashing Damage|+13|2d6+7</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage.</text>
-      <attack>Tail|+13|2d8+7</attack>
+      <attack>Bludgeoning Damage|+13|2d8+7</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -545,7 +553,7 @@ Source:	Monster Manual (2014) p. 88,
       <name>Lightning Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dracolich exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 20 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Lightning Breath||12d10</attack>
+      <attack>Lightning Damage||12d10</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -563,7 +571,7 @@ Source:	Monster Manual (2014) p. 88,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dracolich beats its tattered wings. Each creature within 10 feet of the dracolich must succeed on a DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. After beating its wings this way, the dracolich can fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+7</attack>
+      <attack>Bludgeoning Damage||2d6+7</attack>
     </legendary>
     <legendary category="lair">
       <name>Lair Actions</name>
@@ -574,7 +582,7 @@ Source:	Monster Manual (2014) p. 88,
 	• A cloud of sand swirls about in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners. Each creature in the cloud must succeed on a DC 15 Constitution saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 	• Lightning arcs, forming a 5-foot-wide line between two of the lair's solid surfaces that the dragon can see. They must be within 120 feet of the dragon and 120 feet of each other. Each creature in that line must succeed on a DC 15 Dexterity saving throw or take 10 (3d6) lightning damage.</text>
-      <attack>Ceiling Collapse||3d6</attack>
+      <attack>Bludgeoning Damage||3d6</attack>
       <attack>Lightning Damage||3d6</attack>
     </legendary>
     <legendary category="lair">
@@ -588,8 +596,8 @@ Source:	Monster Manual (2014) p. 88,
 	• Hidden sinkholes form in and around the dragon's lair. A sinkhole can be spotted from a safe distance with a successful DC 20 Wisdom (Perception) check. Otherwise, the first creature to step on the thin crust covering the sinkhole must succeed on a DC 15 Dexterity saving throw or fall 1d6 × 10 feet into the sinkhole.
 
 If the dragon dies, the dust devils disappear immediately, and the thunderstorms abate within 1d10 days. Any sinkholes remain where they are.</text>
-      <attack>Sinkhole||1d6x10</attack>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Feet||1d6x10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>Even as long-lived as they are, all dragons must eventually die. This thought doesn't sit well with many dragons, some of which allow themselves to be transformed by necromantic energy and ancient rituals into powerful undead dracoliches. Only the most narcissistic dragons choose this path, knowing that by doing so, they sever all ties to their kin and the dragon gods.
 
@@ -655,18 +663,19 @@ Source:	Monster Manual (2014) p. 84,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d10) lightning damage.</text>
-      <attack>Bite|+12|2d10+7</attack>
+      <attack>Bite|+12|(2d10+7)+(1d10)</attack>
+      <attack>Piercing Damage|+12|2d10+7</attack>
       <attack>Lightning Damage||1d10</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage.</text>
-      <attack>Claw|+12|2d6+7</attack>
+      <attack>Slashing Damage|+12|2d6+7</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage.</text>
-      <attack>Tail|+12|2d8+7</attack>
+      <attack>Bludgeoning Damage|+12|2d8+7</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -676,7 +685,7 @@ Source:	Monster Manual (2014) p. 84,
       <name>Lightning Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Lightning Breath||12d10</attack>
+      <attack>Lightning Damage||12d10</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -694,7 +703,7 @@ Source:	Monster Manual (2014) p. 84,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+7</attack>
+      <attack>Bludgeoning Damage||2d6+7</attack>
     </legendary>
     <legendary category="lair">
       <name>A Blue Dragon's Lair</name>
@@ -711,7 +720,7 @@ Source:	Monster Manual (2014) p. 84,
 	• A cloud of sand swirls about in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners. Each creature in the cloud must succeed on a DC 15 Constitution saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 	• Lightning arcs, forming a 5-foot-wide line between two of the lair's solid surfaces that the dragon can see. They must be within 120 feet of the dragon and 120 feet of each other. Each creature in that line must succeed on a DC 15 Dexterity saving throw or take 10 (3d6) lightning damage.</text>
-      <attack>Ceiling Collapse||3d6</attack>
+      <attack>Bludgeoning Damage||3d6</attack>
       <attack>Lightning Damage||3d6</attack>
     </legendary>
     <legendary category="lair">
@@ -725,8 +734,8 @@ Source:	Monster Manual (2014) p. 84,
 	• Hidden sinkholes form in and around the dragon's lair. A sinkhole can be spotted from a safe distance with a successful DC 20 Wisdom (Perception) check. Otherwise, the first creature to step on the thin crust covering the sinkhole must succeed on a DC 15 Dexterity saving throw or fall 1d6 × 10 feet into the sinkhole.
 
 If the dragon dies, the dust devils disappear immediately, and the thunderstorms abate within 1d10 days. Any sinkholes remain where they are.</text>
-      <attack>Sinkhole||1d6x10</attack>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Feet||1d6x10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>Vain and territorial, blue dragons soar through the skies over deserts, preying on caravans and plundering herds and settlements in the verdant lands beyond the desert's reach. These dragons can also be found in dry steppes, searing badlands, and rocky coasts. They guard their territories against all potential competitors, especially brass dragons.
 	A blue dragon is recognized by its dramatic frilled ears and the massive ridged horn atop its blunt head. Rows of spikes extend back from its nostrils to line its brow, and cluster on its jutting lower jaw.
@@ -818,17 +827,17 @@ Source:	Monster Manual (2014) p. 91,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.</text>
-      <attack>Bite|+11|2d10+6</attack>
+      <attack>Piercing Damage|+11|2d10+6</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.</text>
-      <attack>Claw|+11|2d6+6</attack>
+      <attack>Slashing Damage|+11|2d6+6</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.</text>
-      <attack>Tail|+11|2d8+6</attack>
+      <attack>Bludgeoning Damage|+11|2d8+6</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -842,7 +851,7 @@ Source:	Monster Manual (2014) p. 91,
 	• Fire Breath: The dragon exhales fire in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one.
 
 	• Sleep Breath: The dragon exhales sleep gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.</text>
-      <attack>Fire Breath||13d6</attack>
+      <attack>Fire Damage||13d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -860,7 +869,7 @@ Source:	Monster Manual (2014) p. 91,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+6</attack>
+      <attack>Bludgeoning Damage||2d6+6</attack>
     </legendary>
     <legendary category="lair">
       <name>A Brass Dragon's Lair</name>
@@ -885,6 +894,7 @@ Source:	Monster Manual (2014) p. 91,
 	• Whenever a creature with an Intelligence of 3 or higher comes within 30 feet of a water source within 1 mile of the dragon's lair, the dragon becomes aware of the creature's presence and location.
 
 If the dragon dies, the tracks fade in 1d10 days, but the other effects fade immediately.</text>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The most gregarious of the true dragons, brass dragons crave conversation, sunlight, and hot, dry climates.
 	A brass dragon's head is defined by the broad protective plate that expands from its forehead and the spikes protruding from its chin. A frill runs the length of its neck, and its tapering wings extend down the length of its tail. A brass dragon wyrmlling's scales are a dull, mottled brown. As it ages, the dragon's scales begin to shine, eventually taking on a warm, burnished luster.
@@ -972,17 +982,17 @@ Source:	Monster Manual (2014) p. 105,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage.</text>
-      <attack>Bite|+12|2d10+7</attack>
+      <attack>Piercing Damage|+12|2d10+7</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage.</text>
-      <attack>Claw|+12|2d6+7</attack>
+      <attack>Slashing Damage|+12|2d6+7</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage.</text>
-      <attack>Tail|+12|2d8+7</attack>
+      <attack>Bludgeoning Damage|+12|2d8+7</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -996,7 +1006,7 @@ Source:	Monster Manual (2014) p. 105,
 	• Lightning Breath: The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.
 
 	• Repulsion Breath: The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 19 Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon.</text>
-      <attack>Lightning Breath||12d10</attack>
+      <attack>Lightning Damage||12d10</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -1019,7 +1029,7 @@ Source:	Monster Manual (2014) p. 105,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+7</attack>
+      <attack>Bludgeoning Damage||2d6+7</attack>
     </legendary>
     <legendary category="lair">
       <name>A Bronze Dragon's Lairs</name>
@@ -1045,7 +1055,7 @@ Source:	Monster Manual (2014) p. 105,
 	• Within its lair, the dragon can set illusory sounds, such as soft music and strange echoes, so that they can be heard in various parts of the lair.
 
 If the dragon dies, changed weather reverts to normal, as described in the spell, and the other effects fade in 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>Bronze dragons are coastal dwellers that feed primarily on aquatic plants and fish. They take the forms of friendly animals to observe other creatures of interest. They are also fascinated by warfare and eagerly join armies fighting for a just cause.
 	A ribbed and fluted crest defines the shape of a bronze dragon's head. Curving horns extend out from the crest, echoed by spines on its lower jaw and chin. To help them swim, bronze dragons have webbed feet and smooth scales. A bronze wyrmling's scales are yellow tinged with green; only as the dragon approaches adulthood does its color deepen to a darker, rich bronze tone. The pupils of a bronze dragon's eyes fade as the dragon ages, until they resemble glowing green orbs.
@@ -1132,17 +1142,17 @@ Source:	Monster Manual (2014) p. 108,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.</text>
-      <attack>Bite|+11|2d10+6</attack>
+      <attack>Piercing Damage|+11|2d10+6</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.</text>
-      <attack>Claw|+11|2d6+6</attack>
+      <attack>Slashing Damage|+11|2d6+6</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.</text>
-      <attack>Tail|+11|2d8+6</attack>
+      <attack>Bludgeoning Damage|+11|2d8+6</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -1156,7 +1166,7 @@ Source:	Monster Manual (2014) p. 108,
 	• Acid Breath: The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.
 
 	• Slowing Breath: The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.</text>
-      <attack>Acid Breath||12d8</attack>
+      <attack>Acid Damage||12d8</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -1174,7 +1184,7 @@ Source:	Monster Manual (2014) p. 108,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+6</attack>
+      <attack>Bludgeoning Damage||2d6+6</attack>
     </legendary>
     <legendary category="lair">
       <name>A Copper Dragon's Lair</name>
@@ -1199,7 +1209,7 @@ Source:	Monster Manual (2014) p. 108,
 	• Intelligent creatures within 1 mile of the dragon's lair are prone to fits of giggling. Even serious matters suddenly seem amusing.
 
 If the dragon dies, the magic carvings fade over the course of 1d10 days. The other effects end immediately.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>Copper dragons are incorrigible pranksters, joke tellers, and riddlers that live in hills and rocky uplands. Despite their gregarious and even-tempered natures, they possess a covetous, miserly streak, and can become dangerous when their hoards are threatened.
 	A copper dragon has brow plates jutting over its eyes, extending back to long horns that grow as a series of overlapping segments. Its backswept cheek ridges and jaw frills give it a pensive look. At birth, a copper dragon's scales are a ruddy brown with a metallic tint. As the dragon ages, its scales become more coppery in color, later taking on a green tint as it ages. A copper dragon's pupils fade with age, and the eyes of the oldest copper dragons resemble glowing turquoise orbs.
@@ -1285,17 +1295,17 @@ Source:	Monster Manual (2014) p. 112,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage.</text>
-      <attack>Bite|+14|2d10+8</attack>
+      <attack>Piercing Damage|+14|2d10+8</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage.</text>
-      <attack>Claw|+14|2d6+8</attack>
+      <attack>Slashing Damage|+14|2d6+8</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
-      <attack>Tail|+14|2d8+8</attack>
+      <attack>Bludgeoning Damage|+14|2d8+8</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -1309,7 +1319,7 @@ Source:	Monster Manual (2014) p. 112,
 	• Fire Breath: The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 66 (12d10) fire damage on a failed save, or half as much damage on a successful one.
 
 	• Weakening Breath: The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 21 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Fire Breath||12d10</attack>
+      <attack>Fire Damage||12d10</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -1332,7 +1342,7 @@ Source:	Monster Manual (2014) p. 112,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+8</attack>
+      <attack>Bludgeoning Damage||2d6+8</attack>
     </legendary>
     <legendary category="lair">
       <name>A Gold Dragon's Lair</name>
@@ -1444,18 +1454,19 @@ Source:	Monster Manual (2014) p. 114,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 7 (2d6) poison damage.</text>
-      <attack>Bite|+11|2d10+6</attack>
+      <attack>Bite|+11|(2d10+6)+(2d6)</attack>
+      <attack>Piercing Damage|+11|2d10+6</attack>
       <attack>Poison Damage||2d6</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.</text>
-      <attack>Claw|+11|2d6+6</attack>
+      <attack>Slashing Damage|+11|2d6+6</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.</text>
-      <attack>Tail|+11|2d8+6</attack>
+      <attack>Bludgeoning Damage|+11|2d8+6</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -1465,7 +1476,7 @@ Source:	Monster Manual (2014) p. 114,
       <name>Poison Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales poisonous gas in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 56 (16d6) poison damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Poison Breath||16d6</attack>
+      <attack>Poison Damage||16d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -1483,7 +1494,7 @@ Source:	Monster Manual (2014) p. 114,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+6</attack>
+      <attack>Bludgeoning Damage||2d6+6</attack>
     </legendary>
     <legendary category="lair">
       <name>A Green Dragon's Lair</name>
@@ -1499,7 +1510,7 @@ Source:	Monster Manual (2014) p. 114,
 	• A wall of tangled brush bristling with thorns springs into existence on a solid surface within 120 feet of the dragon. The wall is up to 60 feet long, 10 feet high, and 5 feet thick, and it blocks line of sight. When the wall appears, each creature in its area must make a DC 15 Dexterity saving throw. A creature that fails the save takes 18 (4d8) piercing damage and is pushed 5 feet out of the wall's space, appearing on whichever side of the wall it wants. A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature travels through the wall, it must spend 4 feet of movement. Furthermore, a creature in the wall's space must make a DC 15 Dexterity saving throw once each round it's in contact with the wall, taking 18 (4d8) piercing damage on a failed save, or half as much damage on a successful one. Each 10-foot section of wall has AC 5, 15 hit points, vulnerability to fire damage, resistance to bludgeoning and piercing damage, and immunity to psychic damage. The wall sinks back into the ground when the dragon uses this lair action again or when the dragon dies.
 
 	• Magical fog billows around one creature the dragon can see within 120 feet of it. The creature must succeed on a DC 15 Wisdom saving throw or be charmed by the dragon until initiative count 20 on the next round.</text>
-      <attack>Thorns||4d8</attack>
+      <attack>Piercing Damage||4d8</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -1512,8 +1523,8 @@ Source:	Monster Manual (2014) p. 114,
 	• Rodents and birds within 1 mile of the dragon's lair serve as the dragon's eyes and ears. Deer and other large game are strangely absent, hinting at the presence of an unnaturally hungry predator.
 
 If the dragon dies, the rodents and birds lose their supernatural link to it. The thickets remain, but within 1d10 days, they become mundane plants and normal difficult terrain, losing their thorns.</text>
-      <attack>Thickets||1d6</attack>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Piercing Damage||1d6</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The most cunning and treacherous of true dragons, green dragons use misdirection and trickery to get the upper hand against their enemies. Nasty tempered and thoroughly evil, they take special pleasure in subverting and corrupting the good-hearted. In the ancient forests they roam, green dragons demonstrate an aggression that is often less about territory than it is about gaining power and wealth with as little effort as possible.
 	A green dragon is recognized by its curved jawline and the crest that begins near its eyes and continues down its spine, reaching full height just behind the skull. A green dragon has no external ears, but bears leathery spiked plates that run down the sides of its neck.
@@ -1602,18 +1613,19 @@ Source:	Monster Manual (2014) p. 94,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 7 (2d6) fire damage.</text>
-      <attack>Bite|+14|2d10+8</attack>
+      <attack>Bite|+14|(2d10+8)+(2d6)</attack>
+      <attack>Piercing Damage|+14|2d10+8</attack>
       <attack>Fire Damage||2d6</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage.</text>
-      <attack>Claw|+14|2d6+8</attack>
+      <attack>Slashing Damage|+14|2d6+8</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
-      <attack>Tail|+14|2d8+8</attack>
+      <attack>Bludgeoning Damage|+14|2d8+8</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -1623,7 +1635,7 @@ Source:	Monster Manual (2014) p. 94,
       <name>Fire Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 63 (18d6) fire damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Fire Breath||18d6</attack>
+      <attack>Fire Damage||18d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -1641,7 +1653,7 @@ Source:	Monster Manual (2014) p. 94,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+8</attack>
+      <attack>Bludgeoning Damage||2d6+8</attack>
     </legendary>
     <legendary category="lair">
       <name>A Red Dragon's Lair</name>
@@ -1658,7 +1670,7 @@ Source:	Monster Manual (2014) p. 94,
 	• A tremor shakes the lair in a 60-foot radius around the dragon. Each creature other than the dragon on the ground in that area must succeed on a DC 15 Dexterity saving throw or be knocked prone.
 
 	• Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads a round corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its turn. While poisoned in this way, a creature is incapacitated.</text>
-      <attack>Magma||6d6</attack>
+      <attack>Fire Damage||6d6</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -1671,7 +1683,7 @@ Source:	Monster Manual (2014) p. 94,
 	• Rocky fissures within 1 mile of the dragon's lair form portals to the Elemental Plane of Fire, allowing creatures of elemental fire into the world to dwell nearby.
 
 If the dragon dies, these effects fade over the course of 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The most covetous of the true dragons, red dragons tirelessly seek to increase their treasure hoards. They are exceptionally vain, even for dragons, and their conceit is reflected in their proud bearing and their disdain for other creatures.
 	The odor of sulfur and pumice surrounds a red dragon, whose swept-back horns and spinal frill define its silhouette. Its beaked snout vents smoke at all times, and its eyes dance with flame when it is angry. Its wings are the longest of any chromatic dragon, and have a blue-black tint along the trailing edge that resembles metal burned blue by fire.
@@ -1761,17 +1773,17 @@ Source:	Monster Manual (2014) p. 98,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage.</text>
-      <attack>Bite|+13|2d10+8</attack>
+      <attack>Piercing Damage|+13|2d10+8</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage.</text>
-      <attack>Claw|+13|2d6+8</attack>
+      <attack>Slashing Damage|+13|2d6+8</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
-      <attack>Tail|+13|2d8+8</attack>
+      <attack>Bludgeoning Damage|+13|2d8+8</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -1785,7 +1797,7 @@ Source:	Monster Manual (2014) p. 98,
 	• Cold Breath: The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 58 (13d8) cold damage on a failed save, or half as much damage on a successful one.
 
 	• Paralyzing Breath: The dragon exhales paralyzing gas in a 60-foot cone. Each creature in that area must succeed on a DC 20 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Cold Breath||13d8</attack>
+      <attack>Cold Damage||13d8</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -1808,7 +1820,7 @@ Source:	Monster Manual (2014) p. 98,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+8</attack>
+      <attack>Bludgeoning Damage||2d6+8</attack>
     </legendary>
     <legendary category="lair">
       <name>A Silver Dragon's Lair</name>
@@ -1821,7 +1833,7 @@ Source:	Monster Manual (2014) p. 98,
 	• The dragon creates fog as if it had cast the fog cloud spell. The fog lasts until initiative count 20 on the next round.
 
 	• A blisteringly cold wind blows through the lair near the dragon. Each creature within 120 feet of the dragon must succeed on a DC 15 Constitution saving throw or take 5 (1d10) cold damage. Gases and vapors are dispersed by the wind, and unprotected flames are extinguished. Protected flames, such as lanterns, have a 50 percent chance of being extinguished.</text>
-      <attack>Cold Wind||1d10</attack>
+      <attack>Cold Damage||1d10</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -1832,7 +1844,7 @@ Source:	Monster Manual (2014) p. 98,
 	• Within 1 mile of the lair, winds buoy non-evil creatures that fall due to no act of the dragon's or its allies. Such creatures descend at a rate of 60 feet per round and take no falling damage. 	• Given days or longer to work, the dragon can make clouds and fog within its lair as solid as stone, forming structures and other objects as it wishes.
 
 If the dragon dies, changed weather reverts to normal, as described in the spell, and the other effects fade in 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The friendliest and most social of the metallic dragons, silver dragons cheerfully assist good creatures in need.
 	A silver dragon shimmers as if sculpted from pure metal, its face given a noble cast by its high eyes and sweeping beard-like chin spikes. A spiny frill rises high over its head, tracing down its neck to the tip of its tail. A silver wyrmling's scales are blue-gray with silver highlights. As the dragon approaches adulthood, its color gradually brightens until its individual scales are barely visible. As a silver dragon grows older, its pupils fade until its eyes resemble orbs of mercury.
@@ -1922,18 +1934,19 @@ Source:	Monster Manual (2014) p. 117,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 4 (1d8) cold damage.</text>
-      <attack>Bite|+11|2d10+6</attack>
+      <attack>Bite|+11|(2d10+6)+(1d8)</attack>
+      <attack>Piercing Damage|+11|2d10+6</attack>
       <attack>Cold Damage||1d8</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.</text>
-      <attack>Claw|+11|2d6+6</attack>
+      <attack>Slashing Damage|+11|2d6+6</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.</text>
-      <attack>Tail|+11|2d8+6</attack>
+      <attack>Bludgeoning Damage|+11|2d8+6</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -1943,7 +1956,7 @@ Source:	Monster Manual (2014) p. 117,
       <name>Cold Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Cold Breath||12d8</attack>
+      <attack>Cold Damage||12d8</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -1961,7 +1974,7 @@ Source:	Monster Manual (2014) p. 117,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+6</attack>
+      <attack>Bludgeoning Damage||2d6+6</attack>
     </legendary>
     <legendary category="lair">
       <name>A White Dragon's Lair</name>
@@ -1976,8 +1989,8 @@ Source:	Monster Manual (2014) p. 117,
 	• Freezing fog fills a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The fog spreads around corners, and its area is heavily obscured. Each creature in the fog when it appears must make a DC 10 Constitution saving throw, taking 10 (3d6) cold damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the fog takes 10 (3d6) cold damage. A wind of at least 20 miles per hour disperses the fog. The fog otherwise lasts until the dragon uses this lair action again or until the dragon dies.
 
 	• Jagged ice shards fall from the ceiling, striking up to three creatures underneath that the dragon can see within 120 feet of it. The dragon makes one ranged attack roll (+7 to hit) against each target. On a hit, the target takes 10 (3d6) piercing damage. 	• The dragon creates an opaque wall of ice on a solid surface it can see within 120 feet of it. The wall can be up to 30 feet long, 30 feet high, and 1 foot thick. When the wall appears, each creature within its area is pushed 5 feet out of the wall's space; appearing on whichever side of the wall it wants. Each 10-foot section of the wall has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. The wall disappears when the dragon uses this lair action again or when the dragon dies.</text>
-      <attack>Freezing Fog||3d6</attack>
-      <attack>Jagged Ice Shards|+7|3d6</attack>
+      <attack>Cold Damage||3d6</attack>
+      <attack>Piercing Damage|+7|3d6</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -1990,7 +2003,7 @@ Source:	Monster Manual (2014) p. 117,
 	• Icy walls block off areas in the dragon's lair. Each wall is 6 inches thick, and a 10-foot section has AC 5, 15 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. 	• If the dragon wishes to move through a wall, it can do so without slowing down. The portion of the wall the dragon moves through is destroyed, however.
 
 If the dragon dies, the fog and precipitation fade within 1 day. The ice walls melt over the course of 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The smallest, least intelligent, and most animalistic of the chromatic dragons, white dragons dwell in frigid climes, favoring arctic areas or icy mountains. They are vicious, cruel reptiles driven by hunger and greed.
 	A white dragon has feral eyes, a sleek profile, and a spined crest. The scales of a wyrmling white dragon glisten pure white. As the dragon ages, its sheen disappears and some of its scales begin to darken, so that by the time it is old, it is mottled by patches of pale blue and light gray. This patterning helps the dragon blend into the realms of ice and stone in which it hunts, and to fade from view when it soars across a cloud-filled sky.
@@ -2081,15 +2094,16 @@ Source:	Monster Manual (2014) p. 101,
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.</text>
-      <attack>Slam|+8|2d8+5</attack>
+      <attack>Bludgeoning Damage|+8|2d8+5</attack>
     </action>
     <action>
       <name>Whirlwind (Recharge 4-6)</name>
       <recharge>D4</recharge>
       <text>Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.
 	If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</text>
-      <attack>Whirlwind||3d8+2</attack>
-      <attack>Extra Bludgeoning||1d6</attack>
+      <attack>Whirlwind||(3d8+2)+(1d6)</attack>
+      <attack>Bludgeoning Damage||3d8+2</attack>
+      <attack>Bludgeoning Damage||1d6</attack>
     </action>
     <description>An air elemental is a funneling cloud of whirling air with a vague semblance of a face. Although it likes to race across the ground, picking up dust and debris as it goes, it can also fly and attack from above.
 	An air elemental can turn itself into a screaming cyclone, creating a whirlwind that batters creatures even as it flings them away.
@@ -2156,12 +2170,12 @@ Source:	Monster Manual (2014) p. 124,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage.</text>
-      <attack>Bite|+6|2d10+4</attack>
+      <attack>Piercing Damage|+6|2d10+4</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage.</text>
-      <attack>Claw|+6|1d8+4</attack>
+      <attack>Slashing Damage|+6|1d8+4</attack>
     </action>
     <description>The allosaurus is a predator possessing great size, strength, and speed. It can run down almost any prey over open ground, pouncing to pull creatures down with its wicked claws.
 
@@ -2216,18 +2230,19 @@ Source:	Monster Manual (2014) p. 79,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 9 (2d8) acid damage.</text>
-      <attack>Bite|+15|2d10+8</attack>
+      <attack>Bite|+15|(2d10+8)+(2d8)</attack>
+      <attack>Piercing Damage|+15|2d10+8</attack>
       <attack>Acid Damage||2d8</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 15 (2d6 + 8) slashing damage.</text>
-      <attack>Claw|+15|2d6+8</attack>
+      <attack>Slashing Damage|+15|2d6+8</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
-      <attack>Tail|+15|2d8+8</attack>
+      <attack>Bludgeoning Damage|+15|2d8+8</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -2237,7 +2252,7 @@ Source:	Monster Manual (2014) p. 79,
       <name>Acid Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales acid in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 22 Dexterity saving throw, taking 67 (15d8) acid damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Acid Breath||15d8</attack>
+      <attack>Acid Damage||15d8</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -2255,7 +2270,7 @@ Source:	Monster Manual (2014) p. 79,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+8</attack>
+      <attack>Bludgeoning Damage||2d6+8</attack>
     </legendary>
     <legendary category="lair">
       <name>A Black Dragon's Lair</name>
@@ -2267,8 +2282,10 @@ Source:	Monster Manual (2014) p. 79,
 
 	• Pools of water that the dragon can see within 120 feet of it surge outward in a grasping tide. Any creature on the ground within 20 feet of such a pool must succeed on a DC 15 Strength saving throw or be pulled up to 20 feet into the water and knocked prone.
 
-	• A cloud of swarming insects fills a 20-foot-radius sphere centered on a point the dragon chooses within 120 feet of it. The cloud spreads around corners and remains until the dragon dismisses it as an action, uses this lair action again, or dies. The cloud is lightly obscured. Any creature in the cloud when it appears must make on a DC 15 Constitution saving throw, taking 10 (3d6) piercing damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the cloud takes 10 (3d6) piercing damage. 	• Magical darkness spreads from a point the dragon chooses within 60 feet of it, filling a 15-foot-radius sphere until the dragon dismisses it as an action, uses this lair action again, or dies. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. If any of the effect's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</text>
-      <attack>Swarming Insects||3d6</attack>
+	• A cloud of swarming insects fills a 20-foot-radius sphere centered on a point the dragon chooses within 120 feet of it. The cloud spreads around corners and remains until the dragon dismisses it as an action, uses this lair action again, or dies. The cloud is lightly obscured. Any creature in the cloud when it appears must make on a DC 15 Constitution saving throw, taking 10 (3d6) piercing damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the cloud takes 10 (3d6) piercing damage. 
+
+	• Magical darkness spreads from a point the dragon chooses within 60 feet of it, filling a 15-foot-radius sphere until the dragon dismisses it as an action, uses this lair action again, or dies. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. If any of the effect's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</text>
+      <attack>Piercing Damage||3d6</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -2281,7 +2298,7 @@ Source:	Monster Manual (2014) p. 79,
 	• Fog lightly obscures the land within 6 miles of the lair.
 
 If the dragon dies, vegetation remains as it has grown, but other effects fade over 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The most evil-tempered and vile of the chromatic dragons, black dragons collect the wreckage and treasures of fallen peoples. These dragons loathe seeing the weak prosper and revel in the collapse of humanoid kingdoms. They make their homes in fetid swamps and crumbling ruins where kingdoms once stood.
 	With deep-socketed eyes and broad nasal openings, a black dragon's face resembles a skull. Its curving, segmented horns are bone-colored near the base and darken to dead black at the tips. As a black dragon ages, the flesh around its horns and cheekbones deteriorates as though eaten by acid, leaving thin layers of hide that enhance its skeletal appearance. A black dragon's head is marked by spikes and horns. Its tongue is flat with a forked tip, drooling slime whose acidic scent adds to the dragon's reek of rotting vegetation and foul water.
@@ -2365,18 +2382,19 @@ Source:	Monster Manual (2014) p. 87</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) piercing damage plus 11 (2d10) lightning damage.</text>
-      <attack>Bite|+16|2d10+9</attack>
+      <attack>Bite|+16|(2d10+9)+(2d10)</attack>
+      <attack>Piercing Damage|+16|2d10+9</attack>
       <attack>Lightning Damage||2d10</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) slashing damage.</text>
-      <attack>Claw|+16|2d6+9</attack>
+      <attack>Slashing Damage|+16|2d6+9</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 18 (2d8 + 9) bludgeoning damage.</text>
-      <attack>Tail|+16|2d8+9</attack>
+      <attack>Bludgeoning Damage|+16|2d8+9</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -2386,7 +2404,7 @@ Source:	Monster Manual (2014) p. 87</description>
       <name>Lightning Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Lightning Breath||16d10</attack>
+      <attack>Lightning Damage||16d10</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -2404,7 +2422,7 @@ Source:	Monster Manual (2014) p. 87</description>
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+9</attack>
+      <attack>Bludgeoning Damage||2d6+9</attack>
     </legendary>
     <legendary category="lair">
       <name>A Blue Dragon's Lair</name>
@@ -2421,7 +2439,7 @@ Source:	Monster Manual (2014) p. 87</description>
 	• A cloud of sand swirls about in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The cloud spreads around corners. Each creature in the cloud must succeed on a DC 15 Constitution saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 	• Lightning arcs, forming a 5-foot-wide line between two of the lair's solid surfaces that the dragon can see. They must be within 120 feet of the dragon and 120 feet of each other. Each creature in that line must succeed on a DC 15 Dexterity saving throw or take 10 (3d6) lightning damage.</text>
-      <attack>Ceiling Collapse||3d6</attack>
+      <attack>Bludgeoning Damage||3d6</attack>
       <attack>Lightning Damage||3d6</attack>
     </legendary>
     <legendary category="lair">
@@ -2435,7 +2453,8 @@ Source:	Monster Manual (2014) p. 87</description>
 	• Hidden sinkholes form in and around the dragon's lair. A sinkhole can be spotted from a safe distance with a successful DC 20 Wisdom (Perception) check. Otherwise, the first creature to step on the thin crust covering the sinkhole must succeed on a DC 15 Dexterity saving throw or fall 1d6 × 10 feet into the sinkhole.
 
 If the dragon dies, the dust devils disappear immediately, and the thunderstorms abate within 1d10 days. Any sinkholes remain where they are.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Feet||1d6x10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>Vain and territorial, blue dragons soar through the skies over deserts, preying on caravans and plundering herds and settlements in the verdant lands beyond the desert's reach. These dragons can also be found in dry steppes, searing badlands, and rocky coasts. They guard their territories against all potential competitors, especially brass dragons.
 	A blue dragon is recognized by its dramatic frilled ears and the massive ridged horn atop its blunt head. Rows of spikes extend back from its nostrils to line its brow, and cluster on its jutting lower jaw.
@@ -2524,17 +2543,17 @@ Source:	Monster Manual (2014) p. 90,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage.</text>
-      <attack>Bite|+14|2d10+8</attack>
+      <attack>Piercing Damage|+14|2d10+8</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 15 (2d6 + 8) slashing damage.</text>
-      <attack>Claw|+14|2d6+8</attack>
+      <attack>Slashing Damage|+14|2d6+8</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +14 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
-      <attack>Tail|+14|2d8+8</attack>
+      <attack>Bludgeoning Damage|+14|2d8+8</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -2548,7 +2567,7 @@ Source:	Monster Manual (2014) p. 90,
 	• Fire Breath: The dragon exhales fire in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 21 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.
 
 	• Sleep Breath: The dragon exhales sleep gas in a 90-foot cone. Each creature in that area must succeed on a DC 21 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.</text>
-      <attack>Fire Breath||16d6</attack>
+      <attack>Fire Damage||16d6</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -2571,7 +2590,7 @@ Source:	Monster Manual (2014) p. 90,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+8</attack>
+      <attack>Bludgeoning Damage||2d6+8</attack>
     </legendary>
     <legendary category="lair">
       <name>A Brass Dragon's Lair</name>
@@ -2596,7 +2615,7 @@ Source:	Monster Manual (2014) p. 90,
 	• Whenever a creature with an Intelligence of 3 or higher comes within 30 feet of a water source within 1 mile of the dragon's lair, the dragon becomes aware of the creature's presence and location.
 
 If the dragon dies, the tracks fade in 1d10 days, but the other effects fade immediately.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The most gregarious of the true dragons, brass dragons crave conversation, sunlight, and hot, dry climates.
 	A brass dragon's head is defined by the broad protective plate that expands from its forehead and the spikes protruding from its chin. A frill runs the length of its neck, and its tapering wings extend down the length of its tail. A brass dragon wyrmlling's scales are a dull, mottled brown. As it ages, the dragon's scales begin to shine, eventually taking on a warm, burnished luster.
@@ -2683,17 +2702,17 @@ Source:	Monster Manual (2014) p. 104</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) piercing damage.</text>
-      <attack>Bite|+16|2d10+9</attack>
+      <attack>Piercing Damage|+16|2d10+9</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) slashing damage.</text>
-      <attack>Claw|+16|2d6+9</attack>
+      <attack>Slashing Damage|+16|2d6+9</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 18 (2d8 + 9) bludgeoning damage.</text>
-      <attack>Tail|+16|2d8+9</attack>
+      <attack>Bludgeoning Damage|+16|2d8+9</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -2707,7 +2726,7 @@ Source:	Monster Manual (2014) p. 104</description>
 	• Lightning Breath: The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.
 
 	• Repulsion Breath: The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 23 Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon.</text>
-      <attack>Lightning Breath||16d10</attack>
+      <attack>Lightning Damage||16d10</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -2730,7 +2749,7 @@ Source:	Monster Manual (2014) p. 104</description>
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+9</attack>
+      <attack>Bludgeoning Damage||2d6+9</attack>
     </legendary>
     <legendary category="lair">
       <name>A Bronze Dragon's Lairs</name>
@@ -2756,7 +2775,7 @@ Source:	Monster Manual (2014) p. 104</description>
 	• Within its lair, the dragon can set illusory sounds, such as soft music and strange echoes, so that they can be heard in various parts of the lair.
 
 If the dragon dies, changed weather reverts to normal, as described in the spell, and the other effects fade in 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>Bronze dragons are coastal dwellers that feed primarily on aquatic plants and fish. They take the forms of friendly animals to observe other creatures of interest. They are also fascinated by warfare and eagerly join armies fighting for a just cause.
 	A ribbed and fluted crest defines the shape of a bronze dragon's head. Curving horns extend out from the crest, echoed by spines on its lower jaw and chin. To help them swim, bronze dragons have webbed feet and smooth scales. A bronze wyrmling's scales are yellow tinged with green; only as the dragon approaches adulthood does its color deepen to a darker, rich bronze tone. The pupils of a bronze dragon's eyes fade as the dragon ages, until they resemble glowing green orbs.
@@ -2839,17 +2858,17 @@ Source:	Monster Manual (2014) p. 107,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage.</text>
-      <attack>Bite|+15|2d10+8</attack>
+      <attack>Piercing Damage|+15|2d10+8</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 15 (2d6 + 8) slashing damage.</text>
-      <attack>Claw|+15|2d6+8</attack>
+      <attack>Slashing Damage|+15|2d6+8</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
-      <attack>Tail|+15|2d8+8</attack>
+      <attack>Bludgeoning Damage|+15|2d8+8</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -2863,7 +2882,7 @@ Source:	Monster Manual (2014) p. 107,
 	• Acid Breath: The dragon exhales acid in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 22 Dexterity saving throw, taking 63 (14d8) acid damage on a failed save, or half as much damage on a successful one.
 
 	• Slowing Breath: The dragon exhales gas in a 90-foot cone. Each creature in that area must succeed on a DC 22 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.</text>
-      <attack>Breath Weapons||14d8</attack>
+      <attack>Acid Damage||14d8</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -2886,7 +2905,7 @@ Source:	Monster Manual (2014) p. 107,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+8</attack>
+      <attack>Bludgeoning Damage||2d6+8</attack>
     </legendary>
     <legendary category="lair">
       <name>A Copper Dragon's Lair</name>
@@ -2911,7 +2930,7 @@ Source:	Monster Manual (2014) p. 107,
 	• Intelligent creatures within 1 mile of the dragon's lair are prone to fits of giggling. Even serious matters suddenly seem amusing.
 
 If the dragon dies, the magic carvings fade over the course of 1d10 days. The other effects end immediately.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>Copper dragons are incorrigible pranksters, joke tellers, and riddlers that live in hills and rocky uplands. Despite their gregarious and even-tempered natures, they possess a covetous, miserly streak, and can become dangerous when their hoards are threatened.
 	A copper dragon has brow plates jutting over its eyes, extending back to long horns that grow as a series of overlapping segments. Its backswept cheek ridges and jaw frills give it a pensive look. At birth, a copper dragon's scales are a ruddy brown with a metallic tint. As the dragon ages, its scales become more coppery in color, later taking on a green tint as it ages. A copper dragon's pupils fade with age, and the eyes of the oldest copper dragons resemble glowing turquoise orbs.
@@ -2997,17 +3016,17 @@ Source:	Monster Manual (2014) p. 110,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 21 (2d10 + 10) piercing damage.</text>
-      <attack>Bite|+17|2d10+10</attack>
+      <attack>Piercing Damage|+17|2d10+10</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 17 (2d6 + 10) slashing damage.</text>
-      <attack>Claw|+17|2d6+10</attack>
+      <attack>Slashing Damage|+17|2d6+10</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +17 to hit, reach 20 ft., one target. Hit: 19 (2d8 + 10) bludgeoning damage.</text>
-      <attack>Tail|+17|2d8+10</attack>
+      <attack>Bludgeoning Damage|+17|2d8+10</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -3021,7 +3040,7 @@ Source:	Monster Manual (2014) p. 110,
 	• Fire Breath: The dragon exhales fire in a 90-foot cone. Each creature in that area must make a DC 24 Dexterity saving throw, taking 71 (13d10) fire damage on a failed save, or half as much damage on a successful one.
 
 	• Weakening Breath: The dragon exhales gas in a 90-foot cone. Each creature in that area must succeed on a DC 24 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Fire Breath||13d10</attack>
+      <attack>Fire Damage||13d10</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -3044,7 +3063,7 @@ Source:	Monster Manual (2014) p. 110,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+10</attack>
+      <attack>Bludgeoning Damage||2d6+10</attack>
     </legendary>
     <legendary category="lair">
       <name>A Gold Dragon's Lair</name>
@@ -3154,18 +3173,19 @@ Source:	Monster Manual (2014) p. 113</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 10 (3d6) poison damage.</text>
-      <attack>Bite|+15|2d10+8</attack>
+      <attack>Bite|+15|(2d10+8)+(3d6)</attack>
+      <attack>Piercing Damage|+15|2d10+8</attack>
       <attack>Poison Damage||3d6</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 22 (4d6 + 8) slashing damage.</text>
-      <attack>Claw|+15|4d6+8</attack>
+      <attack>Slashing Damage|+15|4d6+8</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
-      <attack>Tail|+15|2d8+8</attack>
+      <attack>Bludgeoning Damage|+15|2d8+8</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -3175,7 +3195,7 @@ Source:	Monster Manual (2014) p. 113</description>
       <name>Poison Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales poisonous gas in a 90-foot cone. Each creature in that area must make a DC 22 Constitution saving throw, taking 77 (22d6) poison damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Poison Breath||22d6</attack>
+      <attack>Poison Damage||22d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -3193,7 +3213,7 @@ Source:	Monster Manual (2014) p. 113</description>
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+8</attack>
+      <attack>Bludgeoning Damage||2d6+8</attack>
     </legendary>
     <legendary category="lair">
       <name>A Green Dragon's Lair</name>
@@ -3209,7 +3229,7 @@ Source:	Monster Manual (2014) p. 113</description>
 	• A wall of tangled brush bristling with thorns springs into existence on a solid surface within 120 feet of the dragon. The wall is up to 60 feet long, 10 feet high, and 5 feet thick, and it blocks line of sight. When the wall appears, each creature in its area must make a DC 15 Dexterity saving throw. A creature that fails the save takes 18 (4d8) piercing damage and is pushed 5 feet out of the wall's space, appearing on whichever side of the wall it wants. A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature travels through the wall, it must spend 4 feet of movement. Furthermore, a creature in the wall's space must make a DC 15 Dexterity saving throw once each round it's in contact with the wall, taking 18 (4d8) piercing damage on a failed save, or half as much damage on a successful one. Each 10-foot section of wall has AC 5, 15 hit points, vulnerability to fire damage, resistance to bludgeoning and piercing damage, and immunity to psychic damage. The wall sinks back into the ground when the dragon uses this lair action again or when the dragon dies.
 
 	• Magical fog billows around one creature the dragon can see within 120 feet of it. The creature must succeed on a DC 15 Wisdom saving throw or be charmed by the dragon until initiative count 20 on the next round.</text>
-      <attack>Thorns||4d8</attack>
+      <attack>Piercing Damage||4d8</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -3222,8 +3242,8 @@ Source:	Monster Manual (2014) p. 113</description>
 	• Rodents and birds within 1 mile of the dragon's lair serve as the dragon's eyes and ears. Deer and other large game are strangely absent, hinting at the presence of an unnaturally hungry predator.
 
 If the dragon dies, the rodents and birds lose their supernatural link to it. The thickets remain, but within 1d10 days, they become mundane plants and normal difficult terrain, losing their thorns.</text>
-      <attack>Thorns||1d6</attack>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Piercing Damage||1d6</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The most cunning and treacherous of true dragons, green dragons use misdirection and trickery to get the upper hand against their enemies. Nasty tempered and thoroughly evil, they take special pleasure in subverting and corrupting the good-hearted. In the ancient forests they roam, green dragons demonstrate an aggression that is often less about territory than it is about gaining power and wealth with as little effort as possible.
 	A green dragon is recognized by its curved jawline and the crest that begins near its eyes and continues down its spine, reaching full height just behind the skull. A green dragon has no external ears, but bears leathery spiked plates that run down the sides of its neck.
@@ -3312,18 +3332,19 @@ Source:	Monster Manual (2014) p. 93,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 21 (2d10 + 10) piercing damage plus 14 (4d6) fire damage.</text>
-      <attack>Bite|+17|2d10+10</attack>
+      <attack>Bite|+17|(2d10+10)+(4d6)</attack>
+      <attack>Piercing Damage|+17|2d10+10</attack>
       <attack>Fire Damage||4d6</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 17 (2d6 + 10) slashing damage.</text>
-      <attack>Claw|+17|2d6+10</attack>
+      <attack>Slashing Damage|+17|2d6+10</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +17 to hit, reach 20 ft., one target. Hit: 19 (2d8 + 10) bludgeoning damage.</text>
-      <attack>Tail|+17|2d8+10</attack>
+      <attack>Bludgeoning Damage|+17|2d8+10</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -3333,7 +3354,7 @@ Source:	Monster Manual (2014) p. 93,
       <name>Fire Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales fire in a 90-foot cone. Each creature in that area must make a DC 24 Dexterity saving throw, taking 91 (26d6) fire damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Fire Breath||26d6</attack>
+      <attack>Fire Damage||26d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -3351,7 +3372,7 @@ Source:	Monster Manual (2014) p. 93,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+10</attack>
+      <attack>Bludgeoning Damage||2d6+10</attack>
     </legendary>
     <legendary category="lair">
       <name>A Red Dragon's Lair</name>
@@ -3368,7 +3389,7 @@ Source:	Monster Manual (2014) p. 93,
 	• A tremor shakes the lair in a 60-foot radius around the dragon. Each creature other than the dragon on the ground in that area must succeed on a DC 15 Dexterity saving throw or be knocked prone.
 
 	• Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads a round corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its turn. While poisoned in this way, a creature is incapacitated.</text>
-      <attack>Magma||6d6</attack>
+      <attack>Fire Damage||6d6</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -3381,7 +3402,7 @@ Source:	Monster Manual (2014) p. 93,
 	• Rocky fissures within 1 mile of the dragon's lair form portals to the Elemental Plane of Fire, allowing creatures of elemental fire into the world to dwell nearby.
 
 If the dragon dies, these effects fade over the course of 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The most covetous of the true dragons, red dragons tirelessly seek to increase their treasure hoards. They are exceptionally vain, even for dragons, and their conceit is reflected in their proud bearing and their disdain for other creatures.
 	The odor of sulfur and pumice surrounds a red dragon, whose swept-back horns and spinal frill define its silhouette. Its beaked snout vents smoke at all times, and its eyes dance with flame when it is angry. Its wings are the longest of any chromatic dragon, and have a blue-black tint along the trailing edge that resembles metal burned blue by fire.
@@ -3469,17 +3490,17 @@ Source:	Monster Manual (2014) p. 97,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +17 to hit, reach 15 ft., one target. Hit: 21 (2d10 + 10) piercing damage.</text>
-      <attack>Bite|+17|2d10+10</attack>
+      <attack>Piercing Damage|+17|2d10+10</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 17 (2d6 + 10) slashing damage.</text>
-      <attack>Claw|+17|2d6+10</attack>
+      <attack>Slashing Damage|+17|2d6+10</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +17 to hit, reach 20 ft., one target. Hit: 19 (2d8 + 10) bludgeoning damage.</text>
-      <attack>Tail|+17|2d8+10</attack>
+      <attack>Bludgeoning Damage|+17|2d8+10</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -3493,7 +3514,7 @@ Source:	Monster Manual (2014) p. 97,
 	• Cold Breath: The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 (15d8) cold damage on a failed save, or half as much damage on a successful one.
 
 	• Paralyzing Breath: The dragon exhales paralyzing gas in a 90-foot cone. Each creature in that area must succeed on a DC 24 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Cold Breath||15d8</attack>
+      <attack>Cold Damage||15d8</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -3516,7 +3537,7 @@ Source:	Monster Manual (2014) p. 97,
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+10</attack>
+      <attack>Bludgeoning Damage||2d6+10</attack>
     </legendary>
     <legendary category="lair">
       <name>A Silver Dragon's Lair</name>
@@ -3529,7 +3550,7 @@ Source:	Monster Manual (2014) p. 97,
 	• The dragon creates fog as if it had cast the fog cloud spell. The fog lasts until initiative count 20 on the next round.
 
 	• A blisteringly cold wind blows through the lair near the dragon. Each creature within 120 feet of the dragon must succeed on a DC 15 Constitution saving throw or take 5 (1d10) cold damage. Gases and vapors are dispersed by the wind, and unprotected flames are extinguished. Protected flames, such as lanterns, have a 50 percent chance of being extinguished.</text>
-      <attack>Cold Wind||1d10</attack>
+      <attack>Cold Damage||1d10</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -3540,7 +3561,7 @@ Source:	Monster Manual (2014) p. 97,
 	• Within 1 mile of the lair, winds buoy non-evil creatures that fall due to no act of the dragon's or its allies. Such creatures descend at a rate of 60 feet per round and take no falling damage. 	• Given days or longer to work, the dragon can make clouds and fog within its lair as solid as stone, forming structures and other objects as it wishes.
 
 If the dragon dies, changed weather reverts to normal, as described in the spell, and the other effects fade in 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The friendliest and most social of the metallic dragons, silver dragons cheerfully assist good creatures in need.
 	A silver dragon shimmers as if sculpted from pure metal, its face given a noble cast by its high eyes and sweeping beard-like chin spikes. A spiny frill rises high over its head, tracing down its neck to the tip of its tail. A silver wyrmling's scales are blue-gray with silver highlights. As the dragon approaches adulthood, its color gradually brightens until its individual scales are barely visible. As a silver dragon grows older, its pupils fade until its eyes resemble orbs of mercury.
@@ -3628,18 +3649,19 @@ Source:	Monster Manual (2014) p. 116</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 9 (2d8) cold damage.</text>
-      <attack>Bite|+14|2d10+8</attack>
+      <attack>Bite|+14|(2d10+8)+(2d8)</attack>
+      <attack>Piercing Damage|+14|2d10+8</attack>
       <attack>Cold Damage||2d8</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 15 (2d6 + 8) slashing damage.</text>
-      <attack>Claw|+14|2d6+8</attack>
+      <attack>Slashing Damage|+14|2d6+8</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +14 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
-      <attack>Tail|+14|2d8+8</attack>
+      <attack>Bludgeoning Damage|+14|2d8+8</attack>
     </action>
     <action>
       <name>Frightful Presence</name>
@@ -3649,7 +3671,7 @@ Source:	Monster Manual (2014) p. 116</description>
       <name>Cold Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 22 Constitution saving throw, taking 72 (16d8) cold damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Cold Breath||16d8</attack>
+      <attack>Cold Damage||16d8</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -3667,7 +3689,7 @@ Source:	Monster Manual (2014) p. 116</description>
     <legendary>
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||2d6+8</attack>
+      <attack>Bludgeoning Damage||2d6+8</attack>
     </legendary>
     <legendary category="lair">
       <name>A White Dragon's Lair</name>
@@ -3682,8 +3704,8 @@ Source:	Monster Manual (2014) p. 116</description>
 	• Freezing fog fills a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The fog spreads around corners, and its area is heavily obscured. Each creature in the fog when it appears must make a DC 10 Constitution saving throw, taking 10 (3d6) cold damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the fog takes 10 (3d6) cold damage. A wind of at least 20 miles per hour disperses the fog. The fog otherwise lasts until the dragon uses this lair action again or until the dragon dies.
 
 	• Jagged ice shards fall from the ceiling, striking up to three creatures underneath that the dragon can see within 120 feet of it. The dragon makes one ranged attack roll (+7 to hit) against each target. On a hit, the target takes 10 (3d6) piercing damage. 	• The dragon creates an opaque wall of ice on a solid surface it can see within 120 feet of it. The wall can be up to 30 feet long, 30 feet high, and 1 foot thick. When the wall appears, each creature within its area is pushed 5 feet out of the wall's space; appearing on whichever side of the wall it wants. Each 10-foot section of the wall has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. The wall disappears when the dragon uses this lair action again or when the dragon dies.</text>
-      <attack>Freezing Fog||3d6</attack>
-      <attack>Jagged Ice|+7|3d6</attack>
+      <attack>Cold Damage||3d6</attack>
+      <attack>Piercing Damage|+7|3d6</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -3696,7 +3718,7 @@ Source:	Monster Manual (2014) p. 116</description>
 	• Icy walls block off areas in the dragon's lair. Each wall is 6 inches thick, and a 10-foot section has AC 5, 15 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. 	• If the dragon wishes to move through a wall, it can do so without slowing down. The portion of the wall the dragon moves through is destroyed, however.
 
 If the dragon dies, the fog and precipitation fade within 1 day. The ice walls melt over the course of 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The smallest, least intelligent, and most animalistic of the chromatic dragons, white dragons dwell in frigid climes, favoring arctic areas or icy mountains. They are vicious, cruel reptiles driven by hunger and greed.
 	A white dragon has feral eyes, a sleek profile, and a spined crest. The scales of a wyrmling white dragon glisten pure white. As the dragon ages, its sheen disappears and some of its scales begin to darken, so that by the time it is old, it is mottled by patches of pale blue and light gray. This patterning helps the dragon blend into the realms of ice and stone in which it hunts, and to fade from view when it soars across a cloud-filled sky.
@@ -3791,6 +3813,7 @@ Source:	Monster Manual (2014) p. 100,
 	• 4th level (3 slots): banishment, freedom of movement
 	• 5th level (2 slots): flame strike, greater restoration
 	• 6th level (1 slots): heroes' feast</text>
+      <attack>Spellcasting|+10|</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -3799,7 +3822,7 @@ Source:	Monster Manual (2014) p. 100,
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage.</text>
-      <attack>Claw|+12|2d10+6</attack>
+      <attack>Slashing Damage|+12|2d10+6</attack>
     </action>
     <action>
       <name>Roar (3/Day)</name>
@@ -3811,7 +3834,7 @@ Source:	Monster Manual (2014) p. 100,
 	• Second Roar: Each creature that fails a DC 18 Wisdom saving throw is deafened and frightened for 1 minute. A frightened creature is paralyzed and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 
 	• Third Roar: Each creature makes a DC 18 Constitution saving throw. On a failed save, a creature takes 44 (8d10) thunder damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone.</text>
-      <attack>Roar||8d10</attack>
+      <attack>Thunder Damage||8d10</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -3845,7 +3868,7 @@ Source:	Monster Manual (2014) p. 100,
 	• The flow of time within the lair is altered such that everything within moves up to 10 years forward or backward (sphinx's choice). Only the sphinx is immediately aware of the time change. A wish spell can return the caster and up to seven other creatures designated by the caster to their normal time.
 
 	• The sphinx shifts itself and up to seven other creatures it can see within in its lair to another plane of existence. Once outside its lair, the sphinx can't use lair actions, but it can return to its lair as a bonus action on its turn, taking up to seven creatures with it.</text>
-      <attack>Age Change||1d20</attack>
+      <attack>Years||1d20</attack>
     </legendary>
     <slots>0,4,3,3,3,2,1</slots>
     <spells>sacred flame, spare the dying, thaumaturgy, command, detect evil and good, detect magic, lesser restoration, zone of truth, dispel magic, tongues, banishment, freedom of movement, flame strike, greater restoration, heroes' feast</spells>
@@ -3911,7 +3934,7 @@ Source:	Monster Manual (2014) p. 281,
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.</text>
-      <attack>Slam|+4|1d6+2</attack>
+      <attack>Bludgeoning Damage|+4|1d6+2</attack>
     </action>
     <description>This empty steel shell clamors as it moves, heavy plates banging and grinding against one another like the vengeful spirit of a fallen knight. Ponderous but persistent, this magical guardian is almost always a suit of plate armor.
 	To add to its menace, animated armor is frequently enchanted with scripted speech, so the armor can utter warnings, demand passwords, or deliver riddles. Rare suits of animated armor are able to carry on an actual conversation.
@@ -3963,14 +3986,15 @@ Source:	Monster Manual (2014) p. 19,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 3 (1d6) acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.</text>
-      <attack>Bite|+5|2d6+3</attack>
+      <attack>Bite|+5|(2d6+3)+(1d6)</attack>
+      <attack>Slashing Damage|+5|2d6+3</attack>
       <attack>Acid Damage||1d6</attack>
     </action>
     <action>
       <name>Acid Spray (Recharge 6)</name>
       <recharge>D6</recharge>
       <text>The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Acid Spray||3d6</attack>
+      <attack>Acid Damage||3d6</attack>
     </action>
     <description>An ankheg resembles an enormous many-legged insect, its long antennae twitching in response to any movement around it. Its legs end in sharp hooks adapted for burrowing and grasping its prey, and its powerful mandibles can snap a small tree in half.
 
@@ -4017,7 +4041,7 @@ Source:	Monster Manual (2014) p. 21,
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</text>
-      <attack>Tail|+7|4d6+4</attack>
+      <attack>Bludgeoning Damage|+7|4d6+4</attack>
     </action>
     <description>Thick armor plating covers the body of the plant-eating ankylosaurus, which defends itself against predators with a knobbed tail that delivers a devastating strike. Some varieties of ankylosaurus have spiked tails that deal piercing damage instead of bludgeoning damage. Dinosaurs:
 Dinosaurs, or behemoths, are among the oldest reptiles in the world. Predatory dinosaurs are savage, territorial hunters. Herbivorous dinosaurs are less aggressive, but they might attack to defend their young, or if startled or harassed.
@@ -4060,12 +4084,12 @@ Source:	Monster Manual (2014) p. 79,
     <action>
       <name>Fist</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</text>
-      <attack>Fist|+5|1d6+3</attack>
+      <attack>Bludgeoning Damage|+5|1d6+3</attack>
     </action>
     <action>
       <name>Rock</name>
       <text>Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</text>
-      <attack>Rock|+5|1d6+3</attack>
+      <attack>Bludgeoning Damage|+5|1d6+3</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 317,
 		Tales from the Yawning Portal,
@@ -4132,7 +4156,8 @@ Source:	Monster Manual (2014) p. 79,
     <action>
       <name>Claws</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage. The target must make a DC 14 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Claws|+7|2d4+3</attack>
+      <attack>Claws|+7|(2d4+3)+(3d6)</attack>
+      <attack>Slashing Damage|+7|2d4+3</attack>
       <attack>Poison Damage||3d6</attack>
     </action>
     <action>
@@ -4229,12 +4254,12 @@ Source:	Monster Manual (2014) p. 313,
 	• 9th level (1 slots): time stop
 
 *The archmage casts these spells on itself before combat.</text>
-      <attack>Spellcasting|+9|0</attack>
+      <attack>Spellcasting|+9|</attack>
     </trait>
     <action>
       <name>Dagger</name>
       <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
+      <attack>Piercing Damage|+6|1d4+2</attack>
     </action>
     <action>
       <name>Variant: Familiars</name>
@@ -4296,7 +4321,7 @@ Source:	Monster Manual (2014) p. 342,
       <name>Sneak Attack (1/Turn)</name>
       <recharge>1/Turn</recharge>
       <text>The assassin deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll.</text>
-      <attack>Sneak Attack||4d4</attack>
+      <attack>Sneak Attack||4d6</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -4305,13 +4330,15 @@ Source:	Monster Manual (2014) p. 342,
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Shortsword|+6|1d6+3</attack>
+      <attack>Shortsword|+6|(1d6+3)+(7d6)</attack>
+      <attack>Piercing Damage|+6|1d6+3</attack>
       <attack>Poison Damage||7d6</attack>
     </action>
     <action>
       <name>Light Crossbow</name>
       <text>Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Light Crossbow|+6|1d8+3</attack>
+      <attack>Light Crossbow|+6|(1d8+3)+(7d6)</attack>
+      <attack>Piercing Damage|+6|1d8+3</attack>
       <attack>Poison Damage||7d6</attack>
     </action>
     <description>Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them.
@@ -4367,7 +4394,7 @@ Source:	Monster Manual (2014) p. 343,
     <action>
       <name>Rake</name>
       <text>Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) slashing damage.</text>
-      <attack>Rake|+1|1d4-1</attack>
+      <attack>Slashing Damage|+1|1d4-1</attack>
     </action>
     <description>An awakened shrub is an ordinary shrub given sentience and mobility by the awaken spell or similar magic.
 
@@ -4412,7 +4439,7 @@ Source:	Monster Manual (2014) p. 317,
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage.</text>
-      <attack>Slam|+6|3d6+4</attack>
+      <attack>Bludgeoning Damage|+6|3d6+4</attack>
     </action>
     <description>An awakened tree is an ordinary tree given sentience and mobility by the awaken spell or similar magic.
 
@@ -4454,7 +4481,7 @@ Source:	Monster Manual (2014) p. 317,
     <action>
       <name>Beak</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.</text>
-      <attack>Beak|+4|1d8+2</attack>
+      <attack>Slashing Damage|+4|1d8+2</attack>
     </action>
     <description>An axe beak is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.
 
@@ -4507,8 +4534,10 @@ Source:	Monster Manual (2014) p. 317,
     <action>
       <name>Warhammer</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage, or 8 (1d10 + 3) bludgeoning damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.</text>
-      <attack>Warhammer|+5|1d8+3</attack>
-      <attack>Warhammer (Two-Handed)|+5|1d10+3</attack>
+      <attack>Warhammer|+5|(1d8+3)+(1d6)</attack>
+      <attack>Warhammer (Two-Handed)|+5|(1d10+3)+(1d6)</attack>
+      <attack>Bludgeoning Damage|+5|1d8+3</attack>
+      <attack>Bludgeoning Damage (Two-Handed)|+5|1d10+3</attack>
       <attack>Fire Damage||1d6</attack>
     </action>
     <description>Natives of the Elemental Plane of Fire, azers are master crafters, expert miners, and sworn foes of the efreet. In appearance and manner, an azer resembles a male dwarf, but this is a facade. Beneath its metallic looking skin, an azer is a being of fire, which outwardly manifests in its fiery hair and beard.
@@ -4562,7 +4591,7 @@ Source:	Monster Manual (2014) p. 22,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage.</text>
-      <attack>Bite|+1|1d4-1</attack>
+      <attack>Piercing Damage|+1|1d4-1</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 318,
 		Tales from the Yawning Portal,
@@ -4602,6 +4631,7 @@ Source:	Monster Manual (2014) p. 22,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</text>
+      <attack>Piercing Damage|+2|1</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 318</description>
     <environment>forest</environment>
@@ -4640,7 +4670,7 @@ Source:	Monster Manual (2014) p. 22,
     <trait>
       <name>Fire Aura</name>
       <text>At the start of each of the balor's turns, each creature within 5 feet of it takes 10 (3d6) fire damage, and flammable objects in the aura that aren't being worn or carried ignite. A creature that touches the balor or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.</text>
-      <attack>Fire Aura||3d6</attack>
+      <attack>Fire Damage||3d6</attack>
     </trait>
     <trait>
       <name>Magic Resistance</name>
@@ -4657,13 +4687,15 @@ Source:	Monster Manual (2014) p. 22,
     <action>
       <name>Longsword</name>
       <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) slashing damage plus 13 (3d8) lightning damage. If the balor scores a critical hit, it rolls damage dice three times, instead of twice.</text>
-      <attack>Longsword|+14|3d8+8</attack>
+      <attack>Longsword|+14|(3d8+8)+(3d8)</attack>
+      <attack>Slashing Damage|+14|3d8+8</attack>
       <attack>Lightning Damage||3d8</attack>
     </action>
     <action>
       <name>Whip</name>
       <text>Melee Weapon Attack: +14 to hit, reach 30 ft., one target. Hit: 15 (2d6 + 8) slashing damage plus 10 (3d6) fire damage, and the target must succeed on a DC 20 Strength saving throw or be pulled up to 25 feet toward the balor.</text>
-      <attack>Whip|+14|2d6+8</attack>
+      <attack>Whip|+14|(2d6+8)+(3d6)</attack>
+      <attack>Slashing Damage|+14|2d6+8</attack>
       <attack>Fire Damage||3d6</attack>
     </action>
     <action>
@@ -4813,12 +4845,12 @@ Source:	Monster Manual (2014) p. 55,
     <action>
       <name>Scimitar</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.</text>
-      <attack>Scimitar|+3|1d6+1</attack>
+      <attack>Slashing Damage|+3|1d6+1</attack>
     </action>
     <action>
       <name>Light Crossbow</name>
       <text>Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.</text>
-      <attack>Light Crossbow|+3|1d8+1</attack>
+      <attack>Piercing Damage|+3|1d8+1</attack>
     </action>
     <description>Bandits rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.
 	Pirates are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation's vessels.
@@ -4874,12 +4906,12 @@ Source:	Monster Manual (2014) p. 343,
     <action>
       <name>Scimitar</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.</text>
-      <attack>Scimitar|+5|1d6+3</attack>
+      <attack>Slashing Damage|+5|1d6+3</attack>
     </action>
     <action>
       <name>Dagger</name>
       <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.</text>
-      <attack>Dagger|+5|1d4+3</attack>
+      <attack>Piercing Damage|+5|1d4+3</attack>
     </action>
     <reaction>
       <name>Parry</name>
@@ -4946,7 +4978,7 @@ Source:	Monster Manual (2014) p. 344,
     <action>
       <name>Corrupting Touch</name>
       <text>Melee Spell Attack: +4 to hit, reach 5 ft., one target. Hit: 12 (3d6 + 2) necrotic damage.</text>
-      <attack>Corrupting Touch|+4|3d6+2</attack>
+      <attack>Necrotic Damage|+4|3d6+2</attack>
     </action>
     <action>
       <name>Horrifying Visage</name>
@@ -4956,7 +4988,7 @@ Source:	Monster Manual (2014) p. 344,
       <name>Wail (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>The banshee releases a mournful wail, provided that she isn't in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 feet of her that can hear her must make a DC 13 Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 (3d6) psychic damage.</text>
-      <attack>Wail||3d6</attack>
+      <attack>Psychic Damage||3d6</attack>
     </action>
     <description>When night falls, unlucky travelers hear the faint cries of the forlorn dead. This woeful spirit is a banshee, a spiteful creature formed from the spirit of a female elf. Banshees appear as luminous, wispy forms that vaguely recall their mortal features. A banshee's face is wreathed in a wild tangle of hair, its body clad in wispy rags that flutter and stream around it.
 
@@ -5005,7 +5037,7 @@ Source:	Monster Manual (2014) p. 23,
     <trait>
       <name>Barbed Hide</name>
       <text>At the start of each of its turns, the barbed devil deals 5 (1d10) piercing damage to any creature grappling it.</text>
-      <attack>Barbed Hide||1d10</attack>
+      <attack>Piercing Damage||1d10</attack>
     </trait>
     <trait>
       <name>Devil's Sight</name>
@@ -5022,17 +5054,17 @@ Source:	Monster Manual (2014) p. 23,
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</text>
-      <attack>Claw|+6|1d6+3</attack>
+      <attack>Piercing Damage|+6|1d6+3</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.</text>
-      <attack>Tail|+6|2d6+3</attack>
+      <attack>Piercing Damage|+6|2d6+3</attack>
     </action>
     <action>
       <name>Hurl Flame</name>
       <text>Ranged Spell Attack: +5 to hit, range 150 ft., one target. Hit: 10 (3d6) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.</text>
-      <attack>Hurl Flame|+5|3d6</attack>
+      <attack>Fire Damage|+5|3d6</attack>
     </action>
     <action>
       <name>Variant: Devil Summoning (1/Day)</name>
@@ -5173,12 +5205,12 @@ Source:	Monster Manual (2014) p. 70,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.</text>
-      <attack>Bite|+7|2d6+4</attack>
+      <attack>Piercing Damage|+7|2d6+4</attack>
     </action>
     <action>
       <name>Fist</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage.</text>
-      <attack>Fist|+7|1d10+4</attack>
+      <attack>Bludgeoning Damage|+7|1d10+4</attack>
     </action>
     <action>
       <name>Variant: Summon Demon (1/Day)</name>
@@ -5322,7 +5354,8 @@ Source:	Monster Manual (2014) p. 56,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 7 (2d6) poison damage.</text>
-      <attack>Bite|+5|2d6+3</attack>
+      <attack>Bite|+5|(2d6+3)+(2d6)</attack>
+      <attack>Piercing Damage|+5|2d6+3</attack>
       <attack>Poison Damage||2d6</attack>
     </action>
     <description>Travelers sometimes find objects that look like pieces of remarkably lifelike stone carvings of wildlife. Missing parts appear to have been bitten off. Seasoned explorers regard such relics as warnings, knowing that the basilisk that created them is likely to be nearby.
@@ -5378,7 +5411,7 @@ Source:	Monster Manual (2014) p. 24,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</text>
-      <attack>Bite|+0|1</attack>
+      <attack>Piercing Damage|+0|1</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 318,
 		Curse of Strahd,
@@ -5432,12 +5465,12 @@ Source:	Monster Manual (2014) p. 24,
     <action>
       <name>Beard</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Beard|+5|1d8+2</attack>
+      <attack>Piercing Damage|+5|1d8+2</attack>
     </action>
     <action>
       <name>Glaive</name>
       <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 8 (1d10 + 3) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.</text>
-      <attack>Glaive|+5|1d10+3</attack>
+      <attack>Slashing Damage|+5|1d10+3</attack>
       <attack>Infernal Wound||1d10</attack>
     </action>
     <action>
@@ -5560,18 +5593,20 @@ Source:	Monster Manual (2014) p. 70,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) piercing damage.</text>
-      <attack>Bite|+10|3d10+6</attack>
+      <attack>Piercing Damage|+10|3d10+6</attack>
     </action>
     <action>
       <name>Constrict</name>
       <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one Large or smaller creature. 17 (2d10 + 6) bludgeoning damage plus 17 (2d10 + 6) slashing damage. The target is grappled (escape DC 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.</text>
-      <attack>Constrict|+10|2d10+6</attack>
+      <attack>Constrict|+10|(2d10+6)+(2d10+6)</attack>
+      <attack>Bludgeoning Damage|+10|2d10+6</attack>
+      <attack>Slashing Damage||2d10+6</attack>
     </action>
     <action>
       <name>Lightning Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Lightning Breath||12d10</attack>
+      <attack>Lightning Damage||12d10</attack>
     </action>
     <action>
       <name>Swallow</name>
@@ -5626,7 +5661,7 @@ Source:	Monster Manual (2014) p. 25,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (4d6) piercing damage.</text>
-      <attack>Bite|+5|4d6</attack>
+      <attack>Piercing Damage|+5|4d6</attack>
     </action>
     <action>
       <name>Eye Rays</name>
@@ -5653,9 +5688,9 @@ Source:	Monster Manual (2014) p. 25,
 	If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.
 
 10. Death Ray: The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points.</text>
-      <attack>Enervation Ray||8d8</attack>
-      <attack>Disintegration Ray||10d8</attack>
-      <attack>Death Ray||10d10</attack>
+      <attack>Necrotic Damage||8d8</attack>
+      <attack>Force Damage||10d8</attack>
+      <attack>Necrotic Damage||10d10</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -5691,7 +5726,7 @@ The beholder can't repeat an effect until they have all been used, and it can't 
 	• When the beholder sleeps, minor warps in reality occur within 1 mile of its lair and then vanish 24 hours later. Marks on cave walls might change subtly, an eerie trinket might appear where none existed before, harmless slime might coat a statue, and so on. These effects apply only to natural surfaces and to nonmagical objects that aren't on anyone's person.
 
 If the beholder dies, these effects fade over the course of 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>One glance at a beholder is enough to assess its foul and otherworldly nature. Aggressive, hateful, and greedy, these aberrations dismiss all other creatures as lesser beings, toying with them or destroying them as they choose.
 	A beholder's spheroid body levitates at all times, and its great bulging eye sits above a wide, toothy maw, while the smaller eyestalks that crown its body twist and turn to keep its foes in sight. When a beholder sleeps, it closes its central eye but leaves its smaller eyes open and alert.
@@ -5746,7 +5781,7 @@ Source:	Monster Manual (2014) p. 28,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 14 (4d6) piercing damage.</text>
-      <attack>Bite|+3|4d6</attack>
+      <attack>Piercing Damage|+3|4d6</attack>
     </action>
     <action>
       <name>Eye Ray</name>
@@ -5760,8 +5795,8 @@ Source:	Monster Manual (2014) p. 28,
 
 4. Disintegration Ray: If the target is a creature, it must succeed on a DC 14 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.
 	If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger nonmagical object or creation of magical force, this ray disintegrates a 10-foot cube of it.</text>
-      <attack>Enervation Ray||8d8</attack>
-      <attack>Disintegration Ray||10d8</attack>
+      <attack>Necrotic Damage||8d8</attack>
+      <attack>Force Damage||10d8</attack>
     </action>
     <description>From somewhere in the darkness, a gurgling moan is heard. A form lurches into view, dragging one foot as it raises bloated arms and broken hands. The zombie advances, driven to kill anyone too slow to escape its grasp.
 
@@ -5870,12 +5905,12 @@ Source:	Monster Manual (2014) p. 344,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
-      <attack>Bite|+4|1d6+2</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Claws</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.</text>
-      <attack>Claws|+4|2d4+2</attack>
+      <attack>Slashing Damage|+4|2d4+2</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 318,
 		Princes of the Apocalypse,
@@ -5918,14 +5953,15 @@ Source:	Monster Manual (2014) p. 344,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) acid damage.</text>
-      <attack>Bite|+4|1d10+2</attack>
+      <attack>Bite|+4|(1d10+2)+(1d4)</attack>
+      <attack>Piercing Damage|+4|1d10+2</attack>
       <attack>Acid Damage||1d4</attack>
     </action>
     <action>
       <name>Acid Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Acid Breath||5d8</attack>
+      <attack>Acid Damage||5d8</attack>
     </action>
     <description>The most evil-tempered and vile of the chromatic dragons, black dragons collect the wreckage and treasures of fallen peoples. These dragons loathe seeing the weak prosper and revel in the collapse of humanoid kingdoms. They make their homes in fetid swamps and crumbling ruins where kingdoms once stood.
 	With deep-socketed eyes and broad nasal openings, a black dragon's face resembles a skull. Its curving, segmented horns are bone-colored near the base and darken to dead black at the tips. As a black dragon ages, the flesh around its horns and cheekbones deteriorates as though eaten by acid, leaving thin layers of hide that enhance its skeletal appearance. A black dragon's head is marked by spikes and horns. Its tongue is flat with a forked tip, drooling slime whose acidic scent adds to the dragon's reek of rotting vegetation and foul water.
@@ -6006,7 +6042,7 @@ Source:	Monster Manual (2014) p. 88,
       <name>Corrosive Form</name>
       <text>A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage.
 	The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.</text>
-      <attack>Corrosive Form||1d8</attack>
+      <attack>Acid Damage||1d8</attack>
     </trait>
     <trait>
       <name>Spider Climb</name>
@@ -6015,7 +6051,8 @@ Source:	Monster Manual (2014) p. 88,
     <action>
       <name>Pseudopod</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.</text>
-      <attack>Pseudopod|+5|1d6+3</attack>
+      <attack>Pseudopod|+5|(1d6+3)+(4d8)</attack>
+      <attack>Bludgeoning Damage|+5|1d6+3</attack>
       <attack>Acid Damage||4d8</attack>
     </action>
     <reaction>
@@ -6080,7 +6117,7 @@ Source:	Monster Manual (2014) p. 241,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.</text>
-      <attack>Bite|+3|1d6+1</attack>
+      <attack>Piercing Damage|+3|1d6+1</attack>
     </action>
     <action>
       <name>Teleport (Recharge 4-6)</name>
@@ -6134,7 +6171,7 @@ Source:	Monster Manual (2014) p. 318,
     <action>
       <name>Beak</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Beak|+4|1d4+2</attack>
+      <attack>Piercing Damage|+4|1d4+2</attack>
     </action>
     <description>Taking its name from its crimson feathers and aggressive nature, the blood hawk fearlessly attacks almost any animal, stabbing it with its daggerlike beak. Blood hawks flock together in large numbers, attacking as a pack to take down prey.
 
@@ -6174,14 +6211,15 @@ Source:	Monster Manual (2014) p. 319,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) lightning damage.</text>
-      <attack>Bite|+5|1d10+3</attack>
+      <attack>Bite|+5|(1d10+3)+(1d6)</attack>
+      <attack>Piercing Damage|+5|1d10+3</attack>
       <attack>Lightning Damage||1d6</attack>
     </action>
     <action>
       <name>Lightning Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Lightning Breath||4d10</attack>
+      <attack>Lightning Damage||4d10</attack>
     </action>
     <description>Vain and territorial, blue dragons soar through the skies over deserts, preying on caravans and plundering herds and settlements in the verdant lands beyond the desert's reach. These dragons can also be found in dry steppes, searing badlands, and rocky coasts. They guard their territories against all potential competitors, especially brass dragons.
 	A blue dragon is recognized by its dramatic frilled ears and the massive ridged horn atop its blunt head. Rows of spikes extend back from its nostrils to line its brow, and cluster on its jutting lower jaw.
@@ -6272,13 +6310,13 @@ Source:	Monster Manual (2014) p. 91,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage.</text>
-      <attack>Bite|+8|2d6+5</attack>
+      <attack>Piercing Damage|+8|2d6+5</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage. If the target is a humanoid, it must succeed on a DC 15 Constitution saving throw or be infected with a disease called chaos phage. While infected, the target can't regain hit points, and its hit point maximum is reduced by 10 (3d6) every 24 hours. If the disease reduces the target's hit point maximum to 0, the target instantly transforms into a red slaad or, if it has the ability to cast spells of 3rd level or higher, a green slaad. Only a wish spell can reverse the transformation.</text>
-      <attack>Claw|+8|2d6+5</attack>
-      <attack>Infected||3d6</attack>
+      <attack>Slashing Damage|+8|2d6+5</attack>
+      <attack>Claw|+8|3d6</attack>
     </action>
     <action>
       <name>Variant: Control Gem</name>
@@ -6338,7 +6376,7 @@ Source:	Monster Manual (2014) p. 276,
     <trait>
       <name>Charge</name>
       <text>If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 3 (1d6) slashing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</text>
-      <attack>Charge||1d6</attack>
+      <attack>Slashing Damage||1d6</attack>
     </trait>
     <trait>
       <name>Relentless (Recharges after a Short or Long Rest)</name>
@@ -6348,7 +6386,7 @@ Source:	Monster Manual (2014) p. 276,
     <action>
       <name>Tusk</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.</text>
-      <attack>Tusk|+3|1d6+1</attack>
+      <attack>Slashing Damage|+3|1d6+1</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 319,
 		Storm King's Thunder,
@@ -6399,12 +6437,13 @@ Source:	Monster Manual (2014) p. 276,
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 8 (1d8 + 4) slashing damage.</text>
-      <attack>Claw|+8|1d8+4</attack>
+      <attack>Slashing Damage|+8|1d8+4</attack>
     </action>
     <action>
       <name>Sting</name>
       <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) piercing damage plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Sting|+8|2d8+4</attack>
+      <attack>Sting|+8|(2d8+4)+(5d6)</attack>
+      <attack>Piercing Damage|+8|2d8+4</attack>
       <attack>Poison Damage||5d6</attack>
     </action>
     <action>
@@ -6414,7 +6453,7 @@ Source:	Monster Manual (2014) p. 276,
 Multiattack: The devil makes two attacks: one with its hooked polearm and one with its sting.
 
 Hooked Polearm: Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 17 (2d12 + 4) piercing damage. If the target is a Huge or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the devil can't use its polearm on another target.</text>
-      <attack>Hooked Polearm|+8|2d12+4</attack>
+      <attack>Piercing Damage|+8|2d12+4</attack>
     </action>
     <action>
       <name>Variant: Devil Summoning (1/Day)</name>
@@ -6541,12 +6580,13 @@ Source:	Monster Manual (2014) p. 71,
 	• 1st level (4 slots): command, shield of faith
 	• 2nd level (3 slots): calm emotions, hold person
 	• 3rd level (2 slots): bestow curse</text>
-      <attack>Spellcasting|+4|0</attack>
+      <attack>Spellcasting|+4|</attack>
     </trait>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 10 (3d6) poison damage.</text>
-      <attack>Bite|+5|2d6+3</attack>
+      <attack>Bite|+5|(2d6+3)+(3d6)</attack>
+      <attack>Piercing Damage|+5|2d6+3</attack>
       <attack>Poison Damage||3d6</attack>
     </action>
     <slots>0,4,3,2</slots>
@@ -6603,12 +6643,13 @@ Source:	Monster Manual (2014) p. 233,
 	• 1st level (4 slots): charm person, sleep
 	• 2nd level (3 slots): detect thoughts, hold person
 	• 3rd level (2 slots): lightning bolt</text>
-      <attack>Spellcasting|+4|0</attack>
+      <attack>Spellcasting|+4|</attack>
     </trait>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 10 (3d6) poison damage.</text>
-      <attack>Bite|+5|2d6+3</attack>
+      <attack>Bite|+5|(2d6+3)+(3d6)</attack>
+      <attack>Piercing Damage|+5|2d6+3</attack>
       <attack>Poison Damage||3d6</attack>
     </action>
     <slots>0,4,3,2</slots>
@@ -6658,7 +6699,7 @@ Source:	Monster Manual (2014) p. 233</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.</text>
-      <attack>Bite|+4|1d10+2</attack>
+      <attack>Piercing Damage|+4|1d10+2</attack>
     </action>
     <action>
       <name>Breath Weapons (Recharge 5-6)</name>
@@ -6668,7 +6709,7 @@ Source:	Monster Manual (2014) p. 233</description>
 	• Fire Breath: The dragon exhales fire in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.
 
 	• Sleep Breath: The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.</text>
-      <attack>Fire Breath||4d6</attack>
+      <attack>Fire Damage||4d6</attack>
     </action>
     <description>The most gregarious of the true dragons, brass dragons crave conversation, sunlight, and hot, dry climates.
 	A brass dragon's head is defined by the broad protective plate that expands from its forehead and the spikes protruding from its chin. A frill runs the length of its neck, and its tapering wings extend down the length of its tail. A brass dragon wyrmlling's scales are a dull, mottled brown. As it ages, the dragon's scales begin to shine, eventually taking on a warm, burnished luster.
@@ -6746,7 +6787,7 @@ Source:	Monster Manual (2014) p. 106</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.</text>
-      <attack>Bite|+5|1d10+3</attack>
+      <attack>Piercing Damage|+5|1d10+3</attack>
     </action>
     <action>
       <name>Breath Weapons (Recharge 5-6)</name>
@@ -6756,7 +6797,7 @@ Source:	Monster Manual (2014) p. 106</description>
 	• Lightning Breath. The dragon exhales lightning in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.
 
 	• Repulsion Breath. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw. On a failed save, the creature is pushed 30 feet away from the dragon.</text>
-      <attack>Lightning Breath||3d10</attack>
+      <attack>Lightning Damage||3d10</attack>
     </action>
     <description>Bronze dragons are coastal dwellers that feed primarily on aquatic plants and fish. They take the forms of friendly animals to observe other creatures of interest. They are also fascinated by warfare and eagerly join armies fighting for a just cause.
 	A ribbed and fluted crest defines the shape of a bronze dragon's head. Curving horns extend out from the crest, echoed by spines on its lower jaw and chin. To help them swim, bronze dragons have webbed feet and smooth scales. A bronze wyrmling's scales are yellow tinged with green; only as the dragon approaches adulthood does its color deepen to a darker, rich bronze tone. The pupils of a bronze dragon's eyes fade as the dragon ages, until they resemble glowing green orbs.
@@ -6837,12 +6878,12 @@ Source:	Monster Manual (2014) p. 109</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.</text>
-      <attack>Bite|+6|1d8+4</attack>
+      <attack>Piercing Damage|+6|1d8+4</attack>
     </action>
     <action>
       <name>Claws</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.</text>
-      <attack>Claws|+6|2d6+4</attack>
+      <attack>Slashing Damage|+6|2d6+4</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 319,
 		Princes of the Apocalypse,
@@ -6893,13 +6934,13 @@ Source:	Monster Manual (2014) p. 109</description>
     <action>
       <name>Morningstar</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage.</text>
-      <attack>Morningstar|+4|2d8+2</attack>
+      <attack>Piercing Damage|+4|2d8+2</attack>
     </action>
     <action>
       <name>Javelin</name>
       <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 9 (2d6 + 2) piercing damage in melee or 5 (1d6 + 2) piercing damage at range.</text>
-      <attack>Javelin|+4|2d6+2</attack>
-      <attack>Javelin (Two-Handed)|+4|1d6+2</attack>
+      <attack>Piercing Damage|+4|2d6+2</attack>
+      <attack>Piercing Damage (At Range)|+4|1d6+2</attack>
     </action>
     <description>Bugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure are assured.
 
@@ -6971,13 +7012,13 @@ Source:	Monster Manual (2014) p. 33,
     <action>
       <name>Morningstar</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 3) piercing damage.</text>
-      <attack>Morningstar|+5|2d8+3</attack>
+      <attack>Piercing Damage|+5|2d8+3</attack>
     </action>
     <action>
       <name>Javelin</name>
       <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 9 (2d6 + 3) piercing damage in melee or 5 (1d6 + 3) piercing damage at range.</text>
-      <attack>Javelin|+5|2d6+3</attack>
-      <attack>Javelin (at range)|+5|1d6+3</attack>
+      <attack>Piercing Damage|+5|2d6+3</attack>
+      <attack>Piercing Damage (At Range)|+5|1d6+3</attack>
     </action>
     <description>Bugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure are assured.
 
@@ -7022,12 +7063,14 @@ Source:	Monster Manual (2014) p. 33,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 30 (4d12 + 4) piercing damage.</text>
-      <attack>Bite|+7|4d12+4</attack>
+      <attack>Piercing Damage|+7|4d12+4</attack>
     </action>
     <action>
       <name>Deadly Leap</name>
       <text>If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.</text>
-      <attack>Deadly Leap||3d6+4</attack>
+      <attack>Deadly Leap||(3d6+4)+(3d6+4)</attack>
+      <attack>Bludgeoning Damage||3d6+4</attack>
+      <attack>Slashing Damage||3d6+4</attack>
     </action>
     <description>A bulette is a massive predator that terrorizes any lands it inhabits. Also called a "land shark," it lives only to feed. Irascible and rapacious, bulettes fear no other creature, and they attack with no regard for superior numbers or strength.
 
@@ -7092,13 +7135,13 @@ Source:	Monster Manual (2014) p. 34,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.</text>
-      <attack>Bite|+3|1d4+1</attack>
+      <attack>Bludgeoning Damage|+3|1d4+1</attack>
     </action>
     <action>
       <name>Spear</name>
       <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.</text>
-      <attack>Spear|+3|1d6+1</attack>
-      <attack>Spear (Two-Handed)|+3|1d8+1</attack>
+      <attack>Piercing Damage|+3|1d6+1</attack>
+      <attack>Piercing Damage (Two-Handed)|+3|1d8+1</attack>
     </action>
     <description>Life as a bullywug is nasty, brutish, and wet. These frog-headed amphibious humanoids must stay constantly moist, dwelling in rainy forests, marshes, and damp caves. Always hungry and thoroughly evil, bullywugs overwhelm opponents with superior numbers when they can, but they flee from serious threats to search for easier prey.
 	Bullywugs have green, gray, or mottled yellow skin that shifts through shades of gray, green, and brown, allowing them to blend in with their surroundings. They wear crude armor and wield simple weapons, and can deliver a powerful bite to foes that press too close.
@@ -7161,14 +7204,16 @@ Source:	Monster Manual (2014) p. 35,
     <action>
       <name>Spear</name>
       <text>Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.</text>
-      <attack>Spear|+7|1d6+4</attack>
-      <attack>Spear (Two-Handed)|+7|1d8+4</attack>
+      <attack>Spear|+7|(1d6+4)+(1d6)</attack>
+      <attack>Spear (Two-Handed)|+7|(1d8+4)+(1d6)</attack>
+      <attack>Piercing Damage|+7|1d6+4</attack>
+      <attack>Piercing Damage (Two-Handed)|+7|1d8+4</attack>
       <attack>Fire Damage||1d6</attack>
     </action>
     <action>
       <name>Fire Ray</name>
       <text>Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 10 (3d6) fire damage.</text>
-      <attack>Fire Ray|+7|3d6</attack>
+      <attack>Fire Damage|+7|3d6</attack>
     </action>
     <action>
       <name>Fiendish Charm</name>
@@ -7223,7 +7268,7 @@ Source:	Monster Manual (2014) p. 36,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
-      <attack>Bite|+5|1d4</attack>
+      <attack>Bludgeoning Damage|+5|1d4</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 320,
 		Ghosts of Saltmarsh</description>
@@ -7268,12 +7313,12 @@ Source:	Monster Manual (2014) p. 36,
     <action>
       <name>Tentacles</name>
       <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 4 (1d4 + 2) poison damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success.</text>
-      <attack>Tentacles|+8|1d4+2</attack>
+      <attack>Poison Damage|+8|1d4+2</attack>
     </action>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.</text>
-      <attack>Bite|+4|2d4+2</attack>
+      <attack>Piercing Damage|+4|2d4+2</attack>
     </action>
     <description>Carrion crawlers scour putrid flesh from carcasses and gobble the slimy bones that remain. They aggressively attack any creature that trespasses on their territory or disturbs their feasting.
 
@@ -7324,7 +7369,7 @@ Source:	Monster Manual (2014) p. 37,
     <action>
       <name>Claws</name>
       <text>Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage.</text>
-      <attack>Claws|+0|1</attack>
+      <attack>Slashing Damage|+0|1</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 320,
 		Curse of Strahd,
@@ -7374,12 +7419,12 @@ Source:	Monster Manual (2014) p. 37,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage.</text>
-      <attack>Bite|+7|1d8+5</attack>
+      <attack>Piercing Damage|+7|1d8+5</attack>
     </action>
     <action>
       <name>Claws</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.</text>
-      <attack>Claws|+7|2d6+5</attack>
+      <attack>Slashing Damage|+7|2d6+5</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 334,
 		Tales from the Yawning Portal,
@@ -7413,7 +7458,7 @@ Source:	Monster Manual (2014) p. 37,
     <trait>
       <name>Charge</name>
       <text>If the centaur moves at least 30 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 10 (3d6) piercing damage.</text>
-      <attack>Charge||3d6</attack>
+      <attack>Piercing Damage||3d6</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -7422,17 +7467,17 @@ Source:	Monster Manual (2014) p. 37,
     <action>
       <name>Pike</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) piercing damage.</text>
-      <attack>Pike|+6|1d10+4</attack>
+      <attack>Piercing Damage|+6|1d10+4</attack>
     </action>
     <action>
       <name>Hooves</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.</text>
-      <attack>Hooves|+6|2d6+4</attack>
+      <attack>Bludgeoning Damage|+6|2d6+4</attack>
     </action>
     <action>
       <name>Longbow</name>
       <text>Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
-      <attack>Longbow|+4|1d8+2</attack>
+      <attack>Piercing Damage|+4|1d8+2</attack>
     </action>
     <description>I hear centaurs make excellent mounts!
 ~ Batley Summerfoot, a halfling adventurer who never read HOOVES OF FURY, by Iryil Grayborn of Sundown
@@ -7494,7 +7539,7 @@ Source:	Monster Manual (2014) p. 38,
     <action>
       <name>Chain</name>
       <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) slashing damage. The target is grappled (escape DC 14) if the devil isn't already grappling a creature. Until this grapple ends, the target is restrained and takes 7 (2d6) piercing damage at the start of each of its turns.</text>
-      <attack>Chain|+8|2d6+4</attack>
+      <attack>Slashing Damage|+8|2d6+4</attack>
       <attack>Piercing Damage||2d6</attack>
     </action>
     <action>
@@ -7623,7 +7668,8 @@ Source:	Monster Manual (2014) p. 72,
     <action>
       <name>Proboscis</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 16 (4d6 + 2) piercing damage plus 24 (7d6) necrotic damage, and the target's hit point maximum is reduced by an amount equal to the necrotic damage taken. If this effect reduces a creature's hit point maximum to 0, the creature dies. This reduction to a creature's hit point maximum lasts until the creature finishes a long rest or until it is affected by a spell like greater restoration.</text>
-      <attack>Proboscis|+5|4d6+2</attack>
+      <attack>Proboscis|+5|(4d6+2)+(7d6)</attack>
+      <attack>Piercing Damage|+5|4d6+2</attack>
       <attack>Necrotic Damage||7d6</attack>
     </action>
     <action>
@@ -7762,23 +7808,23 @@ Source:	Monster Manual (2014) p. 57,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.</text>
-      <attack>Bite|+7|2d6+4</attack>
+      <attack>Piercing Damage|+7|2d6+4</attack>
     </action>
     <action>
       <name>Horns</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) bludgeoning damage.</text>
-      <attack>Horns|+7|1d12+4</attack>
+      <attack>Bludgeoning Damage|+7|1d12+4</attack>
     </action>
     <action>
       <name>Claws</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.</text>
-      <attack>Claws|+7|2d6+4</attack>
+      <attack>Slashing Damage|+7|2d6+4</attack>
     </action>
     <action>
       <name>Fire Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Fire Breath||7d8</attack>
+      <attack>Fire Damage||7d8</attack>
     </action>
     <description>Chimeras were created after mortals summoned Demogorgon to the world. The Prince of Demons, unimpressed with the creatures that surrounded it, transformed them into horrific, multi-headed monstrosities. This act gave rise to the first chimeras.
 	Gifted with demonic cruelty, a chimera serves as a grim reminder of what happens when demon princes find their way to the Material Plane. A typical specimen has the hindquarters of a large goat, the forequarters of a lion, and the leathery wings of a dragon, along with the heads of all three of those creatures. The monster likes to surprise its victims, swooping down from the sky and engulfing prey with its fiery breath before landing.
@@ -7838,7 +7884,7 @@ Source:	Monster Manual (2014) p. 39,
     <action>
       <name>Pincer</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. The target is grappled (escape DC 14) if it is a Large or smaller creature and the chuul doesn't have two other creatures grappled.</text>
-      <attack>Pincer|+6|2d6+4</attack>
+      <attack>Bludgeoning Damage|+6|2d6+4</attack>
     </action>
     <action>
       <name>Tentacles</name>
@@ -7920,7 +7966,7 @@ Source:	Monster Manual (2014) p. 40,
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the greater restoration spell or other magic.</text>
-      <attack>Slam|+8|2d10+5</attack>
+      <attack>Bludgeoning Damage|+8|2d10+5</attack>
     </action>
     <action>
       <name>Haste (Recharge 5-6)</name>
@@ -7996,12 +8042,12 @@ Source:	Monster Manual (2014) p. 168,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage, and if the target is Large or smaller, the cloaker attaches to it. If the cloaker has advantage against the target, the cloaker attaches to the target's head, and the target is blinded and unable to breathe while the cloaker is attached. While attached, the cloaker can make this attack only against the target and has advantage on the attack roll. The cloaker can detach itself by spending 5 feet of its movement. A creature, including the target, can take its action to detach the cloaker by succeeding on a DC 16 Strength check.</text>
-      <attack>Bite|+6|2d6+3</attack>
+      <attack>Piercing Damage|+6|2d6+3</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d8 + 3) slashing damage.</text>
-      <attack>Tail|+6|1d8+3</attack>
+      <attack>Slashing Damage|+6|1d8+3</attack>
     </action>
     <action>
       <name>Moan</name>
@@ -8077,12 +8123,12 @@ Source:	Monster Manual (2014) p. 41,
     <action>
       <name>Morningstar</name>
       <text>Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) piercing damage.</text>
-      <attack>Morningstar|+12|3d8+8</attack>
+      <attack>Piercing Damage|+12|3d8+8</attack>
     </action>
     <action>
       <name>Rock</name>
       <text>Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage.</text>
-      <attack>Rock|+12|4d10+8</attack>
+      <attack>Bludgeoning Damage|+12|4d10+8</attack>
     </action>
     <action>
       <name>Variant: New Giant Options</name>
@@ -8161,7 +8207,7 @@ Source:	Monster Manual (2014) p. 154,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours.</text>
-      <attack>Bite|+3|1d4+1</attack>
+      <attack>Piercing Damage|+3|1d4+1</attack>
     </action>
     <description>The cockatrice looks like a hideous hybrid of lizard, bird, and bat, and it is infamous for its ability to turn flesh to stone. These omnivores have a diet that consists of berries, nuts, flowers, and small animals such as insects, mice, and frogs-things they can swallow whole. They would be no threat to anything else if not for their fierce and frenzied response to even a hint of danger. A cockatrice flies into the face of any threat, squawking and madly beating its wings as its head darts out to peck. The smallest scratch from a cockatrice's beak can spell doom as its victim slowly turns to stone from the injury.
 
@@ -8200,7 +8246,7 @@ Source:	Monster Manual (2014) p. 42,
     <action>
       <name>Club</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
-      <attack>Club|+2|1d4</attack>
+      <attack>Bludgeoning Damage|+2|1d4</attack>
     </action>
     <description>Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.
 
@@ -8257,12 +8303,12 @@ Source:	Monster Manual (2014) p. 345,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
-      <attack>Bite|+4|1d6+2</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Constrict</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.</text>
-      <attack>Constrict|+4|1d8+2</attack>
+      <attack>Bludgeoning Damage|+4|1d8+2</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 320,
 		Tales from the Yawning Portal,
@@ -8299,7 +8345,7 @@ Source:	Monster Manual (2014) p. 345,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.</text>
-      <attack>Bite|+4|1d10+2</attack>
+      <attack>Piercing Damage|+4|1d10+2</attack>
     </action>
     <action>
       <name>Breath Weapons (Recharge 5-6)</name>
@@ -8309,7 +8355,7 @@ Source:	Monster Manual (2014) p. 345,
 	• Acid Breath: The dragon exhales acid in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.
 
 	• Slowing Breath: The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.</text>
-      <attack>Acid Breath||4d8</attack>
+      <attack>Acid Damage||4d8</attack>
     </action>
     <description>Copper dragons are incorrigible pranksters, joke tellers, and riddlers that live in hills and rocky uplands. Despite their gregarious and even-tempered natures, they possess a covetous, miserly streak, and can become dangerous when their hoards are threatened.
 	A copper dragon has brow plates jutting over its eyes, extending back to long horns that grow as a series of overlapping segments. Its backswept cheek ridges and jaw frills give it a pensive look. At birth, a copper dragon's scales are a ruddy brown with a metallic tint. As the dragon ages, its scales become more coppery in color, later taking on a green tint as it ages. A copper dragon's pupils fade with age, and the eyes of the oldest copper dragons resemble glowing turquoise orbs.
@@ -8395,12 +8441,12 @@ Source:	Monster Manual (2014) p. 111</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.</text>
-      <attack>Bite|+8|1d6+5</attack>
+      <attack>Piercing Damage|+8|1d6+5</attack>
     </action>
     <action>
       <name>Constrict</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one Medium or smaller creature. 10 (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the couatl can't constrict another target.</text>
-      <attack>Constrict|+6|2d6+3</attack>
+      <attack>Bludgeoning Damage|+6|2d6+3</attack>
     </action>
     <action>
       <name>Change Shape</name>
@@ -8457,7 +8503,7 @@ Source:	Monster Manual (2014) p. 43,
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage.</text>
-      <attack>Claw|+0|1</attack>
+      <attack>Bludgeoning Damage|+0|1</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 320,
 		Tomb of Annihilation,
@@ -8496,7 +8542,7 @@ Source:	Monster Manual (2014) p. 43,
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning or slashing damage (claw's choice).</text>
-      <attack>Claw|+3|1d4+1</attack>
+      <attack>Bludgeoning or Slashing Damage|+3|1d4+1</attack>
     </action>
     <description>Crawling claws are the severed hands of murderers animated by dark magic so that they can go on killing. Wizards and warlocks of a dark bent use crawling claws as extra hands in their labors.
 
@@ -8555,7 +8601,7 @@ Source:	Monster Manual (2014) p. 44,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target</text>
-      <attack>Bite|+4|1d10+2</attack>
+      <attack>Piercing Damage|+4|1d10+2</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 320,
 		Hoard of the Dragon Queen,
@@ -8604,7 +8650,7 @@ Source:	Monster Manual (2014) p. 44,
 	• Cantrips (at will): light, sacred flame, thaumaturgy
 	• 1st level (4 slots): command, inflict wounds, shield of faith
 	• 2nd level (3 slots): hold person, spiritual weapon</text>
-      <attack>Spellcasting|+3|0</attack>
+      <attack>Spellcasting|+3|</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -8613,7 +8659,7 @@ Source:	Monster Manual (2014) p. 44,
     <action>
       <name>Dagger</name>
       <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+4|1d4+2</attack>
+      <attack>Piercing Damage|+4|1d4+2</attack>
     </action>
     <slots>0,4,3</slots>
     <spells>light, sacred flame, thaumaturgy, command, inflict wounds, shield of faith, hold person, spiritual weapon</spells>
@@ -8672,7 +8718,7 @@ Source:	Monster Manual (2014) p. 345,
     <action>
       <name>Scimitar</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.</text>
-      <attack>Scimitar|+3|1d6+1</attack>
+      <attack>Slashing Damage|+3|1d6+1</attack>
     </action>
     <description>Cultists swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.
 
@@ -8732,12 +8778,12 @@ Source:	Monster Manual (2014) p. 345,
     <action>
       <name>Greatclub</name>
       <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.</text>
-      <attack>Greatclub|+9|3d8+6</attack>
+      <attack>Bludgeoning Damage|+9|3d8+6</attack>
     </action>
     <action>
       <name>Rock</name>
       <text>Ranged Weapon Attack: +9 to hit, range 30/120 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage.</text>
-      <attack>Rock|+9|4d10+6</attack>
+      <attack>Bludgeoning Damage|+9|4d10+6</attack>
     </action>
     <description>Cyclopes are one-eyed giants that eke out a meager existence in wild lands. Isolationists by nature, they avoid contact with other races and try to drive away strangers in their territory.
 
@@ -8803,7 +8849,7 @@ Source:	Monster Manual (2014) p. 45,
 	• At will: detect evil and good, detect magic, stone shape
 	• 3/Day each: passwall, move earth, tongues
 	• 1/Day each: conjure elemental (earth elemental only), gaseous form, invisibility, phantasmal killer, plane shift, wall of stone</text>
-      <attack>Innate Spellcasting|+6|0</attack>
+      <attack>Innate Spellcasting|+6|</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -8812,12 +8858,12 @@ Source:	Monster Manual (2014) p. 45,
     <action>
       <name>Fist</name>
       <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.</text>
-      <attack>Fist|+10|2d8+6</attack>
+      <attack>Bludgeoning Damage|+10|2d8+6</attack>
     </action>
     <action>
       <name>Maul</name>
       <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 20 (4d6 + 6) bludgeoning damage. If the target is a Huge or smaller creature, it must succeed on a DC 18 Strength check or be knocked prone.</text>
-      <attack>Maul|+10|4d6+6</attack>
+      <attack>Bludgeoning Damage|+10|4d6+6</attack>
     </action>
     <action>
       <name>Variant: Genie Powers</name>
@@ -8900,7 +8946,7 @@ Source:	Monster Manual (2014) p. 143,
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage, and the darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches by engulfing the target's head, and the target is also blinded and unable to breathe while the darkmantle is attached in this way.
 	While attached to the target, the darkmantle can attack no other creature except the target but has advantage on its attack rolls. The darkmantle's speed also becomes 0, it can't benefit from any bonus to its speed, and it moves with the target.
 	A creature can detach the darkmantle by making a successful DC 13 Strength check as an action. On its turn, the darkmantle can detach itself from the target by using 5 feet of movement.</text>
-      <attack>Crush|+5|1d6+3</attack>
+      <attack>Bludgeoning Damage|+5|1d6+3</attack>
     </action>
     <action>
       <name>Darkness Aura (1/Day)</name>
@@ -8950,7 +8996,7 @@ Source:	Monster Manual (2014) p. 46,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.</text>
-      <attack>Bite|+4|1d6+2</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
       <attack>HP Max reduction||1d10</attack>
     </action>
     <description>A death dog is an ugly two-headed hound that roams plains, deserts, and the Underdark. Hate burns in a death dog's heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim's flesh to slowly rot off the bone.
@@ -9003,7 +9049,7 @@ Source:	Monster Manual (2014) p. 321,
 	• 3rd level (3 slots): dispel magic, elemental weapon
 	• 4th level (3 slots): banishment, staggering smite
 	• 5th level (2 slots): destructive wave (necrotic)</text>
-      <attack>Spellcasting|+10|0</attack>
+      <attack>Spellcasting|+10|</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -9012,15 +9058,19 @@ Source:	Monster Manual (2014) p. 321,
     <action>
       <name>Longsword</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) slashing damage, or 10 (1d10 + 5) slashing damage if used with two hands, plus 18 (4d8) necrotic damage.</text>
-      <attack>Longsword|+11|1d8+5</attack>
-      <attack>Longsword (Two-Handed)||1d10+5</attack>
+      <attack>Longsword|+11|(1d8+5)+(4d8)</attack>
+      <attack>Longsword (Two-Handed)|+11|(1d10+5)+(4d8)</attack>
+      <attack>Slashing Damage|+11|1d8+5</attack>
+      <attack>Slashing Damage (Two-Handed)|+11|1d10+5</attack>
       <attack>Necrotic Damage||4d8</attack>
     </action>
     <action>
       <name>Hellfire Orb (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>The death knight hurls a magical ball of fire that explodes at a point it can see within 120 feet of it. Each creature in a 20-foot-radius sphere centered on that point must make a DC 18 Dexterity saving throw. The sphere spreads around corners. A creature takes 35 (10d6) fire damage and 35 (10d6) necrotic damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Hellfire Orb||10d6</attack>
+      <attack>Hellfire Orb||(10d6)+(10d6)</attack>
+      <attack>Fire Damage||10d6</attack>
+      <attack>Necrotic Damage||10d6</attack>
     </action>
     <reaction>
       <name>Parry</name>
@@ -9087,7 +9137,7 @@ Source:	Monster Manual (2014) p. 47,
 	• At will: detect magic, detect thoughts, invisibility (self only), mage hand, major image
 	• 2/Day each: fear, fireball, fly, tongues
 	• 1/Day each: cloudkill, plane shift</text>
-      <attack>Innate Spellcasting|+7|0</attack>
+      <attack>Innate Spellcasting|+7|</attack>
     </trait>
     <trait>
       <name>Magic Resistance</name>
@@ -9108,19 +9158,22 @@ Source:	Monster Manual (2014) p. 47,
     <action>
       <name>Bite (Slaad Form Only)</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage plus 7 (2d6) necrotic damage.</text>
-      <attack>Bite|+9|1d8+5</attack>
+      <attack>Bite|+9|(1d8+5)+(2d6)</attack>
+      <attack>Piercing Damage|+9|1d8+5</attack>
       <attack>Necrotic Damage||2d6</attack>
     </action>
     <action>
       <name>Claws (Slaad Form Only)</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) slashing damage plus 7 (2d6) necrotic damage.</text>
-      <attack>Claws|+9|1d10+5</attack>
+      <attack>Claws|+9|(1d10+5)+(2d6)</attack>
+      <attack>Slashing Damage|+9|1d10+5</attack>
       <attack>Necrotic Damage||2d6</attack>
     </action>
     <action>
       <name>Greatsword</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 7 (2d6) necrotic damage.</text>
-      <attack>Greatsword|+9|2d6+5</attack>
+      <attack>Greatsword|+9|(2d6+5)+(2d6)</attack>
+      <attack>Slashing Damage|+9|2d6+5</attack>
       <attack>Necrotic Damage||2d6</attack>
     </action>
     <action>
@@ -9191,7 +9244,7 @@ Source:	Monster Manual (2014) p. 278,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (4d6) piercing damage.</text>
-      <attack>Bite|+5|4d6</attack>
+      <attack>Piercing Damage|+5|4d6</attack>
     </action>
     <action>
       <name>Eye Rays</name>
@@ -9218,9 +9271,9 @@ Source:	Monster Manual (2014) p. 278,
 	If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.
 
 10. Death Ray: The targeted creature must succeed on a DC 17 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points.</text>
-      <attack>Enervation Ray||8d8</attack>
-      <attack>Disintegration Ray||10d8</attack>
-      <attack>Death Ray||10d10</attack>
+      <attack>Necrotic Damage||8d8</attack>
+      <attack>Force Damage||10d8</attack>
+      <attack>Necrotic Damage||10d10</attack>
     </action>
     <legendary>
       <name>Legendary Actions (1/Turn)</name>
@@ -9317,12 +9370,12 @@ Source:	Monster Manual (2014) p. 29,
     <action>
       <name>War Pick</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
-      <attack>War Pick|+4|1d8+2</attack>
+      <attack>Piercing Damage|+4|1d8+2</attack>
     </action>
     <action>
       <name>Poisoned Dart</name>
       <text>Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success</text>
-      <attack>Poisoned Dart|+4|1d4+2</attack>
+      <attack>Piercing Damage|+4|1d4+2</attack>
     </action>
     <spells>nondetection, blindness/deafness, blur, disguise self</spells>
     <description>Deep gnomes, or svirfneblin, live far below the world's surface in twisting warrens and sculpted caverns. They survive by virtue of their stealth, cleverness, and tenacity. Their gray skin allows them to blend in with surrounding stonework. They are also surprisingly heavy and strong for their size. An average adult weighs 100 to 120 pounds and stands 3 feet tall.
@@ -9369,7 +9422,7 @@ Source:	Monster Manual (2014) p. 164,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.</text>
-      <attack>Bite|+2|1d4</attack>
+      <attack>Piercing Damage|+2|1d4</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 321,
 		Hoard of the Dragon Queen,
@@ -9421,7 +9474,7 @@ Source:	Monster Manual (2014) p. 164,
     <action>
       <name>Life Drain</name>
       <text>The demilich targets up to three creatures that it can see within 10 feet of it. Each target must succeed on a DC 19 Constitution saving throw or take 21 (6d6) necrotic damage, and the demilich regains hit points equal to the total damage dealt to all targets.</text>
-      <attack>Life Drain||6d6</attack>
+      <attack>Necrotic Damage||6d6</attack>
     </action>
     <action>
       <name>Variant: Acererak and His Disciples</name>
@@ -9545,7 +9598,8 @@ Source:	Monster Manual (2014) p. 48,
     <action>
       <name>Mace</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 18 (4d8) radiant damage.</text>
-      <attack>Mace|+8|1d6+4</attack>
+      <attack>Mace|+8|(1d6+4)+(4d8)</attack>
+      <attack>Bludgeoning Damage|+8|1d6+4</attack>
       <attack>Radiant Damage||4d8</attack>
     </action>
     <action>
@@ -9616,7 +9670,7 @@ Source:	Monster Manual (2014) p. 16,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
-      <attack>Bite|+5|2d6+3</attack>
+      <attack>Piercing Damage|+5|2d6+3</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 321,
 		Curse of Strahd,
@@ -9665,7 +9719,8 @@ Source:	Monster Manual (2014) p. 16,
     <action>
       <name>Tentacle</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 3 (1d6) piercing damage.</text>
-      <attack>Tentacle|+6|1d6+4</attack>
+      <attack>Tentacle|+6|(1d6+4)+(1d6)</attack>
+      <attack>Bludgeoning Damage|+6|1d6+4</attack>
       <attack>Piercing Damage||1d6</attack>
     </action>
     <description>This monstrous predator takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer beast resembles a sleek great cat covered in blue-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A displacer beast's eyes glow with an awful malevolence that persists even in death.
@@ -9722,7 +9777,7 @@ Source:	Monster Manual (2014) p. 81,
 	• At will: detect evil and good, detect magic, thunderwave
 	• 3/Day each: create food and water (can create wine instead of water), tongues, wind walk
 	• 1/Day each: conjure elemental (air elemental only), creation, gaseous form, invisibility, major image, plane shift</text>
-      <attack>Innate Spellcasting|+9|0</attack>
+      <attack>Innate Spellcasting|+9|</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -9731,8 +9786,9 @@ Source:	Monster Manual (2014) p. 81,
     <action>
       <name>Scimitar</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 3 (1d6) lightning or thunder damage (djinni's choice).</text>
-      <attack>Scimitar|+9|2d6+5</attack>
-      <attack>Lightning or Thunder||1d6</attack>
+      <attack>Scimitar|+9|(2d6+5)+(1d6)</attack>
+      <attack>Slashing Damage|+9|2d6+5</attack>
+      <attack>Lightning Or Thunder Damage||1d6</attack>
     </action>
     <action>
       <name>Create Whirlwind</name>
@@ -9826,7 +9882,7 @@ Source:	Monster Manual (2014) p. 144,
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.</text>
-      <attack>Slam|+6|1d6+4</attack>
+      <attack>Bludgeoning Damage|+6|1d6+4</attack>
     </action>
     <action>
       <name>Read Thoughts</name>
@@ -9884,7 +9940,7 @@ Source:	Monster Manual (2014) p. 82,
     <action>
       <name>Hooves</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.</text>
-      <attack>Hooves|+6|2d4+4</attack>
+      <attack>Bludgeoning Damage|+6|2d4+4</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 321,
 		Curse of Strahd,
@@ -9931,23 +9987,23 @@ Source:	Monster Manual (2014) p. 82,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (3d12 + 7) piercing damage.</text>
-      <attack>Bite|+13|3d12+7</attack>
+      <attack>Piercing Damage|+13|3d12+7</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 16 (2d8 + 7) slashing damage.</text>
-      <attack>Claw|+13|2d8+7</attack>
+      <attack>Slashing Damage|+13|2d8+7</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (3d12 + 7) bludgeoning damage. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked prone.</text>
-      <attack>Tail|+13|3d12+7</attack>
+      <attack>Bludgeoning Damage|+13|3d12+7</attack>
     </action>
     <action>
       <name>Steam Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.</text>
-      <attack>Steam Breath||15d6</attack>
+      <attack>Fire Damage||15d6</attack>
     </action>
     <description>Dragon turtles are among the most fearsome creatures of the oceans. As large and voracious as the oldest of its land-based dragon kin, a dragon turtle strikes with its deadly jaws, steaming breath, and crushing tail.
 	A dragon turtle's rough shell is the same dark green color as the deep water where this monster dwells. Silver highlights lining the shell resemble light dancing on open water, and a surfacing dragon turtle is sometimes mistaken for the reflection of the sun or moon on the waves.
@@ -10000,12 +10056,12 @@ Source:	Monster Manual (2014) p. 119,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage.</text>
-      <attack>Bite|+2|1d6</attack>
+      <attack>Piercing Damage|+2|1d6</attack>
     </action>
     <action>
       <name>Claws</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 5 (2d4) slashing damage.</text>
-      <attack>Claws|+2|2d4</attack>
+      <attack>Slashing Damage|+2|2d4</attack>
     </action>
     <action>
       <name>Fetid Cloud (1/Day)</name>
@@ -10163,19 +10219,21 @@ Source:	Monster Manual (2014) p. 57,
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage plus 9 (2d8) poison damage.</text>
-      <attack>Bite|+6|1d4</attack>
+      <attack>Bite|+6|(1d4)+(2d8)</attack>
+      <attack>Piercing Damage|+6|1d4</attack>
       <attack>Poison Damage||2d8</attack>
     </action>
     <action>
       <name>Longsword</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.</text>
-      <attack>Longsword|+6|1d8+3</attack>
-      <attack>Longsword (Two-Handed)|+6|1d10+3</attack>
+      <attack>Slashing Damage|+6|1d8+3</attack>
+      <attack>Slashing Damage (Two-Handed)|+6|1d10+3</attack>
     </action>
     <action>
       <name>Longbow</name>
       <text>Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) poison damage.</text>
-      <attack>Longbow|+6|1d8+3</attack>
+      <attack>Longbow|+6|(1d8+3)+(1d8)</attack>
+      <attack>Piercing Damage|+6|1d8+3</attack>
       <attack>Poison Damage||1d8</attack>
     </action>
     <action>
@@ -10189,6 +10247,7 @@ Spellcasting: The drider is a 7th-level spellcaster. Its spellcasting ability is
 	• 2nd level (3 slots): hold person, silence
 	• 3rd level (3 slots): clairvoyance, dispel magic
 	• 4th level (2 slots): divination, freedom of movement</text>
+      <attack>Drider Spellcasting|+6|</attack>
     </action>
     <spells>dancing lights, darkness, faerie fire</spells>
     <description>When a drow shows great promise, Lolth summons it to the Demonweb Pits for a test of faith and strength. Those that pass the test rise higher in the Spider Queen's favor. Those that fail are transformed into driders-a horrid hybrid of a drow and a giant spider that serves as a living reminder of Lolth's power. Only drow can be turned into driders, and the power to create these creatures resides with Lolth alone.
@@ -10245,12 +10304,12 @@ Source:	Monster Manual (2014) p. 120,
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
-      <attack>Shortsword|+4|1d6+2</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Hand Crossbow</name>
       <text>Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.</text>
-      <attack>Hand Crossbow|+4|1d6+2</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Variant: Drow Magic Armor and Weapons</name>
@@ -10341,13 +10400,14 @@ Source:	Monster Manual (2014) p. 128,
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) poison damage.</text>
-      <attack>Shortsword|+7|1d6+4</attack>
+      <attack>Shortsword|+7|(1d6+4)+(3d6)</attack>
+      <attack>Piercing Damage|+7|1d6+4</attack>
       <attack>Poison Damage||3d6</attack>
     </action>
     <action>
       <name>Hand Crossbow</name>
       <text>Ranged Weapon Attack: +7 to hit, range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.</text>
-      <attack>Hand Crossbow|+7|1d6+4</attack>
+      <attack>Piercing Damage|+7|1d6+4</attack>
     </action>
     <action>
       <name>Variant: Drow Magic Armor and Weapons</name>
@@ -10449,13 +10509,15 @@ Source:	Monster Manual (2014) p. 128,
 	• 3rd level (3 slots): fly, lightning bolt
 	• 4th level (3 slots): Evard's black tentacles, greater invisibility
 	• 5th level (2 slots): cloudkill</text>
-      <attack>Spellcasting|+6|0</attack>
+      <attack>Spellcasting|+6|</attack>
     </trait>
     <action>
       <name>Staff</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands, plus 3 (1d6) poison damage.</text>
-      <attack>Staff|+2|1d6-1</attack>
-      <attack>Staff (Two-Handed)|+2|1d8-1</attack>
+      <attack>Staff|+2|(1d6-1)+(1d6)</attack>
+      <attack>Staff (Two-Handed)|+2|(1d8-1)+(1d6)</attack>
+      <attack>Bludgeoning Damage|+2|1d6-1</attack>
+      <attack>Bludgeoning Damage (Two-Handed)|+2|1d8-1</attack>
       <attack>Poison Damage||1d6</attack>
     </action>
     <action>
@@ -10555,7 +10617,7 @@ Source:	Monster Manual (2014) p. 129,
 	• 3rd level (3 slots): conjure animals (2 giant spiders), dispel magic
 	• 4th level (3 slots): divination, freedom of movement
 	• 5th level (2 slots): insect plague, mass cure wounds</text>
-      <attack>Spellcasting|+6|0</attack>
+      <attack>Spellcasting|+6|</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -10564,7 +10626,8 @@ Source:	Monster Manual (2014) p. 129,
     <action>
       <name>Scourge</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 17 (5d6) poison damage.</text>
-      <attack>Scourge|+5|1d6+2</attack>
+      <attack>Scourge|+5|(1d6+2)+(5d6)</attack>
+      <attack>Piercing Damage|+5|1d6+2</attack>
       <attack>Poison Damage||5d6</attack>
     </action>
     <action>
@@ -10646,7 +10709,7 @@ Source:	Monster Manual (2014) p. 129,
 	• Cantrips (at will): druidcraft, produce flame, shillelagh
 	• 1st level (4 slots): entangle, longstrider, speak with animals, thunderwave
 	• 2nd level (3 slots): animal messenger, barkskin</text>
-      <attack>Spellcasting|+4|0</attack>
+      <attack>Spellcasting|+4|</attack>
     </trait>
     <action>
       <name>Quarterstaff</name>
@@ -10792,14 +10855,14 @@ Source:	Monster Manual (2014) p. 121,
     <action>
       <name>War Pick</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage, or 11 (2d8 + 2) piercing damage while enlarged.</text>
-      <attack>War Pick|+4|1d8+2</attack>
-      <attack>War Pick (while enlarged)|+4|2d8+2</attack>
+      <attack>Piercing Damage|+4|1d8+2</attack>
+      <attack>Piercing Damage (While Enlraged)|+4|2d8+2</attack>
     </action>
     <action>
       <name>Javelin</name>
       <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 9 (2d6 + 2) piercing damage while enlarged.</text>
-      <attack>Javelin|+4|1d6+2</attack>
-      <attack>Javelin (while enlarged)|+4|2d6+2</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
+      <attack>Piercing Damage (While Enlarged)|+4|2d6+2</attack>
     </action>
     <action>
       <name>Invisibility (Recharges after a Short or Long Rest)</name>
@@ -10875,12 +10938,12 @@ Source:	Monster Manual (2014) p. 122,
     <action>
       <name>Fist</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
-      <attack>Fist|+2|1d4</attack>
+      <attack>Bludgeoning Damage|+2|1d4</attack>
     </action>
     <action>
       <name>Javelin</name>
       <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 4 (1d6 + 1) piercing damage.</text>
-      <attack>Javelin|+3|1d6+1</attack>
+      <attack>Piercing Damage|+3|1d6+1</attack>
     </action>
     <description>The blocky duodrones supervise units of monodrones and can perform up to two tasks at a time.
 
@@ -10939,7 +11002,7 @@ Source:	Monster Manual (2014) p. 225</description>
     <action>
       <name>Claws</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</text>
-      <attack>Claws|+4|1d4+2</attack>
+      <attack>Slashing Damage|+4|1d4+2</attack>
     </action>
     <action>
       <name>Blinding Breath (Recharge 6)</name>
@@ -11000,7 +11063,7 @@ Source:	Monster Manual (2014) p. 215,
     <action>
       <name>Talons</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</text>
-      <attack>Talons|+4|1d4+2</attack>
+      <attack>Slashing Damage|+4|1d4+2</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 322</description>
     <environment>mountain, grassland, hill, coastal</environment>
@@ -11046,7 +11109,7 @@ Source:	Monster Manual (2014) p. 215,
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.</text>
-      <attack>Slam|+8|2d8+5</attack>
+      <attack>Bludgeoning Damage|+8|2d8+5</attack>
     </action>
     <description>An earth elemental plods forward like a walking hill, club-like arms of jagged stone swinging at its sides. Its head and body consist of dirt and stone, occasionally set with chunks of metal, gems, and bright minerals.
 	Earth elementals glide through rock and earth as though they were liquid. Earthbound creatures have much to fear from an earth elemental, since the elemental can pinpoint the precise location of any foe that stands on solid ground in its vicinity.
@@ -11110,7 +11173,7 @@ Source:	Monster Manual (2014) p. 124,
 	• At will: detect magic
 	• 3/Day each: enlarge/reduce, tongues
 	• 1/Day each: conjure elemental (fire elemental only), gaseous form, invisibility, major image, plane shift, wall of fire</text>
-      <attack>Innate Spellcasting|+7|0</attack>
+      <attack>Innate Spellcasting|+7|</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -11119,13 +11182,14 @@ Source:	Monster Manual (2014) p. 124,
     <action>
       <name>Scimitar</name>
       <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 7 (2d6) fire damage.</text>
-      <attack>Scimitar|+10|2d6+6</attack>
+      <attack>Scimitar|+10|(2d6+6)+(2d6)</attack>
+      <attack>Slashing Damage|+10|2d6+6</attack>
       <attack>Fire Damage||2d6</attack>
     </action>
     <action>
       <name>Hurl Flame</name>
       <text>Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 17 (5d6) fire damage.</text>
-      <attack>Hurl Flame|+7|5d6</attack>
+      <attack>Fire Damage|+7|5d6</attack>
     </action>
     <action>
       <name>Variant: Genie Powers</name>
@@ -11205,12 +11269,12 @@ Source:	Monster Manual (2014) p. 145,
     <action>
       <name>Gore</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) piercing damage.</text>
-      <attack>Gore|+8|3d8+6</attack>
+      <attack>Piercing Damage|+8|3d8+6</attack>
     </action>
     <action>
       <name>Stomp</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one prone target. Hit: 22 (3d10 + 6) bludgeoning damage.</text>
-      <attack>Stomp|+8|3d10+6</attack>
+      <attack>Bludgeoning Damage|+8|3d10+6</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 322,
 		Tomb of Annihilation</description>
@@ -11250,12 +11314,12 @@ Source:	Monster Manual (2014) p. 145,
     <action>
       <name>Ram</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</text>
-      <attack>Ram|+5|1d6+3</attack>
+      <attack>Bludgeoning Damage|+5|1d6+3</attack>
     </action>
     <action>
       <name>Hooves</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one prone target. Hit: 8 (2d4 + 3) bludgeoning damage.</text>
-      <attack>Hooves|+5|2d4+3</attack>
+      <attack>Bludgeoning Damage|+5|2d4+3</attack>
     </action>
     <description>Source:	Monster Manual (2014) p. 322,
 		Hoard of the Dragon Queen,
@@ -11295,7 +11359,7 @@ Source:	Monster Manual (2014) p. 145,
 
 	• At will: greater restoration, pass without trace, water breathing, water walk
 	• 1/Day each: commune, dispel evil and good, earthquake, fire storm, plane shift (self only)</text>
-      <attack>Innate Spellcasting|+15|0</attack>
+      <attack>Innate Spellcasting|+15|</attack>
     </trait>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
@@ -11313,7 +11377,7 @@ Source:	Monster Manual (2014) p. 145,
     <action>
       <name>Maul</name>
       <text>Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 31 (6d6 + 10) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or be stunned until the end of the empyrean's next turn.</text>
-      <attack>Maul|+17|6d6+10</attack>
+      <attack>Bludgeoning Damage|+17|6d6+10</attack>
     </action>
     <action>
       <name>Bolt</name>
@@ -11397,14 +11461,17 @@ Source:	Monster Manual (2014) p. 130,
     <action>
       <name>Longsword</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands, plus 13 (3d8) poison damage.</text>
-      <attack>Longsword|+8|1d8+4</attack>
-      <attack>Longsword (Two-Handed)|+8|1d8+4</attack>
+      <attack>Longsword|+8|(1d8+4)+(3d8)</attack>
+      <attack>Longsword (Two-Handed)|+8|(1d10+4)+(3d8)</attack>
+      <attack>Slashing Damage|+8|1d8+4</attack>
+      <attack>Slashing Damage (Two-Handed)|+8|1d10+4</attack>
       <attack>Poison Damage||3d8</attack>
     </action>
     <action>
       <name>Longbow</name>
       <text>Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 13 (3d8) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned. The poison lasts until it is removed by the lesser restoration spell or similar magic.</text>
-      <attack>Longbow|+7|1d8+3</attack>
+      <attack>Longbow|+7|(1d8+3)+(3d8)</attack>
+      <attack>Piercing Damage|+7|1d8+3</attack>
       <attack>Poison Damage||3d8</attack>
     </action>
     <action>
@@ -12392,7 +12459,7 @@ Source:	Monster Manual (2014) p. 133</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.</text>
-      <attack>Bite|+7|1</attack>
+      <attack>Piercing Damage|+7|1</attack>
     </action>
     <action>
       <name>Euphoria Breath (Recharge 5-6)</name>
@@ -12403,6 +12470,7 @@ Euphoria Breath:
 d6 | Behavior
 1-4 | The target takes no action or bonus action and uses all of its movement to move in a random direction.
 5-6 | The target doesn't move, and the only thing it can do on its turn is make a DC 11 Wisdom saving throw, ending the effect on itself on a success.</text>
+      <attack>Euphoria Breath||1d6</attack>
     </action>
     <spells>dancing lights, mage hand, minor illusion, color spray, mirror image</spells>
     <description>A faerie dragon is a cat-sized dragon with butterfly wings. It wears a sharp-toothed grin and expresses its delight by the twitching of its tail, its merriment fading only if it is attacked.
