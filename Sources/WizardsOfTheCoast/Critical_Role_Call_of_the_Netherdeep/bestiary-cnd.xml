@@ -41,7 +41,7 @@
     <trait>
       <name>Water Dependency</name>
       <text>The spawn takes 6 (1d12) acid damage every 10 minutes it goes without being immersed in water.</text>
-      <attack>Water Dependency||1d12</attack>
+      <attack>Acid Damage||1d12</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -50,18 +50,18 @@
     <action>
       <name>Spear</name>
       <text>Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage when used with two hands to make a melee attack.</text>
-      <attack>Spear|+7|1d6+4</attack>
-      <attack>Spear (Two-Handed)|+7|1d8+4</attack>
+      <attack>Piercing Damage|+7|1d6+4</attack>
+      <attack>Piercing Damage (Two-Handed)|+7|1d8+4</attack>
     </action>
     <action>
       <name>Tentacle</name>
       <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: The target is grappled (escape DC 14) and takes 9 (2d8) psychic damage at the start of each of its turns until the grapple ends. The spawn has four tentacles, each of which can grapple one creature.</text>
-      <attack>Tentacle|+7|2d8</attack>
+      <attack>Psychic Damage|+7|2d8</attack>
     </action>
     <action>
       <name>Psychic Lash</name>
       <text>Ranged Spell Attack: +7 to hit, range 120 ft., one creature. Hit: 18 (4d8) psychic damage.</text>
-      <attack>Psychic Lash|+7|4d8</attack>
+      <attack>Psychic Damage|+7|4d8</attack>
     </action>
     <description>Source:	Critical Role: Call of the Netherdeep p. 135</description>
     <environment/>
@@ -104,12 +104,12 @@
     <action>
       <name>Greataxe</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.</text>
-      <attack>Greataxe|+5|1d12+3</attack>
+      <attack>Slashing Damage|+5|1d12+3</attack>
     </action>
     <action>
       <name>Javelin</name>
       <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</text>
-      <attack>Javelin|+5|1d6+3</attack>
+      <attack>Piercing Damage|+5|1d6+3</attack>
     </action>
     <description>Agathe Silverspoon is a chaotic good orc who moves from counter to counter, deftly slicing a variety of cooked and spiced meats, then folding them into piecrusts that she places into the oven behind her.
 
@@ -150,14 +150,15 @@ Source:	Critical Role: Call of the Netherdeep p. 21</description>
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 7 (2d6) psychic damage.</text>
-      <attack>Shortsword|+4|1d6+2</attack>
+      <attack>Shortsword|+4|(1d6+2)+(2d6)</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
       <attack>Psychic Damage||2d6</attack>
     </action>
     <action>
       <name>Arcane Blast (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>Aloysia creates an explosion of magical force in a 20-foot-radius sphere centered on a point it can see within 120 feet of itself. Each creature in that area must make a DC 13 Dexterity saving throw. On a failed saving throw, the creature takes 10 (3d6) force damage and is pushed 10 feet away from the center of the area. On a successful save, it takes half as much damage and isn't pushed.</text>
-      <attack>Arcane Blast||3d6</attack>
+      <attack>Force Damage||3d6</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -217,13 +218,14 @@ Source:	Critical Role: Call of the Netherdeep p. 21</description>
     <action>
       <name>Tentacle</name>
       <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage plus 3 (1d6) psychic damage.</text>
-      <attack>Tentacle|+9|2d6+5</attack>
+      <attack>Tentacle|+9|(2d6+5)+(1d6)</attack>
+      <attack>Bludgeoning Damage|+9|2d6+5</attack>
       <attack>Psychic Damage||1d6</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.</text>
-      <attack>Tail|+9|2d8+5</attack>
+      <attack>Bludgeoning Damage|+9|2d8+5</attack>
     </action>
     <action>
       <name>Enslave (Recharge 4-6) (Bonus Action)</name>
@@ -295,15 +297,17 @@ Source:	Critical Role: Call of the Netherdeep p. 195</description>
     <action>
       <name>Spear</name>
       <text>Melee or Ranged Weapon Attack: +9 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage when used with two hands to make a melee attack, plus 9 (2d8) radiant damage.</text>
-      <attack>Spear|+9|1d6+4</attack>
-      <attack>Spear (Two-Handed)|+9|1d8+4</attack>
+      <attack>Spear|+9|(1d6+4)+(2d8)</attack>
+      <attack>Spear (Two-Handed)|+9|(1d8+4)+(2d8)</attack>
+      <attack>Piercing Damage|+9|1d6+4</attack>
+      <attack>Piercing Damage (Two-Handed)|+9|1d8+4</attack>
       <attack>Radiant Damage||2d8</attack>
     </action>
     <action>
       <name>Force Wave (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>Alyxian strikes the ground, creating a burst of energy that ripples outward. Each creature he chooses within a 30-foot-radius sphere centered on himself must succeed on a DC 17 Constitution saving throw or take 35 (10d6) force damage and be knocked prone. A creature that succeeds on the saving throw takes half as much damage and isn't knocked prone.</text>
-      <attack>Force Wave||10d6</attack>
+      <attack>Force Damage||10d6</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -385,7 +389,7 @@ Source:	Critical Role: Call of the Netherdeep p. 195</description>
     <action>
       <name>Radiant Spear</name>
       <text>Melee or Ranged Weapon Attack: +10 to hit, reach 5 ft. or range 120 ft., one target. Hit: 15 (2d8 + 6) radiant damage.</text>
-      <attack>Radiant Spear|+10|2d8+6</attack>
+      <attack>Radiant Damage|+10|2d8+6</attack>
     </action>
     <action>
       <name>Blinding Teleport</name>
@@ -395,7 +399,7 @@ Source:	Critical Role: Call of the Netherdeep p. 195</description>
       <name>Heavenly Destruction (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>Alyxian releases divine energy in a 60-foot cone. Each creature of his choice in that area must make a DC 17 Constitution saving throw. On a failed saving throw, the creature takes 31 (7d8) radiant damage and is knocked prone. On a successful save, a creature takes half as much damage and isn't knocked prone.</text>
-      <attack>Heavenly Destruction||7d8</attack>
+      <attack>Radiant Damage||7d8</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -413,7 +417,7 @@ Source:	Critical Role: Call of the Netherdeep p. 195</description>
     <legendary>
       <name>Flare (Costs 2 Actions)</name>
       <text>Alyxian targets one creature he can see within 30 feet of himself. Light flares around the target, dealing 17 (5d6) radiant damage to it and creatures within 10 feet of it.</text>
-      <attack>Flare||5d6</attack>
+      <attack>Radiant Damage||5d6</attack>
     </legendary>
     <description>Emotional State:
 Alyxian the Callous is cold and distant, disregarding words he doesn't care to hear. He sees himself as a perfect, "holy" being and believes that the world should be condemned for its crimes against him.
@@ -476,15 +480,17 @@ Source:	Critical Role: Call of the Netherdeep p. 179</description>
     <action>
       <name>Spear</name>
       <text>Melee or Ranged Weapon Attack: +9 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage when used with two hands to make a melee attack, plus 9 (2d8) radiant damage.</text>
-      <attack>Spear|+9|1d6+4</attack>
-      <attack>Spear (Two-Handed)|+9|1d8+4</attack>
+      <attack>Spear|+9|(1d6+4)+(2d8)</attack>
+      <attack>Spear (Two-Handed)|+9|(1d8+4)+(2d8)</attack>
+      <attack>Piercing Damage|+9|1d6+4</attack>
+      <attack>Piercing Damage (Two-Handed)|+9|1d8+4</attack>
       <attack>Radiant Damage||2d8</attack>
     </action>
     <action>
       <name>Stoneheart Dagger</name>
       <text>Melee or Ranged Weapon Attack: +9 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (3d4 + 4) force damage, and if the target is a creature, it must succeed on a DC 17 Constitution saving throw or become petrified as the dagger lodges itself in the target's body.
 	While the dagger is lodged in the target, magic can't end the petrified condition on it and Alyxian can't make Stoneheart Dagger attacks. A creature within reach of the petrified target can use an action to try to remove the dagger, doing so with a successful DC 17 Strength check.</text>
-      <attack>Stoneheart Dagger|+9|3d4+4</attack>
+      <attack>Force Damage|+9|3d4+4</attack>
     </action>
     <action>
       <name>Summon Dagger (Bonus Action)</name>
@@ -569,12 +575,12 @@ Source:	Critical Role: Call of the Netherdeep p. 180</description>
     <action>
       <name>Ruidium Dart</name>
       <text>The golem can conjure a magic dart made of ruidium and hurl it at another creature it can see within 120 feet of itself. The dart strikes the target unerringly and vanishes on contact. The target must make a DC 17 Charisma saving throw. On a failed saving throw, the target takes 24 (7d6) psychic damage and gains 1 level of exhaustion. In addition, if the target is not already suffering from ruidium corruption, it becomes corrupted when it fails the saving throw. On a successful saving throw, the target takes half as much damage and suffers no other effects.</text>
-      <attack>Ruidium Dart||7d6</attack>
+      <attack>Psychic Damage||7d6</attack>
     </action>
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.</text>
-      <attack>Slam|+10|3d8+6</attack>
+      <attack>Bludgeoning Damage|+10|3d8+6</attack>
     </action>
     <action>
       <name>Slow (Recharge 5-6)</name>
@@ -634,13 +640,13 @@ Source:	Critical Role: Call of the Netherdeep p. 160</description>
     <action>
       <name>Grasping Hand</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (3d6 + 5) force damage, and if the target is a Medium or smaller creature, it is grappled (escape DC 15). Alyxian has six hands, each of which can grapple one target.</text>
-      <attack>Grasping Hand|+9|3d6+5</attack>
+      <attack>Force Damage|+9|3d6+5</attack>
     </action>
     <action>
       <name>Void Eyes (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>Alyxian targets up to two creatures he can see within 120 feet of himself. Each target must make a DC 17 Constitution saving throw, taking 28 (8d6) necrotic damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Void Eyes||8d6</attack>
+      <attack>Necrotic Damage||8d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -654,7 +660,7 @@ Source:	Critical Role: Call of the Netherdeep p. 160</description>
     <legendary>
       <name>Weapons of Yore (Costs 2 Actions)</name>
       <text>Ancient weapons embedded in Alyxian's hide detach from Alyxian and fly about in a 10-foot-radius sphere centered on a point Alyxian can see within 60 feet of himself. A creature takes 18 (4d8) slashing damage when it enters that area for the first time on a turn or starts its turn there. The effect lasts until the end of Alyxian's next turn, when the weapons return to Alyxian and embed themselves in his hide once again (causing him no harm).</text>
-      <attack>Weapons of Yore||4d8</attack>
+      <attack>Slashing Damage||4d8</attack>
     </legendary>
     <description>Source:	Critical Role: Call of the Netherdeep p. 178</description>
     <environment/>
@@ -703,15 +709,14 @@ Source:	Critical Role: Call of the Netherdeep p. 160</description>
     <action>
       <name>Beak</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.</text>
-      <attack>Beak|+4|2d4+2</attack>
+      <attack>Piercing Damage|+4|2d4+2</attack>
     </action>
     <action>
       <name>Talons</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.</text>
-      <attack>Talons|+4|2d6+2</attack>
+      <attack>Slashing Damage|+4|2d6+2</attack>
     </action>
-    <description>Stat Block Origin: Giant Vulture
-Source:	Critical Role: Call of the Netherdeep p. 109</description>
+    <description>Source:	Critical Role: Call of the Netherdeep p. 109</description>
     <environment/>
   </monster>
   <monster>
@@ -766,7 +771,7 @@ Source:	Critical Role: Call of the Netherdeep p. 109</description>
     <action>
       <name>Crimson Bolt</name>
       <text>Melee or Ranged Spell Attack: +8 to hit, reach 5 ft. or range 60 ft., one creature. Hit: 27 (4d10 + 5) psychic damage.</text>
-      <attack>Crimson Bolt|+8|4d10+5</attack>
+      <attack>Psychic Damage|+8|4d10+5</attack>
     </action>
     <action>
       <name>Elemental Servitor (1/Day) (Bonus Action)</name>
@@ -810,7 +815,9 @@ Source:	Critical Role: Call of the Netherdeep p. 109</description>
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 7 (2d6) psychic damage.</text>
-      <attack>Shortsword|+4|1d6+2+2d6</attack>
+      <attack>Shortsword|+4|(1d6+2)+(2d6)</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
+      <attack>Psychic Damage||2d6</attack>
     </action>
     <action>
       <name>Arcane Blast (Recharge 5-6)</name>
@@ -875,12 +882,12 @@ Source:	Critical Role: Call of the Netherdeep p. 115</description>
     <action>
       <name>Harpoon</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage.</text>
-      <attack>Harpoon|+4|2d8+2</attack>
+      <attack>Piercing Damage|+4|2d8+2</attack>
     </action>
     <action>
       <name>Longbow</name>
       <text>Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 11 (2d8 + 2) piercing damage.</text>
-      <attack>Longbow|+4|2d8+2</attack>
+      <attack>Piercing Damage|+4|2d8+2</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -940,12 +947,12 @@ Source:	Critical Role: Call of the Netherdeep p. 188</description>
     <action>
       <name>Harpoon</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage.</text>
-      <attack>Harpoon|+5|2d8+2</attack>
+      <attack>Piercing Damage|+5|2d8+2</attack>
     </action>
     <action>
       <name>Longbow</name>
       <text>Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 12 (2d8 + 3) piercing damage.</text>
-      <attack>Longbow|+6|2d8+3</attack>
+      <attack>Piercing Damage|+6|2d8+3</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1013,12 +1020,14 @@ Source:	Critical Role: Call of the Netherdeep p. 190</description>
     <action>
       <name>Ruidium Harpoon</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage plus 7 (2d6) psychic damage.</text>
-      <attack>Ruidium Harpoon|+6|2d8+3+2d6</attack>
+      <attack>Ruidium Harpoon|+6|(2d8+3)+(2d6)</attack>
+      <attack>Piercing Damage|+6|2d8+3</attack>
+      <attack>Psychic Damage||2d6</attack>
     </action>
     <action>
       <name>Longbow</name>
       <text>Ranged Weapon Attack: +8 to hit, range 150/600 ft., one target. Hit: 18 (3d8 + 5) piercing damage.</text>
-      <attack>Longbow|+8|3d8+5</attack>
+      <attack>Piercing Damage|+8|3d8+5</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1082,12 +1091,12 @@ Source:	Critical Role: Call of the Netherdeep p. 192</description>
 	• 1st level (4 slots): cure wounds, guiding bolt, sanctuary
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
-      <attack>Spellcasting|+5|0</attack>
+      <attack>Spellcasting|+5|</attack>
     </trait>
     <action>
       <name>Mace</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Mace|+2|1d6</attack>
+      <attack>Bludgeoning Damage|+2|1d6</attack>
     </action>
     <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
@@ -1125,7 +1134,7 @@ Source:	Critical Role: Call of the Netherdeep p. 28</description>
     <trait>
       <name>Bladed Hide</name>
       <text>At the start of each of its turns, the moorbounder deals 5 (2d4) piercing damage to any creature grappling it.</text>
-      <attack>Bladed Hide||2d4</attack>
+      <attack>Piercing Damage||2d4</attack>
     </trait>
     <trait>
       <name>Standing Leap</name>
@@ -1138,12 +1147,12 @@ Source:	Critical Role: Call of the Netherdeep p. 28</description>
     <action>
       <name>Blades</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.</text>
-      <attack>Blades|+6|2d6+4</attack>
+      <attack>Slashing Damage|+6|2d6+4</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (4d4 + 4) slashing damage.</text>
-      <attack>Claw|+6|4d4+4</attack>
+      <attack>Slashing Damage|+6|4d4+4</attack>
     </action>
     <description>A weird and deadly offshoot of the moorbounder has rows of long, bladelike bristles covering its sleek body. The creature uses these blades to slash nearby creatures to ribbons. However, these blades make the bristled moorbounder less suitable as a mount.
 
@@ -1191,12 +1200,12 @@ Source:	Critical Role: Call of the Netherdeep p. 203</description>
     <trait>
       <name>Incorporeal Movement</name>
       <text>Celeste can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
-      <attack>Incorporeal Movement||1d10</attack>
+      <attack>Force Damage||1d10</attack>
     </trait>
     <action>
       <name>Withering Touch</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 17 (4d6 + 3) necrotic damage.</text>
-      <attack>Withering Touch|+5|4d6+3</attack>
+      <attack>Necrotic Damage|+5|4d6+3</attack>
     </action>
     <action>
       <name>Etherealness</name>
@@ -1205,7 +1214,7 @@ Source:	Critical Role: Call of the Netherdeep p. 203</description>
     <action>
       <name>Horrifying Visage</name>
       <text>Each non-undead creature within 60 feet of Celeste that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 × 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.</text>
-      <attack>Horrifying Visage||1d4x10</attack>
+      <attack>Years||1d4x10</attack>
     </action>
     <action>
       <name>Possession (Recharge 6)</name>
@@ -1250,7 +1259,7 @@ Source:	Critical Role: Call of the Netherdeep p. 150</description>
     <trait>
       <name>Psychic Maelstrom</name>
       <text>Any creature that starts its turn within 15 feet of the shark must succeed on a DC 17 Wisdom saving throw or take 11 (2d10) psychic damage.</text>
-      <attack>Psychic Maelstrom||2d10</attack>
+      <attack>Psychic Damage||2d10</attack>
     </trait>
     <trait>
       <name>Regeneration</name>
@@ -1263,7 +1272,7 @@ Source:	Critical Role: Call of the Netherdeep p. 150</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +10 to hit (with advantage if the target is a creature missing any hit points), reach 5 ft., one target. Hit: 22 (3d10 + 6) piercing damage, and if the target is a creature, it must succeed on a DC 17 Charisma saving throw or gain 1 level of exhaustion.</text>
-      <attack>Bite|+10|3d10+6</attack>
+      <attack>Piercing Damage|+10|3d10+6</attack>
     </action>
     <description>In addition to its vicious bite, this giant shark projects a psychic aura that causes painful mental distress in other creatures nearby. The crystals that corrupt the shark's body enable it to regenerate, and only radiant energy or particularly devastating attacks can overcome this unnatural defense.
 
@@ -1310,7 +1319,7 @@ Source:	Critical Role: Call of the Netherdeep p. 196</description>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) fire damage.</text>
-      <attack>Claw|+5|1d6+3</attack>
+      <attack>Fire Damage|+5|1d6+3</attack>
     </action>
     <action>
       <name>Charm</name>
@@ -1320,7 +1329,7 @@ Source:	Critical Role: Call of the Netherdeep p. 196</description>
     <action>
       <name>Draining Kiss</name>
       <text>The flame kisses a creature charmed by it or a willing creature. The target must make a DC 15 Constitution saving throw against this magic, taking 32 (5d10 + 5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</text>
-      <attack>Draining Kiss||5d10+5</attack>
+      <attack>Psychic Damage||5d10+5</attack>
     </action>
     <description>Stat Block Origin: Succubus/Incubus
 Source:	Critical Role: Call of the Netherdeep p. 68</description>
@@ -1373,7 +1382,8 @@ Source:	Critical Role: Call of the Netherdeep p. 68</description>
     <action>
       <name>Tentacle</name>
       <text>Melee Weapon Attack: +10 to hit, reach 60 ft., one target. Hit: 13 (2d6 + 6) piercing damage plus 11 (2d10) psychic damage. If the target is Large or smaller, it is also grappled (escape DC 16). The death embrace has six tentacles, each of which can grapple one target.</text>
-      <attack>Tentacle|+10|2d6+6</attack>
+      <attack>Tentacle|+10|(2d6+6)+(2d10)</attack>
+      <attack>Piercing Damage|+10|2d6+6</attack>
       <attack>Psychic Damage||2d10</attack>
     </action>
     <reaction>
@@ -1423,13 +1433,13 @@ Source:	Critical Role: Call of the Netherdeep p. 197</description>
     <action>
       <name>Warhammer</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage, or 8 (1d10 + 3) bludgeoning damage when used with two hands.</text>
-      <attack>Warhammer|+5|1d8+3</attack>
-      <attack>Warhammer (Two-Handed)|+5|1d10+3</attack>
+      <attack>Bludgeoning Damage|+5|1d8+3</attack>
+      <attack>Bludgeoning Damage (Two-Handed)|+5|1d10+3</attack>
     </action>
     <action>
       <name>Searing Wrath</name>
       <text>Ranged Spell Attack: +5 to hit, range 60 ft., one creature. Hit: 9 (2d8) radiant damage, and the target is blinded until the end of its next turn.</text>
-      <attack>Searing Wrath|+5|2d8</attack>
+      <attack>Radiant Damage|+5|2d8</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1485,13 +1495,13 @@ Source:	Critical Role: Call of the Netherdeep p. 188</description>
     <action>
       <name>Warhammer</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage, or 9 (1d10 + 4) bludgeoning damage when used with two hands.</text>
-      <attack>Warhammer|+7|1d8+4</attack>
-      <attack>Warhammer (Two-Handed)|+7|1d10+4</attack>
+      <attack>Bludgeoning Damage|+7|1d8+4</attack>
+      <attack>Bludgeoning Damage (Two-Handed)|+7|1d10+4</attack>
     </action>
     <action>
       <name>Searing Wrath</name>
       <text>Ranged Spell Attack: +7 to hit, range 60 ft., one creature. Hit: 18 (4d8) radiant damage, and the target is blinded until the end of its next turn.</text>
-      <attack>Searing Wrath|+7|4d8</attack>
+      <attack>Radiant Damage|+7|4d8</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1552,14 +1562,16 @@ Source:	Critical Role: Call of the Netherdeep p. 191</description>
     <action>
       <name>Ruidium Warhammer</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage, or 9 (1d10 + 4) bludgeoning damage when used with two hands, plus 7 (2d6) psychic damage.</text>
-      <attack>Ruidium Warhammer|+7|1d8+4</attack>
-      <attack>Ruidium Warhammer (Two-Handed)|+7|1d10+4</attack>
+      <attack>Ruidium Warhammer|+7|(1d8+4)+(2d6)</attack>
+      <attack>Ruidium Warhammer (Two-Handed)|+7|(1d10+4)+(2d6)</attack>
+      <attack>Bludgeoning Damage|+7|1d8+4</attack>
+      <attack>Bludgeoning Damage (Two-Handed)|+7|1d10+4</attack>
       <attack>Psychic Damage||2d6</attack>
     </action>
     <action>
       <name>Searing Wrath</name>
       <text>Ranged Spell Attack: +8 to hit, range 60 ft., one creature. Hit: 22 (5d8) radiant damage, and the target is blinded until the end of its next turn.</text>
-      <attack>Searing Wrath|+8|5d8</attack>
+      <attack>Radiant Damage|+8|5d8</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1627,13 +1639,14 @@ Source:	Critical Role: Call of the Netherdeep p. 193</description>
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) poison damage.</text>
-      <attack>Shortsword|+7|1d6+4</attack>
+      <attack>Shortsword|+7|(1d6+4)+(3d6)</attack>
+      <attack>Piercing Damage|+7|1d6+4</attack>
       <attack>Poison Damage||3d6</attack>
     </action>
     <action>
       <name>Hand Crossbow</name>
       <text>Ranged Weapon Attack: +7 to hit, range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.</text>
-      <attack>Hand Crossbow|+7|1d6+4</attack>
+      <attack>Piercing Damage|+7|1d6+4</attack>
     </action>
     <action>
       <name>Variant: Drow Magic Armor and Weapons</name>
@@ -1685,12 +1698,12 @@ Source:	Critical Role: Call of the Netherdeep p. 193</description>
     <action>
       <name>Greataxe</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.</text>
-      <attack>Greataxe|+5|1d12+3</attack>
+      <attack>Slashing Damage|+5|1d12+3</attack>
     </action>
     <action>
       <name>Javelin</name>
       <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</text>
-      <attack>Javelin|+5|1d6+3</attack>
+      <attack>Piercing Damage|+5|1d6+3</attack>
     </action>
     <description>Source:	Critical Role: Call of the Netherdeep p. 71</description>
     <environment/>
@@ -1728,8 +1741,8 @@ Source:	Critical Role: Call of the Netherdeep p. 193</description>
     <trait>
       <name>Divine Eminence</name>
       <text>As a bonus action, Foghome can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Foghome expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
-      <attack>Divine Eminence||3d6</attack>
-      <attack>Divine Eminence||1d6</attack>
+      <attack>Radiant Damage||3d6</attack>
+      <attack>Extra Damage||1d6</attack>
     </trait>
     <trait>
       <name>Powerful Build</name>
@@ -1748,12 +1761,12 @@ Source:	Critical Role: Call of the Netherdeep p. 193</description>
 	• 1st level (4 slots): cure wounds, guiding bolt, sanctuary
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
-      <attack>Spellcasting|+5|0</attack>
+      <attack>Spellcasting|+5|</attack>
     </trait>
     <action>
       <name>Mace</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Mace|+2|1d6</attack>
+      <attack>Bludgeoning Damage|+2|1d6</attack>
     </action>
     <slots>0,4,3,2</slots>
     <spells>Light, Sacred Flame, Thaumaturgy, Cure Wounds, Guiding Bolt, Sanctuary, Lesser Restoration, Spiritual Weapon, Dispel Magic, Spirit Guardians</spells>
@@ -1804,7 +1817,7 @@ Source:	Critical Role: Call of the Netherdeep p. 58</description>
     <action>
       <name>Crimson Bolt</name>
       <text>Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 60 ft., one creature. Hit: 20 (3d10 + 4) psychic damage.</text>
-      <attack>Crimson Bolt|+7|3d10+4</attack>
+      <attack>Psychic Damage|+7|3d10+4</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1816,7 +1829,7 @@ Source:	Critical Role: Call of the Netherdeep p. 58</description>
     <reaction>
       <name>Reflect Agony</name>
       <text>When the extollant is damaged by a creature within 60 feet of it, the creature must make a DC 15 Wisdom saving throw, taking 16 (3d10) psychic damage on a failed saving throw, or half as much damage on a successful one.</text>
-      <attack>Reflect Agony||3d10</attack>
+      <attack>Psychic Damage||3d10</attack>
     </reaction>
     <spells>minor illusion, mage armor, major image, phantasmal force</spells>
     <description>Galeokaerda has long posed as a professor of the Allegiance of Allsight and has become Insight's friend.
@@ -1869,13 +1882,13 @@ Source:	Critical Role: Call of the Netherdeep p. 130</description>
     <action>
       <name>Drain Potential</name>
       <text>Melee or Ranged Spell Attack: +5 to hit, reach 5 ft. or range 30 ft., one creature. Hit: 16 (3d10) necrotic damage, and Galsariad gains 5 temporary hit points.</text>
-      <attack>Drain Potential|+5|3d10</attack>
+      <attack>Necrotic Damage|+5|3d10</attack>
     </action>
     <action>
       <name>Gravity Wave (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>Galsariad causes a rippling wave of magical gravity to fill a 10-foot-radius sphere centered on a point he can see within 120 feet of himself. Each creature in that area must make a DC 13 Strength saving throw. On a failed saving throw, the creature takes 17 (5d6) force damage and is pulled up to 10 feet toward the sphere's center. On a successful save, the creature takes half as much damage and isn't pulled.</text>
-      <attack>Gravity Wave||5d6</attack>
+      <attack>Force Damage||5d6</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1888,7 +1901,7 @@ Source:	Critical Role: Call of the Netherdeep p. 130</description>
       <name>Distort Gravity (1/Day) (Bonus Action)</name>
       <recharge>1/Day</recharge>
       <text>Galsariad targets himself or one willing creature that he can see within 60 feet of himself, magically distorting gravity around the target. Any creature within 5 feet of the target takes 3 (1d6) force damage. In addition, the target can use a reaction to float upward, up to 20 feet, without provoking opportunity attacks. When this effect ends at the start of Galsariad's next turn, the target floats gently down up to 20 feet.</text>
-      <attack>Distort Gravity||1d6</attack>
+      <attack>Force Damage||1d6</attack>
     </action>
     <spells>mage armor, mage hand, longstrider</spells>
     <description>Ayojabe is a water genasi and a natural-born leader who was born to ore parents during a fierce storm at sea.
@@ -1937,13 +1950,13 @@ Source:	Critical Role: Call of the Netherdeep p. 188</description>
     <action>
       <name>Drain Potential</name>
       <text>Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 60 ft., one creature. Hit: 22 (4d10) necrotic damage, and Galsariad gains 5 temporary hit points.</text>
-      <attack>Drain Potential|+7|4d10</attack>
+      <attack>Necrotic Damage|+7|4d10</attack>
     </action>
     <action>
       <name>Gravity Wave (Recharge 5–6)</name>
       <recharge>D5</recharge>
       <text>Galsariad causes a rippling wave of magical gravity to fill a 20-foot-radius sphere centered on a point he can see within 100 feet of himself. Each creature in that area must make a DC 15 Strength saving throw. On a failed saving throw, the creature takes 35 (10d6) force damage and is pulled up to 20 feet toward the sphere's center, and is knocked prone. On a successful save, the creature takes half as much damage and isn't pulled or knocked prone.</text>
-      <attack>Gravity Wave||10d6</attack>
+      <attack>Force Damage||10d6</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1956,7 +1969,7 @@ Source:	Critical Role: Call of the Netherdeep p. 188</description>
       <name>Distort Gravity (1/Day) (Bonus Action)</name>
       <recharge>1/Day</recharge>
       <text>Galsariad targets himself or one willing creature that he can see within 60 feet of himself, magically distorting gravity around the target. Any creature within 5 feet of the target takes 7 (2d6) force damage. In addition, the target can use a reaction to float upward, up to 20 feet, without provoking opportunity attacks. When this effect ends at the start of Galsariad's next turn, the target floats gently down up to 20 feet.</text>
-      <attack>Distort Gravity||2d6</attack>
+      <attack>Force Damage||2d6</attack>
     </action>
     <spells>mage armor, mage hand, longstrider, scrying, slow</spells>
     <description>Ayojabe is a water genasi and a natural-born leader who was born to ore parents during a fierce storm at sea.
@@ -2017,19 +2030,20 @@ Source:	Critical Role: Call of the Netherdeep p. 190</description>
     <action>
       <name>Drain Potential</name>
       <text>Melee or Ranged Spell Attack: +8 to hit, reach 5 ft. or range 120 ft., one creature. Hit: 22 (4d10) necrotic damage, and Galsariad gains 10 temporary hit points.</text>
-      <attack>Drain Potential|+8|4d10</attack>
+      <attack>Necrotic Damage|+8|4d10</attack>
     </action>
     <action>
       <name>Ruidium Dagger</name>
       <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 7 (2d6) psychic damage.</text>
-      <attack>Ruidium Dagger|+5|1d4+2</attack>
+      <attack>Ruidium Dagger|+5|(1d4+2)+(2d6)</attack>
+      <attack>Piercing Damage|+5|1d4+2</attack>
       <attack>Psychic Damage||2d6</attack>
     </action>
     <action>
       <name>Gravity Wave (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>Galsariad causes a rippling wave of magical gravity to fill a 30-foot-radius sphere centered on a point he can see within 100 feet of himself. Each creature in that area must make a DC 16 Strength saving throw. On a failed saving throw, the creature takes 42 (12d6) force damage and is restrained for 1 minute. On a successful save, the creature takes half as much damage and isn't restrained. A restrained creature can repeat the save at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Gravity Wave||12d6</attack>
+      <attack>Force Damage||12d6</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -2042,7 +2056,7 @@ Source:	Critical Role: Call of the Netherdeep p. 190</description>
       <name>Distort Gravity (1/Day) (Bonus Action)</name>
       <recharge>1/Day</recharge>
       <text>Galsariad targets himself or one willing creature that he can see within 60 feet of himself, magically distorting gravity around the target. Any creature within 5 feet of the target takes 14 (4d6) force damage. In addition, the target can use a reaction to float upward, up to 20 feet, without provoking opportunity attacks. When this effect ends at the start of Galsariad's next turn, the target floats gently down up to 20 feet.</text>
-      <attack>Distort Gravity||4d6</attack>
+      <attack>Force Damage||4d6</attack>
     </action>
     <spells>mage hand, longstrider, scrying, slow, telekinesis, water breathing</spells>
     <description>Ayojabe is a water genasi and a natural-born leader who was born to ore parents during a fierce storm at sea.
@@ -2093,19 +2107,22 @@ Source:	Critical Role: Call of the Netherdeep p. 193</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one creature. Hit: 15 (2d8 + 6) piercing damage plus 7 (2d6) necrotic damage.</text>
-      <attack>Bite|+9|2d8+6</attack>
+      <attack>Bite|+9|(2d8+6)+(2d6)</attack>
+      <attack>Piercing Damage|+9|2d8+6</attack>
       <attack>Necrotic Damage||2d6</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 7 (2d6) necrotic damage.</text>
-      <attack>Claw|+9|2d6+6</attack>
+      <attack>Claw|+9|(2d6+6)+(2d6)</attack>
+      <attack>Slashing Damage|+9|2d6+6</attack>
       <attack>Necrotic Damage||2d6</attack>
     </action>
     <action>
       <name>Snatch</name>
-      <text>Melee Weapon Attack: +9 to hit, reach 5 ft. , one Medium or sma ller creature. Hit: 13 (2d6 + 6) slashi ng damage plus 7 (2d6) necrotic damage, and the target is grappled (escape DC 17). While grappled in this way, the target is restrained.</text>
-      <attack>Snatch|+9|2d6+6</attack>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one Medium or smaller creature. Hit: 13 (2d6 + 6) slashing damage plus 7 (2d6) necrotic damage, and the target is grappled (escape DC 17). While grappled in this way, the target is restrained.</text>
+      <attack>Snatch|+9|(2d6+6)+(2d6)</attack>
+      <attack>Slashing Damage|+9|2d6+6</attack>
       <attack>Necrotic Damage||2d6</attack>
     </action>
     <action>
@@ -2167,12 +2184,13 @@ Source:	Critical Role: Call of the Netherdeep p. 198</description>
     <action>
       <name>Arcane Shock</name>
       <text>Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 60 ft., one target. Hit: 26 (4d10 + 4) lightning damage. If the target is a creature, it can't take reactions until the start of its next turn.</text>
-      <attack>Arcane Shock|+7|4d10+4</attack>
+      <attack>Lightning Damage|+7|4d10+4</attack>
     </action>
     <action>
       <name>Dagger of the Poisoned Mind</name>
       <text>Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 10 (3d6) psychic damage. If the target is a creature, it must succeed on a DC 15 Wisdom saving throw or be frightened until the end of its next turn.</text>
-      <attack>Dagger of the Poisoned Mind|+7|1d4+4</attack>
+      <attack>Dagger of the Poisoned Mind|+7|(1d4+4)+(3d6)</attack>
+      <attack>Piercing Damage|+7|1d4+4</attack>
       <attack>Psychic Damage||3d6</attack>
     </action>
     <action>
@@ -2227,7 +2245,7 @@ Source:	Critical Role: Call of the Netherdeep p. 198</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 28 (3d12 + 9) bludgeoning damage.</text>
-      <attack>Bite|+12|3d12+9</attack>
+      <attack>Bludgeoning Damage|+12|3d12+9</attack>
     </action>
     <action>
       <name>Shell Defense (Recharge 4-6)</name>
@@ -2277,12 +2295,13 @@ Source:	Critical Role: Call of the Netherdeep p. 199</description>
     <action>
       <name>Arcane Shock</name>
       <text>Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 60 ft., one target. Hit: 26 (4d10 + 4) lightning damage. If the target is a creature, it can't take reactions until the start of its next turn.</text>
-      <attack>Arcane Shock|+7|4d10+4</attack>
+      <attack>Lightning Damage|+7|4d10+4</attack>
     </action>
     <action>
       <name>Dagger of the Poisoned Mind</name>
       <text>Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 10 (3d6) psychic damage. If the target is a creature, it must succeed on a DC 15 Wisdom saving throw or be frightened until the end of its next turn.</text>
-      <attack>Dagger of the Poisoned Mind|+7|1d4+4</attack>
+      <attack>Dagger of the Poisoned Mind|+7|(1d4+4)+(3d6)</attack>
+      <attack>Piercing Damage|+7|1d4+4</attack>
       <attack>Psychic Damage||3d6</attack>
     </action>
     <action>
@@ -2345,7 +2364,8 @@ Source:	Critical Role: Call of the Netherdeep p. 126</description>
     <action>
       <name>Dagger</name>
       <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 7 (2d6) poison damage.</text>
-      <attack>Dagger|+4|1d4+2</attack>
+      <attack>Dagger|+4|(1d4+2)+(2d6)</attack>
+      <attack>Piercing Damage|+4|1d4+2</attack>
       <attack>Poison Damage||2d6</attack>
     </action>
     <description>Irvan Wastewalker is a young man who has experienced a previous life as a bugbear of the Kryn Dynasty. He was reborn as a nomadic human through the power of the Luxon.
@@ -2399,7 +2419,9 @@ Source:	Critical Role: Call of the Netherdeep p. 189</description>
     <action>
       <name>Dagger</name>
       <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 14 (4d6) poison damage.</text>
-      <attack>Dagger|+6|1d4+3+4d6</attack>
+      <attack>Dagger|+6|(1d4+3)+(4d6)</attack>
+      <attack>Piercing Damage|+6|1d4+3</attack>
+      <attack>Poison Damage||4d6</attack>
     </action>
     <description>Irvan Wastewalker is a young man who has experienced a previous life as a bugbear of the Kryn Dynasty. He was reborn as a nomadic human through the power of the Luxon.
 
@@ -2457,12 +2479,16 @@ Source:	Critical Role: Call of the Netherdeep p. 191</description>
     <action>
       <name>Dagger</name>
       <text>Melee or Ranged Weapon Attack: +8 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d4 + 5) piercing damage plus 17 (5d6) poison damage.</text>
-      <attack>Dagger|+8|1d4+5+5d6</attack>
+      <attack>Dagger|+8|(1d4+5)+(5d6)</attack>
+      <attack>Piercing Damage|+8|1d4+5</attack>
+      <attack>Poison Damage||5d6</attack>
     </action>
     <action>
       <name>Ruidium Shortsword</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) piercing damage plus 7 (2d6) psychic damage.</text>
-      <attack>Ruidium Shortsword|+8|1d6+5+2d6</attack>
+      <attack>Ruidium Shortsword|+8|(1d6+5)+(2d6)</attack>
+      <attack>Piercing Damage|+8|1d6+5</attack>
+      <attack>Psychic Damage||2d6</attack>
     </action>
     <description>Irvan Wastewalker is a young man who has experienced a previous life as a bugbear of the Kryn Dynasty. He was reborn as a nomadic human through the power of the Luxon.
 
@@ -2511,12 +2537,13 @@ Source:	Critical Role: Call of the Netherdeep p. 194</description>
     <action>
       <name>Arcane Shock</name>
       <text>Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 60 ft., one target. Hit: 26 (4d10 + 4) lightning damage. If the target is a creature, it can't take reactions until the start of its next turn.</text>
-      <attack>Arcane Shock|+7|4d10+4</attack>
+      <attack>Lightning Damage|+7|4d10+4</attack>
     </action>
     <action>
       <name>Dagger of the Poisoned Mind</name>
       <text>Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 10 (3d6) psychic damage. If the target is a creature, it must succeed on a DC 15 Wisdom saving throw or be frightened until the end of its next turn.</text>
-      <attack>Dagger of the Poisoned Mind|+7|1d4+4</attack>
+      <attack>Dagger of the Poisoned Mind|+7|(1d4+4)+(3d6)</attack>
+      <attack>Piercing Damage|+7|1d4+4</attack>
       <attack>Psychic Damage||3d6</attack>
     </action>
     <action>
@@ -2572,13 +2599,13 @@ Source:	Critical Role: Call of the Netherdeep p. 194</description>
     <action>
       <name>Force Strike</name>
       <text>Melee or Ranged Spell Attack: +10 to hit, reach 5 ft. or range 10 ft., one target. Hit: 17 (2d10 + 6) force damage.</text>
-      <attack>Force Strike|+10|2d10+6</attack>
+      <attack>Force Damage|+10|2d10+6</attack>
     </action>
     <action>
       <name>Brain Burn (Recharge 4-6)</name>
       <recharge>D4</recharge>
       <text>Jamil targets up to two creatures it can see within 30 feet of itself. Each target must make a DC 18 Constitution saving throw. On a failed saving throw, the target takes 28 (8d6) psychic damage and can't take reactions until the start of its next turn. On a successful save, the target takes half as much damage and suffers no other effect.</text>
-      <attack>Brain Burn||8d6</attack>
+      <attack>Psychic Damage||8d6</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -2642,6 +2669,7 @@ Source:	Critical Role: Call of the Netherdeep p. 116</description>
       <name>Sneak Attack (1/Turn)</name>
       <recharge>1/Turn</recharge>
       <text>Koris deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Koris that isn't incapacitated and Koris doesn't have disadvantage on the attack roll.</text>
+      <attack>Sneak Attack||4d6</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2650,12 +2678,14 @@ Source:	Critical Role: Call of the Netherdeep p. 116</description>
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Shortsword|+6|1d6+3</attack>
+      <attack>Piercing Damage|+6|1d6+3</attack>
+      <attack>Poison Damage||7d6</attack>
     </action>
     <action>
       <name>Light Crossbow</name>
       <text>Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Light Crossbow|+6|1d8+3</attack>
+      <attack>Piercing Damage|+6|1d8+3</attack>
+      <attack>Poison Damage||7d6</attack>
     </action>
     <spells>thaumaturgy, darkness, hellish rebuke</spells>
     <description>Koris (lawful neutral, tiefling assassin), the crew's leader, works at one of the casino's card tables—a job she has held for about a month. She carries a potion of gaseous form, a tiny packet containing dust of disappearance, and a bag of holding.
@@ -2709,7 +2739,7 @@ Source:	Critical Role: Call of the Netherdeep p. 106</description>
 	• Cantrips (at will): light, sacred flame, thaumaturgy
 	• 1st level (4 slots): command, inflict wounds, shield of faith
 	• 2nd level (3 slots): hold person, spiritual weapon</text>
-      <attack>Spellcasting|+3|0</attack>
+      <attack>Spellcasting|+3|</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2718,7 +2748,7 @@ Source:	Critical Role: Call of the Netherdeep p. 106</description>
     <action>
       <name>Dagger</name>
       <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+4|1d4+2</attack>
+      <attack>Piercing Damage|+4|1d4+2</attack>
     </action>
     <slots>0,4,3</slots>
     <spells>light, sacred flame, thaumaturgy. command, inflict wounds, shield of faith. hold person, spiritual weapon</spells>
@@ -2770,12 +2800,12 @@ Source:	Critical Role: Call of the Netherdeep p. 112</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage, or radiant damage if the light devourer is radiating light (see Light Absorption).</text>
-      <attack>Bite|+7|5d6+4</attack>
+      <attack>Piercing Damage|+7|5d6+4</attack>
     </action>
     <action>
       <name>Radiant Discharge (Bonus Action)</name>
       <text>If the light devourer is radiating light (see Light Absorption), it releases the light stored in its body in a 20-foot-radius sphere centered on itself, then ceases to radiate light. Each creature in the sphere must make a DC 15 Constitution saving throw, taking 24 (7d6) radiant damage on a failed saving throw, or half as much damage on a successful one.</text>
-      <attack>Radiant Discharge||7d6</attack>
+      <attack>Radiant Damage||7d6</attack>
     </action>
     <description>The light devourer gets its name from its ability to absorb bright light, whether natural or magical, in its immediate environment. After doing so, the creature begins to glow, the spines lining its back and the numerous needle-like teeth in its maw burning brightly as it converts that stolen light into searing energy, which rips into its prey.
 	When not illuminated, the light devourer lurks in darkness, stalking the ocean depths for its next meal.
@@ -2821,12 +2851,12 @@ Source:	Critical Role: Call of the Netherdeep p. 200</description>
     <action>
       <name>Giant Maul</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage, and if the target is a creature, Maggie can force it to make a DC 14 Strength saving throw; on a failed save, the target is pushed 5 feet away from Maggie and knocked prone.</text>
-      <attack>Giant Maul|+6|2d8+4</attack>
+      <attack>Bludgeoning Damage|+6|2d8+4</attack>
     </action>
     <action>
       <name>Hammer Toss</name>
       <text>Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage, and if the target is a creature, Maggie can force it to make a DC 14 Strength saving throw; on a failed save, the target is pushed 5 feet away from Maggie and knocked prone.</text>
-      <attack>Hammer Toss|+6|2d4+4</attack>
+      <attack>Bludgeoning Damage|+6|2d4+4</attack>
     </action>
     <description>People might laugh when a 12-foot-tall ogre orders a drink at a bar and says her name is Maggie, but they don't laugh for long. Some people fixate on her name, her enormous size, her muscles, or the weapon at her side. Wiser folk take notice of Maggie's bright blue eyes. All her life, people have considered Maggie a stupid meathead because of her size, but her eyes betray her intelligence. She can read others with a glance, whether in conversation or in a duel. When her eyes dart back and forth across a battlefield, they take in enough information to give her allies an advantage in the fight.
 	Things changed for Maggie when she first arrived in Jigow and met Ayo Jabe three weeks ago. She came looking for mercenary work to make ends meet but found a true friend instead. Ayo saw the intelligence in Maggie's eyes and was keen to hear Maggie's thoughts. They became fast friends, and Maggie would sooner die than let harm come to her new companion.
@@ -2881,12 +2911,12 @@ Source:	Critical Role: Call of the Netherdeep p. 189</description>
     <action>
       <name>Giant Maul</name>
       <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.</text>
-      <attack>Giant Maul|+7|2d8+4</attack>
+      <attack>Bludgeoning Damage|+7|2d8+4</attack>
     </action>
     <action>
       <name>Hammer Toss</name>
       <text>Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.</text>
-      <attack>Hammer Toss|+7|2d4+4</attack>
+      <attack>Bludgeoning Damage|+7|2d4+4</attack>
     </action>
     <action>
       <name>Rally (1/Day) (Bonus Action)</name>
@@ -2950,12 +2980,12 @@ Source:	Critical Role: Call of the Netherdeep p. 191</description>
     <action>
       <name>Heavy Greataxe</name>
       <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d12 + 5) slashing damage.</text>
-      <attack>Heavy Greataxe|+8|2d12+5</attack>
+      <attack>Slashing Damage|+8|2d12+5</attack>
     </action>
     <action>
       <name>Hammer Toss</name>
       <text>Ranged Weapon Attack: +8 to hit, range 20/60 ft., one target. Hit: 15 (4d4 + 5) bludgeoning damage.</text>
-      <attack>Hammer Toss|+8|4d4+5</attack>
+      <attack>Bludgeoning Damage|+8|4d4+5</attack>
     </action>
     <action>
       <name>Rally (1/Day) (Bonus Action)</name>
@@ -3006,12 +3036,12 @@ Source:	Critical Role: Call of the Netherdeep p. 194</description>
     <trait>
       <name>Incorporeal Movement</name>
       <text>Marisa can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
-      <attack>Incorporeal Movement||1d10</attack>
+      <attack>Force Damage||1d10</attack>
     </trait>
     <action>
       <name>Withering Touch</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 17 (4d6 + 3) necrotic damage.</text>
-      <attack>Withering Touch|+5|4d6+3</attack>
+      <attack>Necrotic Damage|+5|4d6+3</attack>
     </action>
     <action>
       <name>Etherealness</name>
@@ -3020,7 +3050,7 @@ Source:	Critical Role: Call of the Netherdeep p. 194</description>
     <action>
       <name>Horrifying Visage</name>
       <text>Each non-undead creature within 60 feet of Marisa that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 × 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.</text>
-      <attack>Horrifying Visage||1d4x10</attack>
+      <attack>Years||1d4x10</attack>
     </action>
     <action>
       <name>Possession (Recharge 6)</name>
@@ -3068,12 +3098,12 @@ Source:	Critical Role: Call of the Netherdeep p. 150</description>
     <trait>
       <name>Incorporeal Movement</name>
       <text>Meri can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
-      <attack>Incorporeal Movement||1d10</attack>
+      <attack>Force Damage||1d10</attack>
     </trait>
     <action>
       <name>Withering Touch</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 17 (4d6 + 3) necrotic damage.</text>
-      <attack>Withering Touch|+5|4d6+3</attack>
+      <attack>Necrotic Damage|+5|4d6+3</attack>
     </action>
     <action>
       <name>Etherealness</name>
@@ -3082,7 +3112,7 @@ Source:	Critical Role: Call of the Netherdeep p. 150</description>
     <action>
       <name>Horrifying Visage</name>
       <text>Each non-undead creature within 60 feet of Meri that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 × 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.</text>
-      <attack>Horrifying Visage||1d4x10</attack>
+      <attack>Years||1d4x10</attack>
     </action>
     <action>
       <name>Possession (Recharge 6)</name>
@@ -3134,13 +3164,13 @@ Source:	Critical Role: Call of the Netherdeep p. 150</description>
     <action>
       <name>Force Strike</name>
       <text>Melee or Ranged Spell Attack: +10 to hit, reach 5 ft. or range 10 ft., one target. Hit: 17 (2d10 + 6) force damage.</text>
-      <attack>Force Strike|+10|2d10+6</attack>
+      <attack>Force Damage|+10|2d10+6</attack>
     </action>
     <action>
       <name>Brain Burn (Recharge 4-6)</name>
       <recharge>D4</recharge>
       <text>The high curator targets up to two creatures it can see within 30 feet of itself. Each target must make a DC 18 Constitution saving throw. On a failed saving throw, the target takes 28 (8d6) psychic damage and can't take reactions until the start of its next turn. On a successful save, the target takes half as much damage and suffers no other effect.</text>
-      <attack>Brain Burn||8d6</attack>
+      <attack>Psychic Damage||8d6</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -3204,7 +3234,7 @@ Source:	Critical Role: Call of the Netherdeep p. 201</description>
     <action>
       <name>Unarmed Strike</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) force damage.</text>
-      <attack>Unarmed Strike|+8|1d10+5</attack>
+      <attack>Force Damage|+8|1d10+5</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -3273,12 +3303,13 @@ Source:	Critical Role: Call of the Netherdeep p. 202</description>
     <action>
       <name>Unarmed Strike</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage.</text>
-      <attack>Unarmed Strike|+7|1d10+4</attack>
+      <attack>Bludgeoning Damage|+7|1d10+4</attack>
     </action>
     <action>
       <name>Cobalt Dart</name>
       <text>Ranged Weapon Attack: +7 to hit, range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 3 (1d6) force damage.</text>
-      <attack>Cobalt Dart|+7|1d4+4</attack>
+      <attack>Cobalt Dart|+7|(1d4+4)+(1d6)</attack>
+      <attack>Piercing Damage|+7|1d4+4</attack>
       <attack>Force Damage||1d6</attack>
     </action>
     <reaction>
@@ -3339,7 +3370,7 @@ Source:	Critical Role: Call of the Netherdeep p. 202</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 22 (3d10 + 6) piercing damage. If the shark misses, it can use a bonus action to swim up to 25 feet. This movement doesn't provoke opportunity attacks.</text>
-      <attack>Bite|+9|3d10+6</attack>
+      <attack>Piercing Damage|+9|3d10+6</attack>
     </action>
     <description>The silver spear lodged in the shark's hide has been enchanted by the divine power of Sehanine the Moon Weaver.
 
@@ -3379,7 +3410,7 @@ Source:	Critical Role: Call of the Netherdeep p. 33</description>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (4d4 + 4) slashing damage.</text>
-      <attack>Claw|+6|4d4+4</attack>
+      <attack>Slashing Damage|+6|4d4+4</attack>
     </action>
     <description>Moorbounders:
 Predators that stalk the marshlands and muddy foothills of Xhorhas, moorbounders are regarded as dangerous killers by those who try to avoid them on their travels- and as prized mounts by those willing to capture and train them. Though the process of domesticating a moorbounder is fraught with peril, these creatures can become favored hunting companions and powerful war mounts.
@@ -3424,7 +3455,7 @@ Source:	Critical Role: Call of the Netherdeep p. 203</description>
     <action>
       <name>Crimson Bolt</name>
       <text>Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 60 ft., one creature. Hit: 20 (3d10 + 4) psychic damage.</text>
-      <attack>Crimson Bolt|+7|3d10+4</attack>
+      <attack>Psychic Damage|+7|3d10+4</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -3436,6 +3467,7 @@ Source:	Critical Role: Call of the Netherdeep p. 203</description>
     <reaction>
       <name>Reflect Agony</name>
       <text>When the extollant is damaged by a creature within 60 feet of it, the creature must make a DC 15 Wisdom saving throw, taking 16 (3d10) psychic damage on a failed saving throw, or half as much damage on a successful one.</text>
+      <attack>Psychic Damage||3d10</attack>
     </reaction>
     <spells>minor illusion, mage armor, major image, phantasmal force</spells>
     <description>Occult extollants delve deep into ancient legends and seek to solve mysteries that have led other investigators to their doom, driven by an unquenchable yearning to know the unknown.
@@ -3479,14 +3511,15 @@ Source:	Critical Role: Call of the Netherdeep p. 204</description>
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 7 (2d6) psychic damage.</text>
-      <attack>Shortsword|+4|1d6+2</attack>
+      <attack>Shortsword|+4|(1d6+2)+(2d6)</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
       <attack>Psychic Damage||2d6</attack>
     </action>
     <action>
       <name>Arcane Blast (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The initiate creates an explosion of magical force in a 20-foot-radius sphere centered on a point it can see within 120 feet of itself. Each creature in that area must make a DC 13 Dexterity saving throw. On a failed saving throw, the creature takes 10 (3d6) force damage and is pushed 10 feet away from the center of the area. On a successful save, it takes half as much damage and isn't pushed.</text>
-      <attack>Arcane Blast||3d6</attack>
+      <attack>Force Damage||3d6</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -3545,7 +3578,7 @@ Source:	Critical Role: Call of the Netherdeep p. 205</description>
     <action>
       <name>Crimson Bolt</name>
       <text>Melee or Ranged Spell Attack: +8 to hit, reach 5 ft. or range 60 ft., one creature. Hit: 27 (4d10 + 5) psychic damage.</text>
-      <attack>Crimson Bolt|+8|4d10+5</attack>
+      <attack>Psychic Damage|+8|4d10+5</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -3618,12 +3651,12 @@ Source:	Critical Role: Call of the Netherdeep p. 205</description>
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
-      <attack>Shortsword|+4|1d6+2</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Longbow</name>
       <text>Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
-      <attack>Longbow|+4|1d8+2</attack>
+      <attack>Piercing Damage|+4|1d8+2</attack>
     </action>
     <description>Olara speaks an ancient dialect that formed the basis for both Elvish and Orc, and any character who speaks and understands either of those languages can converse with her. This is a trait she shares with some of the ghosts of her kinfolk that still haunt the ruins of Cael Morrow, but Olara is no ghost; she is one of the few mortals who survived Gruumsh's attack centuries ago. She subsists on the kelp growing throughout the Drowned City.
 
@@ -3683,7 +3716,8 @@ Source:	Critical Role: Call of the Netherdeep p. 129</description>
     <action>
       <name>Mace</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 18 (4d8) radiant damage.</text>
-      <attack>Mace|+8|1d6+4</attack>
+      <attack>Mace|+8|(1d6+4)+(4d8)</attack>
+      <attack>Bludgeoning Damage|+8|1d6+4</attack>
       <attack>Radiant Damage||4d8</attack>
     </action>
     <action>
@@ -3742,7 +3776,7 @@ Source:	Critical Role: Call of the Netherdeep p. 129</description>
     <action>
       <name>Arcane Shock</name>
       <text>Melee or Ranged Spell Attack: +5 to hit, reach 5 ft. or range 30 ft., one target. Hit: 14 (2d10 + 3) lightning damage. If the target is a creature, it can't take reactions until the start of its next turn.</text>
-      <attack>Arcane Shock|+5|2d10+3</attack>
+      <attack>Lightning Damage|+5|2d10+3</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -3794,13 +3828,15 @@ Source:	Critical Role: Call of the Netherdeep p. 129</description>
     <action>
       <name>Gore</name>
       <text>Melee Weapon Attack: +10 to hit (with advantage if the target is a creature missing any hit points), reach 10 ft., one target. Hit: 25 (4d8 + 7) piercing damage plus 7 (2d6) psychic damage.</text>
-      <attack>Gore|+10|4d8+7</attack>
+      <attack>Gore|+10|(4d8+7)+(2d6)</attack>
+      <attack>Piercing Damage|+10|4d8+7</attack>
       <attack>Psychic Damage||2d6</attack>
     </action>
     <action>
       <name>Stomp</name>
       <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one prone creature. Hit: 29 (4d10 + 7) bludgeoning damage plus 7 (2d6) psychic damage.</text>
-      <attack>Stomp|+10|4d10+7</attack>
+      <attack>Stomp|+10|(4d10+7)+(2d6)</attack>
+      <attack>Bludgeoning Damage|+10|4d10+7</attack>
       <attack>Psychic Damage||2d6</attack>
     </action>
     <description>Unknown to anyone who has come into contact with it, the elephant figurine was infected with ruidium during its time in Cael Morrow, and that substance has warped its magical properties.
@@ -3841,7 +3877,7 @@ Source:	Critical Role: Call of the Netherdeep p. 95</description>
     <action>
       <name>Arcane Shock</name>
       <text>Melee or Ranged Spell Attack: +5 to hit, reach 5 ft. or range 30 ft., one target. Hit: 14 (2d10 + 3) lightning damage. If the target is a creature, it can't take reactions until the start of its next turn.</text>
-      <attack>Arcane Shock|+5|2d10+3</attack>
+      <attack>Lightning Damage|+5|2d10+3</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -3903,7 +3939,7 @@ Source:	Critical Role: Call of the Netherdeep p. 206</description>
     <action>
       <name>Thunderous Warhammer</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) thunder damage.</text>
-      <attack>Thunderous Warhammer|+4|1d10+2</attack>
+      <attack>Thunder Damage|+4|1d10+2</attack>
     </action>
     <action>
       <name>Telekinetic Toss (Recharge 5-6) (Bonus Action)</name>
@@ -3954,12 +3990,13 @@ Source:	Critical Role: Call of the Netherdeep p. 206</description>
     <action>
       <name>Arcane Shock</name>
       <text>Melee or Ranged Spell Attack: +7 to hit, reach 5 ft. or range 60 ft., one target. Hit: 26 (4d10 + 4) lightning damage. If the target is a creature, it can't take reactions until the start of its next turn.</text>
-      <attack>Arcane Shock|+7|4d10+4</attack>
+      <attack>Lightning Damage|+7|4d10+4</attack>
     </action>
     <action>
       <name>Dagger of the Poisoned Mind</name>
       <text>Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 10 (3d6) psychic damage. If the target is a creature, it must succeed on a DC 15 Wisdom saving throw or be frightened until the end of its next turn.</text>
-      <attack>Dagger of the Poisoned Mind|+7|1d4+4</attack>
+      <attack>Dagger of the Poisoned Mind|+7|(1d4+4)+(3d6)</attack>
+      <attack>Piercing Damage|+7|1d4+4</attack>
       <attack>Psychic Damage||3d6</attack>
     </action>
     <action>
@@ -4014,7 +4051,7 @@ Source:	Critical Role: Call of the Netherdeep p. 207</description>
     <action>
       <name>Arcane Shock</name>
       <text>Melee or Ranged Spell Attack: +5 to hit, reach 5 ft. or range 30 ft., one target. Hit: 14 (2d10 + 3) lightning damage. If the target is a creature, it can't take reactions until the start of its next turn.</text>
-      <attack>Arcane Shock|+5|2d10+3</attack>
+      <attack>Lightning Damage|+5|2d10+3</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -4074,13 +4111,13 @@ Source:	Critical Role: Call of the Netherdeep p. 207</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 10 (2d6 + 3) piercing damage, or 17 (4d6 + 3) piercing damage if the serpentmaw had advantage on the attack roll.</text>
-      <attack>Bite|+5|2d6+3</attack>
-      <attack>Bite (With Advantage)|+5|4d6+3</attack>
+      <attack>Piercing Damage|+5|2d6+3</attack>
+      <attack>Piercing Damage (With Advantage)|+5|4d6+3</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.</text>
-      <attack>Claw|+5|1d8+3</attack>
+      <attack>Slashing Damage|+5|1d8+3</attack>
     </action>
     <description>A scuttling serpentmaw looks like an unusually large crab with a sleek black shell. It lurks in crevasses and deep underwater canyons. Once spotted, it scuttles toward its prey and reveals its most formidable feature: an armored maw concealed on the back of its shell. This serpentine appendage can extend out from the shell to tear into prey.
 	Though they inhabit water, serpentmaws can't swim. They move along the sea floor in small mobs, working together to tear apart much larger creatures they come across.
@@ -4120,7 +4157,7 @@ Source:	Critical Role: Call of the Netherdeep p. 208</description>
     <action>
       <name>Club</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
-      <attack>Club|+2|1d4</attack>
+      <attack>Bludgeoning Damage|+2|1d4</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -4128,7 +4165,7 @@ Source:	Critical Role: Call of the Netherdeep p. 208</description>
 
 	• At will: chill touch
 	• 1/Day each: blindness/deafness, ray of sickness</text>
-      <attack>Spellcasting|+2|0</attack>
+      <attack>Spellcasting|+2|</attack>
     </action>
     <spells>chill touch, blindness/deafness, ray of sickness</spells>
     <description>A shy, anxious 15-year-old human with innate spellcasting ability. Fearing for the safety of those around her as she learns to control her powers, Shira has taken to using the shrine to the Wild Mother in the Sigil District as a nighttime hiding place. She mimics the behavior of a spirit to frighten away others. Shira uses her spells to drive away intruders.
@@ -4167,7 +4204,7 @@ Source:	Critical Role: Call of the Netherdeep p. 105</description>
     <trait>
       <name>Death Burst</name>
       <text>When the bloodfin dies, it explodes in a cloud of toxic blood. Each creature in a 10-foot-radius sphere centered on the exploding bloodfin, including any creature swallowed by the bloodfin, must succeed on a DC 15 Constitution saving throw or take 10 (3d6) poison damage. A creature inside the bloodfin when it explodes falls prone in the space formerly occupied by the bloodfin and is no longer blinded or restrained by it.</text>
-      <attack>Death Burst||3d6</attack>
+      <attack>Poison Damage||3d6</attack>
     </trait>
     <trait>
       <name>Unusual Nature</name>
@@ -4180,18 +4217,18 @@ Source:	Critical Role: Call of the Netherdeep p. 105</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +9 to hit (with advantage if the target is a creature missing any hit points), reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage, and if the target is a creature, it is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the bloodfin can't bite another target.</text>
-      <attack>Bite|+9|2d8+5</attack>
+      <attack>Piercing Damage|+9|2d8+5</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +9 to hit (with advantage if the target is a creature missing any hit points), reach 10 ft., one target. Hit: 19 (4d6 + 5) bludgeoning damage.</text>
-      <attack>Tail|+9|4d6+5</attack>
+      <attack>Bludgeoning Damage|+9|4d6+5</attack>
     </action>
     <action>
       <name>Swallow (Bonus Action)</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one Medium or smaller creature the bloodfin is grappling. Hit: The bloodfin swallows the target. The swallowed creature is no longer grappled but is blinded and restrained. It has total cover against attacks and other effects outside the bloodfin, it takes 14 (4d6) necrotic damage at the start of each of its turns, and the bloodfin regains hit points equal to the necrotic damage dealt. A bloodfin can have only one creature swallowed at a time.
 	If the bloodfin takes 30 damage or more on a single turn from the swallowed creature, the bloodfin must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 5 feet of the bloodfin and is no longer blinded or restrained by it.</text>
-      <attack>Swallow|+9|4d6</attack>
+      <attack>Necrotic Damage|+9|4d6</attack>
     </action>
     <description>Covered in vicious-looking crimson spines and sleek scales, the slithering bloodfin flashes through the lightless waters of the Netherdeep. As it swims closer, its toothed maw comes into view—just before it unhinges its jaw, clamps down on its prey, and swallows it whole.
 	A slithering bloodfin looks like a giant eel with a head like a shark's. It magically siphons life energy from swallowed prey and uses that energy to repair damage to its own body.
@@ -4231,7 +4268,7 @@ Source:	Critical Role: Call of the Netherdeep p. 159</description>
     <trait>
       <name>Death Burst</name>
       <text>When the bloodfin dies, it explodes in a cloud of toxic blood. Each creature in a 10-foot-radius sphere centered on the exploding bloodfin, including any creature swallowed by the bloodfin, must succeed on a DC 15 Constitution saving throw or take 10 (3d6) poison damage. A creature inside the bloodfin when it explodes falls prone in the space formerly occupied by the bloodfin and is no longer blinded or restrained by it.</text>
-      <attack>Death Burst||3d6</attack>
+      <attack>Poison Damage||3d6</attack>
     </trait>
     <trait>
       <name>Water Breathing</name>
@@ -4244,18 +4281,18 @@ Source:	Critical Role: Call of the Netherdeep p. 159</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +9 to hit (with advantage if the target is a creature missing any hit points), reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage, and if the target is a creature, it is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the bloodfin can't bite another target.</text>
-      <attack>Bite|+9|2d8+5</attack>
+      <attack>Piercing Damage|+9|2d8+5</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +9 to hit (with advantage if the target is a creature missing any hit points), reach 10 ft., one target. Hit: 19 (4d6 + 5) bludgeoning damage.</text>
-      <attack>Tail|+9|4d6+5</attack>
+      <attack>Bludgeoning Damage|+9|4d6+5</attack>
     </action>
     <action>
       <name>Swallow (Bonus Action)</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one Medium or smaller creature the bloodfin is grappling. Hit: The bloodfin swallows the target. The swallowed creature is no longer grappled but is blinded and restrained. It has total cover against attacks and other effects outside the bloodfin, it takes 14 (4d6) necrotic damage at the start of each of its turns, and the bloodfin regains hit points equal to the necrotic damage dealt. A bloodfin can have only one creature swallowed at a time.
 	If the bloodfin takes 30 damage or more on a single turn from the swallowed creature, the bloodfin must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 5 feet of the bloodfin and is no longer blinded or restrained by it.</text>
-      <attack>Swallow|+9|4d6</attack>
+      <attack>Necrotic Damage|+9|4d6</attack>
     </action>
     <description>Covered in vicious-looking crimson spines and sleek scales, the slithering bloodfin flashes through the lightless waters of the Netherdeep. As it swims closer, its toothed maw comes into view- just before it unhinges its jaw, clamps down on its prey, and swallows it whole.
 	A slithering bloodfin looks like a giant eel with a head like a shark's. It magically siphons life energy from swallowed prey and uses that energy to repair damage to its own body.
@@ -4303,10 +4340,12 @@ Source:	Critical Role: Call of the Netherdeep p. 209</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</text>
-      <attack>Bite|+5|1</attack>
+      <attack>Piercing Damage|+5|1</attack>
     </action>
     <description>Sorrowfish dwell in deep underwater trenches and thus are rarely encountered by surface-dwelling creatures. Some say sorrowfish get their name from their flavor, which is distasteful enough to put the creatures that eat them in a dismal mood. The true sorrow for other creatures comes when the sorrowfish gather in swarms. The malevolent presences that lurk in the abysses of the ocean exert their influence on these fish, transforming their swarms into vicious hordes.
-	A single sorrowfish has the game statistics of a quipper (see the Monster Manual), except that it is an Aberration that has immunity to psychic damage. Source:	Critical Role: Call of the Netherdeep p. 210</description>
+	A single sorrowfish has the game statistics of a quipper (see the Monster Manual), except that it is an Aberration that has immunity to psychic damage.
+
+Source:	Critical Role: Call of the Netherdeep p. 210</description>
     <environment/>
   </monster>
   <monster>
@@ -4354,20 +4393,22 @@ Source:	Critical Role: Call of the Netherdeep p. 209</description>
     <action>
       <name>Swarm of Bites</name>
       <text>Melee Weapon Attack: +8 to hit, reach 0 ft., one target in the swarm's space. Hit: 21 (6d6) piercing damage, or 10 (3d6) piercing damage if the swarm has half its hit points or fewer.</text>
-      <attack>Swarm of Bites|+8|6d6</attack>
-      <attack>Swarm of Bites (Half Swarm)||3d6</attack>
+      <attack>Piercing Damage|+8|6d6</attack>
+      <attack>Piercing Damage (Half Swarm)|+8|3d6</attack>
     </action>
     <action>
       <name>Desolate Drain (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>Each creature in the swarm's space must make a DC 13 Wisdom saving throw. On a failed saving throw, a creature takes 24 (7d6) psychic damage and is stunned until the end of its next turn. The effect ends on a creature if the swarm moves out of the creature's space or if another creature within 5 feet of the swarm uses an action to make a DC 14 Strength check, pulling the affected creature out of the swarm on a successful check. On a successful saving throw, a creature takes half as much damage and suffers no other effects.</text>
-      <attack>Desolate Drain||7d6</attack>
+      <attack>Psychic Damage||7d6</attack>
     </action>
     <description>A swarm of sorrowfish attacks out of hunger. Although sorrowfish have no sense of fear, they often adopt the tactic of lurking among the petrifying tendrils of a death embrace (described earlier in this appendix), using the tendrils for protection against other predators.
 
 Sorrowfish:
 Sorrowfish dwell in deep underwater trenches and thus are rarely encountered by surface-dwelling creatures. Some say sorrowfish get their name from their flavor, which is distasteful enough to put the creatures that eat them in a dismal mood. The true sorrow for other creatures comes when the sorrowfish gather in swarms. The malevolent presences that lurk in the abysses of the ocean exert their influence on these fish, transforming their swarms into vicious hordes.
-	A single sorrowfish has the game statistics of a quipper (see the Monster Manual), except that it is an Aberration that has immunity to psychic damage. Source:	Critical Role: Call of the Netherdeep p. 210</description>
+	A single sorrowfish has the game statistics of a quipper (see the Monster Manual), except that it is an Aberration that has immunity to psychic damage.
+
+Source:	Critical Role: Call of the Netherdeep p. 210</description>
     <environment/>
   </monster>
   <monster>
@@ -4415,12 +4456,13 @@ Sorrowfish dwell in deep underwater trenches and thus are rarely encountered by 
     <action>
       <name>Glaive</name>
       <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) slashing damage.</text>
-      <attack>Glaive|+7|1d10+4</attack>
+      <attack>Slashing Damage|+7|1d10+4</attack>
     </action>
     <action>
       <name>Hand Crossbow</name>
       <text>Ranged Weapon Attack: +7 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 22 (4d10) poison damage.</text>
-      <attack>Hand Crossbow|+7|1d6+2</attack>
+      <attack>Hand Crossbow|+7|(1d6+2)+(4d10)</attack>
+      <attack>Piercing Damage|+7|1d6+2</attack>
       <attack>Poison Damage||4d10</attack>
     </action>
     <action>
@@ -4491,7 +4533,7 @@ Source:	Critical Role: Call of the Netherdeep p. 51</description>
     <action>
       <name>Thunderous Warhammer</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) thunder damage.</text>
-      <attack>Thunderous Warhammer|+4|1d10+2</attack>
+      <attack>Thunder Damage|+4|1d10+2</attack>
     </action>
     <action>
       <name>Telekinetic Toss (Recharge 5-6) (Bonus Action)</name>
@@ -4537,7 +4579,7 @@ Source:	Critical Role: Call of the Netherdeep p. 51</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</text>
-      <attack>Bite|+7|4d6+4</attack>
+      <attack>Piercing Damage|+7|4d6+4</attack>
     </action>
     <description>Source:	Critical Role: Call of the Netherdeep p. 26</description>
     <environment/>
