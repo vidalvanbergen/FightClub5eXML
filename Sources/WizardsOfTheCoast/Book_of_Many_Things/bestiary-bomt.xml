@@ -49,7 +49,7 @@
     <action>
       <name>Fist</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.</text>
-      <attack>Fist|+7|2d6+4</attack>
+      <attack>Bludgeoning Damage|+7|2d6+4</attack>
     </action>
     <action>
       <name>Detention Orb</name>
@@ -109,7 +109,8 @@ Source:	The Book of Many Things p. 135</description>
     <action>
       <name>Poison Blade</name>
       <text>Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 60 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 5 (1d10) poison damage.</text>
-      <attack>Poison Blade|+7|1d4+4</attack>
+      <attack>Poison Blade|+7|(1d4+4)+(1d10)</attack>
+      <attack>Piercing Damage|+7|1d4+4</attack>
       <attack>Poison Damage||1d10</attack>
     </action>
     <reaction>
@@ -132,7 +133,7 @@ Source:	The Book of Many Things p. 135</description>
     <legendary>
       <name>Vanishing Escape (Costs 3 Actions)</name>
       <text>The assassin creates a sudden distraction, such as a cloud of disorienting smoke or flash of dazzling light, filling a 10-foot cube within 5 feet of the assassin. Each creature of the assassin's choice in that area takes 9 (2d8) psychic damage, and the assassin has the invisible condition. This invisibility lasts until the end of the assassin's next turn.</text>
-      <attack>Vanishing Escape||2d8</attack>
+      <attack>Psychic Damage||2d8</attack>
     </legendary>
     <legendary category="lair">
       <name>The Rogue's Lair</name>
@@ -148,7 +149,6 @@ Ambitious Assassin: Challenge 6 (2,300 XP)</text>
 	• Distraction: A shrill sound fi1ls the lair. Creatures that can hear it must succeed on a DC is Constitution saving throw or lose concentration.
 
 	• Snares: Hidden snares target up to three creatures the villain can see in the lair. Each creature must succeed on a DC 15 Strength saving throw or have the grappled condition (escape DC 15) and the restrained condition until it escapes or the snare holding it is destroyed. Each snare has AC 11, 10 hit points, and immunity to poison and psychic damage. 	• Traps: Traps target up to two creatures the villain can see in the lair. Each target must succeed on a DC 15 Dexterity saving throw or be struck by a trap. The villain rolls a number of d6s equal to its proficiency bonus, and struck targets take damage equal to the total. The damage is bludgeoning, piercing, slashing, fire, or poison, chosen by the villain when the villain uses this action.</text>
-      <attack>Traps||1d6</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -157,7 +157,7 @@ Ambitious Assassin: Challenge 6 (2,300 XP)</text>
 	• Corruption Abounds: While within 3 miles of the lair, creatures that aren't members of the villain's organization have disadvantage on ability checks that rely on the Insight, Perception, and Persuasion skills.
 
 	• Potent Toxins: When members of the villain's organization deal poison damage while within 3 miles of the lair, they ignore the target's resistance to poison damage. If the villain dies, these effects fade over the course of 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>Appropriate for tier 1 play (levels 1 to 4), the ambitious assassin is a Humanoid who might be a charming manipulator or a ruthless killer.
 
@@ -209,7 +209,7 @@ Source:	The Book of Many Things p. 45</description>
     <action>
       <name>Slam</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.</text>
-      <attack>Slam|+4|1d6+2</attack>
+      <attack>Bludgeoning Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Detention Orb</name>
@@ -259,8 +259,8 @@ Source:	The Book of Many Things p. 45</description>
     <action>
       <name>Spear</name>
       <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.</text>
-      <attack>Spear|+3|1d6+1</attack>
-      <attack>Spear (Two-Handed)|+3|1d8+1</attack>
+      <attack>Piercing Damage|+3|1d6+1</attack>
+      <attack>Piercing Damage (Two-Handed)|+3|1d8+1</attack>
     </action>
     <description>Aspirants aren't yet initiated into the mysteries of the Heralds of the Comet, but they are firmly in the group's clutches, both socially and metaphysically. If an aspirant is killed, the hapless individual is drawn into the Void and devoured, body and soul.
 
@@ -316,13 +316,14 @@ Source:	The Book of Many Things p. 91</description>
     <action>
       <name>Radiant Blade</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) slashing damage plus 13 (3d8) radiant damage.</text>
-      <attack>Radiant Blade|+11|1d8+5</attack>
+      <attack>Radiant Blade|+11|(1d8+5)+(3d8)</attack>
+      <attack>Slashing Damage|+11|1d8+5</attack>
       <attack>Radiant Damage||3d8</attack>
     </action>
     <action>
       <name>Bursting Benediction</name>
       <text>Asteria causes a burst of magical energy to envelop one creature she can see within 60 feet of herself. The target must make a DC 19 Dexterity saving throw, taking 40 (9d8) force damage on a failed save, or half as much damage on a successful one. Asteria or another creature that she can see within 60 feet of herself then regains 10 hit points.</text>
-      <attack>Bursting Benediction||9d8</attack>
+      <attack>Force Damage||9d8</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -409,19 +410,20 @@ Source:	The Book of Many Things p. 188</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 21 (2d12 + 8) slashing damage plus 9 (2d8) fire damage.</text>
-      <attack>Bite|+15|2d12+8</attack>
+      <attack>Bite|+15|(2d12+8)+(2d8)</attack>
+      <attack>Slashing Damage|+15|2d12+8</attack>
       <attack>Fire Damage||2d8</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.</text>
-      <attack>Tail|+15|2d8+8</attack>
+      <attack>Bludgeoning Damage|+15|2d8+8</attack>
     </action>
     <action>
       <name>Mucus Spray (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>Aurnozci sprays mucus in a 60-foot cone. Each creature in that cone must make a DC 20 Dexterity saving throw, taking 42 (12d6) acid damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Mucus Spray||12d6</attack>
+      <attack>Acid Damage||12d6</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -450,7 +452,7 @@ Source:	The Book of Many Things p. 188</description>
     <legendary>
       <name>Conflagration (Costs 2 Actions)</name>
       <text>Flames momentarily surround Aurnozci. Each creature within 15 feet of Aurnozci must make a DC 20 Dexterity saving throw, taking 18 (4d8) fire damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Conflagration||4d8</attack>
+      <attack>Fire Damage||4d8</attack>
     </legendary>
     <legendary category="lair">
       <name>Aurnozci's Lair
@@ -466,8 +468,9 @@ Aurnozci's lair is a layer of the Abyss called Xulregg</name>
 	• Cocoon: Aurnozci targets one Medium or smaller creature it can see within 60 feet of itself and encases the creature in a constricting cocoon. The target must succeed on a DC 23 Strength saving throw or have the restrained condition for 1 minute. A target that starts its turn restrained in this way takes 9 (2d8) bludgeoning damage. A creature can use its action to try to tear apart the cocoon, ending the cocoon's effect with a successful DC 23 Strength (Athletics) check.
 
 	• Insect Swarm: Aurnozci creates a 30-foot-radius sphere of stinging wasps centered on a point within 300 feet of itself. The sphere spreads around corners. The sphere remains for 10 minutes or until Aurnozci uses this lair action again. The sphere's area is heavily obscured and is difficult terrain. When the sphere appears, each creature in it must make a DC 20 Constitution saving throw, taking 16 (3d10) piercing damage and 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the sphere's area for the first time on a turn or starts its turn there.</text>
-      <attack>Cocoon||2d8</attack>
-      <attack>Insect Swarm||3d10</attack>
+      <attack>Bludgeoning Damage||2d8</attack>
+      <attack>Piercing Damage||3d10</attack>
+      <attack>Poison Damage||3d10</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -476,9 +479,9 @@ Aurnozci's lair is a layer of the Abyss called Xulregg</name>
 	• Boiling Water: Bodies of water on Xulregg perpetually boil, and even bottled liquids steam when exposed to the layer's atmosphere. Being immersed in water there doesn't confer resistance to fire damage, and a creature that starts its turn in water takes 7 (2d6) fire damage. A creature that imbibes a liquid (such as a potion) takes 3 (1d6) fire damage. 	• Fast Metamorphosis: On Xulregg, eggs, larvae, and pupae all develop and metamorphose at ten times their usual rate, regardless of sustenance or any other growing conditions.
 
 If Aurnozci dies, these effects fade over the course of 1d10 days.</text>
-      <attack>Boiling Water||2d6</attack>
+      <attack>Fire Damage||2d6</attack>
       <attack>Fire Damage||1d6</attack>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <spells>detect magic, heat metal, darkness, dispel magic, hold person</spells>
     <description>The demon lord Aurnozci is a wormlike horror of fiery flesh and toxic seepage. In its present form, Aurnozci can't leave Xulregg, the Abyssal layer that's both its fiefdom and its prison. It lairs within a grotesque hive dangling from a mountain-size tree of tar and flame called Gorewood.
@@ -532,17 +535,17 @@ Source:	The Book of Many Things p. 167</description>
     <action>
       <name>Bite (Wolf or Hybrid Form Only)</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 26 (5d8 + 4) piercing damage. If the target is a Humanoid, it must succeed on a DC 15 Constitution saving throw or be cursed with lycanthropy. While cursed in this way, the target retains its alignment, languages, and equipment but otherwise uses the werewolf stat block, excluding actions that require equipment the target doesn't have. During any night when there's a full moon in the sky, the target becomes an NPC under the DM's control and remains so until the night ends. A Remove Curse spell or similar magic ends this curse.</text>
-      <attack>Bite|+8|5d8+4</attack>
+      <attack>Piercing Damage|+8|5d8+4</attack>
     </action>
     <action>
       <name>Claw (Wolf or Hybrid Form Only)</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or have the prone condition.</text>
-      <attack>Claw|+8|5d6+4</attack>
+      <attack>Piercing Damage|+8|5d6+4</attack>
     </action>
     <action>
       <name>Magic Longsword (Humanoid or Hybrid Form Only)</name>
       <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 28 (4d10 + 6) slashing damage.</text>
-      <attack>Magic Longsword|+10|4d10+6</attack>
+      <attack>Slashing Damage|+10|4d10+6</attack>
     </action>
     <action>
       <name>Change Shape (Bonus Action)</name>
@@ -608,18 +611,20 @@ Source:	The Book of Many Things p. 82</description>
     <action>
       <name>Bite (Rat or Hybrid Form Only)</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 26 (5d8 + 4) piercing damage. If the target is a Humanoid, it must succeed on a DC 14 Constitution saving throw or be cursed with lycanthropy. While cursed in this way, the target retains its alignment, languages, and equipment but otherwise uses the wererat stat block, excluding actions that require equipment the target doesn't have. During any night when there's a full moon in the sky, the target becomes an NPC under the DM's control and remains so until the night ends. A Remove Curse spell or similar magic ends this curse.</text>
-      <attack>Bite|+8|5d8+4</attack>
+      <attack>Piercing Damage|+8|5d8+4</attack>
     </action>
     <action>
       <name>Shortsword (Humanoid or Hybrid Form Only)</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 10 (3d6) poison damage.</text>
-      <attack>Shortsword|+8|2d6+4</attack>
+      <attack>Shortsword|+8|(2d6+4)+(3d6)</attack>
+      <attack>Piercing Damage|+8|2d6+4</attack>
       <attack>Poison Damage||3d6</attack>
     </action>
     <action>
       <name>Hand Crossbow (Humanoid or Hybrid Form Only)</name>
       <text>Ranged Weapon Attack: +8 to hit, range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 10 (3d6) poison damage.</text>
-      <attack>Hand Crossbow|+8|2d6+4</attack>
+      <attack>Hand Crossbow|+8|(2d6+4)+(3d6)</attack>
+      <attack>Piercing Damage|+8|2d6+4</attack>
       <attack>Poison Damage||3d6</attack>
     </action>
     <action>
@@ -668,7 +673,7 @@ Source:	The Book of Many Things p. 83</description>
     <trait>
       <name>Incorporeal Movement</name>
       <text>The breath drinker can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
-      <attack>Incorporeal Movement||1d10</attack>
+      <attack>Force Damage||1d10</attack>
     </trait>
     <trait>
       <name>Radiant Absorption</name>
@@ -681,12 +686,12 @@ Source:	The Book of Many Things p. 83</description>
     <action>
       <name>Enervating Claw</name>
       <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one creature. Hit: 12 (2d6 + 5) necrotic damage, and if the target is Large or smaller, it has the grappled condition (escape DC 18). The target must succeed on a DC 18 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</text>
-      <attack>Enervating Claw|+10|2d6+5</attack>
+      <attack>Necrotic Damage|+10|2d6+5</attack>
     </action>
     <action>
       <name>Drink Breath</name>
       <text>The breath drinker targets a creature that has the incapacitated condition or that the breath drinker is grappling and that isn't a Construct or an Undead. The target must make a DC 18 Charisma saving throw. On a failed save, the target takes 36 (8d8) necrotic damage, and its Charisma score is reduced by 1d6. This reduction lasts until the target finishes a short or long rest. If this reduces the target's Charisma to 0, the target dies. Until the breath drinker dies, the dead target can't be returned to life by any means short of divine intervention. On a successful save, the target takes half as much necrotic damage only. On a successful or failed save, the breath drinker regains a number of hit points equal to the necrotic damage dealt.</text>
-      <attack>Drink Breath||8d8</attack>
+      <attack>Necrotic Damage||8d8</attack>
       <attack>Charisma Reduction||1d6</attack>
     </action>
     <action>
@@ -746,13 +751,15 @@ Source:	The Book of Many Things p. 154</description>
     <action>
       <name>Eldritch Blast</name>
       <text>Ranged Spell Attack: +5 to hit, range 120 ft., one target. Hit: 8 (1d10 + 3) force damage.</text>
-      <attack>Eldritch Blast|+5|1d10+3</attack>
+      <attack>Force Damage|+5|1d10+3</attack>
     </action>
     <action>
       <name>Gore</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 4 (1d8) necrotic damage. If Brusipha moved at least 10 feet straight toward the target immediately before she hit, the target takes an extra 4 (1d8) piercing damage, and if the target is a creature, it must succeed on a DC 15 Strength saving throw or be pushed up to 10 feet from Brusipha and have the prone condition.</text>
-      <attack>Gore|+6|1d8+4</attack>
+      <attack>Gore|+6|(1d8+4)+(1d8)</attack>
+      <attack>Piercing Damage|+6|1d8+4</attack>
       <attack>Necrotic Damage||1d8</attack>
+      <attack>Piercing Damage||1d8</attack>
     </action>
     <action>
       <name>Incite the Hunters (Recharges after a Short or Long Rest)</name>
@@ -830,12 +837,12 @@ Source:	The Book of Many Things p. 154</description>
     <action>
       <name>Paper Cut</name>
       <text>Melee Weapon Attack: PB + 3 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.</text>
-      <attack>Paper Cut|+3|1d8+3</attack>
+      <attack>Slashing Damage|+3|1d8+3</attack>
     </action>
     <action>
       <name>Reckless Strike (Berserker Form Only)</name>
       <text>Melee Weapon Attack: PB + 3 to hit (with advantage), reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage, and attacks made against the deck defender until the start of its next turn have advantage.</text>
-      <attack>Reckless Strike|+3|2d6+3</attack>
+      <attack>Slashing Damage|+3|2d6+3</attack>
     </action>
     <action>
       <name>Swift Step (Acrobat Form Only) (Bonus Action)</name>
@@ -898,7 +905,8 @@ Source:	The Book of Many Things p. 71</description>
     <action>
       <name>Poison Blade</name>
       <text>Melee or Ranged Weapon Attack: +9 to hit, reach 5 ft. or range 60 ft., one target. Hit: 7 (1d4 + 5) piercing damage plus 11 (2d10) poison damage.</text>
-      <attack>Poison Blade|+9|1d4+5</attack>
+      <attack>Poison Blade|+9|(1d4+5)+(2d10)</attack>
+      <attack>Piercing Damage|+9|1d4+5</attack>
       <attack>Poison Damage||2d10</attack>
     </action>
     <action>
@@ -925,7 +933,7 @@ Source:	The Book of Many Things p. 71</description>
     <legendary>
       <name>Misdirecting Escape (Costs 3 Actions)</name>
       <text>The infiltrator magically has the invisible condition and creates an illusory duplicate of itself in its space, then teleports, along with any equipment it is wearing or carrying, to an unoccupied space within 15 feet of itself. The image flings illusory blades at two creatures of the infiltrator's choice within 20 feet of the image. Each target must make a DC 17 Wisdom saving throw, taking 13 (3d8) psychic damage on a failed save, or half as much damage on a successful one. The invisibility lasts until the end of the infiltrator's next turn.</text>
-      <attack>Misdirecting Escape||3d8</attack>
+      <attack>Psychic Damage||3d8</attack>
     </legendary>
     <legendary category="lair">
       <name>The Rogue's Lair</name>
@@ -940,7 +948,9 @@ Enchanting Infiltrator: Challenge 12 (8,400 XP)</text>
 
 	• Distraction: A shrill sound fi1ls the lair. Creatures that can hear it must succeed on a DC is Constitution saving throw or lose concentration.
 
-	• Snares: Hidden snares target up to three creatures the villain can see in the lair. Each creature must succeed on a DC 15 Strength saving throw or have the grappled condition (escape DC 15) and the restrained condition until it escapes or the snare holding it is destroyed. Each snare has AC 11, 10 hit points, and immunity to poison and psychic damage. 	• Traps: Traps target up to two creatures the villain can see in the lair. Each target must succeed on a DC 15 Dexterity saving throw or be struck by a trap. The villain rolls a number of d6s equal to its proficiency bonus, and struck targets take damage equal to the total. The damage is bludgeoning, piercing, slashing, fire, or poison, chosen by the villain when the villain uses this action.</text>
+	• Snares: Hidden snares target up to three creatures the villain can see in the lair. Each creature must succeed on a DC 15 Strength saving throw or have the grappled condition (escape DC 15) and the restrained condition until it escapes or the snare holding it is destroyed. Each snare has AC 11, 10 hit points, and immunity to poison and psychic damage. 
+
+	• Traps: Traps target up to two creatures the villain can see in the lair. Each target must succeed on a DC 15 Dexterity saving throw or be struck by a trap. The villain rolls a number of d6s equal to its proficiency bonus, and struck targets take damage equal to the total. The damage is bludgeoning, piercing, slashing, fire, or poison, chosen by the villain when the villain uses this action.</text>
       <attack>Traps||1d6</attack>
     </legendary>
     <legendary category="lair">
@@ -950,7 +960,7 @@ Enchanting Infiltrator: Challenge 12 (8,400 XP)</text>
 	• Corruption Abounds: While within 3 miles of the lair, creatures that aren't members of the villain's organization have disadvantage on ability checks that rely on the Insight, Perception, and Persuasion skills.
 
 	• Potent Toxins: When members of the villain's organization deal poison damage while within 3 miles of the lair, they ignore the target's resistance to poison damage. If the villain dies, these effects fade over the course of 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>An antagonist for tier 2 play (levels 5 to 10), the enchanting infiltrator is a Fey that beguiles and misdirects.
 
@@ -1103,7 +1113,7 @@ Source:	The Book of Many Things p. 189</description>
     <action>
       <name>Shears</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) force damage. If the target is a creature, it has disadvantage on attack rolls until the end of the hag's next turn.</text>
-      <attack>Shears|+6|1d8+4</attack>
+      <attack>Force Damage|+6|1d8+4</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1174,7 +1184,7 @@ Source:	The Book of Many Things p. 176</description>
     <trait>
       <name>Incorporeal Movement</name>
       <text>Gremorly can move through other creatures and objects as if they were difficult terrain. He takes 5 (1d10) force damage if he ends his turn inside an object.</text>
-      <attack>Incorporeal Movement||1d10</attack>
+      <attack>Force Damage||1d10</attack>
     </trait>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
@@ -1188,13 +1198,13 @@ Source:	The Book of Many Things p. 176</description>
     <action>
       <name>Withering Strike</name>
       <text>Melee Spell Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (3d12) necrotic damage.</text>
-      <attack>Withering Strike|+8|3d12</attack>
+      <attack>Necrotic Damage|+8|3d12</attack>
     </action>
     <action>
       <name>Fell Necromancy</name>
       <text>Gremorly targets one creature he can see within 60 feet of himself. The target must make a DC 16 Constitution saving throw, taking 61 (7d8 + 30) necrotic damage on a failed save, or half as much damage on a successful one. In addition, Gremorly regains 9 (2d8) hit points.</text>
-      <attack>Fell Necromancy||7d8+30</attack>
-      <attack>Regain HP||2d8</attack>
+      <attack>Necrotic Damage||7d8+30</attack>
+      <attack>Heal||2d8</attack>
     </action>
     <action>
       <name>Possession (Recharge 6)</name>
@@ -1264,14 +1274,15 @@ Source:	The Book of Many Things p. 122</description>
     <action>
       <name>Blazing Morningstar</name>
       <text>Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) piercing damage plus 14 (4d6) fire damage.</text>
-      <attack>Blazing Morningstar|+12|1d8+6</attack>
+      <attack>Blazing Morningstar|+12|(1d8+6)+(4d6)</attack>
+      <attack>Piercing Damage|+12|1d8+6</attack>
       <attack>Fire Damage||4d6</attack>
     </action>
     <action>
       <name>Blade Storm (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The champion conjures a churning storm of spectral blades that fills a 20-foot cube centered on a point it can see within 120 feet of itself. The storm lasts until the start of the champion's next turn. While the storm is active, the area of the storm is difficult terrain. Whenever a creature enters the storm for the first time on a turn or starts its turn there, it must make a DC 19 Dexterity saving throw, taking 27 (6d8) slashing damage on a failed saving throw, or half as much damage on a successful one.</text>
-      <attack>Blade Storm||6d8</attack>
+      <attack>Slashing Damage||6d8</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -1285,7 +1296,7 @@ Source:	The Book of Many Things p. 122</description>
     <legendary>
       <name>Induce Violence</name>
       <text>The champion targets one creature it can see within 60 feet of itself. The target must succeed on a DC 19 Wisdom saving throw or immediately make one melee weapon attack against another creature of the champion's choice that is within the target's reach. If no creature is within the target's reach or if the target has the incapacitated condition, the target instead takes 11 (2d10) psychic damage.</text>
-      <attack>Induce Violence||2d10</attack>
+      <attack>Psychic Damage||2d10</attack>
     </legendary>
     <legendary>
       <name>Menace (Costs 2 Actions)</name>
@@ -1342,13 +1353,14 @@ Source:	The Book of Many Things p. 161</description>
     <action>
       <name>Leeching Blade</name>
       <text>Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 33 (6d10) cold damage, and the champion regains 10 hit points.</text>
-      <attack>Leeching Blade|+14|2d6+6</attack>
+      <attack>Leeching Blade|+14|(2d6+6)+(6d10)</attack>
+      <attack>Slashing Damage|+14|2d6+6</attack>
       <attack>Cold Damage||6d10</attack>
     </action>
     <action>
       <name>Hollow Void</name>
       <text>The champion summons a hungering rift around a creature it can see within 120 feet of itself. The creature must make a DC 22 Constitution saving throw. On a failed save, the creature takes 49 (11d8) force damage and has the stunned condition until the start of the champion's next turn. On a successful save, the creature takes half as much damage only. If a creature is reduced to 0 hit points by this effect, the creature dies, and its body crumbles to dust.</text>
-      <attack>Hollow Void||11d8</attack>
+      <attack>Force Damage||11d8</attack>
     </action>
     <action>
       <name>Step into Nothing (Recharge 4-6) (Bonus Action)</name>
@@ -1363,7 +1375,7 @@ Source:	The Book of Many Things p. 161</description>
     <legendary>
       <name>Crush</name>
       <text>The champion unleashes a burst of crushing force on a creature it can see within 30 feet of itself. The creature must succeed on a DC 22 Strength saving throw or take 14 (4d6) force damage and have the prone condition.</text>
-      <attack>Crush||4d6</attack>
+      <attack>Force Damage||4d6</attack>
     </legendary>
     <legendary>
       <name>Fearsome Pursuit</name>
@@ -1428,13 +1440,14 @@ Source:	The Book of Many Things p. 162</description>
     <action>
       <name>Blight Staff</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage plus 21 (6d6) necrotic damage.</text>
-      <attack>Blight Staff|+9|1d8+4</attack>
+      <attack>Blight Staff|+9|(1d8+4)+(6d6)</attack>
+      <attack>Bludgeoning Damage|+9|1d8+4</attack>
       <attack>Necrotic Damage||6d6</attack>
     </action>
     <action>
       <name>Plague Bolt</name>
       <text>Ranged Spell Attack: +10 to hit, range 120 ft., one target. Hit: 23 (4d8 + 5) poison damage, and the target has the poisoned condition until the start of the champion's next turn.</text>
-      <attack>Plague Bolt|+10|4d8+5</attack>
+      <attack>Poison Damage|+10|4d8+5</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1504,7 +1517,8 @@ Source:	The Book of Many Things p. 163</description>
     <action>
       <name>Talons</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage plus 3 (1d6) necrotic damage.</text>
-      <attack>Talons|+5|2d4+3</attack>
+      <attack>Talons|+5|(2d4+3)+(1d6)</attack>
+      <attack>Slashing Damage|+5|2d4+3</attack>
       <attack>Necrotic Damage||1d6</attack>
     </action>
     <action>
@@ -1563,7 +1577,8 @@ Source:	The Book of Many Things p. 177</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 3 (1d6) necrotic damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or have the prone condition.</text>
-      <attack>Bite|+5|2d6+3</attack>
+      <attack>Bite|+5|(2d6+3)+(1d6)</attack>
+      <attack>Piercing Damage|+5|2d6+3</attack>
       <attack>Necrotic Damage||1d6</attack>
     </action>
     <action>
@@ -1622,8 +1637,8 @@ Source:	The Book of Many Things p. 164</description>
     <action>
       <name>Longsword</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands.</text>
-      <attack>Longsword|+6|1d8+4</attack>
-      <attack>Longsword (Two-Handed)|+6|1d10+4</attack>
+      <attack>Slashing Damage|+6|1d8+4</attack>
+      <attack>Slashing Damage (Two-Handed)|+6|1d10+4</attack>
     </action>
     <action>
       <name>Detention Orb</name>
@@ -1691,18 +1706,22 @@ Source:	The Book of Many Things p. 135</description>
     <action>
       <name>Constrict</name>
       <text>Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 16 (3d6 + 6) bludgeoning damage, and if the target is a Medium or smaller creature, it has the grappled condition (escape DC 20). Until this grapple ends, the target has the restrained condition, and the medusa can't constrict another creature.</text>
-      <attack>Constrict|+12|3d6+6</attack>
+      <attack>Bludgeoning Damage|+12|3d6+6</attack>
     </action>
     <action>
       <name>Final Blade</name>
       <text>Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 21 (6d6) force damage. If the target has at least one head and the medusa rolled a 20 on the attack roll, the target is decapitated and dies if it fails a DC 20 Constitution saving throw and can't survive without that head. A target is immune to this effect if it takes none of the damage, has legendary actions, or is Huge or larger. Such a creature takes an extra 28 (8d6) force damage from the hit.</text>
-      <attack>Final Blade|+12|2d6+6</attack>
+      <attack>Final Blade|+12|(2d6+6)+(6d6)</attack>
+      <attack>Final Blade (Huge Creature)|+12|(2d6+6)+(8d6)</attack>
+      <attack>Slashing Damage|+12|2d6+6</attack>
       <attack>Force Damage||6d6</attack>
+      <attack>Force Damage||8d6</attack>
     </action>
     <action>
       <name>Snake Hair</name>
       <text>Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 11 (1d10 + 6) piercing damage plus 5 (1d10) poison damage.</text>
-      <attack>Snake Hair|+12|1d10+6</attack>
+      <attack>Snake Hair|+12|(1d10+6)+(1d10)</attack>
+      <attack>Piercing Damage|+12|1d10+6</attack>
       <attack>Poison Damage||1d10</attack>
     </action>
     <action>
@@ -1712,7 +1731,7 @@ Source:	The Book of Many Things p. 135</description>
 Blinded:
 	• A blinded creature can't see and automatically fails any ability check that requires sight.
 	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.</text>
-      <attack>Wrathful Strike|+12|3d10+6</attack>
+      <attack>Radiant Damage|+12|3d10+6</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1732,7 +1751,7 @@ Blinded:
 Blinded:
 	• A blinded creature can't see and automatically fails any ability check that requires sight.
 	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.</text>
-      <attack>Petrifying Gaze||3d6</attack>
+      <attack>Force Damage||3d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -1843,19 +1862,20 @@ Source:	The Book of Many Things p. 179</description>
     <action>
       <name>Herald's Axe</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) slashing damage plus 10 (3d6) necrotic damage.</text>
-      <attack>Herald's Axe|+9|1d12+5</attack>
+      <attack>Herald's Axe|+9|(1d12+5)+(3d6)</attack>
+      <attack>Slashing Damage|+9|1d12+5</attack>
       <attack>Necrotic Damage||3d6</attack>
     </action>
     <action>
       <name>Comet Blast</name>
       <text>Ranged Spell Attack: +9 to hit, range 120 ft., one target. Hit: 16 (2d10 + 5) force damage.</text>
-      <attack>Comet Blast|+9|2d10+5</attack>
+      <attack>Force Damage|+9|2d10+5</attack>
     </action>
     <action>
       <name>All-Consuming Star (Recharge 6)</name>
       <recharge>D6</recharge>
       <text>The hierophant conjures a manifestation of the All-Consuming Star: brilliant light and haunting screams that fill a 20-foot-radius sphere centered on a point the hierophant can see within 60 feet of itself. Each creature within the sphere has the blinded and deafened conditions. Each creature that enters the sphere for the first time on a turn or starts its turn there must make a DC 17 Wisdom saving throw. On a failed save, a creature takes 27 (6d8) psychic damage and has the incapacitated condition until the start of its next turn. On a successful save, a creature takes half as much damage only. The manifestation persists until the hierophant dies, has the incapacitated condition, uses a bonus action to end the effect, or uses this action again.</text>
-      <attack>All-Consuming Star||6d8</attack>
+      <attack>Psychic Damage||6d8</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1920,19 +1940,20 @@ Source:	The Book of Many Things p. 92</description>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage.</text>
-      <attack>Claw|+8|2d8+3</attack>
+      <attack>Slashing Damage|+8|2d8+3</attack>
     </action>
     <action>
       <name>Intoxicating Sting</name>
       <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 8 (1d10 + 3) piercing damage plus 10 (3d6) poison damage, and the target must succeed on a DC 17 Wisdom saving throw or have the charmed condition until the start of Hulgaz's next turn.</text>
-      <attack>Intoxicating Sting|+8|1d10+3</attack>
+      <attack>Intoxicating Sting|+8|(1d10+3)+(3d6)</attack>
+      <attack>Piercing Damage|+8|1d10+3</attack>
       <attack>Poison Damage||3d6</attack>
     </action>
     <action>
       <name>Brimstone Vapor (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>Hulgaz exhales a 30-foot cone of noxious, scorching-hot vapor. Each creature in that area must succeed on a DC 17 Constitution saving throw or have the poisoned condition for 1 minute. While poisoned in this way, a creature takes 31 (7d8) fire damage at the start of each of its turns and has disadvantage on Wisdom saving throws. A target can repeat the Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Brimstone Vapor||7d8</attack>
+      <attack>Fire Damage||7d8</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -1958,7 +1979,7 @@ Source:	The Book of Many Things p. 92</description>
     <legendary>
       <name>Curdle Heart (Costs 2 Actions)</name>
       <text>Hulgaz sours the good feelings of her charmed victims. She chooses any number of creatures she can see who are charmed by her. Each target takes 17 (5d6) psychic damage as the charmed condition applied by Hulgaz ends on it.</text>
-      <attack>Curdle Heart||5d6</attack>
+      <attack>Psychic Damage||5d6</attack>
     </legendary>
     <spells>charm person, teleport, dispel magic, fog cloud</spells>
     <description>Hulgaz the Tempter:
@@ -2009,7 +2030,7 @@ Source:	The Book of Many Things p. 169</description>
     <action>
       <name>Comet Strike</name>
       <text>Melee or Ranged Spell Attack: +5 to hit, reach 5 ft. or range 120 ft., one target. Hit: 14 (2d10 + 3) force damage.</text>
-      <attack>Comet Strike|+5|2d10+3</attack>
+      <attack>Force Damage|+5|2d10+3</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -2068,7 +2089,7 @@ Source:	The Book of Many Things p. 93</description>
     <action>
       <name>Radiant Strike</name>
       <text>Melee or Ranged Spell Attack: +5 to hit, reach 5 ft. or range 120 ft., one target. Hit: 9 (1d12 + 3) radiant damage.</text>
-      <attack>Radiant Strike|+5|1d12+3</attack>
+      <attack>Radiant Damage|+5|1d12+3</attack>
     </action>
     <action>
       <name>Prophetic Blessing</name>
@@ -2090,7 +2111,7 @@ Source:	The Book of Many Things p. 93</description>
     <reaction>
       <name>Price of Defiance</name>
       <text>When the living portent is damaged by a creature that it can see within 120 feet of itself, radiant power sears the creature. The creature must make a DC 13 Constitution saving throw, taking 10 (3d6) radiant damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Price of Defiance||3d6</attack>
+      <attack>Radiant Damage||3d6</attack>
     </reaction>
     <spells>cure wounds, divination, greater restoration</spells>
     <description>Living portents are embodiments of prophecy sent by deities or other cosmic forces. These Celestials descend to Material Plane worlds in the form of fa11ing stars. When the living portents impact the earth, they carve great craters, yet miraculously, none who live in the impact zone are harmed. These beings of light then assume Humanoid forms to blend in with the inhabitants of the world.
@@ -2143,18 +2164,18 @@ Source:	The Book of Many Things p. 180</description>
     <action>
       <name>Forge Hammer</name>
       <text>Melee or Ranged Weapon Attack: +12 to hit, reach 10 ft. or range 60/180 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage, and the target can't take reactions until the end of Malaxxix's next turn. Hit or Miss: The hammer then magically returns to Malaxxix's hand.</text>
-      <attack>Forge Hammer|+12|4d10+6</attack>
+      <attack>Bludgeoning Damage|+12|4d10+6</attack>
     </action>
     <action>
       <name>Whip</name>
       <text>Melee Weapon Attack: +12 to hit, reach 30 ft., one creature. Hit: 15 (2d8 + 6) slashing damage, and the target has the restrained condition for 1 minute. The restrained target can make a DC 20 Strength saving throw at the end of each of its turns, ending the effect on itself on a success. Only one creature can be restrained by the whip at a time.</text>
-      <attack>Whip|+12|2d8+6</attack>
+      <attack>Slashing Damage|+12|2d8+6</attack>
     </action>
     <action>
       <name>Mezzoloth Vortex (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>Malaxxix summons a vortex of whirling mezzoloths at a point it can see within 90 feet of itself. The vortex is a 30-foot-radius, 100-foot-high cylinder centered on that point. Each creature other than Malaxxix in that area must make a DC 20 Dexterity saving throw. On a failed save, a creature takes 35 (10d6) force damage and has the restrained condition while within the cylinder. On a successful save, a creature takes half as much damage and is pushed to the nearest unoccupied space outside the cylinder. The vortex lasts until the start of Malaxxix's next turn.</text>
-      <attack>Mezzoloth Vortex||10d6</attack>
+      <attack>Force Damage||10d6</attack>
     </action>
     <legendary>
       <name>Legendary Actions (3/Turn)</name>
@@ -2164,7 +2185,7 @@ Source:	The Book of Many Things p. 180</description>
     <legendary>
       <name>Fiendish Stride</name>
       <text>Malaxxix moves up to its speed. This movement doesn't provoke opportunity attacks. When Malaxxix moves within 5 feet of a creature during this movement, that creature takes 5 (1d10) lightning damage. A creature can take this damage only once per turn.</text>
-      <attack>Fiendish Stride||1d10</attack>
+      <attack>Lightning Damage||1d10</attack>
     </legendary>
     <legendary>
       <name>Attack (Costs 2 Actions)</name>
@@ -2190,9 +2211,9 @@ The Unborn Palanquin is a wormlike leviathan of screeching gears made up of hund
 
 	• Slam: Malaxxix commands the palanquin to slam the ground. Each creature within 15 feet of the palanquin must make a DC 20 Strength saving throw. On a failed save, a creature takes 11 (2d10) bludgeoning damage and has the prone condition. On a successful save, a creature takes half as much damage only.
 
-Surge: Malaxxix commands the palanquin to move up to its speed.</text>
-      <attack>Reassemble||3d12</attack>
-      <attack>Slam||2d10</attack>
+	• Surge: Malaxxix commands the palanquin to move up to its speed.</text>
+      <attack>Temporary Hit Points||3d12</attack>
+      <attack>Bludgeoning Damage||2d10</attack>
     </legendary>
     <legendary category="lair">
       <name>Regional Effects</name>
@@ -2260,8 +2281,8 @@ Source:	The Book of Many Things p. 173</description>
     <action>
       <name>Gore</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage. If the minotaur moved at least 10 feet straight toward the target immediately before it hit, the target takes an extra 3 (1d6) piercing damage, and if the target is a Large or smaller creature, it must succeed on a DC 11 Strength saving throw or be pushed up to 10 feet from the minotaur and have the prone condition.</text>
-      <attack>Gore|+3|1d6+1</attack>
-      <attack>Piercing Damage||1d6</attack>
+      <attack>Piercing Damage|+3|1d6+1</attack>
+      <attack>Piercing Damage (Extra Damage)||1d6</attack>
     </action>
     <description>Source:	The Book of Many Things p. 126</description>
     <environment/>
@@ -2304,14 +2325,16 @@ Source:	The Book of Many Things p. 173</description>
     <action>
       <name>Gore</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage, or 13 (2d8 + 4) piercing damage while enlarged. If the minotaur moved at least 10 feet straight toward the target immediately before it hit, the target takes an extra 4 (1d8) piercing damage, or 9 (2d8) piercing damage if the minotaur is enlarged. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet from the minotaur and have the prone condition.</text>
-      <attack>Gore|+6|1d8+4</attack>
-      <attack>Gore (Enlarged)|+6|2d8+4</attack>
+      <attack>Piercing Damage|+6|1d8+4</attack>
+      <attack>Piercing Damage (Enlarged)|+6|2d8+4</attack>
+      <attack>Piercing Damage (Extra Damage)||1d8</attack>
+      <attack>Piercing Damage (Extra Damage While Enlarged)||2d8</attack>
     </action>
     <action>
       <name>Mattock</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 10 (1d12 + 4) bludgeoning damage, or 17 (2d12 + 4) bludgeoning damage while enlarged. If the target is a creature and the minotaur is enlarged, the target must succeed on a DC 14 Strength saving throw or have the prone condition.</text>
-      <attack>Mattock|+6|1d12+4</attack>
-      <attack>Mattock (Enlarged)|+6|2d12+4</attack>
+      <attack>Bludgeoning Damage|+6|1d12+4</attack>
+      <attack>Bludgeoning Damage (Enlarged)|+6|2d12+4</attack>
     </action>
     <action>
       <name>Enlarge (Recharges after a Short or Long Rest)</name>
@@ -2365,12 +2388,12 @@ Source:	The Book of Many Things p. 173</description>
     <action>
       <name>Fool's Scepter</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.</text>
-      <attack>Fool's Scepter|+4|1d6+2</attack>
+      <attack>Bludgeoning Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Cloud of Cards</name>
       <text>Oddlewin conjures magical cards that slash at the air in a 5-foot cube within 60 feet of Oddlewin until the start of Oddlewin's next turn. A creature that starts its turn in the cube or that enters that area for the first time on a turn takes 10 (4d4) slashing damage.</text>
-      <attack>Cloud of Cards||4d4</attack>
+      <attack>Slashing Damage||4d4</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -2443,7 +2466,8 @@ Source:	The Book of Many Things p. 111</description>
     <action>
       <name>Whispering Blade</name>
       <text>Melee or Ranged Weapon Attack: +12 to hit, reach 5 ft. or range 60 ft., one target. Hit: 10 (1d8 + 6) piercing damage plus 14 (4d6) psychic damage. If the target is a creature, it must succeed on a DC 20 Wisdom saving throw or be unable to speak until the start of the corrupter's next turn.</text>
-      <attack>Whispering Blade|+12|1d8+6</attack>
+      <attack>Whispering Blade|+12|(1d8+6)+(4d6)</attack>
+      <attack>Piercing Damage|+12|1d8+6</attack>
       <attack>Psychic Damage||4d6</attack>
     </action>
     <action>
@@ -2474,7 +2498,7 @@ Source:	The Book of Many Things p. 111</description>
     <legendary>
       <name>Amorphous Escape (Costs 3 Actions)</name>
       <text>The corrupter dissolves into a shifting mass of flesh, tentacles, eyes, claws, and mouths. Up to two creatures the corrupter can see within 20 feet of itself must make a DC 20 Intelligence saving throw, taking 18 (4d8) psychic damage on a failed save, or half as much damage on a successful one. This transformation lasts until the end of the corrupter's next turn. While transformed, the corrupter has advantage on attack rolls, attack rolls made against it have disadvantage, and it can move through spaces at least 1 inch wide without squeezing.</text>
-      <attack>Amorphous Escape||4d8</attack>
+      <attack>Psychic Damage||4d8</attack>
     </legendary>
     <legendary category="lair">
       <name>The Rogue's Lair</name>
@@ -2489,7 +2513,9 @@ Otherworldly Corrupter: Challenge 18 (20,000 XP)</text>
 
 	• Distraction: A shrill sound fi1ls the lair. Creatures that can hear it must succeed on a DC is Constitution saving throw or lose concentration.
 
-	• Snares: Hidden snares target up to three creatures the villain can see in the lair. Each creature must succeed on a DC 15 Strength saving throw or have the grappled condition (escape DC 15) and the restrained condition until it escapes or the snare holding it is destroyed. Each snare has AC 11, 10 hit points, and immunity to poison and psychic damage. 	• Traps: Traps target up to two creatures the villain can see in the lair. Each target must succeed on a DC 15 Dexterity saving throw or be struck by a trap. The villain rolls a number of d6s equal to its proficiency bonus, and struck targets take damage equal to the total. The damage is bludgeoning, piercing, slashing, fire, or poison, chosen by the villain when the villain uses this action.</text>
+	• Snares: Hidden snares target up to three creatures the villain can see in the lair. Each creature must succeed on a DC 15 Strength saving throw or have the grappled condition (escape DC 15) and the restrained condition until it escapes or the snare holding it is destroyed. Each snare has AC 11, 10 hit points, and immunity to poison and psychic damage. 
+
+	• Traps: Traps target up to two creatures the villain can see in the lair. Each target must succeed on a DC 15 Dexterity saving throw or be struck by a trap. The villain rolls a number of d6s equal to its proficiency bonus, and struck targets take damage equal to the total. The damage is bludgeoning, piercing, slashing, fire, or poison, chosen by the villain when the villain uses this action.</text>
       <attack>Traps||1d6</attack>
     </legendary>
     <legendary category="lair">
@@ -2499,7 +2525,7 @@ Otherworldly Corrupter: Challenge 18 (20,000 XP)</text>
 	• Corruption Abounds: While within 3 miles of the lair, creatures that aren't members of the villain's organization have disadvantage on ability checks that rely on the Insight, Perception, and Persuasion skills.
 
 	• Potent Toxins: When members of the villain's organization deal poison damage while within 3 miles of the lair, they ignore the target's resistance to poison damage. If the villain dies, these effects fade over the course of 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>A challenge for tier 3 play (levels 11 to 16), the otherworldly corrupter is a horrific Aberration that infects or impersonates a host.
 
@@ -2552,18 +2578,19 @@ Source:	The Book of Many Things p. 47</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 11 (2d10) radiant damage.</text>
-      <attack>Bite|+13|2d10+6</attack>
+      <attack>Bite|+13|(2d10+6)+(2d10)</attack>
+      <attack>Piercing Damage|+13|2d10+6</attack>
       <attack>Radiant Damage||2d10</attack>
     </action>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 13 (2d6 + 6) slashing damage.</text>
-      <attack>Claw|+13|2d6+6</attack>
+      <attack>Slashing Damage|+13|2d6+6</attack>
     </action>
     <action>
       <name>Tail</name>
       <text>Melee Weapon Attack: +13 to hit, reach 20 ft., one target. Hit: 10 (1d8 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 21 Strength saving throw or have the prone condition.</text>
-      <attack>Tail|+13|1d8+6</attack>
+      <attack>Bludgeoning Damage|+13|1d8+6</attack>
     </action>
     <action>
       <name>Breath Weapon (Recharge 5-6)</name>
@@ -2573,7 +2600,7 @@ Source:	The Book of Many Things p. 47</description>
 Dream Breath: Pazrodine exhales mist in a 90-foot cone. Each creature in that area must succeed on a DC 21 Constitution saving throw or have the unconscious condition for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.
 
 Moonlight Breath: Pazrodine exhales a beam of moonlight in a 120-foot line that is 10 feet wide. Each creature in that area must make a DC 21 Dexterity saving throw, taking 60 (11d10) radiant damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Moonlight Breath||11d10</attack>
+      <attack>Radiant Damage||11d10</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -2606,7 +2633,7 @@ Moonlight Breath: Pazrodine exhales a beam of moonlight in a 120-foot line that 
 	• Overwhelm the Senses: Pazrodine targets up to three creatures she can see within 30 feet of herself. The sounds, sights, and scents of the market intensify for these creatures, overwhelming them with bright colors, echoey chatters, and sweet smells. Each target must succeed on a DC 15 Wisdom saving throw or have the incapacitated condition until the end of its next turn.
 
 	• Whirlwind of Fruit: Fey fruit flies out from nearby carts, creating a whirlwind of fruit in a 10-foot-radius, 30-foot-high cylinder centered on a point within 60 feet of Pazrodine until initiative count 20 on the next round. When a creature enters the whirlwind's area for the first time on its turn or starts its turn there, it must make a DC 15 Dexterity saving throw, taking 11 (2d10) bludgeoning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Whirlwind of Fruit||2d10</attack>
+      <attack>Bludgeoning Damage||2d10</attack>
     </legendary>
     <spells>faerie fire, calm emotions, dispel magic, invisibility, mass cure wounds, revivify</spells>
     <description>Pazrodine never stays in one place for long, and she wants to see all the wonders the Feywild and Material Plane have to offer. Curious Fey asked to join her caravan, and before long, she had a menagerie of merchants accompanying her on her travels. Pazrodine came to view these Fey merchants as her children. Their eager joy helps the dragon see the multiverse from new perspectives.
@@ -2662,12 +2689,12 @@ Source:	The Book of Many Things p. 113</description>
     <action>
       <name>Fist</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.</text>
-      <attack>Fist|+3|1d4+1</attack>
+      <attack>Bludgeoning Damage|+3|1d4+1</attack>
     </action>
     <action>
       <name>Shortbow</name>
       <text>Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
-      <attack>Shortbow|+4|1d6+2</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Detention Orb</name>
@@ -2719,7 +2746,7 @@ Source:	The Book of Many Things p. 135</description>
     <trait>
       <name>Incorporeal Movement</name>
       <text>The spirit can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes 1d10 force damage for every 5 feet shunted.</text>
-      <attack>Incorporeal Movement||1d10</attack>
+      <attack>Force||1d10</attack>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2728,7 +2755,7 @@ Source:	The Book of Many Things p. 135</description>
     <action>
       <name>Reaping Scythe</name>
       <text>Melee Weapon Attack: your spell attack modifier to hit (with advantage), reach 5 ft., the creature haunted by Haunt Creature. Hit: 1d8 + 3 + the spell's Level necrotic damage.</text>
-      <attack>Reaping Scythe||1d8+3</attack>
+      <attack>Necrotic Damage||1d8+3</attack>
     </action>
     <action>
       <name>Haunt Creature (Bonus Action)</name>
@@ -2780,14 +2807,14 @@ Source:	The Book of Many Things p. 135</description>
     <action>
       <name>Spectral Card</name>
       <text>Melee or Ranged Spell Attack: +6 to hit, reach 5 ft. or range 60 ft., one target. Hit: 8 (1d10 + 3) force damage plus 5 (1d10) damage that is radiant if the d10 roll is an even number and necrotic if it's odd.</text>
-      <attack>Spectral Card|+6|1d10+3</attack>
-      <attack>Spectral Card||1d10</attack>
+      <attack>Force Damage|+6|1d10+3</attack>
+      <attack>Radiant or Necrotic Damage|+6|1d10</attack>
     </action>
     <action>
       <name>Card Spray (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The riffler magically unleashes a spray of spectral cards in a 30-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw. On a failed save, a creature takes 27 (5d10) force damage and has the restrained condition for 1 minute as cards bind it. On a successful save, a creature takes half as much damage only. A restrained creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Card Spray||5d10</attack>
+      <attack>Force Damage||5d10</attack>
     </action>
     <action>
       <name>Plane Shift</name>
@@ -2858,7 +2885,7 @@ Source:	The Book of Many Things p. 181</description>
     <action>
       <name>Ruinous Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage and 9 (2d8) acid damage. In addition, if the target is a creature wearing nonmagical armor, the armor takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an Armor Class of 10 is destroyed.</text>
-      <attack>Ruinous Bite|+7|1d8+4</attack>
+      <attack>Piercing Damage|+7|1d8+4</attack>
       <attack>Acid Damage||2d8</attack>
     </action>
     <action>
@@ -2909,7 +2936,8 @@ Source:	The Book of Many Things p. 182</description>
     <action>
       <name>Longsword</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage plus 4 (1d8) radiant damage. On a roll of 19 or 20, Jared scores a critical hit.</text>
-      <attack>Longsword|+7|1d8+4</attack>
+      <attack>Longsword|+7|(1d8+4)+(1d8)</attack>
+      <attack>Slashing Damage|+7|1d8+4</attack>
       <attack>Radiant Damage||1d8</attack>
     </action>
     <reaction>
@@ -2961,8 +2989,8 @@ Source:	The Book of Many Things p. 80</description>
     <action>
       <name>Sunspear</name>
       <text>Melee or Ranged Spell Attack: +8 to hit, reach 5 ft. or range 120 ft., one target. Hit: 14 (3d6 + 4) radiant damage, or 21 (5d6 + 4) radiant damage if the target is a Fiend or an Undead.</text>
-      <attack>Sunspear|+8|3d6+4</attack>
-      <attack>Sunspear (Fiend or Undead)|+8|5d6+4</attack>
+      <attack>Radiant Damage|+8|3d6+4</attack>
+      <attack>Radiant Damage (Fiend or Undead)|+8|5d6+4</attack>
     </action>
     <action>
       <name>Solar Flare (Recharge 5-6)</name>
@@ -2972,7 +3000,7 @@ Source:	The Book of Many Things p. 80</description>
 Blinded:
 	• A blinded creature can't see and automatically fails any ability check that requires sight.
 	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.</text>
-      <attack>Solar Flare||4d10</attack>
+      <attack>Radiant Damage||4d10</attack>
     </action>
     <action>
       <name>Spellcasting</name>
@@ -3032,12 +3060,12 @@ Source:	The Book of Many Things p. 75</description>
     <action>
       <name>Beak</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) piercing damage, and if the target has any spell effects on itself or any magic items in its possession, the target must make a DC 15 Charisma saving throw. On a failed save, a random spell effect on the target ends. If the target has no spell effects on it, one random magic item in its possession has its magical properties suppressed for 1 minute. If the item is a potion or scroll, it becomes nonmagical instead.</text>
-      <attack>Beak|+9|2d10+6</attack>
+      <attack>Piercing Damage|+9|2d10+6</attack>
     </action>
     <action>
       <name>Talon</name>
       <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) slashing damage, and the target has the grappled condition (escape DC 17). Until the grapple ends, the target has the restrained condition, and the talon beast can't use Talon on another target.</text>
-      <attack>Talon|+9|2d8+6</attack>
+      <attack>Slashing Damage|+9|2d8+6</attack>
     </action>
     <description>Talon beasts are hairless quadrupeds that have vulturelike heads and talons. They can sense the presence of magic and feed on it, absorbing spells and the power of magic items. But magic isn't enough to sustain them, so they also hunt other living things. A talon beast thrives in the wilderness, but in its search for magic, it often prowls settlements, ruins, catacombs, or the Underdark.
 	Many scholars agree there's a link between talon beasts, the constellation of the Talons (see chapter 13), and the Talons card found in a Deck of Many Things, but it's not clear which came first. The card—which destroys all magic items possessed by anyone who draws it—might have been named after the beast, or vice versa.
@@ -3121,7 +3149,8 @@ Source:	The Book of Many Things p. 184</description>
     <action>
       <name>Blade of Judgment</name>
       <text>Melee or Ranged Weapon Attack: +14 to hit, reach 5 ft. or range 60 ft., one target. Hit: 10 (1d6 + 7) piercing damage plus 27 (6d8) radiant damage. If the target is a creature, it must succeed on a DC 22 Charisma saving throw, or on its next turn, it can either move or take an action, but not both.</text>
-      <attack>Blade of Judgment|+14|1d6+7</attack>
+      <attack>Blade of Judgment|+14|(1d6+7)+(6d8)</attack>
+      <attack>Piercing Damage|+14|1d6+7</attack>
       <attack>Radiant Damage||6d8</attack>
     </action>
     <action>
@@ -3148,7 +3177,7 @@ Source:	The Book of Many Things p. 184</description>
     <legendary>
       <name>Searing Radiance (Costs 3 Actions)</name>
       <text>The veiled presence magically emanates dazzling light in a 10-foot-radius sphere centered on itself until the end of its next turn, during which time attack rolls against it have disadvantage and it has advantage on attack rolls. The sphere moves with the veiled presence. When another creature starts its turn in the light or enters the light for the first time on its turn, that creature must make a DC 22 Constitution saving throw, taking 18 (4d8) radiant damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Searing Radiance||4d8</attack>
+      <attack>Radiant Damage||4d8</attack>
     </legendary>
     <legendary category="lair">
       <name>The Rogue's Lair</name>
@@ -3163,7 +3192,9 @@ Veiled Presence: Challenge 22 (41,000 XP)</text>
 
 	• Distraction: A shrill sound fi1ls the lair. Creatures that can hear it must succeed on a DC is Constitution saving throw or lose concentration.
 
-	• Snares: Hidden snares target up to three creatures the villain can see in the lair. Each creature must succeed on a DC 15 Strength saving throw or have the grappled condition (escape DC 15) and the restrained condition until it escapes or the snare holding it is destroyed. Each snare has AC 11, 10 hit points, and immunity to poison and psychic damage. 	• Traps: Traps target up to two creatures the villain can see in the lair. Each target must succeed on a DC 15 Dexterity saving throw or be struck by a trap. The villain rolls a number of d6s equal to its proficiency bonus, and struck targets take damage equal to the total. The damage is bludgeoning, piercing, slashing, fire, or poison, chosen by the villain when the villain uses this action.</text>
+	• Snares: Hidden snares target up to three creatures the villain can see in the lair. Each creature must succeed on a DC 15 Strength saving throw or have the grappled condition (escape DC 15) and the restrained condition until it escapes or the snare holding it is destroyed. Each snare has AC 11, 10 hit points, and immunity to poison and psychic damage.
+
+	• Traps: Traps target up to two creatures the villain can see in the lair. Each target must succeed on a DC 15 Dexterity saving throw or be struck by a trap. The villain rolls a number of d6s equal to its proficiency bonus, and struck targets take damage equal to the total. The damage is bludgeoning, piercing, slashing, fire, or poison, chosen by the villain when the villain uses this action.</text>
       <attack>Traps||1d6</attack>
     </legendary>
     <legendary category="lair">
@@ -3173,7 +3204,7 @@ Veiled Presence: Challenge 22 (41,000 XP)</text>
 	• Corruption Abounds: While within 3 miles of the lair, creatures that aren't members of the villain's organization have disadvantage on ability checks that rely on the Insight, Perception, and Persuasion skills.
 
 	• Potent Toxins: When members of the villain's organization deal poison damage while within 3 miles of the lair, they ignore the target's resistance to poison damage. If the villain dies, these effects fade over the course of 1d10 days.</text>
-      <attack>Regional Effects Fade||1d10</attack>
+      <attack>Days||1d10</attack>
     </legendary>
     <description>The ultimate threat created by the Rogue card, the veiled presence is a Celestial for tier 4 play (levels 17 to 20). This being descends from an Outer Plane to bring cosmic wrath upon the characters.
 
@@ -3221,17 +3252,17 @@ Source:	The Book of Many Things p. 48</description>
     <action>
       <name>Beak (Vulture or Hybrid Form Only)</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a Humanoid, it must succeed on a DC 13 Constitution saving throw or be cursed until targeted by the Remove Curse spell or a similar effect. If the cursed target drops to 0 hit points, it becomes a werevulture under the DM's control and regains 10 hit points.</text>
-      <attack>Beak|+5|2d6+3</attack>
+      <attack>Piercing Damage|+5|2d6+3</attack>
     </action>
     <action>
       <name>Talon</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 13 (4d4 + 3) slashing damage.</text>
-      <attack>Talon|+5|4d4+3</attack>
+      <attack>Slashing Damage|+5|4d4+3</attack>
     </action>
     <action>
       <name>Longbow (Humanoid or Hybrid Form Only)</name>
       <text>Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 11 (2d8 + 2) piercing damage.</text>
-      <attack>Longbow|+4|2d8+2</attack>
+      <attack>Piercing Damage|+4|2d8+2</attack>
     </action>
     <action>
       <name>Change Shape (Bonus Action)</name>
