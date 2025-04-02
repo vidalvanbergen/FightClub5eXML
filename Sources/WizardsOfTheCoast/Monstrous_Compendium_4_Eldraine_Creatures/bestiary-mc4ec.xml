@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Archon of Boundaries</name>
@@ -14,26 +14,19 @@
     <int>14</int>
     <wis>18</wis>
     <cha>18</cha>
-    <save>con +10, wis +9</save>
-    <skill>insight +9, perception +9</skill>
+    <save>Con +10, Wis +9</save>
+    <skill>Insight +9, Perception +9</skill>
     <passive>19</passive>
     <languages>understands Common and Celestial but can't speak</languages>
     <cr>15</cr>
-    <exp>13000</exp>
+    <vulnerable/>
     <resist>Radiant</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune>Exhaustion</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+5</text>
-    </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The archon casts one of the following spells, using Charisma as the spellcasting ability:
-
-	• 1/Day each: daylight, lesser restoration</text>
     </trait>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
@@ -51,14 +44,22 @@
     <action>
       <name>Hooves</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 20 (4d6 + 6) bludgeoning damage plus 10 (3d6) radiant damage. If the target is a Medium or smaller creature, it must succeed on a DC 19 Strength saving throw or have the prone condition.</text>
-      <attack>Hooves|+11|4d6+6</attack>
+      <attack>Hooves|+11|(4d6+6)+(3d6)</attack>
+      <attack>Bludgeoning Damage|+11|4d6+6</attack>
       <attack>Radiant Damage||3d6</attack>
     </action>
     <action>
       <name>Radiant Lance</name>
       <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 12 (1d12 + 6) piercing damage plus 28 (8d6) radiant damage, and the target is marked until the start of the archon's next turn. While it is marked, the target has disadvantage on attack rolls against creatures other than the archon.</text>
-      <attack>Radiant Lance|+11|1d12+6</attack>
+      <attack>Radiant Lance|+11|(1d12+6)+(8d6)</attack>
+      <attack>Piercing Damage|+11|1d12+6</attack>
       <attack>Radiant Damage||8d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The archon casts one of the following spells, using Charisma as the spellcasting ability:
+
+	• 1/Day each: daylight, lesser restoration</text>
     </action>
     <reaction>
       <text>The archon can take up to three reactions per round but only one per turn.</text>
@@ -76,12 +77,9 @@
       <text>The archon adds 5 to its AC against one melee attack that would hit it, provided it can see the attacker.</text>
     </reaction>
     <spells>daylight, lesser restoration</spells>
-    <slots/>
     <description>The archons of Eldraine are enigmatic beings who fly over the perimeter where the realm meets the wilds, marking the boundary between safety (for the people of the realm) and danger. The sight of an archon overhead is a clear signal that one is entering the wilds.
-
-An archon appears as a hooded, spectral rider mounted on a winged elk with glowing antlers and gleaming eyes. Despite this appearance, rider and mount are a single creature that can't be separated. Tales say that archons are ascended spirits of paladins fused with the celestial spirits of their steeds, returned from the celestial realms to watch over the boundary of the wilds and protect those who dare to cross it.
-
-Sometimes knights of the realm get the idea that they can expand the borders of their land and keep the wilds at bay simply by driving archons deeper into the wilds. Such efforts are futile; not only are archons difficult to kill, but they don't create the boundaries, merely mark them.
+	An archon appears as a hooded, spectral rider mounted on a winged elk with glowing antlers and gleaming eyes. Despite this appearance, rider and mount are a single creature that can't be separated. Tales say that archons are ascended spirits of paladins fused with the celestial spirits of their steeds, returned from the celestial realms to watch over the boundary of the wilds and protect those who dare to cross it.
+	Sometimes knights of the realm get the idea that they can expand the borders of their land and keep the wilds at bay simply by driving archons deeper into the wilds. Such efforts are futile; not only are archons difficult to kill, but they don't create the boundaries, merely mark them.
 
 "A winged dawn dispels the terror of night."
 — Chulane, Teller of Tales
@@ -91,6 +89,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
   </monster>
   <monster>
     <name>Beanstalk Wurm</name>
+    <sortname>Wurm, Beanstalk</sortname>
+    <ancestry>Wurm</ancestry>
     <size>G</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -103,15 +103,14 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>4</int>
     <wis>14</wis>
     <cha>10</cha>
-    <save>str +14, con +12</save>
+    <save>Str +14, Con +12</save>
     <skill/>
     <passive>12</passive>
     <languages/>
     <cr>18</cr>
-    <exp>20000</exp>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -142,16 +141,12 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 30 (5d8 + 8) piercing damage. If the target is a Large or smaller creature, it must succeed on a DC 22 Dexterity saving throw or be swallowed by the wurm. A swallowed creature has the restrained condition, has total cover against attacks and other effects outside the wurm, and takes 28 (8d6) piercing damage at the start of each of the wurm's turns from thorns in the wurm's gullet.
-
-The wurm's stomach can hold up to two creatures at a time. If the wurm takes 30 damage or more on a single turn from a creature inside it, the wurm must succeed on a DC 22 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the wurm and has the prone condition. If the wurm dies, a swallowed creature no longer has the restrained condition and can escape from the corpse by using 10 feet of movement, exiting with the prone condition.</text>
-      <attack>Bite|+14|5d8+8</attack>
-      <attack>Swallowed||8d6</attack>
+	The wurm's stomach can hold up to two creatures at a time. If the wurm takes 30 damage or more on a single turn from a creature inside it, the wurm must succeed on a DC 22 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the wurm and has the prone condition. If the wurm dies, a swallowed creature no longer has the restrained condition and can escape from the corpse by using 10 feet of movement, exiting with the prone condition.</text>
+      <attack>Piercing Damage|+14|5d8+8</attack>
+      <attack>Piercing Damage||8d6</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>Wurms are enormous creatures that resemble limbless, wingless dragons, though they lack a dragon's breath weapons and keen intelligence. On the world of Eldraine, many wurms have adapted to life among the world's skyscraping beanstalks. These beanstalk wurms sport leafy growths, sustaining themselves on a mixture of natural photosynthesis and a carnivorous diet.
-
-Cloud-dwelling giants often use beanstalk wurms as a first line of defense against those who would ascend massive beanstalks—also known as Everstalks—to intrude on their lofty palaces. Beanstalk wurms lie coiled along the length of an Everstalk with their eyes closed and their stomach flattened against the stalk, appearing to be just another enormous vine until a tasty intruder attempts to climb them.
+	Cloud-dwelling giants often use beanstalk wurms as a first line of defense against those who would ascend massive beanstalks—also known as Everstalks—to intrude on their lofty palaces. Beanstalk wurms lie coiled along the length of an Everstalk with their eyes closed and their stomach flattened against the stalk, appearing to be just another enormous vine until a tasty intruder attempts to climb them.
 
 "When giants' prized pets escape Stormkeld, villages fall and new Everstalks rise."
 
@@ -160,6 +155,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
   </monster>
   <monster>
     <name>Deathless Rider</name>
+    <sortname>Rider, Deathless</sortname>
+    <ancestry>Rider</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -172,15 +169,14 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>6</int>
     <wis>6</wis>
     <cha>5</cha>
-    <save>str +7, con +5</save>
-    <skill>athletics +7, perception +1</skill>
+    <save>Str +7, Con +5</save>
+    <skill>Athletics +7, Perception +1</skill>
     <passive>11</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>5</cr>
-    <exp>1800</exp>
+    <vulnerable/>
     <resist>Necrotic</resist>
     <immune>Poison</immune>
-    <vulnerable/>
     <conditionImmune>Exhaustion, Poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -202,21 +198,16 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Axe</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.</text>
-      <attack>Axe|+7|2d8+4</attack>
+      <attack>Slashing Damage|+7|2d8+4</attack>
     </action>
     <action>
       <name>Fell Glare</name>
       <text>The rider gazes at a creature within 30 feet of itself. The creature must succeed on a DC 13 Wisdom saving throw or have the frightened condition for 1 minute. The frightened creature can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the rider, ending the condition on itself on a success.</text>
     </action>
-    <spells/>
-    <slots/>
     <description>Legends told in the courts of Eldraine suggest that the deathless riders serve a warlock-queen, known simply as the Shadow Queen, who rules from a castle called Dynnistan. It isn't known whether these legends are based on any true experience or are simply the result of imagination trying to account for a terrifying and unexplained phenomenon.
-
-In either case, deathless riders are undeniably real. They are undead knights, once human, who ride undead steeds through the remotest parts of the wilds. They are sometimes called lich-knights or fell horsemen.
-
-In stark contrast to the knights of Eldraine, the deathless riders are without virtue of any kind. They are few in number—unless many more lurk in the dark heart of the forest than anyone is aware. But when mortal knights meet them in the wilds, the encounter rarely ends well for the living. The deathless riders fight with superhuman strength, heedless of wounds and relentless in their assault.
-
-A typical deathless rider's mount is a warhorse skeleton, though some lich-knights ride equine spirits like nightmares.
+	In either case, deathless riders are undeniably real. They are undead knights, once human, who ride undead steeds through the remotest parts of the wilds. They are sometimes called lich-knights or fell horsemen.
+	In stark contrast to the knights of Eldraine, the deathless riders are without virtue of any kind. They are few in number—unless many more lurk in the dark heart of the forest than anyone is aware. But when mortal knights meet them in the wilds, the encounter rarely ends well for the living. The deathless riders fight with superhuman strength, heedless of wounds and relentless in their assault.
+	A typical deathless rider's mount is a warhorse skeleton, though some lich-knights ride equine spirits like nightmares.
 
 "Headed to the wilds? Beware the dead riders who serve the Shadow Queen."
 — Scalan, Edgewall innkeeper
@@ -226,6 +217,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
   </monster>
   <monster>
     <name>Dunbarrow Witch</name>
+    <sortname>Witch, Dunbarrow</sortname>
+    <ancestry>Witch</ancestry>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -238,28 +231,19 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>16</int>
     <wis>15</wis>
     <cha>20</cha>
-    <save>wis +5, cha +8</save>
-    <skill>arcana +6, nature +6</skill>
+    <save>Wis +5, Cha +8</save>
+    <skill>Arcana +6, Nature +6</skill>
     <passive>12</passive>
     <languages>Common, Sylvan, and any one language</languages>
     <cr>5</cr>
-    <exp>1800</exp>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+3</text>
-    </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The witch casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 16):
-
-	• At will: mage armor (self only), prestidigitation
-	• 2/Day each: animal messenger, charm person, Tasha's hideous laughter
-	• 1/Day each: bestow curse, dispel magic</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -268,7 +252,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Poison Dagger</name>
       <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 21 (6d6) poison damage.</text>
-      <attack>Poison Dagger|+5|1d4+2</attack>
+      <attack>Poison Dagger|+5|(1d4+2)+(6d6)</attack>
+      <attack>Piercing Damage|+5|1d4+2</attack>
       <attack>Poison Damage||6d6</attack>
     </action>
     <action>
@@ -280,28 +265,35 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Shattered Shards</name>
       <text>The witch targets a point it can see within 30 feet of itself. The air there magically solidifies into a mirrorlike pane, then shatters in a 15-foot cone originating from that point. Each creature in that area must make a DC 16 Dexterity saving throw, taking 25 (10d4) force damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Shattered Shards||10d4</attack>
+      <attack>Force Damage||10d4</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The witch casts one of the following spells, using Charisma as the spellcasting ability (spell save DC 16):
+
+	• At will: mage armor (self only), prestidigitation
+	• 2/Day each: animal messenger, charm person, Tasha's hideous laughter
+	• 1/Day each: bestow curse, dispel magic</text>
     </action>
     <spells>mage armor, prestidigitation, animal messenger, charm person, Tasha's hideous laughter, bestow curse, dispel magic</spells>
-    <slots/>
     <description>"Taste the sweetness, breath for breath.
 Keep the balance, death for death."
 — Dunbarrow witch incantation
 
 In the misty marsh of Dunbarrow, the witches of the Eldraine wilds scheme. They crave power by any means, and they aren't above cheating, sacrificing, or allying with whatever they believe will get them closer to that power.
-
-Much of a Dunbarrow witch's magic is performed at cauldrons and delivered as a poison or potion. The most aggressive witch spells take the form of shattering mirrors.
+	Much of a Dunbarrow witch's magic is performed at cauldrons and delivered as a poison or potion. The most aggressive witch spells take the form of shattering mirrors.
 
 Companion Creatures:
 Various creatures serve the witches of Dunbarrow. It's not uncommon to see ravens and bats flitting through the canopy, or cats or otters scurrying through the undergrowth, to deliver messages to allies or rivals across the marsh. Some witches animate bundles of sticks and roots to do their errands about the marsh for them, while others animate furniture, weapons, or other objects.
-
-Feel free to build encounters with witches that include additional creatures such as animated armor, a flying sword, a rug of smothering, or a Tiny Beast acting as a spy.
+	Feel free to build encounters with witches that include additional creatures such as animated armor, a flying sword, a rug of smothering, or a Tiny Beast acting as a spy.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
   </monster>
   <monster>
     <name>Faerie Borrower</name>
+    <sortname>Faerie, Borrower</sortname>
+    <ancestry>Faerie</ancestry>
     <size>T</size>
     <type>fey</type>
     <alignment>Chaotic Neutral</alignment>
@@ -315,26 +307,18 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <wis>12</wis>
     <cha>16</cha>
     <save/>
-    <skill>sleight of hand +7, stealth +7</skill>
+    <skill>Sleight Of Hand +7, Stealth +7</skill>
     <passive>11</passive>
     <languages>Common, Sylvan</languages>
     <cr>1/2</cr>
-    <exp>100</exp>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
-    </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The faerie casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 13):
-
-	• At will: prestidigitation
-	• 1/Day: silent image</text>
     </trait>
     <trait>
       <name>Flyby</name>
@@ -343,12 +327,19 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Needle Blade</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d4 + 5) piercing damage.</text>
-      <attack>Needle Blade|+7|1d4+5</attack>
+      <attack>Piercing Damage|+7|1d4+5</attack>
     </action>
     <action>
       <name>Magic Mockery</name>
       <text>The faerie hurls magical taunts at one creature it can see within 60 feet of itself. The creature must succeed on a DC 13 Wisdom saving throw or take 3 (1d6) psychic damage and have disadvantage on attack rolls and ability checks until the start of the faerie's next turn.</text>
-      <attack>Magic Mockery||1d6</attack>
+      <attack>Psychic Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The faerie casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 13):
+
+	• At will: prestidigitation
+	• 1/Day: silent image</text>
     </action>
     <reaction>
       <name>Tricksy Parry</name>
@@ -356,10 +347,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
       <attack>Tricksy Parry||1d4</attack>
     </reaction>
     <spells>prestidigitation, silent image</spells>
-    <slots/>
     <description>Faerie borrowers are tiny thieves who steal whatever they can lay their hands on to cause confusion and consternation. A faerie borrower stands less than six inches tall, with blue or blue-gray skin and wings resembling shards of broken glass.
-
-Faerie borrowers often adorn themselves with purloined trophies: stolen keys and needles filed into swords, and buttons and scraps of paper fashioned into clothing. Though they are often boastful and love to mock their victims, faerie borrowers are quick to dart away from losing battles on their nimble wings.
+	Faerie borrowers often adorn themselves with purloined trophies: stolen keys and needles filed into swords, and buttons and scraps of paper fashioned into clothing. Though they are often boastful and love to mock their victims, faerie borrowers are quick to dart away from losing battles on their nimble wings.
 
 "The throng of faeries flitted from castle to castle, leaving a trail of star-crossed love, damaging rumors, and missing heirlooms in their wake."
 — Tales of the Fae
@@ -375,6 +364,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
   </monster>
   <monster>
     <name>Faerie Pathlighter</name>
+    <sortname>Faerie, Pathlighter</sortname>
+    <ancestry>Faerie</ancestry>
     <size>M</size>
     <type>fey</type>
     <alignment>Chaotic Good</alignment>
@@ -388,23 +379,15 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <wis>17</wis>
     <cha>18</cha>
     <save/>
-    <skill>insight +5, perception +5, survival +5</skill>
+    <skill>Insight +5, Perception +5, Survival +5</skill>
     <passive>15</passive>
     <languages>Common, Sylvan</languages>
     <cr>2</cr>
-    <experience/>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The faerie casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability:
-
-	• At will: dancing lights, detect magic, prestidigitation
-	• 1/Day: locate creature</text>
-    </trait>
     <trait>
       <name>Faerie Illumination</name>
       <text>The faerie sheds dim light in a 15-foot radius.</text>
@@ -416,20 +399,24 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Shining Strike</name>
       <text>Melee or Ranged Spell Attack: +6 to hit, reach 5 ft. or range 30 ft., one target. Hit: 7 (2d6) radiant damage, and if the target is a creature, it must succeed on a DC 14 Dexterity saving throw or be wreathed in light until the end of the faerie's next turn. While a creature is wreathed in light, attack rolls against the creature have advantage, and the creature can't benefit from the invisible condition.</text>
-      <attack>Shining Strike|+6|2d6</attack>
+      <attack>Radiant Damage|+6|2d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The faerie casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability:
+
+	• At will: dancing lights, detect magic, prestidigitation
+	• 1/Day: locate creature</text>
     </action>
     <action>
       <name>Guiding Light (2/Day) (Bonus Action)</name>
       <recharge>2/Day</recharge>
       <text>The faerie summons a 30-foot-radius sphere of magical light centered on itself, which lasts for 1 minute or until the faerie has the incapacitated condition. Each creature of the faerie's choice (other than the faerie) that starts its turn in that area gains 5 temporary hit points and has advantage on Wisdom saving throws and Wisdom checks until the start of its next turn.
-
-The sphere is bright light, sheds dim light for an additional 30 feet, and moves with the faerie. If any of the sphere's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</text>
+	The sphere is bright light, sheds dim light for an additional 30 feet, and moves with the faerie. If any of the sphere's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</text>
     </action>
     <spells>dancing lights, detect magic, prestidigitation, locate creature</spells>
-    <slots/>
     <description>Faerie pathlighters pry into human lives, sometimes to help (like a classic fairy godparent) and sometimes to harm. In the wilds of Eldraine, faerie pathlighters often serve as protectors for the lost, the glow of their guiding lanterns leading weary travelers to respite.
-
-A faerie pathlighter has an almost angelic appearance. Their large, white wings become more translucent toward the edges. Motes of magical light drift around their heads, and a faint white aura surrounds their bodies.
+	A faerie pathlighter has an almost angelic appearance. Their large, white wings become more translucent toward the edges. Motes of magical light drift around their heads, and a faint white aura surrounds their bodies.
 
 "For good or ill, most fae can't resist meddling in the adventures of any knight they meet."
 
@@ -444,6 +431,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
   </monster>
   <monster>
     <name>Faerie Pest</name>
+    <sortname>Faerie, Pest</sortname>
+    <ancestry>Faerie</ancestry>
     <size>S</size>
     <type>fey</type>
     <alignment>Chaotic Evil</alignment>
@@ -457,33 +446,27 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <wis>12</wis>
     <cha>14</cha>
     <save/>
-    <skill>perception +3, stealth +7</skill>
+    <skill>Perception +3, Stealth +7</skill>
     <passive>13</passive>
     <languages>Common, Sylvan</languages>
     <cr>1</cr>
-    <exp>200</exp>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
     </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The faerie casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 12):
-
-	• 2/Day each: bane, grease
-	• 1/Day: blindness/deafness</text>
-    </trait>
     <action>
       <name>Stingblade</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 5 (2d4) poison damage. If the faerie had advantage on the attack roll, the target takes an additional 3 (1d6) slashing damage.</text>
-      <attack>Stingblade|+5|1d6+3</attack>
+      <attack>Stingblade|+5|(1d6+3)+(2d4)</attack>
+      <attack>Stingblade (With Advantage)|+5|(1d6+3)+(2d4)+(1d6)</attack>
+      <attack>Slashing Damage|+5|1d6+3</attack>
       <attack>Poison Damage||2d4</attack>
-      <attack>With Advantage|+5|2d6+3</attack>
+      <attack>Slashing Damage||1d6</attack>
     </action>
     <action>
       <name>Theft of Nerves (1/Day)</name>
@@ -491,14 +474,19 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
       <text>The faerie unleashes a burst of mind-muddling magic in a 15-foot cone. Each creature in that area must succeed on a DC 12 Intelligence saving throw or have the frightened condition for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <action>
+      <name>Spellcasting</name>
+      <text>The faerie casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 12):
+
+	• 2/Day each: bane, grease
+	• 1/Day: blindness/deafness</text>
+    </action>
+    <action>
       <name>Mischievous Stealth (Bonus Action)</name>
       <text>The faerie takes the Hide action.</text>
     </action>
     <spells>bane, grease, blindness/deafness</spells>
-    <slots/>
     <description>Faerie pests love to cause annoyance, fear, and pain. They are perhaps the most mercurial of the faeries and are happy to follow anyone who promises the opportunity to menace someone new.
-
-A faerie pest could be mistaken for a human toddler, except for the black-feathered wings sprouting from the faerie's shoulders. When engaged in combat, faerie pests wield thought-manipulating magic alongside sharp blades coated in stinging poison.
+	A faerie pest could be mistaken for a human toddler, except for the black-feathered wings sprouting from the faerie's shoulders. When engaged in combat, faerie pests wield thought-manipulating magic alongside sharp blades coated in stinging poison.
 
 "Tarry not in Tuinvale,
 Ignore the flowers' heady scents.
@@ -530,14 +518,13 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <wis>10</wis>
     <cha>12</cha>
     <save/>
-    <skill>acrobatics +6, athletics +3</skill>
+    <skill>Acrobatics +6, Athletics +3</skill>
     <passive>10</passive>
     <languages>one language of its creator</languages>
     <cr>1/2</cr>
-    <exp>100</exp>
+    <vulnerable>Bludgeoning</vulnerable>
     <resist/>
     <immune/>
-    <vulnerable>Bludgeoning</vulnerable>
     <conditionImmune>Exhaustion</conditionImmune>
     <senses/>
     <trait>
@@ -559,20 +546,16 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Fork</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage.</text>
-      <attack>Fork|+6|1d4+4</attack>
+      <attack>Piercing Damage|+6|1d4+4</attack>
     </action>
     <action>
       <name>Gumdrop Slingshot</name>
       <text>Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 6 (1d4 + 4) bludgeoning damage.</text>
-      <attack>Gumdrop Slingshot|+6|1d4+4</attack>
+      <attack>Bludgeoning Damage|+6|1d4+4</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>Gingerbread cookies baked in the wilds of Eldraine—or made from ingredients grown there—have a habit of developing a life of their own. Known as gingerbrutes, these cookie Constructs are notoriously difficult to pin down.
-
-When an unfortunate baker accidentally creates a gingerbrute, the cookie causes mayhem throughout the kitchen before running back to the wilds where its ingredients originated. Many witches of Dunbarrow craft gingerbrutes intentionally, whipping them into shape (sometimes with actual whipped cream) as soldiers to defend their wicked cauldrons.
-
-The same magic that animates a gingerbrute also makes it extra scrumptious. Those who have eaten a gingerbrute report feeling a burst of energy like a long-lasting sugar rush.
+	When an unfortunate baker accidentally creates a gingerbrute, the cookie causes mayhem throughout the kitchen before running back to the wilds where its ingredients originated. Many witches of Dunbarrow craft gingerbrutes intentionally, whipping them into shape (sometimes with actual whipped cream) as soldiers to defend their wicked cauldrons.
+	The same magic that animates a gingerbrute also makes it extra scrumptious. Those who have eaten a gingerbrute report feeling a burst of energy like a long-lasting sugar rush.
 
 "The unlabeled vial was not vanilla extract after all."
 — Todwin Mallow, now-destitute baker
@@ -594,15 +577,14 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>12</int>
     <wis>18</wis>
     <cha>15</cha>
-    <save>str +6, int +4</save>
-    <skill>insight +7, investigation +4, perception +10</skill>
+    <save>Str +6, Int +4</save>
+    <skill>Insight +7, Investigation +4, Perception +10</skill>
     <passive>20</passive>
     <languages/>
     <cr>7</cr>
-    <experience/>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune>Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -613,8 +595,7 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <trait>
       <name>Multiple Heads</name>
       <text>The Goose Mother has five heads. Whenever the Goose Mother takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the Goose Mother dies.
-
-At the end of its turn, the Goose Mother grows two heads for each of its heads that died since its last turn, unless it has taken poison damage since its last turn. The Goose Mother regains 10 hit points for each head when it regrows.</text>
+	At the end of its turn, the Goose Mother grows two heads for each of its heads that died since its last turn, unless it has taken poison damage since its last turn. The Goose Mother regains 10 hit points for each head when it regrows.</text>
     </trait>
     <trait>
       <name>Reactive Heads</name>
@@ -631,32 +612,26 @@ At the end of its turn, the Goose Mother grows two heads for each of its heads t
     <action>
       <name>Beak</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</text>
-      <attack>Beak|+6|1d6+3</attack>
+      <attack>Bludgeoning Damage|+6|1d6+3</attack>
     </action>
     <action>
       <name>Wing</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) bludgeoning damage. If the target is a Large or smaller creature, it must succeed on a DC 15 Strength saving throw or have the prone condition.</text>
-      <attack>Wing|+6|1d12+3</attack>
+      <attack>Bludgeoning Damage|+6|1d12+3</attack>
     </action>
     <action>
       <name>Lullaby of Honks (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The Goose Mother's heads honk a discordant lullaby. Each creature of the Goose Mother's choice within 10 feet of it must make a DC 15 Constitution saving throw. On a failed save, a creature takes 7 (2d6) thunder damage and falls into a magical slumber. On a successful save, the target takes half as much damage only. The honks can be heard up to 300 feet away.
-
-A creature under magical slumber has the unconscious condition for 8 hours. This effect ends early for a creature if it takes damage or another creature uses an action to shake it awake.</text>
-      <attack>Lullaby of Honks||2d6</attack>
+	A creature under magical slumber has the unconscious condition for 8 hours. This effect ends early for a creature if it takes damage or another creature uses an action to shake it awake.</text>
+      <attack>Thunder Damage||2d6</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>Astonishingly aggressive geese populate the marshes of Eldraine. Legends tell that these geese descend from a monstrous many-headed bird that dwells deep within the wilds. Though the knights of Eldraine consider its existence a myth, the folk of the wilds know that the Goose Mother is real.
-
-Centuries ago, an enterprising witch created a frothy stew composed of hydra's blood and goose feathers. It is from this noxious slurry that the Goose Mother was born. Within days, the Goose Mother grew to prodigious size, and the witch grew fearful. One night, while the Goose Mother slept, the witch took to its neck with a cleaver, but to her horror, two more heads sprouted in place of the first. Enraged, the Goose Mother devoured the witch and rampaged deep into the wilds where it lives to this day.
-
-The Goose Mother lays one golden egg every hour, precisely on the hour. Sometimes these eggs hatch into clutches of young geese that grow up to terrorize the marshes of Eldraine. Other times, the eggs contain trinkets or valuables. The fae folk of Eldraine's wilds have developed a symbiotic relationship with the Goose Mother, often bringing it fresh meat in exchange for the treasures inside its golden eggs.
-
+	Centuries ago, an enterprising witch created a frothy stew composed of hydra's blood and goose feathers. It is from this noxious slurry that the Goose Mother was born. Within days, the Goose Mother grew to prodigious size, and the witch grew fearful. One night, while the Goose Mother slept, the witch took to its neck with a cleaver, but to her horror, two more heads sprouted in place of the first. Enraged, the Goose Mother devoured the witch and rampaged deep into the wilds where it lives to this day.
+	The Goose Mother lays one golden egg every hour, precisely on the hour. Sometimes these eggs hatch into clutches of young geese that grow up to terrorize the marshes of Eldraine. Other times, the eggs contain trinkets or valuables. The fae folk of Eldraine's wilds have developed a symbiotic relationship with the Goose Mother, often bringing it fresh meat in exchange for the treasures inside its golden eggs.
 If you have Bigby Presents: Glory of the Giants, you can use the Goose Egg Trinket table to determine the contents of one of the Goose Mother's eggs that isn't destined to hatch into a goose or a giant goose (also described in that book).
 
-Goose Egg Trinket
+Goose Egg Trinket:
 d12 | Egg Contents
 1 | The egg is empty, but the inside of the shell is inscribed with a poem or an intricate illustration.
 2 | The gold shell encloses a candy egg.
@@ -684,27 +659,19 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>18</int>
     <wis>16</wis>
     <cha>23</cha>
-    <save>dex +9, wis +7</save>
-    <skill>deception +14, performance +10, stealth +13</skill>
+    <save>Dex +9, Wis +7</save>
+    <skill>Deception +14, Performance +10, Stealth +13</skill>
     <passive>13</passive>
     <languages>Common, Sylvan</languages>
     <cr>11</cr>
-    <exp>7200</exp>
+    <vulnerable/>
     <resist>Bludgeoning, Piercing or Slashing damage from nonmagical attacks</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+4</text>
-    </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The high fae casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 18):
-
-	• At will: friends, minor illusion
-	• 1/Day each: enthrall, Nystul's magic aura</text>
     </trait>
     <trait>
       <name>Magic Resistance</name>
@@ -717,29 +684,33 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Fae Blade</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) force damage.</text>
-      <attack>Fae Blade|+9|3d8+5</attack>
+      <attack>Force Damage|+9|3d8+5</attack>
     </action>
     <action>
       <name>Vexing Prank</name>
       <text>The high fae targets one creature it can see within 60 feet of itself with a magical trick. The target must make a DC 18 Wisdom saving throw. On a failed save, the target takes 21 (6d6) psychic damage and has the frightened condition until the start of the high fae's next turn. On a successful save, the target takes half as much damage only.</text>
-      <attack>Vexing Prank||6d6</attack>
+      <attack>Psychic Damage||6d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The high fae casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 18):
+
+	• At will: friends, minor illusion
+	• 1/Day each: enthrall, Nystul's magic aura</text>
     </action>
     <action>
       <name>Loot Likeness (Bonus Action)</name>
       <text>The high fae magically transforms into a duplicate of a Small or Medium creature it can see. While transformed, the high fae retains its game statistics (other than its size) but gains access to enough general information about the imitated creature, such as background and personality, to reasonably pass itself off as the creature. This transformation ends if the high fae is reduced to 0 hit points, uses this bonus action again, or uses a bonus action to revert to its true form.</text>
     </action>
     <spells>friends, minor illusion, enthrall, Nystul's magic aura</spells>
-    <slots/>
     <description>High fae impostors are sly and mischievous manipulators who delight in disguising themselves with magic to vex other creatures. Their reasons for deception vary, ranging from harmless pranks to malicious infiltration. When a high fae impostor takes on the identity of another creature, the impostor magically gains access to a small portion of that creature's mind—any information that the creature might share with a casual acquaintance. Though not comprehensive, this information helps high fae impostors impersonate their targets effectively.
 
 "Though unable to tell outright lies, the high fae of Eldraine have many other means of deception at their disposal."
 
 High Fae:
 Ageless and inhuman, high fae are the oldest creatures in Eldraine, embodying the natural splendor and danger of the wilderness. High fae have no regard for mortal values of honor and law, but they nonetheless operate under inviolable rules of their own: gifts must always be repaid, promises must be honored, and outright lies must never be spoken (though misdirection and riddles are always welcome). To amuse themselves over the long centuries of their lives, high fae frequently engage in deceptions and other complex games of wits against one another.
-
-Most high fae remain secluded deep within the wilds of Eldraine. They draw power from motes of light found throughout the wilds, and they use their innate illusory magic to power and embellish their various weapons.
-
-The high fae are ruled by Talion, the Kindly Lord. Talion is as strange, ancient, and fickle as the wilds of Eldraine, and the Kindly Lord demands fealty and respect from followers. Despite having an austere demeanor, the Kindly Lord is also known for following mysterious whims, journeying to the farthest reaches of Eldraine out of an insatiable curiosity.
+	Most high fae remain secluded deep within the wilds of Eldraine. They draw power from motes of light found throughout the wilds, and they use their innate illusory magic to power and embellish their various weapons.
+	The high fae are ruled by Talion, the Kindly Lord. Talion is as strange, ancient, and fickle as the wilds of Eldraine, and the Kindly Lord demands fealty and respect from followers. Despite having an austere demeanor, the Kindly Lord is also known for following mysterious whims, journeying to the farthest reaches of Eldraine out of an insatiable curiosity.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
@@ -758,15 +729,14 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>14</int>
     <wis>17</wis>
     <cha>13</cha>
-    <save>str +10, dex +10</save>
-    <skill>acrobatics +10, athletics +10, perception +7</skill>
+    <save>Str +10, Dex +10</save>
+    <skill>Acrobatics +10, Athletics +10, Perception +7</skill>
     <passive>17</passive>
     <languages>Common, Sylvan</languages>
     <cr>12</cr>
-    <exp>8400</exp>
+    <vulnerable/>
     <resist>Bludgeoning, Piercing or Slashing damage from nonmagical attacks</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -788,7 +758,7 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Fae Claymore</name>
       <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 20 (4d6 + 6) force damage, and the target's speed is reduced by 10 feet, to a minimum speed of 5 feet. The reduction lasts until the start of the high fae's next turn.</text>
-      <attack>Fae Claymore|+10|4d6+6</attack>
+      <attack>Force Damage|+10|4d6+6</attack>
     </action>
     <action>
       <name>Tripping Feint</name>
@@ -802,21 +772,16 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
       <name>Parry and Riposte</name>
       <text>The high fae adds 4 to its AC against one melee attack roll that would hit it, provided it can see the attacker. After the attack hits or misses, the high fae then makes one Fae Claymore attack against the attacker.</text>
     </reaction>
-    <spells/>
-    <slots/>
     <description>High fae kindguards have spent centuries perfecting their martial prowess, moving with a speed and grace others can only imagine. Their tall stature, large wings, elaborate horns, and massive weapons give them a truly intimidating silhouette.
-
-The most trusted high fae kindguards are in direct service to Talion, the Kindly Lord. Nine times nine have these high fae sworn a binding oath to protect the Kindly Lord, each time pricking their hand on a hawthorn branch to seal the promise.
+	The most trusted high fae kindguards are in direct service to Talion, the Kindly Lord. Nine times nine have these high fae sworn a binding oath to protect the Kindly Lord, each time pricking their hand on a hawthorn branch to seal the promise.
 
 "The Kindly Lord does not issue invitations to their court lightly. I suggest you accept."
 — Gwyddion, messenger of Talion
 
 High Fae:
 Ageless and inhuman, high fae are the oldest creatures in Eldraine, embodying the natural splendor and danger of the wilderness. High fae have no regard for mortal values of honor and law, but they nonetheless operate under inviolable rules of their own: gifts must always be repaid, promises must be honored, and outright lies must never be spoken (though misdirection and riddles are always welcome). To amuse themselves over the long centuries of their lives, high fae frequently engage in deceptions and other complex games of wits against one another.
-
-Most high fae remain secluded deep within the wilds of Eldraine. They draw power from motes of light found throughout the wilds, and they use their innate illusory magic to power and embellish their various weapons.
-
-The high fae are ruled by Talion, the Kindly Lord. Talion is as strange, ancient, and fickle as the wilds of Eldraine, and the Kindly Lord demands fealty and respect from followers. Despite having an austere demeanor, the Kindly Lord is also known for following mysterious whims, journeying to the farthest reaches of Eldraine out of an insatiable curiosity.
+	Most high fae remain secluded deep within the wilds of Eldraine. They draw power from motes of light found throughout the wilds, and they use their innate illusory magic to power and embellish their various weapons.
+	The high fae are ruled by Talion, the Kindly Lord. Talion is as strange, ancient, and fickle as the wilds of Eldraine, and the Kindly Lord demands fealty and respect from followers. Despite having an austere demeanor, the Kindly Lord is also known for following mysterious whims, journeying to the farthest reaches of Eldraine out of an insatiable curiosity.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
@@ -835,27 +800,19 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>17</int>
     <wis>15</wis>
     <cha>24</cha>
-    <save>int +7, wis +6, cha +11</save>
-    <skill>arcana +11, investigation +7, nature +7</skill>
+    <save>Int +7, Wis +6, Cha +11</save>
+    <skill>Arcana +11, Investigation +7, Nature +7</skill>
     <passive>12</passive>
     <languages>Common, Sylvan</languages>
     <cr>12</cr>
-    <exp>8400</exp>
+    <vulnerable/>
     <resist>Bludgeoning, Piercing or Slashing damage from nonmagical attacks</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+4</text>
-    </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The high fae casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 19):
-
-	• At will: dancing lights, detect magic, druidcraft, mage armor (self only)
-	• 2/Day each: faerie fire, gust of wind, mirror image</text>
     </trait>
     <trait>
       <name>Magic Resistance</name>
@@ -868,34 +825,37 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Elemental Strike</name>
       <text>Melee or Ranged Spell Attack: +11 to hit, reach 5 ft. or range 60 ft., one target. Hit: 18 (2d10 + 7) acid, cold, fire, force, lightning, or thunder damage (the high fae's choice).</text>
-      <attack>Elemental Strike|+11|2d10+7</attack>
+      <attack>Acid, Cold, Fire, Force, Lightning, Or Thunder Damage|+11|2d10+7</attack>
     </action>
     <action>
       <name>Negotiate Life (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The high fae enacts a magical bargain, siphoning energy from its opponents to heal its wounds. The high fae targets up to three creatures it can see within 60 feet of itself. Each target must make a DC 19 Constitution saving throw, taking 26 (4d12) necrotic damage on a failed save, or half as much damage on a successful one. The high fae then regains 30 hit points.</text>
-      <attack>Negotiate Life||4d12</attack>
+      <attack>Necrotic Damage||4d12</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The high fae casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 19):
+
+	• At will: dancing lights, detect magic, druidcraft, mage armor (self only)
+	• 2/Day each: faerie fire, gust of wind, mirror image</text>
     </action>
     <reaction>
       <name>Fae Counterspell</name>
       <text>The high fae interrupts a creature it can see that is casting a spell with verbal, somatic, or material components. The caster takes 10 (3d6) psychic damage and must make a DC 19 Charisma saving throw. On a failed save, the spell fails and has no effect, but the spell slot used to cast it is not expended.</text>
-      <attack>Fae Counterspell||3d6</attack>
+      <attack>Psychic Damage||3d6</attack>
     </reaction>
     <spells>dancing lights, detect magic, druidcraft, mage armor, faerie fire, gust of wind, mirror image</spells>
-    <slots/>
     <description>High fae mages are some of the mightiest magic users among the faeries of Eldraine. These skilled spellcasters have mastered the arcane art of dealmaking among the fae, magically negotiating themselves advantages in battle.
-
-Like many high fae, these mages draw power from the latent energy found throughout the wilds of Eldraine. However, high fae mages also form strong bonds with the elemental powers of Eldraine, allowing the mages to call on forces like the eastern wind or the fiery hearth.
+	Like many high fae, these mages draw power from the latent energy found throughout the wilds of Eldraine. However, high fae mages also form strong bonds with the elemental powers of Eldraine, allowing the mages to call on forces like the eastern wind or the fiery hearth.
 
 "The high fae are capable of magic that would make even the great Gadwick himself seem little more than a clumsy apprentice."
 — Chulane, Teller of Tales
 
 High Fae:
 Ageless and inhuman, high fae are the oldest creatures in Eldraine, embodying the natural splendor and danger of the wilderness. High fae have no regard for mortal values of honor and law, but they nonetheless operate under inviolable rules of their own: gifts must always be repaid, promises must be honored, and outright lies must never be spoken (though misdirection and riddles are always welcome). To amuse themselves over the long centuries of their lives, high fae frequently engage in deceptions and other complex games of wits against one another.
-
-Most high fae remain secluded deep within the wilds of Eldraine. They draw power from motes of light found throughout the wilds, and they use their innate illusory magic to power and embellish their various weapons.
-
-The high fae are ruled by Talion, the Kindly Lord. Talion is as strange, ancient, and fickle as the wilds of Eldraine, and the Kindly Lord demands fealty and respect from followers. Despite having an austere demeanor, the Kindly Lord is also known for following mysterious whims, journeying to the farthest reaches of Eldraine out of an insatiable curiosity.
+	Most high fae remain secluded deep within the wilds of Eldraine. They draw power from motes of light found throughout the wilds, and they use their innate illusory magic to power and embellish their various weapons.
+	The high fae are ruled by Talion, the Kindly Lord. Talion is as strange, ancient, and fickle as the wilds of Eldraine, and the Kindly Lord demands fealty and respect from followers. Despite having an austere demeanor, the Kindly Lord is also known for following mysterious whims, journeying to the farthest reaches of Eldraine out of an insatiable curiosity.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
@@ -914,27 +874,19 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>19</int>
     <wis>18</wis>
     <cha>22</cha>
-    <save>dex +12, int +9, wis +9, cha +11</save>
-    <skill>history +9, insight +14, perception +9</skill>
+    <save>Dex +12, Int +9, Wis +9, Cha +11</save>
+    <skill>History +9, Insight +14, Perception +9</skill>
     <passive>19</passive>
     <languages>Common, Sylvan, telepathy 120 ft.</languages>
     <cr>13</cr>
-    <exp>10000</exp>
+    <vulnerable/>
     <resist>Bludgeoning, Piercing or Slashing damage from nonmagical attacks</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune>Charmed, Exhaustion, Frightened</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+5</text>
-    </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The high fae casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 19):
-
-	• At will: detect magic, prestidigitation, suggestion
-	• 1/Day each: major image, zone of truth</text>
     </trait>
     <trait>
       <name>Aura of Overwhelming Splendor</name>
@@ -963,6 +915,16 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
       <recharge>D5</recharge>
       <text>The high fae unleashes a string of magical words. Each creature of the high fae's choice within 30 feet of itself must succeed on a DC 19 Wisdom saving throw or have the stunned condition for 1 minute. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The high fae casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 19):
+
+	• At will: detect magic, prestidigitation, suggestion
+	• 1/Day each: major image, zone of truth</text>
+    </action>
+    <reaction>
+      <text>The high fae can take up to three reactions per round but only one per turn.</text>
+    </reaction>
     <reaction>
       <name>Capricious Step</name>
       <text>Immediately after taking damage, the high fae magically has the invisible condition and teleports, along with any equipment it is wearing or carrying, to an unoccupied space it can see within 30 feet of itself. The invisibility lasts until the end of the high fae's next turn.</text>
@@ -970,20 +932,16 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <reaction>
       <name>Ridicule</name>
       <text>When a creature misses the high fae with an attack roll, the high fae magically mocks the creature, dealing 5 (2d4) psychic damage to the attacker.</text>
-      <attack>Ridicule||2d4</attack>
+      <attack>Psychic Damage||2d4</attack>
     </reaction>
     <spells>detect magic, prestidigitation, suggestion, major image, zone of truth</spells>
-    <slots/>
     <description>High fae nobles regard themselves as the natural and obvious superiors of all in Eldraine. Many have been given dominion over a small aspect of the natural world; there are dukes and duchesses for each of the seasons, and noble archivists track every promise made and broken within the borders of Eldraine.
-
-High fae nobles use their illusions and innate magic to impress their peers and express their capricious natures. Many adorn themselves with auras of magic that dazzle others, while uttering mocking phrases that magically stun and ridicule their opponents. High fae nobles will spend countless years in mind-bendingly complicated games of political calculus, their alliances ever-shifting as they jockey for favors and status in the Kindly Lord's court.
+	High fae nobles use their illusions and innate magic to impress their peers and express their capricious natures. Many adorn themselves with auras of magic that dazzle others, while uttering mocking phrases that magically stun and ridicule their opponents. High fae nobles will spend countless years in mind-bendingly complicated games of political calculus, their alliances ever-shifting as they jockey for favors and status in the Kindly Lord's court.
 
 High Fae:
 Ageless and inhuman, high fae are the oldest creatures in Eldraine, embodying the natural splendor and danger of the wilderness. High fae have no regard for mortal values of honor and law, but they nonetheless operate under inviolable rules of their own: gifts must always be repaid, promises must be honored, and outright lies must never be spoken (though misdirection and riddles are always welcome). To amuse themselves over the long centuries of their lives, high fae frequently engage in deceptions and other complex games of wits against one another.
-
-Most high fae remain secluded deep within the wilds of Eldraine. They draw power from motes of light found throughout the wilds, and they use their innate illusory magic to power and embellish their various weapons.
-
-The high fae are ruled by Talion, the Kindly Lord. Talion is as strange, ancient, and fickle as the wilds of Eldraine, and the Kindly Lord demands fealty and respect from followers. Despite having an austere demeanor, the Kindly Lord is also known for following mysterious whims, journeying to the farthest reaches of Eldraine out of an insatiable curiosity.
+	Most high fae remain secluded deep within the wilds of Eldraine. They draw power from motes of light found throughout the wilds, and they use their innate illusory magic to power and embellish their various weapons.
+	The high fae are ruled by Talion, the Kindly Lord. Talion is as strange, ancient, and fickle as the wilds of Eldraine, and the Kindly Lord demands fealty and respect from followers. Despite having an austere demeanor, the Kindly Lord is also known for following mysterious whims, journeying to the farthest reaches of Eldraine out of an insatiable curiosity.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
@@ -1002,15 +960,14 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>13</int>
     <wis>11</wis>
     <cha>13</cha>
-    <save>con +4, wis +2</save>
+    <save>Con +4, Wis +2</save>
     <skill/>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>3</cr>
-    <exp>700</exp>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1021,58 +978,49 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
       <name>Knightly Virtue</name>
       <text>The knight has one of the following traits, depending on the court it serves:
 
-Courage (Embereth):
-The knight has advantage on Wisdom checks and Wisdom saving throws.
+Courage (Embereth): The knight has advantage on Wisdom checks and Wisdom saving throws.
 
-Knowledge (Vantress):
-The knight has advantage on Intelligence checks and Intelligence saving throws.
+Knowledge (Vantress): The knight has advantage on Intelligence checks and Intelligence saving throws.
 
-Loyalty (Ardenvale):
-The knight has advantage on Charisma checks and Charisma saving throws.
+Loyalty (Ardenvale): The knight has advantage on Charisma checks and Charisma saving throws.
 
-Persistence (Locthwain):
-The knight has advantage on Constitution saving throws.
+Persistence (Locthwain): The knight has advantage on Constitution saving throws.
 
-Strength (Garenbrig):
-The knight has advantage on Strength checks and Strength saving throws</text>
+Strength (Garenbrig): The knight has advantage on Strength checks and Strength saving throws</text>
     </trait>
     <action>
       <name>Lance</name>
       <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) piercing damage plus 9 (2d8) radiant damage.</text>
-      <attack>Lance|+5|1d12+3</attack>
+      <attack>Lance|+5|(1d12+3)+(2d8)</attack>
+      <attack>Piercing Damage|+5|1d12+3</attack>
       <attack>Radiant Damage||2d8</attack>
     </action>
     <action>
       <name>Longsword</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands, plus 9 (2d8) radiant damage.</text>
-      <attack>Longsword|+5|1d8+3</attack>
-      <attack>Two-Handed|+5|1d10+3</attack>
+      <attack>Longsword|+5|(1d8+3)+(2d8)</attack>
+      <attack>Longsword (Two-Handed)|+5|(1d10+3)+(2d8)</attack>
+      <attack>Slashing Damage|+5|1d8+3</attack>
+      <attack>Slashing Damage (Two-Handed)|+5|1d10+3</attack>
       <attack>Radiant Damage||2d8</attack>
     </action>
     <action>
       <name>Heavy Crossbow</name>
       <text>Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 6 (1d10 + 1) piercing damage plus 9 (2d8) radiant damage.</text>
-      <attack>Heavy Crossbow|+3|1d10+1</attack>
+      <attack>Heavy Crossbow|+3|(1d10+1)+(2d8)</attack>
+      <attack>Piercing Damage|+3|1d10+1</attack>
       <attack>Radiant Damage||2d8</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>The realm of Eldraine once consisted of five knightly courts: Ardenvale, Embereth, Garenbrig, Locthwain, and Vantress. In ancient times, the courts were established around five relics of tremendous magical power and unknown origin. Each relic is a magical embodiment of one of the five virtues the knights of the realm hold as standards of excellence.
-
-The recent invasion of nightmarish creatures called Phyrexians devastated the courts, with much of the surviving populace fleeing into the wilds. A young prince, Will Kenrith, does his best to reunite the shattered realm, but a return to its former glory seems far off.
-
-Even in the shattered remnants of the realm, knighthood is among the highest honors one can receive. Knights of the realm, who are all addressed with the honorific "Syr," are revered as champions, heroes, and paragons of virtue. They have many responsibilities, from protecting townsfolk to embarking on adventures in the wilds. Knights are often equipped with fine armor and weapons, and they ride noble steeds of various species—including griffons in Ardenvale, giant owls in Vantress, and giant ravens (use the giant vulture stat block) in Locthwain. Some knights also wield powerful magic drawn from the relics of their respective courts.
-
-In the wake of the Phyrexian invasion, whole orders of knights have journeyed deep into the wilds, searching for a magical remedy to restore the kingdom to its former glory, or seeking to help travelers and remote communities beset by troubles.
-
-Achieving knighthood in one of the courts requires a quest that proves one's excellence in that court's virtue. In some courts, the final step to becoming a knight involves being judged by that court's relic. Each court believes the virtue associated with its own relic is paramount, though not in lieu of the others. A knight of Embereth admires courage above all else but still looks down on the disloyal or ignorant, even though loyalty and knowledge are virtues championed by other courts.
-
-Knights of Eldraine channel their devotion to the virtues of the realm into magical power that infuses their attacks. Most knights deal extra radiant damage with these attacks, but some knights might deal damage of a different type, such as fire (for knights of Embereth) or necrotic (for knights of Locthwain).
+	The recent invasion of nightmarish creatures called Phyrexians devastated the courts, with much of the surviving populace fleeing into the wilds. A young prince, Will Kenrith, does his best to reunite the shattered realm, but a return to its former glory seems far off.
+	Even in the shattered remnants of the realm, knighthood is among the highest honors one can receive. Knights of the realm, who are all addressed with the honorific "Syr," are revered as champions, heroes, and paragons of virtue. They have many responsibilities, from protecting townsfolk to embarking on adventures in the wilds. Knights are often equipped with fine armor and weapons, and they ride noble steeds of various species—including griffons in Ardenvale, giant owls in Vantress, and giant ravens (use the giant vulture stat block) in Locthwain. Some knights also wield powerful magic drawn from the relics of their respective courts.
+	In the wake of the Phyrexian invasion, whole orders of knights have journeyed deep into the wilds, searching for a magical remedy to restore the kingdom to its former glory, or seeking to help travelers and remote communities beset by troubles.
+	Achieving knighthood in one of the courts requires a quest that proves one's excellence in that court's virtue. In some courts, the final step to becoming a knight involves being judged by that court's relic. Each court believes the virtue associated with its own relic is paramount, though not in lieu of the others. A knight of Embereth admires courage above all else but still looks down on the disloyal or ignorant, even though loyalty and knowledge are virtues championed by other courts.
+	Knights of Eldraine channel their devotion to the virtues of the realm into magical power that infuses their attacks. Most knights deal extra radiant damage with these attacks, but some knights might deal damage of a different type, such as fire (for knights of Embereth) or necrotic (for knights of Locthwain).
 
 The Verdant Order:
 In the wake of the Phyrexian invasion, knights from all five courts of Eldraine have joined to form a new organization, the Verdant Order. These knights renounced their oaths in favor of a new one, swearing to protect the last part of their world untouched by war: the wildest parts of Eldraine. To that end, they patrol the forests along the Boundary Lands, turning back loggers and hunters—by force if necessary.
-
-Though they've renounced their former oaths, the knights of the Verdant Order retain their focus on the five virtues of the courts, so their Knightly Virtue trait remains unchanged.
+	Though they've renounced their former oaths, the knights of the Verdant Order retain their focus on the five virtues of the courts, so their Knightly Virtue trait remains unchanged.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
@@ -1096,10 +1044,9 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <passive>11</passive>
     <languages>Deep Speech, telepathy 120 ft.</languages>
     <cr>5</cr>
-    <exp>1800</exp>
+    <vulnerable/>
     <resist/>
     <immune>Psychic</immune>
-    <vulnerable/>
     <conditionImmune>Blinded, Charmed, Exhaustion, Frightened</conditionImmune>
     <senses>blindsight 120 ft. (can't see beyond this radius)</senses>
     <trait>
@@ -1121,37 +1068,35 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Claw</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 9 (2d8) psychic damage.</text>
-      <attack>Claw|+6|1d6+3</attack>
+      <attack>Claw|+6|(1d6+3)+(2d8)</attack>
+      <attack>Slashing Damage|+6|1d6+3</attack>
       <attack>Psychic Damage||2d8</attack>
     </action>
     <action>
       <name>Tendrils of Slumber (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The nightmare haunt creates spectral tendrils that cover the ground in a 20-foot square that it can see within 30 feet of itself for 1 minute or until it uses this action again. When a creature other than the nightmare haunt enters the affected area for the first time or starts its turn there, the creature must succeed on a DC 14 Strength saving throw or take 11 (2d10) necrotic damage and have the restrained condition. The affected ground is also considered difficult terrain for creatures other than the nightmare haunt for the duration of its effect.
-
-A creature that starts its turn in the area and is already restrained by the tendrils must repeat the saving throw. On a failed save, it has the unconscious condition and instead of the restrained condition caused by the tendrils. On a successful save, the effect ends on the creature. An unconscious creature remains asleep until it is no longer in the area with tendrils, takes any damage, or is targeted by a remove curse spell or similar magic.</text>
-      <attack>Tendrils of Slumber||2d10</attack>
+	A creature that starts its turn in the area and is already restrained by the tendrils must repeat the saving throw. On a failed save, it has the unconscious condition and instead of the restrained condition caused by the tendrils. On a successful save, the effect ends on the creature. An unconscious creature remains asleep until it is no longer in the area with tendrils, takes any damage, or is targeted by a remove curse spell or similar magic.</text>
+      <attack>Necrotic Damage||2d10</attack>
     </action>
     <action>
       <name>Shadow Stealth (Bonus Action)</name>
       <text>While in dim light or darkness, the nightmare haunt takes the Hide action.</text>
     </action>
-    <spells/>
-    <slots/>
     <description>Nightmare haunts are terrors from the minds of Eldraine's sleeping citizens, made tangible by the planeswalker Ashiok. These creatures can hurt the body and also attack the minds of dreamers afflicted by the Wicked Slumber.
-
-Nightmare haunts appear as horrifying shadow creatures with forms evocative of their victims' deepest fears. Due to the collective trauma experienced by the people of Eldraine during the Phyrexian invasion, many nightmare haunts take the shape of those terrifying invaders, having multiple limbs and inhuman visages. Smoky purplish energy wafts from their forms, suggesting their connection to the Wicked Slumber.
+	Nightmare haunts appear as horrifying shadow creatures with forms evocative of their victims' deepest fears. Due to the collective trauma experienced by the people of Eldraine during the Phyrexian invasion, many nightmare haunts take the shape of those terrifying invaders, having multiple limbs and inhuman visages. Smoky purplish energy wafts from their forms, suggesting their connection to the Wicked Slumber.
 
 The Wicked Slumber:
 During the Phyrexian invasion of Eldraine, the high fae monarch Talion, the Kindly Lord, and a trio of witch sisters performed a grand ritual to create a sleeping curse. Even with the Phyrexians defeated, the curse remains and spreads unchecked through Eldraine due to interference from the planeswalker Ashiok and Eriette, one of the witches who helped create the curse. The Wicked Slumber affects rich and poor alike, causing them to fall into an endless sleep or roam as sleepwalkers. Animals are also affected, and even tree boughs droop as if exhausted in areas where the Wicked Slumber is prominent. Purple tendrils of wispy nightmares spread like vines across those areas and surround the bodies of those who sleep.
-
-Heroes throughout Eldraine have ventured out to find a cure for the Wicked Slumber, but no one has yet discovered how to break the enchantment. It has even affected one of the Kindly Lord's daughters, the famed duelist Obyra. Meanwhile, Eriette and Ashiok conspire to build a nightmare realm in the ruins of Castle Ardenvale at the heart of the Wicked Slumber, replacing the virtuous court with one composed of sleepwalkers and dreamers guarded by nightmare haunts.
+	Heroes throughout Eldraine have ventured out to find a cure for the Wicked Slumber, but no one has yet discovered how to break the enchantment. It has even affected one of the Kindly Lord's daughters, the famed duelist Obyra. Meanwhile, Eriette and Ashiok conspire to build a nightmare realm in the ruins of Castle Ardenvale at the heart of the Wicked Slumber, replacing the virtuous court with one composed of sleepwalkers and dreamers guarded by nightmare haunts.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
   </monster>
   <monster>
     <name>Ogre Chitterlord</name>
+    <sortname>Ogre, Chitterlord</sortname>
+    <ancestry>Ogre</ancestry>
     <size>L</size>
     <type>giant (druid)</type>
     <alignment>Any Alignment</alignment>
@@ -1164,15 +1109,14 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>5</int>
     <wis>12</wis>
     <cha>9</cha>
-    <save>wis +3</save>
-    <skill>animal handling +3, nature +1</skill>
+    <save>Wis +3</save>
+    <skill>Animal Handling +3, Nature +1</skill>
     <passive>11</passive>
     <languages>Common, Giant</languages>
     <cr>3</cr>
-    <exp>700</exp>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1197,25 +1141,25 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Club</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.</text>
-      <attack>Club|+6|2d10+4</attack>
+      <attack>Bludgeoning Damage|+6|2d10+4</attack>
     </action>
     <action>
       <name>Call Rats (1/Day)</name>
       <recharge>1/Day</recharge>
       <text>The ogre magically calls 1d4 giant rats. Each rat appears in an unoccupied space within 30 feet of the ogre that the ogre can see. The rats act as the ogre's allies, obey its spoken commands, and take their turns immediately after the ogre's turn on the same initiative count. The rats remain for 1 hour, until the ogre dies, or until the ogre dismisses them as a bonus action.</text>
-      <attack>Call Rats||1d4</attack>
+      <attack>Giant Rats||1d4</attack>
     </action>
     <spells>beast sense, druidcraft, entangle, animal messenger (rats only), stinking cloud</spells>
-    <slots/>
     <description>When ogres first moved into the wilds of Eldraine, they encountered all manner of unfamiliar creatures: spellcasting witches, tricksy faeries, and talking beasts. Over generations, these ogres adapted to their new environs, passing down a spellcasting tradition of their own to help their kin wreak havoc in the wilds and beyond.
-
-An ogre chitterlord exercises control over the rats that infest Dunbarrow and countless other regions in the wilds of Eldraine. When ogres venture from the wilds to raid nearby settlements, an ogre chitterlord often leads the way, calling rats from the alleys and sewers to harry townsfolk from within the city while the ogres lay siege to the outer walls. Should their rodent allies fail them, chitterlords can also turn the tide of any battle with their prodigious strength and druidic magic.
+	An ogre chitterlord exercises control over the rats that infest Dunbarrow and countless other regions in the wilds of Eldraine. When ogres venture from the wilds to raid nearby settlements, an ogre chitterlord often leads the way, calling rats from the alleys and sewers to harry townsfolk from within the city while the ogres lay siege to the outer walls. Should their rodent allies fail them, chitterlords can also turn the tide of any battle with their prodigious strength and druidic magic.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
   </monster>
   <monster>
     <name>Redtooth Werefox</name>
+    <sortname>Werefox, Redtooth</sortname>
+    <ancestry>Werefox</ancestry>
     <size>M</size>
     <type>monstrosity (elf)</type>
     <alignment>Any Alignment</alignment>
@@ -1229,14 +1173,13 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <wis>13</wis>
     <cha>10</cha>
     <save/>
-    <skill>acrobatics +5, perception +5, survival +3</skill>
+    <skill>Acrobatics +5, Perception +5, Survival +3</skill>
     <passive>15</passive>
     <languages>Common, Elvish (can't speak in fox form)</languages>
     <cr>3</cr>
-    <exp>700</exp>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1250,17 +1193,17 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Bite (Fox or Hybrid Form Only)</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage. If the werefox moved at least 20 feet straight toward the target immediately before the hit and the target is a Medium or smaller creature, the target must succeed on a DC 13 Strength saving throw or have the prone condition.</text>
-      <attack>Bite|+5|1d10+3</attack>
+      <attack>Piercing Damage|+5|1d10+3</attack>
     </action>
     <action>
       <name>Lance (Elf or Hybrid Form Only)</name>
       <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) piercing damage.</text>
-      <attack>Lance|+5|1d12+3</attack>
+      <attack>Piercing Damage|+5|1d12+3</attack>
     </action>
     <action>
       <name>Entangling Arrow (Elf or Hybrid Form Only)</name>
       <text>Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 10 (2d6 + 3) piercing damage, and the target must succeed on a DC 11 Dexterity saving throw or have the restrained condition until the start of the werefox's next turn.</text>
-      <attack>Entangling Arrow|+5|2d6+3</attack>
+      <attack>Piercing Damage|+5|2d6+3</attack>
     </action>
     <action>
       <name>Change Shape (Bonus Action)</name>
@@ -1270,11 +1213,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
       <name>Vulpine Nimbleness (Fox or Hybrid Form Only) (Bonus Action)</name>
       <text>The werefox takes the Dash or Disengage action.</text>
     </action>
-    <spells/>
-    <slots/>
     <description>By day, the elves of Redtooth Keep are agile and adept rangers, expertly patrolling the lands around one of the last elven citadels in Eldraine. But at night, terrifying howls echo from the keep's halls as its inhabitants transform into ruthless werefoxes.
-
-Unlike other forms of lycanthropy, the werefox curse isn't contagious and is limited to the elves of Redtooth Keep. Legends say that long ago, the garrison at Redtooth Keep turned away a group of travelers seeking shelter. Before departing, one of the travelers was revealed to be a powerful witch and cursed the elves, declaring that their bodies would forever transform to match their hearts' selfish and bestial natures.
+	Unlike other forms of lycanthropy, the werefox curse isn't contagious and is limited to the elves of Redtooth Keep. Legends say that long ago, the garrison at Redtooth Keep turned away a group of travelers seeking shelter. Before departing, one of the travelers was revealed to be a powerful witch and cursed the elves, declaring that their bodies would forever transform to match their hearts' selfish and bestial natures.
 
 "My people are both bloom and thorn. Our ferocious impulses are as much a part of us as our skills, our beauty, and our history."
 — Yenna, Redtooth regent
@@ -1297,14 +1237,13 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <wis>12</wis>
     <cha>11</cha>
     <save/>
-    <skill>perception +5, stealth +3</skill>
+    <skill>Perception +5, Stealth +3</skill>
     <passive>15</passive>
     <languages>Infernal, telepathy 30 ft.</languages>
     <cr>2</cr>
-    <exp>450</exp>
+    <vulnerable/>
     <resist/>
     <immune>Poison</immune>
-    <vulnerable/>
     <conditionImmune>Poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -1318,7 +1257,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Rancid Bite</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 7 (2d6) acid damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or have the poisoned condition until the start of the sewer king's next turn.</text>
-      <attack>Rancid Bite|+6|1d8+4</attack>
+      <attack>Rancid Bite|+6|(1d8+4)+(2d6)</attack>
+      <attack>Piercing Damage|+6|1d8+4</attack>
       <attack>Acid Damage||2d6</attack>
     </action>
     <action>
@@ -1330,11 +1270,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
       <name>Skitter (Bonus Action)</name>
       <text>The sewer king moves up to its speed without provoking opportunity attacks.</text>
     </action>
-    <spells/>
-    <slots/>
     <description>Sewer kings are hulking, monstrous rats empowered by fiendish blood. This unholy influence gives sewer kings their enormous size, supernatural strength, wicked cunning, and ability to speak.
-
-Deep in the bowels of towns and cities, sewer kings reign over underground vermin, dreaming of the day when rats will overthrow surface dwellers. Rancid saliva drips from a sewer king's maw, and swarms of vermin skitter at the monstrous rat's beck and call.
+	Deep in the bowels of towns and cities, sewer kings reign over underground vermin, dreaming of the day when rats will overthrow surface dwellers. Rancid saliva drips from a sewer king's maw, and swarms of vermin skitter at the monstrous rat's beck and call.
 
 "'The human world will fall,' whispered the monstrous rat. 'You have but one choice to make: Will you fall with it?'"
 — Song of the Vermin
@@ -1346,6 +1283,8 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
   </monster>
   <monster>
     <name>Snapping Hydra</name>
+    <sortname>Hydra, Snapping</sortname>
+    <ancestry>Hydra</ancestry>
     <size>H</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -1359,14 +1298,13 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <wis>16</wis>
     <cha>7</cha>
     <save/>
-    <skill>perception +11</skill>
+    <skill>Perception +11</skill>
     <passive>21</passive>
     <languages/>
     <cr>11</cr>
-    <exp>7200</exp>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune>Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1380,8 +1318,7 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <trait>
       <name>Multiple Heads</name>
       <text>The hydra has five heads. Whenever the hydra takes 30 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies.
-
-At the end of its turn, the hydra grows two heads for each of its heads that died since its last turn, unless it has taken cold damage since its last turn. The hydra regains 10 hit points for each head regrown this way.</text>
+	At the end of its turn, the hydra grows two heads for each of its heads that died since its last turn, unless it has taken cold damage since its last turn. The hydra regains 10 hit points for each head regrown this way.</text>
     </trait>
     <trait>
       <name>Reactive Heads</name>
@@ -1398,17 +1335,14 @@ At the end of its turn, the hydra grows two heads for each of its heads that die
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) piercing damage.</text>
-      <attack>Bite|+9|2d8+5</attack>
+      <attack>Piercing Damage|+9|2d8+5</attack>
     </action>
     <action>
       <name>Shell Defense</name>
       <text>The hydra withdraws its limbs and heads into its shell. Until it emerges as a bonus action, it gains a +4 bonus to AC and has advantage on Strength and Constitution saving throws. While in its shell, the hydra has the prone condition, its speed is 0 and can't increase, its heads can't die, it has disadvantage on Dexterity saving throws, and it can't take any other actions or reactions.</text>
     </action>
-    <spells/>
-    <slots/>
     <description>A rare variety of hydra native to the wilds of Eldraine, snapping hydras resemble giant, many-headed turtles. Snapping hydras dwell at the bottom of the wild's largest lakes, or along shorelines where the wilds meet the ocean. These monstrous creatures are aptly named; their bites are known to snap giants' arms cleanly in half.
-
-Snapping hydras have naturally long life spans and strong instincts of self-preservation. When a snapping hydra feels a battle's odds tipping out of its favor, the hydra lets out a raspy screech and retracts into its shell. In the wilds of Eldraine, it's never long before a hungry or curious creature arrives to investigate, leaping into battle with the hydra's foes while the hydra makes an opportune exit.
+	Snapping hydras have naturally long life spans and strong instincts of self-preservation. When a snapping hydra feels a battle's odds tipping out of its favor, the hydra lets out a raspy screech and retracts into its shell. In the wilds of Eldraine, it's never long before a hungry or curious creature arrives to investigate, leaping into battle with the hydra's foes while the hydra makes an opportune exit.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
@@ -1427,15 +1361,14 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>12</int>
     <wis>13</wis>
     <cha>12</cha>
-    <save>dex +8, wis +5</save>
-    <skill>perception +5</skill>
+    <save>Dex +8, Wis +5</save>
+    <skill>Perception +5</skill>
     <passive>15</passive>
     <languages>understands Common but can't speak</languages>
     <cr>12</cr>
-    <exp>8400</exp>
+    <vulnerable/>
     <resist>Necrotic</resist>
     <immune>Poison</immune>
-    <vulnerable/>
     <conditionImmune>Exhaustion, Poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -1458,32 +1391,32 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Hooves</name>
       <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 16 (3d6 + 6) bludgeoning damage plus 28 (8d6) necrotic damage. If the target is a Medium or smaller creature, it must succeed on a DC 18 Strength saving throw or have the prone condition.</text>
-      <attack>Hooves|+10|3d6+6</attack>
+      <attack>Hooves|+10|(3d6+6)+(8d6)</attack>
+      <attack>Bludgeoning Damage|+10|3d6+6</attack>
       <attack>Necrotic Damage||8d6</attack>
     </action>
     <action>
       <name>Mournful Keening {@recharge}</name>
       <text>The specter utters a keening wail, calling to those close to death. Each non-Undead creature within 120 feet of the specter must make a DC 15 Constitution saving throw. On a failure, the creature hears the wail and is marked for death.
-
-A creature marked for death can't regain hit points, has disadvantage on death saving throws, and all attack rolls against it are made with advantage. This effect lasts for 1 minute or until the creature is targeted by a remove curse spell or similar magic.</text>
+	A creature marked for death can't regain hit points, has disadvantage on death saving throws, and all attack rolls against it are made with advantage. This effect lasts for 1 minute or until the creature is targeted by a remove curse spell or similar magic.</text>
     </action>
     <action>
       <name>Reaping Scythe</name>
       <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 12 (1d12 + 6) slashing damage plus 28 (8d6) necrotic damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or gain a level of exhaustion.</text>
-      <attack>Reaping Scythe|+10|1d12+6</attack>
+      <attack>Reaping Scythe|+10|(1d12+6)+(8d6)</attack>
+      <attack>Slashing Damage|+10|1d12+6</attack>
       <attack>Necrotic Damage||8d6</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>Like dark mirrors of Eldraine's archons (see "Archon of Boundaries"), specters appear as shrouded figures mounted on horrific flying beasts. It is easy to look at a specter and imagine the rider in command of the mount, but the truth is the opposite; the flying horror is an Undead monster that scours the wilds for a knightly corpse. On finding one, the horror binds its essence to the dead body, giving the corpse the semblance of life as a rider. The two function as a single creature, more powerful for their unnatural union.
-
-Humans of Eldraine view specters as heralds of death. Specters are said to utter a keening wail, mournful beyond all other sounds and audible only to those who are about to die.
+	Humans of Eldraine view specters as heralds of death. Specters are said to utter a keening wail, mournful beyond all other sounds and audible only to those who are about to die.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
   </monster>
   <monster>
     <name>Sweettooth Horror</name>
+    <sortname>Horror, Sweettooth</sortname>
+    <ancestry>Horror</ancestry>
     <size>L</size>
     <type>fiend</type>
     <alignment>Neutral Evil</alignment>
@@ -1501,10 +1434,9 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <passive>9</passive>
     <languages/>
     <cr>4</cr>
-    <exp>1100</exp>
+    <vulnerable>Bludgeoning</vulnerable>
     <resist/>
     <immune>Poison</immune>
-    <vulnerable>Bludgeoning</vulnerable>
     <conditionImmune>Charmed, Exhaustion, Poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1526,16 +1458,15 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 10 (3d6) acid damage.</text>
-      <attack>Bite|+6|2d6+4</attack>
+      <attack>Bite|+6|(2d6+4)+(3d6)</attack>
+      <attack>Piercing Damage|+6|2d6+4</attack>
       <attack>Acid Damage||3d6</attack>
     </action>
     <action>
       <name>Candy Cane</name>
       <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage. If the target is a Large or smaller creature, the horror can choose to deal no damage; instead, the target has the prone condition, and the horror can pull the target up to 5 feet toward itself.</text>
-      <attack>Candy Cane|+6|1d8+4</attack>
+      <attack>Bludgeoning Damage|+6|1d8+4</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>No one is certain of the true origin of Sweettooth Village. This eerie, abandoned town constructed of gingerbread and frosting lies deep in the wilds of Eldraine. Some say the fiendish candy monsters that prowl its butterscotch-lined streets were once servants of a powerful witch, and the entire place was a trap created to lure hungry travelers. But if the sugary horrors of Sweettooth Village were ever under someone's control, that time has long since passed.
 
 "I smell frosting. Ready your weapons!"
@@ -1560,15 +1491,14 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>3</int>
     <wis>18</wis>
     <cha>14</cha>
-    <save>dex +7, wis +8</save>
-    <skill>perception +12</skill>
+    <save>Dex +7, Wis +8</save>
+    <skill>Perception +12</skill>
     <passive>22</passive>
     <languages/>
     <cr>11</cr>
-    <exp>7200</exp>
+    <vulnerable/>
     <resist>Bludgeoning, Piercing or Slashing damage from nonmagical attacks</resist>
     <immune>Lightning, Thunder</immune>
-    <vulnerable/>
     <conditionImmune>Exhaustion</conditionImmune>
     <senses/>
     <trait>
@@ -1587,12 +1517,12 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Lightning Antlers</name>
       <text>Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 16 (2d10 + 5) lightning damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or have the stunned condition until the start of the hart's next turn.</text>
-      <attack>Lightning Antlers|+9|2d10+5</attack>
+      <attack>Lightning Damage|+9|2d10+5</attack>
     </action>
     <action>
       <name>Thunder Hooves</name>
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) thunder damage.</text>
-      <attack>Thunder Hooves|+9|2d8+5</attack>
+      <attack>Thunder Damage|+9|2d8+5</attack>
     </action>
     <reaction>
       <name>Entangling Growth</name>
@@ -1601,15 +1531,11 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <reaction>
       <name>Lightning Call</name>
       <text>In response to making a saving throw, the hart calls down a bolt of lightning that targets a creature it can see within 120 feet of itself. The target must make a DC 16 Dexterity saving throw, taking 19 (3d12) lightning damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Lightning Call||3d12</attack>
+      <attack>Lightning Damage||3d12</attack>
     </reaction>
-    <spells/>
-    <slots/>
     <description>Storm giants live high above Eldraine in a cloudy landscape known as Stormkeld. Massive cottages, keeps, and towers dot this magical realm, scattered between expanses of cloudy wilderness marked by tangles of giant beanstalks and raging storms. Various enormous creatures dwell in these wilds, with the tempest hart being among the most majestic.
-
-A colossal elk with antlers made of living lightning, a tempest hart has a long mane of fine hair that waves as if tossed by a strong wind. Its patterned hide resembles the twisting beanstalks that also coil around its legs, shoulders, and haunches.
-
-Storm giant hunters consider tempest harts to be the worthiest prey, desirable for their meat and the raw lightning of their antlers. However, these creatures wield mighty elemental power to defend themselves.
+	A colossal elk with antlers made of living lightning, a tempest hart has a long mane of fine hair that waves as if tossed by a strong wind. Its patterned hide resembles the twisting beanstalks that also coil around its legs, shoulders, and haunches.
+	Storm giant hunters consider tempest harts to be the worthiest prey, desirable for their meat and the raw lightning of their antlers. However, these creatures wield mighty elemental power to defend themselves.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
@@ -1628,28 +1554,19 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>10</int>
     <wis>20</wis>
     <cha>11</cha>
-    <save>con +8, int +4, wis +9</save>
-    <skill>insight +9, nature +8, perception +9</skill>
+    <save>Con +8, Int +4, Wis +9</save>
+    <skill>Insight +9, Nature +8, Perception +9</skill>
     <passive>19</passive>
     <languages>Common, Druidic, Sylvan</languages>
     <cr>11</cr>
-    <exp>7200</exp>
+    <vulnerable>Fire</vulnerable>
     <resist>Bludgeoning, Piercing</resist>
     <immune/>
-    <vulnerable>Fire</vulnerable>
     <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+4</text>
-    </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The treefolk casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save DC 17):
-
-	• At will: detect poison and disease, druidcraft
-	• 1/Day: commune with nature (as an action)
-	• 2/Day each: enlarge/reduce, speak with plants</text>
     </trait>
     <trait>
       <name>Plant Camouflage</name>
@@ -1666,20 +1583,27 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Crushing Vine</name>
       <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 25 (3d12 + 6) bludgeoning damage. If the target is a creature, it has the grappled condition (escape DC 18). While grappled, the creature also has the restrained condition. The treefolk can grapple up to six creatures this way.</text>
-      <attack>Crushing Vine|+10|3d12+6</attack>
+      <attack>Bludgeoning Damage|+10|3d12+6</attack>
     </action>
     <action>
       <name>Nightshade Bolt</name>
       <text>Ranged Spell Attack: +9 to hit, range 60 ft., one target. Hit: 33 (6d10) poison damage.</text>
-      <attack>Nightshade Bolt|+9|6d10</attack>
+      <attack>Poison Damage|+9|6d10</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The treefolk casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save DC 17):
+
+	• At will: detect poison and disease, druidcraft
+	• 1/Day: commune with nature (as an action)
+	• 2/Day each: enlarge/reduce, speak with plants</text>
     </action>
     <action>
       <name>Oaken Boon (Bonus Action)</name>
       <text>The treefolk blesses one creature other than itself that it can see within 60 feet of itself with the might and wisdom of the forest. While blessed in this way, a creature can use the treefolk's Tree Stride trait and gains 5 (2d4) temporary hit points at the start of each of its turns. This blessing lasts for 1 minute, until the treefolk has the incapacitated condition, or until the treefolk uses this bonus action again.</text>
-      <attack>Okean Boon||2d4</attack>
+      <attack>Oaken Boon||2d4</attack>
     </action>
     <spells>detect poison and disease, druidcraft, commune with nature (as an action), enlarge/reduce, speak with plants</spells>
-    <slots/>
     <description>The wise and ancient treefolk thrive in the depths of Eldraine's forested wilds. Though many treefolk rival members of the high fae in age, they rarely interfere with the goings-on of the faerie court. Instead, treefolk serve as guardians and shepherds of their wild groves, dispensing wisdom and blessings to travelers who wander under their branches.
 
 "Right now, you are a feeble stick, but I will help you grow some rings."
@@ -1702,27 +1626,19 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>15</int>
     <wis>17</wis>
     <cha>19</cha>
-    <save>dex +5, wis +8, cha +9</save>
-    <skill>arcana +7, perception +8, stealth +5</skill>
+    <save>Dex +5, Wis +8, Cha +9</save>
+    <skill>Arcana +7, Perception +8, Stealth +5</skill>
     <passive>18</passive>
     <languages>Draconic</languages>
     <cr>15</cr>
-    <exp>13000</exp>
+    <vulnerable/>
     <resist>Fire, Psychic</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+5</text>
-    </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The witchkite casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 17):
-
-	• At will: detect magic, minor illusion, speak with dead
-	• 1/Day each: detect thoughts, dimension door, hold monster</text>
     </trait>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
@@ -1736,26 +1652,34 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Rend</name>
       <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 16 (3d6 + 6) slashing damage.</text>
-      <attack>Rend|+11|3d6+6</attack>
+      <attack>Slashing Damage|+11|3d6+6</attack>
     </action>
     <action>
       <name>Malevolent Flare</name>
       <text>The witchkite spits magical, green-tinged flame at one creature it can see within 60 feet of itself. The target must make a DC 17 Dexterity saving throw. On a failed save, the target takes 22 (5d8) fire damage and suffers one of the following effects of the witchkite's choice:
-
-On a successful save, the target takes half as much damage only.</text>
-      <attack>Malevolent Flare||5d8</attack>
+	On a successful save, the target takes half as much damage only.</text>
+      <attack>Fire Damage||5d8</attack>
     </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The witchkite casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 17):
+
+	• At will: detect magic, minor illusion, speak with dead
+	• 1/Day each: detect thoughts, dimension door, hold monster</text>
+    </action>
+    <reaction>
+      <text>The witchkite can take up to two reactions per round but only one per turn.</text>
+    </reaction>
     <reaction>
       <name>Enchanting Gaze</name>
       <text>When a creature the witchkite can see moves within 10 feet of it, the witchkite emits an enchanting gaze at the creature. The creature must succeed on a DC 17 Wisdom saving throw or take 10 (3d6) psychic damage and have the charmed condition until the end of its next turn.</text>
-      <attack>Enchanting Gaze||3d6</attack>
+      <attack>Psychic Damage||3d6</attack>
     </reaction>
     <reaction>
       <name>Retribution</name>
       <text>Immediately after taking damage from a melee attack, the witchkite makes one Rend attack against the attacker.</text>
     </reaction>
     <spells>detect magic, minor illusion, speak with dead, detect thoughts, dimension door, hold monster</spells>
-    <slots/>
     <description>While many dragons of Eldraine hoard wealth and material goods, witchkites prefer hoarding forbidden and dangerous magical secrets. The arcane nature of a witchkite's hoard seeps into the dragon's core, granting it spellcasting abilities and twisting its fiery breath into malevolent motes of magical flame.
 
 "I heard there's an especially fearsome witch around here. Or was it a particularly cruel dragon? The tales were very confu—"
@@ -1781,15 +1705,14 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <int>8</int>
     <wis>12</wis>
     <cha>6</cha>
-    <save>str +7, wis +4</save>
-    <skill>perception +7, stealth +6</skill>
+    <save>Str +7, Wis +4</save>
+    <skill>Perception +7, Stealth +6</skill>
     <passive>17</passive>
     <languages>understands Common but can't speak</languages>
     <cr>6</cr>
-    <exp>2300</exp>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>truesight 60 ft.</senses>
     <trait>
@@ -1811,23 +1734,20 @@ Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) piercing damage. If the target is a Large or smaller creature, it must succeed on a DC 15 Strength saving throw or have the prone condition.</text>
-      <attack>Bite|+7|3d6+4</attack>
+      <attack>Piercing Damage|+7|3d6+4</attack>
     </action>
     <action>
       <name>Mind-Wracking Howl (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The witchstalker unleashes a terrible howl, and each creature within 30 feet of it that isn't a Monstrosity must make a DC 13 Wisdom saving throw. On a failed save, a creature takes 24 (7d6) psychic damage and has disadvantage on Constitution saving throws to maintain concentration on spells until the end of its next turn. On a successful save, a creature takes half as much damage only.</text>
-      <attack>Mind-Wracking Howl||7d6</attack>
+      <attack>Psychic Damage||7d6</attack>
     </action>
     <reaction>
       <name>Spell Stalk</name>
       <text>Immediately after a creature within 120 feet of the witchstalker casts a spell, the witchstalker magically teleports to an unoccupied space within 5 feet of the creature and can make one Bite attack against the creature.</text>
     </reaction>
-    <spells/>
-    <slots/>
     <description>Twice the size of their ordinary kin, witchstalkers are giant wolves drawn to sources of magic by their supernatural sense of smell. As a result, the moors and forests of Dunbarrow make for good hunting grounds. The greater the source of magic, the more witchstalkers are drawn to the area. To their dismay, witches have drawn as many as a dozen witchstalkers.
-
-Witchstalkers resemble monstrous wolves with enormous jaws and ridged spines. By feeding on spellcasters and other sources of magic, witchstalkers developed their own magical abilities, including a supernatural howl and the ability to teleport next to unsuspecting prey.
+	Witchstalkers resemble monstrous wolves with enormous jaws and ridged spines. By feeding on spellcasters and other sources of magic, witchstalkers developed their own magical abilities, including a supernatural howl and the ability to teleport next to unsuspecting prey.
 
 Source:	Monstrous Compendium Vol. 4 - Eldraine Creatures</description>
     <environment/>
