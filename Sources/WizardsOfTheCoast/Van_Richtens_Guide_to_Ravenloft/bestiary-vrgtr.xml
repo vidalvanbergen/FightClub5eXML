@@ -1,7 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Apprentice</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment/>
@@ -15,16 +16,15 @@
     <wis>11</wis>
     <cha>12</cha>
     <save>Int +3</save>
-    <skill> Arcana +3, History +3</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses/>
+    <skill>Arcana +3, History +3</skill>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr/>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 201</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>You cast one of the following wizard spells (spell save DC 11), using Intelligence as the spellcasting ability:
@@ -50,10 +50,13 @@
       <attack/>
     </action>
     <spells>minor illusion, fire bolt, burning hands, grease</spells>
-    <slots/>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 201</description>
+    <environment/>
   </monster>
   <monster>
     <name>Bodytaker Plant</name>
+    <sortname>Plant, Bodytaker</sortname>
+    <ancestry>Plant</ancestry>
     <size>H</size>
     <type>plant</type>
     <alignment/>
@@ -68,15 +71,14 @@
     <cha>18</cha>
     <save/>
     <skill/>
-    <resist/>
-    <vulnerable>poison</vulnerable>
-    <immune/>
-    <conditionImmune>blinded, charmed, frightened, prone</conditionImmune>
-    <senses>blindsight 120 ft. (blind beyond this radius)</senses>
     <passive>12</passive>
     <languages>Deep Speech, telepathy 120 ft.</languages>
     <cr>7</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 226</description>
+    <vulnerable>poison</vulnerable>
+    <resist/>
+    <immune/>
+    <conditionImmune>blinded, charmed, frightened, prone</conditionImmune>
+    <senses>blindsight 120 ft. (blind beyond this radius)</senses>
     <trait>
       <name>Podling Link</name>
       <text>The plant can see through and communicate telepathically with any of its podlings within 10 miles of it. Rejuvenation. When the plant dies, it returns to life in the place where it died 1d12 months later, unless the ground where it took root is sown with salt or soaked with poison. Unusual Nature. The plant doesn't require sleep.</text>
@@ -89,14 +91,14 @@
       <name>Vine Lash</name>
       <text>Melee Weapon Attack: +7 to hit, reach 20 ft., one target. Hit: 11 (2d6 + 4) slashing damage. If the target is a creature, it is grappled (escape DC 15). Until the grapple ends, the target is restrained. The plant has four vines, each of which can grapple one target.</text>
     </action>
-    <attack>Vine Lash|+7|2d6+4</attack>
     <action>
       <name>Entrapping Pod</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one Medium or smaller creature grappled by the plant. Hit: 22 (4d8 + 4) acid damage, and the target is pulled into the plant's space and enveloped by the pod, and the grapple ends.
 
 While enveloped, the target is restrained, and it has total cover against attacks and effects originating outside the pod. The enveloped target must also immediately succeed on a DC 16 Constitution saving throw or be stunned by the plant's sapping enzymes until it is removed from the pod or the plant dies. The enveloped target doesn't require air and gains 1 level of exhaustion for each hour it spends in the pod. If the target dies while enveloped, it immediately emerges from the pod as a living podling, wearing or carrying all of the original creature's equipment. As an action, a creature within 5 feet of the bodytaker plant that is outside the pod can open the pod and pull the target free with a successful DC 15 Strength check. If the plant dies, the target is no longer restrained and can escape from the pod by spending 10 feet of movement, exiting prone. The plant has one pod, which can envelop one creature at a time.</text>
     </action>
-    <attack>Entrapping Pod|+7|4d8+4</attack>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 226</description>
+    <environment/>
   </monster>
   <monster>
     <name>Boneless</name>
@@ -114,15 +116,14 @@ While enveloped, the target is restrained, and it has total cover against attack
     <cha>1</cha>
     <save/>
     <skill>Stealth +4</skill>
-    <resist>bludgeoning, poison</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>10</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>1</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 228</description>
+    <vulnerable/>
+    <resist>bludgeoning, poison</resist>
+    <immune/>
+    <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Compression</name>
       <text>The boneless can move through any opening at least 1 inch wide without squeezing. It can also squeeze to fit into a space that a Tiny creature could fit in.</text>
@@ -145,6 +146,8 @@ While enveloped, the target is restrained, and it has total cover against attack
       <text>The boneless wraps its body around a Large or smaller creature grappled by it. While the boneless is attached, the target is blinded and is unable to breathe. The target must succeed on a DC 13 Strength saving throw at the start of each of the boneless' turns or take 5 (1d4 + 3) bludgeoning damage. If something moves the target, the boneless moves with it. The boneless can detach itself by spending 5 feet of its movement. A creature, including the target, can use its action to try to detach the boneless and force it to move into the nearest unoccupied space, doing so with a successful DC 13 Strength check. When the boneless dies, it detaches from any creature it is attached to.</text>
       <attack>Crushing Embrace||1d4+3</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 228</description>
+    <environment/>
   </monster>
   <monster>
     <name>Brain In A Jar</name>
@@ -162,15 +165,14 @@ While enveloped, the target is restrained, and it has total cover against attack
     <cha>15</cha>
     <save>Int +6, Cha +4</save>
     <skill/>
-    <resist/>
-    <vulnerable/>
-    <immune>poison</immune>
-    <conditionImmune>exhaustion, paralyzed, poisoned, prone</conditionImmune>
-    <senses>blindsight 120 ft. (blind beyond this radius); see also "Detect Sentience" below</senses>
     <passive>10</passive>
     <languages>the languages it knew in life</languages>
     <cr>3</cr>
-    <description>Source:	Icewind Dale: Rime of the Frostmaiden p. 279, Lost Laboratory of Kwalish p. 38, Van Richten's Guide to Ravenloft p. 278</description>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, paralyzed, poisoned, prone</conditionImmune>
+    <senses>blindsight 120 ft. (blind beyond this radius); see also "Detect Sentience" below</senses>
     <trait>
       <name>Detect Sentience</name>
       <text>The brain can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a mind blank spell.</text>
@@ -205,9 +207,15 @@ If the target is Undead, it also has disadvantage on attack rolls against the br
       <attack>Mind Blast||3d8+4</attack>
     </action>
     <spells>detect thoughts, mage hand, zone of truth, charm person, hold person, compulsion, hold monster, sleep (3rd-level version), Tasha's hideous laughter</spells>
+    <description>Source:	Icewind Dale: Rime of the Frostmaiden p. 279,
+		Lost Laboratory of Kwalish p. 38,
+		Van Richten's Guide to Ravenloft p. 278</description>
+    <environment/>
   </monster>
   <monster>
     <name>Carrion Stalker</name>
+    <sortname>Stalker, Carrion</sortname>
+    <ancestry>Stalker</ancestry>
     <size>T</size>
     <type>monstrosity</type>
     <alignment/>
@@ -222,15 +230,14 @@ If the target is Undead, it also has disadvantage on attack rolls against the br
     <cha>6</cha>
     <save>Int +6, Cha +4</save>
     <skill>Stealth +7</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>blinded</conditionImmune>
-    <senses>tremorsense 60 ft.</senses>
     <passive>11</passive>
     <languages>—</languages>
     <cr>3</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 230</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>blinded</conditionImmune>
+    <senses>tremorsense 60 ft.</senses>
     <action>
       <name>Multiattack</name>
       <text>The carrion stalker makes three Tentacle attacks. If it is attached to a creature, it can replace one Tentacle attack with Larval Burst, if available.</text>
@@ -248,6 +255,8 @@ While attached, the carrion stalker moves with the target and has advantage on a
       <text>The carrion stalker releases a burst of larvae in a 10-foot-radius sphere centered on itself. Each creature in that area must succeed on a DC 13 Constitution saving throw or be poisoned. A creature poisoned in this way takes 7 (2d6) poison damage at the start of each of its turns as larvae infest its body. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Any effect that cures disease or removes the poisonedcondition instantly kills the larvae in the creature, ending the effect on it. If a creature is reduced to 0 hit points by the infestation, it dies. The larvae remain in the corpse, and one survives to become a fully grown carrion stalker in 1d4 weeks. Any effect that cures diseases or removes the poisoned condition that targets the corpse instantly kills the larvae.</text>
       <attack>Larval Burst||2d6</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 230</description>
+    <environment/>
   </monster>
   <monster>
     <name>Carrionette</name>
@@ -265,15 +274,14 @@ While attached, the carrion stalker moves with the target and has advantage on a
     <cha>14</cha>
     <save>Int +6, Cha +4</save>
     <skill/>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses/>
     <passive>12</passive>
     <languages>understands the languages of its creator</languages>
     <cr>1</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 231</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>False Object</name>
       <text>If the carrionette is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the carrionette move or act, that creature must succeed on a DC 15 Wisdom (Perception) check to discern that the carrionette is animate.</text>
@@ -295,6 +303,8 @@ While cursed in this way, the target's speed is reduced by 10 feet, and it must 
 If the carrionette's body is destroyed, both the carrionette and the target die. A protection from evil and good spell cast on the controlled body drives the carrionette out and returns the consciousness of both creatures to their original bodies. The swap is also undone if the controlled body takes damage from the carrionette's Silver Needle.</text>
       <attack>Soul Swap</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 231</description>
+    <environment/>
   </monster>
   <monster>
     <name>Death's Head</name>
@@ -312,15 +322,14 @@ If the carrionette's body is destroyed, both the carrionette and the target die.
     <cha>3</cha>
     <save>Int +6, Cha +4</save>
     <skill/>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses/>
     <passive>12</passive>
     <languages>—</languages>
     <cr>1/2</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 232</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Beheaded Form</name>
       <text>When created, a death's head takes one of three forms: Aberrant Head, Gnashing Head, or Petrifying Head. This form determines the creature's attack.</text>
@@ -348,9 +357,12 @@ Moreover, on its next turn, the target must choose whether it gets a move, an ac
 The target must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the target is petrified for 10 minutes.</text>
       <attack>Petrifying Bite|+3|1d4+1</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 232</description>
+    <environment/>
   </monster>
   <monster>
     <name>Disciple</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment/>
@@ -364,16 +376,15 @@ The target must repeat the saving throw at the end of its next turn. On a succes
     <wis>13</wis>
     <cha>9</cha>
     <save>Wis +3</save>
-    <skill> Perception +3, Religion +2</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses/>
+    <skill>Perception +3, Religion +2</skill>
     <passive>13</passive>
     <languages>any one language (usually Common)</languages>
     <cr/>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 201</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>You cast one the following cleric spells (spell save DC 11), using Wisdom as the spellcasting ability:
@@ -392,7 +403,8 @@ The target must repeat the saving throw at the end of its next turn. On a succes
       </action>
     </action>
     <spells>guidance, sacred flame, cure wounds</spells>
-    <slots/>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 201</description>
+    <environment/>
   </monster>
   <monster>
     <name>Dullahan</name>
@@ -409,16 +421,15 @@ The target must repeat the saving throw at the end of its next turn. On a succes
     <wis>15</wis>
     <cha>16</cha>
     <save>Con +7</save>
-    <skill>Perception +6 Damage Resistance cold, lightning, poison</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened, poisoned</conditionImmune>
-    <senses>truesight 120 ft.</senses>
+    <skill>Perception +6 Damage Resistance Cold, Lightning, Poison</skill>
     <passive>16</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>10</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 233</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, frightened, poisoned</conditionImmune>
+    <senses>truesight 120 ft.</senses>
     <trait>
       <name>Headless Summoning (Recharges after a Short or Long Rest)</name>
       <recharge>SHORT</recharge>
@@ -477,9 +488,12 @@ The target must repeat the saving throw at the end of its next turn. On a succes
       <name>Headless Wail (Costs 2 Actions)</name>
       <text>An echoing shriek issues from the dullahan's headless stump. Each creature of the dullahan's choice within 10 feet of it must make a DC 15 Wisdom saving throw. Each creature takes 16 (3d10) psychic damage on a failed save, or half as much damage on a successful one. If one or more creatures fail the saving throw, the dullahan gains 10 temporary hit points.</text>
     </legendary>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 233</description>
+    <environment/>
   </monster>
   <monster>
     <name>Elise</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>construct</type>
     <alignment>Neutral</alignment>
@@ -494,15 +508,14 @@ The target must repeat the saving throw at the end of its next turn. On a succes
     <cha>5</cha>
     <save/>
     <skill/>
-    <resist/>
-    <vulnerable/>
-    <immune>Cold, Lightning, Poison; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks that aren't Adamantine</immune>
-    <conditionImmune> Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>10Understands the languages of its creator but can't speak</passive>
     <languages/>
     <cr>5</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 143</description>
+    <vulnerable/>
+    <resist/>
+    <immune>Cold, Lightning, Poison; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks that aren't Adamantine</immune>
+    <conditionImmune>Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Immutable Form</name>
       <text>Elise is immune to any spell or effect that would alter her form.</text>
@@ -528,8 +541,8 @@ The target must repeat the saving throw at the end of its next turn. On a succes
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.</text>
       <attack>Slam|+7|2d8+4</attack>
     </action>
-    <spells/>
-    <slots/>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 143</description>
+    <environment/>
   </monster>
   <monster>
     <name>Gallows Speaker</name>
@@ -547,15 +560,14 @@ The target must repeat the saving throw at the end of its next turn. On a succes
     <cha>18</cha>
     <save>Wis +4</save>
     <skill>Perception +7</skill>
-    <resist>bludgeoning, piercing, and slashing from nonmagical attacks</resist>
-    <vulnerable/>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
-    <senses>truesight 60 ft.</senses>
     <passive>17</passive>
     <languages>any languages its component spirits knew in life</languages>
     <cr>6</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 234</description>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
+    <senses>truesight 60 ft.</senses>
     <trait>
       <name>Divination Senses</name>
       <text>The gallows speaker can see 60 feet into the Ethereal Plane when it is on the Material Plane and vice versa.</text>
@@ -578,9 +590,13 @@ The target must repeat the saving throw at the end of its next turn. On a succes
       <text>The gallows speaker targets a creature it can see within 30 feet of it. The target must make a DC 15 Wisdom saving throw. On a failed save, the target takes 19 (3d12) psychic damage, and waves of painful memories leap from the target to up to three other creatures of the gallows speaker's choice that are within 30 feet of the target, each of which takes 13 (3d8) psychic damage.</text>
       <attack>Suffering Echoes||3d12</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 234</description>
+    <environment/>
   </monster>
   <monster>
     <name>Greater Star Spawn Emissary</name>
+    <sortname>Star Spawn Emissary, Greater</sortname>
+    <ancestry>Star Spawn Emissary</ancestry>
     <size>H</size>
     <type>aberration</type>
     <alignment/>
@@ -595,15 +611,14 @@ The target must repeat the saving throw at the end of its next turn. On a succes
     <cha>25</cha>
     <save>Con +15, Int +15, Wis +13, Cha +14</save>
     <skill>Arcana +22, Perception +13</skill>
-    <resist>acid, force, necrotic, psychic</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>truesight 120 ft.</senses>
     <passive>23</passive>
     <languages>all, telepathy 1,000 ft.</languages>
     <cr>21</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 245</description>
+    <vulnerable/>
+    <resist>acid, force, necrotic, psychic</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>truesight 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (4/Day)</name>
       <recharge>4/Day</recharge>
@@ -650,6 +665,8 @@ The target must repeat the saving throw at the end of its next turn. On a succes
       <name>Mind Cloud (Costs 3 Actions)</name>
       <text>The emissary unleashes a psychic wave. Each creature within 30 feet of the emissary must succeed on a DC 23 Wisdom saving throw or take 32 (5d12) psychic damage. In addition, every spell ends on creatures and objects of the emissary's choice in that area.</text>
     </legendary>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 245</description>
+    <environment/>
   </monster>
   <monster>
     <name>Gremishka</name>
@@ -667,15 +684,14 @@ The target must repeat the saving throw at the end of its next turn. On a succes
     <cha>4</cha>
     <save/>
     <skill/>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses>darkvision 30 ft.</senses>
     <passive>10</passive>
     <languages>understands Common but can't speak</languages>
     <cr>1/8</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 235</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 30 ft.</senses>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit:3 (1d4 + 2) piercing damage plus 3 (1d6) force damage.</text>
@@ -692,9 +708,14 @@ d6 | Effect
 3-4 | The gremishka surges with magical energy and regains 3 (1d6) hit points.
 5-6 | The gremishka explodes and dies, and one swarm of gremishkas instantly appears in the space where this gremishka died. The swarm uses the gremishka's initiative.</text>
     </reaction>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 235</description>
+    <environment/>
   </monster>
   <monster>
     <name>Inquisitor Of The Mind Fire</name>
+    <sortname>Inquisitor, Of The Mind Fire</sortname>
+    <ancestry>Inquisitor</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment/>
@@ -709,15 +730,14 @@ d6 | Effect
     <cha>19</cha>
     <save>Int +6, Wis +6, Cha +7</save>
     <skill>Insight +6, Perception +6</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>truesight 30 ft.</senses>
     <passive>16</passive>
     <languages>any three languages, telepathy 120 ft.</languages>
     <cr>8</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 248</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>truesight 30 ft.</senses>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
       <text>The inquisitor casts one of the following spells, requiring no components and using Charisma as the spellcasting ability (spell save DC 15):
@@ -747,9 +767,14 @@ d6 | Effect
       <attack/>
     </action>
     <spells>arcane eye, calm emotions, detect magic, detect thoughts, dispel magic, sending, suggestion, mass suggestion, modify memory</spells>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 248</description>
+    <environment/>
   </monster>
   <monster>
     <name>Inquisitor Of The Sword</name>
+    <sortname>Inquisitor, Of The Sword</sortname>
+    <ancestry>Inquisitor</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment/>
@@ -764,15 +789,14 @@ d6 | Effect
     <cha>16</cha>
     <save>Int +5, Wis +7, Cha +6</save>
     <skill>Acrobatics +5, Athletics +4, Insight +7, Perception +7</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>truesight 30 ft.</senses>
     <passive>17</passive>
     <languages>any two languages, telepathy 120 ft.</languages>
     <cr>8</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 249</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>truesight 30 ft.</senses>
     <trait>
       <name>Metabolic Control</name>
       <text>At the start of each of its turns, the inquisitor regains 10 hit points and can end one condition on itself, provided the inquisitor has at least 1 hit point.</text>
@@ -800,9 +824,14 @@ d6 | Effect
       <attack/>
     </action>
     <spells>detect magic, detect thoughts, dispel magic, sending, dimension door, fly, greater invisibility</spells>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 249</description>
+    <environment/>
   </monster>
   <monster>
     <name>Inquisitor Of The Tome</name>
+    <sortname>Inquisitor, Of The Tome</sortname>
+    <ancestry>Inquisitor</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment/>
@@ -817,15 +846,14 @@ d6 | Effect
     <cha>15</cha>
     <save>Int +7, Wis +6, Cha +5</save>
     <skill>Arcana +10, History +7, Nature +7, Religion +10</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>truesight 30 ft.</senses>
     <passive>13</passive>
     <languages>any four languages, telepathy 120 ft.</languages>
     <cr>8</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 249</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>truesight 30 ft.</senses>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
       <text>The inquisitor casts one of the following spells, requiring no components and using Intelligence as the spellcasting ability (spell saveDC 15):
@@ -858,9 +886,12 @@ d6 | Effect
       <name>Telekinetic Deflection</name>
       <text>In response to being hit by an attack roll, the inquisitor increases its AC by 4 against the attack. If this causes the attack to miss, the attacker is hit by the attack instead.</text>
     </reaction>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 249</description>
+    <environment/>
   </monster>
   <monster>
     <name>Isolde</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>fey (elf)</type>
     <alignment>any evil alignment</alignment>
@@ -875,15 +906,14 @@ d6 | Effect
     <cha>16</cha>
     <save>Str +7, Con +6, Int +5, Cha +6</save>
     <skill>Deception +6, Intimidation +6, Perception +4, Stealth +7</skill>
-    <resist>Cold, Fire, Lightning, Poison; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Abyssal, Common, Infernal</languages>
     <cr>5</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 86</description>
+    <vulnerable/>
+    <resist>Cold, Fire, Lightning, Poison; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fiendish Blessing</name>
       <text>The AC of Isolde includes her Charisma bonus.</text>
@@ -920,7 +950,8 @@ d6 | Effect
       <text>One humanoid Isolde can see within 30 feet of it must succeed on a DC 14 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys Isolde's spoken commands. If the target suffers any harm from Isolde or another creature or receives a suicidal command from Isolde, the target can repeat the saving throw, ending the effect on itself on a success. If a target's saving throw is successful, or if the effect ends for it, the creature is immune to Isolde's Fiendish Charm for the next 24 hours.</text>
     </action>
     <spells>alter self, command, detect magic, plane shift (self only)</spells>
-    <slots/>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 86</description>
+    <environment/>
   </monster>
   <monster>
     <name>Jiangshi</name>
@@ -938,15 +969,14 @@ d6 | Effect
     <cha>12</cha>
     <save>Con +8, Int +7, Wis +6, Cha +5</save>
     <skill/>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>12</passive>
     <languages>any languages it knew in life</languages>
     <cr>9</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 236</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Jiangshi Weaknesses</name>
       <text>The jiangshi has the following flaws: Fear of Its Own Reflection. If the jiangshi sees its own reflection, it immediately uses its reaction, if available, to move as far away from the reflection as possible. Susceptible to Holy Symbols. While the jiangshi is wearing or touching a holy symbol, it automatically fails saving throws against effects that turn Undead.</text>
@@ -974,9 +1004,13 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
       <name>Change Shape</name>
       <text>The jiangshi polymorphs into a Beast, a Humanoid, or an Undead that is Medium or Small or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying is absorbed or borne by the new form (the jiangshi's choice). It reverts to its true form if it dies.</text>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 236</description>
+    <environment/>
   </monster>
   <monster>
     <name>Lesser Star Spawn Emissary</name>
+    <sortname>Star Spawn Emissary, Lesser</sortname>
+    <ancestry>Star Spawn Emissary</ancestry>
     <size>M</size>
     <type>aberration</type>
     <alignment/>
@@ -991,15 +1025,14 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
     <cha>23</cha>
     <save>Int +13, Wis +11, Cha +12</save>
     <skill>Arcana +19, Deception +18, Perception +11</skill>
-    <resist>acid, force, necrotic, psychic</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>truesight 120 ft.</senses>
     <passive>21</passive>
     <languages>all, telepathy 1,000 ft.</languages>
     <cr>19</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 245</description>
+    <vulnerable/>
+    <resist>acid, force, necrotic, psychic</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>truesight 120 ft.</senses>
     <trait>
       <name>Aberrant Rejuvenation</name>
       <text>When the emissary drops to 0 hit points, its body melts away. A greater star spawn emissary instantly appears in an unoccupied space within 60 feet of where the lesser emissary disappeared. The greater emissary uses the lesser emissary's initiative count.</text>
@@ -1049,9 +1082,12 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
       <name>Psychic Lash (Costs 3 Actions)</name>
       <text>The emissary targets a creature it can see within 30 feet of it and psychically lashes at that creature's mind. The target must succeed on a DC 21 Wisdom saving throw or take 36 (8d8) psychic damage and be stunneduntil the start of its next turn.</text>
     </legendary>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 245</description>
+    <environment/>
   </monster>
   <monster>
     <name>Loup Garou</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>monstrosity (shapechanger)</type>
     <alignment/>
@@ -1066,15 +1102,14 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
     <cha>16</cha>
     <save>Dex +9, Con +9, Cha +8</save>
     <skill>Perception +13, Stealth +9</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>23</passive>
     <languages>Common (can't speak in wolf form)</languages>
     <cr>13</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 237</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Blood Frenzy</name>
       <text>The loup garou has advantage on attack rolls against a creature that doesn't have all its hit points.</text>
@@ -1129,6 +1164,8 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
       <name>Bite (Costs 3 Actions)</name>
       <text>The loup garou changes into hybrid or dire wolf form and then makes one Bite attack.</text>
     </legendary>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 237</description>
+    <environment/>
   </monster>
   <monster>
     <name>Necrichor</name>
@@ -1146,15 +1183,14 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
     <cha>10</cha>
     <save>Con +6, Int +6, Wis +4</save>
     <skill>Arcana +9</skill>
-    <resist>acid, necrotic</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, grappled, paralyzed, poisoned, prone, restrained</conditionImmune>
-    <senses>blindsight 120 ft. (blind beyond this radius)</senses>
     <passive>11</passive>
     <languages>any three languages, telepathy 120 ft.</languages>
     <cr>7</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 238</description>
+    <vulnerable/>
+    <resist>acid, necrotic</resist>
+    <immune/>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, grappled, paralyzed, poisoned, prone, restrained</conditionImmune>
+    <senses>blindsight 120 ft. (blind beyond this radius)</senses>
     <trait>
       <name>Legendary Resistance (2/Day)</name>
       <recharge>2/Day</recharge>
@@ -1191,9 +1227,12 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
       <recharge>D6</recharge>
       <text>The necrichor targets a creature it can see within 5 feet of it that is missing any of its hit points. If the target isn't a Construct or an Undead, it must succeed on a DC 14 Constitution saving throw or the necrichor enters the target's space and attaches itself to the target for 1 minute. While attached, the necrichor takes only half damage dealt to it (round down), and the target takes the remaining damage. The necrichor can attach to only one creature at a time. The attached necrichor can telepathically control the target's move, action, or both. When controlled this way, the target can take only the Attack action (necrichor chooses the target) or the Dash action. The attached target can repeat the saving throw at the end of each of its turns, detaching from the necrichor and forcing it to move into the nearest unoccupied space on a success.</text>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 238</description>
+    <environment/>
   </monster>
   <monster>
     <name>Nosferatu</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment/>
@@ -1208,15 +1247,14 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
     <cha>14</cha>
     <save>Dex +7, Con +8, Wis +6</save>
     <skill>Perception +6, Stealth +10</skill>
-    <resist>necrotic</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>16</passive>
     <languages>the languages it knew in life</languages>
     <cr>8</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 239</description>
+    <vulnerable/>
+    <resist>necrotic</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Regeneration</name>
       <text>The nosferatu regains 10 hit points at the start of each of its turns if it has at least 1 hit point and isn't in sunlight. If the nosferatu takes radiant damage, this trait doesn't function until the start of the nosferatu's next turn.</text>
@@ -1253,6 +1291,8 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
       <text>The nosferatu vomits blood in a 15-foot cone. Each creature in that area must make a DC 16 Constitution saving throw. On a failed save, a creature takes 18 (4d8) necrotic damage, and it can't regain hit points for 1 minute. On a successful save, the creature takes half as much damage with no additional effects.</text>
       <attack>Blood Disgorge||4d8</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 239</description>
+    <environment/>
   </monster>
   <monster>
     <name>Podling</name>
@@ -1270,15 +1310,14 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
     <cha>10</cha>
     <save/>
     <skill/>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>blindsight 30 ft.</senses>
     <passive>10</passive>
     <languages>Deep Speech, the languages the creature knew in life</languages>
     <cr>1/2</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 227</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>blindsight 30 ft.</senses>
     <trait>
       <name>Semblance of Life</name>
       <text>The podling is a physical copy of a creature digested by a bodytaker plant. The podling has the digested creature's memories and behaves like that creature, but with occasional lapses. An observer familiar with the digested creature can recognize the discrepancies with a successful DC 20 Wisdom (Insight) check, or automatically if the podling does something in direct contradiction to the digested creature's established beliefs or behavior. The podling melts into a slurry when it dies, when the bodytaker plant that created it dies, or when the bodytaker plant dismisses it (no action required).</text>
@@ -1291,7 +1330,8 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
       <name>Slam</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit:5 (1d6 + 2) bludgeoning damage.</text>
     </action>
-    <attack>Slam|+4|1d6+2</attack>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 227</description>
+    <environment/>
   </monster>
   <monster>
     <name>Priest Of Osybus</name>
@@ -1309,15 +1349,14 @@ A Humanoid slain by this necrotic damage rises as a wight (see its entry in the 
     <cha>11</cha>
     <save>Int +7, Wis +6, Cha +3</save>
     <skill/>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>frightened</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>13</passive>
     <languages>any three languages</languages>
     <cr>6</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 241</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>frightened</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Tattoo of Osybus</name>
       <text>If the priest drops to 0 hit points, roll on the Boons of Undeath table for the boon the priest receives. The priest dies if it receives a boon it already has. If it receives a new boon, it revives at the start of its next turn with half its hit points restored, and its creature type is now Undead.
@@ -1345,9 +1384,13 @@ If this damage reduces a Medium or smaller creature to 0 hit points, the creatur
       <text>The priest touches one of the Soul Tattoos on its body. The tattoo vanishes as the trapped soul manifests as a shadowy creature that appears in an unoccupied space the priest can see within 30 feet of it. The creature has the size and silhouette of its original body, but it otherwise uses the stat block of a shadow. The shadow obeys the priest's mental commands (no action required) and takes its turn immediately after the priest. If the creature is within 5 feet of the priest, it can turn back into a tattoo as an action, reappearing on the priest's flesh and regaining all its hit points.</text>
       <attack/>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 241</description>
+    <environment/>
   </monster>
   <monster>
     <name>Relentless Juggernaut</name>
+    <sortname>Relentless, Juggernaut</sortname>
+    <ancestry>Relentless</ancestry>
     <size>L</size>
     <type>fiend</type>
     <alignment/>
@@ -1362,15 +1405,14 @@ If this damage reduces a Medium or smaller creature to 0 hit points, the creatur
     <cha>16</cha>
     <save>Dex +5, Wis +6, Cha +7</save>
     <skill>Perception +6, Survival +6</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>16</passive>
     <languages>understands all languages but can't speak</languages>
     <cr>12</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 243</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -1422,9 +1464,13 @@ At the start of each of its turns, the target takes 10 (3d6) necrotic damage fro
       <name>Rapid Shaping (Costs 3 Actions)</name>
       <text>The juggernaut recharges Deadly Shaping and uses it.</text>
     </legendary>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 243</description>
+    <environment/>
   </monster>
   <monster>
     <name>Relentless Slasher</name>
+    <sortname>Relentless, Slasher</sortname>
+    <ancestry>Relentless</ancestry>
     <size>M</size>
     <type>fiend</type>
     <alignment/>
@@ -1439,15 +1485,14 @@ At the start of each of its turns, the target takes 10 (3d6) necrotic damage fro
     <cha>16</cha>
     <save>Str +4, Dex +7, Con +5, Wis +5</save>
     <skill>Athletics +7, Perception +5, Survival +5</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>15</passive>
     <languages>understands all languages but can't speak</languages>
     <cr>8</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 242</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (1/Day)</name>
       <recharge>1/Day</recharge>
@@ -1479,14 +1524,17 @@ At the start of each of its turns, the target takes 10 (3d6) necrotic damage fro
       <name>Vanishing Strike (Costs 3 Actions)</name>
       <text>The slasher makes one Slasher's Knife attack. After the attack hits or misses, the slasher can teleport up to 30 feet to an unoccupied space it can see.</text>
     </legendary>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 242</description>
+    <environment/>
   </monster>
   <monster>
     <name>Sneak</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid</type>
     <alignment/>
     <ac>13 (shield)</ac>
-    <hp> 9 (2d6 + 2)</hp>
+    <hp>9 (2d6 + 2)</hp>
     <speed>walk 30 ft.</speed>
     <str>8</str>
     <dex>13</dex>
@@ -1495,16 +1543,15 @@ At the start of each of its turns, the target takes 10 (3d6) necrotic damage fro
     <wis>12</wis>
     <cha>9</cha>
     <save>Dex +3</save>
-    <skill>Sleight of Hand +3, Stealth +3</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses/>
+    <skill>Sleight Of Hand +3, Stealth +3</skill>
     <passive>11</passive>
     <languages>any one language (usually Common)</languages>
     <cr/>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 201</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Dagger</name>
       <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage.</text>
@@ -1514,11 +1561,12 @@ At the start of each of its turns, the target takes 10 (3d6) necrotic damage fro
       <name>Disengage (Bonus Action)</name>
       <text>You take the Disengage action.</text>
     </action>
-    <spells/>
-    <slots/>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 201</description>
+    <environment/>
   </monster>
   <monster>
     <name>Squire</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment/>
@@ -1533,15 +1581,14 @@ At the start of each of its turns, the target takes 10 (3d6) necrotic damage fro
     <cha>9</cha>
     <save>Str +3</save>
     <skill>Athletics +3</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses/>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr/>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 201</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Longsword</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage, or 6 (1d10 + 1) slashing damage if used with two hands.</text>
@@ -1552,8 +1599,8 @@ At the start of each of its turns, the target takes 10 (3d6) necrotic damage fro
       <name>Shove (Bonus Action)</name>
       <text>While wielding a shield, you try to shove one creature within 5 feet of you.</text>
     </action>
-    <spells/>
-    <slots/>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 201</description>
+    <environment/>
   </monster>
   <monster>
     <name>Strigoi</name>
@@ -1571,15 +1618,14 @@ At the start of each of its turns, the target takes 10 (3d6) necrotic damage fro
     <cha>10</cha>
     <save>Str +5, Dex +4, Wis +5</save>
     <skill>Perception +5, Stealth +6</skill>
-    <resist>necrotic</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>15</passive>
     <languages>Common</languages>
     <cr>4</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 246</description>
+    <vulnerable/>
+    <resist>necrotic</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Stirge Telepathy</name>
       <text>The strigoi can magically command any stirge within 120 feet of it, using a limited form of telepathy.</text>
@@ -1606,9 +1652,13 @@ A creature reduced to 0 hit points from this attack dies and leaves nothing behi
       <text>The strigoi magically summons 1d4 + 2 stirges (see their entry in the Monster Manual) in unoccupied spaces it can see within 30 feet of it. The stirges are under the strigoi's control and act immediately after the strigoi in the initiative order. The stirges disappear after 1 hour, when the strigoi dies, or when the strigoi dismisses them (no action required).</text>
       <attack/>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 246</description>
+    <environment/>
   </monster>
   <monster>
     <name>Swarm Of Gremishkas</name>
+    <sortname>Gremishkas, Swarm</sortname>
+    <ancestry>Gremishka</ancestry>
     <size>M</size>
     <type>swarm of tiny monstrosities</type>
     <alignment/>
@@ -1623,15 +1673,14 @@ A creature reduced to 0 hit points from this attack dies and leaves nothing behi
     <cha>4</cha>
     <save/>
     <skill>Perception +4</skill>
-    <resist>bludgeoning, piercing, slashing</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
-    <senses>darkvision 30 ft.</senses>
     <passive>14</passive>
     <languages>understands Common but can't speak</languages>
     <cr>2</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 235</description>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>darkvision 30 ft.</senses>
     <trait>
       <name>Limited Spell Immunity</name>
       <text>The swarm automatically succeeds on saving throws against spells of 3rd level or lower, and the attack rolls of such spells always miss it.</text>
@@ -1649,9 +1698,13 @@ A creature reduced to 0 hit points from this attack dies and leaves nothing behi
       <name>Spell Redirection</name>
       <text>In response to a spell attack roll missing the swarm, the swarm causes that spell to hit another creature of its choice within 30 feet of it that it can see.</text>
     </reaction>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 235</description>
+    <environment/>
   </monster>
   <monster>
     <name>Swarm Of Maggots</name>
+    <sortname>Maggots, Swarm</sortname>
+    <ancestry>Maggot</ancestry>
     <size>M</size>
     <type>swarm of tiny beasts</type>
     <alignment/>
@@ -1666,15 +1719,14 @@ A creature reduced to 0 hit points from this attack dies and leaves nothing behi
     <cha>1</cha>
     <save/>
     <skill/>
-    <resist>bludgeoning, piercing, slashing</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
-    <senses>blindsight 10 ft.</senses>
     <passive>8</passive>
     <languages>—</languages>
     <cr>2</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 247</description>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>blindsight 10 ft.</senses>
     <trait>
       <name>Swarm</name>
       <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny maggot. The swarm can't regain hit points or gain temporary hit points.</text>
@@ -1688,9 +1740,13 @@ Each time the diseased creature finishes a long rest, roll a d6 to determine the
 3-4. The creature's hit point maximum decreases by 5 (2d4), and the reduction can't be removed until the disease ends. The creature dies if its hit point maximum drops to 0.
 5-6. The creature has disadvantage on ability checks and attack rolls until it finishes its next long rest. The disease lasts until it's removed by magic or until the creature rolls the same random effect for the disease two long rests in a row.</text>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 247</description>
+    <environment/>
   </monster>
   <monster>
     <name>Swarm Of Scarabs</name>
+    <sortname>Scarabs, Swarm</sortname>
+    <ancestry>Scarabs</ancestry>
     <size>M</size>
     <type>swarm of tiny beasts</type>
     <alignment/>
@@ -1705,15 +1761,14 @@ Each time the diseased creature finishes a long rest, roll a d6 to determine the
     <cha>1</cha>
     <save/>
     <skill/>
-    <resist>bludgeoning, piercing, slashing</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
-    <senses>tremorsense 60 ft.</senses>
     <passive>11</passive>
     <languages>—</languages>
     <cr>3</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 247</description>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>tremorsense 60 ft.</senses>
     <trait>
       <name>Swarm</name>
       <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny scarab. The swarm can't regain hit points or gain temporary hit points.</text>
@@ -1731,9 +1786,13 @@ Each time the diseased creature finishes a long rest, roll a d6 to determine the
       <text>Melee Weapon Attack: +4 to hit, reach 0 ft., one target in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer. If the target is a creature, scarabs burrow into its body, and the creature takes 3 (1d6) piercing damage at the start of each of its turns. Any creature can use an action to kill or remove the scarabs with fire or a weapon that deals piercing damage, causing 1 damage of the appropriate type to the target. A creature reduced to 0 hit points by the swarm's piercing damage dies</text>
       <attack>Ravenous Bites|+4|4d6</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 247</description>
+    <environment/>
   </monster>
   <monster>
     <name>Swarm Of Zombie Limbs</name>
+    <sortname>Zombie Limb, Swarm</sortname>
+    <ancestry>Zombie Limb</ancestry>
     <size>M</size>
     <type>swarm of tiny undead</type>
     <alignment/>
@@ -1748,15 +1807,14 @@ Each time the diseased creature finishes a long rest, roll a d6 to determine the
     <cha>5</cha>
     <save/>
     <skill/>
-    <resist>bludgeoning, piercing, slashing</resist>
-    <vulnerable/>
-    <immune>poison</immune>
-    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned</conditionImmune>
-    <senses>blindsight 30 ft. (blind beyond this radius)</senses>
     <passive>9</passive>
     <languages>—</languages>
     <cr>1</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 254</description>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned</conditionImmune>
+    <senses>blindsight 30 ft. (blind beyond this radius)</senses>
     <trait>
       <name>Swarm</name>
       <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny limb. The swarm can't regain hit points or gain temporary hit points.</text>
@@ -1781,9 +1839,13 @@ Each time the diseased creature finishes a long rest, roll a d6 to determine the
 The creature can repeat the saving throw at the end of each of its turns, taking 7 (2d6) necrotic damage on a failed save. The creature is freed if it succeeds on this saving throw, the swarm moves out of the creature's space, or the swarm dies.</text>
       <attack>Grasping Limbs|+4|2d6</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 254</description>
+    <environment/>
   </monster>
   <monster>
     <name>Unspeakable Horror</name>
+    <sortname>Horror, Unspeakable</sortname>
+    <ancestry>Horror</ancestry>
     <size>H</size>
     <type>monstrosity</type>
     <alignment/>
@@ -1798,15 +1860,14 @@ The creature can repeat the saving throw at the end of each of its turns, taking
     <cha>17</cha>
     <save>Con +7, Wis +5</save>
     <skill>Perception +5</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>petrified (Aberrant Armor only)</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>—</languages>
     <cr>8</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 250</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>petrified (Aberrant Armor only)</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Formed by the Mists</name>
       <text>When created, the horror's body composition takes one of four forms: Aberrant Armor, Loathsome Limbs, Malleable Mass, or Oozing Organs. This form determines certain traits in this stat block.</text>
@@ -1838,9 +1899,13 @@ The creature can repeat the saving throw at the end of each of its turns, taking
       <text>The horror expels necrotic energy in a 30-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 45 (7d12) necrotic damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Hex Blast||7d12</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 250</description>
+    <environment/>
   </monster>
   <monster>
     <name>Vampiric Mind Flayer</name>
+    <sortname>Mind Flayer, Vampiric</sortname>
+    <ancestry>Mind Flayer</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment/>
@@ -1855,15 +1920,14 @@ The creature can repeat the saving throw at the end of each of its turns, taking
     <cha>18</cha>
     <save>Dex +7, Int +0, Wis +5, Cha +7</save>
     <skill>Perception +5, Stealth +7</skill>
-    <resist>necrotic, psychic</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>15</passive>
     <languages>telepathy 120 ft. but can only project emotions</languages>
     <cr>5</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 252</description>
+    <vulnerable/>
+    <resist>necrotic, psychic</resist>
+    <immune/>
+    <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Spider Climb</name>
       <text>The mind flayer can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
@@ -1901,6 +1965,8 @@ The creature can repeat the saving throw at the end of each of its turns, taking
       <text>The mind flayer magically emits psionic energy in a 30-foot-radius sphere centered on itself. Each creature in that area must succeed on a DC 15 Intelligence saving throw or be incapacitated for 1 minute. The incapacitated creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
       <attack/>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 252</description>
+    <environment/>
   </monster>
   <monster>
     <name>Wereraven</name>
@@ -1918,15 +1984,14 @@ The creature can repeat the saving throw at the end of each of its turns, taking
     <cha>14</cha>
     <save/>
     <skill>Insight +4, Perception +6</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses/>
     <passive>16</passive>
     <languages>Common (can't speak in raven form)</languages>
     <cr>2</cr>
-    <description>Source:	Curse of Strahd p. 242, Van Richten's Guide to Ravenloft p. 253, Candlekeep Mysteries p. 47</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -1962,9 +2027,15 @@ The creature can repeat the saving throw at the end of each of its turns, taking
       <name>Change Shape</name>
       <text>The wereraven polymorphs into a raven-humanoid hybrid or into a Tiny raven, or back into its humanoid form. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its humanoid form if it dies.</text>
     </action>
+    <description>Source:	Curse of Strahd p. 242,
+		Van Richten's Guide to Ravenloft p. 253,
+		Candlekeep Mysteries p. 47</description>
+    <environment/>
   </monster>
   <monster>
     <name>Zombie Clot</name>
+    <sortname>Zombie, Clot</sortname>
+    <ancestry>Zombie</ancestry>
     <size>H</size>
     <type>undead</type>
     <alignment/>
@@ -1979,15 +2050,14 @@ The creature can repeat the saving throw at the end of each of its turns, taking
     <cha>10</cha>
     <save>Con +6</save>
     <skill/>
-    <resist/>
-    <vulnerable/>
-    <immune>poison</immune>
-    <conditionImmune>charmed, exhaustion, paralyzed, petrified, poisoned, stunned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>9</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>6</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 255</description>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, paralyzed, petrified, poisoned, stunned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Deathly Stench</name>
       <text>Any creature that starts its turn within 10 feet of the zombie must succeed on a DC 14 Constitution saving throw or take 9 (2d8) poison damage and be poisoned until the start of the creature's next turn.</text>
@@ -2017,9 +2087,13 @@ The creature can repeat the saving throw at the end of each of its turns, taking
 A creature entombed in the dead flesh is restrained, has total cover against attacks and other effects outside the dead flesh, and takes 10 (3d6) necrotic damage at the start of each of its turns. The creature can be freed if the dead flesh is destroyed. The dead flesh is a Large object with AC 10, 25 hit points, and immunity to poison and psychic damage.</text>
       <attack>Flesh Entomb||3d10</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 255</description>
+    <environment/>
   </monster>
   <monster>
     <name>Zombie Plague Spreader</name>
+    <sortname>Zombie, Plague Spreader</sortname>
+    <ancestry>Zombie</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment/>
@@ -2034,15 +2108,14 @@ A creature entombed in the dead flesh is restrained, has total cover against att
     <cha>5</cha>
     <save/>
     <skill/>
-    <resist>necrotic</resist>
-    <vulnerable/>
-    <immune>poison</immune>
-    <conditionImmune>charmed, exhaustion, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>7</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>4</cr>
-    <description>Source:	Van Richten's Guide to Ravenloft p. 255</description>
+    <vulnerable/>
+    <resist>necrotic</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Undead Fortitude</name>
       <text>If damage reduces the plague spreader to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the plague spreader drops to 1 hit point instead.</text>
@@ -2070,5 +2143,7 @@ A creature entombed in the dead flesh is restrained, has total cover against att
       <text>The plague spreader releases toxic gas in a 30-foot-radius sphere centered on itself. Each creature in that area must make a DC 12 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one. A Humanoid reduced to 0 hit points by this damage dies and rises as a zombie (see its stat block in the Monster Manual) 1 minute later. The zombie acts immediately after the plague spreader in the initiative count.</text>
       <attack>Virulent Miasma||4d6</attack>
     </action>
+    <description>Source:	Van Richten's Guide to Ravenloft p. 255</description>
+    <environment/>
   </monster>
 </compendium>
