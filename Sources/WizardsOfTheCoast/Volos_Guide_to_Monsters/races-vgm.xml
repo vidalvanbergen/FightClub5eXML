@@ -1,21 +1,63 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <race>
     <name>Aasimar, Fallen (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Cha 2, Str 1</ability>
-    <proficiency/>
+    <ability>Cha +2, Str +1</ability>
+    <resist>necrotic, radiant</resist>
     <spellAbility>Charisma</spellAbility>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage.
-
-An aasimar, except for one who has turned to evil, has a link to an angelic being. That being — usually a deva — provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.
 
 An aasimar who was touched by dark powers as a youth or who turns to evil in early adulthood can become one of the fallen-a group of aasimar whose inner light has been replaced by shadow.
 
 Source:	Volo's Guide to Monsters p. 105</text>
+    </trait>
+    <trait category="description">
+      <name>Celestial Champions</name>
+      <text>Aasimar are placed in the world to serve as guardians of law and good. Their patrons expect them to strike at evil, lead by example, and further the cause of justice.
+	From an early age, an aasimar receives visions and guidance from celestial entities via dreams. These dreams help shape an aasimar, granting a sense of destiny and a desire for righteousness.
+	Each aasimar can count a specific celestial agent of the gods as a guide. This entity is typically a deva, an angel who acts as a messenger to the mortal world.</text>
+    </trait>
+    <trait category="description">
+      <name>Hidden Wanderers</name>
+      <text>While aasimar are strident foes of evil, they typically prefer to keep a low profile. An aasimar inevitably draws the attention of evil cultists, fiends, and other enemies of good, all of whom would be eager to strike down a celestial champion if they had the chance.
+	When traveling, aasimar prefer hoods, closed helms, and other gear that allows them to conceal their identities. They nevertheless have no compunction about striking openly at evil. The secrecy they desire is never worth endangering the innocent.</text>
+    </trait>
+    <trait category="description">
+      <name>Aasimar Guides</name>
+      <text>An aasimar, except for one who has turned to evil, has a link to an angelic being. That being—usually a deva—provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.
+	The angelic being is far from omniscient. Its guidance is based on its understanding of the tenets of law and good, and it might have insight into combating especially powerful evils that it knows about.
+	As part of fleshing out an aasimar character, consider the nature of that character's angelic guide. The Angelic Guide tables offer names and natures that you can use to flesh out your character's guide.
+
+Angelic Guide:
+d6 | Name
+1 | Tadriel
+2 | Myllandra
+3 | Seraphina
+4 | Galladia
+5 | Mykiel
+6 | Valandras
+
+d6 | Nature
+1 | Bookish and lecturing
+2 | Compassionate and hopeful
+3 | Practical and lighthearted
+4 | Fierce and vengeful
+5 | Stern and judgmental
+6 | Kind and parental</text>
+    </trait>
+    <trait category="description">
+      <name>Conflicted Souls</name>
+      <text>Despite its celestial origin, an aasimar is mortal and possesses free will. Most aasimar follow their ordained path, but some grow to see their abilities as a curse. These disaffected aasimar are typically content to turn away from the world, but a few become agents of evil. In their minds, their exposure to celestial powers amounted to little more than brainwashing.
+	Evil aasimar make deadly foes. The radiant power they once commanded becomes corrupted into a horrid, draining magic. And their angelic guides abandon them.
+	Even aasimar wholly dedicated to good sometimes feel torn between two worlds. The angels that guide them see the world from a distant perch. An aasimar who wishes to stop and help a town recover from a drought might be told by an angelic guide to push forward on a greater quest. To a distant angel, saving a few commoners might pale in comparison to defeating a cult of Orcus. An aasimar's guide is wise but not infallible.</text>
+    </trait>
+    <trait category="description">
+      <name>Aasimar Names</name>
+      <text>Most aasimar are born from human parents, and they use the same naming conventions as their native culture.</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -34,30 +76,30 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 110 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>Blessed with a radiant soul, your vision can easily cut through darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Celestial Resistance</name>
       <text>You have resistance to necrotic damage and radiant damage.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Healing Hands</name>
       <text>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Light Bearer</name>
       <text>You know the light cantrip. Charisma is your spellcasting ability for it.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Necrotic Shroud</name>
       <text>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn.
-
-Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level.
-
-Once you use this trait, you can't use it again until you finish a long rest.</text>
+	Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level.
+	Once you use this trait, you can't use it again until you finish a long rest.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -68,18 +110,60 @@ Once you use this trait, you can't use it again until you finish a long rest.</t
     <name>Aasimar, Protector (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Cha 2, Wis 1</ability>
-    <proficiency/>
+    <ability>Cha +2, Wis +1</ability>
+    <resist>necrotic, radiant</resist>
     <spellAbility>Charisma</spellAbility>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage.
-
-An aasimar, except for one who has turned to evil, has a link to an angelic being. That being — usually a deva — provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.
 
 Protector aasimar are charged by the powers of good to guard the weak, to strike at evil wherever it arises, and to stand vigilant against the darkness. From a young age, a protector aasimar receives advice and directives that urge to stand against evil.
 
 Source:	Volo's Guide to Monsters p. 105</text>
+    </trait>
+    <trait category="description">
+      <name>Celestial Champions</name>
+      <text>Aasimar are placed in the world to serve as guardians of law and good. Their patrons expect them to strike at evil, lead by example, and further the cause of justice.
+	From an early age, an aasimar receives visions and guidance from celestial entities via dreams. These dreams help shape an aasimar, granting a sense of destiny and a desire for righteousness.
+	Each aasimar can count a specific celestial agent of the gods as a guide. This entity is typically a deva, an angel who acts as a messenger to the mortal world.</text>
+    </trait>
+    <trait category="description">
+      <name>Hidden Wanderers</name>
+      <text>While aasimar are strident foes of evil, they typically prefer to keep a low profile. An aasimar inevitably draws the attention of evil cultists, fiends, and other enemies of good, all of whom would be eager to strike down a celestial champion if they had the chance.
+	When traveling, aasimar prefer hoods, closed helms, and other gear that allows them to conceal their identities. They nevertheless have no compunction about striking openly at evil. The secrecy they desire is never worth endangering the innocent.</text>
+    </trait>
+    <trait category="description">
+      <name>Aasimar Guides</name>
+      <text>An aasimar, except for one who has turned to evil, has a link to an angelic being. That being—usually a deva—provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.
+	The angelic being is far from omniscient. Its guidance is based on its understanding of the tenets of law and good, and it might have insight into combating especially powerful evils that it knows about.
+	As part of fleshing out an aasimar character, consider the nature of that character's angelic guide. The Angelic Guide tables offer names and natures that you can use to flesh out your character's guide.
+
+Angelic Guide:
+d6 | Name
+1 | Tadriel
+2 | Myllandra
+3 | Seraphina
+4 | Galladia
+5 | Mykiel
+6 | Valandras
+
+d6 | Nature
+1 | Bookish and lecturing
+2 | Compassionate and hopeful
+3 | Practical and lighthearted
+4 | Fierce and vengeful
+5 | Stern and judgmental
+6 | Kind and parental</text>
+    </trait>
+    <trait category="description">
+      <name>Conflicted Souls</name>
+      <text>Despite its celestial origin, an aasimar is mortal and possesses free will. Most aasimar follow their ordained path, but some grow to see their abilities as a curse. These disaffected aasimar are typically content to turn away from the world, but a few become agents of evil. In their minds, their exposure to celestial powers amounted to little more than brainwashing.
+	Evil aasimar make deadly foes. The radiant power they once commanded becomes corrupted into a horrid, draining magic. And their angelic guides abandon them.
+	Even aasimar wholly dedicated to good sometimes feel torn between two worlds. The angels that guide them see the world from a distant perch. An aasimar who wishes to stop and help a town recover from a drought might be told by an angelic guide to push forward on a greater quest. To a distant angel, saving a few commoners might pale in comparison to defeating a cult of Orcus. An aasimar's guide is wise but not infallible.</text>
+    </trait>
+    <trait category="description">
+      <name>Aasimar Names</name>
+      <text>Most aasimar are born from human parents, and they use the same naming conventions as their native culture.</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -98,30 +182,30 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 110 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>Blessed with a radiant soul, your vision can easily cut through darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Celestial Resistance</name>
       <text>You have resistance to necrotic damage and radiant damage.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Healing Hands</name>
       <text>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Light Bearer</name>
       <text>You know the light cantrip. Charisma is your spellcasting ability for it.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Radiant Soul</name>
       <text>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back.
-
-Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.
-
-Once you use this trait, you can't use it again until you finish a long rest.</text>
+	Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.
+	Once you use this trait, you can't use it again until you finish a long rest.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -132,18 +216,60 @@ Once you use this trait, you can't use it again until you finish a long rest.</t
     <name>Aasimar, Scourge (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Cha 2, Con 1</ability>
-    <proficiency/>
+    <ability>Cha +2, Con +1</ability>
+    <resist>necrotic, radiant</resist>
     <spellAbility>Charisma</spellAbility>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage.
-
-An aasimar, except for one who has turned to evil, has a link to an angelic being. That being — usually a deva — provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.
 
 Scourge aasimar are imbued with a divine energy that blazes intensely within them. It feeds a powerful desire to destroy evil-a desire that is, at its best, unflinching and, at its worst, all-consuming. Many scourge aasimar wear masks to block out the world and focus on containing this power, unmasking themselves only in battle.
 
 Source:	Volo's Guide to Monsters p. 105</text>
+    </trait>
+    <trait category="description">
+      <name>Celestial Champions</name>
+      <text>Aasimar are placed in the world to serve as guardians of law and good. Their patrons expect them to strike at evil, lead by example, and further the cause of justice.
+	From an early age, an aasimar receives visions and guidance from celestial entities via dreams. These dreams help shape an aasimar, granting a sense of destiny and a desire for righteousness.
+	Each aasimar can count a specific celestial agent of the gods as a guide. This entity is typically a deva, an angel who acts as a messenger to the mortal world.</text>
+    </trait>
+    <trait category="description">
+      <name>Hidden Wanderers</name>
+      <text>While aasimar are strident foes of evil, they typically prefer to keep a low profile. An aasimar inevitably draws the attention of evil cultists, fiends, and other enemies of good, all of whom would be eager to strike down a celestial champion if they had the chance.
+	When traveling, aasimar prefer hoods, closed helms, and other gear that allows them to conceal their identities. They nevertheless have no compunction about striking openly at evil. The secrecy they desire is never worth endangering the innocent.</text>
+    </trait>
+    <trait category="description">
+      <name>Aasimar Guides</name>
+      <text>An aasimar, except for one who has turned to evil, has a link to an angelic being. That being—usually a deva—provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.
+	The angelic being is far from omniscient. Its guidance is based on its understanding of the tenets of law and good, and it might have insight into combating especially powerful evils that it knows about.
+	As part of fleshing out an aasimar character, consider the nature of that character's angelic guide. The Angelic Guide tables offer names and natures that you can use to flesh out your character's guide.
+
+Angelic Guide:
+d6 | Name
+1 | Tadriel
+2 | Myllandra
+3 | Seraphina
+4 | Galladia
+5 | Mykiel
+6 | Valandras
+
+d6 | Nature
+1 | Bookish and lecturing
+2 | Compassionate and hopeful
+3 | Practical and lighthearted
+4 | Fierce and vengeful
+5 | Stern and judgmental
+6 | Kind and parental</text>
+    </trait>
+    <trait category="description">
+      <name>Conflicted Souls</name>
+      <text>Despite its celestial origin, an aasimar is mortal and possesses free will. Most aasimar follow their ordained path, but some grow to see their abilities as a curse. These disaffected aasimar are typically content to turn away from the world, but a few become agents of evil. In their minds, their exposure to celestial powers amounted to little more than brainwashing.
+	Evil aasimar make deadly foes. The radiant power they once commanded becomes corrupted into a horrid, draining magic. And their angelic guides abandon them.
+	Even aasimar wholly dedicated to good sometimes feel torn between two worlds. The angels that guide them see the world from a distant perch. An aasimar who wishes to stop and help a town recover from a drought might be told by an angelic guide to push forward on a greater quest. To a distant angel, saving a few commoners might pale in comparison to defeating a cult of Orcus. An aasimar's guide is wise but not infallible.</text>
+    </trait>
+    <trait category="description">
+      <name>Aasimar Names</name>
+      <text>Most aasimar are born from human parents, and they use the same naming conventions as their native culture.</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -162,30 +288,30 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 110 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>Blessed with a radiant soul, your vision can easily cut through darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Celestial Resistance</name>
       <text>You have resistance to necrotic damage and radiant damage.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Healing Hands</name>
       <text>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Light Bearer</name>
       <text>You know the light cantrip. Charisma is your spellcasting ability for it.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Radiant Consumption</name>
       <text>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pour out of your eyes and mouth, and threaten to char you.
-
-Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.
-
-Once you use this trait, you can't use it again until you finish a long rest.</text>
+	Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.
+	Once you use this trait, you can't use it again until you finish a long rest.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -196,18 +322,43 @@ Once you use this trait, you can't use it again until you finish a long rest.</t
     <name>Bugbear (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Dex 1</ability>
+    <ability>Str +2, Dex +1</ability>
     <proficiency>Stealth</proficiency>
-    <spellAbility/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Bugbears feature in the nightmare tales of many races-great, hairy beasts that creep through the shadows as quiet as cats. If you walk alone in the woods, a bugbear will reach out of the bushes and strangle you. If you stray too far from the house at night, bugbears will scoop you up to devour you in their den. If a bugbear cuts off your head, your soul stays trapped inside, and the bugbears use your head to magically command all whom you once knew.
-
-Lurid tales such as these have flowered from the seeds of truth. Bugbears do rely on stealth and strength to attack, preferring to operate at night. They do take the heads of enemy leaders, but they are no more likely to eat people indiscriminately than humans are. Bugbears aren't likely to attack lone travelers or wandering children unless they clearly have something to gain by doing so. From the viewpoint of the rest of the world, their aggression and savagery are thankfully offset by their rarity and lethargy.
+	Lurid tales such as these have flowered from the seeds of truth. Bugbears do rely on stealth and strength to attack, preferring to operate at night. They do take the heads of enemy leaders, but they are no more likely to eat people indiscriminately than humans are. Bugbears aren't likely to attack lone travelers or wandering children unless they clearly have something to gain by doing so. From the viewpoint of the rest of the world, their aggression and savagery are thankfully offset by their rarity and lethargy.
 
 Source:	Volo's Guide to Monsters p. 119,
 		Explorer's Guide to Wildemount p. 174,
 		Eberron: Rising from the Last War p. 25</text>
+    </trait>
+    <trait category="description">
+      <name>Shiftless, Savage Layabouts</name>
+      <text>When they're not in battle, bugbears spend much of their time resting or dozing. They don't engage in crafting or agriculture to any great extent, or otherwise produce anything of value. They bully weaker creatures into doing their bidding, so they can take it easy. When a superior force tries to intimidate bugbears into service, they will try to escape rather than perform the work or confront the foe. Even when subsumed into a goblinoid host and drawn into war, bugbears must often be roused from naps and bribed to get them to do their duties.
+	This indolence offers no clue to how vicious the creatures are. Bugbears are capable of bouts of incredible ferocity, using their muscular bodies to exact swift and ruthless violence. At their core, bugbears are ambush predators accustomed to long periods of inactivity broken by short bursts of murderous energy. Ferocious though they may be, bugbears aren't built for extended periods of exertion.</text>
+    </trait>
+    <trait category="description">
+      <name>Gang Mentality</name>
+      <text>Since bugbears aren't a particularly fecund race, their overall population is small and spread over a wide area. Bugbears live in family groups that operate much like gangs. The individuals in a group typically number fewer than a dozen, consisting of siblings and their mates as well as a handful of offspring and an elder or two. A gang lives in and around a small enclosure, often a natural cave or an old bear den, and it might have supplementary dens elsewhere in its territory that it uses temporarily when it goes on long forays for food.
+	In good times, a bugbear gang is tight-knit, and its members cooperate well when hunting or bullying other creatures. But when the fortunes of a gang turn sour, the individuals become selfish, and might sabotage one another to remove opposition or exile weaker or unpopular members to keep the rest of the gang strong. Fortunately for the race as a whole, even young and elderly bugbears have the ability to survive alone in the wild, and the cast-off members of a gang might eventually catch on with a different group.
+	Left to their own devices, bugbears have little more impact on the world than wolf packs. They subsist by crafting simple tools and hunting and gathering food, and gangs sometimes come together peacefully to exchange members and goods between them.</text>
+    </trait>
+    <trait category="description">
+      <name>Malevolent Worship of Malign Gods</name>
+      <text>Bugbears worship two deities who are brothers, Hruggek and Grankhul. Hruggek is the fearsome elder sibling, possessed of legendary might and prowess in battle. Bugbears believe their strength and bravery come from him. Cunning Grankhul is the younger one, and in the stories bugbears tell, he gifted them with stealth but in return he sapped their vigor, so that bugbears sleep in his stead while he remains eternally alert and awake.
+	According to bugbear legends, Hruggek and Grankhul often fight alongside each other, preying upon all they encounter as is their right as superior warriors. Hruggek takes the heads of those he kills and puts them on spikes in his den, where they utter pleas for mercy and sing paeans to his might. Grankhul watches over Hruggek when he sleeps, but if he must be elsewhere, he whispers commands to the severed heads to wake Hruggek if any danger threatens him.
+	Bugbears admire the qualities of both brothers. Because of Hruggek, they consider bravery and physical superiority to be their natural state. Thanks to Grankhul, they can use their size and strength to work as stealthy assassins rather than blundering around like ogres.
+	Bullying, murder, and engaging in battle are all holy acts for bugbears. Garroting an unsuspecting creature and defeating foes in open battle are seen as acts of worship, in the same way that dwarves consider metalsmithing to be sacred to Moradin.
+The bugbears recognize two other gods, both of which they disdain and fear: Maglubiyet and Skiggaret.
+	Maglubiyet, the leader of the goblinoid pantheon, forced both brothers to submit to his rule, but instead of killing them, he showed mercy and even honored them in a way by setting them free — under his control — so that bugbears could continue to employ their talents against his enemies. Bugbears understand that by venerating Hruggek and Grankhul, they also give tribute to Maglubiyet, even though they don't openly pay homage to their overlord. When bugbears are called to join a host, bugbears believe Maglubiyet has again corralled the brothers into a divine battle, and they honor their gods by following suit.
+	Skiggaret is the bugbear version of the bogeyman, as hateful and terrifying to them as bugbears are in the eyes of many other races. His name is rarely spoken, and never above a whisper. Skiggaret's influence manifests at times when bugbears are forced to act in a cowardly fashion; a bugbear that knows or feels itself to be in mortal danger is affected by a form of madness and will do anything, including trying to flee, in order to stay alive. Bugbears believe that this feeling of fear comes from being possessed by Skiggaret, and they don't relish experiencing it. After the madness has passed, bugbears don't dwell on things that were done in the presence of Skiggaret. Talking about such acts might call him back.</text>
+    </trait>
+    <trait category="description">
+      <name>Blessings of the Bugbear Gods</name>
+      <text>Bugbears have no use for priests or shamans. No one needs to tell them what their gods want. If the brother gods are angry with them, they let the bugbears know with bolts of lightning (Hruggek) or by striking them blind or dead (Grankhul). Bugbears worship their gods simply by preying on other creatures, using no other sort of ceremony to show obeisance — with one exception.
+	In an act of worship that also sometimes attracts favorable attention from their gods, bugbears sever the heads of defeated foes, cut away or stitch open the eyelids, and leave the mouths hanging open. The heads are then placed on spikes or hung from cords around a bugbear den. The heads themselves are trophies that honor Hruggek, and their ever-staring eyes are an homage to sleepless Grankhul.
+	The heads of leaders and mighty opponents are particularly sacred, and offering up such a trophy can provide a bugbear gang with a special boon. A gang that gains the favor of Hruggek and Grankhul in this way might find that the head will emit a shout when an enemy gets too close (in the fashion of an alarm spell). Sometimes the heads of people who have information the bugbears need speak their secrets amid blubbered pleas for mercy (as with the speak with dead spell).</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -226,27 +377,30 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d12
 Height = 6 feet + your size modifier in inches
 Weight in pounds = 200 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d12</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Long-Limbed</name>
       <text>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Powerful Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</text>
       <special>powerful build</special>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Sneaky</name>
       <text>You are proficient in the Stealth skill.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Surprise Attack</name>
       <text>If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it. You can use this trait only once per combat.</text>
+      <roll description="Extra Damage">2d6</roll>
     </trait>
     <trait>
       <name>Languages</name>
@@ -257,15 +411,56 @@ Weight in pounds = 200 + (2d6 × your size modifier)</text>
     <name>Firbolg (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Wis 2, Str 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Wis +2, Str +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Firbolgs are fey-oriented half-giants. Their tribes cloister in remote forest strongholds, preferring to spend their days in quiet harmony with the woods. When provoked, firbolgs demonstrate formidable skills with weapons and druidic magic.
 
 Source:	Volo's Guide to Monsters p. 107,
 		Explorer's Guide to Wildemount p. 169</text>
+    </trait>
+    <trait category="description">
+      <name>Humble Guardians</name>
+      <text>Firbolgs love nothing more than a peaceful day spent among the trees of an old forest. They see forests as sacred places, representing the heart of the world and monuments to the durability of life.
+	In their role as caretakers, firbolgs live off the land while striving to remain in balance with nature. Their methods reflect common sense and remarkable resourcefulness. During a bountiful summer, they store away excess nuts, fruit, and berries. When winter arrives, they scatter everything they can spare to ensure the animals of the wood survive until springtime.
+	In a firbolg's eyes, there is no greater fault than greed. The firbolgs believe that the world remains healthiest when each creature takes only what it needs. Material goods, especially precious gems and gold, have little appeal to them. What use are such things when winter lingers and food runs short?</text>
+    </trait>
+    <trait category="description">
+      <name>Natural Druids</name>
+      <text>Firbolgs have a talent for druidic magic. Their cultural reverence for nature, combined with their strong and insightful minds, makes learning such magic an instinctive part of their development. Almost every firbolg learns a few spells, typically those used to mask their presence, and many go on to master nature magic.
+	Firbolgs who become druids serve as stronghold leaders. With every action the tribe takes, the druids weigh not only the group's needs, but the effect each action will have on the forest and the rest of the natural world. Firbolg tribes would rather go hungry than strain the land during a famine.</text>
+    </trait>
+    <trait category="description">
+      <name>Hidden Shepherds</name>
+      <text>As caretakers of the land, firbolgs prefer to remain out of sight and out of mind. They don't try to dominate nature, but rather seek to ensure that it prospers and survives according to its own laws.
+	Firbolgs use their magic to keep their presence in a forest secret. This approach allows them to avoid the politics and struggles of elves, humans, and orcs. Such events concern the firbolgs only when the events affect the forest.
+	Even in the face of an intrusion, firbolgs prefer a subtle, gentle approach to prevent damage to their territory. They employ their magic to make the forest an unappealing place to explore by temporarily diverting springs, driving away game, stealing critical tools, and altering trails to leave hunting or lumber parties hopelessly lost. The firbolgs' presence is marked by an absence of animals and a strange quiet, as if the forest wishes to avoid attracting attention to itself. The faster travelers decide to move on, the better.
+	If these tactics fail, the firbolgs take more direct action. Their observations of a settlement determine what happens next. If the outsiders seem peaceful, the firbolgs approach and gently ask them to leave, even offering food and other supplies to aid their departure. If those who insist on remaining respect nature, take only what they need, and live in harmony with the wood, firbolgs explore the possibility of friendship with them, as long as the outsiders vow to safeguard the forest. If the settlers clearly display evil intentions, however, the firbolgs martial their strength and magic for a single overwhelming attack.</text>
+    </trait>
+    <trait category="description">
+      <name>Outcast Adventurers</name>
+      <text>As guardians of the wood, few firbolgs would dream of leaving their homes or attempting to fit into human society. An exiled firbolg, or one whose clan has been destroyed, might not have a choice in the matter. Most adventuring firbolgs fall into this latter category.
+	Outcast firbolgs can never return home. They committed some unforgivable deed, usually something that put their homeland at risk, such as starting a forest fire or killing a rare or beautiful wild creature. These firbolgs are loners who wander the world in hope of finding a new place to call home.
+	Orphaned firbolgs are those whose clans or home lands have been destroyed. They become crusaders for nature, seeking to avenge their loss and prevent the further destruction of the natural world.
+	A few rare firbolgs are entrusted by their clan with an important mission that takes them beyond their homes. These firbolgs feel like pilgrims in a strange land, and usually they wish only to complete their quests and return home as quickly as possible.
+	The Firbolg Adventurers table can serve as inspiration for determining why a firbolg character leaves home.
+
+Firbolg Adventurers:
+d8 | Reason for Adventuring
+1 | Outcast for murder
+2 | Outcast for severely damaging home territory
+3 | Clan slain by invading humanoids
+4 | Clan slain by a dragon or demon
+5 | Separated from the tribe and lost
+6 | Homeland destroyed by natural disaster
+7 | Personal quest ordained by omens
+8 | Dispatched on a quest by tribe leaders</text>
+      <roll description="Reason for Adventuring">1d8</roll>
+    </trait>
+    <trait category="description">
+      <name>Firbolg Names</name>
+      <text>Firbolg adopt elven names when they must deal with outsiders, although the concept of names strikes them as strange. They know the animals and plants of the forest without formal names, and instead identify the forest's children by their deeds, habits, and other actions.
+	By the same token, their tribe names merely refer to their homes. When dealing with other races, firbolgs refer to their lands by whatever name the surrounding folk use, as a matter of tact and hospitality, but among their own kind they simply call it "home." Sometimes firbolgs adopt the nicknames or titles outsiders give them under the assumption that those who need names can call them whatever they wish.</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -284,21 +479,23 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d12
 Height = 6 feet + 2 inches + your size modifier in inches
 Weight in pounds = 175 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d12</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Firbolg Magic</name>
       <text>You can cast detect magic and disguise self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hidden Step</name>
       <text>As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Powerful Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</text>
       <special>powerful build</special>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Speech of Beast and Leaf</name>
       <text>You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them.</text>
     </trait>
@@ -311,15 +508,77 @@ Weight in pounds = 175 + (2d6 × your size modifier)</text>
     <name>Goblin (Legacy)</name>
     <size>S</size>
     <speed>30</speed>
-    <ability>Dex 2, Con 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Dex +2, Con +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Goblins occupy an uneasy place in a dangerous world, and they react by lashing out at any creatures they believe they can bully. Cunning in battle and cruel in victory, goblins are fawning and servile in defeat, just as in their own society lower castes must scrape before those of greater status and as goblin tribes bow before other goblinoids.
 
 Source:	Volo's Guide to Monsters p. 119,
 		Explorer's Guide to Wildemount p. 174</text>
+    </trait>
+    <trait category="description">
+      <name>Beast Masters and Slave Drivers</name>
+      <text>Goblins know they are a weak, unsophisticated race that can be easily dominated by bigger, smarter, more organized, more ferocious, or more magical creatures. Their god was conquered by Maglubiyet, after all, and now when the Mighty One calls for it, even their souls are forfeit. It is this realization that drives them to dominate other creatures whenever they can — for goblins, life is short.
+	Goblins seek to trap and enslave any creatures they encounter, but they flee from opposition that seems too daunting. For miles around their lair, they employ pit traps, snares, and nets to catch the unwary, and when their hunting patrols encounter other beings, they always look for ways to capture their foes instead of killing them. Goblins that run up against the fringes of a society first test its defenses by stealing objects, and if these crimes go unpunished, they begin stealing people.
+	Enslaved creatures receive the worst treatment the goblins can dish out while still getting decent performance out of the slaves. But humanoids and monsters that are especially capable or that provide unusual services find themselves treated like favored (though occasionally abused) pets.
+	Virtually any kind of creature that can be browbeaten into service might be found with a goblin tribe, but rats and wolves are nearly always present. Both have lived in concert with goblins for at least as long as humans have worked with dogs and horses, and in goblin society those two animals serve similar purposes.</text>
+    </trait>
+    <trait category="description">
+      <name>Family Matters</name>
+      <text>A goblin tribe is organized in a four-tiered caste system made up of lashers, hunters, gatherers, and pariahs. The status of every family in the tribe is based on its importance to the tribe's survival. Families that belong to the higher-ranking castes keep their status by not sharing their knowledge and skills with other families, while those in the lower castes have little hope of escaping their plight.
+	Outsiders who don't understand the goblins' social system are sometimes surprised by how different castes interact with them. A single human warrior might frighten away a dozen gatherers, only to be shocked when two hunters viciously attack. A captured group of invaders might hang in a net while dozens of goblins pass by and pay them no heed until a group of gatherers shows up.
+
+Lashers. The closest thing a goblin tribe has to nobility is the caste of lashers — families of goblins trained in the ways of battle, and also possessed of key skills such as strategy, trap-building, beast taming, mining, smelting, forging, and religion. If the tribe has any spellcasters, this caste includes them. Lashers follow the lead of the tribe's boss, and enforce their will on other goblins with whips.
+
+Hunters. The families of goblins that are skilled in the use of weapons but not privy to any other special knowledge have the second highest status in the tribe. Hunters are often the best wolf riders and know the most about the territory farthest from the tribe's lair. These individuals hunt game in peaceful times, and in combat they serve as scouts, foot soldiers, and cavalry.
+
+Gatherers. Families in the second lowest caste are responsible for getting food from the surrounding area, taking what's naturally available or stealing whatever they can. Gatherers also do the little amount of farming of which goblins are capable and are charged with checking traps for captured people or beasts. Gatherers aren't usually armed with weapons more deadly than a sling or a knife, but they frequently carry nets, caltrops, lassos, and nooses on poles for controlling captured creatures. These goblins cook for the tribe, and in times of war they are also responsible for making poison.
+	Gatherers, and the pariahs beneath them, greatly fear for their lives in battle, believing that the lashers and the hunters have special knowledge of how to survive. It is the members of the lower castes that give goblins their reputation for cowardice.
+
+Pariahs. Some goblin families are the lowest of the low, composed of the most dimwitted, least educated, and weakest goblins. They get the worst jobs: mucking out animal pens, cleaning up after other goblins, and doing any hard labor such as digging mines. If the goblin tribe has slaves to do some of this work, the pariah families enjoy the opportunity to supervise and dominate such creatures, which have no status at all.</text>
+    </trait>
+    <trait category="description">
+      <name>Status Symbols</name>
+      <text>Goblins love symbols of authority, and thus the tribe's boss often has such trappings wherever he or she goes. Such a symbol can take a typical form, perhaps a crown or a throne, but also can be a more distinctive objects like a high-backed wolf saddle or colorful boots. The castes in a tribe also adopt symbols to indicate membership or kinship, but the symbols used are rarely the same between different tribes and often make little sense to other creatures. Some possible status symbols are given in the Status Symbols table. A caste or a boss might display more than one of these items.
+
+Status Symbols:
+d20 | Status Symbol
+1 | Earrings and notches in an ear
+2 | Rib bones tied into hair
+3 | A belt made from raccoon pelts
+4 | A gnome's boot used as a hat
+5 | A pouch of toenail clippings from an allied ogre
+6 | A frog kept in a jar
+7 | Fragile helmets made from axebeak eggs
+8 | Nose rings
+9 | Painted or stained hands
+10 | Bugs kept in a bag for snacking
+11 | War cry tattooed on chest
+12 | Shields made from ankheg chitin
+13 | Bracelet made of pieces of goblins turned to stone
+14 | Special breed of rat kept as pet
+15 | Teeth pulled out in certain places
+16 | Owlbear-feather cloaks
+17 | Scars from lashings
+18 | Orc-tusk lip piercings
+19 | Umbrellas made from dead darkmantles
+20 | Cloaks made of scraps from an elven tapestry</text>
+      <roll description="Status Symbol">1d20</roll>
+    </trait>
+    <trait category="description">
+      <name>Booyahgs</name>
+      <text>Spellcasters of any sort among the goblins are rare. Goblins typically lack the intelligence and patience needed to learn and practice wizardry, and they fare poorly even when given access to the necessary training and knowledge. Sorcerers are less prevalent among them than in many other races, and Khurgorbaeyag seems to dislike sharing his divine power with his followers. And although many goblins would readily offer anything to have the abilities of a warlock, the patrons that grant such power know a goblin is unlikely to be able to uphold its end of any bargain.
+	Even when a goblin is born with the ability to become a spellcaster, the knowledge and talent necessary to carry on the tradition rarely persists for more than a couple of generations. Because they have so little experience with magic, goblins make no distinction between its forms. To them all magic is "booyahg," and the word is part of the name they give to any of its practitioners. A goblin with access to booyahg becomes a member of the lashers and can often rise to the role of boss.
+
+Booyahg Caster. This goblin served under a hobgoblin wizard, stole a look at its master's spellbook, and learned a little wizardry by aping the gestures and words it remembered. The goblin can cast a randomly determined 1st-level wizard spell once per day. Intelligence is its spellcasting ability.
+
+Booyahg Wielder. This goblin found a magic item (a necklace of fireballs, a circlet of blasting, or the like) and learned how to use it.
+
+Booyahg Whip. Khurgorbaeyag saw fit to gift this goblin with powers that enable it to dominate others. The goblin has 1d3 other goblins that slavishly obey its orders.
+
+Booyahg Slave. This goblin warlock serves a patron who can extract payment in flesh if the goblin doesn't do as promised. Often this patron is a coven of hags serving as the tribe's boss, a fiend that has made its way into the world, or an undying lord such as a lich or a vampire. (For more information on undying lord patrons, see the Sword Coast Adventurer's Guide.) Use one of the warlock stat blocks in appendix B to represent this goblin, adding darkvision and the Nimble Escape traits common to all goblins.
+
+Booyahg Booyahg Booyahg. This goblin is a sorcerer with the wild magic origin whose every casting, including cantrips, is accompanied by a wild magic surge. Use the mage stat block in the Monster Manual to represent this goblin, adding darkvision and the Nimble Escape traits common to all goblins. Each time the goblin casts a spell, there is an accompanying surge of wild magic; roll on the Wild Magic Surge table in the Player's Handbook to determine the wild magic effect.</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -338,16 +597,17 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d4
 Height = 3 feet + 5 inches + your size modifier in inches
 Weight in pounds = 35 + your size modifier</text>
+      <roll description="Size Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fury of the Small</name>
       <text>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Nimble Escape</name>
       <text>You can take the Disengage or Hide action as a bonus action on each of your turns.</text>
     </trait>
@@ -360,10 +620,10 @@ Weight in pounds = 35 + your size modifier</text>
     <name>Goliath (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Con 1</ability>
+    <ability>Str +2, Con +1</ability>
+    <resist>cold</resist>
     <proficiency>Athletics</proficiency>
-    <spellAbility/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>At the highest mountain peaks-far above the slopes where trees grow and where the air is thin and the frigid winds howl-dwell the reclusive goliaths. Few folk can claim to have seen a goliath, and fewer still can claim friendship with one. Goliaths wander a bleak realm of rock, wind, and cold. Their bodies look as if they are carved from mountain stone and give them great physical power. Their spirits take after the wandering wind, making them nomads who wander from peak to peak. Their hearts are infused with the cold regard of their frigid realm, leaving each goliath with the responsibility to earn a place in the tribe or die trying.
 
@@ -371,6 +631,37 @@ Source:	Volo's Guide to Monsters p. 108,
 		Elemental Evil Player's Companion p. 10,
 		Explorer's Guide to Wildemount p. 175,
 		Icewind Dale: Rime of the Frostmaiden</text>
+    </trait>
+    <trait category="description">
+      <name>Driven Competitors</name>
+      <text>Every day brings a new challenge to a goliath. Food, water, and shelter are rare in the uppermost mountain reaches. A single mistake can bring doom to an entire tribe, while an individual's heroic effort can ensure the entire group's survival.
+	Goliaths thus place a premium on self-sufficiency and individual skill. They have a compulsion to keep score, counting their deeds and tallying their accomplishments to compare to others. Goliaths love to win, but they see defeat as a prod to improve their skills.
+	This dedication to competition has a dark side. Goliaths are ferocious competitors, but above all else they are driven to outdo their past efforts. If a goliath slays a dragon, he or she might seek out a larger, more powerful wyrm to battle. Few goliath adventurers reach old age, as most die attempting to surpass their past accomplishments.</text>
+    </trait>
+    <trait category="description">
+      <name>Fair Play</name>
+      <text>For goliaths, competition exists only when it is supported by a level playing field. Competition measures talent, dedication, and effort. Those factors determine survival in their home territory, not reliance on magic items, money, or other elements that can tip the balance one way or the other. Goliaths happily rely on such benefits, but they are careful to remember that such an advantage can always be lost. A goliath who relies too much on them can grow complacent, a recipe for disaster in the mountains.
+	This trait manifests most strongly when goliaths interact with other folk. The relationship between peasants and nobles puzzles goliaths. If a king lacks the intelligence or leadership to lead, then clearly the most talented person in the kingdom should take his place. Goliaths rarely keep such opinions to themselves, and mock folk who rely on society's structures or rules to maintain power.</text>
+    </trait>
+    <trait category="description">
+      <name>Survival of the Fittest</name>
+      <text>Among goliaths, any adult who can't contribute to the tribe is expelled. A lone goliath has little chance of survival, especially an older or weaker one. Goliaths have little pity for adults who can't take care of themselves, though a sick or injured individual is treated, as a result of the goliath concept of fair play.
+	A permanently injured goliath is still expected to pull his or her weight in the tribe. Typically, such a goliath dies attempting to keep up, or the goliath slips away in the night to seek the cold will of fate.
+	In some ways, the goliath drive to outdo themselves feeds into the grim inevitability of their decline and death. A goliath would much rather die in battle, at the peak of strength and skill, than endure the slow decay of old age. Few folk have ever meet an elderly goliath, and even those goliaths who have left their people grapple with the urge to give up their lives as their physical skills decay.
+	Because of their risk-taking, goliath tribes suffer from a chronic lack of the experience offered by longterm leaders. They hope for innate wisdom in their leadership, for they can rarely count on a wisdom grown with age.</text>
+    </trait>
+    <trait category="description">
+      <name>Names</name>
+      <text>Every goliath has three names: a birth name assigned by the newborn's mother and father, a nickname assigned by the tribal chief, and a family or clan name. A birth name is up to three syllables long. Clan names are five syllables or more and end in a vowel.
+	Birth names are rarely linked to gender. Goliaths see females and males as equal in all things, and they find societies with roles divided by gender to be puzzling or worthy of mockery. To a goliath, the person who is best at a job should be the one tasked with doing it.
+	A goliath's nickname is a description that can change on the whim of a chieftain or tribal elder. It refers to a notable deed, either a success or failure, committed by the goliath. Goliaths assign and use nicknames with their friends of other races, and change them to refer to an individual's notable deeds.
+	Goliaths present all three names when identifying themselves, in the order of birth name, nickname, and clan name. In casual conversation, they use their nickname.
+
+Birth Names: Aukan, Eglath, Gae-Al, Gauthak, Ilikan, Keothi, Kuori, Lo-Kag, Manneo, Maveith, Nalla, Orilo, Paavu, Pethani, Thalai, Thotham, Uthal, Vaunea, Vimak
+
+Nicknames: Bearkiller, Dawncaller, Fearless, Flintfinder, Horncarver, Keeneye, Lonehunter, Longleaper, Rootsmasher, Skywatcher, Steadyhand, Threadtwister, Twice-Orphaned, Twistedlimb, Wordpainter
+
+Clan Names: Anakalathai, Elanithino, Gathakanathi, Kalagiano, Katho-Olavi, Kolae-Gileana, Ogolakanu, Thuliaga, Thunukalathi, Vaimei-Laga</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -389,21 +680,23 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 6 feet + 2 inches + your size modifier in inches
 Weight in pounds = 200 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Natural Athlete</name>
       <text>You have proficiency in the Athletics skill.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Stone's Endurance</name>
       <text>You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can't use it again until you finish a short or long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Powerful Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</text>
       <special>powerful build</special>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Mountain Born</name>
       <text>You have resistance to cold damage. You're also acclimated to high altitude, including elevations above 20,000 feet.</text>
     </trait>
@@ -416,18 +709,59 @@ Weight in pounds = 200 + (2d6 × your size modifier)</text>
     <name>Hobgoblin (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Int 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Con +2, Int +1</ability>
+    <armor>Light Armor</armor>
+    <trait category="description">
       <name>Description</name>
       <text>War is the lifeblood of hobgoblins. Its glories are the dreams that inspire them. Its horrors don't feature in their nightmares. Cowardice is more terrible to hobgoblins than dying, for they carry their living acts into the afterlife. A hero in death becomes a hero eternal.
-
-Young hobgoblins start soldiering when they can walk and heed the mustering call as soon as they can wield their weapons capably. Every legion in the hobgoblins' entire society forever stands prepared for war.
+	Young hobgoblins start soldiering when they can walk and heed the mustering call as soon as they can wield their weapons capably. Every legion in the hobgoblins' entire society forever stands prepared for war.
 
 Source:	Volo's Guide to Monsters p. 119,
 		Explorer's Guide to Wildemount p. 175,
 		Eberron: Rising from the Last War p. 26</text>
+    </trait>
+    <trait category="description">
+      <name>Brutal Civility</name>
+      <text>Hobgoblins hold themselves to high standards of military honor. The race has a long history of shared traditions, recorded and retold to keep the knowledge fresh for new generations. When hobgoblins aren't waging war, they farm, they build, and they practice both martial and arcane arts.
+	These trappings of civil society do little to conceal an underlying brutality that hobgoblins practice on each other and perfect upon other races. Punishment for infractions of hobgoblin law are swift and merciless. Beauty is something hobgoblins associate only with images of conflict and warfare.
+	The iron grip their philosophy holds on their hearts blinds hobgoblins to the accomplishments of other peoples. Hobgoblins have little appreciation or patience for art. They leave little space for joy or leisure in their lives, and thus have no reserves of faith to call upon when in dire straits. </text>
+    </trait>
+    <trait category="description">
+      <name>Implacable Gods</name>
+      <text>Hobgoblins revere two gods unique to their race, the only survivors of a pantheon that was decimated by Maglubiyet so long ago that hobgoblins don't remember the names of the fallen. Nomog-Geaya is the greater of the two and the more frequently honored. He is seen as a stoic, cold-blooded, and tyrannical leader, and hobgoblins believe he expects the same behavior from them. Bargrivyek is a god of duty, unity, and discipline, and he is thought to be pleased by displays of those principles.
+	In the stories that hobgoblins tell one another, Bargrivyek serves as Nomog-Geaya's second in command. Nomog-Geaya would prefer the position were filled by someone more like himself, but Bargrivyek was all he was left with after Maglubiyet's conquest. Although both deities are ultimately beholden to Maglubiyet, the greater god allows them to retain a measure of their influence over the hobgoblins because their philosophies are in line with his own.
+	Hobgoblins don't build temples to their gods, lest they displease Maglubiyet, but the few priests among them do tend small shrines and interpret the body of legends about their gods. Nomog-Geaya's priests always wield his favored weapons, a longsword and a handaxe. They are responsible for martial training as well as instruction in strategy and battlefield tactics. Bargrivyek's priests wield his symbol, a flail with a head dipped in white paint. They work as a police force in hobgoblin society, making judgments about honor, mediating disputes, and otherwise enforcing discipline.</text>
+    </trait>
+    <trait category="description">
+      <name>Rank, Status, and Title</name>
+      <text>As in any strict military hierarchy, every hobgoblin in a legion has a rank, from the warlord down through a cadre of officers to the soldiers that make up most of its number. These ranks, using the titles most often applied to them, are as follows:
+
+1st rank: Warlord
+2nd rank: General
+3rd rank: Captain
+4th rank: Fatal Axe
+5th rank: Spear
+6th rank: Fist
+7th rank: Soldier
+
+A legion is organized into units called banners, each one made up of a group of interrelated families. Members of a banner live, work, and fight together, and each banner has a separate status within the legion that is reflected in the power of its officers. For instance, the captains of the highest-ranking banners can expect their orders to be followed by the captains of any banners of lower rank.
+	Rank and responsibility aren't necessarily commensurate from one legion to another or even between banners in the same legion. A phalanx of foot soldiers led by a captain in one legion might be two hundred strong, while in another such a force numbers just twenty. One banner might have four warriors mounted on worgs led by a fist, while a fist in another banner of the same legion might lead ten mounted warriors. If any rank doesn't serve a purpose in the legion, the warlord eliminates it from the hierarchy to maximize efficiency.</text>
+    </trait>
+    <trait category="description">
+      <name>Honor Bound, By Glory Crowned</name>
+      <text>Advancement in rank comes as a result of attaining glory, but for the achievement to mean anything, a hobgoblin must abide by the race's code of honor in doing so.
+	Glory can be earned by discovery of great resources (such as finding a new vein of iron or a powerful magic item), by fine performances (writing and performing a great ballad about the legion), by designing and constructing a great defense or monument, and through other means. But the greatest respect is reserved for those who earn their glory in battle. In theory, the fortunes of war can elevate the lowest-ranking banner in a legion to the highest status. In practice, warlords are careful to position themselves and their banners to claim the greatest victories in any conflict, and they portion out opportunities and responsibilities to other banners as politics dictate.
+	Each hobgoblin legion has a distinct code of honor and law, but all follow a few general precepts that are at the heart of the hobgoblin honor system.
+
+Follow Orders. Carrying out orders without question is critical on the battlefield, and hobgoblins follow this dictum in peaceful times as well in order to maintain stability in their society. Hobgoblins don't shrink from following orders that they know will result in death if the act will bring glory to the banner or the legion.
+
+Honor the Gods. Hobgoblins give regular recognition to the deities left to them after Maglubiyet's conquest. Idols of Nomog-Geaya, as well as standards and flags with his image or symbol, receive a bow or salute at all times except emergencies. Bargrivyek's peacemakers receive due deference regardless of rank or banner status. Of course, Maglubiyet's call to conquest is always answered.
+
+Suffer nor Give Insult. As befits their warlike nature, hobgoblins believe that any insult demands a response. Suitably (and somewhat ironically), the outward politeness and civility that they demonstrate among each other enables them to avoid conflicts in daily life. This same form of "courtesy" is often extended to other races the hobgoblins have dealings with, much to the outsiders' surprise. When such respect isn't reciprocated, though, relations can swiftly deteriorate.
+
+Reward Glorious Action. Hobgoblins never deny advancement in status to a banner that has earned it, nor do they withhold higher rank from a deserving individual. If a banner attains great glory in battle but is nearly destroyed, the handful of members who remain are welcomed into another banner, taking their banner's name and colors along with them, and assuming places of leadership in the group.
+
+Uphold the Legion. Hobgoblins care more for the survival of their legion than they do for others of their own kind. Two legions might battle over territory, resources, or power, or out of simple pride. Such a feud can continue over generations in an ongoing cycle of retribution. Each legion has a list of grievances against any others it knows about, and any legions meeting for the first time view each other with immediate hostility. Only a truly great warlord can force legions to work together as an army if Maglubiyet has not called forth a host. </text>
     </trait>
     <trait>
       <name>Age</name>
@@ -446,16 +780,18 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 110 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Martial Training</name>
       <text>You are proficient with two martial weapons of your choice and with light armor.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Saving Face</name>
       <text>Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest.</text>
     </trait>
@@ -468,15 +804,50 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
     <name>Kenku (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Dex 2, Wis 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Dex +2, Wis +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Haunted by an ancient crime that robbed them of their wings, the flightless kenku wander the world as vagabonds and burglars who live at the edge of human society. Kenku suffer from a sinister reputation that is not wholly unearned, but they can prove to be valuable allies.
 
 Source:	Volo's Guide to Monsters p. 109,
 		Explorer's Guide to Wildemount p. 177</text>
+    </trait>
+    <trait category="description">
+      <name>An Ancient Curse</name>
+      <text>The kenku once served a mysterious, powerful entity on another plane of existence. Some believe they were minions of Grazz't, while others say that they were scouts and explorers for the Wind Dukes of Aaqa. Whatever the truth, according to legend, the kenku betrayed their master. Unable to resist the lure of a beautiful sparkling treasure, the kenku plotted to steal the item and escape to the Material Plane.
+	Unfortunately for the kenku, their master discovered their plan before they could enact it. Enraged, the entity imposed three dreadful curses upon them. First, the kenku's beloved wings withered and fell away from their bodies, leaving them bound to the earth. Second, because their ingenuity and skill had turned toward scheming against their patron, the spark of creativity was torn from their souls. Finally, to ensure that the kenku could never divulge any secrets, their master took away their voices. Once the entity was satisfied that they had been sufficiently punished, the kenku were set loose on the Material Plane.
+	Since then, the kenku have wandered the world. They settle in places that accept them, usually bleak cities that have fallen on hard times and are overrun with crime.</text>
+    </trait>
+    <trait category="description">
+      <name>Dreams of Flight</name>
+      <text>Above all else, kenku wish to regain their ability to fly. Every kenku is born with a desire to take to the air, and those who learn spellcasting do so in hope of mastering spells that will allow them to fly. Rumors of magic items such as flying carpets, brooms capable of flight, and similar objects provoke a great desire for the kenku to acquire the items for themselves.
+	Despite their lack of wings, kenku love dwelling in towers and other tall structures. They seek out ruins that reach to the sky, though they lack the motivation and creativity to make repairs or fortify such places. Even so, their light weight and size allow them to dwell in rickety structures that would collapse beneath a human or an orc.
+	Some thieves' guilds use kenku as lookouts and messengers. The kenku dwell in the tallest buildings and towers the guild controls, allowing them to lurk in the highest levels and to keep watch on the city below.</text>
+    </trait>
+    <trait category="description">
+      <name>Hopeless Plagiarists</name>
+      <text>As a result of their lack of creativity, kenku function comfortably as minions of a powerful master. Flock leaders enforce discipline and minimize conflicts, but they fail at effective planning or crafting longterm schemes.
+	Although unable to speak in their own voices, kenku can perfectly mimic any sound they hear, from a halfling's voice to the noise of rocks clattering down a hillside. However, kenku cannot create new sounds and can communicate only by using sounds they have heard. Most kenku use a combination of overheard phrases and sound effects to convey their ideas and thoughts.
+	By the same token, kenku have no ability to invent new ideas or create new things. Kenku can copy existing items with exceptional skill, allowing them to become excellent artisans and scribes. They can copy books, make replicas of objects, and otherwise thrive in situations where they can produce large numbers of identical items. Few kenku find this work satisfying, since their quest for the freedom of flight makes them ill-suited to settle into a routine.</text>
+    </trait>
+    <trait category="description">
+      <name>Ideal Minions</name>
+      <text>Kenku gather in groups called flocks. A flock is led by the oldest and most experienced kenku with the widest store of knowledge to draw on, often called Master.
+	Although kenku can't create new things, they have a talent for learning and memorizing details. Thus, ambitious kenku can excel as superb spies and scouts. A kenku who learns of clever schemes and plans devised by other creatures can put them to use. The kenku lack the talent to improvise or alter a plan, but a wise Master sets multiple plans in motion at once, confident that underlings can follow orders to the letter.
+	For this reason, many kenku make an easy living serving as messengers, spies, and lookouts for thieves' guilds, bandits, and other criminal cartels. A network of kenku can relay a bird call or similar noise across the city, alerting their allies to the approach of a guard patrol or signaling a prime opportunity for a robbery.
+	Since kenku can precisely reproduce any sound, the messages they carry rarely suffer degradation or shifts in meaning. Human messengers might switch words or phrases and garble a message inadvertently, but the kenku produce perfect copies of whatever they hear.</text>
+    </trait>
+    <trait category="description">
+      <name>Kenku Adventurers</name>
+      <text>Kenku adventurers are usually the survivors of a flock that has sustained heavy losses, or a rare kenku who has grown weary of a life of crime. These kenku are more ambitious and daring than their fellows. Others strike out on their own in search of the secrets of flight, to master magic, or to uncover the secret of their curse and find a method to break it.
+	Kenku adventurers, despite their relative independence, still have a tendency to seek out a companion to emulate and follow. A kenku loves to mimic the voice and words of its chosen companion.</text>
+    </trait>
+    <trait category="description">
+      <name>Kenku Names</name>
+      <text>Given that kenku can duplicate any sound, their names are drawn from a staggering variety of noises and phrases. Kenku names tend to break down into three categories that make no distinction between male and female names.
+	Kenku thugs, warriors, and toughs adopt noises made by weapons, such as the clang of a mace against armor or the sound made by a breaking bone. Non-kenku refer to the kenku by describing this noise. Examples of this type of name include Smasher, Clanger, Slicer, and Basher.
+	Kenku thieves, con artists, and burglars adopt animal noises, typically those common in urban settings. In this manner, kenku can call out to each other while those who overhear them mistake them for common animals. Non-kenku use names that refer to the sound made or the animal a kenku mimics, such as Rat Scratch, Whistler, Mouser, and Growler.
+	Some kenku turn their back on crime to pursue legitimate trades. These kenku adopt noises made as part of their craft. A sailor duplicates the sound of a fluttering sail, while a smith mimics the clanging of a hammer on metal. Non-kenku describe these folk by their trade sounds, such as Sail Snap, Hammerer, and Cutter.</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -495,16 +866,18 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d8
 Height = 4 feet + 4 inches + your size modifier in inches
 Weight in pounds = 50 + (1d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">1d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Expert Forgery</name>
       <text>You can duplicate other creatures' handwriting and craftwork. You have advantage on all checks made to produce forgeries or duplicates of existing objects.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Kenku Training</name>
       <text>You are proficient in your choice of two of the following skills: Acrobatics, Deception, Stealth, and Sleight of Hand.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Mimicry</name>
       <text>You can mimic sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.</text>
     </trait>
@@ -517,16 +890,104 @@ Weight in pounds = 50 + (1d6 × your size modifier)</text>
     <name>Kobold (Legacy)</name>
     <size>S</size>
     <speed>30</speed>
-    <ability>Dex 2</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Dex +2</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Kobolds are often dismissed as cowardly, foolish, and weak, but these little reptilian creatures actually have a strong social structure that stresses devotion to the tribe, are clever with their hands, and viciously work together in order to overcome their physical limitations.
-
-In the kobolds' version of a perfect world, the creatures would be left alone to dig their tunnels and raise the next generation of kobolds, all the while seeking the magic that will free their imprisoned god (see the "Kurtulmak: God of Kobolds" sidebar). In the world they occupy, kobolds are often bullied and enslaved by larger creatures-or, when they live on their own, they are constantly fearful of invasion and oppression. Although individually they are timid and shy away from conflict, kobolds are dangerous if cornered, vicious when defending their eggs, and notorious for the dangerous improvised traps they use to protect their warrens.
+	In the kobolds' version of a perfect world, the creatures would be left alone to dig their tunnels and raise the next generation of kobolds, all the while seeking the magic that will free their imprisoned god (see the "Kurtulmak: God of Kobolds" sidebar). In the world they occupy, kobolds are often bullied and enslaved by larger creatures-or, when they live on their own, they are constantly fearful of invasion and oppression. Although individually they are timid and shy away from conflict, kobolds are dangerous if cornered, vicious when defending their eggs, and notorious for the dangerous improvised traps they use to protect their warrens.
 
 Source:	Volo's Guide to Monsters p. 119</text>
+    </trait>
+    <trait category="description">
+      <name>Expert Tunnelers</name>
+      <text>Kobolds are naturally skilled at tunneling. Similar to dwarves, they seem to have a near-instinctive sense of what sections of stone or earth are strong or weak, are bearing a load or are safe to excavate, or are likely to contain minerals or offer access to water. This ability enables them to fashion secure homes in places where other creatures wouldn't feel safe.
+	Kobolds take advantage of their size by creating small-diameter tunnels that they can easily pass through, but that require larger creatures to hunch over or even crawl to make progress. In places where a tunnel opens into a chasm and continues on the other side, the kobolds might connect the two passages with a rope bridge or some other rickety structure, designed to collapse under the weight of any creature heavier than a kobold. On occasion, the route through a kobold lair runs along a ledge that borders a cavern or a crevasse, and the kobolds might erect a railing or a wall that prevents them from falling off the edge — high enough to protect a kobold but low enough to serve as a tripping hazard for a larger creature.
+	Those of other humanoid races have little good to say about kobolds, but they do admit that the little reptilians do respectable tunnel work using simple tools. If a band of kobolds is enslaved by more powerful creatures, the kobolds are usually put to work enlarging their masters' living area and protecting vital areas of the lair with traps and other defenses.
+	Some human communities hire kobolds to dig their sewer tunnels, paying them with food and tools the kobolds wouldn't have access to on their own. If they are treated well and left alone to do the job, the kobolds work industriously and build a network of passages beneath the streets, connecting them to a nearby waterway and greatly improving the town's sanitation. If the kobolds like the area and aren't mistreated by the humans, they might build a warren and make a permanent home there, while continuing to expand the town's sewers as the community grows. These so-called "city kobolds" live underground but might make occasional nighttime forays up to the surface. Roughly one quarter of the towns and cities in the world have kobold communities living under them, but the kobolds are so good at staying hidden that the surface-dwelling citizens in the area often don't know what lies beneath them.
+	Because the kobolds make sure they stay out of the way of anyone more dangerous than themselves, grow their own subterranean food, and prefer to sneak about at night, the people of a town might go for weeks or months without noticing evidence that kobolds are in the area, and years between actual sightings.</text>
+    </trait>
+    <trait category="description">
+      <name>Able Scavengers</name>
+      <text>Kobolds are adept at identifying broken, misplaced, discarded, or leftover crafted items from other creatures that can still be put to use. They prefer to scavenge objects that have clearly been lost or thrown away, which is easy to do without attracting attention. At the same time, they don't automatically shy away from trying to grab items that are the property of other creatures, because such objects are more likely to be in good condition and thus more useful or valuable.
+	When they go after items that aren't free for the taking, kobolds try to remain undetected and don't give their targets reason to harm them. For example, a group of city kobolds might sneak into a cobbler's house at night to loot it of knives, leather bits, nails, and other useful items, but if they are at risk of discovery, they run away rather than attack anyone in the house. By fleeing before they can be seen or identified, they avoid getting into a situation where the townsfolk would try to hunt down all kobolds and put the tribe's survival at risk.
+	Some aggressive individual kobolds and tribes do exist, but in general kobolds don't purposely provoke retaliatory attacks from the creatures they steal from. It's better to be cautious and overlooked than to be considered dangerous and a threat.
+	In a couple of situations, kobolds might abandon this careful approach. First, because of their hatred of gnomes, city kobolds often go out of their way to target gnomes' houses and shops. Even in such cases, the kobolds' fear of retaliation usually prevents them from trying to directly harm the gnomes, but they might spit in the milk, balance dishes on tables so they're easily knocked over and broken, or scatter sewing needles all over the floor — petty, vengeful acts that humiliate, injure, or anger the gnomes, but not so much that the gnomes want to hunt down and kill the kobolds. Because of the kobolds' animosity, gnomes tend to avoid or abandon settlements that have a severe infestation of kobolds, and conversely kobolds are usually driven out of communities that have a large gnome population.
+	Second, kobolds are always on the lookout for magic that might help them free their imprisoned god, Kurtulmak. Typical kobolds don't know how to use a wand, a spellbook, or anything with more magical power than a potion, but they all believe that the tribal sorcerer can figure out how to use any such item they come across. When kobolds sense an opportunity to separate a magic item from its owner, they are often willing to take the chance of revealing themselves because the potential reward is worth the risk.</text>
+    </trait>
+    <trait category="description">
+      <name>Dragon Servitors</name>
+      <text>Kobolds believe that they were created by Tiamat from the blood of dragons — a view supported by their reptilian (they would say draconic) appearance. In every kobold tribe, the legend of the creatures' origin is passed down from elder to hatchling, giving each individual and every generation a reason to feel pride and self-respect. The kobolds prefer to run away than fight, to live off the scraps of others, and they are often dominated by larger humanoids, but they know that there is greatness within them and they are proud that they were chosen to be the blood-kin of dragons.
+	Kobolds willingly serve chromatic dragons and worship them as if they were demigods — mighty beings of divine descent. This isn't a casual sort of worship or lip service; kobolds are awed in the presence of a dragon, as if an actual avatar of a deity were in their presence. Kobolds fall all over themselves to obey orders from a dragon, even if they are dangerous orders. Although kobolds usually don't worship Tiamat directly, they recognize her as the dragon-goddess of all chromatic dragons, and as the master of their racial god, Kurtulmak.</text>
+    </trait>
+    <trait category="description">
+      <name>Arcane Magic Users</name>
+      <text>Unlike some other humanoids, kobolds don't fear or shun arcane magic. They see magic as part of their connection to dragons, and are proud to be blessed with the ability to wield such power. Young kobold sorcerers are trained by elders, and the training has an almost religious significance. Most kobold sorcerers are of the draconic bloodline origin and specialize in either damaging magic (which can also be used in mining), augmentation (of materials or allies), or divination (to find raw materials and foresee threats to the tribe).
+	The main reason why kobolds depend on arcane magic rather than divine is Kurtulmak's imprisonment, which makes it difficult for him to grant spells to mortals and for those mortals to receive his favor. Furthermore, kobolds are so frail that a single hit from a human's weapon can kill one of them, so a tribe has little use for healing magic, and a sorcerer can meet most of the tribe's other magic-related needs. Kobold shamans are very rare; priests of Kurtulmak, when they reveal themselves, are easily recognized by orange garb (usually just a roughly torn sash or cloak) decorated with an image of a gnome's skull.</text>
+    </trait>
+    <trait category="description">
+      <name>Life and Outlook</name>
+      <text>Kobolds have a tribal society in which they all take on specialized roles that protect and sustain the tribe. The strongest kobolds are trained to be hunters and warriors, the most clever are crafters and strategists, the toughest are miners and beast-wranglers, and so on. Even a stupid or physically weak kobold is given a role in the tribe, whether something as simple as picking mushrooms for food or watching over hatchlings, and they all understand that their actions contribute to the survival of the group. The tribe practices for the eventuality of defending the lair against intruders, and their plans always include knowing the best escape routes and who is responsible for blocking tunnels to deter pursuit.
+	Kobolds feel a cool affinity or something like kinship for other members of their tribe, but they are rarely affectionate with each other. Two kobolds who've known each other for over a decade might consider each other friends or enemies, but the strength of this sentiment is much fainter than any comparable human emotion. Since most of their waking time is spent working, adversarial kobolds rarely have opportunities to exchange insults, let alone come to blows over their differences.
+	Kobolds choose mates primarily for convenience. Their lack of emotional bonding means they have no concept of marriage or permanent family relationships. Their eggs are placed in a common tribal hatchery with no effort to keep track of who each one's mother is. This practice and the communal raising of the hatchlings mean that the tribe operates like a group of cousins.
+	Because they lay eggs, and the eggs don't require much tending, kobold females aren't exempted from war or work. Furthermore, kobolds can slowly change sex. If most males or females of a tribe are killed, some survivors change over several months until the tribe is balanced again. In this way, the tribe can quickly repopulate with just a few survivors. Because of these factors, kobolds don't have assigned gender roles for young or adults. A leader, sorcerer, miner, or crafter is as likely to be female as male.</text>
+    </trait>
+    <trait category="description">
+      <name>Grow Fast, Die Early</name>
+      <text>Kobolds grow and mature much more swiftly than members of other humanoid races. At 6 years old a kobold is considered an adult. Most succumb to violence, accidents, or disease by age 20, but a kobold can live for up to 120 years — a longevity they attribute to being distantly related to dragons. A female can lay up to six eggs per year, and an egg matures for two to three months before it hatches.
+	Kobolds don't engage in funeral ceremonies; a dead kobold's body is burned or disposed of in some other convenient way (or, in a cannibalistic tribe, eaten). Kobolds believe that if they die in service to their tribe, Kurtulmak immediately sends each of them back to life as the next egg laid in the hatchery. If a particularly important or respected member of a tribe dies, the hatchery is closely monitored. The next egg laid is immediately separated from the rest and carefully protected. Once it hatches, the resultant young kobold is groomed to fill a position of importance.</text>
+    </trait>
+    <trait category="description">
+      <name>Food and Cannibalism</name>
+      <text>Although their sharp teeth would suggest they are carnivores, kobolds are actually omnivores, and can eat just about anything, including meat, fruit, tree bark, bone, leather, and eggshells (a newly hatched kobold's first meal is usually its own shell). A hungry tribe leaves nothing behind from a kill, eating everything that's edible and using the rest to make tools or adornments.
+	Kobolds shed teeth as they wear out and grow new ones their entire lives. Many wear their own shed teeth as jewelry, with more teeth indicating an older — and wiser — kobold. Some unscrupulous individuals wear teeth stolen or harvested from others in an attempt to make them seem older and more respectable.
+	Most kobold tribes avoid eating what they call "talking meat" — intelligent creatures — because such behavior prompts retaliation. The fear of starvation can make them flexible about this principle, however, and if their options are either attacking such creatures or going hungry, kobolds are practical. A few tribes, particularly those in lightly populated areas, practice cannibalism, believing it is foolish to waste good meat.
+	In any case, kobolds that eat humanoids don't simply start consuming corpses or prisoners right after a battle; they're more inclined to tie their victims to saplings and slowly roast them over a fire, or put them in a giant cook pot to make stew. Fortunately for the prisoners, the kobolds' almost comedic preparations sometimes give rescuers time to locate and free the captives before the kobolds settle down for the main course.</text>
+    </trait>
+    <trait category="description">
+      <name>Hatred</name>
+      <text>Because the gnome god Garl Glittergold trapped the kobold god Kurtulmak in an inescapable maze, kobolds are bitterly hateful toward gnomes. Although they usually don't seek out gnomes to do them violence, if hostile kobolds encounter a mixed group of gnomes and other humanoids, the kobolds instinctively attack the gnomes. Kobolds in battle with gnomes are much less likely to run away because their hatred overrules their sense of self-preservation.
+	A kobold's cautious nature doesn't mean it can't get angry. The blood of dragons flows in its veins, and like a raging drake, a kobold that is pushed too far or has its back against the wall can become a miniature storm of fangs and claws as it desperately tries to defend its life. Likewise, kinship to their own tribe can prompt kobolds to battle another kobold tribe for resources or territory. Such conflicts aren't common, because two tribes will always prefer to expand in different directions if they come into contact, but they do happen.
+	For example, two neighboring tribes that want exclusive claim to a flock of mountain goats might skirmish with each other every few days. Eventually the leader of one warring tribe realizes it is losing due to attrition and moves its tribe to another area, ceding the contested territory to its more successful neighbors.
+	As demonstrated by their hatred of gnomes, kobolds have a persecution complex and easily take offense at the actions or deeds of other races. They aren't forgiving of other races, and they enjoy nursing their hatred until they get a chance to wreak revenge on a creature or a race that has wronged them.</text>
+    </trait>
+    <trait category="description">
+      <name>Environment</name>
+      <text>Kobolds are cold-blooded and thus prefer temperate and tropical climates. Kobold tribes in colder regions tend to be smaller in population and more aggressive in their hunting, since food is relatively scarce in such areas.
+	Partly out of fear and partly because their eyes are sensitive to sunlight, kobolds prefer the security of a cave to living in the open air, and can be found in any sort of terrain that can support tunneling. In a swamp or along a coastline where digging into the soft ground is problematic, kobolds entrench themselves in dense woods, hills, or large rock outcroppings, creating warrens above the water line.
+	Kobolds reside most commonly in hilly or mountainous terrain. Such locations usually have natural caves suitable for living space, plenty of room to dig, and ready sources of food. Although lairing in these locations puts kobolds in competition with surface-dwelling humanoids, their ability to avoid detection often means their warrens go unnoticed by their larger rivals. If it's lucky, a tribe of kobolds that is discovered by a group of larger humanoids might form a mutually beneficial arrangement, relying on the humanoids for protection from invaders and in return providing services such as excavating new living spaces and disposing of trash. If it's unlucky, the tribe is enslaved by the other humanoids, and the kobolds serve similar roles but under threat of death.</text>
+    </trait>
+    <trait category="description">
+      <name>Roleplaying a Kobold</name>
+      <text>A kobold acknowledges its weakness in the face of a hostile world. It knows it is puny, bigger creatures will exploit it, it will probably die at a young age, and its life will be full of toil. Although this outlook seems bleak, a kobold finds satisfaction in its work, the survival of its tribe, and the knowledge that it shares a heritage with the mightiest of dragons.
+	A kobold isn't clever, but it isn't as stupid as an orc. Someone can fool a kobold with smooth words or a quick wit, but when the kobold figures out it has been tricked, it remembers the affront. If it gets an opportunity to do so, it will retaliate against that person somehow, even if in merely a petty way.
+	A kobold doesn't like being cornered or alone. It wants to know it has a safe path for escape, or at least an ally nearby to improve its chances. A kobold without either of these options will be nervous, its behavior alternating between meek silence and hysteria.</text>
+    </trait>
+    <trait category="description">
+      <name>Kobold Names</name>
+      <text>Kobold names are derived from the Draconic tongue and usually relate to a characteristic of the owner, such as scale color, distinctive body parts, or typical behavior. For example, "Red Foot," "White Claw," and "Scurry" are Common translations of often-used names. A kobold might change its name when it becomes an adult, or add additional word-syllables after important events such as completing its first hunt, laying its first egg, or surviving its first battle. The Kobold Names table presents kobold names suitable for any campaign.
+
+Kobold Names:
+d20 | Name
+1 | Arix
+2 | Eks
+3 | Ett
+4 | Galax
+5 | Garu
+6 | Hagnar
+7 | Hox
+8 | Irtos
+9 | Kashak
+10 | Meepo
+11 | Molo
+12 | Ohsoss
+13 | Rotom
+14 | Sagin
+15 | Sik
+16 | Sniv
+17 | Taklak
+18 | Tes
+19 | Urak
+20 | Varn</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -538,21 +999,28 @@ Source:	Volo's Guide to Monsters p. 119</text>
     </trait>
     <trait>
       <name>Size</name>
-      <text>Kobolds are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small.</text>
+      <text>Kobolds are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small.
+
+To set your height and weight randomly, start with rolling a size modifier:
+
+Size modifier = 2d4
+Height = 2 feet + 1 inches + your size modifier in inches
+Weight in pounds = 25 + (1 × your size modifier)</text>
+      <roll description="Size Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Grovel, Cower, and Beg</name>
       <text>As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that you can see. Once you use this trait, you can't use it again until you finish a short or long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Pack Tactics</name>
       <text>You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Sunlight Sensitivity</name>
       <text>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</text>
     </trait>
@@ -565,18 +1033,41 @@ Source:	Volo's Guide to Monsters p. 119</text>
     <name>Lizardfolk (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Wis 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Con +2, Wis +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Only a fool looks at the lizardfolk and sees nothing more than scaly humanoids. Their physical shape notwithstanding, lizardfolk have more in common with iguanas or dragons than they do with humans, dwarves, or elves. Lizardfolk possess an alien and inscrutable mindset, their desires and thoughts driven by a different set of basic principles than those of warm-blooded creatures. Their dismal swamp homes might lie hundreds of miles from the nearest human settlement, but the gap between their way of thinking and that of the smooth-skins is far greater.
+	Despite their alien outlook, some lizardfolk make an effort to understand and, in their own manner, befriend people of other races. Such lizardfolk make faithful and skilled allies.
 
-Despite their alien outlook, some lizardfolk make an effort to understand and, in their own manner, befriend people of other races. Such lizardfolk make faithful and skilled allies.
+Source:	Volo's Guide to Monsters p. 111</text>
+    </trait>
+    <trait category="description">
+      <name>Alien Minds</name>
+      <text>The lizardfolk's reptilian nature comes through not only in their appearance, but also in how they think and act. Lizardfolk experience a more limited emotional life than other humanoids. Like most reptiles, their feelings largely revolve around fear, aggression, and pleasure. Lizardfolk experience most feelings as detached descriptions of creatures and situations. For example, humans confronted by an angry troll experience fear on a basic level. Their limbs shake, their thinking becomes panicked and jumbled, and they react by instinct. The emotion of fear takes hold and controls their actions. In contrast, lizardfolk see emotions as traits assigned to other creatures, objects, and situations. A lizardfolk doesn't think, "I'm scared." Instead, aggressive, stronger creatures register to the lizardfolk as fearsome beings to be avoided if possible. If such creatures attack, lizardfolk flee, fighting only if cornered. Lizardfolk aren't scared of a troll; instead, they understand that a troll is a fearsome, dangerous creature and react accordingly.
+	Lizardfolk never become angry in the way others do, but they act with aggression toward creatures that they could defeat in a fight and that can't be dealt with in some other manner. They are aggressive toward prey they want to eat, creatures that want to harm them, and so on.
+	Pleasurable people and things make life easier for lizardfolk. Pleasurable things should be preserved and protected, sometimes at the cost of the lizardfolk's own safety. The most pleasurable creatures and things are ones that allow lizardfolk to assess more situations as benign rather than fearsome.</text>
+    </trait>
+    <trait category="description">
+      <name>Cold and Calculating</name>
+      <text>Most humanoids describe cold-blooded people as lacking in emotion and empathy. The same label serves as an apt depiction of lizardfolk. Lacking any internal emotional reactions, lizardfolk behave in a distant manner. They don't mourn fallen comrades or rage against their enemies. They simply observe and react as a situation warrants.
+	Lizardfolk lack meaningful emotional ties to the past. They assess situations based on their current and future utility and importance. Nowhere does this come through as strongly as when lizardfolk deal with the dead. To a lizardfolk, a comrade who dies becomes a potential source of food. That companion might have once been a warrior or hunter, but now the body is just freshly killed meat.
+	A lizardfolk who lives among other humanoids can, over time, learn to respect other creatures' emotions. The lizardfolk doesn't share those feelings, but instead assesses them in the same clinical manner. Yes, the fallen dwarf might be most useful as a meal, but hacking the body into steaks provokes aggression in the other humanoids and makes them less helpful in battle.</text>
+    </trait>
+    <trait category="description">
+      <name>Utility and Survival</name>
+      <text>The lizardfolk mindset might seem unnecessarily cruel, but it helps them survive in a hostile environment. The swamps they inhabit are filled with a staggering variety of threats. Lizardfolk focus on survival above all, without sentiment. Lizardfolk assess everyone and everything in terms of utility. Art and beauty have little meaning for them. A sharp sword serves a useful and good purpose, while a dull sword is a dead weight without a whetstone.
+	Lizardfolk see little need to plan more than a season or so into the future. This approach allows them to maintain their current level of influence in the world, but it limits their growth. Lizardfolk have no interest in developing writing, making long-term plans, or cultivating other methods to progress beyond their simple existence as hunters and gatherers.</text>
+    </trait>
+    <trait category="description">
+      <name>Hapless Soft Ones</name>
+      <text>At their core, lizardfolk view other humanoids with an indifference verging on pity. Born into the world lacking stout scales and sharp teeth, it's a wonder they have managed to survive for so long. The typical human would barely make it through a day in the swamps.
+	Still, if other creatures prove useful to lizardfolk, those creatures can trigger a protective response made all the stronger by their apparent weakness. The lizardfolk assess such beings as hatchlings, young ones incapable of protecting themselves but who might prove useful in the future if they receive care.</text>
+    </trait>
+    <trait category="description">
+      <name>Lizardfolk Personality</name>
+      <text>You can use the Lizardfolk Quirks table to determine a personality quirk for a lizardfolk character or to inspire a unique mannerism.
 
-Lizardfolk Personality:
-You can use the Lizardfolk Quirks table to determine a personality quirk for a lizardfolk character or to inspire a unique mannerism.
-
+Lizardfolk Quirks:
 d8 | Quirk
 1 | You hate waste and see no reason not to scavenge fallen enemies. Fingers are tasty and portable!
 2 | You sleep best while mostly submerged in water.
@@ -585,9 +1076,15 @@ d8 | Quirk
 5 | You have learned to laugh. You use this talent in response to all emotional situations, to better fit in with your comrades.
 6 | You still don't understand how metaphors work. That doesn't stop you from using them at every opportunity.
 7 | You appreciate the soft humanoids who realize they need chain mail and swords to match the gifts you were born with.
-8 | You enjoy eating your food while it's still wriggling.
+8 | You enjoy eating your food while it's still wriggling.</text>
+      <roll description="Quirk">1d8</roll>
+    </trait>
+    <trait category="description">
+      <name>Lizardfolk Names</name>
+      <text>Lizardfolk take their names from the Draconic language. They use simple descriptives granted by the tribe based on an individual's notable deeds or actions. For example, Garurt translates as "axe," a name given to a lizardfolk warrior who defeated an orc and claimed his foe's weapon. A lizardfolk who likes to hide in a stand of reeds before ambushing an animal might be called Achuak, which means "green" to describe how she blends into the foliage.
+	Lizardfolk make no distinction between male and female in their naming conventions. Each example name includes its translation in parenthesis.
 
-Source:	Volo's Guide to Monsters p. 111</text>
+Lizardfolk Names: Achuak (green), Aryte (war), Baeshra (animal), Darastrix (dragon), Garurt (axe), Irhtos (secret), Jhank (hammer), Kepesk (storm), Kethend (gem), Korth (danger), Kosj (small), Kothar (demon), Litrix (armor), Mirik (song), Othokent (smart), Sauriv (eye), Throden (many), Thurkear (night), Usk (iron), Valignat (burn), Vargach (battle), Verthica (mountain), Vutha (black), Vyth (steel)</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -595,37 +1092,46 @@ Source:	Volo's Guide to Monsters p. 111</text>
     </trait>
     <trait>
       <name>Size</name>
-      <text>Lizardfolk are a little bulkier and taller than humans, and their colorful frills make them appear even larger. Your size is Medium.</text>
+      <text>Lizardfolk are a little bulkier and taller than humans, and their colorful frills make them appear even larger. Your size is Medium.
+
+To set your height and weight randomly, start with rolling a size modifier:
+
+Size modifier = 2d10
+Height = 4 feet + 9 inches + your size modifier in inches
+Weight in pounds = 120 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
     <trait>
       <name>Alignment</name>
       <text>Most lizardfolk are neutral. They see the world as a place of predators and prey, where life and death are natural processes. They wish only to survive, and prefer to leave other creatures to their own devices.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Swim Speed</name>
       <text>You have a swimming speed of 30 feet.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Bite</name>
       <text>Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Piercing Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Cunning Artisan</name>
       <text>As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size small or larger to create one of the following items: a shield, a club, a javelin, or 1d4 dart or blowgun needle. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as leatherworker's tools.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hold Breath</name>
       <text>You can hold your breath for up to 15 minutes at a time.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hunter's Lore</name>
       <text>You gain proficiency with two of the following skills of your choice: Animal Handling, Nature, Perception, Stealth, and Survival.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Natural Armor</name>
       <text>You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hungry Jaws</name>
       <text>In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your Constitution modifier (minimum of 1), and you can't use this trait again until you finish a short or long rest.</text>
     </trait>
@@ -638,19 +1144,40 @@ Source:	Volo's Guide to Monsters p. 111</text>
     <name>Orc (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Con 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Str +2, Con +1</ability>
+    <trait category="description">
       <name>Description</name>
-      <text>To feel the thunder of orcish war drums outside the gate and to hear a chorus of voices growling, "Gruumsh!" is the nightmare of every civilized place in the world. For no matter how thick its walls, skilled its archers, or brave its knights, few settlements have ever withstood a full-scale onslaught of orcs.
-
-Every soldier who lives through a fight with orcs tells of confronting a hulking foe that can cleave through a warrior with a single blow, part of a force that can cut down enemies as though they were trembling stalks of wheat before the scythe. Only a skilled and determined hero can hope to survive single combat with an orc.
-
-Savage and fearless, orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home to the plane of Acheron. It is there in the afterlife where the chosen ones will join Gruumsh and his armies in their endless extraplanar battle for supremacy.
+      <text>To feel the thunder of orcish war drums outside the gate and to hear a chorus of voices growling, "Gruumsh!" is the nightmare of every civilized place in the world. For no matter how thick its walls, skilled its archers, or brave its knights, few settlements have ever withstood a full-scale onslaught of orcs. Every soldier who lives through a fight with orcs tells of confronting a hulking foe that can cleave through a warrior with a single blow, part of a force that can cut down enemies as though they were trembling stalks of wheat before the scythe. Only a skilled and determined hero can hope to survive single combat with an orc.
+	Savage and fearless, orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home to the plane of Acheron. It is there in the afterlife where the chosen ones will join Gruumsh and his armies in their endless extraplanar battle for supremacy.
 
 Source:	Volo's Guide to Monsters p. 120,
 		Eberron: Rising from the Last War p. 31</text>
+    </trait>
+    <trait category="description">
+      <name>Gods of the Orcs</name>
+      <text>Orcs believe their gods to be invincible. They see the principles that define them and their deities at work every day in the world around them — nature rewards the strong and mercilessly eliminates the weak and the infirm. Orcs don't revere their gods as much as they fear them; every tribe has superstitions about how to avert their wrath or bring their favor. This deep-seated uncertainty and fear comes forth in the form of savagery and relentlessness, as orcs ravage and kill to appease the gods in order to avoid their terrible retribution.
+	At the pinnacle of the orc pantheon is Gruumsh One-Eye, who created the orcs and continues to direct their destiny. He is aided and abetted by the other warrior deities, Bahgtru and Ilneval, who bring strength and cunning to the battlefield. The followers of all three gods are a tribe's raiders and ravagers—often the only part of an orc tribe that its victims ever see.
+	Deep within the den of a tribe, far away from the war-hearth where warriors gather and celebrate, dwell the followers of Yurtrus, the god of disease and death, and Shargaas, the god of darkness and the unknown. Orcs too weak for battle (because of bodily weakness, malformation, injury, or age) often join these cults instead of facing daily humiliation, exile, or death.
+	Serving as the bridge between the two parts of the tribe are the priestesses of Luthic, the orc goddess who represents both life and the grave. It is her worshipers that raise young orcs to be warriors, and then, at the end of their lives, take them to Yurtrus and Shargaas to be carried into death and the great unknown.</text>
+    </trait>
+    <trait category="description">
+      <name>Orc Names</name>
+      <text>Orc names don't always have meaning in the Orc language, and most noteworthy orcs are given epithets by their tribe mates.
+
+Orc Names:
+d12 | Male Name | Female Name | Epithet
+1 Grutok | Kansif | The Filthy
+2 Lortar | Ownka | Skull Cleaver
+3 Abzug | Emen | Eye Gouger
+4 Shugog | Sutha | Iron Tusk
+5 Urzul | Myev | Skin Flayer
+6 Ruhk | Neega | Bone Crusher
+7 Mobad | Baggi | Flesh Ripper
+8 Shamog | Shautha | Doom Hammer
+9 Mugrub | Ovak | Elf Butcher
+10 Bajok | Vola Spine | Snapper
+11 Rhorog | Engong | Death Spear
+12 Jahrukk | Volen | The Brutal </text>
     </trait>
     <trait>
       <name>Age</name>
@@ -669,20 +1196,22 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d8
 Height = 5 feet + 4 inches + your size modifier in inches
 Weight in pounds = 175 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Aggressive</name>
       <text>As a bonus action, you can move up to your movement speed toward a hostile creature you can see or hear. You must end this move closer to the enemy than you started.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Primal Intuition</name>
       <text>You have proficiency in two of the following skills of your choice: Animal Handling, Insight, Intimidation, Medicine, Nature, Perception, and Survival.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Powerful Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</text>
       <special>powerful build</special>
@@ -696,22 +1225,53 @@ Weight in pounds = 175 + (2d6 × your size modifier)</text>
     <name>Tabaxi (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Dex 2, Cha 1</ability>
+    <ability>Dex +2, Cha +1</ability>
     <proficiency>Perception, Stealth</proficiency>
-    <spellAbility/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders. Ultimate travelers, the inquisitive tabaxi rarely stay in one place for long. Their innate nature pushes them to leave no secrets uncovered, no treasures or legends lost.
 
 Source:	Volo's Guide to Monsters p. 113,
 		Explorer's Guide to Wildemount p. 179</text>
     </trait>
-    <trait>
+    <trait category="description">
+      <name>Wandering Outcasts</name>
+      <text>Most tabaxi remain in their distant homeland, content to dwell in small, tight clans. These tabaxi hunt for food, craft goods, and largely keep to themselves.
+	However, not all tabaxi are satisfied with such a life. The Cat Lord, the divine figure responsible for the creation of the tabaxi, gifts each of his children with one specific feline trait. Those tabaxi gifted with curiosity are compelled to wander far and wide. They seek out stories, artifacts, and lore. Those who survive this period of wanderlust return home in their elder years to share news of the outside world. In this manner, the tabaxi remain isolated but never ignorant of the world beyond their home.</text>
+    </trait>
+    <trait category="description">
+      <name>Barterers of Lore</name>
+      <text>Tabaxi treasure knowledge rather than material things. A chest filled with gold coins might be useful to buy food or a coil of rope, but it's not intrinsically interesting. In the tabaxi's eyes, gathering wealth is like packing rations for a long trip. It's important to survive in the world, but not worth fussing over.
+	Instead, tabaxi value knowledge and new experiences. Their ears perk up in a busy tavern, and they tease out stories with offers of food, drink, and coin. Tabaxi might walk away with empty purses, but they mull over the stories and rumors they collected like a miser counting coins.
+	Although material wealth holds little attraction for the tabaxi, they have an insatiable desire to find and inspect ancient relics, magical items, and other rare objects. Aside from the power such items might confer, a tabaxi takes great joy in unraveling the stories behind their creation and the history of their use.</text>
+    </trait>
+    <trait category="description">
+      <name>Fleeting Fancies</name>
+      <text>Wandering tabaxi are mercurial creatures, trading one obsession or passion for the next as the whim strikes. A tabaxi's desire burns bright, but once met it disappears to be replaced with a new obsession. Objects remain intriguing only as long as they still hold secrets.
+	A tabaxi rogue could happily spend months plotting to steal a strange gem from a noble, only to trade it for passage on a ship or a week's lodging after stealing it. The tabaxi might take extensive notes or memorize every facet of the gem before passing it on, but the gem holds no more allure once its secrets and nature have been laid bare.</text>
+    </trait>
+    <trait category="description">
+      <name>Tinkers and Minstrels</name>
+      <text>Curiosity drives most of the tabaxi found outside their homeland, but not all of them become adventurers. Tabaxi who seek a safer path to satisfy their obsessions become wandering tinkers and minstrels.
+	These tabaxi work in small troupes, usually consisting of an elder, more experienced tabaxi who guides up to four young ones learning their way in the world. They travel in small, colorful wagons, moving from settlement to settlement. When they arrive, they set up a small stage in a public square where they sing, play instruments, tell stories, and offer exotic goods in trade for items that spark their interest. Tabaxi reluctantly accept gold, but they much prefer interesting objects or pieces of lore as payment.
+	These wanderers keep to civilized realms, preferring to bargain instead of pursuing more dangerous methods of sating their curiosity. However, they aren't above a little discreet theft to get their claws on a particularly interesting item when an owner refuses to sell or trade it.</text>
+    </trait>
+    <trait category="description">
+      <name>Tabaxi Names</name>
+      <text>Tabaxi Names. Each tabaxi has a single name, determined by clan and based on a complex formula that involves astrology, prophecy, clan history, and other esoteric factors. Tabaxi names can apply to both males and females, and most use nicknames derived from or inspired by their full names.
+	Clan names are usually based on a geographical feature located in or near the clan's territory.
+	The following list of sample tabaxi names includes nicknames in parenthesis.
+
+Tabaxi Names: Cloud on the Mountaintop (Cloud), Five Timber (Timber), Jade Shoe (Jade), Left-Handed Hummingbird (Bird), Seven Thundercloud (Thunder), Skirt of Snakes (Snake), Smoking Mirror (Smoke)
+
+Tabaxi Clans: Bright Cliffs, Distant Rain, Mountain Tree, Rumbling River, Snoring Mountain</text>
+    </trait>
+    <trait category="description">
       <name>Tabaxi Personality</name>
       <text>A tabaxi might have motivations and quirks much different from a dwarf or an elf with a similar background. You can use the following tables to customize your character in addition to the trait, ideal, bond, and flaw from your background.
+	The Tabaxi Obsession table can help hone your character's goals. For extra fun, roll a new result every few days that pass in the campaign to reflect your ever-changing curiosity.
 
-The Tabaxi Obsession table can help hone your character's goals. For extra fun, roll a new result every few days that pass in the campaign to reflect your ever-changing curiosity.
-
+Tabaxi Obsessions:
 d8 | My curiosity is currently fixed on...
 1 | A god or planar entity
 2 | A monster
@@ -722,6 +1282,7 @@ d8 | My curiosity is currently fixed on...
 7 | A location
 8 | A legend or tale
 
+Tabaxi Quirks:
 d10 | Quirk
 1 | You miss your tropical home and complain endlessly about the freezing, weather, even in summer.
 2 | You never wear the same outfit twice, unless you absolutely must.
@@ -756,24 +1317,27 @@ Weight in pounds = 85 + (2d4 × your size modifier)
 Male:
 Height = 4 feet + 10 inches + your size modifier in inches
 Weight in pounds = 90 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
     <trait>
       <name>Creature Type</name>
       <text>Tabaxi are humanoids with the feline subtypes</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Feline Agility</name>
       <text>Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Cat's Claws</name>
       <text>Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Slashing Damage">1d4+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Cat's Talents</name>
       <text>You have proficiency in the Perception and Stealth skills.</text>
     </trait>
@@ -786,29 +1350,64 @@ Weight in pounds = 90 + (2d4 × your size modifier)</text>
     <name>Triton (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 1, Cha 1, Con 1</ability>
-    <proficiency/>
+    <ability>Str +1, Cha +1, Con +1</ability>
+    <resist>cold</resist>
     <spellAbility>Charisma</spellAbility>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Tritons guard the ocean depths, building small settlements beside deep trenches, portals to the elemental planes, and other dangerous spots far from the eyes of land-bound folk. Long-established guardians of the deep ocean floor, the noble tritons have gradually become increasingly active in the world above.
 
-Source:	Volo's Guide to Monsters p. 115,
-		Mythic Odysseys of Theros p. 26</text>
+Source:	Volo's Guide to Monsters p. 116</text>
     </trait>
-    <trait>
+    <trait category="description">
+      <name>Aquatic Crusaders</name>
+      <text>Centuries ago, tritons entered the world in response to the growing threat of evil elementals. Tritons waged many wars against their enemies on the Plane of Water, driving them into the Darkened Depths where they escaped into the crushing pressure and utter darkness. In time, the tritons noticed that their ancient elemental foes had grown quiet. Expeditions to the depths revealed that krakens, sahuagin, and far worse foes had fled the Plane of Water for the Material Plane.
+	The tritons, driven by a sense of duty and responsibility, would not allow their foes to escape so easily. A great conclave of tritons chose volunteers skilled in weapons and magic as part of an expeditionary force to enter the Material Plane and seek out their enemies.
+	Those tritons spread across the world's oceans and established protectorates to watch over deep sea trenches, portals, undersea caves, and other locations where their enemies might lurk. They defeated their foes when they found them and drove the rest into hiding.
+	With their foes banished to the deepest reaches of the sea, tritons settled in to watch for any sign of their return. Over time, the tritons extended their stewardship over the sea floor from their initial settlements and built outposts to create trade with other races. Despite this expansion, few folk know of them. Their settlements are so remote even merfolk and sea elves rarely encounter them.</text>
+    </trait>
+    <trait category="description">
+      <name>Haughty Nobles</name>
+      <text>As a result of their isolation and limited understanding of the Material Plane, tritons can come across as haughty and arrogant. They see themselves as caretakers of the sea, and they expect other creatures to pay them deep respect, if not complete deference.
+	This attitude might grate on others, but it arises from a seed of truth. Few know of the tritons' great victories over dreadful undersea threats. The tritons make little allowance for such ignorance and are delighted to expound upon the great debt others owe them.
+	Tritons also have a tendency to emerge from their isolation under the assumption that other folk will welcome them as respected allies and mentors. Again, distance drives much of this attitude. The tritons' limited view of the world leaves them ignorant of the kingdoms, wars, and other struggles of the surface world. Tritons readily see such concerns as minor events, a sideshow to the tritons' role as the world's true protectors.</text>
+    </trait>
+    <trait category="description">
+      <name>Staunch Champions</name>
+      <text>Despite their off-putting manners, tritons are benevolent creatures at heart, convinced that other civilized races deserve their protection. Their attitude might grate, but when pirate fleets prowl the waves or a kraken awakens from its slumber, they are among the first to take up arms to protect others.
+	Tritons readily sacrifice themselves for the common good. They will fight and die for humans, merfolk, and other creatures without question. Their self-absorbed nature makes them overlook the history of other creatures, but they also endure a sense of guilt over allowing the evils of the Plane of Water to enter the Material Plane and threaten its inhabitants. The tritons believe they owe a debt of honor to the world, and they will fight and die to pay it.
+	At times their fervor and ignorance of the world can lead them astray. Tritons encountering other creatures for the first time can underestimate them, leaving the tritons vulnerable to deception. With their strong martial tradition, tritons can sometimes be too eager to leap into a fight.</text>
+    </trait>
+    <trait category="description">
+      <name>Strangers to the Surface</name>
+      <text>Given their isolation, most tritons have never been to the surface world. They struggle with the idea that they can't easily move up and down out of water, and the changing of the seasons mystifies them.
+	Tritons also find the variety of social institutions, kingdoms, and other customs bewildering. For all their proud culture, they remain innocent of the surface world. The typical triton protectorate is tightly regimented, organized, and unified around a common cause. A triton on the surface becomes easily confused by the bewildering array of alliances, rivalries, and petty grievances that prevent the surface folk from truly unifying.
+	At its worst, a triton's arrogance compounds the tendency for the triton not to understand the ways of the surface world.
+	It's easy for a triton to blame baffling social practices on what the triton perceives as the barbarism, weakness, or cowardice of surface folk.</text>
+    </trait>
+    <trait category="description">
       <name>Triton Personality</name>
-      <text>Far from flawless, these champions of good mean well,but they are easily frustrated by others. You can select, roll, or adapt a triton-specific quirk from the Triton Quirks table. Use the quirk to inform how you portray your character.
+      <text>Far from flawless, these champions of good mean well, but they are easily frustrated by others. You can select, roll, or adapt a triton-specific quirk from the Triton Quirks table. Use the quirk to inform how you portray your character.
 
+Triton Quirks
 d6 | Quirk
 1 | You phrase requests as orders that you expect to be obeyed.
 2 | You are quick to boast of the greatness of your civilization.
 3 | You learned an antiquated version of Common and drop "thee" and "thou" into your speech.
 4 | You assume that people are telling you the truth about local customs and expectations.
 5 | The surface world is a wondrous place, and you catalog all its details in a journal.
-6 | You mistakenly assume that surface folk know about and are impressed by your people's history.
+6 | You mistakenly assume that surface folk know about and are impressed by your people's history.</text>
+      <roll description="Quirk">1d6</roll>
+    </trait>
+    <trait category="description">
+      <name>Triton Names</name>
+      <text>Most triton names have two or three syllables. Male names typically end with a vowel and the letter s, and female names traditionally end with an n. Tritons use their home protectorate as a surname, with the name formed by adding a vowel followed by a "th" to the end of the protectorate's name.
 
-Source:	Volo's Guide to Monsters p. 116</text>
+Female Triton Names: Aryn, Belthyn, Duthyn, Feloren, Otanyn, Shalryn, Vlaryn, Wolyn
+
+Male Triton Names: Corus, Delnis, Jhimas, Keros, Molos, Nalos, Vodos, Zunis
+
+Triton Surnames: Ahlorsath, Pumanath, Vuuvaxath</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -820,29 +1419,37 @@ Source:	Volo's Guide to Monsters p. 116</text>
     </trait>
     <trait>
       <name>Size</name>
-      <text>Tritons are slightly shorter than humans, averaging about 5 feet tall. Your size is Medium.</text>
+      <text>Tritons are slightly shorter than humans, averaging about 5 feet tall. Your size is Medium.
+
+To set your height and weight randomly, start with rolling a size modifier:
+
+Size modifier = 2d10
+Height = 4 feet + 6 inches + your size modifier in inches
+Weight in pounds = 90 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Swim Speed</name>
       <text>You have a swimming speed of 30 feet.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Amphibious</name>
       <text>You can breathe air and water.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Control Air and Water</name>
       <text>A child of the sea, you can call on the magic of elemental air and water. You can cast fog cloud with this trait. Starting at 3rd level, you can cast gust of wind with it, and starting at 5th level, you can also cast wall of water with it. Once you cast a spell with this trait, you can't cast that spell with it again until you finish a long rest. Charisma is your spellcasting ability for these spells.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Emissary of the Sea</name>
       <text>Aquatic beasts have an extraordinary affinity with your people. You can communicate simple ideas with beasts that can breathe water. They can understand the meaning of your words, though you have no special ability to understand them in return.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Guardians of the Depths</name>
       <text>Adapted to even the most extreme ocean depths, you have resistance to cold damage.</text>
     </trait>
@@ -852,17 +1459,73 @@ Source:	Volo's Guide to Monsters p. 116</text>
     </trait>
   </race>
   <race>
-    <name>Yuan-Ti Pureblood (Legacy)</name>
+    <name>Yuan-ti Pureblood (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Cha 2, Int 1</ability>
-    <proficiency/>
+    <ability>Cha +2, Int +1</ability>
+    <resist>poison</resist>
     <spellAbility>Charisma</spellAbility>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>The serpent creatures known as yuan-ti are all that remains of an ancient, decadent human empire. Ages ago their dark gods taught them profane, cannibalistic rituals to mix their flesh with that of snakes, producing a caste-based society of hybrids in which the most snakelike are the leaders and the most humanlike are spies and agents in foreign lands.
 
 Source:	Volo's Guide to Monsters p. 120</text>
+    </trait>
+    <trait category="description">
+      <name>Humans Transformed</name>
+      <text>The people who became yuan-ti were one of the original human civilizations. Their society built great temples of stone and forged metal into armor, tools, and weapons. In their ceremonies they paid homage to the snake as the embodiment of the qualities they most appreciated. They developed a philosophy of separating emotion from intellectual pursuits, allowing them to focus their energy on personal advancement and expanding their territory. They believed themselves to be the most enlightened mortals in the world, and in their hubris they sought to become ever greater.
+	The serpent gods of the primordial world heeded the prayers of these people and hissed dark demands into their ears. The people tainted their souls by performing human sacrifices in the name of the gods, debased their flesh by cannibalizing their victims, and then performed a sorcerous ritual while writhing in pools filled with living snakes that enabled them to mix their flesh with that of serpents, becoming like the gods in body, thought, and emotion. Freed from the limitations of their human bodies, the yuan-ti used their new abilities to conquer new lands and expand their borders.  </text>
+    </trait>
+    <trait category="description">
+      <name>One Race, Many Forms</name>
+      <text>The bodies of all yuan-ti have a mix of humanlike and snakelike parts, but the proportion varies from individual to individual. After the initial metamorphosis of the humans, their society quickly coalesced into a caste system based on how complete a person's transformation was. The vast majority of yuan-ti fall into three categories-abominations, malisons, and purebloods-while the mutated broodguards and exceedingly rare anathemas have their place in the hierarchy as well.
+	All yuan-ti can interbreed. Females usually lay clutches of eggs, which are stored in a common hatchery, although live births aren't uncommon. A mating between yuan-ti of different types almost always produces eggs that hatch into yuan-ti of the weaker parent, so most choose partners of the same type in the interest of maintaining the strength of their personal bloodline.
+	The yuan-ti have abandoned their humanity and consider non-serpentine humanoids to be lesser creatures, barely more civilized than common apes. Although some purebloods are able to reproduce with humans, most are disgusted by the idea and would do so only if seduction is necessary for a pureblood to preserve a role as a confidant or advisor in human society. The very rare offspring of such a union are always purebloods, although they may appear fully human at birth and for several years afterward.
+	The yuan-ti know rituals that can transform an individual into a more powerful type. The cost and time required to perform the ritual is prohibitive, and as a result most yuan-ti never get the opportunity to undergo such a transformation. Every use of the ritual must be modified to suit the individual undergoing transformation, and requires rare herbs, exotic magical substances, snakes, and one or more humans to be sacrificed and eaten as part of the procedure.</text>
+    </trait>
+    <trait category="description">
+      <name>Undercover Empire</name>
+      <text>The human civilization that gave rise to the yuan-ti was among the richest in the mortal world. It rapidly progressed in metalworking, using keen intellect and magic to discover the secrets of making steel. Its military shattered rival tribes and developed advanced tactics for fighting in forests and open plains.
+	The civilization grew into a cluster of allied city-states. Conquered neighbors were allowed to keep their leaders and culture so long as they paid tribute, swore allegiance to the victors, and incorporated their conquerors' serpent gods into their religions. These victories sent a constant influx of food, ore, and slaves back to the home cities.
+	The wealth of the empire allowed the ruling elite plenty of time to focus on intellectual pursuits. These nobles turned to philosophy and prayer, offering gifts of magic and animal sacrifices to their serpent gods, paying homage to the perfection of the ophidian form. The serpent gods taught the humans how to take on aspects of the snake, but the cost of the change was high, requiring many sacrifices for each person to be transformed. Entire households of slaves in one city-state were killed and eaten to create the first yuan-ti, and once the news of how to perform these rituals spread to other leaders, the call for slaves to fuel the process increased. As the serpent gods began to demand more and more sacrifices, the yuan-ti stepped up their raids on bordering settlements to meet this need.
+	The physical and magical prowess of the yuan-ti empire allowed the former humans to retain their holdings for several hundred years, until a combination of drought, attacks by enemies (including dragons and nagas), civil war, torpor among the serpent gods, and the development of iron weapons by the some of their conquered enemies finally loosened the yuan-ti's hold over nearby lands. The serpent people withdrew to their fortified cities and underground temples, ceding the rest of their territory to their former minions. The yuan-ti crawled away and hid in a matter of weeks, all but disappearing from the world. Yuan-ti structures throughout the land were torn down to celebrate liberation from the snake-bodied oppressors, and within a few generations the yuan-ti were all but forgotten by the new humanoid civilizations.
+	For over a thousand years after their empire fell, the yuan-ti remained ensconced in their hidden strongholds, biding their time until they were ready to strike again. Today, with their numbers greatly depleted and their enemies much stronger than in ages past, the yuan-ti know they can't resort to direct attacks in order to reclaim their rightful place in the world. Operating out of the subterranean ruins of their buildings in foreign lands, yuan-ti agents infiltrate enemy governments to discover weaknesses that their leaders can exploit. The yuan-ti look forward to the day when their empire rises again and spreads across the world like venom through the blood, as it once did.
+	Because their population is so small, the yuan-ti are aware they are vulnerable in open warfare. Instead, their current plans assume they will never rule outwardly in human society, so they gain influence by controlling enemy rulers-and those close to them-through blackmail, drugs, magic, and the subterfuge of disguised purebloods.</text>
+    </trait>
+    <trait category="description">
+      <name>Serpent Cults</name>
+      <text>Some humans believe that not only are the yuan-ti superior to humans and worthy of emulation, but they are also the blessed emissaries of the serpent gods. From these entwined beliefs are born the serpent cults, groups of devout mortals who serve the yuan-ti either directly or in foreign outposts. Fanatical in their ideals, these cultists are willing to die for the yuan-ti and their gods, whether from an enemy's weapon or at the point of a sacrificial knife.
+	The yuan-ti use the cults devoted to them as a steady supply of willing minions and sycophants. Many yuan-ti establish or encourage cults to gather the special herbs and magic they need to perform the ritual for evolving into a more powerful form. And just as the yuan-ti have rituals to transform their own bodies, they have a ritual that can change a human into a pureblood. They sometimes use the promise of this ritual as an enticement for power-hungry followers or a reward for their most devoted cultists.
+	In civilized society, cultists ingratiate themselves into the local populace, usually by promising perfection of the flesh (sometimes including the healing of afflictions), freedom from the ideas of sin and guilt, and hedonistic delights to those who join the cult. The leader of a cult is usually advised by a pureblood that relays orders and information between the cult and a yuan-ti city.</text>
+    </trait>
+    <trait category="description">
+      <name>Yuan-Ti Names</name>
+      <text>Yuan-ti names have meanings that have been passed down through the generations, although spellings and inflections have changed over time.
+	Some yuan-ti add more sibilants to their birth names to create an exaggerated hissing sound, based on one's personal preference and whether an individual's anatomy can more easily pronounce the name in this altered form. An adopted name of this sort is recognized as a variant of the birth name, rather than a unique name unto itself. A yuan-ti might refer to itself by its birth name, by its adopted name, or (especially among pure-bloods) by a name it borrows from the local populace.
+	The Yuan-Ti Names table provides yuan-ti birth names suitable for any campaign.
+
+Yuan-Ti Names
+d20 | Name
+1 | Asutali
+2 | Eztli
+3 | Hessatal
+4 | Hitotee
+5 | Issahu
+6 | Itstli
+7 | Manuya
+8 | Meztli
+9 | Nesalli
+10 | Otleh
+11 | Shalkashlah
+12 | Sisava
+13 | Sitlali
+14 | Soakosh
+15 | Ssimalli
+16 | Suisatal
+17 | Talash
+18 | Teoshi
+19 | Yaotal
+20 | Zihu</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -874,21 +1537,27 @@ Source:	Volo's Guide to Monsters p. 120</text>
     </trait>
     <trait>
       <name>Size</name>
-      <text>Purebloods match humans in average size and weight. Your size is Medium.</text>
+      <text>Purebloods match humans in average size and weight. Your size is Medium.
+
+To set your height and weight randomly, start with rolling a size modifier:
+
+Size modifier = 2d10
+Height = 4 feet + 8 inches + your size modifier in inches
+Weight in pounds = 110 + (2d4 × your size modifier)</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Innate Spellcasting</name>
       <text>You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Magic Resistance</name>
       <text>You have advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Poison Immunity</name>
       <text>You are immune to poison damage and the poisoned condition.</text>
     </trait>
