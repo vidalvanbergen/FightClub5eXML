@@ -1,7 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Alchemical Homunculus (UA)</name>
+    <sortname>Homunculus, Alchemical (UA)</sortname>
+    <ancestry>Homunculus</ancestry>
     <size>T</size>
     <type>construct</type>
     <alignment>Neutral</alignment>
@@ -19,9 +21,9 @@
     <passive>10</passive>
     <languages>understands the languages you speak</languages>
     <cr/>
+    <vulnerable/>
     <resist/>
     <immune>acid, poison</immune>
-    <vulnerable/>
     <conditionImmune>charmed, exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -35,6 +37,7 @@
     <action>
       <name>Acidic Spittle</name>
       <text>Ranged Weapon Attack: +4 to hit, range 30 ft., one target you can see. 1d6 + 2 acid damage.</text>
+      <attack>Acid Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Alchemical Salve (3/Day)</name>
@@ -46,12 +49,15 @@
 	• Inspiration: The target feels giddy and effective, gaining advantage on certain ability checks in the next hour. The target chooses the checks before or after rolling. The magic runs out after the target has used it on a number of checks equal to your Intelligence modifier (minimum of 1).
 
 	• Resilience: The target gains a number of temporary hit points equal to 2d6 + your Intelligence modifier.</text>
+      <attack>Temporary Hit Points||2d6+%4</attack>
     </action>
     <description>Source:	Unearthed Arcana: Artificer Revisited p. 6</description>
     <environment/>
   </monster>
   <monster>
     <name>Iron Defender (UA)</name>
+    <sortname>Defender, Iron (UA)</sortname>
+    <ancestry>Defender</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Neutral</alignment>
@@ -69,9 +75,9 @@
     <passive>10</passive>
     <languages>understands the languages you speak</languages>
     <cr/>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>charmed, exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -89,11 +95,13 @@
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target you can see. 1d8 + 2 piercing damage.</text>
+      <attack>Piercing Damage|+4|1d8+2</attack>
     </action>
     <action>
       <name>Repair (3/Day)</name>
       <recharge>3/Day</recharge>
       <text>The magical mechanisms inside the Iron Defender restore 2d8 + 2 hit points to itself or to one construct or object within 5 feet of it.</text>
+      <attack>Heal||2d8+2</attack>
     </action>
     <reaction>
       <name>Defensive Pounce</name>

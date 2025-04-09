@@ -1,7 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Wildfire Spirit (UA)</name>
+    <sortname>Spirit, Wildfire (UA)</sortname>
+    <ancestry>Spirit</ancestry>
     <size>S</size>
     <type>elemental</type>
     <alignment>Any Chaotic Alignment</alignment>
@@ -19,9 +21,9 @@
     <passive>12</passive>
     <languages>understands the languages you speak</languages>
     <cr/>
+    <vulnerable/>
     <resist/>
     <immune>fire</immune>
-    <vulnerable/>
     <conditionImmune>charmed, frightened, grappled, prone, restrained</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -34,12 +36,14 @@
     </trait>
     <action>
       <name>Flame Seed</name>
-      <text>Ranged Weapon Attack: +4 to hit, range 30 ft., one target you can see. 1d6 + 2 fire damage.</text>
+      <text>Ranged Weapon Attack: +4 to hit, range 30 ft., one target you can see. 5 (1d6 + 2) fire damage.</text>
+      <attack>Fire Damage|+4|1d6+2</attack>
     </action>
     <action>
       <name>Fiery Teleportation (Recharges after a Short or Long Rest)</name>
       <recharge>SHORT</recharge>
-      <text>The spirit and each willing creature of your choice within 5 feet of it teleport up to 30 feet to unoccupied spaces you can see. Each creature within 10 feet of the space that the spirit left must succeed on a Dexterity saving throw against your spell save DC or take 1d6 + 2 fire damage.</text>
+      <text>The spirit and each willing creature of your choice within 5 feet of it teleport up to 30 feet to unoccupied spaces you can see. Each creature within 10 feet of the space that the spirit left must succeed on a Dexterity saving throw against your spell save DC or take 5 (1d6 + 2) fire damage.</text>
+      <attack>Fire Damage||1d6+2</attack>
     </action>
     <description>Source:	Unearthed Arcana: Cleric Druid Wizard p. 3</description>
     <environment/>

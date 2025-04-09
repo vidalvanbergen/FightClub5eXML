@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <spell>
     <name>Conjure Animals (One DnD)</name>
@@ -10,21 +10,19 @@
     <duration>Concentration, up to 10 minutes</duration>
     <classes>Druid, Ranger</classes>
     <text>You summon nature spirits that take the form of a Large swarm of spectral animals in an unoccupied space that you can see within range. The swarm lasts for the duration, and you choose the animal form of the spirits, such as wolves, serpents, or birds.
-
-When a creature hostile to you enters a space within 10 feet of the swarm for the first time on a turn or starts its turn there, you can make a melee spell attack against that creature. On a hit, the target takes Radiant damage equal to 2d10 + your spellcasting ability modifier.
-
-You have Advantage on Strength saving throws while you're within 10 feet of the swarm, and when you Move on your turn, you can also move the swarm up to 30 feet to an unoccupied space you can see.
+	When a creature hostile to you enters a space within 10 feet of the swarm for the first time on a turn or starts its turn there, you can make a melee spell attack against that creature. On a hit, the target takes Radiant damage equal to 2d10 + your spellcasting ability modifier.
+	You have Advantage on Strength saving throws while you're within 10 feet of the swarm, and when you Move on your turn, you can also move the swarm up to 30 feet to an unoccupied space you can see.
 
 At Higher Levels: When you cast this spell using a spell slot of level 4 or higher, the damage increases by 1d10 for each slot level above 3.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 18</text>
-    <roll level="3">2d10+%0</roll>
-    <roll level="4">3d10+%0</roll>
-    <roll level="5">4d10+%0</roll>
-    <roll level="6">5d10+%0</roll>
-    <roll level="7">6d10+%0</roll>
-    <roll level="8">7d10+%0</roll>
-    <roll level="9">8d10+%0</roll>
+    <roll description="The Damage" level="3">2d10+%0</roll>
+    <roll description="The Damage" level="4">3d10+%0</roll>
+    <roll description="The Damage" level="5">4d10+%0</roll>
+    <roll description="The Damage" level="6">5d10+%0</roll>
+    <roll description="The Damage" level="7">6d10+%0</roll>
+    <roll description="The Damage" level="8">7d10+%0</roll>
+    <roll description="The Damage" level="9">8d10+%0</roll>
   </spell>
   <spell>
     <name>Conjure Celestial (One DnD)</name>
@@ -36,24 +34,21 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 18</text>
     <duration>Concentration, up to 10 minutes</duration>
     <classes>Cleric</classes>
     <text>You summon the protective presence of a Celestial spirit, which manifests as a pillar of divine light that shines in a 10-foot-radius, 40-foot-high Cylinder centered on a point within range. Until the spell ends, Bright Light fills the Cylinder, and when you Move on your turn, you can also move the Cylinder up to 30 feet.
+	When a creature enters the Cylinder for the first time on a turn or starts its turn there, you can bathe that creature in one of the following lights:
 
-When a creature enters the Cylinder for the first time on a turn or starts its turn there, you can bathe that creature in one of the following lights:
+Healing Light: The creature that isn't an Undead or a Construct regains Hit Points equal to 4d12 + your spellcasting modifier. A creature can be healed by this light only once per casting of this spell.
 
-Healing Light:
-The creature that isn't an Undead or a Construct regains Hit Points equal to 4d12 + your spellcasting modifier. A creature can be healed by this light only once per casting of this spell.
-
-Searing Radiance:
-The creature must make a Dexterity saving throw, taking 8d12 Radiant damage on a failed save or half as much damage on a successful one.
+Searing Radiance: The creature must make a Dexterity saving throw, taking 8d12 Radiant damage on a failed save or half as much damage on a successful one.
 
 At Higher Levels: When you cast this spell using a spell slot of level 8 or higher, the healing and damage increase by 1d12 for each slot level above 7.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 18</text>
-    <roll level="7">4d12+%0</roll>
-    <roll level="8">5d12+%0</roll>
-    <roll level="9">6d12+%0</roll>
-    <roll level="7">8d12+%0</roll>
-    <roll level="8">9d12+%0</roll>
-    <roll level="9">10d12+%0</roll>
+    <roll description="Heal" level="7">4d12+%0</roll>
+    <roll description="Radiant Damage" level="8">5d12+%0</roll>
+    <roll description="Radiant Damage" level="9">6d12+%0</roll>
+    <roll description="Radiant Damage" level="7">8d12</roll>
+    <roll description="Radiant Damage" level="8">9d12</roll>
+    <roll description="Radiant Damage" level="9">10d12</roll>
   </spell>
   <spell>
     <name>Conjure Elemental (One DnD)</name>
@@ -65,17 +60,21 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 18</text>
     <duration>Concentration, up to 10 minutes</duration>
     <classes>Druid, Wizard</classes>
     <text>You summon an Elemental spirit that fills a 10-foot Cube within range. The spirit lasts for the duration and is composed of air, earth, fire, or water (your choice) when you cast this spell.
-
-When a creature hostile to you Moves within 5 feet of the spirit, you can make a melee spell attack against that creature. On a hit, the target takes 8d8 damage of a type determined by the spirit's element: Bludgeoning (earth), Cold (water), Fire (fire), or Lightning (air). If the target is a Large or smaller creature, it is also pulled into the Cube and has the Restrained condition. At the start of each of its turns, the target must make a Strength saving throw against your spell save DC. On a success, the target frees itself. On a failure, the target takes 4d8 damage of the same type as the spell attack. The spirit can have only one creature restrained at a time.
+	When a creature hostile to you Moves within 5 feet of the spirit, you can make a melee spell attack against that creature. On a hit, the target takes 8d8 damage of a type determined by the spirit's element: Bludgeoning (earth), Cold (water), Fire (fire), or Lightning (air). If the target is a Large or smaller creature, it is also pulled into the Cube and has the Restrained condition. At the start of each of its turns, the target must make a Strength saving throw against your spell save DC. On a success, the target frees itself. On a failure, the target takes 4d8 damage of the same type as the spell attack. The spirit can have only one creature restrained at a time.
 
 At Higher Levels: When you cast this spell using a spell slot of level 6 or higher, the damage increases by 2d8 for each slot level above 5.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 19</text>
-    <roll level="5">4d8</roll>
-    <roll level="6">6d8</roll>
-    <roll level="7">8d8</roll>
-    <roll level="8">10d8</roll>
-    <roll level="9">12d8</roll>
+    <roll description="Damage" level="5">8d8</roll>
+    <roll description="Damage" level="6">10d8</roll>
+    <roll description="Damage" level="7">12d8</roll>
+    <roll description="Damage" level="8">14d8</roll>
+    <roll description="Damage" level="9">15d8</roll>
+    <roll description="Half Damage" level="5">4d8</roll>
+    <roll description="Half Damage" level="6">6d8</roll>
+    <roll description="Half Damage" level="7">8d8</roll>
+    <roll description="Half Damage" level="8">10d8</roll>
+    <roll description="Half Damage" level="9">12d8</roll>
   </spell>
   <spell>
     <name>Conjure Fey (One DnD)</name>
@@ -87,16 +86,15 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 19</text>
     <duration>Concentration, up to 10 minutes</duration>
     <classes>Druid</classes>
     <text>You summon the awesome presence of a Medium Fey spirit in an unoccupied space you can see within range. The spirit lasts for the duration, and it looks like a Fey creature of your choice. When the spirit appears, you can immediately make one melee spell attack against a creature within 5 feet of the spirit. On a hit, the target takes Psychic damage equal to 3d12 + your spellcasting ability modifier, and the target must succeed on a Wisdom saving throw or have the Frightened condition until the start of your next turn.
-
-As a Bonus Action on your later turns, you can teleport the spirit to an unoccupied space you can see within 30 feet of the space it left and repeat the attack against a creature within 5 feet of it.
+	As a Bonus Action on your later turns, you can teleport the spirit to an unoccupied space you can see within 30 feet of the space it left and repeat the attack against a creature within 5 feet of it.
 
 At Higher Levels: When you cast this spell using a spell slot of level 7 or higher, the damage increases by 2d12 for each slot level above 6.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 19</text>
-    <roll level="6">3d12+%0</roll>
-    <roll level="7">5d12+%0</roll>
-    <roll level="8">7d12+%0</roll>
-    <roll level="9">9d12+%0</roll>
+    <roll description="The Damage" level="6">3d12+%0</roll>
+    <roll description="The Damage" level="7">5d12+%0</roll>
+    <roll description="The Damage" level="8">7d12+%0</roll>
+    <roll description="The Damage" level="9">9d12+%0</roll>
   </spell>
   <spell>
     <name>Conjure Minor Elementals (One DnD)</name>
@@ -108,18 +106,17 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 19</text>
     <duration>Concentration, up to 10 minutes</duration>
     <classes>Druid, Wizard</classes>
     <text>You summon elemental spirits that a flit around you for the duration. Until the spell ends, any attack you make deals an extra 2d8 damage when you hit a creature within 15 feet of you. This damage is Bludgeoning, Cold, Fire, or Lightning (your choice when you make the attack).
-
-In addition, the ground within 15 feet of you is Difficult Terrain for your enemies.
+	In addition, the ground within 15 feet of you is Difficult Terrain for your enemies.
 
 At Higher Levels: When you cast this spell using a spell slot of level 5 or higher, the damage increases by 2d8 and the range of Difficult Terrain increases by 5 feet for each slot level above 4.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 19</text>
-    <roll level="4">2d8</roll>
-    <roll level="5">4d8</roll>
-    <roll level="6">6d8</roll>
-    <roll level="7">8d8</roll>
-    <roll level="8">10d8</roll>
-    <roll level="9">12d8</roll>
+    <roll description="This Damage" level="4">2d8</roll>
+    <roll description="This Damage" level="5">4d8</roll>
+    <roll description="This Damage" level="6">6d8</roll>
+    <roll description="This Damage" level="7">8d8</roll>
+    <roll description="This Damage" level="8">10d8</roll>
+    <roll description="This Damage" level="9">12d8</roll>
   </spell>
   <spell>
     <name>Conjure Woodland Beings (One DnD)</name>
@@ -131,17 +128,16 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 19</text>
     <duration>Concentration, up to 10 minutes</duration>
     <classes>Druid, Ranger</classes>
     <text>You summon nature spirits that flit about you for the duration. Until the spell ends, each creature you choose that enters a space within 10 feet of you for the first time on a turn or starts its turn there must make a Wisdom saving throw, taking 5d8 Force damage on a failed save or half as much damage on a successful one.
-
-In addition, you can take the Disengage action as a Bonus Action for the spell's duration.
+	In addition, you can take the Disengage action as a Bonus Action for the spell's duration.
 
 At Higher Levels: When you cast this spell using a spell slot of level 6 or higher, the damage increases by 1d8 for each slot level above 5.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 19</text>
-    <roll level="5">5d8</roll>
-    <roll level="6">6d8</roll>
-    <roll level="7">7d8</roll>
-    <roll level="8">8d8</roll>
-    <roll level="9">9d8</roll>
+    <roll description="Force Damage" level="5">5d8</roll>
+    <roll description="Force Damage" level="6">6d8</roll>
+    <roll description="Force Damage" level="7">7d8</roll>
+    <roll description="Force Damage" level="8">8d8</roll>
+    <roll description="Force Damage" level="9">9d8</roll>
   </spell>
   <spell>
     <name>Cure Wounds (One DnD)</name>
@@ -157,15 +153,15 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 19</text>
 At Higher Levels: When you cast this spell using a spell slot of level 2 or higher, the healing increases by 2d8 for each slot level above 1.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 19</text>
-    <roll level="1">2d8+%0</roll>
-    <roll level="2">4d8+%0</roll>
-    <roll level="3">6d8+%0</roll>
-    <roll level="4">8d8+%0</roll>
-    <roll level="5">10d8+%0</roll>
-    <roll level="6">12d8+%0</roll>
-    <roll level="7">14d8+%0</roll>
-    <roll level="8">16d8+%0</roll>
-    <roll level="9">18d8+%0</roll>
+    <roll description="Heal" level="1">2d8+%0</roll>
+    <roll description="Heal" level="2">4d8+%0</roll>
+    <roll description="Heal" level="3">6d8+%0</roll>
+    <roll description="Heal" level="4">8d8+%0</roll>
+    <roll description="Heal" level="5">10d8+%0</roll>
+    <roll description="Heal" level="6">12d8+%0</roll>
+    <roll description="Heal" level="7">14d8+%0</roll>
+    <roll description="Heal" level="8">16d8+%0</roll>
+    <roll description="Heal" level="9">18d8+%0</roll>
   </spell>
   <spell>
     <name>Fount Of Moonlight (One DnD)</name>
@@ -177,17 +173,15 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 19</text>
     <duration>Concentration, up to 10 minutes</duration>
     <classes>Bard, Druid</classes>
     <text>A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.
-
-Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit.
-
-In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.
+	Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit.
+	In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.
 
 Blinded:
 	• A blinded creature can't see and automatically fails any ability check that requires sight.
 	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 20</text>
-    <roll level="4">2d6</roll>
+    <roll description="Radiant Damage" level="4">2d6</roll>
   </spell>
   <spell>
     <name>Healing Word (One DnD)</name>
@@ -203,15 +197,15 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 20</text>
 At Higher Levels: When you cast this spell using a spell slot of level 2 or higher, the healing increases by 2d4 for each slot level above 1.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 20</text>
-    <roll level="1">2d4+%0</roll>
-    <roll level="2">4d4+%0</roll>
-    <roll level="3">6d4+%0</roll>
-    <roll level="4">8d4+%0</roll>
-    <roll level="5">10d4+%0</roll>
-    <roll level="6">12d4+%0</roll>
-    <roll level="7">14d4+%0</roll>
-    <roll level="8">16d4+%0</roll>
-    <roll level="9">18d4+%0</roll>
+    <roll description="Heal" level="1">2d4+%0</roll>
+    <roll description="Heal" level="2">4d4+%0</roll>
+    <roll description="Heal" level="3">6d4+%0</roll>
+    <roll description="Heal" level="4">8d4+%0</roll>
+    <roll description="Heal" level="5">10d4+%0</roll>
+    <roll description="Heal" level="6">12d4+%0</roll>
+    <roll description="Heal" level="7">14d4+%0</roll>
+    <roll description="Heal" level="8">16d4+%0</roll>
+    <roll description="Heal" level="9">18d4+%0</roll>
   </spell>
   <spell>
     <name>Mass Cure Wounds (One DnD)</name>
@@ -227,11 +221,11 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 20</text>
 At Higher Levels: When you cast this spell using a spell slot of level 6 or higher, the healing increases by 1d8 for each slot level above 5.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 20</text>
-    <roll level="5">5d8+%0</roll>
-    <roll level="6">6d8+%0</roll>
-    <roll level="7">7d8+%0</roll>
-    <roll level="8">8d8+%0</roll>
-    <roll level="9">9d8+%0</roll>
+    <roll description="Heal" level="5">5d8+%0</roll>
+    <roll description="Heal" level="6">6d8+%0</roll>
+    <roll description="Heal" level="7">7d8+%0</roll>
+    <roll description="Heal" level="8">8d8+%0</roll>
+    <roll description="Heal" level="9">9d8+%0</roll>
   </spell>
   <spell>
     <name>Mass Healing Word (One DnD)</name>
@@ -247,13 +241,13 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 20</text>
 At Higher Levels: When you cast this spell using a spell slot of level 4 or higher, the healing increases by 1d4 for each slot level above 3.
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 20</text>
-    <roll level="3">2d4+%0</roll>
-    <roll level="4">3d4+%0</roll>
-    <roll level="5">4d4+%0</roll>
-    <roll level="6">5d4+%0</roll>
-    <roll level="7">6d4+%0</roll>
-    <roll level="8">7d4+%0</roll>
-    <roll level="9">8d4+%0</roll>
+    <roll description="Heal" level="3">2d4+%0</roll>
+    <roll description="Heal" level="4">3d4+%0</roll>
+    <roll description="Heal" level="5">4d4+%0</roll>
+    <roll description="Heal" level="6">5d4+%0</roll>
+    <roll description="Heal" level="7">6d4+%0</roll>
+    <roll description="Heal" level="8">7d4+%0</roll>
+    <roll description="Heal" level="9">8d4+%0</roll>
   </spell>
   <spell>
     <name>Power Word Fortify (One DnD)</name>
@@ -282,9 +276,9 @@ Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 20</text>
 Cantrip Upgrade: This spell's damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
 
 Source:	Unearthed Arcana: Player's Handbook Playtest 8 p. 20</text>
-    <roll level="1">1d8</roll>
-    <roll level="5">2d8</roll>
-    <roll level="11">3d8</roll>
-    <roll level="17">4d8</roll>
+    <roll description="Radiant Damage" level="0">1d8</roll>
+    <roll description="Radiant Damage" level="5">2d8</roll>
+    <roll description="Radiant Damage" level="11">3d8</roll>
+    <roll description="Radiant Damage" level="17">4d8</roll>
   </spell>
 </compendium>
