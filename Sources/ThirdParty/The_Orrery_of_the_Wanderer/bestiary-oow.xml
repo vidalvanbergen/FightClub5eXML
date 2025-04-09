@@ -1,7 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Clockwork Behir</name>
+    <sortname>Clockwork, Behir</sortname>
+    <ancestry>Clockwork</ancestry>
     <size>H</size>
     <type>monstrosity</type>
     <alignment>Neutral Evil</alignment>
@@ -19,9 +21,9 @@
     <passive>16</passive>
     <languages>Draconic</languages>
     <cr>11</cr>
+    <vulnerable/>
     <resist/>
     <immune>lightning</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 90 ft.</senses>
     <action>
@@ -55,6 +57,7 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
   </monster>
   <monster>
     <name>Dagdra Deepforge</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any alignment</alignment>
@@ -72,9 +75,9 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <passive>13</passive>
     <languages>any two languages, Dwarvish</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>poison</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -84,6 +87,15 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <trait>
       <name>Dwarven Resilience</name>
       <text>Dagdra has advantage on saving throws against poison, and has resistance against poison damage.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Dagdra is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Dagdra has the following cleric spells prepared:
+
+	• Cantrips (at will): light, sacred flame, thaumaturgy
+	• 1st level (4 slots): cure wounds, guiding bolt, sanctuary
+	• 2nd level (3 slots): lesser restoration, spiritual weapon
+	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
     <action>
       <name>Mace</name>
@@ -95,22 +107,14 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
       <recharge>1/Day</recharge>
       <text>As an action, Dagdra draws a spell scroll from her documancy satchel. The scroll contains a spell of up to 3rd level of Dagdra's choice. Only Dagdra can use the scroll, which vanishes after 1 minute.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Dagdra is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Dagdra has the following cleric spells prepared:
-
-	• Cantrips (at will): light, sacred flame, thaumaturgy
-	• 1st level (4 slots): cure wounds, guiding bolt, sanctuary
-	• 2nd level (3 slots): lesser restoration, spiritual weapon
-	• 3rd level (2 slots): dispel magic, spirit guardians</text>
-    </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
     <description>Source:	The Orrery of the Wanderer p. 145</description>
     <environment/>
   </monster>
   <monster>
     <name>Devil Dog</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tiefling)</type>
     <alignment>Any alignment</alignment>
@@ -128,16 +132,11 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <passive>12</passive>
     <languages>any one language (usually Common), Infernal</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist>fire</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
-    <action>
-      <name>Club</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
-      <attack>Club|+2|1d4</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Devil Dog is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). Devil Dog has following cleric spells prepared:
@@ -145,7 +144,6 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 	• Cantrips (at will): light, sacred flame, thaumaturgy
 	• 1st level (3 slots): bless, cure wounds, sanctuary</text>
     </trait>
-    <slots>3</slots>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Devil Dog's innate spellcasting ability is Charisma (spell save DC 10). Devil Dog can innately cast the following spells, requiring no material components:
@@ -153,12 +151,20 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 	• At will: thaumaturgy
 	• 1/Day each: darkness, hellish rebuke</text>
     </trait>
+    <action>
+      <name>Club</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
+      <attack>Club|+2|1d4</attack>
+    </action>
+    <slots>3</slots>
     <spells>light, sacred flame, thaumaturgy, bless, cure wounds, sanctuary, thaumaturgy, darkness, hellish rebuke</spells>
     <description>Source:	The Orrery of the Wanderer p. 85</description>
     <environment/>
   </monster>
   <monster>
     <name>Enormous Tentacle</name>
+    <sortname>Enormous, Tentacle</sortname>
+    <ancestry>Enormous</ancestry>
     <size>H</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -176,9 +182,9 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <passive>12</passive>
     <languages/>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 10 ft.</senses>
     <action>
@@ -198,6 +204,7 @@ Until this grapple ends, the creature is restrained, and the tentacle can't cons
   </monster>
   <monster>
     <name>Gildha Duhn</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-orc)</type>
     <alignment>Any alignment</alignment>
@@ -215,9 +222,9 @@ Until this grapple ends, the creature is restrained, and the tentacle can't cons
     <passive>12</passive>
     <languages>any one language (usually Common), Orc</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -228,11 +235,6 @@ Until this grapple ends, the creature is restrained, and the tentacle can't cons
       <name>Savage Attacks</name>
       <text>When they score a critical hit, Gildha Duhn can roll one of the weapon's damage dice and add it to the extra damage of the critical hit.</text>
     </trait>
-    <action>
-      <name>Club</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
-      <attack>Club|+2|1d4</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Gildha is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). Gildha has following cleric spells prepared:
@@ -240,6 +242,11 @@ Until this grapple ends, the creature is restrained, and the tentacle can't cons
 	• Cantrips (at will): light, sacred flame, thaumaturgy
 	• 1st level (3 slots): bless, cure wounds, sanctuary</text>
     </trait>
+    <action>
+      <name>Club</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
+      <attack>Club|+2|1d4</attack>
+    </action>
     <slots>3</slots>
     <spells>light, sacred flame, thaumaturgy, bless, cure wounds, sanctuary</spells>
     <description>Source:	The Orrery of the Wanderer p. 110</description>
@@ -247,6 +254,7 @@ Until this grapple ends, the creature is restrained, and the tentacle can't cons
   </monster>
   <monster>
     <name>Grunka</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (goblinoid)</type>
     <alignment>Lawful Evil</alignment>
@@ -264,9 +272,9 @@ Until this grapple ends, the creature is restrained, and the tentacle can't cons
     <passive>10</passive>
     <languages>Common, Goblin</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -312,9 +320,9 @@ Until this grapple ends, the creature is restrained, and the tentacle can't cons
     <passive>9</passive>
     <languages>understands all languages it spoke in life but can't speak</languages>
     <cr>1/4</cr>
+    <vulnerable>bludgeoning</vulnerable>
     <resist/>
     <immune>poison</immune>
-    <vulnerable>bludgeoning</vulnerable>
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <action>
@@ -349,9 +357,9 @@ Until this grapple ends, the creature is restrained, and the tentacle can't cons
     <passive>18</passive>
     <languages>understands Draconic but can't speak</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <action>
@@ -401,9 +409,9 @@ Until this grapple ends, the creature is restrained, and the tentacle can't cons
     <passive>13</passive>
     <languages/>
     <cr>0</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -430,6 +438,8 @@ Source:	The Orrery of the Wanderer p. 186</description>
   </monster>
   <monster>
     <name>Replica Duodrone</name>
+    <sortname>Duodrone, Replica</sortname>
+    <ancestry>Duodrone</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Lawful Neutral</alignment>
@@ -447,9 +457,9 @@ Source:	The Orrery of the Wanderer p. 186</description>
     <passive>10</passive>
     <languages>Modron</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -485,6 +495,8 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
   </monster>
   <monster>
     <name>Replica Monodrone</name>
+    <sortname>Monodrone, Replica</sortname>
+    <ancestry>Monodrone</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Lawful Neutral</alignment>
@@ -502,9 +514,9 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <passive>10</passive>
     <languages>Modron</languages>
     <cr>1/8</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -536,6 +548,8 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
   </monster>
   <monster>
     <name>Replica Pentadrone</name>
+    <sortname>Pentadrone, Replica</sortname>
+    <ancestry>Pentadrone</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Lawful Neutral</alignment>
@@ -553,9 +567,9 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <passive>14</passive>
     <languages>Modron</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -591,6 +605,8 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
   </monster>
   <monster>
     <name>Replica Quadrone</name>
+    <sortname>Quadrone, Replica</sortname>
+    <ancestry>Quadrone</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Lawful Neutral</alignment>
@@ -608,9 +624,9 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <passive>12</passive>
     <languages>Modron</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -646,6 +662,8 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
   </monster>
   <monster>
     <name>Replica Tridrone</name>
+    <sortname>Tridrone, Replica</sortname>
+    <ancestry>Tridrone</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Lawful Neutral</alignment>
@@ -663,9 +681,9 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <passive>10</passive>
     <languages>Modron</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -718,9 +736,9 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <passive>10</passive>
     <languages>understands Common but can't speak</languages>
     <cr>0</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>charmed, exhaustion, poisoned</conditionImmune>
     <senses>blindsight 30 ft. (blind beyond this radius)</senses>
     <trait>
@@ -750,13 +768,13 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <wis>14</wis>
     <cha>16</cha>
     <save/>
-    <skill>Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight of hand +4, Stealth +4</skill>
+    <skill>Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight Of Hand +4, Stealth +4</skill>
     <passive>16</passive>
     <languages>any two languages</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -796,6 +814,8 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
   </monster>
   <monster>
     <name>Undead Cockatrice</name>
+    <sortname>Cockatrice, Undead</sortname>
+    <ancestry>Cockatrice</ancestry>
     <size>S</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -813,9 +833,9 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <passive>11</passive>
     <languages/>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <action>

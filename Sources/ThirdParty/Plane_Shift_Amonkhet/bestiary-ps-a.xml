@@ -1,7 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Adult Amonkhet Dragon</name>
+    <sortname>Amonkhet Dragon, Adult</sortname>
+    <ancestry>Amonkhet Dragon</ancestry>
     <size>H</size>
     <type>dragon</type>
     <alignment>Chaotic Evil</alignment>
@@ -19,9 +21,9 @@
     <passive>23</passive>
     <languages>Common, Draconic</languages>
     <cr>17</cr>
+    <vulnerable/>
     <resist/>
     <immune>fire</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
@@ -75,7 +77,7 @@
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:
 
@@ -85,7 +87,7 @@
 
 	• Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads a round corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its turn. While poisoned in this way, a creature is incapacitated.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region containing a legendary red dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:
 
@@ -119,9 +121,9 @@ If the dragon dies, these effects fade over the course of 1d10 days.</text>
     <passive>10</passive>
     <languages/>
     <cr>5</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -149,6 +151,8 @@ Until this grapple ends, the target is restrained, and the ammit can't bite anot
   </monster>
   <monster>
     <name>Amonkhet Dragon Wyrmling</name>
+    <sortname>Amonkhet Dragon, Wyrmling</sortname>
+    <ancestry>Amonkhet Dragon</ancestry>
     <size>M</size>
     <type>dragon</type>
     <alignment>Chaotic Evil</alignment>
@@ -166,9 +170,9 @@ Until this grapple ends, the target is restrained, and the ammit can't bite anot
     <passive>14</passive>
     <languages>Draconic</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist/>
     <immune>fire</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 10 ft., darkvision 60 ft.</senses>
     <action>
@@ -187,6 +191,8 @@ Until this grapple ends, the target is restrained, and the ammit can't bite anot
   </monster>
   <monster>
     <name>Amonkhet Hydra</name>
+    <sortname>Hydra, Amonkhet</sortname>
+    <ancestry>Hydra</ancestry>
     <size>H</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -204,9 +210,9 @@ Until this grapple ends, the target is restrained, and the ammit can't bite anot
     <passive>16</passive>
     <languages/>
     <cr>8</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -244,6 +250,8 @@ At the end of its turn, it grows two heads for each of its heads that died since
   </monster>
   <monster>
     <name>Amonkhet Sphinx</name>
+    <sortname>Sphinx, Amonkhet</sortname>
+    <ancestry>Sphinx</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Lawful Neutral</alignment>
@@ -261,9 +269,9 @@ At the end of its turn, it grows two heads for each of its heads that died since
     <passive>20</passive>
     <languages>Common, Sphinx</languages>
     <cr>17</cr>
+    <vulnerable/>
     <resist/>
     <immune>psychic; bludgeoning, piercing, slashing from nonmagical attacks</immune>
-    <vulnerable/>
     <conditionImmune>charmed, frightened</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -273,6 +281,18 @@ At the end of its turn, it grows two heads for each of its heads that died since
     <trait>
       <name>Magic Weapons</name>
       <text>The sphinx's weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:
+
+	• Cantrips (at will): sacred flame, spare the dying, thaumaturgy
+	• 1st level (4 slots): command, detect evil and good, detect magic
+	• 2nd level (3 slots): lesser restoration, zone of truth
+	• 3rd level (3 slots): dispel magic, tongues
+	• 4th level (3 slots): banishment, freedom of movement
+	• 5th level (2 slots): flame strike, greater restoration
+	• 6th level (1 slots): heroes' feast</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -312,7 +332,7 @@ At the end of its turn, it grows two heads for each of its heads that died since
       <name>Cast a Spell (Costs 3 Actions)</name>
       <text>The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the sphinx can take a lair action to cause one of the following magical effects; the sphinx can't use an effect again until it finishes a short or long rest:
 
@@ -324,25 +344,15 @@ At the end of its turn, it grows two heads for each of its heads that died since
 
 	• The sphinx shifts itself and up to seven other creatures it can see within in its lair to another plane of existence. Once outside its lair, the sphinx can't use lair actions, but it can return to its lair as a bonus action on its turn, taking up to seven creatures with it.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:
-
-	• Cantrips (at will): sacred flame, spare the dying, thaumaturgy
-	• 1st level (4 slots): command, detect evil and good, detect magic
-	• 2nd level (3 slots): lesser restoration, zone of truth
-	• 3rd level (3 slots): dispel magic, tongues
-	• 4th level (3 slots): banishment, freedom of movement
-	• 5th level (2 slots): flame strike, greater restoration
-	• 6th level (1 slots): heroes' feast</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>sacred flame, spare the dying, thaumaturgy, command, detect evil and good, detect magic, lesser restoration, zone of truth, dispel magic, tongues, banishment, freedom of movement, flame strike, greater restoration, heroes' feast</spells>
     <description>Source:	Plane Shift: Amonkhet p. 31</description>
     <environment>desert</environment>
   </monster>
   <monster>
     <name>Ancient Amonkhet Dragon</name>
+    <sortname>Amonkhet Dragon, Ancient</sortname>
+    <ancestry>Amonkhet Dragon</ancestry>
     <size>G</size>
     <type>dragon</type>
     <alignment>Chaotic Evil</alignment>
@@ -360,9 +370,9 @@ At the end of its turn, it grows two heads for each of its heads that died since
     <passive>26</passive>
     <languages>Common, Draconic</languages>
     <cr>24</cr>
+    <vulnerable/>
     <resist/>
     <immune>fire</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
@@ -416,7 +426,7 @@ At the end of its turn, it grows two heads for each of its heads that died since
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:
 
@@ -426,7 +436,7 @@ At the end of its turn, it grows two heads for each of its heads that died since
 
 	• Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads a round corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its turn. While poisoned in this way, a creature is incapacitated.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region containing a legendary red dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:
 
@@ -460,9 +470,9 @@ If the dragon dies, these effects fade over the course of 1d10 days.</text>
     <passive>19</passive>
     <languages>all, telepathy 120 ft.</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist>radiant; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -472,6 +482,13 @@ If the dragon dies, these effects fade over the course of 1d10 days.</text>
     <trait>
       <name>Magic Resistance</name>
       <text>The angel has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The angel's spellcasting ability is Charisma (spell save DC 17). The angel can innately cast the following spells, requiring only verbal components:
+
+	• At will: detect evil and good
+	• 1/Day each: commune, raise dead</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -495,13 +512,6 @@ Until this grapple ends, the target is restrained, and the angel can't attack an
 
 In a new form, the angel retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The angel's spellcasting ability is Charisma (spell save DC 17). The angel can innately cast the following spells, requiring only verbal components:
-
-	• At will: detect evil and good
-	• 1/Day each: commune, raise dead</text>
-    </trait>
     <spells>detect evil and good, commune, raise dead</spells>
     <description>Source:	Plane Shift: Amonkhet p. 30</description>
     <environment/>
@@ -525,9 +535,9 @@ In a new form, the angel retains its game statistics and ability to speak, but i
     <passive>8</passive>
     <languages>understands all languages it spoke in life but can't speak</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -561,9 +571,9 @@ In a new form, the angel retains its game statistics and ability to speak, but i
     <passive>11</passive>
     <languages>Abyssal, telepathy 120 ft.</languages>
     <cr>13</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -615,9 +625,9 @@ In a new form, the angel retains its game statistics and ability to speak, but i
     <passive>10</passive>
     <languages/>
     <cr>6</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -660,9 +670,9 @@ In a new form, the angel retains its game statistics and ability to speak, but i
     <passive>18</passive>
     <languages>understands Common, Sphinx</languages>
     <cr>13</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>psychic</immune>
-    <vulnerable/>
     <conditionImmune>charmed, frightened</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -722,9 +732,9 @@ In a new form, the angel retains its game statistics and ability to speak, but i
     <passive>13</passive>
     <languages>the languages it knew in life</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -756,6 +766,8 @@ In a new form, the angel retains its game statistics and ability to speak, but i
   </monster>
   <monster>
     <name>Giant River Serpent</name>
+    <sortname>River Serpent, Giant</sortname>
+    <ancestry>River Serpent</ancestry>
     <size>H</size>
     <type>monstrosity</type>
     <alignment>Neutral Evil</alignment>
@@ -773,9 +785,9 @@ In a new form, the angel retains its game statistics and ability to speak, but i
     <passive>16</passive>
     <languages>Draconic</languages>
     <cr>11</cr>
+    <vulnerable/>
     <resist/>
     <immune>lightning</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 90 ft.</senses>
     <action>
@@ -820,9 +832,9 @@ If the serpent takes 30 damage or more on a single turn from the swallowed creat
     <passive>10</passive>
     <languages/>
     <cr>4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -848,6 +860,8 @@ If the serpent takes 30 damage or more on a single turn from the swallowed creat
   </monster>
   <monster>
     <name>Large Drake</name>
+    <sortname>Drake, Large</sortname>
+    <ancestry>Drake</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Neutral Good</alignment>
@@ -865,9 +879,9 @@ If the serpent takes 30 damage or more on a single turn from the swallowed creat
     <passive>14</passive>
     <languages>Giant Eagle, understands Common and Auran but can't speak them</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -910,9 +924,9 @@ If the serpent takes 30 damage or more on a single turn from the swallowed creat
     <passive>14</passive>
     <languages/>
     <cr>5</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <action>
@@ -940,6 +954,8 @@ If the serpent takes 30 damage or more on a single turn from the swallowed creat
   </monster>
   <monster>
     <name>Mindful Marauder</name>
+    <sortname>Marauder, Mindful</sortname>
+    <ancestry>Marauder</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -957,9 +973,9 @@ If the serpent takes 30 damage or more on a single turn from the swallowed creat
     <passive>14</passive>
     <languages>the languages it knew in life</languages>
     <cr>15</cr>
+    <vulnerable>fire</vulnerable>
     <resist/>
     <immune>necrotic, poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
-    <vulnerable>fire</vulnerable>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -969,6 +985,18 @@ If the serpent takes 30 damage or more on a single turn from the swallowed creat
     <trait>
       <name>Rejuvenation</name>
       <text>A destroyed marauder gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of the marauder's heart.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The marauder is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The marauder has the following cleric spells prepared:
+
+	• Cantrips (at will): sacred flame, thaumaturgy
+	• 1st level (4 slots): command, guiding bolt, shield of faith
+	• 2nd level (3 slots): hold person, silence, spiritual weapon
+	• 3rd level (3 slots): animate dead, dispel magic
+	• 4th level (3 slots): divination, guardian of faith
+	• 5th level (2 slots): contagion, insect plague
+	• 6th level (1 slots): harm</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -1010,7 +1038,7 @@ If the serpent takes 30 damage or more on a single turn from the swallowed creat
 
 Equipment worn or carried by the marauder remain in its possession.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the mummy lord takes a lair action to cause one of the following effects; the mummy lord can't use the same effect two rounds in a row:
 
@@ -1020,7 +1048,7 @@ Equipment worn or carried by the marauder remain in its possession.</text>
 
 	• Until initiative count 20 on the next round, any non-undead creature that tries to cast a spell of 4th level or lower in the mummy lord's lair is wracked with pain. The creature can choose another action, but if it tries to cast the spell, it must make a DC 16 Constitution saving throw. On a failed save, it takes 1d6 necrotic damage per level of the spell, and the spell has no effect and is wasted.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>A mummy lord's temple or tomb is warped in any of the following ways by the creature's dark presence:
 
@@ -1032,25 +1060,15 @@ Equipment worn or carried by the marauder remain in its possession.</text>
 
 If the mummy lord is destroyed, these regional effects end immediately.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The marauder is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The marauder has the following cleric spells prepared:
-
-	• Cantrips (at will): sacred flame, thaumaturgy
-	• 1st level (4 slots): command, guiding bolt, shield of faith
-	• 2nd level (3 slots): hold person, silence, spiritual weapon
-	• 3rd level (3 slots): animate dead, dispel magic
-	• 4th level (3 slots): divination, guardian of faith
-	• 5th level (2 slots): contagion, insect plague
-	• 6th level (1 slots): harm</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>sacred flame, thaumaturgy, command, guiding bolt, shield of faith, hold person, silence, spiritual weapon, animate dead, dispel magic, divination, guardian of faith, contagion, insect plague, harm</spells>
     <description>Source:	Plane Shift: Amonkhet p. 34</description>
     <environment>desert</environment>
   </monster>
   <monster>
     <name>Mindless Marauder</name>
+    <sortname>Marauder, Mindless</sortname>
+    <ancestry>Marauder</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -1068,9 +1086,9 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <passive>10</passive>
     <languages>the languages it knew in life</languages>
     <cr>3</cr>
+    <vulnerable>fire</vulnerable>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>necrotic, poison</immune>
-    <vulnerable>fire</vulnerable>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <action>
@@ -1108,9 +1126,9 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <passive>12</passive>
     <languages/>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 10 ft.</senses>
     <action>
@@ -1147,9 +1165,9 @@ Until this grapple ends, the creature is restrained, and the serpent can't const
     <passive>9</passive>
     <languages/>
     <cr>15</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 30 ft., tremorsense 60 ft.</senses>
     <trait>
@@ -1195,9 +1213,9 @@ Until this grapple ends, the creature is restrained, and the serpent can't const
     <passive>13</passive>
     <languages/>
     <cr>3</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1219,6 +1237,8 @@ Until this grapple ends, the creature is restrained, and the serpent can't const
   </monster>
   <monster>
     <name>Small Drake</name>
+    <sortname>Drake, Small</sortname>
+    <ancestry>Drake</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -1236,9 +1256,9 @@ Until this grapple ends, the creature is restrained, and the serpent can't const
     <passive>11</passive>
     <languages/>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1255,6 +1275,8 @@ Until this grapple ends, the creature is restrained, and the serpent can't const
   </monster>
   <monster>
     <name>Soulstinger Demon</name>
+    <sortname>Demon, Soulstinger</sortname>
+    <ancestry>Demon</ancestry>
     <size>L</size>
     <type>fiend (demon)</type>
     <alignment>Lawful Evil</alignment>
@@ -1272,9 +1294,9 @@ Until this grapple ends, the creature is restrained, and the serpent can't const
     <passive>12</passive>
     <languages>Infernal, telepathy 120 ft.</languages>
     <cr>9</cr>
+    <vulnerable/>
     <resist>cold; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>fire, poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -1306,6 +1328,8 @@ The target can repeat the saving throw at the end of each of its turns, ending t
   </monster>
   <monster>
     <name>Young Amonkhet Dragon</name>
+    <sortname>Amonkhet Dragon, Young</sortname>
+    <ancestry>Amonkhet Dragon</ancestry>
     <size>L</size>
     <type>dragon</type>
     <alignment>Chaotic Evil</alignment>
@@ -1323,9 +1347,9 @@ The target can repeat the saving throw at the end of each of its turns, ending t
     <passive>18</passive>
     <languages>Common, Draconic</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist/>
     <immune>fire</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 30 ft., darkvision 120 ft.</senses>
     <action>
