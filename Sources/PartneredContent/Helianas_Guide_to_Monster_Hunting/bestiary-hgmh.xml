@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Chicken</name>
@@ -19,9 +19,9 @@
     <passive>11</passive>
     <languages/>
     <cr>0</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -37,12 +37,9 @@
       <text>Melee Weapon Attack:+4 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</text>
       <attack>Peck|+4|1</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>Source:	Heliana's Guide to Monster Hunting - Part One p. 156</description>
     <environment/>
   </monster>
-
   <!-- Familiars -->
   <monster>
     <name>Aboling</name>
@@ -1810,6 +1807,238 @@ Type: Passive (companion)
 The tarling is immune to the charmed and frightened conditions.
 
 Source:	Heliana's Guide to Monster Hunting - Part One p. 251</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Saddle Slime</name>
+    <sortname>Slime, Saddle</sortname>
+    <ancestry>Slime</ancestry>
+    <size>L</size>
+    <type>ooze</type>
+    <alignment>Unaligned</alignment>
+    <ac>8</ac>
+    <hp>51 (6d10+18)</hp>
+    <speed>30 ft. climb 30 ft.</speed>
+    <str>16</str>
+    <dex>6</dex>
+    <con>16</con>
+    <int>5</int>
+    <wis>6</wis>
+    <cha>5</cha>
+    <save/>
+    <skill/>
+    <passive>8</passive>
+    <languages>understands the languages its summoner speaks</languages>
+    <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>acid</immune>
+    <conditionImmune>charmed, deafened, exhaustion, frightened, poisoned</conditionImmune>
+    <senses>blindsight 10 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Born for the Saddle</name>
+      <text>The ooze grips firmly onto any object that is inserted into its body to be used as a saddle. A creature riding the ooze on one such saddle has advantage on saving throws made to avoid being dismounted.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Pseudopod</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 3 (1d6) acid damage.</text>
+      <attack>Pseudopod|+5|(1d6+3)+(1d6)</attack>
+      <attack>Bludgeoning Damage|+5|1d6+3</attack>
+      <attack>Acid Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Corrode Object (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>The ooze touches a Medium or smaller nonmagical object that isn't being worn or carried, causing it to corrode and dissolve over the course of 1 minute.</text>
+    </action>
+    <description>Source:	Heliana's Guide to Monster Hunting - Part One</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Wyrmskull Ooze</name>
+    <sortname>Ooze, Wyrmskull</sortname>
+    <ancestry>Ooze</ancestry>
+    <size>L</size>
+    <type>ooze</type>
+    <alignment>Unaligned</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>114 (12d10+48)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <str>18</str>
+    <dex>9</dex>
+    <con>18</con>
+    <int>7</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <save/>
+    <skill/>
+    <passive>13</passive>
+    <languages>understands the languages its summoner speaks</languages>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>acid</immune>
+    <conditionImmune>charmed, deafened, exhaustion, frightened, poisoned</conditionImmune>
+    <senses>blindsight 30 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The ooze makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage, and the target is grappled (escape DC 14). A creature grappled by the ooze takes 3 (1d6) acid damage at the start of each of its turns. The ooze can only grapple one creature at a time and, while it does so, it can't use its bite against another creature.</text>
+      <attack>Piercing Damage|+6|1d8+4</attack>
+      <attack>Acid Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Pseudopod</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 3 (1d6) acid damage.</text>
+      <attack>Pseudopod|+6|(1d6+4)+(1d6)</attack>
+      <attack>Bludgeoning Damage|+6|1d6+4</attack>
+      <attack>Acid Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Corrode Object (3/Day)</name>
+      <recharge>3/Day</recharge>
+      <text>The ooze touches a Medium or smaller nonmagical object that isn't being worn or carried, causing it to corrode and dissolve over the course of 1 minute.</text>
+    </action>
+    <description>Source:	Heliana's Guide to Monster Hunting - Part One</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Rolly Turrit</name>
+    <sortname>Turrit, Rolly</sortname>
+    <ancestry>Turrit</ancestry>
+    <size>T</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>44 (8d4+24)</hp>
+    <speed>35 ft.</speed>
+    <str>8</str>
+    <dex>16</dex>
+    <con>17</con>
+    <int>1</int>
+    <wis>4</wis>
+    <cha>1</cha>
+    <save/>
+    <skill/>
+    <passive>7</passive>
+    <languages/>
+    <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, psychic</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Backfire</name>
+      <text>Whenever the turret is critically hit, it backfires. Each creature within 10 feet of the turret (including the turret) must succeed on a DC 15 Dexterity saving throw or take 14 (4d6) piercing damage as shards of metal shoot outwards. The turret automatically fails this saving throw.</text>
+      <attack>Piercing Damage||4d6</attack>
+    </trait>
+    <trait>
+      <name>Spikey Charge</name>
+      <text>If the turret moves at least 15 feet straight toward a target and then hits it with a bite attack on the same turn, the target takes an extra 3 (1d6) piercing damage. If the target is a Small or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.</text>
+      <attack>Piercing Damage||1d6</attack>
+    </trait>
+    <trait>
+      <name>Wheels</name>
+      <text>The turret can't navigate over ledges greater than 6 inches in height. If it tries to, it tumbles and is knocked prone.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The rolly turrit makes two attacks.</text>
+    </action>
+    <action>
+      <name>Chomp</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</text>
+      <attack>Piercing Damage|+5|1d6+3</attack>
+    </action>
+    <action>
+      <name>Cannonette</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+5|1d6+3</attack>
+    </action>
+    <description>Source:	Heliana's Guide to Monster Hunting - Part One p. 481</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Crawly Turrit</name>
+    <sortname>Turrit, Crawly</sortname>
+    <ancestry>Turrit</ancestry>
+    <size>T</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>60 (8d4+40)</hp>
+    <speed>40 ft. climb 40 ft.</speed>
+    <str>8</str>
+    <dex>18</dex>
+    <con>20</con>
+    <int>1</int>
+    <wis>7</wis>
+    <cha>1</cha>
+    <save/>
+    <skill/>
+    <passive>7</passive>
+    <languages/>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, psychic</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Draconic Infusion</name>
+      <text>The damage type that the turret's Bite, Breath Bolt, and Breath Weapon deals depends on the dragon breath sac with which it was infused: acid (black or copper); cold (silver or white); fire (brass, gold, or red); lightning (blue or bronze); or poison (green).</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The turret can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 3 (1d6) damage (see Draconic Infusion).</text>
+      <attack>Bite|+6|1d6+4+1d6</attack>
+      <attack>Piercing Damage|+6|1d6+4</attack>
+      <attack>Draconic Infusion Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Breath Bolt</name>
+      <text>Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 11 (2d10) damage (see Draconic Infusion).</text>
+      <attack>Draconic Infusion Damage|+7|2d10</attack>
+    </action>
+    <action>
+      <name>Breath Weapon (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>The turret exhales elemental energy in a 20-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 21 (6d6) damage (see Draconic Infusion) on a failed save, or half as much damage on a successful one.</text>
+      <attack>Draconic Infusion Damage||6d6</attack>
+    </action>
+    <description>Source:	Heliana's Guide to Monster Hunting - Part One p. 482</description>
     <environment/>
   </monster>
 </compendium>
