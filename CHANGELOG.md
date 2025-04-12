@@ -3,7 +3,6 @@
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
-* Complete `Heliana's Guide to Monster Hunting` items.
 * LaserLlama:
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
@@ -12,13 +11,15 @@
 ### 2025-##-##
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
 * Added LaserLlama: `Psion Mystic Talents` spell list.
+* Complete `Heliana's Guide to Monster Hunting` items.
 * @recco added `Remley Farr`'s homebrew content.
 * @Garras fixed some important typos in https://github.com/vidalvanbergen/FightClub5eXML/pull/21.
 * Added missing Artificer Cartographer subclass.
 * Fixed a few mistakes in the new UA artificer classes.
 * Reformatted content to match original formatting a bit closer.
-* Reformatted and reworked the bestiaries, adding missing creature details and dice rolls.
+* Reformatted and reworked some of the WotC sources' bestiaries, adding missing creature details and dice rolls.
 * Named (2014) sources.
+* Other changes and fixes.
 
 ### 2025-03-04
 * Added `Monster Manual 2024`.
