@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Amphisbaena (monstrosity)</name>
@@ -19,9 +19,9 @@
     <passive>12</passive>
     <languages/>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 10 ft.</senses>
     <trait>
@@ -61,9 +61,9 @@
     <passive>9</passive>
     <languages/>
     <cr>1/8</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <trait>
@@ -82,6 +82,9 @@ Bess has two claws, each of which can grapple only one target.</text>
   </monster>
   <monster>
     <name>Bullywug Croaker</name>
+    <sortname>Bullywug, Croaker</sortname>
+    <ancestry>Bullywug</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (bullywug)</type>
     <alignment>Neutral Evil</alignment>
@@ -99,9 +102,9 @@ Bess has two claws, each of which can grapple only one target.</text>
     <passive>14</passive>
     <languages>Bullywug</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -148,6 +151,9 @@ Source:	Ghosts of Saltmarsh p. 232</description>
   </monster>
   <monster>
     <name>Bullywug Royal</name>
+    <sortname>Bullywug, Royal</sortname>
+    <ancestry>Bullywug</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (bullywug)</type>
     <alignment>Neutral Evil</alignment>
@@ -165,9 +171,9 @@ Source:	Ghosts of Saltmarsh p. 232</description>
     <passive>10</passive>
     <languages>Bullywug</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -220,6 +226,7 @@ Source:	Ghosts of Saltmarsh p. 232</description>
   </monster>
   <monster>
     <name>Captain Xendros</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tiefling)</type>
     <alignment>Any alignment</alignment>
@@ -237,20 +244,15 @@ Source:	Ghosts of Saltmarsh p. 232</description>
     <passive>13</passive>
     <languages>any two languages, Infernal</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>fire</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Divine Eminence</name>
       <text>As a bonus action, Xendros can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Xendros expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
     </trait>
-    <action>
-      <name>Mace</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Mace|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Xendros is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Xendros has the following cleric spells prepared:
@@ -260,7 +262,6 @@ Source:	Ghosts of Saltmarsh p. 232</description>
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Xendros's innate spellcasting ability is Charisma (spell save DC 11). Xendros can innately cast the following spells, requiring no material components:
@@ -268,12 +269,20 @@ Source:	Ghosts of Saltmarsh p. 232</description>
 	• At will: thaumaturgy
 	• 1/Day each: darkness, hellish rebuke</text>
     </trait>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Mace|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians, thaumaturgy, darkness, hellish rebuke</spells>
     <description>Source:	Ghosts of Saltmarsh p. 14</description>
     <environment/>
   </monster>
   <monster>
     <name>Drowned Ascetic</name>
+    <sortname>Drowned, Ascetic</sortname>
+    <ancestry>Drowned</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Chaotic Evil</alignment>
@@ -291,9 +300,9 @@ Source:	Ghosts of Saltmarsh p. 232</description>
     <passive>9</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -334,6 +343,8 @@ Source:	Ghosts of Saltmarsh p. 233,
   </monster>
   <monster>
     <name>Drowned Assassin</name>
+    <sortname>Assassin, Drowned</sortname>
+    <ancestry>Drowned, Assassin</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Chaotic Evil</alignment>
@@ -351,9 +362,9 @@ Source:	Ghosts of Saltmarsh p. 233,
     <passive>9</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -400,6 +411,8 @@ Source:	Ghosts of Saltmarsh p. 234,
   </monster>
   <monster>
     <name>Drowned Blade</name>
+    <sortname>Drowned, Blade</sortname>
+    <ancestry>Drowned</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Chaotic Evil</alignment>
@@ -417,9 +430,9 @@ Source:	Ghosts of Saltmarsh p. 234,
     <passive>9</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -456,6 +469,8 @@ Source:	Ghosts of Saltmarsh p. 235,
   </monster>
   <monster>
     <name>Drowned Master</name>
+    <sortname>Drowned, Master</sortname>
+    <ancestry>Drowned</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Chaotic Evil</alignment>
@@ -473,9 +488,9 @@ Source:	Ghosts of Saltmarsh p. 235,
     <passive>20</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>9</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -540,9 +555,9 @@ Source:	Ghosts of Saltmarsh p. 235,
     <passive>8</passive>
     <languages/>
     <cr>0</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -558,6 +573,8 @@ Source:	Ghosts of Saltmarsh p. 235,
   </monster>
   <monster>
     <name>Giant Coral Snake</name>
+    <sortname>Snake, Giant Coral</sortname>
+    <ancestry>Snake</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -575,9 +592,9 @@ Source:	Ghosts of Saltmarsh p. 235,
     <passive>12</passive>
     <languages/>
     <cr>4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 10 ft.</senses>
     <action>
@@ -592,6 +609,8 @@ Source:	Ghosts of Saltmarsh p. 236</description>
   </monster>
   <monster>
     <name>Giant Sea Eel</name>
+    <sortname>Eel, Giant Sea</sortname>
+    <ancestry>Eel</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -609,9 +628,9 @@ Source:	Ghosts of Saltmarsh p. 236</description>
     <passive>12</passive>
     <languages/>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -630,6 +649,8 @@ Source:	Ghosts of Saltmarsh p. 237</description>
   </monster>
   <monster>
     <name>Giant White Moray Eel</name>
+    <sortname>Eel, Giant White Moray</sortname>
+    <ancestry>Eel</ancestry>
     <size>H</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -647,9 +668,9 @@ Source:	Ghosts of Saltmarsh p. 237</description>
     <passive>12</passive>
     <languages/>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 10 ft.</senses>
     <trait>
@@ -666,6 +687,8 @@ Source:	Ghosts of Saltmarsh p. 237</description>
   </monster>
   <monster>
     <name>Harpy Matriarch</name>
+    <sortname>Harpy, Matriarch</sortname>
+    <ancestry>Harpy</ancestry>
     <size>M</size>
     <type>monstrosity</type>
     <alignment>Chaotic Evil</alignment>
@@ -683,9 +706,9 @@ Source:	Ghosts of Saltmarsh p. 237</description>
     <passive>13</passive>
     <languages>Common</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -729,6 +752,8 @@ Source:	Ghosts of Saltmarsh p. 237</description>
   </monster>
   <monster>
     <name>Juvenile Kraken</name>
+    <sortname>Kraken, Juvenile</sortname>
+    <ancestry>Kraken</ancestry>
     <size>H</size>
     <type>monstrosity (titan)</type>
     <alignment>Chaotic Evil</alignment>
@@ -746,9 +771,9 @@ Source:	Ghosts of Saltmarsh p. 237</description>
     <passive>12</passive>
     <languages>Abyssal, Celestial, Infernal, Primordial, telepathy 60 ft. but can't speak</languages>
     <cr>14</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>lightning</immune>
-    <vulnerable/>
     <conditionImmune>frightened, paralyzed</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -809,6 +834,8 @@ Source:	Ghosts of Saltmarsh p. 238</description>
   </monster>
   <monster>
     <name>Koalinth</name>
+    <ancestry>Koalinth</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (goblinoid)</type>
     <alignment>Lawful Evil</alignment>
@@ -826,9 +853,9 @@ Source:	Ghosts of Saltmarsh p. 238</description>
     <passive>12</passive>
     <languages>Common, Goblin</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -851,6 +878,9 @@ Source:	Ghosts of Saltmarsh p. 239</description>
   </monster>
   <monster>
     <name>Koalinth Sergeant</name>
+    <sortname>Koalinth, Sergeant</sortname>
+    <ancestry>Koalinth</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (goblinoid)</type>
     <alignment>Lawful Evil</alignment>
@@ -868,9 +898,9 @@ Source:	Ghosts of Saltmarsh p. 239</description>
     <passive>12</passive>
     <languages>Common, Goblin</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -909,6 +939,7 @@ Source:	Ghosts of Saltmarsh p. 239</description>
   </monster>
   <monster>
     <name>Krell Grohlg</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-orc)</type>
     <alignment>Any alignment</alignment>
@@ -926,9 +957,9 @@ Source:	Ghosts of Saltmarsh p. 239</description>
     <passive>14</passive>
     <languages>Druidic plus any two languages, Orc</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -939,11 +970,6 @@ Source:	Ghosts of Saltmarsh p. 239</description>
       <name>Savage Attacks</name>
       <text>When they score a critical hit, Krell can roll one of the weapon's damage dice and add it to the extra damage of the critical hit.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
-      <attack>Quarterstaff|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Krell is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:
@@ -952,13 +978,19 @@ Source:	Ghosts of Saltmarsh p. 239</description>
 	• 1st level (4 slots): entangle, longstrider, speak with animals, thunderwave
 	• 2nd level (3 slots): flaming sphere, barkskin</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
+      <attack>Quarterstaff|+2|1d6</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>druidcraft, produce flame, shillelagh, entangle, longstrider, speak with animals, thunderwave, flaming sphere, barkskin</spells>
     <description>Source:	Ghosts of Saltmarsh p. 92</description>
     <environment/>
   </monster>
   <monster>
     <name>Kysh</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (triton)</type>
     <alignment>Lawful Good</alignment>
@@ -976,9 +1008,9 @@ Source:	Ghosts of Saltmarsh p. 239</description>
     <passive>11</passive>
     <languages>Common, Primordial</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -989,6 +1021,11 @@ Source:	Ghosts of Saltmarsh p. 239</description>
       <name>Emissary of the Sea</name>
       <text>Kysh can communicate simple ideas with amphibious and water-breathing beasts. They understand the meaning of his words, but he cannot understand them in return.</text>
     </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Kysh's spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). He can cast the following spell, requiring only verbal components:
+	• 1/Day: fog cloud</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>Kysh makes two melee attacks with his spear.</text>
@@ -998,11 +1035,6 @@ Source:	Ghosts of Saltmarsh p. 239</description>
       <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft, one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.</text>
       <attack>Spear|+4|1d6+2</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Kysh's spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). He can cast the following spell, requiring only verbal components:
-	• 1/Day: fog cloud</text>
-    </trait>
     <spells>fog cloud</spells>
     <description>A prisoner of the sahuagin in The Final Enemy, Kysh is a defender of the deep sea realms who is ready to join the party in their struggle. Tritons are folk of the Elemental Plane of Water who journeyed to the Material Plane to watch over the dark places of the ocean depths. They stand guard over portals, deep sea chasms, and other places where foul monsters might emerge. When such threats appear, the tritons take up arms to drive them from the world.
 
@@ -1028,9 +1060,9 @@ Source:	Ghosts of Saltmarsh p. 240</description>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>5</cr>
+    <vulnerable>acid</vulnerable>
     <resist/>
     <immune>lightning, poison</immune>
-    <vulnerable>acid</vulnerable>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1064,6 +1096,9 @@ Source:	Ghosts of Saltmarsh p. 241</description>
   </monster>
   <monster>
     <name>Lizardfolk Commoner</name>
+    <sortname>Commoner, Lizardfolk</sortname>
+    <ancestry>Commoner, Lizardfolk</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (lizardfolk)</type>
     <alignment>Neutral</alignment>
@@ -1081,9 +1116,9 @@ Source:	Ghosts of Saltmarsh p. 241</description>
     <passive>13</passive>
     <languages>Draconic</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1102,6 +1137,9 @@ Source:	Ghosts of Saltmarsh p. 241</description>
   </monster>
   <monster>
     <name>Lizardfolk Render</name>
+    <sortname>Lizardfolk, Render</sortname>
+    <ancestry>Lizardfolk</ancestry>
+    <npc>YES</npc>
     <size>L</size>
     <type>humanoid (lizardfolk)</type>
     <alignment>Neutral</alignment>
@@ -1119,9 +1157,9 @@ Source:	Ghosts of Saltmarsh p. 241</description>
     <passive>13</passive>
     <languages>Draconic</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1160,6 +1198,9 @@ Source:	Ghosts of Saltmarsh p. 241,
   </monster>
   <monster>
     <name>Lizardfolk Scaleshield</name>
+    <sortname>Lizardfolk, Scaleshield</sortname>
+    <ancestry>Lizardfolk</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (lizardfolk)</type>
     <alignment>Neutral</alignment>
@@ -1177,9 +1218,9 @@ Source:	Ghosts of Saltmarsh p. 241,
     <passive>13</passive>
     <languages>Draconic</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1216,6 +1257,9 @@ Source:	Ghosts of Saltmarsh p. 242</description>
   </monster>
   <monster>
     <name>Lizardfolk Subchief</name>
+    <sortname>Lizardfolk, Subchief</sortname>
+    <ancestry>Lizardfolk</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (lizardfolk)</type>
     <alignment>Neutral</alignment>
@@ -1233,14 +1277,23 @@ Source:	Ghosts of Saltmarsh p. 242</description>
     <passive>15</passive>
     <languages>Draconic</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Hold Breath</name>
       <text>The subchief can hold its breath for 15 minutes.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The subchief is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It has the following cleric spells prepared:
+
+	• Cantrips (at will): light, sacred flame, spare the dying, thaumaturgy
+	• 1st level (4 slots): command, guiding bolt, purify food and drink
+	• 2nd level (3 slots): hold person, lesser restoration, silence
+	• 3rd level (2 slots): bestow curse, dispel magic</text>
     </trait>
     <action>
       <name>Tooth Dagger</name>
@@ -1253,16 +1306,7 @@ Source:	Ghosts of Saltmarsh p. 242</description>
       <text>The subchief invokes the primal magic of Semuanya, summoning a spectral maw around a target it can see within 60 feet of it. The target must make a DC 13 Dexterity saving throw, taking 22 (5d8) piercing damage on a failed save, or half as much damage on a successful one. A creature that fails this saving throw is also frightened until the end of its next turn.</text>
       <attack>Jaws of Semuanya||5d8</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The subchief is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It has the following cleric spells prepared:
-
-	• Cantrips (at will): light, sacred flame, spare the dying, thaumaturgy
-	• 1st level (4 slots): command, guiding bolt, purify food and drink
-	• 2nd level (3 slots): hold person, lesser restoration, silence
-	• 3rd level (2 slots): bestow curse, dispel magic</text>
-    </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, spare the dying, thaumaturgy, command, guiding bolt, purify food and drink, hold person, lesser restoration, silence, bestow curse, dispel magic</spells>
     <description>The lizardfolk subchief (seen in Danger at Dunwater) is a devout priest of Semuanya, pursuing the worship of its god in a manner similar to a cleric. It wields a dagger crafted of a massive crocodile tooth blessed by Semuanya, representing the subchief's prowess in both battle and piety.
 
@@ -1272,6 +1316,8 @@ Source:	Ghosts of Saltmarsh p. 242,
   </monster>
   <monster>
     <name>Locathah</name>
+    <ancestry>Locathah</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (locathah)</type>
     <alignment>Neutral</alignment>
@@ -1289,9 +1335,9 @@ Source:	Ghosts of Saltmarsh p. 242,
     <passive>12</passive>
     <languages>Aquan, Common</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1319,6 +1365,9 @@ Source:	Ghosts of Saltmarsh p. 243,
   </monster>
   <monster>
     <name>Locathah Hunter</name>
+    <sortname>Locathah, Hunter</sortname>
+    <ancestry>Locathah</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (locathah)</type>
     <alignment>Neutral</alignment>
@@ -1336,9 +1385,9 @@ Source:	Ghosts of Saltmarsh p. 243,
     <passive>14</passive>
     <languages>Aquan, Common</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1370,6 +1419,7 @@ Source:	Ghosts of Saltmarsh p. 243</description>
   </monster>
   <monster>
     <name>Master Refrum</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1387,20 +1437,15 @@ Source:	Ghosts of Saltmarsh p. 243</description>
     <passive>13</passive>
     <languages>any two languages</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Divine Eminence</name>
       <text>As a bonus action, Refrum can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Refrum expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
     </trait>
-    <action>
-      <name>Mace</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Mace|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Refrum is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Refrum has the following cleric spells prepared:
@@ -1410,7 +1455,12 @@ Source:	Ghosts of Saltmarsh p. 243</description>
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Mace|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
     <description>Source:	Ghosts of Saltmarsh p. 165</description>
     <environment/>
@@ -1434,9 +1484,9 @@ Source:	Ghosts of Saltmarsh p. 243</description>
     <passive>15</passive>
     <languages>Sahuagin, telepathy 100 ft.</languages>
     <cr>7</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -1486,6 +1536,9 @@ Source:	Ghosts of Saltmarsh p. 244</description>
   </monster>
   <monster>
     <name>Merfolk Salvager</name>
+    <sortname>Merfolk, Salvager</sortname>
+    <ancestry>Merfolk</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (merfolk)</type>
     <alignment>Neutral</alignment>
@@ -1503,9 +1556,9 @@ Source:	Ghosts of Saltmarsh p. 244</description>
     <passive>12</passive>
     <languages>Aquan, Common</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1534,6 +1587,9 @@ Source:	Ghosts of Saltmarsh p. 244</description>
   </monster>
   <monster>
     <name>Merfolk Scout</name>
+    <sortname>Merfolk, Scout</sortname>
+    <ancestry>Merfolk</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (merfolk)</type>
     <alignment>Any alignment</alignment>
@@ -1551,9 +1607,9 @@ Source:	Ghosts of Saltmarsh p. 244</description>
     <passive>15</passive>
     <languages>any one language (usually Common), Aquan</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1578,6 +1634,8 @@ Source:	Ghosts of Saltmarsh p. 244</description>
   </monster>
   <monster>
     <name>Minotaur Living Crystal Statue</name>
+    <sortname>Minotaur, Living Crystal Statue</sortname>
+    <ancestry>Minotaur</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -1595,9 +1653,9 @@ Source:	Ghosts of Saltmarsh p. 244</description>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>6</cr>
+    <vulnerable>force</vulnerable>
     <resist/>
     <immune>lightning, poison</immune>
-    <vulnerable>force</vulnerable>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1629,6 +1687,8 @@ Source:	Ghosts of Saltmarsh p. 245</description>
   </monster>
   <monster>
     <name>Monstrous Peryton</name>
+    <sortname>Peryton, Monstrous</sortname>
+    <ancestry>Peryton</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Chaotic Evil</alignment>
@@ -1646,9 +1706,9 @@ Source:	Ghosts of Saltmarsh p. 245</description>
     <passive>16</passive>
     <languages>understands Common and Elvish but can't speak</languages>
     <cr>11</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1706,6 +1766,7 @@ Source:	Ghosts of Saltmarsh p. 245</description>
   </monster>
   <monster>
     <name>Mr. Dory</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>aberration</type>
     <alignment>Chaotic Evil</alignment>
@@ -1723,9 +1784,9 @@ Source:	Ghosts of Saltmarsh p. 245</description>
     <passive>16</passive>
     <languages>Abyssal, Common, Deep Speech, telepathy 60 ft.</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist/>
     <immune>necrotic</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1735,6 +1796,14 @@ Source:	Ghosts of Saltmarsh p. 245</description>
     <trait>
       <name>Water Dependency</name>
       <text>Mr. Dory takes 6 (1d12) acid damage at the end of every hour he goes without exposure to water.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Mr. Dory's innate spellcasting ability is Charisma (save DC 15, +7 to hit with spell attacks). Mr. Dory can innately cast the following spells, requiring no material components:
+
+	• At will: detect magic, detect thoughts, invisibility (self only)
+	• 2/Day each: fear, fireball, fly
+	• 1/Day each: cloudkill, etherealness</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -1751,14 +1820,6 @@ Source:	Ghosts of Saltmarsh p. 245</description>
       <text>Mr. Dory glares at a creature he can see within 30 feet of him. The target must make a DC 15 Constitution saving throw. On a failed save, it takes 27 (5d10) necrotic damage and 27 (5d10) poison damage and then gains vulnerability to both necrotic and poison damage for 1 minute. On a successful save, it takes half damage and does not gain the vulnerabilities.</text>
       <attack>Eye of Corruption||5d10</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Mr. Dory's innate spellcasting ability is Charisma (save DC 15, +7 to hit with spell attacks). Mr. Dory can innately cast the following spells, requiring no material components:
-
-	• At will: detect magic, detect thoughts, invisibility (self only)
-	• 2/Day each: fear, fireball, fly
-	• 1/Day each: cloudkill, etherealness</text>
-    </trait>
     <spells>detect magic, detect thoughts, invisibility, fear, fireball, fly, cloudkill, etherealness</spells>
     <description>One of the four councillors who rule the Styes, Mr. Dory hides his cursed nature in plain sight. His rare, liquid-sensitive "skin condition" is actually a form of the same aboleth affliction that creates skum, though Dory's condition is not as severe, and he has managed to retain his free will.
 
@@ -1767,6 +1828,7 @@ Source:	Ghosts of Saltmarsh p. 246</description>
   </monster>
   <monster>
     <name>Oceanus</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Neutral Good</alignment>
@@ -1784,9 +1846,9 @@ Source:	Ghosts of Saltmarsh p. 246</description>
     <passive>13</passive>
     <languages>Aquan, Elvish</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1814,6 +1876,7 @@ Source:	Ghosts of Saltmarsh p. 246</description>
   </monster>
   <monster>
     <name>Othokent</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (lizardfolk)</type>
     <alignment>Chaotic Evil</alignment>
@@ -1831,9 +1894,9 @@ Source:	Ghosts of Saltmarsh p. 246</description>
     <passive>14</passive>
     <languages>Abyssal, Draconic</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune>frightened</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1868,6 +1931,9 @@ Source:	Ghosts of Saltmarsh p. 246</description>
   </monster>
   <monster>
     <name>Pirate Bosun</name>
+    <sortname>Pirate, Bosun</sortname>
+    <ancestry>Pirate</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1885,9 +1951,9 @@ Source:	Ghosts of Saltmarsh p. 246</description>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1915,6 +1981,9 @@ Source:	Ghosts of Saltmarsh p. 247</description>
   </monster>
   <monster>
     <name>Pirate Captain</name>
+    <sortname>Pirate, Captain</sortname>
+    <ancestry>Pirate</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1932,9 +2001,9 @@ Source:	Ghosts of Saltmarsh p. 247</description>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1971,6 +2040,9 @@ Source:	Ghosts of Saltmarsh p. 247</description>
   </monster>
   <monster>
     <name>Pirate Deck Wizard</name>
+    <sortname>Pirate, Deck Wizard</sortname>
+    <ancestry>Pirate</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1988,20 +2060,15 @@ Source:	Ghosts of Saltmarsh p. 247</description>
     <passive>13</passive>
     <languages>any one language (usually Common)</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Sea Legs</name>
       <text>The deck wizard has advantage on ability checks and saving throws to resist being knocked prone.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Quarterstaff|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The deck wizard is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It has the following wizard spells prepared:
@@ -2010,7 +2077,12 @@ Source:	Ghosts of Saltmarsh p. 247</description>
 	• 1st level (4 slots): disguise self, fog cloud, mage armor, witch bolt
 	• 2nd level (3 slots): gust of wind, Melf's acid arrow, misty step</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Quarterstaff|+2|1d6</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>friends, mage hand, prestidigitation, ray of frost, disguise self, fog cloud, mage armor, witch bolt, gust of wind, Melf's acid arrow, misty step</spells>
     <description>These salt-encrusted practitioners of magic are at once learned and superstitious. The crews of pirate ships generally give their deck wizards a wide berth, as they magically step from place to place and unleash their briny magic against attackers. The ship Sea Ghost in The Sinister Secret of Saltmarsh is home to a pirate deck wizard named Punketah.
 
@@ -2019,6 +2091,9 @@ Source:	Ghosts of Saltmarsh p. 248</description>
   </monster>
   <monster>
     <name>Pirate First Mate</name>
+    <sortname>Pirate, First Mate</sortname>
+    <ancestry>Pirate</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -2036,9 +2111,9 @@ Source:	Ghosts of Saltmarsh p. 248</description>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -2061,6 +2136,9 @@ Source:	Ghosts of Saltmarsh p. 248</description>
   </monster>
   <monster>
     <name>Rip Tide Priest</name>
+    <sortname>Priest, Rip Tide</sortname>
+    <ancestry>Priest</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -2078,16 +2156,11 @@ Source:	Ghosts of Saltmarsh p. 248</description>
     <passive>10</passive>
     <languages>Aquan, Common</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage.</text>
-      <attack>Quarterstaff|+4|1d8+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The priest is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It knows the following sorcerer spells:
@@ -2097,7 +2170,12 @@ Source:	Ghosts of Saltmarsh p. 248</description>
 	• 2nd level (3 slots): blur, hold person
 	• 3rd level (2 slots): sleet storm</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage.</text>
+      <attack>Quarterstaff|+4|1d8+2</attack>
+    </action>
+    <slots>0,4,3,2</slots>
     <spells>chill touch, mage hand, minor illusion, prestidigitation, ray of frost, expeditious retreat, magic missile, shield, blur, hold person, sleet storm</spells>
     <description>Priests of the Rip Tide cult gather in secret cabals to perform dark rituals that glorify Olhydra, the elemental Princess of Evil Water, as the embodiment of water's destructiveness. They believe that using water to kill their enemies, such as through ritual drowning, earns them Olhydra's favor.
 
@@ -2106,6 +2184,9 @@ Source:	Ghosts of Saltmarsh p. 248</description>
   </monster>
   <monster>
     <name>Sahuagin Blademaster</name>
+    <sortname>Sahuagin, Blademaster</sortname>
+    <ancestry>Sahuagin</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (sahuagin)</type>
     <alignment>Lawful Evil</alignment>
@@ -2123,9 +2204,9 @@ Source:	Ghosts of Saltmarsh p. 248</description>
     <passive>10</passive>
     <languages>Sahuagin</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2168,6 +2249,9 @@ Source:	Ghosts of Saltmarsh p. 249,
   </monster>
   <monster>
     <name>Sahuagin Champion</name>
+    <sortname>Sahuagin, Champion</sortname>
+    <ancestry>Sahuagin</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (sahuagin)</type>
     <alignment>Lawful Evil</alignment>
@@ -2185,9 +2269,9 @@ Source:	Ghosts of Saltmarsh p. 249,
     <passive>15</passive>
     <languages>Sahuagin</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2228,6 +2312,9 @@ Source:	Ghosts of Saltmarsh p. 249</description>
   </monster>
   <monster>
     <name>Sahuagin Coral Smasher</name>
+    <sortname>Sahuagin, Coral Smasher</sortname>
+    <ancestry>Sahuagin</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (sahuagin)</type>
     <alignment>Lawful Evil</alignment>
@@ -2245,9 +2332,9 @@ Source:	Ghosts of Saltmarsh p. 249</description>
     <passive>15</passive>
     <languages>Sahuagin</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2292,6 +2379,9 @@ Source:	Ghosts of Saltmarsh p. 249</description>
   </monster>
   <monster>
     <name>Sahuagin Deep Diver</name>
+    <sortname>Sahuagin, Deep Diver</sortname>
+    <ancestry>Sahuagin</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (sahuagin)</type>
     <alignment>Lawful Evil</alignment>
@@ -2309,9 +2399,9 @@ Source:	Ghosts of Saltmarsh p. 249</description>
     <passive>15</passive>
     <languages>Sahuagin</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2365,6 +2455,8 @@ Source:	Ghosts of Saltmarsh p. 250,
   </monster>
   <monster>
     <name>Sahuagin Hatchling Swarm</name>
+    <sortname>Sahuagin, Hatchling Swarm</sortname>
+    <ancestry>Sahuagin</ancestry>
     <size>L</size>
     <type>swarm of large beasts</type>
     <alignment>Chaotic Evil</alignment>
@@ -2382,9 +2474,9 @@ Source:	Ghosts of Saltmarsh p. 250,
     <passive>10</passive>
     <languages/>
     <cr>3</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2416,6 +2508,9 @@ Source:	Ghosts of Saltmarsh p. 250,
   </monster>
   <monster>
     <name>Sahuagin High Priestess</name>
+    <sortname>Sahuagin, High Priestess</sortname>
+    <ancestry>Sahuagin</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (sahuagin)</type>
     <alignment>Lawful Evil</alignment>
@@ -2433,9 +2528,9 @@ Source:	Ghosts of Saltmarsh p. 250,
     <passive>16</passive>
     <languages>Sahuagin</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2449,6 +2544,16 @@ Source:	Ghosts of Saltmarsh p. 250,
     <trait>
       <name>Shark Telepathy</name>
       <text>The high priestess can magically command any shark within 120 feet of her, using a limited telepathy.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The high priestess is a 7th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). She has the following cleric spells prepared:
+
+	• Cantrips (at will): guidance, mending, resistance, thaumaturgy
+	• 1st level (4 slots): bless, detect magic, guiding bolt
+	• 2nd level (3 slots): hold person, spiritual weapon (trident)
+	• 3rd level (3 slots): bestow curse, fear, mass healing word, tongues
+	• 4th level (1 slots): banishment</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2469,17 +2574,7 @@ Source:	Ghosts of Saltmarsh p. 250,
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</text>
       <attack>Claws|+5|1d4+2</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The high priestess is a 7th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). She has the following cleric spells prepared:
-
-	• Cantrips (at will): guidance, mending, resistance, thaumaturgy
-	• 1st level (4 slots): bless, detect magic, guiding bolt
-	• 2nd level (3 slots): hold person, spiritual weapon (trident)
-	• 3rd level (3 slots): bestow curse, fear, mass healing word, tongues
-	• 4th level (1 slots): banishment</text>
-    </trait>
-    <slots>0, 4, 3, 3, 1</slots>
+    <slots>0,4,3,3,1</slots>
     <spells>guidance, mending, resistance, thaumaturgy, bless, detect magic, guiding bolt, hold person, spiritual weapon, bestow curse, fear, mass healing word, tongues, banishment</spells>
     <description>A sahuagin high priestess is the most devout and ferocious of all Sekolah's worshipers. Armed with a staff studded with jagged shark's teeth, she can be seen leading dark rituals in The Final Enemy.
 
@@ -2489,6 +2584,9 @@ Source:	Ghosts of Saltmarsh p. 251,
   </monster>
   <monster>
     <name>Sahuagin Wave Shaper</name>
+    <sortname>Sahuagin, Wave Shaper</sortname>
+    <ancestry>Sahuagin</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (sahuagin)</type>
     <alignment>Lawful Evil</alignment>
@@ -2506,9 +2604,9 @@ Source:	Ghosts of Saltmarsh p. 251,
     <passive>15</passive>
     <languages>Sahuagin</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2522,6 +2620,13 @@ Source:	Ghosts of Saltmarsh p. 251,
     <trait>
       <name>Shark Telepathy</name>
       <text>The wave shaper can magically command any shark within 120 feet of it, using a limited telepathy.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The wave shaper's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). It can cast the following spells, requiring only verbal components:
+
+	• At will: message
+	• 1/Day: comprehend languages</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2547,13 +2652,6 @@ When a creature enters the vortex for the first time on a turn or starts its tur
       <text/>
       <text>The first time each turn that an object enters the vortex, the object takes 9 (2d8) bludgeoning damage. This damage occurs each round it remains in the vortex.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The wave shaper's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). It can cast the following spells, requiring only verbal components:
-
-	• At will: message
-	• 1/Day: comprehend languages</text>
-    </trait>
     <spells>message, comprehend languages</spells>
     <description>These hunched and twisted sahuagin sacrifice their bodies to the mutating magic of Sekolah. Wave shapers add elemental magic to sahuagin armed forces (as seen in The Final Enemy) and delight in creating destructive whirlpools.
 
@@ -2562,6 +2660,7 @@ Source:	Ghosts of Saltmarsh p. 251</description>
   </monster>
   <monster>
     <name>Sanbalet</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -2579,16 +2678,11 @@ Source:	Ghosts of Saltmarsh p. 251</description>
     <passive>11</passive>
     <languages>Common</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage.</text>
-      <attack>Dagger|+3|1d4+1</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Sanbalet is a 3rd-level spellcaster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). He has the following wizard spells prepared:
@@ -2597,7 +2691,12 @@ Source:	Ghosts of Saltmarsh p. 251</description>
 	• 1st level (4 slots): charm person, color spray, magic missile, silent image
 	• 2nd level (2 slots): magic mouth, scorching ray</text>
     </trait>
-    <slots>0, 4, 2</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage.</text>
+      <attack>Dagger|+3|1d4+1</attack>
+    </action>
+    <slots>0,4,2</slots>
     <spells>dancing lights, minor illusion, ray of frost, charm person, color spray, magic missile, silent image, magic mouth, scorching ray</spells>
     <description>In The Sinister Secret of Saltmarsh, Sanbalet is the leader of the land-based half of a smuggling ring. He is a cunning narcissist with an interest in illusion and mind control. He defends the contraband stored in the caves under the haunted house.
 
@@ -2606,6 +2705,7 @@ Source:	Ghosts of Saltmarsh p. 252</description>
   </monster>
   <monster>
     <name>Sauriv</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (lizardfolk)</type>
     <alignment>Any alignment</alignment>
@@ -2623,9 +2723,9 @@ Source:	Ghosts of Saltmarsh p. 252</description>
     <passive>12</passive>
     <languages>any two languages, Draconic</languages>
     <cr>1/8</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -2646,6 +2746,8 @@ Source:	Ghosts of Saltmarsh p. 252</description>
   </monster>
   <monster>
     <name>Shell Shark</name>
+    <sortname>Shark, Shell</sortname>
+    <ancestry>Shark</ancestry>
     <size>M</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -2663,9 +2765,9 @@ Source:	Ghosts of Saltmarsh p. 252</description>
     <passive>10</passive>
     <languages/>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2696,6 +2798,8 @@ Source:	Ghosts of Saltmarsh p. 252</description>
   </monster>
   <monster>
     <name>Skeletal Alchemist</name>
+    <sortname>Skeletal, Alchemist</sortname>
+    <ancestry>Skeletal</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -2713,9 +2817,9 @@ Source:	Ghosts of Saltmarsh p. 252</description>
     <passive>10</passive>
     <languages>understands all languages it knew in life but can't speak</languages>
     <cr>1/2</cr>
+    <vulnerable>bludgeoning</vulnerable>
     <resist/>
     <immune>poison</immune>
-    <vulnerable>bludgeoning</vulnerable>
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -2743,6 +2847,8 @@ Source:	Ghosts of Saltmarsh p. 253</description>
   </monster>
   <monster>
     <name>Skeletal Juggernaut</name>
+    <sortname>Skeletal, Juggernaut</sortname>
+    <ancestry>Skeletal</ancestry>
     <size>L</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -2760,9 +2866,9 @@ Source:	Ghosts of Saltmarsh p. 253</description>
     <passive>9</passive>
     <languages/>
     <cr>5</cr>
+    <vulnerable>bludgeoning</vulnerable>
     <resist/>
     <immune>poison</immune>
-    <vulnerable>bludgeoning</vulnerable>
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -2796,6 +2902,8 @@ Source:	Ghosts of Saltmarsh p. 253,
   </monster>
   <monster>
     <name>Skeletal Swarm</name>
+    <sortname>Skeletal, Swarm</sortname>
+    <ancestry>Skeletal</ancestry>
     <size>L</size>
     <type>swarm of large undeads</type>
     <alignment>Lawful Evil</alignment>
@@ -2813,9 +2921,9 @@ Source:	Ghosts of Saltmarsh p. 253,
     <passive>9</passive>
     <languages/>
     <cr>2</cr>
+    <vulnerable>bludgeoning</vulnerable>
     <resist>slashing, piercing</resist>
     <immune>poison</immune>
-    <vulnerable>bludgeoning</vulnerable>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned, prone, restrained, stunned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -2857,9 +2965,9 @@ Source:	Ghosts of Saltmarsh p. 254,
     <passive>14</passive>
     <languages>Common, Deep Speech, telepathy 60 ft.</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>psychic</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2916,9 +3024,9 @@ Source:	Ghosts of Saltmarsh p. 254</description>
     <passive>10</passive>
     <languages/>
     <cr>6</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -2968,6 +3076,8 @@ Source:	Ghosts of Saltmarsh p. 256</description>
   </monster>
   <monster>
     <name>Vampiric Jade Statue</name>
+    <sortname>Vampiric, Jade Statue</sortname>
+    <ancestry>Vampiric</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -2985,9 +3095,9 @@ Source:	Ghosts of Saltmarsh p. 256</description>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>8</cr>
+    <vulnerable>force</vulnerable>
     <resist/>
     <immune>lightning, poison</immune>
-    <vulnerable>force</vulnerable>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3037,6 +3147,8 @@ Source:	Ghosts of Saltmarsh p. 256</description>
   </monster>
   <monster>
     <name>Yalaga Maladwyn</name>
+    <sortname>Maladwyn, Yalaga</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Neutral Evil</alignment>
@@ -3054,30 +3166,15 @@ Source:	Ghosts of Saltmarsh p. 256</description>
     <passive>16</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Yalaga has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
     </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>Yalaga makes two scourge attacks.</text>
-    </action>
-    <action>
-      <name>Scourge</name>
-      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 17 (5d6) poison damage.</text>
-      <attack>Scourge|+5|1d6+2</attack>
-    </action>
-    <action>
-      <name>Variant: Drow Magic Armor and Weapons</name>
-      <text>Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.
-
-A drow priestess of lolth wearing +3 scale mail has AC 19.</text>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Yalaga's spellcasting ability is Charisma (spell save DC 15). She can innately cast the following spells, requiring no material components:
@@ -3096,7 +3193,22 @@ A drow priestess of lolth wearing +3 scale mail has AC 19.</text>
 	• 4th level (3 slots): divination, freedom of movement
 	• 5th level (2 slots): insect plague, mass cure wounds</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <action>
+      <name>Multiattack</name>
+      <text>Yalaga makes two scourge attacks.</text>
+    </action>
+    <action>
+      <name>Scourge</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 17 (5d6) poison damage.</text>
+      <attack>Scourge|+5|1d6+2</attack>
+    </action>
+    <action>
+      <name>Variant: Drow Magic Armor and Weapons</name>
+      <text>Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.
+
+A drow priestess of lolth wearing +3 scale mail has AC 19.</text>
+    </action>
+    <slots>0,4,3,3,3,2</slots>
     <spells>dancing lights, darkness, faerie fire, levitate, guidance, poison spray, resistance, spare the dying, thaumaturgy, animal friendship, cure wounds, detect poison and disease, ray of sickness, lesser restoration, protection from poison, web, conjure animals, dispel magic, divination, freedom of movement, insect plague, mass cure wounds</spells>
     <description>Source:	Ghosts of Saltmarsh p. 226</description>
     <environment>underdark</environment>
