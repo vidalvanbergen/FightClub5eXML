@@ -1,7 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Abyssal Chicken</name>
+    <sortname>Chicken, Abyssal</sortname>
+    <ancestry>Chicken</ancestry>
     <size>T</size>
     <type>fiend (demon)</type>
     <alignment>Chaotic Evil</alignment>
@@ -19,9 +21,9 @@
     <passive>9</passive>
     <languages>understands Abyssal but can't speak</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning</resist>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>blinded, poisoned</conditionImmune>
     <senses>blindsight 30 ft. (blind beyond this radius)</senses>
     <trait>
@@ -53,6 +55,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 97</description>
   </monster>
   <monster>
     <name>Amrik Vanthampur</name>
+    <sortname>Vanthampur, Amrik</sortname>
     <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
@@ -71,9 +74,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 97</description>
     <passive>12</passive>
     <languages>Common, Infernal</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -101,6 +104,8 @@ Source:	Baldur's Gate: Descent Into Avernus p. 30</description>
   </monster>
   <monster>
     <name>Archduke Zariel of Avernus</name>
+    <sortname>Zariel, Archduke of Avernus</sortname>
+    <ancestry>Zariel</ancestry>
     <size>L</size>
     <type>fiend (devil)</type>
     <alignment>Lawful Evil</alignment>
@@ -118,9 +123,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 30</description>
     <passive>26</passive>
     <languages>all, telepathy 120 ft.</languages>
     <cr>26</cr>
+    <vulnerable/>
     <resist>cold, fire, radiant; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>necrotic, poison</immune>
-    <vulnerable/>
     <conditionImmune>charmed, exhaustion, frightened, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -143,6 +148,13 @@ Source:	Baldur's Gate: Descent Into Avernus p. 30</description>
     <trait>
       <name>Regeneration</name>
       <text>Zariel regains 20 hit points at the start of her turn. If she takes radiant damage, this trait doesn't function at the start of her next turn. Zariel dies only if she starts her turn with 0 hit points and doesn't regenerate.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Zariel's innate spellcasting ability is Charisma (spell save DC 26). She can innately cast the following spells, requiring no material components:
+
+	• At will: alter self (can become Medium when changing her appearance), detect evil and good, fireball, invisibility (self only), wall of fire
+	• 3/Day each: blade barrier, dispel evil and good, finger of death</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -181,7 +193,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 30</description>
       <name>Teleport</name>
       <text>Zariel uses her Teleport action.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), Zariel can take a lair action to cause one of the following effects; she can't use the same effect two rounds in a row:
 
@@ -189,7 +201,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 30</description>
 
 	• Zariel casts her innate fireball spell.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region containing Zariel's lair is warped by her magic, which creates one or more of the following effects:
 
@@ -201,13 +213,6 @@ Source:	Baldur's Gate: Descent Into Avernus p. 30</description>
 
 If Zariel dies, these effects fade over the course of 1d10 days.</text>
     </legendary>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Zariel's innate spellcasting ability is Charisma (spell save DC 26). She can innately cast the following spells, requiring no material components:
-
-	• At will: alter self (can become Medium when changing her appearance), detect evil and good, fireball, invisibility (self only), wall of fire
-	• 3/Day each: blade barrier, dispel evil and good, finger of death</text>
-    </trait>
     <spells>alter self, detect evil and good, fireball, invisibility, wall of fire, blade barrier, dispel evil and good, finger of death</spells>
     <description>Once a mighty angel charged with watching the tides of the Blood War, Zariel succumbed to the corrupting influence of the Nine Hells and fell from grace. Asmodeus admired Zariel's passion for war and offered her rulersbip of Avernus. She accepted his offer and was transformed by Asmodeus into an archdevil.
 
@@ -241,9 +246,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 243</description>
     <passive>10</passive>
     <languages>Common, Draconic</languages>
     <cr>16</cr>
+    <vulnerable/>
     <resist>fire, poison; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune>frightened</conditionImmune>
     <senses>darkvision 60 ft. (can see invisible creatures out to the same range)</senses>
     <trait>
@@ -257,6 +262,12 @@ Source:	Baldur's Gate: Descent Into Avernus p. 243</description>
     <trait>
       <name>Special Equipment</name>
       <text>Arkhan wields Fane-Eater and wears a suit of Obsidian Flint Dragon Plate. The armor gives Arkhan advantage on ability checks and saving throws made to avoid or end the grappled condition on him.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Arkhan's spellcasting ability is Charisma (spell save DC 17). He can cast the following spells, requiring no material components:
+	• 3/Day each: animate dead, branding smite (at 4th level), revivify
+	• 1/Day each: geas, raise dead</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -272,12 +283,6 @@ Source:	Baldur's Gate: Descent Into Avernus p. 243</description>
       <text>Melee or Ranged Weapon Attack: +10 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 8 (1d6 + 5) piercing damage, plus 4 piercing damage and 9 (2d8) cold damage if the javelin was used to make a melee attack.</text>
       <attack>Javelin|+10|1d6+5</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Arkhan's spellcasting ability is Charisma (spell save DC 17). He can cast the following spells, requiring no material components:
-	• 3/Day each: animate dead, branding smite (at 4th level), revivify
-	• 1/Day each: geas, raise dead</text>
-    </trait>
     <spells>animate dead, branding smite, revivify, geas, raise dead</spells>
     <description>Arkhan the Cruel is an evil dragonborn champion of Tiamat. Arkhan believes he can use the Hand of Vecna to unlock the means of freeing Tiamat from her prison in the Nine Hells, but only if the hand doesn't kill him first. The hand is slowly corrupting Arkhan's flesh and decomposing his body on one side.
 
@@ -308,9 +313,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 111</description>
     <passive>14</passive>
     <languages>Common, Infernal, telepathy 120 ft.</languages>
     <cr>25</cr>
+    <vulnerable/>
     <resist>cold; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>fire, poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -329,6 +334,14 @@ Source:	Baldur's Gate: Descent Into Avernus p. 111</description>
     <trait>
       <name>Magic Weapons</name>
       <text>Bel's weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Bel's spellcasting ability is Charisma (spell save DC 23). Bel can innately cast the following spells, requiring no material components:
+
+	• At will: detect magic, fireball
+	• 3/Day each: dispel magic, hold monster, mirror image, mislead, raise dead, teleport, wall of fire
+	• 1/Day each: imprisonment, meteor swarm</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -361,14 +374,6 @@ Source:	Baldur's Gate: Descent Into Avernus p. 111</description>
       <name>Summon Ice Devil (Costs 3 Actions)</name>
       <text>Bel magically summons an ice devil with an ice spear (as described in the ice devil's entry in the Monster Manual). The ice devil appears in an unoccupied space within 60 feet of Bel, acts as Bel's ally, and can summon other devils if it has such power. The ice devil remains until Bel dies or until he dismisses it as an action.</text>
     </legendary>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Bel's spellcasting ability is Charisma (spell save DC 23). Bel can innately cast the following spells, requiring no material components:
-
-	• At will: detect magic, fireball
-	• 3/Day each: dispel magic, hold monster, mirror image, mislead, raise dead, teleport, wall of fire
-	• 1/Day each: imprisonment, meteor swarm</text>
-    </trait>
     <spells>detect magic, fireball, dispel magic, hold monster, mirror image, mislead, raise dead, teleport, wall of fire, imprisonment, meteor swarm</spells>
     <description>From his bastion, Zariel's second-in-command and the former lord of Avernus oversees the forges that furnish weapons and armor for the Blood War. Though Asmodeus has instructed Zariel to accept Bel as her advisor, Bel and Zariel loathe each other and invent distractions to keep them apart.
 
@@ -397,9 +402,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 115</description>
     <passive>13</passive>
     <languages>Infernal, telepathy 120 ft.</languages>
     <cr>11</cr>
+    <vulnerable/>
     <resist>cold; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>fire, poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -456,9 +461,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 90</description>
     <passive>15</passive>
     <languages>Common</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune>frightened</conditionImmune>
     <senses/>
     <trait>
@@ -468,6 +473,15 @@ Source:	Baldur's Gate: Descent Into Avernus p. 90</description>
     <trait>
       <name>Tactical Discipline</name>
       <text>The black gauntlet has advantage on all ability checks and saving throws made during combat.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The black gauntlet is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It has the following cleric spells prepared:
+
+	• Cantrips (at will): guidance, sacred flame, thaumaturgy
+	• 1st level (4 slots): bane, bless, cure wounds, guiding bolt (see "Actions" below)
+	• 2nd level (3 slots): blindness/deafness, hold person, silence
+	• 3rd level (2 slots): sending, spirit guardians</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -485,16 +499,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 90</description>
 If the black gauntlet casts this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</text>
       <attack>Guiding Bolt (1st-Level Spell; Requires a Spell Slot)|+7|4d6</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The black gauntlet is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It has the following cleric spells prepared:
-
-	• Cantrips (at will): guidance, sacred flame, thaumaturgy
-	• 1st level (4 slots): bane, bless, cure wounds, guiding bolt (see "Actions" below)
-	• 2nd level (3 slots): blindness/deafness, hold person, silence
-	• 3rd level (2 slots): sending, spirit guardians</text>
-    </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>guidance, sacred flame, thaumaturgy, bane, bless, cure wounds, guiding bolt, blindness/deafness, hold person, silence, sending, spirit guardians</spells>
     <description>The Dead Three are evil adventurers named Bane, Bhaal, and Myrkul who long ago quested to become gods. They succeeded but grew even more ambitious. They tried to seize the Tablets of Fate from the overgod Ao and use them to rule over Faerûn and its gods. They failed and were slain during the Time of Troubles. Since then, a variety of contingency plans they had in place allowed them to be reborn.
 
@@ -523,6 +528,8 @@ Source:	Baldur's Gate: Descent Into Avernus p. 235</description>
   </monster>
   <monster>
     <name>Bone Whelk</name>
+    <sortname>Whelk, Bone</sortname>
+    <ancestry>Whelk</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -540,9 +547,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 235</description>
     <passive>9</passive>
     <languages/>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -588,9 +595,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 119</description>
     <passive>27</passive>
     <languages>Common, Draconic</languages>
     <cr>21</cr>
+    <vulnerable/>
     <resist/>
     <immune>acid</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
@@ -670,7 +677,7 @@ In a new form, Burney retains its alignment, hit points, Hit Dice, ability to sp
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>Burney beats its wings. Each creature within 15 feet of Burney must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Burney can then fly up to half its flying speed.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects:
 
@@ -678,7 +685,7 @@ In a new form, Burney retains its alignment, hit points, Hit Dice, ability to sp
 
 	• The dragon chooses a 10-foot-square area on the ground that it can see within 120 feet of it. The ground in that area turns into 3-foot-deep mud. Each creature on the ground in that area when the mud appears must succeed on a DC 15 Dexterity saving throw or sink into the mud and become restrained. A creature can take an action to attempt a DC 15 Strength check, freeing itself or another creature within its reach and ending the restrained condition on a success. Moving 1 foot in the mud costs 2 feet of movement. On initiative count 20 on the next round, the mud hardens, and the Strength DC to work free increases to 20.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region containing a legendary copper dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:
 
@@ -736,9 +743,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 129</description>
     <passive>12</passive>
     <languages>understands Auran and Common but speaks only through the use of its Mimicry trait</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -789,9 +796,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 83</description>
     <passive>12</passive>
     <languages>understands Auran and Common but speaks only through the use of its Mimicry trait</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -845,9 +852,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 83</description>
     <passive>10</passive>
     <languages>understands Abyssal but can't speak</languages>
     <cr>14</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>charmed, frightened, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -904,9 +911,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 231</description>
     <passive>14</passive>
     <languages>Common</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -962,6 +969,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 233</description>
   </monster>
   <monster>
     <name>Dryad Spirit</name>
+    <sortname>Spirit, Dryad</sortname>
     <ancestry>Banshee</ancestry>
     <size>M</size>
     <type>undead</type>
@@ -980,9 +988,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 233</description>
     <passive>10</passive>
     <languages>Common, Elvish</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>acid, fire, lightning, thunder; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>cold, necrotic, poison</immune>
-    <vulnerable/>
     <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1015,6 +1023,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 108</description>
   </monster>
   <monster>
     <name>Duke Thalamra Vanthampur</name>
+    <sortname>Vanthampur, Thalamra</sortname>
     <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
@@ -1033,9 +1042,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 108</description>
     <passive>13</passive>
     <languages>Common, Infernal</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft. (see devil's sight below)</senses>
     <trait>
@@ -1094,20 +1103,11 @@ Source:	Baldur's Gate: Descent Into Avernus p. 38</description>
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Elliach is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Elliach has the following wizard spells prepared:
@@ -1119,7 +1119,16 @@ Source:	Baldur's Gate: Descent Into Avernus p. 38</description>
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Elliach collects and sells flasks of demon ichor. Exposure to demon ichor has warped Elliach in the following ways:
 
@@ -1154,24 +1163,15 @@ Source:	Baldur's Gate: Descent Into Avernus p. 131</description>
     <passive>12</passive>
     <languages>any six languages</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>Feonor has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Feonor is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Feonor can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -1191,7 +1191,16 @@ Source:	Baldur's Gate: Descent Into Avernus p. 131</description>
 
 *Feonor casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Feonor is a willowy archmage with milky-white eyes and a parasol made of bones and human flesh. Her rivals know her as a powerful necromancer. They suspect that she fled the Material Plane to escape some horrible fate, but the truth is she was invited to Avernus by Mahadi, the rakshasa master of the Wandering Emporium. During a visit to Feonor's world, Mahadi fell head-over-heels in love with her zombie-like indifference. Not long after arriving in Avernus, Feonor grew bored of Mahadi's attempts to impress her. Without so much as a farewell, she took to the Avernian wastes on one of the rakshasa's infernal war machines and never looked back. Years later, Mahacli still refers to her as "the one the got away."
 
@@ -1206,6 +1215,8 @@ Source:	Baldur's Gate: Descent Into Avernus p. 91</description>
   </monster>
   <monster>
     <name>Fiendish Flesh Golem</name>
+    <sortname>Flesh Golem, Fiendish</sortname>
+    <ancestry>Flesh Golem</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -1223,9 +1234,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 91</description>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>cold, fire</resist>
     <immune>lightning, poison; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine or silvered</immune>
-    <vulnerable/>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1283,9 +1294,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 236</description>
     <passive>11</passive>
     <languages>Common</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune>frightened</conditionImmune>
     <senses/>
     <trait>
@@ -1329,6 +1340,8 @@ Source:	Baldur's Gate: Descent Into Avernus p. 232</description>
   </monster>
   <monster>
     <name>Flying Dagger</name>
+    <sortname>Dagger, Flying</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>T</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -1346,9 +1359,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 232</description>
     <passive>7</passive>
     <languages/>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable/>
     <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -1369,6 +1382,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 232</description>
   </monster>
   <monster>
     <name>Gideon Lightward</name>
+    <sortname>Lightward, Gideon</sortname>
     <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
@@ -1387,9 +1401,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 232</description>
     <passive>14</passive>
     <languages>Common</languages>
     <cr>6</cr>
+    <vulnerable>radiant</vulnerable>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>necrotic, poison</immune>
-    <vulnerable>radiant</vulnerable>
     <conditionImmune>exhaustion, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1419,6 +1433,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 65</description>
   </monster>
   <monster>
     <name>Harkina Hunt</name>
+    <sortname>Hunt, Harkina</sortname>
     <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
@@ -1437,9 +1452,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 65</description>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr>0</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <action>
@@ -1457,6 +1472,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 65</description>
   </monster>
   <monster>
     <name>Hellwasp</name>
+    <ancestry>Hellwasp</ancestry>
     <size>L</size>
     <type>fiend</type>
     <alignment>Lawful Evil</alignment>
@@ -1474,9 +1490,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 65</description>
     <passive>10</passive>
     <languages>Infernal, telepathy 300 ft. (with other hellwasps only)</languages>
     <cr>5</cr>
+    <vulnerable>cold</vulnerable>
     <resist/>
     <immune>fire</immune>
-    <vulnerable>cold</vulnerable>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1514,6 +1530,8 @@ Source:	Baldur's Gate: Descent Into Avernus p. 236</description>
   </monster>
   <monster>
     <name>Hellwasp Grub</name>
+    <sortname>Hellwasp, Grub</sortname>
+    <ancestry>Hellwasp</ancestry>
     <size>S</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -1531,9 +1549,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 236</description>
     <passive>8</passive>
     <languages/>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <action>
@@ -1564,9 +1582,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 236</description>
     <passive>14</passive>
     <languages>Celestial, telepathy 120 ft.</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses/>
     <trait>
@@ -1576,6 +1594,14 @@ Source:	Baldur's Gate: Descent Into Avernus p. 236</description>
     <trait>
       <name>Magic Weapons</name>
       <text>The hollyphant's weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The hollyphant's innate spellcasting ability is Wisdom (spell save DC 15). It can innately cast the following spells, requiring no material components:
+
+	• At will: light
+	• 2/Day each: bless, cure wounds, protection from evil and good
+	• 1/Day each: banishment, heal, raise dead, shapechange (into a golden-furred mammoth with feathered wings and a flying speed of 120 ft.), teleport (with no chance of error)</text>
     </trait>
     <action>
       <name>Tusks</name>
@@ -1597,14 +1623,6 @@ Source:	Baldur's Gate: Descent Into Avernus p. 236</description>
       <text>Creatures in the cone must make a DC 14 Constitution saving throw, taking 22 (4d8 + 4) radiant damage on a failed save, or half as much damage on a successful one. Evil creatures have disadvantage on the saving throw. Good creatures in the cone take no damage.</text>
       <attack>Trumpet of Sparkles||4d8+4</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The hollyphant's innate spellcasting ability is Wisdom (spell save DC 15). It can innately cast the following spells, requiring no material components:
-
-	• At will: light
-	• 2/Day each: bless, cure wounds, protection from evil and good
-	• 1/Day each: banishment, heal, raise dead, shapechange (into a golden-furred mammoth with feathered wings and a flying speed of 120 ft.), teleport (with no chance of error)</text>
-    </trait>
     <spells>light, bless, cure wounds, protection from evil and good, banishment, heal, raise dead, shapechange, teleport</spells>
     <description>Hollyphants are gentle, stalwart creatures native to the Upper Planes. Good-aligned deities and angels use them as messengers and helpers. Hollyphants treasure friendship and honesty.
 
@@ -1615,6 +1633,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 237</description>
   </monster>
   <monster>
     <name>Iron Consul</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Evil</alignment>
@@ -1632,9 +1651,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 237</description>
     <passive>14</passive>
     <languages>Common</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune>frightened</conditionImmune>
     <senses/>
     <trait>
@@ -1698,9 +1717,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 232</description>
     <passive>24</passive>
     <languages>Abyssal, Giant, telepathy 120 ft</languages>
     <cr>25</cr>
+    <vulnerable/>
     <resist>fire, lightning</resist>
     <immune>cold, poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
-    <vulnerable/>
     <conditionImmune>charmed, frightened, poisoned</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -1711,6 +1730,13 @@ Source:	Baldur's Gate: Descent Into Avernus p. 232</description>
     <trait>
       <name>Magic Resistance</name>
       <text>Kostchtchie has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Kostchtchie's innate spellcasting ability is Charisma (spell save DC 20). He can innately cast the following spells, requiring no material components:
+
+	• At will: command, darkness
+	• 1/Day each: dispel evil and good, gate, harm, telekinesis, teleport, wind walk</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -1743,13 +1769,6 @@ Source:	Baldur's Gate: Descent Into Avernus p. 232</description>
       <name>Curse (Costs 2 Actions)</name>
       <text>Kostchtchie curses one creature he can see within 60 feet of him. The cursed creature gains vulnerability to all damage dealt by Kostchtchie until the end of Kostchtchie's next turn.</text>
     </legendary>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Kostchtchie's innate spellcasting ability is Charisma (spell save DC 20). He can innately cast the following spells, requiring no material components:
-
-	• At will: command, darkness
-	• 1/Day each: dispel evil and good, gate, harm, telekinesis, teleport, wind walk</text>
-    </trait>
     <spells>command, darkness, dispel evil and good, gate, harm, telekinesis, teleport, wind walk</spells>
     <description>The demon lord Kostchtchie resembles a squat hill giant with short, bandy legs and a grossly shaped head.
 
@@ -1778,9 +1797,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 105</description>
     <passive>15</passive>
     <languages>Aquan, Common, Draconic</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -1790,6 +1809,19 @@ Source:	Baldur's Gate: Descent Into Avernus p. 105</description>
     <trait>
       <name>Inescapable Destruction</name>
       <text>Necrotic damage dealt by Krull's spells ignores resistance to necrotic damage.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Krull is a 14th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). He has the following cleric spells prepared:
+
+	• Cantrips (at will): chill touch, mending, resistance, sacred flame, spare the dying, thaumaturgy
+	• 1st level (4 slots): cure wounds, detect evil and good, false life, inflict wounds, ray of sickness
+	• 2nd level (3 slots): blindness/deafness, gentle repose, hold person, ray of enfeeblement, spiritual weapon
+	• 3rd level (3 slots): animate dead, magic circle, speak with dead, spirit guardians, vampiric touch
+	• 4th level (3 slots): banishment, blight, death ward, divination, locate creature
+	• 5th level (2 slots): antilife shell, cloudkill, contagion, greater restoration
+	• 6th level (1 slots): create undead, true seeing
+	• 7th level (1 slots): divine word, regenerate</text>
     </trait>
     <action>
       <name>Claws</name>
@@ -1805,20 +1837,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 105</description>
       <name>Shell Defense</name>
       <text>Krull withdraws into his shell. Until he emerges as a bonus action, he has a +4 bonus to AC and has advantage on Strength and Constitution saving throws. While in his shell, Krull is prone, his speed is 0 and can't increase, he has disadvantage on Dexterity saving throws, he can't take reactions, and the only action he can take is to emerge from his shell.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Krull is a 14th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). He has the following cleric spells prepared:
-
-	• Cantrips (at will): chill touch, mending, resistance, sacred flame, spare the dying, thaumaturgy
-	• 1st level (4 slots): cure wounds, detect evil and good, false life, inflict wounds, ray of sickness
-	• 2nd level (3 slots): blindness/deafness, gentle repose, hold person, ray of enfeeblement, spiritual weapon
-	• 3rd level (3 slots): animate dead, magic circle, speak with dead, spirit guardians, vampiric touch
-	• 4th level (3 slots): banishment, blight, death ward, divination, locate creature
-	• 5th level (2 slots): antilife shell, cloudkill, contagion, greater restoration
-	• 6th level (1 slots): create undead, true seeing
-	• 7th level (1 slots): divine word, regenerate</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1, 1</slots>
+    <slots>0,4,3,3,3,2,1,1</slots>
     <spells>chill touch, mending, resistance, sacred flame, spare the dying, thaumaturgy, cure wounds, detect evil and good, false life, inflict wounds, ray of sickness, blindness/deafness, gentle repose, hold person, ray of enfeeblement, spiritual weapon, animate dead, magic circle, speak with dead, spirit guardians, vampiric touch, banishment, blight, death ward, divination, locate creature, antilife shell, cloudkill, contagion, greater restoration, create undead, true seeing, divine word, regenerate</spells>
     <description>Source:	Baldur's Gate: Descent Into Avernus p. 110</description>
     <environment/>
@@ -1844,9 +1863,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 105</description>
     <passive>14</passive>
     <languages>Celestial, telepathy 120 ft.</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses/>
     <trait>
@@ -1856,6 +1875,14 @@ Source:	Baldur's Gate: Descent Into Avernus p. 105</description>
     <trait>
       <name>Magic Weapons</name>
       <text>Lulu's weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Lulu's innate spellcasting ability is Wisdom (spell save DC 15). It can innately cast the following spells, requiring no material components:
+
+	• At will: light
+	• 2/Day each: bless, cure wounds, protection from evil and good
+	• 1/Day each: banishment, heal, raise dead, shapechange (into a golden-furred mammoth with feathered wings and a flying speed of 120 ft.), teleport (with no chance of error)</text>
     </trait>
     <action>
       <name>Tusks</name>
@@ -1877,14 +1904,6 @@ Source:	Baldur's Gate: Descent Into Avernus p. 105</description>
       <text>Creatures in the cone must make a DC 14 Constitution saving throw, taking 22 (4d8 + 4) radiant damage on a failed save, or half as much damage on a successful one. Evil creatures have disadvantage on the saving throw. Good creatures in the cone take no damage.</text>
       <attack>Trumpet of Sparkles||4d8+4</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Lulu's innate spellcasting ability is Wisdom (spell save DC 15). It can innately cast the following spells, requiring no material components:
-
-	• At will: light
-	• 2/Day each: bless, cure wounds, protection from evil and good
-	• 1/Day each: banishment, heal, raise dead, shapechange (into a golden-furred mammoth with feathered wings and a flying speed of 120 ft.), teleport (with no chance of error)</text>
-    </trait>
     <spells>light, bless, cure wounds, protection from evil and good, banishment, heal, raise dead, shapechange, teleport</spells>
     <description>Hollyphant suffering from memory loss
 
@@ -1896,6 +1915,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 5</description>
   </monster>
   <monster>
     <name>Mad Maggie</name>
+    <sortname>Maggie, Mad</sortname>
     <npc>YES</npc>
     <size>M</size>
     <type>fiend</type>
@@ -1914,9 +1934,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 5</description>
     <passive>16</passive>
     <languages>Abyssal, Common, Infernal, Primordial</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>cold, fire; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune>charmed</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -1943,24 +1963,6 @@ A coven consists of three hags so that any arguments between two hags can be set
 
 A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and Maggies can't perform it while blinded. During the ritual, if Maggies take any action other than performing the ritual, they must start over.</text>
     </trait>
-    <action>
-      <name>Claws (Hag Form Only)</name>
-      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.</text>
-      <attack>Claws (Hag Form Only)|+7|2d8+4</attack>
-    </action>
-    <action>
-      <name>Change Shape</name>
-      <text>Maggie magically polymorphs into a Small or Medium female humanoid, or back into her true form. Her statistics are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies.</text>
-    </action>
-    <action>
-      <name>Etherealness</name>
-      <text>Maggie magically enters the Ethereal Plane from the Material Plane, or vice versa. To do so, Maggie must have a heartstone in her possession.</text>
-    </action>
-    <action>
-      <name>Nightmare Haunting (1/Day)</name>
-      <recharge>1/Day</recharge>
-      <text>While on the Ethereal Plane, Maggie magically touches a sleeping humanoid on the Material Plane. A protection from evil and good spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in Maggie's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic.</text>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Maggie's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). She can innately cast the following spells, requiring no material components:
@@ -1980,7 +1982,25 @@ A hag coven can have only one hag eye at a time, and creating a new one requires
 	• 6th level (1 slots): eyebite
 For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + Maggie's Intelligence modifier, and the spell attack bonus is 4 + Maggie's Intelligence modifier.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <action>
+      <name>Claws (Hag Form Only)</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.</text>
+      <attack>Claws (Hag Form Only)|+7|2d8+4</attack>
+    </action>
+    <action>
+      <name>Change Shape</name>
+      <text>Maggie magically polymorphs into a Small or Medium female humanoid, or back into her true form. Her statistics are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies.</text>
+    </action>
+    <action>
+      <name>Etherealness</name>
+      <text>Maggie magically enters the Ethereal Plane from the Material Plane, or vice versa. To do so, Maggie must have a heartstone in her possession.</text>
+    </action>
+    <action>
+      <name>Nightmare Haunting (1/Day)</name>
+      <recharge>1/Day</recharge>
+      <text>While on the Ethereal Plane, Maggie magically touches a sleeping humanoid on the Material Plane. A protection from evil and good spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in Maggie's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic.</text>
+    </action>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>detect magic, magic missile, plane shift, ray of enfeeblement, sleep, identify, ray of sickness, hold person, locate object, bestow curse, counterspell, lightning bolt, phantasmal killer, polymorph, contact other plane, scrying, eyebite</spells>
     <description>Source:	Baldur's Gate: Descent Into Avernus p. 74</description>
     <environment/>
@@ -2005,9 +2025,9 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
     <passive>19</passive>
     <languages>all (can read only), Common, Infernal</languages>
     <cr>14</cr>
+    <vulnerable>piercing from magic weapons wielded by good creatures</vulnerable>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune/>
-    <vulnerable>piercing from magic weapons wielded by good creatures</vulnerable>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2017,6 +2037,14 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
     <trait>
       <name>Magic Weapons</name>
       <text>Mahadi's weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Mahadi's innate spellcasting ability is Charisma (spell save DC 18, +9 to hit with spell attacks). He can innately cast the following spells, requiring no material components:
+
+	• At will: detect thoughts, disguise self, mage hand, minor illusion
+	• 3/Day each: charm person, detect magic, dispel magic, hellish rebuke, invisibility, major image, speak with dead, suggestion
+	• 1/Day each: banishment, demiplane, dominate person, fly, forcecage, geas, plane shift, true seeing</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2034,14 +2062,6 @@ The curse takes effect whenever the target takes a short or long rest, filling t
       <recharge>1/Day</recharge>
       <text>Mahadi summons Ilzabet, an erinyes bound to him by an infernal contract. The erinyes appears in an unoccupied space within 60 feet of him, acts as his ally, and can't summon other devils. The erinyes remains for 10 minutes or until Mahadi dismisses it as an action. If the erinyes dies, Mahadi loses this action option.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Mahadi's innate spellcasting ability is Charisma (spell save DC 18, +9 to hit with spell attacks). He can innately cast the following spells, requiring no material components:
-
-	• At will: detect thoughts, disguise self, mage hand, minor illusion
-	• 3/Day each: charm person, detect magic, dispel magic, hellish rebuke, invisibility, major image, speak with dead, suggestion
-	• 1/Day each: banishment, demiplane, dominate person, fly, forcecage, geas, plane shift, true seeing</text>
-    </trait>
     <spells>detect thoughts, disguise self, mage hand, minor illusion, charm person, detect magic, dispel magic, hellish rebuke, invisibility, major image, speak with dead, suggestion, banishment, demiplane, dominate person, fly, forcecage, geas, plane shift, true seeing</spells>
     <description>Mahadi appears as a wealthy merchant lord. Though extremely powerful, Mahadi doesn't believe in taking unnecessary risks, particularly in the Nine Hells where he can be permanently slain. Mahadi acts as the eyes and ears of Asmodeus in Avernus. As a deal broker and moderator, he's privy to all manner of dealings that might otherwise escape the attention of his patron.
 
@@ -2075,14 +2095,23 @@ Source:	Baldur's Gate: Descent Into Avernus p. 127</description>
     <passive>12</passive>
     <languages>Abyssal, Common, Infernal</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Grave Magic</name>
       <text>When the master of souls cast a spell that deals damage, it can change the spell's damage type to necrotic.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The master of souls is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). It has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch (see "Actions" below), mage hand, message, prestidigitation
+	• 1st level (4 slots): burning hands, detect magic, ray of sickness (see "Actions" below), shield
+	• 2nd level (3 slots): darkness, misty step, scorching ray (see "Actions" below)
+	• 3rd level (2 slots): animate dead, fireball</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2112,16 +2141,7 @@ If the master of souls casts this spell using a spell slot of 2nd level or highe
       <text>Ranged Spell Attack: +6 to hit, range 120 ft., one target per ray (3 rays if a 2nd-level spell slot is used, 4 rays if a 3rd-level spell slot is used). 7 (2d6) fire damage per ray.</text>
       <attack>Scorching Ray (2nd-Level Spell; Requires a Spell Slot)|+6|2d6</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The master of souls is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). It has the following wizard spells prepared:
-
-	• Cantrips (at will): chill touch (see "Actions" below), mage hand, message, prestidigitation
-	• 1st level (4 slots): burning hands, detect magic, ray of sickness (see "Actions" below), shield
-	• 2nd level (3 slots): darkness, misty step, scorching ray (see "Actions" below)
-	• 3rd level (2 slots): animate dead, fireball</text>
-    </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>chill touch, mage hand, message, prestidigitation, burning hands, detect magic, ray of sickness, shield, darkness, misty step, scorching ray, animate dead, fireball</spells>
     <description>The Dead Three are evil adventurers named Bane, Bhaal, and Myrkul who long ago quested to become gods. They succeeded but grew even more ambitious. They tried to seize the Tablets of Fate from the overgod Ao and use them to rule over Faerûn and its gods. They failed and were slain during the Time of Troubles. Since then, a variety of contingency plans they had in place allowed them to be reborn.
 
@@ -2147,6 +2167,8 @@ Source:	Baldur's Gate: Descent Into Avernus p. 234</description>
   </monster>
   <monster>
     <name>Mortlock Vanthampur</name>
+    <sortname>Vanthampur, Mortlock</sortname>
+    <ancestry>Vanthampur</ancestry>
     <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
@@ -2165,9 +2187,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 234</description>
     <passive>11</passive>
     <languages>Common</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -2213,9 +2235,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 26</description>
     <passive>10</passive>
     <languages>Abyssal, Common, Infernal</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <action>
@@ -2252,6 +2274,8 @@ Source:	Baldur's Gate: Descent Into Avernus p. 234</description>
   </monster>
   <monster>
     <name>Necrotic Centipede</name>
+    <sortname>Centipede, Necrotic</sortname>
+    <ancestry>Centipede</ancestry>
     <size>H</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -2269,9 +2293,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 234</description>
     <passive>10</passive>
     <languages/>
     <cr>11</cr>
+    <vulnerable/>
     <resist/>
     <immune>cold, fire</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
     <trait>
@@ -2311,9 +2335,9 @@ If the centipede takes 30 damage or more on a single turn from a creature inside
     <passive>10</passive>
     <languages>Common</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -2366,13 +2390,13 @@ Source:	Baldur's Gate: Descent Into Avernus p. 233</description>
     <wis>17</wis>
     <cha>14</cha>
     <save>Dex +7, Int +4</save>
-    <skill>Acrobatics +10, Deception +5, Insight +6, Intimidation +5, Perception +6, Sleight of hand +10, Stealth +10</skill>
+    <skill>Acrobatics +10, Deception +5, Insight +6, Intimidation +5, Perception +6, Sleight Of Hand +10, Stealth +10</skill>
     <passive>16</passive>
     <languages>Common, Thieves' cant</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -2422,9 +2446,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 170</description>
     <passive>13</passive>
     <languages/>
     <cr>0</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -2462,9 +2486,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 170</description>
     <passive>8</passive>
     <languages>Infernal, telepathy 120 ft.</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>cold; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>fire, poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2530,9 +2554,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 91</description>
     <passive>12</passive>
     <languages>Common (can't speak in boar form)</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist/>
     <immune>bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -2589,14 +2613,19 @@ Source:	Baldur's Gate: Descent Into Avernus p. 87</description>
     <passive>13</passive>
     <languages>Common</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Aura of Murder</name>
       <text>As long as the reaper is not incapacitated, hostile creatures within 5 feet of it gain vulnerability to piercing damage unless they have resistance or immunity to such damage.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The reaper's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components:
+	• 1/Day each: charm person, disguise self, sanctuary</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2611,11 +2640,6 @@ Source:	Baldur's Gate: Descent Into Avernus p. 87</description>
       <name>Shroud Self</name>
       <text>The reaper magically turns invisible until the start of its next turn. This invisibility ends if the reaper makes an attack roll, makes a damage roll, or casts a spell.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The reaper's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components:
-	• 1/Day each: charm person, disguise self, sanctuary</text>
-    </trait>
     <spells>charm person, disguise self, sanctuary</spells>
     <description>The Dead Three are evil adventurers named Bane, Bhaal, and Myrkul who long ago quested to become gods. They succeeded but grew even more ambitious. They tried to seize the Tablets of Fate from the overgod Ao and use them to rule over Faerûn and its gods. They failed and were slain during the Time of Troubles. Since then, a variety of contingency plans they had in place allowed them to be reborn.
 
@@ -2658,13 +2682,13 @@ Source:	Baldur's Gate: Descent Into Avernus p. 233</description>
     <wis>11</wis>
     <cha>15</cha>
     <save>Dex +6, Wis +2</save>
-    <skill>Acrobatics +6, Athletics +4, Deception +4, Perception +2, Sleight of hand +6, Stealth +6</skill>
+    <skill>Acrobatics +6, Athletics +4, Deception +4, Perception +2, Sleight Of Hand +6, Stealth +6</skill>
     <passive>12</passive>
     <languages>Common, Thieves' cant</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -2700,6 +2724,8 @@ Source:	Baldur's Gate: Descent Into Avernus p. 199</description>
   </monster>
   <monster>
     <name>Skeletal Rats</name>
+    <sortname>Rats, Skeletal</sortname>
+    <ancestry>Rats</ancestry>
     <size>M</size>
     <type>swarm of medium beasts</type>
     <alignment>Unaligned</alignment>
@@ -2717,9 +2743,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 199</description>
     <passive>10</passive>
     <languages/>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
     <senses>darkvision 30 ft.</senses>
     <trait>
@@ -2757,11 +2783,19 @@ Source:	Baldur's Gate: Descent Into Avernus p. 199</description>
     <passive>11</passive>
     <languages>Abyssal, Common, Infernal</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The skull lasher is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It has the following wizard spells prepared:
+
+	• Cantrips (at will): mage hand, message, prestidigitation
+	• 1st level (4 slots): detect magic, protection from evil and good, ray of sickness (see "Actions" below), shield
+	• 2nd level (2 slots): darkness, misty step</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>The skull lasher makes two attacks with its flail.</text>
@@ -2778,15 +2812,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 199</description>
 If the skull lasher casts this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</text>
       <attack>Ray of Sickness (1st-Level Spell; Requires a Spell Slot)|+5|2d8</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The skull lasher is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It has the following wizard spells prepared:
-
-	• Cantrips (at will): mage hand, message, prestidigitation
-	• 1st level (4 slots): detect magic, protection from evil and good, ray of sickness (see "Actions" below), shield
-	• 2nd level (2 slots): darkness, misty step</text>
-    </trait>
-    <slots>0, 4, 2</slots>
+    <slots>0,4,2</slots>
     <spells>mage hand, message, prestidigitation, detect magic, protection from evil and good, ray of sickness, shield, darkness, misty step</spells>
     <description>The Dead Three are evil adventurers named Bane, Bhaal, and Myrkul who long ago quested to become gods. They succeeded but grew even more ambitious. They tried to seize the Tablets of Fate from the overgod Ao and use them to rule over Faerûn and its gods. They failed and were slain during the Time of Troubles. Since then, a variety of contingency plans they had in place allowed them to be reborn.
 
@@ -2831,9 +2857,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 234</description>
     <passive>15</passive>
     <languages>understands Common but can't speak</languages>
     <cr>0</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -2897,9 +2923,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 241,
     <passive>10</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>7</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -2915,6 +2941,14 @@ Source:	Baldur's Gate: Descent Into Avernus p. 241,
       <name>Equipment</name>
       <text>Smiler wears +2 leather armor. He carries seven soul coins in a bag and a +1 shortsword</text>
     </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Smiler's innate spellcasting ability is Charisma (spell save DC 15). He can innately cast the following spells, requiring no material components:
+
+	• At will: charm person, Tasha's hideous laughter
+	• 3/Day each: confusion, enthrall, suggestion
+	• 1/Day each: hallucinatory terrain, Otto's irresistible dance</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>Smiler makes two weapon attacks. He can cast a spell in place of one of these attacks.</text>
@@ -2924,14 +2958,6 @@ Source:	Baldur's Gate: Descent Into Avernus p. 241,
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d6 + 6) piercing damage.</text>
       <attack>+1 Shortsword|+9|1d6+6</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Smiler's innate spellcasting ability is Charisma (spell save DC 15). He can innately cast the following spells, requiring no material components:
-
-	• At will: charm person, Tasha's hideous laughter
-	• 3/Day each: confusion, enthrall, suggestion
-	• 1/Day each: hallucinatory terrain, Otto's irresistible dance</text>
-    </trait>
     <spells>charm person, Tasha's hideous laughter, confusion, enthrall, suggestion, hallucinatory terrain, Otto's irresistible dance</spells>
     <description>Smiler has an unnerving smile—hence his name.
 
@@ -2948,6 +2974,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 133</description>
   </monster>
   <monster>
     <name>Sylvira Savikas</name>
+    <sortname>Savikas, Sylvira</sortname>
     <ancestry>Archmage</ancestry>
     <npc>YES</npc>
     <size>M</size>
@@ -2967,24 +2994,15 @@ Source:	Baldur's Gate: Descent Into Avernus p. 133</description>
     <passive>12</passive>
     <languages>any six languages, Infernal</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin), fire</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>Sylvira has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Sylvira is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Sylvira can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -3004,7 +3022,6 @@ Source:	Baldur's Gate: Descent Into Avernus p. 133</description>
 
 *Sylvira casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Sylvira's innate spellcasting ability is Charisma (spell save DC 15). Sylvira can innately cast the following spells, requiring no material components:
@@ -3012,6 +3029,16 @@ Source:	Baldur's Gate: Descent Into Avernus p. 133</description>
 	• At will: thaumaturgy
 	• 1/Day each: darkness, hellish rebuke</text>
     </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop, thaumaturgy, darkness, hellish rebuke</spells>
     <description>Sylvira Savikas is one of Candlekeep's foremost sages, and specializes in knowledge pertaining to the Outer Planes.
 
@@ -3021,6 +3048,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 46</description>
   </monster>
   <monster>
     <name>Thavius Kreeg</name>
+    <sortname>Kreeg, Thavius</sortname>
     <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
@@ -3039,9 +3067,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 46</description>
     <passive>14</passive>
     <languages>Abyssal, Common, Infernal</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -3062,6 +3090,8 @@ Source:	Baldur's Gate: Descent Into Avernus p. 42</description>
   </monster>
   <monster>
     <name>Thurstwell Vanthampur</name>
+    <sortname>Vanthampur, Thurstwell</sortname>
+    <ancestry>Vanthampur</ancestry>
     <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
@@ -3080,20 +3110,15 @@ Source:	Baldur's Gate: Descent Into Avernus p. 42</description>
     <passive>15</passive>
     <languages>Common, Elvish, Infernal</languages>
     <cr>1/8</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Dark Devotion</name>
       <text>Thurstwell has advantage on saving throws against being charmed or frightened.</text>
     </trait>
-    <action>
-      <name>Sacred Flame (Cantrip)</name>
-      <text>Flame-like radiance descends on one creature Thurstwell can see within 60 feet of him. The target must succeed on a DC 13 Dexterity saving throw or take 4 (1d8) radiant damage, gaining no benefit from cover.</text>
-      <attack>Sacred Flame (Cantrip)||1d8</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Thurstwell is a 2nd-level spellcaster. His spellcasting ability is Wisdom (spell save DC 13). He has the following cleric spells prepared:
@@ -3101,6 +3126,11 @@ Source:	Baldur's Gate: Descent Into Avernus p. 42</description>
 	• Cantrips (at will): guidance, sacred flame (see "Actions" below), thaumaturgy
 	• 1st level (3 slots): command, detect evil and good, sanctuary</text>
     </trait>
+    <action>
+      <name>Sacred Flame (Cantrip)</name>
+      <text>Flame-like radiance descends on one creature Thurstwell can see within 60 feet of him. The target must succeed on a DC 13 Dexterity saving throw or take 4 (1d8) radiant damage, gaining no benefit from cover.</text>
+      <attack>Sacred Flame (Cantrip)||1d8</attack>
+    </action>
     <slots>3</slots>
     <spells>guidance, sacred flame, thaumaturgy, command, detect evil and good, sanctuary</spells>
     <description>First son of Duke Thalamra Vanthampur of Baidur's Gate.
@@ -3130,9 +3160,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 34</description>
     <passive>9</passive>
     <languages>Abyssal, Common</languages>
     <cr>11</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3194,24 +3224,15 @@ He has resistance to bludgeoning, piercing, and slashing damage.</text>
     <passive>12</passive>
     <languages>any six languages</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>Traxigor has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Traxigor is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Traxigor can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -3231,7 +3252,16 @@ He has resistance to bludgeoning, piercing, and slashing damage.</text>
 
 *Traxigor casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, plane shift, mind blank, time stop</spells>
     <description>Traxigor was polymorphed into an otter years ago, and decided he preferred the new form to his original one (that of a wizened old man). His otter form was made permanent by a wish spell.
 
@@ -3258,9 +3288,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 50</description>
     <passive>15</passive>
     <languages>understands Common but can't speak</languages>
     <cr>0</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3299,6 +3329,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 241,
   </monster>
   <monster>
     <name>Ulder Ravengard</name>
+    <sortname>Ravengard, Ulder</sortname>
     <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
@@ -3317,9 +3348,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 241,
     <passive>13</passive>
     <languages>Common</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <action>
@@ -3355,6 +3386,7 @@ Source:	Baldur's Gate: Descent Into Avernus p. 70</description>
   </monster>
   <monster>
     <name>Undead Tree</name>
+    <sortname>Tree, Undead</sortname>
     <ancestry>Treant</ancestry>
     <size>H</size>
     <type>undead (plant)</type>
@@ -3373,9 +3405,9 @@ Source:	Baldur's Gate: Descent Into Avernus p. 70</description>
     <passive>13</passive>
     <languages>Common, Druidic, Elvish, Sylvan</languages>
     <cr>9</cr>
+    <vulnerable>fire</vulnerable>
     <resist>bludgeoning, piercing, necrotic</resist>
     <immune/>
-    <vulnerable>fire</vulnerable>
     <conditionImmune/>
     <senses/>
     <trait>
