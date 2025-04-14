@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Ash Zombie (Legacy)</name>
@@ -19,9 +19,9 @@
     <passive>8</passive>
     <languages>understands all languages it spoke in life but can't speak</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -50,6 +50,9 @@ Source:	Lost Mine of Phandelver p. 31</description>
   </monster>
   <monster>
     <name>Evil Mage</name>
+    <sortname>Mage, Evil</sortname>
+    <ancestry>Mage</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Evil</alignment>
@@ -67,16 +70,11 @@ Source:	Lost Mine of Phandelver p. 31</description>
     <passive>11</passive>
     <languages>Common, Draconic, Dwarvish, Elvish</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 3 (1d8 - 1) bludgeoning damage.</text>
-      <attack>Quarterstaff|+1|1d8-1</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The mage is a 4th-level spellcaster that uses Intelligence as its spellcasting ability (spell save DC 13; +5 to hit with spell attacks). The mage knows the following spells from the wizard's spell list:
@@ -85,7 +83,12 @@ Source:	Lost Mine of Phandelver p. 31</description>
 	• 1st level (4 slots): charm person, magic missile
 	• 2nd level (3 slots): hold person, misty step</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 3 (1d8 - 1) bludgeoning damage.</text>
+      <attack>Quarterstaff|+1|1d8-1</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>light, mage hand, shocking grasp, charm person, magic missile, hold person, misty step</spells>
     <description>Evil mages (such as Iarno Albrek and Hamun Kost) hunger for arcane power and dwell in isolated places, where they can perform terrible magical experiments without interference.
 
@@ -95,6 +98,7 @@ Source:	Lost Mine of Phandelver p. 57,
   </monster>
   <monster>
     <name>Iarno "Glasstaff" Albrek</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Evil</alignment>
@@ -109,15 +113,14 @@ Source:	Lost Mine of Phandelver p. 57,
     <cha>11</cha>
     <save>Int +5, Wis +3</save>
     <skill>Arcana +5, History +5</skill>
-    <resist/>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses/>
     <passive>11</passive>
     <languages>Common, Draconic, Dwarvish, Elvish</languages>
     <cr>1</cr>
-    <description>Source:	Lost Mines of Phandelver p. 25</description>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Glasstaff has a staff of defense. The staff has 10 charges and allows him to cast the following spells with no components: mage armor (1 charge) and shield (2 charges)</text>
@@ -136,11 +139,15 @@ Source:	Lost Mine of Phandelver p. 57,
       <attack>Quarterstaff|+1|1d6-1</attack>
       <attack>Quarterstaff (Two-Handed)|+1|1d8-1</attack>
     </action>
+    <slots>0,4,3</slots>
     <spells>light, mage hand, shocking grasp, charm person, magic missile, mage armor, shield, hold person, misty step</spells>
-    <slots>0, 4, 3</slots>
+    <description>Source:	Lost Mines of Phandelver p. 25</description>
+    <environment/>
   </monster>
   <monster>
     <name>Gundren Rockseeker</name>
+    <sortname>Rockseeker, Gundren</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any alignment</alignment>
@@ -158,9 +165,9 @@ Source:	Lost Mine of Phandelver p. 57,
     <passive>10</passive>
     <languages>any one language (usually Common), Dwarvish</languages>
     <cr>0</cr>
+    <vulnerable/>
     <resist>poison</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -194,9 +201,9 @@ Source:	Lost Mine of Phandelver p. 57,
     <passive>12</passive>
     <languages>Common, Infernal</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist>acid, cold, fire, lightning, thunder; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>necrotic, poison</immune>
-    <vulnerable/>
     <conditionImmune>charmed, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -221,6 +228,7 @@ Source:	Lost Mine of Phandelver p. 59</description>
   </monster>
   <monster>
     <name>Nezznar the Black Spider</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Neutral Evil</alignment>
@@ -238,9 +246,9 @@ Source:	Lost Mine of Phandelver p. 59</description>
     <passive>14</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -255,11 +263,6 @@ Source:	Lost Mine of Phandelver p. 59</description>
       <name>Sunlight Sensitivity</name>
       <text>Nezznar has disadvantage on attack rolls when he or his target is in sunlight.</text>
     </trait>
-    <action>
-      <name>Spider Staff</name>
-      <text>Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage plus 3 (1d6) poison damage.</text>
-      <attack>Spider Staff|+1|1d6-1</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Nezznar can innately cast the following spells, requiring no material components:
@@ -275,7 +278,12 @@ Source:	Lost Mine of Phandelver p. 59</description>
 	• 1st level (4 slots): mage armor, magic missile, shield
 	• 2nd level (3 slots): invisibility, suggestion</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Spider Staff</name>
+      <text>Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage plus 3 (1d6) poison damage.</text>
+      <attack>Spider Staff|+1|1d6-1</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>dancing lights, darkness, faerie fire, mage hand, ray of frost, shocking grasp, mage armor, magic missile, shield, invisibility, suggestion</spells>
     <description>Drow (dark elves) are a devious, scheming subterranean race that worships Lolth, the Demon Queen of Spiders.
 
@@ -286,6 +294,8 @@ Source:	Lost Mine of Phandelver p. 59</description>
   </monster>
   <monster>
     <name>Nundro Rockseeker</name>
+    <sortname>Rockseeker, Nundro</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any alignment</alignment>
@@ -303,9 +313,9 @@ Source:	Lost Mine of Phandelver p. 59</description>
     <passive>10</passive>
     <languages>any one language (usually Common), Dwarvish</languages>
     <cr>0</cr>
+    <vulnerable/>
     <resist>poison</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -322,6 +332,8 @@ Source:	Lost Mine of Phandelver p. 59</description>
   </monster>
   <monster>
     <name>Redbrand Ruffian</name>
+    <sortname>Ruffian, Redbrand</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -339,9 +351,9 @@ Source:	Lost Mine of Phandelver p. 59</description>
     <passive>9</passive>
     <languages>Common</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <action>
@@ -360,6 +372,8 @@ Source:	Lost Mine of Phandelver p. 61</description>
   </monster>
   <monster>
     <name>Sildar Hallwinter</name>
+    <sortname>Hallwinter, Sildar</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Good</alignment>
@@ -377,9 +391,9 @@ Source:	Lost Mine of Phandelver p. 61</description>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <action>
@@ -424,9 +438,9 @@ Source:	Lost Mine of Phandelver p. 61</description>
     <passive>17</passive>
     <languages>Common, Draconic</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>blindsight 30 ft., darkvision 120 ft.</senses>
     <trait>

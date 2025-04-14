@@ -1,7 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Expert</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -15,13 +16,13 @@
     <wis>10</wis>
     <cha>14</cha>
     <save>Dex +6</save>
-    <skill>Acrobatics +9, Performance +5, Persuasion +5, Sleight of hand +6, Stealth +9</skill>
+    <skill>Acrobatics +9, Performance +5, Persuasion +5, Sleight Of Hand +6, Stealth +9</skill>
     <passive>10</passive>
     <languages>Common, plus one of your choice</languages>
     <cr/>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -73,9 +74,9 @@
     <passive>10</passive>
     <languages/>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable/>
     <conditionImmune>charmed, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <action>
@@ -91,6 +92,8 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
   </monster>
   <monster>
     <name>Spellcaster (Healer)</name>
+    <ancestry>Healer</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -108,20 +111,15 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <passive>13</passive>
     <languages>Common, plus one of your choice</languages>
     <cr/>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Potent Cantrip</name>
       <text>The spellcaster can add its spellcasting ability modifier to the damage it deals with any cantrip.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands.</text>
-      <attack>Quarterstaff|+3|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting (Healer)</name>
       <text>The spellcaster's spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The spellcaster has following cleric spells prepared:
@@ -132,13 +130,20 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
 	• 3rd level (3 slots): protection from energy, revivify
 	• 4th level (1 slots): death ward</text>
     </trait>
-    <slots>0, 4, 3, 3, 1</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands.</text>
+      <attack>Quarterstaff|+3|1d6</attack>
+    </action>
+    <slots>0,4,3,3,1</slots>
     <spells>guidance, light, resistance, sacred flame, bless, cure wounds, shield of faith, aid, lesser restoration, protection from energy, revivify, death ward</spells>
     <description>Source:	Essentials Kit: Storm Lord's Wrath</description>
     <environment/>
   </monster>
   <monster>
     <name>Spellcaster (Mage)</name>
+    <ancestry>Mage</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -156,20 +161,15 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <passive>12</passive>
     <languages>Common, plus one of your choice</languages>
     <cr/>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
       <name>Potent Cantrip</name>
       <text>The spellcaster can add its spellcasting ability modifier to the damage it deals with any cantrip.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands.</text>
-      <attack>Quarterstaff|+3|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting (Mage)</name>
       <text>The spellcaster's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The spellcaster has following wizard spells prepared:
@@ -180,7 +180,12 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
 	• 3rd level (3 slots): fireball, fly
 	• 4th level (1 slots): wall of fire</text>
     </trait>
-    <slots>0, 4, 3, 3, 1</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands.</text>
+      <attack>Quarterstaff|+3|1d6</attack>
+    </action>
+    <slots>0,4,3,3,1</slots>
     <spells>fire bolt, light, mage hand, minor illusion, burning hands, shield, sleep, flaming sphere, invisibility, fireball, fly, wall of fire</spells>
     <description>Source:	Essentials Kit: Storm Lord's Wrath</description>
     <environment/>
@@ -204,9 +209,9 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <passive>14</passive>
     <languages>Terran</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</resist>
     <immune>poison</immune>
-    <vulnerable/>
     <conditionImmune>exhaustion, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -249,9 +254,9 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <passive>15</passive>
     <languages>understands Infernal but can't speak it</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist/>
     <immune>cold</immune>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -278,6 +283,7 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
   </monster>
   <monster>
     <name>Warrior</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -295,9 +301,9 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <passive>14</passive>
     <languages>Common, plus one of your choice</languages>
     <cr/>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>

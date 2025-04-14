@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Brain in a Jar (Noncore)</name>
@@ -19,9 +19,9 @@
     <passive>10</passive>
     <languages/>
     <cr>6</cr>
+    <vulnerable/>
     <resist/>
     <immune>necrotic, poison, psychic</immune>
-    <vulnerable/>
     <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -32,12 +32,6 @@
       <name>Magic Resistance</name>
       <text>The Brain in a Jar (Noncore) has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Mind Blast (Recharge 5-6)</name>
-      <recharge>D5</recharge>
-      <text>The Brain in a Jar (Noncore) magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 13 (2d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Mind Blast||2d8+4</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
       <text>The Brain in a Jar (Noncore)'s innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no components:
@@ -46,6 +40,12 @@
 	• 3/Day each: charm person, command, hold person
 	• 1/Day each: compulsion, hold monster, sleep (cast at 3rd level), Tasha's hideous laughter</text>
     </trait>
+    <action>
+      <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The Brain in a Jar (Noncore) magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 13 (2d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Mind Blast||2d8+4</attack>
+    </action>
     <spells>detect thoughts, mage hand, zone of truth, charm person, command, hold person, compulsion, hold monster, sleep, Tasha's hideous laughter</spells>
     <description>Source:	Lost Laboratory of Kwalish p. 38,
 		Infernal Machine Rebuild</description>
@@ -53,6 +53,8 @@
   </monster>
   <monster>
     <name>Clockwork Kraken</name>
+    <sortname>Kraken, Clockwork</sortname>
+    <ancestry>Kraken</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -70,9 +72,9 @@
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist>fire; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison, psychic</immune>
-    <vulnerable/>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -97,6 +99,7 @@
   </monster>
   <monster>
     <name>Garret Levistusson</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Chaotic Neutral</alignment>
@@ -114,9 +117,9 @@
     <passive>11</passive>
     <languages>Abyssal, Common, Infernal, Thieves' cant</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -137,11 +140,6 @@
       <recharge>1/Turn</recharge>
       <text>Garret deals an extra 7 (2d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Garret that isn't incapacitated and Garret doesn't have disadvantage on the attack roll.</text>
     </trait>
-    <action>
-      <name>Shortsword</name>
-      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
-      <attack>Shortsword|+4|1d6+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Garret is a 2nd-level spellcaster. His spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). He has the following bard spells prepared:
@@ -149,6 +147,11 @@
 	• Cantrips (at will): blade ward, vicious mockery
 	• 1st level (3 slots): charm person, detect magic, disguise self, identify, Tasha's hideous laughter</text>
     </trait>
+    <action>
+      <name>Shortsword</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
+      <attack>Shortsword|+4|1d6+2</attack>
+    </action>
     <slots>3</slots>
     <spells>blade ward, vicious mockery, charm person, detect magic, disguise self, identify, Tasha's hideous laughter</spells>
     <description>Source:	Lost Laboratory of Kwalish p. 41</description>
@@ -173,9 +176,9 @@
     <passive>14</passive>
     <languages>Common</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -210,6 +213,8 @@ If Gloine sees itself reflected on a polished surface within 30 feet of it and i
   </monster>
   <monster>
     <name>Mary Greymalkin</name>
+    <sortname>Greymalkin, Mary</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Neutral</alignment>
@@ -227,9 +232,9 @@ If Gloine sees itself reflected on a polished surface within 30 feet of it and i
     <passive>12</passive>
     <languages>Abyssal, Celestial, Common, Elvish, Infernal, Sylvan</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses/>
     <trait>
@@ -245,11 +250,6 @@ If Gloine sees itself reflected on a polished surface within 30 feet of it and i
       <name>Fey Ancestry</name>
       <text>Mary has advantage on saving throws against being charmed, and magic can't put her to sleep.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Quarterstaff|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Mary is a 5th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). She regains her expended spell slots when she finishes a short or long rest. She knows the following warlock spells:
@@ -257,6 +257,11 @@ If Gloine sees itself reflected on a polished surface within 30 feet of it and i
 	• Cantrips (at will): chill touch, eldritch blast, mage hand
 	• 3rd level (3 slots): darkness, hex, hypnotic pattern, misty step, phantasmal force, unseen servant</text>
     </trait>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Quarterstaff|+2|1d6</attack>
+    </action>
     <slots>3</slots>
     <spells>chill touch, eldritch blast, mage hand, darkness, hex, hypnotic pattern, misty step, phantasmal force, unseen servant</spells>
     <description>Source:	Lost Laboratory of Kwalish p. 41</description>
@@ -281,9 +286,9 @@ If Gloine sees itself reflected on a polished surface within 30 feet of it and i
     <passive>8</passive>
     <languages/>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
     <senses>blindsight 60 ft.</senses>
     <trait>
