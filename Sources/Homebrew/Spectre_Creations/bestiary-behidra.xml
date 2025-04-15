@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Behidra</name>
@@ -16,14 +16,14 @@
     <cha>9</cha>
     <save>Dex +11, Con +15, Wis +11, Cha +7</save>
     <skill>Intimidation +7, Perception +19, Stealth +11</skill>
-    <resist/>
-    <vulnerable/>
-    <immune>lightning</immune>
-    <conditionImmune>blinded, charmed, deafened, frightened, stunned, unconscious</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>29</passive>
     <languages>Draconic</languages>
     <cr>26</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune>blinded, charmed, deafened, frightened, stunned, unconscious</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Hold Breath</name>
       <text>The behidra can hold its breath for 8 hours.</text>
@@ -107,20 +107,22 @@ Restrained:
       <name>Snapping Frenzy (Costs 3 Actions)</name>
       <text>The behidra moves up to twice its speed, making one bite attack against each creature of its choice that is within 15 feet of it at any point during this movement. It has advantage on each of these attack rolls, but a target can't become grappled by these bite attacks.</text>
     </legendary>
-    <spells/>
-    <slots/>
     <description>The mythical behidra is an amalgam of two monstrous horrors: the behir and the hydra - both abominations in their own right. Like a true hydra, it has multiple heads on long, serpentine necks, but its deep blue, leathery hide is a telltale sign of its behir roots.
 
 Forged In Hate. The ritual used to create this colossal horror was originally devised by Blurtnik Battlesting, a former leader of the Church of Kurtulmak, the kobold deity. Blurtnik sought vengeance for his excommunication, turning to Kuraulyek, the blue-skinned patron deity of urds and rival of Kurtulmak. Hatching a devious plot, Blurtnik allied himself with a nearby conclave of behirs, the mortal enemies of dragonkind. Imbued with divine authority by Kuraulyek and equipped with the blood of a freshly slain hydra, Blurtnik and his followers successfully fused the den of behirs into a single, terrifying entity - the first behidra.
 
 The Cult of The Viper. The successors of Blurtnik and other kobolds spurned or abandoned by their dragon overlords, swearing allegiance to the mighty behirs out of spiteful indignation. These kobolds are known as "vipers" as an allusion to their treachery as well as their new serpentine masters. The behidra is exalted as the pinnacle of power and has become a religious icon for these forsaken kobolds. Leaders of this cult, known as magistrates, are gifted with potent electrical abilities, which they wield as a show of superiority to keep their subordinates in check.
 
-Source:	Spectre Creations, Behidra (u/TheArenaGuy)</description>
+Source:	Spectre Creations,
+		Behidra (u/TheArenaGuy)</description>
     <environment>mountain, underdark</environment>
-  </monster>  <!-- Behidra -->
+  </monster>
+  <!-- Behidra -->
   <!-- Greater Behirs -->
   <monster>
     <name>Behir Lich</name>
+    <sortname>Lich, Behir</sortname>
+    <ancestry>Lich, Behir</ancestry>
     <size>G</size>
     <type>monstrosity</type>
     <alignment>neutral evil</alignment>
@@ -135,13 +137,14 @@ Source:	Spectre Creations, Behidra (u/TheArenaGuy)</description>
     <cha>14</cha>
     <save>Dex +11, Con +11, Int +6, Cha +8</save>
     <skill>Perception +9, Stealth +11</skill>
+    <passive>19</passive>
+    <languages>Common, Draconic</languages>
+    <cr>21</cr>
+    <vulnerable/>
     <resist>necrotic</resist>
     <immune>lightning, poison</immune>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>19</passive>
-    <languages>Common, Draconic</languages>
-    <cr>21</cr>
     <trait>
       <name>Legendary Resistance (3/Day).</name>
       <text>If the behir fails a saving throw, it can choose to succeed instead.</text>
@@ -214,16 +217,19 @@ Restrained:
       <attack>Crush||2d6+8</attack>
     </legendary>
     <spells>bestow curse, danse macabre, chain lightning, power word stun</spells>
-    <slots/>
     <description>Behirs were originally created by storm giants as fierce mounts in their conquests against dragons. All behirs still harbor eternal resentment for dragonkind, and an Elder Behir driven by vainglory may seek a path of undeath in order to endlessly execute their pursuits against their draconic adversaries.
 
 In a necromantic ritual ironically similar to that which creates a dracolich, a group of magically inclined followers can transform a willing Elder Behir into a lich-like being, capturing its spirit upon death and transferring it into a blue sapphire (akin to a lich's phylactery). As the flesh rots away from the corpse of the behir, its spirit is returned to animate its bones, granting it a vile form of immortality.
 
-Source:	Spectre Creations, Greater Behirs (u/TheArenaGuy)</description>
+Source:	Spectre Creations,
+		Greater Behirs (u/TheArenaGuy)</description>
     <environment>mountain, underdark</environment>
-  </monster>  <!-- Behir Lich -->
+  </monster>
+  <!-- Behir Lich -->
   <monster>
     <name>Elder Behir</name>
+    <sortname>Behir, Elder</sortname>
+    <ancestry>Behir</ancestry>
     <size>G</size>
     <type>monstrosity</type>
     <alignment>neutral evil</alignment>
@@ -238,11 +244,14 @@ Source:	Spectre Creations, Greater Behirs (u/TheArenaGuy)</description>
     <cha>14</cha>
     <save>Dex +11, Con +11, Int +6, Cha +8</save>
     <skill>Perception +9, Stealth +11</skill>
-    <immune>lightning</immune>
-    <senses>darkvision 120 ft.</senses>
     <passive>19</passive>
     <languages>Common, Draconic</languages>
     <cr>20</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <text>If the behir fails a saving throw, it can choose to succeed instead.</text>
@@ -323,13 +332,13 @@ Restrained:
       <name>Crush (Costs 2 Actions)</name>
       <text>The behir squeezes the creature it is grappling. The creature takes 15 (2d6 + 8) bludgeoning damage and must succeed on a DC 22 Constitution saving throw or become unable to breathe until the grapple ends.</text>
     </legendary>
-    <spells/>
-    <slots/>
     <description>While the average behir only lives for about 50-60 years in the wild, sometimes an exceptionally powerful and preeminent specimen rises up and gains a following of lesser behirs, willing to protect and serve their Elder Behir leader. A well-guarded, well-nourished behir can live for hundreds of years, growing stronger as it ages and laying claim to an ever-growing and progressively treacherous lair.
 
-Source:	Spectre Creations, Greater Behirs (u/TheArenaGuy)</description>
+Source:	Spectre Creations,
+		Greater Behirs (u/TheArenaGuy)</description>
     <environment>mountain, underdark</environment>
-  </monster>  <!-- Elder Behir -->
+  </monster>
+  <!-- Elder Behir -->
   <monster>
     <name>Elder Behir, Stormsteed</name>
     <size>G</size>
@@ -447,7 +456,8 @@ Restrained:
 
 Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <environment>mountain, underdark</environment>
-  </monster>  <!-- Elder Behir, Stormsteed -->
+  </monster>
+  <!-- Elder Behir, Stormsteed -->
   <!-- Behir Minions -->
   <monster>
     <name>Behir, Stormsteed</name>
@@ -463,12 +473,16 @@ Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <int>7</int>
     <wis>14</wis>
     <cha>12</cha>
+    <save/>
     <skill>Perception +6, Stealth +7</skill>
-    <immune>lightning</immune>
-    <senses>darkvision 90 ft.</senses>
     <passive>16</passive>
     <languages>Draconic</languages>
     <cr>11</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Voltaic Link</name>
       <text>While a friendly creature is mounted on the behir, the behir can understand its rider's languages, the rider gains resistance to lightning damage, and the rider can make any spell it casts that targets only itself also target the behir.</text>
@@ -528,15 +542,16 @@ Restrained:
 	• The creature has disadvantage on Dexterity saving throws.</text>
       <attack>Acid Damage||6d6</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>A stormsteed is a behir that has been specifically groomed from birth as a mount. They are capable of channeling their lightning breath into a constant stream of arcing electricity at their feet, which they cling to and climb along.
 
 Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <environment>mountain, underdark</environment>
-  </monster>  <!-- Behir, Stormsteed -->
+  </monster>
+  <!-- Behir, Stormsteed -->
   <monster>
     <name>Behir Bolter</name>
+    <sortname>Behir, Bolter</sortname>
+    <ancestry>Behir</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>neutral evil</alignment>
@@ -551,11 +566,14 @@ Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <cha>10</cha>
     <save>Dex +5</save>
     <skill>Perception +4, Stealth +5</skill>
-    <immune>lightning</immune>
-    <senses>darkvision 90 ft.</senses>
     <passive>14</passive>
     <languages>Draconic</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Lightning Agility</name>
       <text>The behir can take the Dash or Disengage action on its turn as a bonus action.</text>
@@ -590,15 +608,16 @@ Restrained:
 	• The creature has disadvantage on Dexterity saving throws.</text>
       <attack>Constrict|7|(1d12+4)+(1d12+4)</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>A bolter is an adolescent behir, approximately between the ages of 5 and 15. Esteemed for their lightning-fast reflexes and speed, these young behirs move swiftly and silently through the twisting tunnels of their lair or along high caves in the cliffs they call home.
 
 Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <environment>mountain, underdark</environment>
-  </monster>  <!-- Behir Bolter -->
+  </monster>
+  <!-- Behir Bolter -->
   <monster>
     <name>Behir Bolter, Stormsteed</name>
+    <sortname>Behir, Bolter, Stormsteed</sortname>
+    <ancestry>Behir</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>neutral evil</alignment>
@@ -613,11 +632,14 @@ Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <cha>10</cha>
     <save>Dex +5</save>
     <skill>Perception +4, Stealth +5</skill>
-    <immune>lightning</immune>
-    <senses>darkvision 90 ft.</senses>
     <passive>14</passive>
     <languages>Draconic</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Lightning Agility</name>
       <text>The behir can take the Dash or Disengage action on its turn as a bonus action.</text>
@@ -660,15 +682,16 @@ Restrained:
 	• The creature has disadvantage on Dexterity saving throws.</text>
       <attack>Constrict|7|(1d12+4)+(1d12+4)</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>A bolter is an adolescent behir, approximately between the ages of 5 and 15. Esteemed for their lightning-fast reflexes and speed, these young behirs move swiftly and silently through the twisting tunnels of their lair or along high caves in the cliffs they call home.
 
 Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <environment>mountain, underdark</environment>
-  </monster>  <!-- Behir Bolter, Stormsteed -->
+  </monster>
+  <!-- Behir Bolter, Stormsteed -->
   <monster>
     <name>Guard Snake</name>
+    <sortname>Snake, Guard</sortname>
+    <ancestry>Snake</ancestry>
     <size>M</size>
     <type>monstrosity</type>
     <alignment>lawful evil</alignment>
@@ -681,12 +704,16 @@ Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <int>4</int>
     <wis>9</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +3, Stealth +5</skill>
-    <resist>lightning</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>understands Draconic but can't speak</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist>lightning</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Hold Breath</name>
       <text>The snake can hold its breath for 1 hour.</text>
@@ -697,15 +724,16 @@ Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
       <attack>Bite|5|(1d8+3)</attack>
       <attack>Lightning Damage||1d4</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>A guard snake is a large, electrified serpent created and employed by behirs to explore their lairs and the nearby environs. They seek out potential weaknesses and serve as scouts, remaining ever-vigilant against intruders. Guard snakes are loyal and unquestioningly obey the commands of their behir master and its lieutenants, sometimes even serving kobold vipers as mounts.
 
 Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <environment>Any</environment>
-  </monster>  <!-- Guard Snake -->
+  </monster>
+  <!-- Guard Snake -->
   <monster>
     <name>Kobold Viper</name>
+    <sortname>Viper, Kobold</sortname>
+    <ancestry>Viper</ancestry>
     <size>S</size>
     <type>humanoid (kobold)</type>
     <alignment>lawful evil</alignment>
@@ -720,14 +748,14 @@ Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <cha>8</cha>
     <save/>
     <skill/>
-    <resist>lightning</resist>
-    <vulnerable/>
-    <immune/>
-    <conditionImmune/>
-    <senses>darkvision 60 ft.</senses>
     <passive>8</passive>
     <languages>Common, Draconic</languages>
     <cr>1/4</cr>
+    <vulnerable/>
+    <resist>lightning</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
@@ -748,17 +776,18 @@ Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
       <attack>Sling|4|2d4+2</attack>
       <attack>Lightning Damage||1d4</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>Kobolds are known to deeply revere and serve dragons, but their dragon overlords rarely pay them much heed or show them gratitude. When a kobold is spurned or abandoned, it may seek revenge, defecting to one of the dragons' greatest rivals, a behir. These kobolds are known as "vipers" due to their treachery and spiteful indignation as well as the serpentine nature of their new master.
 
 Behirs greatly value these kobolds, who work tirelessly to further fortify their lairs - labyrinthine, winding tunnel systems with narrow 	passageways and ample opportunity to hide. They lie in wait, ambushing unwelcome intruders.
 
 Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <environment>Any</environment>
-  </monster>  <!-- Kobold Viper -->
+  </monster>
+  <!-- Kobold Viper -->
   <monster>
     <name>Kobold Viper Magistrate</name>
+    <sortname>Viper, Kobold Magistrate</sortname>
+    <ancestry>Viper</ancestry>
     <size>S</size>
     <type>humanoid (kobold)</type>
     <alignment>lawful evil</alignment>
@@ -771,11 +800,16 @@ Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <int>10</int>
     <wis>9</wis>
     <cha>12</cha>
-    <resist>lightning</resist>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>Common, Draconic</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist>lightning</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
@@ -811,8 +845,6 @@ Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
       <text>When one of the kobold's allies deals lightning damage to a creature within 30 ft. of the kobold, it can amplify the damage, arcing its own electrical energy to the target and dealing and additional 4 (1d8) lightning damage to it.</text>
       <attack>Lightning Arc||1d8</attack>
     </reaction>
-    <spells/>
-    <slots/>
     <description>Kobolds are known to deeply revere and serve dragons, but their dragon overlords rarely pay them much heed or show them gratitude. When a kobold is spurned or abandoned, it may seek revenge, defecting to one of the dragons' greatest rivals, a behir. These kobolds are known as "vipers" due to their treachery and spiteful indignation as well as the serpentine nature of their new master.
 
 Behirs greatly value these kobolds, who work tirelessly to further fortify their lairs - labyrinthine, winding tunnel systems with narrow 	passageways and ample opportunity to hide. They lie in wait, ambushing unwelcome intruders.
@@ -821,5 +853,6 @@ Occasionally, one of these kobolds earns a rank of authority, gifted by an Elder
 
 Source:	Spectre Creations - Behir Minions (u/TheArenaGuy)</description>
     <environment>Any</environment>
-  </monster>  <!-- Kobold Viper Magistrate-->
+  </monster>
+  <!-- Kobold Viper Magistrate-->
 </compendium>
