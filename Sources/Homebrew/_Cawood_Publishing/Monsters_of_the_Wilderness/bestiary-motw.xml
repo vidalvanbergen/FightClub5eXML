@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Cerebrax</name>
@@ -14,13 +14,16 @@
     <int>18</int>
     <wis>16</wis>
     <cha>3</cha>
+    <save/>
     <skill>Perception +6</skill>
-    <resist>poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
-    <conditionImmune>prone</conditionImmune>
-    <senses>blindsight 60 ft.</senses>
     <passive>16</passive>
     <languages>all, telepathy 120 ft.</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist>poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The cerebrax has advantage on saving throws against spells and other magical effects.</text>
@@ -57,9 +60,10 @@ Neural Network. Cerebrax can communicate with others of their kind, even through
 
 Source:	Monsters of the Wilderness p. 7 (Homebrew)</description>
     <environment>any</environment>
-  </monster>  <!-- Cerebrax -->
+  </monster>
   <monster>
     <name>Great Eight, Oswald Myrr</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>chaotic good</alignment>
@@ -74,14 +78,14 @@ Source:	Monsters of the Wilderness p. 7 (Homebrew)</description>
     <cha>20</cha>
     <save>Con +9, Wis +5, Int +15</save>
     <skill>Arcana +15, History +15, Investigation +15, Perception +5</skill>
+    <passive>15</passive>
+    <languages>Common, Elvish, Draconic, Giant</languages>
+    <cr>15</cr>
     <vulnerable/>
     <resist/>
     <immune/>
     <conditionImmune/>
     <senses/>
-    <passive>15</passive>
-    <languages>Common, Elvish, Draconic, Giant</languages>
-    <cr>15</cr>
     <trait>
       <name>Master Transmuter</name>
       <text>Oswald can use an action to consume the reserve of transmutation magic stored within his transmuter's stone in a single burst. When he does so, he can choose on of the following effects. His transmuter's stone is destroyed and can't be remade until he finishes a long rest.
@@ -122,15 +126,18 @@ Restore Youth. He touches the transmuter's stone to a willing creature, and that
       <text>Melee Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d12 + 1) bludgeoning damage plus 22 (5d8) force damage.</text>
       <attack>Staff of Myrr|6|1d12+1+5d8</attack>
     </action>
-    <spells>fire bolt, light, mage hand, message, prestidigitation, expeditious retreat, feather fall, longstrider, magic missile, shield, alter self, darkvision, invisibility, misty step, scorching ray, spider climb, counterspell, fireball, gaseous form, haste, meld into stone, water breathing, fabricate, polymorph, stone shape, animate objects, control wind, modify memory, passwall, raise dead, flesh to stone, wind walk, etherealness, reverse gravity, control weather, mind blank, gate</spells>
     <slots>0,4,3,3,3,3,2,2,1,1</slots>
+    <spells>fire bolt, light, mage hand, message, prestidigitation, expeditious retreat, feather fall, longstrider, magic missile, shield, alter self, darkvision, invisibility, misty step, scorching ray, spider climb, counterspell, fireball, gaseous form, haste, meld into stone, water breathing, fabricate, polymorph, stone shape, animate objects, control wind, modify memory, passwall, raise dead, flesh to stone, wind walk, etherealness, reverse gravity, control weather, mind blank, gate</spells>
     <description>Oswald Myrr is a legendary wizard and a new member of the Alliance of the Griffon. Some call him the Wizard of Zogg, after his homeland. Oswald currently lives in a secret woodland manor on the continent of Naern. The people of Zogg and Myrr believe the wizard died 500 years ago. However, he is still alive and on a path of redemption. Long ago he was banished from the Wizard Council for his hazardous experiments. After causing so much turmoil, the ancient mage has joined the Alliance to try to make things right. He usually rides a pegasus as his mount.
 
 Source:	Monsters of the Wilderness p. 147 (Homebrew)</description>
     <environment>any</environment>
-  </monster>  <!-- Oswald Myrr -->
+  </monster>
   <monster>
     <name>Mary Myrr, Night Hag</name>
+    <sortname>Myrr, Mary</sortname>
+    <ancestry>Hag</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>fiend</type>
     <alignment>neutral evil</alignment>
@@ -145,14 +152,14 @@ Source:	Monsters of the Wilderness p. 147 (Homebrew)</description>
     <cha>18</cha>
     <save/>
     <skill>Deception +8, Insight +7, Perception +7, Stealth +6</skill>
+    <passive>17</passive>
+    <languages>Common, Abyssal, Infernal, Primordial</languages>
+    <cr>9</cr>
     <vulnerable/>
     <resist>cold, fire; bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons</resist>
     <immune/>
     <conditionImmune>charmed</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>17</passive>
-    <languages>Common, Abyssal, Infernal, Primordial</languages>
-    <cr>9</cr>
     <trait>
       <name>Magic Resistance</name>
       <text>Mary has advantage on saving throws against spells and other magical effects.</text>
@@ -194,9 +201,12 @@ Lost Love. At the core of her madness is a broken heart. Her husband didn't just
 
 Source:	Monsters of the Wilderness p. 148 (Homebrew)</description>
     <environment>any</environment>
-  </monster>  <!-- Mary Myrr, Night Hag -->
+  </monster>
   <monster>
     <name>Edmund Myrr, Lich King</name>
+    <sortname>Myrr, Edmund</sortname>
+    <ancestry>Lich</ancestry>
+    <npc>YES</npc>
     <size>L</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -211,14 +221,14 @@ Source:	Monsters of the Wilderness p. 148 (Homebrew)</description>
     <cha>20</cha>
     <save>Con +12, Int +15, Wis +11</save>
     <skill>Arcana +15, History +15, Insight +11, Perception +11</skill>
+    <passive>21</passive>
+    <languages>Common, Abyssal, Draconic, Elvish, Giant, Infernal</languages>
+    <cr>24</cr>
     <vulnerable/>
     <resist>cold, lightning, necrotic</resist>
     <immune>poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>truesight 120 ft.</senses>
-    <passive>21</passive>
-    <languages>Common, Abyssal, Draconic, Elvish, Giant, Infernal</languages>
-    <cr>24</cr>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -264,15 +274,15 @@ Source:	Monsters of the Wilderness p. 148 (Homebrew)</description>
       <name>Disrupt Life (Costs 3 Actions)</name>
       <text>Each non-undead creature within 30 feet of Edmund must make a DC 20 Constitution saving throw against this magic, taking 35 (10d6) necrotic damage on a failed save, or half as much damage on a successful one.</text>
     </legendary>
-    <spells>chill touch, fire bolt, mage hand, prestidigitation, ray of frost, detect magic, magic missile, shield, thunderwave, detect thoughts, invisibility, mirror image, animate dead, counterspell, dispel magic, fireball, blight, dimension door, ice storm, cloudkill, contagion, scrying, create undead, disintegrate, globe of invulnerability, finger of death, plane shift, dominate monster, power word stun, power word kill</spells>
     <slots>0,4,3,3,3,3,2,2,1,1</slots>
+    <spells>chill touch, fire bolt, mage hand, prestidigitation, ray of frost, detect magic, magic missile, shield, thunderwave, detect thoughts, invisibility, mirror image, animate dead, counterspell, dispel magic, fireball, blight, dimension door, ice storm, cloudkill, contagion, scrying, create undead, disintegrate, globe of invulnerability, finger of death, plane shift, dominate monster, power word stun, power word kill</spells>
     <description>Edmund Myrr is Oswald's father, a broken and disillusioned wizard who turned to the dark side and became a lich.
 
 Dark Path. Fed up with the restrictions of the Wizard Council, Edmund took drastic action. He met with necromancers from the Void and threw himself off Grim Rock. Then the evil spellcasters helped him return to the world as a Lich King. Over a short period of time, Edmund took his place as one of the seven undead Kings of the Void.
 
 Source:	Monsters of the Wilderness p. 149 (Homebrew)</description>
     <environment>any</environment>
-  </monster>  <!-- Edmund Myrr, Lich King -->
+  </monster>
   <!-- Ocean Region -->
   <monster>
     <name>The Waugan</name>
@@ -290,12 +300,14 @@ Source:	Monsters of the Wilderness p. 149 (Homebrew)</description>
     <cha>5</cha>
     <save>Str +18, Dex +13, Con +16, Wis +10</save>
     <skill>Athletics +18, Perception +10</skill>
-    <immune>cold, fire, lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>charmed, deafened, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
-    <senses>truesight 120 ft.</senses>
     <passive>20</passive>
     <languages>Terran</languages>
     <cr>26</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>cold, fire, lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, deafened, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
+    <senses>truesight 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -358,8 +370,6 @@ Source:	Monsters of the Wilderness p. 149 (Homebrew)</description>
       <name>Tail Attack (Costs 2 Actions)</name>
       <text>Melee Weapon Attack: +18 to hit, reach 20 ft., one target. Hit: 23 (3d8 + 10) bludgeoning damage.</text>
     </legendary>
-    <spells/>
-    <slots/>
     <description>The only creature larger than krakens is the Waugan. This immense titan travels around the entire ocean. At times it can also be found swimming through huge sea caves. It is a solitary creature and has no allies except for an aquarian wizard named Kairos (page 12).
 
 There's Always a Bigger Fish. This massive monster hunts constantly and needs a great deal of nourishment. It feeds on whales, killer whales, dolphins, seals, sea lions, and pretty much anything it wants.
@@ -370,9 +380,10 @@ Secluded Sea Cave. Legends say that the Waugan inhabits a mammoth sea cave. The 
 
 Source:	Monsters of the Wilderness p. 10 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Titan, The Waugan -->
+  </monster>
   <monster>
     <name>Great Eight, Kairos</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (aquarian)</type>
     <alignment>neutral evil</alignment>
@@ -387,10 +398,14 @@ Source:	Monsters of the Wilderness p. 10 (Homebrew)</description>
     <cha>18</cha>
     <save>Con +7, Int +11</save>
     <skill>Arcana +11, History +11, Investigation +11, Perception +7</skill>
-    <senses>darkvision 90 ft.</senses>
     <passive>17</passive>
     <languages>Aquan, Common, Sahuagin</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>Kairos can breathe air and water.</text>
@@ -427,8 +442,8 @@ Source:	Monsters of the Wilderness p. 10 (Homebrew)</description>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage.</text>
       <attack>Quarterstaff|5|1d8+2</attack>
     </action>
-    <spells>fire bolt, light, mage hand, message, prestidigitation, detect magic, mage armor, magic missile, shield, darkvision, detect thoughts, scorching ray, see invisibility, dispel magic, lightning bolt, water breathing, control water, dimension door, greater invisibility, cone of cold, conjure elemental</spells>
     <slots>0,4,3,3,3,2</slots>
+    <spells>fire bolt, light, mage hand, message, prestidigitation, detect magic, mage armor, magic missile, shield, darkvision, detect thoughts, scorching ray, see invisibility, dispel magic, lightning bolt, water breathing, control water, dimension door, greater invisibility, cone of cold, conjure elemental</spells>
     <description>Kairos is a member of the Wizard Council who exiled Oswald Myrr. He is also a master of the School of Evocation. This aquarian has big ambitions and is constantly scheming from his lair in a sunken ship. A rival of King Nemos (page 22), he is well-connected in the merfolk community.
 
 Thought Bubble. This highly intelligent aquarian can be his own worst enemy. His mind never seems to rest and he has got lost in his thoughts on more than a few occasions.
@@ -437,9 +452,10 @@ Scheming Seaman. Kairos is seeking to overthrow King Nemos with the help of sahu
 
 Source:	Monsters of the Wilderness p. 12 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Mountain: The Great Eight, Kairos -->
+  </monster>
   <monster>
     <name>Aquarian</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (aquarian)</type>
     <alignment>lawful evil</alignment>
@@ -452,11 +468,16 @@ Source:	Monsters of the Wilderness p. 12 (Homebrew)</description>
     <int>10</int>
     <wis>12</wis>
     <cha>10</cha>
+    <save/>
     <skill>Perception +3, Stealth +4</skill>
-    <senses>darkvision 90 ft.</senses>
     <passive>13</passive>
     <languages>Aquan, Common, Sahuagin</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The aquarian can breathe air and water.</text>
@@ -482,8 +503,6 @@ Source:	Monsters of the Wilderness p. 12 (Homebrew)</description>
       <name>Net</name>
       <text>Ranged Weapon Attack: +6 to hit, range 5/15 ft. one Large or smaller creature. Hit: The target is restrained. A creature can use its action to make a DC 11 Strength check to free itself or another creature in a net, ending the effect on a success. Dealing 5 slashing damage to the net (AC 11) frees the target without harming it and destroys the net.</text>
     </action>
-    <spells/>
-    <slots/>
     <description>Living under the sea are several unique races, and one of the least known are the aquarians. Some folks have heard about a famous gangster known as the Codfather. Most don't realize that he is an aquarian. This race of secretive fish people lives far from most other humanoid communities.
 
 Fish Folk. The aquarians are ruled by a nasty queen named Atlantia (page 14). A few of these creatures live on land, the infamous Codfather being the most well-known of them.
@@ -494,9 +513,10 @@ Uneasy Alliance. The sahuagin used to be enemies of the aquarians but a recent t
 
 Source:	Monsters of the Wilderness p. 13 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Aquarian -->
+  </monster>
   <monster>
     <name>Atlantia the Aquarian Queen</name>
+    <npc>YES</npc>
     <size>L</size>
     <type>humanoid (aquarian)</type>
     <alignment>lawful evil</alignment>
@@ -509,11 +529,16 @@ Source:	Monsters of the Wilderness p. 13 (Homebrew)</description>
     <int>17</int>
     <wis>16</wis>
     <cha>19</cha>
+    <save/>
     <skill>History +6, Intimidation +7, Perception +6</skill>
-    <senses>darkvision 90 ft.</senses>
     <passive>16</passive>
     <languages>Aquan, Common, Sahuagin</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>Atlantia can breathe air and water.</text>
@@ -544,7 +569,6 @@ Source:	Monsters of the Wilderness p. 13 (Homebrew)</description>
       <text>A 60-foot-radius cloud of ink extends all around Atlantia if she is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, Atlantia can use the Dash action as a bonus action.</text>
     </action>
     <spells>blade ward, message, minor illusion, comprehend languages, darkness, detect magic, blur, dimension door, suggestion</spells>
-    <slots/>
     <description>The cold, heartless leader of the aquarians is Atlantia. She rules with an iron fist and crushes any opposition by force. Her four tentacles are always busy grabbing objects and touching her surroundings. Coral statues of her likeness are found throughout Nautilus, the aquarians' biggest settlement.
 
 Fish Queen. The queen lives in a massive sea cave at the center of Nautilus. As she is one of the largest aquarians, her home is very spacious. She loves shiny, precious objects and hides them away in a large treasure vault.
@@ -555,9 +579,11 @@ Elite Entourage. A group of elite aquarian soldiers protects the queen. She also
 
 Source:	Monsters of the Wilderness p. 14 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Atlantia the Aquarian Queen -->
+  </monster>
   <monster>
     <name>Coroctopus</name>
+    <sortname>Octopus, Coroctopus</sortname>
+    <ancestry>Octopus</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>unaligned</alignment>
@@ -570,12 +596,16 @@ Source:	Monsters of the Wilderness p. 14 (Homebrew)</description>
     <int>7</int>
     <wis>14</wis>
     <cha>3</cha>
+    <save/>
     <skill>Perception +4, Stealth +4</skill>
-    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
-    <senses>blindsight 60 ft.</senses>
     <passive>14</passive>
     <languages>-</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Hold Breath</name>
       <text>While out of water, the coroctopus can hold its breath for 2 hours.</text>
@@ -607,9 +637,11 @@ Fishermen's Friend. Local fishermen can actually benefit from the presence of th
 
 Source:	Monsters of the Wilderness p. 15 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Coroctopus -->
+  </monster>
   <monster>
     <name>Coral Eel</name>
+    <sortname>Eel, Coral</sortname>
+    <ancestry>Eel</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>chaotic evil</alignment>
@@ -622,11 +654,16 @@ Source:	Monsters of the Wilderness p. 15 (Homebrew)</description>
     <int>7</int>
     <wis>12</wis>
     <cha>10</cha>
+    <save/>
     <skill>Perception +3</skill>
-    <senses>blindsight 60 ft.</senses>
     <passive>13</passive>
     <languages>-</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Illumination</name>
       <text>The coral eel sheds bright white light in a 20-foot radius.</text>
@@ -654,9 +691,10 @@ Gregarious Gangs. Coral eels often travel in groups of about ten. Although they 
 
 Source:	Monsters of the Wilderness p. 16 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Coral Eel -->
+  </monster>
   <monster>
-    <name>The Deep One</name>
+    <name>Deep One, The</name>
+    <sortname>Deep One, The</sortname>
     <size>H</size>
     <type>aberration</type>
     <alignment>neutral evil</alignment>
@@ -671,12 +709,14 @@ Source:	Monsters of the Wilderness p. 16 (Homebrew)</description>
     <cha>21</cha>
     <save>Con +10, Wis +12, Cha +10</save>
     <skill>Deception +10, Insight +12, Perception +12</skill>
-    <resist>bludgeoning, piercing, and slashing from nonmagical attacks</resist>
-    <conditionImmune>charmed, exhaustion, poisoned, prone</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
     <passive>22</passive>
     <languages>all, telepathy 120 ft.</languages>
     <cr>14</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <immune/>
+    <conditionImmune>charmed, exhaustion, poisoned, prone</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The Deep One's innate spellcasting ability is Wisdom (spell save DC 20, +12 to spell attacks). It can innately cast the following spells, requiring no material components:
@@ -703,7 +743,6 @@ Source:	Monsters of the Wilderness p. 16 (Homebrew)</description>
       <text>The coral eel breathes out a magical bubble towards a Medium or smaller creature within 60 ft. The target must make a successful DC 15 Dexterity save or become restrained inside the bubble (escape DC 14). Inside the bubble, the target can breathe air. The bubble can be attacked (AC 8) from the outside. Any successful hit will destroy it and free the restrained creature.</text>
     </action>
     <spells>command, detect magic, detect thoughts, suggestion, zone of truth, conjure elemental, control water, dream, scrying</spells>
-    <slots/>
     <description>Using magic to breathe underwater, adventurers swim through a dense kelp forest. Suddenly one of the leaders sees two enormous eyes appear from behind the green plants. A strange sensation travels quickly through the adventurer's body.
 
 Eye-Opening. The Deep One crossed through an underwater Riftgate into the ordinary world. It has powerful magic and can affect other creatures miles away. This strange aberration schemes to take control by enthralling those in power.
@@ -712,9 +751,11 @@ Deep Magic. Even though it swims far from royal palaces and other seats of power
 
 Source:	Monsters of the Wilderness p. 17 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: The Deep One -->
+  </monster>
   <monster>
     <name>Demon Crab</name>
+    <sortname>Crab, Demon</sortname>
+    <ancestry>Crab</ancestry>
     <size>L</size>
     <type>fiend (demon)</type>
     <alignment>chaotic evil</alignment>
@@ -727,13 +768,16 @@ Source:	Monsters of the Wilderness p. 17 (Homebrew)</description>
     <int>6</int>
     <wis>10</wis>
     <cha>4</cha>
+    <save/>
+    <skill/>
+    <passive>10</passive>
+    <languages>understands Abyssal but can't speak</languages>
+    <cr>5</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>10</passive>
-    <languages>understands Abyssal but can't speak</languages>
-    <cr>5</cr>
     <trait>
       <name>Amphibious</name>
       <text>The demon can breathe air and water.</text>
@@ -768,9 +812,9 @@ Evil Eye. The fiend's large eye can shoot out a bizarre green ray. This magical 
 
 Source:	Monsters of the Wilderness p. 18 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Demon Crab -->
+  </monster>
   <monster>
-    <name>The Fathomer</name>
+    <name>Fathomer, The</name>
     <size>M</size>
     <type>aberration</type>
     <alignment>neutral evil</alignment>
@@ -785,10 +829,14 @@ Source:	Monsters of the Wilderness p. 18 (Homebrew)</description>
     <cha>24</cha>
     <save>Con +8, Wis +8, Cha +10</save>
     <skill>Deception +10, Insight +8, Perception +8, Stealth +7, Survival +8</skill>
-    <senses/>
     <passive>18</passive>
     <languages>Aquan, Common, telepathy 120 ft.</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Amphibious</name>
       <text>The Fathomer can breathe air and water.</text>
@@ -821,8 +869,8 @@ Quickened Spell. When he casts a spell that has a casting time of 1 action, he c
       <text>Melee Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d4 + 7) piercing damage.</text>
       <attack>+3 Dagger|7|2d8+4</attack>
     </action>
-    <spells>blade ward, chill touch, light, message, minor illusion, charm person, mage armor, magic missile, thunderwave, darkvision, mirror image, scorching ray, suggestion, counterspell, fear, haste, banishment, blight, confusion, teleportation circle</spells>
     <slots>0,4,3,3,3,1</slots>
+    <spells>blade ward, chill touch, light, message, minor illusion, charm person, mage armor, magic missile, thunderwave, darkvision, mirror image, scorching ray, suggestion, counterspell, fear, haste, banishment, blight, confusion, teleportation circle</spells>
     <description>The Fathomer is a sorcerer who was transformed into a fish man. A ray of mutilation from a demon crab changed his life. His entire body was permanently altered during the attack.
 
 Hateful Homeland. The sorcerer's friends and family were horrified and they turned against him. Labeled a mutant, he was banished from his hometown. The broken, miserable creature fled to the sea.
@@ -833,9 +881,11 @@ Sea of Love. Recently the Fathomer has fallen in love with a mermaid. Although s
 
 Source:	Monsters of the Wilderness p. 19 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: The Fathomer -->
+  </monster>
   <monster>
     <name>Ghost Whale</name>
+    <sortname>Whale, Ghost</sortname>
+    <ancestry>Whale</ancestry>
     <size>H</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -848,13 +898,16 @@ Source:	Monsters of the Wilderness p. 19 (Homebrew)</description>
     <int>7</int>
     <wis>17</wis>
     <cha>3</cha>
+    <save/>
     <skill>Perception +7</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>blindsight 120 ft.</senses>
     <passive>17</passive>
     <languages>-</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>blindsight 120 ft.</senses>
     <trait>
       <name>Echolocation</name>
       <text>The ghost whale can't use its blindsight while deafened.</text>
@@ -891,9 +944,11 @@ Undead Nature. The ghost whale doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 20 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Ghost Whale -->
+  </monster>
   <monster>
     <name>Giant Shark Zombie</name>
+    <sortname>Shark, Giant Zombie</sortname>
+    <ancestry>Giant Animal, Shark, Zombie</ancestry>
     <size>H</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -906,12 +961,16 @@ Source:	Monsters of the Wilderness p. 20 (Homebrew)</description>
     <int>1</int>
     <wis>9</wis>
     <cha>3</cha>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>blindsight 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>-</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Blood Frenzy</name>
       <text>The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.</text>
@@ -949,9 +1008,10 @@ Undead Nature. A giant shark zombie doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 21 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Giant Shark Zombie -->
+  </monster>
   <monster>
     <name>King Nemos</name>
+    <npc>YES</npc>
     <size>L</size>
     <type>humanoid (merfolk)</type>
     <alignment>lawful good</alignment>
@@ -964,11 +1024,16 @@ Source:	Monsters of the Wilderness p. 21 (Homebrew)</description>
     <int>18</int>
     <wis>18</wis>
     <cha>22</cha>
+    <save/>
     <skill>Athletics +9, Insight +9, Intimidation +10, Perception +9</skill>
-    <senses/>
     <passive>19</passive>
     <languages>Aquan, Common, Primordial</languages>
     <cr>11</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Amphibious</name>
       <text>Nemos can breathe air and water.</text>
@@ -1000,8 +1065,6 @@ Source:	Monsters of the Wilderness p. 21 (Homebrew)</description>
       <recharge>1/Day</recharge>
       <text>Nemos can summon 1d8 reef sharks. The sharks will arrive in 1d4 rounds and obey his commands.</text>
     </action>
-    <spells/>
-    <slots/>
     <description>Far beneath the waves is a different world. A stunning, white city carved out of coral sits on the sea floor. At the center of this remote settlement is a magnificent castle. Sitting on its throne is the ruler of the merfolk, King Nemos.
 
 Regal Royal. The king is a brave, honest merman and loved by his people. He is also a fierce, gruff warrior and few ever challenge his power. King Nemos doesn't deal with change well and wants the merfolk community to follow the ancient traditions.
@@ -1012,9 +1075,10 @@ Undersea Palace. His large family, including the many princesses, all live in Co
 
 Source:	Monsters of the Wilderness p. 22 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: King Nemos -->
+  </monster>
   <monster>
     <name>Merfolk Knight</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (merfolk)</type>
     <alignment>lawful good</alignment>
@@ -1027,11 +1091,16 @@ Source:	Monsters of the Wilderness p. 22 (Homebrew)</description>
     <int>12</int>
     <wis>16</wis>
     <cha>14</cha>
+    <save/>
     <skill>Athletics +7, Perception +6, Survival +6</skill>
-    <senses/>
     <passive>16</passive>
     <languages>Aquan, Common</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Amphibious</name>
       <text>The merfolk can breathe air and water.</text>
@@ -1058,8 +1127,6 @@ Source:	Monsters of the Wilderness p. 22 (Homebrew)</description>
       <name>Parry</name>
       <text>The merfolk adds 2 to its AC against one melee attack that would hit it. To do so, the merfolk must see the attacker and be wielding a melee weapon.</text>
     </reaction>
-    <spells/>
-    <slots/>
     <description>The elite troops of the merfolk are the knights. These highly trained warriors can handle almost any opponent. Only the largest, toughest merman are chosen to be a part of this brotherhood.
 
 Serious Soldiers. King Nemos always has merfolk knights guarding him. A sizeable garrison of knights is stationed at the king's home, known as Coral Castle.
@@ -1070,9 +1137,10 @@ Underwater Cavalry. Merfolk knights are often mounted on dolphins or giant sea h
 
 Source:	Monsters of the Wilderness p. 23 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Merfolk Knight -->
+  </monster>
   <monster>
     <name>Mermaid Princess</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (merfolk, shapechanger)</type>
     <alignment>chaotic good</alignment>
@@ -1085,11 +1153,16 @@ Source:	Monsters of the Wilderness p. 23 (Homebrew)</description>
     <int>12</int>
     <wis>17</wis>
     <cha>20</cha>
+    <save/>
     <skill>Athletics +3, Perception +5, Performance +7</skill>
-    <senses/>
     <passive>15</passive>
     <languages>Aquan, Common</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Amphibious</name>
       <text>The mermaid can breathe air and water.</text>
@@ -1116,8 +1189,6 @@ Source:	Monsters of the Wilderness p. 23 (Homebrew)</description>
       <recharge>3/Day</recharge>
       <text>The mermaid sings a beautiful song. Any creature within 60 feet of her must succeed on a DC 15 Wisdom saving throw or is charmed by the mermaid for 1 minute. If the mermaid or any of her companions harms the creature, the effect on it ends immediately.</text>
     </action>
-    <spells/>
-    <slots/>
     <description>Swimming past a coral reef is a gorgeous creature. She has the torso of a human female and a long tail like a fish. This is the mermaid princess, one of the many daughters of King Nemos. They are part of the merfolk community under the sea.
 
 Precocious Princess. Mermaids are usually quite self-absorbed and egocentric. However, they are also usually very curious and are especially interested in those creatures that live on land.
@@ -1128,9 +1199,11 @@ Loyal Companions. Mermaids often have sea creatures as close companions. Dolphin
 
 Source:	Monsters of the Wilderness p. 24 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Mermaid Princess -->
+  </monster>
   <monster>
     <name>Sea Serpent</name>
+    <sortname>Serpent, Sea</sortname>
+    <ancestry>Serpent</ancestry>
     <size>G</size>
     <type>monstrosity (titan)</type>
     <alignment>chaotic evil</alignment>
@@ -1143,13 +1216,16 @@ Source:	Monsters of the Wilderness p. 24 (Homebrew)</description>
     <int>12</int>
     <wis>17</wis>
     <cha>5</cha>
+    <save/>
     <skill>Perception +8</skill>
-    <immune>bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>charmed, frightened, prone</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>18</passive>
     <languages>-</languages>
     <cr>15</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, frightened, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Siege Monster</name>
       <text>The sea serpent does double damage to objects and structures.</text>
@@ -1187,7 +1263,7 @@ Salty Mouth. A sea serpent's breath is so awful it will harm any nearby creature
 
 Source:	Monsters of the Wilderness p. 25 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Sea Serpent -->
+  </monster>
   <monster>
     <name>Selkie</name>
     <size>M</size>
@@ -1202,12 +1278,16 @@ Source:	Monsters of the Wilderness p. 25 (Homebrew)</description>
     <int>11</int>
     <wis>15</wis>
     <cha>16</cha>
+    <save/>
     <skill>Deception +5, Perception +4, Persuasion +5</skill>
-    <vulnerable>fire</vulnerable>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Aquan, Common</languages>
     <cr>3</cr>
+    <vulnerable>fire</vulnerable>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Hold Breath</name>
       <text>The selkie can hold its breath for 30 minutes.</text>
@@ -1242,7 +1322,6 @@ Source:	Monsters of the Wilderness p. 25 (Homebrew)</description>
       <attack>Unarmed Strike|4|1d6+2</attack>
     </action>
     <spells>detect magic, charm person, cure wounds</spells>
-    <slots/>
     <description>Sailors swear that some seals can turn into humans. This is close to the truth, selkies are actually fey creatures that can shapechange into seals.
 
 Rocky Romance. Selkies have been known to fall in love with humans who find their seal skin. If someone possesses their skin, the selkie's magic doesn't work on them. The fey aren't the best judge of character and find it hard to escape unhealthy relationships. Children born from marriages with selkies have webbed toes and fingers.
@@ -1251,9 +1330,11 @@ Seven Year Hitch. Every seven years there is a chance a selkie can't return to i
 
 Source:	Monsters of the Wilderness p. 26 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Selkie -->
+  </monster>
   <monster>
     <name>Undead Pirate</name>
+    <sortname>Pirate, Undead</sortname>
+    <ancestry>Pirate</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>neutral evil</alignment>
@@ -1266,14 +1347,16 @@ Source:	Monsters of the Wilderness p. 26 (Homebrew)</description>
     <int>7</int>
     <wis>8</wis>
     <cha>12</cha>
+    <save/>
     <skill>Acrobatics +5, Athletics +4, Deception +3, Intimidation +3</skill>
-    <vulnerable>bludgeoning</vulnerable>
-    <immune>poison</immune>
-    <conditionImmune>exhaustion, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>9</passive>
     <languages>the languages it knew in life</languages>
     <cr>1</cr>
+    <vulnerable>bludgeoning</vulnerable>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Lightfooted</name>
       <text>The undead pirate can take the Dash or Disengage action as a bonus action on each of its turns.</text>
@@ -1324,9 +1407,11 @@ Undead Nature. An undead pirate doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 27 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Undead Pirate -->
+  </monster>
   <monster>
     <name>Undead Pirate Captain</name>
+    <sortname>Pirate, Undead Captain</sortname>
+    <ancestry>Pirate</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>neutral evil</alignment>
@@ -1339,14 +1424,16 @@ Source:	Monsters of the Wilderness p. 27 (Homebrew)</description>
     <int>18</int>
     <wis>19</wis>
     <cha>17</cha>
+    <save/>
     <skill>Athletics +7, Deception +6, Intimidation +6, Perception +7, Persuasion +6, Stealth +7</skill>
-    <vulnerable>bludgeoning</vulnerable>
-    <immune>poison</immune>
-    <conditionImmune>exhaustion, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>17</passive>
     <languages>the languages it knew in life</languages>
     <cr>5</cr>
+    <vulnerable>bludgeoning</vulnerable>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Lightfooted</name>
       <text>The undead pirate can take the Dash or Disengage action as a bonus action on each of its turns.</text>
@@ -1399,9 +1486,11 @@ Undead Nature. An undead pirate doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 28 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Undead Pirate Captain -->
+  </monster>
   <monster>
     <name>Wave Rider</name>
+    <sortname>Rider, Wave</sortname>
+    <ancestry>Rider</ancestry>
     <size>M</size>
     <type>fey</type>
     <alignment>neutral evil</alignment>
@@ -1414,11 +1503,16 @@ Source:	Monsters of the Wilderness p. 28 (Homebrew)</description>
     <int>11</int>
     <wis>14</wis>
     <cha>12</cha>
+    <save/>
     <skill>Perception +4, Stealth +5, Survival +4</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Aquan, Common</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The wave rider can breathe air and water.</text>
@@ -1457,7 +1551,6 @@ Source:	Monsters of the Wilderness p. 28 (Homebrew)</description>
       <text>The waver rider adds 2 to its AC against one melee or ranged attack that would hit it by creating a water shield.</text>
     </reaction>
     <spells>detect magic, water walk, conjure elemental, control water</spells>
-    <slots/>
     <description>A ship's crew watches the waves crash against the side of their vessel. The sea is rough and the hatches are battened down. All of a sudden one of the men sees something in a white swell. A humanoid creature is surfing on the waves.
 
 Feyland Foreigner. Wave riders crossed over from Feyland through underwater Riftgates. They have found the ordinary world is unprepared for creatures such as themselves and are beginning to take advantage.
@@ -1466,9 +1559,11 @@ Peculiar Pirate. These fey engage in piracy and also make life difficult for ord
 
 Source:	Monsters of the Wilderness p. 29 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Wave Rider -->
+  </monster>
   <monster>
     <name>Wicked Tuna</name>
+    <sortname>Tuna, Wicked</sortname>
+    <ancestry>Tuna</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>chaotic evil</alignment>
@@ -1481,11 +1576,16 @@ Source:	Monsters of the Wilderness p. 29 (Homebrew)</description>
     <int>3</int>
     <wis>10</wis>
     <cha>3</cha>
+    <save/>
     <skill>Perception +2</skill>
-    <senses/>
     <passive>12</passive>
     <languages>-</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Aggressive</name>
       <text>As a bonus action, the wicked tuna can move up to its speed toward a hostile creature that it can see.</text>
@@ -1515,10 +1615,12 @@ Wild Waves. Wicked tuna cause mayhem with fishing fleets. They sink boats, rip n
 
 Source:	Monsters of the Wilderness p. 30 (Homebrew)</description>
     <environment>coastal, underwater</environment>
-  </monster>  <!-- Ocean: Wicked Tuna -->
+  </monster>
   <!-- Arctic Region -->
   <monster>
-    <name>The Ragnar</name>
+    <name>Ragnar, The</name>
+    <sortname>Ragnar, The</sortname>
+    <ancestry>Ragnar</ancestry>
     <size>G</size>
     <type>monstrosity (titan)</type>
     <alignment>chaotic evil</alignment>
@@ -1533,12 +1635,14 @@ Source:	Monsters of the Wilderness p. 30 (Homebrew)</description>
     <cha>3</cha>
     <save>Con +13, Wis +7</save>
     <skill>Perception +7</skill>
-    <immune>cold, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>charmed, frightened, paralyzed, poisoned, prone</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
     <passive>17</passive>
     <languages>-</languages>
     <cr>20</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>cold, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, frightened, paralyzed, poisoned, prone</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Keen Smell</name>
       <text>The Ragnar has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
@@ -1598,9 +1702,10 @@ Roaming Around. This titan usually feeds on ozlogs. It's an incredible sight to 
 
 Source:	Monsters of the Wilderness p. 32 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Titan, The Ragnar -->
+  </monster>
   <monster>
     <name>Great Eight, Varga the Ice Witch</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>chaotic evil</alignment>
@@ -1615,10 +1720,14 @@ Source:	Monsters of the Wilderness p. 32 (Homebrew)</description>
     <cha>7</cha>
     <save>Int +12, Wis +9</save>
     <skill>Arcana +12, History +12, Perception +9, Survival +9</skill>
-    <sense/>
     <passive>19</passive>
     <languages>Common, Primordial</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Arcane Ward</name>
       <text>When she casts an abjuration spell of 1st level or higher, she can simultaneously use a strand of the spell's magic to create a magical ward on herself that lasts until she finishes a long rest. The ward has 39 hit points. Whenever she takes damage, the ward takes the damage instead. If this damage reduces the ward to 0 hit points, she takes any remaining damage. While the ward has 0 hit points, it can't absorb damage, but its magic remains. Whenever she casts an abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell. Once she creates the ward, she can't create it again until she finishes a long rest.</text>
@@ -1654,8 +1763,8 @@ Source:	Monsters of the Wilderness p. 32 (Homebrew)</description>
       <text>Melee Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage plus 22 (5d8) cold damage.</text>
       <attack>Staff|7|1d8+2+5d8</attack>
     </action>
-    <spells>blade ward, dancing lights, minor illusion, ray of frost, resistance, mage armor, protection from evil and good, shield, witch bolt, darkvision, misty step, see invisibility, counterspell, dispel magic, glyph of warding, nondetection, banishment, confusion, ice storm, cone of cold, planar binding, globe of invulnerability, etherealness, reverse gravity, control weather</spells>
     <slots>0,4,3,3,3,3,2,2,1</slots>
+    <spells>blade ward, dancing lights, minor illusion, ray of frost, resistance, mage armor, protection from evil and good, shield, witch bolt, darkvision, misty step, see invisibility, counterspell, dispel magic, glyph of warding, nondetection, banishment, confusion, ice storm, cone of cold, planar binding, globe of invulnerability, etherealness, reverse gravity, control weather</spells>
     <description>Drumming echoes from deep inside an ice cave. Wrapped in furs, an old woman communes with dark spirits through her instrument. Varga the Ice Witch knows what part of the cave is solid enough to stand the waves of sound. A large white wolf is curled up nearby on a pile of furs.
 
 Cold Crone. Those creatures that live in this frozen wasteland should pray they never cross Varga's path. Her twisted heart is as cold as the land itself. She is forever bound to the Ragnar, a massive titan that lives in the Arctic. The dark magic that brought the creature to life helps her to commune with it.
@@ -1666,9 +1775,11 @@ Wolf Mount. She usually travels around the frozen land on her wolf named Ulfar. 
 
 Source:	Monsters of the Wilderness p. 34 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: The Great Eight, Varga the Ice Witch -->
+  </monster>
   <monster>
     <name>Crystal Spider</name>
+    <sortname>Spider, Crystal</sortname>
+    <ancestry>Spider</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>unaligned</alignment>
@@ -1681,11 +1792,16 @@ Source:	Monsters of the Wilderness p. 34 (Homebrew)</description>
     <int>2</int>
     <wis>11</wis>
     <cha>4</cha>
-    <resist>cold</resist>
-    <senses>blindsight 20 ft., darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>13</passive>
     <languages>-</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 20 ft., darkvision 60 ft.</senses>
     <trait>
       <name>Frozen Climber</name>
       <text>The crystal spider can climb difficult surfaces, including upside down in icy and snowy areas, without needing to make an ability check.</text>
@@ -1722,7 +1838,7 @@ Icy Inhabitants. The spider's crystal caves are usually hidden far away from oth
 
 Source:	Monsters of the Wilderness p. 35 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Crystal Spider -->
+  </monster>
   <monster>
     <name>Crystal Spider, Young Swarm</name>
     <size>M</size>
@@ -1742,7 +1858,9 @@ Source:	Monsters of the Wilderness p. 35 (Homebrew)</description>
     <passive>8</passive>
     <languages/>
     <cr>1</cr>
+    <vulnerable/>
     <resist>cold; bludgeoning, piercing, slashing</resist>
+    <immune/>
     <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
     <senses>blindsight 10 ft.</senses>
     <trait>
@@ -1772,9 +1890,11 @@ Icy Inhabitants. The spider's crystal caves are usually hidden far away from oth
 
 Source:	Monsters of the Wilderness p. 35 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Crystal Spider, Young Swarm -->
+  </monster>
   <monster>
     <name>Ice Dragon</name>
+    <sortname>Dragon, Ice</sortname>
+    <ancestry>Dragon</ancestry>
     <size>H</size>
     <type>dragon</type>
     <alignment>chaotic evil</alignment>
@@ -1789,11 +1909,14 @@ Source:	Monsters of the Wilderness p. 35 (Homebrew)</description>
     <cha>16</cha>
     <save>Dex +7, Con +10, Int +8, Wis +6</save>
     <skill>Perception +6, Stealth +7</skill>
-    <immune>cold</immune>
-    <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <passive>16</passive>
     <languages>Common, Draconic</languages>
     <cr>15</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>cold</immune>
+    <conditionImmune/>
+    <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
       <name>Ice Walk</name>
       <text>The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement.</text>
@@ -1859,9 +1982,10 @@ Snow Problem. Snow elf forces often hunt these dragons. The two foes don't feel 
 
 Source:	Monsters of the Wilderness p. 37 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Dragon, Ice -->
+  </monster>
   <monster>
     <name>Norvan, King Harald</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>chaotic neutral</alignment>
@@ -1876,10 +2000,14 @@ Source:	Monsters of the Wilderness p. 37 (Homebrew)</description>
     <cha>20</cha>
     <save>Str +9, Wis +9, Cha +9</save>
     <skill>Athletics +9, Insight +9, Intimidation +9, Perception +9, Survival +9</skill>
-    <senses/>
     <passive>19</passive>
     <languages>Common</languages>
     <cr>11</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>The Norvan has advantage on saving throws against being frightened.</text>
@@ -1923,9 +2051,10 @@ Formidable Fortress. Harald makes his home in a massive castle near the sea. He 
 
 Source:	Monsters of the Wilderness p. 38 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Norvan, King Harald -->
+  </monster>
   <monster>
     <name>Norvan, Shaman</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>chaotic neutral</alignment>
@@ -1940,10 +2069,14 @@ Source:	Monsters of the Wilderness p. 38 (Homebrew)</description>
     <cha>11</cha>
     <save>Con +5, Wis +7</save>
     <skill>History +4, Insight +7, Nature +4, Perception +7, Survival +7</skill>
-    <senses/>
     <passive>17</passive>
     <languages>Common</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>The Norvan has advantage on saving throws against being frightened.</text>
@@ -1984,8 +2117,8 @@ Source:	Monsters of the Wilderness p. 38 (Homebrew)</description>
 
 While in a new form, the shaman retains their game statistics and ability to speak, but their AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and they gain any special senses, proficiencies, traits, actions, and reactions that the new form has but that they lack.</text>
     </action>
-    <spells>druidcraft, guidance, produce flame, shillelagh, animal friendship, beast sense, cure wounds, speak with animals, animal restoration, darkvision, lesser restoration, pass without trace, feign death, sleet storm, wind wall, confusion, ice storm, freedom of movement, reincarnate, scrying</spells>
     <slots>0,4,3,3,3,2</slots>
+    <spells>druidcraft, guidance, produce flame, shillelagh, animal friendship, beast sense, cure wounds, speak with animals, animal restoration, darkvision, lesser restoration, pass without trace, feign death, sleet storm, wind wall, confusion, ice storm, freedom of movement, reincarnate, scrying</spells>
     <description>When a young member of the Norvan tribe begins to have visions, the community knows another shaman has been chosen. These individuals are called by nature to heal the world. They are profoundly present and can only speak the truth. There are only a handful of shamans in the frozen lands.
 
 Wise Elder. These wise men and women don't ally themselves with any clan. They remain outside of everyday life and avoid politics in the settlements. Most of these seers don't marry and they enjoy their solitude.
@@ -1996,9 +2129,10 @@ Natural Cycle. They are extraordinary people, deeply in tune with nature and the
 
 Source:	Monsters of the Wilderness p. 42 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Norvan, Shaman -->
+  </monster>
   <monster>
     <name>Norvan, Soldier</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>chaotic neutral</alignment>
@@ -2011,11 +2145,16 @@ Source:	Monsters of the Wilderness p. 42 (Homebrew)</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
+    <save/>
     <skill>Perception +2, Survival +2</skill>
-    <senses/>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>The Norvan has advantage on saving throws against being frightened.</text>
@@ -2040,7 +2179,7 @@ Southern Settlements. The tribe lives in several settlements on the continents o
 
 Source:	Monsters of the Wilderness p. 43 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Norvan, Soldier -->
+  </monster>
   <monster>
     <name>Icebreaker</name>
     <size>H</size>
@@ -2055,13 +2194,16 @@ Source:	Monsters of the Wilderness p. 43 (Homebrew)</description>
     <int>7</int>
     <wis>15</wis>
     <cha>5</cha>
+    <save/>
     <skill>Perception +5</skill>
-    <immune>cold</immune>
-    <conditionImmune>charmed, prone</conditionImmune>
-    <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
     <passive>15</passive>
     <languages>-</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>cold</immune>
+    <conditionImmune>charmed, prone</conditionImmune>
+    <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
     <trait>
       <name>Hold Breath</name>
       <text>The ice breaker can hold its breath for 1 hour.</text>
@@ -2094,7 +2236,7 @@ Local Fare. These monstrosities feed on any- thing they can find. They prefer to
 
 Source:	Monsters of the Wilderness p. 39 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Icebreaker -->
+  </monster>
   <monster>
     <name>Mammoth, Undead</name>
     <size>H</size>
@@ -2109,13 +2251,16 @@ Source:	Monsters of the Wilderness p. 39 (Homebrew)</description>
     <int>1</int>
     <wis>7</wis>
     <cha>3</cha>
+    <save/>
+    <skill/>
+    <passive>8</passive>
+    <languages>-</languages>
+    <cr>5</cr>
+    <vulnerable/>
     <resist>cold</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>8</passive>
-    <languages>-</languages>
-    <cr>5</cr>
     <trait>
       <name>Siege Monster</name>
       <text>The undead mammoth does double damage to objects and structures.</text>
@@ -2148,7 +2293,7 @@ Undead Nature. An undead mammoth doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 40 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Mammoth, Undead -->
+  </monster>
   <monster>
     <name>Nordak</name>
     <size>L</size>
@@ -2163,12 +2308,16 @@ Source:	Monsters of the Wilderness p. 40 (Homebrew)</description>
     <int>3</int>
     <wis>12</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +3</skill>
-    <resist>cold</resist>
-    <senses/>
     <passive>13</passive>
     <languages>-</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Heated Body</name>
       <text>The nordak has a very warm inner temperature. If their stomachs are cut open, heat from their innards can keep a humanoid warm for eight hours. Of course, the nordak won't survive the injury.</text>
@@ -2196,7 +2345,7 @@ Inner Warmth. When a nordak is cut open it can be used to keep a humanoid warm. 
 
 Source:	Monsters of the Wilderness p. 44 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Nordak -->
+  </monster>
   <monster>
     <name>Ozlog</name>
     <size>L</size>
@@ -2211,11 +2360,16 @@ Source:	Monsters of the Wilderness p. 44 (Homebrew)</description>
     <int>1</int>
     <wis>5</wis>
     <cha>3</cha>
-    <immune>cold</immune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>7</passive>
     <languages>-</languages>
     <cr>1/4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>cold</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Charge</name>
       <text>If the ozlog moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 3 (1d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
@@ -2239,7 +2393,7 @@ Home on the Range. Ozlogs live off plants in the tundra and must keep moving to 
 
 Source:	Monsters of the Wilderness p. 44 (Homebrew)</description>
     <environment>Arctic</environment>
-  </monster>  <!-- Arctic: Ozlog -->
+  </monster>
   <monster>
     <name>People of the Sky</name>
     <size>H</size>
@@ -2254,14 +2408,16 @@ Source:	Monsters of the Wilderness p. 44 (Homebrew)</description>
     <int>18</int>
     <wis>20</wis>
     <cha>18</cha>
+    <save/>
     <skill>Perception +9, Persuasion +8</skill>
+    <passive>19</passive>
+    <languages>Elvish, Primordial, Sylvan</languages>
+    <cr>10</cr>
+    <vulnerable/>
     <resist>acid, cold; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>necrotic, poison</immune>
     <conditionImmune>charmed, exhaustion, grappled, poisoned, prone, restrained</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>19</passive>
-    <languages>Elvish, Primordial, Sylvan</languages>
-    <cr>10</cr>
     <trait>
       <name>Incorporeal Movement (Light Form)</name>
       <text>The people of the sky can move through other creatures and objects as if they were difficult terrain. They take 5 (1d10) force damage if they end their turn inside an object.</text>
@@ -2294,9 +2450,11 @@ The Far Away. Nobody has found their true home, believed to be deep inside Feyla
 
 Source:	Monsters of the Wilderness p. 45 (Homebrew)</description>
     <environment>Arctic</environment>
-  </monster>  <!-- Arctic: People of the Sky -->
+  </monster>
   <monster>
-    <name>Polar Bear, Armored</name>
+    <name>Armored Polar Bear</name>
+    <sortname>Bear, Polar Armored</sortname>
+    <ancestry>Bear</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>neutral</alignment>
@@ -2309,12 +2467,16 @@ Source:	Monsters of the Wilderness p. 45 (Homebrew)</description>
     <int>9</int>
     <wis>12</wis>
     <cha>9</cha>
+    <save/>
     <skill>Perception +3</skill>
-    <immune>cold</immune>
-    <senses/>
     <passive>13</passive>
     <languages>Understands Common but can't speak</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>cold</immune>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Smell</name>
       <text>The armored polar bear has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -2347,9 +2509,11 @@ Big Bad Bear King. An armored polar bear named Karhu Nan considers himself to be
 
 Source:	Monsters of the Wilderness p. 46 (Homebrew)</description>
     <environment>Arctic</environment>
-  </monster>  <!-- Arctic: Polar Bear, Armored -->
+  </monster>
   <monster>
-    <name>The Shapeshifter</name>
+    <name>Shapeshifter, The</name>
+    <sortname>Shapeshifter, The</sortname>
+    <ancestry>Shapeshifter</ancestry>
     <size>M</size>
     <type>aberration (shapechanger)</type>
     <alignment>chaotic evil</alignment>
@@ -2362,15 +2526,16 @@ Source:	Monsters of the Wilderness p. 46 (Homebrew)</description>
     <int>20</int>
     <wis>18</wis>
     <cha>18</cha>
+    <save/>
     <skill>Deception +9, Perception +9, Stealth +9, Survival +9</skill>
+    <passive>19</passive>
+    <languages>the languages of the form it has assumed</languages>
+    <cr>15</cr>
     <vulnerable>fire</vulnerable>
     <resist>bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>cold</immune>
     <conditionImmune>charmed, exhaustion</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>19</passive>
-    <languages>the languages of the form it has assumed</languages>
-    <cr>15</cr>
     <trait>
       <name>Ambusher</name>
       <text>In the first round of a combat, the shapeshifter has advantage on attack rolls against any creature it surprises.</text>
@@ -2419,7 +2584,7 @@ Like the Plague. A shapeshifter has caused all kinds of havoc in the vothdar com
 
 Source:	Monsters of the Wilderness p. 47 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: The Shapeshifter -->
+  </monster>
   <monster>
     <name>Snogre</name>
     <size>L</size>
@@ -2434,11 +2599,16 @@ Source:	Monsters of the Wilderness p. 47 (Homebrew)</description>
     <int>5</int>
     <wis>7</wis>
     <cha>3</cha>
-    <immune>cold</immune>
-    <senses>darkvision 90 ft.</senses>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Giant</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>cold</immune>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Keen Smell</name>
       <text>The snogre has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -2467,9 +2637,10 @@ Wild Kingdom. When these creatures can't find ozlogs or nordaks to eat, they exp
 
 Source:	Monsters of the Wilderness p. 48 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Snogre -->
+  </monster>
   <monster>
     <name>Vothdar</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>lawful evil</alignment>
@@ -2482,12 +2653,16 @@ Source:	Monsters of the Wilderness p. 48 (Homebrew)</description>
     <int>12</int>
     <wis>10</wis>
     <cha>10</cha>
+    <save/>
     <skill>Perception +2, Survival +2</skill>
-    <resist>cold</resist>
-    <senses>darkvision 90 ft.</senses>
     <passive>12</passive>
     <languages>Elvish, Infernal</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Devil's Sight</name>
       <text>Magical darkness doesn't impede the voth's darkvision.</text>
@@ -2523,9 +2698,10 @@ New World Order. The vothdar have plans to conquer the entire world. Their scout
 
 Source:	Monsters of the Wilderness p. 49 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Vothdar -->
+  </monster>
   <monster>
     <name>Vothdar, Blizzard Wizard</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>lawful evil</alignment>
@@ -2538,12 +2714,16 @@ Source:	Monsters of the Wilderness p. 49 (Homebrew)</description>
     <int>18</int>
     <wis>12</wis>
     <cha>12</cha>
+    <save/>
     <skill>Arcana +7, Perception +4, Survival +4</skill>
-    <resist>cold</resist>
-    <senses>darkvision 90 ft.</senses>
     <passive>14</passive>
     <languages>Elvish, Infernal</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Devil's Sight</name>
       <text>Magical darkness doesn't impede the voth's darkvision.</text>
@@ -2574,8 +2754,8 @@ Source:	Monsters of the Wilderness p. 49 (Homebrew)</description>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) bludgeoning damage plus 5 (2d4) cold damage.</text>
       <attack>Staff|4|2d6+1+2d4</attack>
     </action>
-    <spells>chill touch, ray of frost, fog cloud, chill touch, dancing lights, message, minor illusion, charm person, feather fall, mage armor, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, ice storm</spells>
     <slots>0,4,3,3,1</slots>
+    <spells>chill touch, ray of frost, fog cloud, chill touch, dancing lights, message, minor illusion, charm person, feather fall, mage armor, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, ice storm</spells>
     <description>Blizzard wizards are the necromancers of the vothdar. These spellcasters are high-ranking members of the evil snow elf race. They are closely allied with the king and pilot all the vothdar's airships.
 
 Elf Necromancers. These wizards craft the magical vithral armor that most of the vothdar wear. It is made from adamantine, a material found in large quantities in the Arctic. The armor is then altered by magic to make it lighter. They also make potions for sick elves from the blood of the nordak.
@@ -2586,9 +2766,10 @@ Rival Casters. There is an ongoing rivalry between the blizzard wizards and the 
 
 Source:	Monsters of the Wilderness p. 50 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Vothdar, Blizzard Wizard -->
+  </monster>
   <monster>
     <name>Vothdar, Vothlock</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>lawful evil</alignment>
@@ -2601,12 +2782,16 @@ Source:	Monsters of the Wilderness p. 50 (Homebrew)</description>
     <int>14</int>
     <wis>10</wis>
     <cha>16</cha>
+    <save/>
     <skill>Arcana +4, Deception +6, Perception +3, Persuasion +6, Survival +3</skill>
-    <resist>cold</resist>
-    <senses>darkvision 90 ft.</senses>
     <passive>13</passive>
     <languages>Elvish, Infernal</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Devil's Sight</name>
       <text>Magical darkness doesn't impede the vothlock's darkvision.</text>
@@ -2639,8 +2824,8 @@ Source:	Monsters of the Wilderness p. 50 (Homebrew)</description>
       <recharge>1/Day</recharge>
       <text>The vothlock can use an action to summon an imp. It appears in an occupied space within 30 feet of the vothlock. The imp obeys the vothlock for one hour and then dies. It is reborn in Hell with the knowledge of its summoning.</text>
     </action>
+    <slots>0,4,4,4</slots>
     <spells>chill touch, mage armor, ray of frost, bestow curse, slow, eldritch blast, minor illusion, prestidigitation, shocking grasp, counterspell, enthrall, hellish rebuke, invisibility, suggestion, vampiric touch</spells>
-    <slots>0,4, 4, 4</slots>
     <description>As a shimmering red pentagram glows, a red-skinned monster appears out of the thin air. A white-haired snow elf laughs manically nearby and claps their hands. This is the vothlock, a snow elf warlock.
 
 Power Play. These warlocks covet any position where they can influence the king. Each of them serves a devil patron and the fiends want the vothdar to take over the world. Of course, the devils want the world for themselves and plan to eventually betray the snow elves.
@@ -2651,9 +2836,10 @@ Gory Details. The vothlock take charge of any interrogations and run the vothdar
 
 Source:	Monsters of the Wilderness p. 51 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Vothdar, Vothlock -->
+  </monster>
   <monster>
     <name>Vothdar, King Vuthar</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>lawful evil</alignment>
@@ -2666,12 +2852,16 @@ Source:	Monsters of the Wilderness p. 51 (Homebrew)</description>
     <int>20</int>
     <wis>17</wis>
     <cha>20</cha>
+    <save/>
     <skill>Arcana +10, Intimidation +10, Perception +8, Survival +8</skill>
-    <resist>cold</resist>
-    <senses>darkvision 90 ft.</senses>
     <passive>18</passive>
     <languages>Elvish, Infernal</languages>
     <cr>15</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Devil's Sight</name>
       <text>Magical darkness doesn't impede his darkvision.</text>
@@ -2723,8 +2913,8 @@ Source:	Monsters of the Wilderness p. 51 (Homebrew)</description>
       <name>Parry</name>
       <text>Vuthar adds 2 to his AC against one melee attack that would hit him. To do so, Vuthar must see the attacker and be wielding a melee weapon.</text>
     </reaction>
-    <spells>chill touch, ray of frost, fog cloud, dancing lights, message, ray of frost, shocking grasp, charm person, feather fall, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, blight, dimension door, ice storm, animate objects, cone of cold, chain lightning, create undead, finger of death, control weather</spells>
     <slots>0,4,3,3,3,2,2,1,1</slots>
+    <spells>chill touch, ray of frost, fog cloud, dancing lights, message, ray of frost, shocking grasp, charm person, feather fall, ray of sickness, gust of wind, misty step, suggestion, animate dead, lightning bolt, sleet storm, blight, dimension door, ice storm, animate objects, cone of cold, chain lightning, create undead, finger of death, control weather</spells>
     <description>As an enormous airship flies through a blizzard, a cloaked vothdar barks out orders to his troops. This is Vuthar, the powerful king of the vothdar. An extremely tall and handsome snow elf, he stands out in a crowd. In his grasp is a legendary weapon known as the Greatsword of Hell. Legends say the weapon was gifted to him by a very influential arch-devil.
 
 Evil Emperor. Vuthar is a nasty, wrathful male elf. He is only interested in power and his ego has no bounds. This king believes the vothdar are the master race and should rule the entire world. He isn't aware that the devils are simply using his people to further their agenda.
@@ -2735,7 +2925,7 @@ Imminent Invasion. Vuthar plans to invade the neighbouring lands of Naern and No
 
 Source:	Monsters of the Wilderness p. 52 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Vothdar, King Vuthar -->
+  </monster>
   <monster>
     <name>Yarr Beak</name>
     <size>L</size>
@@ -2750,12 +2940,16 @@ Source:	Monsters of the Wilderness p. 52 (Homebrew)</description>
     <int>11</int>
     <wis>15</wis>
     <cha>10</cha>
+    <save/>
     <skill>Perception +4</skill>
-    <resist>cold</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>understands Auran but can't speak it</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Agile Aviators</name>
       <text>The Yarr beak ignores any effects from high winds, blizzards, and storms.</text>
@@ -2792,10 +2986,12 @@ Adaptable Avian. The large birds will also hunt for fish in the lakes, rivers, a
 
 Source:	Monsters of the Wilderness p. 54 (Homebrew)</description>
     <environment>arctic</environment>
-  </monster>  <!-- Arctic: Yarr Beak -->
+  </monster>
   <!-- Desert Region -->
   <monster>
     <name>Giant Sand Shark</name>
+    <sortname>Shark, Giant Sand</sortname>
+    <ancestry>Giant Animal, Shark</ancestry>
     <size>G</size>
     <type>monstrosity (titan)</type>
     <alignment>unaligned</alignment>
@@ -2810,12 +3006,14 @@ Source:	Monsters of the Wilderness p. 54 (Homebrew)</description>
     <cha>3</cha>
     <save>Con +15, Int +6, Wis +9</save>
     <skill>Perception +7</skill>
-    <immune>poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>charmed, frightened, prone</conditionImmune>
-    <senses>blindsight 90 ft., tremorsense 90 ft.</senses>
     <passive>17</passive>
     <languages>Terran</languages>
     <cr>25</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, frightened, prone</conditionImmune>
+    <senses>blindsight 90 ft., tremorsense 90 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -2856,8 +3054,6 @@ Source:	Monsters of the Wilderness p. 54 (Homebrew)</description>
       <name>Move (Costs 3 Actions)</name>
       <text>The giant sand shark moves up to its speed without provoking opportunity attacks.</text>
     </legendary>
-    <spells/>
-    <slots/>
     <description>Silence fills the air near a busy oasis. Animals listen more intently as they know a predator has moved into the area. Then without warning, an immense creature smashes out of the ground. The giant sand shark has surfaced to hunt anything and everything.
 
 Sum of All Fears. Many that live in the desert tell tales of a monster too big to believe. However, the stories are true. The giant sand shark travels under the sand hunting for its next meal.
@@ -2868,9 +3064,10 @@ Desert Diet. This carnivorous titan will feed on beasts, humanoids, and even oth
 
 Source:	Monsters of the Wilderness p. 56 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Titan, Giant Sand Shark -->
+  </monster>
   <monster>
     <name>Great Eight, Quora Yav</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (gnome)</type>
     <alignment>lawful evil</alignment>
@@ -2885,10 +3082,14 @@ Source:	Monsters of the Wilderness p. 56 (Homebrew)</description>
     <cha>7</cha>
     <save>Int +11, Wis +3, Cha +2</save>
     <skill>Arcana +11, History +11, Perception +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Common, Gnomish, Terran</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Gnome Cunning</name>
       <text>Quora has advantage on Intelligence, Wisdom, and Charisma saving throws against magic.</text>
@@ -2919,15 +3120,15 @@ Source:	Monsters of the Wilderness p. 56 (Homebrew)</description>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage.</text>
       <attack>+3 Quarterstaff|6|1d8+2</attack>
     </action>
-    <spells>acid splash, dancing lights, fire bolt, mage hand, minor illusion, poison spray, color spray, disguise self, mage armor, magic missile, invisibility, mirror image, misty step, phantasmal force, hypnotic pattern, major image, phantom steed, greater invisibility, hallucinatory terrain, phantasmal killer, mislead, seeming, programmed illusion, mirage arcane</spells>
     <slots>0,4,3,3,3,2,1,1</slots>
+    <spells>acid splash, dancing lights, fire bolt, mage hand, minor illusion, poison spray, color spray, disguise self, mage armor, magic missile, invisibility, mirror image, misty step, phantasmal force, hypnotic pattern, major image, phantom steed, greater invisibility, hallucinatory terrain, phantasmal killer, mislead, seeming, programmed illusion, mirage arcane</spells>
     <description>The least respected of the wizard council is Quora Yav. He is a master in the School of Illusion. This coward travelled to the desert through a Riftgate upon drawing the shortest straw on the council. He is furious he had to go to the barren wasteland. Quora lives in an ancient ruin near a small human settlement. He casts illusions around his lair to keep it hidden from view.
 
 Unpopular Illusionist. This gnome is a spineless, selfish wizard who acts before he thinks. If Quora is ever in danger in the desert, he'll use his illusion magic to turn invisible and head for the closest Riftgate. Once there, he'll travel to his home city in Zogg and take refuge in his well-protected manor.
 
 Source:	Monsters of the Wilderness p. 58 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: The Great Eight, Quora Yav -->
+  </monster>
   <monster>
     <name>Appalorus</name>
     <size>H</size>
@@ -2942,11 +3143,16 @@ Source:	Monsters of the Wilderness p. 58 (Homebrew)</description>
     <int>7</int>
     <wis>16</wis>
     <cha>16</cha>
+    <save/>
     <skill>Perception +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>16</passive>
     <languages>-</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Hearing</name>
       <text>The appalorus has advantage on Wisdom (Perception) checks that rely on hearing.</text>
@@ -2983,9 +3189,10 @@ Plant Eater. The appalorus lives on a diet of cacti and other desert plants. The
 
 Source:	Monsters of the Wilderness p. 59 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Appalorus -->
+  </monster>
   <monster>
     <name>Arthrop</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (arthrop)</type>
     <alignment>lawful evil</alignment>
@@ -2998,13 +3205,16 @@ Source:	Monsters of the Wilderness p. 59 (Homebrew)</description>
     <int>12</int>
     <wis>13</wis>
     <cha>6</cha>
+    <save/>
     <skill>Perception +3, Stealth +5, Survival +3</skill>
-    <resist>poison, psychic</resist>
-    <conditionImmune>poisoned, charmed</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Arthrop</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist>poison, psychic</resist>
+    <immune/>
+    <conditionImmune>poisoned, charmed</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Crystal Clarity</name>
       <text>The arthrop has crystals embedded inside it. These crystals enable it to speak and give immunity against any charm magic.</text>
@@ -3041,9 +3251,11 @@ New Voices. When the Riftgates opened, Oswald's curse took away their ability to
 
 Source:	Monsters of the Wilderness p. 60 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Arthrop -->
+  </monster>
   <monster>
     <name>Bakkar Losian</name>
+    <sortname>Losian, Bakkar</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>chaotic good</alignment>
@@ -3058,10 +3270,14 @@ Source:	Monsters of the Wilderness p. 60 (Homebrew)</description>
     <cha>12</cha>
     <save>Dex +7, Con +5, Wis +7</save>
     <skill>Animal Handling +7, Nature +5, Perception +7, Stealth +7, Survival +7</skill>
-    <senses/>
     <passive>17</passive>
     <languages>Common</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Desert Endurance</name>
       <text>Bakkar isn't affected by the extremely hot temperatures in the desert.</text>
@@ -3104,8 +3320,8 @@ Source:	Monsters of the Wilderness p. 60 (Homebrew)</description>
       <text>Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage.</text>
       <attack>Longbow|7|1d8+4</attack>
     </action>
-    <spells>animal friendship, cure wounds, hunter's mark, speak with animals, darkvision, locate animals or plants, protection from poison, conjure animals, conjure barrage</spells>
     <slots>0,4,3,2</slots>
+    <spells>animal friendship, cure wounds, hunter's mark, speak with animals, darkvision, locate animals or plants, protection from poison, conjure animals, conjure barrage</spells>
     <description>Bakkar is an experienced desert ranger. He is skilled in navigating the hazardous, unforgiving terrain. The elders say he has guided many adventurers across the harsh desert. His services cost many gold coins, but they're worth it.
 
 Iron Will. They don't come tougher than the nomadic Bakkar. He once led a group of explorers across a desert with a separated shoulder, broken rib, and punctured lung. However, this man's mental strength surpasses his remarkable physical stamina.
@@ -3114,7 +3330,7 @@ Dune Rider. Bakkar usually rides a sand strider (page 69) he has named Skrattle.
 
 Source:	Monsters of the Wilderness p. 61 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Bakkar Losian -->
+  </monster>
   <monster>
     <name>Cactus Cursus</name>
     <size>L</size>
@@ -3129,12 +3345,16 @@ Source:	Monsters of the Wilderness p. 61 (Homebrew)</description>
     <int>6</int>
     <wis>10</wis>
     <cha>1</cha>
+    <save/>
     <skill>Perception +2</skill>
-    <resist>bludgeoning, fire, piercing, poison, psychic</resist>
-    <senses/>
     <passive>12</passive>
     <languages>-</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist>bludgeoning, fire, piercing, poison, psychic</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>False Appearance</name>
       <text>If the cactus cursus remains motionless it is indistinguishable from a Large-sized cactus.</text>
@@ -3167,9 +3387,11 @@ Weakest Link. These plants will target small groups of creatures or pick off str
 
 Source:	Monsters of the Wilderness p. 62 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Cactus Cursus -->
+  </monster>
   <monster>
     <name>Desert Naga</name>
+    <sortname>Naga, Desert</sortname>
+    <ancestry>Naga</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>neutral evil</alignment>
@@ -3184,12 +3406,14 @@ Source:	Monsters of the Wilderness p. 62 (Homebrew)</description>
     <cha>14</cha>
     <save>Dex +7, Con +6, Wis +7, Cha +6</save>
     <skill>Insight +7, Perception +7, Stealth +7</skill>
-    <immune>poison</immune>
-    <conditionImmune>charmed, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>17</passive>
     <languages>Abyssal, Common</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>charmed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Rejuvenation</name>
       <text>If it dies, the naga returns to life in 1d4 days and regains all its hit points. Only a wish spell can prevent this trait from functioning.</text>
@@ -3220,8 +3444,8 @@ Source:	Monsters of the Wilderness p. 62 (Homebrew)</description>
       <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 13 (2d6 + 6) piercing damage, and the target must make a DC 16 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Bite|10|2d6+6</attack>
     </action>
-    <spells>blade ward, mage hand, minor illusion, prestidigitation, comprehend languages, detect magic, shield, silent image, darkness, hold person, see invisibility, animate dead, counterspell, dispel magic, blight, fire shield, hallucinatory terrain, conjure elemental, scrying, create undead</spells>
     <slots>0,4,3,3,3,2,1</slots>
+    <spells>blade ward, mage hand, minor illusion, prestidigitation, comprehend languages, detect magic, shield, silent image, darkness, hold person, see invisibility, animate dead, counterspell, dispel magic, blight, fire shield, hallucinatory terrain, conjure elemental, scrying, create undead</spells>
     <description>Slithering silently through the scorching sand is a horrible monster. The desert naga is a cunning, cruel monstrosity who persecutes other creatures. It uses necromancy and other dark magic to further its cause.
 
 Blood Diamonds. This greedy snake-like creature is obsessed with gold, gemstones, and other glittery treasures. It will make deals to take possession of these priceless items, although it will rarely honor such an arrangement.
@@ -3232,9 +3456,11 @@ Immortal Nature. A naga doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 63 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Desert Naga -->
+  </monster>
   <monster>
     <name>Dune Bug</name>
+    <sortname>Bug, Dune</sortname>
+    <ancestry>Bug</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
@@ -3247,10 +3473,16 @@ Source:	Monsters of the Wilderness p. 63 (Homebrew)</description>
     <int>1</int>
     <wis>11</wis>
     <cha>4</cha>
-    <senses/>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>-</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Slide</name>
       <text>The dune bug can flip over and slide down dunes on its shell at double its normal speed.</text>
@@ -3270,7 +3502,7 @@ Insect Mount. Some Jinnan (page 68) use dune bugs as mounts. Every new moon ther
 
 Source:	Monsters of the Wilderness p. 64 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Dune Bug -->
+  </monster>
   <monster>
     <name>Dunewinder</name>
     <size>H</size>
@@ -3285,12 +3517,16 @@ Source:	Monsters of the Wilderness p. 64 (Homebrew)</description>
     <int>8</int>
     <wis>15</wis>
     <cha>3</cha>
+    <save/>
     <skill>Perception +5</skill>
-    <conditionImmune>prone</conditionImmune>
-    <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
     <passive>15</passive>
     <languages>-</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The dunewinder has advantage on saving throws against spells and other magical effects.</text>
@@ -3320,9 +3556,11 @@ Crude Construction. Some of the worm's tunnels aren't very stable though. There 
 
 Source:	Monsters of the Wilderness p. 65 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Dunewinder -->
+  </monster>
   <monster>
     <name>Giant Trapdoor Spider</name>
+    <sortname>Spider, Giant Trapdoor</sortname>
+    <ancestry>Spider, Giant Animal</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
@@ -3335,10 +3573,16 @@ Source:	Monsters of the Wilderness p. 65 (Homebrew)</description>
     <int>3</int>
     <wis>4</wis>
     <cha>3</cha>
-    <senses>tremorsense 30 ft.</senses>
+    <save/>
+    <skill/>
     <passive>14</passive>
     <languages>-</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>tremorsense 30 ft.</senses>
     <trait>
       <name>Ambusher</name>
       <text>In the first round of combat, the spider has advantage on attack rolls against any creature it surprises.</text>
@@ -3366,7 +3610,7 @@ Noxious Nest. Giant trapdoor spiders make their nests in large underground lairs
 
 Source:	Monsters of the Wilderness p. 66 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Giant Trapdoor Spider -->
+  </monster>
   <monster>
     <name>Jaws of the Desert</name>
     <size>H</size>
@@ -3381,12 +3625,16 @@ Source:	Monsters of the Wilderness p. 66 (Homebrew)</description>
     <int>12</int>
     <wis>17</wis>
     <cha>5</cha>
+    <save/>
     <skill>Perception +7</skill>
-    <conditionImmune>charmed, frightened, prone</conditionImmune>
-    <senses>darkvision 60 ft., tremorsense 90 ft.</senses>
     <passive>17</passive>
     <languages>-</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, frightened, prone</conditionImmune>
+    <senses>darkvision 60 ft., tremorsense 90 ft.</senses>
     <trait>
       <name>Tunneler</name>
       <text>Jaws of the Desert can burrow through solid rock at half its burrow speed and leaves a 15-foot-diameter tunnel in its wake.</text>
@@ -3419,9 +3667,10 @@ Underground Allies. An underground ecosystem is supported by this apex predator.
 
 Source:	Monsters of the Wilderness p. 67 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Jaws of the Desert -->
+  </monster>
   <monster>
     <name>Jinnan</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>lawful neutral</alignment>
@@ -3434,11 +3683,16 @@ Source:	Monsters of the Wilderness p. 67 (Homebrew)</description>
     <int>11</int>
     <wis>16</wis>
     <cha>10</cha>
+    <save/>
     <skill>Insight +5, Perception +5</skill>
-    <senses/>
     <passive>15</passive>
     <languages>Common</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Desert Endurance</name>
       <text>The jinnan isn't affected by the extremely hot temperatures in the desert.</text>
@@ -3453,8 +3707,6 @@ Source:	Monsters of the Wilderness p. 67 (Homebrew)</description>
       <text>Ranged Weapon Attack: +3 to hit, range 180/400 ft., one target. Hit: 6 (1d10 + 1) piercing damage.</text>
       <attack>Bonebow|3|1d10+1</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>The Jinnan live on the southern desert continent of Jinos in the World of Myrr. Like most other continents in Myrr, the danger of sea monsters has kept them from traveling to other parts of the world.
 
 Strict Hierarchy. They have a highly organized society with the Sun King at the top. This person comes to power by taming the sun horse (page 71). He rules his people and commands a powerful force of warriors. Faithful worship of the sun is at the center of their culture.
@@ -3465,9 +3717,11 @@ Desert Mounts. Jinnan usually use sand striders (page 69) to travel around. Howe
 
 Source:	Monsters of the Wilderness p. 68 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Jinnan -->
+  </monster>
   <monster>
     <name>Sand Strider</name>
+    <sortname>Strider, Sand</sortname>
+    <ancestry>Strider</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
@@ -3480,11 +3734,16 @@ Source:	Monsters of the Wilderness p. 68 (Homebrew)</description>
     <int>7</int>
     <wis>11</wis>
     <cha>6</cha>
+    <save/>
     <skill>Perception +2</skill>
-    <senses/>
     <passive>12</passive>
     <languages>-</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Desert Endurance</name>
       <text>The sand strider isn't affected by extremely hot temperatures.</text>
@@ -3517,7 +3776,7 @@ Deep Resources. This creature stores a surprising amount of water in its unusual
 
 Source:	Monsters of the Wilderness p. 69 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Sand Strider -->
+  </monster>
   <monster>
     <name>Scorpla</name>
     <size>H</size>
@@ -3532,14 +3791,16 @@ Source:	Monsters of the Wilderness p. 69 (Homebrew)</description>
     <int>9</int>
     <wis>18</wis>
     <cha>5</cha>
+    <save/>
     <skill>Perception +9</skill>
+    <passive>19</passive>
+    <languages>-</languages>
+    <cr>13</cr>
+    <vulnerable/>
     <resist>necrotic, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 90 ft.</senses>
-    <passive>19</passive>
-    <languages>-</languages>
-    <cr>13</cr>
     <trait>
       <name>Sand Camouflage</name>
       <text>Scorpla makes Dexterity (Stealth) checks to hide in sandy terrain with advantage.</text>
@@ -3582,9 +3843,11 @@ Undead Nature. Scorpla doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 70 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Scorpla -->
+  </monster>
   <monster>
     <name>Sun Horse</name>
+    <sortname>Horse, Sun</sortname>
+    <ancestry>Horse</ancestry>
     <size>L</size>
     <type>elemental</type>
     <alignment>unaligned</alignment>
@@ -3597,12 +3860,16 @@ Source:	Monsters of the Wilderness p. 70 (Homebrew)</description>
     <int>7</int>
     <wis>11</wis>
     <cha>6</cha>
-    <vulnerable>cold</vulnerable>
-    <immune>fire</immune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Ignan</languages>
     <cr>3</cr>
+    <vulnerable>cold</vulnerable>
+    <resist/>
+    <immune>fire</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Heated Body</name>
       <text>A creature that touches the sun horse or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage.</text>
@@ -3629,7 +3896,7 @@ Like a Flash. Being able to blast across the desert in spectacular fashion intim
 
 Source:	Monsters of the Wilderness p. 71 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Sun Horse -->
+  </monster>
   <monster>
     <name>Weremeerkat</name>
     <size>S</size>
@@ -3644,12 +3911,16 @@ Source:	Monsters of the Wilderness p. 71 (Homebrew)</description>
     <int>9</int>
     <wis>10</wis>
     <cha>8</cha>
+    <save/>
     <skill>Perception +2, Stealth +6</skill>
-    <immune>bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons</immune>
-    <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>Common (can't speak in meerkat form)</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Sight</name>
       <text>The weremeerkat has advantage on Wisdom (Perception) checks that rely on sight.</text>
@@ -3675,8 +3946,6 @@ Source:	Monsters of the Wilderness p. 71 (Homebrew)</description>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage. If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with weremeerkat lycanthropy.</text>
       <attack>Bite|4|1d4</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>At times travelers in the desert might catch sight of a group of meerkats surveying the area. They will be standing up on their hind legs as they keep a lookout for danger. However, these are shapechangers and only appear to be meerkats. Weremeerkats are lycanthropes that inhabit the desolate land.
 
 Diminutive Desert Dogs. The little monsters live in packs in the desert. They are very close and will fight to the death to defend the members of the colony. The lycanthropes make their homes in underground burrows with complex tunnel systems.
@@ -3687,10 +3956,12 @@ Downsizing. A creature who is cursed with weremeerkat lycanthropy is in for a sh
 
 Source:	Monsters of the Wilderness p. 72 (Homebrew)</description>
     <environment>desert</environment>
-  </monster>  <!-- Desert: Weremeerkat -->
+  </monster>
   <!-- Jungle/Swamp Region -->
   <monster>
-    <name>The Ryssarav</name>
+    <name>Ryssarav, The</name>
+    <sortname>Ryssarav, The</sortname>
+    <ancestry>Ryssarav</ancestry>
     <size>G</size>
     <type>monstrosity (titan)</type>
     <alignment>chaotic evil</alignment>
@@ -3705,12 +3976,14 @@ Source:	Monsters of the Wilderness p. 72 (Homebrew)</description>
     <cha>20</cha>
     <save>Con +11, Int +6, Wis +10</save>
     <skill>Perception +10</skill>
-    <immune>necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>charmed, poisoned, prone</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
     <passive>20</passive>
     <languages>Primordial</languages>
     <cr>23</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, poisoned, prone</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The Ryssarav can breathe air and water.</text>
@@ -3771,7 +4044,7 @@ Misty Mysteries. Since nobody actually survives a visit to the Ryssarav's swamp,
 
 Source:	Monsters of the Wilderness p. 74 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Titan, The Ryssarav -->
+  </monster>
   <monster>
     <name>Great Eight, Merric Bloodmoon</name>
     <size>S</size>
@@ -3788,10 +4061,14 @@ Source:	Monsters of the Wilderness p. 74 (Homebrew)</description>
     <cha>16</cha>
     <save>Con +7, Wis +6, Int +11</save>
     <skill>Arcana +11, History +11, Investigation +11, Perception +6, Persuasion +7</skill>
-    <sense/>
     <passive>16</passive>
     <languages>Common, Halfling, Goblin, Primordial</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Benign Transposition</name>
       <text>Merric can use his action to teleport up to 30 feet to an unoccupied space that he can see. Alternatively, he can choose a space within range that is occupied by a Small or Medium creature. If that creature is willing, they both teleport, swapping places. Once he uses this feature, he can't use it again until he finishes a long rest or he casts a conjuration spell of 1st level or higher.</text>
@@ -3834,8 +4111,8 @@ Source:	Monsters of the Wilderness p. 74 (Homebrew)</description>
       <text>Melee Attack: +10 to hit, reach 5 ft., one target. Hit: 7 (1d4 + 5) piercing damage plus 7 (2d6) poison damage.</text>
       <attack>+3 Dagger|10|1d4 +5</attack>
     </action>
-    <spells>acid splash, dancing lights, fire bolt, light, poison spray, burning hands, mage armor, fog cloud, unseen servant, cloud of daggers, misty step, scorching ray, web, conjure animals. fireball, stinking cloud, conjure minor elementals, dimension door, wall of fire, cloudkill, conjure elemental, arcane gate, teleport</spells>
     <slots>0,4,3,3,3,2,1,1</slots>
+    <spells>acid splash, dancing lights, fire bolt, light, poison spray, burning hands, mage armor, fog cloud, unseen servant, cloud of daggers, misty step, scorching ray, web, conjure animals. fireball, stinking cloud, conjure minor elementals, dimension door, wall of fire, cloudkill, conjure elemental, arcane gate, teleport</spells>
     <description>This arrogant little wizard is a master in the School of Conjuration. Long ago, Merric fled from his wealthy family and took up residence in a small shack in the swamp. He continued his studies, sneaking back into lizardfolk caves to get what spell components he couldn't find himself.
 
 Aristocrat Gone Wild. At first the wizard hated the living conditions in the swamp and wouldn't have wished it on his worst enemy. But over time Merric has grown to love the region. His henchman, a nasty orc warrior named Rogvar, is always at his side.
@@ -3844,7 +4121,7 @@ Odd Couple. Merric is a companion of the titan known as the Ryssarav. He seems t
 
 Source:	Monsters of the Wilderness p. 76 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: The Great Eight, Merric Bloodmoon -->
+  </monster>
   <monster>
     <name>Bog Hopper</name>
     <size>M</size>
@@ -3859,13 +4136,16 @@ Source:	Monsters of the Wilderness p. 76 (Homebrew)</description>
     <int>7</int>
     <wis>12</wis>
     <cha>4</cha>
+    <save/>
     <skill>Perception +3, Stealth +6</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
     <passive>13</passive>
     <languages>Sylvan</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The bog hopper can breathe air and water.</text>
@@ -3927,11 +4207,11 @@ Swamp Stalker. This odd fey creature spends its time hunting in swampy terrain. 
 
 Dark Cover. Bog hoppers prefer to hunt in dimly lit areas or at night. These stealthy monsters like to lurk in the water or thick foliage and listen for the movements of any prey.
 
-Wild Fey. Scholars believe that bog hoppers crossed into the world from Feyland. Most experts think the fey horrors came through a Riftgate or one of the other entrances to the fey world. The phrase “those crazy boggers” comes from dealings with these peculiar creatures.
+Wild Fey. Scholars believe that bog hoppers crossed into the world from Feyland. Most experts think the fey horrors came through a Riftgate or one of the other entrances to the fey world. The phrase "those crazy boggers" comes from dealings with these peculiar creatures.
 
 Source:	Monsters of the Wilderness p. 77 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Bog Hopper -->
+  </monster>
   <monster>
     <name>Clone Shroom</name>
     <size>L</size>
@@ -3946,14 +4226,16 @@ Source:	Monsters of the Wilderness p. 77 (Homebrew)</description>
     <int>7</int>
     <wis>12</wis>
     <cha>4</cha>
+    <save/>
     <skill>Perception +7</skill>
+    <passive>17</passive>
+    <languages>Sylvan</languages>
+    <cr>7</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison, psychic</immune>
     <conditionImmune>blinded, charmed, exhaustion, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>17</passive>
-    <languages>Sylvan</languages>
-    <cr>7</cr>
     <trait>
       <name>False Appearance</name>
       <text>While the clone shroom remains motionless, it is indistinguishable from a giant mushroom.</text>
@@ -4000,9 +4282,11 @@ Dark Shadows. These curious plants live in the shade in bogs, fens, and swamps. 
 
 Source:	Monsters of the Wilderness p. 78 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Clone Shroom -->
+  </monster>
   <monster>
-    <name>The Crocodile Queen</name>
+    <name>Crocodile Queen, The</name>
+    <sortname>Crocodile, Queen</sortname>
+    <ancestry>Crocodile, Queen</ancestry>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>neutral evil</alignment>
@@ -4015,11 +4299,16 @@ Source:	Monsters of the Wilderness p. 78 (Homebrew)</description>
     <int>19</int>
     <wis>20</wis>
     <cha>19</cha>
+    <save/>
     <skill>Insight +8, Perception +8, Survival +8</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>18</passive>
     <languages>Common, Druidic, Sylvan, Draconic</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The Crocodile Queen has advantage on saving throws against spells and other magical effects.</text>
@@ -4048,8 +4337,8 @@ Source:	Monsters of the Wilderness p. 78 (Homebrew)</description>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage plus 10 (3d6) poison damage.</text>
       <attack>Poisoned Staff|6|1d8+3+3d6</attack>
     </action>
-    <spells>druidcraft, poison spray, thorn whip, entangle, fog cloud, speak with animals, thunderwave, barkskin, darkvision, spike growth, call lightning, plant growth, speak with plants, blight, giant insect, grasping vine, scrying</spells>
     <slots>0,4,3,3,3,1</slots>
+    <spells>druidcraft, poison spray, thorn whip, entangle, fog cloud, speak with animals, thunderwave, barkskin, darkvision, spike growth, call lightning, plant growth, speak with plants, blight, giant insect, grasping vine, scrying</spells>
     <description>Deep inside the darkest, most sinister swamp lives the Crocodile Queen. Luckily very few humanoids will ever come into contact with her. However, she will sneak into human settlements and take what she wants. Every few years she will steal a baby girl. A week later, the Crocodile Queen will give birth to a daughter and replace the stolen child. Once her daughter transforms into a hag at thirteen years-old, the queen will decide whether or not she'll raise her.
 
 Swamp Hag. The Crocodile Queen is a wicked, ancient creature. Extremely arrogant, she is confident that nobody will challenge her for control of the expansive swamp.
@@ -4058,9 +4347,11 @@ Creepy Court. Her lair is an eerie cave located far off the beaten track. Giant 
 
 Source:	Monsters of the Wilderness p. 79 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: The Crocodile Queen -->
+  </monster>
   <monster>
     <name>Demon Turtle</name>
+    <sortname>Turtle, Demon</sortname>
+    <ancestry>Turtle</ancestry>
     <size>H</size>
     <type>fiend (demon)</type>
     <alignment>chaotic evil</alignment>
@@ -4073,14 +4364,16 @@ Source:	Monsters of the Wilderness p. 79 (Homebrew)</description>
     <int>12</int>
     <wis>14</wis>
     <cha>5</cha>
+    <save/>
     <skill>Perception +5</skill>
+    <passive>15</passive>
+    <languages>Abyssal, telepathy 120 ft.</languages>
+    <cr>6</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>15</passive>
-    <languages>Abyssal, telepathy 120 ft.</languages>
-    <cr>6</cr>
     <trait>
       <name>Amphibious</name>
       <text>The demon can breathe air and water.</text>
@@ -4119,7 +4412,7 @@ Swamp Snacks. Demon turtles feed on whatever they can find in the gloomy region.
 
 Source:	Monsters of the Wilderness p. 80 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Demon Turtle -->
+  </monster>
   <monster>
     <name>Evil Kneasel the Swamp Weasel</name>
     <size>T</size>
@@ -4134,11 +4427,16 @@ Source:	Monsters of the Wilderness p. 80 (Homebrew)</description>
     <int>15</int>
     <wis>14</wis>
     <cha>12</cha>
-    <skill>Acrobatics +7, Sleight of Hand +7, Stealth +7</skill>
-    <senses/>
+    <save/>
+    <skill>Acrobatics +7, Sleight Of Hand +7, Stealth +7</skill>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Action</name>
       <text>On each of his turns, Evil Kneasel can use a bonus action to take the Dash, Disengage, or Hide action.</text>
@@ -4168,7 +4466,6 @@ Source:	Monsters of the Wilderness p. 80 (Homebrew)</description>
       <text>Evil Kneasel halves the damage that he takes from an attack that hits him. The weasel must be able to see the attacker.</text>
     </reaction>
     <spells>mending, message, poison spray, invisibility, jump, knock</spells>
-    <slots/>
     <description>An unstable wooden contraption hurtles out of control off a tree branch. Piloting the odd vehicle is a grinning weasel. The weird apparatus flies through the air and crashes into a swamp. Dusting himself off, the weasel chuckles and dashes off.
 
 Something Familiar. Evil Kneasel used to be the trusted familiar of Oswald Myrr. He enjoyed his place in one of the legendary wizard's towers.
@@ -4179,7 +4476,7 @@ Riftgate Rascal. After he escaped from Oswald's tower, the weasel headed for the
 
 Source:	Monsters of the Wilderness p. 81 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Evil Kneasel the Swamp Weasel -->
+  </monster>
   <monster>
     <name>Frog Prince</name>
     <size>M</size>
@@ -4194,13 +4491,16 @@ Source:	Monsters of the Wilderness p. 81 (Homebrew)</description>
     <int>12</int>
     <wis>13</wis>
     <cha>19</cha>
+    <save/>
     <skill>Perception +3, Persuasion +6, Stealth +5</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <sense/>
     <passive>17</passive>
     <languages>Common</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses/>
     <trait>
       <name>Amphibious</name>
       <text>The frog prince can breathe air and water.</text>
@@ -4245,9 +4545,11 @@ Back to Reality. This sensitive, romantic fellow wants his old life back. He is 
 
 Source:	Monsters of the Wilderness p. 82 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Frog Prince -->
+  </monster>
   <monster>
     <name>Giant Undead Crocodile</name>
+    <sortname>Crocodile, Giant Undead</sortname>
+    <ancestry>Giant Animal, Crocodile</ancestry>
     <size>H</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -4260,12 +4562,16 @@ Source:	Monsters of the Wilderness p. 82 (Homebrew)</description>
     <int>1</int>
     <wis>8</wis>
     <cha>3</cha>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>-</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Swamp Camouflage</name>
       <text>The undead crocodile has advantage on Dexterity (Stealth) checks made to hide in swampy terrain.</text>
@@ -4308,7 +4614,7 @@ Undead Nature. The undead crocodile doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 83 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Giant Undead Crocodile -->
+  </monster>
   <monster>
     <name>Marsh Hulk</name>
     <size>H</size>
@@ -4323,14 +4629,16 @@ Source:	Monsters of the Wilderness p. 83 (Homebrew)</description>
     <int>9</int>
     <wis>16</wis>
     <cha>14</cha>
+    <save/>
     <skill>Athletics +10, Perception +7, Stealth +7, Survival +7</skill>
-    <vulnerable>thunder</vulnerable>
-    <immune>poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
     <passive>17</passive>
     <languages>Common, Infernal</languages>
     <cr>10</cr>
+    <vulnerable>thunder</vulnerable>
+    <resist/>
+    <immune>poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The Marsh Hulk can breathe air and water.</text>
@@ -4369,9 +4677,11 @@ Home Cooking. The tormented fiend still lives at home with its mother. They live
 
 Source:	Monsters of the Wilderness p. 84 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Marsh Hulk -->
+  </monster>
   <monster>
     <name>Murder Hornet</name>
+    <sortname>Hornet, Murder</sortname>
+    <ancestry>Hornet</ancestry>
     <size>S</size>
     <type>beast</type>
     <alignment>chaotic evil</alignment>
@@ -4384,11 +4694,16 @@ Source:	Monsters of the Wilderness p. 84 (Homebrew)</description>
     <int>5</int>
     <wis>6</wis>
     <cha>1</cha>
-    <vulnerable>fire</vulnerable>
-    <senses/>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>-</languages>
     <cr>1/8</cr>
+    <vulnerable>fire</vulnerable>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Assassinate</name>
       <text>During its first turn, the murder hornet has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the murder hornet scores against a surprised creature is a critical hit.</text>
@@ -4408,9 +4723,10 @@ Nesting Place. Murder hornets dig their nests in the ground or take over the hom
 
 Source:	Monsters of the Wilderness p. 85 (Homebrew)</description>
     <environment>forest, swamp, desert</environment>
-  </monster>  <!-- Swamp/Jungle: Murder Hornet -->
+  </monster>
   <monster>
     <name>Salaman</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (salaman)</type>
     <alignment>lawful evil</alignment>
@@ -4423,12 +4739,16 @@ Source:	Monsters of the Wilderness p. 85 (Homebrew)</description>
     <int>12</int>
     <wis>13</wis>
     <cha>10</cha>
+    <save/>
     <skill>Perception +3, Stealth +5</skill>
-    <resist>poison</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Salaman</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The salaman can breathe air and water.</text>
@@ -4463,9 +4783,12 @@ Lizardfolk Rivals. Salamans hate all lizardfolk and are involved in a seemingly 
 
 Source:	Monsters of the Wilderness p. 86 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Salaman -->
+  </monster>
   <monster>
     <name>Salaman King</name>
+    <sortname>Salaman, King</sortname>
+    <ancestry>Salaman</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (salaman)</type>
     <alignment>lawful evil</alignment>
@@ -4478,13 +4801,16 @@ Source:	Monsters of the Wilderness p. 86 (Homebrew)</description>
     <int>12</int>
     <wis>14</wis>
     <cha>12</cha>
+    <save/>
     <skill>Insight +4, Perception +4 Stealth +5</skill>
-    <resist>poison</resist>
-    <conditionImmune>prone</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Salaman</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune>prone</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The salaman can breathe air and water.</text>
@@ -4521,9 +4847,12 @@ Sunken Temple. The salaman king lives in a large, sunken stone temple. Reptiles 
 
 Source:	Monsters of the Wilderness p. 87 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Salaman, King -->
+  </monster>
   <monster>
     <name>Salaman Shaman</name>
+    <sortname>Salaman, Shaman</sortname>
+    <ancestry>Salaman</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (salaman)</type>
     <alignment>lawful evil</alignment>
@@ -4536,12 +4865,16 @@ Source:	Monsters of the Wilderness p. 87 (Homebrew)</description>
     <int>12</int>
     <wis>16</wis>
     <cha>13</cha>
+    <save/>
     <skill>Insight +5, Nature +3, Medicine +5, Perception +5</skill>
-    <resist>poison</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Salaman</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The salaman can breathe air and water.</text>
@@ -4567,7 +4900,6 @@ Source:	Monsters of the Wilderness p. 87 (Homebrew)</description>
       <attack>Bite|3|1d6+1+2d6</attack>
     </action>
     <spells>blade ward, detect magic, poison spray, darkness, entangle, fog cloud</spells>
-    <slots/>
     <description>Strange smoke signals float above the jungle canopy. Drumming also echoes through the area. A salaman shaman floats along a lazy river with his drum on his stomach. As he drums, he seems unaware of his surroundings.
 
 Spellcasting Salamander. These spiritual leaders of the salaman are just below the king and his elders in their society's hierarchy. However, they are respected by the leadership and their advice is always valued.
@@ -4578,7 +4910,7 @@ Jungle Alchemy. Many different poisons and unusual substances are used by these 
 
 Source:	Monsters of the Wilderness p. 88 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: Salaman, Shaman -->
+  </monster>
   <monster>
     <name>Screech Leech</name>
     <size>T</size>
@@ -4593,11 +4925,16 @@ Source:	Monsters of the Wilderness p. 88 (Homebrew)</description>
     <int>2</int>
     <wis>8</wis>
     <cha>1</cha>
-    <conditionImmune>charmed, deafened</conditionImmune>
-    <senses>blindsense 30 ft.</senses>
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>-</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, deafened</conditionImmune>
+    <senses>blindsense 30 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The screech leech can breathe air and water.</text>
@@ -4628,13 +4965,14 @@ Shocking Sounds. Some monster hunters say that the screech leech's spooky call i
 
 Source:	Monsters of the Wilderness p. 89 (Homebrew)</description>
     <environment>forest, swamp, desert</environment>
-  </monster>  <!-- Swamp/Jungle: Screech Leech -->
+  </monster>
   <monster>
-    <name>The Swamp Creature</name>
+    <name>Swamp Creature, The</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>chaotic evil</alignment>
-    <ac>13 in humanoid form, 15 (natural armor) in hybrid form</ac>
+    <ac>13 in humanoid form, 15 (natural armor) in hybrid form)</ac>
     <hp>119 (14d8 + 56)</hp>
     <speed>30 ft. (30 ft., 30 ft. swim in hybrid form)</speed>
     <str>20</str>
@@ -4643,12 +4981,16 @@ Source:	Monsters of the Wilderness p. 89 (Homebrew)</description>
     <int>14</int>
     <wis>18</wis>
     <cha>9</cha>
+    <save/>
     <skill>Perception +7, Survival +7</skill>
-    <conditionImmune>bludgeoning, piercing, and slashing from nonmagical attacks</conditionImmune>
-    <sense/>
     <passive>17</passive>
     <languages>Common, Primordial</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>bludgeoning, piercing, and slashing from nonmagical attacks</conditionImmune>
+    <senses/>
     <trait>
       <name>Amphibious (Hybrid form only)</name>
       <text>The swamp creature can breathe air and water.</text>
@@ -4688,7 +5030,6 @@ Source:	Monsters of the Wilderness p. 89 (Homebrew)</description>
       <attack>Unarmed Attack|8|1d8+5</attack>
     </action>
     <spells>druidcraft, speak with plants, thorn whip, cure wounds, entangle, plant growth, speak with plants, darkvision, spike growth</spells>
-    <slots/>
     <description>Cattle are dead, the food stores have been robbed. Odd tracks lead into the nearby swamp. Everyone suspects the swamp creature is active in their area.
 
 Rotten Roots. This evil creature brings all kinds of misery when it makes a home near a settlement. Once a young druid, it was cursed by dark energies from a Riftgate. Now it has become a monster, part human and part plant.
@@ -4699,10 +5040,10 @@ Lost Boy. Many scholars debate about the origins of this strange monster. Nobody
 
 Source:	Monsters of the Wilderness p. 90 (Homebrew)</description>
     <environment>forest, swamp</environment>
-  </monster>  <!-- Swamp/Jungle: The Swamp Creature -->
+  </monster>
   <!-- Forest Region -->
   <monster>
-    <name>The Arborian</name>
+    <name>Arborian, The</name>
     <size>G</size>
     <type>monstrosity (titan)</type>
     <alignment>chaotic evil</alignment>
@@ -4717,12 +5058,14 @@ Source:	Monsters of the Wilderness p. 90 (Homebrew)</description>
     <cha>25</cha>
     <save>Con +12, Wis +9, Cha +14</save>
     <skill>Deception +14, Perception +9, Persuasion +14</skill>
-    <immune>poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>19</passive>
     <languages>Terran, Sylvan</languages>
     <cr>20</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -4791,7 +5134,7 @@ Resting Place. The Arborian sleeps underneath an enormous, old tree deep in the 
 
 Source:	Monsters of the Wilderness p. 92 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Titan, The Arborian -->
+  </monster>
   <monster>
     <name>Great Eight, Rolen Xiloscient</name>
     <size>M</size>
@@ -4808,10 +5151,14 @@ Source:	Monsters of the Wilderness p. 92 (Homebrew)</description>
     <cha>9</cha>
     <save>Int +10, Wis +7</save>
     <skill>Arcana +10, History +10, Nature +10, Perception +7</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>17</passive>
     <languages>Common, Elvish, Sylvan, Giant</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>Rolen has advantage on saving throws against being charmed, and magic can't put him to sleep.</text>
@@ -4860,17 +5207,18 @@ Once the effect ends, or if the creature succeeds on its initial saving throw ag
       <text>Melee Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) slashing damage.</text>
       <attack>+3 Longsword|7|1d10+3</attack>
     </action>
-    <spells>chill touch, dancing lights, light, message, prestidigitation, charm person, mage armor, magic missile, sleep, crown of madness, hold person, misty step, suggestion, counterspell, fireball, lightning bolt, banishment, blight, confusion, dominate person, modify memory, mass suggestion</spells>
     <slots>0,4,3,3,3,3,1</slots>
+    <spells>chill touch, dancing lights, light, message, prestidigitation, charm person, mage armor, magic missile, sleep, crown of madness, hold person, misty step, suggestion, counterspell, fireball, lightning bolt, banishment, blight, confusion, dominate person, modify memory, mass suggestion</spells>
     <description>This opinionated, aggressive elf doesn't back down from anyone. He is a master of the School of Enchantment. Rolen spends much of his time experimenting with magic in his forest home.
 
 Aloof Elf. The high elf isn't too interested in the opinions of others. He doesn't get along with many of the other members of the Wizard Council. Rolen doesn't even keep a home in Zogg anymore, preferring to live in the woods on the beautiful continent of Naern.
 
 Source:	Monsters of the Wilderness p. 94 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: The Great Eight, Rolen Xiloscient -->
+  </monster>
   <monster>
     <name>Baba Yaga</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>neutral evil</alignment>
@@ -4885,11 +5233,14 @@ Source:	Monsters of the Wilderness p. 94 (Homebrew)</description>
     <cha>19</cha>
     <save>Con +10, Int +12, Wis +11, Cha +9</save>
     <skill>Arcana +12, Deception +9, Insight +11, Perception +11, Persuasion +9</skill>
-    <resist>fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
-    <senses>truesight 120 ft.</senses>
     <passive>21</passive>
     <languages>Common, Abyssal, Elvish, Infernal, Sylvan</languages>
     <cr>13</cr>
+    <vulnerable/>
+    <resist>fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>truesight 120 ft.</senses>
     <trait>
       <name>Assassinate</name>
       <text>Baba Yaga has advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit she scores against a creature that is surprised is a critical hit.</text>
@@ -4935,8 +5286,7 @@ Source:	Monsters of the Wilderness p. 94 (Homebrew)</description>
       <attack>Claw|10|1d8+5</attack>
     </action>
     <spells>comprehend languages, dancing lights, detect magic, minor illusion, vicious mockery, blight, charm person, dispel magic, fear, fireball, misty step, ray of enfeeblement, sleep, witch bolt, circle of death, darkness, detect thoughts, finger of death, hallucinatory terrain, hex, see invisibility, silence</spells>
-    <slots/>
-    <description>Adventurers head to their tents after a delicious meal. As they are beginning to lie down for the night, the ranger in their party hears an unusual raven's call. He shouts a warning to his companions, “something wicked is coming this way!”
+    <description>Adventurers head to their tents after a delicious meal. As they are beginning to lie down for the night, the ranger in their party hears an unusual raven's call. He shouts a warning to his companions, "something wicked is coming this way!"
 
 Wild Witch. Baba Yaga is one of the most famous witches in the world. The cunning, clever old woman is hideously ugly. Some say she is related to hags as she enjoys dining on humanoids.
 
@@ -4944,7 +5294,7 @@ The Little Grandmother. Even though she is truly a horrifying monster, many folk
 
 Source:	Monsters of the Wilderness p. 95 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Baba Yaga -->
+  </monster>
   <monster>
     <name>Baba Yaga's Hut</name>
     <size>H</size>
@@ -4959,12 +5309,16 @@ Source:	Monsters of the Wilderness p. 95 (Homebrew)</description>
     <int>1</int>
     <wis>6</wis>
     <cha>1</cha>
-    <immune>poison, psychic</immune>
-    <conditionImmune>blinded, charmed, deafened, exhausted, frightened, paralyzed, petrified, poisoned, prone</conditionImmune>
-    <senses>blindsight 90 ft.</senses>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>-</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, psychic</immune>
+    <conditionImmune>blinded, charmed, deafened, exhausted, frightened, paralyzed, petrified, poisoned, prone</conditionImmune>
+    <senses>blindsight 90 ft.</senses>
     <trait>
       <name>Immutable Form</name>
       <text>Baba Yaga's Hut is immune to any spell or effect that would alter its form.</text>
@@ -4996,9 +5350,11 @@ Mortar and Pestle. The witch also stores her magical mortar inside her hut. When
 
 Source:	Monsters of the Wilderness p. 99 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Baba Yaga's Hut -->
+  </monster>
   <monster>
     <name>Black Stag</name>
+    <sortname>Stag, Black</sortname>
+    <ancestry>Stag</ancestry>
     <size>L</size>
     <type>fey</type>
     <alignment>chaotic evil</alignment>
@@ -5011,11 +5367,16 @@ Source:	Monsters of the Wilderness p. 99 (Homebrew)</description>
     <int>14</int>
     <wis>13</wis>
     <cha>12</cha>
+    <save/>
     <skill>Investigation +4, Perception +3, Stealth +3</skill>
-    <senses>darkvision 90 ft.</senses>
     <passive>13</passive>
     <languages>Sylvan</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Brave</name>
       <text>The black stag has advantage on saving throws against being frightened.</text>
@@ -5054,7 +5415,6 @@ Source:	Monsters of the Wilderness p. 99 (Homebrew)</description>
       <attack>Hooves|6|3d8+4</attack>
     </action>
     <spells>minor illusion, darkness, silent image</spells>
-    <slots/>
     <description>While walking through the woods a sense of uneasiness fills your gut. Then you notice shadows around you seem to be moving independently. The cleric in your adventuring party suspects that the black stag is near. Then the druid notices that something is wrong with the trees and plants.
 
 Double Trouble. These evil fey usually spread fear and hate in the darkest part of Feyland. However, some have now passed through Riftgates into the ordinary world.
@@ -5065,9 +5425,10 @@ Horrible Henchmen. At times evil druids and other nefarious characters fall into
 
 Source:	Monsters of the Wilderness p. 97 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Black Stag -->
+  </monster>
   <monster>
     <name>Briar Moon</name>
+    <sortname>Moon, Briar</sortname>
     <size>M</size>
     <type>fey</type>
     <alignment>chaotic good</alignment>
@@ -5080,11 +5441,16 @@ Source:	Monsters of the Wilderness p. 97 (Homebrew)</description>
     <int>12</int>
     <wis>20</wis>
     <cha>19</cha>
+    <save/>
     <skill>Athletics +5, Insight +8, Perception +8, Stealth +6, Survival +8</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>18</passive>
     <languages>Common, Elvish, Sylvan, Primordial</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>Briar has advantage on saving throws against being charmed, and magic can't put her to sleep.</text>
@@ -5123,7 +5489,6 @@ Source:	Monsters of the Wilderness p. 97 (Homebrew)</description>
       <attack>Longbow|6|1d8+3</attack>
     </action>
     <spells>barkskin, druidcraft, produce flame, shillelagh, thorn whip, faerie fire, fog cloud, moonbeam, pass without trace, speak with animals, thunderwave, call lightning, dispel magic</spells>
-    <slots/>
     <description>Legend says fey energies passed through a Riftgate and blessed a baby. The child was imbued by these forces and born a fey. Briar Moon is destined to cleanse the wilderness of evil. She was feared by those in her village because of strange events surrounding her birth. Her home was then destroyed by cultists, and she was hidden away by forest creatures.
 
 Wild Guardian. Briar Moon has fled into the wilderness to fulfill her destiny. She is deeply connected to nature and fearlessly fights evil of any kind.
@@ -5132,9 +5497,11 @@ Natural Warrior. Seeing herself as part of the natural world, Briar is at home i
 
 Source:	Monsters of the Wilderness p. 98 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Briar Moon -->
+  </monster>
   <monster>
     <name>Creeping Shadow</name>
+    <sortname>Shadow, Creeping</sortname>
+    <ancestry>Shadow</ancestry>
     <size>L</size>
     <type>undead</type>
     <alignment>neutral evil</alignment>
@@ -5147,13 +5514,16 @@ Source:	Monsters of the Wilderness p. 98 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>11</cha>
+    <save/>
     <skill>Perception +4, Stealth +4</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
     <passive>14</passive>
     <languages>the languages it knew in life</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Amorphous</name>
       <text>The creeping shadow can move through a space as narrow as 1 inch wide without squeezing.</text>
@@ -5196,7 +5566,7 @@ Undead Nature. The creeping shadow doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 99 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Creeping Shadow -->
+  </monster>
   <monster>
     <name>Dimspriggan</name>
     <size>L</size>
@@ -5211,13 +5581,16 @@ Source:	Monsters of the Wilderness p. 99 (Homebrew)</description>
     <int>11</int>
     <wis>16</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +6, Stealth +6</skill>
-    <vulnerable>fire</vulnerable>
-    <resist>bludgeoning, piercing</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>16</passive>
     <languages>Sylvan</languages>
     <cr>5</cr>
+    <vulnerable>fire</vulnerable>
+    <resist>bludgeoning, piercing</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>False Appearance</name>
       <text>If the dimspriggan remains motionless it appears to be a normal tree.</text>
@@ -5250,7 +5623,6 @@ Source:	Monsters of the Wilderness p. 99 (Homebrew)</description>
       <text>Swarming, biting locusts fill a 30-foot-radius sphere centered on the dimspriggan. The sphere spreads around corners. The sphere remains for 1 minute, and the terrain is lightly obscured. The sphere's area is also difficult terrain. When the area appears, each creature in it must make a DC 14 Constitution saving throw. A creature takes 5 (1d10) piercing damage on a failed save, or half as much damage on a successful save. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.</text>
     </action>
     <spells>thorn whip, invisibility</spells>
-    <slots/>
     <description>Tons of flying insects pour into a cluster of tents, chasing away the inhabitants. Appearing out of thin air in the clearing, a dimspriggan begins ripping people to shreds.
 
 Grove Guardian. Most dimspriggans are found in ruins guarding a hoard of treasure. As the guardian of the treasure, they will kill anyone who enters their territory. They are wicked, mischievous fey who also enjoy spreading misery and destruction. Dimspriggans love chasing newcomers out of the woods, making sure the scared explorers will never return again.
@@ -5259,7 +5631,7 @@ Dark Cloud. The clouds of insects breathed out by dimspriggans make a great deal
 
 Source:	Monsters of the Wilderness p. 100 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Dimspriggan -->
+  </monster>
   <monster>
     <name>Faun of the Dead</name>
     <size>M</size>
@@ -5274,12 +5646,16 @@ Source:	Monsters of the Wilderness p. 100 (Homebrew)</description>
     <int>3</int>
     <wis>9</wis>
     <cha>7</cha>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fear Aura</name>
       <text>Any beast or humanoid that starts its turn within 15 feet of the faun must succeed on a DC 13 Wisdom saving throw or be frightened until the start of their next turn.</text>
@@ -5302,7 +5678,7 @@ Source:	Monsters of the Wilderness p. 100 (Homebrew)</description>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.</text>
       <attack>Gore|5|1d8+3</attack>
     </action>
-    <description>Several brownies are picking glowing berries in the woods. One of them hears a branch break and alerts the others. Then they see it. A horned creature is slowing creeping through the dense foliage towards them. “It's the Faun of the Dead!” screams one of the little fey and they all faint.
+    <description>Several brownies are picking glowing berries in the woods. One of them hears a branch break and alerts the others. Then they see it. A horned creature is slowing creeping through the dense foliage towards them. "It's the Faun of the Dead!" screams one of the little fey and they all faint.
 
 Broken Heart. The faun had a fallout with his family and then its lover married someone else. An emotional wreck, it wandered into the most dangerous part of the woods. Zombies quickly killed it and a fey necromancer raised it to join the evil Unseelie Court.
 
@@ -5314,9 +5690,11 @@ Undead Nature. The faun doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 101 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Faun of the Dead -->
+  </monster>
   <monster>
     <name>Gloom Owl</name>
+    <sortname>Owl, Gloom</sortname>
+    <ancestry>Owl</ancestry>
     <size>M</size>
     <type>fey</type>
     <alignment>chaotic evil</alignment>
@@ -5329,11 +5707,16 @@ Source:	Monsters of the Wilderness p. 101 (Homebrew)</description>
     <int>15</int>
     <wis>16</wis>
     <cha>11</cha>
+    <save/>
     <skill>Perception +5, Stealth +5</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Sylvan</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Reckless</name>
       <text>At the start of its turn, the gloom owl can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.</text>
@@ -5372,9 +5755,11 @@ Tree House. Gloom Owls make their homes in large cavities of huge trees. Some of
 
 Source:	Monsters of the Wilderness p. 102 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Gloom Owl -->
+  </monster>
   <monster>
     <name>Grim Squirrel</name>
+    <sortname>Squirrel, Grim</sortname>
+    <ancestry>Squirrel</ancestry>
     <size>T</size>
     <type>fey</type>
     <alignment>lawful evil</alignment>
@@ -5387,11 +5772,16 @@ Source:	Monsters of the Wilderness p. 102 (Homebrew)</description>
     <int>11</int>
     <wis>12</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +3, Stealth +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Sylvan</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Hearing</name>
       <text>The grim squirrel has advantage on Wisdom (Perception) checks that rely on hearing.</text>
@@ -5424,7 +5814,7 @@ Flying Mounts. Noble and elite warriors ride gloom owls as their mounts. The bol
 
 Source:	Monsters of the Wilderness p. 103 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Grim Squirrel -->
+  </monster>
   <monster>
     <name>Mothman</name>
     <size>M</size>
@@ -5439,12 +5829,16 @@ Source:	Monsters of the Wilderness p. 103 (Homebrew)</description>
     <int>16</int>
     <wis>15</wis>
     <cha>9</cha>
+    <save/>
     <skill>Insight +5, Perception +5, Stealth +8</skill>
-    <immune>psychic</immune>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>all, telepathy 120 ft.</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>psychic</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The Mothman's innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no material components:
@@ -5480,7 +5874,6 @@ Source:	Monsters of the Wilderness p. 103 (Homebrew)</description>
       <attack>Haunt Mind||1d8+3</attack>
     </action>
     <spells>charm person, detect evil and good, dissonant whispers, minor illusion, crown of madness, enthrall, hypnotic pattern, silence</spells>
-    <slots/>
     <description>A tall, gray creature with two glowing red eyes flies in front of a carriage. The two young couples inside scream and run for their lives. Soon the tale of the Mothman reaches their small town. The witnesses explain they saw a large humanoid with a 10-foot wingspan.
 
 Otherworldly Creature. This monster is not from the ordinary world. The Mothman passed through one of Oswald Myrr's Riftgates and got lost.
@@ -5491,9 +5884,10 @@ Homesick Horror. The Mothman longs to return home to its world. It has attempted
 
 Source:	Monsters of the Wilderness p. 104 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Mothman -->
+  </monster>
   <monster>
     <name>Phooka</name>
+    <ancestry>Phooka</ancestry>
     <size>S</size>
     <type>fey (shapechanger)</type>
     <alignment>chaotic neutral</alignment>
@@ -5506,11 +5900,16 @@ Source:	Monsters of the Wilderness p. 104 (Homebrew)</description>
     <int>16</int>
     <wis>13</wis>
     <cha>17</cha>
+    <save/>
     <skill>Deception +5, Perception +3, Persuasion +5, Stealth +5</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The phooka has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -5537,7 +5936,6 @@ Source:	Monsters of the Wilderness p. 104 (Homebrew)</description>
   Each time the phooka or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts for 10 minutes or until the phooka dies, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the phooka's Fey Charm for the next 24 hours. The phooka can have no more than one humanoid and up to 3 beasts charmed at a time.</text>
     </action>
     <spells>druidcraft, thorn whip, dancing lights, invisibility</spells>
-    <slots/>
     <description>The phooka is a michevous fey shapechanger. Its true form is a small black creature, a strange combination of a rabbit, goat, and fox. These tricksters crossed into the world from Feyland. They aren't popular in either realm.
 
 Off the Beaten Path. These fey often surprise travelers on remote forest trails. Phookas move through the trees and spy on their victims before they reveal themselves. However, the form they choose won't be anything like their true self.
@@ -5548,9 +5946,11 @@ Rocky Ride. One of the phooka's favorite trick is talking a humanoid into riding
 
 Source:	Monsters of the Wilderness p. 105 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Phooka -->
+  </monster>
   <monster>
-    <name>Phooka, Grim</name>
+    <name>Grim Phooka</name>
+    <sortname>Phooka, Grim</sortname>
+    <ancestry>Phooka</ancestry>
     <size>S</size>
     <type>fey (shapechanger)</type>
     <alignment>chaotic evil</alignment>
@@ -5563,11 +5963,16 @@ Source:	Monsters of the Wilderness p. 105 (Homebrew)</description>
     <int>16</int>
     <wis>13</wis>
     <cha>17</cha>
+    <save/>
     <skill>Deception +5, Perception +3, Persuasion +5, Stealth +5</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The phooka has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -5594,7 +5999,6 @@ Source:	Monsters of the Wilderness p. 105 (Homebrew)</description>
   Each time the phooka or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts for 10 minutes or until the phooka dies, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the phooka's Fey Charm for the next 24 hours. The phooka can have no more than one humanoid and up to 3 beasts charmed at a time.</text>
     </action>
     <spells>druidcraft, thorn whip, dancing lights, invisibility</spells>
-    <slots/>
     <description>The phooka is a michevous fey shapechanger. Its true form is a small black creature, a strange combination of a rabbit, goat, and fox. These tricksters crossed into the world from Feyland. They aren't popular in either realm.
 
 Off the Beaten Path. These fey often surprise travelers on remote forest trails. Phookas move through the trees and spy on their victims before they reveal themselves. However, the form they choose won't be anything like their true self.
@@ -5605,9 +6009,11 @@ Rocky Ride. One of the phooka's favorite trick is talking a humanoid into riding
 
 Source:	Monsters of the Wilderness p. 105 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Phooka, Grim -->
+  </monster>
   <monster>
     <name>Pumpkin King</name>
+    <sortname>Pumpkin, King</sortname>
+    <ancestry>Pumpkin</ancestry>
     <size>M</size>
     <type>fey</type>
     <alignment>chaotic evil</alignment>
@@ -5620,11 +6026,16 @@ Source:	Monsters of the Wilderness p. 105 (Homebrew)</description>
     <int>18</int>
     <wis>20</wis>
     <cha>21</cha>
+    <save/>
     <skill>Deception +9, Perception +9, Stealth +8</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>19</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The pumpkin king has advantage on saving throws against being charmed, and magic can't put him to sleep.</text>
@@ -5656,7 +6067,6 @@ Source:	Monsters of the Wilderness p. 105 (Homebrew)</description>
       <attack>Flaming Pumpkins|8|1d6+4+2d6</attack>
     </action>
     <spells>dancing lights, minor illusion, vicious mockery, charm person, crown of madness, darkness, faerie fire, hold person, sleep, thunderwave, animate dead, dispel magic, feign death, mislead, see invisibility, silence</spells>
-    <slots/>
     <description>The most dangerous trickster in the woods is the Pumpkin King. He rules a gloomy, eerie forest far from most settlements. This fey is like an out-of-control teenager and causes chaos wherever he goes. In one hand he wields a great black scythe, in his other he holds a flaming pumpkin.
 
 Forgotten Fey. The pumpkin king longs to return to Feyland and the Unseelie Court. He was banished long ago for challenging the power of the Queen of the Darkness.
@@ -5667,7 +6077,7 @@ Dark Castle. Several oddballs have joined the pumpkin king in a bizarre version 
 
 Source:	Monsters of the Wilderness p. 106 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Pumpkin King -->
+  </monster>
   <monster>
     <name>Three Skulls</name>
     <size>M</size>
@@ -5682,13 +6092,16 @@ Source:	Monsters of the Wilderness p. 106 (Homebrew)</description>
     <int>19</int>
     <wis>18</wis>
     <cha>11</cha>
+    <save/>
     <skill>Perception +7</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>17</passive>
     <languages>Common, Elvish</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Detect Life</name>
       <text>Three Skulls can magically sense the presence of creatures up to 5 miles away that aren't undead or constructs. It knows the direction they're in but not their exact locations.</text>
@@ -5729,7 +6142,6 @@ Mother Skull: Paralyzing Gaze. Three skulls fixes its gaze on one creature it ca
 Grandmother Skull: Weakening Gaze. Three skulls fixes its gaze on one creature it can see within 30 feet of it. The target must succeed on a DC 15 Constitution saving throw against this magic or have their Strength score reduced by 1d4. The target dies if this reduces its Strength to 0.</text>
     </action>
     <spells>chill touch, poison spray, ray of frost, fog cloud, ray of sickness, witch bolt, blight, counterspell, darkness</spells>
-    <slots/>
     <description>A horrible family of three died a tragic death. The trio of wealthy nobles lived in a wilderness manor and exploited the forest every way they could. Eventually, the woodland creatures rose up and destroyed them.
 
 Return Engagement. However, a diabolical necromancer brought all three nobles back in the same form. These three twisted souls are contained in the bizarre form of Three Skulls. The four-armed horror now haunts their former forest home.
@@ -5740,9 +6152,11 @@ Undead Nature. Three Skulls doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 107 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Three Skulls -->
+  </monster>
   <monster>
     <name>Twiggy Stardust</name>
+    <sortname>Stardust, Twiggy</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>fey</type>
     <alignment>chaotic good</alignment>
@@ -5755,11 +6169,16 @@ Source:	Monsters of the Wilderness p. 107 (Homebrew)</description>
     <int>13</int>
     <wis>17</wis>
     <cha>20</cha>
+    <save/>
     <skill>Insight +6, Nature +4, Performance +8, Persuasion +8</skill>
-    <senses>truesight 60 ft.</senses>
     <passive>13</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>truesight 60 ft.</senses>
     <trait>
       <name>Bardic Inspiration (5/Day)</name>
       <recharge>5/Day</recharge>
@@ -5797,8 +6216,8 @@ Source:	Monsters of the Wilderness p. 107 (Homebrew)</description>
       <recharge>2/Day</recharge>
       <text>Twiggy can use a bonus action on their turn to target up to four creatures within 60 feet of them. If the target can hear Twiggy, the target regains 13 (3d8) temporary hit points and is freed from any blindness, or deafness.</text>
     </action>
-    <spells>dancing lights, friends, prestidigitation, vicious mockery, charm person, cure wounds, disguise self, healing word, calm emotions, enthrall, suggestion, dispel magic, hypnotic pattern, tongues, dimension door, hallucinatory terrain</spells>
     <slots>0,4,3,3,2</slots>
+    <spells>dancing lights, friends, prestidigitation, vicious mockery, charm person, cure wounds, disguise self, healing word, calm emotions, enthrall, suggestion, dispel magic, hypnotic pattern, tongues, dimension door, hallucinatory terrain</spells>
     <description>Twiggy was sent to the world to warn of a coming disaster. A seer told the eternally curious fey about a curse unleashed upon a faraway land. Twiggy used a Riftgate hidden in an ancient tree to travel to the everyday world.
 
 Fey Homeland. The imaginative creature hails from the mysterious Feyland. They are an extremely talented musician and deeply connected to nature.
@@ -5807,7 +6226,7 @@ Fervent Following. Twiggy has become popular in the many forests of the world. T
 
 Source:	Monsters of the Wilderness p. 108 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Twiggy Stardust -->
+  </monster>
   <monster>
     <name>Twisted Sisters</name>
     <size>L</size>
@@ -5822,11 +6241,16 @@ Source:	Monsters of the Wilderness p. 108 (Homebrew)</description>
     <int>10</int>
     <wis>13</wis>
     <cha>5</cha>
+    <save/>
     <skill>Perception +3, Stealth +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>-</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>False Appearance</name>
       <text>If the twisted sisters remains motionless it appears to be a clump of trees.</text>
@@ -5859,9 +6283,11 @@ Terrible Teamwork. The twisted sisters works with other evil creatures that can 
 
 Source:	Monsters of the Wilderness p. 109 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Twisted Sisters -->
+  </monster>
   <monster>
     <name>Witch of the Nine</name>
+    <sortname>Witch, of the Nine</sortname>
+    <ancestry>Witch</ancestry>
     <size>M</size>
     <type>fey (shapechanger)</type>
     <alignment>chaotic evil</alignment>
@@ -5874,11 +6300,16 @@ Source:	Monsters of the Wilderness p. 109 (Homebrew)</description>
     <int>18</int>
     <wis>16</wis>
     <cha>16</cha>
+    <save/>
     <skill>Deception +6, Insight +6, Perception +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>16</passive>
     <languages>Common, Elvish, Sylvan, Abyssal</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The witch have advantage on saving throws against being charmed, and magic can't put them to sleep.</text>
@@ -5914,7 +6345,6 @@ Source:	Monsters of the Wilderness p. 109 (Homebrew)</description>
       <attack>Breath Attack||3d6</attack>
     </action>
     <spells>charm person, detect evil and good, minor illusion, entangle, fog cloud, fly, hold person, scorching ray, sleep, thorn whip, barkskin, call lightning, dispel magic, pass without trace</spells>
-    <slots/>
     <description>Nine wild witches approach a fast-flowing river in the forest. The women are clad in black robes and together they are carrying an unconscious victim. The evil women reach the river and hurl the handsome young nobleman into the river.
 
 Spreading Misery. These horrid witches have cursed the land and work to destroy the civilized world. They target the leaders of each territory, especially monarchies.
@@ -5925,10 +6355,10 @@ Wicked Witches. Many of the kingdoms affected by the witches' terrible acts want
 
 Source:	Monsters of the Wilderness p. 110 (Homebrew)</description>
     <environment>forest</environment>
-  </monster>  <!-- Forest: Witch of the Nine -->
+  </monster>
   <!-- Hills/Lakes Region -->
   <monster>
-    <name>The Hakkon</name>
+    <name>Hakkon, The</name>
     <size>G</size>
     <type>monstrosity (titan)</type>
     <alignment>chaotic evil</alignment>
@@ -5943,12 +6373,14 @@ Source:	Monsters of the Wilderness p. 110 (Homebrew)</description>
     <cha>7</cha>
     <save>Con +13, Wis +9</save>
     <skill>Perception +9</skill>
-    <immune>cold, lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>charmed, paralyzed, poisoned, prone</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>19</passive>
     <languages>Terran</languages>
     <cr>22</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>cold, lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, paralyzed, poisoned, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -6014,7 +6446,7 @@ Clash of the Titans. This monster is rumored to be from a faraway land. Oswald M
 
 Source:	Monsters of the Wilderness p. 112 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Titan, The Hakkon -->
+  </monster>
   <monster>
     <name>Great Eight, Jacob Ladda</name>
     <size>M</size>
@@ -6031,10 +6463,14 @@ Source:	Monsters of the Wilderness p. 112 (Homebrew)</description>
     <cha>7</cha>
     <save>Con +6, Wis +7, Int +12</save>
     <skill>Arcana +12, History +12, Perception +7, Stealth +7</skill>
-    <senses/>
     <passive>17</passive>
     <languages>Common, Dwarvish, Giant, Gnomish, Orcish, Terran</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Grim Harvest</name>
       <text>Once per turn when Jacob kills one or more creatures with a spell of 1st level or higher, he regains hit points equal to twice the spell's level, or three times its level if the spell belongs to the School of Necromancy. He doesn't gain this benefit for killing constructs or undead.</text>
@@ -6068,8 +6504,8 @@ Source:	Monsters of the Wilderness p. 112 (Homebrew)</description>
       <text>Melee Attack: +9 to hit, reach 5 ft., one target. Hit: 7 (1d4 + 5) piercing damage plus 17 (5d6) poison damage.</text>
       <attack>+2 Dagger|9|1d4+5+5d6</attack>
     </action>
-    <spells>chill touch, dancing lights, fire bolt, poison spray, shocking grasp, false life, mage armor, magic missile, ray of sickness, blindness/deafness, darkvision, ray of enfeeblement, animate dead, fireball, vampiric touch, blight, dimension door, greater invisibility, animate objects, wall of stone, eyebite, finger of death</spells>
     <slots>0,4,3,3,3,3,2,1,1</slots>
+    <spells>chill touch, dancing lights, fire bolt, poison spray, shocking grasp, false life, mage armor, magic missile, ray of sickness, blindness/deafness, darkvision, ray of enfeeblement, animate dead, fireball, vampiric touch, blight, dimension door, greater invisibility, animate objects, wall of stone, eyebite, finger of death</spells>
     <description>Jacob is a soft-spoken member of the Wizard Council. He is incredibly calm and doesn't speak much. The old wizard is a master of the School of Necromancy.
 
 Undead Army. Jacob has ambitious plans. However, he is extremely patient. The necromancer has been creating an unseen army for over thirty years. It now contains wights, zombies, ogre zombies, skeletons, and numerous other undead abominations. He has also begun to communicate with the Hakkon and hopes it will join his army.
@@ -6078,13 +6514,13 @@ Hilltop Headquarters. Jacob lives in a hilltop wilderness compound. Inside is a 
 
 Source:	Monsters of the Wilderness p. 114 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: The Beastmaster -->
+  </monster>
   <monster>
     <name>The Beastmaster</name>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>chaotic neutral</alignment>
-    <ac>14 (hide) in humanoid form, 15 (natural armor) in bear form</ac>
+    <ac>14 (hide) in humanoid form, 15 (natural armor) in bear form)</ac>
     <hp>133 (14d8 + 70)</hp>
     <speed>30 ft., (40 ft., climb 40 ft. in bear form)</speed>
     <str>20</str>
@@ -6093,11 +6529,16 @@ Source:	Monsters of the Wilderness p. 114 (Homebrew)</description>
     <int>12</int>
     <wis>19</wis>
     <cha>9</cha>
+    <save/>
     <skill>Athletics +8, Animal Handling +7, Perception +7, Survival +7</skill>
-    <senses/>
     <passive>17</passive>
     <languages>Common, Primordial (can't speak in bear form)</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Animal Awareness</name>
       <text>Any beasts that spend at least a week in his company have their Intelligence and Wisdom scores raised to a minimum of 10.</text>
@@ -6146,8 +6587,6 @@ Source:	Monsters of the Wilderness p. 114 (Homebrew)</description>
       <recharge>1/Day</recharge>
       <text>The Beastmaster can summon 1d4 brown bears. They arrive in 1d4 turns and obey the Beastmaster's commands.</text>
     </action>
-    <spells/>
-    <slots/>
     <description>The Beastmaster is a human who has the ability to change into a large bear. A cousin of the werebears, he gets along with most non-evil lycanthropes. The tall, muscled man protects the hill region from evil creatures. He especially dislikes goblins, orcs, and worgs.
 
 Wild Man. The Beastmaster usually appears as a strongly built man with a black beard and long black hair. He resides in a large home in the hills.
@@ -6158,9 +6597,11 @@ Friends in Need. A few adventurers have sought refuge at the Beastmaster's lodge
 
 Source:	Monsters of the Wilderness p. 115 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: The Beastmaster -->
+  </monster>
   <monster>
     <name>Demon Goat</name>
+    <sortname>Goat, Demon</sortname>
+    <ancestry>Goat</ancestry>
     <size>L</size>
     <type>fiend (demon)</type>
     <alignment>chaotic evil</alignment>
@@ -6173,14 +6614,16 @@ Source:	Monsters of the Wilderness p. 115 (Homebrew)</description>
     <int>11</int>
     <wis>12</wis>
     <cha>3</cha>
+    <save/>
     <skill>Perception +3</skill>
+    <passive>13</passive>
+    <languages>Abyssal, telepathy 120 ft.</languages>
+    <cr>4</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 90 ft.</senses>
-    <passive>13</passive>
-    <languages>Abyssal, telepathy 120 ft.</languages>
-    <cr>4</cr>
     <trait>
       <name>Magic Resistance</name>
       <text>The demon has advantage on saving throws against spells and other magical effects.</text>
@@ -6203,8 +6646,6 @@ Source:	Monsters of the Wilderness p. 115 (Homebrew)</description>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) bludgeoning damage.</text>
       <attack>Ram|7|1d12+5</attack>
     </action>
-    <spells/>
-    <slots/>
     <description>Goats are one of the oldest domesticated animals in the world. Their milk, skin, meat, and fur have been used for many years to support humanoid communities. This goat is an exception, a horrifying fiend that prowls the hills.
 
 Horned Horror. Like other goats, these monsters will eat absolutely anything and everything. Searching through the contents of their stomachs one can discover coins or even magic items.
@@ -6215,7 +6656,7 @@ Alchemical Aids. Some witches, hags, cultists, and alchemists use the parts of a
 
 Source:	Monsters of the Wilderness p. 116 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Demon Goat -->
+  </monster>
   <monster>
     <name>Grabbit</name>
     <size>L</size>
@@ -6230,11 +6671,16 @@ Source:	Monsters of the Wilderness p. 116 (Homebrew)</description>
     <int>11</int>
     <wis>15</wis>
     <cha>6</cha>
+    <save/>
     <skill>Perception +3</skill>
-    <senses>darkvision 90 ft.</senses>
     <passive>13</passive>
     <languages>Sylvan</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The grabbit's innate spellcasting ability is Wisdom (spell save DC 12). It can innately cast the following spells, requiring no components:
@@ -6275,9 +6721,11 @@ Feared Fey. Other fey aren't fond of these cowardly scoundrels. The Seelie Court
 
 Source:	Monsters of the Wilderness p. 117 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Grabbit -->
+  </monster>
   <monster>
     <name>Grim Giant</name>
+    <sortname>Giant, Grim</sortname>
+    <ancestry>Giant</ancestry>
     <size>H</size>
     <type>giant</type>
     <alignment>neutral evil</alignment>
@@ -6290,11 +6738,16 @@ Source:	Monsters of the Wilderness p. 117 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>8</cha>
+    <save/>
     <skill>Athletics +9, Perception +5, Stealth +4</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Common, Giant</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Hill Camouflage</name>
       <text>The giant has advantage on Stealth (Dexterity) checks to hide at the top of hills, or similar terrain. It crouches down and blends in with the surroundings.</text>
@@ -6317,7 +6770,6 @@ Source:	Monsters of the Wilderness p. 117 (Homebrew)</description>
       <name>Rock Catchin</name>
       <text>If a rock or similar object is hurled at the giant., the giant can, with a successful DC 13 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.</text>
     </reaction>
-    <spells/>
     <description>A storm crackles over large, rolling hills. Thunder booms and lightning paints the sky. Suddenly, one of the hills begins to move. A creature had been lying down on the crest and it slowly stands up. The grim giant uses the terrain of this region to hide its bulk.
 
 Mister Crouch. These giants can crouch down on the top of hills for hours and hours. They are smarter than most their kind and are very aware of their surroundings.
@@ -6328,9 +6780,11 @@ Hungry Hunters. Able to hunt large prey, these giants are a threat to the entire
 
 Source:	Monsters of the Wilderness p. 118 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Grim Giant -->
+  </monster>
   <monster>
     <name>Hill Hound</name>
+    <sortname>Hound, Hill</sortname>
+    <ancestry>Hound</ancestry>
     <size>L</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -6343,12 +6797,16 @@ Source:	Monsters of the Wilderness p. 118 (Homebrew)</description>
     <int>3</int>
     <wis>12</wis>
     <cha>4</cha>
-    <immune>poison</immune>
-    <conditionImmune>charmed, frightened, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>11</passive>
     <languages>-</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>charmed, frightened, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the hound has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
@@ -6378,9 +6836,9 @@ Undead Nature. A hill hound doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 119 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Hill Hound -->
+  </monster>
   <monster>
-    <name>The Hunter</name>
+    <name>Hunter, The</name>
     <size>L</size>
     <type>aberration</type>
     <alignment>chaotic evil</alignment>
@@ -6393,14 +6851,16 @@ Source:	Monsters of the Wilderness p. 119 (Homebrew)</description>
     <int>18</int>
     <wis>19</wis>
     <cha>6</cha>
+    <save/>
     <skill>Acrobatics +10, Athletics +10, Perception +9, Stealth +10, Survival +9</skill>
+    <passive>19</passive>
+    <languages>all, telepathy 120 ft.</languages>
+    <cr>13</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, and slashing from nonmagical attacks</resist>
     <immune>poison</immune>
     <conditionImmune>charmed, exhausted, frightened, poisoned</conditionImmune>
     <senses>darkvision 90 ft.</senses>
-    <passive>19</passive>
-    <languages>all, telepathy 120 ft.</languages>
-    <cr>13</cr>
     <trait>
       <name>Fear the Reaper</name>
       <text>Any beasts stay at least a mile away from the Hunter. The instinctively fear the aberration, sensing its dark power.</text>
@@ -6447,8 +6907,6 @@ Source:	Monsters of the Wilderness p. 119 (Homebrew)</description>
       <name>Bloody Rampage</name>
       <text>When the Hunter takes damage, it makes one attack with its unarmed attack against a random creature within its reach.</text>
     </reaction>
-    <spells/>
-    <slots/>
     <description>The Hunter arrived in this world from a faraway land. It crossed through a Riftgate into the hills. A highly intelligent, resourceful monster; it has quickly left a trail of destruction in its wake. It is eager to find any way back home.
 
 Six-Legged Freak. It has six legs and can stand up on its back two legs. The Hunter is also able to use its front two legs to manipulate objects. It is naturally a subterranean creature and lives in an extensive underground lair. At times it will keep victims tied up in the massive cavern. An intricate system of tunnels enables it to travel around the region.
@@ -6457,7 +6915,7 @@ Unwanted Disruptions. The Hunter is able to harness psionic power to disrupt ran
 
 Source:	Monsters of the Wilderness p. 120 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: The Hunter -->
+  </monster>
   <monster>
     <name>Jackalops</name>
     <size>S</size>
@@ -6472,13 +6930,16 @@ Source:	Monsters of the Wilderness p. 120 (Homebrew)</description>
     <int>7</int>
     <wis>14</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +4, Stealth +4</skill>
-    <immune>poison</immune>
-    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Jackolops, telepathy 120 ft.</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Charge</name>
       <text>If the jackalops moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</text>
@@ -6532,7 +6993,7 @@ Odd Origin. Some folks believe these monsters were banished from Feyland. Others
 
 Source:	Monsters of the Wilderness p. 121 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Jackalops -->
+  </monster>
   <monster>
     <name>Kelpie</name>
     <size>M</size>
@@ -6547,12 +7008,16 @@ Source:	Monsters of the Wilderness p. 121 (Homebrew)</description>
     <int>13</int>
     <wis>16</wis>
     <cha>12</cha>
+    <save/>
     <skill>Perception +5</skill>
-    <resist>cold, poison</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Common, Sylvan</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist>cold, poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The kelpie can breathe air or water.</text>
@@ -6597,7 +7062,7 @@ Water Horses. Horses born from the mating of kelpies and horses can breathe unde
 
 Source:	Monsters of the Wilderness p. 122 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Kelpie -->
+  </monster>
   <monster>
     <name>Knucker</name>
     <size>H</size>
@@ -6614,12 +7079,14 @@ Source:	Monsters of the Wilderness p. 122 (Homebrew)</description>
     <cha>12</cha>
     <save>Con +7, Wis +7</save>
     <skill>Deception +6, Perception +7, Stealth +6</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>17</passive>
     <languages>Common, Draconic</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The knucker can breathe air or water.</text>
@@ -6653,7 +7120,7 @@ Unwanted Attention. Most of these dragons found near rural communities get a lot
 
 Source:	Monsters of the Wilderness p. 123 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Knucker -->
+  </monster>
   <monster>
     <name>Odd Sod</name>
     <size>S</size>
@@ -6668,11 +7135,16 @@ Source:	Monsters of the Wilderness p. 123 (Homebrew)</description>
     <int>5</int>
     <wis>14</wis>
     <cha>5</cha>
+    <save/>
     <skill>Perception +4</skill>
-    <senses>tremorsense 30 ft.</senses>
     <passive>14</passive>
     <languages>-</languages>
     <cr>1/4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>tremorsense 30 ft.</senses>
     <trait>
       <name>Hills and Grasslands Camouflage</name>
       <text>The odd sod has advantage on Dexterity (Stealth) checks made to hide in hills or grassland.</text>
@@ -6696,7 +7168,7 @@ Hidden from View. Odd sods will also feed on beasts from the surrounding area. T
 
 Source:	Monsters of the Wilderness p. 124 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Odd Sod -->
+  </monster>
   <monster>
     <name>Sinker</name>
     <size>L</size>
@@ -6711,11 +7183,16 @@ Source:	Monsters of the Wilderness p. 124 (Homebrew)</description>
     <int>13</int>
     <wis>15</wis>
     <cha>9</cha>
+    <save/>
     <skill>Perception +4, Stealth +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Sylvan</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Lake Camouflage</name>
       <text>The sinker has advantage on Dexterity (Stealth) checks made to hide on the bottom of lakes and rivers.</text>
@@ -6752,9 +7229,11 @@ Out of Sight. Sinkers make their lairs in many different places. Some sinkers li
 
 Source:	Monsters of the Wilderness p. 125 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Sinker -->
+  </monster>
   <monster>
     <name>Swarm of Zombies</name>
+    <sortname>Zombie, Swarm</sortname>
+    <ancestry>Zombie</ancestry>
     <size>H</size>
     <type>swarm of medium zombies (undead)</type>
     <alignment>neutral evil</alignment>
@@ -6768,12 +7247,15 @@ Source:	Monsters of the Wilderness p. 125 (Homebrew)</description>
     <wis>6</wis>
     <cha>5</cha>
     <save>Wis +0</save>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <skill/>
     <passive>8</passive>
     <languages>the languages it knew in life</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the zombie swarm has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
@@ -6812,7 +7294,7 @@ Undead Nature. A swarm of zombies doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 126 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Swarm of Zombies -->
+  </monster>
   <monster>
     <name>Trow</name>
     <size>S</size>
@@ -6827,11 +7309,16 @@ Source:	Monsters of the Wilderness p. 126 (Homebrew)</description>
     <int>12</int>
     <wis>14</wis>
     <cha>12</cha>
-    <skill>Deception +3, Perception +4, Sleight of Hand +6, Stealth +6</skill>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill>Deception +3, Perception +4, Sleight Of Hand +6, Stealth +6</skill>
     <passive>14</passive>
     <languages>Common, Sylvan</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The trow has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -6868,9 +7355,11 @@ Mound on the Moors. Most trow make their homes in earthen mounds in the hills. O
 
 Source:	Monsters of the Wilderness p. 127 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: Trow -->
+  </monster>
   <monster>
     <name>War Boar</name>
+    <sortname>Boar, War</sortname>
+    <ancestry>Boar</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
@@ -6883,10 +7372,16 @@ Source:	Monsters of the Wilderness p. 127 (Homebrew)</description>
     <int>2</int>
     <wis>9</wis>
     <cha>5</cha>
-    <senses/>
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>-</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Charge</name>
       <text>If the war boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 4 (1d8) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
@@ -6910,7 +7405,7 @@ Favored Food. War boars usually feed on nuts, berries, seeds, roots, bark, leave
 
 Source:	Monsters of the Wilderness p. 128 (Homebrew)</description>
     <environment>grassland, hill</environment>
-  </monster>  <!-- Hills/Lakes: War Boar -->
+  </monster>
   <!-- Mountain Region -->
   <monster>
     <name>Volcan</name>
@@ -6928,12 +7423,14 @@ Source:	Monsters of the Wilderness p. 128 (Homebrew)</description>
     <cha>5</cha>
     <save>Con +13, Wis +10</save>
     <skill>Perception +10</skill>
-    <immune>fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>blinded, charmed, deafened, exhausted, poisoned, prone</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>20</passive>
     <languages>Ignan</languages>
     <cr>24</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>blinded, charmed, deafened, exhausted, poisoned, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -6993,9 +7490,10 @@ Lava Homeland. Volcan enjoys its home in the volcanic region of the world. It ba
 
 Source:	Monsters of the Wilderness p. 130 (Homebrew)</description>
     <environment>mountain</environment>
-  </monster>  <!-- Mountain: Titan, Volcan -->
+  </monster>
   <monster>
     <name>Great Eight, Aimar the Seer</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful good</alignment>
@@ -7010,10 +7508,14 @@ Source:	Monsters of the Wilderness p. 130 (Homebrew)</description>
     <cha>18</cha>
     <save>Con +8, Wis +8, Int +15</save>
     <skill>Arcana +15, History +15, Insight +8, Perception +8</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>18</passive>
     <languages>Common, Dwarvish, Giant, Ignan, Terran</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
       <text>Aimar has advantage on saves against poison and resistance against poison damage.</text>
@@ -7060,8 +7562,8 @@ Source:	Monsters of the Wilderness p. 130 (Homebrew)</description>
       <text>Melee Attack: +9 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage.</text>
       <attack>+2 Warhammer|9|1d10+4</attack>
     </action>
-    <spells>light, mage hand, message, prestidigitation, ray of frost, feather fall, fog cloud, mage armor, magic missile, gust of wind, invisibility, misty step, lightning bolt, meld into stone. sleet storm, banishment, ice storm, stone shape, cone of cold, legend lore, scrying, true seeing, project image</spells>
     <slots>0,4,3,3,3,3,1,1</slots>
+    <spells>light, mage hand, message, prestidigitation, ray of frost, feather fall, fog cloud, mage armor, magic missile, gust of wind, invisibility, misty step, lightning bolt, meld into stone. sleet storm, banishment, ice storm, stone shape, cone of cold, legend lore, scrying, true seeing, project image</spells>
     <description>Living in a cabin high up the mountains is a wise old dwarf wizard. Aimar the Seer watches the world from above. The ancient dwarf is a master of the School of Divination.
 
 View from the Top. His great view matches his extraordinary vision. He seems able to know of events happening all around the world. Aimar travels regularly from his small cottage in Zogg to his mountaintop home on Ma Zaan by using a Riftgate.
@@ -7070,7 +7572,7 @@ Ancient Knowledge. Sage and kind, this dwarf is often sought after for advice. G
 
 Source:	Monsters of the Wilderness p. 132 (Homebrew)</description>
     <environment>mountain</environment>
-  </monster>  <!-- Mountain: The Great Eight, Aimar the Seer -->
+  </monster>
   <monster>
     <name>Biclops</name>
     <size>H</size>
@@ -7085,11 +7587,16 @@ Source:	Monsters of the Wilderness p. 132 (Homebrew)</description>
     <int>5</int>
     <wis>13</wis>
     <cha>4</cha>
+    <save/>
     <skill>Athletics +11, Perception +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Giant</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Siege Monster</name>
       <text>The biclops deals double damage to objects and structures.</text>
@@ -7125,7 +7632,7 @@ Cozy Caverns. Biclopes' caves are lined with large furs to keep the giants warm.
 
 Source:	Monsters of the Wilderness p. 133 (Homebrew)</description>
     <environment>mountain</environment>
-  </monster>  <!-- Mountains: Biclops -->
+  </monster>
   <monster>
     <name>Cliffhanger</name>
     <size>L</size>
@@ -7140,12 +7647,16 @@ Source:	Monsters of the Wilderness p. 133 (Homebrew)</description>
     <int>12</int>
     <wis>12</wis>
     <cha>4</cha>
+    <save/>
     <skill>Acrobatics +6, Perception +4, Stealth +6</skill>
-    <resist>cold</resist>
-    <senses>darkvision 120 ft.</senses>
     <passive>14</passive>
     <languages>Terran</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Spider Climb</name>
       <text>The cliffhanger can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
@@ -7188,7 +7699,7 @@ New Land. Cliffhangers are originally from Feyland. Over time they have adapted 
 
 Source:	Monsters of the Wilderness p. 134 (Homebrew)</description>
     <environment>mountain</environment>
-  </monster>  <!-- Mountains: Cliffhanger -->
+  </monster>
   <monster>
     <name>Deadly Path</name>
     <size>L</size>
@@ -7203,11 +7714,16 @@ Source:	Monsters of the Wilderness p. 134 (Homebrew)</description>
     <int>5</int>
     <wis>13</wis>
     <cha>4</cha>
+    <save/>
     <skill>Athletics +11, Perception +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Giant</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>False Appearance</name>
       <text>While the deadly path remains motionless, it is indistinguishable from a mountain path.</text>
@@ -7232,7 +7748,7 @@ Undead Nature. The deadly path doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 135 (Homebrew)</description>
     <environment>mountain</environment>
-  </monster>  <!-- Mountains: Deadly Path -->
+  </monster>
   <monster>
     <name>Fire Dancer</name>
     <size>S</size>
@@ -7247,11 +7763,16 @@ Source:	Monsters of the Wilderness p. 135 (Homebrew)</description>
     <int>12</int>
     <wis>14</wis>
     <cha>8</cha>
-    <immune>fire</immune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>12</passive>
     <languages>Sylvan, Ignan</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>fire</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>False Appearance</name>
       <text>While the fire dancer remains motionless, it is indistinguishable from a fire.</text>
@@ -7287,9 +7808,10 @@ Harsh Hearth. On rare occasions, fire dancers can also be found indoors. As they
 
 Source:	Monsters of the Wilderness p. 136 (Homebrew)</description>
     <environment>mountain</environment>
-  </monster>  <!-- Mountains: Fire Dancer -->
+  </monster>
   <monster>
-    <name>The Griffon</name>
+    <name>Griffon, The</name>
+    <ancestry>Griffon</ancestry>
     <size>L</size>
     <type>celestial</type>
     <alignment>lawful good</alignment>
@@ -7304,13 +7826,14 @@ Source:	Monsters of the Wilderness p. 136 (Homebrew)</description>
     <cha>25</cha>
     <save>Int +11, Wis +13, Cha +13</save>
     <skill>History +11, Insight +13, Perception +13</skill>
+    <passive>23</passive>
+    <languages>all, telepathy 120 ft.</languages>
+    <cr>18</cr>
+    <vulnerable/>
     <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>necrotic, poison</immune>
     <conditionImmune>charmed, exhaustion, frightened, poisoned</conditionImmune>
     <senses>truesight 90 ft.</senses>
-    <passive>23</passive>
-    <languages>all, telepathy 120 ft.</languages>
-    <cr>18</cr>
     <trait>
       <name>Divine Awareness</name>
       <text>The Griffon knows if he hears a lie.</text>
@@ -7366,9 +7889,11 @@ Cloud Castle. A Riftgate is located at the center of his cloud fortress. The Gri
 
 Source:	Monsters of the Wilderness p. 137 (Homebrew)</description>
     <environment>mountain</environment>
-  </monster>  <!-- Mountains: The Griffon -->
+  </monster>
   <monster>
     <name>Grim Roc</name>
+    <sortname>Roc, Grim</sortname>
+    <ancestry>Roc</ancestry>
     <size>G</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -7381,12 +7906,16 @@ Source:	Monsters of the Wilderness p. 137 (Homebrew)</description>
     <int>1</int>
     <wis>7</wis>
     <cha>3</cha>
-    <immune>poison</immune>
-    <conditionImmune>charmed, exhaustion, frightened, poisoned, prone</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
+    <save/>
+    <skill/>
     <passive>13</passive>
     <languages>-</languages>
     <cr>17</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, poisoned, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Keen Sight</name>
       <text>The grim roc has advantage on Wisdom (Perception) checks that rely on sight.</text>
@@ -7428,9 +7957,11 @@ Undead Nature. The grim roc doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 138 (Homebrew)</description>
     <environment>mountain</environment>
-  </monster>  <!-- Mountains: Grim Roc -->
+  </monster>
   <monster>
     <name>Lava Dog</name>
+    <sortname>Dog, Lava</sortname>
+    <ancestry>Dog</ancestry>
     <size>L</size>
     <type>elemental</type>
     <alignment>chaotic evil</alignment>
@@ -7443,12 +7974,16 @@ Source:	Monsters of the Wilderness p. 138 (Homebrew)</description>
     <int>5</int>
     <wis>11</wis>
     <cha>5</cha>
-    <vulnerable>cold</vulnerable>
-    <resist>bludgeoning, piercing, and slashing from nonmagical attacks</resist>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>14</passive>
     <languages>Ignan</languages>
     <cr>4</cr>
+    <vulnerable>cold</vulnerable>
+    <resist>bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Heated Body</name>
       <text>A creature that touches the lava dog or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage.</text>
@@ -7477,9 +8012,11 @@ Hot-Tempered. Although some are trained by fire giants, these monsters are gener
 
 Source:	Monsters of the Wilderness p. 139 (Homebrew)</description>
     <environment>mountain, underdark</environment>
-  </monster>  <!-- Mountains: Lava Dog -->
+  </monster>
   <monster>
     <name>Rift Wraith</name>
+    <sortname>Wraith, Rift</sortname>
+    <ancestry>Wraith</ancestry>
     <size>L</size>
     <type>undead</type>
     <alignment>neutral evil</alignment>
@@ -7492,14 +8029,16 @@ Source:	Monsters of the Wilderness p. 139 (Homebrew)</description>
     <int>12</int>
     <wis>15</wis>
     <cha>3</cha>
+    <save/>
     <skill>Stealth +8</skill>
+    <passive>8</passive>
+    <languages>the languages it knew in life</languages>
+    <cr>7</cr>
+    <vulnerable/>
     <resist>acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons</resist>
     <immune>necrotic, poison, psychic</immune>
     <conditionImmune>charmed, exhaustion, grappled, paralyzed, poisoned, prone, restrained</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>8</passive>
-    <languages>the languages it knew in life</languages>
-    <cr>7</cr>
     <trait>
       <name>Detect Life</name>
       <text>The rift wraith can magically sense the presence of creatures up to 1 mile away that aren't undead or constructs. It knows the direction they're in but not their exact locations.</text>
@@ -7527,7 +8066,7 @@ Undead Nature. A rift wraith doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the Wilderness p. 140 (Homebrew)</description>
     <environment>any</environment>
-  </monster>  <!-- Mountains: Rift Wraith -->
+  </monster>
   <monster>
     <name>Stoneshaper</name>
     <size>M</size>
@@ -7542,13 +8081,16 @@ Source:	Monsters of the Wilderness p. 140 (Homebrew)</description>
     <int>5</int>
     <wis>13</wis>
     <cha>4</cha>
+    <save/>
     <skill>Perception +4, Stealth +3</skill>
-    <immune>poison</immune>
-    <conditionImmune>exhausted, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Terran</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>exhausted, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Earth Glide</name>
       <text>The stoneshaper can burrow through nonmagical, unworked earth and stone. While doing so, the stoneshaper doesn't disturb the material it moves through.</text>
@@ -7589,7 +8131,7 @@ Down to Earth. These fey can shapechange into a rock or a stony humanoid. Stones
 
 Source:	Monsters of the Wilderness p. 141 (Homebrew)</description>
     <environment>mountain, underdark</environment>
-  </monster>  <!-- Mountains: Stoneshaper -->
+  </monster>
   <monster>
     <name>Thunder Paw</name>
     <size>L</size>
@@ -7604,13 +8146,16 @@ Source:	Monsters of the Wilderness p. 141 (Homebrew)</description>
     <int>12</int>
     <wis>17</wis>
     <cha>10</cha>
+    <save/>
     <skill>Acrobatics +6, Athletics +7, Perception +6, Stealth +6</skill>
-    <immune>poison, thunder</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>16</passive>
     <languages>-</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, thunder</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Brave</name>
       <text>The thunder paw has advantage on saving throws against being frightened.</text>
@@ -7652,5 +8197,5 @@ Cat Cave. Thunder paws live in hidden caves. They use furs to line their lair an
 
 Source:	Monsters of the Wilderness p. 142 (Homebrew)</description>
     <environment>mountain</environment>
-  </monster>  <!-- Mountains: Thunder Paw -->
+  </monster>
 </compendium>

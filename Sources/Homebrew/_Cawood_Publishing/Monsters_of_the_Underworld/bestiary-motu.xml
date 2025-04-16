@@ -1,7 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Animated Statue</name>
+    <ancestry>Animated Object</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>unaligned</alignment>
@@ -14,12 +15,16 @@
     <int>1</int>
     <wis>3</wis>
     <cha>1</cha>
-    <immune>poison, psychic</immune>
-    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
-    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
+    <save/>
+    <skill/>
     <passive>6</passive>
     <languages>-</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, psychic</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
       <name>False Appearance</name>
       <text>While the animated statue remains motionless, it is indistinguishable from a normal statue.</text>
@@ -44,7 +49,7 @@
     </action>
     <description>Source:	Monsters of the Underworld p. 9 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Animated Statue -->
+  </monster>
   <monster>
     <name>Behemoth</name>
     <size>G</size>
@@ -119,7 +124,7 @@
     </legendary>
     <description>Source:	Monsters of the Underworld p. 10 (Homebrew)</description>
     <environment>Underdark</environment>
-  </monster>  <!-- Behemoth -->
+  </monster>
   <monster>
     <name>Boatman</name>
     <size>L</size>
@@ -134,13 +139,16 @@
     <int>12</int>
     <wis>18</wis>
     <cha>16</cha>
+    <save/>
     <skill>Percerption +7, Stealth +6</skill>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 60ft.</senses>
     <passive>17</passive>
     <languages>Common, Abyssal, Undercommon</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60ft.</senses>
     <trait>
       <name>Evasion</name>
       <text>If the boatman is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the boatman instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</text>
@@ -178,7 +186,7 @@
     <spells>detect evil and good, prestidigitation, burning hands, detect thoughts, scroching ray, suggestion</spells>
     <description>Source:	Monsters of the Underworld p. 11 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Boatman -->
+  </monster>
   <monster>
     <name>Careless Whisper</name>
     <size>M</size>
@@ -193,13 +201,16 @@
     <int>7</int>
     <wis>14</wis>
     <cha>3</cha>
+    <save/>
+    <skill/>
+    <passive>12</passive>
+    <languages>Common, Undercommon</languages>
+    <cr>1</cr>
+    <vulnerable/>
     <resist>acid, fire, lightning, thunder; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
     <immune>cold, necrotic, poison</immune>
     <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
     <senses>darkvision 60ft.</senses>
-    <passive>12</passive>
-    <languages>Common, Undercommon</languages>
-    <cr>1</cr>
     <trait>
       <name>Incorporeal Movement</name>
       <text>The careless whisper can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
@@ -222,9 +233,11 @@
     </action>
     <description>Source:	Monsters of the Underworld p. 12 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Careless Whisper -->
+  </monster>
   <monster>
     <name>Cave Hydra</name>
+    <sortname>Hydra, Cave</sortname>
+    <ancestry>Hydra</ancestry>
     <size>H</size>
     <type>monstrosity</type>
     <alignment>unaligned</alignment>
@@ -237,12 +250,16 @@
     <int>2</int>
     <wis>14</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +7, Stealth +7</skill>
-    <conditionImmune>charmed</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
     <passive>17</passive>
     <languages>-</languages>
     <cr>15</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The cave hydra can breathe air and water.</text>
@@ -281,9 +298,11 @@ Armed to the Teeth. The cave hydra uses its many tentacles to attack multiple ta
 
 Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <environment>underdark, underwater</environment>
-  </monster>  <!-- Cave Hydra -->
+  </monster>
   <monster>
     <name>Chasm Fiend</name>
+    <sortname>Fiend, Chasm</sortname>
+    <ancestry>Fiend</ancestry>
     <size>M</size>
     <type>fiend (demon)</type>
     <alignment>chaotic evil</alignment>
@@ -298,13 +317,14 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <cha>9</cha>
     <save>Dex +6, Con +5</save>
     <skill>Acrobatics +6, Perception +5, Stealth +6</skill>
+    <passive>15</passive>
+    <languages>Abyssal</languages>
+    <cr>6</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>15</passive>
-    <languages>Abyssal</languages>
-    <cr>6</cr>
     <trait>
       <name>Magic Resistance</name>
       <text>The chasm fiend has advantage on saving throws against spells and other magical effects.</text>
@@ -341,9 +361,11 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 14 (Homebrew)</description>
     <environment>underdark</environment>
-  </monster>  <!-- Chasm Fiend -->
+  </monster>
   <monster>
     <name>Dark Maiden</name>
+    <sortname>Maiden, Dark</sortname>
+    <ancestry>Maiden</ancestry>
     <size>M</size>
     <type>fey</type>
     <alignment>neutral evil</alignment>
@@ -358,10 +380,14 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <cha>20</cha>
     <save>Wis +6, Cha +8</save>
     <skill>Deception +8, Insight +6, Perception +6, Performance +8, Persuasion +8</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>16</passive>
     <languages>Common, Undercommon</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The dark maiden's innate spellcasting ability is Charisma (spell save DC 16). The dark maiden can innately cast the following spells, requiring no components.
@@ -398,9 +424,11 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <spells>detect evil and good, minor illusion, prestidigitation, charm person, detect magic, detect thoughts, dispel evil and good, entangle, enthrall, feather fall, hold person, hypnotic pattern, silence, sleep</spells>
     <description>Source:	Monsters of the Underworld p. 15 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dark Maiden -->
+  </monster>
   <monster>
     <name>Dark Trader</name>
+    <sortname>Trader, Dark</sortname>
+    <ancestry>Trader</ancestry>
     <size>M</size>
     <type>fey</type>
     <alignment>neutral evil</alignment>
@@ -413,13 +441,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>12</int>
     <wis>13</wis>
     <cha>16</cha>
+    <save/>
     <skill>Deception +5, Perception +3, Persuasion +5</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Common, Undercommon</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dark Bargain</name>
       <text>The dark trader has advantage on Charisma checks when buying and selling goods.</text>
@@ -444,7 +475,7 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <spells>detect evil and good, prestidigitation, vicious mockery, detect thoughts, pass without trace, tongues, calm emotions, hypnotic pattern</spells>
     <description>Source:	Monsters of the Underworld p. 16 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dark Trader -->
+  </monster>
   <monster>
     <name>Deep Guide</name>
     <size>M</size>
@@ -459,11 +490,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>12</int>
     <wis>16</wis>
     <cha>12</cha>
+    <save/>
     <skill>Nature +3, Perception +5, Stealth +6, Survival +5</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Common, Undercommon</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dungeoneer's Gear</name>
       <text>This fey is equipped with a Dungeoneer's Pack.</text>
@@ -509,9 +545,11 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <spells>detect evil and good, light, pass without trace, dispel evil and good, entangle, silence</spells>
     <description>Source:	Monsters of the Underworld p. 17 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Deep Guide -->
+  </monster>
   <monster>
     <name>Demon Frog</name>
+    <sortname>Frog, Demon</sortname>
+    <ancestry>Frog</ancestry>
     <size>L</size>
     <type>fiend (demon)</type>
     <alignment>chaotic evil</alignment>
@@ -524,13 +562,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>11</int>
     <wis>14</wis>
     <cha>3</cha>
+    <save/>
+    <skill/>
+    <passive>12</passive>
+    <languages>Abyssal</languages>
+    <cr>3</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>12</passive>
-    <languages>Abyssal</languages>
-    <cr>3</cr>
     <trait>
       <name>Amphibious</name>
       <text>The demon can breathe air and water.</text>
@@ -564,9 +605,11 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 18 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Demon Frog -->
+  </monster>
   <monster>
     <name>Demon Snail</name>
+    <sortname>Snail, Demon</sortname>
+    <ancestry>Snail</ancestry>
     <size>L</size>
     <type>fiend (demon)</type>
     <alignment>chaotic evil</alignment>
@@ -579,13 +622,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>8</cha>
+    <save/>
+    <skill/>
+    <passive>12</passive>
+    <languages>Abyssal</languages>
+    <cr>2</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>12</passive>
-    <languages>Abyssal</languages>
-    <cr>2</cr>
     <trait>
       <name>Charge</name>
       <text>If the demon moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 12 Strength saving throw or be knocked prone.</text>
@@ -609,9 +655,11 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 19 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Demon Snail -->
+  </monster>
   <monster>
     <name>Demon Spider</name>
+    <sortname>Spider, Demon</sortname>
+    <ancestry>Spider</ancestry>
     <size>L</size>
     <type>fiend (demon)</type>
     <alignment>chaotic evil</alignment>
@@ -624,14 +672,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>11</int>
     <wis>12</wis>
     <cha>4</cha>
+    <save/>
     <skill>Perception +4</skill>
+    <passive>14</passive>
+    <languages>Abyssal</languages>
+    <cr>4</cr>
+    <vulnerable/>
     <resist>cold, lightning; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
     <immune>fire, poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>14</passive>
-    <languages>Abyssal</languages>
-    <cr>4</cr>
     <trait>
       <name>Heated Body</name>
       <text>A creature that touches the demon or hits it with a melee attack while within 5 feet of it takes 7 (2d6) fire damage.</text>
@@ -652,9 +702,11 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 20 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Demon Spider -->
+  </monster>
   <monster>
     <name>Diamond Dog</name>
+    <sortname>Dog, Diamond</sortname>
+    <ancestry>Dog</ancestry>
     <size>M</size>
     <type>elemental</type>
     <alignment>unaligned</alignment>
@@ -667,12 +719,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>5</int>
     <wis>10</wis>
     <cha>5</cha>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, paralyzed, petrified, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>-</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Charge</name>
       <text>If the diamond dog moves at least 30 feet straight toward a target and then hits it with a headbutt attack on the same turn, the target takes an extra 3 (1d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
@@ -701,9 +757,11 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 21 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Diamond Dog -->
+  </monster>
   <monster>
     <name>Crystal Dragon</name>
+    <sortname>Dragon, Crystal</sortname>
+    <ancestry>Dragon</ancestry>
     <size>H</size>
     <type>dragon</type>
     <alignment>chaotic neutral</alignment>
@@ -718,11 +776,14 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <cha>20</cha>
     <save>Con +12, Cha +11</save>
     <skill>Deception +11, Persuasion +11</skill>
-    <resist>psychic; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
-    <senses>darkvision 120 ft.</senses>
     <passive>15</passive>
     <languages>Draconic, Undercommon</languages>
     <cr>19</cr>
+    <vulnerable/>
+    <resist>psychic; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Amphibious</name>
       <text>The dragon can breathe air and water.</text>
@@ -772,9 +833,11 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </legendary>
     <description>Source:	Monsters of the Underworld p. 22 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dragon, Crystal -->
+  </monster>
   <monster>
     <name>Lava Dragon</name>
+    <sortname>Dragon, Lava</sortname>
+    <ancestry>Dragon</ancestry>
     <size>H</size>
     <type>dragon</type>
     <alignment>chaotic evil</alignment>
@@ -789,11 +852,14 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <cha>14</cha>
     <save>Dex +9, Con +14</save>
     <skill>Intimidation +9, Percception +11</skill>
-    <immune>fire; bludgeoning, piercing, and slashing damage from nonmagical weapons</immune>
-    <senses>darkvision 120 ft.</senses>
     <passive>21</passive>
     <languages>Draconic, Undercommon</languages>
     <cr>23</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>fire; bludgeoning, piercing, and slashing damage from nonmagical weapons</immune>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Heated Body</name>
       <text>A creature that touches the dragon or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.</text>
@@ -844,9 +910,11 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </legendary>
     <description>Source:	Monsters of the Underworld p. 23 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dragon, Lava -->
+  </monster>
   <monster>
     <name>Rock Worm</name>
+    <sortname>Worm, Rock</sortname>
+    <ancestry>Worm</ancestry>
     <size>L</size>
     <type>dragon</type>
     <alignment>unaligned</alignment>
@@ -859,11 +927,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>7</int>
     <wis>14</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +5, Stealth +7</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>15</passive>
     <languages>Draconic</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Ambusher</name>
       <text>The rock wyrm has advantage on attack rolls against any creature it has surprised.</text>
@@ -900,7 +973,7 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 91 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dragon, Rock Wyrm -->
+  </monster>
   <monster>
     <name>Draugr</name>
     <size>M</size>
@@ -915,14 +988,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>6</int>
     <wis>12</wis>
     <cha>5</cha>
+    <save/>
     <skill>Perception +3</skill>
-    <vulnerable>bludgeoning</vulnerable>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, exhaustion, frightened, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>understands all languages it knew in life but can't speak</languages>
     <cr>1</cr>
+    <vulnerable>bludgeoning</vulnerable>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Shadow Jump</name>
       <text>As a bonus action, the draugr can teleport up to 30 ft. to an unoccupied space it can see. Both the space it teleports from and the destination space must be in dim light or darkness.</text>
@@ -938,9 +1013,11 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 25 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Draugr -->
+  </monster>
   <monster>
     <name>Draugr Lord</name>
+    <sortname>Draugr, Lord</sortname>
+    <ancestry>Draugr</ancestry>
     <size>L</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -953,13 +1030,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>8</cha>
+    <save/>
     <skill>Perception +5</skill>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, exhaustion, frightened, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>understands all languages it knew in life but can't speak</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The draugr lord's innate spellcasting ability is Wisdom (spell save DC 13, +5 to hit). The draugr lord can innately cast the following spells, requiring no components.
@@ -992,9 +1072,10 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <spells>prestidigitation, ray of frost, darkness, telekinesis, thunderwave, animate dead, mirror image</spells>
     <description>Source:	Monsters of the Underworld p. 26 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Draugr Lord -->
+  </monster>
   <monster>
     <name>Duergar, Assassin</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful evil</alignment>
@@ -1007,12 +1088,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>11</int>
     <wis>12</wis>
     <cha>9</cha>
+    <save/>
     <skill>Acrobatics +7, Perception +4, Stealth +7</skill>
-    <resist>poison</resist>
-    <senses>darkvision 120 ft.</senses>
     <passive>14</passive>
     <languages>Dwarvish, Undercommon</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Assassinate</name>
       <text>During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.</text>
@@ -1053,9 +1138,10 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <spells>enlarge/reduce</spells>
     <description>Source:	Monsters of the Underworld p. 28 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Duergar, Assassin -->
+  </monster>
   <monster>
     <name>Duergar, King</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful evil</alignment>
@@ -1068,12 +1154,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>12</int>
     <wis>18</wis>
     <cha>16</cha>
+    <save/>
     <skill>Insight +7, Perception +7, Persuasion +6</skill>
-    <immune>poison, psychic, psionics</immune>
-    <senses>darkvision 120 ft.</senses>
     <passive>17</passive>
     <languages>Dwarvish, Undercommon</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, psychic, psionics</immune>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Duergar Resilience</name>
       <text>The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed.</text>
@@ -1115,9 +1205,10 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <spells>blade ward, true strike, hunter's mark, jump, enlarge/reduce</spells>
     <description>Source:	Monsters of the Underworld p. 29 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Duergar, King -->
+  </monster>
   <monster>
     <name>Duergar, Rock Knight</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful evil</alignment>
@@ -1130,11 +1221,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>11</int>
     <wis>12</wis>
     <cha>9</cha>
-    <resist>poison</resist>
-    <senses>darkvision 120 ft.</senses>
+    <save/>
+    <skill/>
     <passive>11</passive>
     <languages>Dwarvish, Undercommon</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Duergar Resilience</name>
       <text>The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed.</text>
@@ -1176,9 +1272,9 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <spells>blade ward, hunter's mark, jump, enlarge/reduce</spells>
     <description>Source:	Monsters of the Underworld p. 30 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Duergar, Rock Knight -->
+  </monster>
   <monster>
-    <name>Golem, Dwarvon</name>
+    <name>Dwarvon Golem</name>
     <size>H</size>
     <type>construct</type>
     <alignment>unaligned</alignment>
@@ -1191,12 +1287,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>7</int>
     <wis>11</wis>
     <cha>1</cha>
-    <immune>fire, poison, psychic; bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't adamantine</immune>
-    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands Dwarvish but can't speak</languages>
     <cr>18</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>fire, poison, psychic; bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't adamantine</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>False Appearance</name>
       <text>While the dwarvon remains motionless, it is indistinguishable from a normal golden statue.</text>
@@ -1232,9 +1332,10 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 31 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Golem, Dwarvon -->
+  </monster>
   <monster>
     <name>Dwarf, Bear Rider</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful good</alignment>
@@ -1247,12 +1348,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>10</cha>
+    <save/>
     <skill>Animal Handling +4, Athletics +4</skill>
-    <resist>poison</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>Common, Dwarvish, Undercommon</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Born to the Saddle</name>
       <text>The dwarf has advantage on saving throws made to avoid falling off its mount. If it does fall off its mount and descends no more than 10 feet, it can land on its feet if it's not incapacitated. Finally, mounting or dismounting a creature costs it only 5 feet of movement, rather than half its speed.</text>
@@ -1281,9 +1386,10 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 32 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dwarf, Bear Rider -->
+  </monster>
   <monster>
     <name>Dwarf, Commander</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful good</alignment>
@@ -1296,12 +1402,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>12</int>
     <wis>18</wis>
     <cha>16</cha>
+    <save/>
     <skill>Intimidation +5, Persuasion +5</skill>
-    <resist>poison</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Common, Dwarvish, Undercommon</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Brave</name>
       <text>The dwarf has advantage on saving throws against being frightened.</text>
@@ -1326,9 +1436,10 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 33 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dwarf, Commander -->
+  </monster>
   <monster>
     <name>Dwarf, Crasher</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful good</alignment>
@@ -1341,12 +1452,16 @@ Source:	Monsters of the Underworld p. 13 (Homebrew)</description>
     <int>10</int>
     <wis>10</wis>
     <cha>7</cha>
+    <save/>
     <skill>Athletics +7</skill>
-    <resist>poison</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>10</passive>
     <languages>Common, Dwarvish, Undercommon</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Brute</name>
       <text>A melee weapon deals one extra die of its damage when the crasher hits with it (included in the attack).</text>
@@ -1388,9 +1503,10 @@ Dour Demeanor. These warriors are known to be very sober and have little sense o
 
 Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dwarf, Crasher -->
+  </monster>
   <monster>
     <name>Dwarf, King</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful good</alignment>
@@ -1405,11 +1521,14 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <cha>18</cha>
     <save>Int +6, Wis +8</save>
     <skill>Athletics +9, Intimidation +7, Perception +8, Persuasion +7</skill>
-    <resist>poison</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>18</passive>
     <languages>Common, Dwarvish, Gnomish, Undercommon</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Brave</name>
       <text>The dwarf has advantage on saving throws against being frightened.</text>
@@ -1439,9 +1558,10 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 35 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dwarf, King -->
+  </monster>
   <monster>
     <name>Dwarf, Mage</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful good</alignment>
@@ -1456,11 +1576,14 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <cha>10</cha>
     <save>Int +9, Wis +5</save>
     <skill>Arcana +9, History +9, Perception +5</skill>
-    <resist>poison</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Common, Dwarvish, Undercommon</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
       <text>The dwarf has advantage on saving throws against poison, and resistance to poison damage.</text>
@@ -1489,9 +1612,10 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <spells>blade ward, dancing lights, fire bolt, message, prestidigitation, burning hands, detect magic, feather fall, mage armor, blur, detect thoughts, misty step, scorching ray, counterspell, dispel magic, fireball, greater invisibility, stone shape, wall of fire, animate objects, wall of stone, move earth</spells>
     <description>Source:	Monsters of the Underworld p. 37 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dwarf, Mage -->
+  </monster>
   <monster>
     <name>Dwarf, Miner</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful good</alignment>
@@ -1504,12 +1628,16 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <int>10</int>
     <wis>10</wis>
     <cha>8</cha>
+    <save/>
     <skill>Athletics +5, Perception +2</skill>
-    <resist>poison</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>Common, Dwarvish, Undercommon</languages>
     <cr>1/4</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Deep Knowledge</name>
       <text>The dwarf has extensive knowledge of the kinds of metals in the Underworld. It has advantage on Intelligence (Nature) checks when dealing with these metals.</text>
@@ -1530,9 +1658,10 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 38 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dwarf, Miner -->
+  </monster>
   <monster>
     <name>Dwarf, Spider Hunter</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful good</alignment>
@@ -1545,13 +1674,16 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>10</cha>
+    <save/>
     <skill>Perception +4, Stealth +5, Survival +4</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Common, Dwarvish, Undercommon</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Spellcasting</name>
       <text>The dwarf is a 5th level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12). It has the following spells.
@@ -1588,9 +1720,10 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <spells>fog cloud, hunter's mark, longstrider, cordon of arrows, lesser restoration, pass without trace, conjure barrage</spells>
     <description>Source:	Monsters of the Underworld p. 39 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dwarf, Spider Hunter -->
+  </monster>
   <monster>
     <name>Dwarf, Spy</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful good</alignment>
@@ -1603,12 +1736,16 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <int>12</int>
     <wis>14</wis>
     <cha>12</cha>
-    <skill>Deception +3, Insight +4, Investigation +3, Perception +4, Persuasion +3, Sleight of Hand +5, Stealth +5</skill>
-    <resist>poison</resist>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill>Deception +3, Insight +4, Investigation +3, Perception +4, Persuasion +3, Sleight Of Hand +5, Stealth +5</skill>
     <passive>14</passive>
     <languages>Common, Dwarvish, Undercommon</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Cunning Action</name>
       <text>The dwarf can use a bonus action on its turn to take the Dash, Disengage, Hide, or Use an Object action.</text>
@@ -1654,9 +1791,11 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     </reaction>
     <description>Source:	Monsters of the Underworld p. 40 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Dwarf, Spy -->
+  </monster>
   <monster>
     <name>Drider Elite</name>
+    <sortname>Drider, Elite</sortname>
+    <ancestry>Drider</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>chaotic evil</alignment>
@@ -1669,11 +1808,16 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <int>14</int>
     <wis>16</wis>
     <cha>14</cha>
+    <save/>
     <skill>Insight +7, Intimidation +6, Perception +7</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>17</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>11</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The drider has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -1715,9 +1859,12 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <spells>dancing lights, poison spray, thaumaturgy, bane, conjure animals, web, darkness, faerie fire</spells>
     <description>Source:	Monsters of the Underworld p. 27 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Drow, Drider Elite -->
+  </monster>
   <monster>
     <name>Drow Assassin</name>
+    <sortname>Drow, Assassin</sortname>
+    <ancestry>Drow, Assassin</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>neutral evil</alignment>
@@ -1732,10 +1879,14 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <cha>12</cha>
     <save>Dex +7, Int +5</save>
     <skill>Acrobatics +7, Deception +5, Perception +5, Stealth +7</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>15</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Assassinate</name>
       <text>During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.</text>
@@ -1785,9 +1936,12 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Source:	Monsters of the Underworld p. 41 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Drow, Assassin -->
+  </monster>
   <monster>
     <name>Drow Noble</name>
+    <sortname>Drow, Noble</sortname>
+    <ancestry>Drow, Noble</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>neutral evil</alignment>
@@ -1802,10 +1956,14 @@ Source:	Monsters of the Underworld p. 34 (Homebrew)</description>
     <cha>18</cha>
     <save>Int +6, Wis +7, Cha +8</save>
     <skill>Deception +8, History +6, Perception +7, Persuasion +8</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>17</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The drow has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -1859,9 +2017,12 @@ Hellish Horses. Many of these nobles use nightmares as their mounts.
 
 Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Drow, Noble -->
+  </monster>
   <monster>
     <name>Drow Ranger</name>
+    <sortname>Drow, Ranger</sortname>
+    <ancestry>Drow, Ranger</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>neutral evil</alignment>
@@ -1876,10 +2037,14 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <cha>12</cha>
     <save>Dex +7, Con +5, Wis +5</save>
     <skill>Nature +3, Perception +5, Stealth +7, Survival +5</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>15</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Accurate Archer</name>
       <text>The drow ignores half-cover and three-quarters-cover when using a bow.</text>
@@ -1932,9 +2097,12 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <spells>dancing lights, detect evil and good, pass without trace, darkness, entangle, levitate, misty step, speak with plants</spells>
     <description>Source:	Monsters of the Underworld p. 44 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Drow, Ranger -->
+  </monster>
   <monster>
-    <name>Drow Ranger</name>
+    <name>Drow Rebel</name>
+    <sortname>Drow, Rebel</sortname>
+    <ancestry>Drow</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>chaotic evil</alignment>
@@ -1947,11 +2115,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>12</int>
     <wis>11</wis>
     <cha>12</cha>
+    <save/>
     <skill>Perception +2, Stealth +4</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>12</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The drow has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -1984,9 +2157,12 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Source:	Monsters of the Underworld p. 45 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Drow, Rebel -->
+  </monster>
   <monster>
     <name>Drow Rebel Mage</name>
+    <sortname>Drow, Rebel Mage</sortname>
+    <ancestry>Drow, Mage</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>chaotic evil</alignment>
@@ -2001,10 +2177,14 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <cha>16</cha>
     <save>Int +6, Wis +7, Cha +8</save>
     <skill>Arcana +7, Perception +4, Stealth +4</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>14</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The drow has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -2043,9 +2223,12 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <spells>dancing lights, darkness, faerie fire, levitate, blade ward, fireboltmessage, minor illusion, feather fall, mage armor, magic missile, shield, invisibility, misty step, scorching ray, counterspell, fireball, water breathing, arcane eye, blight, wall of fire, scrying</spells>
     <description>Source:	Monsters of the Underworld p. 46 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Drow, Rebel Mage -->
+  </monster>
   <monster>
     <name>Drow Sage</name>
+    <sortname>Drow, Sage</sortname>
+    <ancestry>Drow, Sage</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>neutral evil</alignment>
@@ -2058,11 +2241,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>16</int>
     <wis>12</wis>
     <cha>12</cha>
+    <save/>
     <skill>Arcana +5, History +5, Perception +3</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>13</passive>
     <languages>Elvish, Abyssal, Deep Speech, Dwarvish, Undercommon</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The drow has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -2091,9 +2279,12 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <spells>dancing lights, darkness, faerie fire, levitate, silence</spells>
     <description>Source:	Monsters of the Underworld p. 47 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Drow, Sage -->
+  </monster>
   <monster>
     <name>Drow Spider Rider</name>
+    <sortname>Drow, Spider Rider</sortname>
+    <ancestry>Drow</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>neutral evil</alignment>
@@ -2106,13 +2297,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>12</int>
     <wis>11</wis>
     <cha>12</cha>
+    <save/>
     <skill>Animal Handling +2, Perception +2, Stealth +5</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>12</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Born to the Saddle</name>
       <text>The drow has advantage on saving throws made to avoid falling off its mount. If it does fall off its mount and descends no more than 10 feet, it can land on its feet if it's not incapacitated. Finally, mounting or dismounting a creature costs it only 5 feet of movement, rather than half its speed.</text>
@@ -2149,9 +2343,12 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Source:	Monsters of the Underworld p. 48 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Drow, Spider Rider -->
+  </monster>
   <monster>
     <name>Drow Spy</name>
+    <sortname>Drow, Spy</sortname>
+    <ancestry>Drow, Spy</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>neutral evil</alignment>
@@ -2164,11 +2361,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>12</int>
     <wis>16</wis>
     <cha>16</cha>
+    <save/>
     <skill>Deception + 6, Perception +6, Stealth +7</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>16</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Cunning Action</name>
       <text>The drow can use a bonus action on its turn to take the Dash, Disengage, Hide, or Use an Object action.</text>
@@ -2222,9 +2424,11 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Source:	Monsters of the Underworld p. 49 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Drow, Spy -->
+  </monster>
   <monster>
     <name>Vampire Drow</name>
+    <sortname>Vampire, Drow</sortname>
+    <ancestry>Vampire</ancestry>
     <size>M</size>
     <type>undead (shapechanger)</type>
     <alignment>neutral evil</alignment>
@@ -2239,11 +2443,14 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <cha>16</cha>
     <save>Dex +7, Wis +6, Cha +7</save>
     <skill>Deception +7, Perception +6, Stealth +7</skill>
-    <resist>necrotic; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
-    <senses>darkvision 120 ft.</senses>
     <passive>16</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist>necrotic; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The vampire's innate spellcasting ability is Charisma (spell save DC 15). The vampire can innately cast the following spells, requiring no components.
@@ -2314,7 +2521,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <spells>dancing lights, darkness, faerie fire, levitate, silence</spells>
     <description>Source:	Monsters of the Underworld p. 106 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Drow, Vampire -->
+  </monster>
   <monster>
     <name>Fungah, Spore Dragon</name>
     <size>H</size>
@@ -2331,12 +2538,14 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <cha>16</cha>
     <save>Str +12, Con +11</save>
     <skill>Percception +10</skill>
-    <immune>poison; bludgeoning, piercing, and slashing damage from nonmagical weapons</immune>
-    <conditionImmune>blinded, charmed, frightened, poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>20</passive>
     <languages>Primordial</languages>
     <cr>17</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison; bludgeoning, piercing, and slashing damage from nonmagical weapons</immune>
+    <conditionImmune>blinded, charmed, frightened, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -2391,7 +2600,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     </legendary>
     <description>Source:	Monsters of the Underworld p. 24 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, Infected Dragon -->
+  </monster>
   <monster>
     <name>Fungah, Infected Drow</name>
     <size>M</size>
@@ -2406,12 +2615,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>10</int>
     <wis>10</wis>
     <cha>8</cha>
-    <immune>poison</immune>
-    <conditionImmune>blinded, charmed, frightened, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>Primordial</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>blinded, charmed, frightened, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The drow has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -2443,7 +2656,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Source:	Monsters of the Underworld p. 42 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, Infected Drow -->
+  </monster>
   <monster>
     <name>Fungah, Infected Dwarf</name>
     <size>M</size>
@@ -2458,12 +2671,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>8</cha>
-    <immune>poison</immune>
-    <conditionImmune>blinded, charmed, frightened, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
+    <save/>
+    <skill/>
     <passive>11</passive>
     <languages>Primordial</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>blinded, charmed, frightened, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The dwarf has advantage on saving throws against spells and other magical effects.</text>
@@ -2483,7 +2700,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 36 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, Infected Dwarf -->
+  </monster>
   <monster>
     <name>Fungah, Infected Giant</name>
     <size>H</size>
@@ -2500,12 +2717,14 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <cha>3</cha>
     <save>Dex +4, Con +9, Wis +7</save>
     <skill>Perception +7</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
     <passive>17</passive>
     <languages>Primordial</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Keen Sight</name>
       <text>The giant has advantage on Wisdom (Perception) checks that rely on sight.</text>
@@ -2537,7 +2756,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 57 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, Infected Giant -->
+  </monster>
   <monster>
     <name>Fungah, Infected Orc</name>
     <size>M</size>
@@ -2552,12 +2771,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>9</int>
     <wis>14</wis>
     <cha>9</cha>
-    <immune>poison</immune>
-    <conditionImmune>blinded, charmed, frightened, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
+    <save/>
+    <skill/>
     <passive>11</passive>
     <languages>Primordial</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>blinded, charmed, frightened, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The orc has advantage on saving throws against spells and other magical effects.</text>
@@ -2577,7 +2800,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 87 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, Infected Orc -->
+  </monster>
   <monster>
     <name>Fungah, Fungi Worm</name>
     <size>H</size>
@@ -2592,13 +2815,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>1</int>
     <wis>16</wis>
     <cha>4</cha>
+    <save/>
     <skill>Percception +7</skill>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, poisoned</conditionImmune>
-    <senses>blindsight 20 ft., tremorsense 60 ft.</senses>
     <passive>17</passive>
     <languages>Primordial</languages>
     <cr>12</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, poisoned</conditionImmune>
+    <senses>blindsight 20 ft., tremorsense 60 ft.</senses>
     <trait>
       <name>Keen Sight</name>
       <text>The worm has advantage on Wisdom (Perception) checks that rely on sight.</text>
@@ -2630,7 +2856,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 53 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, Infected Worm -->
+  </monster>
   <monster>
     <name>Fungah</name>
     <size>M</size>
@@ -2645,13 +2871,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>10</int>
     <wis>12</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +3</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>13</passive>
     <languages>Primordial</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The fungah has advantage on saving throws against spells and other magical effects.</text>
@@ -2671,7 +2900,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 50 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah -->
+  </monster>
   <monster>
     <name>Fungah King</name>
     <size>L</size>
@@ -2686,13 +2915,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>12</int>
     <wis>16</wis>
     <cha>12</cha>
+    <save/>
     <skill>Perception +7</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>17</passive>
     <languages>Primordial</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Bioluminescent</name>
       <text>The fungah king sheds dim yellow light in a 10-foot radius.</text>
@@ -2729,9 +2961,9 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <spells>comprehend languages, minor illusion, pass without trace, detect thoughts, entangle, polymorph, silence, suggestion, compulsion, confusion, dimension door, dispel magic</spells>
     <description>Source:	Monsters of the Underworld p. 51 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, King -->
+  </monster>
   <monster>
-    <name>Fungahshaman</name>
+    <name>Fungah, shaman</name>
     <size>M</size>
     <type>plant</type>
     <alignment>neutral evil</alignment>
@@ -2744,13 +2976,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>12</int>
     <wis>18</wis>
     <cha>11</cha>
+    <save/>
     <skill>Perception +6</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>16</passive>
     <languages>Primordial</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Bioluminescent</name>
       <text>The fungah sheds dim green light in a 10-foot radius.</text>
@@ -2778,7 +3013,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <spells>minor illusion, pass without trace, calm emotions, entangle, silence, compulsion, confusion, counterspell, dispel magic, hallucinatory terrain</spells>
     <description>Source:	Monsters of the Underworld p. 52 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, Shaman -->
+  </monster>
   <monster>
     <name>Fungah, Madcap</name>
     <size>M</size>
@@ -2793,13 +3028,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +4</skill>
-    <immune>poison, psychic</immune>
-    <conditionImmune>charmed, poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>14</passive>
     <languages>Primordial</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, psychic</immune>
+    <conditionImmune>charmed, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>False Appearance</name>
       <text>While the madcap remains motionless, it is indistinguishable from a Medium-sized mushroom.</text>
@@ -2827,7 +3065,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 74 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, Madcap -->
+  </monster>
   <monster>
     <name>Fungah, Spore Farmer</name>
     <size>M</size>
@@ -2842,13 +3080,16 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <int>10</int>
     <wis>12</wis>
     <cha>9</cha>
+    <save/>
     <skill>Perception +3</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Primordial, Undercommon</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The spore farmer has advantage on saving throws against spells and other magical effects.</text>
@@ -2872,7 +3113,7 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 98 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, Spore Farmer -->
+  </monster>
   <monster>
     <name>Fungah, The Undervoid</name>
     <size>G</size>
@@ -2889,12 +3130,14 @@ Source:	Monsters of the Underworld p. 43 (Homebrew)</description>
     <cha>1</cha>
     <save>Int +17, Wis +15</save>
     <skill>Insight +15, Percception +15</skill>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, frightened, paralyzed, poisoned, prone</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>25</passive>
     <languages>Primordial</languages>
     <cr>30</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, frightened, paralyzed, poisoned, prone</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fungi Presence</name>
       <text>When any creature that isn't infected by the dark spores starts its turn within a mile of the Undervoid, that creature must succeed on on a DC 20 Constitution saving throw or take 3 (1d6) poison damage from the dark spores.</text>
@@ -2961,7 +3204,7 @@ Prophetic End. Some seers have had visions of heroes traveling to the faraway ho
 
 Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Fungah, The Undervoid -->
+  </monster>
   <monster>
     <name>Gangler</name>
     <size>L</size>
@@ -2976,11 +3219,16 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <int>9</int>
     <wis>14</wis>
     <cha>6</cha>
+    <save/>
     <skill>Perception +4, Stealth +5</skill>
-    <senses>darkvision 90 ft.</senses>
     <passive>14</passive>
     <languages>-</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Stone Camouflage</name>
       <text>The gangler has advantage on Dexterity (Stealth) checks to hide in rocky terrain.</text>
@@ -3009,9 +3257,11 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 54 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Gangler -->
+  </monster>
   <monster>
     <name>Giant Gargoyle</name>
+    <sortname>Gargoyle, Giant</sortname>
+    <ancestry>Gargoyle</ancestry>
     <size>L</size>
     <type>elemental</type>
     <alignment>chaotic evil</alignment>
@@ -3024,13 +3274,16 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <int>6</int>
     <wis>11</wis>
     <cha>7</cha>
+    <save/>
+    <skill/>
+    <passive>10</passive>
+    <languages>Terran</languages>
+    <cr>5</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't adamantine</resist>
     <immune>poison</immune>
     <conditionImmune>exhaustion, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>10</passive>
-    <languages>Terran</languages>
-    <cr>5</cr>
     <trait>
       <name>False Appearance</name>
       <text>While the gargoyle remains motionless, it is indistinguishable from a normal statue.</text>
@@ -3056,9 +3309,11 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 55 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Giant Gargoyle -->
+  </monster>
   <monster>
     <name>Cave Giant</name>
+    <sortname>Giant, Cave</sortname>
+    <ancestry>Giant</ancestry>
     <size>H</size>
     <type>giant</type>
     <alignment>chaotic evil</alignment>
@@ -3073,10 +3328,14 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <cha>6</cha>
     <save>Dex +4, Con +7, Wis +3</save>
     <skill>Perception +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Giant</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <action>
       <name>Multiattack</name>
       <text>The giant makes two attacks with its fists or one with its bite.</text>
@@ -3097,9 +3356,11 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 56 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Giant, Cave -->
+  </monster>
   <monster>
     <name>Gloom Giant</name>
+    <sortname>Giant, Gloom</sortname>
+    <ancestry>Giant</ancestry>
     <size>H</size>
     <type>giant</type>
     <alignment>neutral evil</alignment>
@@ -3114,10 +3375,14 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <cha>14</cha>
     <save>Dex +3, Con +10, Wis +6</save>
     <skill>Deception +6, Perception +4, Persuasion +6</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>14</passive>
     <languages>Giant</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The giant's innate spellcasting ability is Charisma (spell save DC 15). The giant can innately cast the following spells, requiring no components.
@@ -3149,9 +3414,11 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <spells>prestidigitation, bane, darkness, dissonant whispers, sleep</spells>
     <description>Source:	Monsters of the Underworld p. 58 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Giant, Gloom -->
+  </monster>
   <monster>
     <name>Lava Giant</name>
+    <sortname>Giant, Lava</sortname>
+    <ancestry>Giant</ancestry>
     <size>H</size>
     <type>giant</type>
     <alignment>chaotic evil</alignment>
@@ -3166,11 +3433,14 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <cha>9</cha>
     <save>Dex +3, Con +9, Wis +3</save>
     <skill>Athletics +10</skill>
-    <resist>bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>10</passive>
     <languages>Giant</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Heated Body</name>
       <text>A creature that touches the giant or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage.</text>
@@ -3191,9 +3461,11 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 59 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Giant, Lava -->
+  </monster>
   <monster>
     <name>Thunder Giant</name>
+    <sortname>Giant, Thunder</sortname>
+    <ancestry>Giant</ancestry>
     <size>H</size>
     <type>giant</type>
     <alignment>chaotic evil</alignment>
@@ -3208,10 +3480,14 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <cha>12</cha>
     <save>Str +12, Con +11, Cha +6</save>
     <skill>Athletics +14, Intimidation +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>9</passive>
     <languages>Giant, Primordial</languages>
     <cr>12</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Siege Monster</name>
       <text>The giant deals double damage to objects and structures.</text>
@@ -3231,9 +3507,11 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 60 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Giant, Thunder -->
+  </monster>
   <monster>
     <name>Giant Queen</name>
+    <sortname>Giant, Queen</sortname>
+    <ancestry>Giant</ancestry>
     <size>H</size>
     <type>giant</type>
     <alignment>chaotic evil</alignment>
@@ -3248,10 +3526,14 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <cha>16</cha>
     <save>Str +13, Con +11, Wis +9, Cha +8</save>
     <skill>Athletics +13, Intimidation +9, Perception +9, Persuasion +9</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>19</passive>
     <languages>Giant</languages>
     <cr>15</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Brave</name>
       <text>The giant has advantage on saving throws against being frightened.</text>
@@ -3275,7 +3557,7 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 61 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Giant, Queen -->
+  </monster>
   <monster>
     <name>Gloom Shroom</name>
     <size>L</size>
@@ -3290,13 +3572,16 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <int>7</int>
     <wis>14</wis>
     <cha>6</cha>
+    <save/>
     <skill>Perception +5</skill>
-    <immune>poison</immune>
-    <conditionImmune>blinded, charmed, frightened, poisoned</conditionImmune>
-    <senses>blindsight 60 ft.</senses>
     <passive>15</passive>
     <languages>Primordial, Undercommon</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>blinded, charmed, frightened, poisoned</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Shade of Gloom</name>
       <text>The gloom shroom casts a dark shadow in a 20-foot radius on the ground around it. Any creature in this area must make a DC 12 Wisdom saving throw or make all saving throws at disadvantage for 1 minute.</text>
@@ -3325,9 +3610,10 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 62 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Gloom Shroom -->
+  </monster>
   <monster>
     <name>Deep Gnome (Svirfneblin), Elder</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (gnome)</type>
     <alignment>neutral good</alignment>
@@ -3340,11 +3626,16 @@ Source:	Monsters of the Underworld p. 103 (Homebrew)</description>
     <int>13</int>
     <wis>16</wis>
     <cha>10</cha>
+    <save/>
     <skill>Investigation +3, Perception +5, Stealth +4</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>15</passive>
     <languages>Gnomish, Undercommon, Terran</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Gem Wisdom</name>
       <text>The gnome has advantage on Intelligence (Nature) checks when examining gemstones.</text>
@@ -3389,9 +3680,10 @@ Caterpillar Mounts. Some deep gnome elders ride around on giant caterpillars or 
 
 Source:	Monsters of the Underworld p. 63 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Deep Gnome (Svirfneblin), Elder -->
+  </monster>
   <monster>
     <name>Deep Gnome (Svirfneblin), King</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (gnome)</type>
     <alignment>neutral good</alignment>
@@ -3404,11 +3696,16 @@ Source:	Monsters of the Underworld p. 63 (Homebrew)</description>
     <int>14</int>
     <wis>18</wis>
     <cha>16</cha>
+    <save/>
     <skill>Insight +6, Perception +6, Persuasion +6, Stealth +5</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>16</passive>
     <languages>Gnomish, Undercommon, Terran</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Gnome Cunning</name>
       <text>The gnome has advantage on Intelligence, Wisdom, and Charisma saving throws against magic.</text>
@@ -3437,9 +3734,10 @@ Source:	Monsters of the Underworld p. 63 (Homebrew)</description>
     <spells>nondetection, blindness/deafness, blur, disguise self, stone shape, meld into stone, move earth, wall of stone</spells>
     <description>Source:	Monsters of the Underworld p. 64 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Deep Gnome (Svirfneblin), King -->
+  </monster>
   <monster>
     <name>Deep Gnome (Svirfneblin), Ranger</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (gnome)</type>
     <alignment>neutral good</alignment>
@@ -3452,11 +3750,16 @@ Source:	Monsters of the Underworld p. 63 (Homebrew)</description>
     <int>12</int>
     <wis>12</wis>
     <cha>9</cha>
+    <save/>
     <skill>Nature +3, Perception +3, Stealth +6, Survival +3</skill>
-    <senses>darkvision 120 ft.</senses>
     <passive>13</passive>
     <languages>Gnomish, Undercommon, Terran</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Cunning Action (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -3502,9 +3805,11 @@ Old Gnomes Club. All svirfneblin rangers are male. However, a few female warrior
 
 Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Deep Gnome (Svirfneblin), Ranger -->
+  </monster>
   <monster>
     <name>Goblin Queen</name>
+    <sortname>Goblin, Queen</sortname>
+    <ancestry>Goblin</ancestry>
     <size>M</size>
     <type>humanoid (goblinoid)</type>
     <alignment>neutral evil</alignment>
@@ -3517,11 +3822,16 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>16</cha>
+    <save/>
     <skill>Deception +6, Perception +5, Persuasion +6, Stealth +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Goblin, Undercommon</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Nimble Escape</name>
       <text>The goblin queen can use a bonus action to take the Disengage, or Hide action.</text>
@@ -3550,7 +3860,7 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     <spells>fire bolt, poison spray, thaumaturgy, burning hands, thunderwave, witch bolt, crown of madness, mage armor, scorching ray</spells>
     <description>Source:	Monsters of The Underworld p. 66 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Goblin, Queen -->
+  </monster>
   <monster>
     <name>Gold Mold</name>
     <size>L</size>
@@ -3565,13 +3875,16 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     <int>1</int>
     <wis>6</wis>
     <cha>3</cha>
+    <save/>
+    <skill/>
+    <passive>8</passive>
+    <languages>-</languages>
+    <cr>3</cr>
+    <vulnerable/>
     <resist>acid, cold, fire</resist>
     <immune>necrotic, poison, psychic</immune>
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, poisoned, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
-    <passive>8</passive>
-    <languages>-</languages>
-    <cr>3</cr>
     <trait>
       <name>Amorphous</name>
       <text>The ooze can move through a space as narrow as 1 inch wide without squeezing.</text>
@@ -3591,9 +3904,11 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 67 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Gold Mold -->
+  </monster>
   <monster>
     <name>Spider Golem</name>
+    <sortname>Golem, Spider</sortname>
+    <ancestry>Golem</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>unaligned</alignment>
@@ -3606,12 +3921,16 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     <int>3</int>
     <wis>11</wis>
     <cha>1</cha>
-    <immune>fire, poison, psychic; bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't adamantine</immune>
-    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>18</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>fire, poison, psychic; bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't adamantine</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Immutable Form</name>
       <text>The golem is immune to any spell or effect that would alter its form.</text>
@@ -3644,9 +3963,11 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 68 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Golem, Spider -->
+  </monster>
   <monster>
     <name>Grim Druid</name>
+    <sortname>Druid, Grim</sortname>
+    <ancestry>Druid</ancestry>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any evil alignment</alignment>
@@ -3661,10 +3982,14 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     <cha>9</cha>
     <save>Con +5, Wis +7</save>
     <skill>Medicine +7, Nature +4, Perception +7, Stealth +4</skill>
-    <senses>darkvision 90 ft.</senses>
     <passive>17</passive>
     <languages>Common, Druidic, Primordial, Undercommon</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Shadow Stealth</name>
       <text>While in dim light or darkness, the grim druid can take the Hide action as a bonus action.</text>
@@ -3696,9 +4021,11 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     <spells>druidcraft, poison spray, thorn whip, animal friendship, entangle, fog cloud, speak with animals, barkskin, heat metal, pass without trace, dispel magic, feign death, meld into stone, blight, confusion, hallucinatory terrain, conjure elemental</spells>
     <description>Source:	Monsters of the Underworld p. 69 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Grim Druid -->
+  </monster>
   <monster>
     <name>Hag Queen</name>
+    <sortname>Hag, Queen</sortname>
+    <ancestry>Hag</ancestry>
     <size>M</size>
     <type>fey</type>
     <alignment>neutral evil</alignment>
@@ -3711,13 +4038,16 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     <int>14</int>
     <wis>18</wis>
     <cha>20</cha>
+    <save/>
     <skill>Deception +11, Insight +10, Perception +10, Stealth +9</skill>
-    <resist>cold, fire, poison; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
-    <conditionImmune>charmed</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>20</passive>
     <languages>Abyssal, Common, Infernal, Primordial, Sylvan, Undercommon</languages>
     <cr>14</cr>
+    <vulnerable/>
+    <resist>cold, fire, poison; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune>charmed</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Hag Crown</name>
       <text>If the hag queen is wearing her crown, she can see invisible creatures and the true form of any shapechanger.</text>
@@ -3767,7 +4097,7 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     <spells>dancing lights, detect evil and good, hellish rebuke, minor illusion, vicious mockery, charm person, darkness, dispel magic, ray of enfeeblement, sleep, witch bolt, blight, fear, gaseous form, stinking cloud, suggestion</spells>
     <description>Source:	Monsters of the Underworld p. 70 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Hag, Queen -->
+  </monster>
   <monster>
     <name>Illuminai</name>
     <size>M</size>
@@ -3784,10 +4114,14 @@ Source:	Monsters of the Underworld p. 65 (Homebrew)</description>
     <cha>16</cha>
     <save>Con +5, Wis +4</save>
     <skill>Athletics, +4, Insight +4, Perception +4, Survival +4</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Common, Celestial, Undercommon</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Brave</name>
       <text>The illuminai has advantage on saving throws against being frightened.</text>
@@ -3828,9 +4162,11 @@ Shining Swords. Illuminai are armed with two unique weapons to deal with their e
 
 Source:	Monsters of the Underworld p. 71 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Illuminai -->
+  </monster>
   <monster>
     <name>Lich King</name>
+    <sortname>Lich, King</sortname>
+    <ancestry>Lich</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>neutral evil</alignment>
@@ -3845,13 +4181,14 @@ Source:	Monsters of the Underworld p. 71 (Homebrew)</description>
     <cha>19</cha>
     <save>Con +11, Int +14, Wis +10</save>
     <skill>Arcana +14, History +14, Insight +10, Perception +10</skill>
+    <passive>20</passive>
+    <languages>Common, up to 7 other languages</languages>
+    <cr>25</cr>
+    <vulnerable/>
     <resist>cold, lightning, necrotic</resist>
     <immune>poison; bludgeoning, piercing, and slashing damage from nonmagical weapons</immune>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>20</passive>
-    <languages>Common, up to 7 other languages</languages>
-    <cr>25</cr>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -3900,13 +4237,13 @@ Source:	Monsters of the Underworld p. 71 (Homebrew)</description>
     <spells>Chill Touch, Firebolt, Mage Hand, Prestidigitation, Ray of Frost, Detect Magic, Feather Fall, Magic Missile, Shield, Thunderwave, Darkness, Detect Thoughts, Invisibility, Acid Arrow, Mirror Image, Animate Dead, Counterspell, Dispel Magic, Fireball, Water Walk, Banishment, Blight, Dimension Door, Mislead, Modify Memory, Scrying, Create Undead, Disintegrate, Globe of Invulnerability, Finger of Death, Plane Shift, Dominate Monster, Power Word Stun, Power Word Kill</spells>
     <description>Source:	Monsters of the Underworld p. 72 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Lich King -->
+  </monster>
   <monster>
     <name>Lycanthrope, Werewolf Lord</name>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>nchaotic evil</alignment>
-    <ac>13 in humanoid form, 15 (natural armor) in wolf or hybrid form</ac>
+    <ac>13 in humanoid form, 15 (natural armor) in wolf or hybrid form)</ac>
     <hp>90 (12d8 + 36)</hp>
     <speed>30 ft. (50 ft. in wolf form)</speed>
     <str>14</str>
@@ -3917,12 +4254,14 @@ Source:	Monsters of the Underworld p. 71 (Homebrew)</description>
     <cha>9</cha>
     <save/>
     <skill>Perception +5, Stealth +6</skill>
-    <immune>bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons</immune>
-    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Common (can't speak in wolf form)</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons</immune>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Hearing and Smell</name>
       <text>The werewolf lord has advantage on Wisdom (Perception) checks that rely on hearing or smell</text>
@@ -3964,7 +4303,7 @@ We are Family. Some lycanthropes come to live in the werewolf lord's lair. Werew
 
 Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Lycanthrope, Werewolf Lord -->
+  </monster>
   <monster>
     <name>Magmamental</name>
     <size>L</size>
@@ -3979,13 +4318,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>6</int>
     <wis>10</wis>
     <cha>5</cha>
+    <save/>
+    <skill/>
+    <passive>10</passive>
+    <languages>Ignan, Terran</languages>
+    <cr>5</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
     <immune>fire, poison</immune>
     <conditionImmune>exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>10</passive>
-    <languages>Ignan, Terran</languages>
-    <cr>5</cr>
     <trait>
       <name>Magma Form</name>
       <text>The elemental can move through a space as narrow as 3 inches wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage.</text>
@@ -4005,9 +4347,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 75 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Magmamental -->
+  </monster>
   <monster>
     <name>Minotaur King</name>
+    <sortname>Minotaur, King</sortname>
+    <ancestry>Minotaur</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>lawful evil</alignment>
@@ -4020,11 +4364,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>10</int>
     <wis>18</wis>
     <cha>14</cha>
+    <save/>
     <skill>Intimidation +6, Perception +8, Persuasion +8</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>18</passive>
     <languages>Abyssal</languages>
     <cr>12</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Charge</name>
       <text>If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 13 (3d8) piercing damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be pushed up to 10 ft. away and knocked prone.</text>
@@ -4074,9 +4423,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </legendary>
     <description>Source:	Monsters of the Underworld p. 76 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Minotaur, King -->
+  </monster>
   <monster>
     <name>Minotaur Lord</name>
+    <sortname>Minotaur, Lord</sortname>
+    <ancestry>Minotaur</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>lawful evil</alignment>
@@ -4089,11 +4440,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>10</int>
     <wis>16</wis>
     <cha>12</cha>
+    <save/>
     <skill>Perception +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>16</passive>
     <languages>Abyssal</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Charge</name>
       <text>If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 13 (3d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be pushed up to 10 ft. away and knocked prone.</text>
@@ -4122,9 +4478,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 77 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Minotaur, Lord -->
+  </monster>
   <monster>
     <name>Minotaur Mage</name>
+    <sortname>Minotaur, Mage</sortname>
+    <ancestry>Minotaur</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>lawful evil</alignment>
@@ -4137,11 +4495,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>18</int>
     <wis>10</wis>
     <cha>9</cha>
+    <save/>
     <skill>Arcana +7, History +7, Perception +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Abyssal</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Charge</name>
       <text>If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be pushed up to 10 ft. away and knocked prone.</text>
@@ -4176,7 +4539,7 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <spells>acid splash, blade ward, dancing lights, prestidigitation, chromatic orb, fog cloud, shield, thunderwave, detect thoughts, scorching ray, see invisibility, dispel magic, fear, lightning bolt, confusion</spells>
     <description>Source:	Monsters of the Underworld p. 78 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Minotaur, Mage -->
+  </monster>
   <monster>
     <name>Monster Hunter</name>
     <size>M</size>
@@ -4193,10 +4556,14 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <cha>9</cha>
     <save>Dex +7, Wis +7</save>
     <skill>Arcana +4, History +4, Insight +7, Perception +7, Stealth +7</skill>
-    <senses>darkvision 90 ft.</senses>
     <passive>17</passive>
     <languages>Common, Undercommon</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The monster hunter's innate spellcasting ability is Wisdom (spell save DC 15). The mosnter hunter can innately cast the following spells, requiring no components.
@@ -4230,9 +4597,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <spells>detect evil and good, detect magic, cure wounds, hunter's mark, pass without trace, lesser restoration, locate creature, longstrider, nondetection, spider climb</spells>
     <description>Source:	Monsters of the Underworld p. 79 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Monster Hunter -->
+  </monster>
   <monster>
     <name>Maga Naga</name>
+    <sortname>Naga, Maga</sortname>
+    <ancestry>Naga</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>chaotic evil</alignment>
@@ -4247,12 +4616,14 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <cha>18</cha>
     <save>Con +7, Cha +8</save>
     <skill>Deception +8, Persuasion +8</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>8</passive>
     <languages>Understands and speaks Common, Abyssal, and Undercommon but can barely read them</languages>
     <cr>11</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Compulsive Liar</name>
       <text>The naga feels compelled to lie the majority of the time.</text>
@@ -4289,9 +4660,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <spells>thaumaturgy, vicious mockery, charm person, command, dissonant whispers, illusory script, crown of madness, entrhall, suggestion, bestow curse, fear, stinking cloud, banishment, compulsion, confusion, flame strike, geas, mislead, mass suggestion</spells>
     <description>Source:	Monsters of the Underworld p. 80 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Maga Naga -->
+  </monster>
   <monster>
-    <name>The Necromancer</name>
+    <name>Necromancer, The</name>
+    <sortname>Necromancer, The</sortname>
+    <ancestry>Necromancer</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -4306,11 +4679,14 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <cha>20</cha>
     <save>Int +10, Wis +9, Cha +10</save>
     <skill>Arcana +10, Deception +10, Perception +9, Persuasion +10</skill>
-    <immune>necrotic</immune>
-    <senses>darkvision 90 ft.</senses>
     <passive>19</passive>
     <languages>All</languages>
     <cr>16</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic</immune>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Aura of Fear</name>
       <text>Any creature within 60 feet of the necromancer must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns.</text>
@@ -4361,9 +4737,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <spells>blade ward, chill touch, message, minor illusion, prestidigitation, shocking grasp, false life, fog cloud, ray of sickness, silent image, detect thoughts, misty step, ray of enfeeblement, scorching ray, animate dead, bestow curse, vampiric touch, blight, dimension door, wall of fire, animate objects, dominate person, geas, circle of death, finger of death</spells>
     <description>Source:	Monsters of the Underworld p. 81 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- The Necromancer -->
+  </monster>
   <monster>
     <name>Nightmare Bear</name>
+    <sortname>Bear, Nightmare</sortname>
+    <ancestry>Bear</ancestry>
     <size>L</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -4376,12 +4754,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>1</int>
     <wis>7</wis>
     <cha>1</cha>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>-</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Living Nightmare</name>
       <text>Creatures within 20 ft. of the nightmare bear that aren't undead must make a DC 14 Wisdom saving throw or begin to have horrible visions. The target is incapacitated; however, it can repeat the saving throw at the end of each of its turns. Once a target saves against this feature, they are immune to it for 24 hours.</text>
@@ -4406,9 +4788,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 82 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Nightmare Bear -->
+  </monster>
   <monster>
     <name>Night Steed</name>
+    <sortname>Steed, Night</sortname>
+    <ancestry>Steed</ancestry>
     <size>L</size>
     <type>celestial</type>
     <alignment>chaotic good</alignment>
@@ -4423,10 +4807,14 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <cha>12</cha>
     <save>Dex +4, Wis +4, Cha +3</save>
     <skill>Perception +4, Stealth +4</skill>
-    <senses>darkvision 90 ft.</senses>
     <passive>14</passive>
     <languages>understands Celestial, Common, and Undercommon</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the night steed has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
@@ -4438,9 +4826,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 83 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Night Steed -->
+  </monster>
   <monster>
     <name>Flying Ogre</name>
+    <sortname>Ogre, Flying</sortname>
+    <ancestry>Ogre</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>chaotic evil</alignment>
@@ -4453,10 +4843,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>5</int>
     <wis>7</wis>
     <cha>7</cha>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Giant, Undercommon</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
       <text>The ogre has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -4477,9 +4873,10 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 84 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Ogre, Flying -->
+  </monster>
   <monster>
     <name>Orc, Bat Rider</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (orc)</type>
     <alignment>chaotic evil</alignment>
@@ -4492,11 +4889,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>7</int>
     <wis>11</wis>
     <cha>10</cha>
+    <save/>
     <skill>Animal Handling +2, Athletics +5, Intimidation +2</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>10</passive>
     <languages>Common, Orc</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Aggressive</name>
       <text>As a bonus action, the orc can move up to its speed toward a hostile creature that it can see. It can't use this ability while mounted.</text>
@@ -4530,9 +4932,10 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 85 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Orc, Bat Rider -->
+  </monster>
   <monster>
     <name>Orc, Chieftan</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (orc)</type>
     <alignment>chaotic evil</alignment>
@@ -4545,11 +4948,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>12</int>
     <wis>12</wis>
     <cha>16</cha>
+    <save/>
     <skill>Intimidation +5, Perception +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Common, Orc</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Aggressive</name>
       <text>As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.</text>
@@ -4579,9 +4987,10 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 86 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Orc, Chieftan -->
+  </monster>
   <monster>
     <name>Orc, King</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (orc)</type>
     <alignment>chaotic evil</alignment>
@@ -4594,11 +5003,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
+    <save/>
     <skill>Intimidation +6, Perception +5, Persuasion +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Common, Orc</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Aggressive</name>
       <text>As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.</text>
@@ -4627,9 +5041,10 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 88 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Orc, King -->
+  </monster>
   <monster>
     <name>Orc, Scout</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (orc)</type>
     <alignment>chaotic evil</alignment>
@@ -4642,11 +5057,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>9</int>
     <wis>12</wis>
     <cha>10</cha>
+    <save/>
     <skill>Insight +4, Nature +2, Perception +4, Stealth +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Common, Orc</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Cunning Action</name>
       <text>The orc can use a bonus action on its turn to take the Dash, Disengage, Hide, or Use an Object action.</text>
@@ -4675,9 +5095,10 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 89 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Orc, Scout -->
+  </monster>
   <monster>
     <name>Orc, Shaman</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (orc)</type>
     <alignment>chaotic evil</alignment>
@@ -4690,11 +5111,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>9</int>
     <wis>16</wis>
     <cha>12</cha>
+    <save/>
     <skill>Insight +5, Intimidation +3, Medicine +5, Perception +5</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Common, Orc</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Brew Potions</name>
       <text>Given one day and the right ingredients, the orc can brew the following potions: potion of climbing, potion of healing, or a potion of poison.</text>
@@ -4715,9 +5141,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <spells>detect evil and good, poison spray, detect magic, entangle, flame blade, hold person, silence</spells>
     <description>Source:	Monsters of the Underworld p. 90 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Orc, Shaman -->
+  </monster>
   <monster>
     <name>Giant Roper</name>
+    <sortname>Giant, Roper</sortname>
+    <ancestry>Giant</ancestry>
     <size>H</size>
     <type>monstrosity</type>
     <alignment>unaligned</alignment>
@@ -4730,11 +5158,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>9</int>
     <wis>19</wis>
     <cha>6</cha>
+    <save/>
     <skill>Perception +8</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>18</passive>
     <languages>-</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>False Appearance</name>
       <text>While the giant roper remains motionless, it is indistinguishable from a normal cave formation, such as a stalactite.</text>
@@ -4767,7 +5200,7 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 92 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Giant Roper -->
+  </monster>
   <monster>
     <name>Rumbledum</name>
     <size>L</size>
@@ -4782,14 +5215,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>7</int>
     <wis>12</wis>
     <cha>1</cha>
+    <save/>
     <skill>Perception +4</skill>
+    <passive>14</passive>
+    <languages>Terran</languages>
+    <cr>7</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>charmed, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>14</passive>
-    <languages>Terran</languages>
-    <cr>7</cr>
     <trait>
       <name>False Appearance</name>
       <text>While the rumbledum remains motionless, it is indistinguishable from a normal boulder.</text>
@@ -4813,9 +5248,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 93 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Rumbledum -->
+  </monster>
   <monster>
     <name>Shade Stalker</name>
+    <sortname>Stalker, Shade</sortname>
+    <ancestry>Stalker</ancestry>
     <size>S</size>
     <type>fey</type>
     <alignment>neutral evil</alignment>
@@ -4828,11 +5265,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>12</int>
     <wis>14</wis>
     <cha>9</cha>
+    <save/>
     <skill>Perception +4, Stealth +5</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Undercommon</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Shadow Stealth</name>
       <text>While in dim light or darkness, the shade stalker can take the Hide action as a bonus action.</text>
@@ -4853,9 +5295,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 94 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Shade Stalker -->
+  </monster>
   <monster>
     <name>Shadow Knight</name>
+    <sortname>Knight, Shadow</sortname>
+    <ancestry>Knight</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>lawful evil</alignment>
@@ -4868,14 +5312,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>7</int>
     <wis>12</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +4, Stealth +5</skill>
-    <vulnerable>radiant</vulnerable>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, exhausted, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Undercommon</languages>
     <cr>6</cr>
+    <vulnerable>radiant</vulnerable>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhausted, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Shadow Jump</name>
       <text>As a bonus action, the shadow knight can teleport up to 30 ft. to an unoccupied space it can see. Both the space it teleports from and the destination space must be in dim light or darkness. The shadow knight can use this ability between the weapon attacks of another action it takes.</text>
@@ -4909,9 +5355,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </reaction>
     <description>Source:	Monsters of the Underworld p. 95 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Shadow Knight -->
+  </monster>
   <monster>
     <name>Shadow Lord</name>
+    <sortname>Lord, Shadow</sortname>
+    <ancestry>Lord</ancestry>
     <size>L</size>
     <type>undead</type>
     <alignment>lawful evil</alignment>
@@ -4924,14 +5372,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>12</int>
     <wis>16</wis>
     <cha>14</cha>
+    <save/>
     <skill>Perception +7, Stealth +7</skill>
-    <vulnerable>radiant</vulnerable>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, exhausted, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>17</passive>
     <languages>Undercommon</languages>
     <cr>13</cr>
+    <vulnerable>radiant</vulnerable>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhausted, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The shadow lord's innate spellcasting ability is Wisdom (spell save DC 15). The shadow lord can innately cast the following spells, requiring no components.
@@ -4973,9 +5423,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <spells>prestidigitation, blur, darkness, mirror image</spells>
     <description>Source:	Monsters of the Underworld p. 96 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Shadow Lord -->
+  </monster>
   <monster>
     <name>Shadow Spider</name>
+    <sortname>Spider, Shadow</sortname>
+    <ancestry>Spider</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -4988,15 +5440,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>6</int>
     <wis>10</wis>
     <cha>8</cha>
-    <skill>Stealth +6 (+8 in dim light or darkness)</skill>
+    <save/>
+    <skill>Stealth +6 (+8 In Dim Light Or Darkness)</skill>
+    <passive>10</passive>
+    <languages>-</languages>
+    <cr>3</cr>
     <vulnerable>radiant</vulnerable>
     <resist>acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing damage from nonmagical weapons</resist>
     <immune>necrotic, poison</immune>
     <conditionImmune>charmed, exhausted, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>10</passive>
-    <languages>-</languages>
-    <cr>3</cr>
     <trait>
       <name>Amorphous</name>
       <text>The spider can move through a space as narrow as 1 inch wide without squeezing.</text>
@@ -5025,7 +5478,7 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 97 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Shadow Spider -->
+  </monster>
   <monster>
     <name>Stalagbite</name>
     <size>L</size>
@@ -5040,13 +5493,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>1</int>
     <wis>3</wis>
     <cha>1</cha>
+    <save/>
     <skill>Perception +2</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>-</languages>
     <cr>1/4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>False Appearance</name>
       <text>While the stalagbite remains motionless, it is indistinguishable from a normal stalagmite.</text>
@@ -5058,9 +5514,10 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 99 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Stalagbite -->
+  </monster>
   <monster>
     <name>Toadstool Fool</name>
+    <sortname>Fool, Toadstool</sortname>
     <size>M</size>
     <type>fey</type>
     <alignment>chaotic neutral</alignment>
@@ -5073,11 +5530,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>15</int>
     <wis>12</wis>
     <cha>16</cha>
+    <save/>
     <skill>Perception +4, Stealth +5</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Undercommon</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The toadstool fool's innate spellcasting ability is Charisma (spell save DC 14). The fool can innately cast the following spells, requiring no components.
@@ -5102,9 +5564,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <spells>dancing lights, vicious mockery, darkness, faerie fire, fog cloud, suggestion</spells>
     <description>Source:	Monsters of the Underworld p. 100 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Toadstool Fool -->
+  </monster>
   <monster>
     <name>Armored Troll</name>
+    <sortname>Troll, Armored</sortname>
+    <ancestry>Troll</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>chaotic evil</alignment>
@@ -5117,11 +5581,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>7</int>
     <wis>9</wis>
     <cha>7</cha>
+    <save/>
     <skill>Athletics +9</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>9</passive>
     <languages>Giant</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
       <text>The troll has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -5146,9 +5615,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 101 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Troll, Armored -->
+  </monster>
   <monster>
     <name>Cave Troll</name>
+    <sortname>Troll, Cave</sortname>
+    <ancestry>Troll</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>chaotic evil</alignment>
@@ -5161,11 +5632,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>7</int>
     <wis>10</wis>
     <cha>7</cha>
+    <save/>
     <skill>Athletics +6, Perception +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Giant</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
       <text>The troll has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -5198,9 +5674,11 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 102 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Troll, Cave -->
+  </monster>
   <monster>
     <name>Underworld Dryad</name>
+    <sortname>Dryad, Underworld</sortname>
+    <ancestry>Dryad</ancestry>
     <size>M</size>
     <type>fey</type>
     <alignment>neutral evil</alignment>
@@ -5213,13 +5691,16 @@ Source:	Monsters of the Underworld p. 73 (Homebrew)</description>
     <int>15</int>
     <wis>12</wis>
     <cha>18</cha>
+    <save/>
     <skill>Perception +6, Persuasion +8, Stealth +5</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>16</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The dryad's innate spellcasting ability is Charisma (spell save DC 15). The dryad can innately cast the following spells, requiring no components.
@@ -5256,7 +5737,7 @@ Mushroom Home. The mushroom home of the underworld dryad can be destroyed (AC 15
 
 Source:	Monsters of the Underworld p. 105 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Underworld Dryad -->
+  </monster>
   <monster>
     <name>Web Walker</name>
     <size>M</size>
@@ -5271,13 +5752,16 @@ Source:	Monsters of the Underworld p. 105 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>7</cha>
+    <save/>
     <skill>Acrobatics +7, Perception +5, Stealth +7</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Undercommon</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the web walker has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
@@ -5314,9 +5798,11 @@ Source:	Monsters of the Underworld p. 105 (Homebrew)</description>
     </reaction>
     <description>Source:	Monsters of the Underworld p. 107 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Web Walker -->
+  </monster>
   <monster>
     <name>Zombie Giant</name>
+    <sortname>Zombie, Giant</sortname>
+    <ancestry>Zombie, Giant</ancestry>
     <size>H</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -5329,12 +5815,16 @@ Source:	Monsters of the Underworld p. 105 (Homebrew)</description>
     <int>3</int>
     <wis>6</wis>
     <cha>5</cha>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>understands Common and Giant but can't speak</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Undead Fortitude</name>
       <text>If damage reduces the zombie to 0 Hit Points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.</text>
@@ -5355,9 +5845,11 @@ Source:	Monsters of the Underworld p. 105 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the Underworld p. 108 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Zombie, Giant -->
+  </monster>
   <monster>
     <name>Zombie King</name>
+    <sortname>Zombie, King</sortname>
+    <ancestry>Zombie</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -5372,12 +5864,14 @@ Source:	Monsters of the Underworld p. 105 (Homebrew)</description>
     <cha>14</cha>
     <save>Con +10, Wis +9</save>
     <skill>Insight +9, Perception +9</skill>
-    <immune>poison</immune>
-    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>19</passive>
     <languages>Common, Undercommon</languages>
     <cr>15</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The zombie king has advantage on saving throws against spells and other magical effects.</text>
@@ -5418,9 +5912,11 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <spells>blade ward, chill touch, dancing lights, poison spray, vicious mockery, bane, detect evil and good, inflict wounds, sleep, darkness, knock, locate object, dispel magic, slow, speak with dead, blight, hallucinatory terrain, animate objects, passwall</spells>
     <description>Source:	Monsters of the Underworld p. 109 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Zombie, King -->
+  </monster>
   <monster>
     <name>Armored Bear</name>
+    <sortname>Bear, Armored</sortname>
+    <ancestry>Bear</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
@@ -5433,11 +5929,16 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <int>2</int>
     <wis>14</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +4</skill>
-    <senses/>
     <passive>14</passive>
     <languages>-</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Smell</name>
       <text>The armored bear has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -5462,7 +5963,7 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     </action>
     <description>Source:	Monsters of the Underworld p. 110 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Beast, Armored Bear -->
+  </monster>
   <monster>
     <name>Boomslang</name>
     <size>L</size>
@@ -5477,13 +5978,16 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <int>2</int>
     <wis>10</wis>
     <cha>3</cha>
+    <save/>
     <skill>Perception +3</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>-</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the boomslang has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
@@ -5500,9 +6004,11 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     </action>
     <description>Source:	Monsters of the Underworld p. 111 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Beast, Boomslang -->
+  </monster>
   <monster>
     <name>Giant Armored Centipede</name>
+    <sortname>Centipede, Giant Armored</sortname>
+    <ancestry>Giant Animal, Centipede</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
@@ -5515,10 +6021,16 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <int>1</int>
     <wis>7</wis>
     <cha>3</cha>
-    <senses>blindsight 30 ft.</senses>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>-</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 30 ft.</senses>
     <trait>
       <name>Deep Gnome Armor</name>
       <text>Armored centipedes are fitted with special suits of studded leather crafted by deep gnomes.</text>
@@ -5534,9 +6046,11 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     </action>
     <description>Source:	Monsters of the Underworld p. 112 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Beast, Giant Armored Centipede -->
+  </monster>
   <monster>
     <name>Darkshark</name>
+    <sortname>Shark, Darkshark</sortname>
+    <ancestry>Shark</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>chaotic evil</alignment>
@@ -5549,11 +6063,16 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <int>3</int>
     <wis>12</wis>
     <cha>5</cha>
+    <save/>
     <skill>Perception +34, Stealth +4</skill>
-    <senses>blindsight 60 ft.</senses>
     <passive>14</passive>
     <languages>-</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Blood Frenzy</name>
       <text>The darkshark has advantage on melee attack rolls against any creature that doesn't have all its hit points.</text>
@@ -5577,9 +6096,11 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     </action>
     <description>Source:	Monsters of the Underworld p. 113 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Beast, Darkshark -->
+  </monster>
   <monster>
     <name>Echo Gecko</name>
+    <sortname>Gecko, Echo</sortname>
+    <ancestry>Gecko</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
@@ -5592,12 +6113,16 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <int>2</int>
     <wis>12</wis>
     <cha>5</cha>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>blindsight 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>11</passive>
     <languages>-</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
@@ -5609,9 +6134,11 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     </action>
     <description>Source:	Monsters of the Underworld p. 114 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Beast, Echo Gecko -->
+  </monster>
   <monster>
     <name>Germ Worm</name>
+    <sortname>Worm, Germ</sortname>
+    <ancestry>Worm</ancestry>
     <size>T</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
@@ -5624,13 +6151,16 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <int>1</int>
     <wis>7</wis>
     <cha>1</cha>
-    <vulnerable>cold</vulnerable>
-    <immune>poison</immune>
-    <conditionImmune>charmed, poisoned</conditionImmune>
-    <senses>darkvision 30 ft.</senses>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>-</languages>
     <cr>1/4</cr>
+    <vulnerable>cold</vulnerable>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>charmed, poisoned</conditionImmune>
+    <senses>darkvision 30 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the germ worm has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
@@ -5642,7 +6172,7 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     </action>
     <description>Source:	Monsters of the Underworld p. 115 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Beast, Germ Worm -->
+  </monster>
   <monster>
     <name>Razorfish</name>
     <size>S</size>
@@ -5657,11 +6187,16 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <int>1</int>
     <wis>7</wis>
     <cha>1</cha>
-    <conditionImmune>charmed, prone</conditionImmune>
-    <senses>blindsight 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>-</languages>
     <cr>1/4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, prone</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the razorfish has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
@@ -5682,9 +6217,11 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     </action>
     <description>Source:	Monsters of the Underworld p. 116 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Beast, Razorfish -->
+  </monster>
   <monster>
     <name>Giant Slug</name>
+    <sortname>Slug, Giant</sortname>
+    <ancestry>Giant Animal, Slug</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
@@ -5697,12 +6234,16 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <int>1</int>
     <wis>9</wis>
     <cha>1</cha>
-    <immune>psychic</immune>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>-</languages>
     <cr>1/8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>psychic</immune>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sticky Slime</name>
       <text>The slime of the giant slug can be collected and used as an adhesive.</text>
@@ -5714,9 +6255,11 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     </action>
     <description>Source:	Monsters of the Underworld p. 117 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Beast, Giant Slug -->
+  </monster>
   <monster>
     <name>Monstrous Spider</name>
+    <sortname>Spider, Monstrous</sortname>
+    <ancestry>Spider</ancestry>
     <size>H</size>
     <type>beast</type>
     <alignment>unaligned</alignment>
@@ -5729,10 +6272,16 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <int>2</int>
     <wis>11</wis>
     <cha>4</cha>
-    <senses>blindsight 10 ft., darkvision 90 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>-</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 10 ft., darkvision 90 ft.</senses>
     <trait>
       <name>Frightful Presence</name>
       <text>Each creature of the spider's choice that is within 120 ft. of the spider and aware of it must make on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to this feature for the next 24 hours.</text>
@@ -5769,7 +6318,7 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     </action>
     <description>Source:	Monsters of the Underworld p. 118 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Beast, Monstrous Spider -->
+  </monster>
   <monster>
     <name>Vawk</name>
     <size>L</size>
@@ -5784,11 +6333,16 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     <int>7</int>
     <wis>12</wis>
     <cha>9</cha>
+    <save/>
     <skill>Perception +3, Stealth +4</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>-</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Hearing and Sight</name>
       <text>The vawk has advantage on Wisdom (Perception) checks that rely on hearing or sight.</text>
@@ -5809,5 +6363,5 @@ Cantrip (at will): blade ward, chill touch, dancing lights, poison spray, viciou
     </action>
     <description>Source:	Monsters of the Underworld p. 119 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Beast, Vawk -->
+  </monster>
 </compendium>
