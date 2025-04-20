@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Function to remove '[2024]' from the compendium
+# Provide an empty argument to -i for compatibility (macOS/BSD sed)
 remove_2024() {
-sed -i 's/ \[2024\]//g' "$1"
+sed -i '' 's/ \[2024\]//g' "$1"
 }
 
 # Function to display help text
