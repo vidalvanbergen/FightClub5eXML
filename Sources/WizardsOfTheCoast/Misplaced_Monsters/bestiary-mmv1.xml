@@ -1,9 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Coral</name>
     <size>L</size>
-    <type>Fey</type>
+    <type>fey</type>
     <alignment>Chaotic Good</alignment>
     <ac>17 (natural armor)</ac>
     <hp>135 (18d10 + 36)</hp>
@@ -14,15 +14,14 @@
     <int>14</int>
     <wis>18</wis>
     <cha>19</cha>
-    <save>dex +5, con +6, wis +8, cha +8</save>
+    <save>Dex +5, Con +6, Wis +8, Cha +8</save>
     <skill>Arcana +6, Insight +8, Perception +8</skill>
     <passive>18</passive>
     <languages>Common, Primordial, Sylvan</languages>
     <cr>9</cr>
-    <exp>5000</exp>
+    <vulnerable/>
     <resist/>
     <immune>Poison</immune>
-    <vulnerable/>
     <conditionImmune>Poisoned</conditionImmune>
     <senses>blindsight 60 ft.</senses>
     <trait>
@@ -31,46 +30,40 @@
     </trait>
     <trait>
       <name>Magic Resistance</name>
-      <text>
-Coral has advantage on saving throws against spells and other magical effects.</text>
+      <text>Coral has advantage on saving throws against spells and other magical effects.</text>
     </trait>
     <action>
       <name>Multiattack</name>
-      <text>
-Coral makes two Hoof attacks and uses Tail Thump.</text>
+      <text>Coral makes two Hoof attacks and uses Tail Thump.</text>
     </action>
     <action>
       <name>Hoof</name>
-      <text>
-Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage.</text>
-      <attack>Hoof|+9|2d6+5</attack>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+9|2d6+5</attack>
     </action>
     <action>
       <name>Tail Thump</name>
-      <text>
-Coral slams her tail down, unleashing a burst of magical force toward one creature she can see within 60 feet of her. The target must make a DC 16 Dexterity saving throw. On a failed save, the target takes 22 (4d10) force damage and has the prone condition. On a successful save, the target takes half as much damage only. If this damage reduces the target to 0 hit points, the target dies, and its body is reduced to fine dust.</text>
-      <attack>Tail Thump||4d10</attack>
-    </action>
-    <action>
-      <name>Bubbles of Whimsy (2/Day) (Bonus Action)</name>
-      <recharge>2/Day</recharge>
-      <text>
-Coral produces a stream of magical bubbles from her horn. These bubbles float toward a creature Coral can see within 60 feet of herself. Roll a d6 to determine the bubbles' effect:
-
-• 1-2: Bolstering Treat. The bubbles transform into 1d4 cookies that appear in the target's space. The target gains 11 (2d8 + 2) temporary hit points if it immediately uses its reaction to eat one of the cookies. Any leftover cookies are delicious but confer no benefits. 
-
-• 3-4: Sparkle Burst. The bubbles transform into glitter that swirls around the target before bursting outward. Each creature within 5 feet of the target must succeed on a DC 16 Constitution saving throw or have the blinded condition until the start of Coral's next turn. 
-
-• 5-6: Stink Bomb Shield. The bubbles transform into a foul-smelling cloud of gas that surrounds and shields the target. The target has half cover until the gas disappears at the start of Coral's next turn.</text>
+      <text>Coral slams her tail down, unleashing a burst of magical force toward one creature she can see within 60 feet of her. The target must make a DC 16 Dexterity saving throw. On a failed save, the target takes 22 (4d10) force damage and has the prone condition. On a successful save, the target takes half as much damage only. If this damage reduces the target to 0 hit points, the target dies, and its body is reduced to fine dust.</text>
+      <attack>Force Damage||4d10</attack>
     </action>
     <action>
       <name>Gift of Speech (1/Day)</name>
       <recharge>1/Day</recharge>
-      <text>
-Coral targets one Beast she can see within 10 feet of herself. The target gains the ability to understand and speak Common or Sylvan (Coral's choice) for 10 minutes.</text>
+      <text>Coral targets one Beast she can see within 10 feet of herself. The target gains the ability to understand and speak Common or Sylvan (Coral's choice) for 10 minutes.</text>
     </action>
-    <spells/>
-    <slots/>
+    <action>
+      <name>Bubbles of Whimsy (2/Day) (Bonus Action)</name>
+      <recharge>2/Day</recharge>
+      <text>Coral produces a stream of magical bubbles from her horn. These bubbles float toward a creature Coral can see within 60 feet of herself. Roll a d6 to determine the bubbles' effect:
+
+1-2: Bolstering Treat. The bubbles transform into 1d4 cookies that appear in the target's space. The target gains 11 (2d8 + 2) temporary hit points if it immediately uses its reaction to eat one of the cookies. Any leftover cookies are delicious but confer no benefits. 
+
+3-4: Sparkle Burst. The bubbles transform into glitter that swirls around the target before bursting outward. Each creature within 5 feet of the target must succeed on a DC 16 Constitution saving throw or have the blinded condition until the start of Coral's next turn. 
+
+5-6: Stink Bomb Shield. The bubbles transform into a foul-smelling cloud of gas that surrounds and shields the target. The target has half cover until the gas disappears at the start of Coral's next turn.</text>
+      <attack>Bubbles of Whimsy||1d6</attack>
+      <attack>Temporary Hit Points||2d8+2</attack>
+    </action>
     <description>Coral lives in the ocean and in the clouds. Cookies are her favorite snack. She has the power to bolster other creatures, and she can bestow upon animals the ability to speak for a short time. When she is upset, her rainbow tail lights up. If she smacks her tail on the ground, magical force spreads outward to engulf an enemy, potentially turning it to dust. When Coral has the hiccups, bubbles shoot from her horn. These bubbles transform into tasty cookies, bursts of glitter, and protective clouds of stinky gas.
 
 Source:	Misplaced Monsters: Volume One p. 4</description>
@@ -79,7 +72,7 @@ Source:	Misplaced Monsters: Volume One p. 4</description>
   <monster>
     <name>Dandylion</name>
     <size>L</size>
-    <type>Fey</type>
+    <type>fey</type>
     <alignment>Chaotic Neutral</alignment>
     <ac>14</ac>
     <hp>90 (12d10 + 24)</hp>
@@ -90,15 +83,14 @@ Source:	Misplaced Monsters: Volume One p. 4</description>
     <int>16</int>
     <wis>17</wis>
     <cha>18</cha>
-    <save>str +9, cha +7</save>
+    <save>Str +9, Cha +7</save>
     <skill>Nature +9, Perception +6, Survival +6</skill>
     <passive>16</passive>
     <languages>Common, Sylvan</languages>
     <cr>6</cr>
-    <exp>2300</exp>
+    <vulnerable/>
     <resist/>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -107,8 +99,7 @@ Source:	Misplaced Monsters: Volume One p. 4</description>
     </trait>
     <trait>
       <name>Spellcasting</name>
-      <text>
-The dandylion casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 15):
+      <text>The dandylion casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save DC 15):
 
 	• At will: druidcraft, guidance, purify food and drink
 	• 1/Day: speak with plants
@@ -116,47 +107,38 @@ The dandylion casts one of the following spells, requiring no material component
     </trait>
     <trait>
       <name>Magic Resistance</name>
-      <text>
-The dandylion has advantage on saving throws against spells and other magical effects.</text>
+      <text>The dandylion has advantage on saving throws against spells and other magical effects.</text>
     </trait>
     <trait>
       <name>Pack Tactics</name>
-      <text>
-The dandylion has advantage on an attack roll against a creature if at least one of the dandylion's allies is within 5 feet of the creature and the ally doesn't have the incapacitated condition.</text>
+      <text>The dandylion has advantage on an attack roll against a creature if at least one of the dandylion's allies is within 5 feet of the creature and the ally doesn't have the incapacitated condition.</text>
     </trait>
     <action>
       <name>Multiattack</name>
-      <text>
-The dandylion makes one Bite attack and one Claws attack.</text>
+      <text>The dandylion makes one Bite attack and one Claws attack.</text>
     </action>
     <action>
       <name>Bite</name>
-      <text>
-Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) piercing damage.</text>
-      <attack>Bite|+9|2d6+6</attack>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) piercing damage.</text>
+      <attack>Piercing Damage|+9|2d6+6</attack>
     </action>
     <action>
       <name>Claws</name>
-      <text>
-Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 20 (4d6 + 6) slashing damage. If the dandylion moved at least 20 feet straight toward the target immediately before the hit, the target must succeed on a DC 17 Strength saving throw or have the prone condition. If the target has the prone condition, the dandylion can make one Bite attack against it as a bonus action.</text>
-      <attack>Claws|+9|4d6+6</attack>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 20 (4d6 + 6) slashing damage. If the dandylion moved at least 20 feet straight toward the target immediately before the hit, the target must succeed on a DC 17 Strength saving throw or have the prone condition. If the target has the prone condition, the dandylion can make one Bite attack against it as a bonus action.</text>
+      <attack>Slashing Damage|+9|4d6+6</attack>
     </action>
     <action>
       <name>Rejuvenating Seedpods (2/Day)</name>
       <recharge>2/Day</recharge>
-      <text>
-The dandylion releases a burst of seedpods from its tail, filling a 10-foot-radius sphere centered on itself. Each creature of the dandylion's choice in the sphere can immediately end one of the following conditions on itself (creature's choice): blinded, deafened, paralyzed, or poisoned. In addition, all soil in the sphere's area is enriched, restoring withered vegetation in the area to full health and causing all crops in the area to produce twice the normal harvest for the next year.</text>
+      <text>The dandylion releases a burst of seedpods from its tail, filling a 10-foot-radius sphere centered on itself. Each creature of the dandylion's choice in the sphere can immediately end one of the following conditions on itself (creature's choice): blinded, deafened, paralyzed, or poisoned. In addition, all soil in the sphere's area is enriched, restoring withered vegetation in the area to full health and causing all crops in the area to produce twice the normal harvest for the next year.</text>
     </action>
     <reaction>
       <name>Roar of Pride</name>
-      <text>
-When a creature within 60 feet of the dandylion hits it with an attack roll, the dandylion can unleash a furious roar. The creature that triggered this reaction must succeed on a DC 15 Wisdom saving throw or have the frightened condition until the end of the dandylion's next turn.</text>
+      <text>When a creature within 60 feet of the dandylion hits it with an attack roll, the dandylion can unleash a furious roar. The creature that triggered this reaction must succeed on a DC 15 Wisdom saving throw or have the frightened condition until the end of the dandylion's next turn.</text>
     </reaction>
     <spells>druidcraft, guidance, purify food and drink, speak with plants, entangle, goodberry</spells>
-    <slots/>
     <description>Dandylions are herbivorous farmers who cultivate beautiful gardens of flowers and fields of crops in the Feywild. If treated with respect, dandylions are glad to share their wealth of knowledge about farming with those who show interest in the subject. They give great gardening advice, and their fruits and vegetables are healthy and delicious. Some of their crops also have magical properties, making them valuable as potion ingredients and spell components. Dandylions protect their farms ferociously, and anyone who tramples on or steals from a dandylion's bounty is likely to incur the creature's fury. The surest way to entice a dandylion to give up some of its beloved produce or flowers is to flatter it.
-
-A dandylion has soft green fur woven with small leaves. A small, fluffy seed head at the end of the dandylion's tail contains seed pods. These seed pods enrich soil, giving rise to healthy plants and bountiful harvests. Often, dandylions weave necklaces with petals from their flower gardens and brag about the fertility of their soil. Dandylions love to boast about the fullness of their sunny yellow manes.
+	A dandylion has soft green fur woven with small leaves. A small, fluffy seed head at the end of the dandylion's tail contains seed pods. These seed pods enrich soil, giving rise to healthy plants and bountiful harvests. Often, dandylions weave necklaces with petals from their flower gardens and brag about the fertility of their soil. Dandylions love to boast about the fullness of their sunny yellow manes.
 
 Source:	Misplaced Monsters: Volume One p. 6</description>
     <environment/>
@@ -164,7 +146,7 @@ Source:	Misplaced Monsters: Volume One p. 6</description>
   <monster>
     <name>Rain</name>
     <size>S</size>
-    <type>Celestial</type>
+    <type>celestial</type>
     <alignment>Lawful Good</alignment>
     <ac>15 (natural armor)</ac>
     <hp>60 (11d6 + 22)</hp>
@@ -175,15 +157,14 @@ Source:	Misplaced Monsters: Volume One p. 6</description>
     <int>14</int>
     <wis>18</wis>
     <cha>15</cha>
-    <save>dex +3, con +5, wis +7</save>
+    <save>Dex +3, Con +5, Wis +7</save>
     <skill>Acrobatics +3, Insight +7, Stealth +3</skill>
     <passive>14</passive>
     <languages>Celestial, Common</languages>
     <cr>5</cr>
-    <exp>1800</exp>
+    <vulnerable/>
     <resist>Bludgeoning, Piercing or Slashing damage from nonmagical attacks</resist>
     <immune>Fire, Poison, Radiant</immune>
-    <vulnerable/>
     <conditionImmune>Charmed, Paralyzed, Poisoned</conditionImmune>
     <senses/>
     <trait>
@@ -192,51 +173,41 @@ Source:	Misplaced Monsters: Volume One p. 6</description>
     </trait>
     <trait>
       <name>Fiery Wings</name>
-      <text>
-Rain's wings are made of flame, and they shed bright light out to 15 feet and dim light for an additional 15 feet. At the start of each of Rain's turns, each creature of Rain's choice within 5 feet of her takes 3 (1d6) fire damage. A creature that hits Rain with a melee attack takes 3 (1d6) fire damage.</text>
-      <attack>Fiery Wings||1d6</attack>
+      <text>Rain's wings are made of flame, and they shed bright light out to 15 feet and dim light for an additional 15 feet. At the start of each of Rain's turns, each creature of Rain's choice within 5 feet of her takes 3 (1d6) fire damage. A creature that hits Rain with a melee attack takes 3 (1d6) fire damage.</text>
+      <attack>Fire Damage||1d6</attack>
     </trait>
     <trait>
       <name>Magic Resistance</name>
-      <text>
-Rain has advantage on saving throws against spells and other magical effects.</text>
+      <text>Rain has advantage on saving throws against spells and other magical effects.</text>
     </trait>
     <action>
       <name>Multiattack</name>
-      <text>
-Rain makes two Hoof attacks.</text>
+      <text>Rain makes two Hoof attacks.</text>
     </action>
     <action>
       <name>Hoof</name>
-      <text>
-Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (2d4) bludgeoning damage.</text>
-      <attack>Hoof|+3|2d4</attack>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (2d4) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+3|2d4</attack>
     </action>
     <action>
       <name>Haloed Horn Burst (Recharge 5-6)</name>
       <recharge>D5</recharge>
-      <text>
-Rain uses her haloed horn to produce one of the following magical effects:</text>
+      <text>Rain uses her haloed horn to produce one of the following magical effects:</text>
     </action>
     <action>
       <name>Glitterstorm</name>
-      <text>
-Rain emits a rainbow beam in a 30-foot line that is 5 feet wide. Each creature in that area must make a DC 15 Dexterity saving throw, taking 21 (6d6) radiant damage on a failed saving throw, or half as much damage on a successful one; creatures of evil alignment have disadvantage on this saving throw. If the damage from this effect reduces a creature to 0 hit points, the creature dies, and its body turns into glittery flowers.</text>
-      <attack>Glitterstorm||6d6</attack>
+      <text>Rain emits a rainbow beam in a 30-foot line that is 5 feet wide. Each creature in that area must make a DC 15 Dexterity saving throw, taking 21 (6d6) radiant damage on a failed saving throw, or half as much damage on a successful one; creatures of evil alignment have disadvantage on this saving throw. If the damage from this effect reduces a creature to 0 hit points, the creature dies, and its body turns into glittery flowers.</text>
+      <attack>Radiant Damage||6d6</attack>
     </action>
     <action>
       <name>Healing Rainbows</name>
-      <text>
-Rain releases a wave of rejuvenating multicolored light in a 30-foot cone. Each creature of Rain's choice in that area regains 18 (4d8) hit points.</text>
+      <text>Rain releases a wave of rejuvenating multicolored light in a 30-foot cone. Each creature of Rain's choice in that area regains 18 (4d8) hit points.</text>
       <attack>Healing Rainbows||4d8</attack>
     </action>
     <action>
       <name>Nimble Escape (Bonus Action)</name>
-      <text>
-Rain takes either the Disengage or the Hide action.</text>
+      <text>Rain takes either the Disengage or the Hide action.</text>
     </action>
-    <spells/>
-    <slots/>
     <description>Rain lives in happy meadows atop clouds, away from all the evil of the world. She loves cupcakes and readily accepts them as gifts. She has fiery wings and a tiny halo around the tip of her horn. When confronted by bullies or evildoers, she can emit rainbow-colored positive energy from her haloed horn. Rain uses her rainbows to heal friendly creatures and punish evildoers, transforming the latter into glittering flowers.
 
 Source:	Misplaced Monsters: Volume One p. 8</description>
@@ -245,7 +216,7 @@ Source:	Misplaced Monsters: Volume One p. 8</description>
   <monster>
     <name>Scrapper</name>
     <size>L</size>
-    <type>Construct</type>
+    <type>construct</type>
     <alignment>Unaligned</alignment>
     <ac>18 (natural armor)</ac>
     <hp>126 (12d10 + 60)</hp>
@@ -261,10 +232,9 @@ Source:	Misplaced Monsters: Volume One p. 8</description>
     <passive>16</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>8</cr>
-    <exp/>
+    <vulnerable/>
     <resist>Lightning</resist>
     <immune>Poison, Psychic</immune>
-    <vulnerable/>
     <conditionImmune>Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -273,40 +243,32 @@ Source:	Misplaced Monsters: Volume One p. 8</description>
     </trait>
     <trait>
       <name>Electrified Chassis</name>
-      <text>
-A creature that hits the scrapper with a melee attack while within 5 feet of it takes 19 (3d12) lightning damage.</text>
-      <attack>Electrified Chassis||3d12</attack>
+      <text>A creature that hits the scrapper with a melee attack while within 5 feet of it takes 19 (3d12) lightning damage.</text>
+      <attack>Lightning Damage||3d12</attack>
     </trait>
     <action>
       <name>Multiattack</name>
-      <text>
-The scrapper makes two Spike Punch attacks. It can replace one of those with a Wires attack.</text>
+      <text>The scrapper makes two Spike Punch attacks. It can replace one of those with a Wires attack.</text>
     </action>
     <action>
       <name>Spike Punch</name>
-      <text>
-Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 5 (1d10) piercing damage.</text>
-      <attack>Spike Punch|+8|2d8+5</attack>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage plus 5 (1d10) piercing damage.</text>
+      <attack>Spike Punch|+8|(2d8+5)+(1d10)</attack>
+      <attack>Bludgeoning Damage|+8|2d8+5</attack>
       <attack>Piercing Damage||1d10</attack>
     </action>
     <action>
       <name>Wires</name>
-      <text>
-Melee Weapon Attack: +8 to hit, reach 20 ft., one Large or smaller creature. Hit: The target has the grappled condition (escape DC 16) and must succeed on a DC 16 Strength saving throw or be pulled into an unoccupied space within 5 feet of the scrapper and take 19 (3d12) lightning damage. The scrapper can have only one creature grappled in this way at a time.</text>
-      <attack>Wires|+8|3d12</attack>
+      <text>Melee Weapon Attack: +8 to hit, reach 20 ft., one Large or smaller creature. Hit: The target has the grappled condition (escape DC 16) and must succeed on a DC 16 Strength saving throw or be pulled into an unoccupied space within 5 feet of the scrapper and take 19 (3d12) lightning damage. The scrapper can have only one creature grappled in this way at a time.</text>
+      <attack>Lightning Damage|+8|3d12</attack>
     </action>
     <action>
       <name>Eye Beam (Recharge 5-6)</name>
       <recharge>D5</recharge>
-      <text>
-The scrapper shoots a magical beam from its extended eye at one creature it can see within 120 feet of itself. The target must make a DC 16 Dexterity saving throw, taking 44 (8d10) force damage on a failed save, or half as much damage on a successful one.</text>
-      <attack>Eye Beam||8d10</attack>
+      <text>The scrapper shoots a magical beam from its extended eye at one creature it can see within 120 feet of itself. The target must make a DC 16 Dexterity saving throw, taking 44 (8d10) force damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Force Damage||8d10</attack>
     </action>
-    <spells/>
-    <slots/>
-    <description>Scrappers are tall, broad-shouldered automatons usually found in scrap yards. Sparks erupt from the loose wires that protrude from their hulking frames. Their quasi-mechanical minds are shielded with lead, protecting them from psychic damage.
-
-A scrapper feeds on scrap metal and uses its electrified wires to grapple and reel in foes. It zaps enemies it can't reach with an energy beam fired from an extended eye.
+    <description>Scrappers are tall, broad-shouldered automatons usually found in scrap yards. Sparks erupt from the loose wires that protrude from their hulking frames. Their quasi-mechanical minds are shielded with lead, protecting them from psychic damage. A scrapper feeds on scrap metal and uses its electrified wires to grapple and reel in foes. It zaps enemies it can't reach with an energy beam fired from an extended eye.
 
 Source:	Misplaced Monsters: Volume One p. 10</description>
     <environment/>
@@ -314,7 +276,7 @@ Source:	Misplaced Monsters: Volume One p. 10</description>
   <monster>
     <name>Seth the Shapeshifting Dragon</name>
     <size>M</size>
-    <type>Dragon</type>
+    <type>dragon</type>
     <alignment>Neutral</alignment>
     <ac>17</ac>
     <hp>153 (18d8 + 72)</hp>
@@ -325,15 +287,14 @@ Source:	Misplaced Monsters: Volume One p. 10</description>
     <int>13</int>
     <wis>15</wis>
     <cha>14</cha>
-    <save>str +7, dex +11, con +8</save>
+    <save>Str +7, Dex +11, Con +8</save>
     <skill>Perception +6, Stealth +11</skill>
     <passive>16</passive>
     <languages>Aquan, Common, Draconic</languages>
     <cr>10</cr>
-    <exp>5900</exp>
+    <vulnerable/>
     <resist>Cold, Fire</resist>
     <immune>Poison</immune>
-    <vulnerable/>
     <conditionImmune>Grappled, Poisoned, Restrained</conditionImmune>
     <senses>blindsight 30 ft., darkvision 120 ft.</senses>
     <trait>
@@ -342,52 +303,44 @@ Source:	Misplaced Monsters: Volume One p. 10</description>
     </trait>
     <trait>
       <name>Amphibious</name>
-      <text>
-Seth can breathe air and water.</text>
+      <text>Seth can breathe air and water.</text>
     </trait>
     <trait>
       <name>Invisible in Water</name>
-      <text>
-Seth has the invisible condition while fully immersed in water.</text>
+      <text>Seth has the invisible condition while fully immersed in water.</text>
     </trait>
     <action>
       <name>Multiattack</name>
-      <text>
-Seth makes one Bite attack and two Claw attacks.</text>
+      <text>Seth makes one Bite attack and two Claw attacks.</text>
     </action>
     <action>
       <name>Bite</name>
-      <text>
-Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 10 (1d6 + 7) piercing damage plus 9 (2d8) cold damage.</text>
-      <attack>Bite|+11|1d6+7</attack>
+      <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 10 (1d6 + 7) piercing damage plus 9 (2d8) cold damage.</text>
+      <attack>Bite|+11|(1d6+7)+(2d8)</attack>
+      <attack>Piercing Damage|+11|1d6+7</attack>
+      <attack>Cold Damage||2d8</attack>
     </action>
     <action>
       <name>Claw</name>
-      <text>
-Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage.</text>
-      <attack>Claw|+11|2d6+7</attack>
+      <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage.</text>
+      <attack>Slashing Damage|+11|2d6+7</attack>
     </action>
     <action>
       <name>Riptide Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
-      <text>
-Seth exhales a torrent of frigid water in a 30-foot cone. Each creature in that area must make a DC 16 Constitution saving throw. On a failed save, the creature takes 36 (8d8) cold damage and has the incapacitated condition until the end of its next turn. On a successful save, the creature takes half as much damage only.</text>
-      <attack>Riptide Breath||8d8</attack>
-    </action>
-    <action>
-      <name>Change Shape (Bonus Action)</name>
-      <text>
-Seth magically transforms into a Small Humanoid or a Beast that is Tiny or Small, while retaining his game statistics (other than his size). This transformation ends if Seth is reduced to 0 hit points or uses another bonus action to end it.</text>
+      <text>Seth exhales a torrent of frigid water in a 30-foot cone. Each creature in that area must make a DC 16 Constitution saving throw. On a failed save, the creature takes 36 (8d8) cold damage and has the incapacitated condition until the end of its next turn. On a successful save, the creature takes half as much damage only.</text>
+      <attack>Cold Damage||8d8</attack>
     </action>
     <action>
       <name>Superspeed (2/Day)</name>
       <recharge>2/Day</recharge>
-      <text>
-Seth's speed is doubled for as long as he maintains concentration (as if concentration on a spell). While his speed is increased in this way, all attack rolls against him are made with disadvantage, and he becomes partially incorporeal, allowing him to move through creatures and objects as if they were difficult terrain. Seth takes 5 (1d10) force damage if he ends his turn inside an object.</text>
-      <attack>Superspeed||1d10</attack>
+      <text>Seth's speed is doubled for as long as he maintains concentration (as if concentration on a spell). While his speed is increased in this way, all attack rolls against him are made with disadvantage, and he becomes partially incorporeal, allowing him to move through creatures and objects as if they were difficult terrain. Seth takes 5 (1d10) force damage if he ends his turn inside an object.</text>
+      <attack>Force Damage||1d10</attack>
     </action>
-    <spells/>
-    <slots/>
+    <action>
+      <name>Change Shape (Bonus Action)</name>
+      <text>Seth magically transforms into a Small Humanoid or a Beast that is Tiny or Small, while retaining his game statistics (other than his size). This transformation ends if Seth is reduced to 0 hit points or uses another bonus action to end it.</text>
+    </action>
     <description>Seth the Shapeshifting Dragon is a vegetarian who likes to hide in the brush near waterfalls, rivers, and lakes. Invisible while immersed in water, Seth is capable of great bursts of speed, and his breath weapon is a blast of frigid water.
 
 Source:	Misplaced Monsters: Volume One p. 12</description>
@@ -396,7 +349,7 @@ Source:	Misplaced Monsters: Volume One p. 12</description>
   <monster>
     <name>Sheldon the Blueberry Dragon</name>
     <size>L</size>
-    <type>Dragon</type>
+    <type>dragon</type>
     <alignment>Neutral Good</alignment>
     <ac>16 (natural armor)</ac>
     <hp>142 (15d10 + 60)</hp>
@@ -407,15 +360,14 @@ Source:	Misplaced Monsters: Volume One p. 12</description>
     <int>17</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save>dex +4, con +7, int +6</save>
+    <save>Dex +4, Con +7, Int +6</save>
     <skill>Acrobatics +7, Athletics +7, Performance +6</skill>
     <passive>12</passive>
     <languages>Common, Draconic, telepathy 120 ft.</languages>
     <cr>7</cr>
-    <exp>2900</exp>
+    <vulnerable/>
     <resist>Force, Psychic</resist>
     <immune/>
-    <vulnerable/>
     <conditionImmune/>
     <senses>blindsight 30 ft., darkvision 120 ft.</senses>
     <trait>
@@ -424,50 +376,38 @@ Source:	Misplaced Monsters: Volume One p. 12</description>
     </trait>
     <trait>
       <name>Spellcasting (Psionics)</name>
-      <text>
-Sheldon casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 14):
+      <text>Sheldon casts one of the following spells, requiring no spell components and using Intelligence as the spellcasting ability (spell save DC 14):
 
 	• At will: light, mage hand (the hand is invisible)
 	• 1/Day each: dimension door, telekinesis</text>
     </trait>
     <trait>
       <name>Space Dweller</name>
-      <text>
-Sheldon can breathe normally in a vacuum.</text>
+      <text>Sheldon can breathe normally in a vacuum.</text>
     </trait>
     <action>
       <name>Multiattack</name>
-      <text>
-Sheldon makes either two Bite attacks, two Blueberry Fling attacks, or one of each.</text>
+      <text>Sheldon makes either two Bite attacks, two Blueberry Fling attacks, or one of each.</text>
     </action>
     <action>
       <name>Bite</name>
-      <text>
-Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 4 (1d8) psychic damage.</text>
-      <attack>Bite|+7|1d6+4</attack>
-    </action>
-    <action>
-      <name>Bite</name>
-      <text>
-Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 4 (1d8) psychic damage.</text>
-      <attack>Bite|+7|1d6+4</attack>
-      <attack>Psycic Damage||1d8</attack>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 4 (1d8) psychic damage.</text>
+      <attack>Bite|+7|(1d6+4)+(1d8)</attack>
+      <attack>Piercing Damage|+7|1d6+4</attack>
+      <attack>Psychic Damage||1d8</attack>
     </action>
     <action>
       <name>Jetstream Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
-      <text>
-Sheldon exhales a line of magical wind that is 60 feet long and 5 feet wide. Each creature in that area must make a DC 15 Strength saving throw. On a failed save, the creature takes 21 (6d6) force damage, is pushed 15 feet away from Sheldon, and has the prone condition. On a successful save, the creature takes half as much damage only.</text>
-      <attack>Jetstream Breath||6d6</attack>
+      <text>Sheldon exhales a line of magical wind that is 60 feet long and 5 feet wide. Each creature in that area must make a DC 15 Strength saving throw. On a failed save, the creature takes 21 (6d6) force damage, is pushed 15 feet away from Sheldon, and has the prone condition. On a successful save, the creature takes half as much damage only.</text>
+      <attack>Force Damage||6d6</attack>
     </action>
     <action>
       <name>Wind Dash (2/Day) (Bonus Action)</name>
       <recharge>2/Day</recharge>
-      <text>
-Sheldon summons a powerful gust of wind and flies up to his speed. This movement doesn't provoke opportunity attacks. At the end of this movement, each creature within 5 feet of Sheldon must succeed on a DC 15 Strength saving throw or have the prone condition, as the wind bursts around Sheldon.</text>
+      <text>Sheldon summons a powerful gust of wind and flies up to his speed. This movement doesn't provoke opportunity attacks. At the end of this movement, each creature within 5 feet of Sheldon must succeed on a DC 15 Strength saving throw or have the prone condition, as the wind bursts around Sheldon.</text>
     </action>
     <spells>light, mage hand (the hand is invisible), dimension door, telekinesis</spells>
-    <slots/>
     <description>Sheldon is a friendly, good-natured dragon who collects and eats blueberries. When he's not attending parties, he lives in Wildspace. His body magically produces air, allowing him to thrive in a vacuum and create powerful gusts of wind. Sheldon uses the wind to knock down foes and propel himself farther than his wings can take him on their own.
 
 Source:	Misplaced Monsters: Volume One p. 14</description>

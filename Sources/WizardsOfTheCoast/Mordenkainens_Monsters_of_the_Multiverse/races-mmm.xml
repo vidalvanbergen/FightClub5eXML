@@ -1,17 +1,14 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <race>
     <name>Aarakocra</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Dex 2, Wis 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Dex +2, Wis +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>A winged people who originated on the Elemental Plane of Air, aarakocra soar through the sky wherever they wander. The first aarakocra served the Wind Dukes of Aaqa—mighty beings of air—and were imbued with a measure of their masters' power over winds. Their descendants still command echoes of that power.
-
-From below, aarakocra look like large birds and thus are sometimes called birdfolk. Only when they roost on a branch or walk across the ground is their Humanoid nature clear. Standing upright, aarakocra are typically about 5 feet tall, and they have long, narrow legs that taper to sharp talons. Feathers cover their bodies—usually red, orange, yellow, brown, or gray. Their heads are also avian, often resembling those of parrots or eagles.
+	From below, aarakocra look like large birds and thus are sometimes called birdfolk. Only when they roost on a branch or walk across the ground is their Humanoid nature clear. Standing upright, aarakocra are typically about 5 feet tall, and they have long, narrow legs that taper to sharp talons. Feathers cover their bodies—usually red, orange, yellow, brown, or gray. Their heads are also avian, often resembling those of parrots or eagles.
 
 Source:	Elemental Evil Player's Companion p. 5,
 		Mordenkainen Presents: Monsters of the Multiverse p. 6</text>
@@ -41,20 +38,22 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d8
 Height = 4 feet + 3 inches + your size modifier in inches
 Weight in pounds = 70 + (1d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">1d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Flight</name>
       <text>Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Talons</name>
       <text>You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Slashing Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Wind Caller</name>
       <text>Starting at 3rd level, you can cast the gust of wind spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for it when you cast gust of wind with this trait (choose when you select this race).</text>
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for it when you cast gust of wind with this trait (choose when you select this race).</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -65,15 +64,15 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for it when you c
     <name>Aasimar</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Cha 2, Wis 1</ability>
+    <ability>Cha +2, Wis +1</ability>
+    <resist>necrotic, radiant</resist>
     <spellAbility>Charisma</spellAbility>
-    <proficiency/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Whether descended from a celestial being or infused with heavenly power, aasimar are mortals who carry a spark of the Upper Planes within their souls. They can fan that spark to bring light, ease wounds, and unleash the fury of the heavens.
+	Aasimar can arise among any population of mortals. They resemble their parents, but they live for up to 160 years and often have features that hint at their celestial heritage. These often begin subtle and become more obvious when the aasimar gains the ability to reveal their full celestial nature. The Aasimar Celestial Features table has examples you can choose or use as inspiration to create your own.
 
-Aasimar can arise among any population of mortals. They resemble their parents, but they live for up to 160 years and often have features that hint at their celestial heritage. These often begin subtle and become more obvious when the aasimar gains the ability to reveal their full celestial nature. The Aasimar Celestial Features table has examples you can choose or use as inspiration to create your own.
-
+Aasimar Celestial Features:
 d6 | Celestial Feature
 1 | A dusting of metallic, white, or charcoal freckles
 2 | Metallic, luminous, or dark eyes
@@ -84,6 +83,7 @@ d6 | Celestial Feature
 
 Source:	Volo's Guide to Monsters p. 104,
 		Mordenkainen Presents: Monsters of the Multiverse p. 7</text>
+      <roll description="Celestial Feature">1d6</roll>
     </trait>
     <trait>
       <name>Ability Score Increases</name>
@@ -110,35 +110,34 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 110 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Celestial Resistance</name>
       <text>You have resistance to necrotic damage and radiant damage.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Healing Hands</name>
       <text>As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Light Bearer</name>
       <text>You know the light cantrip. Charisma is your spellcasting ability for it.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Celestial Revelation</name>
       <text>When you reach 3rd level, choose one of the revelation options below. Thereafter, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of that revelation. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation below, you can't use it again until you finish a long rest:
 
-Necrotic Shroud:
-Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.
+Necrotic Shroud: Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.
 
-Radiant Consumption:
-Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.
+Radiant Consumption: Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.
 
-Radiant Soul:
-Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</text>
+Radiant Soul: Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -149,14 +148,12 @@ Two luminous, spectral wings sprout from your back temporarily. Until the transf
     <name>Bugbear</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Dex 1</ability>
-    <spellAbility/>
+    <ability>Str +2, Dex +1</ability>
     <proficiency>Stealth</proficiency>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Neither bugs nor bears, bugbears are the hulking cousins of goblins and hobgoblins. With roots in the Feywild, early bugbears resided in hidden places, in hard-to-reach and shadowed spaces. Long ago and from out of the corner of your eye, they came to the Material Plane, urged to spread throughout the multiverse by the conquering god Maglubiyet. Centuries later, they still bear a fey gift for lurking just out of sight, and many of them have sneaked away from that god's influence.
-
-They are long of limb and covered in coarse hair, with wedge-shaped ears and pointed teeth. Despite their formidable build, bugbears are quiet skulkers, thanks to a fey magic that allows them to hide in spaces seemingly too small for them.
+	They are long of limb and covered in coarse hair, with wedge-shaped ears and pointed teeth. Despite their formidable build, bugbears are quiet skulkers, thanks to a fey magic that allows them to hide in spaces seemingly too small for them.
 
 Source:	Volo's Guide to Monsters p. 120,
 		Mordenkainen Presents: Monsters of the Multiverse p. 8</text>
@@ -186,31 +183,34 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d12
 Height = 6 feet + your size modifier in inches
 Weight in pounds = 200 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d12</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fey Ancestry</name>
       <text>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Long-Limbed</name>
       <text>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Powerful Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</text>
       <special>powerful build</special>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Sneaky</name>
       <text>You are proficient in the Stealth skill. In addition, without squeezing, you can move through and stop in a space large enough for a Small creature.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Surprise Attack</name>
       <text>If you hit a creature with an attack roll, the creature takes an extra 2d6 damage if it hasn't taken a turn yet in the current combat.</text>
+      <roll description="Surprise Attack">2d6</roll>
     </trait>
     <trait>
       <name>Languages</name>
@@ -221,10 +221,8 @@ Weight in pounds = 200 + (2d6 × your size modifier)</text>
     <name>Centaur</name>
     <size>M</size>
     <speed>40</speed>
-    <ability>Str 2, Wis 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Str +2, Wis +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Centaurs gallop throughout the multiverse and trace their origins to many different realms. The centaurs presented here hail from the Feywild and mystically resonate with the natural world. From the waist up, they resemble elves, displaying all the elf varieties of skin tone. From the waist down, they have the bodies of horses.
 
@@ -257,23 +255,25 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 1d10
 Height = 6 feet + your size modifier in inches
 Weight in pounds = 600 + (2d12 × your size modifier)</text>
+      <roll description="Size Modifier">1d10</roll>
+      <roll description="Weight Modifier">2d12</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Charge</name>
       <text>If you move at least 30 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your hooves.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Equine Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push or drag.
-
-In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.</text>
+	In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.</text>
       <special>powerful build</special>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hooves</name>
       <text>You have hooves that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Bludgeoning Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Natural Affinity</name>
       <text>Your fey connection to nature gives you an intuitive connection to the natural world and the animals within it. You therefore have proficiency in one of the following skills of your choice: Animal Handling, Medicine, Nature, or Survival.</text>
     </trait>
@@ -286,18 +286,13 @@ In addition, any climb that requires hands and feet is especially difficult for 
     <name>Changeling</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Cha 2</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Cha +2</ability>
+    <trait category="description">
       <name>Description</name>
       <text>With ever-changing appearances, changelings reside in many societies undetected. Each changeling can supernaturally adopt any face they like. For some changelings, a new face is only a disguise. For other changelings, a new face may reveal an aspect of their soul.
-
-The first changelings in the multiverse appeared in the Feywild, and the wondrous, mutable essence of that plane lingers in changelings today—even in those changelings who have never set foot in the fey realm. Each changeling decides how to use their shape-shifting ability, channeling either the peril or the joy of the Feywild. Sometimes they adopt new forms for the sake of mischief or malice, and other times they don a new identity to right wrongs or delight the downtrodden.
-
-In their true form, changelings appear faded, their features almost devoid of detail. It is rare to see a changeling in that form, for a typical changeling changes their shape the way others might change clothes. A casual shape—one created on the spur of the moment, with no depth or history—is called a mask. A mask can be used to express a mood or to serve a specific purpose and then might never be used again. However, many changelings develop identities that have more depth, crafting whole personas complete with histories and beliefs. A changeling adventurer might have personas for many situations, including negotiation, investigation, and combat.
-
-Personas can be shared by multiple changelings; a community might be home to three healer changelings, with whoever is on duty adopting the persona of Andrea, the gentle physician. Personas can even be passed down through a family, allowing a younger changeling to take advantage of contacts established by the persona's previous users.
+	The first changelings in the multiverse appeared in the Feywild, and the wondrous, mutable essence of that plane lingers in changelings today—even in those changelings who have never set foot in the fey realm. Each changeling decides how to use their shape-shifting ability, channeling either the peril or the joy of the Feywild. Sometimes they adopt new forms for the sake of mischief or malice, and other times they don a new identity to right wrongs or delight the downtrodden.
+	In their true form, changelings appear faded, their features almost devoid of detail. It is rare to see a changeling in that form, for a typical changeling changes their shape the way others might change clothes. A casual shape—one created on the spur of the moment, with no depth or history—is called a mask. A mask can be used to express a mood or to serve a specific purpose and then might never be used again. However, many changelings develop identities that have more depth, crafting whole personas complete with histories and beliefs. A changeling adventurer might have personas for many situations, including negotiation, investigation, and combat.
+	Personas can be shared by multiple changelings; a community might be home to three healer changelings, with whoever is on duty adopting the persona of Andrea, the gentle physician. Personas can even be passed down through a family, allowing a younger changeling to take advantage of contacts established by the persona's previous users.
 
 Source:	Eberron: Rising from the Last War p. 18,
 		Mordenkainen Presents: Monsters of the Multiverse p. 10</text>
@@ -327,16 +322,17 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d4
 Height = 5 feet + 1 inch + your size modifier in inches
 Weight in pounds = 115 + (2d4 x your size modifier)</text>
+      <roll description="Size Modifier">2d4</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Changeling Instincts</name>
       <text>Thanks to your connection to the fey realm, you gain proficiency with two of the following skills of your choice: Deception, Insight, Intimidation, Performance, or Persuasion.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Shapechanger</name>
       <text>As an action, you can change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight and can change your size between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.
-
-You stay in the new form until you use an action to revert to your true form or until you die.</text>
+	You stay in the new form until you use an action to revert to your true form or until you die.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -347,10 +343,8 @@ You stay in the new form until you use an action to revert to your true form or 
     <name>Gnome, Deep</name>
     <size>S</size>
     <speed>30</speed>
-    <ability>Int 2, Dex 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Int +2, Dex +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Deep gnomes, or svirfneblin, are natives of the Underdark and are suffused with that subterranean realm's magic. They can supernaturally camouflage themselves, and their svirfneblin magic renders them difficult to locate. These abilities have enabled them to survive for generations among the perils of the Underdark.
 
@@ -385,21 +379,20 @@ Size modifier = 2d4
 Height = 2 feet + 11 inches + your size modifier in inches
 Weight in pounds = 35 + your size modifier</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Gift of the Svirfneblin</name>
       <text>Starting at 3rd level, you can cast the disguise self spell with this trait. Starting at 5th level, you can also cast the nondetection spell with it, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Gnomish Magic Resistance</name>
       <text>You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Svirfneblin Camouflage</name>
       <text>When you make a Dexterity (Stealth) check, you can make the check with advantage. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
     </trait>
@@ -412,10 +405,8 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Dwarf, Duergar / Gray</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Str 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Con +2, Str +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Duergar are dwarves whose ancestors were transformed by centuries living in the deepest places of the Underdark. That chthonic realm is saturated with strange magical energy, and over generations, early duergar absorbed traces of it. They were further altered when mind flayers and other Aberrations invaded and performed horrific experiments on them. Fueled by Underdark magic, those experiments left early duergar with psionic powers, which have been passed down to their descendants. In time, they liberated themselves from their aberrant tyrants and forged a new life for themselves in the Underdark and beyond.
 
@@ -450,21 +441,20 @@ Size modifier = 2d4
 Height = 4 feet + your size modifier in inches
 Weight in pounds = 115 + (2d6 × your size modifier)</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Duergar Magic</name>
       <text>Starting at 3rd level, you can cast the enlarge/reduce spell on yourself with this trait, without requiring a material component. Starting at 5th level, you can also cast the invisibility spell on yourself with this trait, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Dwarven Resilience</name>
       <text>You have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You also have resistance to poison damage.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Psionic Fortitude</name>
       <text>You have advantage on saving throws you make to avoid or end the charmed or stunned condition on yourself.</text>
     </trait>
@@ -477,13 +467,13 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Elf, Eladrin</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Dex 2, Cha 1</ability>
-    <spellAbility/>
+    <ability>Dex +2, Cha +1</ability>
     <proficiency>Perception</proficiency>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Eladrin are elves of the Feywild, a realm of perilous beauty and boundless magic. Using that magic, eladrin can step from one place to another in the blink of an eye, and each eladrin resonates with emotions captured in the Feywild in the form of seasons—affinities that affect the eladrin's mood and appearance. An eladrin's season can change, though some remain in one season forever. Choose your season or roll on the Eladrin Seasons table. Your Trance trait lets you change your season.
 
+Eladrin Seasons:
 d4 | Season
 1 | Autumn. peace and goodwill, when summer's harvest is shared with all
 2 | Winter. contemplation and dolor, when the vibrant energy of the world slumbers
@@ -492,6 +482,7 @@ d4 | Season
 
 Source:	Player's Handbook (2014) p. 23,
 		Mordenkainen Presents: Monsters of the Multiverse p. 13</text>
+      <roll description="Season">1d4</roll>
     </trait>
     <trait>
       <name>Ability Score Increases</name>
@@ -519,41 +510,35 @@ Size modifier = 2d10
 Height = 4 feet + 6 inches + your size modifier in inches
 Weight in pounds = 90 + (1d4 × your size modifier)</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fey Ancestry</name>
       <text>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Keen Senses</name>
       <text>You have proficiency in the Perception skill.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Trance</name>
       <text>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.
-
-Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest.</text>
+	Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Fey Step</name>
       <text>As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+	When you reach 3rd level, your Fey Step gains an additional effect based on your season; if the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race):
 
-When you reach 3rd level, your Fey Step gains an additional effect based on your season; if the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race):
+Autumn: Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.
 
-Autumn:
-Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.
+Winter: When you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be frightened of you until the end of your next turn.
 
-Winter:
-When you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be frightened of you until the end of your next turn.
+Spring: When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you.
 
-Spring:
-When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you.
-
-Summer:
-Immediately after you use your Fey Step, each creature of your choice that you can see within 5 feet of you takes fire damage equal to your proficiency bonus.</text>
+Summer: Immediately after you use your Fey Step, each creature of your choice that you can see within 5 feet of you takes fire damage equal to your proficiency bonus.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -564,14 +549,10 @@ Immediately after you use your Fey Step, each creature of your choice that you c
     <name>Fairy</name>
     <size>S</size>
     <speed>30</speed>
-    <ability/>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>The Feywild is home to many fantastic peoples, including fairies. Fairies are a wee folk, but not nearly as much so as their pixie and sprite friends. The first fairies spoke Elvish, Goblin, or Sylvan, and encounters with human visitors prompted many of them to learn Common as well.
-
-Infused with the magic of the Feywild, most fairies look like Small elves with insectile wings, but each fairy has a special physical characteristic that sets the fairy apart. For your fairy, roll on the Fey Characteristics table or choose an option from it. You're also free to come up with your own characteristic if none of the suggestions below fit your character.
+	Infused with the magic of the Feywild, most fairies look like Small elves with insectile wings, but each fairy has a special physical characteristic that sets the fairy apart. For your fairy, roll on the Fey Characteristics table or choose an option from it. You're also free to come up with your own characteristic if none of the suggestions below fit your character.
 
 Fey Characteristics:
 d8 | Characteristic
@@ -586,6 +567,7 @@ d8 | Characteristic
 
 Source:	The Wild Beyond the Witchlight p. 12,
 		Mordenkainen Presents: Monsters of the Multiverse p. 14</text>
+      <roll description="Fey Characteristic">1d8</roll>
     </trait>
     <trait>
       <name>Ability Score Increases</name>
@@ -604,18 +586,16 @@ Source:	The Wild Beyond the Witchlight p. 12,
       <text>Fairies can be of any alignment but tend to lean more towards chaotic because of their playful trickster nature.</text>
     </trait>
     <trait>
-      <name>Size.</name>
+      <name>Size</name>
       <text>Fairies look like human or elven children. They stand 2 to 3 feet tall in height and weigh between 25 and 35 pounds. Your size is small.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fairy Magic</name>
       <text>You know the druidcraft cantrip.
-
-Starting at 3rd level, you can cast the faerie fire spell with this trait. Starting at 5th level, you can also cast the enlarge/reduce spell with this trait. Once you cast faerie fire or enlarge/reduce with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
+	Starting at 3rd level, you can cast the faerie fire spell with this trait. Starting at 5th level, you can also cast the enlarge/reduce spell with this trait. Once you cast faerie fire or enlarge/reduce with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Flight</name>
       <text>Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</text>
     </trait>
@@ -628,16 +608,11 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Firbolg</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Wis 2, Str 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Wis +2, Str +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Distant cousins of giants, the first firbolgs wandered the primeval forests of the multiverse, and the magic of those forests entwined itself with the firbolgs' souls. Centuries later, that magic still thrums inside a firbolg, even one who has never lived under the boughs of a great forest.
-
-A firbolg's magic is an obscuring sort, which allowed their ancestors to pass through a forest without disturbing it. So deep is the connection between a firbolg and the wild places of the world that they can communicate with flora and fauna.
-
-Firbolgs can live up to 500 years.
+	A firbolg's magic is an obscuring sort, which allowed their ancestors to pass through a forest without disturbing it. So deep is the connection between a firbolg and the wild places of the world that they can communicate with flora and fauna.
 
 Source:	Volo's Guide to Monsters p. 107,
 		Mordenkainen Presents: Monsters of the Multiverse p. 15</text>
@@ -667,23 +642,24 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d12
 Height = 6 feet + 2 inches + your size modifier in inches
 Weight in pounds = 175 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d12</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Firbolg Magic</name>
       <text>You can cast the detect magic and disguise self spells with this trait. When you use this version of disguise self, you can seem up to 3 feet shorter or taller. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hidden Step</name>
       <text>As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Powerful Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</text>
       <special>powerful build</special>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Speech of Beast and Leaf</name>
       <text>You have the ability to communicate in a limited manner with Beasts, Plants, and vegetation. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them.</text>
     </trait>
@@ -696,15 +672,14 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Genasi, Air</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Dex 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <resist>Lightning</resist>
-    <trait>
+    <ability>Con +2, Dex +1</ability>
+    <resist>lightning</resist>
+    <trait category="description">
       <name>Description</name>
-      <text>Air genasi are descended from djinn, the genies of the Elemental Plane of Air. Embodying many of the airy traits of their otherworldly ancestors, air genasi can draw upon their connection to the winds.
+      <text>Tracing their ancestry to the genies of the Elemental Planes, each genasi can tap into the power of one of the elements. Air, earth, fire, and water-these are the four pillars of the Material Plane and the four types of genasi. Some genasi are direct descendants of a genie, while others were born to non-genasi parents who lived near a place suffused by a genie's magic.
 
-Air genasi's skin tones include many shades of blue, along with the full range of human skin tones, with bluish or ashen casts. Sometimes their skin is marked by lines that seem like cracks with bluish-white energy spilling out. An air genasi's hair might blow in a phantom wind or be made entirely of clouds or vapor.
+Air genasi are descended from djinn, the genies of the Elemental Plane of Air. Embodying many of the airy traits of their otherworldly ancestors, air genasi can draw upon their connection to the winds.
+	Air genasi's skin tones include many shades of blue, along with the full range of human skin tones, with bluish or ashen casts. Sometimes their skin is marked by lines that seem like cracks with bluish-white energy spilling out. An air genasi's hair might blow in a phantom wind or be made entirely of clouds or vapor.
 
 Source:	Elemental Evil Player's Companion p. 9,
 		Princes of the Apocalypse p. 228,
@@ -735,24 +710,25 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 110 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Unending Breath</name>
       <text>You can hold your breath indefinitely while you're not incapacitated.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Lightning Resistance</name>
       <text>You have resistance to lightning damage.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Mingle with the Wind</name>
       <text>You know the shocking grasp cantrip. Starting at 3rd level, you can cast the feather fall spell with this trait, without requiring a material component. Starting at 5th level, you can also cast the levitate spell with this trait, without requiring a material component. Once you cast feather fall or levitate with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -763,14 +739,13 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Genasi, Earth</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Str 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Con +2, Str +1</ability>
+    <trait category="description">
       <name>Description</name>
-      <text>Tracing their ancestry to dao, the genies of the Elemental Plane of Earth, earth genasi inherit dao's steadfast strength and control over earth.
+      <text>Tracing their ancestry to the genies of the Elemental Planes, each genasi can tap into the power of one of the elements. Air, earth, fire, and water-these are the four pillars of the Material Plane and the four types of genasi. Some genasi are direct descendants of a genie, while others were born to non-genasi parents who lived near a place suffused by a genie's magic.
 
-An earth genasi's skin can be the colors of stone and earth or a human skin tone with glittering sparkles like gem dust. Some earth genasi have lines marking their skin like cracks, either showing glimmering gemlike veins or a dim, yellowish glow. Earth genasi hair can appear carved of stone or crystal or resemble strands of spun metal.
+Tracing their ancestry to dao, the genies of the Elemental Plane of Earth, earth genasi inherit dao's steadfast strength and control over earth.
+	An earth genasi's skin can be the colors of stone and earth or a human skin tone with glittering sparkles like gem dust. Some earth genasi have lines marking their skin like cracks, either showing glimmering gemlike veins or a dim, yellowish glow. Earth genasi hair can appear carved of stone or crystal or resemble strands of spun metal.
 
 Source:	Elemental Evil Player's Companion p. 9,
 		Princes of the Apocalypse p. 228,
@@ -802,21 +777,19 @@ Size modifier = 2d10
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 110 + (2d4 × your size modifier)</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Earth Walk</name>
       <text>You can move across difficult terrain without expending extra movement if you are using your walking speed on the ground or a floor.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Merge with Stone</name>
       <text>You know the blade ward cantrip. You can cast it as normal, and you can also cast it as a bonus action a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.
-
-Starting at 5th level, you can cast the pass without trace spell with this trait, without requiring a material component. Once you cast that spell with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
+	Starting at 5th level, you can cast the pass without trace spell with this trait, without requiring a material component. Once you cast that spell with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -827,13 +800,13 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Genasi, Fire</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Int 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <resist>Fire</resist>
-    <trait>
+    <ability>Con +2, Int +1</ability>
+    <resist>fire</resist>
+    <trait category="description">
       <name>Description</name>
-      <text>Descended from efreet, the genies of the Elemental Plane of Fire, fire genasi channel the flamboyant and often destructive nature of flame. They show their heritage in their skin tones, which can range from deep charcoal to shades of red and orange. Some bear skin tones common to humanity but with fiery marks, such as slowly swirling lights under their skin that resemble embers or glowing red lines tracing over their bodies like cracks. Fire genasi hair can resemble threads of fire or sooty smoke.
+      <text>Tracing their ancestry to the genies of the Elemental Planes, each genasi can tap into the power of one of the elements. Air, earth, fire, and water-these are the four pillars of the Material Plane and the four types of genasi. Some genasi are direct descendants of a genie, while others were born to non-genasi parents who lived near a place suffused by a genie's magic.
+
+Descended from efreet, the genies of the Elemental Plane of Fire, fire genasi channel the flamboyant and often destructive nature of flame. They show their heritage in their skin tones, which can range from deep charcoal to shades of red and orange. Some bear skin tones common to humanity but with fiery marks, such as slowly swirling lights under their skin that resemble embers or glowing red lines tracing over their bodies like cracks. Fire genasi hair can resemble threads of fire or sooty smoke.
 
 Source:	Elemental Evil Player's Companion p. 9,
 		Princes of the Apocalypse p. 228,
@@ -865,19 +838,18 @@ Size modifier = 2d10
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 110 + (2d4 × your size modifier)</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Fire Resistance</name>
       <text>You have resistance to fire damage.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Reach to the Blaze</name>
       <text>You know the produce flame cantrip. Starting at 3rd level, you can cast the burning hands spell with this trait. Starting at 5th level, you can also cast the flame blade spell with this trait, without requiring a material component. Once you cast burning hands or flame blade with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -888,15 +860,14 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Genasi, Water</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Wis 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <resist>Acid</resist>
-    <trait>
+    <ability>Con +2, Wis +1</ability>
+    <resist>acid</resist>
+    <trait category="description">
       <name>Description</name>
-      <text>Water genasi descend from marids, aquatic genies from the Elemental Plane of Water. Water genasi are perfectly suited to life underwater and carry the power of the waves inside themselves.
+      <text>Tracing their ancestry to the genies of the Elemental Planes, each genasi can tap into the power of one of the elements. Air, earth, fire, and water-these are the four pillars of the Material Plane and the four types of genasi. Some genasi are direct descendants of a genie, while others were born to non-genasi parents who lived near a place suffused by a genie's magic.
 
-Their skin is often shades of blue or green, sometimes a blend of the two. If they have a human skin tone, there is a glistening texture that catches the light, like water droplets or nearly invisible fish scales. Their hair can resemble seaweed, waving as if in a current, or it can even be like water itself.
+Water genasi descend from marids, aquatic genies from the Elemental Plane of Water. Water genasi are perfectly suited to life underwater and carry the power of the waves inside themselves.
+	Their skin is often shades of blue or green, sometimes a blend of the two. If they have a human skin tone, there is a glistening texture that catches the light, like water droplets or nearly invisible fish scales. Their hair can resemble seaweed, waving as if in a current, or it can even be like water itself.
 
 Source:	Elemental Evil Player's Companion p. 10,
 		Princes of the Apocalypse p. 229,
@@ -932,21 +903,20 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Speed</name>
       <text>Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Acid Resistance</name>
       <text>You have resistance to acid damage.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Amphibious</name>
       <text>You can breathe air and water.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Call to the Wave</name>
       <text>You know the acid splash cantrip. Starting at 3rd level, you can cast the create or destroy water spell with this trait. Starting at 5th level, you can also cast the water walk spell with this trait, without requiring a material component. Once you cast create or destroy water or water walk with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
@@ -959,17 +929,13 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Gith, Githyanki</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Int 1, Str 2</ability>
-    <spellAbility/>
-    <proficiency/>
-    <resist>Psychic</resist>
-    <trait>
+    <ability>Int +1, Str +2</ability>
+    <resist>psychic</resist>
+    <trait category="description">
       <name>Description</name>
       <text>Once members of a people who escaped servitude to mind flayers, githyanki split from their cousins, githzerai, and fled to the Astral Plane. In that timeless, silvery realm, githyanki honed their psionic powers and built a great city called Tu'narath. They have since spread throughout the multiverse, starting in outposts outside the Astral Plane, called creches, where time passes and their children can reach adulthood.
-
-A lanky people with skin tones of yellows, greens, and browns, githyanki complement their physical prowess with psionic might, instilled in them by mind flayers and cultivated over eons in the Astral Plane. Now all githyanki can use their psychic bond with that plane to access splinters of knowledge left behind by beings who travel, live, and die among the silver astral clouds.
-
-Githyanki who reside in the Astral Plane can live indefinitely.
+	A lanky people with skin tones of yellows, greens, and browns, githyanki complement their physical prowess with psionic might, instilled in them by mind flayers and cultivated over eons in the Astral Plane. Now all githyanki can use their psychic bond with that plane to access splinters of knowledge left behind by beings who travel, live, and die among the silver astral clouds.
+	Githyanki who reside in the Astral Plane can live indefinitely.
 
 Source:	Mordenkainen's Tome of Foes p. 96,
 		Mordenkainen Presents: Monsters of the Multiverse p. 18</text>
@@ -997,19 +963,17 @@ Source:	Mordenkainen's Tome of Foes p. 96,
 Average height: 5'1"-7'
 Average weight: 92-196 lb</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Astral Knowledge</name>
       <text>You can mystically access a reservoir of experiences of entities connected to the Astral Plane. Whenever you finish a long rest, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the Player's Handbook, as you momentarily project your consciousness into the Astral Plane. These proficiencies last until the end of your next long rest.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Githyanki Psionics</name>
       <text>You know the mage hand cantrip, and the hand is invisible when you cast the cantrip with this trait.
-
-Starting at 3rd level, you can cast the jump spell with this trait. Starting at 5th level, you can also cast the misty step spell with it. Once you cast jump or misty step with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait.</text>
+	Starting at 3rd level, you can cast the jump spell with this trait. Starting at 5th level, you can also cast the misty step spell with it. Once you cast jump or misty step with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Psychic Resilience</name>
       <text>You have resistance to psychic damage.</text>
     </trait>
@@ -1022,15 +986,12 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Gith, Githzerai</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Int 1, Wis 2</ability>
-    <spellAbility/>
-    <proficiency/>
-    <resist>Psychic</resist>
-    <trait>
+    <ability>Int +1, Wis +2</ability>
+    <resist>psychic</resist>
+    <trait category="description">
       <name>Description</name>
       <text>Githzerai migrated to the Everchanging Chaos of Limbo after the ancient schism that split their ancestors from their cousins, githyanki. Limbo is a roiling maelstrom of matter and energy, collapsing and reforming without purpose or direction, until a creature exerts deliberate will to stabilize it. Through their potent psionic power, githzerai carved a home for themselves amid the chaos. As the ages passed, githzerai explorers ranged out to other planes and worlds of the multiverse.
-
-Githzerai are generally slender, with speckled skin in shades of yellow, green, or brown. Eons of cultivating their mental powers within the endless chaos of Limbo have imbued githzerai with the ability to shape psionic energy to protect themselves and probe minds.
+	Githzerai are generally slender, with speckled skin in shades of yellow, green, or brown. Eons of cultivating their mental powers within the endless chaos of Limbo have imbued githzerai with the ability to shape psionic energy to protect themselves and probe minds.
 
 Source:	Mordenkainen's Tome of Foes p. 96,
 		Mordenkainen Presents: Monsters of the Multiverse p. 19</text>
@@ -1058,19 +1019,17 @@ Source:	Mordenkainen's Tome of Foes p. 96,
 Average height: 5'1"-7'
 Average weight: 92-196 lb</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Githzerai Psionics</name>
       <text>You know the mage hand cantrip, and the hand is invisible when you cast the cantrip with this trait.
-
-Starting at 3rd level, you can cast the shield spell with this trait. Starting at 5th level, you can also cast the detect thoughts spell with it. Once you cast shield or detect thoughts with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait.</text>
+	Starting at 3rd level, you can cast the shield spell with this trait. Starting at 5th level, you can also cast the detect thoughts spell with it. Once you cast shield or detect thoughts with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Mental Discipline</name>
       <text>Your innate psychic defenses grant you advantage on saving throws you make to avoid or end the charmed and frightened conditions on yourself.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Psychic Resilience</name>
       <text>You have resistance to psychic damage.</text>
     </trait>
@@ -1083,10 +1042,8 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Goblin</name>
     <size>S</size>
     <speed>30</speed>
-    <ability>Dex 2, Con 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Dex +2, Con +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>A subterranean folk, goblins can be found in every corner of the multiverse, often beside their bugbear and hobgoblin kin. Long before the god Maglubiyet conquered them, early goblins served in the court of the Queen of Air and Darkness, one of the Feywild's archfey. Goblins thrived in her dangerous domain thanks to a special boon from her—a supernatural knack for finding the weak spots in foes larger than themselves and for getting out of trouble. Goblins brought this fey boon with them to worlds across the Material Plane, even if they don't remember the fey realm they inhabited before Maglubiyet's rise. Now many goblins pursue their own destinies, escaping the plots of both archfey and gods.
 
@@ -1118,18 +1075,18 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d4
 Height = 3 feet + 5 inches + your size modifier in inches
 Weight in pounds = 35 + your size modifier</text>
+      <roll description="Size Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fury of the Small</name>
       <text>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.
-
-You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</text>
+	You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Nimble Escape</name>
       <text>You can take the Disengage or Hide action as a bonus action on each of your turns.</text>
     </trait>
@@ -1142,10 +1099,10 @@ You can use this trait a number of times equal to your proficiency bonus, regain
     <name>Goliath</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Con 1</ability>
-    <spellAbility/>
+    <ability>Str +2, Con +1</ability>
+    <resist>cold</resist>
     <proficiency>Athletics</proficiency>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>The first goliaths lived on the highest mountain peaks—far above the tree line, where the air is thin and frigid winds howl. Distantly related to giants and infused with the supernatural essence of their ancestors' mountainous home, goliaths stand between 7 and 8 feet tall and have a wide array of skin tones resembling different types of stone.
 
@@ -1178,23 +1135,22 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 6 feet + 2 inches + your size modifier in inches
 Weight in pounds = 200 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Little Giant</name>
       <text>You have proficiency in the Athletics skill, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</text>
       <special>powerful build</special>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Mountain Born</name>
-      <text>You have resistance to cold damage.
-
-You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</text>
+      <text>You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Stone's Endurance</name>
       <text>You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.
-
-You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
+	You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -1205,14 +1161,11 @@ You can use this trait a number of times equal to your proficiency bonus, and yo
     <name>Harengon</name>
     <size>M</size>
     <speed>30</speed>
-    <ability/>
-    <spellAbility/>
     <proficiency>Perception</proficiency>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Harengons originated in the Feywild, where they spoke Sylvan and embodied the spirit of freedom and travel. In time, these rabbitfolk hopped into other worlds, bringing the fey realm's exuberance with them and learning new languages as they went.
-
-Harengons are bipedal, with the characteristic long feet of the rabbits they resemble and fur in a variety of colors. They share the keen senses and powerful legs of leporine creatures and are full of energy, like a wound-up spring. Harengons are blessed with a little fey luck, and they often find themselves a few fortunate feet away from dangers during adventures.
+	Harengons are bipedal, with the characteristic long feet of the rabbits they resemble and fur in a variety of colors. They share the keen senses and powerful legs of leporine creatures and are full of energy, like a wound-up spring. Harengons are blessed with a little fey luck, and they often find themselves a few fortunate feet away from dangers during adventures.
 
 Source:	The Wild Beyond the Witchlight p. 13,
 		Mordenkainen Presents: Monsters of the Multiverse p. 22</text>
@@ -1229,20 +1182,20 @@ Source:	The Wild Beyond the Witchlight p. 13,
       <name>Size</name>
       <text>You are Medium or Small. You choose the size when you select this race.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hare-Trigger</name>
       <text>You can add your proficiency bonus to your initiative rolls.</text>
       <modifier category="bonus">Initiative + Proficiency Bonus</modifier>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Leporine Senses</name>
       <text>You have proficiency in the Perception skill.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Lucky Footwork</name>
       <text>When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the save, potentially turning the failure into a success. You can't use this reaction if you're prone or your speed is 0.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Rabbit Hop</name>
       <text>As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
     </trait>
@@ -1255,16 +1208,12 @@ Source:	The Wild Beyond the Witchlight p. 13,
     <name>Hobgoblin</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Int 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Con +2, Int +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Hobgoblins trace their origins to the ancient courts of the Feywild, where they first appeared with their goblin and bugbear kin. Many of them were driven from the Feywild by the conquering god Maglubiyet, who marshaled them as soldiers, but the fey realm left its mark; wherever they are in the multiverse, they continue to channel an aspect of the Feywild's rule of reciprocity, which creates a mystical bond between the giver and the receiver of a gift.
-
-On some worlds, such bonds lead hobgoblins to form communities with deep ties to one another. In Eberron and the Forgotten Realms, vast hobgoblin legions have emerged, with ranks of devoted soldiers famed for their unity.
-
-Hobgoblins are generally taller than their goblin cousins but not quite as big as bugbears. They have curved, pointed ears and noses that turn bright red or blue during displays of emotion.
+	On some worlds, such bonds lead hobgoblins to form communities with deep ties to one another. In Eberron and the Forgotten Realms, vast hobgoblin legions have emerged, with ranks of devoted soldiers famed for their unity.
+	Hobgoblins are generally taller than their goblin cousins but not quite as big as bugbears. They have curved, pointed ears and noses that turn bright red or blue during displays of emotion.
 
 Source:	Volo's Guide to Monsters p. 120,
 		Mordenkainen Presents: Monsters of the Multiverse p. 23</text>
@@ -1294,31 +1243,29 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 110 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fey Ancestry</name>
       <text>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fey Gift</name>
       <text>You can use this trait to take the Help action as a bonus action, and you can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.
+	Starting at 3rd level, choose one of the options below each time you take the Help action with this trait:
 
-Starting at 3rd level, choose one of the options below each time you take the Help action with this trait:
+Hospitality: You and the creature you help each gain a number of temporary hit points equal to 1d6 plus your proficiency bonus.
 
-Hospitality:
-You and the creature you help each gain a number of temporary hit points equal to 1d6 plus your proficiency bonus.
+Passage: You and the creature you help each increase your walking speeds by 10 feet until the start of your next turn.
 
-Passage:
-You and the creature you help each increase your walking speeds by 10 feet until the start of your next turn.
-
-Spite:
-Until the start of your next turn, the first time the creature you help hits a target with an attack roll, that target has disadvantage on the next attack roll it makes within the next minute.</text>
+Spite: Until the start of your next turn, the first time the creature you help hits a target with an attack roll, that target has disadvantage on the next attack roll it makes within the next minute.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fortune from the Many</name>
       <text>If you miss with an attack roll or fail an ability check or a saving throw, you can draw on your bonds of reciprocity to gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
     </trait>
@@ -1331,14 +1278,11 @@ Until the start of your next turn, the first time the creature you help hits a t
     <name>Kenku</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Dex 2, Wis 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Dex +2, Wis +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Feathered folk who resemble ravens, kenku are blessed with keen observation and supernaturally accurate memories. None of them can remember the origin of the first kenku, however, and they often joke that there are as many kenku origin stories as there are kenku. Some of them paint their genesis as a curse, being a flightless bird people doomed to mimic other people's creations. Other kenku recite cryptic but beautiful poems about their advent being a blessed event in which they were sent into the multiverse to observe and catalog its many wonders.
-
-Whatever their true origin, kenku are most often found in the Shadowfell and the Material Plane, and they tend to have the coloration typical of ravens.
+	Whatever their true origin, kenku are most often found in the Shadowfell and the Material Plane, and they tend to have the coloration typical of ravens.
 
 Source:	Volo's Guide to Monsters p. 111,
 		Mordenkainen Presents: Monsters of the Multiverse p. 24</text>
@@ -1368,18 +1312,19 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d8
 Height = 4 feet + 4 inches + your size modifier in inches
 Weight in pounds = 50 + (1d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">1d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Expert Duplication</name>
       <text>When you copy writing or craftwork produced by yourself or someone else, you have advantage on any ability checks you make to produce an exact duplicate.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Kenku Recall</name>
       <text>Thanks to your supernaturally good memory, you have proficiency in two skills of your choice.
-
-Moreover, when you make an ability check using any skill in which you have proficiency, you can give yourself advantage on the check before rolling the d20. You can give yourself advantage in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
+	Moreover, when you make an ability check using any skill in which you have proficiency, you can give yourself advantage on the check before rolling the d20. You can give yourself advantage in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Mimicry</name>
       <text>You can accurately mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations only with a successful Wisdom (Insight) check against a DC of 8 + your proficiency bonus + your Charisma modifier.</text>
     </trait>
@@ -1392,14 +1337,11 @@ Moreover, when you make an ability check using any skill in which you have profi
     <name>Kobold</name>
     <size>S</size>
     <speed>30</speed>
-    <ability>Dex 2</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Dex +2</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Some of the smallest draconic creatures in the multiverse, kobolds display their draconic ancestry in the glint of their scales and in their roars. Legends tell of the first kobolds emerging from the Underdark near the lairs of the earliest dragons. In some lands, kobolds serve chromatic or metallic dragons—even worshiping them as divine beings. In other places, kobolds know too well how dangerous those dragons can be and help others defend against draconic destruction.
-
-Whatever their relationship to dragons, kobold scales tend to be rust colored, although the occasional kobold sports a scale color more akin to that of a chromatic or a metallic dragon. A kobold's cry can express a range of emotion: anger, resolve, elation, fear, and more. Regardless of the emotion expressed, their cry resonates with draconic power.
+	Whatever their relationship to dragons, kobold scales tend to be rust colored, although the occasional kobold sports a scale color more akin to that of a chromatic or a metallic dragon. A kobold's cry can express a range of emotion: anger, resolve, elation, fear, and more. Regardless of the emotion expressed, their cry resonates with draconic power.
 
 Source:	Volo's Guide to Monsters p. 119,
 		Mordenkainen Presents: Monsters of the Multiverse p. 25</text>
@@ -1424,26 +1366,23 @@ Source:	Volo's Guide to Monsters p. 119,
       <name>Size</name>
       <text>Kobolds are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Draconic Cry</name>
       <text>As a bonus action, you let out a cry at your enemies within 10 feet of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Kobold Legacy</name>
       <text>Kobolds' connection to dragons can manifest in unpredictable ways in an individual kobold. Choose one of the following legacy options for your kobold:
 
-Craftiness:
-You have proficiency in one of the following skills of your choice: Arcana, Investigation, Medicine, Sleight of Hand, or Survival.
+Craftiness: You have proficiency in one of the following skills of your choice: Arcana, Investigation, Medicine, Sleight of Hand, or Survival.
 
-Defiance:
-You have advantage on saving throws to avoid or end the frightened condition on yourself.
+Defiance: You have advantage on saving throws to avoid or end the frightened condition on yourself.
 
-Draconic Sorcery:
-You know one cantrip of your choice from the sorcerer spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race).</text>
+Draconic Sorcery: You know one cantrip of your choice from the sorcerer spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race).</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -1454,14 +1393,11 @@ You know one cantrip of your choice from the sorcerer spell list. Intelligence, 
     <name>Lizardfolk</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Wis 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Con +2, Wis +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>The saurian lizardfolk are thought by some sages to be distant cousins of dragonborn and kobolds. Despite their resemblance to those other scaled folk, however, lizardfolk are their own people and have lived on the worlds of the Material Plane since the worlds' creation. Gifted by the gods with remarkable physical defenses and a mystical connection to the natural world, lizardfolk can survive with just their wits in situations that would be deadly for other folk. Because of that fact, many lizardfolk myths state that their people were placed by the gods in the Material Plane to guard its natural wonders.
-
-Lizardfolk have colorful scales and exhibit a wide array of scale patterns. Their individual facial features are as varied as those of lizards.
+	Lizardfolk have colorful scales and exhibit a wide array of scale patterns. Their individual facial features are as varied as those of lizards.
 
 Source:	Volo's Guide to Monsters p. 113,
 		Mordenkainen Presents: Monsters of the Multiverse p. 26</text>
@@ -1490,25 +1426,25 @@ Source:	Volo's Guide to Monsters p. 113,
       <name>Speed</name>
       <text>Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Bite</name>
       <text>You have a fanged maw that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Slashing Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hold Breath</name>
       <text>You can hold your breath for up to 15 minutes at a time.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hungry Jaws</name>
       <text>You can throw yourself into a feeding frenzy. As a bonus action, you can make a special attack with your Bite. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your proficiency bonus.
-
-You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
+	You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Natural Armor</name>
       <text>You have tough, scaly skin. When you aren't wearing armor, your base AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Nature's Intuition</name>
       <text>Thanks to your mystical connection to nature, you gain proficiency with two of the following skills of your choice: Animal Handling, Medicine, Nature, Perception, Stealth, or Survival.</text>
     </trait>
@@ -1521,16 +1457,12 @@ You can use this trait a number of times equal to your proficiency bonus, and yo
     <name>Minotaur</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Con 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Str +2, Con +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Minotaurs are barrel-chested humanoids with heads resembling those of bulls. Blessed with a supernaturally strong sense of direction, minotaurs make great navigators. Some sages believe minotaurs were first created by the Lady of Pain to patrol the magical mazes that she uses to trap her foes.
-
-Minotaur horns range in size from about 1 foot long to easily three times that length. Minotaurs often carve their horns to sharpen their edges, etch symbols of power into them, or sheathe them in bronze to prevent them from shattering during battle.
-
-Thick hair extends down minotaurs' necks and powerful backs, and some have long patches of hair on their chins and cheeks. Their legs end in heavy, cloven hooves, and they have long, tufted tails.
+	Minotaur horns range in size from about 1 foot long to easily three times that length. Minotaurs often carve their horns to sharpen their edges, etch symbols of power into them, or sheathe them in bronze to prevent them from shattering during battle.
+	Thick hair extends down minotaurs' necks and powerful backs, and some have long patches of hair on their chins and cheeks. Their legs end in heavy, cloven hooves, and they have long, tufted tails.
 
 Source:	Guildmasters' Guide to Ravnica p. 19,
 		Mythic Odysseys of Theros p. 23,
@@ -1561,20 +1493,23 @@ Here's how to determine your height and weight randomly, starting with rolling a
 Size modifier = 2d8
 Height = 5 feet + 4 inches + your size modifier in inches
 Weight in pounds = 175 + (2d6 x your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Horns</name>
       <text>You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Piercing Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Goring Rush</name>
       <text>Immediately after you take the Dash action on your turn and move at least 20 feet, you can make one melee attack with your Horns as a bonus action.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hammering Horns</name>
       <text>Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can use a bonus action to attempt to push that target with your horns. The target must be within 5 feet of you and no more than one size larger than you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to 10 feet away from you.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Labyrinthine Recall</name>
       <text>You always know which direction is north, and you have advantage on any Wisdom (Survival) check you make to navigate or track.</text>
     </trait>
@@ -1587,14 +1522,11 @@ Weight in pounds = 175 + (2d6 x your size modifier)</text>
     <name>Orc</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Con 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Str +2, Con +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Orcs trace their creation to the one-eyed god Gruumsh, an unstoppable warrior and powerful leader. The divine qualities of Gruumsh resonate within orcs, granting them a reflection of his toughness and tenacity that can't be matched, and the god equipped his children to be able to live above or below ground.
-
-On some worlds, such as Eberron, orcs were among the first defenders of the natural order from the encroachments of Fiends and other extraplanar threats. Gruumsh's blessings have made orcs tireless guardians and mighty allies wherever they are found, even when they turn their devotion to other gods.
+	On some worlds, such as Eberron, orcs were among the first defenders of the natural order from the encroachments of Fiends and other extraplanar threats. Gruumsh's blessings have made orcs tireless guardians and mighty allies wherever they are found, even when they turn their devotion to other gods.
 
 Source:	Volo's Guide to Monsters p. 120,
 		Mordenkainen Presents: Monsters of the Multiverse p. 28</text>
@@ -1624,23 +1556,24 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d8
 Height = 5 feet + 4 inches + your size modifier in inches
 Weight in pounds = 175 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Adrenaline Rush</name>
       <text>You can take the Dash action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
-
-Whenever you use this trait, you gain a number of temporary hit points equal to your proficiency bonus.</text>
+	Whenever you use this trait, you gain a number of temporary hit points equal to your proficiency bonus.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Powerful Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</text>
       <special>powerful build</special>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Relentless Endurance</name>
       <text>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't do so again until you finish a long rest.</text>
     </trait>
@@ -1653,12 +1586,11 @@ Whenever you use this trait, you gain a number of temporary hit points equal to 
     <name>Satyr</name>
     <size>M</size>
     <speed>35</speed>
-    <ability>Cha 2, Dex 1</ability>
+    <ability>Cha +2, Dex +1</ability>
     <proficiency>Performance, Persuasion</proficiency>
-    <spellAbility/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
-      <text>Originating in the Feywild —a realm of pure emotion— satyrs thrive on the energy of merriment. They resemble elves but have goatlike legs, cloven hooves, and ram or goat horns. The magic of the fey realm has given them an innate ability to perform, to delight, and to resist magical intrusion. While they're usually found in the Feywild, satyrs do wander to other planes of existence, most often to the Material Plane. There they seek to bring a bit of their home plane's splendor to other worlds.
+      <text>Originating in the Feywild—a realm of pure emotion—satyrs thrive on the energy of merriment. They resemble elves but have goatlike legs, cloven hooves, and ram or goat horns. The magic of the fey realm has given them an innate ability to perform, to delight, and to resist magical intrusion. While they're usually found in the Feywild, satyrs do wander to other planes of existence, most often to the Material Plane. There they seek to bring a bit of their home plane's splendor to other worlds.
 
 Source:	Mordenkainen Presents: Monsters of the Multiverse p. 29</text>
     </trait>
@@ -1687,20 +1619,23 @@ Here's how to determine your height and weight randomly, starting with rolling a
 Size modifier = 2d8
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 100 + (2d4 x your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Ram</name>
       <text>You can use your head and horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Bludgeoning Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Magic Resistance</name>
       <text>You have advantage on saving throws against spells.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Mirthful Leaps</name>
       <text>Whenever you make a long jump or a high jump, you can roll a d8 and add the number rolled to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Reveler</name>
       <text>As an embodiment of revelry, you have proficiency in the Performance and Persuasion skills, and you have proficiency with one musical instrument of your choice.</text>
     </trait>
@@ -1713,14 +1648,12 @@ Weight in pounds = 100 + (2d4 x your size modifier)</text>
     <name>Elf, Sea</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Dex 2, Con 1</ability>
-    <spellAbility/>
+    <ability>Dex +2, Con +1</ability>
+    <resist>cold</resist>
     <proficiency>Perception</proficiency>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Sea elves fell in love with the wild beauty of the ocean in the earliest days of the multiverse. While other elves traveled from realm to realm, sea elves navigated the currents and explored the waters of many worlds. Today these elves can be found wherever oceans exist, as well as in the Elemental Plane of Water.
-
-Like other elves, sea elves can live to be over 750 years old.
 
 Source:	Player's Handbook (2014) p. 23,
 		Mordenkainen's Tome of Foes p. 62,
@@ -1751,36 +1684,37 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 4 feet + 6 inches + your size modifier in inches
 Weight in pounds = 90 + (1d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">1d4</roll>
     </trait>
     <trait>
       <name>Speed</name>
       <text>Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Child of the Sea</name>
       <text>You can breathe air and water, and you have resistance to cold damage.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fey Ancestry</name>
       <text>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Friend of the Sea</name>
       <text>Aquatic animals have an extraordinary affinity with your people. You can communicate simple ideas to any Beast that has a swimming speed. It can understand your words, though you have no special ability to understand it in return.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Keen Senses</name>
       <text>You have proficiency in the Perception skill.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Trance</name>
       <text>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.
-
-Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest.</text>
+	Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -1791,19 +1725,14 @@ Whenever you finish this trance, you can gain two proficiencies that you don't h
     <name>Elf, Shadar-kai</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Dex 2, Con 1</ability>
-    <spellAbility/>
+    <ability>Dex +2, Con +1</ability>
+    <resist>necrotic</resist>
     <proficiency>Perception</proficiency>
-    <resist>Necrotic</resist>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Shadar-kai are the elves of the Shadowfell, originally drawn to that dread realm by the Raven Queen. Over the centuries, some of them have continued to serve her, while others have ventured into the Material Plane to forge their own destinies.
-
-Once shadar-kai were Fey like the rest of their elven kin; now they exist in a state between life and death, thanks to being transformed by the Shadowfell's grim energy.
-
-Shadar-kai have ashen skin tones, and while they're in the Shadowfell, they also become wizened, reflecting the somber nature of that gloomy plane.
-
-Like other elves, shadar-kai can live to be over 750 years old.
+	Once shadar-kai were Fey like the rest of their elven kin; now they exist in a state between life and death, thanks to being transformed by the Shadowfell's grim energy.
+	Shadar-kai have ashen skin tones, and while they're in the Shadowfell, they also become wizened, reflecting the somber nature of that gloomy plane.
 
 Source:	Player's Handbook (2014) p. 23,
 		Mordenkainen Presents: Monsters of the Multiverse p. 31</text>
@@ -1829,34 +1758,34 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 4 feet + 6 inches + your size modifier in inches
 Weight in pounds = 90 + (1d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">1d4</roll>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Blessing of the Raven Queen</name>
       <text>As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
-
-Starting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent.</text>
+	Starting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fey Ancestry</name>
       <text>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Keen Senses</name>
       <text>You have proficiency in the Perception skill.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Necrotic Resistance</name>
       <text>You have resistance to necrotic damage.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Trance</name>
       <text>You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.
-
-Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest.</text>
+	Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -1867,17 +1796,13 @@ Whenever you finish this trance, you can gain two proficiencies that you don't h
     <name>Shifter</name>
     <size>M</size>
     <speed>30</speed>
-    <ability/>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Shifters are sometimes called weretouched, as they are descendants of people who contracted full or partial lycanthropy. Humanoids with a bestial aspect, shifters can't fully change shape, but they can temporarily enhance their animalistic features by entering a state they call shifting.
+	Shifters are similar to humans in height and build but are typically more lithe and flexible. Their facial features have a bestial cast, often with large eyes and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.
+	Most shifters resemble a particular kind of lycanthrope. You can choose the kind of lycanthrope in your past, or you can determine it randomly by rolling on the Lycanthrope Ancestor table. The table also provides a suggestion for the Shifting option you might have as a result of your ancestry.
 
-Shifters are similar to humans in height and build but are typically more lithe and flexible. Their facial features have a bestial cast, often with large eyes and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.
-
-Most shifters resemble a particular kind of lycanthrope. You can choose the kind of lycanthrope in your past, or you can determine it randomly by rolling on the Lycanthrope Ancestor table. The table also provides a suggestion for the Shifting option you might have as a result of your ancestry.
-
+Lycanthrope Ancestor
 d6 | Ancestor | Suggested Shifting Option
 1 | Werebear | Beasthide
 2 | Wereboar | Beasthide
@@ -1888,6 +1813,7 @@ d6 | Ancestor | Suggested Shifting Option
 
 Source:	Eberron: Rising from the Last War p. 33,
 		Mordenkainen Presents: Monsters of the Multiverse p. 32</text>
+      <roll description="Lycanthrope Ancestor">1d6</roll>
     </trait>
     <trait>
       <name>Ability Score Increases</name>
@@ -1914,32 +1840,29 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d8
 Height = 4 feet + 6 inches + your size modifier in inches
 Weight in pounds = 90 + (2d4 x your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Bestial Instincts</name>
       <text>Channeling the beast within, you have proficiency in one of the following skills of your choice: Acrobatics, Athletics, Intimidation, or Survival.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Shifting</name>
       <text>As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 x your proficiency bonus. You can shift a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+	Whenever you shift, you gain an additional benefit based on one of the following options (choose when you select this race):
 
-Whenever you shift, you gain an additional benefit based on one of the following options (choose when you select this race):
+Beasthide: You gain 1d6 additional temporary hit points. While shifted, you have a +1 bonus to your Armor Class.
 
-Beasthide:
-You gain 1d6 additional temporary hit points. While shifted, you have a +1 bonus to your Armor Class.
+Longtooth: When you shift and as a bonus action on your other turns while shifted, you can use your elongated fangs to make an unarmed strike. If you hit with your fangs, you can deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
 
-Longtooth:
-When you shift and as a bonus action on your other turns while shifted, you can use your elongated fangs to make an unarmed strike. If you hit with your fangs, you can deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
+Swiftstride: While shifted, your walking speed increases by 10 feet. Additionally, you can move up to 10 feet as a reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke opportunity attacks.
 
-Swiftstride:
-While shifted, your walking speed increases by 10 feet. Additionally, you can move up to 10 feet as a reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke opportunity attacks.
-
-Wildhunt:
-While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you unless you're incapacitated.</text>
+Wildhunt: While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you unless you're incapacitated.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -1950,14 +1873,12 @@ While shifted, you have advantage on Wisdom checks, and no creature within 30 fe
     <name>Tabaxi</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Dex 2, Cha 1</ability>
-    <spellAbility/>
+    <ability>Dex +2, Cha +1</ability>
     <proficiency>Perception, Stealth</proficiency>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Created by the Cat Lord—a divine being of the Upper Planes—to blend the qualities of humanoids and cats, tabaxi are a varied people in both attitude and appearance. In some lands, tabaxi live like the cats they resemble, naturally curious and at home in playful environments. In other places, tabaxi live as other folk do, not exhibiting the feline behavior the Cat Lord intended.
-
-Tabaxi's appearance is as varied as their attitudes. Some tabaxi have features or patterning in their fur like tigers, jaguars, or other big cats, while others have appearances more like a house cat. Still others have unique patterns or might style their fur to their preferences—or might even be hairless!
+	Tabaxi's appearance is as varied as their attitudes. Some tabaxi have features or patterning in their fur like tigers, jaguars, or other big cats, while others have appearances more like a house cat. Still others have unique patterns or might style their fur to their preferences—or might even be hairless!
 
 Source:	Volo's Guide to Monsters p. 115,
 		Mordenkainen Presents: Monsters of the Multiverse p. 33</text>
@@ -1992,24 +1913,27 @@ Weight in pounds = 85 + (2d4 × your size modifier)
 Male:
 Height = 4 feet + 10 inches + your size modifier in inches
 Weight in pounds = 90 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
     <trait>
       <name>Speed</name>
       <text>Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Cat's Claws</name>
       <text>You can use your claws to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Slashing Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Cat's Talents</name>
       <text>You have proficiency in the Perception and Stealth skills.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Feline Agility</name>
       <text>Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns.</text>
     </trait>
@@ -2022,14 +1946,11 @@ Weight in pounds = 90 + (2d4 × your size modifier)</text>
     <name>Tortle</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Wis 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Str +2, Wis +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Tortles have a saying: "We wear our homes on our backs." These turtle folk live on many worlds, most often journeying up and down coasts, along waterways, and across the sea. Tortles don't have a unified story of how they were created, but they all have a sense of being mystically connected to the natural world. Carrying their shelter on their backs gives tortles a special feeling of security wherever they go, for even if they visit a far, unknown country, they have a place to lay their heads.
-
-Tortles exhibit the same range of coloration and patterns found among turtles, and many tortles enjoy adorning their shells in distinctive ways.
+	Tortles exhibit the same range of coloration and patterns found among turtles, and many tortles enjoy adorning their shells in distinctive ways.
 
 Source:	The Tortle Package p. 4,
 		Mordenkainen Presents: Monsters of the Multiverse p. 34</text>
@@ -2059,24 +1980,27 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d8
 Height = 4 feet + 10 inches + your size modifier in inches
 Weight in pounds = 400 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Claws</name>
       <text>You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Slashing Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hold Breath</name>
       <text>You can hold your breath for up to 1 hour.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Natural Armor</name>
       <text>Your shell provides you a base AC of 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Nature's Intuition</name>
       <text>Thanks to your mystical connection to nature, you gain proficiency with one of the following skills of your choice: Animal Handling, Medicine, Nature, Perception, Stealth, or Survival.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Shell Defense</name>
       <text>You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell.</text>
     </trait>
@@ -2089,14 +2013,12 @@ Weight in pounds = 400 + (2d4 × your size modifier)</text>
     <name>Triton</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 1, Cha 1, Con 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <trait>
+    <ability>Str +1, Cha +1, Con +1</ability>
+    <resist>cold</resist>
+    <trait category="description">
       <name>Description</name>
       <text>Originally from the Elemental Plane of Water, many tritons entered the Material Plane centuries ago in response to the growing threat of evil elementals. Those tritons spread across the worlds' oceans, protecting the surface from terrors in the deep. Over time, triton have extended their stewardship over the sea floor to the ocean's surface.
-
-Tritons have webbed hands and feet, small fins on their calves, and coloration that favors blues and greens.
+	Tritons have webbed hands and feet, small fins on their calves, and coloration that favors blues and greens.
 
 Source:	Volo's Guide to Monsters p. 118,
 		Mordenkainen Presents: Monsters of the Multiverse p. 35</text>
@@ -2125,25 +2047,24 @@ Source:	Volo's Guide to Monsters p. 118,
       <name>Speed</name>
       <text>Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Amphibious</name>
       <text>You can breathe air and water.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Control Air and Water</name>
       <text>You can cast fog cloud with this trait. Starting at 3rd level, you can cast the gust of wind spell with this trait. Starting at 5th level, you can also cast the water walk spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Emissary of the Sea</name>
       <text>You can communicate simple ideas to any Beast, Elemental, or Monstrosity that has a swimming speed. It can understand your words, though you have no special ability to understand it in return.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Guardians of the Depths</name>
       <text>Adapted to the frigid ocean depths, you have resistance to cold damage.</text>
     </trait>
@@ -2156,15 +2077,12 @@ Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells 
     <name>Yuan-Ti Pureblood</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Cha 2, Int 1</ability>
-    <spellAbility/>
-    <proficiency/>
-    <immunity>Poison</immunity>
-    <trait>
+    <ability>Cha +2, Int +1</ability>
+    <resist>poison</resist>
+    <trait category="description">
       <name>Description</name>
       <text>Yuan-ti were originally humans who transformed themselves into serpent folk through ancient rituals. Most yuan-ti were corrupted into monsters by those rites, but some yuan-ti instead became a new people who mix characteristics of humans and snakes.
-
-Blessed with resistance to magical and poisonous effects by the rituals that created them, each of these yuan-ti manifests their serpentine heritage in a variety of ways: a forked tongue, snake eyes, a snakelike nose, or some other ophidian characteristic. However a yuan-ti looks, they have the power to pursue great good or evil in the multiverse.
+	Blessed with resistance to magical and poisonous effects by the rituals that created them, each of these yuan-ti manifests their serpentine heritage in a variety of ways: a forked tongue, snake eyes, a snakelike nose, or some other ophidian characteristic. However a yuan-ti looks, they have the power to pursue great good or evil in the multiverse.
 
 Source:	Volo's Guide to Monsters p. 120,
 		Mordenkainen Presents: Monsters of the Multiverse p. 36</text>
@@ -2189,23 +2107,22 @@ Source:	Volo's Guide to Monsters p. 120,
       <name>Size</name>
       <text>Purebloods match humans in average size and weight. You are Medium or Small. You choose the size when you select this race.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Magic Resistance</name>
       <text>You have advantage on saving throws against spells.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Poison Resilience</name>
       <text>You have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You also have resistance to poison damage.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Serpentine Spellcasting</name>
       <text>You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.
-
-Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
+	Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</text>
     </trait>
     <trait>
       <name>Languages</name>

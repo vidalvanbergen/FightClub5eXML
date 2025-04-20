@@ -1,13 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <race>
     <name>Centaur (Legacy)</name>
     <size>M</size>
     <speed>40</speed>
-    <ability>Str 2, Wis 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Str +2, Wis +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Roamers at heart, centaurs love open spaces and the freedom to travel. As much as they can, centaurs run. They race the wind, hooves thundering and tails streaming behind them.
 
@@ -15,6 +13,28 @@ In the sprawling city of Ravnica, where "open road" seems like a contradiction a
 
 Source:	Guildmasters' Guide to Ravnica p. 15,
 		Mythic Odysseys of Theros p. 19</text>
+    </trait>
+    <trait category="description">
+      <name>Nature's Cavalry</name>
+      <text>Centaurs have the upper bodies, down to the waist, of muscular humans, displaying all the human variety of skin tones and features. Their ears are slightly pointed, but their faces are wider and squarer than those of elves. Below the waist, they have the bodies of small horses, with a similar range of coloration—from various shades of chestnut or bay to dappled or even zebra-like striped patterns. Most centaurs style their hair and their tails in a similar way. Selesnya centaurs favor long, flowing hair. Gruul centaurs cut their hair in rough, spiky styles.
+	The upper bodies of centaurs are comparable to human torsos in size, and their lower equine bodies average about 4 feet tall at the withers. Though they are smaller than a human rider mounted on a horse, they fill similar roles as cavalry warriors, messengers, outriders, and scouts.</text>
+    </trait>
+    <trait category="description">
+      <name>Affinity for Nature</name>
+      <text>Centaurs have an affinity for the natural world. Among the guilds that share that affinity, centaurs favor the rubblebelts of the Gruul Clans and the wide plazas of the Selesnya Conclave over the undercity tunnels of the Golgari and the laboratories of the Simic.
+	Centaurs celebrate life and growth, and the birth of a foal is always cause for festivities. At the same time, they revere the traditions of the past, and among both the Gruul and the Selesnya they are voices of memory and history, preserving old ways and keeping alive the legends of ancestral heroes. They feel a close kinship with wild animals, perhaps because of their own horse-like bodies, and delight in the feeling of running alongside herds and packs of other beasts.</text>
+    </trait>
+    <trait category="description">
+      <name>Clans and Community</name>
+      <text>Centaurs sense the interconnectedness of the natural world. Thus, they celebrate family and community as microcosms of that greater connection. Among the Gruul, they have a strong clan identity, and Selesnya centaurs are fiercely loyal to their individual communities as well as the guild as a whole. Their love of history and tradition also means that centaurs are more likely than most other Ravnicans to join the same guild that their parents did.</text>
+    </trait>
+    <trait category="description">
+      <name>Centaur Names</name>
+      <text>Centaurs' given names are passed down through family lines. The name bestowed on a new foal is typically the name of the most recently deceased family member of the same gender, keeping alive the memory—and, the centaurs believe, some shard of the spirit—of the departed. Centaurs don't use family names, but they wear symbols that represent their family membership. These symbols might include graphical representations of plants or animals, printed mottoes, braids and beads worn in the hair and tail, or even specific patterns of woven fabric.
+
+Male Names: Bonmod, Boruvo, Chodi, Drozan, Kozim, Milosh, Ninos, Oleksi, Orval, Radovas, Radom, Rostis, Svetyos, Tomis, Trijiro, Volim, Vlodim, Yarog
+
+Female Names: Daiva, Dunja, Elnaya, Galisnya, Irinya, Kotyali, Lalya, Litisia, Madya, Mira, Nedja, Nikya, Ostani, Pinya, Rada, Raisya, Stasolya, Tatna, Zhendoya, Zoria</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -33,26 +53,28 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 1d10
 Height = 6 feet + your size modifier in inches
 Weight in pounds = 600 + (2d12 × your size modifier)</text>
+      <roll description="Size Modifier">1d10</roll>
+      <roll description="Weight Modifier">2d12</roll>
     </trait>
     <trait>
       <name>Creature type</name>
       <text>Your creature type is fey, rather than humanoid.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Charge</name>
       <text>If you move at least 30 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your hooves.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hooves</name>
       <text>Your hooves are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Bludgeoning Damage">1d4+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Equine Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push or drag.
-
-In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.</text>
+	In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Survivor</name>
       <text>You have proficiency in one of the following skills of your choice: Animal Handling, Medicine, Nature, or Survival.</text>
     </trait>
@@ -65,15 +87,32 @@ In addition, any climb that requires hands and feet is especially difficult for 
     <name>Goblin (Ravnica)</name>
     <size>S</size>
     <speed>30</speed>
-    <ability>Dex 2, Con 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Dex +2, Con +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Goblins occupy an uneasy place in a dangerous world, and they react by lashing out at any creatures they believe they can bully. Cunning in battle and cruel in victory, goblins are fawning and servile in defeat, just as in their own society lower castes must scrape before those of greater status and as goblin tribes bow before other goblinoids.
 
+Whether sniveling in fear, cackling with mad laughter, or snarling in a fury, goblins are wretched and inconsequential—at least in the eyes of most of Ravnica's other folk. In their own minds, though, they are content to lurk in the shadows only until they fully come into their own and receive the recognition they believe they deserve. They are entitled to some credit for their tenacity, agility, crafty ingenuity, and dumb luck, all of which has enabled them to survive in a world overrun with creatures larger and more powerful than they are.
+
 Source:	Guildmasters' Guide to Ravnica p. 16,
 		Explorer's Guide to Wildemount p. 174</text>
+    </trait>
+    <trait category="description">
+      <name>Small and Wiry</name>
+      <text>Standing around 3 feet tall and covered in warty green or red skin, goblins have huge noses and ears. Their wiry bodies are surprisingly strong, and their mouths are full of sharp, crooked teeth.
+	Most goblins are bald, either by heredity or by choice, but a few boast shocks of red or black hair. Their arms and legs are elongated in proportion to their small bodies, and their fingers and toes are also long and slender. Many goblins prefer to go unshod to leave their toes exposed for climbing.</text>
+    </trait>
+    <trait category="description">
+      <name>Unfettered Emotion</name>
+      <text>Creatures of raw impulse, goblins are found among guilds that value that quality, particularly the Izzet (where they typically serve as attendants for researchers), the Gruul (in camps that form hapless buffers between the clans and civilized regions), the Rakdos (putting their love of explosions to good use), and occasionally the Boros (if they discover a well of discipline and courage within themselves, or find themselves unable to resist the shininess of Boros weapons and armor). Many goblins are guildless and make their way as members of street gangs.
+	Sometimes driven by wild mood swings, goblins have an inclination toward destruction, which can take a playful form but is often anything but. Some goblins clobber things, others like to light them on fire, and many love to blow things up.
+	Goblins have an outrageous sense of humor, usually expressed through mischievous pranks. The malicious among them find pleasure in the misfortune of others and tend to cackle maniacally whenever they're amused. They can act with apparent randomness, sometimes just to confuse and befuddle others.</text>
+    </trait>
+    <trait category="description">
+      <name>Goblin Names</name>
+      <text>The Goblin language is fond of certain sounds, and goblin names tend to repeat those sounds to form what can sound like nonsense words. A goblin's name gives no indication of gender.
+
+Goblin Names: Azzinax, Babolax, Blixanix, Crixizix, Dazzaz, Estrix, Finizix, Juzba, Kaluzax, Lyzaxa, Mizzix, Myznar, Nixispix, Paxizaz, Ravixiz, Stixil, Sunnix, Tozinox, Uxivozi, Vazozav, Wexiny, Zizzix</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -92,16 +131,17 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d4
 Height = 3 feet + 5 inches + your size modifier in inches
 Weight in pounds = 35 + your size modifier</text>
+      <roll description="Size Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Fury of the Small</name>
       <text>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Nimble Escape</name>
       <text>You can take the Disengage or Hide action as a bonus action on each of your turns.</text>
     </trait>
@@ -114,16 +154,37 @@ Weight in pounds = 35 + your size modifier</text>
     <name>Loxodon</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Wis 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Con +2, Wis +1</ability>
+    <trait category="description">
       <name>Description</name>
-      <text>The humanoid elephants called loxodons are often oases of calm in the busy streets of Ravnica. They hum or chant in sonorous tones and move slowly or sit in perfect stillness. If provoked to action, loxodons are true terrors— bellowing with rage, trumpeting and flapping their ears. Their serene wisdom, fierce loyalty,and unwavering conviction are tremendous assets to their guilds.
+      <text>The humanoid elephants called loxodons are often oases of calm in the busy streets of Ravnica. They hum or chant in sonorous tones and move slowly or sit in perfect stillness. If provoked to action, loxodons are true terrors—bellowing with rage, trumpeting and flapping their ears. Their serene wisdom, fierce loyalty, and unwavering conviction are tremendous assets to their guilds.
 
 As they say, "There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man."
 
 Source:	Guildmasters' Guide to Ravnica p. 17</text>
+    </trait>
+    <trait category="description">
+      <name>Lumbering Giants</name>
+      <text>Loxodons tower above most other humanoids, standing over 7 feet tall. They have the heads—trunks, tusks, ears, and faces—of elephants, and hulking bipedal bodies covered by thick, leathery skin. Each of their hands has four thick digits, and their feet are the flat-bottomed, oval-shaped feet of elephants.
+	Like that of an elephant, a loxodon's trunk is a useful appendage. In addition to providing a keen sense of smell, the trunk can be used to lift and carry even heavy objects. The trunk can be used to carry both food and liquid to the mouth and can even act as a snorkel.</text>
+    </trait>
+    <trait category="description">
+      <name>Gifted Stoneworkers</name>
+      <text>Loxodons are tireless, patient artisans with an unrivaled intuition about their craft. Although they make nurturing spiritual leaders, their gift for stonework is so ingrained that they are often at a loss when they try to impart that knowledge to others. Among the Selesnya, it primarily falls to loxodons to build the guild's magnificent, cathedral-like arboretum structures.</text>
+    </trait>
+    <trait category="description">
+      <name>Relentlessly Loyal</name>
+      <text>Loxodons believe in the value of community and life, and thus are most often found in the Selesnya Conclave. Some find fulfillment in the cause of order by joining the Orzhov Syndicate or the Azorius Senate.
+	Loxodons believe that the members of a group have a responsibility to look out for each other. Once they have joined a guild or bonded with other individuals in any capacity, loxodons devote themselves to maintaining that bond. They coordinate their efforts and are often willing to sacrifice themselves for the sake of the group. They expect reciprocal loyalty and commitment from the other members of their communities and can be severe in their disappointment when their trust is betrayed.
+	The primary difference between loxodons who join different guilds is their sense of the size of the community they belong to. For loxodons in the Selesnya Conclave, their community is the world and all living beings in it—everything valuable, meant to live in harmony, and interdependent. For Azorius loxodons, community primarily means a society of different peoples who need adherence to law and order so they can function together. For those in the Orzhov Syndicate, community means the syndicate alone, with its interests taking priority over those of any other group.</text>
+    </trait>
+    <trait category="description">
+      <name>Loxodon Names</name>
+      <text>A loxodon's name includes subtle tones, produced in a loxodon's resonant nasal chambers, that indicate status, family connection, and community role. Since most non-loxodons can't distinguish these underlying tones, let alone produce them, loxodons often translate them into titles, such as Hierarch, Revered, Grandmother, Healer, or Saint, when interacting with other races.
+
+Male Names: Bayul, Berov, Brooj, Chedumov, Dobrun, Droozh, Golomov, Heruj, Ilromov, Kel, Nikoom, Ondros, Radomov, Svetel, Tamuj, Throom, Vasool
+
+Female Names: Ajj, Boja, Dancu, Dooja, Elyuja, Fanoor, Irij, Jasoo, Katrun, Lyooda, Mayja, Radu, Shuja, Soofya, Totoor, Verij, Vesmova, Yoolna, Zarij, Zoorja</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -135,28 +196,35 @@ Source:	Guildmasters' Guide to Ravnica p. 17</text>
     </trait>
     <trait>
       <name>Size</name>
-      <text>Loxodons stand between 7 and 8 feet tall. Their massive bodies weigh between 300 and 400 pounds. Your size is Medium.</text>
+      <text>Loxodons stand between 7 and 8 feet tall. Their massive bodies weigh between 300 and 400 pounds. Your size is Medium.
+
+To set your height and weight randomly, start with rolling a size modifier:
+
+Size modifier = 2d10
+Height = 6 feet + 7 inches + your size modifier in inches
+Weight in pounds = 295 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Powerful Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</text>
       <special>powerful build</special>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Loxodon Serenity</name>
       <text>You have advantage on saving throws against being charmed or frightened.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Natural Armor</name>
       <text>You have thick, leathery skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Trunk</name>
       <text>You can grasp things with your trunk, and you can use it as a snorkel. It has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to that list of options.
-
-Your trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.</text>
+	Your trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Keen Smell</name>
       <text>Thanks to your sensitive trunk, you have advantage on Wisdom (Perception), Wisdom (Survival), and Intelligence (Investigation) checks that involve smell.</text>
     </trait>
@@ -169,17 +237,38 @@ Your trunk can't wield weapons or shields or do anything that requires manual pr
     <name>Minotaur (Legacy)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Con 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Str +2, Con +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Minotaurs are barrel-chested humanoids with heads resembling those of bulls. Their horns range in size from about 1 foot long to great, curling weapons easily three times that length. They often ornament their horns with metal rings or sheathe them in metal to protect them from damage.
 
-The minotaurs of Ravnica are strong in body. dedication, and courage. They are at home on the battlefield, willing to fight for their various causes. They combine a burning fury in battle with keen tactics that make them excellent commanders as well as valuable shock troops.
+The minotaurs of Ravnica are strong in body, dedication, and courage. They are at home on the battlefield, willing to fight for their various causes. They combine a burning fury in battle with keen tactics that make them excellent commanders as well as valuable shock troops.
 
 Source:	Guildmasters' Guide to Ravnica p. 18,
 		Mythic Odysseys of Theros p. 22</text>
+    </trait>
+    <trait category="description">
+      <name>Horns and Hooves</name>
+      <text>Minotaurs are barrel-chested humanoids with heads resembling those of bulls. Their horns range in size from about 1 foot long to great, curling weapons easily three times that length. They often ornament their horns with metal rings or sheathe them in metal to protect them from damage.
+	Manes of shaggy fur extend down minotaurs' necks and powerful backs, and males have long tufts of hair on their chins and cheeks. Their legs end in heavy, cloven hooves. Minotaurs are born with long, tufted tails, but minotaurs of the Ordruun clan (and some others) have their tails docked as part of a coming-of-age ceremony; they find the heavy armor of the Boros legion much more comfortable without a long tail in the way.</text>
+    </trait>
+    <trait category="description">
+      <name>Strength and Zeal</name>
+      <text>Minotaurs are zealous and love battle. They are found among the Gruul Clans, but the minotaurs of the Ordruun family line, long associated with the Boros Legion, are much better known and respected. Boros minotaurs choose the precision of the legion over the fury of the pack.
+	Minotaurs tend to vent their outrage through violence, but they aren't generally quick to anger. They are passionate, loving their friends and partners fiercely, and they laugh loud and long at good jokes.</text>
+    </trait>
+    <trait category="description">
+      <name>Family and Guild</name>
+      <text>Minotaur legends describe a small pantheon of heroes—perhaps they were once thought of as gods—who established the minotaurs' place in the world. Every minotaur in Ravnica claims descent from one of these heroes. The Ordruun line is the most prominent, with thousands of members descended from an ancient hero who is said to have taught minotaurs the arts of war. Other important family lines include the Kharran line (primarily associated with the Gruul Scab clan), the Drendaa line (found scattered among the Gruul Clans), and the Tazgral line (divided between the Boros and the Gruul, with a significant number in the Rakdos as well).
+	Since each family line has so many members, minotaurs don't usually find it helpful to connect the name of the line to their personal names; even though Commander Grozdan of the Boros Legion's Kamen Fortress is a prominent member of the Ordruun line, he would never call himself Grozdan Ordruun the way a human would.</text>
+    </trait>
+    <trait category="description">
+      <name>Minotaur Names</name>
+      <text>The legends that recount the deeds of ancient minotaur heroes are full of other names as well: those of the retainers, allies, lovers, servants, enemies, and others who played roles, however small, in the lives of the heroes. Almost every minotaur name is drawn from that long list of minor characters of legend, so that those folk are never forgotten.
+
+Male Names: Alovnek, Brogmir, Brozhdar, Dornik, Drakmir, Drazhan, Grozdan, Kalazmir, Klattic, Melislek, Nirikov, Prezhlek, Radolak, Rugilar, Sarovnek, Svarakov, Trovik, Vraslak, Yarvem
+
+Female Names: Akra, Bolsa, Cica, Dakka, Drakisla, Eleska, Enka, Irnaya, Jaska, Kalka, Makla, Noraka, Pesha, Raisha, Sokali, Takyat, Vrokya, Veska, Yelka, Zarka, Zoka</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -198,20 +287,24 @@ Here's how to determine your height and weight randomly, starting with rolling a
 Size modifier = 2d8
 Height = 5 feet + 4 inches + your size modifier in inches
 Weight in pounds = 175 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Horns</name>
       <text>Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</text>
+      <roll description="Bludgeoning Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Goring Rush</name>
       <text>Immediately after you use the Dash action on your turn and move at least 20 feet, you can make one melee attack with your horns as a bonus action.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hammering Horns</name>
       <text>Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be no more than one size larger than you and within 5 feet of you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to 10 feet away from you.</text>
+      <roll description="DC">8+%8+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Imposing Presence</name>
       <text>You have proficiency in one of the following skills of your choice: Intimidation or Persuasion.</text>
     </trait>
@@ -224,16 +317,21 @@ Weight in pounds = 175 + (2d6 × your size modifier)</text>
     <name>Simic Hybrid</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Con +2</ability>
+    <trait category="species">
       <name>Description</name>
-      <text>The Simic Combine uses magic to fuse different life forms together. In recent years, they have extended this research to humanoid subjects, magically transferring the traits of various animals into humans, elves, and vedalken. The goal of the so-called Guardian Project is to build a Simic army of superior soldiers, perfectly adapted to a variety of combat situations. These hyper-evolved specimens are called Simic hybrids, though they sometimes call themselves guardians.
-
-The Simic Combine uses magic to fuse different life forms together. In recent years, the Simic Combine has extended this research to humanoid subjects, magically transferring the traits of various animals into humans, elves, and vedalken. The goal of the Guardian Project is to build a Simic army of soldiers perfectly adapted to a variety of combat situations. These hyper-evolved specimens are called Simic hybrids, though they sometimes refer to themselves as guardians.
+      <text>The Simic Combine uses magic to fuse different life forms together. In recent years, the Simic Combine has extended this research to humanoid subjects, magically transferring the traits of various animals into humans, elves, and vedalken. The goal of the Guardian Project is to build a Simic army of soldiers perfectly adapted to a variety of combat situations. These hyper-evolved specimens are called Simic hybrids, though they sometimes refer to themselves as guardians.
 
 Source:	Guildmasters' Guide to Ravnica p. 20</text>
+    </trait>
+    <trait category="description">
+      <name>Extensive Adaptation</name>
+      <text>A hybrid's biological enhancements can change its appearance drastically, though most hybrids retain their basic physical form. All are augmented with characteristics of animals, mostly aquatic, reptilian, or amphibian creatures. These include crab claws, squid tentacles, wings or fins like those of manta rays, translucent or camouflaged skin, or shark-like maws filled with sharp teeth.
+	Hybrids are the product of Simic magic. It's not impossible for a hybrid to leave the Simic Combine and join another guild, but the Simic would consider the individual a deserter. And the new guild might never fully welcome a hybrid who could easily be a Simic spy.</text>
+    </trait>
+    <trait category="description">
+      <name>Simic Hybrid Names</name>
+      <text>A hybrid usually bears the name given by their human, elf, or vedalken parents. Some hybrids assume a new name after their transformation—a name chosen personally or by those who transformed them.</text>
     </trait>
     <trait>
       <name>Ability Score Increases</name>
@@ -251,7 +349,7 @@ Source:	Guildmasters' Guide to Ravnica p. 20</text>
       <name>Size</name>
       <text>Your size is Medium, within the normal range of your humanoid base race.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Darkvision</name>
       <text>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
     </trait>
@@ -259,11 +357,10 @@ Source:	Guildmasters' Guide to Ravnica p. 20</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and your choice of Elvish or Vedalken.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Animal Enhancement</name>
       <text>Your body has been altered to incorporate certain animal characteristics. You choose one animal enhancement now and a second enhancement at 5th level.
-
-At 1st level, choose one of the following options:
+	At 1st level, choose one of the following options:
 
 	• Manta Glide: You have ray-like fins that you can use as wings to slow your fall or allow you to glide. When you fall and aren't incapacitated, you can subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.
 
@@ -284,16 +381,31 @@ At 5th level, your body evolves further, developing new characteristics. Choose 
     <name>Vedalken</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Int 2, Wis 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Int +2, Wis +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Nothing is perfect. Vedalken not only believe this fact, they rejoice in it. Every imperfection is a chance for improvement, and progress is an endless march toward a state of perfection that can never be reached. This viewpoint leads vedalken to pursue their work with delighted enthusiasm, never deterred by setbacks and excited by every opportunity for improvement.
-
-Vedalken are tall and slender, standing almost a head taller than humans on average but weighing about the same. Their hairless skin comes in a range of shades of blue. Their eyes are darker shades of blue or violet. They lack external ears, their noses are broad and flat, and they are partially amphibious.
+	Vedalken are tall and slender, standing almost a head taller than humans on average but weighing about the same. Their hairless skin comes in a range of shades of blue. Their eyes are darker shades of blue or violet. They lack external ears, their noses are broad and flat, and they are partially amphibious.
 
 Source:	Guildmasters' Guide to Ravnica p. 21</text>
+    </trait>
+    <trait category="description">
+      <name>Cool Rationality</name>
+      <text>Despite being talkative, vedalken keep their personal lives private, and they tend to engage more with ideas than with people. They form close friendships based on mutual interests or compelling disagreements, and their interactions dwell on their thoughts about those issues rather than their feelings about them.
+	To members of other races, vedalken often seem cold, even emotionless. That assessment isn't fair—they feel emotion every bit as intensely as other folk do, but they are skilled at not displaying it. Cool rationality guides their actions, they make and follow careful plans, and they are patient enough to do nothing when the ideal outcome relies on such inaction.</text>
+    </trait>
+    <trait category="description">
+      <name>Reasoning toward Perfection</name>
+      <text>Their curious intellects and rational minds incline vedalken toward membership in the Azorius Senate, the Simic Combine, and (less often) the Izzet League. Whatever their guild affiliation, they put their intelligence to use in crafting and improving things, whether those things are laws, procedures, or magical sciences.
+	Vedalken believe that the path toward the impossible goal of perfection is paved with bricks of education, careful deliberation, and controlled experimentation. Some vedalken direct their energy toward perfecting themselves, whether by means of Simic bioengineering or through extensive study, and others concentrate on perfecting society through the careful drafting and application of laws.</text>
+    </trait>
+    <trait category="description">
+      <name>Vedalken Names</name>
+      <text>Vedalken are given names at birth, but usually choose new names for themselves as part of their transition into adulthood. They rarely use family names.
+
+Male Names: Aglar, Bellin, Dallid, Firellan, Kavin, Koplony, Lomar, Mathvan, Modar, Nebun, Nhillosh, Nitt, Otrovac, Ovlan, Pelener, Rill, Trivaz, Uldin, Yolov, Zataz
+
+Female Names: Azi, Barvisa, Brazia, Direll, Fainn, Griya, Hallia, Katrille, Kovel, Lilla, Mirela, Morai, Nedress, Ossya, Pierenn, Roya, Sestri, Triel, Uzana, Yaraghiya, Zlovol</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -305,19 +417,26 @@ Source:	Guildmasters' Guide to Ravnica p. 21</text>
     </trait>
     <trait>
       <name>Size</name>
-      <text>Tall and slender, Vedalken stand 6 to 6½ feet tall on average and usually weigh less than 200 pounds. Your size is Medium.</text>
+      <text>Tall and slender, Vedalken stand 6 to 6½ feet tall on average and usually weigh less than 200 pounds. Your size is Medium.
+
+To set your height and weight randomly, start with rolling a size modifier:
+
+Size modifier = 2d10
+Height = 5 feet + 4 inches + your size modifier in inches
+Weight in pounds = 110 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Vedalken Dispassion</name>
       <text>You have advantage on all Intelligence, Wisdom, and Charisma saving throws.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Tireless Precision</name>
-      <text>You are proficient in one of the following skills of your choice: Arcana, History, Investigation, Medicine, Performance, or Sleight of Hand.  You are also proficient with one tool of your choice.
-
-Whenever you make an ability check with the chosen skill or tool, roll a d4 and add the number rolled to the check's total.</text>
+      <text>You are proficient in one of the following skills of your choice: Arcana, History, Investigation, Medicine, Performance, or Sleight of Hand. You are also proficient with one tool of your choice.
+	Whenever you make an ability check with the chosen skill or tool, roll a d4 and add the number rolled to the check's total.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Partially Amphibious</name>
       <text>By absorbing oxygen through your skin, you can breathe underwater for up to 1 hour. Once you've reached that limit, you can't use this trait again until you finish a long rest.</text>
     </trait>

@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <!-- The Frostgauntlet -->
   <monster>
@@ -15,13 +15,16 @@
     <int>13</int>
     <wis>14</wis>
     <cha>11</cha>
+    <save/>
+    <skill/>
+    <passive>12</passive>
+    <languages>the languages it knew in life</languages>
+    <cr>2</cr>
+    <vulnerable/>
     <resist>acid, cold, fire, necrotic, thunder; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>cold, lightning, poison</immune>
     <conditionImmune>exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>12</passive>
-    <languages>the languages it knew in life</languages>
-    <cr>2</cr>
     <trait>
       <name>Consume Life</name>
       <text>As a bonus action, the will-o'-wisp can target one creature it can see within 5 feet of it that has 0 hit points and is still alive. The target must succeed on a DC 10 Constitution saving throw against this magic or die. If the target dies, the will-o'-wisp regains 10 (3d6) hit points.</text>
@@ -63,9 +66,12 @@ Undead Nature: A will-o'-wisp doesn't require air, drink, or sleep.
 
 Source:	DMDave - The Frostgauntlet</description>
     <environment>arctic, mountain</environment>
-  </monster>  <!-- Frost Wisp -->
+  </monster>
+  <!-- Frost Wisp -->
   <monster>
     <name>Polar Werebear</name>
+    <sortname>Werebear, Polar</sortname>
+    <ancestry>Werebear</ancestry>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>chaotic evil</alignment>
@@ -78,13 +84,16 @@ Source:	DMDave - The Frostgauntlet</description>
     <int>11</int>
     <wis>12</wis>
     <cha>12</cha>
+    <save/>
     <skill>Perception +7</skill>
-    <resist>cold</resist>
-    <immune>bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</immune>
-    <senses/>
     <passive>17</passive>
     <languages>Common (can't speak in bear form)</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune>bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</immune>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Shapechanger</name>
       <text>The werebear can use its action to polymorph into a Large bear-humanoid hybrid or into a Large bear, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</text>
@@ -132,7 +141,8 @@ Werebear: The character gains a Strength of 19 if his or her score isn't already
 
 Source:	DMDave - The Frostgauntlet</description>
     <environment>arctic, mountain</environment>
-  </monster>  <!-- Polar Werebear -->
+  </monster>
+  <!-- Polar Werebear -->
   <!-- Lost Castle of Dreams -->
   <monster>
     <name>Zeek, The Chicken Lich</name>
@@ -150,19 +160,18 @@ Source:	DMDave - The Frostgauntlet</description>
     <cha>16</cha>
     <save>Int +9, Wis +6</save>
     <skill>Arcana +13, History +13</skill>
-    <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
-    <senses/>
     <passive>12</passive>
     <languages>any six languages</languages>
     <cr>12</cr>
+    <vulnerable/>
+    <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>The archmage has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -182,15 +191,22 @@ Source:	DMDave - The Frostgauntlet</description>
 
 *The archmage casts these spells on itself before combat.</text>
     </trait>
-    <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
     <slots>0,4,3,3,3,3,1,1,1,1</slots>
+    <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>What Does Zeek Want? Ultimately, Zeek wants to be left alone to his own devices. Sometimes, his needs cause trouble—for example, he may require the blood of a virgin to complete a spell. And he's been known to accidentally open doors to the Other here and there. This events draw attention to adventurers.
 
 Source:	DMDave - Lost Castle of Dreams</description>
     <environment/>
-  </monster>  <!-- Zeek, The Chicken Lich -->
+  </monster>
+  <!-- Zeek, The Chicken Lich -->
   <monster>
     <name>Chicken Disciple</name>
+    <sortname>Chicken, Disciple</sortname>
+    <ancestry>Chicken</ancestry>
     <size>T</size>
     <type>beast</type>
     <alignment>lawful evil</alignment>
@@ -205,14 +221,14 @@ Source:	DMDave - Lost Castle of Dreams</description>
     <cha>11</cha>
     <save>Int +6, Wis +4</save>
     <skill>Arcana +6, History +6</skill>
-    <senses/>
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>6</cr>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:
@@ -224,15 +240,21 @@ Source:	DMDave - Lost Castle of Dreams</description>
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
     <slots>0,4,3,3,3,1</slots>
+    <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>What Do Zeek's Henchchickens Want? Overall, most of Zeek's henchchickens are okay with their current predicament. After all, the work is good and there's plenty of seeds to go around. However, some do long to become human again.
 
 Source:	DMDave - Lost Castle of Dreams</description>
     <environment/>
-  </monster>  <!-- Chicken Disciple -->
+  </monster>
+  <!-- Chicken Disciple -->
   <monster>
     <name>Zeek's Guardian</name>
+    <sortname>Guardian, Zeek's</sortname>
     <size>T</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -245,10 +267,16 @@ Source:	DMDave - Lost Castle of Dreams</description>
     <int>10</int>
     <wis>10</wis>
     <cha>4</cha>
-    <senses>darkvision 30 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>0</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 30 ft.</senses>
     <trait>
       <name>Keen Smell</name>
       <text>The chicken has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -261,11 +289,13 @@ Source:	DMDave - Lost Castle of Dreams</description>
 
 Source:	DMDave - Lost Castle of Dreams</description>
     <environment/>
-  </monster>  <!-- Zeek's Chicken Guardian -->
+  </monster>
+  <!-- Zeek's Chicken Guardian -->
   <monster>
     <name>Swarm of Zeek's Guardians</name>
+    <sortname>Guardian, Zeek's Swarm</sortname>
     <size>M</size>
-    <type>swarm of Medium beasts</type>
+    <type>swarm of medium beasts</type>
     <alignment>Unaligned</alignment>
     <ac>10</ac>
     <hp>24 (7d8-7)</hp>
@@ -276,12 +306,16 @@ Source:	DMDave - Lost Castle of Dreams</description>
     <int>10</int>
     <wis>10</wis>
     <cha>3</cha>
-    <resist>bludgeoning, piercing, slashing</resist>
-    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
-    <senses>darkvision 30 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>1/4</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>darkvision 30 ft.</senses>
     <trait>
       <name>Keen Smell</name>
       <text>The swarm has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -303,5 +337,6 @@ What Do Zeek's Henchchickens Want? Overall, most of Zeek's henchchickens are oka
 
 Source:	DMDave - Lost Castle of Dreams</description>
     <environment/>
-  </monster>  <!-- Swarm of Zeek's Chicken Guardians -->
+  </monster>
+  <!-- Swarm of Zeek's Chicken Guardians -->
 </compendium>

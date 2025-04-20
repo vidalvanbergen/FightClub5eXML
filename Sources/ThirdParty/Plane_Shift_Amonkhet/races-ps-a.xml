@@ -1,17 +1,15 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <race>
     <name>Aven, Hawk-Headed</name>
     <size>M</size>
     <speed>25</speed>
-    <ability>Dex 2, Wis 2</ability>
+    <ability>Dex +2, Wis +2</ability>
     <proficiency>Perception</proficiency>
-    <spellAbility/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Aven have humanlike bodies, arms, and legs, along with birdlike wings and heads. Two distinct varieties of aven are found in Naktamun. One has the head of a hawk or similar bird of prey, with short wings allowing fast flight. The other variety has the head of an ibis atop a long neck, with wide, angular wings better suited to soaring. All aven have lean bodies with feathers extending from their heads down to their shoulders.
-
-Aven delight in flying above their foes, using their superior mobility to confound and outpace their opponents. They love soaring through the sky as well, though the Hekma limits their altitude. Like all people of Naktamun, they are grateful for the Hekma's protective magic, of course. But they keenly anticipate the hour when the God-Pharaoh will return and dissolve the veil, letting them fly without limit in the afterlife.
+	Aven delight in flying above their foes, using their superior mobility to confound and outpace their opponents. They love soaring through the sky as well, though the Hekma limits their altitude. Like all people of Naktamun, they are grateful for the Hekma's protective magic, of course. But they keenly anticipate the hour when the God-Pharaoh will return and dissolve the veil, letting them fly without limit in the afterlife.
 
 Following the example of Oketra, hawkheaded aven often focus on the techniques of long-range combat. Most prefer javelins, but some are skilled with bows, spears, and throwing axes.
 
@@ -29,11 +27,11 @@ Source:	Plane Shift: Amonkhet p. 16 (Third Party)</text>
       <name>Size</name>
       <text>Aven stand from 5 to 6 feet tall, but their bodies are slender and their bones are partially hollow to facilitate their flight. Your size is Medium.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Flight</name>
       <text>You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for encumbrance, you can't use your flying speed if you are encumbered.)</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Hawkeyed</name>
       <text>You have proficiency in the Perception skill. In addition, attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</text>
     </trait>
@@ -46,14 +44,11 @@ Source:	Plane Shift: Amonkhet p. 16 (Third Party)</text>
     <name>Aven, Ibis-Headed</name>
     <size>M</size>
     <speed>25</speed>
-    <ability>Dex 2, Int 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Dex +2, Int +1</ability>
+    <trait category="description">
       <name>Description</name>
       <text>Aven have humanlike bodies, arms, and legs, along with birdlike wings and heads. Two distinct varieties of aven are found in Naktamun. One has the head of a hawk or similar bird of prey, with short wings allowing fast flight. The other variety has the head of an ibis atop a long neck, with wide, angular wings better suited to soaring. All aven have lean bodies with feathers extending from their heads down to their shoulders.
-
-Aven delight in flying above their foes, using their superior mobility to confound and outpace their opponents. They love soaring through the sky as well, though the Hekma limits their altitude. Like all people of Naktamun, they are grateful for the Hekma's protective magic, of course. But they keenly anticipate the hour when the God-Pharaoh will return and dissolve the veil, letting them fly without limit in the afterlife.
+	Aven delight in flying above their foes, using their superior mobility to confound and outpace their opponents. They love soaring through the sky as well, though the Hekma limits their altitude. Like all people of Naktamun, they are grateful for the Hekma's protective magic, of course. But they keenly anticipate the hour when the God-Pharaoh will return and dissolve the veil, letting them fly without limit in the afterlife.
 
 A majority of ibis-headed aven, drawn to the teachings of Kefnet, specialize in spellcasting. They take great pride in all the qualities they share with the god of knowledge—not just their avian heads, but their quick wit, self-confidence, cunning, and spellcasting prowess.
 
@@ -71,11 +66,11 @@ Source:	Plane Shift: Amonkhet p. 16 (Third Party)</text>
       <name>Size</name>
       <text>Aven stand from 5 to 6 feet tall, but their bodies are slender and their bones are partially hollow to facilitate their flight. Your size is Medium.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Flight</name>
       <text>You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for encumbrance, you can't use your flying speed if you are encumbered.)</text>
     </trait>
-    <trait>
+    <trait category="subspecies">
       <name>Kefnet's Blessing</name>
       <text>You can add half your proficiency bonus, rounded down, to any Intelligence check you make that doesn't already include your proficiency bonus.</text>
     </trait>
@@ -88,10 +83,7 @@ Source:	Plane Shift: Amonkhet p. 16 (Third Party)</text>
     <name>Human (Amonkhet)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability/>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that's why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.
 
@@ -118,12 +110,14 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 2d10
 Height = 4 feet + 8 inches + your size modifier in inches
 Weight in pounds = 110 + (2d4 × your size modifier)</text>
+      <roll description="Size Modifier">2d10</roll>
+      <roll description="Weight Modifier">2d4</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Skills</name>
       <text>You gain proficiency in one skill of your choice.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Feat</name>
       <text>You gain one feat of your choice.</text>
     </trait>
@@ -136,14 +130,12 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
     <name>Khenra</name>
     <size>M</size>
     <speed>35</speed>
-    <ability>Dex 2, Str 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Dex +2, Str +1</ability>
+    <weapons>longsword, spear, javelin</weapons>
+    <trait category="description">
       <name>Description</name>
       <text>The khenra of Amonkhet are tall and lean, with graceful bodies and heads that strongly resemble jackals. Their snouts are long and sharp, and their angular ears rise straight above their heads. Their bodies are covered in dark, sleek hair that ranges from the brown of the desert sands to ebony black. Despite their sharp teeth, they consider biting to be an uncouth and unworthy combat tactic.
-
-Nearly every khenra is born a fraternal or identical twin, and a pair of khenra twins forms an extremely close emotional bond unknown to most other residents of Amonkhet. The death of one twin in training or the trials causes a tremendous shock to the survivor, who typically grows more aggressive and foolhardy in battle. The rare khenra who are born without twins are believed to have killed their siblings in the womb, and are thus viewed as natural-born initiates, sure to achieve a glorified death in the Trial of Zeal.
+	Nearly every khenra is born a fraternal or identical twin, and a pair of khenra twins forms an extremely close emotional bond unknown to most other residents of Amonkhet. The death of one twin in training or the trials causes a tremendous shock to the survivor, who typically grows more aggressive and foolhardy in battle. The rare khenra who are born without twins are believed to have killed their siblings in the womb, and are thus viewed as natural-born initiates, sure to achieve a glorified death in the Trial of Zeal.
 
 Source:	Plane Shift: Amonkhet p. 17 (Third Party)</text>
     </trait>
@@ -159,11 +151,11 @@ Source:	Plane Shift: Amonkhet p. 17 (Third Party)</text>
       <name>Size</name>
       <text>Khenra have similar builds to humans. Your size is Medium.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Khenra Weapon Training</name>
       <text>You have proficiency with the khopesh (longsword), spear, and javelin.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Khenra Twins</name>
       <text>If your twin is alive and you can see your twin, whenever you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. If your twin is dead (or if you were born without a twin), you can't be frightened.</text>
     </trait>
@@ -176,10 +168,9 @@ Source:	Plane Shift: Amonkhet p. 17 (Third Party)</text>
     <name>Minotaur (Amonkhet)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Con 1</ability>
+    <ability>Str +2, Con +1</ability>
     <proficiency>Intimidation</proficiency>
-    <spellAbility/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Minotaurs are barrel-chested humanoids with heads resembling those of bulls. Their horns range in size from about 1 foot long to great, curling weapons easily three times that length. They often ornament their horns with metal rings or sheathe them in metal to protect them from damage.
 
@@ -202,20 +193,22 @@ Here's how to determine your height and weight randomly, starting with rolling a
 Size modifier = 2d8
 Height = 5 feet + 4 inches + your size modifier in inches
 Weight in pounds = 175 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Natural Weapon</name>
       <text>You can use your horns as a natural weapon to make unarmed strikes. If you hit with your horns, you deal bludgeoning damage equal to 1d6 + your Strength modifier.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Menacing</name>
       <text>You gain proficiency in the Intimidation skill.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Relentless Endurance</name>
       <text>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Savage Attacks</name>
       <text>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</text>
     </trait>
@@ -228,10 +221,8 @@ Weight in pounds = 175 + (2d6 × your size modifier)</text>
     <name>Naga</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Con 2, Int 1</ability>
-    <proficiency/>
-    <spellAbility/>
-    <trait>
+    <ability>Con +2, Int +1</ability>
+    <trait category="species">
       <name>Description</name>
       <text>Naga resemble enormous snakes with shoulders, arms, and a torso that resembles a humanoid form. They typically hold their heads and torsos off the ground while moving, but they can increase their speed by lowering their bodies and using their hands for extra propulsion. They adorn their torsos with armor, jewelry, and a vague nod toward the clothing worn by other races. Male naga have broad hoods, wider than their shoulders, while females have narrower hoods and longer faces.
 
@@ -249,23 +240,21 @@ Source:	Plane Shift: Amonkhet p. 21 (Third Party)</text>
       <name>Size</name>
       <text>Naga stand about 5 feet tall when upright, but the total length of their bodies, head to tail, ranges from 10 to as much as 20 feet. Your size is Medium.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Speed Burst</name>
       <text>By lowering your body to the ground and propelling yourself with your arms, you can move more quickly for a time. As a bonus action on your turn, if you have both hands free, you can increase your walking speed by 5 feet until the end of your turn.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Natural Weapons</name>
       <text>Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes.
-
-If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 1d4 poison damage.
-
-If you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and the target is grappled (escape DC 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is restrained, and you can't constrict another target.</text>
+	If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 1d4 poison damage.
+	If you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and the target is grappled (escape DC 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is restrained, and you can't constrict another target.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Poison Immunity</name>
       <text>You are immune to poison damage and can't be poisoned.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Poison Affinity</name>
       <text>You gain proficiency with the poisoner's kit.</text>
     </trait>

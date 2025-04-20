@@ -6,10 +6,8 @@
     <components>(1 Insanity Point, +1 point per 5 feet added to cone size)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>As a bonus action, you can generate a glowing, bioluminescent substance. This secretion illuminates an area within 5 feet with dim light and leaves a luminous trail wherever you move. After 8 hours, the mutation ends, and the emission fades entirely.
-
-You can prematurely end this mutation to discharge a larger, slick amount of secretion over a 15-foot cone on the ground, rendering it as difficult terrain. All creatures within this area must pass a Dexterity saving throw or fall prone. A creature that either enters or ends its turn in this area must also make the Dexterity saving throw. The area stays illuminated and slippery for 8 hours.
-
-You can augment the size of the cone, up to a maximum of +25 feet, gaining 1 extra Insanity Point for every additional 5 feet. Your total Insanity Points cannot exceed the limit when enlarging the area. Also, you cannot use this power if you are at your Insanity Point maximum.
+	You can prematurely end this mutation to discharge a larger, slick amount of secretion over a 15-foot cone on the ground, rendering it as difficult terrain. All creatures within this area must pass a Dexterity saving throw or fall prone. A creature that either enters or ends its turn in this area must also make the Dexterity saving throw. The area stays illuminated and slippery for 8 hours.
+	You can augment the size of the cone, up to a maximum of +25 feet, gaining 1 extra Insanity Point for every additional 5 feet. Your total Insanity Points cannot exceed the limit when enlarging the area. Also, you cannot use this power if you are at your Insanity Point maximum.
 
 Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
   </spell>
@@ -19,13 +17,13 @@ Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
     <components>(1 Insanity Point, +1 per extra point of damage (see below))</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>Before rolling for an attack, you can, as a free action, infuse your weapons with dark energy. Until the start of your next turn, your next successful attack deals an additional 1d6 necrotic damage. Before the attack roll, you can choose to gain extra Insanity Points to bolster this damage, as long as the total points gained per use of this mutation do not exceed your madwalker level. For each extra Insanity Point you gain, add 1 to the necrotic damage roll. The total Insanity Points gained cannot exceed your current Insanity Point limit, except when using this mutation without gaining extra points.
-
-For instance, a 3rd-level madwalker using this power can gain 1 Insanity Point to deal an extra 1d6 necrotic damage, 2 points to deal 1d6+1, or 3 points to deal 1d6+2. However, she couldn't gain 4 points, as it would exceed her level. If the current Insanity Point total is 10 and the limit is 12, she can only gain 1 or 2 points on this power. Once she reaches 12 points, she can still use this power (+1d6) but can no longer increase its damage.
+	For instance, a 3rd-level madwalker using this power can gain 1 Insanity Point to deal an extra 1d6 necrotic damage, 2 points to deal 1d6+1, or 3 points to deal 1d6+2. However, she couldn't gain 4 points, as it would exceed her level. If the current Insanity Point total is 10 and the limit is 12, she can only gain 1 or 2 points on this power. Once she reaches 12 points, she can still use this power (+1d6) but can no longer increase its damage.
 
 Note: This ability enables a madwalker to rapidly elevate her insanity level if she wishes to reach the Penumbral Shape sooner.
 
 Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
-    <roll>1d6</roll>
+    <roll description="Necrotic Damage">1d6</roll>
+    <roll description="Necrotic Damage">1d6</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Elastic Limbs (HB)</name>
@@ -35,7 +33,7 @@ Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
     <text>With a bonus action, you can distort your limbs, elongating them. For the next 10 minutes, your melee attack reach increases by 5 feet, and your base walking speed increases by 10 feet. If you take bludgeoning damage, you may use your reaction to end this effect and reduce the damage by 2d8.
 
 Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
-    <roll>2d8</roll>
+    <roll description="Damage Reduction">2d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Horrid Tentacle (HB)</name>
@@ -55,7 +53,7 @@ Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
 	• The tentacle cannot wield a shield.
 
 Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
-    <roll>1d10</roll>
+    <roll description="Bludgeoning Damage">1d10</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Penumbral Echoes (HB)</name>
@@ -65,7 +63,7 @@ Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
     <text>With a bonus action, you can manipulate your vocal cords for 1 minute, granting you the ability to emit sounds otherwise impossible to replicate. You can mimic any sound you've heard, be it from creatures (voices, grunts, growls) or objects (hammer clang, door creak, drops falling). A creature hearing the sound can attempt a DC 18 Wisdom (Insight) check to identify it as an imitation. With an action, you can end this mutation and release a frightful roar that resonates across a 10-foot radius. Each creature within range must succeed on a Wisdom saving throw or suffer 2d4 thunder damage and be frightened for 1 minute. An affected creature must attempt a new Wisdom saving throw at the end of each of its turns. Upon success, the effect ceases and the creature becomes immune to it for the next 24 hours.
 
 Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
-    <roll>2d4</roll>
+    <roll description="Thunder Damage">2d4</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Penumbral Gaze (HB)</name>
@@ -73,8 +71,7 @@ Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
     <components>(1 Insanity Point)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>With a bonus action, you can channel penumbral energy through your eyes, causing them to appear large and ghostly white. For 1 hour, you have the advantage on Wisdom (Perception) checks that rely on vision. Additionally, you gain darkvision with a range of 60 feet, or double the range if you already have darkvision.
-
-With an action, you can end these effects and direct a force blast toward a creature. Make a ranged attack roll against a target within 60 feet of you using your Dexterity modifier and proficiency bonus. On a hit, the target takes 3d6 force damage.
+	With an action, you can end these effects and direct a force blast toward a creature. Make a ranged attack roll against a target within 60 feet of you using your Dexterity modifier and proficiency bonus. On a hit, the target takes 3d6 force damage.
 
 Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
     <roll>3d6</roll>
@@ -85,8 +82,7 @@ Source:	Player's Guide to Tanares p. 150 (Homebrew)</text>
     <components>(1 Insanity Point)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>With a bonus action, you can bend penumbral energy to conjure a small portal, enabling your hands to interact with distant locations. Until the end of your turn, you can manipulate objects or creatures up to 30 feet away and transport small items.
-
-While this mutation is active, you can make melee attacks against targets within 30 feet of you. These attacks ignore cover, and you add your Wisdom modifier to the attack rolls.
+	While this mutation is active, you can make melee attacks against targets within 30 feet of you. These attacks ignore cover, and you add your Wisdom modifier to the attack rolls.
 
 Source:	Player's Guide to Tanares p. 151 (Homebrew)</text>
   </spell>
@@ -130,7 +126,7 @@ Source:	Player's Guide to Tanares p. 151 (Homebrew)</text>
 With your action, you unleash a surge of psychic power against a creature you can see within 60 feet of you, dealing 3d8 psychic damage. The target makes an Intelligence saving throw to reduce the damage by half. On a fail, the target also has disadvantage on the next saving throw it makes until the end of your next turn.
 
 Source:	Player's Guide to Tanares p. 152 (Homebrew)</text>
-    <roll>3d8</roll>
+    <roll description="Psychic Damage">3d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Psychic Bond (HB)</name>
@@ -140,11 +136,9 @@ Source:	Player's Guide to Tanares p. 152 (Homebrew)</text>
     <text>Madness Trail: Nightmare's Augury Trail
 
 As a bonus action, you can establish a telepathic bond with an ally within 120 feet of you. The link lasts for 1 hour or until the creature moves beyond range. This bond allows you to communicate with the chosen creature as though engaged in normal conversation. Furthermore, for the duration of the link, both can use the Help action on Intelligence ability checks made even at a distance.
-
-Alternatively, this mutation can be used against a hostile creature to access its surface thoughts. The target must succeed on a Wisdom saving throw; otherwise, you discern its emotional state, and it has disadvantage on all attacks against you until your the start of next turn.
+	Alternatively, this mutation can be used against a hostile creature to access its surface thoughts. The target must succeed on a Wisdom saving throw; otherwise, you discern its emotional state, and it has disadvantage on all attacks against you until your the start of next turn.
 
 Source:	Player's Guide to Tanares p. 152 (Homebrew)</text>
-    <roll>3d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Amphibious Skin (HB)</name>
@@ -152,8 +146,7 @@ Source:	Player's Guide to Tanares p. 152 (Homebrew)</text>
     <components>(2 Insanity Point)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>With an action, you can modify your skin to make it slippery, changing your base AC to 13 + your Dexterity modifier. This grants you advantage on ability checks and saving throws to escape the grappled condition.
-
-Additionally, you grow gills on your neck that allow you to breathe underwater, and your limbs are adapted to provide a swimming speed equal to your base walking speed. These effects last for 8 hours.
+	Additionally, you grow gills on your neck that allow you to breathe underwater, and your limbs are adapted to provide a swimming speed equal to your base walking speed. These effects last for 8 hours.
 
 Source:	Player's Guide to Tanares p. 152 (Homebrew)</text>
   </spell>
@@ -164,13 +157,11 @@ Source:	Player's Guide to Tanares p. 152 (Homebrew)</text>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>With an action, you can alter your physical appearance for the next 8 hours. You can assume the form of any humanoid creature within your size category. Other attributes, such as your voice, scent, and mannerisms, remain the same. A creature must succeed on a DC 18 Intelligence (Investigation)
 check to discern that your appearance is a disguise.
-
-If you assume the form of a creature that has charmed or frightened another one, the affected creature is also considered charmed or frightened by you while you maintain this form or until it sees through your disguise.
-
-Alternatively, you may use this mutation to enhance your body, granting you 2d6 temporary hit points for 1 minute.
+	If you assume the form of a creature that has charmed or frightened another one, the affected creature is also considered charmed or frightened by you while you maintain this form or until it sees through your disguise.
+	Alternatively, you may use this mutation to enhance your body, granting you 2d6 temporary hit points for 1 minute.
 
 Source:	Player's Guide to Tanares p. 152 (Homebrew)</text>
-    <roll>2d6</roll>
+    <roll description="Temporary Hit Points">2d6</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Penumbral Leap (HB)</name>
@@ -178,8 +169,7 @@ Source:	Player's Guide to Tanares p. 152 (Homebrew)</text>
     <components>(2 Insanity Point)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>As a bonus action, you can disappear into the Penumbral Plane and move instantly, reappearing in a space you can see up to 30 feet away.
-
-Alternatively, you can use the Penumbral Leap to get a brief glimpse of the Penumbra from your current position in the Material Plane. Make a Wisdom (Perception) check to gather information about the penumbral environment, creatures, and any other pertinent details you can glean at a quick glance, based on the DC set by the GM.
+	Alternatively, you can use the Penumbral Leap to get a brief glimpse of the Penumbra from your current position in the Material Plane. Make a Wisdom (Perception) check to gather information about the penumbral environment, creatures, and any other pertinent details you can glean at a quick glance, based on the DC set by the GM.
 
 Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
   </spell>
@@ -189,14 +179,10 @@ Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
     <components>(2 Insanity Point)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>As an action, you can create two illusionary copies of yourself made of penumbral energy. They occupy the same space as you and move with you for 1 minute, mirroring your every action and randomly shifting positions around your body, making them indistinguishable from you. For the duration of this mutation, each time a creature targets you with an attack, roll a d20 to determine whether the attack instead targets one of your clones. With two clones, you must roll an 8 or higher. With one clone, you must roll an 11 or higher.
-
-A clone's AC equals 10 + your Dexterity modifier. If an attack hits a clone, it is destroyed.
-
-If a creature adjacent to you is attacked, you can take a reaction to confuse the attacker with one of your clones and impose disadvantage on the attack roll, destroying the clone.
-
-These are the only ways to destroy a clone, as it ignores all damage and effects.
-
-Creatures that don't rely on sight or can see through illusions (such as truesight) are unaffected by this mutation.
+	A clone's AC equals 10 + your Dexterity modifier. If an attack hits a clone, it is destroyed.
+	If a creature adjacent to you is attacked, you can take a reaction to confuse the attacker with one of your clones and impose disadvantage on the attack roll, destroying the clone.
+	These are the only ways to destroy a clone, as it ignores all damage and effects.
+	Creatures that don't rely on sight or can see through illusions (such as truesight) are unaffected by this mutation.
 
 Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
   </spell>
@@ -206,11 +192,10 @@ Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
     <components>(2 Insanity Point)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>With a bonus action, for the next 1 minute, you can distort and enhance your muscles and tendons, giving your legs exceptional strength and flexibility. Your long jump covers a distance equal to your walking speed, and your high jump covers a distance equal to half your walking speed. While this mutation is active, you have advantage on Dexterity (Acrobatics) and Strength (Athletics) checks involving jumps.
-
-Alternatively, before making a melee weapon attack, you can use all your leg strength to end this Mutation and augment the damage. On a hit, your attack deals an extra 2d8 damage of the same type of the weapon.
+	Alternatively, before making a melee weapon attack, you can use all your leg strength to end this Mutation and augment the damage. On a hit, your attack deals an extra 2d8 damage of the same type of the weapon.
 
 Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
-    <roll>2d8</roll>
+    <roll description="Extra Damage">2d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Pain Toxin (HB)</name>
@@ -233,7 +218,7 @@ Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
 As an action, you unleash a blast of venom in a 20-foot cone. Any creature within the cone must make a Constitution saving throw, suffering 3d10 poison damage on a failed save, or half as much damage on a successful one.
 
 Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
-    <roll>3d10</roll>
+    <roll description="Poison Damage">3d10</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Mind Drain (HB)</name>
@@ -245,7 +230,7 @@ Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
 As an action, you try to touch a creature, making a melee attack roll. On a hit, you deal 5d8 psychic damage and regain hit points equal to half the damage dealt. If your target is grappled, your touch attack automatically hits.
 
 Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
-    <roll>5d8</roll>
+    <roll description="Psychic Damage">5d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Psychic Weapon (HB)</name>
@@ -257,7 +242,7 @@ Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
 When you hit a target with a melee attack, you can activate this mutation to deal an extra 2d6 psychic damage to it. Additionally, until the end of your next turn, the affected creature has disadvantage on any saving throw against the charmed or frightened conditions.
 
 Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
-    <roll>2d6</roll>
+    <roll description="Psychic Damage">2d6</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Aberrant Gaze (HB)</name>
@@ -267,7 +252,6 @@ Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
     <text>As a bonus action, multiple eyes sprout all over your body, enhancing your vision for 1 minute. During this time, you see in all directions, cannot be surprised, gain advantage on Wisdom (Perception) checks related to sight, and receive a +2 bonus to your AC. Additionally, you can use an action to focus your eyes on a creature within 30 feet of you. The target must succeed on a Wisdom saving throw or be restrained for 1 minute. An affected creature can repeat the saving throw at the end of its turns, ending the effect on a success. Using this action ends the mutation.
 
 Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
-    <roll>2d6</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Aberrant Spines (HB)</name>
@@ -275,14 +259,12 @@ Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
     <components>(3 Insanity Points)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>As a bonus action, you manipulate your bone structure to sprout spikes from your skin. For 1 minute, these spines can be used as light weapons, with the finesse and thrown properties (range 20/60), dealing 1d10 piercing damage. Upon hitting a creature, it must succeed on a Constitution saving throw or its speed is halved. At the start of each turn, the creature can attempt another saving throw to negate this effect for that turn.
-
-If the creature is near a wall or large object when hit, it becomes pinned to that surface, receiving the restrained condition. It can make a Strength saving throw at the start of each turn to free itself. Removing a spine requires an action and inflicts 1d8 slashing damage, but a DC 18 Wisdom
-(Medicine) check can avoid this damage.
-
-Additionally, you can launch spines into a wall or steep surface to form handholds, granting advantage on Strength (Athletics) checks for climbing. After a minute, the effect ends, and any remaining spines disintegrate.
+	If the creature is near a wall or large object when hit, it becomes pinned to that surface, receiving the restrained condition. It can make a Strength saving throw at the start of each turn to free itself. Removing a spine requires an action and inflicts 1d8 slashing damage, but a DC 18 Wisdom (Medicine) check can avoid this damage.
+	Additionally, you can launch spines into a wall or steep surface to form handholds, granting advantage on Strength (Athletics) checks for climbing. After a minute, the effect ends, and any remaining spines disintegrate.
 
 Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
-    <roll>1d10</roll>
+    <roll description="Piercing Damage">1d10</roll>
+    <roll description="Slashing Damage">1d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Interplanar Vortex (HB)</name>
@@ -292,7 +274,7 @@ Source:	Player's Guide to Tanares p. 153 (Homebrew)</text>
     <text>As an action, you form a void portal under a creature within 60 feet of you. The creature must make a Dexterity saving throw. If it fails, it plummets into the portal and suffers 6d10 necrotic damage from the penumbral energies within before being ejected against the ground by another portal that appears 30 feet above a chosen point on the ground within range, taking falling damage and landing prone. Any other creature at the landing point must also make a Dexterity saving throw or suffer the same falling damage and prone condition. If successful, it avoids the damage and becomes prone. Alternatively, you can control the harmful energies to allow an ally to pass through the portal to another one you create within 60 feet. In this case, the ally must succeed on a Constitution saving throw to avoid the necrotic damage, halving it on a failed save.
 
 Source:	Player's Guide to Tanares p. 154 (Homebrew)</text>
-    <roll>6d10</roll>
+    <roll description="Necrotic Damage">6d10</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Shadow Control (HB)</name>
@@ -302,7 +284,7 @@ Source:	Player's Guide to Tanares p. 154 (Homebrew)</text>
     <text>With a bonus action, you can use your shadow to attempt to paralyze a creature up to 30 feet away. The creature must succeed on a Dexterity saving throw or be paralyzed for 1 minute. To maintain this effect, you must forfeit your actions, reactions, and movement, and can only use bonus actions. You cannot take damage, or the effect ends immediately. At the start of each turn, the paralyzed creature can make a Wisdom saving throw to end the effect. During this time, you can use your bonus action to create a shadowy tentacle that extends up to 5 feet from the paralyzed creature and attacks. The tentacle deals 2d6 necrotic damage on a hit, reducing the creature's maximum hit points until it finishes a long rest.
 
 Source:	Player's Guide to Tanares p. 154 (Homebrew)</text>
-    <roll>2d6</roll>
+    <roll description="Necrotic Damage">2d6</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Volatile Mutation (HB)</name>
@@ -312,7 +294,7 @@ Source:	Player's Guide to Tanares p. 154 (Homebrew)</text>
     <text>As a bonus action, you can alter your body, causing your muscles to swell and acid-filled pustules to form on your skin. For 1 minute, every attack you suffer triggers a 10-foot cone of acid in the direction of the attack. Each creature within this cone takes 1d6 acid damage. Additionally, during this period, you gain resistance to acid damage and have advantage on Charisma (Intimidation) checks.
 
 Source:	Player's Guide to Tanares p. 154 (Homebrew)</text>
-    <roll>1d6</roll>
+    <roll description="Acid Damage">1d6</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Arachnid Legs (HB)</name>
@@ -324,7 +306,8 @@ Source:	Player's Guide to Tanares p. 154 (Homebrew)</text>
 You sprout four spider-like legs from your back that last for 1 minute, enhancing your speed by 10 feet. Their sharp and durable nature allows you to use them as weapons that deal 1d8 slashing damage. On a hit, the target must make a Constitution saving throw. On a failure, the target takes an extra 1d8 poison damage and becomes poisoned. In addition, you can use your bonus action to make an extra attack with one of the spider legs.
 
 Source:	Player's Guide to Tanares p. 154 (Homebrew)</text>
-    <roll>1d8</roll>
+    <roll description="Slashing Damage">1d8</roll>
+    <roll description="Poison Damage">1d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Venomous Saliva (HB)</name>
@@ -336,7 +319,7 @@ Source:	Player's Guide to Tanares p. 154 (Homebrew)</text>
 As a bonus action, you can spit venom at a creature within 15 feet of you. The creature must succeed on a Constitution saving throw or take 3d12 poison damage.
 
 Source:	Player's Guide to Tanares p. 155 (Homebrew)</text>
-    <roll>3d12</roll>
+    <roll description="Poison Damage">3d12</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Telepathic Mindlink (HB)</name>
@@ -359,7 +342,7 @@ Source:	Player's Guide to Tanares p. 155 (Homebrew)</text>
 Using your action, you emit mental pulses that affect all creatures within 15 feet of you. Each affected creature must make a Wisdom saving throw. On a failure, it suffers severe headaches, taking 6d6 psychic damage and falling prone from the pain. On a successful save, it takes half damage and remains upright.
 
 Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
-    <roll>6d6</roll>
+    <roll description="Psychic Damage">6d6</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Assassin's Stain (HB)</name>
@@ -369,7 +352,7 @@ Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
     <text>Using your bonus action, you can mark an enemy up to 30 feet away with penumbral energy, causing an extra 1d8 necrotic damage each time you hit this enemy with an attack over the next minute. Only one enemy can bear this mark at a time.
 
 Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
-    <roll>1d8</roll>
+    <roll description="Necrotic Damage">1d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Bat Parts (HB)</name>
@@ -377,10 +360,8 @@ Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
     <components>(4 Insanity Points)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>As an action, you can take on the qualities of a penumbral bat, gaining a set of distortive wings that provide a flying speed of 30 feet, blindsight within a 60-foot radius, and clawed feet capable of grabbing objects and creatures up to one size larger than yours.
-
-While flying, you can use your bonus action to make a proficient melee weapon attack to grab a target on a hit, enabling you to carry items or creatures weighing up to 45 times your Strength score without penalties to your speed, or weighing above that to a maximum of 90 times your Strength score, but your speed is halved.
-
-This transformation lasts 10 minutes, and you can opt to extend its duration for an additional 10 minutes by gaining 3 more Insanity Points. If you're in the air when the effect ends and you don't extend it, you fall immediately.
+	While flying, you can use your bonus action to make a proficient melee weapon attack to grab a target on a hit, enabling you to carry items or creatures weighing up to 45 times your Strength score without penalties to your speed, or weighing above that to a maximum of 90 times your Strength score, but your speed is halved.
+	This transformation lasts 10 minutes, and you can opt to extend its duration for an additional 10 minutes by gaining 3 more Insanity Points. If you're in the air when the effect ends and you don't extend it, you fall immediately.
 
 Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
   </spell>
@@ -392,7 +373,7 @@ Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
     <text>With a bonus action, you charge your held weapons with penumbral energy. For the following minute, your next successful attack deals an extra 2d8 necrotic damage. Additionally, the target must succeed on a Constitution saving throw or become incapacitated for 1 minute, being able to make a new saving throw at the end of each of its turns to end this condition.
 
 Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
-    <roll>2d8</roll>
+    <roll description="Necrotic Damage">2d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Penumbral Eruption (HB)</name>
@@ -402,7 +383,8 @@ Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
     <text>As an action, you manipulate penumbral energies to create two portals up to 30 feet apart. An eruption of penumbral energy streaks between these portals, forcing any creature within a 10-foot wide line extending the distance between the portals to make a Dexterity saving throw. On a failure, they suffer 4d8 necrotic damage and 4d8 force damage, taking half as much damage on a successful save. The portals vanish at the end of the turn.
 
 Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
-    <roll>4d8</roll>
+    <roll description="Necrotic Damage">4d8</roll>
+    <roll description="Force Damage">4d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Penumbral Fog (HB)</name>
@@ -412,7 +394,7 @@ Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
     <text>With an action, you can amplify the effects of the Penumbral Plane on the material world, creating a 20-foot radius sphere of fog centered on a point up to 60 feet away from you. All creatures within this zone, except you, must make a Constitution saving throw or suffer 3d6 psychic damage. The area remains heavily obscured to all creatures except you for 10 minutes.
 
 Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
-    <roll>3d6</roll>
+    <roll description="Psychic Damage">3d6</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Allergenic Spores (HB)</name>
@@ -424,7 +406,7 @@ Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
 As a bonus action, you emit a cloud of toxic spores, extending up to 10 feet in all directions. Any creature within the area must succeed on a Constitution saving throw or suffer 2d6 poison damage and become poisoned, taking half damage and avoiding the poisoned condition on a successful save.
 
 Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
-    <roll>2d6</roll>
+    <roll description="Poison Damage">2d6</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Pheromone Spray (HB)</name>
@@ -434,8 +416,7 @@ Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
     <text>Madness Trail: Aberrant Arachnid Trail
 
 As an action, you alter your glands to produce potent pheromones that radiate up to 60 feet around you for the next hour. Any humanoid creature that enters or starts its turn in this area must make a Constitution saving throw. Creatures engaged in combat with you have advantage on this saving throw.
-
-Those who fail are charmed by you, viewing you as a friendly acquaintance, while those who succeed are unaffected. Creatures immune to poison or those that don't need to breathe automatically succeed. Winds of moderate or greater speed disperse your pheromones, negating this effect.
+	Those who fail are charmed by you, viewing you as a friendly acquaintance, while those who succeed are unaffected. Creatures immune to poison or those that don't need to breathe automatically succeed. Winds of moderate or greater speed disperse your pheromones, negating this effect.
 
 Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
   </spell>
@@ -447,10 +428,10 @@ Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
     <text>Madness Trail: Nightmare's Augury Trail
 
 As a bonus action, you can manipulate objects up to 30 feet away from you, provided their total weight doesn't exceed 30 times your Wisdom score. If an object isn't worn or carried, you can move it up to 30 feet in any direction. Worn or carried items require the owner to fail a Strength saving throw for you to move them. Your telekinetic control also allows you to handle small objects delicately, open containers, retrieve or store items, or pour out the contents of a vial. This control lasts up to 10 minutes.
-
-Alternatively, as an action, you can use your telekinesis to hurl a creature up to one size larger than you up to 30 feet away in any direction of your choosing. If this creature collides with a solid structure or another creature, it suffers 6d10 bludgeoning damage and falls prone. The creature it collides with can make a Dexterity saving throw to take only half damage and to avoid falling prone.
+	Alternatively, as an action, you can use your telekinesis to hurl a creature up to one size larger than you up to 30 feet away in any direction of your choosing. If this creature collides with a solid structure or another creature, it suffers 6d10 bludgeoning damage and falls prone. The creature it collides with can make a Dexterity saving throw to take only half damage and to avoid falling prone.
 
 Source:	Player's Guide to Tanares p. 156 (Homebrew)</text>
+    <roll description="Bludgeoning Damage">6d10</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Penumbral Attraction (HB)</name>
@@ -469,10 +450,10 @@ Source:	Player's Guide to Tanares p. 157 (Homebrew)</text>
     <components>(5 Insanity Points)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>As a bonus action, you can sprout four tentacles from your back that last for 1 minute or until you retract them with another bonus action. You can use your action to attack with them, making four attacks, one with each tentacle. They have a 10-foot reach, use either your Strength or Dexterity for the attack and damage rolls, and deal 3d4 bludgeoning damage per hit.
-
-When a creature enters a space within reach of a tentacle, you can lash out with an immediate attack (as a free action) up to four times until the start of your next turn. Successful hits can be used to grapple the target, automatically dealing damage at the start of each of its turns. As an action, a grappled creature can attempt to escape with a successful Strength (Athletics) or Dexterity (Acrobatics) check against a DC 20. A grappling tentacle cannot attack.
+	When a creature enters a space within reach of a tentacle, you can lash out with an immediate attack (as a free action) up to four times until the start of your next turn. Successful hits can be used to grapple the target, automatically dealing damage at the start of each of its turns. As an action, a grappled creature can attempt to escape with a successful Strength (Athletics) or Dexterity (Acrobatics) check against a DC 20. A grappling tentacle cannot attack.
 
 Source:	Player's Guide to Tanares p. 157 (Homebrew)</text>
+    <roll description="Bludgeoning Damage">3d4</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: In a Blink of an Eye (HB)</name>
@@ -489,12 +470,12 @@ Source:	Player's Guide to Tanares p. 157 (Homebrew)</text>
     <components>(5 Insanity Points)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>You contort your facial muscles grotesquely, your jaw reconfiguring into a fanged maw capable of tearing a creature apart. Upon invoking this mutation, make a proficient melee weapon attack against a creature. On a hit, you bite the creature, dealing 7d8 slashing damage and 7d8 necrotic damage, and causing a bleeding effect.
-
-The bleeding creature takes 1d10 necrotic damage at the start of each of its turns and can attempt a Constitution saving throw at the end of each of its turns to staunch the bleeding. If your bite damage reduces a Medium or smaller creature to 0 hit points, you can consume it with a bonus action, earning temporary hit points equal to half the bite damage. These temporary hit points last for 1 hour.
+	The bleeding creature takes 1d10 necrotic damage at the start of each of its turns and can attempt a Constitution saving throw at the end of each of its turns to staunch the bleeding. If your bite damage reduces a Medium or smaller creature to 0 hit points, you can consume it with a bonus action, earning temporary hit points equal to half the bite damage. These temporary hit points last for 1 hour.
 
 Source:	Player's Guide to Tanares p. 157 (Homebrew)</text>
-    <roll>7d8</roll>
-    <roll>1d10</roll>
+    <roll description="Slashing Damage">7d8</roll>
+    <roll description="Necrotic Damage">7d8</roll>
+    <roll description="Necrotic Damage">1d10</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Nightmare Whirlpool (HB)</name>
@@ -502,11 +483,10 @@ Source:	Player's Guide to Tanares p. 157 (Homebrew)</text>
     <components>(5 Insanity Points)</components>
     <classes>Madwalker (Aberrant Mutations)</classes>
     <text>By activating this power, you invade the minds of all creatures within 15 feet of you, creating a mental link with them that persists for 1 minute. Each targeted creature must succeed on a Wisdom saving throw, or suffer 6d8 psychic damage and perceive you and your allies as incarnations of their deepest fears due to memories you implant. They remain frightened of you and your allies for the duration.
-
-Alternatively, you can forgo the damage to implant different types of memories in those who fail their saving throw. Consult with your GM for potential uses. Affected creatures can attempt a new saving throw at the end of each of their turns, ending the effect on a success.
+	Alternatively, you can forgo the damage to implant different types of memories in those who fail their saving throw. Consult with your GM for potential uses. Affected creatures can attempt a new saving throw at the end of each of their turns, ending the effect on a success.
 
 Source:	Player's Guide to Tanares p. 158 (Homebrew)</text>
-    <roll>6d8</roll>
+    <roll description="Psychic Damage">6d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Parasitism (HB)</name>
@@ -516,7 +496,7 @@ Source:	Player's Guide to Tanares p. 158 (Homebrew)</text>
     <text>With a bonus action, you attempt to attach yourself onto a nearby creature, forcing it to make a Constitution saving throw. If it fails, you transform and graft yourself onto them, draining their vitality. The afflicted creature suffers 10d10 necrotic damage at the start of each of its turns, and you recover hit points equal to half the inflicted damage. The target's speed is reduced by 10 feet, and it can use an action to try to pry you off, making a Strength saving throw. On a success, you are dislodged and fall prone in an adjacent space. While leeching, you are unable to take actions, bonus actions, or reactions, and you are immobile, sticking to your host. Should the creature's hit points reach zero, your parasitic grip ceases, and you appear in an unoccupied adjacent space. At the start of your turn, while leeching, you can gain an extra Insanity Point to voluntarily detach and stand in a nearby unoccupied space.
 
 Source:	Player's Guide to Tanares p. 158 (Homebrew)</text>
-    <roll>10d10</roll>
+    <roll description="Necrotic Damage">10d10</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Penumbra Blade (HB)</name>
@@ -526,7 +506,7 @@ Source:	Player's Guide to Tanares p. 158 (Homebrew)</text>
     <text>While making an attack, you can invoke this mutation to infuse your weapon with potent necrotic energy drawn from the Penumbral Plane. All attacks you make until the end of your turn deal an extra 4d6 necrotic damage.
 
 Source:	Player's Guide to Tanares p. 158 (Homebrew)</text>
-    <roll>4d6</roll>
+    <roll description="Necrotic Damage">4d6</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Exoskeleton (HB)</name>
@@ -536,8 +516,7 @@ Source:	Player's Guide to Tanares p. 158 (Homebrew)</text>
     <text>Madness Trail: Aberrant Arachnid Trail
 
 You use your action to create a penumbral energy exoskeleton that covers your body. For the next 10 minutes, all incoming damage (except psychic) is dealt to the exoskeleton's hit points first. It has 80 hit points and shares your damage resistances and immunities.
-
-If an attack dismantle your exoskeleton and its damage surpasses its residual hit points, the remaining damage is transferred to you.
+	If an attack dismantle your exoskeleton and its damage surpasses its residual hit points, the remaining damage is transferred to you.
 
 Source:	Player's Guide to Tanares p. 158 (Homebrew)</text>
   </spell>
@@ -549,11 +528,10 @@ Source:	Player's Guide to Tanares p. 158 (Homebrew)</text>
     <text>Madness Trail: Aberrant Arachnid Trail
 
 As an action, you adapt your body to emit a flood of webs at a creature up to one size larger than you within 20 feet of you. The creature must succeed on a Dexterity saving throw or become restrained in the web cocoon, taking 3d8 bludgeoning damage at the end of each of its turns. The creature can be attacked as usual, with no effects on the cocoon.
-
-It remains trapped for up to 1 minute or until the cocoon is destroyed, which has an AC of 15, 30 hit points, and has vulnerability to fire damage.
+	It remains trapped for up to 1 minute or until the cocoon is destroyed, which has an AC of 15, 30 hit points, and has vulnerability to fire damage.
 
 Source:	Player's Guide to Tanares p. 159 (Homebrew)</text>
-    <roll>3d8</roll>
+    <roll description="Bludgeoning Damage">3d8</roll>
   </spell>
   <spell>
     <name>Aberrant Mutation: Eye of Augury (HB)</name>
@@ -574,10 +552,9 @@ Source:	Player's Guide to Tanares p. 159 (Homebrew)</text>
     <text>Madness Trail: Nightmare's Augury Trail
 
 As an action, you create a penumbral projection of yourself and launch it at a target within 30 feet of you. The target must succeed on a Wisdom saving throw or take 4d6 psychic damage and become stunned for 1 minute. The projection then moves to another creature within 20 feet of you and imposes the same conditions, repeating up to 4 times. If a creature succeeds on the saving throw, the effect ends.
-
-A creature affected by this ability can make the saving throw again at the end of its turns, ending the effect on a success.
+	A creature affected by this ability can make the saving throw again at the end of its turns, ending the effect on a success.
 
 Source:	Player's Guide to Tanares p. 159 (Homebrew)</text>
-    <roll>4d6</roll>
+    <roll description="Psychic Damage">4d6</roll>
   </spell>
 </compendium>

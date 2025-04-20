@@ -1,9 +1,15 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <class>
     <name>Paladin</name>
-
-    <!-- Oath of the Stonearm (Homebrew) -->
+    <autolevel level="15">
+      <counter>
+        <name>Stone Defender</name>
+        <value>1</value>
+        <reset>L</reset>
+      </counter>
+    </autolevel>
+    <!-- Sacred Oath: Oath of the Stonearm (HB) -->
     <autolevel level="3">
       <feature optional="YES">
         <name>Sacred Oath: Oath of the Stonearm (HB)</name>
@@ -11,17 +17,13 @@
 
 Tenets of the Stonearm:
 
-Protect the City:
-Whether as a member of the city's fighting forces or an outbound agent, you must always work in the best interests of the city.
+Protect the City. Whether as a member of the city's fighting forces or an outbound agent, you must always work in the best interests of the city.
 
-Bring Justice to the Lawless:
-Those who seek to unravel the foundations of civilization must be stopped.
+Bring Justice to the Lawless. Those who seek to unravel the foundations of civilization must be stopped.
 
-Fight until the Eighth:
-Nothing short of death will stop you from your mission.
+Fight until the Eighth. Nothing short of death will stop you from your mission.
 
-Respect the Land:
-The earth is your final home. You must respect and honor for it as you would your own parents.
+Respect the Land. The earth is your final home. You must respect and honor for it as you would your own parents.
 
 Oath Spells:
 You gain oath spells at the paladin levels listed.
@@ -35,45 +37,46 @@ Paladin Level | Spells
 17th | animate objects, passwall
 
 Source:	DMDave - Paladin: Oath of the Stonearm</text>
-      </feature>      <!-- Sacred Oath: Oath of the Stonearm (Homebrew) -->
+      </feature>
       <feature optional="YES">
-        <name>Oath of the Stonearm (HB): Channel Divinity: Blessing of the Earth</name>
+        <name>Channel Divinity: Blessing of the Earth (Oath of the Stonearm (HB))</name>
         <text>As an action, you can grant yourself temporary hit points equal to 5 times your Charisma modifier (minimum of +1).
 
 Source:	DMDave - Paladin: Oath of the Stonearm</text>
-      </feature>      <!-- Channel Divinity: Blessing of the Earth (Oath of the Stonearm) -->
+      </feature>
       <feature optional="YES">
-        <name>Oath of the Stonearm (HB): Channel Divinity: Stone Blade</name>
+        <name>Channel Divinity: Stone Blade (Oath of the Stonearm (HB))</name>
         <text>As a bonus action, you can imbue one piercing or slashing weapon that you are holding with magic drawn from the earth itself. For 1 minute, the weapon you enchant counts as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage. Additionally, a living creature made of flesh that takes damage from your weapon must make a Constitution saving throw against your spell save DC. On a failed saving throw, the creature's flesh starts to harden. The creature takes one level of exhaustion. If a creature takes a sixth level of exhaustion from this feature, instead of dying, it becomes petrified.
 
 Source:	DMDave - Paladin: Oath of the Stonearm</text>
-      </feature>      <!-- Channel Divinity: Stone Blade (Oath of the Stonearm) -->
+      </feature>
     </autolevel>
     <autolevel level="7">
       <feature optional="YES">
-        <name>Oath of the Stonearm (HB): Aura of Stone</name>
+        <name>Aura of Stone (Oath of the Stonearm (HB))</name>
         <text>Starting at 7th, you exude an aura that weakens your enemies. The aura extends 10 feet from you in all directions, but not through total cover. Each creature of your choice within this aura has disadvantage on its Constitution saving throws.
-When you reach 18th level in this class, the range of the aura increases to 30 feet.
+	When you reach 18th level in this class, the range of the aura increases to 30 feet.
 
 Source:	DMDave - Paladin: Oath of the Stonearm</text>
-      </feature>      <!-- Aura of Stone (Oath of the Stonearm) -->
+      </feature>
     </autolevel>
     <autolevel level="15">
       <feature optional="YES">
-        <name>Oath of the Stonearm (HB): Stone Defender</name>
+        <name>Stone Defender (Oath of the Stonearm (HB))</name>
         <text>Starting at 15th level, you no longer have a need for mundane armor or shields. While you are not wearing armor or carrying a shield, your AC becomes 19. In addition, you can use this feature to cast the stoneskin spell without expending a spell slot. When you do, you must target yourself. After you use this feature to cast the spell, you can't do so again until you complete a long rest.
 
 Source:	DMDave - Paladin: Oath of the Stonearm</text>
-      </feature>      <!-- Stone Defender (Oath of the Stonearm) -->
+      </feature>
       <counter>
         <name>Stone Defender</name>
         <value>1</value>
         <reset>L</reset>
+        <subclass>Oath of the Stonearm (HB)</subclass>
       </counter>
     </autolevel>
     <autolevel level="20">
       <feature optional="YES">
-        <name>Oath of the Stonearm (HB): Champion of Grasta-Harrak</name>
+        <name>Champion of Grasta-Harrak (Oath of the Stonearm (HB))</name>
         <text>At 20th level, you are an avatar for the dao symbiote, which gives you the following benefits:
 
 	• When you use your Stone Defender to cast stoneskin on yourself, the duration becomes 8 hours and no longer requires concentration.
@@ -81,11 +84,9 @@ Source:	DMDave - Paladin: Oath of the Stonearm</text>
 	• When you hit a creature using your stone blade feature, the creature takes two levels of exhaustion on a failed saving throw instead of one.
 
 Source:	DMDave - Paladin: Oath of the Stonearm</text>
-      </feature>      <!-- Champion of Grasta-Harrak (Oath of the Stonearm) -->
+      </feature>
     </autolevel>
   </class>
-
-
   <spell>
     <name>Expeditious Retreat</name>
     <classes>Paladin (Stonearm (HB))</classes>

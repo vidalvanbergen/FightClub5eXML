@@ -1,17 +1,31 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <race>
     <name>Centaur (UA)</name>
     <size>M</size>
     <speed>40</speed>
-    <ability>Str 2, Wis 1</ability>
+    <ability>Str +2, Wis +1</ability>
     <proficiency>Survival</proficiency>
-    <spellAbility/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Roamers at heart, centaurs love open spaces and the freedom to travel. As much as they can, centaurs run. They race the wind, hooves thundering and tails streaming behind them.
 
 Source:	Unearthed Arcana: Centaurs Minotaurs p. 1</text>
+    </trait>
+    <trait category="description">
+      <name>Nature's Cavalry</name>
+      <text>Centaurs have humanoid upper bodies, displaying all the human variety of skin tones and features. In size, they are comparable to a human rider mounted on a horse, and they fill similar roles—as cavalry, messengers, outriders, and scouts.
+	Centaurs' ears are slightly pointed, but their faces are more wide and square than those of elves. Below the waist, they have the bodies of horses, with coats tending toward brown shades (chestnut or bay) and darker tails.</text>
+    </trait>
+    <trait category="description">
+      <name>Nature and Community</name>
+      <text>Centaurs have a strong sense of the interconnectedness of the natural world, and they celebrate family and community as microcosms of that greater connection.
+	The birth of a foal is always cause for festivities. At the same time, centaurs revere the traditions of the past, preserving old ways and keeping alive the legends of ancestral heroes. They feel a close kinship with wild animals, perhaps because of their own hybrid nature, and delight in the feeling of running alongside herds and packs of beasts.</text>
+    </trait>
+    <trait category="description">
+      <name>Centaur Names</name>
+      <text>Centaurs' given names are passed down through family lines. The name given to a new foal is typically the name of the most recently deceased family member of the same gender, keeping alive the memory—and, the centaurs believe, some shard of the spirit—of the departed.
+	Centaurs rarely use family names, but wear symbols that represent their family membership. These symbols might include graphical representations of plants or animals, printed mottos, braids and beads worn in the hair and tail, or even specific patterns of woven fabric.</text>
     </trait>
     <trait>
       <name>Age</name>
@@ -30,26 +44,32 @@ To set your height and weight randomly, start with rolling a size modifier:
 Size modifier = 1d10
 Height = 6 feet + your size modifier in inches
 Weight in pounds = 600 + (2d12 × your size modifier)</text>
+      <roll description="Size Modifier">1d10</roll>
+      <roll description="Weight Modifier">2d12</roll>
     </trait>
-    <trait>
-      <name>Creature Type: Hybrid Nature</name>
-      <text>You have two creature types: humanoid and monstrosity. You can be affected by a game effect if it works on either of your creature types.</text>
-    </trait>
-    <trait>
+    <trait category="species">
       <name>Charge</name>
       <text>If you move at least 20 feet straight toward a target and then hit it with a melee weapon attack on the same turn, roll the weapon's damage dice twice and add them together. Once you use this ability, you can't use it again until you finish a short or long rest.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hooves</name>
       <text>Your hooves are natural melee weapons, with which you're proficient. If you hit with a hoof, the target takes bludgeoning damage equal to 1d6 + your Strength modifier.</text>
+      <roll description="Bludgeoning Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Equine Build</name>
-      <text>You count as one size larger when determining your carrying capacity and the weight you can push or drag. In addition, any climb that requires hands and feet is especially difficult for you because of your hooves. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot. Finally, a Medium or smaller creature can ride on your equine back if you allow it. In such a situation, you continue to act independently, not as a controlled mount.</text>
+      <text>You count as one size larger when determining your carrying capacity and the weight you can push or drag.
+	In addition, any climb that requires hands and feet is especially difficult for you because of your hooves. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.
+	Finally, a Medium or smaller creature can ride on your equine back if you allow it. In such a situation, you continue to act independently, not as a controlled mount.</text>
+      <special>Powerful Build</special>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Survivor</name>
       <text>You have proficiency in the Survival skill.</text>
+    </trait>
+    <trait category="species">
+      <name>Hybrid Nature</name>
+      <text>You have two creature types: humanoid and monstrosity. You can be affected by a game effect if it works on either of your creature types.</text>
     </trait>
     <trait>
       <name>Languages</name>
@@ -60,10 +80,9 @@ Weight in pounds = 600 + (2d12 × your size modifier)</text>
     <name>Minotaur (UA)</name>
     <size>M</size>
     <speed>30</speed>
-    <ability>Str 2, Con 1</ability>
+    <ability>Str +2, Con +1</ability>
     <proficiency>Intimidation</proficiency>
-    <spellAbility/>
-    <trait>
+    <trait category="description">
       <name>Description</name>
       <text>Minotaurs are barrel-chested humanoids with heads resembling those of bulls. Their horns range in size from about 1 foot long to great, curling weapons easily three times that length. They often ornament their horns with metal rings or sheathe them in metal to protect them from damage.
 
@@ -88,26 +107,29 @@ Here's how to determine your height and weight randomly, starting with rolling a
 Size modifier = 2d8
 Height = 5 feet + 4 inches + your size modifier in inches
 Weight in pounds = 175 + (2d6 × your size modifier)</text>
+      <roll description="Size Modifier">2d8</roll>
+      <roll description="Weight Modifier">2d6</roll>
     </trait>
-    <trait>
-      <name>Creature Type: Hybrid Nature</name>
-      <text>You have two creature types: humanoid and monstrosity. You can be affected by a game effect if it works on either of your creature types.</text>
-    </trait>
-    <trait>
+    <trait category="species">
       <name>Horns</name>
       <text>Your horns are natural melee weapons, with which you're proficient. When you hit with them, the target takes piercing damage equal to 1d6 + your Strength modifier.</text>
+      <roll description="Piercing Damage">1d6+%1</roll>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Goring Rush</name>
       <text>Immediately after you use the Dash action on your turn and move at least as far as your speed, you can make one melee attack with your horns as a bonus action.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Hammering Horns</name>
       <text>Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can attempt to shove that creature with your horns using your reaction. The creature must be no more than one size larger than you and within 5 feet of you. It must make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier. If it fails, you push it up to 5 feet away from you.</text>
     </trait>
-    <trait>
+    <trait category="species">
       <name>Menacing</name>
       <text>You have proficiency in the Intimidation skill.</text>
+    </trait>
+    <trait category="species">
+      <name>Hybrid Nature</name>
+      <text>You have two creature types: humanoid and monstrosity. You can be affected by a game effect if it works on either of your creature types.</text>
     </trait>
     <trait>
       <name>Languages</name>

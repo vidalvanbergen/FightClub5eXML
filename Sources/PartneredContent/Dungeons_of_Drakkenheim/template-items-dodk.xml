@@ -6,8 +6,7 @@
     <detail>very rare (requires attunement)</detail>
     <match>Club,Flail,Greatclub,Light Hammer,Mace,Maul,Quarterstaff,Warhammer</match>
     <text>The head of this bludgeoning weapon is made from a massive delerium crystal that crackles with arcane energies. When you hit with an attack using this weapon, the target takes an extra (3d6) necrotic damage.
-
-When you roll a 20 on an attack roll made with this weapon, it unleashes an arcane anomaly (see Dungeons of Drakkenheim). You can roll twice on the table and choose either result.
+	When you roll a 20 on an attack roll made with this weapon, it unleashes an arcane anomaly (see Dungeons of Drakkenheim). You can roll twice on the table and choose either result.
 
 Arcane Anomalies:
 1d20 | Arcane Anomalies
@@ -32,7 +31,8 @@ Arcane Anomalies:
 19 | Time speeds up for one randomly determined creature within 60 feet of the anomaly. They are affected by the haste spell for 1 minute.
 20 | A bowl of flowers and a very surprised aquatic mammal appear 100 feet in the air. "Oh no, not again..." thinks the flowers.</text>
     <source>Dungeons of Drakkenheim p. 230</source>
-    <roll>1d20</roll>
+    <roll description="Necrotic Damage">3d6</roll>
+    <roll description="Arcane Anomalies">1d20</roll>
   </itemtemplate>
 
   <!-- Delerium-Forged Blade -->
@@ -41,16 +41,13 @@ Arcane Anomalies:
     <detail>rare</detail>
     <match>Double-Bladed Scimitar,Greatsword,Longsword,Rapier,Scimitar,Shortsword</match>
     <text>This sword has a small delerium sliver encased in glass and set in the hilt like a gemstone. The blade is made of meteoric iron infused with delerium dust, which causes it to softly glow with octarine light.
-
-You gain a +2 bonus to attack and damage rolls made with this weapon.
-
-When you make an attack with this weapon, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls. In addition, you can use this weapon as a spellcasting focus.
-
-When you roll a 20 on an attack roll made with this weapon against a humanoid, the humanoid must succeed on a DC 15 Constitution saving throw or take an extra (3d6) necrotic damage and gain one level of contamination.</text>
+	You gain a +2 bonus to attack and damage rolls made with this weapon.
+	When you make an attack with this weapon, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls. In addition, you can use this weapon as a spellcasting focus.
+	When you roll a 20 on an attack roll made with this weapon against a humanoid, the humanoid must succeed on a DC 15 Constitution saving throw or take an extra (3d6) necrotic damage and gain one level of contamination.</text>
     <source>Dungeons of Drakkenheim p. 230</source>
-    <modifier category="bonus">Melee Attack +2</modifier>
-    <modifier category="bonus">Melee Damage +2</modifier>
-    <roll>3d6</roll>
+    <modifier category="bonus">Weapon Attack +2</modifier>
+    <modifier category="bonus">Weapon Damage +2</modifier>
+    <roll description="Necrotic Damage">3d6</roll>
   </itemtemplate>
 
   <!-- Hardened Delerium-Tipped Arrows -->
@@ -60,7 +57,7 @@ When you roll a 20 on an attack roll made with this weapon against a humanoid, t
     <type>A</type>
     <text>This piece of ammunition has a refined delerium arrowtip. A creature hit by a ranged attack using one of these arrows takes an extra (3d6) necrotic damage and must succeed on a DC 15 Constitution saving throw or gain one level of contamination. Once it hits a target, the delerium tip crumbles to dust and the arrow becomes nonmagical.</text>
     <source>Dungeons of Drakkenheim p. 230</source>
-    <roll>3d6</roll>
+    <roll description="Necrotic Damage">3d6</roll>
   </itemtemplate>
 
   <!-- Starcrossed Bow -->
@@ -69,10 +66,9 @@ When you roll a 20 on an attack roll made with this weapon against a humanoid, t
     <detail>rare (requires attunement)</detail>
     <match>Crossbow,Hand Crossbow,Heavy Crossbow,light Crossbow,Light Repeating Crossbow,Longbow,Shortbow</match>
     <text>This magical bow or crossbow has an intricate arrangement of delerium shards and focusing lenses along the stock where a bolt would normally be loaded, and instead magically conjures its own projectiles. You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of piercing damage and ignores the ammunition and loading properties.
-
-The weapon has 3 charges, which are regained each day at dawn. When you hit with a ranged attack using it, you can cause the bolt to explode in a brilliant flash of light. The target you hit and any creatures within 10 feet of it must succeed on a DC 15 Constitution saving throw or become blinded until the end of your next turn.</text>
+	The weapon has 3 charges, which are regained each day at dawn. When you hit with a ranged attack using it, you can cause the bolt to explode in a brilliant flash of light. The target you hit and any creatures within 10 feet of it must succeed on a DC 15 Constitution saving throw or become blinded until the end of your next turn.</text>
     <source>Dungeons of Drakkenheim p. 232</source>
-    <modifier category="bonus">Ranged Attacks +2</modifier>
-    <modifier category="bonus">Ranged Damage +2</modifier>
+    <modifier category="bonus">Weapon Attacks +2</modifier>
+    <modifier category="bonus">Weapon Damage +2</modifier>
   </itemtemplate>
 </compendium>

@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
-  <!-- Castle District -->
   <monster>
     <name>Sin, Pride</name>
     <size>L</size>
@@ -17,13 +16,14 @@
     <cha>22</cha>
     <save>Int +13, Cha +13</save>
     <skill>Deception +13, Intimidation +13, Perception +11, Persuasion +13</skill>
+    <passive>21</passive>
+    <languages>Common, Infernal, telepathy 120 ft.</languages>
+    <cr>23</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered</resist>
     <immune>poison</immune>
     <conditionImmune>charmed, frightened, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>21</passive>
-    <languages>Common, Infernal, telepathy 120 ft.</languages>
-    <cr>23</cr>
     <trait>
       <name>Aura of Pride</name>
       <text>Every creature that isn't charmed within 60 ft. of Pride must make a successful DC 19 Wisdom saving throw or take 3 (1d6) necrotic damage.</text>
@@ -94,7 +94,7 @@ Successful Spinster. Most of the upper-class have their clothes made by Pride. T
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 8 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Sin, Pride -->
+  </monster>
   <monster>
     <name>Virtue, Humility</name>
     <size>M</size>
@@ -111,12 +111,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 8 (Homebrew)</description>
     <cha>16</cha>
     <save>Con +13, Wis +14, Cha +10</save>
     <skill>Insight +14, Perception +14</skill>
-    <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-    <conditionImmune>charmed, exhausted, frightened</conditionImmune>
-    <senses>truesight 120 ft.</senses>
     <passive>24</passive>
     <languages>Celestial, telepathy 120 ft.</languages>
     <cr>23</cr>
+    <vulnerable/>
+    <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune>charmed, exhausted, frightened</conditionImmune>
+    <senses>truesight 120 ft.</senses>
     <trait>
       <name>Divine Awareness</name>
       <text>Humility knows if she hears a lie.</text>
@@ -195,9 +197,10 @@ Down To Earth. Legends say that Humility once had wings but he gave them up to l
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 11 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Virtue, Humility -->
+  </monster>
   <monster>
     <name>Anti-Paladin</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>lawful evil</alignment>
@@ -212,10 +215,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 11 (Homebrew)</description>
     <cha>19</cha>
     <save>Wis +6, Cha +8</save>
     <skill>Athletics +8, Deception +8, Intimidation +8, Perception +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>16</passive>
     <languages>Common, Infernal, and two others</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Aura of Darkness</name>
       <text>Any undead creatures within 60 ft. of the anti-paladin add +1 to their saving throws.</text>
@@ -263,9 +270,10 @@ Sinister Steed. All anti-paladins have a loyal mount at their disposal. Many of 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 12 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Anti-Paladin -->
+  </monster>
   <monster>
     <name>Jester</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any chaotic alignment</alignment>
@@ -278,11 +286,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 12 (Homebrew)</description>
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
+    <save/>
     <skill>Acrobatics +7, Deception +6, Perception +5, Performance +6, Persuasion +6</skill>
-    <senses/>
     <passive>15</passive>
     <languages>Common, Thieves' cant, and one other</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Evasion</name>
       <text>If the jester is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the jester instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</text>
@@ -345,9 +358,12 @@ Skilled Scoundrel. Jesters are extremely talented rogues and can be recruited by
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 13 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Jester -->
+  </monster>
   <monster>
     <name>Dwarf Ambassador</name>
+    <sortname>Dwarf, Ambassador</sortname>
+    <ancestry>Dwarf</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>lawful good</alignment>
@@ -360,11 +376,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 13 (Homebrew)</description>
     <int>12</int>
     <wis>15</wis>
     <cha>14</cha>
+    <save/>
     <skill>Insight +4, Perception +4, Persuasion +4</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Common, Dwarvish, and two others</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
       <text>The dwarf has advantage on saving throws against poison, and it has resistance against poison damage.</text>
@@ -407,9 +428,12 @@ Homesick Hero. Although they enjoy their duties, most of these homesick diplomat
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 14 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Dwarf Ambassador -->
+  </monster>
   <monster>
     <name>Elf Ambassador</name>
+    <sortname>Elf, Ambassador</sortname>
+    <ancestry>Elf</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (high elf)</type>
     <alignment>chaotic good</alignment>
@@ -422,11 +446,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 14 (Homebrew)</description>
     <int>13</int>
     <wis>16</wis>
     <cha>16</cha>
+    <save/>
     <skill>History +3, Insight +5, Perception +5, Persuasion +5</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Common, Elvish, Druidic, and two others</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Elf Cantrip</name>
       <text>The elf knows the message cantrip and Intelligence is the spellcasting ability for it.</text>
@@ -468,7 +497,7 @@ Magnificent Mounts. These ambassadors often ride splendid riding horses or giant
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 15 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Elf Ambassador -->
+  </monster>
   <monster>
     <name>Fallen King</name>
     <size>M</size>
@@ -485,13 +514,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 15 (Homebrew)</description>
     <cha>16</cha>
     <save>Wis +8, Cha +7</save>
     <skill>Deception +7, Insight +8, Intimidation +7, Persuasion +7</skill>
-    <resist>bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-    <immune>necrotic, poison</immune>
-    <conditionImmune> charmed, frightened, petrified, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>the languages it knew in life</languages>
     <cr>11</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, frightened, petrified, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Stench</name>
       <text>Any creature that starts its turn within 5 feet of the fallen king must succeed on a DC 17 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the fallen king's Stench for 24 hours.</text>
@@ -534,9 +564,10 @@ Undead Nature. A fallen king doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 16 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Fallen King -->
+  </monster>
   <monster>
     <name>Gatekeeper</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>neutral evil</alignment>
@@ -549,11 +580,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 16 (Homebrew)</description>
     <int>12</int>
     <wis>12</wis>
     <cha>13</cha>
+    <save/>
     <skill>History +3, Perception +3, Persuasion +3</skill>
-    <senses/>
     <passive>13</passive>
     <languages>Common and two others</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Give up the Chase</name>
       <text>The gatekeeper's speed is halved if they have to chase someone.</text>
@@ -590,9 +626,10 @@ Stout Sentinels. The old men usually spend much of their time sitting around and
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 17 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Gatekeeper -->
+  </monster>
   <monster>
     <name>Friendly Ghost</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>lawful good</alignment>
@@ -605,13 +642,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 17 (Homebrew)</description>
     <int>12</int>
     <wis>15</wis>
     <cha>17</cha>
+    <save/>
+    <skill/>
+    <passive>12</passive>
+    <languages>the languages it knew in life</languages>
+    <cr>5</cr>
+    <vulnerable/>
     <resist>acid, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>cold, poison, radiant</immune>
     <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>12</passive>
-    <languages>the languages it knew in life</languages>
-    <cr>5</cr>
     <trait>
       <name>Aura of Protection</name>
       <text>Any non-evil creature within 10 ft. of the ghost adds +2 to their AC.</text>
@@ -647,9 +687,11 @@ Undead Nature. A friendly ghost doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 18 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Friendly Ghost -->
+  </monster>
   <monster>
-    <name>Griffon, Armored</name>
+    <name>Armored Griffon</name>
+    <sortname>Griffon, Armored</sortname>
+    <ancestry>Griffon</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>lawful good</alignment>
@@ -662,11 +704,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 18 (Homebrew)</description>
     <int>12</int>
     <wis>16</wis>
     <cha>10</cha>
+    <save/>
     <skill>Perception +7</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>17</passive>
     <languages>—</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Sight</name>
       <text>The griffon has advantage on Wisdom (Perception) checks that rely on sight.</text>
@@ -699,9 +746,12 @@ Loyal Mount. Armored griffons often serve as mounts to knights, paladins, and ev
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 19 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Griffon, Armored -->
+  </monster>
   <monster>
     <name>Halfling Ambassador</name>
+    <sortname>Halfling, Ambassador</sortname>
+    <ancestry>Halfling</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (halfling)</type>
     <alignment>lawful good</alignment>
@@ -714,11 +764,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 19 (Homebrew)</description>
     <int>15</int>
     <wis>12</wis>
     <cha>16</cha>
+    <save/>
     <skill>History +4, Perception +3, Persuasion +5, Performance +5</skill>
-    <senses/>
     <passive>13</passive>
     <languages>Common, Halfling, and two others</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>The halfling has advantage on saving throws against being frightened.</text>
@@ -758,9 +813,11 @@ Quick Thinker. The ambassador is quite witty and thinks well on his little feet.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 20 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Halfling Ambassador -->
+  </monster>
   <monster>
     <name>Ogre Baron</name>
+    <sortname>Ogre, Baron</sortname>
+    <ancestry>Ogre</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>chaotic evil</alignment>
@@ -775,10 +832,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 20 (Homebrew)</description>
     <cha>18</cha>
     <save>Con +6, Cha +7</save>
     <skill>Deception +7, Intimidation +7, Persuasion +7</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>9</passive>
     <languages>Common (but can barely read it)</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Aggressive</name>
       <text>As a bonus action, the ogre can move up to its speed toward a hostile creature that it can see.</text>
@@ -827,9 +888,12 @@ Angry Army. This ogre has a very committed group of angry, outraged followers. H
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 21 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Ogre Baron -->
+  </monster>
   <monster>
     <name>Royal Knight</name>
+    <sortname>Knight, Royal</sortname>
+    <ancestry>Knight</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any lawful alignment</alignment>
@@ -844,10 +908,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 21 (Homebrew)</description>
     <cha>16</cha>
     <save>Con +6, Wis +4</save>
     <skill>Intimidation +6, Perception +4</skill>
-    <senses/>
     <passive>14</passive>
     <languages>Common and one other</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>The knight has advantage on saving throws against being frightened.</text>
@@ -898,9 +966,10 @@ Royal Mounts. Royal knights ride many kinds of mounts; riding horses, warhorses,
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 22 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Royal Knight -->
+  </monster>
   <monster>
     <name>Royal Pain</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>neutral evil</alignment>
@@ -913,11 +982,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 22 (Homebrew)</description>
     <int>12</int>
     <wis>10</wis>
     <cha>13</cha>
+    <save/>
     <skill>Investigation +3, Persuasion +3</skill>
-    <senses/>
     <passive>10</passive>
     <languages>Common and one other</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>False Privilege</name>
       <text>The royal pain makes all Charisma checks at disadvantage.</text>
@@ -958,9 +1032,10 @@ Means to an End. As long as the royal pain gets what he wants, he is briefly sat
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 23 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: Royal Pain -->
+  </monster>
   <monster>
     <name>The Sleepless Governor</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>lawful evil</alignment>
@@ -973,13 +1048,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 23 (Homebrew)</description>
     <int>16</int>
     <wis>14</wis>
     <cha>16</cha>
-    <Save>Int +7, Cha +7</Save>
+    <save>Int +7, Cha +7</save>
     <skill>Deception +7, Intimidation +7, Investigation +7, Persuasion +7</skill>
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses/>
     <passive>12</passive>
     <languages>Common and two others</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses/>
     <trait>
       <name>Cold Shoulder</name>
       <text>If anyone hits the governor with a melee attack, they take 4 (1d8) cold damage.</text>
@@ -1016,8 +1094,7 @@ Worried Workaholic. An unhealthy lifestyle has taken a toll on her. The governor
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 24 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Castle: The Sleepless Governor -->
-  <!-- Wealthy District -->
+  </monster>
   <monster>
     <name>Sin, Gluttony</name>
     <size>L</size>
@@ -1034,13 +1111,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 24 (Homebrew)</description>
     <cha>7</cha>
     <save>Con +14, Wis +11</save>
     <skill>Perception +11</skill>
+    <passive>21</passive>
+    <languages>understands Abyssal but can't speak</languages>
+    <cr>23</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, poisoned, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
-    <passive>21</passive>
-    <languages>understands Abyssal but can't speak</languages>
-    <cr>23</cr>
     <trait>
       <name>Amorphous</name>
       <text>Gluttony can move through a space as narrow as 1 inch wide without squeezing.</text>
@@ -1107,7 +1185,7 @@ Urban Sprawl. Gluttony can lay waste to entire urban settlements. Buildings and 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 27 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Sin, Gluttony -->
+  </monster>
   <monster>
     <name>Virtue, Temperance</name>
     <size>M</size>
@@ -1124,12 +1202,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 27 (Homebrew)</description>
     <cha>20</cha>
     <save>Con +13, Wis +13</save>
     <skill>Insight +13, Medicine +13, Nature +11, Perception +13, Survival +13</skill>
-    <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-    <conditionImmune>charmed, exhausted, frightened</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>23</passive>
     <languages>Celestial, telepathy 120 ft.</languages>
     <cr>23</cr>
+    <vulnerable/>
+    <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune>charmed, exhausted, frightened</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Divine Awareness</name>
       <text>Temperance knows if she hears a lie.</text>
@@ -1191,7 +1271,7 @@ Maternal Moderation. Temperance encourages everyone to moderate their appetites 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 28 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Virtue, Temperance -->
+  </monster>
   <monster>
     <name>Animated Feast</name>
     <size>L</size>
@@ -1207,12 +1287,15 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 28 (Homebrew)</description>
     <wis>5</wis>
     <cha>1</cha>
     <save>Dex +5</save>
-    <resist>poison, psychic</resist>
-    <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</conditionImmune>
-    <senses>blindsight 120 ft.</senses>
+    <skill/>
     <passive>7</passive>
     <languages>-</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist>poison, psychic</resist>
+    <immune/>
+    <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>blindsight 120 ft.</senses>
     <trait>
       <name>Antimagic Susceptibility</name>
       <text>The feast is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the feast must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</text>
@@ -1250,9 +1333,11 @@ Constructed Nature. An animated feast doesn't require air, food, drink, or sleep
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 30 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Animated Feast -->
+  </monster>
   <monster>
     <name>Cursed Coachman</name>
+    <sortname>Coachman, Cursed</sortname>
+    <ancestry>Coachman</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>unaligned</alignment>
@@ -1265,12 +1350,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 30 (Homebrew)</description>
     <int>7</int>
     <wis>10</wis>
     <cha>7</cha>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>the languages it knew in life</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Coach Trap</name>
       <text>When any good or neutral creature gets inside the coach, or is forced inside, they must make a successful DC 13 Dexterity or Strength check or become trapped inside. A creature can also attempt to make a DC 13 Strength check to force their way out. The coach can be attacked and destroyed to free trapped creatures (AC 12; hp 25; vulnerable to radiant damage; immune to necrotic, poison, or psychic damage).</text>
@@ -1300,7 +1389,7 @@ Undead Nature. A cursed coachman doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 31 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Cursed Coachman -->
+  </monster>
   <monster>
     <name>Daydream</name>
     <size>L</size>
@@ -1315,11 +1404,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 31 (Homebrew)</description>
     <int>12</int>
     <wis>14</wis>
     <cha>15</cha>
+    <save/>
     <skill>Perception +4</skill>
-    <senses/>
     <passive>14</passive>
     <languages>Understands Celestial and Common but can't speak</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Hearing</name>
       <text>The daydream has advantage on Wisdom (Perception) checks that rely on hearing.</text>
@@ -1351,7 +1445,7 @@ A Light in the Dark. They radiate a shining white light, making their presence k
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 32 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Daydream -->
+  </monster>
   <monster>
     <name>Duck of Many Things</name>
     <size>T</size>
@@ -1366,12 +1460,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 32 (Homebrew)</description>
     <int>5</int>
     <wis>9</wis>
     <cha>1</cha>
-    <resist>poison, psychic</resist>
-    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
-    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>-</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist>poison, psychic</resist>
+    <immune/>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
       <name>Antimagic Susceptibility</name>
       <text>The duck is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the duck must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</text>
@@ -1413,9 +1511,12 @@ Constructed Nature. The duck of many things doesn't require air, food, drink, or
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 33 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Duck of Many Things -->
+  </monster>
   <monster>
     <name>Faerie Godmother</name>
+    <sortname>Faerie, Godmother</sortname>
+    <ancestry>Faerie</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>fey</type>
     <alignment>lawful good</alignment>
@@ -1430,10 +1531,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 33 (Homebrew)</description>
     <cha>21</cha>
     <save>Wis +11, Cha +9</save>
     <skill>Arcana +9, Insight +11, Nature +9, Perception +11, Persuasion +9</skill>
-    <senses>darkvision 90 ft.</senses>
     <passive>21</passive>
     <languages>All</languages>
     <cr>12</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Deep Awareness</name>
       <text>The faerie godmother knows if she hears a lie.</text>
@@ -1479,9 +1584,12 @@ Fey Friend. The original home of the faerie godmother is the mysterious Feyland.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 34 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Faerie Godmother -->
+  </monster>
   <monster>
-    <name>Guard, Elite</name>
+    <name>Elite Guard</name>
+    <sortname>Guard, Elite</sortname>
+    <ancestry>Guard</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any alignment</alignment>
@@ -1494,11 +1602,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 34 (Homebrew)</description>
     <int>12</int>
     <wis>11</wis>
     <cha>10</cha>
+    <save/>
     <skill>Athletics +5, Intimidation +2, Perception +2</skill>
-    <senses/>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>The elite guard makes two attacks.</text>
@@ -1521,9 +1634,10 @@ Well-Trained. These guards have had extensive weapons training. Sometimes they a
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 35 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Guard, Elite -->
+  </monster>
   <monster>
     <name>Horse Master</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>chaotic good</alignment>
@@ -1536,11 +1650,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 35 (Homebrew)</description>
     <int>12</int>
     <wis>14</wis>
     <cha>10</cha>
+    <save/>
     <skill>Animal Handling +4, Insight +4, Nature +3, Perception +4</skill>
-    <senses/>
     <passive>14</passive>
     <languages>Common (Can't speak in horse form)</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Born to the Saddle</name>
       <text>The horse master has advantage on saving throws made to avoid falling off his mount. If he does fall off his mount and descends no more than 10 feet, he can land on his feet if he's not incapacitated. Finally, mounting or dismounting a creature costs him only 5 feet of movement, rather than half his speed.</text>
@@ -1586,9 +1705,10 @@ Home on the Range. After some time in the city, the horse master feels the need 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 36 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Horse Master -->
+  </monster>
   <monster>
     <name>Lady Hawk</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>lawful good</alignment>
@@ -1601,11 +1721,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 36 (Homebrew)</description>
     <int>12</int>
     <wis>20</wis>
     <cha>16</cha>
+    <save/>
     <skill>Insight +8, Nature +4, Perception +8, Survival +8</skill>
-    <senses/>
     <passive>18</passive>
     <languages>Common, Druidic, Primordial</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Shapechange</name>
       <text>The lady hawk can use her action to polymorph into a Small-sized hawk or back into her true form. Her statistics, other than her size and spellcasting, are the same in each form. Any equipment she is wearing or carrying is transformed. She reverts to her human form if she dies.</text>
@@ -1654,7 +1779,7 @@ Picky Eater. This shapechanger eats small portions and is very particular with r
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 37 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Lady Hawk -->
+  </monster>
   <monster>
     <name>Puppetmaster</name>
     <size>M</size>
@@ -1671,10 +1796,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 37 (Homebrew)</description>
     <cha>16</cha>
     <save>Wis +7, Cha +6</save>
     <skill>Insight +7, Perception +7, Performance +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>17</passive>
     <languages>Common and two others</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Cunning Action</name>
       <text>On each of its turns, the puppetmaster can use a bonus action to take the Dash, Disengage, or Hide action.</text>
@@ -1711,12 +1840,12 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 37 (Homebrew)</description>
     <action>
       <name>Demon Puppet Fire Breath</name>
       <text>Ranged Weapon Attack: +6 to hit, range 15/30 ft., one target. Hit: 10 (2d6 + 3) fire damage.</text>
-      <attack>Fire|6|2d6+3</attack>
+      <attack>Fire Damage|6|2d6+3</attack>
     </action>
     <action>
       <name>Devil Puppet Acid Spit</name>
       <text>Ranged Weapon Attack: +6 to hit, range 15/30 ft., one target. Hit: 10 (2d6 + 3) acid damage.</text>
-      <attack>Acid|6|2d6+3</attack>
+      <attack>Acid Damage|6|2d6+3</attack>
     </action>
     <spells>dancing lights, friends, prestidigitation, charm person, darkness, vicious mockery, hypnotic pattern, suggestion</spells>
     <description>A group of young nobles are enjoying an innocent puppet show when a blood-curdling scream cuts through the air. One of the puppets has just breathed fire on a nearby guard. As the guard burns, the crowd scatters and shouts echo in every direction. This is the work of the evil puppetmaster, one of the cruelest of the fey.
@@ -1729,7 +1858,7 @@ Master of Misfortune. The puppetmaster has many objectives, chief of which is st
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 38 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Puppetmaster -->
+  </monster>
   <monster>
     <name>Rakshasa Lord</name>
     <size>M</size>
@@ -1744,13 +1873,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 38 (Homebrew)</description>
     <int>14</int>
     <wis>18</wis>
     <cha>22</cha>
+    <save/>
     <skill>Deception +12, Insight +10, Perception +10</skill>
-    <vulnerable>piercing from magical weapons wielded by good creatures</vulnerable>
-    <immune>bludgeoning, piercing, and slashing from nonmagical weapons</immune>
-    <senses>darkvision 60 ft.</senses>
     <passive>20</passive>
     <languages>Common, Infernal</languages>
     <cr>20</cr>
+    <vulnerable>piercing from magical weapons wielded by good creatures</vulnerable>
+    <resist/>
+    <immune>bludgeoning, piercing, and slashing from nonmagical weapons</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The rakshasa's innate spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). The rakshasa can innately cast the following spells, requiring no components
@@ -1791,9 +1923,11 @@ Amazing Appetites. These fiends have enormous appetites and usually hire the bes
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 39 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Rakshasa Lord -->
+  </monster>
   <monster>
     <name>Rich Lich</name>
+    <sortname>Lich, Rich</sortname>
+    <ancestry>Lich</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>any evil alignment</alignment>
@@ -1808,13 +1942,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 39 (Homebrew)</description>
     <cha>16</cha>
     <save>Con +7, Int +10, Wis +9</save>
     <skill>Arcana +10, History +10, Insight +9, Perception +9</skill>
+    <passive>19</passive>
+    <languages>Common and six others</languages>
+    <cr>17</cr>
+    <vulnerable/>
     <resist>cold, lightning, necrotic</resist>
     <immune>poison; bludgeoning, piercing, and slashing from nonmagical weapons</immune>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>truesight 120 ft.</senses>
-    <passive>19</passive>
-    <languages>Common and six others</languages>
-    <cr>17</cr>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/Day</recharge>
@@ -1870,9 +2005,11 @@ Undead Nature. A lich doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 40 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Rich Lich -->
+  </monster>
   <monster>
     <name>Windy Hopper</name>
+    <sortname>Hopper, Windy</sortname>
+    <ancestry>Hopper</ancestry>
     <size>T</size>
     <type>fey</type>
     <alignment>chaotic neutral</alignment>
@@ -1885,11 +2022,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 40 (Homebrew)</description>
     <int>11</int>
     <wis>12</wis>
     <cha>12</cha>
+    <save/>
     <skill>Perception +3, Stealth +5, Survival +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Common, Elvish, and two others</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The windy hopper has advantage on saving throws against being charmed or frightened, and magic can't put it to sleep.</text>
@@ -1930,8 +2072,7 @@ Big Appetite. Windy hoppers are known to have huge appetites. When they're reall
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 42 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Wealthy: Windy Hopper -->
-  <!-- Temple District -->
+  </monster>
   <monster>
     <name>Sin, Wrath</name>
     <size>L</size>
@@ -1948,13 +2089,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 42 (Homebrew)</description>
     <cha>21</cha>
     <save>Con +13, Int +13, Cha +12</save>
     <skill>Athletics +14, Intimidation +12, Perception +11</skill>
+    <passive>21</passive>
+    <languages>Abyssal, telepathy 120 ft.</languages>
+    <cr>23</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>21</passive>
-    <languages>Abyssal, telepathy 120 ft.</languages>
-    <cr>23</cr>
     <trait>
       <name>Demonic Shadows</name>
       <text>Wrath darkens the area around his body in a 10-foot radius. Nonmagical light can't illuminate this area of dim light.</text>
@@ -2020,7 +2162,7 @@ Dark Steed. Wrath is often seen riding on an especially large nightmare. His min
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 44 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Sin, Wrath -->
+  </monster>
   <monster>
     <name>Virtue, Patience</name>
     <size>M</size>
@@ -2037,13 +2179,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 44 (Homebrew)</description>
     <cha>20</cha>
     <save>Dex +12, Con +13, Wis +13</save>
     <skill>Insight +13, Perception +13, Stealth +12</skill>
+    <passive>23</passive>
+    <languages>Celestial, telepathy 120 ft.</languages>
+    <cr>23</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>charmed, exhausted, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>23</passive>
-    <languages>Celestial, telepathy 120 ft.</languages>
-    <cr>23</cr>
     <trait>
       <name>Aura of Calm</name>
       <text>Any non-evil creatures within 60 feet of Patience feels a deep calmness and adds +1 to their saving throws.</text>
@@ -2113,9 +2256,12 @@ Pegasi Mount. Patience rides a gleaming white pegasus.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 47 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Virtue, Patience -->
+  </monster>
   <monster>
     <name>Cat Prince</name>
+    <sortname>Cat, Prince</sortname>
+    <ancestry>Cat</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>neutral</alignment>
@@ -2130,12 +2276,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 47 (Homebrew)</description>
     <cha>16</cha>
     <save>Dex +9, Wis +8</save>
     <skill>Acrobatics +9, Insight +8, Perception +8, Stealth +9</skill>
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 90 ft.</senses>
     <passive>18</passive>
     <languages>Common</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The cat prince's innate spellcasting ability is Wisdom (spell save DC 16). The cat prince can innately cast the following spells, requiring no components
@@ -2197,9 +2345,10 @@ Patient Prince. This prince is incredibly patient and has lived a long life. He 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 48 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Cat Prince -->
+  </monster>
   <monster>
     <name>The Cynical Sage of Old Age</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>neutral evil</alignment>
@@ -2214,10 +2363,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 48 (Homebrew)</description>
     <cha>8</cha>
     <save>Int +7, Wis +6</save>
     <skill>Arcana +7, History +7, Insight +6, Perception +6</skill>
-    <senses/>
     <passive>16</passive>
     <languages>Common and three others</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>The sage has advantage on saving throws against spells and other magical effects.</text>
@@ -2265,7 +2418,7 @@ Dark Hall. The sage lives and works in a hidden library in the Temple District. 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 49 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: The Cynical Sage of Old Age -->
+  </monster>
   <monster>
     <name>Death Wing</name>
     <size>M</size>
@@ -2280,12 +2433,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 49 (Homebrew)</description>
     <int>12</int>
     <wis>16</wis>
     <cha>10</cha>
+    <save/>
     <skill>Acrobatics +7, Perception +6, Stealth +7</skill>
-    <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>16</passive>
     <languages>Common, Abyssal, telepathy 60 ft.</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Assassinate</name>
       <text>During its first turn, the death wing has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the death wing scores against a surprised creature is a critical hit.</text>
@@ -2330,9 +2487,10 @@ Shadowy Stalker. At home in the shadows, these fiends are especially active at n
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 50) (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Death Wing -->
+  </monster>
   <monster>
     <name>Dracorian</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>lawful evil</alignment>
@@ -2347,11 +2505,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 50) (Homebrew)</description>
     <cha>11</cha>
     <save>Dex +5, Con +6, Wis +4</save>
     <skill>Insight +4, Perception +4, Stealth +5</skill>
-    <immune>lightning</immune>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Common, Draconian</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dragon Shape</name>
       <text>The dracorian can use its action to polymorph into a Large dragon, or back into its true form, which is humanoid. Its statistics, other than its size and bite attack, are the same in each form. Any equipment it is wearing or carrying is transformed. It reverts to its true form if it is killed.</text>
@@ -2388,9 +2549,12 @@ Dragon Temple. Most dracorians inhabit a large temple complex. Its numerous dung
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 51 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Dracorian -->
+  </monster>
   <monster>
     <name>Dracorian Mage</name>
+    <sortname>Dracorian, Mage</sortname>
+    <ancestry>Dracorian, Mage</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>lawful evil</alignment>
@@ -2405,11 +2569,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 51 (Homebrew)</description>
     <cha>14</cha>
     <save>Dex +6, Con +5, Wis +7</save>
     <skill>Insight +7, Perception +7, Stealth +6</skill>
-    <immune>lightning</immune>
-    <senses>darkvision 60 ft.</senses>
     <passive>17</passive>
     <languages>Common, Draconian</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dragon Shape</name>
       <text>The dracorian can use its action to polymorph into a Large dragon, or back into its true form, which is humanoid. Its statistics, other than its size and bite attack, are the same in each form. Any equipment it is wearing or carrying is transformed. It reverts to its true form if it is killed.</text>
@@ -2455,9 +2622,11 @@ Draconic Tome. A legendary draconic tome is guarded by these mages in the larges
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 52 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Dracorian Mage -->
+  </monster>
   <monster>
     <name>High Priest of Hate</name>
+    <ancestry>Priest</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>lawful evil</alignment>
@@ -2471,11 +2640,15 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 52 (Homebrew)</description>
     <wis>20</wis>
     <cha>16</cha>
     <save>Int +6, Wis +10, Cha +8</save>
-    <skill> History +6, Medicine +10, Persuasion +8, Religion +6</skill>
-    <senses/>
+    <skill>History +6, Medicine +10, Persuasion +8, Religion +6</skill>
     <passive>15</passive>
     <languages>Common and two others</languages>
     <cr>13</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Divine Eminence</name>
       <text>As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 17 (5d6) radiant damage on a hit. This benefit only lasts until the end of the next turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above the 1st (but only up to 4th level).</text>
@@ -2511,9 +2684,10 @@ Towering Temple. The headquarters for the priests is usually a large, expansive 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 53 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: High Priest of Hate -->
+  </monster>
   <monster>
     <name>Holy Avenger</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>lawful good</alignment>
@@ -2528,10 +2702,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 53 (Homebrew)</description>
     <cha>18</cha>
     <save>Con +7, Wis +7, Cha +8</save>
     <skill>Insight +7, Intimidation +8, Perception +7, Religion +4</skill>
-    <senses/>
     <passive>17</passive>
     <languages>Common, Celestial, and two others</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name> Spellcasting</name>
       <text>The holy avenger is a 14th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 16). It has the following spells
@@ -2582,7 +2760,7 @@ Legendary Sword. Their deity has armed them with the Blade of the Angels. This p
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 54 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Holy Avenger -->
+  </monster>
   <monster>
     <name>Lost Soul</name>
     <size>M</size>
@@ -2597,12 +2775,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 54 (Homebrew)</description>
     <int>12</int>
     <wis>10</wis>
     <cha>12</cha>
+    <save/>
     <skill>Perception +3, Stealth +6</skill>
-    <resist>necrotic, poison</resist>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>the languages it knew in life</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist>necrotic, poison</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Pack Tactics</name>
       <text>The lost soul has advantage on an attack roll against a creature if at least one of the lost soul's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
@@ -2635,9 +2817,12 @@ Undead Nature. A lost soul doesn't require air.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 55 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Lost Soul -->
+  </monster>
   <monster>
     <name>Mad Monk</name>
+    <sortname>Monk, Mad</sortname>
+    <ancestry>Monk</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>lawful evil</alignment>
@@ -2650,12 +2835,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 55 (Homebrew)</description>
     <int>10</int>
     <wis>16</wis>
     <cha>10</cha>
+    <save/>
     <skill>Acrobatics +7, Athletics +4, Perception +6, Religion +3</skill>
-    <resist>fire</resist>
-    <senses/>
     <passive>16</passive>
     <languages>Common and one other</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist>fire</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Martial Fury</name>
       <text>As a bonus action, the monk can make one weapon attack. If it does so, attack rolls against it have advantage until the start of its next turn.</text>
@@ -2705,9 +2894,10 @@ Hell Raisers. In combat the mad monk uses fiery weapons created by devils. Some 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 56 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Mad Monk -->
+  </monster>
   <monster>
     <name>Mystic</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any non-evil alignment</alignment>
@@ -2720,12 +2910,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 56 (Homebrew)</description>
     <int>10</int>
     <wis>16</wis>
     <cha>10</cha>
+    <save/>
     <skill>Insight +7, Nature +4, Perception +7, Religion +4</skill>
-    <resist>psychic</resist>
-    <senses/>
     <passive>17</passive>
     <languages>Common and two others, telepathy 60 ft.</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
       <text>The mystic's innate spellcasting ability is Wisdom (spell save DC 15). The mystic can innately cast the following spells, requiring no components
@@ -2779,9 +2973,10 @@ Patient Perfection. The mystic learns that their personal journey could last a l
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 57 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Mystic -->
+  </monster>
   <monster>
     <name>The Outraged</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>chaotic evil</alignment>
@@ -2794,11 +2989,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 57 (Homebrew)</description>
     <int>12</int>
     <wis>7</wis>
     <cha>9</cha>
+    <save/>
     <skill>Deception +1, Persuasion +1</skill>
-    <senses/>
     <passive>8</passive>
     <languages>Common</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Pack Tactics</name>
       <text>The outraged has advantage on an attack roll against a creature if at least one of the outraged's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
@@ -2828,9 +3028,12 @@ Becoming the Monster. What the outraged don't realize, is that they are becoming
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 58 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: The Outraged -->
+  </monster>
   <monster>
     <name>Red Robe</name>
+    <sortname>Robe, Red</sortname>
+    <ancestry>Robe</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>lawful evil</alignment>
@@ -2843,11 +3046,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 58 (Homebrew)</description>
     <int>10</int>
     <wis>12</wis>
     <cha>10</cha>
+    <save/>
     <skill>Athletics +5, Investigation +2, Perception +3</skill>
-    <senses/>
     <passive>13</passive>
     <languages>Common and one other</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Hearing and Sight</name>
       <text>The red robe has advantage on Wisdom (Perception) checks that rely on hearing or sight.</text>
@@ -2879,9 +3087,11 @@ Hate Machine. A number of red robes are in the service of the High Priest of Hat
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 59 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Red Robe -->
+  </monster>
   <monster>
     <name>Saint</name>
+    <ancestry>Saint</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>lawful good</alignment>
@@ -2896,11 +3106,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 59 (Homebrew)</description>
     <cha>16</cha>
     <save>Con +6, Wis +8</save>
     <skill>Insight +8, Perception +8, Religion +4</skill>
-    <resist>psychic</resist>
-    <senses/>
     <passive>18</passive>
     <languages>Common, Celestial, and two others</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist>psychic</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The saint's innate spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no components
@@ -2946,8 +3159,7 @@ Divine Duty. These heroes will go out of their way to help those in need. A few 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 60 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Temple: Saint -->
-  <!-- Market District -->
+  </monster>
   <monster>
     <name>Sin, Greed</name>
     <size>M</size>
@@ -2964,13 +3176,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 60 (Homebrew)</description>
     <cha>24</cha>
     <save>Con +13, Int +14, Wis +12, Cha +14</save>
     <skill>Deception +14, Intimidation +14, Investigation +14, Perception +12, Persuasion +14</skill>
+    <passive>22</passive>
+    <languages>all, telepathy 120 ft.</languages>
+    <cr>23</cr>
+    <vulnerable/>
     <resist>cold, necrotic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>22</passive>
-    <languages>all, telepathy 120 ft.</languages>
-    <cr>23</cr>
     <trait>
       <name>Corruption</name>
       <text>As a bonus action, Greed targets one creature he can see within 90 feet of him. The target must make a DC 21 Charisma saving throw. An evil creature makes the save with disadvantage. On a failed save, the target is charmed by Greed until the start of Greed's next turn. Once charmed, the devil often makes deals with creatures that he never intends to make good on. The parchment he has victims sign is worthless. On a successful save, the target becomes immune to Greed's Corruption for the next 24 hours.</text>
@@ -3048,7 +3261,7 @@ Dark Tower. This devil resides in the tallest tower in the city. Many evil merch
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 62 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Sin, Greed -->
+  </monster>
   <monster>
     <name>Virtue, Charity</name>
     <size>M</size>
@@ -3065,12 +3278,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 62 (Homebrew)</description>
     <cha>20</cha>
     <save>Con +13, Wis +14, Cha +12</save>
     <skill>Insight +14, Perception +14, Persuasion +12</skill>
-    <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-    <conditionImmune>charmed, exhausted, frightened</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>24</passive>
     <languages>all, telepathy 120 ft.</languages>
     <cr>23</cr>
+    <vulnerable/>
+    <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune>charmed, exhausted, frightened</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Charity's innate spellcasting ability is Wisdom (spell save DC 22, +14 to hit with spell attacks). She can innately cast the following spells, requiring no components
@@ -3128,7 +3343,7 @@ Ethical Market. Charity is constantly trying to influence the market by promotin
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 65 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Virtue, Charity -->
+  </monster>
   <monster>
     <name>Azer Blacksmith</name>
     <size>M</size>
@@ -3144,12 +3359,15 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 65 (Homebrew)</description>
     <wis>13</wis>
     <cha>10</cha>
     <save>Con +4</save>
-    <immune>fire, poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses/>
+    <skill/>
     <passive>11</passive>
     <languages>Common, Ignan</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>fire, poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses/>
     <trait>
       <name>Craft Armor and Weapons</name>
       <text>Given 2d4 days the azer can craft any kind of armor or weapon. However, it sells it for twice the price.</text>
@@ -3181,12 +3399,12 @@ Living Fire. An azer doesn't require food, drink, or sleep.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 66 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Azer Blacksmith -->
+  </monster>
   <monster>
     <name>Berserk Butcher</name>
     <size>M</size>
     <type>fiend (demon)</type>
-    <alignment>chaotic evil </alignment>
+    <alignment>chaotic evil</alignment>
     <ac>14 (natural armor)</ac>
     <hp>38 (7d8 + 7)</hp>
     <speed>30 ft.</speed>
@@ -3196,13 +3414,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 66 (Homebrew)</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
+    <save/>
+    <skill/>
+    <passive>8</passive>
+    <languages>Common, Abyssal</languages>
+    <cr>2</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>8</passive>
-    <languages>Common, Abyssal</languages>
-    <cr>2</cr>
     <trait>
       <name>Bargain</name>
       <text>The butcher has advantage on Charisma checks when buying or selling goods.</text>
@@ -3222,9 +3443,10 @@ Bloody Business. There are often bloody trails around the shop where this demon 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 67 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Berserk Butcher -->
+  </monster>
   <monster>
     <name>Bounty Hunter</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any alignment</alignment>
@@ -3239,10 +3461,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 67 (Homebrew)</description>
     <cha>12</cha>
     <save>Str +7, Dex +6</save>
     <skill>Acrobatics +6, Athletics +7, Insight +4, Perception +4, Stealth +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Common and one other</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Inscrutable</name>
       <text>The bounty hunter is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the bounty hunter's intentions or sincerity have disadvantage.</text>
@@ -3275,9 +3501,10 @@ Heavy Metal. Bounty hunters wear a magical suit of armor called hunter plate. Th
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 68 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Bounty Hunter -->
+  </monster>
   <monster>
     <name>Charlatan</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>neutral evil</alignment>
@@ -3290,11 +3517,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 68 (Homebrew)</description>
     <int>16</int>
     <wis>18</wis>
     <cha>16</cha>
-    <skill>Deception +5, Perception +6, Performance +5, Persuasion +5, Sleight of Hand +5, Stealth +5</skill>
-    <senses/>
+    <save/>
+    <skill>Deception +5, Perception +6, Performance +5, Persuasion +5, Sleight Of Hand +5, Stealth +5</skill>
     <passive>16</passive>
     <languages>Common and two others</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Action</name>
       <text>On each of its turns, the charlatan can use a bonus action to take the Dash, Disengage, or Hide action.</text>
@@ -3344,7 +3576,7 @@ On the Move. Most charlatans don't stay in one place for too long. They prefer t
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 69 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Charlatan -->
+  </monster>
   <monster>
     <name>Death Scribe</name>
     <size>M</size>
@@ -3359,11 +3591,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 69 (Homebrew)</description>
     <int>14</int>
     <wis>8</wis>
     <cha>14</cha>
+    <save/>
     <skill>Deception +4, History +4, Persuasion +4</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>9</passive>
     <languages>Common and one other</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The death scribe has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -3404,7 +3641,7 @@ Corrupt Guilds. Unprincipled writing guilds desperate for cheap scribes will hir
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 70 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Death Scribe -->
+  </monster>
   <monster>
     <name>Demon Barber</name>
     <size>M</size>
@@ -3420,13 +3657,15 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 70 (Homebrew)</description>
     <wis>12</wis>
     <cha>13</cha>
     <save>Dex +5, Wis +4, Cha +4</save>
+    <skill/>
+    <passive>12</passive>
+    <languages>Common, Abyssal, telepathy 120 ft.</languages>
+    <cr>6</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>12</passive>
-    <languages>Common, Abyssal, telepathy 120 ft.</languages>
-    <cr>6</cr>
     <trait>
       <name>Magic Resistance</name>
       <text>The demon has advantage on saving throws against spells and other magical effects.</text>
@@ -3457,9 +3696,10 @@ Cutting Words. A customer can suffer a horrible fate if they choose to converse 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 71 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Demon Barber -->
+  </monster>
   <monster>
     <name>Fortune Teller</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>neutral</alignment>
@@ -3474,10 +3714,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 71 (Homebrew)</description>
     <cha>14</cha>
     <save>Wis +8</save>
     <skill>Insight +8, Perception +8, Performance +5</skill>
-    <senses/>
     <passive>18</passive>
     <languages>Common and three others</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The fortune teller's innate spellcasting ability is Wisdom (spell save DC 16). The fortune teller can innately cast the following spells, requiring no components
@@ -3506,9 +3750,10 @@ Unconditional Charity. Sometimes, fortune tellers will help out those people who
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 72 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Fortune Teller -->
+  </monster>
   <monster>
     <name>Guildmaster of Greed</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>lawful evil</alignment>
@@ -3523,10 +3768,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 72 (Homebrew)</description>
     <cha>18</cha>
     <save>Int +7, Wis +6, Cha +7</save>
     <skill>Deception +7, Insight +6, Perception +6, Persuasion +7</skill>
-    <senses/>
     <passive>16</passive>
     <languages>Common and two others</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Bargain</name>
       <text>The guildmaster has advantage on Charisma checks when buying or selling goods.</text>
@@ -3564,9 +3813,10 @@ Money for Nothing. Guildmasters are obsessed with hoarding as much treasure as p
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 73 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Guildmaster of Greed -->
+  </monster>
   <monster>
     <name>Hollow Man</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>neutral evil</alignment>
@@ -3579,11 +3829,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 73 (Homebrew)</description>
     <int>13</int>
     <wis>9</wis>
     <cha>17</cha>
+    <save/>
     <skill>Deception +5, Persuasion +5, Performance +5</skill>
-    <senses/>
     <passive>9</passive>
     <languages>Common</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Opportunist</name>
       <text>The hollow man has advantage on the attack rolls of opportunity attacks.</text>
@@ -3616,9 +3871,12 @@ Fervent Following. Sometimes the lowest form of art is the most popular. This is
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 74 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Hollow Man -->
+  </monster>
   <monster>
     <name>Master Alchemist</name>
+    <sortname>Alchemist, Master</sortname>
+    <ancestry>Alchemist</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>neutral evil</alignment>
@@ -3631,11 +3889,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 74 (Homebrew)</description>
     <int>20</int>
     <wis>14</wis>
     <cha>13</cha>
+    <save/>
     <skill>Arcana +8, Nature +8, Medicine +5</skill>
-    <senses/>
     <passive>12</passive>
     <languages>Common and three others</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brew</name>
       <text>Given a week and the right ingredients, the master alchemist can brew any potion, but he sells it for double the price.</text>
@@ -3669,7 +3932,7 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 74 (Homebrew)</description>
       <name>Lob Acid Flask (4/Day)</name>
       <recharge>4/Day</recharge>
       <text>Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 3 (1d4 +1) bludgeoning damage plus 14 (4d6) acid damage.</text>
-      <attack>Acid|5|1d4+1+4d6</attack>
+      <attack>Acid Damage|5|1d4+1+4d6</attack>
     </action>
     <spells>acid splash, blade ward, detect magic, poison spray, prestidigitation, find familiar, fog cloud, mage armor, purify food and drink, darkness, enlarge/reduce, locate object, dispel magic, glyph of warding, stinking cloud, arcane eye, fabricate, polymorph, legend lore, mislead, magic jar</spells>
     <description>Eager to get rich, the master alchemist works all through the night creating new potions to sell. He will make dangerous and deadly mixtures for anyone who has enough gold. Master alchemists know that all the elements in the multiverse are related. They use this knowledge to make themselves rich.
@@ -3682,7 +3945,7 @@ Shady Shops. Hidden from the authorities, these alchemists work away in their se
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 75 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Master Alchemist -->
+  </monster>
   <monster>
     <name>Pieman</name>
     <size>M</size>
@@ -3697,12 +3960,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 75 (Homebrew)</description>
     <int>6</int>
     <wis>6</wis>
     <cha>5</cha>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Common and one other</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Undead Fortitude</name>
       <text>If damage reduces the pieman to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage is radiant or from a critical hit. On a success, the pieman drops to 1 hit point instead.</text>
@@ -3729,9 +3996,11 @@ Undead Nature. The pieman doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 76 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Pieman -->
+  </monster>
   <monster>
     <name>Stalker Walker</name>
+    <sortname>Walker, Stalker</sortname>
+    <ancestry>Walker</ancestry>
     <size>L</size>
     <type>fey</type>
     <alignment>neutral evil</alignment>
@@ -3744,11 +4013,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 76 (Homebrew)</description>
     <int>10</int>
     <wis>3</wis>
     <cha>10</cha>
+    <save/>
     <skill>Perception +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Common, Sylvan</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The stalker walker has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -3776,9 +4050,10 @@ Lost Fey. These fey were tricked into leaving Fey- land and would love to return
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 77 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Stalker Walker -->
+  </monster>
   <monster>
     <name>Tracker</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any alignment</alignment>
@@ -3793,10 +4068,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 77 (Homebrew)</description>
     <cha>10</cha>
     <save>Str +5, Dex +7</save>
     <skill>Insight +5, Nature +4, Perception +5, Stealth +5, Survival +5</skill>
-    <senses/>
     <passive>15</passive>
     <languages>Common and two others</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Colossus Slayer</name>
       <text>When the tracker hits a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. The tracker can deal this extra damage only once per turn.</text>
@@ -3814,12 +4093,12 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 77 (Homebrew)</description>
       <name>Natural Explorer</name>
       <text>The tracker has the following benefits in the wilderness
 
-&#8226; Difficult terrain doesn't slow their groups progress
-&#8226; The group can't become lost except by magical means
-&#8226; The tracker is alert to danger if its engaged in another activity while traveling
-&#8226; If the tracker is traveling alone, it moves stealthily at a normal pace
-&#8226; When the tracker forages, it finds twice as much food
-&#8226; While tracking other creatures, the tracker also learns their exact number, their sizes, and how long ago they passed through the area</text>
+• Difficult terrain doesn't slow their groups progress
+• The group can't become lost except by magical means
+• The tracker is alert to danger if its engaged in another activity while traveling
+• If the tracker is traveling alone, it moves stealthily at a normal pace
+• When the tracker forages, it finds twice as much food
+• While tracking other creatures, the tracker also learns their exact number, their sizes, and how long ago they passed through the area</text>
     </trait>
     <trait>
       <name>Spellcasting</name>
@@ -3853,8 +4132,7 @@ Experienced Guide. Trackers have a wealth of experience and are skilled in comba
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 78 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Market: Tracker -->
-  <!-- Docks District -->
+  </monster>
   <monster>
     <name>Sin, Lust</name>
     <size>M</size>
@@ -3871,13 +4149,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 78 (Homebrew)</description>
     <cha>25</cha>
     <save>Con +12, Wis +9, Cha +14</save>
     <skill>Deception +14, Perception +9, Persuasion +14, Stealth +10</skill>
+    <passive>19</passive>
+    <languages>Abyssal, telepathy 120 ft.</languages>
+    <cr>23</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>19</passive>
-    <languages>Abyssal, telepathy 120 ft.</languages>
-    <cr>23</cr>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Lust's spellcasting ability is Charisma (spell save DC 22, +14 to hit with spell attacks). The demon can innately cast the following spells, requiring no components
@@ -3935,7 +4214,7 @@ Awful Addictions. Some of those who come into contact with Lust end up as addict
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 80 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Sin, Lust -->
+  </monster>
   <monster>
     <name>Virtue, Chastity</name>
     <size>M</size>
@@ -3952,13 +4231,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 80 (Homebrew)</description>
     <cha>25</cha>
     <save>Wis +13, Cha +14</save>
     <skill>Insight +13, Nature +12, Perception +13</skill>
+    <passive>23</passive>
+    <languages>Celestial, telepathy 120 ft.</languages>
+    <cr>23</cr>
+    <vulnerable/>
     <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>charmed, exhausted, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>23</passive>
-    <languages>Celestial, telepathy 120 ft.</languages>
-    <cr>23</cr>
     <trait>
       <name>Aura of Clarity</name>
       <text>Any charm magic within 60 ft. of Chastity ends.</text>
@@ -4025,9 +4305,10 @@ Respectful Reverence. Chastity encourages healthy relationships in which individ
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 83 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Virtue, Chastity -->
+  </monster>
   <monster>
     <name>Captain Graybeard</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>neutral evil</alignment>
@@ -4042,10 +4323,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 83 (Homebrew)</description>
     <cha>18</cha>
     <save>Con +6, Wis +7</save>
     <skill>Athletics +8, Deception +8, Intimidation +8, Perception +7, Survival +7</skill>
-    <senses/>
     <passive>17</passive>
     <languages>Common</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>The captain has advantage on saving throws against being frightened.</text>
@@ -4107,7 +4392,7 @@ Band of Brothers. A number of fighters and rogues make up his rowdy band of pira
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 84 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Captain Graybeard -->
+  </monster>
   <monster>
     <name>Aquarian, Codfather</name>
     <size>M</size>
@@ -4122,11 +4407,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 84 (Homebrew)</description>
     <int>14</int>
     <wis>16</wis>
     <cha>18</cha>
+    <save/>
     <skill>Deception +7, Insight +6, Intimidation +7, Perception +6, Persuasion +7, Survival +6</skill>
-    <senses/>
     <passive>16</passive>
     <languages>Common, Aquan</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Amphibious</name>
       <text>The Codfather can breathe air and water.</text>
@@ -4159,7 +4449,7 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 84 (Homebrew)</description>
     <spells>message, prestidigitation, vicious mockery, charm person, crown of madness, dissonant whispers, suggestion</spells>
     <description>A large fish-like creature moves slowly through the fish market. He is an aquarian, a race of very unusual fish-like humanoids. Four tentacles also stretch out from this large, rotund monster. Many thugs and admirers are constantly at his side. The charming Codfather controls the fish markets with his extensive network of minions. Part of the fishing fleet is also owned by him.
 
-Might Is Right. This monster is extremely strong and uses his thick tentacles to reach out and grab any opponents. He finds many ways to intimidate those in his territory. The Codfather is a legend in this part of the city. In fact, he sees himself as the “King of the Docks.” At the same time, he looks down on all other races. This strange monster sees aquarians as the superior race.
+Might Is Right. This monster is extremely strong and uses his thick tentacles to reach out and grab any opponents. He finds many ways to intimidate those in his territory. The Codfather is a legend in this part of the city. In fact, he sees himself as the "King of the Docks." At the same time, he looks down on all other races. This strange monster sees aquarians as the superior race.
 
 Pier Pressure. Most businesses in the Docks District know they must pay tribute to the Codfather. A few bags of gold are paid to the gangster's minions each month. His main henchman, Fishmongrel takes charge of this regular chore.
 
@@ -4167,7 +4457,7 @@ Lustful Libido. Everyone in the city knows the Codfather can't resist a pretty f
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 85 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Aquarian, Codfather -->
+  </monster>
   <monster>
     <name>Aquarian, Fishmongrel</name>
     <size>M</size>
@@ -4182,11 +4472,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 85 (Homebrew)</description>
     <int>10</int>
     <wis>14</wis>
     <cha>11</cha>
+    <save/>
     <skill>Intimidation +2, Perception +4, Survival +4</skill>
-    <senses/>
     <passive>14</passive>
     <languages>Common, Aquan</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Amphibious</name>
       <text>Fishmongrel can breathe air and water.</text>
@@ -4218,7 +4513,7 @@ Nautical Network. Thugs, pirates, and other nefarious characters work for Fishmo
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 86 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Aquarian, Fishmongrel -->
+  </monster>
   <monster>
     <name>Handsome Devil</name>
     <size>M</size>
@@ -4235,13 +4530,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 86 (Homebrew)</description>
     <cha>20</cha>
     <save>Int +4, Wis +4, Cha +8</save>
     <skill>Deception +8, Insight +4, Perception +4, Persuasion +8</skill>
+    <passive>14</passive>
+    <languages>Infernal, Common, and one other</languages>
+    <cr>5</cr>
+    <vulnerable/>
     <resist>cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered</resist>
     <immune>fire, poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>14</passive>
-    <languages>Infernal, Common, and one other</languages>
-    <cr>5</cr>
     <trait>
       <name>Devil's Sight</name>
       <text>Magical darkness doesn't impede the devil's darkvision.</text>
@@ -4271,9 +4567,10 @@ Well Connected. Not only do these devils seek fame and fortune, they are smart e
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 87 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Handsome Devil -->
+  </monster>
   <monster>
     <name>Mesmerella</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>fey</type>
     <alignment>chaotic good</alignment>
@@ -4286,11 +4583,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 87 (Homebrew)</description>
     <int>14</int>
     <wis>15</wis>
     <cha>20</cha>
-    <skill>s Acrobatics +6, Insight +4, Perception +4, Performance +7, Persuasion +7, Stealth +6</skill>
-    <senses/>
+    <save/>
+    <skill>S Acrobatics +6, Insight +4, Perception +4, Performance +7, Persuasion +7, Stealth +6</skill>
     <passive>14</passive>
     <languages>Common</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Opportunist</name>
       <text>Mesmerella has advantage on the attack rolls of opportunity attacks.</text>
@@ -4334,9 +4636,10 @@ Perceptive Performer. This fey is highly perceptive and not only understands the
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 88 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Mesmerella -->
+  </monster>
   <monster>
     <name>Puritan</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>lawful neutral</alignment>
@@ -4349,11 +4652,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 88 (Homebrew)</description>
     <int>10</int>
     <wis>10</wis>
     <cha>12</cha>
+    <save/>
     <skill>Intimidation +3, Religion +2, Survival +2</skill>
-    <senses/>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Pack Tactics</name>
       <text>The puritan has advantage on an attack roll against a creature if at least one of the puritan's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
@@ -4389,9 +4697,11 @@ Militant puritans will not hesitate to use violence to further their cause. Thes
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 89 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Puritan -->
+  </monster>
   <monster>
     <name>City Satyr</name>
+    <sortname>Satyr, City</sortname>
+    <ancestry>Satyr</ancestry>
     <size>M</size>
     <type>fey</type>
     <alignment>chaotic neutral</alignment>
@@ -4404,11 +4714,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 89 (Homebrew)</description>
     <int>12</int>
     <wis>12</wis>
     <cha>14</cha>
+    <save/>
     <skill>Perception +3, Performance +7, Stealth +6</skill>
-    <senses/>
     <passive>13</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magical Resistance</name>
       <text>The fey has advantage on saving throws against spells and other magical effects.</text>
@@ -4441,9 +4756,11 @@ Chaotic Nature. At heart these creatures are emotionally immature and chaos seem
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 90 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Stayr, City -->
+  </monster>
   <monster>
     <name>Sirius Moonlight</name>
+    <sortname>Moonlight, Sirius</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-elf)</type>
     <alignment>chaotic good</alignment>
@@ -4458,10 +4775,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 90 (Homebrew)</description>
     <cha>16</cha>
     <save>Dex +8, Wis +5, Cha +6</save>
     <skill>Acrobatics +8, Insight +5, Perception +5, Stealth +8</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>15</passive>
     <languages>Common, Abyssal, Elvish, Infernal</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>Sirius has advantage on saving throws against being charmed, and magic can't put him to sleep.</text>
@@ -4502,7 +4823,7 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 90 (Homebrew)</description>
       <text>Any ally within 60 ft. of Sirius can add a d4 to one ability check, attack roll, or saving throw. A creature can only make use of this feature once a day.</text>
     </action>
     <spells>blade ward, dancing lights, message, true strike, charm person, cure wounds, feather fall, healing word, detect thoughts, see invisibility, silence, dispel magic, nondetection, major image, confusion, freedom of movement, greater invisibility, animate objects</spells>
-    <description>A tall, slender half-elf steps off an old sailing ship and looks around the docks. Sirius Moonlight has returned from his many travels. This warrior is a renowned adventurer and hero in the district. His catchphrase, “Let's get serious!” is known by all the locals. Two shining longswords hang at his hips.
+    <description>A tall, slender half-elf steps off an old sailing ship and looks around the docks. Sirius Moonlight has returned from his many travels. This warrior is a renowned adventurer and hero in the district. His catchphrase, "Let's get serious!" is known by all the locals. Two shining longswords hang at his hips.
 
 The White Duke. A former duke from a faraway elf kingdom, he now lives in the city. This mysterious half-elf is also known for his grace. He is an accomplished dancer, which explains his skill with a sword.
 
@@ -4512,7 +4833,7 @@ Arch Enemies. Sirius is a sworn enemy of the Codfather and many other criminals 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 91 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Sirius Moonlight -->
+  </monster>
   <monster>
     <name>Slither Kelp</name>
     <size>L</size>
@@ -4527,13 +4848,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 91 (Homebrew)</description>
     <int>1</int>
     <wis>5</wis>
     <cha>1</cha>
-    <vulnerable>fire</vulnerable>
-    <immune>acid, poison, psychic, slashing</immune>
-    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, poisoned, prone</conditionImmune>
-    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
+    <save/>
+    <skill/>
     <passive>6</passive>
     <languages>-</languages>
     <cr>1</cr>
+    <vulnerable>fire</vulnerable>
+    <resist/>
+    <immune>acid, poison, psychic, slashing</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, poisoned, prone</conditionImmune>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
       <name>Amorphous</name>
       <text>The slither kelp can move through a space as narrow as 1 inch wide without squeezing.</text>
@@ -4561,9 +4885,11 @@ Ooze Nature. An ooze doesn't require sleep.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 92 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Slither Kelp -->
+  </monster>
   <monster>
     <name>Sprite Thief</name>
+    <sortname>Thief, Sprite</sortname>
+    <ancestry>Thief</ancestry>
     <size>T</size>
     <type>fey</type>
     <alignment>chaotic evil</alignment>
@@ -4576,11 +4902,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 92 (Homebrew)</description>
     <int>14</int>
     <wis>14</wis>
     <cha>11</cha>
+    <save/>
     <skill>Perception +4, Stealth +7, Survival +4</skill>
-    <senses/>
     <passive>14</passive>
     <languages>Common, Elvish, Sylvan, thieves' cant</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Action</name>
       <text>On each of its turns, the sprite can use a bonus action to take the Dash, Disengage, or Hide action.</text>
@@ -4613,9 +4944,10 @@ Guild Member. Sprite thieves will often join the Thieves' Guild and have good re
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 93 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Sprite, Thief -->
+  </monster>
   <monster>
     <name>Temptress</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>neutral evil</alignment>
@@ -4628,11 +4960,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 93 (Homebrew)</description>
     <int>12</int>
     <wis>13</wis>
     <cha>18</cha>
+    <save/>
     <skill>Deception +7, Insight +4, Perception +4, Performance +7, Persuasion +7</skill>
-    <senses/>
     <passive>14</passive>
     <languages>Common and three others</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Innate Spellcasting</name>
       <text>The temptress's innate spellcasting ability is Charisma (spell save DC 15). She can innately cast the following spells, requiring no components
@@ -4667,9 +5004,12 @@ Social Butterfly. This woman is always aware of the social hierarchy in the city
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 94 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Temptress -->
+  </monster>
   <monster>
     <name>Thug Boss</name>
+    <sortname>Thug, Boss</sortname>
+    <ancestry>Thug</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any evil alignment</alignment>
@@ -4682,11 +5022,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 94 (Homebrew)</description>
     <int>10</int>
     <wis>12</wis>
     <cha>12</cha>
+    <save/>
     <skill>Intimidation +3, Perception +3, Survival +3</skill>
-    <senses/>
     <passive>13</passive>
     <languages>Common</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>The thug has advantage on saving throws against being frightened.</text>
@@ -4717,7 +5062,7 @@ Horrible Hierarchy. Often the thug boss is part of a larger organization. It's n
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 95 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Thug Boss -->
+  </monster>
   <monster>
     <name>Twins and Needles</name>
     <size>L</size>
@@ -4732,13 +5077,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 95 (Homebrew)</description>
     <int>7</int>
     <wis>10</wis>
     <cha>6</cha>
+    <save/>
     <skill>Perception +2</skill>
-    <resist>poison</resist>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Two Heads</name>
       <text>Twins and Needles has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.</text>
@@ -4775,9 +5123,11 @@ Undead Nature. It doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 96 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Twins and Needles -->
+  </monster>
   <monster>
     <name>Vampire Lord</name>
+    <sortname>Vampire, Lord</sortname>
+    <ancestry>Vampire</ancestry>
     <size>M</size>
     <type>undead (shapechanger)</type>
     <alignment>lawful evil</alignment>
@@ -4792,11 +5142,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 96 (Homebrew)</description>
     <cha>20</cha>
     <save>Dex +10, Wis +10, Cha +11</save>
     <skill>Insight +10, Perception +10, Persuasion +11, Stealth +10</skill>
-    <resist>necrotic; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-    <senses>darkvision 120 ft.</senses>
     <passive>20</passive>
     <languages>the languages it knew in life</languages>
     <cr>18</cr>
+    <vulnerable/>
+    <resist>necrotic; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Shapechanger</name>
       <text>If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form. While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.
@@ -4880,9 +5233,11 @@ Undead Nature. A vampire doesn't require air.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 97 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Vampire Lord -->
+  </monster>
   <monster>
     <name>Fog Troll</name>
+    <sortname>Troll, Fog</sortname>
+    <ancestry>Troll</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>chaotic evil</alignment>
@@ -4895,11 +5250,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 97 (Homebrew)</description>
     <int>9</int>
     <wis>12</wis>
     <cha>8</cha>
+    <save/>
     <skill>Perception +3, Survival +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Common, Giant</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Weather Wise</name>
       <text>The troll has advantage on Dexterity (Stealth) checks to hide in fog, heavy rain, or snow.</text>
@@ -4936,8 +5296,7 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 97 (Homebrew)</description>
     </action>
     <description>Source:	Monsters of the City (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Docks: Troll, Fog -->
-  <!-- Slum District -->
+  </monster>
   <monster>
     <name>Sin, Envy</name>
     <size>M</size>
@@ -4954,13 +5313,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 97 (Homebrew)</description>
     <cha>24</cha>
     <save>Int +12, Cha +14</save>
     <skill>Deception +14, Intimidation +14, Perception +11, Persuasion +14, Survival +11</skill>
+    <passive>21</passive>
+    <languages>Abyssal, telepathy 120 ft.</languages>
+    <cr>23</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>21</passive>
-    <languages>Abyssal, telepathy 120 ft.</languages>
-    <cr>23</cr>
     <trait>
       <name>Aura of Madness</name>
       <text>Creatures within 20 feet of Envy that aren't fiends have disadvantage on saving throws, as well as on attack rolls against creatures other than Envy.</text>
@@ -5028,7 +5388,7 @@ Foul Mouth. The vile words that pour from her mouth are often fouler than from t
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 100 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Sin, Envy -->
+  </monster>
   <monster>
     <name>Virtue, Kindness</name>
     <size>M</size>
@@ -5045,12 +5405,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 100 (Homebrew)</description>
     <cha>18</cha>
     <save>Con +12, Wis +14</save>
     <skill>Insight +14, Nature +11, Perception +14</skill>
-    <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
-    <conditionImmune>charmed, exhausted, frightened</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>24</passive>
     <languages>Celestial, telepathy 120 ft.</languages>
     <cr>23</cr>
+    <vulnerable/>
+    <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune>charmed, exhausted, frightened</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Kindness's innate spellcasting ability is Wisdom (spell save DC 22, +14 to hit with spell attacks). Kindness can innately cast the following spells, requiring no components
@@ -5125,9 +5487,11 @@ Formless. The celestial can change shape into any kind of humanoid. He often doe
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 103 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Virtue, Kindness -->
+  </monster>
   <monster>
     <name>Ale Ooze</name>
+    <sortname>Ooze, Ale</sortname>
+    <ancestry>Ooze</ancestry>
     <size>L</size>
     <type>ooze</type>
     <alignment>unaligned</alignment>
@@ -5140,13 +5504,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 103 (Homebrew)</description>
     <int>2</int>
     <wis>6</wis>
     <cha>1</cha>
+    <save/>
+    <skill/>
+    <passive>8</passive>
+    <languages>-</languages>
+    <cr>2</cr>
+    <vulnerable/>
     <resist>acid</resist>
     <immune>lightning, poison, psychic, slashing</immune>
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, poisoned, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
-    <passive>8</passive>
-    <languages>-</languages>
-    <cr>2</cr>
     <trait>
       <name>Amorphous</name>
       <text>The ooze can move through a space as narrow as 1 inch wide without squeezing.</text>
@@ -5174,9 +5541,12 @@ Ooze Nature. An ale ooze doesn't require sleep.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 104 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Ale Ooze -->
+  </monster>
   <monster>
     <name>Anxious Apprentice</name>
+    <sortname>Apprentice, Anxious</sortname>
+    <ancestry>Apprentice</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any</alignment>
@@ -5189,11 +5559,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 104 (Homebrew)</description>
     <int>17</int>
     <wis>12</wis>
     <cha>10</cha>
+    <save/>
     <skill>Arcana +5, History +5</skill>
-    <senses/>
     <passive>11</passive>
     <languages>Common and one other</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>The apprentice is a 3rd-level wizard. Its spellcasting ability is Intelligence (spell save DC 13). The apprentice has the following wizard spells prepared
@@ -5233,9 +5608,12 @@ Wand Envy. Apprentices are usually quite envious of experienced spellcasters. Ev
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 105 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Anxious Apprentice -->
+  </monster>
   <monster>
     <name>Bandit Lord</name>
+    <sortname>Bandit, Lord</sortname>
+    <ancestry>Bandit</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any evil alignment</alignment>
@@ -5250,10 +5628,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 105 (Homebrew)</description>
     <cha>18</cha>
     <save>Str +7, Con +6, Cha +7</save>
     <skill>Athletics +7, Insight +5, Intimidation +7, Survival +7</skill>
-    <senses/>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>The bandit lord has advantage on saving throws against being frightened.</text>
@@ -5295,9 +5677,11 @@ Slum Strongholds. Many bandit captains and bandits serve these bold commanders. 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 106 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Bandit Lord -->
+  </monster>
   <monster>
     <name>Barmaid from the Shade</name>
+    <sortname>Barmaid, from the Shade</sortname>
+    <ancestry>Barmaid</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -5310,12 +5694,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 106 (Homebrew)</description>
     <int>7</int>
     <wis>6</wis>
     <cha>16</cha>
-    <resist>poison</resist>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Common</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Incorporeal Movement</name>
       <text>The barmaid can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
@@ -5350,7 +5738,7 @@ Undead Nature. A barmaid from the shade doesn't require air, food, drink, or sle
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 107 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Barmaid from the Shade -->
+  </monster>
   <monster>
     <name>Cradle Snatcher</name>
     <size>S</size>
@@ -5365,11 +5753,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 107 (Homebrew)</description>
     <int>7</int>
     <wis>10</wis>
     <cha>7</cha>
+    <save/>
     <skill>Acrobatics +5, Perception +2, Stealth +5</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The cradle snatcher has advantage on saving throws against spells and other magical effects.</text>
@@ -5397,9 +5790,10 @@ Evil Employers. Most cradle snatchers are hired by foul creatures like witches, 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 108 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Cradle Snatcher -->
+  </monster>
   <monster>
     <name>Critic</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>neutral evil</alignment>
@@ -5412,11 +5806,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 108 (Homebrew)</description>
     <int>12</int>
     <wis>9</wis>
     <cha>14</cha>
+    <save/>
     <skill>Deception +4, Investigation +3, Persuasion +4</skill>
-    <senses/>
     <passive>9</passive>
     <languages>Common and one other</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Evasion</name>
       <text>If the critic is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the critic instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</text>
@@ -5453,9 +5852,11 @@ Pathetic Prose. There comes a time when a critic will once again attempt to crea
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 109 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Critic -->
+  </monster>
   <monster>
     <name>Goblin Spy</name>
+    <sortname>Spy, Goblin</sortname>
+    <ancestry>Spy, Goblin</ancestry>
     <size>S</size>
     <type>goblinoid (goblin)</type>
     <alignment>neutral evil</alignment>
@@ -5468,11 +5869,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 109 (Homebrew)</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <skill>Deception +2, Insight +2, Perception +2, Persuasion +2, Sleight of Hand +5, Stealth +5</skill>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill>Deception +2, Insight +2, Perception +2, Persuasion +2, Sleight Of Hand +5, Stealth +5</skill>
     <passive>12</passive>
     <languages>Common, Goblin</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Goblin Guises</name>
       <text>The goblin carries a disguise kit and is proficient in its use.</text>
@@ -5501,9 +5907,10 @@ Nefarious Network. Several goblins spies have contacts with gangs and the Thieve
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 110 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Goblin Spy -->
+  </monster>
   <monster>
     <name>Hothead</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>neutral evil</alignment>
@@ -5516,11 +5923,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 110 (Homebrew)</description>
     <int>7</int>
     <wis>7</wis>
     <cha>8</cha>
+    <save/>
     <skill>Athletics +5, Intimidation +1</skill>
-    <senses/>
     <passive>8</passive>
     <languages>Common (but can barely read it)</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Rage (2/Day)</name>
       <recharge>2/Day</recharge>
@@ -5550,9 +5962,10 @@ Unable to Commit. Hotheads change their minds constantly and can never commit to
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 111 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Hothead -->
+  </monster>
   <monster>
     <name>Joller</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>chaotic evil</alignment>
@@ -5565,11 +5978,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 111 (Homebrew)</description>
     <int>10</int>
     <wis>12</wis>
     <cha>12</cha>
-    <skill>Deception +3, Perception +3, Sleight of Hand +4, Survival +3</skill>
-    <senses/>
+    <save/>
+    <skill>Deception +3, Perception +3, Sleight Of Hand +4, Survival +3</skill>
     <passive>13</passive>
     <languages>Common</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Pack Tactics</name>
       <text>The joller has advantage on attack rolls against a creature if at least one of the joller's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
@@ -5593,9 +6011,10 @@ Gang Life. Groups of jollers work together to look after each other. Their gangs
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 112 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Joller -->
+  </monster>
   <monster>
     <name>Lord of the Slums</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>chaotic evil</alignment>
@@ -5610,10 +6029,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 112 (Homebrew)</description>
     <cha>16</cha>
     <save>Con +6, Cha +7</save>
     <skill>Deception +7, Intimidation +7, Perception +6, Persuasion +7</skill>
-    <senses/>
     <passive>16</passive>
     <languages>Common and one other</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Pack Tactics</name>
       <text>The lord has advantage on attack rolls against a creature if at least one of the lord's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
@@ -5657,9 +6080,11 @@ Inner Envy. His appearance and grandiose nature belie the inferiority complex in
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 113 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Lord of the Slums -->
+  </monster>
   <monster>
     <name>Satyr Brute</name>
+    <sortname>Satyr, Brute</sortname>
+    <ancestry>Satyr</ancestry>
     <size>L</size>
     <type>fey</type>
     <alignment>chaotic evil</alignment>
@@ -5672,11 +6097,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 113 (Homebrew)</description>
     <int>12</int>
     <wis>9</wis>
     <cha>8</cha>
+    <save/>
     <skill>Athletics +6, Perception +1</skill>
-    <senses/>
     <passive>11</passive>
     <languages>Common, Sylvan</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Block the Path</name>
       <text>Until the start of the satyr's next turn, attack rolls against the satyr have disadvantage, it has advantage on the attack roll it makes for an opportunity attack, and that attack deals an extra 11 (2d10) bludgeoning damage on a hit. Also, each enemy that tries to move out of the satyr's reach without teleporting must succeed on a DC 14 Strength saving throw or have its speed reduced to 0 until the start of the satyr's next turn.</text>
@@ -5710,9 +6140,10 @@ Feyland. For this reason, the brawny bullies will target fey creatures whenever 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 114 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Satyr Brute -->
+  </monster>
   <monster>
     <name>Truth Teller</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>chaotic good</alignment>
@@ -5727,11 +6158,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 114 (Homebrew)</description>
     <cha>15</cha>
     <save>Con +6, Int +8, Wis +9</save>
     <skill>Insight +9, Nature +8, Perception +9, Persuasion +6, Survival +9</skill>
-    <conditionImmune>charmed, exhausted, frightened</conditionImmune>
-    <senses>truesight 60 ft.</senses>
     <passive>19</passive>
     <languages>Common and three others</languages>
     <cr>12</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, exhausted, frightened</conditionImmune>
+    <senses>truesight 60 ft.</senses>
     <trait>
       <name>Divine Awareness</name>
       <text>The truth teller knows if it hears a lie.</text>
@@ -5785,9 +6219,12 @@ Rebel Rebel. Knowing the truth, these individuals are often rebelling against th
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 115 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Truth Teller -->
+  </monster>
   <monster>
     <name>Werewolf Spy</name>
+    <sortname>Spy, Werewolf</sortname>
+    <ancestry>Spy</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>chaotic evil</alignment>
@@ -5800,12 +6237,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 115 (Homebrew)</description>
     <int>12</int>
     <wis>12</wis>
     <cha>10</cha>
-    <skill>Deception +3, Insight +4, Perception +4, Sleight of Hand +6, Stealth +6</skill>
-    <immune>bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered</immune>
-    <senses/>
+    <save/>
+    <skill>Deception +3, Insight +4, Perception +4, Sleight Of Hand +6, Stealth +6</skill>
     <passive>14</passive>
-    <languages> Common and two others (can't speak in wolf form)</languages>
+    <languages>Common and two others (can't speak in wolf form)</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered</immune>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Action</name>
       <text>On each of its turns, the werewolf can use a bonus action to take the Dash, Disengage, or Hide action.</text>
@@ -5856,8 +6297,7 @@ Spy Senses. The werewolf's heightened senses help it to remain undiscovered and 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 116 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Slums: Werewolf Spy -->
-  <!-- Sewer District -->
+  </monster>
   <monster>
     <name>Sin, Sloth</name>
     <size>L</size>
@@ -5874,13 +6314,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 116 (Homebrew)</description>
     <cha>12</cha>
     <save>Con +13, Int +14, Wis +10</save>
     <skill>Perception +10, Persuasion +8, Survival +10</skill>
+    <passive>20</passive>
+    <languages>Abyssal, Infernal, telepathy 120 ft.</languages>
+    <cr>23</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>20</passive>
-    <languages>Abyssal, Infernal, telepathy 120 ft.</languages>
-    <cr>23</cr>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Sloth's innate spellcasting ability is Intelligence (spell save DC 22, +14 to hit with spell attacks). She can innately cast the following spells, requiring no components
@@ -5950,7 +6391,7 @@ Bubbles and Troubles. A foul-smelling cauldron is always bubbling away in Sloth'
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 118 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Sin, Sloth -->
+  </monster>
   <monster>
     <name>Virtue, Diligence</name>
     <size>L</size>
@@ -5967,13 +6408,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 118 (Homebrew)</description>
     <cha>25</cha>
     <save>Str +13, Con +12, Wis +13</save>
     <skill>Insight +13, Investigation +8, Perception +13, Survival +13</skill>
+    <passive>23</passive>
+    <languages>Celestial, telepathy 120 ft.</languages>
+    <cr>23</cr>
+    <vulnerable/>
     <resist>radiant; bludgeoning, piercing, and slashing from nonmagical weapons</resist>
     <immune>poison</immune>
     <conditionImmune>charmed, exhausted, frightened, poisoned, prone</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>23</passive>
-    <languages>Celestial, telepathy 120 ft.</languages>
-    <cr>23</cr>
     <trait>
       <name>Divine Awareness</name>
       <text>Diligence knows if he hears a lie.</text>
@@ -6036,9 +6478,10 @@ Underground Allies. Diligence can call on goodaligned creatures from the Sewer D
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 121 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Virtue, Diligence -->
+  </monster>
   <monster>
     <name>Cult Leader</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any non-good alignment</alignment>
@@ -6053,10 +6496,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 121 (Homebrew)</description>
     <cha>17</cha>
     <save>Con +5, Wis +6, Cha +6</save>
     <skill>Deception +6, Intimidation +6, Perception +6, Persuasion +6, Religion +6</skill>
-    <senses/>
     <passive>16</passive>
     <languages>Common and two others</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Dark Devotion</name>
       <text>The cult leader has advantage on saving throws against being charmed or frightened.</text>
@@ -6101,9 +6548,12 @@ Terrible Temple. The headquarters of the cult leader is a mazelike complex. Once
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 122 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Cult Leader -->
+  </monster>
   <monster>
     <name>Druid of the Undercity</name>
+    <sortname>Druid, of the Undercity</sortname>
+    <ancestry>Druid</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>any alignment</alignment>
@@ -6118,10 +6568,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 122 (Homebrew)</description>
     <cha>8</cha>
     <save>Dex +5, Con +5, Wis +6</save>
     <skill>Medicine +6, Nature +4, Perception +6, Survival +6</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>16</passive>
     <languages>Common, Druidic, Primordial</languages>
     <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Rat Companion</name>
       <text>A giant rat accompanies them.</text>
@@ -6161,14 +6615,14 @@ Focused Spellcaster. Being tremendously hard workers, the druids work diligently
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 123 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Druid of the Undercity -->
+  </monster>
   <monster>
     <name>Fowlbear</name>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>chaotic evil</alignment>
     <ac>14 (natural armor)</ac>
-    <hp> 76 (8d10 + 32)</hp>
+    <hp>76 (8d10 + 32)</hp>
     <speed>40 ft.</speed>
     <str>20</str>
     <dex>12</dex>
@@ -6176,11 +6630,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 123 (Homebrew)</description>
     <int>2</int>
     <wis>12</wis>
     <cha>7</cha>
+    <save/>
     <skill>Perception +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>—</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Charge</name>
       <text>If the fowlbear moves at least 20 feet straight toward a target and then hits it with a claws attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.</text>
@@ -6213,7 +6672,7 @@ Fey Origins. Legends say fowlbears are originally from Feyland. A number of trav
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 124 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Fowlbear -->
+  </monster>
   <monster>
     <name>Half-Giant</name>
     <size>L</size>
@@ -6228,11 +6687,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 124 (Homebrew)</description>
     <int>8</int>
     <wis>13</wis>
     <cha>9</cha>
+    <save/>
     <skill>Athletics +7, Perception +3, Survival +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Common, Giant</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
       <text>The half-giant has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -6265,7 +6729,7 @@ Small Minds. Unfortunately, half-giants are not too bright either and there are 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 125 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Half-Giant -->
+  </monster>
   <monster>
     <name>Knight Raven</name>
     <size>M</size>
@@ -6280,11 +6744,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 125 (Homebrew)</description>
     <int>13</int>
     <wis>15</wis>
     <cha>9</cha>
+    <save/>
     <skill>Insight +4, Perception +4, Stealth +5</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Common, Auran</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>The knight raven has advantage on saving throws against being charmed, and magic can't put it to sleep.</text>
@@ -6329,9 +6798,10 @@ Bizarre Beginnings. Nobody is quite sure how knight ravens came into existence. 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 126 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Knight Raven -->
+  </monster>
   <monster>
     <name>Lothar the Lethargic</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>lawful evil</alignment>
@@ -6346,10 +6816,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 126 (Homebrew)</description>
     <cha>20</cha>
     <save>Int +5, Wis +6</save>
     <skill>Deception +8, Perception +6, Persuasion +8</skill>
-    <senses/>
     <passive>16</passive>
     <languages>Common, thieves' cant, Infernal, and two others</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Staff</name>
       <text>Lothar's Staff of Striking is a +3 magical quarterstaff. It has 10 charges. When he hits with the staff, he can expend up to 3 of its charges. For each charge he expends, the target takes an extra 1d6 force damage. The staff regains 10 charges daily at dawn. If he expends the last charge, he rolls a d20.</text>
@@ -6390,9 +6864,10 @@ Unassuming Slacker. Although he's an idle oddball, this sorcerer has a charismat
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 127 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Lothar the Lethargic -->
+  </monster>
   <monster>
     <name>Quog</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (quog)</type>
     <alignment>chaotic evil</alignment>
@@ -6405,11 +6880,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 127 (Homebrew)</description>
     <int>5</int>
     <wis>7</wis>
     <cha>3</cha>
+    <save/>
     <skill>Stealth +3</skill>
-    <senses>darkvision 60 ft.</senses>
     <passive>8</passive>
     <languages>—</languages>
     <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fear of Fire</name>
       <text>If the quog takes fire damage, it has disadvantage on attack rolls and ability checks until the end of the next turn.</text>
@@ -6437,13 +6917,16 @@ Fungi Foragers. These unintelligent humanoids live off of the fungi that created
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 128 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Quog -->
+  </monster>
   <monster>
     <name>Rat King</name>
+    <sortname>Rat, King</sortname>
+    <ancestry>Rat</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>chaotic evil</alignment>
-    <ac>13 in humanoid form, 14 (makeshit armor) in hybrid form</ac>
+    <ac>13 in humanoid form, 14 (makeshit armor) in hybrid form)</ac>
     <hp>44 (8d8 + 8)</hp>
     <speed>30 ft.</speed>
     <str>15</str>
@@ -6452,12 +6935,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 128 (Homebrew)</description>
     <int>12</int>
     <wis>12</wis>
     <cha>11</cha>
+    <save/>
     <skill>Perception +3, Stealth +5, Survival +3</skill>
-    <immune>bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered</immune>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Common and one other (can't speak in rat form)</languages>
     <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen  Smell</name>
       <text>The rat king has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -6499,9 +6986,10 @@ Big Dreams. The rat king dreams of leading a rebellion against the surface dwell
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 129 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Rat King -->
+  </monster>
   <monster>
     <name>The Shadow</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>lawful evil</alignment>
@@ -6515,11 +7003,15 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 129 (Homebrew)</description>
     <wis>16</wis>
     <cha>18</cha>
     <save>Dex +10, Int +8, Cha +8</save>
-    <skill>Acrobatics +10, Deception +8, Perception +7, Persuasion +8, Sleight of Hand +10, Stealth +10</skill>
-    <senses/>
+    <skill>Acrobatics +10, Deception +8, Perception +7, Persuasion +8, Sleight Of Hand +10, Stealth +10</skill>
     <passive>17</passive>
     <languages>Common, thieves' cant, and two others</languages>
     <cr>11</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Action</name>
       <text>On each of his turns, the Shadow can use a bonus action to take the Dash, Disengage, or Hide action.</text>
@@ -6558,7 +7050,7 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 129 (Homebrew)</description>
       <name>Uncanny Dodge</name>
       <text>The Shadow halves the damage that he takes from an attack that hits him. The Shadow must be able to see the attacker.</text>
     </reaction>
-    <description>The most powerful organization in the Sewer District is the Thieves' Guild. Many citizens of the city simply refer to it as “the Guild”. Numerous rogues, assassins, fighters, veterans, and even mages work for this faction. Their leader is a mysterious thief known as the Shadow. Many of the other important Thieves' Guild members don't know much about their leader.
+    <description>The most powerful organization in the Sewer District is the Thieves' Guild. Many citizens of the city simply refer to it as "the Guild". Numerous rogues, assassins, fighters, veterans, and even mages work for this faction. Their leader is a mysterious thief known as the Shadow. Many of the other important Thieves' Guild members don't know much about their leader.
 
 The Guild. The members of the Thieves' Guild are extremely loyal and adhere to a strict hierarchy. At the very top of the organization is this influential rogue. He is a quiet and charismatic individual who is known to get results.
 
@@ -6568,9 +7060,11 @@ Underground Headquarters. The Guild is usually based in a large underground dung
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 130 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: The Shadow -->
+  </monster>
   <monster>
     <name>Shadow Rabbit</name>
+    <sortname>Rabbit, Shadow</sortname>
+    <ancestry>Rabbit</ancestry>
     <size>L</size>
     <type>undead</type>
     <alignment>chaotic evil</alignment>
@@ -6583,13 +7077,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 130 (Homebrew)</description>
     <int>9</int>
     <wis>12</wis>
     <cha>8</cha>
+    <save/>
+    <skill/>
+    <passive>12</passive>
+    <languages>Common</languages>
+    <cr>5</cr>
+    <vulnerable/>
     <resist>acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered</resist>
     <immune>necrotic, poison</immune>
     <conditionImmune>charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>12</passive>
-    <languages>Common</languages>
-    <cr>5</cr>
     <trait>
       <name>Incorporeal Movement</name>
       <text>The shadow rabbit can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
@@ -6628,9 +7125,11 @@ Undead Nature. A shadow rabbit doesn't require air, food, drink, or sleep.
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 131 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Shadow Rabbit -->
+  </monster>
   <monster>
     <name>Sewer Troll</name>
+    <sortname>Troll, Sewer</sortname>
+    <ancestry>Troll</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>chaotic evil</alignment>
@@ -6643,13 +7142,16 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 131 (Homebrew)</description>
     <int>9</int>
     <wis>12</wis>
     <cha>8</cha>
+    <save/>
     <skill>Perception +3, Stealth +4</skill>
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>13</passive>
     <languages>Giant</languages>
     <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
       <text>The troll has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -6695,5 +7197,5 @@ Lazy Lanky Lost. These sloth-like giants are usually very lazy and will use the 
 
 Source:	Monsters of the City: Sins &amp; Virtues p. 132 (Homebrew)</description>
     <environment>Any</environment>
-  </monster>  <!-- Sewers: Troll, Sewer -->
+  </monster>
 </compendium>
