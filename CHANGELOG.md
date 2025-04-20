@@ -18,7 +18,9 @@
 * Fixed a few mistakes in the new UA artificer classes.
 * Reformatted content to match original formatting a bit closer.
 * Reformatted and reworked some of the WotC sources' bestiaries, adding missing creature details and dice rolls.
-* Named (2014) sources.
+* Fixed up a lot of little errors and mistakes I came across during the big reformatting.
+* Named (2014) sources in descriptions.
+* Added useful importable Notes by Dave Rich and a Quick Reference overview.
 * Other changes and fixes.
 
 ### 2025-03-04
