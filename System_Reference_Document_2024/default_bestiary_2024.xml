@@ -63,6 +63,133 @@ Source:	Player's Handbook 2024 p. 240</description>
     <environment/>
   </monster>
   <monster>
+    <name>Otherworldly Steed [2024]</name>
+    <size>L</size>
+    <type>varies</type>
+    <alignment>neutral</alignment>
+    <ac>12</ac>
+    <hp>7</hp>
+    <speed>60 ft., fly 60 ft.(requires level 4+ spell)</speed>
+    <str>18</str>
+    <dex>12</dex>
+    <con>14</con>
+    <int>6</int>
+    <wis>12</wis>
+    <cha>8</cha>
+    <save/>
+    <skill/>
+    <passive>11</passive>
+    <languages>telepathy 1 mile (works only with you)</languages>
+    <cr>0</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>equals your Proficiency Bonus</text>
+    </trait>
+    <trait>
+      <name>Armor Class</name>
+      <text>10 + 1 per spell level</text>
+    </trait>
+    <trait>
+      <name>Type</name>
+      <text>Choose: celestial, fey, fiend</text>
+    </trait>
+    <trait>
+      <name>Hit Points</name>
+      <text>5 + 10 per spell level (the steed has a number of Hit Dice [d10s] equal to the spell's level)</text>
+    </trait>
+    <trait>
+      <name>Life Bond</name>
+      <text>When you regain Hit Points from a level 1+ spell, the steed regains the same number of Hit Points if you're within 5 feet of it.</text>
+    </trait>
+    <action>
+      <name>Otherworldly Slam</name>
+      <text>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage.</text>
+      <attack>Otherworldly Slam||1d8</attack>
+    </action>
+    <action>
+      <name>Fell Glare (Fiend Only; Recharges after a Long Rest) (Bonus Action)</name>
+      <recharge>LONG</recharge>
+      <text>Wisdom Saving Throw: DC equals your spell save DC, one creature within 60 feet the steed can see. Failure: The target has the Frightened condition until the end of your next turn.</text>
+      <recharge>LONG</recharge>
+    </action>
+    <action>
+      <name>Fey Step (Fey Only; Recharges after a Long Rest) (Bonus Action)</name>
+      <recharge>LONG</recharge>
+      <text>The steed teleports, along with its rider, to an unoccupied space of your choice up to 60 feet away from itself.</text>
+      <recharge>LONG</recharge>
+    </action>
+    <action>
+      <name>Healing Touch (Celestial Only; Recharges after a Long Rest) (Bonus Action)</name>
+      <recharge>LONG</recharge>
+      <text>One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 + the spell's level.</text>
+      <recharge>LONG</recharge>
+    </action>
+    <description>Source:	Player's Handbook 2024 p. 273</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Draconic Spirit [2024]</name>
+    <size>L</size>
+    <type>dragon</type>
+    <alignment>neutral</alignment>
+    <ac>19</ac>
+    <hp>55</hp>
+    <speed>30 ft., fly 60 ft., swim 30 ft.</speed>
+    <str>19</str>
+    <dex>14</dex>
+    <con>17</con>
+    <int>10</int>
+    <wis>14</wis>
+    <cha>14</cha>
+    <save/>
+    <skill/>
+    <passive>12</passive>
+    <languages>Draconic, understands the languages you know</languages>
+    <cr>0</cr>
+    <vulnerable/>
+    <resist>acid, cold, fire, lightning, poison</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened, poisoned</conditionImmune>
+    <senses>blindsight 30 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>equals your Proficiency Bonus</text>
+    </trait>
+    <trait>
+      <name>Armor Class</name>
+      <text>14 + the spell's level</text>
+    </trait>
+    <trait>
+      <name>Hit Points</name>
+      <text>50 + 10 for each spell level above 5</text>
+    </trait>
+    <trait>
+      <name>Shared Resistances</name>
+      <text>When you summon the spirit, choose one of its Resistances. You have Resistance to the chosen damage type until the spell ends.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The spirit makes a number of Rend attacks equal to half the spell's level (round down), and it uses Breath Weapon.</text>
+    </action>
+    <action>
+      <name>Rend</name>
+      <text>Melee Attack: Bonus equals your spell attack modifier, reach 10 feet. Hit: 1d6 + 4 + the spell's level Piercing damage.</text>
+      <attack>Rend|0|1d6+4</attack>
+    </action>
+    <action>
+      <name>Breath Weapon</name>
+      <text>Dexterity Saving Throw: DC equals your spell save DC, each creature in a 30-foot Cone. Failure: 2d6 damage of a type this spirit has Resistance to (your choice when you cast the spell). Success: Half damage.</text>
+      <attack>Breath Weapon|0|2d6</attack>
+    </action>
+    <description>Source:	Player's Handbook 2024 p. 325</description>
+    <environment/>
+  </monster>
+  <monster>
     <name>Animated Flying Sword [2024]</name>
     <sortname>Animated Objects, Flying Sword</sortname>
     <ancestry>Animated Objects</ancestry>
