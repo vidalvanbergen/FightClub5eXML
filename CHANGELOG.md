@@ -9,6 +9,7 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
 ### 2025-##-##
+* Added Dragon of Icespire Peak campaign template by @robcampav.
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
 * Added LaserLlama: `Psion Mystic Talents` spell list.
 * Complete `Heliana's Guide to Monster Hunting` items.
