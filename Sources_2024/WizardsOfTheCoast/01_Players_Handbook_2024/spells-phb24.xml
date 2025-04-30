@@ -146,10 +146,8 @@ Source:	Player's Handbook 2024 p. 240</text>
     <duration>Concentration, up to 1 minute</duration>
     <classes>School: Transmutation, Bard [2024], Sorcerer [2024], Wizard [2024]</classes>
     <text>Objects animate at your command. Choose a number of nonmagical objects within range that aren't being worn or carried, aren't fixed to a surface, and aren't Gargantuan. The maximum number of objects is equal to your spellcasting ability modifier; for this number, a Medium or smaller target counts as one object, a Large target counts as two, and a Huge target counts as three.
-
-Each target animates, sprouts legs, and becomes a Construct that uses the Animated Object stat block; this creature is under your control until the spell ends or until it is reduced to 0 Hit Points. Each creature you make with this spell is an ally to you and your allies. In combat, it shares your Initiative count and takes its turn immediately after yours.
-
-Until the spell ends, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. When the creature drops to 0 Hit Points, it reverts to its object form, and any remaining damage carries over to that form.
+	Each target animates, sprouts legs, and becomes a Construct that uses the Animated Object stat block; this creature is under your control until the spell ends or until it is reduced to 0 Hit Points. Each creature you make with this spell is an ally to you and your allies. In combat, it shares your Initiative count and takes its turn immediately after yours.
+	Until the spell ends, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. When the creature drops to 0 Hit Points, it reverts to its object form, and any remaining damage carries over to that form.
 
 Using a Higher-Level Spell Slot: The creature's Slam damage increases by 1d4 (Medium or smaller), 1d6 (Large), or 1d12 (Huge) for each spell slot level above 5.
 
@@ -1377,10 +1375,10 @@ Source:	Player's Handbook 2024 p. 256</text>
     <duration>Concentration, up to 8 hour</duration>
     <classes>School: Transmutation, Cleric [2024], Druid [2024], Wizard [2024]</classes>
     <text>You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell, and it ends early if you go indoors.
-
-When you cast the spell, you change the current weather conditions, which are determined by the DM. You can change precipitation, temperature, and wind. It takes 1d4 x 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.
+	When you cast the spell, you change the current weather conditions, which are determined by the DM. You can change precipitation, temperature, and wind. It takes 1d4 x 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.
 	When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.
 
+Precipitation:
 Stage | Condition
 1 | Clear
 2 | Light clouds
@@ -1388,6 +1386,7 @@ Stage | Condition
 4 | Rain, hail, or snow
 5 | Torrential rain, driving hail, or blizzard
 
+Temperature:
 Stage | Condition
 1 | Heat wave
 2 | Hot
@@ -1396,6 +1395,7 @@ Stage | Condition
 5 | Cold
 6 | Freezing
 
+Wind:
 Stage | Condition
 1 | Calm
 2 | Moderate wind
@@ -4457,7 +4457,7 @@ Source:	Player's Handbook 2024 p. 302</text>
     <classes>School: Illusion, Wizard [2024]</classes>
     <text>With a touch, you place an illusion on a willing creature or an object that isn't being worn or carried. A creature gains the Mask effect below, and an object gains the False Aura effect below. The effect lasts for the duration. If you cast the spell on the same target every day for 30 days, the illusion lasts until dispelled.
 
-Mask (Creature).:Choose a creature type other than the target's actual type. Spells and other magical effects treat the target as if it were a creature of the chosen type.
+Mask (Creature): Choose a creature type other than the target's actual type. Spells and other magical effects treat the target as if it were a creature of the chosen type.
 
 False Aura (Object): You change the way the target appears to spells and magical effects that detect magical auras, such as Detect Magic. You can make a nonmagical object appear magical, make a magic item appear nonmagical, or change the object's aura so that it appears to belong to a school of magic you choose.
 
@@ -5998,7 +5998,7 @@ Source:	Player's Handbook 2024 p. 328</text>
 	For the duration, a mote of brilliant radiance shines above you. It sheds Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. This light is sunlight.
 
 Source:	Player's Handbook 2024 p. 329</text>
-    <roll>6d8</roll>
+    <roll description="Radiant Damage">6d8</roll>
   </spell>
   <spell>
     <name>Sunburst [2024]</name>
@@ -6014,7 +6014,7 @@ Source:	Player's Handbook 2024 p. 329</text>
 	This spell dispels Darkness in its area that was created by any spell.
 
 Source:	Player's Handbook 2024 p. 329</text>
-    <roll>12d6</roll>
+    <roll description="Radiant Damage">12d6</roll>
   </spell>
   <spell>
     <name>Swift Quiver [2024]</name>
@@ -6152,6 +6152,7 @@ Source:	Player's Handbook 2024 p. 331</text>
     <text>This spell instantly transports you and up to eight willing creatures that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be Large or smaller, and it can't be held or carried by an unwilling creature.
 	The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls 1d100 and consults the Teleportation Outcome table and the explanations after it.
 
+Teleportation Outcome:
 Familiarity | Mishap | Similar Area | Off Target | On Target
 Permanent circle | — | — | — | 01-00
 Linked object | — | — | — | 01-00
