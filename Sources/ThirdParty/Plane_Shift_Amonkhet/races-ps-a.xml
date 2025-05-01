@@ -218,7 +218,7 @@ Weight in pounds = 175 + (2d6 × your size modifier)</text>
     </trait>
   </race>
   <race>
-    <name>Naga</name>
+    <name>Naga (Amonkhet)</name>
     <size>M</size>
     <speed>30</speed>
     <ability>Con +2, Int +1</ability>
@@ -246,9 +246,11 @@ Source:	Plane Shift: Amonkhet p. 21 (Third Party)</text>
     </trait>
     <trait category="species">
       <name>Natural Weapons</name>
-      <text>Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes.
-	If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 1d4 poison damage.
+      <text>Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes. If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 1d4 poison damage.
 	If you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and the target is grappled (escape DC 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is restrained, and you can't constrict another target.</text>
+      <roll description="Piercing Damage">1d4+%1</roll>
+      <roll description="Poison Damage">1d4</roll>
+      <roll description="Bludgeoning Damage">1d6+%1</roll>
     </trait>
     <trait category="species">
       <name>Poison Immunity</name>
