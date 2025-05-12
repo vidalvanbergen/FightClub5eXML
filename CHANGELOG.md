@@ -13,6 +13,7 @@
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
 * Added LaserLlama: `Psion Mystic Talents` spell list.
 * Complete `Heliana's Guide to Monster Hunting` items.
+* Updated `LaserLlama's Compendium of Spells`.
 * @recco added `Remley Farr`'s homebrew content.
 * @Garras fixed some important typos in https://github.com/vidalvanbergen/FightClub5eXML/pull/21.
 * Added missing Artificer Cartographer subclass.

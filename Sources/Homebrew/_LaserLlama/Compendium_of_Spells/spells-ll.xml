@@ -32,7 +32,7 @@ Source:	LaserLlama: Compendium of Spells p. 2 (Homebrew)</text>
 
 Manipulate Air: You manipulate the air in a 5-foot cube within range, creating a small sensory effect such as causing leaves to rustle, shutters to slam shut, or clothing to ripple.
 
-Hurl Squall: You create a small wind squall in your hand and hurl it at a target you can see within range, forcing it to make a Strength saving throw. On a failed save, it takes 1d6 thunder damage and a Medium or smaller target is knocked back 10 feet in a straight line.
+Air Burst: You create a small wind squall in your hand and hurl it at a target you can see within range, forcing it to make a Strength saving throw. On a failed save, it takes 1d6 thunder damage and a Medium or smaller target is knocked back 10 feet in a straight line.
 
 Cantrip Upgrade: The damage of this Cantrip and the size target it can knock back increases by 1d6 at 5th (2d6, Large), 11th (3d6, Huge), and 17th level (4d6, Gargantuan).
 
@@ -177,7 +177,7 @@ Source:	LaserLlama: Compendium of Spells p. 3 (Homebrew)</text>
     <components>V</components>
     <duration>Instantaneous</duration>
     <classes>School: Evocation, Artificer, Magus (LaserLlama), Sorcerer, Warlock</classes>
-    <text>You create a lash of arcane lightning and strikes at a creature of your choice you can see within 15 feet. It must succeed on a Strength saving throw or take 1d8 lightning damage and be pulled in a line to an unoccupied space within 5 feet of you.
+    <text>You create a lash of arcane lightning and strikes at a creature of your choice you can see within 15 feet. It must succeed on a Strength saving throw or take 1d8 lightning damage and be pulled in a straight line up to 10 feet toward you.
 
 Cantrip Upgrade: The range of this spell increases at 5th level (20 feet), 11th level (25 feet), and 17th level (30 feet).
 
@@ -292,15 +292,12 @@ Source:	LaserLlama: Compendium of Spells p. 4 (Homebrew)</text>
     <components>S, M (an empty hand)</components>
     <duration>Instantaneous</duration>
     <classes>School: Transmutation, Druid, Shaman (LaserLlama)</classes>
-    <text>As part of an unarmed strike, your fingers transform into savage claws, and you use your spellcasting modifier for the attack roll. On hit, this unarmed strike deals magical piercing or slashing damage equal to 1d6 + your spellcasting modifier. Your fingers revert to normal after this unarmed strike.
+    <text>Your fingers transform into sharp claws until the start of your next turn. As part of the action used to cast this spell you can make a melee spell attack with these claws. On hit, they deal slashing damage equal to 1d6 + your spellcasting modifier.
 
-Cantrip Upgrade: The damage die of this spell increases at 5th level (1d8), 11th level (1d10), and 17th level (1d12).
+Cantrip Upgrade: The number of attacks you make with the claws as part of the action to cast this spell increases at 5th level (two), 11th level (three), and 17th level (four).
 
 Source:	LaserLlama: Compendium of Spells p. 4 (Homebrew)</text>
-    <roll description="Piercing or Slashing Damage" level="0">1d6+SPELL</roll>
-    <roll description="Piercing or Slashing Damage" level="5">1d8+SPELL</roll>
-    <roll description="Piercing or Slashing Damage" level="11">1d10+SPELL</roll>
-    <roll description="Piercing or Slashing Damage" level="17">1d12+SPELL</roll>
+    <roll description="Slashing Damage" level="0">1d6+%0</roll>
   </spell>
   <spell>
     <name>Psionic Strike (HB)</name>
@@ -484,6 +481,65 @@ Source:	LaserLlama: Compendium of Spells p. 6 (Homebrew)</text>
     <roll description="Force Damage" level="9">21d4</roll>
   </spell>
   <spell>
+    <name>Beast Bond (HB Alt)</name>
+    <level>1</level>
+    <school>D</school>
+    <time>1 Action</time>
+    <range>Touch</range>
+    <components>V, S, M (saliva from both you and the target)</components>
+    <duration>1 hour</duration>
+    <classes>School: Divination, Druid, Ranger</classes>
+    <text>You touch a Beast that is either friendly or Charmed by you and establish a mental link with it. This spell automatically fails if the Beast's Intelligence is 4 or higher.
+	For the duration, your minds are linked so long as you can see each other. You can communicate telepathically through this link, even if you do not share a language. Lastly, the link grants the Beast advantage on attack rolls against any target you can see within 5 feet of you.
+	If you cast this spell on another Beast, previous instances of this spell are immediately dispelled.
+
+Source:	LaserLlama: Compendium of Spells p. 6 (Homebrew)</text>
+  </spell>
+  <spell>
+    <name>Create Snare (HB Alt)</name>
+    <level>1</level>
+    <school>A</school>
+    <time>1 Action</time>
+    <range>Touch</range>
+    <components>V, S, M (30 feet of cord or rope, which is consumed by the spell)</components>
+    <duration>Until dispelled or triggered</duration>
+    <classes>School: Abjuration, Artificer, Druid, Ranger, Wizard</classes>
+    <text>You infuse a length of cord or rope with magic, transforming it into a magic Snare, pointing it toward an unoccupied space you can see within 30 feet. It unfurls in that space and turns invisible. It can only be detected by a successful Investigation check against your Spell save DC.
+	The first Small or larger creature to move into that space triggers your Snare and must make a Dexterity saving throw or fall Prone in its space and be Restrained by the Snare. If a creature is unaware of the Snare, it makes this saving throw with disadvantage. If a creature is in the space when you set the Snare, the Snare is instantly triggered.
+	A Restrained creature makes a Strength saving throw at the end of each of its turns, escaping the Snare on a success.
+	Another creature can use its action to touch the Restrained creature make a Strength check against your Spell save DC, destroying the Snare on a success.
+
+At Higher Levels: If you cast this spell using a 2nd level spell slot, the Snare deals 2d6 slashing damage whenever a creature fails a saving throw to avoid or escape the Snare.
+	If you cast this spell using a spell slot of 3rd-level or higher, this damage increases by 1d6 for each slot level above 2nd.
+
+Source:	LaserLlama: Compendium of Spells p. 6 (Homebrew)</text>
+    <roll description="Slashing Damage" level="2">2d6</roll>
+    <roll description="Slashing Damage" level="3">3d6</roll>
+    <roll description="Slashing Damage" level="4">4d6</roll>
+    <roll description="Slashing Damage" level="5">5d6</roll>
+    <roll description="Slashing Damage" level="6">6d6</roll>
+    <roll description="Slashing Damage" level="7">7d6</roll>
+    <roll description="Slashing Damage" level="8">8d6</roll>
+    <roll description="Slashing Damage" level="9">9d6</roll>
+  </spell>
+  <spell>
+    <name>Create Water (HB Alt)</name>
+    <level>1</level>
+    <school>T</school>
+    <time>1 Minute</time>
+    <range>30 feet</range>
+    <components>V, S, M (a drop of water if creating water, or a grain of sand if destroying water)</components>
+    <duration>Instantaneous</duration>
+    <classes>School: Divination, Druid, Ranger</classes>
+    <text>You create up to 10 gallons of clean water within range. The water appears in open containers you can see, or falls as rain in a 30-foot radius centered on you, extinguishing all flames.
+
+Inverse Casting: You can use this spell to destroy water. You destroy up to 10 gallons of water in open containers in range, or destroy fog in a 30-foot radius centered on you.
+
+At Higher Levels: If you cast this spell with a spell slot of 2nd level or higher, you can create (or destroy) an additional 10 gallons of water, or the radius of this spell effect increases by 10 feet, for each slot level above 1st.
+
+Source:	LaserLlama: Compendium of Spells p. 6 (Homebrew)</text>
+  </spell>
+  <spell>
     <name>Divine Favor (HB Alt)</name>
     <level>1</level>
     <school>EV</school>
@@ -571,6 +627,20 @@ Source:	LaserLlama: Compendium of Spells p. 6 (Homebrew)</text>
     <roll description="Necrotic Damage" level="7">8d8</roll>
     <roll description="Necrotic Damage" level="8">9d8</roll>
     <roll description="Necrotic Damage" level="9">10d8</roll>
+  </spell>
+  <spell>
+    <name>Goodberry (HB Alt)</name>
+    <level>1</level>
+    <school>T</school>
+    <time>1 Minute</time>
+    <range>Touch</range>
+    <components>V, S, M (up to 10 fresh-picked berries, which are consumed by the casting of this spell)</components>
+    <duration>Instantaneous</duration>
+    <classes>School: Transmutation, Druid, Ranger</classes>
+    <text>You hold up to ten berries in your hands and infuse them with primal magic. As an action, a creature can eat a berry. It then regains 1 hit point and nourishment for one day.
+	The berries wither and lose their potency if they have not been consumed within 24 hours of the casting of this spell.
+
+Source:	LaserLlama: Compendium of Spells p. 7 (Homebrew)</text>
   </spell>
   <spell>
     <name>Hail of Thorns (HB Alt)</name>
@@ -820,6 +890,19 @@ Source:	LaserLlama: Compendium of Spells p. 9 (Homebrew)</text>
     <roll description="Bonus Radiant Damage" level="9">9d8</roll>
   </spell>
   <spell>
+    <name>Barkskin (HB Alt)</name>
+    <level>2</level>
+    <school>T</school>
+    <time>1 Action</time>
+    <range>Touch</range>
+    <components>V, M (a strip of oak bark)</components>
+    <duration>1 hour</duration>
+    <classes>School: Transmutation, Druid, Ranger</classes>
+    <text>You touch a willing creature that is not wearing metal armor. For the duration, its skin has a rough, bark-like appearance, and its Armor Class cannot be lower than 16. The spell ends if the target is Incapacitated or dons metal armor, but it can wield a shield and retain this benefit.
+
+Source:	LaserLlama: Compendium of Spells p. 9 (Homebrew)</text>
+  </spell>
+  <spell>
     <name>Cordon of Arrows (HB Alt)</name>
     <level>2</level>
     <school>T</school>
@@ -910,6 +993,7 @@ Source:	LaserLlama: Compendium of Spells p. 10 (Homebrew)</text>
     <name>Locate Creature (HB Alt)</name>
     <level>2</level>
     <school>D</school>
+    <ritual>YES</ritual>
     <time>1 action</time>
     <range>Self</range>
     <components>V, S, M (a magnet dipped in holy water)</components>
@@ -1165,6 +1249,30 @@ Source:	LaserLlama: Compendium of Spells p. 13 (Homebrew)</text>
     <roll description="Fire Damage">1d6</roll>
   </spell>
   <spell>
+    <name>Grasping Vine (HB Alt)</name>
+    <level>3</level>
+    <school>C</school>
+    <time>1 bonus action</time>
+    <range>30 feet</range>
+    <components>V, S</components>
+    <duration>Concentration, up to 1 minute</duration>
+    <classes>School: Transmutation</classes>
+    <text>You cause a vine to sprout from the ground in an unoccupied space you can see within range. When you cast this spell, the vine strikes at a target you can see within 30 feet of it. Make a melee spell attack against the target, and on hit, it takes 2d8 bludgeoning damage. If the target is Large or smaller, then it is pulled up to 30 feet toward the vine and Restrained by it.
+	As an action, a Restrained creature can make a Strength or Dexterity check against your Spell save DC to escape.
+	As a bonus action on each subsequent turn, you can cause the vine to strike at another target. If the vine is Restraining a creature, it instead deals 2d8 bludgeoning damage to it.
+
+At Higher Levels: If you cast this spell with a spell slot of 4th-level or higher, the vine deals an additional 1d8 damage on hit for each slot level above 3rd.
+
+Source:	LaserLlama: Compendium of Spells p. 13 (Homebrew)</text>
+    <roll description="Bludgeoning Damage" level="3">2d8</roll>
+    <roll description="Bludgeoning Damage" level="4">3d8</roll>
+    <roll description="Bludgeoning Damage" level="5">4d8</roll>
+    <roll description="Bludgeoning Damage" level="6">5d8</roll>
+    <roll description="Bludgeoning Damage" level="7">6d8</roll>
+    <roll description="Bludgeoning Damage" level="8">7d8</roll>
+    <roll description="Bludgeoning Damage" level="9">8d8</roll>
+  </spell>
+  <spell>
     <name>Hunger of Hadar (HB Alt)</name>
     <level>3</level>
     <school>C</school>
@@ -1328,6 +1436,24 @@ At Higher Levels: When you cast this spell using a spell slot of 5th level or hi
 Source:	LaserLlama: Compendium of Spells p. 14 (Homebrew)</text>
   </spell>
   <spell>
+    <name>Bones of the Earth (HB Alt)</name>
+    <level>4</level>
+    <school>T</school>
+    <time>1 Action</time>
+    <range>120 feet</range>
+    <components>V, S</components>
+    <duration>Instantaneous</duration>
+    <classes>School: Transmutation, Druid, Cleric, Magus (LaserLlama), Sorcerer</classes>
+    <text>You cause up to two pillars of stone to burst forth from places on the ground that you can see within range. Both pillars are cylinders with a diameter of 5 feet and a height up to 30 feet.
+	The ground where a pillar appears must be wide enough for its diameter, and you can target ground under a creature if that creature is Medium or smaller. Each pillar has an Armor Class of 5 and 30 hit points. If reduced to 0 hit points, a pillar crumbles into rubble, creating an area of difficult terrain with a 10-foot radius. This rubble lasts until cleared.
+	If a pillar is created under a creature, that creature must succeed on a Dexterity saving throw or be lifted by the pillar. A creature can choose to fail the save.
+	If a pillar is prevented from reaching its full height because of a ceiling or other obstacle, any creature on the pillar takes 6d6 bludgeoning damage and is Restrained, pinched between the pillar and the obstacle. A Restrained creature can use its action to make either a Strength or Dexterity check against your Spell save DC. On a success, it is no longer Restrained and must either move off the pillar or fall off it.
+
+At Higher Levels: If you cast this spell with a spell slot of 5th level or higher, you create two additional pillars for each slot level above 4th.
+
+Source:	LaserLlama: Compendium of Spells p. 16 (Homebrew)</text>
+  </spell>
+  <spell>
     <name>Eldritch Tentacles (HB)</name>
     <level>4</level>
     <school>C</school>
@@ -1372,19 +1498,19 @@ Source:	LaserLlama: Compendium of Spells p. 15 (Homebrew)</text>
     <range>30 feet</range>
     <components>V, S, M (a caterpillar cocoon)</components>
     <duration>Concentration, up to 10 minutes</duration>
-    <classes>School: Transmutation, Bard, Druid, Magus (LaserLlama), Sorcerer, Wizard, Fighter (Eldritch Knight), Rogue (Arcane Trickster)</classes>
-    <text>This spell transforms one creature you can see within range into a new form of your choice. An unwilling creature must succeed on a Wisdom saving throw to resist this effect, but shapechangers automatically succeed on their saving throw. This spell has no effect on a target that has 0 hit points. The transformation lasts for the duration, but it ends early if the target drops to 0 hit points or dies.
+    <classes>Druid, Fighter (Eldritch Knight), Magus (LaserLlama), Rogue (Arcane Trickster), School: Transmutation, Sorcerer, Vessel (LaserLlama), Warlock, Wizard</classes>
+    <text>You attempt to transform a creature you can see within range into a Beast of your choice. An unwilling creature can make a Wisdom saving throw to resist this effect and Shapechangers automatically succeed on this saving throw. As an action, any transformed creature can repeat this saving throw, returning to its normal form on a successful save.
+	This spell has no effect on targets with 0 hit points. While transformed, creatures use the following rules:
 
-Form: The new form can be any beast you have physically seen while it was living. It must have a Challenge Rating less than or equal to the target's level or its Challenge Rating.
+Form: The new form can be any living Beast you have seen before. Creatures can only be transformed into a Beast with a CR equal to (or lower then) half its level or CR.
 
-Statistics: Its game statistics, including its mental ability scores are replaced by those of the beast, but it does retain its alignment and personality within the limitations of that beast.
-	The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it was transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. If this excess damage reduces its normal form to 0 hit points, it is knocked unconscious.
+Statistics: The creature's game statistics, including mental ability scores are replaced by those of the Beast, but it retains its alignment, personality, and its Hit Points. If the creature is reduced to zero hit points, it reverts to its normal form.
 
-Actions: The actions the creature can take are limited to those its new form is able to perform. It cannot speak, cast spells, or take any actions that require hands or speech.
+Actions: The creature can only take the actions that would be available to that Beast. It cannot speak, cast spells, or take any actions that require hands or speech.
 
 Equipment: Its clothing, weapons, armor, and objects it is holding meld into the new form. However, it can't activate, use, wield, or otherwise benefit from any of its equipment.
 
-Source:	LaserLlama: Compendium of Spells p. 15 (Homebrew)</text>
+Source:	LaserLlama: Compendium of Spells p. 17 (Homebrew)</text>
   </spell>
   <spell>
     <name>Staggering Smite (HB Alt)</name>
@@ -1592,6 +1718,35 @@ Equipment: Its clothing, weapons, armor, and objects it is holding meld into the
 At Higher Levels: If you cast this spell using a 9th-level spell slot, you can target up to 10 creatures within range.
 
 Source:	LaserLlama: Compendium of Spells p. 20 (Homebrew)</text>
+  </spell>
+  <spell>
+    <name>Storm of Vengeance (HB Alt)</name>
+    <level>9</level>
+    <school>C</school>
+    <time>1 action</time>
+    <range>Sight</range>
+    <components>V, S</components>
+    <duration>Concentration, up to 1 hour</duration>
+    <classes>School: Enchantment, Psion (LaserLlama), Warlock, Wizard, Fighter (Eldritch Knight), Rogue (Arcane Trickster)</classes>
+    <text>You conjure a terrifying mass of storm clouds centered on a point you can see, spreading outward to a radius of 360 feet. You are completely immune to the effects of this dark storm. Violent winds, thunder, and lighting fill the storm, forcing all creatures within and below the storm to make a Constitution saving throw. On a failed save, they take 2d6 thunder damage and are Deafened while they remain in the area.
+	Each subsequent round the storm lasts, you can use your action to add (or end) one of the weather effects below, which lasts for the duration. They affect all creatures and objects in and below the storm, and each can only be added once:
+
+Acid Rain: Acidic rain falls from the clouds, dealing 1d6 acid damage to all creatures at the end of each of your turns.
+
+Freezing Rain: Frigid rain falls from the clouds. The area becomes difficult terrain and heavily obscured. Targets in the area take 1d6 cold damage at the end of each of your turns.
+
+Hail Stones: You infuse the storm with bitter cold. At the end of each of your turns, creatures and objects in the area take 2d6 bludgeoning damage and crops are destroyed.
+
+High Winds: Strong winds up to 50 miles per hour rage, instantly dispersing all fog, mist, or similar effects, mundane or magical. Ranged attacks in the area become impossible.
+
+Lightning Strikes: You charge the storm with lightning. As a bonus action on each turn, you can call six bolts of lighting from the cloud, each striking targets of your choice within the area. They must make a Dexterity saving throw, taking 10d6 lighting damage on a failure, and half on a success.
+
+Source:	LaserLlama: Compendium of Spells p. 21 (Homebrew)</text>
+    <roll description="Thunder Damage">2d6</roll>
+    <roll description="Acid Damage">1d6</roll>
+    <roll description="Cold Damage">1d6</roll>
+    <roll description="Bludgeoning Damage">2d6</roll>
+    <roll description="Lighting Damage">10d6</roll>
   </spell>
   <spell>
     <name>Weird (HB Alt)</name>
