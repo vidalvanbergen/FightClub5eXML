@@ -8,7 +8,7 @@
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
-### 2025-##-##
+### 2025-06-07
 * Added Dragon of Icespire Peak campaign template by @robcampav.
 * Added `Unearthed Arcana [2024]: Horror Subclasses`.
 * Added `Unearthed Arcana [2024]: The Psion`.
