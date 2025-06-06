@@ -11,6 +11,7 @@
 ### 2025-##-##
 * Added Dragon of Icespire Peak campaign template by @robcampav.
 * Added `Unearthed Arcana [2024]: Horror Subclasses`.
+* Added `Unearthed Arcana [2024]: The Psion`.
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
 * Added LaserLlama: `Psion Mystic Talents` spell list.
 * Complete `Heliana's Guide to Monster Hunting` items.
