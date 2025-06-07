@@ -13,7 +13,7 @@
 * Added `Unearthed Arcana [2024]: Horror Subclasses`.
 * Added `Unearthed Arcana [2024]: The Psion`.
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
-* Added LaserLlama: `Psion Mystic Talents` spell list.
+* Added LaserLlama: `Psion (LaserLlama): Mystic Talents` spell list.
 * Complete `Heliana's Guide to Monster Hunting` items.
 * Updated `LaserLlama's Compendium of Spells`.
 * @recco added `Remley Farr`'s homebrew content.
