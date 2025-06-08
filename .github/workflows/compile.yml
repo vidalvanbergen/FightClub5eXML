@@ -33,20 +33,11 @@ jobs:
             xsltproc -o "Compendiums/$filename" "Utilities/merge.xslt" "$f"
           done
 
-      - name: Zip up compendiums
-        run: zip -r compendiums.zip Compendiums/*.xml
-
       - name: Upload compiled XML files as artifact
         uses: actions/upload-artifact@v4
         with: 
-          name: compendiums-xml-${{ github.ref_name }}
+          name: compendiums-${{ github.ref_name }}
           path: Compendiums/
-
-      - name: Upload zipped compendiums as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: compendiums-zip-${{ github.ref_name }}
-          path: compendiums.zip
 
       # Create a GitHub release when a tag is pushed
       - name: Create versioned release
