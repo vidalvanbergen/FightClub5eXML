@@ -1,3 +1,7 @@
+[![GitHub release](https://img.shields.io/github/v/release/vidalvanbergen/fightclub5exml)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest)
+[![Last Nightly](https://img.shields.io/github/last-commit/vidalvanbergen/FightClub5eXML?label=last%20nightly)](https://img.shields.io/github/last-commit/vidalvanbergen/fightclub5exml)
+
+
 # Fight Club 5e XML
 
 Creating XML files for all official D&D sources and unofficial homebrew compatible with Fight Club 5e and Game Master 5e apps for macOS, iOS, and Android.
