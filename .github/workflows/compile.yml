@@ -17,21 +17,21 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install xsltproc and parallel
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y xsltproc parallels
+        uses: awalsh128/cache-apt-pkgs-action@v1
+        with:
+          packages: xsltproc
+          version: 1.0
 
-      - name: Compile collections into compendiums in parallel
+      - name: Compile collections into compendiums
         run: |
           set -euxo pipefail
           trap 'echo "Error occurred during compilation!"' ERR
 
           mkdir -p Compendiums
-          # Use GNU parallel to compile XML files concurrently (4 jobs in parallel)
-          find Collections -name '*.xml' | parallel -j 4 '
-            filename=$(basename {});
-            xsltproc -o "Compendiums/$filename" "Utilities/merge.xslt" "{}"
-          '
+          for f in Collections/*.xml; do
+            filename=$(basename "$f")
+            xsltproc -o "Compendiums/$filename" "Utilities/merge.xslt" "$f"
+          done
 
       - name: Zip up compendiums
         run: zip -r compendiums.zip Compendiums/*.xml
