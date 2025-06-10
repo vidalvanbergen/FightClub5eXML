@@ -8,6 +8,14 @@
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
+### 2025-##-##
+* Improved the `build-collections.sh` script to be more modularized, and work using parallel processing to compile multiple compendiums faster.
+* Modularized collections for easier updating to merge partial collections into a whole compendium.
+* Added `source-xml-collector.sh` tool to create partial collections.
+* Moved all official `Wizards of the Coast` content into WotC folder, sectioned of by type of content.
+* Renamed `ThirdParty` to `OfficialExtras` to reflect official WotC content outside core and standard books.
+* Other changes and fixes.
+
 ### 2025-06-07
 * Added Dragon of Icespire Peak campaign template by @robcampav.
 * Added `Unearthed Arcana [2024]: Horror Subclasses`.

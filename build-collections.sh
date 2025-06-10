@@ -51,7 +51,7 @@ compile_file() {
   local output_file="Compendiums/$(basename "$input_file")"
 
   echo "> Compiling: '$(basename "$input_file")'"
-  if ! xsltproc -o "$output_file" Utilities/merge.xslt "$input_file"; then
+  if ! xsltproc --xinclude -o "$output_file" Utilities/merge.xslt "$input_file"; then
     echo "Error: Failed to compile '$input_file'" >&2
     return 1
   fi

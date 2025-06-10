@@ -35,3 +35,5 @@ Starting with the official Wizards of the Coast material, these add:
 **+Homebrew**: Includes homebrew content like Matt Mercer's Bloodhunter class and miscellaneous additions.
 
 **+UnearthedArcana**: Includes Unearthed Arcana.
+
+**Legacy_2014**: Includes legacy content converted for the 2024 compendium.

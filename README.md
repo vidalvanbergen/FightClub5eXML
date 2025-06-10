@@ -45,7 +45,7 @@ Open a command-line terminal (such as PowerShell on Windows or Terminal on macOS
 Next, execute the `xsltproc` program to compile a collection file into a compendium file. For example, if you wanted to compile the `WotC_only.xml` collection, you would execute the following command:
 
 ```bash
-xsltproc -o Compendiums/WotC_only.xml Utilities/merge.xslt Collections/WotC_only.xml
+xsltproc --xinclude -o Compendiums/WotC_only.xml Utilities/merge.xslt Collections/WotC_only.xml
 ```
 
 After that command has completed, you should see a file called `WotC_only.xml` in the newly created `Compendiums` folder. You can then import it into Fight Club 5e.
