@@ -20,11 +20,15 @@ This page is dedicated to helping you make your own XML files to be imported in 
   - [Manual Validation](#manual-validation)
   - [Build Your Own Compendium](#build-your-own-compendium)
     - [Create a collection file](#create-a-collection-file)
+    - [Method 1: Using `<doc href="..."/>`](#method-1-using-doc-href)
+    - [Method 2: Using XInclude `<xi:include>`](#method-2-using-xinclude-xiinclude)
+    - [Utility: Generating Partial Collection Files Automatically](#utility-generating-partial-collection-files-automatically)
+    - [Summary](#summary)
     - [Execute the merge](#execute-the-merge)
 
 ## [Elements and Tags](#fightclub5e-xml)
 
-The basic unit of an XMl document is an element. It consists of a start tag, content, and an end tag. The start tag is represented using ```<abc>```, while the end tag is represented using ```</abc>```. The "abc" is the element name that is between '&lt;' and '&gt;'. The description of that element is written between the start and end tags.
+The basic unit of an XML document is an element. It consists of a start tag, content, and an end tag. The start tag is represented using ```<abc>```, while the end tag is represented using ```</abc>```. The "abc" is the element name that is between '&lt;' and '&gt;'. The description of that element is written between the start and end tags.
 
 For example, ```<name>Wizard</name>```, is an element named, "name" and is set to "Wizard". If you're not using an element, you can either delete it or type it in this manner, '```<spells/>```'. It's usually used when you paste a template of something so you copy an element that you may or may not use in this way so that if you wish to use it, you simply delete the '/', type the content inside, and end it with the appropriate closing tag.
 
@@ -50,12 +54,12 @@ Making your own file is an easy but time-consuming job. But you've come to the r
 
 First off you'll need a Text Editor. You can definitely write everything using the default text editor on your machine, but there are applications that make the process much easier. I recommend using [Visual Studio Code](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/) since they are easy to use and have a lot of great features. Now that you've downloaded a text editor, let's begin!
 
-The file must begin with the following line: ```<?xml version="1.0" encoding="UTF-8"?>```. The first element needed is, "compendium". The element must contain an attribute named, "version" with its value set to "5". The content for the compendium element will be your lists of spells, items, creatures, races, classes, backgrounds, and/or feats.
+The file must begin with the following line: ```<?xml version="1.0" encoding="UTF-8"?>```. The first required element is `<compendium>`. The element must contain an attribute named, "version" with its value set to "5". You can add an optional "auto_indent" attribute with the value `YES` or `NO`, if set to YES the app will try to indent your text for you, if set to NO it will use the text as written. The content for the compendium element will be your lists of spells, items, creatures, races, classes, backgrounds, and/or feats.
 
 This is what your file should currently look like:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<compendium version="5">
+<compendium version="5" auto_indent="NO">
   your content
 </compendium>
 ```
@@ -929,7 +933,15 @@ xmllint --noout --schema Utilities/compendium.xsd Sources/CoreRulebooks.xml
 
 ### [Create a collection file](#fightclub5e-xml)
 
-A collection file is an XML file that lists which sources you would like to merge into your custom Compendium. It must follow this format (assuming you create your file within the `Collections` directory):
+A collection file is an XML file that lists which sources you want to merge into your custom Compendium. It can include source files in one of two ways:
+
+---
+
+### Method 1: Using `<doc href="..."/>`
+
+This method is simple and common. Your collection file lists one or more `<doc>` elements, each referencing an XML file containing the source content. Each referenced XML file must have a `<compendium>` root element.
+
+Example (assuming your file is inside the `Collections` directory):
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -940,9 +952,67 @@ A collection file is an XML file that lists which sources you would like to merg
 </collection>
 ```
 
-You can have one or more `<doc>` tags. Each doc must reference an XML file with a `<compendium>` root element.
+- You can include one or more `<doc>` entries.
+- The `href` attribute points to the relative path of the source XML file.
+- Each source XML file should contain a `<compendium>` root element.
+- The collection file name determines the name of the final merged Compendium.
 
-The name of the collection file will be the name of the final Compendium.
+---
+
+### Method 2: Using XInclude `<xi:include>`
+
+Alternatively, you can build your collection using the XML XInclude standard. This method lets you include external XML files directly into your collection file by reference and selectively include specific XML nodes using XPointer expressions.
+
+Typically, the `<xi:include>` elements point to **partial collection XML files** located inside source folders (e.g. `partial-collection-foldername.xml`). These partial collection files list multiple source XML files (like `source-*.xml`) using `<doc>` elements nested inside `<collection>`. The partial collection files themselves can be automatically generated with the utility explained in the next section.
+
+Example:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../Sources/WizardsOfTheCoast/collection-wizardsofthecoast.xml" xpointer="xpointer(/collection/doc)" />
+  <xi:include href="../Sources/PartneredContent/collection-partneredcontent.xml" xpointer="xpointer(/collection/doc)" />
+  <xi:include href="../Sources/Homebrew/collection-homebrew.xml" xpointer="xpointer(/collection/doc)" />
+</collection>
+```
+
+* The `xmlns:xi="http://www.w3.org/2001/XInclude"` namespace declaration is required.
+* Each `<xi:include>` tag includes an external XML partial collection file.
+* The xpointer attribute typically uses `xpointer="xpointer(/collection/doc)"` since partial collection files contain `<doc>` elements inside a `<collection>`.
+* The partial collection files list individual source-*.xml files with `<doc href="..."/>`.
+* Each source-*.xml file contains a `<source>` root with its own `<collection>` of `<doc>` elements.
+* This nested structure allows modular inclusion and organization of sources.
+* Adjust the xpointer if your included XML files have a different internal structure.
+
+---
+
+### Utility: Generating Partial Collection Files Automatically
+
+To help automate building partial collection files, there is a utility script located at:
+
+```bash
+/Utilities/source-xml-collector.sh
+```
+
+- This script scans a directory you specify for all `source-*.xml` files which contains `<collection>` inside a `<source>`, containing `<doc>` elements.
+- It generates a partial `collection.xml` file **inside that same directory**.
+- The generated collection file lists each found source file as an `<xi:include>` entry with appropriate attributes and correct `xpointer`.
+- This helps quickly assemble partial collections without manually writing the XML.
+
+---
+
+### Summary
+
+- Use `<doc href="..."/>` for a simple, straightforward listing of source XML files.
+- Use `<xi:include>` when you want to leverage XML XInclude's ability to include and merge partial collections into complete XML documents.
+- Remember to use the correct `xpointer` expression depending on the XML file's internal structure:
+  - `/collection/doc` for root-level collections
+  - `/source/collection/doc` for partial collections nested inside source files
+- Both methods result in a collection file that merges multiple source XMLs into one Compendium.
+- The collection file's name will be used as the name of the resulting merged Compendium.
+- Use `/Utilities/source-xml-collector.sh` to auto-generate partial collection files inside any directory containing your source XMLs.
+
+---
 
 ### [Execute the merge](#fightclub5e-xml)
 

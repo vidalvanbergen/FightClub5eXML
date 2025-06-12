@@ -54,7 +54,7 @@ After that command has completed, you should see a file called `WotC_only.xml` i
 
 The build-collection files are provided for your convenience to compile all the collections within your Collections directory into compendiums.
 
-```
+```bash
 Usage: 
 
 collections.sh [-2024] [-h/-?] [collection_names...]
