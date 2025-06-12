@@ -30,7 +30,7 @@ jobs:
           mkdir -p Compendiums
           for f in Collections/*.xml; do
             filename=$(basename "$f")
-            xsltproc -o "Compendiums/$filename" "Utilities/merge.xslt" "$f"
+            xsltproc --xinclude -o "Compendiums/$filename" "Utilities/merge.xslt" "$f"
           done
 
       - name: Upload compiled XML files as artifact
