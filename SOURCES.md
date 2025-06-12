@@ -339,7 +339,7 @@ Monster example:
   <senses>blindsight 60 ft., darkvision 120 ft.</senses>
   <trait>
     <name>Legendary Resistance (3/Day)</name>
-    <recharge>3/Day</recharge>
+    <recharge>3/DAY</recharge>
     <text>If the dragon fails a saving throw, it can choose to succeed instead.</text>
   </trait>
   <action>
@@ -373,7 +373,7 @@ Monster example:
   </action>
   <legendary>
     <name>Legendary Actions (3/Turn)</name>
-    <recharge>3/Turn</recharge>
+    <recharge>3/TURN</recharge>
     <text>The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.</text>
   </legendary>
   <legendary>
@@ -581,7 +581,6 @@ Class example:
   <wealth>5d4x10</wealth>
   <spellAbility>Wisdom</spellAbility>
   <slotsReset>L</slotsReset>
-  <subclass>Ranger Archetype</subclass>
 
   <autolevel level="2"><slots>0, 2</slots></autolevel>
   <autolevel level="3"><slots>0, 3</slots></autolevel>

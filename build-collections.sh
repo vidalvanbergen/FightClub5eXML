@@ -16,9 +16,10 @@ remove_2024() {
 
 display_help() {
   cat <<EOF
-Usage: $0 [-2024] [-h/-?] [collection_names...]
+Usage: $0 [-2024] [--validate] [-h/-?] [collection_names...]
 
   -2024           Remove '[2024]' from the generated compendiums.
+  --validate      Validate output XML against the schema (disabled by default).
   -h, -?          Display this help message.
   collection_names  Optional list of specific collections to compile.
 
@@ -29,6 +30,8 @@ Examples:
       Compile all collections.
   $0 -2024
       Compile all collections and remove '[2024]'.
+  $0 --validate
+      Compile all collections and validate them.
   $0 collection1.xml
       Compile only 'collection1.xml'.
   $0 -2024 collection1.xml collection2.xml
@@ -40,7 +43,7 @@ EOF
 check_dependencies() {
   for cmd in xsltproc sed; do
     if ! command -v "$cmd" >/dev/null 2>&1; then
-      error "Required command '$cmd' not found. Please install it."
+      echo "❌ Required command '$cmd' not found. Please install it." >&2
       exit 1
     fi
   done
@@ -52,17 +55,26 @@ compile_file() {
 
   echo "> Compiling: '$(basename "$input_file")'"
   if ! xsltproc --xinclude -o "$output_file" Utilities/merge.xslt "$input_file"; then
-    echo "Error: Failed to compile '$input_file'" >&2
+    echo "❌ Error: Failed to compile '$input_file'" >&2
     return 1
   fi
 
   if [ "$REMOVE_2024" = true ]; then
     remove_2024 "$output_file"
   fi
+
+  if [ "$VALIDATE" = true ]; then
+    echo "> Validating: '$(basename "$output_file")'"
+    if ! xmllint --noout --schema Utilities/compendium.xsd "$output_file"; then
+      echo "❌ Validation failed for '$output_file'" >&2
+      return 1
+    fi
+  fi
 }
 
 # Initialize flags
 REMOVE_2024=false
+VALIDATE=false
 
 check_dependencies
 
@@ -77,6 +89,10 @@ while [ $# -gt 0 ]; do
       ;;
     -2024)
       REMOVE_2024=true
+      shift
+      ;;
+    --validate)
+      VALIDATE=true
       shift
       ;;
     *)
@@ -112,7 +128,7 @@ else
   fi
 fi
 
-# Detects max number of CPUs for parallel jobs (or adjust as needed)
+# Detect max number of CPUs for parallel jobs (fallback if unavailable)
 MAX_JOBS=$(nproc 2>/dev/null || sysctl -n hw.ncpu)
 
 # Function to control parallel jobs

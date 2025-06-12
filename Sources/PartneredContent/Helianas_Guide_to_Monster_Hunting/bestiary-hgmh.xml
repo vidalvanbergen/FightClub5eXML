@@ -47,7 +47,7 @@
     <type>aberration</type>
     <alignment>neutral evil</alignment>
     <ac>12 (natural armor)</ac>
-    <hp>4 (1d4 + 2)</hp>
+    <hp>4 (1d4+2)</hp>
     <speed>25 ft., swim 40 ft.</speed>
     <str>12</str>
     <dex>9</dex>
@@ -100,7 +100,7 @@
     </action>
     <action>
       <name>Detect Thoughts</name>
-      <recharge>1/Day</recharge>
+      <recharge>1/DAY</recharge>
       <text>The aboling learns the surface thoughts of one creature it can see within 30 feet of it for the next minute. It can attempt to probe deeper into the same creature's mind, using an action to force the target to make a DC 12 Wisdom saving throw. If it fails, the aboling gains insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the effect ends. Either way, the target knows that the aboling was probing deep into its mind.</text>
     </action>
     <action>
@@ -299,7 +299,7 @@ When the dragonling's tamer reaches 17th level in the tamer class, the Breath We
     <action>
       <name>Wing Attack</name>
       <text>As an action, the dragonling can beat its wings. Each creature within 10 feet of the dragonling must succeed on a Strength saving throw (DC = 8 + the tamer's proficiency bonus + the dragonling's Strength modifier) or take bludgeoning damage and be knocked prone. The damage equals 4d6 plus the dragonling's Strength modifier. Creatures larger than the dragonling automatically succeed on this saving throw. The dragonling can then fly up to half its flying speed.</text>
-      <attack>Wing Attack||4d6+%1</attack>
+      <attack>Wing Attack||4d6</attack>
     </action>
     <spells/>
     <slots/>
@@ -448,14 +448,14 @@ An engulfed creature can try to escape by taking an action to make a Strength ch
     <action>
       <name>Spit</name>
       <text>Ranged Weapon Attack: Str or Dex modifier + PB to hit, range 20/60 ft., one target. Hit: 2d6 + Str or Dex modifier acid damage.</text>
-      <attack>Spit (Str)|%1+2|2d6+%1</attack>
-      <attack>Spit (Dex)|%2+2|2d6+%2</attack>
-      <attack>Spit (Str + Growth II)|%1+2|2d8+%1</attack>
-      <attack>Spit (Dex + Growth II)|%2+2|2d8+%2</attack>
-      <attack>Spit (Str + Growth III)|%1+2|2d10+%1</attack>
-      <attack>Spit (Dex + Growth III)|%2+2|2d10+%2</attack>
-      <attack>Spit (Str + Growth IV)|%1+2|2d12+%1</attack>
-      <attack>Spit (Dex + Growth IV)|%2+2|2d12+%2</attack>
+      <attack>Spit (Str)|+2|2d6</attack>
+      <attack>Spit (Dex)|+2|2d6</attack>
+      <attack>Spit (Str+Growth II)|+2|2d8</attack>
+      <attack>Spit (Dex+Growth II)|+2|2d8</attack>
+      <attack>Spit (Str+Growth III)|+2|2d10</attack>
+      <attack>Spit (Dex+Growth III)|+2|2d10</attack>
+      <attack>Spit (Str+Growth IV)|+2|2d12</attack>
+      <attack>Spit (Dex+Growth IV)|+2|2d12</attack>
     </action>
     <action>
       <name>Phalanx</name>
@@ -578,7 +578,7 @@ Source:	Heliana's Guide to Monster Hunting - Part One p. 230</description>
     <type>plant</type>
     <alignment>Neutral Good</alignment>
     <ac>11 (natural armor)</ac>
-    <hp>4 (1d4 + 2)</hp>
+    <hp>4 (1d4+2)</hp>
     <speed>25 ft., climb 25 ft.</speed>
     <str>7</str>
     <dex>10</dex>
@@ -630,7 +630,7 @@ Source:	Heliana's Guide to Monster Hunting - Part One p. 230</description>
     </action>
     <action>
       <name>Calming Spores (1/Day)</name>
-      <recharge>1/Day</recharge>
+      <recharge>1/DAY</recharge>
       <text>One creature within 30 feet of the hyphan must succeed on a DC 12 Charisma saving throw or have its emotions calmed for the next minute. A willing creature can choose to fail this saving throw. The hyphan can choose to suppress any effect causing the target to be charmed or frightened. When this effect ends, any suppressed effect resumes, provided that its duration hasn't expired in the meantime. Alternatively, the hyphan can make the target indifferent about creatures of its choice that the target is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the effect ends, the creature becomes hostile again, unless the GM rules otherwise.</text>
     </action>
     <action>
@@ -987,8 +987,8 @@ Source:	Heliana's Guide to Monster Hunting - Part One p. 236</description>
     </action>
     <action>
       <name>Pseudopod</name>
-      <recharge>Pseudopod|+3|1d4+1</recharge>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage. The target is subjected to the minimic's Adhesive trait.</text>
+      <attack>Pseudopod|+3|1d4+1</attack>
     </action>
     <action>
       <name>Bite</name>
@@ -1134,7 +1134,7 @@ Source:	Heliana's Guide to Monster Hunting - Part One p. 239</description>
     </action>
     <reaction>
       <name>Encourage (2/Day)</name>
-      <recharge>2/Day</recharge>
+      <recharge>2/DAY</recharge>
       <text>As a reaction when a creature within the peeper's cone of encouragement makes an attack roll or saving throw, the peeper can emit verbal or psychic encouragement, granting the target a bonus d4 to its roll.</text>
       <attack>Encourage||1d4</attack>
       <attack>Encourage I||1d6</attack>
@@ -1283,7 +1283,7 @@ Source:	Heliana's Guide to Monster Hunting - Part One p. 242</description>
     <type>fiend</type>
     <alignment>Lawful Evil</alignment>
     <ac>13 (natural armor)</ac>
-    <hp>3 (1d4 + 1)</hp>
+    <hp>3 (1d4+1)</hp>
     <speed>35 ft.</speed>
     <str>11</str>
     <dex>14</dex>
@@ -1450,7 +1450,7 @@ Source:	Heliana's Guide to Monster Hunting - Part One p. 245</description>
     <type>fey</type>
     <alignment>Chaotic Neutral</alignment>
     <ac>13 (natural armor)</ac>
-    <hp>3 (1d4 + 1)</hp>
+    <hp>3 (1d4+1)</hp>
     <speed>30 ft.</speed>
     <str>14</str>
     <dex>10</dex>
@@ -1618,7 +1618,7 @@ Source:	Heliana's Guide to Monster Hunting - Part One p. 245</description>
     <type>elemental</type>
     <alignment>Unaligned</alignment>
     <ac>13 (natural armor)</ac>
-    <hp>4 (1d4 + 1)</hp>
+    <hp>4 (1d4+1)</hp>
     <speed>30 ft., swim 30 ft.</speed>
     <str>14</str>
     <dex>10</dex>
@@ -1692,7 +1692,7 @@ When the tarling's tamer reaches 9th level in the tamer class, the recurring dam
     <action>
       <name>Necrotar Tongue II</name>
       <text>The range of the tarling's Necrotar Tongue action increases to 40 feet, it can pull the target up to 35 feet closer to it on a failed save, and the damage dealt to the grappled target increases to 18 (4d8) necrotic damage. When the tarling's tamer reaches 17th level in the tamer class, the recurring damage of this action increases to 22 (5d8).</text>
-      <attack>Necrotar Tongue II|4d8</attack>
+      <attack>Necrotar Tongue II||4d8</attack>
       <attack>Necrotar Tongue III||5d8</attack>
     </action>
     <action>
@@ -1855,7 +1855,7 @@ Source:	Heliana's Guide to Monster Hunting - Part One p. 251</description>
     </action>
     <action>
       <name>Corrode Object (3/Day)</name>
-      <recharge>3/Day</recharge>
+      <recharge>3/DAY</recharge>
       <text>The ooze touches a Medium or smaller nonmagical object that isn't being worn or carried, causing it to corrode and dissolve over the course of 1 minute.</text>
     </action>
     <description>Source:	Heliana's Guide to Monster Hunting - Part One</description>
@@ -1914,7 +1914,7 @@ Source:	Heliana's Guide to Monster Hunting - Part One p. 251</description>
     </action>
     <action>
       <name>Corrode Object (3/Day)</name>
-      <recharge>3/Day</recharge>
+      <recharge>3/DAY</recharge>
       <text>The ooze touches a Medium or smaller nonmagical object that isn't being worn or carried, causing it to corrode and dissolve over the course of 1 minute.</text>
     </action>
     <description>Source:	Heliana's Guide to Monster Hunting - Part One</description>
@@ -2033,7 +2033,7 @@ Source:	Heliana's Guide to Monster Hunting - Part One p. 251</description>
     </action>
     <action>
       <name>Breath Weapon (1/Day)</name>
-      <recharge>1/Day</recharge>
+      <recharge>1/DAY</recharge>
       <text>The turret exhales elemental energy in a 20-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 21 (6d6) damage (see Draconic Infusion) on a failed save, or half as much damage on a successful one.</text>
       <attack>Draconic Infusion Damage||6d6</attack>
     </action>

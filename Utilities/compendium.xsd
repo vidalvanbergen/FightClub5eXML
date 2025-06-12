@@ -10,15 +10,25 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:simpleType name="roll">
+  <xs:simpleType name="rollPattern">
     <xs:restriction base="xs:string">
-      <xs:pattern value="SPELL|([\(]*[0-9]*((d[0-9])+)*([+-][0-9]+)*([+-](S[Tt][Rr]|D[Ee][Xx]|C[Oo][Nn]|I[Nn][Tt]|W[Ii][Ss]|C[Hh][Aa]|PROF|%0|LVL|W|W[Oo]|SPELL)?)*[\)]*)*[+-]?"/>
+      <xs:pattern value="SPELL|(\(?[0-9]*(d[0-9]+)?([+\-xX/][0-9]+)?([+\-xX/](S[Tt][Rr]|D[Ee][Xx]|C[Oo][Nn]|I[Nn][Tt]|W[Ii][Ss]|C[Hh][Aa]|PROF|%[0-9]+|LVL|W|W[Oo]|SPELL))?\)?)+"/>
     </xs:restriction>
   </xs:simpleType>
 
+  <!-- Not officially supported: Optional description attribute -->
+  <xs:complexType name="roll">
+    <xs:simpleContent>
+      <xs:extension base="rollPattern">
+        <xs:attribute name="description" type="xs:string" use="optional"/>
+        <xs:attribute name="level" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
   <xs:simpleType name="rollFormula">
     <xs:restriction base="xs:string">
-      <xs:pattern value="SPELL|([\(]*[0-9]*((d[0-9])+)*([+-x/][0-9]+)*([+-x/](S[Tt][Rr]|D[Ee][Xx]|C[Oo][Nn]|I[Nn][Tt]|W[Ii][Ss]|C[Hh][Aa]|PROF|LVL|W|W[Oo]|SPELL)?)*[\)]*)*[+-x/]?"/>
+      <xs:pattern value="SPELL|(\(?[0-9]*(d[0-9]+)?([+\-xX/][0-9]+)?([+\-xX/](S[Tt][Rr]|D[Ee][Xx]|C[Oo][Nn]|I[Nn][Tt]|W[Ii][Ss]|C[Hh][Aa]|PROF|%[0-9]+|LVL|W|W[Oo]|SPELL))?\)?)+"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -48,7 +58,7 @@
 
   <xs:simpleType name="rechargeType">
     <xs:restriction base="xs:string">
-      <xs:pattern value="(SHORT|LONG|[0-9]+/DAY|D[1-6])"/>
+      <xs:pattern value="(SHORT|LONG|[0-9]+/DAY|[0-9]+/TURN|D[1-6])"/> <!-- Not officially supported: TURN -->
     </xs:restriction>
   </xs:simpleType>
 
@@ -78,7 +88,7 @@
 
   <xs:simpleType name="abilityBonusList">
     <xs:restriction base="xs:string">
-      <xs:pattern value="((S[Tt][Rr](ength)?|D[Ee][Xx](terity)?|C[Oo][Nn](stitution)?|I[Nn][Tt](elligence)?|W[Ii][Ss](dom)?|C[Hh][Aa](risma)?) [+-]?[0-9]+)*(, ?((S[Tt][Rr](ength)?|D[Ee][Xx](terity)?|C[Oo][Nn](stitution)?|I[Nn][Tt](elligence)?|W[Ii][Ss](dom)?|C[Hh][Aa](risma)?) [+-]?[0-9]+))*"/>
+      <xs:pattern value="(([Ss][Tt][Rr](ength)?|[Dd][Ee][Xx](terity)?|[Cc][Oo][Nn](stitution)?|[Ii][Nn][Tt](elligence)?|[Ww][Ii][Ss](dom)?|[Cc][Hh][Aa](risma)?) [+-]?[0-9]+)*(, ?(([Ss][Tt][Rr](ength)?|[Dd][Ee][Xx](terity)?|[Cc][Oo][Nn](stitution)?|[Ii][Nn][Tt](elligence)?|[Ww][Ii][Ss](dom)?|[Cc][Hh][Aa](risma)?) [+-]?[0-9]+))*"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -88,7 +98,7 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:simpleType name="skillList">
+  <xs:simpleType name="skillList"> <!-- Unused since Fight Club generally uses abilityAndSkillList -->
     <xs:restriction base="xs:string">
       <xs:pattern value="([Aa]crobatics|[Aa]thletics|[Aa]nimal [Hh]andling|[Aa]rcana|[Dd]eception|[Hh]istory|[Ii]nsight|[Ii]ntimidation|[Ii]nvestigation|[Mm]edicine|[Nn]ature|[Pp]erception|[Pp]erformance|[Pp]ersuasion|[Rr]eligion|[Ss]leight [Oo]f [Hh]and|[Ss]tealth|[Ss]urvival)*(, ?([Aa]crobatics|[Aa]thletics|[Aa]nimal [Hh]andling|[Aa]rcana|[Dd]eception|[Hh]istory|[Ii]nsight|[Ii]ntimidation|[Ii]nvestigation|[Mm]edicine|[Nn]ature|[Pp]erception|[Pp]erformance|[Pp]ersuasion|[Rr]eligion|[Ss]leight [Oo]f [Hh]and|[Ss]tealth|[Ss]urvival)*)*"/>
     </xs:restriction>
@@ -205,6 +215,8 @@
       <xs:enumeration value="Saving Throw"/>
       <xs:enumeration value="skills"/>
       <xs:enumeration value="Skills"/>
+      <xs:enumeration value="skill"/>
+      <xs:enumeration value="Skill"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -230,7 +242,7 @@
 
   <xs:simpleType name="modifierValue">
     <xs:restriction base="xs:string">
-      <xs:pattern value="([Pp]assive )?([Ss]trength( Score)?|[Dd]exterity( Score)?|[Cc]onstitution( Score)?|[Ii]ntelligence( Score)?|[Ww]isdom( Score)?|[Cc]harisma( Score)?|[Hh][Pp]) ?[+-]? ?([0-9]*|%0|prof)"/>
+      <xs:pattern value="([Pp]assive )?([Ss]trength( Score)?|[Dd]exterity( Score)?|[Cc]onstitution( Score)?|[Ii]ntelligence( Score)?|[Ww]isdom( Score)?|[Cc]harisma( Score)?|[Hh][Pp]|[Ss]trength [Ss]ave|[Dd]exterity [Ss]ave|[Cc]onstitution [Ss]ave|[Ii]ntelligence [Ss]ave|[Ww]isdom [Ss]ave|[Cc]harisma [Ss]ave) ?[+-]? ?([0-9]*|%0|prof)"/>
       <xs:pattern value="([Mm]elee [Dd]amage|[Mm]elee [Aa]ttacks|[Ww]eapon [Dd]amage|[Ww]eapon [Aa]ttacks|[Rr]anged [Dd]amage|[Rr]anged [Aa]ttacks|[Ss]pell [Aa]ttack|[Ss]pell [Dd][Cc]|[Ss]aving [Tt]hrows|[Aa][Cc]|[Aa]rmor [Cc]lass|[Ss]peed|[Pp]roficiency [Bb]onus|[Ii]nitiative) ?[+-]? ?([0-9]*|%0|prof)"/>
       <xs:pattern value="([Aa]thletics|[Aa]crobatics|[Aa]nimal [Hh]andling|[Aa]rcana|[Dd]eception|[Hh]istory|[Ii]nsight|[Ii]ntimidation|[Ii]nvestigation|[Mm]edicine|[Nn]ature|[Pp]erception|[Pp]erformance|[Pp]ersuasion|[Rr]eligion|[Ss]leight [Oo]f [Hh]and|[Ss]tealth|[Ss]urvival) ?[+-]? ?([0-9]*|%0|prof)"/>
     </xs:restriction>
@@ -238,7 +250,7 @@
 
   <xs:simpleType name="attackType">
     <xs:restriction base="xs:string">
-      <xs:pattern value="(.*[|]([ ]|[+-]?[0-9]*)[|]([0-9]*(d[0-9]+)*([+-][0-9]+)*)*)*"/>
+      <xs:pattern value="[^|]*\|[ ]*([+-]?[0-9]+)?\|((\(?[0-9]+(d[0-9]+)?([+-][0-9]+(d[0-9]+)?)?\)?)([+\-*/x]\(?[0-9]+(d[0-9]+)?([+-][0-9]+(d[0-9]+)?)?\)?)*)?"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -258,12 +270,14 @@
     <xs:choice maxOccurs="unbounded">
       <xs:element type="xs:string" name="name" minOccurs="0"/>
       <xs:element type="rechargeType" name="recharge" minOccurs="0"/>
-      <xs:element type="skillList" name="proficiency" minOccurs="0" />
+      <xs:element type="abilityAndSkillList" name="proficiency" minOccurs="0" />
       <xs:element type="xs:string" name="text" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="xs:string" name="special" minOccurs="0"/>
       <xs:element type="attackType" name="attack" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="roll" name="roll" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="modifierType" name="modifier"/><!-- Not supported by FightClub -->
     </xs:choice>
+    <xs:attribute name="category" type="xs:string" use="optional"/> <!-- Not officiall supported -->
   </xs:complexType>
 
   <xs:complexType name="slotsType">
@@ -281,7 +295,9 @@
   <xs:complexType name="monsterType">
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="xs:string" name="name"/>
-      <xs:element type="boolean" name="npc"/>
+      <xs:element type="xs:string" name="sortname"/> <!-- Unofficial -->
+      <xs:element type="xs:string" name="ancestry"/> <!-- Unofficial -->
+      <xs:element type="boolean" name="npc"/> <!-- Unofficial -->
       <xs:element type="sizeEnum" name="size"/>
       <xs:element type="xs:string" name="type"/>
       <xs:element type="xs:string" name="alignment"/>
@@ -346,7 +362,8 @@
   <xs:complexType name="backgroundType">
     <xs:choice maxOccurs="unbounded">
       <xs:element type="xs:string" name="name"/>
-      <xs:element type="skillList" name="proficiency"/>
+      <xs:element type="xs:string" name="ancestry"/> <!-- Not officially supported -->
+      <xs:element type="abilityAndSkillList" name="proficiency"/>
       <xs:element type="modifierType" name="modifier"/>
       <xs:element type="traitType" name="trait" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
@@ -414,7 +431,6 @@
       <xs:element type="xs:string" name="weapons"/>
       <xs:element type="xs:string" name="tools"/>
       <xs:element type="integer" name="numSkills"/>
-      <xs:element type="xs:string" name="subclass"/><!-- Not supported by FightClub -->
       <xs:element type="traitType" name="trait"/><!-- Not supported by FightClub -->
       <xs:element type="autolevelType" name="autolevel"/>
     </xs:choice>
@@ -455,7 +471,7 @@
       <xs:element type="xs:string" name="name"/>
       <xs:element type="sizeEnum" name="size"/>
       <xs:element type="xs:integer" name="speed"/>
-      <xs:element type="skillList" name="proficiency"/>
+      <xs:element type="abilityAndSkillList" name="proficiency"/>
       <xs:element type="xs:string" name="armor"/><!-- Not supported by FightClub -->
       <xs:element type="xs:string" name="weapons"/><!-- Not supported by FightClub -->
       <xs:element type="xs:string" name="tools"/><!-- Not supported by FightClub -->
@@ -463,6 +479,7 @@
       <xs:element type="xs:string" name="spells"/>
       <xs:element type="abilityBonusList" name="ability"/>
       <xs:element type="xs:string" name="resist"/><!-- Not supported by FightClub -->
+      <xs:element type="xs:string" name="immunity"/><!-- Not supported by FightClub -->
       <xs:element type="modifierType" name="modifier" minOccurs="0"/>
       <xs:element type="traitType" name="trait" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
