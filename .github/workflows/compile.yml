@@ -27,21 +27,6 @@ jobs:
           set -euxo pipefail
           trap 'echo "Error occurred during compilation!"' ERR
 
-          echo "=== Current directory ==="
-          pwd
-
-          echo "=== Listing Collections directory ==="
-          ls -l Collections
-
-          echo "=== Checking specific XML file ==="
-          ls -l Collections/Special_Adventurers_League_Forgotten_Realms_2024.xml
-
-          echo "=== Listing Sources directory ==="
-          ls -l Sources_2024
-
-          echo "=== Checking referenced file ==="
-          ls -l Sources_2024/Legacy_2014/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/source-scag.xml
-
           mkdir -p Compendiums
           for f in Collections/*.xml; do
             filename=$(basename "$f")

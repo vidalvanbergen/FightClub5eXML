@@ -10,43 +10,37 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:simpleType name="rollPattern">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="SPELL|(\(?[0-9]*(d[0-9]+)?([+\-xX/][0-9]+)?([+\-xX/](S[Tt][Rr]|D[Ee][Xx]|C[Oo][Nn]|I[Nn][Tt]|W[Ii][Ss]|C[Hh][Aa]|PROF|%[0-9]+|LVL|W|W[Oo]|SPELL))?\)?)+"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <!-- Not officially supported: Optional description attribute -->
-  <xs:complexType name="roll">
-    <xs:simpleContent>
-      <xs:extension base="rollPattern">
-        <xs:attribute name="description" type="xs:string" use="optional"/>
-        <xs:attribute name="level" type="xs:string" use="optional"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-
   <xs:simpleType name="rollFormula">
     <xs:restriction base="xs:string">
       <xs:pattern value="SPELL|(\(?[0-9]*(d[0-9]+)?([+\-xX/][0-9]+)?([+\-xX/](S[Tt][Rr]|D[Ee][Xx]|C[Oo][Nn]|I[Nn][Tt]|W[Ii][Ss]|C[Hh][Aa]|PROF|%[0-9]+|LVL|W|W[Oo]|SPELL))?\)?)+"/>
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:complexType name="roll">
+    <xs:simpleContent>
+      <xs:extension base="rollFormula">
+         <!-- Not officially supported attributes -->
+        <xs:attribute name="description" type="xs:string" use="optional"/>
+        <xs:attribute name="level" type="xs:integer" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
   <xs:simpleType name="integer">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="[0-9]*"/>
-    </xs:restriction>
+    <xs:union memberTypes="xs:integer empty"/>
   </xs:simpleType>
 
   <xs:simpleType name="double">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="[0-9]*[.]?[0-9]*"/>
-    </xs:restriction>
+    <xs:union memberTypes="xs:decimal empty"/>
   </xs:simpleType>
 
   <xs:simpleType name="boolean">
     <xs:restriction base="xs:string">
-      <xs:pattern value="(YES|NO|[01])*"/>
+      <xs:enumeration value="YES"/>
+      <xs:enumeration value="NO"/>
+      <xs:enumeration value="0"/>
+      <xs:enumeration value="1"/>
+      <xs:enumeration value=""/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -213,8 +207,6 @@
       <xs:enumeration value="Ability Modifier"/>
       <xs:enumeration value="saving throw"/>
       <xs:enumeration value="Saving Throw"/>
-      <xs:enumeration value="skills"/>
-      <xs:enumeration value="Skills"/>
       <xs:enumeration value="skill"/>
       <xs:enumeration value="Skill"/>
     </xs:restriction>
@@ -350,7 +342,7 @@
       <xs:element type="xs:string" name="source" minOccurs="0"/>
       <xs:element type="xs:string" name="text" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="xs:string" name="special" minOccurs="0"/><!-- Not supported by FightClub -->
-      <xs:element type="modifierType" name="modifier"/><!-- Not supported by FightClub -->
+      <xs:element type="modifierType" name="modifier" minOccurs="0"/><!-- Not supported by FightClub -->
       <xs:element type="roll" name="roll" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
   </xs:complexType>
