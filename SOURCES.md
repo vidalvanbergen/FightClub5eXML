@@ -946,9 +946,9 @@ Example (assuming your file is inside the `Collections` directory):
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <collection>
-  <doc href="../Sources/WizardsOfTheCoast/01_PlayersHandbook.xml" />
-  <doc href="../Sources/WizardsOfTheCoast/02_DungeonMastersGuide.xml" />
-  <doc href="../Sources/WizardsOfTheCoast/03_MonsterManual.xml" />
+  <doc href="../Sources/PHB2014/WizardsOfTheCoast/01_PlayersHandbook.xml" />
+  <doc href="../Sources/PHB2014/WizardsOfTheCoast/02_DungeonMastersGuide.xml" />
+  <doc href="../Sources/PHB2014/WizardsOfTheCoast/03_MonsterManual.xml" />
 </collection>
 ```
 
@@ -970,9 +970,9 @@ Example:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns:xi="http://www.w3.org/2001/XInclude">
-  <xi:include href="../Sources/WizardsOfTheCoast/collection-wizardsofthecoast.xml" xpointer="xpointer(/collection/doc)" />
-  <xi:include href="../Sources/PartneredContent/collection-partneredcontent.xml" xpointer="xpointer(/collection/doc)" />
-  <xi:include href="../Sources/Homebrew/collection-homebrew.xml" xpointer="xpointer(/collection/doc)" />
+  <xi:include href="../Sources/PHB2014/WizardsOfTheCoast/collection-wizardsofthecoast.xml" xpointer="xpointer(/collection/doc)" />
+  <xi:include href="../Sources/PHB2014/PartneredContent/collection-partneredcontent.xml" xpointer="xpointer(/collection/doc)" />
+  <xi:include href="../Sources/PHB2014/Homebrew/collection-homebrew.xml" xpointer="xpointer(/collection/doc)" />
 </collection>
 ```
 
