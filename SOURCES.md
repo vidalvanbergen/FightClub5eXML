@@ -252,6 +252,8 @@ Examples:
   <dmg1>1d8</dmg1>
   <dmgType>P</dmgType>
   <range>150/600</range>
+  <text>Ammo: arrow</text>
+  <text/>
   <text>Ammunition: You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</text>
   <text/>
   <text>If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see "Improvised Weapons").</text>
@@ -262,7 +264,7 @@ Examples:
   <text/>
   <text>Heavy: Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</text>
   <text/>
-  <text>Proficiency: martial, longbow
+  <text>Proficiency: martial, longbow</text>
   <text>Source:	Player's Handbook p. 149</text>
 </item>
 ```

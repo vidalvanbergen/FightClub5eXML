@@ -14,6 +14,8 @@
 * Added `source-xml-collector.sh` tool to create partial collections.
 * Moved all official `Wizards of the Coast` content into WotC folder, sectioned of by type of content.
 * Renamed `ThirdParty` to `OfficialExtras` to reflect official WotC content outside core and standard books.
+* Added the name of Ammo used by ranged weapons.
+* Updated templated magic items.
 * Other changes and fixes.
 
 ### 2025-06-07
