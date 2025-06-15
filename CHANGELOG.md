@@ -15,6 +15,7 @@
 * Moved all official `Wizards of the Coast` content into WotC folder, sectioned of by type of content.
 * Renamed `ThirdParty` to `OfficialExtras` to reflect official WotC content outside core and standard books.
 * Added the name of Ammo used by ranged weapons.
+* Split up Independent content from Homebrew.
 * Updated templated magic items.
 * Other changes and fixes.
 
