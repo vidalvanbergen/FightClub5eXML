@@ -9,6 +9,7 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
 ### 2025-##-##
+* Added 'A Deadly Scarab', 'Dragon War', 'Hunt of the Thessalhydra', 'The Wild Beyond the Witchlight', 'Lost Mines of Phandelver', 'Wild Sheep Chase'. by @Iggwilv.
 * Improved the `build-collections.sh` script to be more modularized, and work using parallel processing to compile multiple compendiums faster.
 * Modularized collections for easier updating to merge partial collections into a whole compendium.
 * Added `source-xml-collector.sh` tool to create partial collections.

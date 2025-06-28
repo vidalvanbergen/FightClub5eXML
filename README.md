@@ -105,3 +105,5 @@ If you'd like to contribute, feel free to fork the repository and submit pull re
 `@recco` for adding various homebrew sources to the compendium.
 
 `@nikjft` for converting legacy content to the 2024 format and adding to the utilities.
+
+`@Iggwilv` for adding several adventures.
