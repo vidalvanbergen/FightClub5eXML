@@ -12,7 +12,7 @@
 * Added `Valda's Spire of Secrets` content.
 * Added `A Deadly Scarab`, `Dragon War`, `Hunt of the Thessalhydra`, `The Wild Beyond the Witchlight`, `Lost Mines of Phandelver`, `Wild Sheep Chase` by @Iggwilv.
 * Improved the `build-collections.sh` script to be more modularized, and use parallel processing to compile multiple compendiums faster.
-* Modularized collections with 'partial' collections for easier updating and merge into a whole compendium.
+* Modularized collections with 'partial' collections for easier updating and merging into a whole compendium.
 * Added `source-xml-collector.sh` tool to aid with creating 'partial' collections.
 * Moved all official `Wizards of the Coast` content into WotC folder, sectioned of by type of content.
 * Renamed `ThirdParty` to `OfficialExtras` to reflect official WotC content outside core and standard books.
