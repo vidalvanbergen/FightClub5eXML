@@ -22,16 +22,35 @@ jobs:
           packages: xsltproc
           version: 1.0
 
-      - name: Compile collections into compendiums
+      - name: Compile collections into compendiums (with [Stripped] if applicable)
         run: |
           set -euxo pipefail
           trap 'echo "Error occurred during compilation!"' ERR
 
           mkdir -p Compendiums
+
           for f in Collections/*.xml; do
             filename=$(basename "$f")
+            output="Compendiums/$filename"
+
             echo "Compiling $filename ..."
-            xsltproc --xinclude -o "Compendiums/$filename" "Utilities/merge.xslt" "$f"
+            xsltproc --xinclude -o "$output" "Utilities/merge.xslt" "$f"
+
+            # Check for '2024' and not '2014' in the filename
+            if [[ "$filename" == *2024* && "$filename" != *2014* ]]; then
+              stripped_name="${filename%.xml}_[STRIPPED].xml"
+              stripped_output="Compendiums/$stripped_name"
+
+              echo "Creating stripped version: $stripped_name"
+              cp "$output" "$stripped_output"
+
+              # Remove [2024] tags (compatible with both GNU and BSD/macOS sed)
+              if sed --version >/dev/null 2>&1; then
+                sed -i 's/ \[2024\]//g' "$stripped_output"
+              else
+                sed -i '' 's/ \[2024\]//g' "$stripped_output"
+              fi
+            fi
           done
 
       - name: Upload compiled XML files as artifact

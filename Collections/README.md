@@ -22,6 +22,8 @@
 
 **WotC_2024_Only**: Only official Wizards of the Coast (2024) material.
 
+**\[STRIPPED\]**: The same 2024 Content, but without the addition of the \[2024\] tags. For stand-alone use, do not use together with 2014 content as it will override each other.
+
 ## Additions
 
 Starting with the official Wizards of the Coast material, these add:

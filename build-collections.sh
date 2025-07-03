@@ -51,9 +51,11 @@ check_dependencies() {
 
 compile_file() {
   local input_file="$1"
-  local output_file="Compendiums/$(basename "$input_file")"
+  local base_name
+  base_name="$(basename "$input_file")"
+  local output_file="Compendiums/$base_name"
 
-  echo "> Compiling: '$(basename "$input_file")'"
+  echo "> Compiling: '$base_name'"
   if ! xsltproc --xinclude -o "$output_file" Utilities/merge.xslt "$input_file"; then
     echo "❌ Error: Failed to compile '$input_file'" >&2
     return 1
@@ -64,10 +66,28 @@ compile_file() {
   fi
 
   if [ "$VALIDATE" = true ]; then
-    echo "> Validating: '$(basename "$output_file")'"
+    echo "> Validating: '$base_name'"
     if ! xmllint --noout --schema Utilities/compendium.xsd "$output_file"; then
       echo "❌ Validation failed for '$output_file'" >&2
       return 1
+    fi
+  fi
+
+  # If filename contains 2024 but not 2014, add an additional [STRIPPED] version which removes the [2024] tags.
+  if [[ "$base_name" == *2024* && "$base_name" != *2014* ]]; then
+    local stripped_name="${base_name%.xml}_[STRIPPED].xml"
+    local stripped_file="Compendiums/$stripped_name"
+
+    echo "> Creating stripped version: '$stripped_name'"
+    cp "$output_file" "$stripped_file"
+    remove_2024 "$stripped_file"
+
+    if [ "$VALIDATE" = true ]; then
+      echo "> Validating: '$stripped_name'"
+      if ! xmllint --noout --schema Utilities/compendium.xsd "$stripped_file"; then
+        echo "❌ Validation failed for '$stripped_file'" >&2
+        return 1
+      fi
     fi
   fi
 }
