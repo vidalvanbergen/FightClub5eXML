@@ -9,20 +9,19 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
 ### 2025-07-03
-* Added `Valda's Spire of Secrets` content.
-* Added `A Deadly Scarab`, `Dragon War`, `Hunt of the Thessalhydra`, `The Wild Beyond the Witchlight`, `Lost Mines of Phandelver`, `Wild Sheep Chase` by @Iggwilv.
-* Improved the `build-collections.sh` script to be more modularized, and use parallel processing to compile multiple compendiums faster.
-* Modularized collections with 'partial' collections for easier updating and merging into a whole compendium.
-* Added `source-xml-collector.sh` tool to aid with creating 'partial' collections.
-* Moved all official `Wizards of the Coast` content into WotC folder, sectioned of by type of content.
-* Categorized Thirdparty content as `Indie` (unofficial), `PartneredOfficial` (Officially partnered with WotC), and `SemiOfficial` (Unofficial but WotC team created content).
-* Moved some `Homebrew` content over to `ThirdParty/Indie` sources.
-* Moved the original `ThirdParty` content to `SemiOfficial` to reflect official WotC content outside core and standard books.
-* Moved official WotC `Supplements`, `Campaign Settings`, `Monster Compendiums` and `Adventures` into separate categories inside the WotC folder.
-* Added the name of Ammo used by ranged weapons.
-* Split up Independent content from Homebrew.
+* Added `Valda's Spire of Secrets`.
+* Added `A Deadly Scarab`, `Dragon War`, `Hunt of the Thessalhydra`, `The Wild Beyond the Witchlight`, `Lost Mines of Phandelver`, and `Wild Sheep Chase` by @Iggwilv.
+* Improved `build-collections.sh` to be modular and support parallel processing for faster compendium builds.
+* Added `source-xml-collector.sh` to help generate modular 'partial' collections.
+* Modularized collections using 'partials' for easier updates and merging.
+* Moved all official Wizards of the Coast content into the `WizardsOfTheCoast/` folder, organized by content type (`Core`, `Supplements`, `Campaign Settings`, `Monster Compendiums`, `Adventures`).
+* Categorized third-party content into `Indie` (unofficial), `PartneredOfficial` (officially partnered with WotC), and `SemiOfficial` (unofficial but created by WotC team members).
+* Moved some `Homebrew` content into `ThirdParty/Indie`.
+* Reclassified original `ThirdParty` folder as `SemiOfficial` to better reflect its origin.
+* Marked select officially partnered content with `(HB)`.
+* Added ammo names for ranged weapons.
 * Updated templated magic items.
-* Other changes and fixes.
+* Various other fixes and improvements.
 
 ### 2025-06-07
 * Added Dragon of Icespire Peak campaign template by @robcampav.
