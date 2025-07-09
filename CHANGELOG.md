@@ -8,6 +8,9 @@
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
+### 2025-##-##
+* Tweaked starting gold message to clarify that it replaces both class and background gear.
+
 ### 2025-07-03
 * Added `Valda's Spire of Secrets`.
 * Added `A Deadly Scarab`, `Dragon War`, `Hunt of the Thessalhydra`, `The Wild Beyond the Witchlight`, `Lost Mines of Phandelver`, and `Wild Sheep Chase` by @Iggwilv.
