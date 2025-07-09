@@ -73,19 +73,19 @@ compile_file() {
     fi
   fi
 
-  # If filename contains 2024 but not 2014, add an additional [STRIPPED] version which removes the [2024] tags.
+  # If filename contains 2024 but not 2014, add an additional [UNTAGGED] version which removes the [2024] tags.
   if [[ "$base_name" == *2024* && "$base_name" != *2014* ]]; then
-    local stripped_name="${base_name%.xml}_[STRIPPED].xml"
-    local stripped_file="Compendiums/$stripped_name"
+    local untagged_name="${base_name%.xml}_[UNTAGGED].xml"
+    local untagged_file="Compendiums/$untagged_name"
 
-    echo "> Creating stripped version: '$stripped_name'"
-    cp "$output_file" "$stripped_file"
-    remove_2024 "$stripped_file"
+    echo "> Creating untagged version: '$untagged_name'"
+    cp "$output_file" "$untagged_file"
+    remove_2024 "$untagged_file"
 
     if [ "$VALIDATE" = true ]; then
-      echo "> Validating: '$stripped_name'"
-      if ! xmllint --noout --schema Utilities/compendium.xsd "$stripped_file"; then
-        echo "❌ Validation failed for '$stripped_file'" >&2
+      echo "> Validating: '$untagged_name'"
+      if ! xmllint --noout --schema Utilities/compendium.xsd "$untagged_file"; then
+        echo "❌ Validation failed for '$untagged_file'" >&2
         return 1
       fi
     fi
