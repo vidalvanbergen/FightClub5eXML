@@ -9,7 +9,8 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
 ### 2025-##-##
-* Added `Ranger (HeavyArms)` class and features.
+* Added `Ranger (HeavyArms)` content.
+* Added `Alternate Blood Hunter (LaserLlama) [2024]` content, put together by @Deepseastronaut.
 * Tweaked starting gold message to clarify that it replaces both class and background gear.
 
 ### 2025-07-03
