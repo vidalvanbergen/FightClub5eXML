@@ -1,4 +1,3 @@
-@ -0,0 +1,178 @@
 #!/bin/bash
 
 # Remove '[2024]' from the compendium file
