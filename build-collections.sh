@@ -1,16 +1,27 @@
+@ -0,0 +1,178 @@
 #!/bin/bash
 
-# Remove '[2024]' from the compendium file (compatible with macOS/BSD sed)
+# Remove '[2024]' from the compendium file
 remove_2024() {
-  local file="$1"
-  # Detect OS for sed -i compatibility
-  echo "> Removing [2024] tags from: '$(basename "$1")'"
-  if sed --version >/dev/null 2>&1; then
-    # GNU sed (Linux)
-    sed -i 's/ \[2024\]//g' "$file"
+  local infile="$1"
+  local outfile="$2"
+
+  echo "> Removing [2024] tags from: '$(basename "$infile")'"
+
+  if [ -z "$outfile" ]; then
+    # In-place edit
+    if sed --version >/dev/null 2>&1; then
+      sed -i 's/ \[2024\]//g' "$infile" # GNU sed (Linux)
+    else
+      sed -i '' 's/ \[2024\]//g' "$infile" # BSD/macOS sed
+    fi
   else
-    # BSD/macOS sed
-    sed -i '' 's/ \[2024\]//g' "$file"
+    # In-memory stream to output
+    if sed --version >/dev/null 2>&1; then
+      sed 's/ \[2024\]//g' "$infile" > "$outfile" # GNU sed (Linux)
+    else
+      sed -e 's/ \[2024\]//g' "$infile" > "$outfile" # BSD/macOS sed
+    fi
   fi
 }
 
@@ -73,14 +84,13 @@ compile_file() {
     fi
   fi
 
-  # If filename contains 2024 but not 2014, add an additional [UNTAGGED] version which removes the [2024] tags.
+  # If filename contains 2024 but not 2014, create [UNTAGGED] version without [2024]
   if [[ "$base_name" == *2024* && "$base_name" != *2014* ]]; then
     local untagged_name="${base_name%.xml}_[UNTAGGED].xml"
     local untagged_file="Compendiums/$untagged_name"
 
     echo "> Creating untagged version: '$untagged_name'"
-    cp "$output_file" "$untagged_file"
-    remove_2024 "$untagged_file"
+    remove_2024 "$output_file" "$untagged_file"
 
     if [ "$VALIDATE" = true ]; then
       echo "> Validating: '$untagged_name'"
