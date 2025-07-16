@@ -9,6 +9,8 @@
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
 ### 2025-##-##
+* Added missing schools to spell lists.
+* Formatted `Legacy [2024]` subclasses to match the modern format.
 * Added `Ranger (HeavyArms)` content.
 * Added `Alternate Blood Hunter (LaserLlama) [2024]` content, put together by @Deepseastronaut.
 * Tweaked starting gold message to clarify that it replaces both class and background gear.
