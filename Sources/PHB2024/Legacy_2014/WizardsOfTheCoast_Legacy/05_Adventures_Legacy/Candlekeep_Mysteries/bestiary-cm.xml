@@ -1,10 +1,62 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
+    <name>Animated Broom</name>
+    <sortname>Animated Object, Broom</sortname>
+    <ancestry>Animated Object</ancestry>
+    <size>S</size>
+    <type>construct</type>
+    <alignment/>
+    <ac>15 (natural armor)</ac>
+    <hp>17 (5d6)</hp>
+    <speed>walk 0 ft., fly 50 ft. (hover)</speed>
+    <str>10</str>
+    <dex>17</dex>
+    <con>10</con>
+    <int>1</int>
+    <wis>5</wis>
+    <cha>1</cha>
+    <save/>
+    <skill/>
+    <passive>7</passive>
+    <languages/>
+    <cr>1/4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, psychic</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone</conditionImmune>
+    <senses>blindsight 120 ft. (blind beyond this radius)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>False Object</name>
+      <text>If the broom is motionless at the start of combat, it has advantage on its initiative roll. Moreover, if a creature hasn't observed the broom move or act, that creature must succeed on a DC 15 Wisdom (Perception) check to discern that the broom is animate.</text>
+    </trait>
+    <trait>
+      <name>Flyby</name>
+      <text>The broom doesn't provoke opportunity attacks when it flies out of an enemy's reach.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The broom makes two melee attacks</text>
+    </action>
+    <action>
+      <name>Broomstick</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage.</text>
+      <attack>Broomstick|+5|1d4+3</attack>
+    </action>
+    <description>Source:	Candlekeep Mysteries p. 20</description>
+    <environment/>
+  </monster>
+  <monster>
     <name>Animated Chained Library</name>
+    <sortname>Animated Object, Chained Library</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>L</size>
     <type>construct</type>
-    <alignment />
+    <alignment/>
     <ac>14 (natural armor)</ac>
     <hp>45 (6d10+12)</hp>
     <speed>walk 10 ft.</speed>
@@ -14,16 +66,16 @@
     <int>1</int>
     <wis>5</wis>
     <cha>1</cha>
-    <save />
-    <skill />
-    <resist />
-    <vulnerable />
+    <save/>
+    <skill/>
+    <passive>7</passive>
+    <languages/>
+    <cr>1</cr>
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone</conditionImmune>
     <senses>blindsight 30 ft. (blind beyond this radius)</senses>
-    <passive>7</passive>
-    <languages />
-    <cr>1</cr>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -41,16 +93,16 @@
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage, and if the target is a creature, it is grappled (escape DC 12).</text>
       <attack>Chained Book|+4|1d8+2</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 24</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Arrant Quill</name>
+    <sortname>Quill, Arrant</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
-    <alignment />
+    <alignment/>
     <ac>14</ac>
     <hp>135 (18d8+54)</hp>
     <speed>walk 30 ft.</speed>
@@ -62,14 +114,14 @@
     <cha>20</cha>
     <save>Int +7, Wis +6, Cha +9</save>
     <skill>Arcana +11, Deception +9, History +7, Performance +13</skill>
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses />
     <passive>12</passive>
     <languages>Common, Draconic, Elvish, Undercommon</languages>
     <cr>11</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+4</text>
@@ -102,15 +154,15 @@
       <text>Quill hurls a string of insults laced with enchantments at a creature he can see within 60 feet of him. If the creature can hear Quill (though it need not understand him), it must succeed on a DC 17 Wisdom saving throw or take 66 (12d10) psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.</text>
     </action>
     <spells>light, mage hand, prestidigitation, detect magic, dispel magic.faerie fire, hold monster, mind blank, teleport</spells>
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 157</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Bak Mei</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
-    <alignment />
+    <alignment/>
     <ac>17 (Unarmored Defense)</ac>
     <hp>102 (12d8+48)</hp>
     <speed>walk 40 ft.</speed>
@@ -122,14 +174,14 @@
     <cha>16</cha>
     <save>Str +5, Dex +9, Con +9, Int +6, Wis +8, Cha +8</save>
     <skill>Acrobatics +9, Athletics +5, Medicine +8, Religion +6, Stealth +9</skill>
-    <resist>poison, thunder</resist>
-    <vulnerable />
-    <immune />
-    <conditionImmune>charmed, frightened, paralyzed</conditionImmune>
-    <senses />
     <passive>13</passive>
     <languages>Auran, Common</languages>
     <cr>13</cr>
+    <vulnerable/>
+    <resist>poison, thunder</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened, paralyzed</conditionImmune>
+    <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+5</text>
@@ -147,10 +199,6 @@
       <name>Unarmored Defense</name>
       <text>While Bak Mei is wearing no armor and wielding no shield, his AC includes his Wisdom modifier.</text>
     </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>Bak Mei attacks three times: twice with Thunder Strike and once with his staff of striking.</text>
-    </action>
     <action>
       <name>Thunder Strike</name>
       <text>Melee Weapon Attack: +9 to h it, reach 5 ft., one target. Hit: 15 (2d10 + 4) thunder damage, and if the target is a creature, it must succeed on a DC 17 Constitution saving throw or be deafened and stunned until the start of Bak Mei's next turn.</text>
@@ -188,16 +236,16 @@
       <name>Thunder Strike (Costs 2 Actions)</name>
       <text>Bak Mei uses Thunder Strike.</text>
     </legendary>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 168</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Canopic Golem</name>
+    <sortname>Golem, Canopic</sortname>
+    <ancestry>Golem</ancestry>
     <size>L</size>
     <type>construct</type>
-    <alignment />
+    <alignment/>
     <ac>17 (natural armor)</ac>
     <hp>252 (24d10+120)</hp>
     <speed>walk 30 ft.</speed>
@@ -208,15 +256,15 @@
     <wis>11</wis>
     <cha>1</cha>
     <save>Int +3, Wis +5, Cha +0</save>
-    <skill />
-    <resist />
-    <vulnerable />
+    <skill/>
+    <passive>10</passive>
+    <languages/>
+    <cr>13</cr>
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <passive>10</passive>
-    <languages />
-    <cr>13</cr>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+5</text>
@@ -247,16 +295,14 @@
       <name>Spell Deflection</name>
       <text>In response to a spell attack missing the golem, it causes that spell to hit another creature within 120 feet of it that it can see.</text>
     </reaction>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 179</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Cloud Giant Ghost</name>
     <size>H</size>
     <type>undead</type>
-    <alignment />
+    <alignment/>
     <ac>15 (natural armor)</ac>
     <hp>104 (16d12)</hp>
     <speed>walk 0 ft., fly 40 ft. (hover)</speed>
@@ -268,14 +314,14 @@
     <cha>17</cha>
     <save>Wis +7, Cha +7</save>
     <skill>Perception +7</skill>
-    <resist>cold</resist>
-    <vulnerable />
-    <immune>necrotic, poison</immune>
-    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
     <passive>17</passive>
     <languages>Common, Giant</languages>
     <cr>9</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+4</text>
@@ -320,15 +366,17 @@
       <attack>Wind Howl||3d10</attack>
     </action>
     <spells>fog cloud, telekinesis, control weather</spells>
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 146</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Constructed Commoner</name>
+    <sortname>Commoner, Constructed</sortname>
+    <ancestry>Commoner</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>construct</type>
-    <alignment />
+    <alignment/>
     <ac>15 (natural armor)</ac>
     <hp>6 (1d8+2)</hp>
     <speed>walk 25 ft.</speed>
@@ -338,16 +386,16 @@
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
-    <resist />
-    <vulnerable />
-    <immune>poison</immune>
-    <conditionImmune>exhaustion, poisoned</conditionImmune>
-    <senses />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>0</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, poisoned</conditionImmune>
+    <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -361,16 +409,14 @@
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
       <attack>Club|+2|1d4</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 149</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Corrupted Avatar of Lurue</name>
     <size>L</size>
     <type>monstrosity</type>
-    <alignment />
+    <alignment/>
     <ac>14 (natural armor)</ac>
     <hp>90 (12d10+24)</hp>
     <speed>walk 50 ft., fly 50 ft. (hover)</speed>
@@ -381,15 +427,15 @@
     <wis>17</wis>
     <cha>16</cha>
     <save>Int +3, Wis +6, Cha +6</save>
-    <skill />
-    <resist />
-    <vulnerable />
-    <immune>poison</immune>
-    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <skill/>
     <passive>13</passive>
     <languages>Celestial, Elvish, Sylvan, telepathy 60 ft.</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+3</text>
@@ -408,13 +454,13 @@
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 32 (8d6 + 4) necrotic damage. If the target is a humanoid, it must succeed on a DC 13 Wisdom saving throw or be transformed into a wolf under the avatar's control. This transformation lasts for 1 hour, or until the target drops to 0 hit points or dies. The target's game statistics are replaced by the wolf's statistics, but it retains its hit points. The target is limited in the actions it can perform by the nature of its wolf form, and it can't speak, cast spells, or take any other action that requires hands or speech. The target's gear melds into the new form, and it can't activate, use, wield, or otherwise benefit from any of its equipment.</text>
       <attack>Horn|+7|8d6+4</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 123</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Dragon Tortoise</name>
+    <sortname>Dragon, Tortoise</sortname>
+    <ancestry>Dragon</ancestry>
     <size>G</size>
     <type>dragon</type>
     <alignment>Neutral</alignment>
@@ -428,15 +474,15 @@
     <wis>12</wis>
     <cha>12</cha>
     <save>Dex +6, Con +11, Wis +7</save>
-    <skill />
-    <resist>fire</resist>
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses>darkvision 120 ft.</senses>
+    <skill/>
     <passive>11</passive>
     <languages>Draconic, Terran</languages>
     <cr>17</cr>
+    <vulnerable/>
+    <resist>fire</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+6</text>
@@ -466,13 +512,12 @@
       <text>The dragon tortoise exhales abrasive sand in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) slashing damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Steam Breath||15d6</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 205</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Faerl</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (wood elf)</type>
     <alignment>neutral evil</alignment>
@@ -485,16 +530,16 @@
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +4, Persuasion +5</skill>
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>Common, Elvish</languages>
     <cr>1/8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -516,13 +561,13 @@
       <name>Parry</name>
       <text>Faerl adds 2 to its AC against one melee attack that would hit it. To do so, he must see the attacker and be wielding a melee weapon.</text>
     </reaction>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 103</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Fungal Servant</name>
+    <sortname>Servant, Fungal</sortname>
+    <ancestry>Servant</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -537,14 +582,14 @@
     <cha>16</cha>
     <save>Con +8, Int +5, Wis +9, Cha +8</save>
     <skill>History +5, Religion +5</skill>
-    <resist />
-    <vulnerable>fire</vulnerable>
-    <immune>necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>The languages it knew in life</languages>
     <cr>15</cr>
+    <vulnerable>fire</vulnerable>
+    <resist/>
+    <immune>necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+5</text>
@@ -609,16 +654,16 @@
 
 Equipment worn or carried by the fungal servant remain in its possession.</text>
     </legendary>
-    <spells>sacred flame, thaumaturgy, command, guiding bolt, shield of faith, hold person, silence, spiritual weapon, animate dead, dispel magic, divination, guardian of faith, contagion, insect plague, harm</spells>
     <slots>0,4,3,3,3,2,1</slots>
+    <spells>sacred flame, thaumaturgy, command, guiding bolt, shield of faith, hold person, silence, spiritual weapon, animate dead, dispel magic, divination, guardian of faith, contagion, insect plague, harm</spells>
     <description>Source:	Candlekeep Mysteries p. 217</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Gingwatzim</name>
     <size>S</size>
     <type>aberration (shapechanger)</type>
-    <alignment />
+    <alignment/>
     <ac>12</ac>
     <hp>39 (6d6+18)</hp>
     <speed>walk 30 ft., fly 30 ft. (hover) in its true form only</speed>
@@ -628,16 +673,16 @@ Equipment worn or carried by the fungal servant remain in its possession.</text>
     <int>4</int>
     <wis>11</wis>
     <cha>6</cha>
-    <save />
-    <skill />
-    <resist />
-    <vulnerable />
-    <immune>poison</immune>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>telepathy 60 ft.</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -657,16 +702,17 @@ When the target finishes a short or long rest, the target loses every level of e
       <name>Change Shape</name>
       <text>The gingwatzim changes from its true form—a 3-foot-diameter sphere of luminous ectoplasm—into one of its two alternate forms, or from one of those forms back into its true form. In object form, it can't move or make attacks but otherwise retains its statistics, and it is indistinguishable from the thing it is imitating. In beast form, it retains its hit points but otherwise uses the stat block of the beast it is imitating. When it dies, the gingwatzim reverts to its true form and then vanishes.</text>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 27</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Grippli Warrior</name>
+    <sortname>Grippli, Warrior</sortname>
+    <ancestry>Grippli</ancestry>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (grippli)</type>
-    <alignment />
+    <alignment/>
     <ac>12</ac>
     <hp>13 (3d6+3)</hp>
     <speed>walk 30 ft., climb 30 ft., swim 30 ft.</speed>
@@ -676,16 +722,16 @@ When the target finishes a short or long rest, the target loses every level of e
     <int>10</int>
     <wis>14</wis>
     <cha>10</cha>
-    <save />
-    <skill />
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses>Athletics +2, Stealth +4, Survival +4</senses>
+    <save/>
+    <skill/>
     <passive>12</passive>
     <languages>Grippli plus one other language (usually Common, Draconic, or Primordial)</languages>
     <cr>1/4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>Athletics +2, Stealth +4, Survival +4</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -718,13 +764,13 @@ When the target finishes a short or long rest, the target loses every level of e
       <text>Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage, plus 2 (1d4) piercing damage if the grippli had advantage on the attack roll.</text>
       <attack>Shortbow|+4|1d6+2</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 99</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Hag of the Fetid Gaze</name>
+    <sortname>Hag, of the Fetid Gaze</sortname>
+    <ancestry>Hag</ancestry>
     <size>M</size>
     <type>fey</type>
     <alignment>neutral evil</alignment>
@@ -737,16 +783,16 @@ When the target finishes a short or long rest, the target loses every level of e
     <int>13</int>
     <wis>14</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Arcana +3, Deception +4, Perception +4, Stealth +4</skill>
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Common, Draconic, Sylvan</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+3</text>
@@ -799,16 +845,19 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
       <name>Invisible Passage</name>
       <text>The hag magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her.</text>
     </action>
-    <spells>dancing lights, minor illusion, vicious mockery, charm person, witch bolt, alter self, suggestion, dispel magic, glyph of warding, slow, blight, polymorph, dominate person, seeming, Otto's irresistible dance</spells>
     <slots>0,4,3,3,3,2,1</slots>
-    <environment />
+    <spells>dancing lights, minor illusion, vicious mockery, charm person, witch bolt, alter self, suggestion, dispel magic, glyph of warding, slow, blight, polymorph, dominate person, seeming, Otto's irresistible dance</spells>
     <description>Source:	Candlekeep Mysteries p. 76</description>
+    <environment/>
   </monster>
   <monster>
     <name>Immortal Lotus Monk</name>
+    <sortname>Monk, Immortal Lotus</sortname>
+    <ancestry>Monk</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
-    <alignment />
+    <alignment/>
     <ac>15 (unarmored defense)</ac>
     <hp>65 (10d8+20)</hp>
     <speed>walk 30 ft.</speed>
@@ -818,16 +867,16 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
     <int>11</int>
     <wis>14</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Acrobatics +6, Perception +5, Stealth +6</skill>
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses />
     <passive>15</passive>
     <languages>Common</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+3</text>
@@ -850,16 +899,15 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
       <text>Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.</text>
       <attack>Dart|+6|1d4+3</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 165</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Jade Tigress</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
-    <alignment />
+    <alignment/>
     <ac>15 (Unarmored Defense)</ac>
     <hp>71 (11d8+21)</hp>
     <speed>walk 40 ft.</speed>
@@ -871,14 +919,14 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
     <cha>11</cha>
     <save>Str +7, Con +5</save>
     <skill>Athletics +7, Insight +6, Intimidation +3, Perception +6</skill>
-    <resist>poison</resist>
-    <vulnerable />
-    <immune />
-    <conditionImmune>charmed, frightened</conditionImmune>
-    <senses />
     <passive>16</passive>
     <languages>Common</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened</conditionImmune>
+    <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+3</text>
@@ -887,10 +935,6 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
       <name>Unarmored Defense</name>
       <text>While Jade Tigress is wearing no armor and wielding no shield, her AC includes her Wisdom modifier.</text>
     </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>Jade Tigress makes three attacks.</text>
-    </action>
     <action>
       <name>Force Strike</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) force damage, and if the target is a creature, it must succeed on a DC 15 Constitution saving throw or be stunned until the start of Jade Tigress's next turn.</text>
@@ -914,13 +958,12 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
       <name>Deflect Missile</name>
       <text>In response to being hit by a ranged weapon attack, Jade Tigress deflects the missile. The damage she takes from the attack is reduced by 1d10 + 9. If the damage is reduced to 0, Jade Tigress catches the missile if it's small enough to hold in one hand and Jade Tigress has a hand free.</text>
     </reaction>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 166</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>K'Tulah</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tabaxi)</type>
     <alignment>neutral good</alignment>
@@ -933,16 +976,16 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
     <int>12</int>
     <wis>15</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Medicine +4, Nature +3, Perception +4</skill>
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>Common, Druidic</languages>
     <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -970,16 +1013,16 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) slashing damage.</text>
       <attack>Claws|+2|1d4</attack>
     </action>
-    <spells>druidcraft, produce flame, shillelagh, entangle, longstrider, speak with animals, thunderwave, animal messenger, barkskin</spells>
     <slots>0,4,3</slots>
+    <spells>druidcraft, produce flame, shillelagh, entangle, longstrider, speak with animals, thunderwave, animal messenger, barkskin</spells>
     <description>Source:	Candlekeep Mysteries p. 64</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Kiddywidget</name>
     <size>S</size>
     <type>construct</type>
-    <alignment />
+    <alignment/>
     <ac>16 (natural armor)</ac>
     <hp>15 (2d6+8)</hp>
     <speed>walk 20 ft., climb 20 ft.</speed>
@@ -989,16 +1032,16 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
     <int>1</int>
     <wis>10</wis>
     <cha>1</cha>
-    <save />
-    <skill />
-    <resist />
-    <vulnerable />
-    <immune>lightning, poison</immune>
-    <conditionImmune>blinded, deafened, exhaustion, paralyzed, petrified, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Skitterwidget</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning, poison</immune>
+    <conditionImmune>blinded, deafened, exhaustion, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -1021,16 +1064,16 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 2 (1d4) lightning damage.</text>
       <attack>Tail|+4|1d4+2+1d4</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 136</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Lichen Lich</name>
+    <sortname>Lich, Lichen</sortname>
+    <ancestry>Lich</ancestry>
     <size>M</size>
     <type>undead</type>
-    <alignment />
+    <alignment/>
     <ac>20 (natural armor)</ac>
     <hp>225 (30d8+90)</hp>
     <speed>walk 30 ft.</speed>
@@ -1042,14 +1085,14 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
     <cha>16</cha>
     <save>Con +9, Int +8, Wis +11, Cha +9</save>
     <skill>Medicine +11, Nature +14, Perception +11, Survival +11</skill>
-    <resist>cold, necrotic</resist>
-    <vulnerable />
-    <immune>poison</immune>
-    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned, stunned</conditionImmune>
-    <senses>truesight 120 ft.</senses>
     <passive>21</passive>
     <languages>Common, Druidic, Sylvan</languages>
     <cr>18</cr>
+    <vulnerable/>
+    <resist>cold, necrotic</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned, stunned</conditionImmune>
+    <senses>truesight 120 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+6</text>
@@ -1112,12 +1155,13 @@ The target can repeat the saving throw at the end of each of its turns, ending t
       <attack>Sap Life||2d10</attack>
     </legendary>
     <spells>druidcraft, detect magic, fog cloud, pass without trace, antilife shell, dispel magic, speak with plants, transport via plants</spells>
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 223</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Lightning Golem</name>
+    <sortname>Golem, Lightning</sortname>
+    <ancestry>Golem</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Neutral</alignment>
@@ -1130,16 +1174,16 @@ The target can repeat the saving throw at the end of each of its turns, ending t
     <int>6</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
-    <skill />
-    <resist />
-    <vulnerable />
-    <immune>lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine</immune>
-    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+3</text>
@@ -1175,16 +1219,16 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) lightning damage.</text>
       <attack>Slam|+7|2d8+4</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 129</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Master Sage</name>
+    <sortname>Sage, Master</sortname>
+    <ancestry>Sage</ancestry>
     <size>M</size>
     <type>humanoid (any race)</type>
-    <alignment />
+    <alignment/>
     <ac>10</ac>
     <hp>54 (12d8)</hp>
     <speed>walk 30 ft.</speed>
@@ -1194,16 +1238,16 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
     <int>20</int>
     <wis>18</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Arcana +11, History +11, Insight +7, Investigation +11, Medicine +10, Nature +11, Religion +11</skill>
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses />
     <passive>14</passive>
     <languages>Common plus any five languages</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+3</text>
@@ -1232,15 +1276,14 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
       <text>When the sage is hit by an attack or targeted by a magic missile spell, it calls forth an invisible barrier of magical force that protects it. Until the start of its next turn, the sage has a +5 bonus to AC, including against the triggering attack, and it takes no damage from magic missile.</text>
     </reaction>
     <spells>light, mage hand, mending, prestidigitation, comprehend languages, detect magic, dispel magic, identify, levitate, locate object, Tenser's Floating Disk, unseen servant, banishment, contact other plane, Drawmij's instant summons, legend lore, locate creature, planar binding, polymorph, protection from evil and good, scrying, sending, true seeing</spells>
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 9</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Miirym</name>
     <size>L</size>
     <type>undead</type>
-    <alignment />
+    <alignment/>
     <ac>10</ac>
     <hp>262 (25d10+125)</hp>
     <speed>walk 0 ft., fly 60 ft. (hover)</speed>
@@ -1252,14 +1295,14 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
     <cha>23</cha>
     <save>Dex +5, Con +12, Int +11, Wis +0, Cha +13</save>
     <skill>Arcana +11, History +11, Perception +16, Stealth +14</skill>
-    <resist>acid, fire, lightning, thunder</resist>
-    <vulnerable />
-    <immune>cold, necrotic, poison</immune>
-    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, poisoned, prone, restrained</conditionImmune>
-    <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <passive>26</passive>
     <languages>Common, Draconic</languages>
     <cr>22</cr>
+    <vulnerable/>
+    <resist>acid, fire, lightning, thunder</resist>
+    <immune>cold, necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, poisoned, prone, restrained</conditionImmune>
+    <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+7</text>
@@ -1329,12 +1372,13 @@ l/day each: dispel evil and good, wall of force</text>
       <text>Miirym magically teleports up to 120 feet to an unoccupied space she can see.</text>
     </legendary>
     <spells>dancing lights, mage hand, detect magic, detect thoughts, dispel magic, locate creature, dispel evil and good, wall of force</spells>
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 16</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Mimic Chair</name>
+    <sortname>Mimic, Chair</sortname>
+    <ancestry>Mimic</ancestry>
     <size>M</size>
     <type>monstrosity (shapechanger)</type>
     <alignment>Neutral</alignment>
@@ -1347,16 +1391,16 @@ l/day each: dispel evil and good, wall of force</text>
     <int>5</int>
     <wis>13</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Stealth +5</skill>
-    <resist />
-    <vulnerable />
+    <passive>11</passive>
+    <languages/>
+    <cr>2</cr>
+    <vulnerable/>
+    <resist/>
     <immune>acid</immune>
     <conditionImmune>prone</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>11</passive>
-    <languages />
-    <cr>2</cr>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -1387,16 +1431,14 @@ l/day each: dispel evil and good, wall of force</text>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) acid damage.</text>
       <attack>Bite|+5|1d8+3+1d8</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 22</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Nintra Siotta</name>
     <size>L</size>
     <type>fey</type>
-    <alignment />
+    <alignment/>
     <ac>17</ac>
     <hp>306 (36d10+108)</hp>
     <speed>walk 40 ft., fly 40 ft. (hover)</speed>
@@ -1408,14 +1450,14 @@ l/day each: dispel evil and good, wall of force</text>
     <cha>24</cha>
     <save>Str +8, Dex +12, Wis +7</save>
     <skill>Deception +12, Insight +7, Perception +7</skill>
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune>charmed, exhaustion, stunned</conditionImmune>
-    <senses>truesight 60 ft.</senses>
     <passive>17</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>16</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>charmed, exhaustion, stunned</conditionImmune>
+    <senses>truesight 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+5</text>
@@ -1469,12 +1511,13 @@ l/day each: dispel evil and good, wall of force</text>
       <text>Provided she is in bright or dim light, Nintra causes her shadow to attack a creature within 10 feet of her. Her shadow makes two claw attacks, each attack identical to Nintra's claw attack except that it deals psychic damage instead of piercing damage.</text>
     </legendary>
     <spells>dispel magic, faerie fire, mirror image</spells>
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 197</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Parasite-infested Behir</name>
+    <sortname>Behir, Parasite-infested</sortname>
+    <ancestry>Behir</ancestry>
     <size>H</size>
     <type>undead</type>
     <alignment>neutral evil</alignment>
@@ -1487,16 +1530,16 @@ l/day each: dispel evil and good, wall of force</text>
     <int>7</int>
     <wis>14</wis>
     <cha>12</cha>
-    <save />
+    <save/>
     <skill>Perception +6, Stealth +7</skill>
-    <resist />
-    <vulnerable />
-    <immune>lightning</immune>
-    <conditionImmune />
-    <senses>darkvision 90 ft.</senses>
     <passive>16</passive>
     <languages>Draconic</languages>
     <cr>11</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+4</text>
@@ -1530,16 +1573,15 @@ Any creature swallowed by a parasite-infested behir must succeed on a DC 19 Cons
 If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.</text>
       <attack>Swallow||6d6</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 220</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Sage</name>
+    <ancestry>Sage</ancestry>
     <size>M</size>
     <type>humanoid (any race)</type>
-    <alignment />
+    <alignment/>
     <ac>10</ac>
     <hp>22 (5d8)</hp>
     <speed>walk 30 ft.</speed>
@@ -1549,16 +1591,16 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <int>18</int>
     <wis>15</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Arcana +8, History +8, Insight +4, Investigation +8, Medicine +6, Nature +8, Religion +8</skill>
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses />
     <passive>12</passive>
     <languages>Common plus any four languages</languages>
     <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -1582,9 +1624,8 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
       <text>When the sage is hit by an attack or targeted by a magic missile spell, it calls forth an invisible barrier of magical force that protects it. Until the start of its next turn, the sage has a +5 bonus to AC, including against the triggering attack, and it takes no damage from magic missile.</text>
     </reaction>
     <spells>light, mage hand, mending, comprehend languages, detect magic, identify, dispel magic, levitate, locate object, see invisibility, sending, tongues, unseen servant</spells>
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 9</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Sapphire Sentinel</name>
@@ -1600,16 +1641,16 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <int>3</int>
     <wis>11</wis>
     <cha>1</cha>
-    <save />
-    <skill />
-    <resist />
-    <vulnerable />
-    <immune>poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine</immune>
-    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands Common but can't speak</languages>
     <cr>10</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+4</text>
@@ -1644,16 +1685,14 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
       <name>Sapphire</name>
       <text>The sapphire has 3 charges. As an action, the golem can expend 1 charge to cast dispel magic (as a 9th-level spell) from the sapphire using Constitution as its spellcasting ability. The sapphire ceases to glow if all its charges are expended, but it regains 1d3 expended charges daily at dawn and glows again once it has 1 or more charges.</text>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 201</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Shemshime</name>
     <size>M</size>
     <type>undead</type>
-    <alignment />
+    <alignment/>
     <ac>13</ac>
     <hp>31 (7d8)</hp>
     <speed>walk 0 ft., fly 40 ft. (hover)</speed>
@@ -1665,13 +1704,13 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <cha>16</cha>
     <save>Int +5, Wis +4</save>
     <skill>Perception +4, Stealth +7</skill>
+    <languages>telepathy 60 ft.</languages>
+    <cr>4</cr>
+    <vulnerable/>
     <resist>acid, bludgeoning, fire, lightning, piercing, slashing, thunder</resist>
-    <vulnerable />
     <immune>cold, necrotic, poison</immune>
     <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
     <senses>darkvision 120 ft.</senses>
-    <languages>telepathy 60 ft.</languages>
-    <cr>4</cr>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -1700,16 +1739,14 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
       <text>Shemshime targets one creature it can see within 30 feet of it. The creature must make a DC 1 3 Wisdom saving throw. On a failed save, it takes 21 (4d8 + 3) psychic damage and is stunned until the end of its next turn. On a successful save, it takes half as much damage and isn't stunned.</text>
       <attack>Howling Babble||4d8+3</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 69</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Skitterwidget</name>
     <size>M</size>
     <type>construct</type>
-    <alignment />
+    <alignment/>
     <ac>18 (natural armor)</ac>
     <hp>85 (10d8+40)</hp>
     <speed>walk 30 ft., climb 30 ft.</speed>
@@ -1719,16 +1756,16 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <int>3</int>
     <wis>10</wis>
     <cha>1</cha>
-    <save />
-    <skill />
-    <resist />
-    <vulnerable />
-    <immune>lightning, poison</immune>
-    <conditionImmune>blinded, deafened, exhaustion, paralyzed, petrified, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Skitterwidget</languages>
     <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning, poison</immune>
+    <conditionImmune>blinded, deafened, exhaustion, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+3</text>
@@ -1759,16 +1796,14 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
       <name>Good Parent</name>
       <text>The skitterwidget imposes disadvantage on one attack roll made against a kiddywidget it can see within 5 feet of it.</text>
     </reaction>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 136</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Steel Crane</name>
     <size>M</size>
     <type>humanoid (human)</type>
-    <alignment />
+    <alignment/>
     <ac>17 (Unarmored Defense)</ac>
     <hp>76 (9d8+36)</hp>
     <speed>walk 40 ft.</speed>
@@ -1780,14 +1815,14 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <cha>14</cha>
     <save>Dex +7, Int +4</save>
     <skill>Acrobatics +7, Deception +5, Perception +6, Stealth +7</skill>
-    <resist>poison, psychic</resist>
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses />
     <passive>16</passive>
     <languages>Common</languages>
     <cr>8</cr>
+    <vulnerable/>
+    <resist>poison, psychic</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+3</text>
@@ -1820,16 +1855,16 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
       <recharge>3/DAY</recharge>
       <text>When Steel Crane falls, he can slow his descent, taking no damage from the fall.</text>
     </reaction>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 164</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Storm Giant Skeleton</name>
+    <sortname>Skeleton, Storm Giant</sortname>
+    <ancestry>Giant, Skeleton</ancestry>
     <size>H</size>
     <type>undead</type>
-    <alignment />
+    <alignment/>
     <ac>13 (armor scraps)</ac>
     <hp>204 (24d12+48)</hp>
     <speed>walk 50 ft.</speed>
@@ -1841,14 +1876,14 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <cha>1</cha>
     <save>Str +14, Con +7</save>
     <skill>Perception +4</skill>
-    <resist>cold</resist>
+    <passive>14</passive>
+    <languages/>
+    <cr>16</cr>
     <vulnerable>bludgeoning</vulnerable>
+    <resist>cold</resist>
     <immune>lightning, poison, thunder</immune>
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
-    <passive>14</passive>
-    <languages />
-    <cr>16</cr>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+5</text>
@@ -1873,16 +1908,16 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
       <text>The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 15 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Lightning Strike||12d8</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 208</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Swarm of Animated Books</name>
+    <sortname>Animated Object, Book Swarm</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>M</size>
     <type>swarm of tiny constructs</type>
-    <alignment />
+    <alignment/>
     <ac>12 (natural armor)</ac>
     <hp>22 (4d8+4)</hp>
     <speed>walk 0 ft., fly 30 ft. (hover)</speed>
@@ -1892,16 +1927,16 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <int>1</int>
     <wis>10</wis>
     <cha>1</cha>
-    <save />
-    <skill />
-    <resist />
+    <save/>
+    <skill/>
+    <passive>10</passive>
+    <languages/>
+    <cr>1/4</cr>
     <vulnerable>fire</vulnerable>
+    <resist/>
     <immune>poison, psychic</immune>
     <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
-    <passive>10</passive>
-    <languages />
-    <cr>1/4</cr>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -1920,10 +1955,8 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
       <attack>Book Club|+3|2d4+1</attack>
       <attack>Book Club(Half HP)|+3|1d4+1</attack>
     </action>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 19</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Valin Sarnaster</name>
@@ -1941,14 +1974,14 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <cha>16</cha>
     <save>Con +8, Int +5, Wis +9, Cha +8</save>
     <skill>History +5, Religion +5</skill>
-    <resist />
-    <vulnerable>bludgeoning</vulnerable>
-    <immune>necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
-    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
-    <senses>darkvision 60 ft.</senses>
     <passive>14</passive>
     <languages>the languages it knew in life</languages>
     <cr>15</cr>
+    <vulnerable>bludgeoning</vulnerable>
+    <resist/>
+    <immune>necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+5</text>
@@ -2013,13 +2046,14 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
 
 Equipment worn or carried by Valin remain in her possession.</text>
     </legendary>
-    <spells>sacred flame, thaumaturgy, command, guiding bolt, shield of faith, hold person, silence, spiritual weapon, clairvoyance, dispel magic, divination, dimension door, contagion, scrying, harm</spells>
     <slots>0,4,3,3,3,2,1</slots>
+    <spells>sacred flame, thaumaturgy, command, guiding bolt, shield of faith, hold person, silence, spiritual weapon, clairvoyance, dispel magic, divination, dimension door, contagion, scrying, harm</spells>
     <description>Source:	Candlekeep Mysteries p. 182</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Varnyr</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (sun elf)</type>
     <alignment>chaotic good</alignment>
@@ -2032,16 +2066,16 @@ Equipment worn or carried by Valin remain in her possession.</text>
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +4, Persuasion +5</skill>
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses>darkvision 60 ft.</senses>
     <passive>12</passive>
     <languages>Common, Elvish</languages>
     <cr>1/8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+2</text>
@@ -2063,13 +2097,14 @@ Equipment worn or carried by Valin remain in her possession.</text>
       <name>Parry</name>
       <text>Varnyr adds 2 to its AC against one melee attack that would hit it. To do so, he must see the attacker and be wielding a melee weapon.</text>
     </reaction>
-    <spells />
-    <slots />
     <description>Source:	Candlekeep Mysteries p. 63</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Wood Elf Wizard</name>
+    <sortname>Wizard, Wood Elf</sortname>
+    <ancestry>Wizard, Elf</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>neutral evil</alignment>
@@ -2082,16 +2117,16 @@ Equipment worn or carried by Valin remain in her possession.</text>
     <int>17</int>
     <wis>13</wis>
     <cha>12</cha>
-    <save />
+    <save/>
     <skill>Arcana +6, Deception +5, Perception +4, Stealth +5</skill>
-    <resist />
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses>darkvision 120 ft.</senses>
     <passive>14</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+3</text>
@@ -2129,13 +2164,14 @@ Equipment worn or carried by Valin remain in her possession.</text>
       <recharge>1/DAY</recharge>
       <text>The wood elf magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
     </action>
-    <spells>dancing lights darkness, faerie fire, levitate, mage hand, minor illusion, poison spray, ray of frost, mage armor, magic missile, shield, witch bolt, alter self, misty step, web, fly, lightning bolt, Evard's black tentacles, greater invisibility, cloudkill</spells>
     <slots>0,4,3,3,3,2</slots>
-    <environment />
+    <spells>dancing lights darkness, faerie fire, levitate, mage hand, minor illusion, poison spray, ray of frost, mage armor, magic missile, shield, witch bolt, alter self, misty step, web, fly, lightning bolt, Evard's black tentacles, greater invisibility, cloudkill</spells>
     <description>Source:	Candlekeep Mysteries p. 187</description>
+    <environment/>
   </monster>
   <monster>
     <name>Zikran</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (water genasi)</type>
     <alignment>Chaotic Evil</alignment>
@@ -2150,14 +2186,14 @@ Equipment worn or carried by Valin remain in her possession.</text>
     <cha>16</cha>
     <save>Int +9, Wis +6</save>
     <skill>Arcana +13, History +13</skill>
-    <resist>acid, damage from spells; non magical bludgeoning, piercing, and slashing (from stoneskin)</resist>
-    <vulnerable />
-    <immune />
-    <conditionImmune />
-    <senses />
     <passive>12</passive>
     <languages>Aquan, Common, Primordial, Sahuagin, and Undercommon</languages>
     <cr>12</cr>
+    <vulnerable/>
+    <resist>acid, damage from spells; non magical bludgeoning, piercing, and slashing (from stoneskin)</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Proficiency Bonus</name>
       <text>+4</text>
@@ -2192,9 +2228,9 @@ Equipment worn or carried by Valin remain in her possession.</text>
       <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4+2) piercing damage.</text>
       <attack>Dagger|+6|1d4+2</attack>
     </action>
-    <spells>fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, conjure elemental, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <slots>0,4,3,3,3,3,1,1,1,1</slots>
-    <environment />
+    <spells>fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, conjure elemental, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Source:	Candlekeep Mysteries p. 144</description>
+    <environment/>
   </monster>
 </compendium>

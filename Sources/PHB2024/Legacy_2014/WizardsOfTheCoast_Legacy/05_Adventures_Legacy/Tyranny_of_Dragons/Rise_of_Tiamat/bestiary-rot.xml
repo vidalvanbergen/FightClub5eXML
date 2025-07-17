@@ -1,7 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Animated Tile Chimera</name>
+    <ancestry>Chimera, Animated Object</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Chaotic Evil</alignment>
@@ -14,15 +15,15 @@
     <int>3</int>
     <wis>14</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +8</skill>
     <passive>18</passive>
     <languages>understands Draconic but can't speak</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Rejuvenation</name>
@@ -62,6 +63,8 @@
   </monster>
   <monster>
     <name>Aquatic Troll</name>
+    <sortname>Troll, Aquatic</sortname>
+    <ancestry>Troll</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -74,15 +77,15 @@
     <int>7</int>
     <wis>9</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Giant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
@@ -114,13 +117,12 @@
       <name>Variant: Loathsome Limbs</name>
       <text>Whenever the troll takes at least 15 slashing damage at one time, roll a d20 to determine what else happens to it:
 
-	• 1–10: Nothing else happens.
-
-	• 11–14: One leg is severed from the troll if it has any legs left.
-
-	• 15–18: One arm is severed from the troll if it has any arms left.
-
-	• 19–20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.
+Loathsome Limbs:
+d20 | Effect
+1-10: Nothing else happens.
+11-14: One leg is severed from the troll if it has any legs left.
+15-18: One arm is severed from the troll if it has any arms left.
+19-20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.
 
 If the troll finishes a short or long rest without reattaching a severed limb or head, the part regrows. At that point, the severed part dies. Until then, a severed part acts on the troll's initiative and has its own action and movement. A severed part has AC 13, 10 hit points, and the troll's Regeneration trait.
 
@@ -138,6 +140,8 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
   </monster>
   <monster>
     <name>Carnivorous Flower</name>
+    <sortname>Flower, Carnivorous</sortname>
+    <ancestry>Flower</ancestry>
     <size>L</size>
     <type>aberration</type>
     <alignment>Neutral</alignment>
@@ -151,14 +155,14 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <wis>13</wis>
     <cha>6</cha>
     <save>Con +7</save>
-    <skill />
+    <skill/>
     <passive>11</passive>
     <languages>Otyugh</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Limited Telepathy</name>
@@ -188,6 +192,7 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
   </monster>
   <monster>
     <name>Diderius</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -205,9 +210,9 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <passive>14</passive>
     <languages>the languages it knew in life</languages>
     <cr>15</cr>
-    <resist />
-    <immune>necrotic, poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
     <vulnerable>fire</vulnerable>
+    <resist/>
+    <immune>necrotic, poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -217,6 +222,18 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <trait>
       <name>Rejuvenation</name>
       <text>A destroyed mummy lord gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of Diderius's heart.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Diderius is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). Diderius has the following cleric spells prepared:
+
+	• Cantrips (at will): sacred flame, thaumaturgy
+	• 1st level (4 slots): command, guiding bolt, shield of faith
+	• 2nd level (3 slots): hold person, silence, spiritual weapon
+	• 3rd level (3 slots): animate dead, dispel magic
+	• 4th level (3 slots): divination, guardian of faith
+	• 5th level (2 slots): contagion, insect plague
+	• 6th level (1 slots): harm</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -258,7 +275,7 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
 
 Equipment worn or carried by Diderius remain in its possession.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the mummy lord takes a lair action to cause one of the following effects; the mummy lord can't use the same effect two rounds in a row:
 
@@ -268,7 +285,7 @@ Equipment worn or carried by Diderius remain in its possession.</text>
 
 	• Until initiative count 20 on the next round, any non-undead creature that tries to cast a spell of 4th level or lower in the mummy lord's lair is wracked with pain. The creature can choose another action, but if it tries to cast the spell, it must make a DC 16 Constitution saving throw. On a failed save, it takes 1d6 necrotic damage per level of the spell, and the spell has no effect and is wasted.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>A mummy lord's temple or tomb is warped in any of the following ways by the creature's dark presence:
 
@@ -280,25 +297,14 @@ Equipment worn or carried by Diderius remain in its possession.</text>
 
 If the mummy lord is destroyed, these regional effects end immediately.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Diderius is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). Diderius has the following cleric spells prepared:
-
-	• Cantrips (at will): sacred flame, thaumaturgy
-	• 1st level (4 slots): command, guiding bolt, shield of faith
-	• 2nd level (3 slots): hold person, silence, spiritual weapon
-	• 3rd level (3 slots): animate dead, dispel magic
-	• 4th level (3 slots): divination, guardian of faith
-	• 5th level (2 slots): contagion, insect plague
-	• 6th level (1 slots): harm</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>sacred flame, thaumaturgy, command, guiding bolt, shield of faith, hold person, silence, spiritual weapon, animate dead, dispel magic, divination, guardian of faith, contagion, insect plague, harm</spells>
     <description>Source:	Rise of Tiamat p. 40</description>
     <environment>desert</environment>
   </monster>
   <monster>
     <name>Dragonfang</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -316,11 +322,11 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <passive>11</passive>
     <languages>Common, Draconic, Infernal</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>one of the following: acid, cold, fire, lightning, poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Dragon Fanatic</name>
       <text>The dragonfang has advantage on saving throws against being charmed or frightened. While the dragonfang can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonfang ignores the effects of being charmed or frightened.</text>
@@ -354,10 +360,11 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     </action>
     <description>Source:	Rise of Tiamat p. 89,
 		Tyranny of Dragons p. 182</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Dragonsoul</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -375,11 +382,11 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <passive>11</passive>
     <languages>Common, Draconic, Infernal</languages>
     <cr>7</cr>
+    <vulnerable/>
     <resist>one of the following: acid, cold, fire, lightning, poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Dragon Fanatic</name>
       <text>The dragonsoul has advantage on saving throws against being charmed or frightened. While the dragonsoul can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonsoul ignores the effects of being charmed or frightened.</text>
@@ -413,10 +420,11 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     </action>
     <description>Source:	Rise of Tiamat p. 89,
 		Tyranny of Dragons p. 183</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Galvan</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -434,11 +442,11 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <passive>11</passive>
     <languages>Common, Draconic, Infernal</languages>
     <cr>7</cr>
+    <vulnerable/>
     <resist>one of the following: acid, cold, fire, lightning, poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>5etools Note</name>
       <text>While Galvan is not presented in an encounter in The Rise of Tiamat, the dragonsoul stat block has been provided here for ease of use, with optional alterations for the Blue Dragon Mask.</text>
@@ -492,10 +500,12 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
       <attack>Orb of Dragon's Breath (3/Day)|+7|6d8</attack>
     </action>
     <description>Source:	Rise of Tiamat p. 9</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Half-Blue Dragon Gladiator</name>
+    <sortname>Half-Blue Dragon, Gladiator</sortname>
+    <ancestry>Half-Blue Dragon, Gladiator</ancestry>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -513,10 +523,10 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <passive>11</passive>
     <languages>any one language (usually Common), Draconic</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>lightning</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft., darkvision 60 ft.</senses>
     <trait>
       <name>Brave</name>
@@ -552,10 +562,12 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     </reaction>
     <description>Source:	Rise of Tiamat p. 55,
 		Essentials Kit: Divine Contention</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Half-Green Dragon Assassin</name>
+    <sortname>Half-Green Dragon, Assassin</sortname>
+    <ancestry>Half-Green Dragon, Assassin</ancestry>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any Non-Good Alignment</alignment>
@@ -573,10 +585,10 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <passive>13</passive>
     <languages>Thieves' cant plus any two languages, Draconic</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>poison, poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft., darkvision 60 ft.</senses>
     <trait>
       <name>Assassinate</name>
@@ -614,10 +626,13 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
       <attack>Poison Breath||6d6</attack>
     </action>
     <description>Source:	Rise of Tiamat p. 56</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Half-Red Dragon Gladiator</name>
+    <sortname>Half-Red Dragon, Gladiator</sortname>
+    <ancestry>Half-Red Dragon, Gladiator</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -635,10 +650,10 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <passive>11</passive>
     <languages>any one language (usually Common), Draconic</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft., darkvision 60 ft.</senses>
     <trait>
       <name>Brave</name>
@@ -673,10 +688,12 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
       <text>The half-dragon adds 3 to its AC against one melee attack that would hit it. To do so, the half-dragon must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Rise of Tiamat p. 56</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ice Toad</name>
+    <sortname>Toad, Ice</sortname>
+    <ancestry>Toad</ancestry>
     <size>M</size>
     <type>monstrosity</type>
     <alignment>Neutral</alignment>
@@ -689,15 +706,15 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <int>8</int>
     <wis>10</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Ice Toad</languages>
     <cr>1</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -724,10 +741,12 @@ When the characters encounter ice toads, their intelligence won't be apparent un
 
 Source:	Rise of Tiamat p. 90,
 		Tyranny of Dragons p. 185</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ice Troll (Variant)</name>
+    <sortname>Troll, Ice (Variant)</sortname>
+    <ancestry>Troll</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -740,15 +759,15 @@ Source:	Rise of Tiamat p. 90,
     <int>7</int>
     <wis>9</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Giant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
@@ -776,13 +795,12 @@ Source:	Rise of Tiamat p. 90,
       <name>Variant: Loathsome Limbs</name>
       <text>Whenever the troll takes at least 15 slashing damage at one time, roll a d20 to determine what else happens to it:
 
-	• 1–10: Nothing else happens.
-
-	• 11–14: One leg is severed from the troll if it has any legs left.
-
-	• 15–18: One arm is severed from the troll if it has any arms left.
-
-	• 19–20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.
+Loatshome Limbs:
+d20 | Effect
+1-10: Nothing else happens.
+11-14: One leg is severed from the troll if it has any legs left.
+15-18: One arm is severed from the troll if it has any arms left.
+19-20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.
 
 If the troll finishes a short or long rest without reattaching a severed limb or head, the part regrows. At that point, the severed part dies. Until then, a severed part acts on the troll's initiative and has its own action and movement. A severed part has AC 13, 10 hit points, and the troll's Regeneration trait.
 
@@ -799,6 +817,7 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
   </monster>
   <monster>
     <name>Iskander</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -816,24 +835,15 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>5etools Note</name>
       <text>Iskander is presented in The Rise of Tiamat as a neutral evil male human wizard. The mage statblock has been provided here for ease of use.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:
@@ -845,13 +855,25 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Source:	Rise of Tiamat p. 62</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Maccath the Crimson</name>
+    <sortname>Crimson, Maccath the</sortname>
+    <ancestry>Crimson</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tiefling)</type>
     <alignment>Any alignment</alignment>
@@ -869,24 +891,15 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <passive>11</passive>
     <languages>any four languages, Infernal</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>5etools Note</name>
       <text>Maccath the Crimson is presented in The Rise of Tiamat as a female tiefling sorcerer and member of the Arcane Brotherhood. The mage statblock, modified with tiefling racial traits, has been provided here for ease of use.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:
@@ -898,7 +911,6 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Maccath's innate spellcasting ability is Charisma (spell save DC 11). Maccath can innately cast the following spells, requiring no material components:
@@ -906,9 +918,19 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
 	• At will: thaumaturgy
 	• 1/Day each: darkness, hellish rebuke</text>
     </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold, thaumaturgy, darkness, hellish rebuke</spells>
     <description>Source:	Rise of Tiamat p. 33</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Marfulb</name>
@@ -924,15 +946,15 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <int>8</int>
     <wis>10</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Ice Toad</languages>
     <cr>1</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -952,10 +974,11 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
       <attack>Bite|+3|1d8</attack>
     </action>
     <description>Source:	Rise of Tiamat p. 35</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Mend-nets</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -968,16 +991,16 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <int>8</int>
     <wis>11</wis>
     <cha>8</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Pack Tactics</name>
       <text>The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
@@ -988,10 +1011,11 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
       <attack>Spear|+3|1d6+1</attack>
     </action>
     <description>Source:	Rise of Tiamat p. 32</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Naergoth Bladelord</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>Neutral Evil</alignment>
@@ -1009,9 +1033,9 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <passive>16</passive>
     <languages>Common, Draconic</languages>
     <cr>11</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1039,10 +1063,11 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     </action>
     <description>Source:	Rise of Tiamat p. 90,
 		Tyranny of Dragons p. 186</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Neronvain</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Neutral Evil</alignment>
@@ -1060,9 +1085,9 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <passive>15</passive>
     <languages>Common, Draconic, Elvish, Infernal</languages>
     <cr>9</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, frightened, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1094,7 +1119,7 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     </action>
     <description>Source:	Rise of Tiamat p. 91,
 		Tyranny of Dragons p. 187</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Paper Whirlwind</name>
@@ -1110,16 +1135,16 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <int>3</int>
     <wis>12</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +5</skill>
     <passive>15</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing</resist>
-    <immune />
-    <vulnerable />
+    <immune/>
     <conditionImmune>charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
-    <senses />
+    <senses/>
     <trait>
       <name>Swarm</name>
       <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain hit points or gain temporary hit points.</text>
@@ -1134,6 +1159,9 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
   </monster>
   <monster>
     <name>Red Wizard</name>
+    <sortname>Wizard, Red</sortname>
+    <ancestry>Wizard</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1151,20 +1179,11 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:
@@ -1176,13 +1195,23 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Source:	Rise of Tiamat p. 76</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Severin</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -1200,9 +1229,9 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <passive>11</passive>
     <languages>Common, Draconic, Infernal</languages>
     <cr>11</cr>
+    <vulnerable/>
     <resist>While wearing the mask of the Dragon Queen: acid, cold, lightning, poison; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>While wearing the mask of the Dragon Queen: fire</immune>
-    <vulnerable />
     <conditionImmune>While wearing the mask of the Dragon Queen: charmed, frightened, poisoned</conditionImmune>
     <senses>While wearing the Mask of the Dragon Queen: darkvision 60 ft.</senses>
     <trait>
@@ -1243,7 +1272,7 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
       <text>Severin can take 4 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Severin regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
-      <name />
+      <name/>
       <text>If Severin is wearing the Mask of the Dragon Queen, he can take 3 legendary actions, choosing from the options listed. Only one legendary action option can be used at a time and only at the end of another creature's turn. Severin regains spent legendary actions at the start of his turn.</text>
     </legendary>
     <legendary>
@@ -1260,10 +1289,12 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     </legendary>
     <description>Source:	Rise of Tiamat p. 92,
 		Tyranny of Dragons p. 189</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Sled Dog</name>
+    <sortname>Dog, Sled</sortname>
+    <ancestry>Dog</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -1276,16 +1307,16 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <int>3</int>
     <wis>12</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Stealth +4</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Hearing and Smell</name>
       <text>The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
@@ -1304,6 +1335,8 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
   </monster>
   <monster>
     <name>Snake Horror</name>
+    <sortname>Horror, Snake</sortname>
+    <ancestry>Horror, Snake</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -1316,14 +1349,14 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +4</skill>
     <passive>14</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</resist>
     <immune>force, necrotic, poison</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned, stunned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -1345,7 +1378,7 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
       <attack>Longsword||2d8</attack>
     </action>
     <description>Source:	Rise of Tiamat p. 46</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tiamat</name>
@@ -1366,9 +1399,9 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <passive>36</passive>
     <languages>Common, Draconic, Infernal</languages>
     <cr>30</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>acid, cold, fire, lightning, poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, frightened, poisoned, stunned</conditionImmune>
     <senses>darkvision 240 ft., truesight 120 ft.</senses>
     <trait>
@@ -1396,6 +1429,11 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
       <name>Regeneration</name>
       <text>Tiamat regains 30 hit points at the start of her turn.</text>
     </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Tiamat can innately cast the following spell, her spellcasting ability is Charisma (spell save DC 26):
+	• 3/Day: divine word</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>Tiamat can use her Frightful Presence. She then makes three attacks: two with her claws and one with her tail.</text>
@@ -1420,7 +1458,7 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
       <text>Tiamat can take 7 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Tiamat regains spent legendary actions at the start of its turn.</text>
     </legendary>
     <legendary>
-      <name />
+      <name/>
       <text>Tiamat's legendary action options are associated with her five dragon heads (a bite and a breath weapon for each). Once Tiamat chooses a legendary action option for one of her heads, she can't choose another one associated with that head until the start of her next turn.</text>
     </legendary>
     <legendary>
@@ -1447,19 +1485,15 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
       <name>White Dragon Head: Cold Breath (Costs 2 Actions)</name>
       <text>Tiamat breathes an icy blast in a 90-foot cone. Each creature in that area must make a DC 27 Dexterity saving throw, taking 72 (16d8) cold damage on a failed save, or half as much damage on a successful one.</text>
     </legendary>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Tiamat can innately cast the following spell, her spellcasting ability is Charisma (spell save DC 26):
-	• 3/Day: divine word</text>
-    </trait>
     <spells>divine word</spells>
     <description>Source:	Rise of Tiamat p. 92,
 		Baldur's Gate: Descent Into Avernus p. 151,
 		Tyranny of Dragons p. 190</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Varram</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Neutral Evil</alignment>
@@ -1477,10 +1511,10 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <passive>11</passive>
     <languages>Common, Draconic, Infernal, Dwarvish</languages>
     <cr>7</cr>
+    <vulnerable/>
     <resist>one of the following: acid, cold, fire, lightning, poison, poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>5etools Note</name>
@@ -1522,6 +1556,6 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
       <attack>Orb of Dragon's Breath (3/Day)|+7|6d8</attack>
     </action>
     <description>Source:	Rise of Tiamat p. 9</description>
-    <environment />
+    <environment/>
   </monster>
 </compendium>

@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Amphisbaena</name>
@@ -14,15 +14,15 @@
     <int>1</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft.</senses>
     <action>
       <name>Multiattack</name>
@@ -45,6 +45,8 @@ Until this grapple ends, the creature is restrained, and the snake can't constri
   </monster>
   <monster>
     <name>Animated Table</name>
+    <sortname>Animated Object, Table</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -57,14 +59,14 @@ Until this grapple ends, the creature is restrained, and the snake can't constri
     <int>1</int>
     <wis>3</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>6</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -91,10 +93,11 @@ Constructed Nature:
 An animated table doesn't require air, food, drink, or sleep.
 
 Source:	Tales from the Yawning Portal p. 230</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ashdra</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -107,15 +110,15 @@ Source:	Tales from the Yawning Portal p. 230</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +1</skill>
     <passive>10</passive>
     <languages>any one language (usually Common), Elvish</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -125,11 +128,6 @@ Source:	Tales from the Yawning Portal p. 230</description>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Ashdra has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
     </trait>
-    <action>
-      <name>Club</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
-      <attack>Club|+2|1d4</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Ashdra's innate spellcasting ability is Charisma (spell save DC 9). Ashdra can innately cast the following spells, requiring no material components:
@@ -137,12 +135,18 @@ Source:	Tales from the Yawning Portal p. 230</description>
 	• At will: dancing lights
 	• 1/Day each: darkness, faerie fire</text>
     </trait>
+    <action>
+      <name>Club</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
+      <attack>Club|+2|1d4</attack>
+    </action>
     <spells>dancing lights, darkness, faerie fire</spells>
     <description>Source:	Tales from the Yawning Portal p. 158</description>
     <environment>arctic, desert, coastal, grassland, hill, urban, forest</environment>
   </monster>
   <monster>
     <name>Bandagh</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (orc)</type>
     <alignment>Chaotic Evil</alignment>
@@ -155,15 +159,15 @@ Source:	Tales from the Yawning Portal p. 230</description>
     <int>7</int>
     <wis>11</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Intimidation +2</skill>
     <passive>10</passive>
     <languages>Common, Orc</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Aggressive</name>
@@ -184,6 +188,7 @@ Source:	Tales from the Yawning Portal p. 230</description>
   </monster>
   <monster>
     <name>Belak the Outcast</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Any alignment</alignment>
@@ -196,21 +201,16 @@ Source:	Tales from the Yawning Portal p. 230</description>
     <int>12</int>
     <wis>15</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Medicine +4, Nature +3, Perception +4</skill>
     <passive>14</passive>
     <languages>Druidic plus any two languages</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
-      <attack>Quarterstaff|+2|1d6</attack>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:
@@ -219,13 +219,21 @@ Source:	Tales from the Yawning Portal p. 230</description>
 	• 1st level (4 slots): cure wounds, entangle, faerie fire, thunderwave
 	• 2nd level (3 slots): barkskin, flaming sphere</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
+      <attack>Quarterstaff|+2|1d6</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>druidcraft, poison spray, shillelagh, cure wounds, entangle, faerie fire, thunderwave, barkskin, flaming sphere</spells>
     <description>Source:	Tales from the Yawning Portal p. 9</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Bugbear Gardener</name>
+    <sortname>Bugbear, Gardener</sortname>
+    <ancestry>Bugbear</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (goblinoid)</type>
     <alignment>Chaotic Evil</alignment>
@@ -238,15 +246,15 @@ Source:	Tales from the Yawning Portal p. 230</description>
     <int>8</int>
     <wis>11</wis>
     <cha>9</cha>
-    <save />
+    <save/>
     <skill>Stealth +6, Survival +2</skill>
     <passive>10</passive>
     <languages>Common, Goblin</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Brute</name>
@@ -271,6 +279,9 @@ Source:	Tales from the Yawning Portal p. 230</description>
   </monster>
   <monster>
     <name>Bugbear Lieutenant</name>
+    <sortname>Bugbear, Lieutenant</sortname>
+    <ancestry>Bugbear</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (goblinoid)</type>
     <alignment>Chaotic Evil</alignment>
@@ -283,15 +294,15 @@ Source:	Tales from the Yawning Portal p. 230</description>
     <int>8</int>
     <wis>11</wis>
     <cha>9</cha>
-    <save />
+    <save/>
     <skill>Stealth +6, Survival +2</skill>
     <passive>10</passive>
     <languages>Common, Goblin</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Brute</name>
@@ -333,10 +344,10 @@ Source:	Tales from the Yawning Portal p. 230</description>
     <passive>14</passive>
     <languages>Draconic</languages>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>blindsight 10 ft., darkvision 60 ft.</senses>
     <action>
       <name>Bite</name>
@@ -386,8 +397,8 @@ True dragons pass through four distinct stages of life, from lowly wyrmlings to 
 Dragon Age Categories:
 Category | Size | Age Range
 Wyrmling | Medium | 5 years or less
-Young | Large | 6–100 years
-Adult | Huge | 101–800 years
+Young | Large | 6-100 years
+Adult | Huge | 101-800 years
 Ancient | Gargantuan | 801 years or more
 
 Chromatic Dragons:
@@ -412,7 +423,7 @@ Tiamat is a gigantic dragon whose five heads reflect the forms of the chromatic 
 Tiamat's most hated enemy is Bahamut the Platinum Dragon, with whom she shares control of the faith of dragonkind. She also holds a special enmity for Asmodeus, who long ago stripped her of the rule of Avernus and who continues to curb the Dragon Queen's power.
 
 Source:	Tales from the Yawning Portal p. 23</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Centaur Mummy</name>
@@ -429,13 +440,13 @@ Source:	Tales from the Yawning Portal p. 23</description>
     <wis>14</wis>
     <cha>12</cha>
     <save>Wis +5</save>
-    <skill />
+    <skill/>
     <passive>12</passive>
     <languages>Common, Sylvan</languages>
     <cr>6</cr>
+    <vulnerable>fire</vulnerable>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>necrotic, poison</immune>
-    <vulnerable>fire</vulnerable>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -463,7 +474,7 @@ Source:	Tales from the Yawning Portal p. 23</description>
     <description>In The Hidden Shrine of Tamoachan, characters must contend with a mummified centaur that wants to prevent them from moving any farther into the dungeon. Combining the most lethal features of two creature types, the centaur mummy can attack nearby targets with its melee weapons while trying to use its Dreadful Glare against enemies that hold back.
 
 Source:	Tales from the Yawning Portal p. 231</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Chief Nosnra</name>
@@ -484,11 +495,11 @@ Source:	Tales from the Yawning Portal p. 231</description>
     <passive>13</passive>
     <languages>Giant</languages>
     <cr>8</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold</immune>
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>Chief Nosnra makes two greataxe attacks.</text>
@@ -531,14 +542,22 @@ Weighted Net: Ranged Weapon Attack: +5 to hit, ranged 20/60 ft., one Small, Medi
     <passive>17</passive>
     <languages>Common, Giant</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Smell</name>
       <text>The giant has advantage on Wisdom (Perception) checks that rely on smell.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
+
+	• At will: detect magic, fog cloud, light
+	• 3/Day each: feather fall, fly, misty step, telekinesis
+	• 1/Day each: control weather, gaseous form</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -562,20 +581,14 @@ Fling: The giant tries to throw a Small or Medium creature within 10 feet of it.
 
 Wind Aura: A magical aura of wind surrounds the giant. The aura is a 10-foot-radius sphere that lasts as long as the giant maintains concentration on it (as if concentrating on a spell). While the aura is in effect, the giant gains a +2 bonus to its AC against ranged weapon attacks, and all open flames within the aura are extinguished unless they are magical.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
-
-	• At will: detect magic, fog cloud, light
-	• 3/Day each: feather fall, fly, misty step, telekinesis
-	• 1/Day each: control weather, gaseous form</text>
-    </trait>
     <spells>detect magic, fog cloud, light, feather fall, fly, misty step, telekinesis, control weather, gaseous form</spells>
     <description>Source:	Tales from the Yawning Portal p. 206</description>
     <environment>mountain</environment>
   </monster>
   <monster>
     <name>Curran Corvalin</name>
+    <sortname>Corvalin, Curran</sortname>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (halfling)</type>
     <alignment>Any alignment</alignment>
@@ -588,16 +601,16 @@ Wind Aura: A magical aura of wind surrounds the giant. The aura is a 10-foot-rad
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common), Halfling</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Halfling Nimbleness</name>
       <text>Curran can move through a space of a Medium or larger creature.</text>
@@ -628,15 +641,15 @@ Wind Aura: A magical aura of wind surrounds the giant. The aura is a 10-foot-rad
     <int>7</int>
     <wis>9</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Giant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
@@ -660,13 +673,12 @@ Wind Aura: A magical aura of wind surrounds the giant. The aura is a 10-foot-rad
       <name>Variant: Loathsome Limbs</name>
       <text>Whenever the dragonpriest takes at least 15 slashing damage at one time, roll a d20 to determine what else happens to it:
 
-	• 1–10: Nothing else happens.
-
-	• 11–14: One leg is severed from the dragonpriest if it has any legs left.
-
-	• 15–18: One arm is severed from the dragonpriest if it has any arms left.
-
-	• 19–20: The dragonpriest is decapitated, but the dragonpriest dies only if it can't regenerate. If it dies, so does the severed head.
+Loatshome Limbs:
+d20 | Effect
+1-10: Nothing else happens.
+11-14: One leg is severed from the dragonpriest if it has any legs left.
+15-18: One arm is severed from the dragonpriest if it has any arms left.
+19-20: The dragonpriest is decapitated, but the dragonpriest dies only if it can't regenerate. If it dies, so does the severed head.
 
 If the dragonpriest finishes a short or long rest without reattaching a severed limb or head, the part regrows. At that point, the severed part dies. Until then, a severed part acts on the dragonpriest's initiative and has its own action and movement. A severed part has AC 13, 10 hit points, and the dragonpriest's Regeneration trait.
 
@@ -683,6 +695,8 @@ The dragonpriest's speed is halved if it's missing a leg. If it loses both legs,
   </monster>
   <monster>
     <name>Dread Warrior</name>
+    <sortname>Warrior, Dread</sortname>
+    <ancestry>Warrior</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Neutral Evil</alignment>
@@ -700,9 +714,9 @@ The dragonpriest's speed is halved if it's missing a leg. If it loses both legs,
     <passive>13</passive>
     <languages>Common</languages>
     <cr>1</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -729,10 +743,11 @@ Undead Nature:
 A dread warrior doesn't require air, food, drink, or sleep.
 
 Source:	Tales from the Yawning Portal p. 233</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Drevin</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (halfling)</type>
     <alignment>Any alignment</alignment>
@@ -745,16 +760,16 @@ Source:	Tales from the Yawning Portal p. 233</description>
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
-    <skill>Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight of hand +4, Stealth +4</skill>
+    <save/>
+    <skill>Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight Of Hand +4, Stealth +4</skill>
     <passive>16</passive>
     <languages>any two languages, Halfling</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Action</name>
       <text>On each of its turns, Drevin can use a bonus action to take the Dash, Disengage, or Hide action.</text>
@@ -787,10 +802,13 @@ Source:	Tales from the Yawning Portal p. 233</description>
       <attack>Hand Crossbow|+4|1d6+2</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 126</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Drow Commander</name>
+    <sortname>Drow, Commander</sortname>
+    <ancestry>Drow</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Neutral Evil</alignment>
@@ -808,10 +826,10 @@ Source:	Tales from the Yawning Portal p. 233</description>
     <passive>14</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Special Equipment</name>
@@ -833,6 +851,13 @@ Each of these effects has a spell save DC of 15 and a duration of 1 minute.</tex
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
     </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The drow's spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:
+
+	• At will: dancing lights
+	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>The drow makes two shortsword attacks.</text>
@@ -849,29 +874,25 @@ Each of these effects has a spell save DC of 15 and a duration of 1 minute.</tex
 If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.</text>
       <attack>Hand Crossbow +1|+8|1d6+5</attack>
     </action>
-    <reaction>
-      <name>Parry</name>
-      <text>The drow adds 3 to its AC against one melee attack that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon.</text>
-    </reaction>
     <action>
       <name>Variant: Drow Magic Armor and Weapons</name>
       <text>Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.
 
 A drow elite warrior wearing +2 Studded Leather Armor and carrying a +2 shortsword has AC 20 and a +2 bonus on attack and damage rolls with shortsword attacks.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The drow's spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:
-
-	• At will: dancing lights
-	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
-    </trait>
+    <reaction>
+      <name>Parry</name>
+      <text>The drow adds 3 to its AC against one melee attack that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon.</text>
+    </reaction>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Source:	Tales from the Yawning Portal p. 209</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Duergar Spy</name>
+    <sortname>Spy, Duergar</sortname>
+    <ancestry>Spy, Duergar</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Lawful Evil</alignment>
@@ -884,15 +905,15 @@ A drow elite warrior wearing +2 Studded Leather Armor and carrying a +2 shortswo
     <int>12</int>
     <wis>10</wis>
     <cha>13</cha>
-    <save />
-    <skill>Deception +5, Insight +2, Investigation +5, Perception +4, Persuasion +3, Sleight of hand +5, Stealth +7</skill>
+    <save/>
+    <skill>Deception +5, Insight +2, Investigation +5, Perception +4, Persuasion +3, Sleight Of Hand +5, Stealth +7</skill>
     <passive>14</passive>
     <languages>Dwarvish, Undercommon</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Cunning Action</name>
@@ -953,10 +974,11 @@ Infernal Master:
 Asmodeus, Lord of the Nine Hells, has been known to impersonate duergar gods in order to cultivate the evil brimming in the hearts of the gray dwarves. He offers them divine guidance and vengeance against their enemies while urging them on toward greater acts of tyranny, all the while concealing his true identity.
 
 Source:	Tales from the Yawning Portal p. 234</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Durnn</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (goblinoid)</type>
     <alignment>Lawful Evil</alignment>
@@ -969,15 +991,15 @@ Source:	Tales from the Yawning Portal p. 234</description>
     <int>10</int>
     <wis>10</wis>
     <cha>9</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common, Goblin</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Martial Advantage</name>
@@ -1029,10 +1051,11 @@ Legion of Maglubiyet:
 Hobgoblins worship Maglubiyet the Mighty One, the greater god of goblinoids. As terrifying as this figure is, hobgoblins don't fear death, believing that when they die in battle, their spirits join the honored ranks of Maglubiyet's army on the plane of Acheron.
 
 Source:	Tales from the Yawning Portal p. 25</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Eira</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -1045,15 +1068,15 @@ Source:	Tales from the Yawning Portal p. 25</description>
     <int>12</int>
     <wis>15</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Medicine +4, Nature +3, Perception +1</skill>
     <passive>14</passive>
     <languages>Druidic plus any two languages, Elvish</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -1063,11 +1086,6 @@ Source:	Tales from the Yawning Portal p. 25</description>
       <name>Mask of the Wild</name>
       <text>Eira can attempt to hide even when they are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
-      <attack>Quarterstaff|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Eira is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:
@@ -1076,13 +1094,19 @@ Source:	Tales from the Yawning Portal p. 25</description>
 	• 1st level (4 slots): entangle, longstrider, speak with animals, thunderwave
 	• 2nd level (3 slots): animal messenger, barkskin</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
+      <attack>Quarterstaff|+2|1d6</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>druidcraft, produce flame, shillelagh, entangle, longstrider, speak with animals, thunderwave, animal messenger, barkskin</spells>
     <description>Source:	Tales from the Yawning Portal p. 159</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Elder Black Pudding</name>
+    <sortname>Black Pudding, Elder</sortname>
     <ancestry>Black Pudding</ancestry>
     <size>H</size>
     <type>ooze</type>
@@ -1096,14 +1120,14 @@ Source:	Tales from the Yawning Portal p. 25</description>
     <int>1</int>
     <wis>6</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>acid, cold, lightning, slashing</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -1132,6 +1156,8 @@ Source:	Tales from the Yawning Portal p. 25</description>
   </monster>
   <monster>
     <name>Elder Giant Lizard</name>
+    <sortname>Giant Lizard, Elder</sortname>
+    <ancestry>Giant Lizard</ancestry>
     <size>H</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -1144,16 +1170,16 @@ Source:	Tales from the Yawning Portal p. 25</description>
     <int>2</int>
     <wis>10</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Stealth +5</skill>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Hold Breath</name>
       <text>The lizard can hold its breath for 30 minutes.</text>
@@ -1179,6 +1205,8 @@ Until this grapple ends, the target is restrained, and the lizard can't bite ano
   </monster>
   <monster>
     <name>Erky Timbers</name>
+    <sortname>Timbers, Erky</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (gnome)</type>
     <alignment>Any alignment</alignment>
@@ -1191,16 +1219,23 @@ Until this grapple ends, the target is restrained, and the lizard can't bite ano
     <int>10</int>
     <wis>14</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Medicine +4, Religion +2</skill>
     <passive>12</passive>
     <languages>Common, Draconic, Gnomish, Goblin</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:
+
+	• Cantrips (at will): light, sacred flame, thaumaturgy
+	• 1st level (3 slots): bless, cure wounds, sanctuary</text>
+    </trait>
     <action>
       <name>Club</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
@@ -1210,22 +1245,16 @@ Until this grapple ends, the target is restrained, and the lizard can't bite ano
       <name>Channel Divinity: Turn Undead (1/Short Rest)</name>
       <text>Erky presents his holy Symbol and speaks a prayer censuring the Undead. Each Undead that can see or hear Erky within 30 feet of him must make a DC 12 Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from Erky as it can, and it can't willingly move to a space within 30 feet of him. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:
-
-	• Cantrips (at will): light, sacred flame, thaumaturgy
-	• 1st level (3 slots): bless, cure wounds, sanctuary</text>
-    </trait>
     <slots>3</slots>
     <spells>light, sacred flame, thaumaturgy, bless, cure wounds, sanctuary</spells>
     <description>Acolytes are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.
 
 Source:	Tales from the Yawning Portal p. 22</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Estia</name>
+    <npc>YES</npc>
     <size>H</size>
     <type>giant</type>
     <alignment>Neutral Good (50%) Neutral Evil (50%)</alignment>
@@ -1243,14 +1272,22 @@ Source:	Tales from the Yawning Portal p. 22</description>
     <passive>17</passive>
     <languages>Common, Giant</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Smell</name>
       <text>Estia has advantage on Wisdom (Perception) checks that rely on smell.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Estia's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
+
+	• At will: detect magic, fog cloud, light
+	• 3/Day each: feather fall, fly, misty step, telekinesis
+	• 1/Day each: control weather, gaseous form</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -1274,20 +1311,13 @@ Fling: Estia tries to throw a Small or Medium creature within 10 feet of it. The
 
 Wind Aura: A magical aura of wind surrounds Estia. The aura is a 10-foot-radius sphere that lasts as long as Estia maintains concentration on it (as if concentrating on a spell). While the aura is in effect, Estia gains a +2 bonus to its AC against ranged weapon attacks, and all open flames within the aura are extinguished unless they are magical.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Estia's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
-
-	• At will: detect magic, fog cloud, light
-	• 3/Day each: feather fall, fly, misty step, telekinesis
-	• 1/Day each: control weather, gaseous form</text>
-    </trait>
     <spells>detect magic, fog cloud, light, feather fall, fly, misty step, telekinesis, control weather, gaseous form</spells>
     <description>Source:	Tales from the Yawning Portal p. 189</description>
     <environment>mountain</environment>
   </monster>
   <monster>
     <name>Fire Giant Royal Headsman</name>
+    <sortname>Fire Giant, Royal Headsman</sortname>
     <size>H</size>
     <type>giant</type>
     <alignment>Lawful Evil</alignment>
@@ -1305,11 +1335,11 @@ Wind Aura: A magical aura of wind surrounds Estia. The aura is a 10-foot-radius 
     <passive>16</passive>
     <languages>Giant</languages>
     <cr>9</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>fire</immune>
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>The giant makes two greataxe attacks.</text>
@@ -1337,6 +1367,8 @@ Tackle: When the giant enters any enemy's space for the first time on a turn, th
   </monster>
   <monster>
     <name>Fire Giant Servant</name>
+    <sortname>Fire Giant, Servant</sortname>
+    <ancestry>Giant Servant</ancestry>
     <size>H</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -1349,16 +1381,16 @@ Tackle: When the giant enters any enemy's space for the first time on a turn, th
     <int>5</int>
     <wis>9</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Giant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>The giant makes two longsword attacks.</text>
@@ -1384,6 +1416,8 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
   </monster>
   <monster>
     <name>Flying Shield</name>
+    <sortname>Animated Object, Shield</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>S</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -1397,13 +1431,13 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
     <wis>5</wis>
     <cha>1</cha>
     <save>Dex +4</save>
-    <skill />
+    <skill/>
     <passive>7</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -1420,7 +1454,7 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
       <attack>Longshield|+3|1d8+1</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 224</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Four-Armed Gargoyle</name>
@@ -1436,14 +1470,14 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
     <int>6</int>
     <wis>11</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Terran</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1465,10 +1499,12 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
       <attack>Claws|+4|1d6+2</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 129</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Frost Giant Servant</name>
+    <sortname>Frost Giant, Servant</sortname>
+    <ancestry>Frost Giant</ancestry>
     <size>H</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -1481,16 +1517,16 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
     <int>5</int>
     <wis>9</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Giant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>The giant makes two greatclub attacks.</text>
@@ -1516,6 +1552,8 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
   </monster>
   <monster>
     <name>Gargantuan Rug of Smothering</name>
+    <sortname>Animated Object, Rug of Smothering Gargantuan</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>G</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -1528,14 +1566,14 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
     <int>1</int>
     <wis>3</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>6</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -1556,10 +1594,12 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
       <attack>Smother|+5|2d6+3</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 56</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Giant Crayfish</name>
+    <sortname>Crayfish, Giant</sortname>
+    <ancestry>Crayfish</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -1572,15 +1612,15 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
     <int>1</int>
     <wis>9</wis>
     <cha>3</cha>
-    <save />
+    <save/>
     <skill>Stealth +3</skill>
     <passive>9</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -1598,10 +1638,12 @@ The crayfish has two claws, each of which can grapple only one target.</text>
       <attack>Claw|+4|1d10+2</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 235</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Giant Ice Toad</name>
+    <sortname>Toad, Giant Ice</sortname>
+    <ancestry>Toad</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Neutral</alignment>
@@ -1614,15 +1656,15 @@ The crayfish has two claws, each of which can grapple only one target.</text>
     <int>8</int>
     <wis>10</wis>
     <cha>6</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Ice Toad</languages>
     <cr>3</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -1652,7 +1694,7 @@ Until this grapple ends, the target is restrained, and the toad can't bite anoth
     <description>In a cavern within the glacial rift (Against the Giants), a group of ice toads vigorously guard their territory. Waves of cold radiate from the creature, afflicting those that try to approach it, and anyone unfortunate enough to be swallowed suffers injury from cold as well as from the toad's digestive juices.
 
 Source:	Tales from the Yawning Portal p. 235</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Giant Lightning Eel</name>
@@ -1668,15 +1710,15 @@ Source:	Tales from the Yawning Portal p. 235</description>
     <int>2</int>
     <wis>12</wis>
     <cha>3</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
+    <vulnerable/>
     <resist>lightning</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Water Breathing</name>
@@ -1698,10 +1740,12 @@ Source:	Tales from the Yawning Portal p. 235</description>
       <attack>Lightning Jolt||3d8</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 236</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Giant Skeleton</name>
+    <sortname>Skeleton, Giant</sortname>
+    <ancestry>Skeleton</ancestry>
     <size>H</size>
     <type>undead</type>
     <alignment>Neutral Evil</alignment>
@@ -1714,14 +1758,14 @@ Source:	Tales from the Yawning Portal p. 235</description>
     <int>4</int>
     <wis>6</wis>
     <cha>6</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>understands Giant but can't speak</languages>
     <cr>7</cr>
-    <resist />
-    <immune>poison</immune>
     <vulnerable>bludgeoning</vulnerable>
+    <resist/>
+    <immune>poison</immune>
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1753,10 +1797,12 @@ Source:	Tales from the Yawning Portal p. 236,
 		Essentials Kit: Divine Contention,
 		Essentials Kit: Sleeping Dragon's Wake,
 		Infernal Machine Rebuild</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
-    <name>Giant Subterranean Lizard</name>
+    <name>Giant Subterranaean Lizard</name>
+    <sortname>Lizard, Giant Subterranaean</sortname>
+    <ancestry>Lizard</ancestry>
     <size>H</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -1769,16 +1815,16 @@ Source:	Tales from the Yawning Portal p. 236,
     <int>2</int>
     <wis>10</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Stealth +3</skill>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>The lizard makes two attacks: one with its bite and one with its tail. One attack can be replaced by Swallow.</text>
@@ -1800,10 +1846,13 @@ Source:	Tales from the Yawning Portal p. 236,
       <text>If the lizard dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 10 feet of movement, exiting prone.</text>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 236</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Goblin Commoner</name>
+    <sortname>Commoner, Goblin</sortname>
+    <ancestry>Commoner, Goblin</ancestry>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (goblinoid)</type>
     <alignment>Any alignment</alignment>
@@ -1816,15 +1865,15 @@ Source:	Tales from the Yawning Portal p. 236,
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common), Goblin</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Nimble Escape</name>
@@ -1840,6 +1889,8 @@ Source:	Tales from the Yawning Portal p. 236,
   </monster>
   <monster>
     <name>Gorvan Ironheart</name>
+    <sortname>Ironheart, Gorvan</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any alignment</alignment>
@@ -1852,15 +1903,15 @@ Source:	Tales from the Yawning Portal p. 236,
     <int>13</int>
     <wis>16</wis>
     <cha>13</cha>
-    <save />
+    <save/>
     <skill>Medicine +7, Persuasion +3, Religion +5</skill>
     <passive>13</passive>
     <languages>any two languages, Dwarvish</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Divine Eminence</name>
@@ -1870,11 +1921,6 @@ Source:	Tales from the Yawning Portal p. 236,
       <name>Dwarven Resilience</name>
       <text>Gorvan has advantage on saving throws against poison, and has resistance against poison damage.</text>
     </trait>
-    <action>
-      <name>Mace</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Mace|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Gorvan is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Gorvan has the following cleric spells prepared:
@@ -1884,10 +1930,15 @@ Source:	Tales from the Yawning Portal p. 236,
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Mace|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
     <description>Source:	Tales from the Yawning Portal p. 151</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Great Ulfe</name>
@@ -1903,15 +1954,15 @@ Source:	Tales from the Yawning Portal p. 236,
     <int>5</int>
     <wis>7</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Common, Giant</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <action>
       <name>Greataxe</name>
@@ -1941,13 +1992,13 @@ Source:	Tales from the Yawning Portal p. 236,
     <wis>6</wis>
     <cha>6</cha>
     <save>Wis +1</save>
-    <skill />
+    <skill/>
     <passive>8</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>cold, necrotic</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1976,10 +2027,11 @@ Source:	Tales from the Yawning Portal p. 237,
 		Essentials Kit: Divine Contention,
 		Essentials Kit: Sleeping Dragon's Wake,
 		Infernal Machine Rebuild</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Grenl</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (goblinoid)</type>
     <alignment>Neutral Evil</alignment>
@@ -1992,19 +2044,26 @@ Source:	Tales from the Yawning Portal p. 237,
     <int>10</int>
     <wis>13</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Stealth +6</skill>
     <passive>9</passive>
     <languages>Common, Goblin</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Nimble Escape</name>
       <text>The goblin can take the Disengage or Hide action as a bonus action on each of its turns.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Grenl is a 1st-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). She has the following cleric spells prepared:
+
+	• Cantrips (at will): poison spray, thaumaturgy
+	• 1st level (2 slots): bane, inflict wounds</text>
     </trait>
     <action>
       <name>Scimitar</name>
@@ -2014,14 +2073,7 @@ Source:	Tales from the Yawning Portal p. 237,
       <name>Shortbow</name>
       <text>Ranged Weapon Attack: +4, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Grenl is a 1st-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). She has the following cleric spells prepared:
-
-	• Cantrips (at will): poison spray, thaumaturgy
-	• 1st level (2 slots): bane, inflict wounds</text>
-    </trait>
-    <slots>0, 2</slots>
+    <slots>0,2</slots>
     <spells>poison spray, thaumaturgy, bane, inflict wounds</spells>
     <description>Goblins are small, black-hearted, selfish humanoids that lair in caves, abandoned mines, despoiled dungeons, and other dismal settings. Individually weak, goblins gather in large-sometimes overwhelming-numbers. They crave power and regularly abuse whatever authority they obtain.
 
@@ -2041,7 +2093,7 @@ Worshipers of Maglubiyet:
 Maglubiyet the Mighty One, the Lord of Depths and Darkness, is the greater god of goblinoids. Envisioned by most goblins as an eleven-foot-tall battle-scarred goblin with black skin and fire erupting from his eyes, he is worshiped not out of adoration but fear. Goblins believe that when they die in battle, their spirits join the ranks of Maglubiyet's army on the plane of Acheron. This is a "privilege" that most goblins dread, fearing the Mighty One's eternal tyranny even more than death.
 
 Source:	Tales from the Yawning Portal p. 25</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Grutha</name>
@@ -2057,16 +2109,16 @@ Source:	Tales from the Yawning Portal p. 25</description>
     <int>5</int>
     <wis>9</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Giant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>Grutha makes two greatclub attacks.</text>
@@ -2104,15 +2156,15 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
     <int>2</int>
     <wis>10</wis>
     <cha>4</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <action>
       <name>Bite</name>
@@ -2122,10 +2174,12 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
     <description>Some giant rats carry vile diseases that they spread with their bites.
 
 Source:	Tales from the Yawning Portal p. 21</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Hedrun Arnsfirth</name>
+    <sortname>Arnsfirth, Hedrun</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -2143,14 +2197,21 @@ Source:	Tales from the Yawning Portal p. 21</description>
     <passive>14</passive>
     <languages>the languages it knew in life</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Hedrun has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Hedrun's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no verbal or material components:
+
+	• At will: detect magic, disguise self, mage armor
+	• 1/Day each: fear, hold person, misty step</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2167,19 +2228,13 @@ Source:	Tales from the Yawning Portal p. 21</description>
       <attack>Life Drain|+4|2d6+2</attack>
       <text>A humanoid slain by this attack rises 24 hours later as a zombie under Hedrun's control, unless the humanoid is restored to life or its body is destroyed. Hedrun can have no more than twelve zombie under its control at one time.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Hedrun's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no verbal or material components:
-
-	• At will: detect magic, disguise self, mage armor
-	• 1/Day each: fear, hold person, misty step</text>
-    </trait>
     <spells>detect magic, disguise self, mage armor, fear, hold person, misty step</spells>
     <description>Source:	Tales from the Yawning Portal p. 160</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Hill Giant Sergeant</name>
+    <sortname>Hill Giant, Sergeant</sortname>
     <size>H</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -2192,16 +2247,16 @@ Source:	Tales from the Yawning Portal p. 21</description>
     <int>5</int>
     <wis>9</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Giant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>The giant makes two greatclub attacks.</text>
@@ -2227,6 +2282,7 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
   </monster>
   <monster>
     <name>Hill Giant Servant</name>
+    <sortname>Hill Giant, Servant</sortname>
     <size>L</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -2239,15 +2295,15 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
     <int>5</int>
     <wis>7</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Common, Giant</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <action>
       <name>Greatclub</name>
@@ -2264,6 +2320,7 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
   </monster>
   <monster>
     <name>Hill Giant Subchief</name>
+    <sortname>Hill Giant, Subchief</sortname>
     <size>H</size>
     <type>giant</type>
     <alignment>Neutral</alignment>
@@ -2281,10 +2338,10 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
     <passive>14</passive>
     <languages>Giant</languages>
     <cr>7</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Stone Camouflage</name>
@@ -2304,10 +2361,6 @@ Squash: Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creat
       <text>Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone.</text>
       <attack>Rock|+9|4d10+6</attack>
     </action>
-    <reaction>
-      <name>Rock Catching</name>
-      <text>If a rock or similar object is hurled at the giant, the giant can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.</text>
-    </reaction>
     <action>
       <name>Variant: New Giant Options</name>
       <text>Some adult stone giants like to grab enemies and fling them through the air. They can also roll boulders across the ground, striking multiple enemies in a line. These abilities are represented by the following action options.
@@ -2316,11 +2369,17 @@ Fling: The giant tries to throw a Small or Medium creature within 10 feet of it.
 
 Rolling Rock: The giant sends a rock tumbling along the ground in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 22 (3d10 + 6) bludgeoning damage and falling prone on a failed save</text>
     </action>
+    <reaction>
+      <name>Rock Catching</name>
+      <text>If a rock or similar object is hurled at the giant, the giant can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.</text>
+    </reaction>
     <description>Source:	Tales from the Yawning Portal p. 170</description>
     <environment>underdark, mountain, hill</environment>
   </monster>
   <monster>
     <name>Huge Giant Crab</name>
+    <sortname>Crab, Giant Huge</sortname>
+    <ancestry>Crab</ancestry>
     <size>H</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -2333,14 +2392,14 @@ Rolling Rock: The giant sends a rock tumbling along the ground in a 30-foot line
     <int>1</int>
     <wis>9</wis>
     <cha>3</cha>
-    <save />
+    <save/>
     <skill>Stealth +5</skill>
     <passive>9</passive>
-    <languages />
+    <languages/>
     <cr>8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>charmed, frightened, paralyzed</conditionImmune>
     <senses>blindsight 30 ft.</senses>
     <trait>
@@ -2360,10 +2419,12 @@ The crab has two claws, each of which can grapple only one target.</text>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 103,
 		Essentials Kit: Storm Lord's Wrath</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Huge Ochre Jelly</name>
+    <sortname>Jelly, Ochre Huge</sortname>
+    <ancestry>Jelly</ancestry>
     <size>H</size>
     <type>ooze</type>
     <alignment>Unaligned</alignment>
@@ -2376,14 +2437,14 @@ The crab has two claws, each of which can grapple only one target.</text>
     <int>2</int>
     <wis>6</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
+    <vulnerable/>
     <resist>acid</resist>
     <immune>lightning, slashing</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -2408,6 +2469,8 @@ The crab has two claws, each of which can grapple only one target.</text>
   </monster>
   <monster>
     <name>Huge Polar Bear</name>
+    <sortname>Bear, Polar Huge</sortname>
+    <ancestry>Bear</ancestry>
     <size>H</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -2420,16 +2483,16 @@ The crab has two claws, each of which can grapple only one target.</text>
     <int>2</int>
     <wis>13</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Smell</name>
       <text>The bear has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -2453,6 +2516,7 @@ The crab has two claws, each of which can grapple only one target.</text>
   </monster>
   <monster>
     <name>Irisoth</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-elf)</type>
     <alignment>Any alignment</alignment>
@@ -2465,15 +2529,15 @@ The crab has two claws, each of which can grapple only one target.</text>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common), Elvish</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -2506,14 +2570,22 @@ The crab has two claws, each of which can grapple only one target.</text>
     <passive>17</passive>
     <languages>Common, Giant</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Smell</name>
       <text>Grugnur has advantage on Wisdom (Perception) checks that rely on smell.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Grugnur's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
+
+	• At will: detect magic, fog cloud, light
+	• 3/Day each: feather fall, fly, misty step, telekinesis
+	• 1/Day each: control weather, gaseous form</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2537,14 +2609,6 @@ Fling: Grugnur tries to throw a Small or Medium creature within 10 feet of it. T
 
 Wind Aura: A magical aura of wind surrounds Grugnur. The aura is a 10-foot-radius sphere that lasts as long as Grugnur maintains concentration on it (as if concentrating on a spell). While the aura is in effect, Grugnur gains a +2 bonus to its AC against ranged weapon attacks, and all open flames within the aura are extinguished unless they are magical.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Grugnur's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
-
-	• At will: detect magic, fog cloud, light
-	• 3/Day each: feather fall, fly, misty step, telekinesis
-	• 1/Day each: control weather, gaseous form</text>
-    </trait>
     <spells>detect magic, fog cloud, light, feather fall, fly, misty step, telekinesis, control weather, gaseous form</spells>
     <description>Source:	Tales from the Yawning Portal p. 189</description>
     <environment>mountain</environment>
@@ -2563,14 +2627,14 @@ Wind Aura: A magical aura of wind surrounds Grugnur. The aura is a 10-foot-radiu
     <int>7</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Stealth +5</skill>
     <passive>10</passive>
     <languages>Abyssal, Common</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -2605,10 +2669,11 @@ The target can repeat the saving throw at the end of each of its turns, ending t
 Familiar: Jot can serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what Jot senses as long as they are within 1 mile of each other. While Jot is within 10 feet of its master, the master shares Jot's Magic Resistance trait. At any time and for any reason, Jot can end its service as a familiar, ending the telepathic bond.</text>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 15</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Kaarghaz</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (troglodyte)</type>
     <alignment>Chaotic Evil</alignment>
@@ -2621,15 +2686,15 @@ Familiar: Jot can serve another creature as a familiar, forming a telepathic bon
     <int>6</int>
     <wis>10</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Stealth +2</skill>
     <passive>10</passive>
     <languages>Draconic, Troglodyte</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Chameleon Skin</name>
@@ -2642,6 +2707,14 @@ Familiar: Jot can serve another creature as a familiar, forming a telepathic bon
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the troglodyte has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Kaarghaz is a 4th-level spellcaster. His spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). He knows the following sorcerer spells:
+
+	• Cantrips (at will): fire bolt, mage hand, poison spray, prestidigitation, ray of frost
+	• 1st level (6 slots): burning hands, shield, sleep
+	• 2nd level (3 slots): invisibility, scorching ray</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2657,15 +2730,7 @@ Familiar: Jot can serve another creature as a familiar, forming a telepathic bon
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</text>
       <attack>Claw|+4|1d4+2</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Kaarghaz is a 4th-level spellcaster. His spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). He knows the following sorcerer spells:
-
-	• Cantrips (at will): fire bolt, mage hand, poison spray, prestidigitation, ray of frost
-	• 1st level (6 slots): burning hands, shield, sleep
-	• 2nd level (3 slots): invisibility, scorching ray</text>
-    </trait>
-    <slots>6, 3</slots>
+    <slots>6,3</slots>
     <spells>fire bolt, mage hand, poison spray, prestidigitation, ray of frost, burning hands, shield, sleep, invisibility, scorching ray</spells>
     <description>The savage, degenerate troglodytes squat in the shallow depths of the Underdark in a constant state of war against their neighbors and one another. They mark the borders of their territories with cracked bones and skulls, or with pictographs painted in blood or dung.
 
@@ -2680,7 +2745,7 @@ Devotees of Laogzed:
 Some troglodytes venerate Laogzed, a demonic, monstrously fat toad-lizard that slumbers in the Abyss. Laogzed offers the troglodytes nothing in return except aspiration, for it is the dream of his troglodyte worshipers to become as fat, well-fed, and wearily content as he seems to be.
 
 Source:	Tales from the Yawning Portal p. 45</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Kalka-Kylla</name>
@@ -2696,15 +2761,15 @@ Source:	Tales from the Yawning Portal p. 45</description>
     <int>15</int>
     <wis>16</wis>
     <cha>12</cha>
-    <save />
+    <save/>
     <skill>Deception +3, Insight +5, Stealth +3</skill>
     <passive>13</passive>
     <languages>Olman</languages>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -2730,7 +2795,7 @@ Until this grapple ends, the target is restrained. Kalka-Kylla has two claws, ea
       <attack>Claw|+5|2d6+3</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 238</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Keeper</name>
@@ -2751,10 +2816,10 @@ Until this grapple ends, the target is restrained. Kalka-Kylla has two claws, ea
     <passive>14</passive>
     <languages>Keeper</languages>
     <cr>7</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Stone Camouflage</name>
@@ -2774,10 +2839,6 @@ Until this grapple ends, the target is restrained. Kalka-Kylla has two claws, ea
       <text>Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone.</text>
       <attack>Rock|+9|4d10+6</attack>
     </action>
-    <reaction>
-      <name>Rock Catching</name>
-      <text>If a rock or similar object is hurled at the Keeper, the Keeper can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.</text>
-    </reaction>
     <action>
       <name>Variant: New Keeper Options</name>
       <text>Some adult stone Keepers like to grab enemies and fling them through the air. They can also roll boulders across the ground, striking multiple enemies in a line. These abilities are represented by the following action options.
@@ -2786,6 +2847,10 @@ Fling: The Keeper tries to throw a Small or Medium creature within 10 feet of it
 
 Rolling Rock: The Keeper sends a rock tumbling along the ground in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 22 (3d10 + 6) bludgeoning damage and falling prone on a failed save</text>
     </action>
+    <reaction>
+      <name>Rock Catching</name>
+      <text>If a rock or similar object is hurled at the Keeper, the Keeper can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.</text>
+    </reaction>
     <description>Source:	Tales from the Yawning Portal p. 173</description>
     <environment>underdark, mountain, hill</environment>
   </monster>
@@ -2803,14 +2868,14 @@ Rolling Rock: The Keeper sends a rock tumbling along the ground in a 30-foot lin
     <int>7</int>
     <wis>12</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Stealth +4</skill>
     <passive>13</passive>
     <languages>Common, Sylvan</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>fire, bludgeoning, piercing</resist>
-    <immune />
-    <vulnerable />
+    <immune/>
     <conditionImmune>blinded, deafened, exhaustion</conditionImmune>
     <senses>blindsight 60 ft.</senses>
     <trait>
@@ -2843,10 +2908,12 @@ Before moving into damaging terrain, such as lava or a pit, and whenever it take
 A target that successfully saves is immune to this kelpie's hypnosis for the next 24 hours.</text>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 238</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Kelson Darktreader</name>
+    <sortname>Darktreader, Kelson</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-elf)</type>
     <alignment>Any alignment</alignment>
@@ -2859,15 +2926,15 @@ A target that successfully saves is immune to this kelpie's hypnosis for the nex
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common), Elvish</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -2883,6 +2950,7 @@ A target that successfully saves is immune to this kelpie's hypnosis for the nex
   </monster>
   <monster>
     <name>Kieren</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -2895,16 +2963,16 @@ A target that successfully saves is immune to this kelpie's hypnosis for the nex
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Club</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
@@ -2932,11 +3000,11 @@ A target that successfully saves is immune to this kelpie's hypnosis for the nex
     <passive>16</passive>
     <languages>Giant</languages>
     <cr>9</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>fire</immune>
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>Snurre makes two greatsword attacks.</text>
@@ -2964,6 +3032,9 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
   </monster>
   <monster>
     <name>Kobold Commoner</name>
+    <sortname>Commoner, Kobold</sortname>
+    <ancestry>Commoner, Kobold</ancestry>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (kobold)</type>
     <alignment>Any alignment</alignment>
@@ -2976,15 +3047,15 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common), Draconic</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
@@ -3004,6 +3075,9 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
   </monster>
   <monster>
     <name>Kobold Elite</name>
+    <sortname>Kobold, Elite</sortname>
+    <ancestry>Kobold</ancestry>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (kobold)</type>
     <alignment>Lawful Evil</alignment>
@@ -3016,15 +3090,15 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
     <int>8</int>
     <wis>7</wis>
     <cha>8</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Common, Draconic</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
@@ -3061,14 +3135,14 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
     <int>7</int>
     <wis>10</wis>
     <cha>6</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>1</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <action>
@@ -3087,6 +3161,7 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
   </monster>
   <monster>
     <name>Lahnis</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3104,20 +3179,15 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Sculpt Spells</name>
       <text>When Lahnis casts an evocation spell that forces other creatures it can see to make a saving throw, it can choose a number of them equal to 1 + the spell's level. These creatures automatically succeed on their saving throws against the spell. If a successful save means a chosen creature would take half damage from the spell, it instead takes no damage from it.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands.</text>
-      <attack>Quarterstaff|+3|1d6-1</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Lahnis is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). Lahnis has the following wizard spells prepared:
@@ -3132,13 +3202,20 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
 
 *Evocation spell</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands.</text>
+      <attack>Quarterstaff|+3|1d6-1</attack>
+    </action>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>fire bolt, light, prestidigitation, ray of frost, burning hands, mage armor, magic missile, mirror image, misty step, shatter, counterspell, fireball, lightning bolt, ice storm, stoneskin, Bigby's hand, cone of cold, chain lightning, wall of ice</spells>
     <description>Source:	Tales from the Yawning Portal p. 131</description>
     <environment>urban</environment>
   </monster>
   <monster>
     <name>Lesser Mummy Lord</name>
+    <sortname>Mummy Lord, Lesser</sortname>
+    <ancestry>Mummy Lord</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -3156,9 +3233,9 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
     <passive>14</passive>
     <languages>the languages it knew in life</languages>
     <cr>15</cr>
-    <resist />
-    <immune>necrotic, poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
     <vulnerable>fire</vulnerable>
+    <resist/>
+    <immune>necrotic, poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3168,6 +3245,18 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
     <trait>
       <name>Rejuvenation</name>
       <text>A destroyed mummy lord gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of the mummy lord's heart.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:
+
+	• Cantrips (at will): sacred flame, thaumaturgy
+	• 1st level (4 slots): command, guiding bolt, shield of faith
+	• 2nd level (3 slots): hold person, silence, spiritual weapon
+	• 3rd level (3 slots): animate dead, dispel magic
+	• 4th level (3 slots): divination, guardian of faith
+	• 5th level (2 slots): contagion, insect plague
+	• 6th level (1 slots): harm</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -3209,7 +3298,7 @@ Tackle: When Snurre enters any enemy's space for the first time on a turn, the e
 
 Equipment worn or carried by the mummy lord remain in its possession.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the mummy lord takes a lair action to cause one of the following effects; the mummy lord can't use the same effect two rounds in a row:
 
@@ -3219,7 +3308,7 @@ Equipment worn or carried by the mummy lord remain in its possession.</text>
 
 	• Until initiative count 20 on the next round, any non-undead creature that tries to cast a spell of 4th level or lower in the mummy lord's lair is wracked with pain. The creature can choose another action, but if it tries to cast the spell, it must make a DC 16 Constitution saving throw. On a failed save, it takes 1d6 necrotic damage per level of the spell, and the spell has no effect and is wasted.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>A mummy lord's temple or tomb is warped in any of the following ways by the creature's dark presence:
 
@@ -3231,19 +3320,7 @@ Equipment worn or carried by the mummy lord remain in its possession.</text>
 
 If the mummy lord is destroyed, these regional effects end immediately.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:
-
-	• Cantrips (at will): sacred flame, thaumaturgy
-	• 1st level (4 slots): command, guiding bolt, shield of faith
-	• 2nd level (3 slots): hold person, silence, spiritual weapon
-	• 3rd level (3 slots): animate dead, dispel magic
-	• 4th level (3 slots): divination, guardian of faith
-	• 5th level (2 slots): contagion, insect plague
-	• 6th level (1 slots): harm</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>sacred flame, thaumaturgy, command, guiding bolt, shield of faith, hold person, silence, spiritual weapon, animate dead, dispel magic, divination, guardian of faith, contagion, insect plague, harm</spells>
     <description>Source:	Tales from the Yawning Portal p. 224</description>
     <environment>desert</environment>
@@ -3267,9 +3344,9 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <passive>19</passive>
     <languages>all, telepathy 120 ft.</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist>radiant; bludgeoning, piercing, slashing from nonmagical attacks</resist>
-    <immune />
-    <vulnerable />
+    <immune/>
     <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -3279,6 +3356,13 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <trait>
       <name>Magic Resistance</name>
       <text>Lumalia has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Lumalia's spellcasting ability is Charisma (spell save DC 17). Lumalia can innately cast the following spells, requiring only verbal components:
+
+	• At will: detect evil and good
+	• 1/Day each: commune, raise dead</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -3300,16 +3384,9 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
 
 In a new form, Lumalia retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Lumalia's spellcasting ability is Charisma (spell save DC 17). Lumalia can innately cast the following spells, requiring only verbal components:
-
-	• At will: detect evil and good
-	• 1/Day each: commune, raise dead</text>
-    </trait>
     <spells>detect evil and good, commune, raise dead</spells>
     <description>Source:	Tales from the Yawning Portal p. 153</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Malformed Kraken</name>
@@ -3326,13 +3403,13 @@ In a new form, Lumalia retains its game statistics and ability to speak, but its
     <wis>15</wis>
     <cha>15</cha>
     <save>Str +11, Con +9, Int +4, Wis +6, Cha +6</save>
-    <skill />
+    <skill/>
     <passive>12</passive>
     <languages>understands Common but can't speak, telepathy 60 ft.</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>lightning</immune>
-    <vulnerable />
     <conditionImmune>frightened, paralyzed</conditionImmune>
     <senses>truesight 60 ft.</senses>
     <trait>
@@ -3371,10 +3448,12 @@ Until this grapple ends, the target is restrained. The kraken has ten tentacles,
     <description>The Doomvault (Dead in Thay) contains a number of denizens that don't have all the traits or abilities of normal creatures of their kind. By far the most powerful of these "inferior" creatures is a malformed kraken that is kept in a saltwater pool and is not as large or as durable as a true kraken
 
 Source:	Tales from the Yawning Portal p. 239</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Mennek Ariz</name>
+    <sortname>Ariz, Mennek</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3392,22 +3471,11 @@ Source:	Tales from the Yawning Portal p. 239</description>
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands.</text>
-      <attack>Quarterstaff|+2|1d6-1</attack>
-    </action>
-    <reaction>
-      <name>Instinctive Charm (Recharges after Mennek Casts an Enchantment Spell of 1st level or Higher)</name>
-      <text>Mennek tries to magically divert an attack made against it, provided that the attacker is within 30 feet of it and visible to it. Mennek must decide to do so before the attack hits or misses.
-
-The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attacker targets the creature closest to it, other than Mennek or itself. If multiple creatures are closest, the attacker chooses which one to target.</text>
-    </reaction>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Mennek is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Mennek has the following wizard spells prepared:
@@ -3421,7 +3489,18 @@ The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attack
 
 *Enchantment spell of 1st level or higher</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands.</text>
+      <attack>Quarterstaff|+2|1d6-1</attack>
+    </action>
+    <reaction>
+      <name>Instinctive Charm (Recharges after Mennek Casts an Enchantment Spell of 1st level or Higher)</name>
+      <text>Mennek tries to magically divert an attack made against it, provided that the attacker is within 30 feet of it and visible to it. Mennek must decide to do so before the attack hits or misses.
+
+The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attacker targets the creature closest to it, other than Mennek or itself. If multiple creatures are closest, the attacker chooses which one to target.</text>
+    </reaction>
+    <slots>0,4,3,3,3,2</slots>
     <spells>friends, mage hand, mending, message, charm person, mage armor, magic missile, hold person, invisibility, suggestion, fireball, haste, tongues, dominate beast, stoneskin, hold monster</spells>
     <description>Source:	Tales from the Yawning Portal p. 157</description>
     <environment>urban</environment>
@@ -3440,14 +3519,14 @@ The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attack
     <int>11</int>
     <wis>12</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Deception +6, Insight +3</skill>
     <passive>11</passive>
     <languages>Common</languages>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>charmed</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3476,10 +3555,11 @@ The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attack
       <text>The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.</text>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 91</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Nedylene</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Neutral Evil</alignment>
@@ -3497,10 +3577,10 @@ The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attack
     <passive>16</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Special Equipment</name>
@@ -3513,6 +3593,24 @@ The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attack
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Nedylene has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Nedylene's spellcasting ability is Charisma (spell save DC 15). She can innately cast the following spells, requiring no material components:
+
+	• At will: dancing lights
+	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Nedylene is a 10th-level spellcaster. Her spellcasting ability is Wisdom (save DC 14, +6 to hit with spell attacks). Nedylene has the following cleric spells prepared:
+
+	• Cantrips (at will): guidance, poison spray, resistance, spare the dying, thaumaturgy
+	• 1st level (4 slots): animal friendship, cure wounds, detect poison and disease, ray of sickness
+	• 2nd level (3 slots): lesser restoration, protection from poison, web
+	• 3rd level (3 slots): conjure animals (2 giant spiders), dispel magic
+	• 4th level (3 slots): divination, freedom of movement
+	• 5th level (2 slots): insect plague, mass cure wounds</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -3534,25 +3632,7 @@ The attacker must make a DC 14 Wisdom saving throw. On a failed save, the attack
 
 A drow priestess of lolth wearing +3 scale mail has AC 19.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Nedylene's spellcasting ability is Charisma (spell save DC 15). She can innately cast the following spells, requiring no material components:
-
-	• At will: dancing lights
-	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
-    </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Nedylene is a 10th-level spellcaster. Her spellcasting ability is Wisdom (save DC 14, +6 to hit with spell attacks). Nedylene has the following cleric spells prepared:
-
-	• Cantrips (at will): guidance, poison spray, resistance, spare the dying, thaumaturgy
-	• 1st level (4 slots): animal friendship, cure wounds, detect poison and disease, ray of sickness
-	• 2nd level (3 slots): lesser restoration, protection from poison, web
-	• 3rd level (3 slots): conjure animals (2 giant spiders), dispel magic
-	• 4th level (3 slots): divination, freedom of movement
-	• 5th level (2 slots): insect plague, mass cure wounds</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <slots>0,4,3,3,3,2</slots>
     <spells>dancing lights, darkness, faerie fire, levitate, guidance, poison spray, resistance, spare the dying, thaumaturgy, animal friendship, cure wounds, detect poison and disease, ray of sickness, lesser restoration, protection from poison, web, conjure animals, dispel magic, divination, freedom of movement, insect plague, mass cure wounds</spells>
     <description>Source:	Tales from the Yawning Portal p. 209</description>
     <environment>underdark</environment>
@@ -3571,15 +3651,15 @@ A drow priestess of lolth wearing +3 scale mail has AC 19.</text>
     <int>13</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Acrobatics +5, Nature +3, Stealth +5, Survival +4</skill>
     <passive>12</passive>
     <languages>Aquan, Common, Elvish, Sylvan</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -3620,10 +3700,11 @@ A drow priestess of lolth wearing +3 scale mail has AC 19.</text>
     <description>One of the most inviting locations in the Hidden Shrine of Tamoachan is a gently illuminated pool of water, beside which sits a lovely being singing a pleasant tune. The figure is a nereid—a fey water creature that can shape its environment to suit its needs. Whether male or female, a nereid bears an otherworldly beauty.
 
 Source:	Tales from the Yawning Portal p. 240</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Nimira</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Lawful Evil</alignment>
@@ -3636,15 +3717,15 @@ Source:	Tales from the Yawning Portal p. 240</description>
     <int>11</int>
     <wis>10</wis>
     <cha>9</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Dwarvish, Undercommon</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Duergar Resilience</name>
@@ -3688,6 +3769,7 @@ Source:	Tales from the Yawning Portal p. 240</description>
   </monster>
   <monster>
     <name>Obmi</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any Non-Good Alignment</alignment>
@@ -3705,10 +3787,10 @@ Source:	Tales from the Yawning Portal p. 240</description>
     <passive>13</passive>
     <languages>Thieves' cant plus any two languages, Dwarvish</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>poison, poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Assassinate</name>
@@ -3744,10 +3826,13 @@ Source:	Tales from the Yawning Portal p. 240</description>
       <attack>Light Crossbow||7d6</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 196</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ogre Skeleton</name>
+    <sortname>Skeleton, Ogre</sortname>
+    <ancestry>Skeleton, Ogre</ancestry>
+    <npc>YES</npc>
     <size>L</size>
     <type>undead</type>
     <alignment>Chaotic Evil</alignment>
@@ -3760,14 +3845,14 @@ Source:	Tales from the Yawning Portal p. 240</description>
     <int>5</int>
     <wis>7</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Common, Giant, understands all languages it spoke in life but can't speak</languages>
     <cr>2</cr>
-    <resist />
-    <immune>poison</immune>
     <vulnerable>bludgeoning</vulnerable>
+    <resist/>
+    <immune>poison</immune>
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft., darkvision 60 ft.</senses>
     <action>
@@ -3785,6 +3870,8 @@ Source:	Tales from the Yawning Portal p. 240</description>
   </monster>
   <monster>
     <name>Ooze Master</name>
+    <sortname>Ooze, Master</sortname>
+    <ancestry>Ooze</ancestry>
     <size>H</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -3802,9 +3889,9 @@ Source:	Tales from the Yawning Portal p. 240</description>
     <passive>10</passive>
     <languages>Common, Primordial, Thayan</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist>lightning, necrotic; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>acid, cold, poison</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, poisoned, prone</conditionImmune>
     <senses>blindsight 120 ft.</senses>
     <trait>
@@ -3819,15 +3906,6 @@ Source:	Tales from the Yawning Portal p. 240</description>
       <name>Spider Climb</name>
       <text>The Ooze Master can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
     </trait>
-    <action>
-      <name>Pseudopod</name>
-      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (3d6 + 3) bludgeoning damage plus 10 (3d6) acid damage.</text>
-      <attack>Pseudopod|+7|3d6+3</attack>
-    </action>
-    <reaction>
-      <name>Instinctive Charm</name>
-      <text>If a creature the Ooze Master can see makes an attack roll against it while within 30 feet of it, the Ooze Master can use a reaction to divert the attack if another creature is within the attack's range. The attacker must make a DC 15 Wisdom saving throw. On a failed save, the attacker targets the creature that is closest to it, not including itself or the Ooze Master. If multiple creatures are closest, the attacker chooses which one to target. On a successful save, the attacker is immune to this Instinctive Charm for 24 hours. Creatures that can't be charmed are immune to this effect.</text>
-    </reaction>
     <trait>
       <name>Spellcasting</name>
       <text>The Ooze Master is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). It has the following wizard spells prepared:
@@ -3839,13 +3917,25 @@ Source:	Tales from the Yawning Portal p. 240</description>
 	• 4th level (3 slots): confusion, Evard's black tentacles
 	• 5th level (1 slots): cloudkill</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Pseudopod</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (3d6 + 3) bludgeoning damage plus 10 (3d6) acid damage.</text>
+      <attack>Pseudopod|+7|3d6+3</attack>
+    </action>
+    <reaction>
+      <name>Instinctive Charm</name>
+      <text>If a creature the Ooze Master can see makes an attack roll against it while within 30 feet of it, the Ooze Master can use a reaction to divert the attack if another creature is within the attack's range. The attacker must make a DC 15 Wisdom saving throw. On a failed save, the attacker targets the creature that is closest to it, not including itself or the Ooze Master. If multiple creatures are closest, the attacker chooses which one to target. On a successful save, the attacker is immune to this Instinctive Charm for 24 hours. Creatures that can't be charmed are immune to this effect.</text>
+    </reaction>
+    <slots>0,4,3,3,3,1</slots>
     <spells>acid splash, friends, mage hand, poison spray, charm person, detect magic, magic missile, ray of sickness, detect thoughts, Melf's acid arrow, suggestion, fear, slow, stinking cloud, confusion, Evard's black tentacles, cloudkill</spells>
     <description>Source:	Tales from the Yawning Portal p. 241</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Orc Commoner</name>
+    <sortname>Orc, Commoner</sortname>
+    <ancestry>Orc</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (orc)</type>
     <alignment>Any alignment</alignment>
@@ -3858,15 +3948,15 @@ Source:	Tales from the Yawning Portal p. 240</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common), Orc</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Aggressive</name>
@@ -3894,14 +3984,14 @@ Source:	Tales from the Yawning Portal p. 240</description>
     <int>14</int>
     <wis>12</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Stealth +4</skill>
     <passive>11</passive>
     <languages>Abyssal, Common, Draconic</languages>
     <cr>3</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3921,6 +4011,13 @@ Source:	Tales from the Yawning Portal p. 240</description>
 	• Type 2: Human head and body with snakes for arms
 
 	• Type 3: Human head and upper body with a serpentine lower body instead of legs</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting (Yuan-ti Form Only)</name>
+      <text>Oussa's innate spellcasting ability is Charisma (spell save DC 13). Oussa can innately cast the following spells, requiring no material components:
+
+	• At will: animal friendship (snakes only)
+	• 3/Day: suggestion</text>
     </trait>
     <action>
       <name>Multiattack (Yuan-ti Form Only)</name>
@@ -3948,19 +4045,13 @@ Until this grapple ends, the target is restrained, and Oussa can't constrict ano
       <text>Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
       <attack>Longbow (Yuan-ti Form Only)|+4|1d8+2</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting (Yuan-ti Form Only)</name>
-      <text>Oussa's innate spellcasting ability is Charisma (spell save DC 13). Oussa can innately cast the following spells, requiring no material components:
-
-	• At will: animal friendship (snakes only)
-	• 3/Day: suggestion</text>
-    </trait>
     <spells>animal friendship, suggestion</spells>
     <description>Source:	Tales from the Yawning Portal p. 157</description>
     <environment>forest, swamp, desert</environment>
   </monster>
   <monster>
     <name>Phaia</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3978,21 +4069,16 @@ Until this grapple ends, the target is restrained, and Oussa can't constrict ano
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>9</cr>
+    <vulnerable/>
     <resist>necrotic</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Grim Harvest (1/Turn)</name>
       <recharge>1/TURN</recharge>
       <text>When necromancer kills a creature that is neither a construct nor undead with a spell of 1st level or higher, Phaia regains hit points equal to twice the spell's level, or three times if it is a necromancy spell.</text>
     </trait>
-    <action>
-      <name>Withering Touch</name>
-      <text>Melee Spell Attack: +7 to hit, reach 5 ft., one target. Hit: 5 (2d4) necrotic damage.</text>
-      <attack>Withering Touch|+7|2d4</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Phaia is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). Phaia has the following wizard spells prepared:
@@ -4007,13 +4093,20 @@ Until this grapple ends, the target is restrained, and Oussa can't constrict ano
 
 *Necromancy spell of 1st level or higher</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <action>
+      <name>Withering Touch</name>
+      <text>Melee Spell Attack: +7 to hit, reach 5 ft., one target. Hit: 5 (2d4) necrotic damage.</text>
+      <attack>Withering Touch|+7|2d4</attack>
+    </action>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>chill touch, dancing lights, mage hand, mending, false life, mage armor, ray of sickness, blindness/deafness, ray of enfeeblement, web, animate dead, bestow curse, vampiric touch, blight, dimension door, stoneskin, Bigby's hand, cloudkill, circle of death</spells>
     <description>Source:	Tales from the Yawning Portal p. 132</description>
     <environment>desert, urban</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Aboleth</name>
+    <sortname>Aboleth, Reduced-Threat</sortname>
+    <ancestry>Aboleth</ancestry>
     <size>L</size>
     <type>aberration</type>
     <alignment>Lawful Evil</alignment>
@@ -4031,10 +4124,10 @@ Until this grapple ends, the target is restrained, and Oussa can't constrict ano
     <passive>20</passive>
     <languages>Deep Speech, telepathy 120 ft.</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -4087,7 +4180,7 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
       <name>Psychic Drain (Costs 2 Actions)</name>
       <text>One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>When fighting inside its lair, an aboleth can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the aboleth takes a lair action to cause one of the following effects:
 
@@ -4097,7 +4190,7 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 
 	• Water in the aboleth's lair magically becomes a conduit for the creature's rage. The aboleth can target any number of creatures it can see in such water within 90 feet of it. A target must succeed on a DC 14 Wisdom saving throw or take 7 (2d6) psychic damage. The aboleth can't use this lair action again until it has used a different one.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region containing an aboleth's lair is warped by the creature's presence, which creates one or more of the following effects:
 
@@ -4109,12 +4202,13 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 
 If the aboleth dies, the first two effects fade over the course of 3d10 days.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Basilisk</name>
+    <sortname>Basilisk, Reduced-Threat</sortname>
+    <ancestry>Basilisk</ancestry>
     <size>M</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -4127,15 +4221,15 @@ If the aboleth dies, the first two effects fade over the course of 3d10 days.</t
     <int>2</int>
     <wis>8</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>9</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Petrifying Gaze</name>
@@ -4155,12 +4249,13 @@ If the basilisk sees its reflection within 30 feet of it in bright light, it mis
       <recharge>0/TURN</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>mountain</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Behir</name>
+    <sortname>Behir, Reduced-Threat</sortname>
+    <ancestry>Behir</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Neutral Evil</alignment>
@@ -4173,15 +4268,15 @@ If the basilisk sees its reflection within 30 feet of it in bright light, it mis
     <int>7</int>
     <wis>14</wis>
     <cha>12</cha>
-    <save />
+    <save/>
     <skill>Perception +4, Stealth +5</skill>
     <passive>16</passive>
     <languages>Draconic</languages>
     <cr>6</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>lightning</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 90 ft.</senses>
     <action>
       <name>Multiattack</name>
@@ -4203,12 +4298,13 @@ If the basilisk sees its reflection within 30 feet of it in bright light, it mis
       <recharge>0/TURN</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Beholder</name>
+    <sortname>Beholder, Reduced-Threat</sortname>
+    <ancestry>Beholder</ancestry>
     <size>L</size>
     <type>aberration</type>
     <alignment>Lawful Evil</alignment>
@@ -4226,9 +4322,9 @@ If the basilisk sees its reflection within 30 feet of it in bright light, it mis
     <passive>22</passive>
     <languages>Deep Speech, Undercommon</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>prone</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -4278,7 +4374,7 @@ If the target is an object weighing 300 pounds or less that isn't being worn or 
       <name>Eye Ray</name>
       <text>The beholder uses one random eye ray.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>When fighting inside its lair, a beholder can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the beholder can take one lair action to cause one of the following effects:
 
@@ -4290,7 +4386,7 @@ If the target is an object weighing 300 pounds or less that isn't being worn or 
 
 The beholder can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>A region containing a beholder's lair is warped by the creature's unnatural presence, which creates one or more of the following effects:
 
@@ -4300,12 +4396,12 @@ The beholder can't repeat an effect until they have all been used, and it can't 
 
 If the beholder dies, these effects fade over the course of 1d10 days.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Black Pudding</name>
+    <sortname>Black Pudding, Reduced-Threat</sortname>
     <ancestry>Black Pudding</ancestry>
     <size>L</size>
     <type>ooze</type>
@@ -4319,14 +4415,14 @@ If the beholder dies, these effects fade over the course of 1d10 days.</text>
     <int>1</int>
     <wis>6</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>acid, cold, lightning, slashing</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -4355,12 +4451,13 @@ If the beholder dies, these effects fade over the course of 1d10 days.</text>
       <recharge>0/TURN</recharge>
       <text>The ooze can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The ooze regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Carrion Crawler</name>
+    <sortname>Carrion Crawler, Reduced-Threat</sortname>
+    <ancestry>Carrion Crawler</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -4373,15 +4470,15 @@ If the beholder dies, these effects fade over the course of 1d10 days.</text>
     <int>1</int>
     <wis>12</wis>
     <cha>5</cha>
-    <save />
+    <save/>
     <skill>Perception +1</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
@@ -4412,12 +4509,13 @@ Until this poison ends, the target is paralyzed. The target can repeat the savin
       <recharge>0/TURN</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Clay Golem</name>
+    <sortname>Clay Golem, Reduced-Threat</sortname>
+    <ancestry>Clay Golem</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -4430,14 +4528,14 @@ Until this poison ends, the target is paralyzed. The target can repeat the savin
     <int>3</int>
     <wis>8</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>acid, poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -4479,12 +4577,13 @@ Until this poison ends, the target is paralyzed. The target can repeat the savin
       <recharge>0/TURN</recharge>
       <text>The construct can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The construct regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Reduced-Threat Darkmantle</name>
+    <sortname>Darkmantle, Reduced-Threat</sortname>
+    <ancestry>Darkmantle</ancestry>
     <size>S</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -4497,15 +4596,15 @@ Until this poison ends, the target is paralyzed. The target can repeat the savin
     <int>2</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
+    <save/>
     <skill>Stealth +1</skill>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Echolocation</name>
@@ -4535,12 +4634,13 @@ A creature can detach the darkmantle by making a successful DC 11 Strength check
       <recharge>0/TURN</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Displacer Beast</name>
+    <sortname>Displacer Beast, Reduced-Threat</sortname>
+    <ancestry>Displacer Beast</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Lawful Evil</alignment>
@@ -4553,15 +4653,15 @@ A creature can detach the darkmantle by making a successful DC 11 Strength check
     <int>6</int>
     <wis>12</wis>
     <cha>8</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Avoidance</name>
@@ -4585,12 +4685,13 @@ A creature can detach the darkmantle by making a successful DC 11 Strength check
       <recharge>0/TURN</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>forest</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Dragon Turtle</name>
+    <sortname>Dragon Turtle, Reduced-Threat</sortname>
+    <ancestry>Dragon Turtle</ancestry>
     <size>L</size>
     <type>dragon</type>
     <alignment>Neutral</alignment>
@@ -4604,14 +4705,14 @@ A creature can detach the darkmantle by making a successful DC 11 Strength check
     <wis>12</wis>
     <cha>12</cha>
     <save>Dex +4, Con +9, Wis +5</save>
-    <skill />
+    <skill/>
     <passive>11</passive>
     <languages>Aquan, Draconic</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -4642,12 +4743,13 @@ A creature can detach the darkmantle by making a successful DC 11 Strength check
       <recharge>0/TURN</recharge>
       <text>The dragon can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underwater, coastal</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Ettercap</name>
+    <sortname>Ettercap, Reduced-Threat</sortname>
+    <ancestry>Ettercap</ancestry>
     <size>M</size>
     <type>monstrosity</type>
     <alignment>Neutral Evil</alignment>
@@ -4660,15 +4762,15 @@ A creature can detach the darkmantle by making a successful DC 11 Strength check
     <int>7</int>
     <wis>12</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Perception +1, Stealth +2, Survival +1</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Spider Climb</name>
@@ -4712,12 +4814,13 @@ Until this grapple ends, the target can't breathe, and the ettercap has advantag
       <recharge>0/TURN</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>forest</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Flesh Golem</name>
+    <sortname>Flesh Golem, Reduced-Threat</sortname>
+    <ancestry>Flesh Golem</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Neutral</alignment>
@@ -4730,14 +4833,14 @@ Until this grapple ends, the target can't breathe, and the ettercap has advantag
     <int>6</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>lightning, poison; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -4780,12 +4883,13 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
       <recharge>0/TURN</recharge>
       <text>The construct can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The construct regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Reduced-Threat Glabrezu</name>
+    <sortname>Glabrezu, Reduced-Threat</sortname>
+    <ancestry>Glabrezu</ancestry>
     <size>L</size>
     <type>fiend (demon)</type>
     <alignment>Chaotic Evil</alignment>
@@ -4799,18 +4903,25 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
     <wis>17</wis>
     <cha>16</cha>
     <save>Str +7, Con +7, Wis +5, Cha +5</save>
-    <skill />
+    <skill/>
     <passive>13</passive>
     <languages>Abyssal, telepathy 120 ft.</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The glabrezu has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The glabrezu's spellcasting ability is Intelligence (spell save DC 14). The glabrezu can innately cast the following spells, requiring no material components:
+
+	• At will: darkness, detect magic, dispel magic
+	• 1/Day each: confusion, fly, power word stun</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -4840,19 +4951,14 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>0/TURN</recharge>
       <text>The fiend (demon) can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The fiend (demon) regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The glabrezu's spellcasting ability is Intelligence (spell save DC 14). The glabrezu can innately cast the following spells, requiring no material components:
-
-	• At will: darkness, detect magic, dispel magic
-	• 1/Day each: confusion, fly, power word stun</text>
-    </trait>
     <spells>darkness, detect magic, dispel magic, confusion, fly, power word stun</spells>
     <description>Source:	Tales from the Yawning Portal p. 113</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Reduced-Threat Gray Ooze</name>
+    <sortname>Gray Ooze, Reduced-Threat</sortname>
+    <ancestry>Gray Ooze</ancestry>
     <size>M</size>
     <type>ooze</type>
     <alignment>Unaligned</alignment>
@@ -4865,14 +4971,14 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <int>1</int>
     <wis>6</wis>
     <cha>2</cha>
-    <save />
+    <save/>
     <skill>Stealth +0</skill>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist>acid, cold, fire</resist>
-    <immune />
-    <vulnerable />
+    <immune/>
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -4907,12 +5013,13 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
       <recharge>0/TURN</recharge>
       <text>The ooze can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The ooze regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Helmed Horror</name>
+    <sortname>Helmed Horror, Reduced-Threat</sortname>
+    <ancestry>Helmed Horror</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -4925,14 +5032,14 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>14</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</resist>
     <immune>force, necrotic, poison</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned, stunned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -4957,12 +5064,13 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
       <recharge>0/TURN</recharge>
       <text>The construct can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The construct regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Reduced-Threat Hezrou</name>
+    <sortname>Hezrou, Reduced-Threat</sortname>
+    <ancestry>Hezrou</ancestry>
     <size>L</size>
     <type>fiend (demon)</type>
     <alignment>Chaotic Evil</alignment>
@@ -4976,13 +5084,13 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <wis>12</wis>
     <cha>13</cha>
     <save>Str +5, Con +6, Wis +2</save>
-    <skill />
+    <skill/>
     <passive>11</passive>
     <languages>Abyssal, telepathy 120 ft.</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -5021,12 +5129,13 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>0/TURN</recharge>
       <text>The fiend (demon) can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The fiend (demon) regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Reduced-Threat Hook Horror</name>
+    <sortname>Hook Horror, Reduced-Threat</sortname>
+    <ancestry>Hook Horror</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Neutral</alignment>
@@ -5039,15 +5148,15 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <int>6</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +1</skill>
     <passive>13</passive>
     <languages>Hook Horror</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
       <name>Echolocation</name>
@@ -5071,12 +5180,13 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>0/TURN</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Ochre Jelly</name>
+    <sortname>Ochre Jelly, Reduced-Threat</sortname>
+    <ancestry>Ochre Jelly</ancestry>
     <size>L</size>
     <type>ooze</type>
     <alignment>Unaligned</alignment>
@@ -5089,14 +5199,14 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <int>2</int>
     <wis>6</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>1</cr>
+    <vulnerable/>
     <resist>acid</resist>
     <immune>lightning, slashing</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -5121,12 +5231,13 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>0/TURN</recharge>
       <text>The ooze can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The ooze regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Otyugh</name>
+    <sortname>Otyugh, Reduced-Threat</sortname>
+    <ancestry>Otyugh</ancestry>
     <size>L</size>
     <type>aberration</type>
     <alignment>Neutral</alignment>
@@ -5140,14 +5251,14 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <wis>13</wis>
     <cha>6</cha>
     <save>Con +5</save>
-    <skill />
+    <skill/>
     <passive>11</passive>
     <languages>Otyugh</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Limited Telepathy</name>
@@ -5172,12 +5283,13 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>0/TURN</recharge>
       <text>The aberration can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The aberration regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Owlbear</name>
+    <sortname>Owlbear, Reduced-Threat</sortname>
+    <ancestry>Owlbear</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -5190,15 +5302,15 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <int>3</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +1</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Sight and Smell</name>
@@ -5223,12 +5335,13 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>0/TURN</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>forest</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Peryton</name>
+    <sortname>Peryton, Reduced-Threat</sortname>
+    <ancestry>Peryton</ancestry>
     <size>M</size>
     <type>monstrosity</type>
     <alignment>Chaotic Evil</alignment>
@@ -5241,16 +5354,16 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <int>9</int>
     <wis>12</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>15</passive>
     <languages>understands Common and Elvish but can't speak</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Dive Attack</name>
       <text>If the peryton is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 9 (2d8) damage to the target.</text>
@@ -5282,12 +5395,13 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>0/TURN</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>mountain, hill</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Remorhaz</name>
+    <sortname>Remorhaz, Reduced-Threat</sortname>
+    <ancestry>Remorhaz</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -5300,15 +5414,15 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <int>4</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>6</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold, fire</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
     <trait>
       <name>Heated Body</name>
@@ -5330,12 +5444,13 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
       <recharge>0/TURN</recharge>
       <text>The monstrosity can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The monstrosity regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>arctic</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Stone Golem</name>
+    <sortname>Stone Golem, Reduced-Threat</sortname>
+    <ancestry>Stone Golem</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -5348,14 +5463,14 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
     <int>3</int>
     <wis>11</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>5</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -5389,12 +5504,13 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
       <recharge>0/TURN</recharge>
       <text>The construct can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The construct regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Reduced-Threat Vrock</name>
+    <sortname>Vrock, Reduced-Threat</sortname>
+    <ancestry>Vrock</ancestry>
     <size>L</size>
     <type>fiend (demon)</type>
     <alignment>Chaotic Evil</alignment>
@@ -5408,13 +5524,13 @@ If the remorhaz takes 30 damage or more on a single turn from a creature inside 
     <wis>13</wis>
     <cha>8</cha>
     <save>Dex +3, Wis +2, Cha +0</save>
-    <skill />
+    <skill/>
     <passive>11</passive>
     <languages>Abyssal, telepathy 120 ft.</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist>cold, fire, lightning; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -5460,12 +5576,13 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>0/TURN</recharge>
       <text>The fiend (demon) can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The fiend (demon) regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Reduced-Threat Wight</name>
+    <sortname>Wight, Reduced-Threat</sortname>
+    <ancestry>Wight</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Neutral Evil</alignment>
@@ -5478,14 +5595,14 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <int>10</int>
     <wis>13</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Perception +1, Stealth +2</skill>
     <passive>13</passive>
     <languages>the languages it knew in life</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -5517,12 +5634,13 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>0/TURN</recharge>
       <text>The undead can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The undead regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>underdark, swamp, urban, desert</environment>
   </monster>
   <monster>
     <name>Reduced-Threat Wyvern</name>
+    <sortname>Wyvern, Reduced-Threat</sortname>
+    <ancestry>Wyvern</ancestry>
     <size>L</size>
     <type>dragon</type>
     <alignment>Unaligned</alignment>
@@ -5535,15 +5653,15 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <int>5</int>
     <wis>12</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>14</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <action>
       <name>Multiattack</name>
@@ -5570,12 +5688,12 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>0/TURN</recharge>
       <text>The dragon can take 0 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary action at the start of its turn.</text>
     </legendary>
-    <spells />
     <description>Source:	Tales from the Yawning Portal p. 113</description>
     <environment>mountain, hill</environment>
   </monster>
   <monster>
     <name>Scrag</name>
+    <npc>YES</npc>
     <size>L</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -5588,15 +5706,15 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <int>7</int>
     <wis>9</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Giant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
@@ -5624,13 +5742,13 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <name>Variant: Loathsome Limbs</name>
       <text>Whenever the troll takes at least 15 slashing damage at one time, roll a d20 to determine what else happens to it:
 
-	• 1–10: Nothing else happens.
+	• 1-10: Nothing else happens.
 
-	• 11–14: One leg is severed from the troll if it has any legs left.
+	• 11-14: One leg is severed from the troll if it has any legs left.
 
-	• 15–18: One arm is severed from the troll if it has any arms left.
+	• 15-18: One arm is severed from the troll if it has any arms left.
 
-	• 19–20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.
+	• 19-20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.
 
 If the troll finishes a short or long rest without reattaching a severed limb or head, the part regrows. At that point, the severed part dies. Until then, a severed part acts on the troll's initiative and has its own action and movement. A severed part has AC 13, 10 hit points, and the troll's Regeneration trait.
 
@@ -5659,16 +5777,16 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <int>3</int>
     <wis>12</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Perception +4, Stealth +5</skill>
     <passive>14</passive>
-    <languages />
+    <languages/>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Amphibious</name>
       <text>The sea lion can breathe air and water.</text>
@@ -5704,10 +5822,12 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
 Source:	Tales from the Yawning Portal p. 242,
 		Locathah Rising,
 		Ghosts of Saltmarsh p. 252</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Sentient Gray Ooze</name>
+    <sortname>Ooze, Gray Sentient</sortname>
+    <ancestry>Ooze</ancestry>
     <size>M</size>
     <type>ooze</type>
     <alignment>Unaligned</alignment>
@@ -5720,14 +5840,14 @@ Source:	Tales from the Yawning Portal p. 242,
     <int>1</int>
     <wis>6</wis>
     <cha>2</cha>
-    <save />
+    <save/>
     <skill>Stealth +2</skill>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist>acid, cold, fire</resist>
-    <immune />
-    <vulnerable />
+    <immune/>
     <conditionImmune>blinded, deafened, exhaustion, frightened, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -5762,6 +5882,8 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
   </monster>
   <monster>
     <name>Sentient Ochre Jelly</name>
+    <sortname>Jelly, Ochre Sentient</sortname>
+    <ancestry>Jelly</ancestry>
     <size>L</size>
     <type>ooze</type>
     <alignment>Unaligned</alignment>
@@ -5774,14 +5896,14 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <int>2</int>
     <wis>6</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
+    <vulnerable/>
     <resist>acid</resist>
     <immune>lightning, slashing</immune>
-    <vulnerable />
     <conditionImmune>blinded, deafened, exhaustion, frightened, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -5806,6 +5928,8 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
   </monster>
   <monster>
     <name>Shalendra Floshin</name>
+    <sortname>Floshin, Shalendra</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -5823,10 +5947,10 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <passive>10</passive>
     <languages>any one language (usually Common), Elvish</languages>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Brave</name>
@@ -5860,10 +5984,12 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
       <text>The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Tales from the Yawning Portal p. 119</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Sharwyn Hucrele</name>
+    <sortname>Hucrele, Sharwyn</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -5876,16 +6002,16 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <int>16</int>
     <wis>14</wis>
     <cha>9</cha>
-    <save />
+    <save/>
     <skill>Arcana +5, Insight +4, Persuasion +1</skill>
     <passive>12</passive>
     <languages>Common, Draconic, Goblin</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Barkskin</name>
       <text>Sharwyn's AC can't be lower than 16.</text>
@@ -5898,10 +6024,6 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
       <name>Tree Thrall</name>
       <text>If the Gulthias Tree dies, Sharwyn dies 24 hours later.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +4, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Sharwyn is a 1st-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). She has the following wizard spells prepared:
@@ -5909,13 +6031,20 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
 	• Cantrips (at will): light, prestidigitation, ray of frost
 	• 1st level (2 slots): color spray, magic missile, shield, sleep</text>
     </trait>
-    <slots>0, 2</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +4, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+    </action>
+    <slots>0,2</slots>
     <spells>light, prestidigitation, ray of frost, color spray, magic missile, shield, sleep</spells>
     <description>Source:	Tales from the Yawning Portal p. 242</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Sir Braford</name>
+    <sortname>Braford, Sir</sortname>
+    <ancestry>Braford</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -5928,16 +6057,16 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <int>10</int>
     <wis>13</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Athletics +5, Perception +3</skill>
     <passive>13</passive>
     <languages>Common</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Barkskin</name>
       <text>Sir Braford's AC can't be lower than 16.</text>
@@ -5960,10 +6089,11 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
       <text>When a creature Sir Braford can see attacks a target other than him that is within 5 feet of him, he can use a reaction to use his shield to impose disadvantage on the attack roll.</text>
     </reaction>
     <description>Source:	Tales from the Yawning Portal p. 243</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Siren</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>fey</type>
     <alignment>Chaotic Good</alignment>
@@ -5976,15 +6106,15 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <int>13</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Medicine +4, Nature +3, Stealth +6, Survival +4</skill>
     <passive>12</passive>
     <languages>Common, Elvish, Sylvan</languages>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -5993,6 +6123,11 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <trait>
       <name>Magic Resistance</name>
       <text>Siren has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Siren's innate spellcasting ability is Charisma (spell save DC 13). She can innately cast the following spells, requiring no material components:
+	• 1/Day each: charm person, fog cloud, greater invisibility, polymorph (self only)</text>
     </trait>
     <action>
       <name>Shortsword</name>
@@ -6004,18 +6139,14 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
       <text>Siren touches one creature she can see within 5 feet of her. The creature must succeed on a DC 13 Intelligence saving throw or take 13 (3d6 + 3) psychic damage and be stunned until the start of Siren's next turn.</text>
       <attack>Stupefying Touch||3d6+3</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Siren's innate spellcasting ability is Charisma (spell save DC 13). She can innately cast the following spells, requiring no material components:
-	• 1/Day each: charm person, fog cloud, greater invisibility, polymorph (self only)</text>
-    </trait>
     <spells>charm person, fog cloud, greater invisibility, polymorph</spells>
     <description>Source:	Tales from the Yawning Portal p. 243,
 		Mythic Odysseys of Theros</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Snarla</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>Chaotic Evil</alignment>
@@ -6028,16 +6159,16 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <int>16</int>
     <wis>11</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>14</passive>
     <languages>Common (can't speak in wolf form)</languages>
     <cr>5</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</immune>
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Shapechanger</name>
       <text>The werewolf can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</text>
@@ -6045,6 +6176,15 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <trait>
       <name>Keen Hearing and Smell</name>
       <text>The werewolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Snarla is a 6th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). She has the following wizard spells prepared:
+
+	• Cantrips (at will): fire bolt, light, mage hand, shocking grasp
+	• 1st level (4 slots): magic missile, shield, thunderwave
+	• 2nd level (3 slots): mirror image, web
+	• 3rd level (3 slots): dispel magic, fear, haste, stinking cloud</text>
     </trait>
     <action>
       <name>Multiattack (Humanoid or Hybrid Form Only)</name>
@@ -6065,16 +6205,7 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
       <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.</text>
       <attack>Spear (Humanoid Form Only)|+4|1d6+2</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Snarla is a 6th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). She has the following wizard spells prepared:
-
-	• Cantrips (at will): fire bolt, light, mage hand, shocking grasp
-	• 1st level (4 slots): magic missile, shield, thunderwave
-	• 2nd level (3 slots): mirror image, web
-	• 3rd level (3 slots): dispel magic, fear, haste, stinking cloud</text>
-    </trait>
-    <slots>0, 4, 3, 3</slots>
+    <slots>0,4,3,3</slots>
     <spells>fire bolt, light, mage hand, shocking grasp, magic missile, shield, thunderwave, mirror image, web, dispel magic, fear, haste, stinking cloud</spells>
     <description>A werewolf is a savage predator. In its humanoid form, a werewolf has heightened senses, a fiery temper, and a tendency to eat rare meat. Its wolf form is a fearsome predator, but its hybrid form is more terrifying by far-a furred and well-muscled humanoid body topped by a ravening wolf's head. A werewolf can wield weapons in hybrid form, though it prefers to tear foes apart with its powerful claws and bite.
 
@@ -6122,10 +6253,12 @@ Werewolf:
 The character gains a Strength of 15 if his or her score isn't already higher, and a +1 bonus to AC while in wolf or hybrid form (from natural armor). Attack and damage rolls for the natural weapons are based on Strength.
 
 Source:	Tales from the Yawning Portal p. 102</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Snow Leopard</name>
+    <sortname>Leopard, Snow</sortname>
+    <ancestry>Leopard</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -6138,15 +6271,15 @@ Source:	Tales from the Yawning Portal p. 102</description>
     <int>3</int>
     <wis>12</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Stealth +6</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
@@ -6171,6 +6304,7 @@ Source:	Tales from the Yawning Portal p. 102</description>
   </monster>
   <monster>
     <name>Snurrevin</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Lawful Evil</alignment>
@@ -6183,15 +6317,15 @@ Source:	Tales from the Yawning Portal p. 102</description>
     <int>14</int>
     <wis>10</wis>
     <cha>9</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Dwarvish, Undercommon</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Duergar Resilience</name>
@@ -6200,6 +6334,14 @@ Source:	Tales from the Yawning Portal p. 102</description>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Snurrevin is a 3rd-level spellcaster. His spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). He has the following wizard spells prepared:
+
+	• Cantrips (at will): fire bolt, mage hand, minor illusion, shocking grasp
+	• 1st level (4 slots): color spray, shield, silent image
+	• 2nd level (2 slots): hold person, shatter</text>
     </trait>
     <action>
       <name>Enlarge (Recharges after a Short or Long Rest)</name>
@@ -6221,15 +6363,7 @@ Source:	Tales from the Yawning Portal p. 102</description>
       <recharge>SHORT</recharge>
       <text>The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Snurrevin is a 3rd-level spellcaster. His spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). He has the following wizard spells prepared:
-
-	• Cantrips (at will): fire bolt, mage hand, minor illusion, shocking grasp
-	• 1st level (4 slots): color spray, shield, silent image
-	• 2nd level (2 slots): hold person, shatter</text>
-    </trait>
-    <slots>0, 4, 2</slots>
+    <slots>0,4,2</slots>
     <spells>fire bolt, mage hand, minor illusion, shocking grasp, color spray, shield, silent image, hold person, shatter</spells>
     <description>The tyrannical duergar, also known as gray dwarves, dwell in fantastic cities deep in the Underdark. Using ancient dwarven knowledge and myriad slaves, they work tirelessly to expand their subterranean kingdoms.
 
@@ -6250,7 +6384,7 @@ Infernal Master:
 Asmodeus, Lord of the Nine Hells, has been known to impersonate duergar gods in order to cultivate the evil brimming in the hearts of the gray dwarves. He offers them divine guidance and vengeance against their enemies while urging them on toward greater acts of tyranny, all the while concealing his true identity.
 
 Source:	Tales from the Yawning Portal p. 53</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Stone Dragon Statue</name>
@@ -6266,14 +6400,14 @@ Source:	Tales from the Yawning Portal p. 53</description>
     <int>3</int>
     <wis>11</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>10</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -6303,10 +6437,12 @@ Source:	Tales from the Yawning Portal p. 53</description>
       <text>The statue targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 85</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tarul Var</name>
+    <sortname>Var, Tarul</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>Neutral Evil</alignment>
@@ -6324,9 +6460,9 @@ Source:	Tales from the Yawning Portal p. 53</description>
     <passive>17</passive>
     <languages>Abyssal, Common, Infernal, Primordial, Thayan</languages>
     <cr>13</cr>
+    <vulnerable/>
     <resist>cold, lightning, necrotic; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -6345,6 +6481,20 @@ Source:	Tales from the Yawning Portal p. 53</description>
     <trait>
       <name>Turn Resistance</name>
       <text>Var has advantage on saving throws against any effect that turns undead.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Var is a 12th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). He has the following wizard spells prepared:
+
+*Conjuration spell of 1st level or higher
+
+	• Cantrips (at will): fire bolt, mage hand, minor illusion, prestidigitation, ray of frost
+	• 1st level (4 slots): detect magic, magic missile, shield, unseen servant*
+	• 2nd level (3 slots): detect thoughts, flaming sphere*, mirror image, scorching ray
+	• 3rd level (3 slots): counterspell, dispel magic, fireball
+	• 4th level (3 slots): dimension door*, Evard's black tentacles*
+	• 5th level (3 slots): cloudkill*, scrying
+	• 6th level (1 slots): circle of death</text>
     </trait>
     <action>
       <name>Paralyzing Touch</name>
@@ -6372,21 +6522,7 @@ Source:	Tales from the Yawning Portal p. 53</description>
       <name>Frightening Gaze (Costs 2 Actions)</name>
       <text>Var fixes his gaze on one creature he can see within 10 feet of him. The target must succeed on a DC 17 Wisdom saving throw against this magic or become frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to Var's gaze for the next 24 hours.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Var is a 12th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). He has the following wizard spells prepared:
-
-*Conjuration spell of 1st level or higher
-
-	• Cantrips (at will): fire bolt, mage hand, minor illusion, prestidigitation, ray of frost
-	• 1st level (4 slots): detect magic, magic missile, shield, unseen servant*
-	• 2nd level (3 slots): detect thoughts, flaming sphere*, mirror image, scorching ray
-	• 3rd level (3 slots): counterspell, dispel magic, fireball
-	• 4th level (3 slots): dimension door*, Evard's black tentacles*
-	• 5th level (3 slots): cloudkill*, scrying
-	• 6th level (1 slots): circle of death</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1</slots>
+    <slots>0,4,3,3,3,3,1</slots>
     <spells>fire bolt, mage hand, minor illusion, prestidigitation, ray of frost, detect magic, magic missile, shield, unseen servant, detect thoughts, flaming sphere, mirror image, scorching ray, counterspell, dispel magic, fireball, dimension door, Evard's black tentacles, cloudkill, scrying, circle of death</spells>
     <description>After failing in an earlier task for the Red Wizards, the lich Tarul Var is sequestered within the Doomvault (Dead in Thay), where he tries to avoid the attention of Szass Tam. Interlopers who discover his quarters are set upon by the lich and his dread warrior guards, but if Var is brought to the brink of death, he might bargain for a chance to escape the dungeon.
 
@@ -6394,7 +6530,7 @@ Undead Nature:
 A lich doesn't require air, food, drink, or sleep.
 
 Source:	Tales from the Yawning Portal p. 244</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tecuziztecatl</name>
@@ -6410,15 +6546,15 @@ Source:	Tales from the Yawning Portal p. 244</description>
     <int>15</int>
     <wis>16</wis>
     <cha>13</cha>
-    <save />
+    <save/>
     <skill>Deception +3, Stealth +2</skill>
     <passive>13</passive>
     <languages>Olman, Primordial</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>bludgeoning from nonmagical attacks</resist>
     <immune>acid</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -6454,10 +6590,13 @@ Source:	Tales from the Yawning Portal p. 244</description>
     <description>A giant slug named Tecuziztecatl, the Lord of Snails. Tecuziztecatl (TayCOO-zeez-tay-COT-el) is highly intelligent and quite the boaster. In ancient lore it was considered to be related to the moon, a fact of which it is quite proud. During combat the slug will detail, in Olman, what it has in store for the characters and how hopeless their situation is.
 
 Source:	Tales from the Yawning Portal p. 245</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Thayan Apprentice</name>
+    <sortname>Apprentice, Thayan</sortname>
+    <ancestry>Apprentice</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Any Non-Good Alignment</alignment>
@@ -6470,25 +6609,20 @@ Source:	Tales from the Yawning Portal p. 245</description>
     <int>15</int>
     <wis>13</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Arcana +4</skill>
     <passive>11</passive>
     <languages>Common, Thayan</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Doomvault Devotion</name>
       <text>Within the Doomvault, the apprentice has advantage on saving throws against being charmed or frightened.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+4|1d4+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The apprentice is a 4th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It has the following wizard spells prepared:
@@ -6497,13 +6631,21 @@ Source:	Tales from the Yawning Portal p. 245</description>
 	• 1st level (4 slots): burning hands, detect magic, mage armor, shield
 	• 2nd level (3 slots): blur, scorching ray</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+4|1d4+2</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>fire bolt, mage hand, prestidigitation, shocking grasp, burning hands, detect magic, mage armor, shield, blur, scorching ray</spells>
     <description>Source:	Tales from the Yawning Portal p. 245</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Thayan Warrior</name>
+    <sortname>Warrior, Thayan</sortname>
+    <ancestry>Warrior</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Any Non-Good Alignment</alignment>
@@ -6516,16 +6658,16 @@ Source:	Tales from the Yawning Portal p. 245</description>
     <int>10</int>
     <wis>11</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Common, Thayan</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Doomvault Devotion</name>
       <text>Within the Doomvault, the warrior has advantage on saving throws against being charmed or frightened.</text>
@@ -6549,10 +6691,11 @@ Source:	Tales from the Yawning Portal p. 245</description>
       <attack>Javelin|+5|1d6+3</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 246</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Therzt</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -6565,15 +6708,15 @@ Source:	Tales from the Yawning Portal p. 245</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +1</skill>
     <passive>10</passive>
     <languages>any one language (usually Common), Elvish</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -6583,11 +6726,6 @@ Source:	Tales from the Yawning Portal p. 245</description>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Therzt has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
     </trait>
-    <action>
-      <name>Club</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
-      <attack>Club|+2|1d4</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Therzt's innate spellcasting ability is Charisma (spell save DC 9). Therzt can innately cast the following spells, requiring no material components:
@@ -6595,6 +6733,11 @@ Source:	Tales from the Yawning Portal p. 245</description>
 	• At will: dancing lights
 	• 1/Day each: darkness, faerie fire</text>
     </trait>
+    <action>
+      <name>Club</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
+      <attack>Club|+2|1d4</attack>
+    </action>
     <spells>dancing lights, darkness, faerie fire</spells>
     <description>Source:	Tales from the Yawning Portal p. 158</description>
     <environment>arctic, desert, coastal, grassland, hill, urban, forest</environment>
@@ -6613,14 +6756,14 @@ Source:	Tales from the Yawning Portal p. 245</description>
     <int>1</int>
     <wis>10</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>blinded, deafened, frightened</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -6639,7 +6782,7 @@ At the end of each of the thorn slinger's turns, anything grappled by it takes 3
       <attack>Thorns|+3|2d6+1</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 246</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tloques-Popolocas</name>
@@ -6660,10 +6803,10 @@ At the end of each of the thorn slinger's turns, anything grappled by it takes 3
     <passive>13</passive>
     <languages>the languages it knew in life</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, slashing from nonmagical attacks</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Regeneration</name>
@@ -6691,6 +6834,12 @@ At the end of each of the thorn slinger's turns, anything grappled by it takes 3
 
 While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its Statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.</text>
     </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Tloques can cast hold person (DC 14) at will, requiring no components, but his target must be able to see him.
+
+	• At will: hold person</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>The vampire makes two attacks.</text>
@@ -6710,12 +6859,6 @@ While in bat form, the vampire can't speak, its walking speed is 5 feet, and it 
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) slashing damage.</text>
       <attack>Tloques' Berserker Axe +2|+5|1d8+5</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Tloques can cast hold person (DC 14) at will, requiring no components, but his target must be able to see him.
-
-	• At will: hold person</text>
-    </trait>
     <spells>hold person</spells>
     <description>Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.
 
@@ -6750,8 +6893,9 @@ In a desperate attempt to win Tatyana's heart, Strahd forged a pact with dark po
 In the centuries since his transformation, Strahd's lust for life and youth have only grown. He broods in his dark castle, cursing the living for stealing away what he lost, and never admitting his hand in the tragedy he created.
 
 ------
+
 Source:	Tales from the Yawning Portal p. 68</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Torlin Silvershield</name>
@@ -6767,14 +6911,14 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>10</int>
     <wis>13</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Stealth +4</skill>
     <passive>13</passive>
     <languages>the languages it knew in life</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -6806,6 +6950,7 @@ Source:	Tales from the Yawning Portal p. 68</description>
   </monster>
   <monster>
     <name>Werejaguar</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>Neutral</alignment>
@@ -6818,15 +6963,15 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>10</int>
     <wis>13</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Perception +5, Stealth +4</skill>
     <passive>15</passive>
     <languages>Common (can't speak in jaguar form)</languages>
     <cr>4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Shapechanger</name>
@@ -6885,14 +7030,14 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>12</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>telepathy 50 ft.</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist>acid, cold, fire</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, poisoned, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -6917,7 +7062,7 @@ Source:	Tales from the Yawning Portal p. 68</description>
       <attack>Pseudopod|+8|4d8+4</attack>
     </action>
     <description>Source:	Tales from the Yawning Portal p. 248</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Xilonen</name>
@@ -6933,15 +7078,15 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>7</int>
     <wis>16</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +6, Stealth +5</skill>
     <passive>16</passive>
-    <languages />
+    <languages/>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>False Appearance</name>
@@ -6977,6 +7122,8 @@ Source:	Tales from the Yawning Portal p. 68</description>
   </monster>
   <monster>
     <name>Yeti Leader</name>
+    <sortname>Yeti, Leader</sortname>
+    <ancestry>Yeti</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Chaotic Evil</alignment>
@@ -6989,15 +7136,15 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>8</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Stealth +3</skill>
     <passive>13</passive>
     <languages>Yeti</languages>
     <cr>3</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fear of Fire</name>
@@ -7030,6 +7177,8 @@ Source:	Tales from the Yawning Portal p. 68</description>
   </monster>
   <monster>
     <name>Young Fire Giant</name>
+    <sortname>Fire Giant, Young</sortname>
+    <ancestry>Fire Giant</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -7042,15 +7191,15 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>5</int>
     <wis>7</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Common, Giant</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <action>
       <name>Greatclub</name>
@@ -7067,6 +7216,8 @@ Source:	Tales from the Yawning Portal p. 68</description>
   </monster>
   <monster>
     <name>Young Frost Giant</name>
+    <sortname>Frost Giant, Young</sortname>
+    <ancestry>Frost Giant</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -7079,15 +7230,15 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>5</int>
     <wis>7</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Common, Giant</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <action>
       <name>Greatclub</name>
@@ -7104,6 +7255,8 @@ Source:	Tales from the Yawning Portal p. 68</description>
   </monster>
   <monster>
     <name>Young Hill Giant</name>
+    <sortname>Hill Giant, Young</sortname>
+    <ancestry>Hill Giant</ancestry>
     <size>M</size>
     <type>humanoid (giant)</type>
     <alignment>Chaotic Evil</alignment>
@@ -7116,15 +7269,15 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>7</int>
     <wis>11</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Intimidation +2</skill>
     <passive>10</passive>
     <languages>Common, giant</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Aggressive</name>
@@ -7145,6 +7298,8 @@ Source:	Tales from the Yawning Portal p. 68</description>
   </monster>
   <monster>
     <name>Young Ogre Servant</name>
+    <sortname>Ogre Servant, Young</sortname>
+    <ancestry>Ogre Servant</ancestry>
     <size>M</size>
     <type>humanoid (ogre)</type>
     <alignment>Chaotic Evil</alignment>
@@ -7157,15 +7312,15 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>7</int>
     <wis>11</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Intimidation +2</skill>
     <passive>10</passive>
     <languages>Common, ogre</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Aggressive</name>
@@ -7186,6 +7341,8 @@ Source:	Tales from the Yawning Portal p. 68</description>
   </monster>
   <monster>
     <name>Young Troglodyte</name>
+    <sortname>Troglodyte, Young</sortname>
+    <ancestry>Troglodyte</ancestry>
     <size>S</size>
     <type>humanoid (troglodyte)</type>
     <alignment>Lawful Evil</alignment>
@@ -7198,15 +7355,15 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>8</int>
     <wis>7</wis>
     <cha>8</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Common, Draconic</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
@@ -7231,6 +7388,8 @@ Source:	Tales from the Yawning Portal p. 68</description>
   </monster>
   <monster>
     <name>Young Winter Wolf</name>
+    <sortname>Winter Wolf, Young</sortname>
+    <ancestry>Winter Wolf</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -7243,16 +7402,16 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>3</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Stealth +4</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Hearing and Smell</name>
       <text>The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
@@ -7271,6 +7430,7 @@ Source:	Tales from the Yawning Portal p. 68</description>
   </monster>
   <monster>
     <name>Yusdrayl</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (kobold)</type>
     <alignment>Lawful Evil</alignment>
@@ -7283,15 +7443,15 @@ Source:	Tales from the Yawning Portal p. 68</description>
     <int>10</int>
     <wis>10</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Arcana +2, Insight +2, Stealth +4</skill>
     <passive>10</passive>
     <languages>Common, Draconic</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Sunlight Sensitivity</name>
@@ -7301,11 +7461,6 @@ Source:	Tales from the Yawning Portal p. 68</description>
       <name>Pack Tactics</name>
       <text>Yusdrayl has advantage on an attack roll against a creature if at least one of her allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+4|1d4+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Yusdrayl is a 2nd-level spellcaster. Her spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). She knows the following sorcerer spells:
@@ -7313,7 +7468,12 @@ Source:	Tales from the Yawning Portal p. 68</description>
 	• Cantrips (at will): mage hand, prestidigitation, ray of frost, shocking grasp
 	• 1st level (4 slots): burning hands, chromatic orb, mage armor</text>
     </trait>
-    <slots>0, 4</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+4|1d4+2</attack>
+    </action>
+    <slots>0,4</slots>
     <spells>mage hand, prestidigitation, ray of frost, shocking grasp, burning hands, chromatic orb, mage armor</spells>
     <description>Kobolds are craven reptilian humanoids that worship evil dragons as demigods and serve them as minions and toadies. Kobolds inhabit dragons' lairs when they can but more commonly infest dungeons, gathering treasures and trinkets to add to their own tiny hoards.
 
@@ -7327,6 +7487,6 @@ The Lost God:
 In addition to the dragons they revere, kobolds worship a lesser god named Kurtulmak. Legends speak of how Kurtulmak served as Tiamat's vassal in the Nine Hells until Garl Glittergold, the god of gnomes, stole a trinket from the Dragon Queen's hoard. Tiamat sent Kurtulmak to retrieve the trinket, but Garl Glittergold played a trick on him, collapsing the earth and trapping the kobold god in an underground maze for eternity. For this reason, kobolds hate gnomes and pranks of any kind. Kurtulmak's most devoted worshipers dedicate themselves to finding and releasing their lost god from his prison-maze.
 
 Source:	Tales from the Yawning Portal p. 248</description>
-    <environment />
+    <environment/>
   </monster>
 </compendium>

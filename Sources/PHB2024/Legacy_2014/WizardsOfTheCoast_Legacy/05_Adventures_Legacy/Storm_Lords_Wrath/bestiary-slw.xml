@@ -1,7 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Expert</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -15,15 +16,15 @@
     <wis>10</wis>
     <cha>14</cha>
     <save>Dex +6</save>
-    <skill>Acrobatics +9, Performance +5, Persuasion +5, Sleight of hand +6, Stealth +9</skill>
+    <skill>Acrobatics +9, Performance +5, Persuasion +5, Sleight Of Hand +6, Stealth +9</skill>
     <passive>10</passive>
     <languages>Common, plus one of your choice</languages>
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Helpful</name>
       <text>The expert can take the Help action as a bonus action, and the creature who receives the help gains a 1d6 bonus to the d20 roll. If that roll is an attack roll, the creature can forgo adding the bonus to it, and then if the attack hits, the creature can add the bonus to the attack's damage roll against one target.</text>
@@ -52,7 +53,7 @@
       <attack>Shortbow|+6|1d6+3</attack>
     </action>
     <description>Source:	Essentials Kit: Storm Lord's Wrath</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Skull Flier</name>
@@ -68,14 +69,14 @@
     <int>1</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1/2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>charmed, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <action>
@@ -87,10 +88,12 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
       <attack>Sting||3d6</attack>
     </action>
     <description>Source:	Essentials Kit: Storm Lord's Wrath</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Spellcaster (Healer)</name>
+    <ancestry>Healer</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -107,21 +110,16 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <skill>Arcana +5, Investigation +5, Religion +5</skill>
     <passive>13</passive>
     <languages>Common, plus one of your choice</languages>
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Potent Cantrip</name>
       <text>The spellcaster can add its spellcasting ability modifier to the damage it deals with any cantrip.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands.</text>
-      <attack>Quarterstaff|+3|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting (Healer)</name>
       <text>The spellcaster's spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The spellcaster has following cleric spells prepared:
@@ -132,13 +130,20 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
 	• 3rd level (3 slots): protection from energy, revivify
 	• 4th level (1 slots): death ward</text>
     </trait>
-    <slots>0, 4, 3, 3, 1</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands.</text>
+      <attack>Quarterstaff|+3|1d6</attack>
+    </action>
+    <slots>0,4,3,3,1</slots>
     <spells>guidance, light, resistance, sacred flame, bless, cure wounds, shield of faith, aid, lesser restoration, protection from energy, revivify, death ward</spells>
     <description>Source:	Essentials Kit: Storm Lord's Wrath</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Spellcaster (Mage)</name>
+    <ancestry>Mage</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -155,21 +160,16 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <skill>Arcana +6, Investigation +6, Religion +6</skill>
     <passive>12</passive>
     <languages>Common, plus one of your choice</languages>
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Potent Cantrip</name>
       <text>The spellcaster can add its spellcasting ability modifier to the damage it deals with any cantrip.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands.</text>
-      <attack>Quarterstaff|+3|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting (Mage)</name>
       <text>The spellcaster's spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The spellcaster has following wizard spells prepared:
@@ -180,10 +180,15 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
 	• 3rd level (3 slots): fireball, fly
 	• 4th level (1 slots): wall of fire</text>
     </trait>
-    <slots>0, 4, 3, 3, 1</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands.</text>
+      <attack>Quarterstaff|+3|1d6</attack>
+    </action>
+    <slots>0,4,3,3,1</slots>
     <spells>fire bolt, light, mage hand, minor illusion, burning hands, shield, sleep, flaming sphere, invisibility, fireball, fly, wall of fire</spells>
     <description>Source:	Essentials Kit: Storm Lord's Wrath</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Statue of Talos</name>
@@ -204,9 +209,9 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <passive>14</passive>
     <languages>Terran</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -228,7 +233,7 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
       <attack>Lightning Bolt Blades|+8|2d4+4</attack>
     </action>
     <description>Source:	Essentials Kit: Storm Lord's Wrath</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tooth-N-Claw</name>
@@ -244,15 +249,15 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <int>6</int>
     <wis>13</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +5</skill>
     <passive>15</passive>
     <languages>understands Infernal but can't speak it</languages>
     <cr>3</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Hearing and Smell</name>
@@ -274,10 +279,11 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
       <attack>Freezing Breath||6d6</attack>
     </action>
     <description>Source:	Essentials Kit: Storm Lord's Wrath</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Warrior</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -294,12 +300,12 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <skill>Athletics +6, Perception +4, Survival +4</skill>
     <passive>14</passive>
     <languages>Common, plus one of your choice</languages>
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Battle Readiness</name>
       <text>The warrior has advantage on initiative rolls.</text>
@@ -335,6 +341,6 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
       <text>The warrior imposes disadvantage on the attack roll of a creature within 5 feet of it whose target isn't the warrior. The warrior must be able to see the attacker.</text>
     </reaction>
     <description>Source:	Essentials Kit: Storm Lord's Wrath</description>
-    <environment />
+    <environment/>
   </monster>
 </compendium>

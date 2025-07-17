@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>"The Demogorgon"</name>
@@ -14,15 +14,15 @@
     <int>6</int>
     <wis>10</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>13</passive>
     <languages>Giant, Orc</languages>
     <cr>8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Two Heads</name>
@@ -77,10 +77,11 @@ If the target fails the save, it suffers one of the following effects of the ett
       <text>The target suffers the effect of the confusion spell without making a saving throw. The effect lasts until the start of the ettin's next turn. The ettin doesn't need to concentrate on the spell.</text>
     </action>
     <description>Source:	Infernal Machine Rebuild p. 53</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Andras</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any Non-Good Alignment</alignment>
@@ -98,11 +99,11 @@ If the target fails the save, it suffers one of the following effects of the ett
     <passive>13</passive>
     <languages>Thieves' cant plus any two languages</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Assassinate</name>
       <text>During its first turn, Andras has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Andras scores against a surprised creature is a critical hit.</text>
@@ -135,10 +136,11 @@ If the target fails the save, it suffers one of the following effects of the ett
       <attack>Light Crossbow|+6|1d8+3</attack>
     </action>
     <description>Source:	Infernal Machine Rebuild p. 31</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Barbatos</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -151,16 +153,16 @@ If the target fails the save, it suffers one of the following effects of the ett
     <int>13</int>
     <wis>14</wis>
     <cha>10</cha>
-    <save />
-    <skill>Animal handling +5, Deception +3, Perception +5, Stealth +6</skill>
+    <save/>
+    <skill>Animal Handling +5, Deception +3, Perception +5, Stealth +6</skill>
     <passive>13</passive>
     <languages>Common</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Rust Monster Cloak</name>
       <text>Any nonmagical weapon made of metal that hits Barbatos corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits Barbatos is destroyed after dealing damage.</text>
@@ -168,6 +170,13 @@ If the target fails the save, it suffers one of the following effects of the ett
     <trait>
       <name>Heart of the Troll</name>
       <text>Barbatos regains 10 hit points at the start of his turn. If Barbatos takes acid or fire damage, this trait doesn't function at the start of Barbatos's next turn. Barbatos dies only if he starts his turn with 0 hit points and doesn't regenerate.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Barbatos is a 6th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). He has the following ranger spells prepared:
+
+	• 1st level (4 slots): ensnaring strike, hail of thorns, hunter's mark
+	• 2nd level (2 slots): locate animals or plants</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -191,17 +200,10 @@ If the saving throw fails by 5 or more, the target is also unconscious. The targ
 
 If the object touched is either metal armor or a metal shield being worn or carried, it takes a permanent and cumulative 1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in Barbatos's Rust Monster Cloak trait.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Barbatos is a 6th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). He has the following ranger spells prepared:
-
-	• 1st level (4 slots): ensnaring strike, hail of thorns, hunter's mark
-	• 2nd level (2 slots): locate animals or plants</text>
-    </trait>
-    <slots>0, 4, 2</slots>
+    <slots>0,4,2</slots>
     <spells>ensnaring strike, hail of thorns, hunter's mark, locate animals or plants</spells>
     <description>Source:	Infernal Machine Rebuild p. 52</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Brain in Iron</name>
@@ -218,13 +220,13 @@ If the object touched is either metal armor or a metal shield being worn or carr
     <wis>10</wis>
     <cha>15</cha>
     <save>Int +7, Cha +5</save>
-    <skill />
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>6</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>necrotic, poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -235,12 +237,6 @@ If the object touched is either metal armor or a metal shield being worn or carr
       <name>Magic Resistance</name>
       <text>The brain in iron has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Mind Blast (Recharge 5-6)</name>
-      <recharge>D5</recharge>
-      <text>The brain in iron magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 13 (2d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Mind Blast||2d8+4</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
       <text>The brain in iron's innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no components:
@@ -249,12 +245,21 @@ If the object touched is either metal armor or a metal shield being worn or carr
 	• 3/Day each: charm person, command, hold person
 	• 1/Day each: compulsion, hold monster, sleep (cast at 3rd level), Tasha's hideous laughter</text>
     </trait>
+    <action>
+      <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The brain in iron magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 13 (2d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Mind Blast||2d8+4</attack>
+    </action>
     <spells>detect thoughts, mage hand, zone of truth, charm person, command, hold person, compulsion, hold monster, sleep, Tasha's hideous laughter</spells>
     <description>Source:	Infernal Machine Rebuild p. 48</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Dwarven Worker</name>
+    <sortname>Dwarven, Worker</sortname>
+    <ancestry>Dwarven</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any Non-Good Alignment</alignment>
@@ -267,15 +272,15 @@ If the object touched is either metal armor or a metal shield being worn or carr
     <int>10</int>
     <wis>11</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Deception +2, Religion +2</skill>
     <passive>10</passive>
     <languages>any one language (usually Common), Dwarvish</languages>
     <cr>1/8</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dark Devotion</name>
@@ -291,10 +296,12 @@ If the object touched is either metal armor or a metal shield being worn or carr
       <attack>Scimitar|+3|1d6+1</attack>
     </action>
     <description>Source:	Infernal Machine Rebuild p. 15</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Enhanced Medusa</name>
+    <sortname>Medusa, Enhanced</sortname>
+    <ancestry>Medusa</ancestry>
     <size>M</size>
     <type>monstrosity</type>
     <alignment>Lawful Evil</alignment>
@@ -307,15 +314,15 @@ If the object touched is either metal armor or a metal shield being worn or carr
     <int>12</int>
     <wis>13</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +4, Perception +4, Stealth +5</skill>
     <passive>14</passive>
     <languages>Common</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Petrifying Gaze</name>
@@ -349,6 +356,8 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
   </monster>
   <monster>
     <name>Grandfather Oak</name>
+    <sortname>Oak, Grandfather</sortname>
+    <ancestry>Oak</ancestry>
     <size>H</size>
     <type>plant</type>
     <alignment>Chaotic Good</alignment>
@@ -361,16 +370,16 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
     <int>12</int>
     <wis>16</wis>
     <cha>12</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>13</passive>
     <languages>Common, Druidic, Elvish, Sylvan</languages>
     <cr>9</cr>
-    <resist>bludgeoning, piercing</resist>
-    <immune />
     <vulnerable>fire</vulnerable>
-    <conditionImmune />
-    <senses />
+    <resist>bludgeoning, piercing</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>False Appearance</name>
       <text>While Grandfather Oak remains motionless, it is indistinguishable from a normal tree.</text>
@@ -408,6 +417,8 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
   </monster>
   <monster>
     <name>Lynx Creatlach</name>
+    <sortname>Creatlach, Lynx</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead (tiefling)</type>
     <alignment>Lawful Evil</alignment>
@@ -421,13 +432,13 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
     <wis>16</wis>
     <cha>18</cha>
     <save>Str +7, Con +7, Wis +6, Cha +7</save>
-    <skill />
+    <skill/>
     <passive>13</passive>
     <languages>Common, Infernal</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>necrotic, psychic</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned, stunned</conditionImmune>
     <senses>darkvision 60ft.</senses>
     <trait>
@@ -472,11 +483,13 @@ If the medusa sees itself reflected on a polished surface within 30 feet of it a
 The powerful relics possessed by Lynx Creatlach and Sir Ursas (see the "Special Equipment" section of their stat blocks) have been granted to them by their diabolical masters, and are not meant to be claimed as treasure. If either agent is killed in the course of the adventure, their special equipment vanishes, returning to Bel or Zariel.
 
 ------
+
 Source:	Infernal Machine Rebuild p. 54</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Moghadam</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -494,11 +507,11 @@ Source:	Infernal Machine Rebuild p. 54</description>
     <passive>13</passive>
     <languages>Abyssal, Common, Dwarvish, Infernal, Undercommon</languages>
     <cr>12</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Moghadam wields Ruinblade (see appendix C).</text>
@@ -511,6 +524,17 @@ Source:	Infernal Machine Rebuild p. 54</description>
       <name>Infoportation (1/Day)</name>
       <recharge>1/DAY</recharge>
       <text>Moghadam can teleport himself into an unoccupied space next to his artificial mind.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Moghadam is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). He has the following artificer spells prepared:
+
+	• Cantrips (at will): dancing lights, light, message, shocking grasp
+	• 1st level (4 slots): comprehend languages, cure wounds, grease, identify
+	• 2nd level (3 slots): detect thoughts, invisibility, heat metal
+	• 3rd level (3 slots): dispel magic, flame arrows, hypnotic pattern
+	• 4th level (3 slots): fabricate, stone shape, stoneskin
+	• 5th level (1 slots): creation</text>
     </trait>
     <action>
       <name>Ruinblade</name>
@@ -532,21 +556,10 @@ Source:	Infernal Machine Rebuild p. 54</description>
       <text>Moghadam overloads the thoughts of one creature within 5 feet of either himself or his artificial mind. The target must succeed on a DC 16 Intelligence saving throw or take 22 (4d8 + 4) psychic damage, and the next attack roll made against the target before the end of Moghadam's next turn has advantage.</text>
       <attack>Information Overload||4d8+4</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Moghadam is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). He has the following artificer spells prepared:
-
-	• Cantrips (at will): dancing lights, light, message, shocking grasp
-	• 1st level (4 slots): comprehend languages, cure wounds, grease, identify
-	• 2nd level (3 slots): detect thoughts, invisibility, heat metal
-	• 3rd level (3 slots): dispel magic, flame arrows, hypnotic pattern
-	• 4th level (3 slots): fabricate, stone shape, stoneskin
-	• 5th level (1 slots): creation</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <slots>0,4,3,3,3,1</slots>
     <spells>dancing lights, light, message, shocking grasp, comprehend languages, cure wounds, grease, identify, detect thoughts, invisibility, heat metal, dispel magic, flame arrows, hypnotic pattern, fabricate, stone shape, stoneskin, creation</spells>
     <description>Source:	Infernal Machine Rebuild p. 55</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Neo-Otyugh</name>
@@ -563,18 +576,25 @@ Source:	Infernal Machine Rebuild p. 54</description>
     <wis>13</wis>
     <cha>6</cha>
     <save>Con +9</save>
-    <skill />
+    <skill/>
     <passive>11</passive>
     <languages>Otyugh</languages>
     <cr>7</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Limited Telepathy</name>
       <text>The otyugh can magically transmit simple messages and images to any creature within 120 feet of it that can understand a language. This form of telepathy doesn't allow the receiving creature to telepathically respond.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting (Psionics)</name>
+      <text>The neo-otyugh's innate spellcasting ability is Intelligence (spell save DC 12). It can innately cast the following spells, requiring no components:
+
+	• At will: detect thoughts
+	• 1/Day each: command, hold person</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -595,21 +615,15 @@ Source:	Infernal Machine Rebuild p. 54</description>
       <text>The neo-otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 16 Constitution saving throw or take 15 (3d6 + 5) bludgeoning damage and be stunned until the end of the neo-otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.</text>
       <attack>Tentacle Slam||3d6+5</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting (Psionics)</name>
-      <text>The neo-otyugh's innate spellcasting ability is Intelligence (spell save DC 12). It can innately cast the following spells, requiring no components:
-
-	• At will: detect thoughts
-	• 1/Day each: command, hold person</text>
-    </trait>
     <spells>detect thoughts, command, hold person</spells>
     <description>A neo-otyugh is a stronger, more intelligent version of an otyugh—a grotesque aberration sporting three legs, snake-like tentacles, and a perpetually ravenous maw. Like an otyugh, a neo-otyugh buries itself under mounds of offal and carrion to ambush prey. Their improved intellect and innate spellcasting makes them especially effective against humanoid targets, as they use their powers of control to split off a straggler from a party, then attack.
 
 Source:	Infernal Machine Rebuild p. 75</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Seodra</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -622,16 +636,16 @@ Source:	Infernal Machine Rebuild p. 75</description>
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +4, Persuasion +5</skill>
     <passive>12</passive>
     <languages>any two languages</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Earth Walk</name>
       <text>Seodra can move across difficult terrain made of earth or stone without expending extra movement.</text>
@@ -650,10 +664,11 @@ Source:	Infernal Machine Rebuild p. 75</description>
       <text>Seodra adds 2 to its AC against one melee attack that would hit it. To do so, Seodra must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Infernal Machine Rebuild p. 41</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Sir Ursas</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Evil</alignment>
@@ -671,11 +686,11 @@ Source:	Infernal Machine Rebuild p. 75</description>
     <passive>11</passive>
     <languages>Common, Infernal</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Sir Ursas wears a ring of mind shielding and plate armor of fire resistance.</text>
@@ -716,11 +731,14 @@ Source:	Infernal Machine Rebuild p. 75</description>
 The powerful relics possessed by Lynx Creatlach and Sir Ursas (see the "Special Equipment" section of their stat blocks) have been granted to them by their diabolical masters, and are not meant to be claimed as treasure. If either agent is killed in the course of the adventure, their special equipment vanishes, returning to Bel or Zariel.
 
 ------
+
 Source:	Infernal Machine Rebuild p. 56</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Skeletal Giant Owl</name>
+    <sortname>Owl, Skeletal Giant</sortname>
+    <ancestry>Owl</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Neutral</alignment>
@@ -733,15 +751,15 @@ Source:	Infernal Machine Rebuild p. 56</description>
     <int>8</int>
     <wis>13</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +5, Stealth +4</skill>
     <passive>15</passive>
     <languages>Giant Owl, understands Common, Elvish, and Sylvan but can't speak them</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Flyby</name>
@@ -761,6 +779,8 @@ Source:	Infernal Machine Rebuild p. 56</description>
   </monster>
   <monster>
     <name>Skeletal Owlbear</name>
+    <sortname>Owlbear, Skeletal</sortname>
+    <ancestry>Owlbear</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -773,15 +793,15 @@ Source:	Infernal Machine Rebuild p. 56</description>
     <int>3</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Sight and Smell</name>
@@ -806,6 +826,8 @@ Source:	Infernal Machine Rebuild p. 56</description>
   </monster>
   <monster>
     <name>Skeletal Polar Bear</name>
+    <sortname>Bear, Polar Skeletal</sortname>
+    <ancestry>Bear</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -818,16 +840,16 @@ Source:	Infernal Machine Rebuild p. 56</description>
     <int>2</int>
     <wis>13</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Smell</name>
       <text>The bear has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -851,6 +873,8 @@ Source:	Infernal Machine Rebuild p. 56</description>
   </monster>
   <monster>
     <name>Skeletal Two-Headed Owlbear</name>
+    <sortname>Owlbear, Skeletal</sortname>
+    <ancestry>Owlbear</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -863,15 +887,15 @@ Source:	Infernal Machine Rebuild p. 56</description>
     <int>3</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60</senses>
     <trait>
       <name>Two Heads</name>
@@ -896,10 +920,11 @@ Source:	Infernal Machine Rebuild p. 56</description>
       <attack>Claws|+7|2d8+5</attack>
     </action>
     <description>Source:	Infernal Machine Rebuild p. 36</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Stolos</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -917,20 +942,15 @@ Source:	Infernal Machine Rebuild p. 56</description>
     <passive>11</passive>
     <languages>any two languages, telepathy 30 ft.</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist>psychic</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Whispering Aura</name>
       <text>At the start of each of Stolos's turns, each creature of its choice within 5 feet of it must succeed on a DC 15 Wisdom saving throw or take 10 (3d6) psychic damage, provided that Stolos isn't incapacitated.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Stolos's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material components:
@@ -945,6 +965,11 @@ Source:	Infernal Machine Rebuild p. 56</description>
 	• Cantrips (at will): chill touch, eldritch blast, guidance, mage hand, minor illusion, prestidigitation, shocking grasp
 	• 5th level (3 slots): armor of Agathys, arms of Hadar, crown of madness, clairvoyance, contact other plane, detect thoughts, dimension door, dissonant whispers, dominate beast, telekinesis, vampiric touch</text>
     </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
     <slots>3</slots>
     <spells>detect magic, jump, levitate, mage armor, speak with dead, arcane gate, true seeing, chill touch, eldritch blast, guidance, mage hand, minor illusion, prestidigitation, shocking grasp, armor of Agathys, arms of Hadar, crown of madness, clairvoyance, contact other plane, detect thoughts, dimension door, dissonant whispers, dominate beast, telekinesis, vampiric touch</spells>
     <description>Source:	Infernal Machine Rebuild p. 33</description>
@@ -965,13 +990,13 @@ Source:	Infernal Machine Rebuild p. 56</description>
     <wis>16</wis>
     <cha>22</cha>
     <save>Str +14, Con +12, Wis +9, Cha +12</save>
-    <skill />
+    <skill/>
     <passive>13</passive>
     <languages>Abyssal, telepathy 120 ft.</languages>
     <cr>19</cr>
+    <vulnerable/>
     <resist>cold, lightning; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>fire, poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -1025,10 +1050,11 @@ A balor has a 50 percent chance of summoning 1d8 vrock, 1d6 hezrou, 1d4 glabrezu
 A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
     </action>
     <description>Source:	Infernal Machine Rebuild p. 19</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Thessalar</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Evil</alignment>
@@ -1042,15 +1068,15 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
     <wis>16</wis>
     <cha>16</cha>
     <save>Con +5, Int +8, Wis +7</save>
-    <skill>Animal handling +7, Arcana +8, Insight +7, Medicine +7</skill>
+    <skill>Animal Handling +7, Arcana +8, Insight +7, Medicine +7</skill>
     <passive>13</passive>
     <languages>Common, Draconic, Elvish, Primordial</languages>
     <cr>12</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>acid, poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
-    <senses />
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Thessalar wields a +1 dagger coated with thessaltoxin poison (see appendix C).</text>
@@ -1068,11 +1094,6 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
       <recharge>1/DAY</recharge>
       <text>Thessalar can cast greater restoration if he has access to alchemical supplies.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 15 Constitution saving throw. On a failed save, the target is affected as if by the polymorph spell, transforming into a random beast or a creature it has seen within the last 24 hours (as chosen by the DM). This effect lasts until the target finishes a long rest.</text>
-      <attack>Dagger|+5|1d4+1</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Thessalar is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). He has the following artificer spells prepared:
@@ -1084,7 +1105,12 @@ A summoned demon appears in an unoccupied space within 60 feet of its summoner, 
 	• 4th level (3 slots): blight, Mordenkainen's faithful hound, Otiluke's resilient sphere
 	• 5th level (1 slots): cloudkill</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 15 Constitution saving throw. On a failed save, the target is affected as if by the polymorph spell, transforming into a random beast or a creature it has seen within the last 24 hours (as chosen by the DM). This effect lasts until the target finishes a long rest.</text>
+      <attack>Dagger|+5|1d4+1</attack>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>light, mending, message, shocking grasp, alarm, cure wounds, identify, ray of sickness, invisibility, Melf's acid arrow, web, dispel magic, haste, stinking cloud, blight, Mordenkainen's faithful hound, Otiluke's resilient sphere, cloudkill</spells>
     <description>Thessalar was a master alchemist and creator of monsters, whose own blood was said to possess dire magical properties.
 
@@ -1093,7 +1119,7 @@ He is vainglorious, egotistical, and utterly ruthless in furthering his research
 Over time, Thessalar has subjected himself to so many of his own experiments that his blood has taken on alchemical and magical properties. He regularly uses it as the basis for many of the reagents used throughout his labs.
 
 Source:	Infernal Machine Rebuild p. 57</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Thessalar's Homunculus</name>
@@ -1109,14 +1135,14 @@ Source:	Infernal Machine Rebuild p. 57</description>
     <int>10</int>
     <wis>10</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>0</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1135,7 +1161,7 @@ If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d
       <attack>Acidic Spittle|+4|1d6+2</attack>
     </action>
     <description>Source:	Infernal Machine Rebuild p. 35</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Thessalheart Construct</name>
@@ -1151,14 +1177,14 @@ If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d
     <int>10</int>
     <wis>10</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>0</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, poisoned</conditionImmune>
     <senses>darkvision 60</senses>
     <trait>
@@ -1174,7 +1200,7 @@ If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d
     <description>A thessalheart construct is created with a connection to the life energy of another creature, allowing that creature to regenerate back from the dead as long as the construct is not destroyed. The artificer Thessalar created this crafty construct, and uses it to imbue his greater monstrous creations with even more power.
 
 Source:	Infernal Machine Rebuild p. 86</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Thessalkraken</name>
@@ -1191,13 +1217,13 @@ Source:	Infernal Machine Rebuild p. 86</description>
     <wis>15</wis>
     <cha>17</cha>
     <save>Str +12, Dex +5, Con +10, Int +9, Wis +7</save>
-    <skill />
+    <skill/>
     <passive>12</passive>
     <languages>understands Abyssal, Celestial, Infernal, and Primordial but can't speak, telepathy 120 ft.</languages>
     <cr>14</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>acid; bludgeoning, piercing, slashing from nonmagical attacks</immune>
-    <vulnerable />
     <conditionImmune>charmed, frightened, paralyzed</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -1252,7 +1278,7 @@ Until this grapple ends, the target is restrained. The thessalkraken has ten ten
       <name>Ink Cloud (Costs 3 Actions)</name>
       <text>While underwater, the thessalkraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the thessalkraken. Each creature other than the thessalkraken that ends its turn there must succeed on a DC 18 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the thessalkraken's next turn.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the thessalkraken takes a lair action to cause one of the following magical effects:
 
@@ -1267,10 +1293,11 @@ Until this grapple ends, the target is restrained. The thessalkraken has ten ten
 A thessalkraken lives in the dark depths, usually a sunken rift or a cavern filled with detritus, treasure, and the remains of sacrificial victims.
 
 Source:	Infernal Machine Rebuild p. 87</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tiefling Muralist</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tiefling)</type>
     <alignment>Any Non-Good Alignment</alignment>
@@ -1283,25 +1310,20 @@ Source:	Infernal Machine Rebuild p. 87</description>
     <int>10</int>
     <wis>11</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Deception +2, Religion +2</skill>
     <passive>10</passive>
     <languages>any one language (usually Common), Infernal</languages>
     <cr>1/8</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dark Devotion</name>
       <text>The muralist has advantage on saving throws against being charmed or frightened.</text>
     </trait>
-    <action>
-      <name>Scimitar</name>
-      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.</text>
-      <attack>Scimitar|+3|1d6+1</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Tiefling muralist's innate spellcasting ability is Charisma (spell save DC 10). Tiefling muralist can innately cast the following spells, requiring no material components:
@@ -1309,12 +1331,19 @@ Source:	Infernal Machine Rebuild p. 87</description>
 	• At will: thaumaturgy
 	• 1/Day each: darkness, hellish rebuke</text>
     </trait>
+    <action>
+      <name>Scimitar</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.</text>
+      <attack>Scimitar|+3|1d6+1</attack>
+    </action>
     <spells>thaumaturgy, darkness, hellish rebuke</spells>
     <description>Source:	Infernal Machine Rebuild p. 17</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Two-Headed Crocodile</name>
+    <sortname>Crocodile, Two-Headed</sortname>
+    <ancestry>Crocodile</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -1327,16 +1356,16 @@ Source:	Infernal Machine Rebuild p. 87</description>
     <int>2</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
+    <save/>
     <skill>Perception +2, Stealth +2</skill>
     <passive>12</passive>
-    <languages />
+    <languages/>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Hold Breath</name>
       <text>The two-headed crocodile can hold its breath for 15 minutes.</text>
@@ -1361,10 +1390,12 @@ Until this grapple ends, the target is restrained, and that head of the crocodil
       <attack>Bite|+4|1d10+2</attack>
     </action>
     <description>Source:	Infernal Machine Rebuild p. 89</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Two-Headed Owlbear</name>
+    <sortname>Owlbear, Two-Headed</sortname>
+    <ancestry>Owlbear</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -1377,15 +1408,15 @@ Until this grapple ends, the target is restrained, and that head of the crocodil
     <int>3</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60</senses>
     <trait>
       <name>Two Heads</name>
@@ -1410,6 +1441,6 @@ Until this grapple ends, the target is restrained, and that head of the crocodil
       <attack>Claws|+7|2d8+5</attack>
     </action>
     <description>Source:	Infernal Machine Rebuild p. 90</description>
-    <environment />
+    <environment/>
   </monster>
 </compendium>

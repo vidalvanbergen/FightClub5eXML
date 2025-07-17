@@ -1,7 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Al'chaia</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (gith)</type>
     <alignment>Lawful Evil</alignment>
@@ -15,15 +16,23 @@
     <wis>14</wis>
     <cha>15</cha>
     <save>Con +5, Int +5, Wis +5</save>
-    <skill />
+    <skill/>
     <passive>12</passive>
     <languages>Gith</languages>
     <cr>8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Innate Spellcasting (Psionics)</name>
+      <text>Al'chaia's innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no components:
+
+	• At will: mage hand (the hand is invisible)
+	• 3/Day each: jump, misty step, nondetection (self only), tongues
+	• 1/Day each: plane shift, telekinesis</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>Al'chaia makes two silver greatsword attacks.</text>
@@ -33,20 +42,14 @@
       <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage plus 10 (3d6) psychic damage. This is a magic weapon attack. On a critical hit against a target in an astral body (as with the astral projection spell), Al'chaia can cut the silvery cord that tethers the target to its material body, instead of dealing damage.</text>
       <attack>Silver Greatsword|+9|2d6+6</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting (Psionics)</name>
-      <text>Al'chaia's innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no components:
-
-	• At will: mage hand (the hand is invisible)
-	• 3/Day each: jump, misty step, nondetection (self only), tongues
-	• 1/Day each: plane shift, telekinesis</text>
-    </trait>
     <spells>mage hand, jump, misty step, nondetection, tongues, plane shift, telekinesis</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 218</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Animated Ballista</name>
+    <sortname>Animated Object, Ballista</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -59,14 +62,14 @@
     <int>3</int>
     <wis>3</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>6</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>blindsight 120 ft. (blind beyond this radius)</senses>
     <action>
@@ -77,10 +80,12 @@
     <description>Each animated ballista is a Large wood-and-iron construct.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 39</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Animated Jade Serpent</name>
+    <sortname>Animated Object, Jade Serpent</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -93,15 +98,15 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 39</description>
     <int>2</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft.</senses>
     <action>
       <name>Bite</name>
@@ -114,6 +119,8 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 39</description>
   </monster>
   <monster>
     <name>Animated Staff</name>
+    <sortname>Animated Object, Staff</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Neutral Evil</alignment>
@@ -126,15 +133,15 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 39</description>
     <int>18</int>
     <wis>14</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>12</passive>
     <languages>Common</languages>
-    <cr />
+    <cr/>
+    <vulnerable/>
     <resist>cold</resist>
     <immune>poison</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
       <name>Hit Points</name>
@@ -156,10 +163,12 @@ A creature holding the staff that isn't charmed by it can use an action to attem
       <attack>Staff|+5|2d6</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 262</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Animated Statue of Lolth</name>
+    <sortname>Animated Object, Statue of Lolth</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>H</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -172,14 +181,14 @@ A creature holding the staff that isn't charmed by it can use an action to attem
     <int>3</int>
     <wis>11</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>10</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -213,10 +222,12 @@ A creature holding the staff that isn't charmed by it can use an action to attem
       <text>The statue targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 142</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Animated Stove</name>
+    <sortname>Animated Object, Stove</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -229,15 +240,15 @@ A creature holding the staff that isn't charmed by it can use an action to attem
     <int>3</int>
     <wis>3</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>6</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 30 ft. (blind beyond this radius)</senses>
     <action>
       <name>Slam</name>
@@ -253,10 +264,12 @@ A creature holding the staff that isn't charmed by it can use an action to attem
     <description>The stove was given a semblance of life through an animate objects spell made permanent by a wish spell.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 186</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Animated Wand</name>
+    <sortname>Animated Object, Wand</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>T</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -269,15 +282,15 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 186</description>
     <int>3</int>
     <wis>3</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>6</passive>
-    <languages />
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <languages/>
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 30 ft. (blind beyond this radius)</senses>
     <trait>
       <name>Animated</name>
@@ -297,7 +310,7 @@ The DM might rule that a specific wands slam attack inflicts slashing or piercin
       <attack>Slam|+8|1d4+4</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 299</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Arcturia</name>
@@ -318,9 +331,9 @@ The DM might rule that a specific wands slam attack inflicts slashing or piercin
     <passive>19</passive>
     <languages>Common plus up to five other languages</languages>
     <cr>21</cr>
+    <vulnerable/>
     <resist>cold, lightning, necrotic</resist>
     <immune>poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -335,6 +348,21 @@ The DM might rule that a specific wands slam attack inflicts slashing or piercin
     <trait>
       <name>Turn Resistance</name>
       <text>Arcturia has advantage on saving throws against any effect that turns undead.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Arcturia is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). Arcturia has the following wizard spells prepared:
+
+	• Cantrips (at will): mage hand, prestidigitation, ray of frost
+	• 1st level (4 slots): detect magic, magic missile, shield, thunderwave
+	• 2nd level (3 slots): detect thoughts, invisibility, Melf's acid arrow, mirror image
+	• 3rd level (3 slots): animate dead, counterspell, dispel magic, fireball
+	• 4th level (3 slots): blight, dimension door
+	• 5th level (3 slots): cloudkill, scrying
+	• 6th level (1 slots): disintegrate, globe of invulnerability
+	• 7th level (1 slots): finger of death, plane shift
+	• 8th level (1 slots): dominate monster, power word stun
+	• 9th level (1 slots): power word kill</text>
     </trait>
     <action>
       <name>Paralyzing Touch</name>
@@ -362,7 +390,7 @@ The DM might rule that a specific wands slam attack inflicts slashing or piercin
       <name>Disrupt Life (Costs 3 Actions)</name>
       <text>Each non-undead creature within 20 feet of Arcturia must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the lich can take a lair action to cause one of the following magical effects; the lich can't use the same effect two rounds in a row:
 
@@ -372,25 +400,10 @@ The DM might rule that a specific wands slam attack inflicts slashing or piercin
 
 	• The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw, taking 52 (15d6) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Arcturia is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). Arcturia has the following wizard spells prepared:
-
-	• Cantrips (at will): mage hand, prestidigitation, ray of frost
-	• 1st level (4 slots): detect magic, magic missile, shield, thunderwave
-	• 2nd level (3 slots): detect thoughts, invisibility, Melf's acid arrow, mirror image
-	• 3rd level (3 slots): animate dead, counterspell, dispel magic, fireball
-	• 4th level (3 slots): blight, dimension door
-	• 5th level (3 slots): cloudkill, scrying
-	• 6th level (1 slots): disintegrate, globe of invulnerability
-	• 7th level (1 slots): finger of death, plane shift
-	• 8th level (1 slots): dominate monster, power word stun
-	• 9th level (1 slots): power word kill</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>mage hand, prestidigitation, ray of frost, detect magic, magic missile, shield, thunderwave, detect thoughts, invisibility, Melf's acid arrow, mirror image, animate dead, counterspell, dispel magic, fireball, blight, dimension door, cloudkill, scrying, disintegrate, globe of invulnerability, finger of death, plane shift, dominate monster, power word stun, power word kill</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 296</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ashtyrranthor</name>
@@ -411,10 +424,10 @@ The DM might rule that a specific wands slam attack inflicts slashing or piercin
     <passive>23</passive>
     <languages>Common, Draconic</languages>
     <cr>17</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>fire</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
@@ -467,7 +480,7 @@ The DM might rule that a specific wands slam attack inflicts slashing or piercin
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>Ashtyrranthor beats its wings. Each creature within 10 feet of Ashtyrranthor must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Ashtyrranthor can then fly up to half its flying speed.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:
 
@@ -477,7 +490,7 @@ The DM might rule that a specific wands slam attack inflicts slashing or piercin
 
 	• Volcanic gases form a cloud in a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The sphere spreads a round corners, and its area is lightly obscured. It lasts until initiative count 20 on the next round. Each creature that starts its turn in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its turn. While poisoned in this way, a creature is incapacitated.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region containing a legendary red dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:
 
@@ -494,6 +507,8 @@ If the dragon dies, these effects fade over the course of 1d10 days.</text>
   </monster>
   <monster>
     <name>Awakened Brown Bear</name>
+    <sortname>Bear, Brown Awakened</sortname>
+    <ancestry>Bear</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -506,16 +521,16 @@ If the dragon dies, these effects fade over the course of 1d10 days.</text>
     <int>10</int>
     <wis>13</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>13</passive>
     <languages>one language known by its creator</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Smell</name>
       <text>The bear has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -539,6 +554,8 @@ If the dragon dies, these effects fade over the course of 1d10 days.</text>
   </monster>
   <monster>
     <name>Awakened Elk</name>
+    <sortname>Elk, Awakened</sortname>
+    <ancestry>Elk</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -551,16 +568,16 @@ If the dragon dies, these effects fade over the course of 1d10 days.</text>
     <int>10</int>
     <wis>10</wis>
     <cha>6</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>one language known by its creator</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Charge</name>
       <text>If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
@@ -580,6 +597,8 @@ If the dragon dies, these effects fade over the course of 1d10 days.</text>
   </monster>
   <monster>
     <name>Awakened Giant Wasp</name>
+    <sortname>Wasp, Giant Awakened</sortname>
+    <ancestry>Wasp</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -592,16 +611,16 @@ If the dragon dies, these effects fade over the course of 1d10 days.</text>
     <int>10</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>one language known by its creator</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Sting</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.
@@ -615,6 +634,8 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
   </monster>
   <monster>
     <name>Berlain Shadowdusk</name>
+    <sortname>Shadowdusk, Berlain</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -632,11 +653,11 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <passive>12</passive>
     <languages>any six languages</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>Berlain has advantage on saving throws against spells and other magical effects.</text>
@@ -645,15 +666,6 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
       <name>Extra Parts</name>
       <text>As a bonus action, Berlain can use her extra mouth and arms to cast any cantrip she has prepared.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Berlain is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Berlain can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -673,10 +685,19 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
 
 *Berlain casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 283</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Big Xorn</name>
@@ -692,15 +713,15 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <int>11</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Perception +6, Stealth +3</skill>
     <passive>16</passive>
     <languages>Terran</languages>
     <cr>5</cr>
+    <vulnerable/>
     <resist>piercing, slashing from nonmagical attacks that aren't adamantine</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
     <trait>
       <name>Earth Glide</name>
@@ -733,6 +754,8 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
   </monster>
   <monster>
     <name>Bore Worm</name>
+    <sortname>Worm, Bore</sortname>
+    <ancestry>Worm</ancestry>
     <size>G</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -746,13 +769,13 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <wis>8</wis>
     <cha>4</cha>
     <save>Con +11, Wis +4</save>
-    <skill />
+    <skill/>
     <passive>9</passive>
-    <languages />
+    <languages/>
     <cr>16</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>fire, poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone</conditionImmune>
     <senses>blindsight 30 ft., tremorsense 60 ft.</senses>
     <trait>
@@ -781,7 +804,7 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <description>Trobriand modeled this 100-foot-long, 15-foot-diameter drilling machine after a purple worm. Unless Trobriand commands it to do otherwise, the worm tirelessly moves through well-worn tunnels and trenches. It mindlessly attacks anything that gets in its way, and occasionally ventures up to level 12 or down to level 14. Characters hear it long before they see it.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Captain N'ghathrod</name>
@@ -802,31 +825,15 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
     <passive>16</passive>
     <languages>Deep Speech, Undercommon, telepathy 120 ft.</languages>
     <cr>8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>Captain N'ghathrod has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Tentacles</name>
-      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) psychic damage. If the target is Medium or smaller, it is grappled (escape DC 15) and must succeed on a DC 15 Intelligence saving throw or be stunned until this grapple ends.</text>
-      <attack>Tentacles|+7|2d10+4</attack>
-    </action>
-    <action>
-      <name>Extract Brain</name>
-      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one incapacitated humanoid grappled by Captain N'ghathrod. The target takes 55 (10d10) piercing damage. If this damage reduces the target to 0 hit points, Captain N'ghathrod kills the target by extracting and devouring its brain.</text>
-      <attack>Extract Brain|+7|10d10</attack>
-    </action>
-    <action>
-      <name>Mind Blast (Recharge 5-6)</name>
-      <recharge>D5</recharge>
-      <text>Captain N'ghathrod magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
-      <attack>Mind Blast||4d8+4</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting (Psionics)</name>
       <text>Captain N'ghathrod's innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no components:
@@ -845,13 +852,31 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
 	• 4th level (3 slots): confusion, hallucinatory terrain
 	• 5th level (2 slots): telekinesis, wall of force</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <action>
+      <name>Tentacles</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) psychic damage. If the target is Medium or smaller, it is grappled (escape DC 15) and must succeed on a DC 15 Intelligence saving throw or be stunned until this grapple ends.</text>
+      <attack>Tentacles|+7|2d10+4</attack>
+    </action>
+    <action>
+      <name>Extract Brain</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one incapacitated humanoid grappled by Captain N'ghathrod. The target takes 55 (10d10) piercing damage. If this damage reduces the target to 0 hit points, Captain N'ghathrod kills the target by extracting and devouring its brain.</text>
+      <attack>Extract Brain|+7|10d10</attack>
+    </action>
+    <action>
+      <name>Mind Blast (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>Captain N'ghathrod magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Mind Blast||4d8+4</attack>
+    </action>
+    <slots>0,4,3,3,3,2</slots>
     <spells>detect thoughts, levitate, dominate monster, plane shift, blade ward, dancing lights, mage hand, shocking grasp, detect magic, disguise self, shield, sleep, blur, invisibility, ray of enfeeblement, clairvoyance, lightning bolt, sending, confusion, hallucinatory terrain, telekinesis, wall of force</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 250</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Carrion Ogre</name>
+    <sortname>Ogre, Carrion</sortname>
+    <ancestry>Ogre</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -864,15 +889,15 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
     <int>5</int>
     <wis>7</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
     <languages>Common, Giant</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Tied Down</name>
@@ -893,6 +918,8 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
   </monster>
   <monster>
     <name>Cassiok Shadowdusk</name>
+    <sortname>Shadowdusk, Cassiok</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -910,11 +937,11 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
     <passive>12</passive>
     <languages>any six languages</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>Cassiok has advantage on saving throws against spells and other magical effects.</text>
@@ -923,10 +950,6 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
       <name>Special Equipment</name>
       <text>Cassiok carries a staff of power that grants him a +2 bonus to Armor Class, spell attack rolls, and saving throws. His insectoid physiology prevents him from making melee attacks with the staff. If reduced to 20 hit points or fewer, Cassiok uses his next action to break his staff in a retributive strike.</text>
     </trait>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Cassiok is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Cassiok can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -946,13 +969,19 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
 
 *Cassiok casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 287</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Copper Stormforge</name>
+    <sortname>Stormforge, Copper</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any alignment</alignment>
@@ -965,15 +994,15 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
     <int>11</int>
     <wis>13</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Nature +4, Perception +5, Stealth +6, Survival +5</skill>
     <passive>15</passive>
     <languages>any one language (usually Common), Dwarvish</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Hearing and Sight</name>
@@ -998,10 +1027,11 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
       <attack>Longbow|+4|1d8+2</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 30</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Crow</name>
+    <ancestry>Crow</ancestry>
     <size>T</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -1014,16 +1044,16 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
     <int>2</int>
     <wis>12</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Mimicry</name>
       <text>The crow can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.</text>
@@ -1037,6 +1067,8 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
   </monster>
   <monster>
     <name>Crystal Battleaxe</name>
+    <sortname>Animated Object, Crystal Battleaxe</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>S</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -1050,13 +1082,13 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
     <wis>5</wis>
     <cha>1</cha>
     <save>Dex +4</save>
-    <skill />
+    <skill/>
     <passive>7</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -1073,10 +1105,12 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
       <attack>Longbattleaxe|+3|1d8+1</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 89</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Crystal Golem</name>
+    <sortname>Golem, Crystal</sortname>
+    <ancestry>Golem</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -1089,14 +1123,14 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 171</description>
     <int>3</int>
     <wis>11</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>10</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -1136,10 +1170,13 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
       <text>The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 210</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Deformed Duergar</name>
+    <sortname>Duergar, Deformed</sortname>
+    <ancestry>Duergar</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Lawful Evil</alignment>
@@ -1152,15 +1189,15 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
     <int>11</int>
     <wis>10</wis>
     <cha>9</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Dwarvish, Undercommon</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Third Arm</name>
@@ -1203,6 +1240,8 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
   </monster>
   <monster>
     <name>Dezmyr Shadowdusk</name>
+    <sortname>Shadowdusk, Dezmyr</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>Chaotic Evil</alignment>
@@ -1216,13 +1255,13 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
     <wis>16</wis>
     <cha>18</cha>
     <save>Dex +6, Wis +9, Cha +10</save>
-    <skill />
+    <skill/>
     <passive>13</passive>
     <languages>Abyssal, Common</languages>
     <cr>17</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>necrotic, poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, frightened, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -1236,6 +1275,16 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
     <trait>
       <name>Marshal Undead</name>
       <text>Unless Dezmyr is incapacitated, it and undead creatures of its choice within 60 feet of it have advantage on saving throws against features that turn undead.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Dezmyr is a 19th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). It has the following paladin spells prepared:
+
+	• 1st level (4 slots): command, compelled duel, searing smite
+	• 2nd level (3 slots): hold person, magic weapon
+	• 3rd level (3 slots): dispel magic, elemental weapon
+	• 4th level (3 slots): banishment, staggering smite
+	• 5th level (2 slots): destructive wave (necrotic)</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -1256,23 +1305,15 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
       <name>Parry</name>
       <text>Dezmyr adds 6 to its AC against one melee attack that would hit it. To do so, Dezmyr must see the attacker and be wielding a melee weapon.</text>
     </reaction>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Dezmyr is a 19th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). It has the following paladin spells prepared:
-
-	• 1st level (4 slots): command, compelled duel, searing smite
-	• 2nd level (3 slots): hold person, magic weapon
-	• 3rd level (3 slots): dispel magic, elemental weapon
-	• 4th level (3 slots): banishment, staggering smite
-	• 5th level (2 slots): destructive wave (necrotic)</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <slots>0,4,3,3,3,2</slots>
     <spells>command, compelled duel, searing smite, hold person, magic weapon, dispel magic, elemental weapon, banishment, staggering smite, destructive wave</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 287</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Drivvin Freth</name>
+    <sortname>Freth, Drivvin</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -1290,10 +1331,10 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
     <passive>12</passive>
     <languages>any six languages, Elvish</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
@@ -1307,20 +1348,6 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Drivvin has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Summon Demon (1/Day)</name>
-      <recharge>1/DAY</recharge>
-      <text>Drivvin magically summons a demon of challenge rating 6 or lower. The summoned demon appears in an unoccupied space within 60 feet of him, acts as his ally, and can't summon other demons. The summoned demon remains until Drivvin dismisses it as an action or until the demon is reduced to 0 hit points.</text>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Drivvin is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Drivvin can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -1340,7 +1367,6 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
 
 *Drivvin casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Drivvin's innate spellcasting ability is Charisma (spell save DC 15). Drivvin can innately cast the following spells, requiring no material components:
@@ -1348,9 +1374,24 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
 	• At will: dancing lights
 	• 1/Day each: darkness, faerie fire</text>
     </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Summon Demon (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>Drivvin magically summons a demon of challenge rating 6 or lower. The summoned demon appears in an unoccupied space within 60 feet of him, acts as his ally, and can't summon other demons. The summoned demon remains until Drivvin dismisses it as an action or until the demon is reduced to 0 hit points.</text>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop, dancing lights, darkness, faerie fire</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 169</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Emberosa</name>
@@ -1371,11 +1412,11 @@ A creature can avert its eyes to avoid the saving throw at the start of its turn
     <passive>16</passive>
     <languages>Giant</languages>
     <cr>9</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>fire</immune>
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>Emberosa makes two greatsword attacks.</text>
@@ -1420,9 +1461,9 @@ Tackle: When Emberosa enters any enemy's space for the first time on a turn, the
     <passive>19</passive>
     <languages>Common plus up to five other languages</languages>
     <cr>21</cr>
+    <vulnerable/>
     <resist>cold, lightning, necrotic</resist>
     <immune>poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -1441,6 +1482,21 @@ Tackle: When Emberosa enters any enemy's space for the first time on a turn, the
     <trait>
       <name>Turn Resistance</name>
       <text>Ezzat has advantage on saving throws against any effect that turns undead.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Ezzat is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). Ezzat has the following wizard spells prepared:
+
+	• Cantrips (at will): mage hand, prestidigitation, ray of frost
+	• 1st level (4 slots): detect magic, magic missile, shield, thunderwave
+	• 2nd level (3 slots): detect thoughts, invisibility, Melf's acid arrow, mirror image
+	• 3rd level (3 slots): animate dead, counterspell, dispel magic, fireball
+	• 4th level (3 slots): blight, dimension door
+	• 5th level (3 slots): cloudkill, scrying
+	• 6th level (1 slots): disintegrate, globe of invulnerability
+	• 7th level (1 slots): finger of death, plane shift
+	• 8th level (1 slots): dominate monster, power word stun
+	• 9th level (1 slots): power word kill</text>
     </trait>
     <action>
       <name>Paralyzing Touch</name>
@@ -1468,7 +1524,7 @@ Tackle: When Emberosa enters any enemy's space for the first time on a turn, the
       <name>Disrupt Life (Costs 3 Actions)</name>
       <text>Each non-undead creature within 20 feet of Ezzat must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the lich can take a lair action to cause one of the following magical effects; the lich can't use the same effect two rounds in a row:
 
@@ -1478,25 +1534,10 @@ Tackle: When Emberosa enters any enemy's space for the first time on a turn, the
 
 	• The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw, taking 52 (15d6) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Ezzat is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). Ezzat has the following wizard spells prepared:
-
-	• Cantrips (at will): mage hand, prestidigitation, ray of frost
-	• 1st level (4 slots): detect magic, magic missile, shield, thunderwave
-	• 2nd level (3 slots): detect thoughts, invisibility, Melf's acid arrow, mirror image
-	• 3rd level (3 slots): animate dead, counterspell, dispel magic, fireball
-	• 4th level (3 slots): blight, dimension door
-	• 5th level (3 slots): cloudkill, scrying
-	• 6th level (1 slots): disintegrate, globe of invulnerability
-	• 7th level (1 slots): finger of death, plane shift
-	• 8th level (1 slots): dominate monster, power word stun
-	• 9th level (1 slots): power word kill</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>mage hand, prestidigitation, ray of frost, detect magic, magic missile, shield, thunderwave, detect thoughts, invisibility, Melf's acid arrow, mirror image, animate dead, counterspell, dispel magic, fireball, blight, dimension door, cloudkill, scrying, disintegrate, globe of invulnerability, finger of death, plane shift, dominate monster, power word stun, power word kill</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 262</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Fazrian</name>
@@ -1517,9 +1558,9 @@ Tackle: When Emberosa enters any enemy's space for the first time on a turn, the
     <passive>21</passive>
     <languages>all, telepathy 120 ft.</languages>
     <cr>16</cr>
+    <vulnerable/>
     <resist>radiant; bludgeoning, piercing, slashing from nonmagical attacks</resist>
-    <immune />
-    <vulnerable />
+    <immune/>
     <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -1534,6 +1575,14 @@ Tackle: When Emberosa enters any enemy's space for the first time on a turn, the
       <name>Magic Resistance</name>
       <text>Fazrian has advantage on saving throws against spells and other magical effects.</text>
     </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Fazrian's spellcasting ability is Charisma (spell save DC 20). Fazrian can innately cast the following spells, requiring no material components:
+
+	• At will: detect evil and good, invisibility (self only)
+	• 3/Day each: blade barrier, dispel evil and good, flame strike, raise dead
+	• 1/Day each: commune, control weather, insect plague</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>Fazrian makes two melee attacks.</text>
@@ -1543,20 +1592,13 @@ Tackle: When Emberosa enters any enemy's space for the first time on a turn, the
       <text>Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 21 (4d6 + 7) slashing damage plus 22 (5d8) radiant damage.</text>
       <attack>Greatsword|+12|4d6+7</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Fazrian's spellcasting ability is Charisma (spell save DC 20). Fazrian can innately cast the following spells, requiring no material components:
-
-	• At will: detect evil and good, invisibility (self only)
-	• 3/Day each: blade barrier, dispel evil and good, flame strike, raise dead
-	• 1/Day each: commune, control weather, insect plague</text>
-    </trait>
     <spells>detect evil and good, invisibility, blade barrier, dispel evil and good, flame strike, raise dead, commune, control weather, insect plague</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 275</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Fidelio</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>Any alignment</alignment>
@@ -1569,14 +1611,14 @@ Tackle: When Emberosa enters any enemy's space for the first time on a turn, the
     <int>10</int>
     <wis>12</wis>
     <cha>17</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>11</passive>
     <languages>any languages it knew in life</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>acid, fire, lightning, thunder; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>cold, necrotic, poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1612,6 +1654,8 @@ The possession lasts until the body drops to 0 hit points, Fidelio ends it as a 
   </monster>
   <monster>
     <name>Five-Armed Troll</name>
+    <sortname>Troll, Five-Armed</sortname>
+    <ancestry>Troll</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -1624,15 +1668,15 @@ The possession lasts until the body drops to 0 hit points, Fidelio ends it as a 
     <int>7</int>
     <wis>9</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Giant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Keen Smell</name>
@@ -1660,13 +1704,12 @@ The possession lasts until the body drops to 0 hit points, Fidelio ends it as a 
       <name>Variant: Loathsome Limbs</name>
       <text>Whenever the troll takes at least 15 slashing damage at one time, roll a d20 to determine what else happens to it:
 
-	• 1–10: Nothing else happens.
-
-	• 11–14: One leg is severed from the troll if it has any legs left.
-
-	• 15–18: One arm is severed from the troll if it has any arms left.
-
-	• 19–20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.
+Loathsome Limbs:
+d20 | Effect
+1-10: Nothing else happens.
+11-14: One leg is severed from the troll if it has any legs left.
+15-18: One arm is severed from the troll if it has any arms left.
+19-20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.
 
 If the troll finishes a short or long rest without reattaching a severed limb or head, the part regrows. At that point, the severed part dies. Until then, a severed part acts on the troll's initiative and has its own action and movement. A severed part has AC 13, 10 hit points, and the troll's Regeneration trait.
 
@@ -1683,6 +1726,8 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
   </monster>
   <monster>
     <name>Flying Trident</name>
+    <sortname>Animated Object, Flying Trident</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>S</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -1696,13 +1741,13 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <wis>5</wis>
     <cha>1</cha>
     <save>Dex +4</save>
-    <skill />
+    <skill/>
     <passive>7</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -1719,10 +1764,12 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
       <attack>Longtrident|+3|1d8+1</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 106</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Giant Flying Spider</name>
+    <sortname>Spider, Giant Flying</sortname>
+    <ancestry>Spider</ancestry>
     <size>L</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -1735,15 +1782,15 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <int>2</int>
     <wis>11</wis>
     <cha>4</cha>
-    <save />
+    <save/>
     <skill>Stealth +7</skill>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft., darkvision 60 ft.</senses>
     <trait>
       <name>Spider Climb</name>
@@ -1775,6 +1822,9 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
   </monster>
   <monster>
     <name>Giant Mutated Drow</name>
+    <sortname>Drow, Giant Mutated</sortname>
+    <ancestry>Drow, Elf</ancestry>
+    <npc>YES</npc>
     <size>H</size>
     <type>humanoid (elf, giant)</type>
     <alignment>Neutral Good (50%) Neutral Evil (50%)</alignment>
@@ -1792,10 +1842,10 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <passive>17</passive>
     <languages>Common, drow, Elvish</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Keen Smell</name>
@@ -1808,6 +1858,21 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, drow Mutated Drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The drow's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
+
+	• At will: detect magic, fog cloud, light
+	• 3/Day each: feather fall, fly, misty step, telekinesis
+	• 1/Day each: control weather, gaseous form</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The drow's innate spellcasting ability is Charisma (spell save DC 15). The drow can innately cast the following spells, requiring no material components:
+
+	• At will: dancing lights
+	• 1/Day each: darkness, faerie fire</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -1833,21 +1898,6 @@ The drow tries to throw a Small or Medium creature within 10 feet of it. The tar
 Wind Aura:
 A magical aura of wind surrounds the drow. The aura is a 10-foot-radius sphere that lasts as long as the drow maintains concentration on it (as if concentrating on a spell). While the aura is in effect, the drow gains a +2 bonus to its AC against ranged weapon attacks, and all open flames within the aura are extinguished unless they are magical.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The drow's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
-
-	• At will: detect magic, fog cloud, light
-	• 3/Day each: feather fall, fly, misty step, telekinesis
-	• 1/Day each: control weather, gaseous form</text>
-    </trait>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The drow's innate spellcasting ability is Charisma (spell save DC 15). The drow can innately cast the following spells, requiring no material components:
-
-	• At will: dancing lights
-	• 1/Day each: darkness, faerie fire</text>
-    </trait>
     <spells>detect magic, fog cloud, light, feather fall, fly, misty step, telekinesis, control weather, gaseous form, dancing lights, darkness, faerie fire</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 143</description>
     <environment>mountain</environment>
@@ -1871,10 +1921,10 @@ A magical aura of wind surrounds the drow. The aura is a 10-foot-radius sphere t
     <passive>22</passive>
     <languages>Common, Draconic</languages>
     <cr>15</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>lightning</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -1940,7 +1990,7 @@ In a new form, Glyster retains its alignment, hit points, Hit Dice, ability to s
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>Glyster beats its wings. Each creature within 10 feet of Glyster must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. Glyster can then fly up to half its flying speed.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects:
 
@@ -1948,7 +1998,7 @@ In a new form, Glyster retains its alignment, hit points, Hit Dice, ability to s
 
 	• A thunderclap originates at a point the dragon can see within 120 feet of it. Each creature within a 20-foot radius centered on that point must make a DC 15 Constitution saving throw or take 5 (1d10) thunder damage and be deafened until the end of its next turn.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region containing a legendary bronze dragon's lair is warped by the dragon's magic.
 
@@ -1965,6 +2015,8 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
   </monster>
   <monster>
     <name>Gorka Tharn</name>
+    <sortname>Tharn, Gorka</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -1982,9 +2034,9 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <passive>14</passive>
     <languages>the languages it knew in life</languages>
     <cr>15</cr>
-    <resist />
-    <immune>necrotic, poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
     <vulnerable>fire</vulnerable>
+    <resist/>
+    <immune>necrotic, poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1994,6 +2046,18 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <trait>
       <name>Rejuvenation</name>
       <text>A destroyed mummy lord gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of the mummy lord's heart.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:
+
+	• Cantrips (at will): sacred flame, thaumaturgy
+	• 1st level (4 slots): command, guiding bolt, shield of faith
+	• 2nd level (3 slots): hold person, silence, spiritual weapon
+	• 3rd level (3 slots): animate dead, dispel magic
+	• 4th level (3 slots): divination, guardian of faith
+	• 5th level (2 slots): contagion, insect plague
+	• 6th level (1 slots): harm</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2049,7 +2113,7 @@ At the bottom of the stalagmite's hollow cavity, four 1-foot-tall clay urns cont
 
 Equipment worn or carried by the mummy lord remain in its possession.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the mummy lord takes a lair action to cause one of the following effects; the mummy lord can't use the same effect two rounds in a row:
 
@@ -2059,7 +2123,7 @@ Equipment worn or carried by the mummy lord remain in its possession.</text>
 
 	• Until initiative count 20 on the next round, any non-undead creature that tries to cast a spell of 4th level or lower in the mummy lord's lair is wracked with pain. The creature can choose another action, but if it tries to cast the spell, it must make a DC 16 Constitution saving throw. On a failed save, it takes 1d6 necrotic damage per level of the spell, and the spell has no effect and is wasted.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>A mummy lord's temple or tomb is warped in any of the following ways by the creature's dark presence:
 
@@ -2071,25 +2135,16 @@ Equipment worn or carried by the mummy lord remain in its possession.</text>
 
 If the mummy lord is destroyed, these regional effects end immediately.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:
-
-	• Cantrips (at will): sacred flame, thaumaturgy
-	• 1st level (4 slots): command, guiding bolt, shield of faith
-	• 2nd level (3 slots): hold person, silence, spiritual weapon
-	• 3rd level (3 slots): animate dead, dispel magic
-	• 4th level (3 slots): divination, guardian of faith
-	• 5th level (2 slots): contagion, insect plague
-	• 6th level (1 slots): harm</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>sacred flame, thaumaturgy, command, guiding bolt, shield of faith, hold person, silence, spiritual weapon, animate dead, dispel magic, divination, guardian of faith, contagion, insect plague, harm</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 257</description>
     <environment>desert</environment>
   </monster>
   <monster>
     <name>Gorzil's Gang Troglodyte</name>
+    <sortname>Troglodyte, Gorzil's Gang</sortname>
+    <ancestry>Troglodyte</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (troglodyte)</type>
     <alignment>Chaotic Evil</alignment>
@@ -2102,15 +2157,15 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <int>6</int>
     <wis>10</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Stealth +2</skill>
     <passive>10</passive>
     <languages>Troglodyte</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Chameleon Skin</name>
@@ -2143,6 +2198,8 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
   </monster>
   <monster>
     <name>Halaster Blackcloak</name>
+    <sortname>Blackcloak, Halaster</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Chaotic Evil</alignment>
@@ -2160,10 +2217,10 @@ If the mummy lord is destroyed, these regional effects end immediately.</text>
     <passive>21</passive>
     <languages>Abyssal, Celestial, Common, Draconic, Dwarvish, Elvish, Infernal, Undercommon</languages>
     <cr>23</cr>
+    <vulnerable/>
     <resist>fire; lightning (granted by the blast scepter, see "Special Equipment" below)</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Special Equipment</name>
@@ -2187,43 +2244,6 @@ Halaster also wears a horned ring (a very rare magic item that requires attuneme
       <name>Rejuvenation</name>
       <text>If Halaster dies in Undermountain, he revives after 1d10 days, with all his hit points and any missing body parts restored. His new body appears in a random safe location in Undermountain.</text>
     </trait>
-    <action>
-      <name>Blast Scepter</name>
-      <text>Halaster uses his blast scepter to cast thunderwave as a 4th-level spell. Each creature in a 15-foot cube originating from him must make a DC 16 Constitution saving throw. On a failed save, a creature takes 5d8 thunder damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn't pushed</text>
-    </action>
-    <legendary>
-      <name>Legendary Actions (2/Turn)</name>
-      <recharge>2/TURN</recharge>
-      <text>Halaster can take 2 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Halaster regains spent legendary actions at the start of its turn.</text>
-    </legendary>
-    <legendary>
-      <name>Cast Spell</name>
-      <text>Halaster casts a spell of 3rd level or lower.</text>
-    </legendary>
-    <legendary>
-      <name>Spell Ward (Costs 2 Actions)</name>
-      <text>Halaster expends a spell slot of 4th level or lower and gains 5 temporary hit points per level of the slot.</text>
-    </legendary>
-    <legendary>
-      <name>Lair Actions</name>
-      <text>On initiative count 20 (losing initiative ties), Halaster takes a lair action to cause one of the following effects:
-
-	• Halaster targets a volume of unoccupied space or solid stone no larger than four 10-foot cubes within 30 feet of him, turning the open space to solid, worked stone or vice versa.
-
-	• Halaster causes one door or archway within 30 feet of him to disappear and be replaced by a blank wall, or he restores a door or an archway previously removed in this way.
-
-	• Halaster deactivates or reactivates one of Undermountain's magic gates. The gate must be within 120 feet of him.</text>
-    </legendary>
-    <legendary>
-      <name>Regional Effects</name>
-      <text>When Halaster is in Undermountain, the following effects can occur in any location within the dungeon or in any extraplanar extension of the dungeon:
-
-	• A magical scrying sensor appears, taking the form of a ghostly, 1-foot-diameter humanoid eye surrounded by motes of light. The sensor is stationary, though Halaster can reorient the eye to face in any direction. Halaster can see through the eye as though he was in its space. The eye can't be harmed or dispelled, but it winks out within an antimagic field. A scrying eye lasts until Halaster ends the effect (no action required).
-
-	• A minor illusory effect is triggered, as though Halaster had cast minor illusion in an area. Common illusions include the echo of rattling chains, the distant sound of explosive spells being cast, a dusty cloak or a rusty helm floating as though worn by an invisible figure, and illusory footprints appearing on a dusty floor.
-
-	• Silent apparitions of dead adventurers drift through halls and rooms as though they are lost. An apparition can't be harmed, and it doesn't acknowledge creatures or objects in any way. It can't be dispelled but is suppressed within an antimagic field.</text>
-    </legendary>
     <trait>
       <name>Spellcasting</name>
       <text>Halaster is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 22, +14 to hit with spell attacks). He can cast disguise self and invisibility at will. He can cast fly and lightning bolt once each without expending a spell slot, but can't do so again until he finishes a short or long rest. Halaster has the following wizard spells prepared:
@@ -2242,7 +2262,44 @@ Halaster also wears a horned ring (a very rare magic item that requires attuneme
 	• 8th level (1 slots): maze, mind blank
 	• 9th level (1 slots): meteor swarm, wish</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 2, 2, 1, 1</slots>
+    <action>
+      <name>Blast Scepter</name>
+      <text>Halaster uses his blast scepter to cast thunderwave as a 4th-level spell. Each creature in a 15-foot cube originating from him must make a DC 16 Constitution saving throw. On a failed save, a creature takes 5d8 thunder damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn't pushed</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (2/Turn)</name>
+      <recharge>2/TURN</recharge>
+      <text>Halaster can take 2 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. Halaster regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Cast Spell</name>
+      <text>Halaster casts a spell of 3rd level or lower.</text>
+    </legendary>
+    <legendary>
+      <name>Spell Ward (Costs 2 Actions)</name>
+      <text>Halaster expends a spell slot of 4th level or lower and gains 5 temporary hit points per level of the slot.</text>
+    </legendary>
+    <legendary category="lair">
+      <name>Lair Actions</name>
+      <text>On initiative count 20 (losing initiative ties), Halaster takes a lair action to cause one of the following effects:
+
+	• Halaster targets a volume of unoccupied space or solid stone no larger than four 10-foot cubes within 30 feet of him, turning the open space to solid, worked stone or vice versa.
+
+	• Halaster causes one door or archway within 30 feet of him to disappear and be replaced by a blank wall, or he restores a door or an archway previously removed in this way.
+
+	• Halaster deactivates or reactivates one of Undermountain's magic gates. The gate must be within 120 feet of him.</text>
+    </legendary>
+    <legendary category="lair">
+      <name>Regional Effects</name>
+      <text>When Halaster is in Undermountain, the following effects can occur in any location within the dungeon or in any extraplanar extension of the dungeon:
+
+	• A magical scrying sensor appears, taking the form of a ghostly, 1-foot-diameter humanoid eye surrounded by motes of light. The sensor is stationary, though Halaster can reorient the eye to face in any direction. Halaster can see through the eye as though he was in its space. The eye can't be harmed or dispelled, but it winks out within an antimagic field. A scrying eye lasts until Halaster ends the effect (no action required).
+
+	• A minor illusory effect is triggered, as though Halaster had cast minor illusion in an area. Common illusions include the echo of rattling chains, the distant sound of explosive spells being cast, a dusty cloak or a rusty helm floating as though worn by an invisible figure, and illusory footprints appearing on a dusty floor.
+
+	• Silent apparitions of dead adventurers drift through halls and rooms as though they are lost. An apparition can't be harmed, and it doesn't acknowledge creatures or objects in any way. It can't be dispelled but is suppressed within an antimagic field.</text>
+    </legendary>
+    <slots>0,4,3,3,3,3,2,2,1,1</slots>
     <spells>disguise self, invisibility, fly, lightning bolt, dancing lights, fire bolt, light, mage hand, prestidigitation, mage armor, magic missile, shield, silent image, arcane lock, cloud of daggers, darkvision, knock, counterspell, dispel magic, fireball, confusion, hallucinatory terrain, polymorph, Bigby's hand, geas, wall of force, chain lightning, globe of invulnerability, programmed illusion, finger of death, symbol, teleport, maze, mind blank, meteor swarm, wish</spells>
     <description>As the master of Undermountain, Halaster can alter the entire dungeon to some extent. His lair actions and regional effects don't extend beyond Undermountain.
 
@@ -2255,10 +2312,11 @@ Halaster's abilities far exceed those of most mortal wizards. His expertise with
 Halaster's true form is that of a tall, gaunt, male human, but he uses magic to take on many other visages and shapes. No matter what form he wears, the Mad Mage giggles and mutters incessantly. Contrary to appearances, however, Halaster is alert and attentive to the activities and preparations of all beings near him. He never willingly enters combat without first casting mage armor and mind blank on himself.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 310</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Halaster Horror</name>
+    <sortname>Horror, Halaster</sortname>
     <size>M</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -2271,14 +2329,14 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 310</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +4</skill>
     <passive>14</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</resist>
     <immune>force, necrotic, poison</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned, stunned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -2299,10 +2357,12 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 310</description>
       <attack>Longsword|+6|1d8+4</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 129</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Halaster Puppet</name>
+    <sortname>Puppet, Halaster</sortname>
+    <ancestry>Puppet</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Neutral</alignment>
@@ -2315,22 +2375,22 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 310</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
-    <cr />
-    <resist />
+    <cr/>
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>frightened, exhaustion</conditionImmune>
-    <senses />
+    <senses/>
     <trait>
       <name>Antimagic Susceptibility</name>
       <text>The puppet is destroyed if a successful dispel magic spell (DC 15) is cast on it</text>
     </trait>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 31</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Haungharassk</name>
@@ -2346,16 +2406,16 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 310</description>
     <int>3</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Salt Sensitivity</name>
       <text>A pound of salt thrown onto the snail's skin deals 1d6 acid damage to the creature.</text>
@@ -2367,10 +2427,11 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 310</description>
     <description>Haungharassk is a magical snail as large as an elephant, with a shell of gleaming gold.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 258</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Horned Sister</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tiefling)</type>
     <alignment>Any alignment</alignment>
@@ -2388,19 +2449,11 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 258</description>
     <passive>11</passive>
     <languages>any four languages, Infernal</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (sister 1d4 + 2) piercing dahorned sister.</text>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archhorned sister or horned sister) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The horned sister is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The horned sister has the following wizard spells prepared:
@@ -2412,7 +2465,6 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 258</description>
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Horned Sister's innate spellcasting ability is Charisma (spell save DC 11). Horned Sister can innately cast the following spells, requiring no material components:
@@ -2420,9 +2472,18 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 258</description>
 	• At will: thaumaturgy
 	• 1/Day each: darkness, hellish rebuke</text>
     </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (sister 1d4 + 2) piercing dahorned sister.</text>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archhorned sister or horned sister) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, horned sister hand, prestidigitation, detect magic, horned sister armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold, thaumaturgy, darkness, hellish rebuke</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 118</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Huge Gray Ooze</name>
@@ -2440,14 +2501,14 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 258</description>
     <int>1</int>
     <wis>6</wis>
     <cha>2</cha>
-    <save />
+    <save/>
     <skill>Stealth +2</skill>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist>acid, cold, fire</resist>
-    <immune />
-    <vulnerable />
+    <immune/>
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -2496,14 +2557,14 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <int>1</int>
     <wis>6</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>acid, cold, lightning, slashing</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -2532,6 +2593,8 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
   </monster>
   <monster>
     <name>Iron Spider</name>
+    <sortname>Spider, Iron</sortname>
+    <ancestry>Spider</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -2544,15 +2607,15 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <int>3</int>
     <wis>3</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>6</passive>
-    <languages />
-    <cr />
-    <resist />
+    <languages/>
+    <cr/>
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
       <name>Hit Points</name>
@@ -2563,10 +2626,13 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
       <text>The iron spider shoots out a 6-inch-thick web cable up to 50 feet long, attaching the far end of the cable to a solid surface up to 50 feet away from it. As a bonus action, it can detach the other end of the cable from itself and attach it to a solid surface within 10 feet of it. Once it creates 200 feet of web cable, the spider can't produce any more cable until the next dawn.</text>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 165</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Junior Drow Priestess of Lolth</name>
+    <sortname>Drow Priestess of Lolth, Junior</sortname>
+    <ancestry>Drow</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -2579,15 +2645,15 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <int>13</int>
     <wis>16</wis>
     <cha>13</cha>
-    <save />
+    <save/>
     <skill>Medicine +7, Persuasion +3, Religion +5, Perception +1</skill>
     <passive>13</passive>
     <languages>any two languages, Elvish</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Divine Eminence</name>
@@ -2601,11 +2667,6 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Junior Drow Priestess of Lolth has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
     </trait>
-    <action>
-      <name>Mace</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Mace|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The priestess is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priestess has the following cleric spells prepared:
@@ -2615,7 +2676,6 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Junior Drow Priestess of Lolth's innate spellcasting ability is Charisma (spell save DC 11). Junior Drow Priestess of Lolth can innately cast the following spells, requiring no material components:
@@ -2623,12 +2683,19 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
 	• At will: dancing lights
 	• 1/Day each: darkness, faerie fire</text>
     </trait>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Mace|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians, dancing lights, darkness, faerie fire</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 149</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Kavil</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -2646,20 +2713,11 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Kavil is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Kavil has the following wizard spells prepared:
@@ -2671,13 +2729,24 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 205</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Keresta Delvingstone</name>
+    <sortname>Delvingstone, Keresta</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead (shapechanger)</type>
     <alignment>Lawful Evil</alignment>
@@ -2695,10 +2764,10 @@ Psychic Crush (Recharge 5-6). The ooze targets one creature that it can sense wi
     <passive>17</passive>
     <languages>the languages it knew in life</languages>
     <cr>13</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, slashing from nonmagical attacks</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Shapechanger</name>
@@ -2781,7 +2850,7 @@ Each time Keresta or Keresta's companions do anything harmful to the target, it 
       <name>Bite (Costs 2 Actions)</name>
       <text>Keresta makes one bite attack.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region surrounding a vampire's lair is warped by the creature's unnatural presence, creating any of the following effects:
 
@@ -2800,6 +2869,7 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
   </monster>
   <monster>
     <name>Kol'daan</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (troglodyte)</type>
     <alignment>Chaotic Evil</alignment>
@@ -2812,15 +2882,15 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
     <int>6</int>
     <wis>10</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Stealth +2</skill>
     <passive>10</passive>
     <languages>Troglodyte</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Chameleon Skin</name>
@@ -2872,14 +2942,14 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
     <int>5</int>
     <wis>13</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Stealth +5</skill>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>acid</immune>
-    <vulnerable />
     <conditionImmune>prone</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -2913,6 +2983,7 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
   </monster>
   <monster>
     <name>Left Hand of Manshoon</name>
+    <npc>YES</npc>
     <size>T</size>
     <type>undead</type>
     <alignment>unaligned</alignment>
@@ -2925,17 +2996,16 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
     <int>20</int>
     <wis>15</wis>
     <cha>16</cha>
-    <save>wis +6, int +9</save>
-    <skill>arcana +13, history +13</skill>
-    <resist>damage from spells; nonmagical bludgeoning, piercing, and slashing (from stoneskin)</resist>
-    <vulnerable />
-    <immune />
-    <conditionImmune>blinded, deafened</conditionImmune>
-    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
+    <save>Wis +6, Int +9</save>
+    <skill>Arcana +13, History +13</skill>
     <passive>12</passive>
     <languages>any six languages</languages>
     <cr>12</cr>
-    <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 119</description>
+    <vulnerable/>
+    <resist>damage from spells; nonmagical bludgeoning, piercing, and slashing (from stoneskin)</resist>
+    <immune/>
+    <conditionImmune>blinded, deafened</conditionImmune>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>The hand has advantage on saving throws against spells and other magical effects.</text>
@@ -2964,11 +3034,15 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
       <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
       <attack>Dagger|6|1d4+2</attack>
     </action>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, blight, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
+    <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 119</description>
+    <environment/>
   </monster>
   <monster>
     <name>Lava Child</name>
+    <sortname>Child, Lava</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (lava child)</type>
     <alignment>Neutral</alignment>
@@ -2981,15 +3055,15 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
     <int>11</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Athletics +6, Survival +2</skill>
     <passive>10</passive>
     <languages>Common, Ignan</languages>
     <cr>3</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>fire; bludgeoning, piercing, slashing from metal weapons</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Metal Immunity</name>
@@ -3014,10 +3088,12 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
 Though they're not violent by nature, lava children fiercely defend territory they claim as their own. Many intruders have been fooled by a lava child's smile, believing themselves welcome when in fact they're about to be torn limb from limb. Lava children typically stick close to their lairs, but actively hunt when food grows scarce.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 313</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Living Unseen Servant</name>
+    <sortname>Living Spell, Unseen Servant</sortname>
+    <ancestry>Living Spell</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -3030,14 +3106,14 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 313</description>
     <int>1</int>
     <wis>10</wis>
     <cha>1</cha>
-    <save />
+    <save/>
     <skill>Perception +2, Stealth +4</skill>
     <passive>12</passive>
     <languages>understands one language (usually Common) but can't speak</languages>
     <cr>0</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, paralyzed, petrified, poisoned, unconscious</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -3056,10 +3132,12 @@ The process that creates a living spell changes the nature of its magic. A livin
 Like an overzealous butler or maid, a living unseen servant spell busies itself with tasks in hopes of pleasing its creator. It can wield simple weapons but prefers not to. See invisibility, true seeing, and similar effects reveal that the servant has a shape similar to that of a slender humanoid adult.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 313</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Mad Golem</name>
+    <sortname>Golem, Mad</sortname>
+    <ancestry>Golem</ancestry>
     <size>H</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -3072,14 +3150,14 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 313</description>
     <int>3</int>
     <wis>11</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>10</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -3109,10 +3187,12 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 313</description>
       <text>The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 254</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Maddgoth's Homunculus</name>
+    <sortname>Homunculus, Maddgoth's</sortname>
+    <ancestry>Homunculus</ancestry>
     <size>L</size>
     <type>construct</type>
     <alignment>Neutral</alignment>
@@ -3125,14 +3205,14 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 313</description>
     <int>10</int>
     <wis>10</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>0</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3146,10 +3226,12 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 313</description>
 If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.</text>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 96</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Marta Moonshadow</name>
+    <sortname>Moonshadow, Marta</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -3167,10 +3249,10 @@ If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d
     <passive>11</passive>
     <languages>any four languages, Elvish</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -3180,15 +3262,6 @@ If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d
       <name>Fey Ancestry</name>
       <text>Marta has advantage on saving throws against being charmed, and magic can't put Marta to sleep.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Marta is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Marta has the following wizard spells prepared:
@@ -3200,13 +3273,24 @@ If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, ray of frost, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 46</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Melissara Shadowdusk</name>
+    <sortname>Shadowdusk, Melissara</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3224,24 +3308,15 @@ If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d
     <passive>12</passive>
     <languages>any six languages</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>Melissara has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Melissara is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Melissara can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -3261,13 +3336,24 @@ If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d
 
 *Melissara casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, dimension door, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 281</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Metal Wasp</name>
+    <sortname>Wasp, Metal</sortname>
+    <ancestry>Wasp</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -3280,16 +3366,16 @@ If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d
     <int>1</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Sting</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.
@@ -3303,6 +3389,7 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
   </monster>
   <monster>
     <name>Mobar</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (goblin, shapechanger)</type>
     <alignment>Lawful Evil</alignment>
@@ -3315,15 +3402,15 @@ If the poison damage reduces the target to 0 hit points, the target is stable bu
     <int>10</int>
     <wis>12</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Stealth +5</skill>
     <passive>13</passive>
     <languages>Goblin (can't speak in bat form)</languages>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Shapechanger</name>
@@ -3371,7 +3458,7 @@ If the target is a humanoid, it must succeed on a DC 10 Constitution saving thro
       <attack>Shortbow (Humanoid or Hybrid Form Only)|+5|1d6+3</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 77</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Muiral</name>
@@ -3392,15 +3479,28 @@ If the target is a humanoid, it must succeed on a DC 10 Constitution saving thro
     <passive>16</passive>
     <languages>Common, Dwarvish, Elvish, Goblin, Undercommon</languages>
     <cr>13</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/DAY</recharge>
       <text>If Muiral fails a saving throw, he can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Muiral is a 13th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). He has the following wizard spells prepared:
+
+	• Cantrips (at will): dancing lights, mage hand, prestidigitation, ray of frost, shocking grasp
+	• 1st level (4 slots): expeditious retreat, fog cloud, magic missile, shield
+	• 2nd level (3 slots): darkness, knock, see invisibility, spider climb
+	• 3rd level (3 slots): animate dead, counterspell, lightning bolt
+	• 4th level (3 slots): greater invisibility, polymorph
+	• 5th level (2 slots): animate objects, wall of force
+	• 6th level (1 slots): create undead, flesh to stone
+	• 7th level (1 slots): finger of death</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -3434,28 +3534,16 @@ If the target is a humanoid, it must succeed on a DC 10 Constitution saving thro
       <name>Retreating Strike (Costs 3 Actions)</name>
       <text>Muiral moves up to his speed without provoking opportunity attacks. Before the move, he can make one longsword attack.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Muiral is a 13th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). He has the following wizard spells prepared:
-
-	• Cantrips (at will): dancing lights, mage hand, prestidigitation, ray of frost, shocking grasp
-	• 1st level (4 slots): expeditious retreat, fog cloud, magic missile, shield
-	• 2nd level (3 slots): darkness, knock, see invisibility, spider climb
-	• 3rd level (3 slots): animate dead, counterspell, lightning bolt
-	• 4th level (3 slots): greater invisibility, polymorph
-	• 5th level (2 slots): animate objects, wall of force
-	• 6th level (1 slots): create undead, flesh to stone
-	• 7th level (1 slots): finger of death</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1, 1</slots>
+    <slots>0,4,3,3,3,2,1,1</slots>
     <spells>dancing lights, mage hand, prestidigitation, ray of frost, shocking grasp, expeditious retreat, fog cloud, magic missile, shield, darkness, knock, see invisibility, spider climb, animate dead, counterspell, lightning bolt, greater invisibility, polymorph, animate objects, wall of force, create undead, flesh to stone, finger of death</spells>
     <description>Muiral was an accomplished human warrior who long served as Halaster's bodyguard. His descent into madness began when he asked the Mad Mage to tutor him in the wizardly arts. Muiral learned enough magic to transform himself into a half-scorpion monstrosity, becoming known as Muiral the Misshapen. He then retired to the level of Undermountain that would later be called Muiral's Gauntlet, driving out and slaying its original drow denizens. Muiral now spends his days hunting adventurers and other interlopers for fun. Long years alone—and Halaster's influence—have rendered him utterly insane.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 314</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Nerozar the Defeated</name>
+    <npc>YES</npc>
     <size>L</size>
     <type>undead</type>
     <alignment>Neutral Evil</alignment>
@@ -3469,13 +3557,13 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 314</description>
     <wis>8</wis>
     <cha>5</cha>
     <save>Wis +2</save>
-    <skill />
+    <skill/>
     <passive>9</passive>
     <languages>understands Deep Speech and Undercommon but can't speak</languages>
     <cr>5</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned, prone</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3504,6 +3592,7 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 314</description>
   </monster>
   <monster>
     <name>Nester</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3521,24 +3610,15 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 314</description>
     <passive>12</passive>
     <languages>any six languages</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>Nester has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Nester is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Nester can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -3558,13 +3638,25 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 314</description>
 
 *Nester casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, animate dead, lightning bolt, blight, fire shield, stoneskin, cone of cold, Rary's telepathic bond, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 131</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Old Troglodyte</name>
+    <sortname>Troglodyte, Old</sortname>
+    <ancestry>Troglodyte</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (troglodyte)</type>
     <alignment>Chaotic Evil</alignment>
@@ -3577,15 +3669,15 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 314</description>
     <int>6</int>
     <wis>10</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Stealth +2</skill>
     <passive>10</passive>
     <languages>Troglodyte</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Chameleon Skin</name>
@@ -3625,27 +3717,30 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 314</description>
     <int>14</int>
     <wis>12</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Arcana +4, Perception +3, Stealth +7</skill>
     <passive>13</passive>
     <languages>Draconic, Sylvan</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>The Colors of Age</name>
       <text>A faerie dragon's scales change hue as it ages, moving through all the colors of the rainbow. All faerie dragons have innate spellcasting ability, gaining new spells as they mature.
 
-Red—5 years or less
-Orange—6–10 years
-Yellow—11–20 years
-Green—21–30 years
-Blue—31–40 years
-Indigo—41–50 years
-Violet—51 years or more
+Colors of Age:
+Color | Age
+Red | 5 years or less
+Orange | 6-10 years
+Yellow | 11-20 years
+Green | 21-30 years
+Blue | 31-40 years
+Indigo | 41-50 years
+Violet | 51 years or more
+
 A green or older faerie dragon's CR increases to 2.</text>
     </trait>
     <trait>
@@ -3660,6 +3755,11 @@ A green or older faerie dragon's CR increases to 2.</text>
       <name>Magic Resistance</name>
       <text>The faerie dragon has advantage on saving throws against spells and other magical effects.</text>
     </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The dragon's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast a number of spells, requiring no material components:
+	• 1/Day each: color spray, dancing lights, hallucinatory terrain, mage hand, major image, minor illusion, mirror image, polymorph, suggestion</text>
+    </trait>
     <action>
       <name>Bite</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 2d6 + 4 piercing damage.</text>
@@ -3668,15 +3768,12 @@ A green or older faerie dragon's CR increases to 2.</text>
       <name>Euphoria Breath (Recharge 5-6)</name>
       <recharge>D5</recharge>
       <text>The dragon exhales a puff of euphoria gas at one creature within 5 feet of it. The target must succeed on a DC 11 Wisdom saving throw, or for 1 minute, the target can't take reactions and must roll a d6 at the start of each of its turns to determine its behavior during the turn:
-1–4. The target takes no action or bonus action and uses all of its movement to move in a random direction.
 
-5–6. The target doesn't move, and the only thing it can do on its turn is make a DC 11 Wisdom saving throw, ending the effect on itself on a success.</text>
+Euphoria Breath:
+d6 | Behavior
+1-4: The target takes no action or bonus action and uses all of its movement to move in a random direction.
+5-6: The target doesn't move, and the only thing it can do on its turn is make a DC 11 Wisdom saving throw, ending the effect on itself on a success.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The dragon's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast a number of spells, requiring no material components:
-	• 1/Day each: color spray, dancing lights, hallucinatory terrain, mage hand, major image, minor illusion, mirror image, polymorph, suggestion</text>
-    </trait>
     <spells>color spray, dancing lights, hallucinatory terrain, mage hand, major image, minor illusion, mirror image, polymorph, suggestion</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 96</description>
     <environment>forest</environment>
@@ -3695,15 +3792,15 @@ A green or older faerie dragon's CR increases to 2.</text>
     <int>10</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Modron</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>truesight 120 ft.</senses>
     <trait>
       <name>Axiomatic Mind</name>
@@ -3733,10 +3830,12 @@ A green or older faerie dragon's CR increases to 2.</text>
 A rogue modron loses the Axiomatic Mind trait and can have any alignment other than lawful neutral. Otherwise, it has the same statistics as a regular modron of its rank.</text>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 205</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Poison Weird</name>
+    <sortname>Weird, Poison</sortname>
+    <ancestry>Weird</ancestry>
     <size>L</size>
     <type>elemental</type>
     <alignment>Neutral</alignment>
@@ -3749,14 +3848,14 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <int>11</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands Aquan but doesn't speak</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist>fire; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, grappled, paralyzed, poisoned, restrained, prone, unconscious</conditionImmune>
     <senses>blindsight 30 ft.</senses>
     <trait>
@@ -3777,6 +3876,8 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
   </monster>
   <monster>
     <name>Portia Dzuth</name>
+    <sortname>Dzuth, Portia</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3794,11 +3895,11 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <passive>16</passive>
     <languages>any one language (usually Common)</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Indomitable (2/Day)</name>
       <recharge>2/DAY</recharge>
@@ -3832,6 +3933,8 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
   </monster>
   <monster>
     <name>Preeta Kreepa</name>
+    <sortname>Kreepa, Preeta</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3849,20 +3952,11 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Preeta is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Preeta has the following wizard spells prepared:
@@ -3874,13 +3968,23 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 56</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Rabbithead</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3893,16 +3997,16 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Club</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
@@ -3927,14 +4031,14 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <int>5</int>
     <wis>13</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Stealth +5</skill>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>acid</immune>
-    <vulnerable />
     <conditionImmune>prone</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3968,6 +4072,8 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
   </monster>
   <monster>
     <name>Runed Behir</name>
+    <sortname>Behir, Runed</sortname>
+    <ancestry>Behir</ancestry>
     <size>H</size>
     <type>monstrosity</type>
     <alignment>Neutral Evil</alignment>
@@ -3980,15 +4086,15 @@ A rogue modron loses the Axiomatic Mind trait and can have any alignment other t
     <int>7</int>
     <wis>14</wis>
     <cha>12</cha>
-    <save />
+    <save/>
     <skill>Perception +6, Stealth +7</skill>
     <passive>16</passive>
     <languages>Draconic</languages>
     <cr>11</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>lightning</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 90 ft.</senses>
     <action>
       <name>Multiattack</name>
@@ -4033,14 +4139,14 @@ If the behir takes 30 damage or more on a single turn from the swallowed creatur
     <int>1</int>
     <wis>12</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>8</cr>
+    <vulnerable/>
     <resist>fire; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>force, lightning, poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, paralyzed, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -4070,10 +4176,13 @@ The scaladar has two claws, each of which can grapple one target.</text>
     <description>Scaladar are constructs created by Trobriand, one of Halaster's apprentices. They move and attack like giant scorpions, grabbing prey with two large pincer claws and delivering a deadly pulse of lightning with their metal stinger tails.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 315</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Shadow Assassin</name>
+    <sortname>Assassin, Shadow</sortname>
+    <ancestry>Assassin</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>Chaotic Evil</alignment>
@@ -4091,9 +4200,9 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 315</description>
     <passive>19</passive>
     <languages>understands the languages it knew in life but can't speak</languages>
     <cr>9</cr>
+    <vulnerable>radiant</vulnerable>
     <resist>acid, cold, fire, lightning, thunder; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>necrotic, poison</immune>
-    <vulnerable>radiant</vulnerable>
     <conditionImmune>exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -4120,10 +4229,12 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 315</description>
     <description>A shadow assassin looks like an undead shadow (as described in theMonster Manual) that wields shortswords also made of shadow. It exists only to slay the living.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 316</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Shapechanged Roper</name>
+    <sortname>Roper, Shapechanged</sortname>
+    <ancestry>Roper</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Neutral Evil</alignment>
@@ -4136,15 +4247,15 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 316</description>
     <int>7</int>
     <wis>16</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +6, Stealth +5</skill>
     <passive>16</passive>
-    <languages />
+    <languages/>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>False Appearance</name>
@@ -4196,14 +4307,14 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 316</description>
     <int>1</int>
     <wis>1</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>5</passive>
-    <languages />
+    <languages/>
     <cr>14</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>blinded, deafened, charmed, frightened, paralyzed, poisoned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -4241,10 +4352,12 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 316</description>
       <attack>Stomp|+8|3d10+6</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 174</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Shunn Shurreth</name>
+    <sortname>Shurreth, Shunn</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Neutral Evil</alignment>
@@ -4262,10 +4375,10 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 316</description>
     <passive>14</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Spider Features</name>
@@ -4278,6 +4391,13 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 316</description>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Shunn has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Shunn's spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:
+
+	• At will: dancing lights
+	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -4295,29 +4415,23 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 316</description>
 If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.</text>
       <attack>Hand Crossbow|+7|1d6+4</attack>
     </action>
-    <reaction>
-      <name>Parry</name>
-      <text>Shunn adds 3 to its AC against one melee attack that would hit it. To do so, Shunn must see the attacker and be wielding a melee weapon.</text>
-    </reaction>
     <action>
       <name>Variant: Drow Magic Armor and Weapons</name>
       <text>Drow often wear magic armor and carry magic weapons that lose their enhancement bonuses permanently if they are exposed to sunlight for 1 hour or longer.
 
 A drow elite warrior wearing +2 Studded Leather Armor and carrying a +2 shortsword has AC 20 and a +2 bonus on attack and damage rolls with shortsword attacks.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Shunn's spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:
-
-	• At will: dancing lights
-	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
-    </trait>
+    <reaction>
+      <name>Parry</name>
+      <text>Shunn adds 3 to its AC against one melee attack that would hit it. To do so, Shunn must see the attacker and be wielding a melee weapon.</text>
+    </reaction>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 33</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Sing-Along</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (halfling)</type>
     <alignment>Any alignment</alignment>
@@ -4330,16 +4444,16 @@ A drow elite warrior wearing +2 Studded Leather Armor and carrying a +2 shortswo
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common), Halfling</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Halfling Nimbleness</name>
       <text>Sing-Along can move through a space of a Medium or larger creature.</text>
@@ -4370,15 +4484,15 @@ A drow elite warrior wearing +2 Studded Leather Armor and carrying a +2 shortswo
     <int>2</int>
     <wis>10</wis>
     <cha>4</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 30 ft.</senses>
     <trait>
       <name>Keen Smell</name>
@@ -4393,6 +4507,7 @@ A drow elite warrior wearing +2 Studded Leather Armor and carrying a +2 shortswo
   </monster>
   <monster>
     <name>Stalagma Steelshadow</name>
+    <sortname>Steelshadow, Stalagma</sortname>
     <size>H</size>
     <type>dragon</type>
     <alignment>Lawful Good</alignment>
@@ -4410,10 +4525,10 @@ A drow elite warrior wearing +2 Studded Leather Armor and carrying a +2 shortswo
     <passive>21</passive>
     <languages>Common, Draconic</languages>
     <cr>16</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
@@ -4475,7 +4590,7 @@ In a new form, the dragon retains its alignment, hit points, Hit Dice, ability t
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects:
 
@@ -4483,7 +4598,7 @@ In a new form, the dragon retains its alignment, hit points, Hit Dice, ability t
 
 	• A blisteringly cold wind blows through the lair near the dragon. Each creature within 120 feet of the dragon must succeed on a DC 15 Constitution saving throw or take 5 (1d10) cold damage. Gases and vapors are dispersed by the wind, and unprotected flames are extinguished. Protected flames, such as lanterns, have a 50 percent chance of being extinguished.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region containing a legendary silver dragon's lair is warped by the dragon's magic, which creates one or more of the following effects.
 
@@ -4510,14 +4625,14 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <int>3</int>
     <wis>11</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>10</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -4551,7 +4666,7 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
       <text>The statue targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 202</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Stonecloak</name>
@@ -4567,14 +4682,14 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <int>3</int>
     <wis>11</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>10</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -4604,10 +4719,11 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
       <text>The stonecloak targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 253</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Sundeth</name>
+    <npc>YES</npc>
     <size>L</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -4625,11 +4741,11 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <passive>16</passive>
     <languages>any one language (usually Common)</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Indomitable (2/Day)</name>
       <recharge>2/DAY</recharge>
@@ -4659,6 +4775,8 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
   </monster>
   <monster>
     <name>Thwad Underbrew</name>
+    <sortname>Underbrew, Thwad</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any alignment</alignment>
@@ -4676,10 +4794,10 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <passive>16</passive>
     <languages>any one language (usually Common), Dwarvish</languages>
     <cr>9</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Indomitable (2/Day)</name>
@@ -4714,6 +4832,7 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
   </monster>
   <monster>
     <name>Torbit</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (bullywug)</type>
     <alignment>Any Non-Good Alignment</alignment>
@@ -4731,11 +4850,11 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <passive>13</passive>
     <languages>Thieves' cant plus any two languages, Bullywug</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Assassinate</name>
       <text>During its first turn, Torbit has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Torbit scores against a surprised creature is a critical hit.</text>
@@ -4778,10 +4897,11 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
       <attack>Light Crossbow||7d6</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 115</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Trenzia</name>
+    <npc>YES</npc>
     <size>T</size>
     <type>undead</type>
     <alignment>Neutral Evil</alignment>
@@ -4794,14 +4914,14 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <int>16</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Arcana +5, Perception +2</skill>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>lightning, necrotic, piercing</resist>
     <immune>cold, fire, poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, frightened, paralyzed, poisoned, prone</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -4816,15 +4936,6 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
       <name>Rejuvenation</name>
       <text>If Trenzia is destroyed, it regains all its hit points in 1 hour unless holy water is sprinkled on its remains or a dispel magic or remove curse spell is cast on them.</text>
     </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>Trenzia uses Fire Ray twice.</text>
-    </action>
-    <action>
-      <name>Fire Ray</name>
-      <text>Ranged Spell Attack: +5 to hit, range 30 ft., one target. Hit: 10 (3d6) fire damage.</text>
-      <attack>Fire Ray|+5|3d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Trenzia is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It requires no somatic or material components to cast its spells. Trenzia has the following wizard spells prepared:
@@ -4834,13 +4945,23 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
 	• 2nd level (2 slots): blur, flaming sphere
 	• 3rd level (1 slots): fireball</text>
     </trait>
-    <slots>3, 2, 1</slots>
+    <action>
+      <name>Multiattack</name>
+      <text>Trenzia uses Fire Ray twice.</text>
+    </action>
+    <action>
+      <name>Fire Ray</name>
+      <text>Ranged Spell Attack: +5 to hit, range 30 ft., one target. Hit: 10 (3d6) fire damage.</text>
+      <attack>Fire Ray|+5|3d6</attack>
+    </action>
+    <slots>3,2,1</slots>
     <spells>mage hand, magic missile, shield, blur, flaming sphere, fireball</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 32</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Trobriand</name>
+    <npc>YES</npc>
     <size>L</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -4853,14 +4974,14 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <int>3</int>
     <wis>11</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>16</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>fire, poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -4900,7 +5021,7 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
       <attack>Poison Breath||10d8</attack>
     </action>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 294</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Umbraxakar</name>
@@ -4921,10 +5042,10 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <passive>22</passive>
     <languages>Common, Draconic</languages>
     <cr>15</cr>
+    <vulnerable/>
     <resist>necrotic</resist>
     <immune>lightning</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -5002,7 +5123,7 @@ In a new form, the dragon retains its alignment, hit points, Hit Dice, ability t
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects:
 
@@ -5010,7 +5131,7 @@ In a new form, the dragon retains its alignment, hit points, Hit Dice, ability t
 
 	• A thunderclap originates at a point the dragon can see within 120 feet of it. Each creature within a 20-foot radius centered on that point must make a DC 15 Constitution saving throw or take 5 (1d10) thunder damage and be deafened until the end of its next turn.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region containing a legendary bronze dragon's lair is warped by the dragon's magic.
 
@@ -5027,6 +5148,8 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
   </monster>
   <monster>
     <name>Undead Bulette</name>
+    <sortname>Bulette, Undead</sortname>
+    <ancestry>Bulette</ancestry>
     <size>L</size>
     <type>monstrosity</type>
     <alignment>Unaligned</alignment>
@@ -5039,15 +5162,15 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <int>2</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
+    <save/>
     <skill>Perception +6</skill>
     <passive>16</passive>
-    <languages />
+    <languages/>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
     <trait>
       <name>Standing Leap</name>
@@ -5068,6 +5191,8 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
   </monster>
   <monster>
     <name>Undead Shambling Mound</name>
+    <sortname>Shambling Mound, Undead</sortname>
+    <ancestry>Shambling Mound</ancestry>
     <size>L</size>
     <type>plant</type>
     <alignment>Unaligned</alignment>
@@ -5080,14 +5205,14 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <int>5</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
+    <save/>
     <skill>Stealth +2</skill>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>5</cr>
+    <vulnerable/>
     <resist>cold, fire</resist>
     <immune>lightning</immune>
-    <vulnerable />
     <conditionImmune>blinded, deafened, exhaustion</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -5113,6 +5238,8 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
   </monster>
   <monster>
     <name>Valtagar Steelshadow</name>
+    <sortname>Steelshadow, Valtagar</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any alignment</alignment>
@@ -5130,10 +5257,10 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <passive>12</passive>
     <languages>any six languages, Dwarvish, Undercommon</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin), poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
@@ -5153,15 +5280,6 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
       <recharge>SHORT</recharge>
       <text>Valtagar magically turns invisible until they attack, cast a spell, or use their Enlarge, or until their concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment Valtagar wears or carries is invisible with them.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Valtagar is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Valtagar can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -5181,13 +5299,24 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
 
 *Valtagar casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, Otiluke's Resilient Sphere, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 271</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Vertrand Shadowdusk</name>
+    <sortname>Shadowdusk, Vertrand</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -5205,24 +5334,15 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <passive>12</passive>
     <languages>any six languages</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>Vertrand has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Vertrand is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Vertrand can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -5242,13 +5362,24 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
 
 *Vertrand casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, confusion, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 282</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Werebat</name>
+    <ancestry>Werebat</ancestry>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (goblin, shapechanger)</type>
     <alignment>Lawful Evil</alignment>
@@ -5261,15 +5392,15 @@ If the dragon dies, changed weather reverts to normal, as described in the spell
     <int>10</int>
     <wis>12</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Stealth +5</skill>
     <passive>13</passive>
     <languages>Goblin (can't speak in bat form)</languages>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Shapechanger</name>
@@ -5315,10 +5446,12 @@ If the target is a humanoid, it must succeed on a DC 10 Constitution saving thro
     <description>A werebat is a humanoid afflicted with a rare form of lycanthropy that enables it to transform into a giant bat or a bat-humanoid hybrid. (See the Monster Manual for more information onlycanthropy.) Most werebats are of goblin stock.
 
 Source:	Waterdeep: Dungeon of the Mad Mage p. 317</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Wooden Donkey</name>
+    <sortname>Donkey, Wooden</sortname>
+    <ancestry>Donkey</ancestry>
     <size>M</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -5331,16 +5464,16 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 317</description>
     <int>2</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Beast of Burden</name>
       <text>The donkey is considered to be a Large animal for the purpose of determining its carrying capacity.</text>
@@ -5359,6 +5492,7 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 317</description>
   </monster>
   <monster>
     <name>Wyllow</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -5376,10 +5510,10 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 317</description>
     <passive>19</passive>
     <languages>Druidic plus any two languages, Elvish</languages>
     <cr>12</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -5389,20 +5523,6 @@ Source:	Waterdeep: Dungeon of the Mad Mage p. 317</description>
       <name>Mask of the Wild</name>
       <text>Wyllow can attempt to hide even when they are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</text>
     </trait>
-    <action>
-      <name>Scimitar</name>
-      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.</text>
-      <attack>Scimitar|+6|1d6+2</attack>
-    </action>
-    <action>
-      <name>Change Shape (2/Day)</name>
-      <recharge>2/DAY</recharge>
-      <text>Wyllow magically polymorphs into a beast or elemental with a challenge rating of 6 or less, and can remain in this form for up to 9 hours. Wyllow can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. Wyllow reverts to its true form if it dies or falls unconscious. Wyllow can revert to its true form using a bonus action on its turn.
-
-While in a new form, Wyllow retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.
-
-The new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Wyllow is an 18th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). It has the following druid spells prepared:
@@ -5418,13 +5538,29 @@ The new form's attacks count as magical for the purpose of overcoming resistance
 	• 8th level (1 slots): animal shapes
 	• 9th level (1 slots): foresight</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Scimitar</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.</text>
+      <attack>Scimitar|+6|1d6+2</attack>
+    </action>
+    <action>
+      <name>Change Shape (2/Day)</name>
+      <recharge>2/DAY</recharge>
+      <text>Wyllow magically polymorphs into a beast or elemental with a challenge rating of 6 or less, and can remain in this form for up to 9 hours. Wyllow can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. Wyllow reverts to its true form if it dies or falls unconscious. Wyllow can revert to its true form using a bonus action on its turn.
+
+While in a new form, Wyllow retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.
+
+The new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>druidcraft, mending, poison spray, produce flame, cure wounds, entangle, faerie fire, speak with animals, animal messenger, beast sense, hold person, conjure animals, meld into stone, water breathing, dominate beast, locate creature, stoneskin, wall of fire, commune with nature, mass cure wounds, tree stride, heal, heroes' feast, sunbeam, fire storm, animal shapes, foresight</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 70</description>
     <environment>forest, mountain, swamp</environment>
   </monster>
   <monster>
     <name>Zalthar Shadowdusk</name>
+    <sortname>Shadowdusk, Zalthar</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>Chaotic Evil</alignment>
@@ -5438,13 +5574,13 @@ The new form's attacks count as magical for the purpose of overcoming resistance
     <wis>16</wis>
     <cha>18</cha>
     <save>Dex +6, Wis +9, Cha +10</save>
-    <skill />
+    <skill/>
     <passive>13</passive>
     <languages>Abyssal, Common</languages>
     <cr>17</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>necrotic, poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, frightened, poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -5458,6 +5594,16 @@ The new form's attacks count as magical for the purpose of overcoming resistance
     <trait>
       <name>Marshal Undead</name>
       <text>Unless Zalthar is incapacitated, it and undead creatures of its choice within 60 feet of it have advantage on saving throws against features that turn undead.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Zalthar is a 19th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). It has the following paladin spells prepared:
+
+	• 1st level (4 slots): command, compelled duel, searing smite
+	• 2nd level (3 slots): hold person, magic weapon
+	• 3rd level (3 slots): dispel magic, elemental weapon
+	• 4th level (3 slots): locate creature, staggering smite
+	• 5th level (2 slots): destructive wave (necrotic)</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -5478,23 +5624,15 @@ The new form's attacks count as magical for the purpose of overcoming resistance
       <name>Parry</name>
       <text>Zalthar adds 6 to its AC against one melee attack that would hit it. To do so, Zalthar must see the attacker and be wielding a melee weapon.</text>
     </reaction>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Zalthar is a 19th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). It has the following paladin spells prepared:
-
-	• 1st level (4 slots): command, compelled duel, searing smite
-	• 2nd level (3 slots): hold person, magic weapon
-	• 3rd level (3 slots): dispel magic, elemental weapon
-	• 4th level (3 slots): locate creature, staggering smite
-	• 5th level (2 slots): destructive wave (necrotic)</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <slots>0,4,3,3,3,2</slots>
     <spells>command, compelled duel, searing smite, hold person, magic weapon, dispel magic, elemental weapon, locate creature, staggering smite, destructive wave</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 286</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Zorak Lightdrinker</name>
+    <sortname>Lightdrinker, Zorak</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead (shapechanger)</type>
     <alignment>Lawful Evil</alignment>
@@ -5512,10 +5650,10 @@ The new form's attacks count as magical for the purpose of overcoming resistance
     <passive>17</passive>
     <languages>Common, Dwarvish</languages>
     <cr>13</cr>
+    <vulnerable/>
     <resist>necrotic, poison; bludgeoning, piercing, slashing from nonmagical attacks</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
@@ -5611,7 +5749,7 @@ Each time Zorak or Zorak's companions do anything harmful to the target, it can 
       <name>Bite (Costs 2 Actions)</name>
       <text>Zorak makes one bite attack.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region surrounding a vampire's lair is warped by the creature's unnatural presence, creating any of the following effects:
 
@@ -5626,10 +5764,12 @@ Each time Zorak or Zorak's companions do anything harmful to the target, it can 
 If the vampire is destroyed, these effects end after 2d6 days.</text>
     </legendary>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 204</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Zox Clammersham</name>
+    <sortname>Clammersham, Zox</sortname>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (gnome)</type>
     <alignment>Any alignment</alignment>
@@ -5647,10 +5787,10 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
     <passive>12</passive>
     <languages>any six languages, Gnomish</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
@@ -5660,15 +5800,6 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
       <name>Gnome Cunning</name>
       <text>Zox has advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Zox is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Zox can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -5688,13 +5819,24 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
 
 *Zox casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, confusion, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 176</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Zress Orlezziir</name>
+    <sortname>Orlezziir, Zress</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Neutral Evil</alignment>
@@ -5712,10 +5854,10 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
     <passive>16</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Battle Command</name>
@@ -5728,6 +5870,13 @@ If the vampire is destroyed, these effects end after 2d6 days.</text>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Zress has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Zress's innate spellcasting ability is Charisma (spell save DC 13). He can innately cast the following spells, requiring no material components:
+
+	• At will: dancing lights
+	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -5754,13 +5903,6 @@ If the saving throw fails by 5 or more, the target is also unconscious while poi
       <name>Parry</name>
       <text>Zress adds 3 to his AC against one melee attack that would hit him. To do so, Zress must see the attacker and be wielding a melee weapon.</text>
     </reaction>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Zress's innate spellcasting ability is Charisma (spell save DC 13). He can innately cast the following spells, requiring no material components:
-
-	• At will: dancing lights
-	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
-    </trait>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Source:	Waterdeep: Dungeon of the Mad Mage p. 136</description>
     <environment>underdark</environment>

@@ -1,7 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Expert</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -15,15 +16,15 @@
     <wis>10</wis>
     <cha>14</cha>
     <save>Dex +4</save>
-    <skill>Acrobatics +4, Performance +4, Persuasion +4, Sleight of hand +4, Stealth +4</skill>
+    <skill>Acrobatics +4, Performance +4, Persuasion +4, Sleight Of Hand +4, Stealth +4</skill>
     <passive>10</passive>
     <languages>Common, plus one of your choice</languages>
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Helpful</name>
       <text>The expert can take the Help action as a bonus action.</text>
@@ -48,10 +49,11 @@
       <attack>Shortbow|+4|1d6+2</attack>
     </action>
     <description>Source:	Essentials Kit p. 63</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Spellcaster</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -68,21 +70,16 @@
     <skill>Arcana +4, Investigation +4, Religion +4</skill>
     <passive>12</passive>
     <languages>Common, plus one of your choice</languages>
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magical Role</name>
       <text>Choose a role for the spellcaster: healer or mage. Your choice determines which Spellcasting trait to use below.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands.</text>
-      <attack>Quarterstaff|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting (Healer)</name>
       <text>The spellcaster's spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The spellcaster has following cleric spells prepared:
@@ -90,7 +87,6 @@
 	• Cantrips (at will): guidance, sacred flame
 	• 1st level (2 slots): cure wounds</text>
     </trait>
-    <slots>0, 2</slots>
     <trait>
       <name>Spellcasting (Mage)</name>
       <text>The spellcaster's spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). The spellcaster has following wizard spells prepared:
@@ -98,13 +94,19 @@
 	• Cantrips (at will): fire bolt, light
 	• 1st level (2 slots): sleep</text>
     </trait>
-    <slots>0, 2</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands.</text>
+      <attack>Quarterstaff|+2|1d6</attack>
+    </action>
+    <slots>0,2</slots>
     <spells>guidance, sacred flame, cure wounds, fire bolt, light, sleep</spells>
     <description>Source:	Essentials Kit p. 63</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Warrior</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid</type>
     <alignment>Any alignment</alignment>
@@ -121,12 +123,12 @@
     <skill>Athletics +4, Perception +3, Survival +3</skill>
     <passive>13</passive>
     <languages>Common, plus one of your choice</languages>
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Martial Role</name>
       <text>The warrior has one of the following traits of your choice:
@@ -150,6 +152,6 @@
       <text>The warrior imposes disadvantage on the attack roll of a creature within 5 feet of it whose target isn't the warrior. The warrior must be able to see the attacker.</text>
     </reaction>
     <description>Source:	Essentials Kit p. 63</description>
-    <environment />
+    <environment/>
   </monster>
 </compendium>

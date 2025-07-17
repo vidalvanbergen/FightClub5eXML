@@ -1,7 +1,8 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Ahmaergo</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Lawful Evil</alignment>
@@ -19,10 +20,10 @@
     <passive>16</passive>
     <languages>Common, Dwarvish, Undercommon</languages>
     <cr>9</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
@@ -61,10 +62,12 @@
 After the beholder, Ahmaergo is the most influential member of the Xanathar Guild.
 
 Source:	Waterdeep: Dragon Heist p. 193</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ammalia Cassalanter</name>
+    <sortname>Cassalanter, Ammalia</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Evil</alignment>
@@ -82,16 +85,11 @@ Source:	Waterdeep: Dragon Heist p. 193</description>
     <passive>11</passive>
     <languages>Common, Draconic, Elvish, Infernal</languages>
     <cr>5</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
-    <senses />
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands.</text>
-      <attack>Quarterstaff|+2|1d6-1</attack>
-    </action>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Ammalia is a 9th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). She has the following wizard spells prepared:
@@ -103,7 +101,12 @@ Source:	Waterdeep: Dragon Heist p. 193</description>
 	• 4th level (3 slots): confusion, stoneskin
 	• 5th level (1 slots): hold monster</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage, or 3 (1d8 - 1) bludgeoning damage if used with two hands.</text>
+      <attack>Quarterstaff|+2|1d6-1</attack>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>friends, mage hand, mending, message, charm person, mage armor, magic missile, hold person, invisibility, suggestion, fireball, haste, tongues, confusion, stoneskin, hold monster</spells>
     <description>The vainglorious lady of House Cassalanter is schooled in the arcane arts. Like her husband Victoro, she worships Asmodeus. When they were young, Ammalia and Victoro signed a contract with the archdevil, trading the souls of their children for power, good health, and long life. The soul of Osvaldo, their eldest son, was taken immediately, and he was transformed into a chain devil. The souls of the younger twins, Terenzio and Elzerina, will be taken when they turn nine years old.
 
@@ -112,7 +115,7 @@ A provision in the contract allows the Cassalanters to buy their way out of it, 
 Ammalia is well mannered, well read, well traveled, and exceptionally shrewd. She is known for driving a hard bargain. Her hobby is lepidopterology, and her estate has the most beautiful butterfly garden. She allows her youngest children to play in the garden under her supervision.
 
 Source:	Waterdeep: Dragon Heist p. 193</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Aurinax</name>
@@ -133,10 +136,10 @@ Source:	Waterdeep: Dragon Heist p. 193</description>
     <passive>24</passive>
     <languages>Common, Draconic</languages>
     <cr>17</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>fire</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>blindsight 60 ft., darkvision 120 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -202,7 +205,7 @@ In a new form, Aurinax retains its alignment, hit points, Hit Dice, ability to s
       <name>Wing Attack (Costs 2 Actions)</name>
       <text>Aurinax beats its wings. Each creature within 10 feet of Aurinax must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. Aurinax can then fly up to half its flying speed.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:
 
@@ -210,7 +213,7 @@ In a new form, Aurinax retains its alignment, hit points, Hit Dice, ability to s
 
 	• One creature the dragon can see within 120 feet of it must succeed on a DC 15 Charisma saving throw or be banished to a dream plane, a different plane of existence the dragon has imagined into being. To escape, the creature must use its action to make a Charisma check contested by the dragon's. If the creature wins, it escapes the dream plane. Otherwise, the effect ends on initiative count 20 on the next round. When the effect ends, the creature reappears in the space it left or in the nearest unoccupied space if that one is occupied.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>The region containing a legendary gold dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:
 
@@ -227,6 +230,7 @@ If the dragon dies, these effects end immediately.</text>
   </monster>
   <monster>
     <name>Avi</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -239,16 +243,16 @@ If the dragon dies, these effects end immediately.</text>
     <int>13</int>
     <wis>16</wis>
     <cha>13</cha>
-    <save />
+    <save/>
     <skill>Medicine +7, Persuasion +3, Religion +5</skill>
     <passive>13</passive>
     <languages>any two languages</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Control Water</name>
       <text>At will, Avi can control the flow and shape of water in a 5-foot cube, or cause the water to freeze for up to 1 hour.</text>
@@ -257,11 +261,6 @@ If the dragon dies, these effects end immediately.</text>
       <name>Divine Eminence</name>
       <text>As a bonus action, Avi can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Avi expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
     </trait>
-    <action>
-      <name>Mace</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Mace|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Avi is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Avi has the following cleric spells prepared:
@@ -271,10 +270,15 @@ If the dragon dies, these effects end immediately.</text>
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Mace|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
     <description>Source:	Waterdeep: Dragon Heist p. 32</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Awakened Rat</name>
@@ -290,15 +294,15 @@ If the dragon dies, these effects end immediately.</text>
     <int>10</int>
     <wis>10</wis>
     <cha>4</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 30 ft.</senses>
     <trait>
       <name>Keen Smell</name>
@@ -309,10 +313,12 @@ If the dragon dies, these effects end immediately.</text>
       <text>Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</text>
     </action>
     <description>Source:	Waterdeep: Dragon Heist p. 102</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Barnibus Blastwind</name>
+    <sortname>Blastwind, Barnibus</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Good</alignment>
@@ -330,20 +336,15 @@ If the dragon dies, these effects end immediately.</text>
     <passive>14</passive>
     <languages>Common, Draconic, Dwarvish, Halfling</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Barnibus carries a wand of magic detection. (spell included in spell list below but does not use a slot when cast from the wand)</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
-      <attack>Dagger|+2|1d4</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Barnibus is a 7th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks) He has the following wizard spells prepared:
@@ -354,7 +355,12 @@ If the dragon dies, these effects end immediately.</text>
 	• 3rd level (3 slots): clairvoyance, sending
 	• 4th level (1 slots): locate creature, Otiluke's resilient sphere</text>
     </trait>
-    <slots>0, 4, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
+      <attack>Dagger|+2|1d4</attack>
+    </action>
+    <slots>0,4,3,3,1</slots>
     <spells>blade ward, light, mage hand, message, comprehend languages, identify, detect magic, mage armor, shield, detect thoughts, suggestion, clairvoyance, sending, locate creature, Otiluke's resilient sphere</spells>
     <description>Barnibus works for the Watchful Order of Magists and Protectors, investigating crimes that involve the use of magic. He comes across as prickly and secretive, confiding only in Saeth Cromley, a retired sergeant of the City Watch who assists in many of his investigations.
 
@@ -363,10 +369,12 @@ A lifelong bachelor, Barnibus has a small, tidy estate in the Sea Ward that he i
 Barnibus uses spells that help him investigate crimes, pry secrets from the minds of suspects, and locate missing persons. He finds violence appalling and would never use his magic to inflict harm on others-even those who harm him.
 
 Source:	Waterdeep: Dragon Heist p. 195</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Bepis Honeymaker</name>
+    <sortname>Honeymaker, Bepis</sortname>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (stronghearthalfling)</type>
     <alignment>Lawful Good</alignment>
@@ -379,16 +387,16 @@ Source:	Waterdeep: Dragon Heist p. 195</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common, Halfling</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Halfling Nimbleness</name>
       <text>Bepis can move through a space occupied by a creature of a size larger than him</text>
@@ -400,10 +408,13 @@ Source:	Waterdeep: Dragon Heist p. 195</description>
     <description>Bepis Honeymaker is a honey merchant who was kidnapped from his Trades Ward home a month ago. The Xanathar Guild tried to ransom him back, but seemingly his relatives either couldn't pay or decided not to. (In truth, his rotten in-laws destroyed the ransom notes and told Bepis's wife and children that he ran away with another family.) Ahmaergo has put him to work as a cook but threatens to give him over to the mind flayer Nihiloor every so often.
 
 Source:	Waterdeep: Dragon Heist p. 112</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Black Viper</name>
+    <sortname>Viper, Black</sortname>
+    <ancestry>Viper</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Chaotic Neutral</alignment>
@@ -417,15 +428,15 @@ Source:	Waterdeep: Dragon Heist p. 112</description>
     <wis>11</wis>
     <cha>12</cha>
     <save>Dex +7, Int +3</save>
-    <skill>Acrobatics +7, Athletics +3, Perception +3, Sleight of hand +7, Stealth +7</skill>
+    <skill>Acrobatics +7, Athletics +3, Perception +3, Sleight Of Hand +7, Stealth +7</skill>
     <passive>13</passive>
     <languages>Common, Thieves' cant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Action</name>
       <text>On each of her turns, the Black Viper can use a bonus action to take the Dash, Disengage, or Hide action.</text>
@@ -466,10 +477,12 @@ In her younger days, Esvele openly rebelled, but that behavior led to locked doo
 One of the things Esvele has learned is to embrace the legend of the Black Viper. When she throws back her cloak to reveal the costume she has put together, most folk toss their purses and flee. If that doesn't work, she usually needs only to draw her dagger. Of course, some of the nobles she targets are made of sterner stuff, so Esvele has learned how to fight as well. She knows she's playing a dangerous game, but is satisfied that at least one member of the Rosznar family is earning the respect of Waterdeep's nobility.
 
 Source:	Waterdeep: Dragon Heist p. 196</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Blinded Troll</name>
+    <sortname>Troll, Blinded</sortname>
+    <ancestry>Troll</ancestry>
     <size>L</size>
     <type>giant</type>
     <alignment>Chaotic Evil</alignment>
@@ -482,15 +495,15 @@ Source:	Waterdeep: Dragon Heist p. 196</description>
     <int>7</int>
     <wis>9</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Giant</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Blinded</name>
@@ -522,13 +535,12 @@ Source:	Waterdeep: Dragon Heist p. 196</description>
       <name>Variant: Loathsome Limbs</name>
       <text>Whenever the troll takes at least 15 slashing damage at one time, roll a d20 to determine what else happens to it:
 
-	• 1–10: Nothing else happens.
-
-	• 11–14: One leg is severed from the troll if it has any legs left.
-
-	• 15–18: One arm is severed from the troll if it has any arms left.
-
-	• 19–20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.
+Loathsome Limbs:
+d20 | Effect
+1-10: Nothing else happens.
+11-14: One leg is severed from the troll if it has any legs left.
+15-18: One arm is severed from the troll if it has any arms left.
+19-20: The troll is decapitated, but the troll dies only if it can't regenerate. If it dies, so does the severed head.
 
 If the troll finishes a short or long rest without reattaching a severed limb or head, the part regrows. At that point, the severed part dies. Until then, a severed part acts on the troll's initiative and has its own action and movement. A severed part has AC 13, 10 hit points, and the troll's Regeneration trait.
 
@@ -545,6 +557,7 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
   </monster>
   <monster>
     <name>Bonnie</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>monstrosity (shapechanger)</type>
     <alignment>Neutral</alignment>
@@ -557,14 +570,14 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <int>11</int>
     <wis>12</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Deception +6, Insight +3</skill>
     <passive>11</passive>
     <languages>Common</languages>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>charmed</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -597,6 +610,8 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
   </monster>
   <monster>
     <name>Davil Starsong</name>
+    <sortname>Starsong, Davil</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Neutral</alignment>
@@ -614,21 +629,15 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
     <passive>14</passive>
     <languages>Common, Draconic, Dwarvish, Elvish</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>Davil has advantage on saving throws against being charmed, and magic can't put him to sleep.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Davil is a 12th-level spellcaster. His spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks) He has the following bard spells prepared:
@@ -641,7 +650,13 @@ The troll's speed is halved if it's missing a leg. If it loses both legs, it fal
 	• 5th level (2 slots): dominate person, greater restoration
 	• 6th level (1 slots): Otto's irresistible dance</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>mage hand, mending, minor illusion, vicious mockery, cure wounds, disguise self, sleep, crown of madness, invisibility, suggestion, nondetection, sending, tongues, compulsion, freedom of movement, polymorph, dominate person, greater restoration, Otto's irresistible dance</spells>
     <description>Within the Waterdeep division of the Black Network, Davil is accorded the title of Master of Opportunities and Negotiations because he's good at sniffing out lucrative business deals, and he makes friends easily.
 
@@ -653,7 +668,7 @@ The Doom Raiders:
 The Doom Raiders were five unscrupulous adventurers who liked to plunder lich lairs (called "dooms" by some). They gave up adventuring to join the Black Network and came to Waterdeep three years ago with plans to establish a Zhentarim foothold in the city. In that time, they have forged alliances with various nobles and guilds and run afoul of others, all the while fending off Harper spies.
 
 Source:	Waterdeep: Dragon Heist p. 199</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Diatryma</name>
@@ -669,16 +684,16 @@ Source:	Waterdeep: Dragon Heist p. 199</description>
     <int>2</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Beak</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.</text>
@@ -689,6 +704,8 @@ Source:	Waterdeep: Dragon Heist p. 199</description>
   </monster>
   <monster>
     <name>Dining Table Mimic</name>
+    <sortname>Mimic, Table Dining</sortname>
+    <ancestry>Mimic</ancestry>
     <size>L</size>
     <type>monstrosity (shapechanger)</type>
     <alignment>Neutral</alignment>
@@ -701,14 +718,14 @@ Source:	Waterdeep: Dragon Heist p. 199</description>
     <int>5</int>
     <wis>13</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Stealth +5</skill>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>acid</immune>
-    <vulnerable />
     <conditionImmune>prone</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -742,10 +759,13 @@ Source:	Waterdeep: Dragon Heist p. 199</description>
       <attack>Bite|+5|1d8+3</attack>
     </action>
     <description>Source:	Waterdeep: Dragon Heist p. 122</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Drow Gunslinger</name>
+    <sortname>Drow, Gunslinger</sortname>
+    <ancestry>Drow</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -763,10 +783,10 @@ Source:	Waterdeep: Dragon Heist p. 199</description>
     <passive>13</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -779,6 +799,13 @@ Source:	Waterdeep: Dragon Heist p. 199</description>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The drow's spellcasting ability is Charisma (spell save DC 12) It can innately cast the following spells, requiring no material components:
+
+	• At will: dancing lights
+	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -794,21 +821,15 @@ Source:	Waterdeep: Dragon Heist p. 199</description>
       <text>Ranged Weapon Attack: +6 to hit, range 30/90 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 11 (2d10) poison damage.</text>
       <attack>Poisonous Pistol|+6|1d10+4</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The drow's spellcasting ability is Charisma (spell save DC 12) It can innately cast the following spells, requiring no material components:
-
-	• At will: dancing lights
-	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
-    </trait>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Firearms aren't widely available in the North, but some members of Bregan D'aerthe are equipped with Lantanese pistols, bullets, and packets of smokepowder. These drow gunslingers are expert pistoleers, as skilled with their guns as the best archers are with their bows.
 
 Source:	Waterdeep: Dragon Heist p. 201</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Durnan</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral</alignment>
@@ -826,11 +847,11 @@ Source:	Waterdeep: Dragon Heist p. 201</description>
     <passive>15</passive>
     <languages>Common, Dwarvish</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Durnan wields a Greatsword of Sharpness called Grimvault. He wears boots of striding and springing, elven chain, and a ring of spell turning.</text>
@@ -869,10 +890,12 @@ He keeps Grimvault, his magic greatsword, within reach under the bar, and can ch
 Durnan doesn't often venture far from the Yawning Portal, using his employees to run errands for him as needed. If he's feeling charitable, he might gently discourage likable "nobodies" from venturing into Undermountain, if he thinks they wouldn't survive. He can also direct adventurers toward tavern regulars who might be able to help them or offer useful information.
 
 Source:	Waterdeep: Dragon Heist p. 203</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Elzerina Cassalanter</name>
+    <sortname>Cassalanter, Elzerina</sortname>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (human)</type>
     <alignment>Neutral</alignment>
@@ -885,25 +908,26 @@ Source:	Waterdeep: Dragon Heist p. 203</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Hit Points</name>
       <text>1</text>
     </trait>
     <description>Source:	Waterdeep: Dragon Heist p. 115</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Embric</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any Non-Lawful Alignment</alignment>
@@ -921,11 +945,11 @@ Source:	Waterdeep: Dragon Heist p. 203</description>
     <passive>10</passive>
     <languages>any two languages</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>Embric makes three melee attacks: two with its scimitar and one with its dagger. Or Embric makes two ranged attacks with its daggers.</text>
@@ -945,10 +969,12 @@ Source:	Waterdeep: Dragon Heist p. 203</description>
       <text>Embric adds 2 to its AC against one melee attack that would hit it. To do so, Embric must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Waterdeep: Dragon Heist p. 32</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Emmek Frewn</name>
+    <sortname>Frewn, Emmek</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -961,16 +987,16 @@ Source:	Waterdeep: Dragon Heist p. 203</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Club</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
@@ -981,6 +1007,8 @@ Source:	Waterdeep: Dragon Heist p. 203</description>
   </monster>
   <monster>
     <name>Engineer</name>
+    <ancestry>Engineer</ancestry>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (rockgnome)</type>
     <alignment>Neutral Good</alignment>
@@ -993,26 +1021,20 @@ Source:	Waterdeep: Dragon Heist p. 203</description>
     <int>14</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Arcana +4, History +4</skill>
     <passive>10</passive>
     <languages>Common, Gnomish</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Gnome Cunning</name>
       <text>The gnome has advantage on all Intelligence, Wisdom and Charisma saving throws against magic.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage. Or Ranged Weapon Attack: +2 to hit, range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
-      <attack>Dagger|+2|1d4</attack>
-      <attack>Dagger|+2|1d4</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The gnome is a 1st-level spellcaster. Its spellcasting ability is Intelligence. It has the following wizard spells prepared:
@@ -1020,15 +1042,23 @@ Source:	Waterdeep: Dragon Heist p. 203</description>
 	• Cantrips (at will): fire bolt, mending, prestidigitation
 	• 1st level (2 slots): burning hands, disguise self, shield</text>
     </trait>
-    <slots>0, 2</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage. Or Ranged Weapon Attack: +2 to hit, range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
+      <attack>Dagger|+2|1d4</attack>
+      <attack>Dagger|+2|1d4</attack>
+    </action>
+    <slots>0,2</slots>
     <spells>fire bolt, mending, prestidigitation, burning hands, disguise self, shield</spells>
     <description>An engineer who maintains and operates the Scarlet Marpenoth, a submarine, currently attached below Jarlaxle's flagship the Eyecatcher
 
 Source:	Waterdeep: Dragon Heist p. 141</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Fala Lefaliir</name>
+    <sortname>Lefaliir, Fala</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (woodelf)</type>
     <alignment>Chaotic Good</alignment>
@@ -1041,27 +1071,20 @@ Source:	Waterdeep: Dragon Heist p. 141</description>
     <int>12</int>
     <wis>15</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Medicine +4, Nature +3, Perception +4</skill>
     <passive>14</passive>
     <languages>Druidic, Common, Elvish</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>Fala has advantage on saving throws against being charmed, and magic can't put them to sleep.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit or Melee Weapon Attack +4 to hit with shillelagh, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
-      <attack>Quarterstaff|+2|1d6</attack>
-      <attack>Two-Handed|+2|1d8+2</attack>
-      <attack>Shillelagh|+4|1d8+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Fala is a 4th-level spellcaster. Their spellcasting ability is Wisdom. They have the following druid spells prepared:
@@ -1070,15 +1093,23 @@ Source:	Waterdeep: Dragon Heist p. 141</description>
 	• 1st level (4 slots): entangle, longstrider, speak with animals, thunderwave
 	• 2nd level (3 slots): animal messenger, barkskin</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit or Melee Weapon Attack +4 to hit with shillelagh, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
+      <attack>Quarterstaff|+2|1d6</attack>
+      <attack>Two-Handed|+2|1d8+2</attack>
+      <attack>Shillelagh|+4|1d8+2</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>druidcraft, produce flame, shillelagh, entangle, longstrider, speak with animals, thunderwave, animal messenger, barkskin</spells>
     <description>Fala Lefaliir is an outgoing wood elf with long, braided hair. Like the elven god Corellon Larethian, Fala is neither male nor female. If referred to as "he" or "she," Fala gently requests to be addressed by name or as "they." Fala is friends with a member of the Zhentarim named Ziraj, who saved Fala's life. He visits Fala from time to time, and Fala has set aside a room for him on the second floor. Fala runs Correllon's Crown, a herbalist shop in Trollskull Alley
 
 Source:	Waterdeep: Dragon Heist p. 32</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Falcon</name>
+    <ancestry>Falcon</ancestry>
     <size>T</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -1091,16 +1122,16 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
     <int>2</int>
     <wis>14</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +4</skill>
     <passive>14</passive>
-    <languages />
+    <languages/>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Sight</name>
       <text>The falcon has advantage on Wisdom (Perception) checks that rely on sight.</text>
@@ -1110,10 +1141,12 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage.</text>
     </action>
     <description>Source:	Waterdeep: Dragon Heist p. 53</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Fel'rekt Lafeen</name>
+    <sortname>Lafeen, Fel'rekt</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -1131,10 +1164,10 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
     <passive>13</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -1147,6 +1180,13 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Fel'rekt has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Fel'rekt's spellcasting ability is Charisma (spell save DC 12) It can innately cast the following spells, requiring no material components:
+
+	• At will: dancing lights
+	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -1162,19 +1202,14 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
       <text>Ranged Weapon Attack: +6 to hit, range 30/90 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 11 (2d10) poison damage.</text>
       <attack>Poisonous Pistol|+6|1d10+4</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Fel'rekt's spellcasting ability is Charisma (spell save DC 12) It can innately cast the following spells, requiring no material components:
-
-	• At will: dancing lights
-	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
-    </trait>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Source:	Waterdeep: Dragon Heist p. 67</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Floon Blagmaar</name>
+    <sortname>Blagmaar, Floon</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1187,16 +1222,16 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Club</name>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
@@ -1207,6 +1242,8 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
   </monster>
   <monster>
     <name>Flying Staff</name>
+    <sortname>Animated Object, Flying Staff</sortname>
+    <ancestry>Animated Object</ancestry>
     <size>S</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -1220,13 +1257,13 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
     <wis>5</wis>
     <cha>1</cha>
     <save>Dex +4</save>
-    <skill />
+    <skill/>
     <passive>7</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -1243,10 +1280,13 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
       <attack>Knife|+3|1d6+1</attack>
     </action>
     <description>Source:	Waterdeep: Dragon Heist p. 152</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Griffon Cavalry Rider</name>
+    <sortname>Cavalry Rider, Griffon</sortname>
+    <ancestry>Cavalry Rider</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1259,16 +1299,16 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
     <int>10</int>
     <wis>12</wis>
     <cha>10</cha>
-    <save />
-    <skill>Animal handling +3, Athletics +4, Perception +3</skill>
+    <save/>
+    <skill>Animal Handling +3, Athletics +4, Perception +3</skill>
     <passive>13</passive>
     <languages>any one language (usually Common)</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Lance</name>
       <text>Melee Weapon Attack: +4 to hit (with disadvantage against a target within 5 ft.), reach 10 ft., one target. Hit: 8 (1d12 + 2) piercing damage, or 11 (1d12 + 5) piercing damage while mounted.</text>
@@ -1296,10 +1336,12 @@ The current Warden of Waterdeep is Elminster, who answers to the Open Lord, Laer
 The Griffon Cavalry is a special branch of the City Guard whose members are veteran soldiers trained to fly griffon mounts.
 
 Source:	Waterdeep: Dragon Heist p. 197</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Grinda Garloth</name>
+    <sortname>Garloth, Grinda</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1317,20 +1359,11 @@ Source:	Waterdeep: Dragon Heist p. 197</description>
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Grinda is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Grinda has the following wizard spells prepared:
@@ -1342,13 +1375,23 @@ Source:	Waterdeep: Dragon Heist p. 197</description>
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Source:	Waterdeep: Dragon Heist p. 65</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Grum'shar</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-orc)</type>
     <alignment>Chaotic Evil</alignment>
@@ -1361,26 +1404,20 @@ Source:	Waterdeep: Dragon Heist p. 197</description>
     <int>14</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Arcana +4, History +4</skill>
     <passive>10</passive>
     <languages>Common, Orc</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Relentless Endurance</name>
       <text>When reduced to 0 hit points, Grum'shar drops to 1 hit point instead. He can only do this once per long rest.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage. Or Ranged Weapon Attack: +2 to hit, range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
-      <attack>Dagger|+2|1d4</attack>
-      <attack>Dagger|+2|1d4</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Grum'shar is a 1st-level spellcaster. His spellcasting ability is Intelligence. He has the following wizard spells prepared:
@@ -1388,15 +1425,23 @@ Source:	Waterdeep: Dragon Heist p. 197</description>
 	• Cantrips (at will): fire bolt, mending, prestidigitation
 	• 1st level (2 slots): burning hands, disguise self, shield</text>
     </trait>
-    <slots>0, 2</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage. Or Ranged Weapon Attack: +2 to hit, range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
+      <attack>Dagger|+2|1d4</attack>
+      <attack>Dagger|+2|1d4</attack>
+    </action>
+    <slots>0,2</slots>
     <spells>fire bolt, mending, prestidigitation, burning hands, disguise self, shield</spells>
     <description>Apprentice wizards are novice arcane spellcasters who serve more experienced wizards or attend school. They perform menial work, such as cooking and cleaning, in exchange for education in the ways of magic.
 
 Source:	Waterdeep: Dragon Heist p. 29</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Hester Barch</name>
+    <sortname>Barch, Hester</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1409,21 +1454,16 @@ Source:	Waterdeep: Dragon Heist p. 29</description>
     <int>10</int>
     <wis>14</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Medicine +4, Religion +2</skill>
     <passive>12</passive>
     <languages>any one language (usually Common)</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Club</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
-      <attack>Club|+2|1d4</attack>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Hester is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). Hester has following cleric spells prepared:
@@ -1431,13 +1471,19 @@ Source:	Waterdeep: Dragon Heist p. 29</description>
 	• Cantrips (at will): light, sacred flame, thaumaturgy
 	• 1st level (3 slots): bless, cure wounds, sanctuary</text>
     </trait>
+    <action>
+      <name>Club</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.</text>
+      <attack>Club|+2|1d4</attack>
+    </action>
     <slots>3</slots>
     <spells>light, sacred flame, thaumaturgy, bless, cure wounds, sanctuary</spells>
     <description>Source:	Waterdeep: Dragon Heist p. 83</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Hlam</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Good</alignment>
@@ -1455,11 +1501,11 @@ Source:	Waterdeep: Dragon Heist p. 29</description>
     <passive>15</passive>
     <languages>all spoken languages</languages>
     <cr>16</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, frightened, poisoned</conditionImmune>
-    <senses />
+    <senses/>
     <trait>
       <name>Evasion</name>
       <text>If Hlam is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's incapacitated.</text>
@@ -1471,6 +1517,15 @@ Source:	Waterdeep: Dragon Heist p. 29</description>
     <trait>
       <name>Unarmored Defense</name>
       <text>While Hlam is wearing no armor and wielding no shield, his AC includes his Wisdom modifier.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Hlam is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks) He has the following cleric spells prepared:
+
+	• Cantrips (at will): guidance, light, sacred flame, spare the dying
+	• 1st level (4 slots): detect evil and good, healing word, sanctuary, shield of faith
+	• 2nd level (3 slots): calm emotions, prayer of healing, silence
+	• 3rd level (2 slots): protection from energy, remove curse, sending</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -1527,16 +1582,7 @@ The target must succeed on a DC 18 Constitution saving throw or be stunned until
       <name>Invisibility (Costs 3 Actions)</name>
       <text>Hlam becomes invisible until the end of his next turn. The effect ends if Hlam attacks or casts a spell.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Hlam is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks) He has the following cleric spells prepared:
-
-	• Cantrips (at will): guidance, light, sacred flame, spare the dying
-	• 1st level (4 slots): detect evil and good, healing word, sanctuary, shield of faith
-	• 2nd level (3 slots): calm emotions, prayer of healing, silence
-	• 3rd level (2 slots): protection from energy, remove curse, sending</text>
-    </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>guidance, light, sacred flame, spare the dying, detect evil and good, healing word, sanctuary, shield of faith, calm emotions, prayer of healing, silence, protection from energy, remove curse, sending</spells>
     <description>This venerable human monk lives in a cave halfway up the side of Mount Waterdeep. Hlam is the grand master of the Order of the Even-Handed, a small monastic group devoted to Tyr. Would-be students periodically visit him to learn the Way of the Sacred Fists, which combines cleric magic and monk training. They usually return to the city confused, bruised, and not inclined to visit again.
 
@@ -1545,10 +1591,11 @@ In times of great peril, Hlam can be called on to help. Sometimes he offers pear
 Hlam is immune to disease and doesn't require food or water. Although he ages, he suffers none of the frailty of old age.
 
 Source:	Waterdeep: Dragon Heist p. 204</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Hrabbaz</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-orc)</type>
     <alignment>Lawful Evil</alignment>
@@ -1566,10 +1613,10 @@ Source:	Waterdeep: Dragon Heist p. 204</description>
     <passive>15</passive>
     <languages>Common, Orc</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Indomitable (2/Day)</name>
@@ -1597,10 +1644,12 @@ Source:	Waterdeep: Dragon Heist p. 204</description>
     <description>Hrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of House Gralhund as a bodyguard. He is well mannered and dresses impeccably-a disarming appearance that belies a murderous heart. Though he has great respect for Lady Yalah Gralhund, he is less fond of her moody husband, and wouldn't be sad to see Orond knocked down a peg or two.
 
 Source:	Waterdeep: Dragon Heist p. 205</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Istrid Horn</name>
+    <sortname>Horn, Istrid</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Lawful Evil</alignment>
@@ -1618,14 +1667,25 @@ Source:	Waterdeep: Dragon Heist p. 205</description>
     <passive>13</passive>
     <languages>Common, Dwarvish</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
       <text>Istrid has advantage on saving throws against being poisoned.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Istrid is a 9th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks) She has the following cleric spells prepared:
+
+	• Cantrips (at will): light, mending, sacred flame, spare the dying
+	• 1st level (4 slots): divine favor, guiding bolt, healing word, shield of faith
+	• 2nd level (3 slots): lesser restoration, magic weapon, hold person, silence, spiritual weapon
+	• 3rd level (3 slots): beacon of hope, crusader's mantle, dispel magic, revivify, spirit guardians, water walk
+	• 4th level (3 slots): banishment, freedom of movement, guardian of faith, stoneskin
+	• 5th level (1 slots): flame strike, mass cure wounds, hold monster</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -1641,18 +1701,7 @@ Source:	Waterdeep: Dragon Heist p. 205</description>
       <recharge>3/DAY</recharge>
       <text>Istrid magically pinpoints precious metals and stones, such as coins and gems, within 60 feet of her.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Istrid is a 9th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks) She has the following cleric spells prepared:
-
-	• Cantrips (at will): light, mending, sacred flame, spare the dying
-	• 1st level (4 slots): divine favor, guiding bolt, healing word, shield of faith
-	• 2nd level (3 slots): lesser restoration, magic weapon, hold person, silence, spiritual weapon
-	• 3rd level (3 slots): beacon of hope, crusader's mantle, dispel magic, revivify, spirit guardians, water walk
-	• 4th level (3 slots): banishment, freedom of movement, guardian of faith, stoneskin
-	• 5th level (1 slots): flame strike, mass cure wounds, hold monster</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <slots>0,4,3,3,3,1</slots>
     <spells>light, mending, sacred flame, spare the dying, divine favor, guiding bolt, healing word, shield of faith, lesser restoration, magic weapon, hold person, silence, spiritual weapon, beacon of hope, crusader's mantle, dispel magic, revivify, spirit guardians, water walk, banishment, freedom of movement, guardian of faith, stoneskin, flame strike, mass cure wounds, hold monster</spells>
     <description>Istrid is regarded as the Black Network's Master of Trade and Coin in Waterdeep. The shield dwarf operates an illegal lending operation out of a heavily guarded warehouse in the Dock Ward, offering loans to those in need of coin. Her interest rates are comparable to those of her competitors (including noble families of bankers such as the Cassalanters and the Irlingstars), but the penalties for not paying back Istrid's loans are severe.
 
@@ -1662,10 +1711,12 @@ The Doom Raiders:
 The Doom Raiders were five unscrupulous adventurers who liked to plunder lich lairs (called "dooms" by some). They gave up adventuring to join the Black Network and came to Waterdeep three years ago with plans to establish a Zhentarim foothold in the city. In that time, they have forged alliances with various nobles and guilds and run afoul of others, all the while fending off Harper spies.
 
 Source:	Waterdeep: Dragon Heist p. 199</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Jalester Silvermane</name>
+    <sortname>Silvermane, Jalester</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Good</alignment>
@@ -1683,11 +1734,11 @@ Source:	Waterdeep: Dragon Heist p. 199</description>
     <passive>12</passive>
     <languages>Common, Elvish</languages>
     <cr>4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Jalester carries a badge of the Watch.</text>
@@ -1724,10 +1775,12 @@ Treasure:
 Jalester carries a badge of the Watch (+2 bonus to AC if not using a shield). If the badge is lost or taken from him, it returns to Laeral Silverhand.
 
 Source:	Waterdeep: Dragon Heist p. 205</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Jandar Chergoba</name>
+    <sortname>Chergoba, Jandar</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tiefling)</type>
     <alignment>Lawful Evil</alignment>
@@ -1740,30 +1793,20 @@ Source:	Waterdeep: Dragon Heist p. 205</description>
     <int>10</int>
     <wis>13</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Deception +4, Persuasion +4, Religion +2</skill>
     <passive>11</passive>
     <languages>Common, Infernal</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dark Devotion</name>
       <text>Jandar has advantage on saving throws against being charmed or frightened.</text>
     </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>Jandar makes two melee attacks.</text>
-    </action>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+4|1d4+2</attack>
-      <attack>Dagger|+4|1d4+2</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Jandar's spellcasting ability is Charisma. He can innately cast the following spells, requiring no material components:
@@ -1778,15 +1821,27 @@ Source:	Waterdeep: Dragon Heist p. 205</description>
 	• 1st level (4 slots): command, inflict wounds, shield of faith
 	• 2nd level (3 slots): hold person, spiritual weapon</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Multiattack</name>
+      <text>Jandar makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+4|1d4+2</attack>
+      <attack>Dagger|+4|1d4+2</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>thaumaturgy, light, sacred flame, thaumaturgy, command, inflict wounds, shield of faith, hold person, spiritual weapon</spells>
     <description>As the head chef of Cassalanter Villa, Jandar determines each day's menu and oversees all activity in the kitchen.
 
 Source:	Waterdeep: Dragon Heist p. 116</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Jarlaxle Baenre</name>
+    <sortname>Baenre, Jarlaxle</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Chaotic Neutral</alignment>
@@ -1800,14 +1855,14 @@ Source:	Waterdeep: Dragon Heist p. 116</description>
     <wis>16</wis>
     <cha>19</cha>
     <save>Dex +11, Wis +8</save>
-    <skill>Acrobatics +11, Athletics +6, Deception +14, Perception +8, Sleight of hand +11, Stealth +16</skill>
+    <skill>Acrobatics +11, Athletics +6, Deception +14, Perception +8, Sleight Of Hand +11, Stealth +16</skill>
     <passive>18</passive>
     <languages>Abyssal, Common, Draconic, Dwarvish, Elvish, Undercommon</languages>
     <cr>15</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Special Equipment</name>
@@ -1843,6 +1898,13 @@ Source:	Waterdeep: Dragon Heist p. 116</description>
       <name>Sunlight Sensitivity</name>
       <text>When not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
     </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Jarlaxle's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks) He can innately cast the following spells, requiring no material components:
+
+	• At will: dancing lights
+	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>Jarlaxle makes three attacks with his +3 rapier or two attacks with daggers created by his bracer of flying daggers.</text>
@@ -1870,13 +1932,6 @@ Source:	Waterdeep: Dragon Heist p. 116</description>
       <name>Attack (Costs 2 Actions)</name>
       <text>Jarlaxle makes one attack with his +3 rapier or two attacks with daggers created by his bracer of flying daggers.</text>
     </legendary>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Jarlaxle's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks) He can innately cast the following spells, requiring no material components:
-
-	• At will: dancing lights
-	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
-    </trait>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Jarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade drow faction called Bregan D'aerthe, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant skill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.
 
@@ -1889,10 +1944,11 @@ Jarlaxle has forged an alliance with Lantan (an island to the south), and has ar
 Jarlaxle's loyalties are to himself first and foremost, and to Bregan D'aerthe secondarily.
 
 Source:	Waterdeep: Dragon Heist p. 206</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Jenks</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (human)</type>
     <alignment>Neutral</alignment>
@@ -1905,25 +1961,27 @@ Source:	Waterdeep: Dragon Heist p. 206</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <languages/>
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Hit Points</name>
       <text>1</text>
     </trait>
     <description>Source:	Waterdeep: Dragon Heist p. 63</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Kaevja Cynavern</name>
+    <sortname>Cynavern, Kaevja</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (mulanhuman)</type>
     <alignment>Lawful Evil</alignment>
@@ -1941,21 +1999,15 @@ Source:	Waterdeep: Dragon Heist p. 206</description>
     <passive>11</passive>
     <languages>Common, Draconic, Dwarvish, Elvish</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Kaevja carries a yellow elemental gem. As an action she can break the gem releasing an earth elemental under her command.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Kaevja is a 9th-level spellcaster. Her spellcasting ability is Intelligence. Kaevja has the following wizard spells prepared:
@@ -1967,15 +2019,22 @@ Source:	Waterdeep: Dragon Heist p. 206</description>
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, sending, greater invisibility, ice storm, cone of cold</spells>
     <description>Previously a Red Wizard of Thay, this mage now studies magic under Manshoon.
 
 Source:	Waterdeep: Dragon Heist p. 158</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Kalain</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-elf)</type>
     <alignment>Chaotic Evil</alignment>
@@ -1993,10 +2052,10 @@ Source:	Waterdeep: Dragon Heist p. 158</description>
     <passive>15</passive>
     <languages>Common, Elvish</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -2012,6 +2071,14 @@ Source:	Waterdeep: Dragon Heist p. 158</description>
       <recharge>2/DAY</recharge>
       <text>Kalain can use a bonus action on her turn to target one creature within 30 feet of it. If the target can hear Kalain, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of Kalain's next turn.</text>
     </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Kalain is a 4th-level spellcaster. Her spellcasting ability is Charisma. She has the following bard spells prepared:
+
+	• Cantrips (at will): friends, mage hand, vicious mockery
+	• 1st level (4 slots): charm person, healing word, heroism, sleep, thunderwave
+	• 2nd level (3 slots): invisibility, shatter</text>
+    </trait>
     <action>
       <name>Shortsword</name>
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
@@ -2022,23 +2089,17 @@ Source:	Waterdeep: Dragon Heist p. 158</description>
       <text>Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
       <attack>Shortbow|+4|1d6+2</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Kalain is a 4th-level spellcaster. Her spellcasting ability is Charisma. She has the following bard spells prepared:
-
-	• Cantrips (at will): friends, mage hand, vicious mockery
-	• 1st level (4 slots): charm person, healing word, heroism, sleep, thunderwave
-	• 2nd level (3 slots): invisibility, shatter</text>
-    </trait>
-    <slots>0, 4, 3</slots>
+    <slots>0,4,3</slots>
     <spells>friends, mage hand, vicious mockery, charm person, healing word, heroism, sleep, thunderwave, invisibility, shatter</spells>
     <description>Kalain, was once a famous Waterdavian painter, but now Kalain's spirit is broken, leading to the onset of madness. She locks herself away, content to let time erode the last of her conscience.
 
 Source:	Waterdeep: Dragon Heist p. 89</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Krebbyg Masq'il'yr</name>
+    <sortname>Masq'il'yr, Krebbyg</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Any alignment</alignment>
@@ -2056,10 +2117,10 @@ Source:	Waterdeep: Dragon Heist p. 89</description>
     <passive>13</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -2072,6 +2133,13 @@ Source:	Waterdeep: Dragon Heist p. 89</description>
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Krebbyg has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Krebbyg's spellcasting ability is Charisma (spell save DC 12) It can innately cast the following spells, requiring no material components:
+
+	• At will: dancing lights
+	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2087,19 +2155,13 @@ Source:	Waterdeep: Dragon Heist p. 89</description>
       <text>Ranged Weapon Attack: +6 to hit, range 30/90 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 11 (2d10) poison damage.</text>
       <attack>Poisonous Pistol|+6|1d10+4</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Krebbyg's spellcasting ability is Charisma (spell save DC 12) It can innately cast the following spells, requiring no material components:
-
-	• At will: dancing lights
-	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
-    </trait>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Source:	Waterdeep: Dragon Heist p. 67</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Lady Gondafrey</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>elemental</type>
     <alignment>Lawful Good</alignment>
@@ -2112,14 +2174,14 @@ Source:	Waterdeep: Dragon Heist p. 89</description>
     <int>10</int>
     <wis>11</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -2143,10 +2205,12 @@ Source:	Waterdeep: Dragon Heist p. 89</description>
     <description>Lafy Gondafrey is the result of a magical experiment, a gargoyle that has been imbued with the personality of a human knight of Tyr (god of justice). Manshoon is amused by the creature so keeps it alive and locked in a cell.
 
 Source:	Waterdeep: Dragon Heist p. 152</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Laeral Silverhand</name>
+    <sortname>Silverhand, Laeral</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Chaotic Good</alignment>
@@ -2164,9 +2228,9 @@ Source:	Waterdeep: Dragon Heist p. 152</description>
     <passive>21</passive>
     <languages>Common, Draconic, Dwarvish, Elvish, Giant, Infernal</languages>
     <cr>17</cr>
+    <vulnerable/>
     <resist>fire</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>truesight 60 ft.</senses>
     <trait>
@@ -2176,6 +2240,21 @@ Source:	Waterdeep: Dragon Heist p. 152</description>
     <trait>
       <name>Magic Resistance</name>
       <text>While wearing her robe of the archmagi, Laeral has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Laeral is a 19th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 21, +13 to hit with spell attacks). Laeral has the following wizard spells prepared:
+
+	• Cantrips (at will): light, mage hand, minor illusion, prestidigitation, ray of frost
+	• 1st level (at will): detect magic, disguise self, magic missile, shield
+	• 2nd level (at will): detect thoughts, invisibility, misty step
+	• 3rd level (3 slots): counterspell, fly, sending, tongues
+	• 4th level (3 slots): banishment, greater invisibility, Otiluke's resilient sphere
+	• 5th level (3 slots): cone of cold, geas, Rary's telepathic bond
+	• 6th level (2 slots): globe of invulnerability, mass suggestion
+	• 7th level (1 slots): prismatic spray, teleport
+	• 8th level (1 slots): feeblemind, power word stun
+	• 9th level (1 slots): time stop</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2215,22 +2294,7 @@ While the silver fire is present, she has the following additional action option
 	• Release a 60-foot line of silver fire that is 5 feet wide or a 30-foot cone of silver fire. Objects in the area that aren't being worn or carried take 26 (4d12) fire damage. Each creature in the area must succeed on a DC 21 Dexterity saving throw, taking 26 (4d12) fire damage on a failed save, or half as much damage on a successful one. After Laeral takes this action, roll a d6. On a roll of 1-3, the silver fire disappears.</text>
       <attack>Spellfire (Recharges after a Long Rest)||4d12</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Laeral is a 19th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 21, +13 to hit with spell attacks). Laeral has the following wizard spells prepared:
-
-	• Cantrips (at will): light, mage hand, minor illusion, prestidigitation, ray of frost
-	• 1st level (at will): detect magic, disguise self, magic missile, shield
-	• 2nd level (at will): detect thoughts, invisibility, misty step
-	• 3rd level (3 slots): counterspell, fly, sending, tongues
-	• 4th level (3 slots): banishment, greater invisibility, Otiluke's resilient sphere
-	• 5th level (3 slots): cone of cold, geas, Rary's telepathic bond
-	• 6th level (2 slots): globe of invulnerability, mass suggestion
-	• 7th level (1 slots): prismatic spray, teleport
-	• 8th level (1 slots): feeblemind, power word stun
-	• 9th level (1 slots): time stop</text>
-    </trait>
-    <slots>0, 0, 0, 3, 3, 3, 2, 1, 1, 1</slots>
+    <slots>0,0,0,3,3,3,2,1,1,1</slots>
     <spells>light, mage hand, minor illusion, prestidigitation, ray of frost, detect magic, disguise self, magic missile, shield, detect thoughts, invisibility, misty step, counterspell, fly, sending, tongues, banishment, greater invisibility, Otiluke's resilient sphere, cone of cold, geas, Rary's telepathic bond, globe of invulnerability, mass suggestion, prismatic spray, teleport, feeblemind, power word stun, time stop</spells>
     <description>Anamanué Laeral Silverhand was born in the Year of the Cowl (765 DR), the fifth of seven daughters of the goddess Mystra. Each of the Seven Sisters is a powerful and ageless beauty with a penchant for arcane magic.
 
@@ -2245,10 +2309,12 @@ Laeral's relationship with Vajra Safahr, the current Blackstaff, has its challen
 In times of great need, Laeral can command Vajra to unleash Force Grey. Until that order is given, Force Grey isn't allowed to conduct operations in Waterdeep, though Laeral's spies tell her that Vajra has secretly activated members of the elite order and sent them on a number of unauthorized missions. Laeral is reluctant to confront Vajra on the matter, and rationalizes her inaction by framing it as a test of Vajra's competence.
 
 Source:	Waterdeep: Dragon Heist p. 207</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Laiba "Nana" Rosse</name>
+    <sortname>Rosse, Laiba "Nana"</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tiefling)</type>
     <alignment>Lawful Evil</alignment>
@@ -2261,30 +2327,20 @@ Source:	Waterdeep: Dragon Heist p. 207</description>
     <int>10</int>
     <wis>13</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Deception +4, Persuasion +4, Religion +2</skill>
     <passive>11</passive>
     <languages>Common, Infernal</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dark Devotion</name>
       <text>Laiba has advantage on saving throws against being charmed or frightened.</text>
     </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>Laiba makes two melee attacks.</text>
-    </action>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+4|1d4+2</attack>
-      <attack>Dagger|+4|1d4+2</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Laiba's spellcasting ability is Charisma. She can innately cast the following spells, requiring no material components:
@@ -2299,15 +2355,27 @@ Source:	Waterdeep: Dragon Heist p. 207</description>
 	• 1st level (4 slots): command, inflict wounds, shield of faith
 	• 2nd level (3 slots): hold person, spiritual weapon</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Multiattack</name>
+      <text>Laiba makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+4|1d4+2</attack>
+      <attack>Dagger|+4|1d4+2</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>thaumaturgy, light, sacred flame, thaumaturgy, command, inflict wounds, shield of faith, hold person, spiritual weapon</spells>
     <description>Laiba Rosse, better known as "Nana," is the caretaker and private tutor for Terenzio and Elzerina, and she does her best to keep track of their every move. Even so, the two often sneak away from her watchful eye. Nana dresses in flowing red robes. She relaxes in the twins' playroom (area C17) when she's not with the children.
 
 Source:	Waterdeep: Dragon Heist p. 116</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Losser Mirklav</name>
+    <sortname>Mirklav, Losser</sortname>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (lightfoothalfling)</type>
     <alignment>Chaotic Evil</alignment>
@@ -2325,11 +2393,11 @@ Source:	Waterdeep: Dragon Heist p. 116</description>
     <passive>11</passive>
     <languages>Common, Halfling</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Halfling Nimbleness</name>
       <text>Losser can move through the space of a creature that is a size bigger than him.</text>
@@ -2338,12 +2406,6 @@ Source:	Waterdeep: Dragon Heist p. 116</description>
       <name>Brave</name>
       <text>Losser has advantage on saving throws against being frightened.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence. The mage has the following wizard spells prepared:
@@ -2355,15 +2417,23 @@ Source:	Waterdeep: Dragon Heist p. 116</description>
 	• 4th level (3 slots): blight, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, animate dead, fireball, fly, blight, ice storm, cone of cold</spells>
     <description>A halfling necromancer who is in possession of the Stone of Golorr. He lives in a cellar complex under a powdered wig shop in the Trades Ward.
 
 Source:	Waterdeep: Dragon Heist p. 85</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Magister Umbero Zastro</name>
+    <sortname>Umbero, Zastro Magister</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-elf)</type>
     <alignment>Lawful Neutral</alignment>
@@ -2376,15 +2446,15 @@ Source:	Waterdeep: Dragon Heist p. 85</description>
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +4, Persuasion +5</skill>
     <passive>12</passive>
     <languages>Common, Elvish</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -2402,10 +2472,12 @@ Source:	Waterdeep: Dragon Heist p. 85</description>
     <description>A handsome, eloquent, and fair-minded half-elf in his thirties. He's known for his finely honed sense of poetic justice and for meting out unconventional punishments.
 
 Source:	Waterdeep: Dragon Heist p. 82</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Manafret Cherryport</name>
+    <sortname>Cherryport, Manafret</sortname>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (lightfoothalfling)</type>
     <alignment>Lawful Evil</alignment>
@@ -2423,11 +2495,11 @@ Source:	Waterdeep: Dragon Heist p. 82</description>
     <passive>11</passive>
     <languages>Common, Halfling</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Halfling Nimbleness</name>
       <text>Manafret can move through a space of a Medium or larger creature.</text>
@@ -2436,12 +2508,6 @@ Source:	Waterdeep: Dragon Heist p. 82</description>
       <name>Brave</name>
       <text>Manafret has advantage on saving throws against being frightened.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence. The mage has the following wizard spells prepared:
@@ -2453,15 +2519,22 @@ Source:	Waterdeep: Dragon Heist p. 82</description>
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>One of Manshoon's lieutenants
 
 Source:	Waterdeep: Dragon Heist p. 149</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Manshoon</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Evil</alignment>
@@ -2479,10 +2552,10 @@ Source:	Waterdeep: Dragon Heist p. 149</description>
     <passive>12</passive>
     <languages>Common, Draconic, Goblin, Infernal, Orc, Undercommon</languages>
     <cr>13</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Special Equipment</name>
@@ -2492,16 +2565,6 @@ Source:	Waterdeep: Dragon Heist p. 149</description>
       <name>Magic Resistance</name>
       <text>While wearing his robe of the archmagi, Manshoon has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Metal Fist</name>
-      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.</text>
-      <attack>Metal Fist|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Staff of Power</name>
-      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage when used with two hands. Manshoon can expend 1 of the staff's charges to deal an extra 3 (1d6) force damage on a hit.</text>
-      <attack>Staff of Power|+7|1d6+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Manshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 21, +15 to hit with spell attacks). He has the following wizard spells prepared:
@@ -2517,7 +2580,17 @@ Source:	Waterdeep: Dragon Heist p. 149</description>
 	• 8th level (1 slots): feeblemind, mind blank
 	• 9th level (1 slots): imprisonment, power word kill</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Metal Fist</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.</text>
+      <attack>Metal Fist|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Staff of Power</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage when used with two hands. Manshoon can expend 1 of the staff's charges to deal an extra 3 (1d6) force damage on a hit.</text>
+      <attack>Staff of Power|+7|1d6+2</attack>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, mage armor, magic missile, shield, detect thoughts, mirror image, misty step, counterspell, lightning bolt, sending, fire shield, greater invisibility, polymorph, Bigby's hand, scrying, wall of force, flesh to stone, globe of invulnerability, finger of death, simulacrum, feeblemind, mind blank, imprisonment, power word kill</spells>
     <description>Referred to in this adventure simply as "Manshoon," this clone of the ancient archwizard infiltrated Waterdeep years ago and has been hiding out in Kolat Towers ever since, in the city's Southern Ward.
 
@@ -2539,10 +2612,12 @@ Manshoon can have only one simulacrum at any given time, and he uses it as a sub
 	• It has a challenge rating of 8 (3,900 XP).
 
 Source:	Waterdeep: Dragon Heist p. 209</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Manshoon Simulacrum</name>
+    <sortname>Simulacrum, Manshoon</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Evil</alignment>
@@ -2560,16 +2635,11 @@ Source:	Waterdeep: Dragon Heist p. 209</description>
     <passive>12</passive>
     <languages>Common, Draconic, Goblin, Infernal, Orc, Undercommon</languages>
     <cr>8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
-    <action>
-      <name>Metal Fist</name>
-      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.</text>
-      <attack>Metal Fist|+6|1d4+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Manshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 21, +15 to hit with spell attacks). He has the following wizard spells prepared:
@@ -2581,7 +2651,12 @@ Source:	Waterdeep: Dragon Heist p. 209</description>
 	• 4th level (3 slots): fire shield, greater invisibility, polymorph
 	• 5th level (3 slots): Bigby's hand, scrying, wall of force</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3</slots>
+    <action>
+      <name>Metal Fist</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.</text>
+      <attack>Metal Fist|+6|1d4+2</attack>
+    </action>
+    <slots>0,4,3,3,3,3</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, mage armor, magic missile, shield, detect thoughts, mirror image, misty step, counterspell, lightning bolt, sending, fire shield, greater invisibility, polymorph, Bigby's hand, scrying, wall of force</spells>
     <description>Manshoon uses the simulacrum spell to create a magical duplicate of himself as needed. He has customized the spell to increase his simulacrum's hit points at the expense of its spellcasting ability.
 
@@ -2592,10 +2667,12 @@ Manshoon can have only one simulacrum at any given time, and he uses it as a sub
 	• It has a challenge rating of 8 (3,900 XP).
 
 Source:	Waterdeep: Dragon Heist p. 208</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Mattrim "Threestrings" Mereg</name>
+    <sortname>Mereg, Mattrim "Threestrings"</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -2613,11 +2690,11 @@ Source:	Waterdeep: Dragon Heist p. 208</description>
     <passive>15</passive>
     <languages>any two languages</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Song of Rest</name>
       <text>Mattrim can perform a song while taking a short rest. Any ally who hears the song regains an extra 1d6 hit points if it spends any Hit Dice to regain hit points at the end of that rest. Mattrim can confer this benefit on itself as well.</text>
@@ -2626,6 +2703,14 @@ Source:	Waterdeep: Dragon Heist p. 208</description>
       <name>Taunt (2/Day)</name>
       <recharge>2/DAY</recharge>
       <text>Mattrim can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear Mattrim, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of Mattrim's next turn.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Mattrim is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It has the following bard spells prepared:
+
+	• Cantrips (at will): friends, mage hand, vicious mockery
+	• 1st level (4 slots): charm person, healing word, heroism, sleep, thunderwave
+	• 2nd level (3 slots): invisibility, shatter</text>
     </trait>
     <action>
       <name>Shortsword</name>
@@ -2637,15 +2722,7 @@ Source:	Waterdeep: Dragon Heist p. 208</description>
       <text>Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
       <attack>Shortbow|+4|1d6+2</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Mattrim is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It has the following bard spells prepared:
-
-	• Cantrips (at will): friends, mage hand, vicious mockery
-	• 1st level (4 slots): charm person, healing word, heroism, sleep, thunderwave
-	• 2nd level (3 slots): invisibility, shatter</text>
-    </trait>
-    <slots>0, 4, 3</slots>
+    <slots>0,4,3</slots>
     <spells>friends, mage hand, vicious mockery, charm person, healing word, heroism, sleep, thunderwave, invisibility, shatter</spells>
     <description>Source:	Waterdeep: Dragon Heist p. 20</description>
     <environment>urban</environment>
@@ -2664,16 +2741,16 @@ Source:	Waterdeep: Dragon Heist p. 208</description>
     <int>10</int>
     <wis>11</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Hooves</name>
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.</text>
@@ -2682,10 +2759,12 @@ Source:	Waterdeep: Dragon Heist p. 208</description>
     <description>Maxeene is a talking horse.
 
 Source:	Waterdeep: Dragon Heist p. 37</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Mechanical Bird</name>
+    <sortname>Bird, Mechanical</sortname>
+    <ancestry>Bird</ancestry>
     <size>T</size>
     <type>construct</type>
     <alignment>Neutral</alignment>
@@ -2698,16 +2777,16 @@ Source:	Waterdeep: Dragon Heist p. 37</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
-    <cr />
-    <resist />
+    <languages/>
+    <cr/>
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
-    <senses />
+    <senses/>
     <trait>
       <name>Hit Points</name>
       <text>1</text>
@@ -2718,10 +2797,12 @@ Source:	Waterdeep: Dragon Heist p. 37</description>
       <attack>Slam|+0|1d3</attack>
     </action>
     <description>Source:	Waterdeep: Dragon Heist p. 46</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Melannor Fellbranch</name>
+    <sortname>Fellbranch, Melannor</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-elf)</type>
     <alignment>Chaotic Good</alignment>
@@ -2734,25 +2815,20 @@ Source:	Waterdeep: Dragon Heist p. 37</description>
     <int>12</int>
     <wis>15</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Medicine +4, Nature +3, Perception +4</skill>
     <passive>14</passive>
     <languages>Common, Elvish</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
       <text>Melannor has advantage on saving throws against being charmed, and magic can't put him to sleep.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit or Melee Weapon Attack +4 to hit with shillelagh, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
-      <attack>Quarterstaff|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Melannor is a 4th-level spellcaster. His spellcasting ability is Wisdom. He has the following druid spells prepared:
@@ -2761,15 +2837,22 @@ Source:	Waterdeep: Dragon Heist p. 37</description>
 	• 1st level (4 slots): entangle, longstrider, speak with animals, thunderwave
 	• 2nd level (3 slots): animal messenger, barkskin</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit or Melee Weapon Attack +4 to hit with shillelagh, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
+      <attack>Quarterstaff|+2|1d6</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>druidcraft, produce flame, shillelagh, entangle, longstrider, speak with animals, thunderwave, animal messenger, barkskin</spells>
     <description>Melannor Fellbranch, the friendly but humorless groundskeeper of Phaulkonmere, a compound located one block south of Kolat Towers, is the characters' main contact in the Emerald Enclave
 
 Source:	Waterdeep: Dragon Heist p. 36</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Meloon Wardragon</name>
+    <sortname>Wardragon, Meloon</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Evil</alignment>
@@ -2787,10 +2870,10 @@ Source:	Waterdeep: Dragon Heist p. 36</description>
     <passive>12</passive>
     <languages>Common, Deep Speech, telepathy 60 ft.</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Special Equipment</name>
@@ -2829,10 +2912,11 @@ If Meloon is killed and raised from the dead, his true self is restored and his 
 	• He can attune to Azuredge (see appendix A).
 
 Source:	Waterdeep: Dragon Heist p. 210</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Mirt</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Chaotic Good</alignment>
@@ -2850,11 +2934,11 @@ Source:	Waterdeep: Dragon Heist p. 210</description>
     <passive>15</passive>
     <languages>Common, Dwarvish</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Mirt wears bracers of defense and a ring of regeneration. He wields a +1 longsword and a +1 dagger.</text>
@@ -2901,10 +2985,12 @@ Mirt has access to magic items of all kinds, but keeps only a few on his person.
 In addition to his other magical gear, Mirt owns a Lord's ensemble (see appendix A). He dons the ensemble only when meeting with other Masked Lords in an official capacity.
 
 Source:	Waterdeep: Dragon Heist p. 211</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Nar'l Xibrindas</name>
+    <sortname>Xibrindas, Nar'l</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Lawful Evil</alignment>
@@ -2917,15 +3003,15 @@ Source:	Waterdeep: Dragon Heist p. 211</description>
     <int>17</int>
     <wis>13</wis>
     <cha>12</cha>
-    <save />
+    <save/>
     <skill>Arcana +6, Deception +5, Perception +4, Stealth +5</skill>
     <passive>14</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>7</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -2939,16 +3025,6 @@ Source:	Waterdeep: Dragon Heist p. 211</description>
       <name>Special Equipment</name>
       <text>Nar'l carries a vial containing three doses of eyescratch, a contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A lesser restoration spell or similar magic ends the effect.</text>
     </trait>
-    <action>
-      <name>Staff</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 + 1) bludgeoning damage + 3 (1d6) poison damage, or 3 (1d8 + 1) bludgeoning damage + 3 (1d6) poison damage if used with two hands.</text>
-      <attack>Staff|+2|1d6+1</attack>
-    </action>
-    <action>
-      <name>Summon Demon (1/Day)</name>
-      <recharge>1/DAY</recharge>
-      <text>Nar'l magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Nar'l's innate spellcasting ability is Charisma. He can innately cast the following spells, requiring no material components:
@@ -2967,17 +3043,28 @@ Source:	Waterdeep: Dragon Heist p. 211</description>
 	• 4th level (3 slots): Evard's black tentacles, greater invisibility
 	• 5th level (2 slots): cloudkill</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2</slots>
+    <action>
+      <name>Staff</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d6 + 1) bludgeoning damage + 3 (1d6) poison damage, or 3 (1d8 + 1) bludgeoning damage + 3 (1d6) poison damage if used with two hands.</text>
+      <attack>Staff|+2|1d6+1</attack>
+    </action>
+    <action>
+      <name>Summon Demon (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>Nar'l magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.</text>
+    </action>
+    <slots>0,4,3,3,3,2</slots>
     <spells>dancing lights, darkness, faerie fire, levitate, mage hand, minor illusion, poison spray, ray of frost, mage armor, magic missile, shield, witch bolt, alter self, misty step, web, sending, lightning bolt, Evard's black tentacles, greater invisibility, cloudkill</spells>
     <description>Xanathar's advisor is a nervous and conniving male drow named Nar'l Xibrindas. Nar'l's house was wiped out long ago, but he and his elder brother Soluun survived and joined Bregan D'aerthe. A year ago, Nar'l was given the difficult task of infiltrating the Xanathar Guild and getting as close to the beholder as possible. Not only did he succeed, but in the course of gaining Xanathar's trust, he managed to convince the beholder to eliminate its other advisors. The beholder's paranoia will eventually cause Xanathar to question the drow's loyalty, though, and Nar'l has become increasingly worried about his future. If forced to decide between himself and Bregan D'aerthe, he'll choose the former and betray his drow allies to save his own skin.
 
 Xanathar is aware that something is off with Nar'l, and recently assigned him a grell bodyguard. The grell has instructions to dispose of Nar'l at the first sign of disloyalty.
 
 Source:	Waterdeep: Dragon Heist p. 211</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Nat</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (human)</type>
     <alignment>Neutral</alignment>
@@ -2990,22 +3077,22 @@ Source:	Waterdeep: Dragon Heist p. 211</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <languages/>
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Hit Points</name>
       <text>1</text>
     </trait>
     <description>Source:	Waterdeep: Dragon Heist p. 63</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Nihiloor</name>
@@ -3026,14 +3113,21 @@ Source:	Waterdeep: Dragon Heist p. 211</description>
     <passive>16</passive>
     <languages>Deep Speech, Undercommon, telepathy 120 ft.</languages>
     <cr>7</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>Nihiloor has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting (Psionics)</name>
+      <text>Nihiloor's innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no components:
+
+	• At will: detect thoughts, levitate
+	• 1/Day each: dominate monster, plane shift (self only)</text>
     </trait>
     <action>
       <name>Tentacles</name>
@@ -3051,13 +3145,6 @@ Source:	Waterdeep: Dragon Heist p. 211</description>
       <text>Nihiloor magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
       <attack>Mind Blast||4d8+4</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting (Psionics)</name>
-      <text>Nihiloor's innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no components:
-
-	• At will: detect thoughts, levitate
-	• 1/Day each: dominate monster, plane shift (self only)</text>
-    </trait>
     <spells>detect thoughts, levitate, dominate monster, plane shift</spells>
     <description>Source:	Waterdeep: Dragon Heist p. 212</description>
     <environment>underdark</environment>
@@ -3081,9 +3168,9 @@ Source:	Waterdeep: Dragon Heist p. 211</description>
     <passive>12</passive>
     <languages>understands one language known to its creator but can't speak</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
-    <immune />
-    <vulnerable />
+    <immune/>
     <conditionImmune>exhaustion, frightened, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3130,10 +3217,12 @@ Constructed Nature:
 A nimblewright doesn't require air, food, drink, or sleep. Damage it takes can be repaired with mending spells, but a nimblewright reduced to 0 hit points is permanently destroyed.
 
 Source:	Waterdeep: Dragon Heist p. 212</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Noska Ur'gray</name>
+    <sortname>Ur'gray, Noska</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Lawful Evil</alignment>
@@ -3146,15 +3235,15 @@ Source:	Waterdeep: Dragon Heist p. 212</description>
     <int>10</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Intimidation +2</skill>
     <passive>10</passive>
     <languages>Common, Dwarvish</languages>
     <cr>1/2</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Pack Tactics</name>
@@ -3185,10 +3274,12 @@ Source:	Waterdeep: Dragon Heist p. 212</description>
     <description>Noska is a ruthless enforcer in the Xanathar Guild. A green slime in Undermountain dissolved his left hand and forearm, and the lost appendage has been replaced with a heavy crossbow that attaches to the stump.
 
 Source:	Waterdeep: Dragon Heist p. 213</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Obaya Uday</name>
+    <sortname>Uday, Obaya</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3201,25 +3292,20 @@ Source:	Waterdeep: Dragon Heist p. 213</description>
     <int>13</int>
     <wis>16</wis>
     <cha>13</cha>
-    <save />
+    <save/>
     <skill>Medicine +7, Persuasion +3, Religion +5</skill>
     <passive>13</passive>
     <languages>any two languages</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Divine Eminence</name>
       <text>As a bonus action, Obaya can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Obaya expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
     </trait>
-    <action>
-      <name>Mace</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Mace|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Obaya is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Obaya has the following cleric spells prepared:
@@ -3229,10 +3315,15 @@ Source:	Waterdeep: Dragon Heist p. 213</description>
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Mace|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
     <description>Source:	Waterdeep: Dragon Heist p. 20</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Obliteros</name>
@@ -3248,15 +3339,15 @@ Source:	Waterdeep: Dragon Heist p. 213</description>
     <int>10</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>13</passive>
     <languages>Aquan</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Blood Frenzy</name>
@@ -3274,10 +3365,12 @@ Source:	Waterdeep: Dragon Heist p. 213</description>
     <description>An awakened Giant Shark who inhabits the harbor around Mistshore.
 
 Source:	Waterdeep: Dragon Heist p. 66</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Orond Gralhund</name>
+    <sortname>Gralhund, Orond</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tethyrianhuman)</type>
     <alignment>Lawful Evil</alignment>
@@ -3290,16 +3383,16 @@ Source:	Waterdeep: Dragon Heist p. 66</description>
     <int>9</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +4, Persuasion +5</skill>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Rapier</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.</text>
@@ -3322,10 +3415,12 @@ Orond is a short, stocky man who dresses well and is easy on the eyes. When he o
 Orond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling's tail. The tail was amputated when he was a young boy, but the scar on his backside remains.
 
 Source:	Waterdeep: Dragon Heist p. 213</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Osvaldo Cassalanter</name>
+    <sortname>Cassalanter, Osvaldo</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>fiend (devil)</type>
     <alignment>Lawful Evil</alignment>
@@ -3339,13 +3434,13 @@ Source:	Waterdeep: Dragon Heist p. 213</description>
     <wis>12</wis>
     <cha>14</cha>
     <save>Con +7, Wis +4, Cha +5</save>
-    <skill />
+    <skill/>
     <passive>8</passive>
     <languages>Infernal, telepathy 120 ft.</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>cold; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>fire, poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -3377,10 +3472,12 @@ Each animated chain is an object with AC 20, 20 hit points, resistance to pierci
       <text>When a creature Osvaldo can see starts its turn within 30 feet of Osvaldo, Osvaldo can create the illusion that it looks like one of the creature's departed loved ones or bitter enemies. If the creature can see Osvaldo, it must succeed on a DC 14 Wisdom saving throw or be frightened until the end of its turn.</text>
     </reaction>
     <description>Source:	Waterdeep: Dragon Heist p. 124</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ott Steeltoes</name>
+    <sortname>Steeltoes, Ott</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Chaotic Evil</alignment>
@@ -3393,15 +3490,15 @@ Each animated chain is an object with AC 20, 20 hit points, resistance to pierci
     <int>6</int>
     <wis>11</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Deception +2, Religion +0</skill>
     <passive>10</passive>
     <languages>Common, Dwarvish</languages>
     <cr>1/8</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
@@ -3419,10 +3516,13 @@ Each animated chain is an object with AC 20, 20 hit points, resistance to pierci
     <description>The dwarf Ott Steeltoes has the nerve-wracking task of tending to Xanathar's pet fish, Sylgar. In his spare time, he worships Zuggtmoy, the demon queen of fungi, and cultivates mushrooms, spores, and molds. He wears a leather skullcap stitched with fake beholder eyestalks.
 
 Source:	Waterdeep: Dragon Heist p. 214</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Panopticus Wizard</name>
+    <sortname>Wizard, Panopticus</sortname>
+    <ancestry>Wizard</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Neutral</alignment>
@@ -3435,26 +3535,20 @@ Source:	Waterdeep: Dragon Heist p. 214</description>
     <int>14</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Arcana +4, History +4</skill>
     <passive>10</passive>
     <languages>Common, Dwarvish</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Dwarven Resilience</name>
       <text>The dwarf has advantage on saving throws against poison and resistance to poison damage.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage. Or Ranged Weapon Attack: +2 to hit, range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
-      <attack>Dagger|+2|1d4</attack>
-      <attack>Dagger|+2|1d4</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>The Dwarf is a 1st-level spellcaster. Its spellcasting ability is Intelligence. It has the following wizard spells prepared:
@@ -3462,17 +3556,25 @@ Source:	Waterdeep: Dragon Heist p. 214</description>
 	• Cantrips (at will): fire bolt, mending, prestidigitation
 	• 1st level (2 slots): burning hands, disguise self, shield</text>
     </trait>
-    <slots>0, 2</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage. Or Ranged Weapon Attack: +2 to hit, range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
+      <attack>Dagger|+2|1d4</attack>
+      <attack>Dagger|+2|1d4</attack>
+    </action>
+    <slots>0,2</slots>
     <spells>fire bolt, mending, prestidigitation, burning hands, disguise self, shield</spells>
     <description>This bald-headed and tattooed dwarf operates Xanathar's "panopticus" magical surveillance system.
 
 Apprentice wizards are novice arcane spellcasters who serve more experienced wizards or attend school. They perform menial work, such as cooking and cleaning, in exchange for education in the ways of magic.
 
 Source:	Waterdeep: Dragon Heist p. 106</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Remallia Haventree</name>
+    <sortname>Haventree, Remallia</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Chaotic Good</alignment>
@@ -3490,10 +3592,10 @@ Source:	Waterdeep: Dragon Heist p. 106</description>
     <passive>12</passive>
     <languages>Common, Draconic, Dwarvish, Elvish, Halfling</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Special Equipment</name>
@@ -3507,11 +3609,6 @@ Source:	Waterdeep: Dragon Heist p. 106</description>
       <name>Arcane Ward</name>
       <text>Remallia has a magical ward that has 30 hit points. Whenever she takes damage, the ward takes the damage instead. If the ward is reduced to 0 hit points, Remallia takes any remaining damage. When Remallia casts an abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell. This applies to any of the following spells she casts: alarm. mage armor, shield, arcane lock, counterspell, dispel magic, banishment, stoneskin, globe of invulnerability and symbol</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Remallia is a 13th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). She has the following wizard spells prepared:
@@ -3525,7 +3622,12 @@ Source:	Waterdeep: Dragon Heist p. 106</description>
 	• 6th level (1 slots): flesh to stone, globe of invulnerability
 	• 7th level (1 slots): symbol, teleport</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <slots>0,4,3,3,3,2,1,1</slots>
     <spells>dancing lights, mage hand, mending, message, ray of frost, alarm, mage armor, magic missile, shield, arcane lock, invisibility, counterspell, dispel magic, fireball, banishment, stoneskin, cone of cold, wall of force, flesh to stone, globe of invulnerability, symbol, teleport</spells>
     <description>Remallia (Remi to her friends) is the lady of House Ulbrinter and a guiding light for the Harpers in Waterdeep
 She became an active force for good in the city after assassins killed her husband, Arthagast Ulbrinter, and destroyed his remains. A sun elf, she has two adult children (a half-elf son named Arthius, who is studying music in Silverymoon, and a half-elf daughter named Serenore, who lives on the Moonshae island of Alaron with her husband and daughter). Lady Haventree retains a handful of loyal servants and spies.
@@ -3533,10 +3635,12 @@ She became an active force for good in the city after assassins killed her husba
 Remi holds secret Harper meetings in her villa, which is warded by all manner of spells. She uses a silver raven figurine of wondrous power to deliver messages to Harper spies scattered throughout the city.
 
 Source:	Waterdeep: Dragon Heist p. 214</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Renaer Neverember</name>
+    <sortname>Neverember, Renaer</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (illuskanhuman)</type>
     <alignment>Chaotic Good</alignment>
@@ -3549,16 +3653,16 @@ Source:	Waterdeep: Dragon Heist p. 214</description>
     <int>14</int>
     <wis>11</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Acrobatics +8, Athletics +5, Persuasion +6</skill>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Lightfooted</name>
       <text>The swashbuckler can take the Dash or Disengage action as a bonus action on each of its turns.</text>
@@ -3592,10 +3696,11 @@ Swashbuckler:
 Swashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoriety, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long.
 
 Source:	Waterdeep: Dragon Heist p. 215</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Rishaal the Page-Turner</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dragonborn)</type>
     <alignment>Neutral</alignment>
@@ -3613,21 +3718,11 @@ Source:	Waterdeep: Dragon Heist p. 215</description>
     <passive>11</passive>
     <languages>Common, Draconic, Dwarvish, Elvish</languages>
     <cr>6</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Breath Weapon</name>
-      <text>Rishaal can use his action to exhale a 15-foot cone of fire (but can't do this again until he finishes a short or long rest); each creature in the cone must make a DC 10 Dexterity saving throw, taking 2d6 fire damage on a failed save, or half as much damage on a successful one.</text>
-    </action>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Rishaal is a 9th-level spellcaster. His spellcasting ability is Intelligence. Rishaal has the following wizard spells prepared:
@@ -3639,13 +3734,25 @@ Source:	Waterdeep: Dragon Heist p. 215</description>
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Breath Weapon</name>
+      <text>Rishaal can use his action to exhale a 15-foot cone of fire (but can't do this again until he finishes a short or long rest); each creature in the cone must make a DC 10 Dexterity saving throw, taking 2d6 fire damage on a failed save, or half as much damage on a successful one.</text>
+    </action>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Source:	Waterdeep: Dragon Heist p. 33</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Saeth Cromley</name>
+    <sortname>Cromley, Saeth</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (illuskanhuman)</type>
     <alignment>Lawful Good</alignment>
@@ -3658,16 +3765,16 @@ Source:	Waterdeep: Dragon Heist p. 215</description>
     <int>10</int>
     <wis>11</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Athletics +5, Perception +2, Intimidation +4</skill>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>Saeth makes two longsword attacks. If he has a shortsword drawn, he can also make a shortsword attack.</text>
@@ -3690,10 +3797,12 @@ Source:	Waterdeep: Dragon Heist p. 215</description>
     <description>Saeth Cromley is a retired sergeant of the City Watch, a likable fellow with a sharp, sarcastic wit. He occasionally comes out of retirement at the request of Barnibus Blastwind, and he assists the mage in investigating unusual crimes in the city. Cromley helps Barnibus relate to the common folk, and he is good at coaxing information out of them. Though Cromley was once a strict proponent of Watch regulations and dress codes, he has grown a bit lax in both matters now that he's officially retired.
 
 Source:	Waterdeep: Dragon Heist p. 216</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Samara Strongbones</name>
+    <sortname>Strongbones, Samara</sortname>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (halfling)</type>
     <alignment>Any alignment</alignment>
@@ -3706,16 +3815,16 @@ Source:	Waterdeep: Dragon Heist p. 216</description>
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
-    <skill>Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight of hand +4, Stealth +4</skill>
+    <save/>
+    <skill>Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight Of Hand +4, Stealth +4</skill>
     <passive>16</passive>
     <languages>any two languages, Halfling</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Action</name>
       <text>On each of its turns, Samara can use a bonus action to take the Dash, Disengage, or Hide action.</text>
@@ -3748,10 +3857,12 @@ Source:	Waterdeep: Dragon Heist p. 216</description>
       <attack>Hand Crossbow|+4|1d6+2</attack>
     </action>
     <description>Source:	Waterdeep: Dragon Heist p. 104</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Sergeant</name>
+    <ancestry>Sergeant</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3764,26 +3875,28 @@ Source:	Waterdeep: Dragon Heist p. 216</description>
     <int>10</int>
     <wis>11</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>any one language (usually Common)</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Spear</name>
       <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.</text>
       <attack>Spear|+3|1d6+1</attack>
     </action>
     <description>Source:	Waterdeep: Dragon Heist p. 197</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Shard Shunner</name>
+    <sortname>Shunner, Shard</sortname>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (halfling, shapechanger)</type>
     <alignment>Lawful Evil</alignment>
@@ -3796,15 +3909,15 @@ Source:	Waterdeep: Dragon Heist p. 216</description>
     <int>11</int>
     <wis>10</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Perception +2, Stealth +4</skill>
     <passive>12</passive>
     <languages>Common, Halfling, Thieves' cant</languages>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft. (rat form only)</senses>
     <trait>
       <name>Shapechanger</name>
@@ -3844,10 +3957,12 @@ Source:	Waterdeep: Dragon Heist p. 216</description>
     <description> Member of the Shard Shunner gang hired by Emmek Frewn to disrupt the characters' running of the Trollskull Manor
 
 Source:	Waterdeep: Dragon Heist p. 42</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Skeemo Weirdbottle</name>
+    <sortname>Weirdbottle, Skeemo</sortname>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (gnome)</type>
     <alignment>Lawful Evil</alignment>
@@ -3865,21 +3980,15 @@ Source:	Waterdeep: Dragon Heist p. 42</description>
     <passive>14</passive>
     <languages>Abyssal, Common, Gnomish, Undercommon</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Gnome Cunning</name>
       <text>Skeemo has advantage on Intelligence, Wisdom, and Charisma saving throws against magic.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Skeemo is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks) He has the following wizard spells prepared:
@@ -3891,7 +4000,13 @@ Source:	Waterdeep: Dragon Heist p. 42</description>
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Skeemo became the Master of Magic for the Black Network in Waterdeep, setting up a cover in the Trades Ward in the form of a cramped little shop called Weirdbottle's Concoctions. Most of his potions and elixirs are nonmagical, but he crafts magical ones for his Zhent friends.
 
@@ -3901,10 +4016,12 @@ The Doom Raiders:
 The Doom Raiders were five unscrupulous adventurers who liked to plunder lich lairs (called "dooms" by some). They gave up adventuring to join the Black Network and came to Waterdeep three years ago with plans to establish a Zhentarim foothold in the city. In that time, they have forged alliances with various nobles and guilds and run afoul of others, all the while fending off Harper spies.
 
 Source:	Waterdeep: Dragon Heist p. 200</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Soluun Xibrindas</name>
+    <sortname>Xibrindas, Soluun</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (elf)</type>
     <alignment>Lawful Evil</alignment>
@@ -3922,10 +4039,10 @@ Source:	Waterdeep: Dragon Heist p. 200</description>
     <passive>13</passive>
     <languages>Elvish, Undercommon</languages>
     <cr>4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 120 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -3947,6 +4064,13 @@ Source:	Waterdeep: Dragon Heist p. 200</description>
       <name>Boots of Elvenkind</name>
       <text>Whilst wearing these boots Soluun's steps make no sound and he has advantage on any Dexterity (Stealth) checks that rely on moving silently.</text>
     </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Soluun's spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
+
+	• At will: dancing lights
+	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>Soluun makes two scimitar attacks.</text>
@@ -3961,23 +4085,17 @@ Source:	Waterdeep: Dragon Heist p. 200</description>
       <text>Ranged Weapon Attack: +6 to hit, range 30/90 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 11 (2d10) poison damage.</text>
       <attack>Poisonous Pistol|+6|1d10+4</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Soluun's spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:
-
-	• At will: dancing lights
-	• 1/Day each: darkness, faerie fire, levitate (self only)</text>
-    </trait>
     <spells>dancing lights, darkness, faerie fire, levitate</spells>
     <description>Soluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother, Nar'l, has infiltrated the Xanathar Guild. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities.
 
 Soluun has a burning hatred of surface elves and halfelves, having been taught from a young age to kill them as opportunity permits. When not engaged in a Bregan D'aerthe operation, Soluun spends his nights haunting the darkened streets and alleys of Waterdeep, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but Jarlaxle, Fel'rekt, and Krebbyg know what he's up to.
 
 Source:	Waterdeep: Dragon Heist p. 202</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Squiddly</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (tiefling)</type>
     <alignment>Neutral</alignment>
@@ -3990,25 +4108,27 @@ Source:	Waterdeep: Dragon Heist p. 202</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <languages/>
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Hit Points</name>
       <text>1</text>
     </trait>
     <description>Source:	Waterdeep: Dragon Heist p. 63</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Swarm of Books</name>
+    <sortname>Book, Swarm</sortname>
+    <ancestry>Book</ancestry>
     <size>M</size>
     <type>swarm of medium constructs</type>
     <alignment>Unaligned</alignment>
@@ -4021,14 +4141,14 @@ Source:	Waterdeep: Dragon Heist p. 202</description>
     <int>2</int>
     <wis>12</wis>
     <cha>4</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing</resist>
-    <immune />
-    <vulnerable />
+    <immune/>
     <conditionImmune>charmed, frightened, paralyzed, petrified, prone, restrained, stunned, grappled</conditionImmune>
     <senses>blindsight 60 ft.</senses>
     <trait>
@@ -4043,10 +4163,12 @@ Source:	Waterdeep: Dragon Heist p. 202</description>
     <description>Animated books which form a swarm when disturbed
 
 Source:	Waterdeep: Dragon Heist p. 156</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Swarm of Mechanical Spiders</name>
+    <sortname>Spider, Mechanical Swarm</sortname>
+    <ancestry>Spider</ancestry>
     <size>M</size>
     <type>swarm of medium constructs</type>
     <alignment>Unaligned</alignment>
@@ -4059,14 +4181,14 @@ Source:	Waterdeep: Dragon Heist p. 156</description>
     <int>1</int>
     <wis>7</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>1/2</cr>
-    <resist>bludgeoning, piercing, slashing</resist>
-    <immune />
     <vulnerable>lightning</vulnerable>
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune/>
     <conditionImmune>exhaustion, charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned, poisoned</conditionImmune>
     <senses>blindsight 10 ft.</senses>
     <trait>
@@ -4097,7 +4219,7 @@ Source:	Waterdeep: Dragon Heist p. 156</description>
     <description>A swarm of tiny constructed spiders which attack anyone messing with Jarlaxle's chest aboard the Scarlet Marpenoth
 
 Source:	Waterdeep: Dragon Heist p. 143</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Sylgar</name>
@@ -4113,15 +4235,15 @@ Source:	Waterdeep: Dragon Heist p. 143</description>
     <int>1</int>
     <wis>7</wis>
     <cha>2</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Water Breathing</name>
@@ -4134,10 +4256,12 @@ Source:	Waterdeep: Dragon Heist p. 143</description>
     <description>Xanathar's pet fish.
 
 Source:	Waterdeep: Dragon Heist p. 220</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Talisolvanar "Tally" Fellbranch</name>
+    <sortname>Fellbranch, Talisolvanar "Tally"</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-elf)</type>
     <alignment>Chaotic Good</alignment>
@@ -4150,15 +4274,15 @@ Source:	Waterdeep: Dragon Heist p. 220</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common, Elvish</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Fey Ancestry</name>
@@ -4172,10 +4296,12 @@ Source:	Waterdeep: Dragon Heist p. 220</description>
     <description>A male half-elf carpenter and woodcarver.
 
 Source:	Waterdeep: Dragon Heist p. 32</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tashlyn Yafeera</name>
+    <sortname>Yafeera, Tashlyn</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral</alignment>
@@ -4193,11 +4319,11 @@ Source:	Waterdeep: Dragon Heist p. 32</description>
     <passive>16</passive>
     <languages>Common</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Indomitable (2/Day)</name>
       <recharge>2/DAY</recharge>
@@ -4236,10 +4362,12 @@ The Doom Raiders:
 The Doom Raiders were five unscrupulous adventurers who liked to plunder lich lairs (called "dooms" by some). They gave up adventuring to join the Black Network and came to Waterdeep three years ago with plans to establish a Zhentarim foothold in the city. In that time, they have forged alliances with various nobles and guilds and run afoul of others, all the while fending off Harper spies.
 
 Source:	Waterdeep: Dragon Heist p. 200</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Terenzio Cassalanter</name>
+    <sortname>Cassalanter, Terenzio</sortname>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (human)</type>
     <alignment>Neutral</alignment>
@@ -4252,25 +4380,27 @@ Source:	Waterdeep: Dragon Heist p. 200</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Hit Points</name>
       <text>1</text>
     </trait>
     <description>Source:	Waterdeep: Dragon Heist p. 115</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Thorvin Twinbeard</name>
+    <sortname>Twinbeard, Thorvin</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Lawful Neutral</alignment>
@@ -4283,15 +4413,15 @@ Source:	Waterdeep: Dragon Heist p. 200</description>
     <int>10</int>
     <wis>16</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>13</passive>
     <languages>Common, Dwarvish</languages>
     <cr>0</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
@@ -4307,10 +4437,11 @@ Source:	Waterdeep: Dragon Heist p. 200</description>
 Thorvin wears iron-rimmed spectacles and carries a large, heavy wrench that doubles as a club. He also carries mason's tools, smith's tools, and thieves' tools, and has proficiency with all three.
 
 Source:	Waterdeep: Dragon Heist p. 216</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Thrakkus</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dragonborn)</type>
     <alignment>Chaotic Evil</alignment>
@@ -4323,16 +4454,16 @@ Source:	Waterdeep: Dragon Heist p. 216</description>
     <int>9</int>
     <wis>11</wis>
     <cha>9</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common, Draconic</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Reckless</name>
       <text>At the start of his turn, Thrakkus can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against him have advantage until the start of his next turn.</text>
@@ -4351,10 +4482,12 @@ Source:	Waterdeep: Dragon Heist p. 216</description>
     <description> A member of the Guild of Butchers, Thrakkus has a lucrative side business. Zhents loyal to Manshoon pay Thrakkus to chop up people they kill, and he sells the meat on the sly.
 
 Source:	Waterdeep: Dragon Heist p. 89</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tissina Khyret</name>
+    <sortname>Khyret, Tissina</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tiefling)</type>
     <alignment>Lawful Evil</alignment>
@@ -4367,30 +4500,20 @@ Source:	Waterdeep: Dragon Heist p. 89</description>
     <int>10</int>
     <wis>13</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Deception +4, Persuasion +4, Religion +2</skill>
     <passive>11</passive>
     <languages>Common, Infernal</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dark Devotion</name>
       <text>Tissina has advantage on saving throws against being charmed or frightened.</text>
     </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>Tissina makes two melee attacks.</text>
-    </action>
-    <action>
-      <name>Dagger</name>
-      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+4|1d4+2</attack>
-      <attack>Dagger|+4|1d4+2</attack>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Tissina's spellcasting ability is Charisma. She can innately cast the following spells, requiring no material components:
@@ -4405,15 +4528,27 @@ Source:	Waterdeep: Dragon Heist p. 89</description>
 	• 1st level (4 slots): command, inflict wounds, shield of faith
 	• 2nd level (3 slots): hold person, spiritual weapon</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Multiattack</name>
+      <text>Tissina makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. Or Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+4|1d4+2</attack>
+      <attack>Dagger|+4|1d4+2</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>thaumaturgy, light, sacred flame, thaumaturgy, command, inflict wounds, shield of faith, hold person, spiritual weapon</spells>
     <description>Madame Khyret is the personal attendant to Ammalia Cassalanter and is the family's chief housemaid. Madame Khyret dresses in a long black gown and wears a headdress with black tassels. She is an aging tiefling and she spends most of her time in the master sitting room
 
 Source:	Waterdeep: Dragon Heist p. 116</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Urstul Floxin</name>
+    <sortname>Floxin, Urstul</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (illuskanhuman)</type>
     <alignment>Lawful Evil</alignment>
@@ -4431,11 +4566,11 @@ Source:	Waterdeep: Dragon Heist p. 116</description>
     <passive>13</passive>
     <languages>Common, Orc, Thieves' cant</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Assassinate</name>
       <text>During its first turn, Urstul has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Urstul scores against a surprised creature is a critical hit.</text>
@@ -4470,10 +4605,12 @@ Source:	Waterdeep: Dragon Heist p. 116</description>
 Urstul is a large, heavyset man in his forties. He storms about House Gralhund like he owns the place. He has a collection of black flying snakes that he uses as couriers to deliver messages to underlings throughout the city.
 
 Source:	Waterdeep: Dragon Heist p. 216</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Vajra Safahr</name>
+    <sortname>Safahr, Vajra</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Neutral</alignment>
@@ -4491,11 +4628,11 @@ Source:	Waterdeep: Dragon Heist p. 216</description>
     <passive>10</passive>
     <languages>Common, Dwarvish, Elvish, Giant, Halfling, Undercommon</languages>
     <cr>13</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Vajra wields the Blackstaff, accounted for in her statistics. Roll 2d10 to determine how many charges the staff has remaining.</text>
@@ -4508,11 +4645,6 @@ Source:	Waterdeep: Dragon Heist p. 216</description>
       <name>Staff Spells</name>
       <text>While holding the blackstaff, Vajra can use an action to expend 1 or more of its charges to cast one of the following spells from it, using her spell save DC and spell attack bonus: cone of cold (5 charges), fireball (5th-level version, 5 charges), globe of invulnerability (6 charges), hold monster (5 charges), levitate (2 charges), lightning bolt (5th-level version, 5 charges), magic missile (1 charge), ray of enfeeblement (1 charge), or wall of force (5 charges).</text>
     </trait>
-    <action>
-      <name>Blackstaff</name>
-      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning, magic damage, or 6 (1d8 + 2) bludgeoning, magic damage when used with two hands. Vajra can expend 1 of the staff's charges to deal an extra 3 (1d6) force damage on a hit.</text>
-      <attack>Blackstaff|+7|1d6+2</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Vajra is an 18th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 18, +12 to hit with spell attacks). She has the following wizard spells prepared:
@@ -4528,7 +4660,12 @@ Source:	Waterdeep: Dragon Heist p. 216</description>
 	• 8th level (1 slots): antimagic field, power word stun
 	• 9th level (1 slots): imprisonment</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Blackstaff</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning, magic damage, or 6 (1d8 + 2) bludgeoning, magic damage when used with two hands. Vajra can expend 1 of the staff's charges to deal an extra 3 (1d6) force damage on a hit.</text>
+      <attack>Blackstaff|+7|1d6+2</attack>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>fire bolt, light, mage hand, message, prestidigitation, detect magic, identify, mage armor, thunderwave, invisibility, misty step, web, counterspell, fly, sending, banishment, fire shield, stoneskin, Bigby's hand, geas, telekinesis, chain lightning, globe of invulnerability, forcecage, prismatic spray, antimagic field, power word stun, imprisonment</spells>
     <description>Vajra is a capable wizard in her mid-thirties, the youngest person ever to hold the position of Blackstaff. As the High Wizard of Waterdeep, she is charged with using all the magic and resources at her disposal to defend the city against threats. She was handpicked for the job by Khelben Arunsun, and wields the Blackstaff from which Khelben derived his name and the title of the office. Vajra isn't the city's most powerful wizard, but she can hold her own. Despite her many gifts, she still questions her ability to meet the demands of her role, and she rarely makes a decision without first soliciting the advice of the Blackstaff, which contains Khelben Arunsun's spirit as well as the spirits of all the other Blackstaffs who preceded her. She also gets intelligence from many other sources, both through her own network of spies and from Harper agents.
 
@@ -4537,10 +4674,11 @@ Vajra runs Blackstaff Academy, a school for mages, out of Blackstaff Tower in th
 Several of the older and more seasoned wizards in Waterdeep consider Vajra an upstart, but they are smart enough not to challenge her. Only the Open Lord, currently Laeral Silverhand, can strip Vajra of her title.
 
 Source:	Waterdeep: Dragon Heist p. 217</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Valetta</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dragonborn)</type>
     <alignment>Neutral</alignment>
@@ -4553,19 +4691,28 @@ Source:	Waterdeep: Dragon Heist p. 217</description>
     <int>13</int>
     <wis>16</wis>
     <cha>13</cha>
-    <save />
+    <save/>
     <skill>Medicine +7, Persuasion +3, Religion +5</skill>
     <passive>13</passive>
     <languages>Common, Draconic</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>lightning</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Divine Eminence</name>
       <text>As a bonus action, Valetta can expend a spell slot to cause her melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Valetta expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Valetta is a 5th-level spellcaster. Her spellcasting ability is Wisdom. Valetta has the following cleric spells prepared:
+
+	• Cantrips (at will): light, sacred flame, thaumaturgy
+	• 1st level (4 slots): cure wounds, guiding bolt, sanctuary
+	• 2nd level (3 slots): lesser restoration, spiritual weapon
+	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
     <action>
       <name>Breathe Weapon</name>
@@ -4576,24 +4723,17 @@ Source:	Waterdeep: Dragon Heist p. 217</description>
       <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
       <attack>Mace|+2|1d6</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Valetta is a 5th-level spellcaster. Her spellcasting ability is Wisdom. Valetta has the following cleric spells prepared:
-
-	• Cantrips (at will): light, sacred flame, thaumaturgy
-	• 1st level (4 slots): cure wounds, guiding bolt, sanctuary
-	• 2nd level (3 slots): lesser restoration, spiritual weapon
-	• 3rd level (2 slots): dispel magic, spirit guardians</text>
-    </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
     <description>A dragonborn priest of bronze dragon ancestry.
 
 Source:	Waterdeep: Dragon Heist p. 47</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Victoro Cassalanter</name>
+    <sortname>Cassalanter, Victoro</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-elf)</type>
     <alignment>Lawful Evil</alignment>
@@ -4611,9 +4751,9 @@ Source:	Waterdeep: Dragon Heist p. 47</description>
     <passive>13</passive>
     <languages>Common, Draconic, Elvish, Infernal</languages>
     <cr>10</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -4627,6 +4767,20 @@ Source:	Waterdeep: Dragon Heist p. 47</description>
     <trait>
       <name>Rod of Rulership</name>
       <text>Victoro can use an action to present the rod and command obedience from each creature of his choice that he can see within 120 feet of him. Each target must succeed on a DC 15 Wisdom saving throw or be charmed for 8 hours by Victoro. While charmed in this way, the creature regards Victoro as its trusted leader. If harmed by Victoro or his companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can't be used again until the next dawn.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Victoro is a 15th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). Victoro has the following cleric spells prepared:
+
+	• Cantrips (at will): guidance, light, mending, spare the dying, thaumaturgy
+	• 1st level (4 slots): charm person, command, detect magic, disguise self, protection from evil and good, sanctuary
+	• 2nd level (3 slots): augury, lesser restoration, mirror image, pass without trace, spiritual weapon
+	• 3rd level (3 slots): blink, clairvoyance, dispel magic, magic circle, protection from energy
+	• 4th level (3 slots): banishment, dimension door, divination, freedom of movement, polymorph
+	• 5th level (2 slots): dominate person, flame strike, modify memory, insect plague
+	• 6th level (1 slots): heal
+	• 7th level (1 slots): divine word
+	• 8th level (1 slots): earthquake</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -4646,21 +4800,7 @@ Source:	Waterdeep: Dragon Heist p. 47</description>
       <name>Summon Devil (Recharges after 9 Days)</name>
       <text>Victoro summons a barbed devil. The devil appears in an unoccupied space within 30 feet of Victoro, acts as Victoro's ally, and can't summon other devils. It remains for 1 minute, until it or Victoro dies, or until Victoro dismisses it as an action.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Victoro is a 15th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). Victoro has the following cleric spells prepared:
-
-	• Cantrips (at will): guidance, light, mending, spare the dying, thaumaturgy
-	• 1st level (4 slots): charm person, command, detect magic, disguise self, protection from evil and good, sanctuary
-	• 2nd level (3 slots): augury, lesser restoration, mirror image, pass without trace, spiritual weapon
-	• 3rd level (3 slots): blink, clairvoyance, dispel magic, magic circle, protection from energy
-	• 4th level (3 slots): banishment, dimension door, divination, freedom of movement, polymorph
-	• 5th level (2 slots): dominate person, flame strike, modify memory, insect plague
-	• 6th level (1 slots): heal
-	• 7th level (1 slots): divine word
-	• 8th level (1 slots): earthquake</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1, 1, 1</slots>
+    <slots>0,4,3,3,3,2,1,1,1</slots>
     <spells>guidance, light, mending, spare the dying, thaumaturgy, charm person, command, detect magic, disguise self, protection from evil and good, sanctuary, augury, lesser restoration, mirror image, pass without trace, spiritual weapon, blink, clairvoyance, dispel magic, magic circle, protection from energy, banishment, dimension door, divination, freedom of movement, polymorph, dominate person, flame strike, modify memory, insect plague, heal, divine word, earthquake</spells>
     <description>The lord of House Cassalanter is a devilishly handsome half-elf who likes coin and power. He and his wife gained both by cutting a deal with Asmodeus-which involved trading away the souls of their three children.
 
@@ -4670,10 +4810,12 @@ The soul of Victoro's eldest son, Osvaldo, is forever lost and can't be saved. T
 Victoro is well schooled, suave, slow to anger, and blessed with good health, long life, and immunity to disease. He dresses in the latest fashions and walks with a ruby-tipped cane, though not because he needs to. This cane has the magical properties of a rod of rulership.
 
 Source:	Waterdeep: Dragon Heist p. 218</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Vincent Trench</name>
+    <sortname>Trench, Vincent</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>fiend</type>
     <alignment>Lawful Evil</alignment>
@@ -4686,19 +4828,27 @@ Source:	Waterdeep: Dragon Heist p. 218</description>
     <int>13</int>
     <wis>16</wis>
     <cha>20</cha>
-    <save />
+    <save/>
     <skill>Deception +10, Insight +8</skill>
     <passive>13</passive>
     <languages>Common, Infernal</languages>
     <cr>13</cr>
-    <resist />
-    <immune>bludgeoning, piercing, slashing from nonmagical attacks</immune>
     <vulnerable>piercing from magic weapons wielded by good creatures</vulnerable>
-    <conditionImmune />
+    <resist/>
+    <immune>bludgeoning, piercing, slashing from nonmagical attacks</immune>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Limited Magic Immunity</name>
       <text>Vincent can't be affected or detected by spells of 6th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Vincent's innate spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). Vincent can innately cast the following spells, requiring no material components:
+
+	• At will: detect thoughts, disguise self, mage hand, minor illusion
+	• 3/Day each: charm person, detect magic, invisibility, major image, suggestion
+	• 1/Day each: dominate person, fly, plane shift, true seeing</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -4711,20 +4861,13 @@ Source:	Waterdeep: Dragon Heist p. 218</description>
 The magical curse takes effect whenever the target takes a short or long rest, filling the target's thoughts with horrible images and dreams. The cursed target gains no benefit from finishing a short or long rest. The curse lasts until it is lifted by a remove curse spell or similar magic.</text>
       <attack>Claw|+7|2d6+2</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Vincent's innate spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). Vincent can innately cast the following spells, requiring no material components:
-
-	• At will: detect thoughts, disguise self, mage hand, minor illusion
-	• 3/Day each: charm person, detect magic, invisibility, major image, suggestion
-	• 1/Day each: dominate person, fly, plane shift, true seeing</text>
-    </trait>
     <spells>detect thoughts, disguise self, mage hand, minor illusion, charm person, detect magic, invisibility, major image, suggestion, dominate person, fly, plane shift, true seeing</spells>
     <description>Source:	Waterdeep: Dragon Heist p. 32</description>
     <environment>urban</environment>
   </monster>
   <monster>
     <name>Walking Statue of Waterdeep</name>
+    <ancestry>Animated Object</ancestry>
     <size>G</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -4738,13 +4881,13 @@ The magical curse takes effect whenever the target takes a short or long rest, f
     <wis>10</wis>
     <cha>1</cha>
     <save>Con +14</save>
-    <skill />
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>18</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold, fire, poison, psychic; bludgeoning, piercing, slashing from nonmagical attacks not made with adamantine weapons</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned, stunned</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -4788,10 +4931,12 @@ Constructed Nature:
 A walking statue doesn't require air, food, drink, or sleep.
 
 Source:	Waterdeep: Dragon Heist p. 219</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Willifort Crowelle</name>
+    <sortname>Crowelle, Willifort</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>monstrosity (shapechanger)</type>
     <alignment>Neutral</alignment>
@@ -4804,14 +4949,14 @@ Source:	Waterdeep: Dragon Heist p. 219</description>
     <int>11</int>
     <wis>12</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Deception +6, Insight +3</skill>
     <passive>11</passive>
     <languages>Common</languages>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>charmed</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -4844,6 +4989,7 @@ Source:	Waterdeep: Dragon Heist p. 219</description>
   </monster>
   <monster>
     <name>Xanathar</name>
+    <ancestry>Beholder</ancestry>
     <size>L</size>
     <type>aberration</type>
     <alignment>Lawful Evil</alignment>
@@ -4861,9 +5007,9 @@ Source:	Waterdeep: Dragon Heist p. 219</description>
     <passive>22</passive>
     <languages>Deep Speech, Undercommon</languages>
     <cr>13</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>prone</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
@@ -4917,7 +5063,7 @@ If the target is an object weighing 300 pounds or less that isn't being worn or 
       <name>Eye Ray</name>
       <text>Xanathar uses one random eye ray.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Lair Actions</name>
       <text>When fighting inside its lair, a beholder can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the beholder can take one lair action to cause one of the following effects:
 
@@ -4929,7 +5075,7 @@ If the target is an object weighing 300 pounds or less that isn't being worn or 
 
 The beholder can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row.</text>
     </legendary>
-    <legendary>
+    <legendary category="lair">
       <name>Regional Effects</name>
       <text>A region containing a beholder's lair is warped by the creature's unnatural presence, which creates one or more of the following effects:
 
@@ -4944,6 +5090,8 @@ If the beholder dies, these effects fade over the course of 1d10 days.</text>
   </monster>
   <monster>
     <name>Yagra Stonefist</name>
+    <sortname>Stonefist, Yagra</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-orc)</type>
     <alignment>Neutral</alignment>
@@ -4956,15 +5104,15 @@ If the beholder dies, these effects fade over the course of 1d10 days.</text>
     <int>10</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Intimidation +2</skill>
     <passive>10</passive>
     <languages>Common, Orc</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Relentless Endurance</name>
@@ -4995,10 +5143,12 @@ If the beholder dies, these effects fade over the course of 1d10 days.</text>
     <description>Yagra is a Black Network mercenary who gets paid to protect a Zhent negotiator named Davil Starsong (see appendix B for more information on him). Yagra finds the job boring and likes to pass the time by challenging adventurers to arm wrestle. (Resolve such contests using contested Strength checks.) If the characters express their opposition to the Xanathar Guild, Yagra might urge them to speak to Davil about joining forces with the Zhentarim to destroy the beholder crime lord.
 
 Source:	Waterdeep: Dragon Heist p. 20</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Yalah Gralhund</name>
+    <sortname>Gralhund, Yalah</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tethyrianhuman)</type>
     <alignment>Lawful Evil</alignment>
@@ -5011,16 +5161,16 @@ Source:	Waterdeep: Dragon Heist p. 20</description>
     <int>12</int>
     <wis>16</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +5, Persuasion +5</skill>
     <passive>13</passive>
     <languages>Common, Infernal</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Rapier</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.</text>
@@ -5037,10 +5187,11 @@ Yalah stays abreast of events in the city, keeps a tight rein on her children, a
 Yalah shares the services of a half-orc bodyguard with her husband, although Hrabbaz (see "Hrabbaz") is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents' true master is Manshoon. Most of her dealings are with the Zhent master assassin Urstul Floxin (see "Urstul Floxin"), whom she treats as an underling.
 
 Source:	Waterdeep: Dragon Heist p. 220</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Yorn</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-orc)</type>
     <alignment>Lawful Evil</alignment>
@@ -5053,15 +5204,15 @@ Source:	Waterdeep: Dragon Heist p. 220</description>
     <int>10</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Intimidation +2</skill>
     <passive>10</passive>
     <languages>Common, Orc</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Pack Tactics</name>
@@ -5089,10 +5240,12 @@ Source:	Waterdeep: Dragon Heist p. 220</description>
     <description>A burly half-orc Zhentarim in the employ of Manshoon
 
 Source:	Waterdeep: Dragon Heist p. 150</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Zhent Martial Arts Adept</name>
+    <ancestry>Adept</ancestry>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (lightfoothalfling)</type>
     <alignment>Lawful Evil</alignment>
@@ -5105,16 +5258,16 @@ Source:	Waterdeep: Dragon Heist p. 150</description>
     <int>11</int>
     <wis>16</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Acrobatics +5, Insight +5, Stealth +5</skill>
     <passive>13</passive>
     <languages>Common, Halfling</languages>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Halfling Nimbleness</name>
       <text>The adept can move through the space of a medium of larger creature.</text>
@@ -5153,10 +5306,11 @@ Source:	Waterdeep: Dragon Heist p. 150</description>
     <description>The adepts believe that Manshoon should be the Zhantarim leader and serves him fearlessly
 
 Source:	Waterdeep: Dragon Heist p. 160</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ziraj the Hunter</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-orc)</type>
     <alignment>Lawful Evil</alignment>
@@ -5174,11 +5328,19 @@ Source:	Waterdeep: Dragon Heist p. 160</description>
     <passive>12</passive>
     <languages>Common, Orc</languages>
     <cr>8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Ziraj is a 10th-level spellcaster. His spellcasting ability is Charisma. He has the following paladin spells prepared:
+
+	• 1st level (4 slots): command, protection from evil and good, thunderous smite
+	• 2nd level (3 slots): branding smite, find steed
+	• 3rd level (2 slots): blinding smite, dispel magic</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>Ziraj makes three attacks with his glaive or with his oversized longbow.</text>
@@ -5198,15 +5360,7 @@ Source:	Waterdeep: Dragon Heist p. 160</description>
       <recharge>SHORT</recharge>
       <text>Ziraj exudes magical menace. Each enemy within 30 feet of him must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute of Ziraj. If a frightened enemy ends its turn more than 30 feet away from Ziraj, the enemy can repeat the saving throw, ending the effect on itself on a success.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Ziraj is a 10th-level spellcaster. His spellcasting ability is Charisma. He has the following paladin spells prepared:
-
-	• 1st level (4 slots): command, protection from evil and good, thunderous smite
-	• 2nd level (3 slots): branding smite, find steed
-	• 3rd level (2 slots): blinding smite, dispel magic</text>
-    </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>command, protection from evil and good, thunderous smite, branding smite, find steed, blinding smite, dispel magic</spells>
     <description>Ziraj is a half-orc hunter who wields an oversized bow that shoots correspondingly large arrows. He is the Master of Assassination for the Black Network. If Ziraj sets out to kill someone, it's because one of his friends (Davil, Istrid, Skeemo, or Tashlyn) asked him to. The characters might become Ziraj's prey, or Ziraj might come to their aid to eliminate a common enemy. He's the strong, silent type.
 
@@ -5219,6 +5373,6 @@ The Doom Raiders:
 The Doom Raiders were five unscrupulous adventurers who liked to plunder lich lairs (called "dooms" by some). They gave up adventuring to join the Black Network and came to Waterdeep three years ago with plans to establish a Zhentarim foothold in the city. In that time, they have forged alliances with various nobles and guilds and run afoul of others, all the while fending off Harper spies.
 
 Source:	Waterdeep: Dragon Heist p. 201</description>
-    <environment />
+    <environment/>
   </monster>
 </compendium>

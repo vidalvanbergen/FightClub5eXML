@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Acererak</name>
@@ -19,9 +19,9 @@
     <passive>22</passive>
     <languages>Abyssal, Common, Draconic, Dwarvish, Elvish, Giant, Infernal, Primordial, Undercommon</languages>
     <cr>23</cr>
+    <vulnerable/>
     <resist>cold, lightning</resist>
     <immune>necrotic, poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, stunned</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -56,8 +56,6 @@
 	• 8th level (2 slots): maze, mind blank
 	• 9th level (2 slots): power word kill, time stop</text>
     </trait>
-    <slots>0, 0, 0, 0, 3, 3, 3, 3, 2, 2</slots>
-    <spells>mage hand, ray of frost, shocking grasp, ray of sickness, shield, arcane lock, knock, animate dead, counterspell, blight, ice storm, phantasmal killer, cloudkill, hold monster, wall of force, chain lightning, circle of death, disintegrate, finger of death, plane shift, teleport, maze, mind blank, power word kill, time stop</spells>
     <action>
       <name>Paralyzing Touch</name>
       <text>Melee Spell Attack: +15 to hit, reach 5 ft., one target. Hit: 10 (3d6) cold damage, and the target must succeed on a DC 20 Constitution saving throw or be paralyzed for 1 minute.
@@ -105,6 +103,8 @@ Frightened:
       <text>Each creature within 20 feet of Acererak must make a DC 20 Constitution saving throw against this magic, taking 42 (12d6) necrotic damage on a failed save, or half as much damage on a successful one.</text>
       <attack>Disrupt Life||12d6</attack>
     </legendary>
+    <slots>0,0,0,0,3,3,3,3,2,2</slots>
+    <spells>mage hand, ray of frost, shocking grasp, ray of sickness, shield, arcane lock, knock, animate dead, counterspell, blight, ice storm, phantasmal killer, cloudkill, hold monster, wall of force, chain lightning, circle of death, disintegrate, finger of death, plane shift, teleport, maze, mind blank, power word kill, time stop</spells>
     <description>Acererak is an archlich who travels between worlds and is known to take sick pleasure in devouring the souls of adventurers, whom he lures into trap-ridden dungeons where they suffer horrible deaths. One such dungeon lies under the lost city of Omu. This dungeon is called the Tomb of the Nine Gods, for Acererak slew nine false gods and sealed them within it. More recently, he built a necromantic device called the Soulmonger, then hid it in the heart of the tomb.
 
 Acererak's Traits:
@@ -113,10 +113,13 @@ Bond: "I build dungeons to trap and slay powerful adventurers. Their deaths and 
 Flaw: "I underestimate the resolve of my enemies."
 
 Source:	Tomb of Annihilation p. 209</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Albino Dwarf Spirit Warrior</name>
+    <sortname>Albino Dwarf, Spirit Warrior</sortname>
+    <ancestry>Albino Dwarf</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any alignment</alignment>
@@ -129,30 +132,30 @@ Source:	Tomb of Annihilation p. 209</description>
     <int>12</int>
     <wis>14</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Perception +4, Stealth +3, Survival +4</skill>
     <passive>14</passive>
     <languages>Common, Dwarvish</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
       <text>The dwarf has advantage on saving throws against poison.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The dwarf's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no material components:
+	• 1/Day each: hunter's mark, jump, pass without trace, speak with animals, speak with plants</text>
     </trait>
     <action>
       <name>Handaxe</name>
       <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) slashing damage.</text>
       <attack>Handaxe|+3|1d6+1</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The dwarf's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no material components:
-	• 1/Day each: hunter's mark, jump, pass without trace, speak with animals, speak with plants</text>
-    </trait>
     <spells>hunter's mark, jump, pass without trace, speak with animals, speak with plants</spells>
     <description>The albino dwarves of Chult were driven from their subterranean homes by volcanic activity, and those who didn't seek refuge in Port Nyanzaru adapted to living in the jungle. They make armor out of dinosaur hide; shape weapons out of dinosaur bones, flint, and wood; and craft ornate jewelry out of bones, feathers, tusks, and stone beads. Albino dwarves haven't forgotten how to forge metal, but they seldom have the means to do so.
 
@@ -160,10 +163,13 @@ Albino Dwarf Spirit Warriors:
 An albino dwarf can become so attuned to the land of Chult that a benevolent nature spirit takes notice and bestows a powerful charm on the dwarf, granting it innate spellcasting abilities. These dwarf spirit warriors dedicate themselves to preserving the natural beauty of Chult and battling unnatural threats. An albino dwarf spirit warrior has the statistics of an albino dwarf warrior, except it has a challenge rating of 1 (200 XP) and gains an Innate Spellcasting feature.
 
 Source:	Tomb of Annihilation p. 210</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Albino Dwarf Warrior</name>
+    <sortname>Albino Dwarf, Warrior</sortname>
+    <ancestry>Albino Dwarf</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any alignment</alignment>
@@ -176,15 +182,15 @@ Source:	Tomb of Annihilation p. 210</description>
     <int>12</int>
     <wis>14</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Perception +4, Stealth +3, Survival +4</skill>
     <passive>14</passive>
     <languages>Common, Dwarvish</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
@@ -198,7 +204,7 @@ Source:	Tomb of Annihilation p. 210</description>
     <description>The albino dwarves of Chult were driven from their subterranean homes by volcanic activity, and those who didn't seek refuge in Port Nyanzaru adapted to living in the jungle. They make armor out of dinosaur hide; shape weapons out of dinosaur bones, flint, and wood; and craft ornate jewelry out of bones, feathers, tusks, and stone beads. Albino dwarves haven't forgotten how to forge metal, but they seldom have the means to do so.
 
 Source:	Tomb of Annihilation p. 210</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Aldani (Lobsterfolk)</name>
@@ -214,15 +220,15 @@ Source:	Tomb of Annihilation p. 210</description>
     <int>10</int>
     <wis>14</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +4, Survival +4</skill>
     <passive>14</passive>
     <languages>Common</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -250,7 +256,7 @@ Cursed by Ubtao:
 The aldani are the monstrous descendants of Chultan humans belonging to the Aldani tribe. The fishers of the tribe trapped the lobsters of the rivers by the thousands, until no lobsters remained. Their greed made Ubtao angry, and he cursed the fishers by transforming them into lobsterfolk. The fishers accepted their punishment and embraced their new existence. However, they were scorned by other members of their tribe and forced to take refuge in the rivers they had once plundered. Although the Aldani tribe went extinct, the lobsterfolk remain to this day.
 
 Source:	Tomb of Annihilation p. 210</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Almiraj</name>
@@ -266,15 +272,15 @@ Source:	Tomb of Annihilation p. 210</description>
     <int>2</int>
     <wis>14</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +4, Stealth +5</skill>
     <passive>14</passive>
-    <languages />
+    <languages/>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 30 ft.</senses>
     <trait>
       <name>Keen Senses</name>
@@ -294,7 +300,7 @@ Source:	Tomb of Annihilation p. 210</description>
 Almiraj were brought to Chult long ago by merchants of the distant land of Zakhara. Skilled at evading predators, these creatures have flourished throughout the tropical peninsula. They live in earthen burrows and can be captured and domesticated.
 
 Source:	Tomb of Annihilation p. 211</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ankylosaurus Zombie</name>
@@ -310,14 +316,14 @@ Source:	Tomb of Annihilation p. 211</description>
     <int>2</int>
     <wis>6</wis>
     <cha>3</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -341,10 +347,12 @@ Tyrannosaurus Zombie:
 A tyrannosaurus zombie has a gullet full of smaller zombies, which it can disgorge. These zombies aren't under the tyrannosaurus zombie's control.
 
 Source:	Tomb of Annihilation p. 240</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Artus Cimber</name>
+    <sortname>Cimber, Artus</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Neutral Good</alignment>
@@ -362,11 +370,11 @@ Source:	Tomb of Annihilation p. 240</description>
     <passive>13</passive>
     <languages>Common, Draconic, Dwarvish, Goblin</languages>
     <cr>7</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>While wearing the Ring of Winter: cold</immune>
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Artus wears the Ring of Winter. He and the ring can't be targeted by divination magic or perceived through magical scrying sensors. While attuned to and wearing the ring, Artus ceases to age and is immune to cold damage and the effects of extreme cold.
@@ -422,10 +430,11 @@ Bond: "I long to be reunited with my wife, Alisanda."
 Flaw: "I am slow to trust strangers-adventurers in particular."
 
 Source:	Tomb of Annihilation p. 212</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Asharra</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (aarakocra)</type>
     <alignment>Lawful Neutral</alignment>
@@ -438,16 +447,16 @@ Source:	Tomb of Annihilation p. 212</description>
     <int>14</int>
     <wis>17</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>History +4, Insight +5, Perception +7</skill>
     <passive>17</passive>
     <languages>Auran, Common</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Dive Attack</name>
       <text>If the aarakocra is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 (1d6) damage to the target.</text>
@@ -457,6 +466,15 @@ Source:	Tomb of Annihilation p. 212</description>
       <text>Asharra knows a ritual called the Dance of the Seven Winds, which temporarily grants magical flight to as many as ten nonflying creatures. The ritual, which takes 10 minutes to complete, can only be performed by an aarakocra elder and requires a black orchid as a material component.
 
 Asharra must grind the orchid to powder, inhale it, and dance in circles around the ritual's beneficiaries uninterrupted while seven other aarakocra chant prayers to the Wind Dukes of Aaqa. When the dance concludes, Asharra's wings disappear and she loses the ability to fly. The ritual's beneficiaries each gain a magical flying speed of 30 feet (allowing them to fly 4 miles per hour). This benefit lasts for 3 days, after which Asharra's wings reappear and she regains the ability to fly.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Asharra is a 5th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Asharra has the following druid spells prepared:
+
+	• Cantrips (at will): druidcraft, mending, produce flame
+	• 1st level (4 slots): detect magic, faerie fire, thunderwave
+	• 2nd level (3 slots): gust of wind, hold person, lesser restoration
+	• 3rd level (2 slots): call lightning, wind wall</text>
     </trait>
     <action>
       <name>Talon</name>
@@ -472,16 +490,7 @@ Asharra must grind the orchid to powder, inhale it, and dance in circles around 
       <name>Summon Air Elemental</name>
       <text>Five aarakocra within 30 feet of each other can magically summon an air elemental. Each of the five must use its action and movement on three consecutive turns to perform an aerial dance and must maintain concentration while doing so (as if concentrating on a spell). When all five have finished their third turn of the dance, the elemental appears in an unoccupied space within 60 feet of them. It is friendly toward them and obeys their spoken commands. It remains for 1 hour, until it or all its summoners die, or until any of its summoners dismisses it as a bonus action. A summoner can't perform the dance again until it finishes a short rest. When the elemental returns to the Elemental Plane of Air, any aarakocra within 5 feet of it can return with it.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Asharra is a 5th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Asharra has the following druid spells prepared:
-
-	• Cantrips (at will): druidcraft, mending, produce flame
-	• 1st level (4 slots): detect magic, faerie fire, thunderwave
-	• 2nd level (3 slots): gust of wind, hold person, lesser restoration
-	• 3rd level (2 slots): call lightning, wind wall</text>
-    </trait>
-    <slots>0, 4, 3, 2</slots>
+    <slots>0,4,3,2</slots>
     <spells>druidcraft, mending, produce flame, detect magic, faerie fire, thunderwave, gust of wind, hold person, lesser restoration, call lightning, wind wall</spells>
     <description>Aarakocra range the Howling Gyre, an endless storm of mighty winds and lashing rains that surrounds the tranquil realm of Aaqa in the Elemental Plane of Air. Making aerial patrols, these birdlike humanoids guard the windy borders of their home against invaders from the Elemental Plane of Earth, such as gargoyles, their sworn enemies.
 
@@ -489,10 +498,12 @@ Biography:
 The incredibly old leader of the community at Kir Sabal. The others refer to her as Teacher, and they revere her as a living saint. Asharra is intelligent, ambitious, and somewhat manipulative, but never cruel or insensitive.
 
 Source:	Tomb of Annihilation p. 69</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Assassin Vine</name>
+    <sortname>Vine, Assassin</sortname>
+    <ancestry>Vine</ancestry>
     <size>L</size>
     <type>plant</type>
     <alignment>Unaligned</alignment>
@@ -505,14 +516,14 @@ Source:	Tomb of Annihilation p. 69</description>
     <int>1</int>
     <wis>10</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
+    <vulnerable/>
     <resist>cold, fire</resist>
-    <immune />
-    <vulnerable />
+    <immune/>
     <conditionImmune>blinded, deafened, exhaustion, prone</conditionImmune>
     <senses>blindsight 30 ft.</senses>
     <trait>
@@ -537,7 +548,7 @@ A subterranean variant grows near hot springs, volcanic vents, and other sources
 Source:	Tomb of Annihilation p. 213,
 		Ghosts of Saltmarsh,
 		Essentials Kit: Sleeping Dragon's Wake</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Atropal</name>
@@ -554,13 +565,13 @@ Source:	Tomb of Annihilation p. 213,
     <wis>19</wis>
     <cha>24</cha>
     <save>Con +11, Wis +9</save>
-    <skill />
+    <skill/>
     <passive>14</passive>
     <languages>understands Celestial but utters only obscene nonsense</languages>
     <cr>13</cr>
-    <resist />
-    <immune>cold, necrotic; bludgeoning, piercing, slashing from nonmagical attacks</immune>
     <vulnerable>radiant</vulnerable>
+    <resist/>
+    <immune>cold, necrotic; bludgeoning, piercing, slashing from nonmagical attacks</immune>
     <conditionImmune>charmed, exhaustion, frightened, poisoned</conditionImmune>
     <senses>darkvision 120 ft., truesight 120 ft.</senses>
     <trait>
@@ -625,10 +636,12 @@ Undead Nature:
 An atropal doesn't require air, food, drink, or sleep.
 
 Source:	Tomb of Annihilation p. 214</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Azaka Stormfang</name>
+    <sortname>Stormfang, Azaka</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>Neutral</alignment>
@@ -641,15 +654,15 @@ Source:	Tomb of Annihilation p. 214</description>
     <int>10</int>
     <wis>13</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Perception +5, Stealth +4</skill>
     <passive>15</passive>
     <languages>Common (can't speak in tiger form)</languages>
     <cr>4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Shapechanger</name>
@@ -696,6 +709,7 @@ Source:	Tomb of Annihilation p. 214</description>
   </monster>
   <monster>
     <name>Bag of Nails</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tabaxi)</type>
     <alignment>Chaotic Neutral</alignment>
@@ -713,10 +727,10 @@ Source:	Tomb of Annihilation p. 214</description>
     <passive>13</passive>
     <languages>Thieves' cant, Common, Dwarvish</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Feline Agility</name>
@@ -761,7 +775,7 @@ Source:	Tomb of Annihilation p. 214</description>
 He explains that he came to Omu to find a fabled treasure called the Navel of the Moon. He hoped to use its alleged powers to find his lost son, but he has long since given up hope of ever finding it.
 
 Source:	Tomb of Annihilation p. 102</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Blind Artist</name>
@@ -778,13 +792,13 @@ Source:	Tomb of Annihilation p. 102</description>
     <wis>6</wis>
     <cha>5</cha>
     <save>Wis +0</save>
-    <skill />
+    <skill/>
     <passive>8</passive>
     <languages>understands all languages it spoke in life but can't speak</languages>
     <cr>1/4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -801,6 +815,8 @@ Source:	Tomb of Annihilation p. 102</description>
   </monster>
   <monster>
     <name>Bosco Daggerhand</name>
+    <sortname>Daggerhand, Bosco</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any Non-Good Alignment</alignment>
@@ -813,16 +829,16 @@ Source:	Tomb of Annihilation p. 102</description>
     <int>10</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Intimidation +2</skill>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Bosco wears a ring of animal influence.</text>
@@ -846,7 +862,7 @@ Source:	Tomb of Annihilation p. 102</description>
       <attack>Heavy Crossbow|+2|1d10</attack>
     </action>
     <description>Source:	Tomb of Annihilation p. 68</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Chwinga</name>
@@ -862,15 +878,15 @@ Source:	Tomb of Annihilation p. 102</description>
     <int>14</int>
     <wis>16</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Acrobatics +7, Perception +7, Stealth +7</skill>
     <passive>17</passive>
-    <languages />
+    <languages/>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 60 ft.</senses>
     <trait>
       <name>Unusual Nature</name>
@@ -879,6 +895,12 @@ Source:	Tomb of Annihilation p. 102</description>
     <trait>
       <name>Evasion</name>
       <text>When the chwinga is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The chwinga's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no material or verbal components:
+
+	• At will: druidcraft, guidance, pass without trace, resistance</text>
     </trait>
     <action>
       <name>Magical Gift (1/Day)</name>
@@ -889,12 +911,6 @@ Source:	Tomb of Annihilation p. 102</description>
       <name>Natural Shelter</name>
       <text>The chwinga magically takes shelter inside a rock, a living plant, or a natural source of fresh water in its space. The chwinga can't be targeted by any attack, spell, or other effect while inside this shelter, and the shelter doesn't impair the chwinga's blindsight. The chwinga can use it's action to emerge from a shelter. If its shelter is destroyed, the chwinga is forced out and appears in the shelter's space, but is otherwise unharmed.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The chwinga's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no material or verbal components:
-
-	• At will: druidcraft, guidance, pass without trace, resistance</text>
-    </trait>
     <spells>druidcraft, guidance, pass without trace, resistance</spells>
     <description>A chwinga (pronounced cheh-WING-ah) is a tiny elemental spirit that lives in plants, rocks, and rivers far from civilization. Painfully shy, chwingas prefer to move about unseen.
 
@@ -907,7 +923,7 @@ Elemental Nature:
 Chwingas sleep but don't require air, food, or drink. They don't have names and have no ability to speak. When a chwinga dies, it turns into a handful of flower petals, a cloud of pollen, a stone statuette resembling its former self, a marble of smooth stone, or a puddle of fresh water.
 
 Source:	Tomb of Annihilation p. 216</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Clay Gladiator</name>
@@ -926,13 +942,13 @@ Source:	Tomb of Annihilation p. 216</description>
     <save>Str +7, Dex +5, Con +6</save>
     <skill>Athletics +10, Intimidation +5</skill>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>5</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, frightened, poisoned</conditionImmune>
-    <senses />
+    <senses/>
     <trait>
       <name>Climbing</name>
       <text>The gladiator can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
@@ -966,10 +982,11 @@ Source:	Tomb of Annihilation p. 216</description>
     <description>A clay gladiator fights if attacked or when called to the gladiatorial pit. If reduced to 0 hit points outside of the gladiatorial pit, the gladiator disappears along with its possessions, reappears in its cell at full health with spear and shield in hand, and returns to the gladiatorial pit if it can. If defeated in the gladiatorial pit, the gladiator leaves its spear behind before reforming in its cell
 
 Source:	Tomb of Annihilation p. 100</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Dragonbait</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (saurial)</type>
     <alignment>Lawful Good</alignment>
@@ -987,11 +1004,11 @@ Source:	Tomb of Annihilation p. 100</description>
     <passive>13</passive>
     <languages>understands Common but can't speak</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Divine Health</name>
       <text>Dragonbait is immune to disease.</text>
@@ -1031,7 +1048,7 @@ Bond: Dragonbait gives off the scent of wood smoke while doing things to aid a f
 Flaw: Dragonbait "shouts" the scent of ham while going where others fear to tread. (Translation: He will hurl himself into danger no matter how frightening.)
 
 Source:	Tomb of Annihilation p. 218</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Drufi</name>
@@ -1052,11 +1069,11 @@ Source:	Tomb of Annihilation p. 218</description>
     <passive>13</passive>
     <languages>Giant</languages>
     <cr>8</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>cold</immune>
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>Drufi makes two greataxe attacks.</text>
@@ -1094,16 +1111,21 @@ Weighted Net: Ranged Weapon Attack: +5 to hit, ranged 20/60 ft., one Small, Medi
     <int>12</int>
     <wis>14</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Perception +4</skill>
     <passive>14</passive>
     <languages>Auran, Common</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The eblis's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:
+	• 1/Day each: blur, hypnotic pattern, minor illusion</text>
+    </trait>
     <action>
       <name>Multiattack</name>
       <text>The eblis attacks twice with its beak.</text>
@@ -1113,21 +1135,17 @@ Weighted Net: Ranged Weapon Attack: +5 to hit, ranged 20/60 ft., one Small, Medi
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target 5 (1d4 + 3) piercing damage.</text>
       <attack>Beak|+5|1d4+3</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The eblis's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no material components:
-	• 1/Day each: blur, hypnotic pattern, minor illusion</text>
-    </trait>
     <spells>blur, hypnotic pattern, minor illusion</spells>
     <description>Eblis (pronounced EH-blee) are thought to be reincarnations of evil humans who were punished by gods for acts of larceny and kidnapping. These intelligent, evil cranes loom 8 feet tall and lay eggs as mundane birds do. They can manipulate objects with their beaks and feet.
 
 Eblis try to sway other creatures into doing their bidding, and their plots are self-serving. They live to destroy creatures that offend them and delight in luring humanoids to an unexpected death. Eblis also like to collect treasure, which they sometimes use to reward those who serve them. They build crude huts and nests out of grass and reeds, wherein they hide their treasure.
 
 Source:	Tomb of Annihilation p. 219</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ekene-Afa</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1145,11 +1163,11 @@ Source:	Tomb of Annihilation p. 219</description>
     <passive>11</passive>
     <languages>any one language (usually Common)</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>Ekene-Afa has advantage on saving throws against being frightened.</text>
@@ -1177,7 +1195,7 @@ Source:	Tomb of Annihilation p. 219</description>
       <text>Ekene-Afa adds 3 to its AC against one melee attack that would hit it. To do so, Ekene-Afa must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Tomb of Annihilation p. 25</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Eku</name>
@@ -1194,14 +1212,14 @@ Source:	Tomb of Annihilation p. 219</description>
     <wis>20</wis>
     <cha>18</cha>
     <save>Con +5, Wis +7, Cha +6</save>
-    <skill />
+    <skill/>
     <passive>15</passive>
     <languages>all, telepathy 120 ft.</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>radiant</resist>
     <immune>psychic; bludgeoning, piercing, slashing from nonmagical attacks</immune>
-    <vulnerable />
-    <conditionImmune />
+    <conditionImmune/>
     <senses>truesight 120 ft.</senses>
     <trait>
       <name>Magic Weapons</name>
@@ -1210,6 +1228,14 @@ Source:	Tomb of Annihilation p. 219</description>
     <trait>
       <name>Shielded Mind</name>
       <text>Eku is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Eku's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:
+
+	• At will: detect evil and good, detect magic, detect thoughts
+	• 3/Day each: bless, create food and water, cure wounds, lesser restoration, protection from poison, sanctuary, shield
+	• 1/Day each: dream, greater restoration, scrying</text>
     </trait>
     <action>
       <name>Bite</name>
@@ -1231,20 +1257,14 @@ Until this grapple ends, the target is restrained, and Eku can't constrict anoth
 
 In a new form, Eku retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, Eku can use its bite in that form.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Eku's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:
-
-	• At will: detect evil and good, detect magic, detect thoughts
-	• 3/Day each: bless, create food and water, cure wounds, lesser restoration, protection from poison, sanctuary, shield
-	• 1/Day each: dream, greater restoration, scrying</text>
-    </trait>
     <spells>detect evil and good, detect magic, detect thoughts, bless, create food and water, cure wounds, lesser restoration, protection from poison, sanctuary, shield, dream, greater restoration, scrying</spells>
     <description>Source:	Tomb of Annihilation p. 34</description>
     <environment>grassland, forest, urban, desert</environment>
   </monster>
   <monster>
     <name>Elok Jaharwon</name>
+    <sortname>Jaharwon, Elok</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human, shapechanger)</type>
     <alignment>Neutral Evil</alignment>
@@ -1257,16 +1277,16 @@ In a new form, Eku retains its game statistics and ability to speak, but its AC,
     <int>10</int>
     <wis>11</wis>
     <cha>8</cha>
-    <save />
+    <save/>
     <skill>Perception +2</skill>
     <passive>12</passive>
     <languages>Common (can't speak in boar form)</languages>
     <cr>4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</immune>
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Shapechanger</name>
       <text>Elok can use its action to polymorph into a boar-humanoid hybrid or into a boar, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</text>
@@ -1303,6 +1323,7 @@ In a new form, Eku retains its game statistics and ability to speak, but its AC,
   </monster>
   <monster>
     <name>Faroul</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1315,16 +1336,16 @@ In a new form, Eku retains its game statistics and ability to speak, but its AC,
     <int>11</int>
     <wis>13</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Nature +4, Perception +5, Stealth +6, Survival +5</skill>
     <passive>15</passive>
     <languages>any one language (usually Common)</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Hearing and Sight</name>
       <text>Faroul has advantage on Wisdom (Perception) checks that rely on hearing or sight.</text>
@@ -1344,7 +1365,7 @@ In a new form, Eku retains its game statistics and ability to speak, but its AC,
       <attack>Longbow|+4|1d8+2</attack>
     </action>
     <description>Source:	Tomb of Annihilation p. 34</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Fenthaza</name>
@@ -1365,9 +1386,9 @@ In a new form, Eku retains its game statistics and ability to speak, but its AC,
     <passive>11</passive>
     <languages>Abyssal, Common, Draconic</languages>
     <cr>4</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft. (penetrates magical darkness)</senses>
     <trait>
@@ -1382,6 +1403,20 @@ In a new form, Eku retains its game statistics and ability to speak, but its AC,
     <trait>
       <name>Magic Resistance</name>
       <text>Fenthaza has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting (Yuan-ti Form Only)</name>
+      <text>Fenthaza's innate spellcasting ability is Charisma (spell save DC 13). Fenthaza can innately cast the following spells, requiring no material components:
+
+	• At will: animal friendship (snakes only)
+	• 3/Day: suggestion</text>
+    </trait>
+    <trait>
+      <name>Spellcasting (Yuan-ti Form Only)</name>
+      <text>Fenthaza is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:
+
+	• Cantrips (at will): chill touch, eldritch blast (range 300 ft., +3 bonus to each damage roll), mage hand, message, poison spray, prestidigitation
+	• 3rd level (2 slots): arms of Hadar, darkness, fear, hex, hold person, hunger of Hadar, witch bolt</text>
     </trait>
     <action>
       <name>Multiattack (Yuan-ti Form Only)</name>
@@ -1414,27 +1449,14 @@ Until this grapple ends, the target is restrained, and Fenthaza can't constrict 
       <recharge>1/DAY</recharge>
       <text>Fenthaza can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If Fenthaza spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting (Yuan-ti Form Only)</name>
-      <text>Fenthaza's innate spellcasting ability is Charisma (spell save DC 13). Fenthaza can innately cast the following spells, requiring no material components:
-
-	• At will: animal friendship (snakes only)
-	• 3/Day: suggestion</text>
-    </trait>
-    <trait>
-      <name>Spellcasting (Yuan-ti Form Only)</name>
-      <text>Fenthaza is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:
-
-	• Cantrips (at will): chill touch, eldritch blast (range 300 ft., +3 bonus to each damage roll), mage hand, message, poison spray, prestidigitation
-	• 3rd level (2 slots): arms of Hadar, darkness, fear, hex, hold person, hunger of Hadar, witch bolt</text>
-    </trait>
-    <slots>0, 2</slots>
+    <slots>0,2</slots>
     <spells>animal friendship, suggestion, chill touch, eldritch blast, mage hand, message, poison spray, prestidigitation, arms of Hadar, darkness, fear, hex, hold person, hunger of Hadar, witch bolt</spells>
     <description>Source:	Tomb of Annihilation p. 113</description>
     <environment>underdark, forest, desert</environment>
   </monster>
   <monster>
     <name>Flask of Wine</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tabaxi)</type>
     <alignment>Chaotic Good</alignment>
@@ -1447,15 +1469,15 @@ Until this grapple ends, the target is restrained, and Fenthaza can't constrict 
     <int>13</int>
     <wis>14</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Athletics +2, Perception +4, Stealth +5, Survival +6</skill>
     <passive>14</passive>
     <languages>Common plus any one language</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Feline Agility</name>
@@ -1481,7 +1503,7 @@ Until this grapple ends, the target is restrained, and Fenthaza can't constrict 
       <attack>Shortbow|+5|1d6+3</attack>
     </action>
     <description>Source:	Tomb of Annihilation p. 35</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Flying Monkey</name>
@@ -1497,16 +1519,16 @@ Until this grapple ends, the target is restrained, and Fenthaza can't constrict 
     <int>5</int>
     <wis>12</wis>
     <cha>6</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Pack Tactics</name>
       <text>The flying monkey has advantage on an attack roll against a creature if at least one of the monkey's allies is within 5 feet of the creature and the ally isn't incapacitated.</text>
@@ -1523,7 +1545,7 @@ Until this grapple ends, the target is restrained, and Fenthaza can't constrict 
     <description>Flying monkeys are slightly more clever and curious than common monkeys, and they can be domesticated and taught to obey simple commands. They come in many colors and varieties, with feathered wings that have a span of about 5 feet.
 
 Source:	Tomb of Annihilation p. 220</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Giant Four-Armed Gargoyle</name>
@@ -1544,9 +1566,9 @@ Source:	Tomb of Annihilation p. 220</description>
     <passive>14</passive>
     <languages>Terran</languages>
     <cr>10</cr>
+    <vulnerable/>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks not made with adamantine weapons</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1570,7 +1592,7 @@ Source:	Tomb of Annihilation p. 220</description>
     <description>Only Acererak knows the secret of creating these creatures. A giant four-armed gargoyle stands 8 to 9 feet tall and weighs roughly five thousand pounds. It is typically employed as a tomb guardian, rending intruders with its fangs and deadly claws. For more information on gargoyles, see the Monster Manual.
 
 Source:	Tomb of Annihilation p. 221</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Giant Snapping Turtle</name>
@@ -1586,15 +1608,15 @@ Source:	Tomb of Annihilation p. 221</description>
     <int>2</int>
     <wis>12</wis>
     <cha>5</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -1612,7 +1634,7 @@ Source:	Tomb of Annihilation p. 221</description>
     <description>Giant snapping turtles can grow to be 12 feet in diameter. Although they appear slow and ponderous, they are capable of startling bursts of speed and will aggressively attack smaller creatures that approach them. One snap of a giant turtle's jaws can cut a human in half, and these creatures aren't fussy about what they eat.
 
 Source:	Tomb of Annihilation p. 222</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Girallon Zombie</name>
@@ -1628,14 +1650,14 @@ Source:	Tomb of Annihilation p. 222</description>
     <int>3</int>
     <wis>7</wis>
     <cha>5</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>3</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -1672,10 +1694,11 @@ Tyrannosaurus Zombie:
 A tyrannosaurus zombie has a gullet full of smaller zombies, which it can disgorge. These zombies aren't under the tyrannosaurus zombie's control.
 
 Source:	Tomb of Annihilation p. 240</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Gondolo</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (halfling)</type>
     <alignment>Any alignment</alignment>
@@ -1688,16 +1711,16 @@ Source:	Tomb of Annihilation p. 240</description>
     <int>11</int>
     <wis>13</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Nature +4, Perception +5, Stealth +6, Survival +5</skill>
     <passive>15</passive>
     <languages>any one language (usually Common), Halfling</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Hearing and Sight</name>
       <text>Gondolo has advantage on Wisdom (Perception) checks that rely on hearing or sight.</text>
@@ -1725,10 +1748,11 @@ Source:	Tomb of Annihilation p. 240</description>
       <attack>Longbow|+4|1d8+2</attack>
     </action>
     <description>Source:	Tomb of Annihilation p. 34</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Grabstab</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (goblinoid)</type>
     <alignment>Neutral Evil</alignment>
@@ -1741,15 +1765,15 @@ Source:	Tomb of Annihilation p. 240</description>
     <int>10</int>
     <wis>8</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Stealth +6</skill>
     <passive>9</passive>
     <languages>Common, Goblin</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Nimble Escape</name>
@@ -1778,6 +1802,7 @@ Source:	Tomb of Annihilation p. 240</description>
   </monster>
   <monster>
     <name>Grandfather Zitembe</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1790,25 +1815,20 @@ Source:	Tomb of Annihilation p. 240</description>
     <int>13</int>
     <wis>16</wis>
     <cha>13</cha>
-    <save />
+    <save/>
     <skill>Medicine +7, Persuasion +3, Religion +5</skill>
     <passive>13</passive>
     <languages>any two languages</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Divine Eminence</name>
       <text>As a bonus action, Zitembe can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Zitembe expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
     </trait>
-    <action>
-      <name>Mace</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Mace|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Zitembe is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Zitembe has the following cleric spells prepared:
@@ -1818,13 +1838,20 @@ Source:	Tomb of Annihilation p. 240</description>
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Mace|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
     <description>Source:	Tomb of Annihilation p. 20</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Hew Hackinstone</name>
+    <sortname>Hackinstone, Hew</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Chaotic Neutral</alignment>
@@ -1837,15 +1864,15 @@ Source:	Tomb of Annihilation p. 240</description>
     <int>9</int>
     <wis>11</wis>
     <cha>9</cha>
-    <save />
+    <save/>
     <skill>Survival +4</skill>
     <passive>10</passive>
     <languages>any one language (usually Common)</languages>
     <cr>2</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
@@ -1866,10 +1893,11 @@ Biography:
 Three years ago, Hew was part of a dwarven expedition seeking to reopen Wyrmheart Mine. The expedition encountered Tinder the red dragon. Hew alone escaped, and only after the dragon bit off his left arm. Hew wants to return to the mine and slay the dragon, but he needs a band of stout-hearted adventurers to help him. If the characters hire him as a guide, Hew says he can lead them wherever they want, but he'll only take them to Wyrmheart Mine.
 
 Source:	Tomb of Annihilation p. 33</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ifan Talro'a</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -1882,16 +1910,16 @@ Source:	Tomb of Annihilation p. 33</description>
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +4, Persuasion +5</skill>
     <passive>12</passive>
     <languages>any two languages</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Rapier</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.</text>
@@ -1902,7 +1930,7 @@ Source:	Tomb of Annihilation p. 33</description>
       <text>Ifan adds 2 to its AC against one melee attack that would hit it. To do so, Ifan must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Tomb of Annihilation p. 25</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Jaculi</name>
@@ -1918,15 +1946,15 @@ Source:	Tomb of Annihilation p. 33</description>
     <int>2</int>
     <wis>8</wis>
     <cha>3</cha>
-    <save />
+    <save/>
     <skill>Athletics +4, Perception +1, Stealth +4</skill>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 30 ft.</senses>
     <trait>
       <name>Camouflage</name>
@@ -1950,10 +1978,11 @@ Source:	Tomb of Annihilation p. 33</description>
 Jaculis are found in damp climates, and their preferred habitats are rainforests and cool dungeons. The shed skin of the jaculi is coveted for use in crafting boots of striding and springing and cloaks of invisibility.
 
 Source:	Tomb of Annihilation p. 225</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Jessamine</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any Non-Good Alignment</alignment>
@@ -1971,11 +2000,11 @@ Source:	Tomb of Annihilation p. 225</description>
     <passive>13</passive>
     <languages>Thieves' cant plus any two languages</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Assassinate</name>
       <text>During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.</text>
@@ -2006,10 +2035,11 @@ Source:	Tomb of Annihilation p. 225</description>
       <attack>Light Crossbow||7d6</attack>
     </action>
     <description>Source:	Tomb of Annihilation p. 26</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Jobal</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -2022,16 +2052,16 @@ Source:	Tomb of Annihilation p. 225</description>
     <int>11</int>
     <wis>13</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Nature +4, Perception +5, Stealth +6, Survival +5</skill>
     <passive>15</passive>
     <languages>any one language (usually Common)</languages>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Hearing and Sight</name>
       <text>Jobal has advantage on Wisdom (Perception) checks that rely on hearing or sight.</text>
@@ -2051,7 +2081,7 @@ Source:	Tomb of Annihilation p. 225</description>
       <attack>Longbow|+4|1d8+2</attack>
     </action>
     <description>Source:	Tomb of Annihilation p. 26</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Kamadan</name>
@@ -2067,16 +2097,16 @@ Source:	Tomb of Annihilation p. 225</description>
     <int>3</int>
     <wis>14</wis>
     <cha>10</cha>
-    <save />
+    <save/>
     <skill>Perception +4, Stealth +7</skill>
     <passive>14</passive>
-    <languages />
+    <languages/>
     <cr>4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Smell</name>
       <text>The kamadan has advantage on Wisdom (Perception) checks that rely on smell.</text>
@@ -2115,7 +2145,7 @@ Source:	Tomb of Annihilation p. 225</description>
 Kamadans typically hunt alone or in mated pairs. They can exhale clouds of sleep gas, which they typically do before entering melee combat. If a kamadan has both conscious and unconscious enemies within striking range, it tries to kill the conscious enemies first before finishing off any sleeping foes.
 
 Source:	Tomb of Annihilation p. 225</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>King of Feathers</name>
@@ -2131,16 +2161,16 @@ Source:	Tomb of Annihilation p. 225</description>
     <int>2</int>
     <wis>12</wis>
     <cha>9</cha>
-    <save />
+    <save/>
     <skill>Perception +4</skill>
     <passive>14</passive>
-    <languages />
+    <languages/>
     <cr>8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Detect Invisibility</name>
       <text>The King of Feathers can see invisible creatures and objects as if they were visible.</text>
@@ -2149,6 +2179,12 @@ Source:	Tomb of Annihilation p. 225</description>
       <name>Legendary Resistance (3/Day)</name>
       <recharge>3/DAY</recharge>
       <text>If the King of Feathers fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The King of Feathers's innate spellcasting ability is Wisdom. It can innately cast the following spell, requiring no material components:
+
+	• At will: misty step</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -2169,17 +2205,11 @@ Source:	Tomb of Annihilation p. 225</description>
       <recharge>D5</recharge>
       <text>The King of Feathers exhales a swarm of insects (wasps) that forms in a space within 20 feet of it. The swarm acts as an ally of the King of Feathers and takes its turn immediately after it. The swarm disperses after 1 minute. It can't use the Summon Swarm action while it is grappling a creature with its jaws.</text>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The King of Feathers's innate spellcasting ability is Wisdom. It can innately cast the following spell, requiring no material components:
-
-	• At will: misty step</text>
-    </trait>
     <spells>misty step</spells>
     <description>The monstrous tyrannosaurus known as the King of Feathers is the undisputed lord of Omu. Most other dwellers of the Forbidden City live in fear of its thunderous approach and steer well clear of the amphitheater, its lair.
 
 Source:	Tomb of Annihilation p. 106</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Kupalué</name>
@@ -2195,15 +2225,15 @@ Source:	Tomb of Annihilation p. 106</description>
     <int>6</int>
     <wis>11</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Perception +2, Stealth +4</skill>
     <passive>12</passive>
     <languages>Vegepygmy</languages>
     <cr>1/4</cr>
+    <vulnerable/>
     <resist>lightning, piercing</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Plant Camouflage</name>
@@ -2228,6 +2258,7 @@ Source:	Tomb of Annihilation p. 106</description>
   </monster>
   <monster>
     <name>Kwayothé</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -2240,25 +2271,20 @@ Source:	Tomb of Annihilation p. 106</description>
     <int>13</int>
     <wis>16</wis>
     <cha>13</cha>
-    <save />
+    <save/>
     <skill>Medicine +7, Persuasion +3, Religion +5</skill>
     <passive>13</passive>
     <languages>any two languages</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Divine Eminence</name>
       <text>As a bonus action, Kwayothé can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Kwayothé expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
     </trait>
-    <action>
-      <name>Mace</name>
-      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
-      <attack>Mace|+2|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Kwayothé is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). Kwayothé has the following cleric spells prepared:
@@ -2268,13 +2294,19 @@ Source:	Tomb of Annihilation p. 106</description>
 	• 2nd level (3 slots): lesser restoration, spiritual weapon
 	• 3rd level (2 slots): dispel magic, spirit guardians</text>
     </trait>
-    <slots>0, 4, 3, 2</slots>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Mace|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
     <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
     <description>Source:	Tomb of Annihilation p. 26</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Laskilar</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any Non-Lawful Alignment</alignment>
@@ -2292,11 +2324,11 @@ Source:	Tomb of Annihilation p. 106</description>
     <passive>10</passive>
     <languages>any two languages</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Special Equipment</name>
       <text>Laskilar wears a cape of the mountebank.</text>
@@ -2320,10 +2352,11 @@ Source:	Tomb of Annihilation p. 106</description>
       <text>Laskilar adds 2 to its AC against one melee attack that would hit it. To do so, Laskilar must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Tomb of Annihilation p. 67</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Liara Portyr</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Evil</alignment>
@@ -2341,11 +2374,11 @@ Source:	Tomb of Annihilation p. 106</description>
     <passive>12</passive>
     <languages>Common, Draconic, Dwarvish</languages>
     <cr>4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>Liara has advantage on saving throws against being frightened.</text>
@@ -2379,7 +2412,7 @@ Flaw: "It's a ghoul-eat-you world out here. I have no pity for those who can't d
 
 Source:	Tomb of Annihilation p. 227,
 		Baldur's Gate: Descent Into Avernus</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Mantrap</name>
@@ -2395,14 +2428,14 @@ Source:	Tomb of Annihilation p. 227,
     <int>1</int>
     <wis>10</wis>
     <cha>2</cha>
-    <save />
+    <save/>
     <skill>Perception +4, Stealth +6</skill>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>blinded, deafened, exhaustion, prone</conditionImmune>
     <senses>tremorsense 30 ft.</senses>
     <trait>
@@ -2422,7 +2455,7 @@ Source:	Tomb of Annihilation p. 227,
     <description>A mantrap is a giant carnivorous plant that resembles an oversized flytrap. To attract prey, the mantrap releases a pollen that magically draws creatures to it. Though it will snap its leafy jaws shut around any warm-blooded creature that strays within its reach, it prefers humanoid prey.
 
 Source:	Tomb of Annihilation p. 227</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Mister Threadneedle</name>
@@ -2438,14 +2471,14 @@ Source:	Tomb of Annihilation p. 227</description>
     <int>10</int>
     <wis>10</wis>
     <cha>13</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>1</cr>
+    <vulnerable>fire</vulnerable>
     <resist>bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable>fire</vulnerable>
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned, unconscious</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -2470,6 +2503,7 @@ Source:	Tomb of Annihilation p. 227</description>
   </monster>
   <monster>
     <name>Musharib</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (dwarf)</type>
     <alignment>Any alignment</alignment>
@@ -2482,36 +2516,37 @@ Source:	Tomb of Annihilation p. 227</description>
     <int>12</int>
     <wis>14</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Perception +4, Stealth +3, Survival +4</skill>
     <passive>14</passive>
     <languages>Common, Dwarvish</languages>
     <cr>1</cr>
+    <vulnerable/>
     <resist>poison</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Dwarven Resilience</name>
       <text>Musharib has advantage on saving throws against poison.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Musharib's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no material components:
+	• 1/Day each: hunter's mark, jump, pass without trace, speak with animals, speak with plants</text>
     </trait>
     <action>
       <name>Handaxe</name>
       <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) slashing damage.</text>
       <attack>Handaxe|+3|1d6+1</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Musharib's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no material components:
-	• 1/Day each: hunter's mark, jump, pass without trace, speak with animals, speak with plants</text>
-    </trait>
     <spells>hunter's mark, jump, pass without trace, speak with animals, speak with plants</spells>
     <description>Source:	Tomb of Annihilation p. 34</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Mwaxanaré</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Lawful Neutral</alignment>
@@ -2524,21 +2559,16 @@ Source:	Tomb of Annihilation p. 227</description>
     <int>13</int>
     <wis>12</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Nature +3, Persuasion +5, Religion +3</skill>
     <passive>11</passive>
     <languages>Auran, Common, telepathy 30 ft.</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +2 to hit. reach 5 ft. or range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
-      <attack>Dagger|+2|1d4</attack>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Mwaxanaré is a 2nd-level spellcaster. Her spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). She regains her expended spell slots when she finishes a short or long rest. She knows the following warlock spells:
@@ -2546,7 +2576,12 @@ Source:	Tomb of Annihilation p. 227</description>
 	• Cantrips (at will): eldritch blast, mage hand
 	• 1st level (2 slots): charm person, protection from evil and good, unseen servant</text>
     </trait>
-    <slots>0, 2</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +2 to hit. reach 5 ft. or range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
+      <attack>Dagger|+2|1d4</attack>
+    </action>
+    <slots>0,2</slots>
     <spells>eldritch blast, mage hand, charm person, protection from evil and good, unseen servant</spells>
     <description>At the tender age of seventeen, Princess Mwaxanaré ("Naré" for short) is the oldest living descendant of the royal families of Omu and the natural inheritor of their fallen kingdom. She and her six-year-old brother, Na, are guests of the aarakocra in Kir Sabal. The aarakocra aim to protect the young royals until such time as the evil in Omu has been vanquished.
 
@@ -2567,10 +2602,11 @@ Bond: "I love my sister and the aarakocra. They mean everything to me."
 Flaw: "I know nothing of the world."
 
 Source:	Tomb of Annihilation p. 228</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Na</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (human)</type>
     <alignment>Neutral</alignment>
@@ -2583,18 +2619,18 @@ Source:	Tomb of Annihilation p. 228</description>
     <int>10</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>Common</languages>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <description>Source:	Tomb of Annihilation p. 228</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Nanny Pu'pu</name>
@@ -2610,15 +2646,15 @@ Source:	Tomb of Annihilation p. 228</description>
     <int>13</int>
     <wis>14</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Arcana +3, Deception +4, Perception +4, Stealth +3</skill>
     <passive>14</passive>
     <languages>Common, Draconic, Sylvan</languages>
     <cr>3</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Amphibious</name>
@@ -2640,21 +2676,6 @@ A coven consists of three hags so that any arguments between two hags can be set
 
 A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and Pu'pus can't perform it while blinded. During the ritual, if Pu'pus take any action other than performing the ritual, they must start over.</text>
     </trait>
-    <action>
-      <name>Claws</name>
-      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.</text>
-      <attack>Claws|+6|2d8+4</attack>
-    </action>
-    <action>
-      <name>Illusory Appearance</name>
-      <text>Pu'pu covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if Pu'pu takes a bonus action to end it or if she dies.
-
-The changes wrought by this effect fail to hold up to physical inspection. For example, Pu'pu could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 Intelligence (Investigation) check to discern that Pu'pu is disguised.</text>
-    </action>
-    <action>
-      <name>Invisible Passage</name>
-      <text>Pu'pu magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her.</text>
-    </action>
     <trait>
       <name>Innate Spellcasting</name>
       <text>Pu'pu's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:
@@ -2673,7 +2694,22 @@ The changes wrought by this effect fail to hold up to physical inspection. For e
 	• 6th level (1 slots): eyebite
 For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + Pu'pu's Intelligence modifier, and the spell attack bonus is 4 + Pu'pu's Intelligence modifier.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.</text>
+      <attack>Claws|+6|2d8+4</attack>
+    </action>
+    <action>
+      <name>Illusory Appearance</name>
+      <text>Pu'pu covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if Pu'pu takes a bonus action to end it or if she dies.
+
+The changes wrought by this effect fail to hold up to physical inspection. For example, Pu'pu could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 20 Intelligence (Investigation) check to discern that Pu'pu is disguised.</text>
+    </action>
+    <action>
+      <name>Invisible Passage</name>
+      <text>Pu'pu magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her.</text>
+    </action>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>dancing lights, minor illusion, vicious mockery, identify, ray of sickness, hold person, locate object, bestow curse, counterspell, lightning bolt, phantasmal killer, polymorph, contact other plane, scrying, eyebite</spells>
     <description>Source:	Tomb of Annihilation p. 72</description>
     <environment>forest, swamp, hill</environment>
@@ -2692,14 +2728,14 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
     <int>16</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Arcana +5, Perception +2</skill>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>lightning, necrotic, piercing</resist>
     <immune>cold, fire, poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, frightened, paralyzed, poisoned, prone</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -2714,15 +2750,6 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
       <name>Rejuvenation</name>
       <text>If Nepartak is destroyed, it regains all its hit points in 1 hour unless holy water is sprinkled on its remains or a dispel magic or remove curse spell is cast on them.</text>
     </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>Nepartak uses Fire Ray twice.</text>
-    </action>
-    <action>
-      <name>Fire Ray</name>
-      <text>Ranged Spell Attack: +5 to hit, range 30 ft., one target. Hit: 10 (3d6) fire damage.</text>
-      <attack>Fire Ray|+5|3d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Nepartak is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It requires no somatic or material components to cast its spells. Nepartak has the following wizard spells prepared:
@@ -2732,13 +2759,24 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
 	• 2nd level (2 slots): blur, flaming sphere
 	• 3rd level (1 slots): fireball</text>
     </trait>
-    <slots>3, 2, 1</slots>
+    <action>
+      <name>Multiattack</name>
+      <text>Nepartak uses Fire Ray twice.</text>
+    </action>
+    <action>
+      <name>Fire Ray</name>
+      <text>Ranged Spell Attack: +5 to hit, range 30 ft., one target. Hit: 10 (3d6) fire damage.</text>
+      <attack>Fire Ray|+5|3d6</attack>
+    </action>
+    <slots>3,2,1</slots>
     <spells>mage hand, magic missile, shield, blur, flaming sphere, fireball</spells>
     <description>Source:	Tomb of Annihilation p. 137</description>
     <environment>underdark</environment>
   </monster>
   <monster>
     <name>Niles Breakbone</name>
+    <sortname>Breakbone, Niles</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -2751,16 +2789,16 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +4, Persuasion +5</skill>
     <passive>12</passive>
     <languages>any two languages</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Rapier</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.</text>
@@ -2771,10 +2809,11 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
       <text>Niles adds 2 to its AC against one melee attack that would hit it. To do so, Niles must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Tomb of Annihilation p. 47</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ortimay Swift and Dark</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (gnome)</type>
     <alignment>Any Non-Lawful Alignment</alignment>
@@ -2792,10 +2831,10 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
     <passive>10</passive>
     <languages>any two languages, Gnomish</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Gnome Cunning</name>
@@ -2820,10 +2859,12 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
       <text>Ortimay adds 2 to its AC against one melee attack that would hit it. To do so, Ortimay must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Tomb of Annihilation p. 21</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Orvex Ocrammas</name>
+    <sortname>Ocrammas, Orvex</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -2836,16 +2877,16 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
-    <skill>Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight of hand +4, Stealth +4</skill>
+    <save/>
+    <skill>Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight Of Hand +4, Stealth +4</skill>
     <passive>16</passive>
     <languages>any two languages</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Cunning Action</name>
       <text>On each of its turns, Orvex can use a bonus action to take the Dash, Disengage, or Hide action.</text>
@@ -2870,7 +2911,7 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
       <attack>Hand Crossbow|+4|1d6+2</attack>
     </action>
     <description>Source:	Tomb of Annihilation p. 96</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Pterafolk</name>
@@ -2886,16 +2927,16 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
     <int>9</int>
     <wis>10</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Perception +2, Survival +2</skill>
     <passive>12</passive>
     <languages>Common</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Terror Dive</name>
       <text>If the pterafolk is flying and dives at least 30 feet straight toward a target, and then hits that target with a melee weapon attack, the target is frightened until the end of its next turn.</text>
@@ -2924,10 +2965,11 @@ For casting these spells, each hag is a 12th-level spellcaster that uses Intelli
 Pterafolk have 20-foot wingspans and give birth to live young. Ancient rituals once bestowed upon pterafolk the ability to assume the forms of pteranodons and wingless lizardfolk, but those rituals have long been forgotten.
 
 Source:	Tomb of Annihilation p. 229</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Qawasha</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -2940,21 +2982,16 @@ Source:	Tomb of Annihilation p. 229</description>
     <int>12</int>
     <wis>15</wis>
     <cha>11</cha>
-    <save />
+    <save/>
     <skill>Medicine +4, Nature +3, Perception +4</skill>
     <passive>14</passive>
     <languages>Druidic plus any two languages</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
-      <attack>Quarterstaff|+2|1d6</attack>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Qawasha is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:
@@ -2963,13 +3000,19 @@ Source:	Tomb of Annihilation p. 229</description>
 	• 1st level (4 slots): entangle, longstrider, speak with animals, thunderwave
 	• 2nd level (3 slots): animal messenger, barkskin</text>
     </trait>
-    <slots>0, 4, 3</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands.</text>
+      <attack>Quarterstaff|+2|1d6</attack>
+    </action>
+    <slots>0,4,3</slots>
     <spells>druidcraft, produce flame, shillelagh, entangle, longstrider, speak with animals, thunderwave, animal messenger, barkskin</spells>
     <description>Source:	Tomb of Annihilation p. 35</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Ras Nsi</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>monstrosity (shapechanger, yuan-ti)</type>
     <alignment>Neutral Evil</alignment>
@@ -2987,9 +3030,9 @@ Source:	Tomb of Annihilation p. 229</description>
     <passive>14</passive>
     <languages>Abyssal, Common, Draconic</languages>
     <cr>7</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3007,6 +3050,27 @@ Source:	Tomb of Annihilation p. 229</description>
     <trait>
       <name>Magic Resistance</name>
       <text>Ras Nsi has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Ras Nsi's innate spellcasting ability is Charisma (spell save DC 16). He can innately cast the following spells, requiring no material components:
+
+	• At will: animal friendship (snakes only)
+	• 3/Day: suggestion</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Ras Nsi is an 11th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks).
+
+Ras Nsi has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch, fire bolt, mage hand, mending, poison spray
+	• 1st level (4 slots): expeditious retreat, false life, magic missile, shield
+	• 2nd level (3 slots): blindness/deafness, hold person, misty step
+	• 3rd level (3 slots): animate dead, counterspell, fireball
+	• 4th level (3 slots): blight, polymorph
+	• 5th level (2 slots): contact other plane, geas
+	• 6th level (1 slots): create undead</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -3029,28 +3093,7 @@ Until this grapple ends, the target is restrained, and Ras Nsi can't constrict a
       <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage when used with two hands, plus 7 (2d6) fire damage.</text>
       <attack>Flame Tongue Longsword (Yuan-ti Form Only)|+6|1d8+3</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Ras Nsi's innate spellcasting ability is Charisma (spell save DC 16). He can innately cast the following spells, requiring no material components:
-
-	• At will: animal friendship (snakes only)
-	• 3/Day: suggestion</text>
-    </trait>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Ras Nsi is an 11th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks).
-
-Ras Nsi has the following wizard spells prepared:
-
-	• Cantrips (at will): chill touch, fire bolt, mage hand, mending, poison spray
-	• 1st level (4 slots): expeditious retreat, false life, magic missile, shield
-	• 2nd level (3 slots): blindness/deafness, hold person, misty step
-	• 3rd level (3 slots): animate dead, counterspell, fireball
-	• 4th level (3 slots): blight, polymorph
-	• 5th level (2 slots): contact other plane, geas
-	• 6th level (1 slots): create undead</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 2, 1</slots>
+    <slots>0,4,3,3,3,2,1</slots>
     <spells>animal friendship, suggestion, chill touch, fire bolt, mage hand, mending, poison spray, expeditious retreat, false life, magic missile, shield, blindness/deafness, hold person, misty step, animate dead, counterspell, fireball, blight, polymorph, contact other plane, geas, create undead</spells>
     <description>The word "ras" is a noble title akin to "duke." Ras Nsi was once a Chultan paladin, a Chosen of Ubtao and sworn protector of the city of Mezro. He betrayed his oaths and was banished from the city. Becoming a vengeful warlord, Ras Nsi attempted to conquer Mezro with an undead army but was defeated. Rather than seek redemption, he sought revenge and was stripped of his god-given powers. The undead horde, no longer under his control, spread throughout the jungles of Chult.
 
@@ -3068,10 +3111,11 @@ Bond: "The yuan-ti of Chult are mine to command. They will help me rule an empir
 Flaw: "I will do anything and betray anyone to save myself."
 
 Source:	Tomb of Annihilation p. 230</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>River Mist</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tabaxi)</type>
     <alignment>Chaotic Good</alignment>
@@ -3084,15 +3128,15 @@ Source:	Tomb of Annihilation p. 230</description>
     <int>13</int>
     <wis>14</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Athletics +2, Perception +4, Stealth +5, Survival +6</skill>
     <passive>14</passive>
     <languages>Common plus any one language</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Feline Agility</name>
@@ -3118,10 +3162,11 @@ Source:	Tomb of Annihilation p. 230</description>
       <attack>Shortbow|+5|1d6+3</attack>
     </action>
     <description>Source:	Tomb of Annihilation p. 35</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Salida</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (yuan-ti)</type>
     <alignment>Neutral Evil</alignment>
@@ -3134,19 +3179,26 @@ Source:	Tomb of Annihilation p. 230</description>
     <int>13</int>
     <wis>12</wis>
     <cha>14</cha>
-    <save />
+    <save/>
     <skill>Deception +6, Perception +3, Stealth +3</skill>
     <passive>13</passive>
     <languages>Abyssal, Common, Draconic</languages>
     <cr>1</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Magic Resistance</name>
       <text>Salida has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>Salida's spellcasting ability is Charisma (spell save DC 12). Salida can innately cast the following spells, requiring no material components:
+
+	• At will: animal friendship (snakes only)
+	• 3/Day each: poison spray, suggestion</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -3162,19 +3214,13 @@ Source:	Tomb of Annihilation p. 230</description>
       <text>Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 7 (2d6) poison damage.</text>
       <attack>Shortbow|+3|1d6+1</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>Salida's spellcasting ability is Charisma (spell save DC 12). Salida can innately cast the following spells, requiring no material components:
-
-	• At will: animal friendship (snakes only)
-	• 3/Day each: poison spray, suggestion</text>
-    </trait>
     <spells>animal friendship, poison spray, suggestion</spells>
     <description>Source:	Tomb of Annihilation p. 35</description>
     <environment>forest, swamp, urban, desert</environment>
   </monster>
   <monster>
     <name>Sekelok</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3192,11 +3238,11 @@ Source:	Tomb of Annihilation p. 230</description>
     <passive>16</passive>
     <languages>any one language (usually Common)</languages>
     <cr>9</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>Sekelok has advantage on saving throws against spells and other magical effects.</text>
@@ -3230,6 +3276,7 @@ Source:	Tomb of Annihilation p. 230</description>
   </monster>
   <monster>
     <name>Shago</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3247,11 +3294,11 @@ Source:	Tomb of Annihilation p. 230</description>
     <passive>11</passive>
     <languages>any one language (usually Common)</languages>
     <cr>5</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Brave</name>
       <text>Shago has advantage on saving throws against being frightened.</text>
@@ -3279,7 +3326,7 @@ Source:	Tomb of Annihilation p. 230</description>
       <text>Shago adds 3 to its AC against one melee attack that would hit it. To do so, Shago must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Tomb of Annihilation p. 35</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Skeleton Key</name>
@@ -3295,14 +3342,14 @@ Source:	Tomb of Annihilation p. 230</description>
     <int>6</int>
     <wis>8</wis>
     <cha>5</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>9</passive>
     <languages>understands all languages it spoke in life but can't speak</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune>poison</immune>
     <vulnerable>bludgeoning</vulnerable>
+    <resist/>
+    <immune>poison</immune>
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3336,14 +3383,14 @@ Source:	Tomb of Annihilation p. 230</description>
     <int>6</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>6</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>lightning, poison; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3390,7 +3437,7 @@ A magical spiked chain that binds a pair of guardians together prevents them fro
 A tomb guardian is a flesh golem clad in plate armor, giving it AC 17
 
 Source:	Tomb of Annihilation p. 154</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Stone Juggernaut</name>
@@ -3406,14 +3453,14 @@ Source:	Tomb of Annihilation p. 154</description>
     <int>14</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>12</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison; bludgeoning, piercing, slashing from nonmagical attacks not made with adamantine weapons</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone</conditionImmune>
     <senses>blindsight 120 ft.</senses>
     <trait>
@@ -3442,7 +3489,7 @@ Source:	Tomb of Annihilation p. 154</description>
 A stone juggernaut is fast, but it lacks maneuverability and can move in only one direction on its turn. It poses little danger to creatures it can't crush beneath its rollers. Its best tactic is to slam into a creature, knock it prone, and then roll over it.
 
 Source:	Tomb of Annihilation p. 231</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Su-monster</name>
@@ -3458,16 +3505,16 @@ Source:	Tomb of Annihilation p. 231</description>
     <int>9</int>
     <wis>13</wis>
     <cha>9</cha>
-    <save />
+    <save/>
     <skill>Athletics +6, Perception +3</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>The su-monster makes two attacks: one with its bite and one with its claws.</text>
@@ -3495,10 +3542,12 @@ A su-monster sleeps while hanging upside down by its tail. While awake, it can a
 Su-monsters communicate silently by using their prehensile tails to make gestures. They typically kill more than they can eat, burying the leftovers and marking their location with the victim's possessions.
 
 Source:	Tomb of Annihilation p. 232</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Syndra Silvane</name>
+    <sortname>Silvane, Syndra</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -3516,24 +3565,15 @@ Source:	Tomb of Annihilation p. 232</description>
     <passive>12</passive>
     <languages>any six languages</languages>
     <cr>12</cr>
+    <vulnerable/>
     <resist>damage from spells; nonmagical bludgeoning, piercing, slashing (from stoneskin)</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>Syndra has advantage on saving throws against spells and other magical effects.</text>
     </trait>
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+6|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Syndra is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Syndra can cast disguise self and invisibility at will and has the following wizard spells prepared:
@@ -3553,13 +3593,25 @@ Source:	Tomb of Annihilation p. 232</description>
 
 *Syndra casts these spells on itself before combat.</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+6|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>disguise self, invisibility, fire bolt, light, mage hand, prestidigitation, shocking grasp, detect magic, identify, mage armor, magic missile, detect thoughts, mirror image, misty step, counterspell, fly, lightning bolt, banishment, fire shield, stoneskin, cone of cold, scrying, wall of force, globe of invulnerability, teleport, mind blank, time stop</spells>
     <description>Source:	Tomb of Annihilation p. 8</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tabaxi Hunter</name>
+    <sortname>Tabaxi, Hunter</sortname>
+    <ancestry>Tabaxi</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (tabaxi)</type>
     <alignment>Chaotic Good</alignment>
@@ -3572,15 +3624,15 @@ Source:	Tomb of Annihilation p. 232</description>
     <int>13</int>
     <wis>14</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Athletics +2, Perception +4, Stealth +5, Survival +6</skill>
     <passive>14</passive>
     <languages>Common plus any one language</languages>
     <cr>1</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Feline Agility</name>
@@ -3613,10 +3665,12 @@ Names:
 A tabaxi typically has a single name, determined by his or her clan and based on a complex formula involving astrology, prophecy, clan history, and other factors. Male and female tabaxi use the same names, and most use nicknames derived from or inspired by their full names. Tabaxi clan names are usually based on a geographical feature located in or near a clan's territory. Sample tabaxi names include Nest of Eggs ("Eggs"), Dead Leaf ("Leaf"), Eyes of Onyx ("Onyx"), Lost Spear ("Lost"), and Daylight Moon ("Moon"). Clan names include Distant Rain, Hundred Feathers, Sleeping Creek, Bright Cliffs, and Snoring Mountain.
 
 Source:	Tomb of Annihilation p. 232</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tabaxi Minstrel</name>
+    <sortname>Tabaxi, Minstrel</sortname>
+    <ancestry>Tabaxi</ancestry>
     <size>M</size>
     <type>humanoid (tabaxi)</type>
     <alignment>Chaotic Good</alignment>
@@ -3629,15 +3683,15 @@ Source:	Tomb of Annihilation p. 232</description>
     <int>14</int>
     <wis>12</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Performance +7, Persuasion +5, Stealth +4</skill>
     <passive>13</passive>
     <languages>Common plus any two languages</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Feline Agility</name>
@@ -3670,10 +3724,12 @@ Names:
 A tabaxi typically has a single name, determined by his or her clan and based on a complex formula involving astrology, prophecy, clan history, and other factors. Male and female tabaxi use the same names, and most use nicknames derived from or inspired by their full names. Tabaxi clan names are usually based on a geographical feature located in or near a clan's territory. Sample tabaxi names include Nest of Eggs ("Eggs"), Dead Leaf ("Leaf"), Eyes of Onyx ("Onyx"), Lost Spear ("Lost"), and Daylight Moon ("Moon"). Clan names include Distant Rain, Hundred Feathers, Sleeping Creek, Bright Cliffs, and Snoring Mountain.
 
 Source:	Tomb of Annihilation p. 233</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Terracotta Warrior</name>
+    <sortname>Terracotta, Warrior</sortname>
+    <ancestry>Terracotta</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Unaligned</alignment>
@@ -3686,14 +3742,14 @@ Source:	Tomb of Annihilation p. 233</description>
     <int>1</int>
     <wis>3</wis>
     <cha>1</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>6</passive>
-    <languages />
+    <languages/>
     <cr>1</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison, psychic</immune>
-    <vulnerable />
     <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
@@ -3718,10 +3774,12 @@ Source:	Tomb of Annihilation p. 233</description>
       <attack>Shortsword|+4|1d6+2</attack>
     </action>
     <description>Source:	Tomb of Annihilation p. 161</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tomb Dwarf</name>
+    <sortname>Dwarf, Tomb</sortname>
+    <ancestry>Dwarf</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Lawful Evil</alignment>
@@ -3734,14 +3792,14 @@ Source:	Tomb of Annihilation p. 233</description>
     <int>10</int>
     <wis>13</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Stealth +4</skill>
     <passive>13</passive>
     <languages>the languages it knew in life</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3770,10 +3828,12 @@ Source:	Tomb of Annihilation p. 233</description>
     <description>Acererak abducted dwarf miners and transformed them into wights to exploit their expertise at underground construction.
 
 Source:	Tomb of Annihilation p. 135</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tomb Guardian</name>
+    <sortname>Guardian, Tomb</sortname>
+    <ancestry>Guardian</ancestry>
     <size>M</size>
     <type>construct</type>
     <alignment>Neutral</alignment>
@@ -3786,14 +3846,14 @@ Source:	Tomb of Annihilation p. 135</description>
     <int>6</int>
     <wis>10</wis>
     <cha>5</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands the languages of its creator but can't speak</languages>
     <cr>5</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>lightning, poison; bludgeoning, piercing, slashing from nonmagical attacks that aren't adamantine</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3834,7 +3894,7 @@ Source:	Tomb of Annihilation p. 135</description>
 A tomb guardian is a flesh golem clad in plate armor, giving it AC 17
 
 Source:	Tomb of Annihilation p. 127</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tri-flower Frond</name>
@@ -3850,14 +3910,14 @@ Source:	Tomb of Annihilation p. 127</description>
     <int>9</int>
     <wis>13</wis>
     <cha>9</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>blinded, deafened, exhaustion, prone</conditionImmune>
     <senses>blindsight 30 ft.</senses>
     <action>
@@ -3882,10 +3942,12 @@ Until this grapple ends, the target takes 5 (2d4) poison damage at the start of 
     <description>When fully grown, a tri-flower frond stands 6 to 7 feet tall. It has three bright, trumpet-shaped flowers, each as large as a human head and each one a different color: intense red, vivid orange, and bright yellow. Each flower can harm a creature in a different terrible way.
 
 Source:	Tomb of Annihilation p. 234</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Tyrannosaurus Zombie</name>
+    <sortname>Dinosaur, Tyrannosaurus Zombie</sortname>
+    <ancestry>Zombie, Dinosaur</ancestry>
     <size>H</size>
     <type>undead</type>
     <alignment>Unaligned</alignment>
@@ -3898,14 +3960,14 @@ Source:	Tomb of Annihilation p. 234</description>
     <int>1</int>
     <wis>3</wis>
     <cha>5</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>6</passive>
-    <languages />
+    <languages/>
     <cr>8</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -3942,10 +4004,12 @@ Tyrannosaurus Zombie:
 A tyrannosaurus zombie has a gullet full of smaller zombies, which it can disgorge. These zombies aren't under the tyrannosaurus zombie's control.
 
 Source:	Tomb of Annihilation p. 241</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Valindra Shadowmantle</name>
+    <sortname>Shadowmantle, Valindra</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>undead</type>
     <alignment>Neutral Evil</alignment>
@@ -3963,9 +4027,9 @@ Source:	Tomb of Annihilation p. 241</description>
     <passive>19</passive>
     <languages>Common, Abyssal, Draconic, Dwarvish, Elvish, Infernal</languages>
     <cr>21</cr>
+    <vulnerable/>
     <resist>cold, lightning, necrotic</resist>
     <immune>poison; bludgeoning, piercing, slashing from nonmagical attacks</immune>
-    <vulnerable />
     <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
     <senses>truesight 120 ft.</senses>
     <trait>
@@ -3988,6 +4052,21 @@ Source:	Tomb of Annihilation p. 241</description>
     <trait>
       <name>Turn Resistance</name>
       <text>Valindra has advantage on saving throws against any effect that turns undead.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Valindra is an 18th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). Valindra has the following wizard spells prepared:
+
+	• Cantrips (at will): mage hand, prestidigitation, ray of frost
+	• 1st level (4 slots): detect magic, magic missile, shield, thunderwave
+	• 2nd level (3 slots): detect thoughts, invisibility, Melf's acid arrow, mirror image
+	• 3rd level (3 slots): animate dead, counterspell, dispel magic, fireball
+	• 4th level (3 slots): blight, dimension door
+	• 5th level (3 slots): cloudkill, scrying
+	• 6th level (1 slots): disintegrate, globe of invulnerability
+	• 7th level (1 slots): finger of death, plane shift
+	• 8th level (1 slots): dominate monster, power word stun
+	• 9th level (1 slots): power word kill</text>
     </trait>
     <action>
       <name>Paralyzing Touch</name>
@@ -4015,22 +4094,7 @@ Source:	Tomb of Annihilation p. 241</description>
       <name>Disrupt Life (Costs 3 Actions)</name>
       <text>Each non-undead creature within 20 feet of Valindra must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.</text>
     </legendary>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Valindra is an 18th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). Valindra has the following wizard spells prepared:
-
-	• Cantrips (at will): mage hand, prestidigitation, ray of frost
-	• 1st level (4 slots): detect magic, magic missile, shield, thunderwave
-	• 2nd level (3 slots): detect thoughts, invisibility, Melf's acid arrow, mirror image
-	• 3rd level (3 slots): animate dead, counterspell, dispel magic, fireball
-	• 4th level (3 slots): blight, dimension door
-	• 5th level (3 slots): cloudkill, scrying
-	• 6th level (1 slots): disintegrate, globe of invulnerability
-	• 7th level (1 slots): finger of death, plane shift
-	• 8th level (1 slots): dominate monster, power word stun
-	• 9th level (1 slots): power word kill</text>
-    </trait>
-    <slots>0, 4, 3, 3, 3, 3, 1, 1, 1, 1</slots>
+    <slots>0,4,3,3,3,3,1,1,1,1</slots>
     <spells>mage hand, prestidigitation, ray of frost, detect magic, magic missile, shield, thunderwave, detect thoughts, invisibility, Melf's acid arrow, mirror image, animate dead, counterspell, dispel magic, fireball, blight, dimension door, cloudkill, scrying, disintegrate, globe of invulnerability, finger of death, plane shift, dominate monster, power word stun, power word kill</spells>
     <description>Liches are the remains of great wizards who embrace undeath as a means of preserving themselves. They further their own power at any cost, having no interest in the affairs of the living except where those affairs interfere with their own. Scheming and insane, they hunger for long-forgotten knowledge and the most terrible secrets. Because the shadow of death doesn't hang over them, they can conceive plans that take years, decades, or centuries to come to fruition.
 
@@ -4044,10 +4108,12 @@ Characters who explore the Heart of Ubtao are certain to meet Valindra. She's co
 With her ability to appear as a living elf, Valindra can easily conceal her lichdom and her association to Thay. She presents herself as a scholarly wizard who wants to "imprison" the Soulmonger; that way, its unique magic can be studied while it's safely quarantined from the world. She argues that destroying it should be a last resort.
 
 Source:	Tomb of Annihilation p. 58</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Volothamp "Volo" Geddarm</name>
+    <sortname>Geddarm, Volothamp "Volo"</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (human)</type>
     <alignment>Chaotic Good</alignment>
@@ -4061,20 +4127,15 @@ Source:	Tomb of Annihilation p. 58</description>
     <wis>11</wis>
     <cha>16</cha>
     <save>Con +2, Wis +2</save>
-    <skill>Animal handling +4, Arcana +4, Deception +5, History +4, Insight +2, Investigation +4, Perception +2, Performance +7, Persuasion +7, Sleight of hand +3, Survival +2</skill>
+    <skill>Animal Handling +4, Arcana +4, Deception +5, History +4, Insight +2, Investigation +4, Perception +2, Performance +7, Persuasion +7, Sleight Of Hand +3, Survival +2</skill>
     <passive>12</passive>
     <languages>Common, Dwarvish, Elvish</languages>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage.</text>
-      <attack>Dagger|+3|1d4+1</attack>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Volo is a 1st-level spellcaster. His spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). He has the following wizard spells prepared:
@@ -4082,7 +4143,12 @@ Source:	Tomb of Annihilation p. 58</description>
 	• Cantrips (at will): friends, mending, prestidigitation
 	• 1st level (2 slots): comprehend languages, detect magic, disguise self</text>
     </trait>
-    <slots>0, 2</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage.</text>
+      <attack>Dagger|+3|1d4+1</attack>
+    </action>
+    <slots>0,2</slots>
     <spells>friends, mending, prestidigitation, comprehend languages, detect magic, disguise self</spells>
     <description>The bombastic world traveler Volothamp Geddarmn has come to Chult to deliver signed copies of his latest book, Volo's Guide to Monsters. In addition to setting up audiences with the seven merchant princes of Port Nyanzaru (whom he knows well), Volo is visiting local taverns to promote his work, and the characters might meet him at some point in the city. Volo is a font of information (not all of it accurate), but he won't join the party under any circumstances. He might, however, allow the characters to tag along while he visits each merchant prince in turn.
 
@@ -4095,10 +4161,11 @@ Flaw: "My penchant for indulgence and my propensity for mockery have earned me a
 
 Source:	Tomb of Annihilation p. 235,
 		Waterdeep: Dragon Heist</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Wakanga O'tamu</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -4116,20 +4183,11 @@ Source:	Tomb of Annihilation p. 235,
     <passive>11</passive>
     <languages>any four languages</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
-    <action>
-      <name>Dagger</name>
-      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
-      <attack>Dagger|+5|1d4+2</attack>
-    </action>
-    <action>
-      <name>Variant: Familiars</name>
-      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
-    </action>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Spellcasting</name>
       <text>Wakanga is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Wakanga has the following wizard spells prepared:
@@ -4141,13 +4199,24 @@ Source:	Tomb of Annihilation p. 235,
 	• 4th level (3 slots): greater invisibility, ice storm
 	• 5th level (1 slots): cone of cold</text>
     </trait>
-    <slots>0, 4, 3, 3, 3, 1</slots>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Dagger|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
     <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
     <description>Source:	Tomb of Annihilation p. 27</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Wild Dog</name>
+    <sortname>Dog, Wild</sortname>
+    <ancestry>Dog</ancestry>
     <size>S</size>
     <type>beast</type>
     <alignment>Unaligned</alignment>
@@ -4160,16 +4229,16 @@ Source:	Tomb of Annihilation p. 235,
     <int>3</int>
     <wis>12</wis>
     <cha>6</cha>
-    <save />
+    <save/>
     <skill>Perception +3</skill>
     <passive>13</passive>
-    <languages />
+    <languages/>
     <cr>0</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Keen Hearing and Smell</name>
       <text>The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.</text>
@@ -4188,6 +4257,8 @@ Source:	Tomb of Annihilation p. 235,
   </monster>
   <monster>
     <name>Wine Weird</name>
+    <sortname>Weird, Wine</sortname>
+    <ancestry>Weird</ancestry>
     <size>L</size>
     <type>elemental</type>
     <alignment>Neutral</alignment>
@@ -4200,14 +4271,14 @@ Source:	Tomb of Annihilation p. 235,
     <int>11</int>
     <wis>10</wis>
     <cha>10</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
     <languages>understands Aquan but doesn't speak</languages>
     <cr>3</cr>
+    <vulnerable/>
     <resist>fire; bludgeoning, piercing, slashing from nonmagical attacks</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, grappled, paralyzed, poisoned, restrained, prone, unconscious</conditionImmune>
     <senses>blindsight 30 ft.</senses>
     <trait>
@@ -4240,14 +4311,14 @@ Source:	Tomb of Annihilation p. 235,
     <int>16</int>
     <wis>13</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Perception +3, Stealth +4</skill>
     <passive>13</passive>
     <languages>the languages he knew in life</languages>
     <cr>4</cr>
+    <vulnerable/>
     <resist>necrotic; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered</resist>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>exhaustion, poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -4257,6 +4328,17 @@ Source:	Tomb of Annihilation p. 235,
     <trait>
       <name>Sunlight Sensitivity</name>
       <text>While in sunlight, Withers has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Withers is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). Withers has the following wizard spells prepared:
+
+	• Cantrips (at will): acid splash, mage hand, minor illusion, prestidigitation
+	• 1st level (4 slots): detect magic, expeditious retreat, feather fall, thunderwave
+	• 2nd level (4 slots): darkness, hold person, rope trick
+	• 3rd level (3 slots): dispel magic, lightning bolt
+	• 4th level (3 slots): blight, wall of fire
+	• 5th level (1 slots): telekinesis</text>
     </trait>
     <action>
       <name>Multiattack</name>
@@ -4273,26 +4355,16 @@ Source:	Tomb of Annihilation p. 235,
       <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands.</text>
       <attack>Longsword|+4|1d8+2</attack>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Withers is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). Withers has the following wizard spells prepared:
-
-	• Cantrips (at will): acid splash, mage hand, minor illusion, prestidigitation
-	• 1st level (4 slots): detect magic, expeditious retreat, feather fall, thunderwave
-	• 2nd level (4 slots): darkness, hold person, rope trick
-	• 3rd level (3 slots): dispel magic, lightning bolt
-	• 4th level (3 slots): blight, wall of fire
-	• 5th level (1 slots): telekinesis</text>
-    </trait>
-    <slots>0, 4, 4, 3, 3, 1</slots>
+    <slots>0,4,4,3,3,1</slots>
     <spells>acid splash, mage hand, minor illusion, prestidigitation, detect magic, expeditious retreat, feather fall, thunderwave, darkness, hold person, rope trick, dispel magic, lightning bolt, blight, wall of fire, telekinesis</spells>
     <description>Before he was turned into an undead creature, Withers was an Omuan engineer named Gorra. Like all of Omu's citizens, Gorra was enslaved and put to work constructing the tomb. When Acererak sacrificed his workers to their own dungeon, Gorra's traps performed the best.
 
 Source:	Tomb of Annihilation p. 145</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Xandala</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-elf)</type>
     <alignment>Neutral Evil</alignment>
@@ -4310,21 +4382,16 @@ Source:	Tomb of Annihilation p. 145</description>
     <passive>13</passive>
     <languages>Common, Draconic, Dwarvish, Elvish, Halfling</languages>
     <cr>7</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Quickened Spell (3/Day)</name>
       <recharge>3/DAY</recharge>
       <text>When she casts a spell that has a casting time of 1 action, Xandala changes the casting time to 1 bonus action for that casting.</text>
     </trait>
-    <action>
-      <name>Quarterstaff</name>
-      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage when used with two hands.</text>
-      <attack>Quarterstaff|+3|1d6</attack>
-    </action>
     <trait>
       <name>Spellcasting</name>
       <text>Xandala is a 9th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). Xandala has the following sorcerer spells prepared:
@@ -4336,7 +4403,12 @@ Source:	Tomb of Annihilation p. 145</description>
 	• 4th level (3 slots): ice storm, polymorph
 	• 5th level (1 slots): dominate person</text>
     </trait>
-    <slots>0, 4, 4, 3, 3, 1</slots>
+    <action>
+      <name>Quarterstaff</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage when used with two hands.</text>
+      <attack>Quarterstaff|+3|1d6</attack>
+    </action>
+    <slots>0,4,4,3,3,1</slots>
     <spells>acid splash, fire bolt, light, mage hand, ray of frost, chromatic orb, feather fall, shield, invisibility, misty step, fireball, fly, ice storm, polymorph, dominate person</spells>
     <description>The half-elf sorcerer Xandala has come to Chult in search of the Ring of Winter, an artifact in Artus Cimber's possession. Xandala knows that the ring has kept Artus alive for over a century, and she craves its power. If she meets the characters, Xandala pretends to be Artus's daughter and tries to convince them to help her find him. Her plan is to cast dominate person on Artus and force him to give her the ring, then escape using her fly spell.
 
@@ -4348,10 +4420,12 @@ Bond: "The Ring of Winter will bring me power and immortality."
 Flaw: "I'm surrounded by fools."
 
 Source:	Tomb of Annihilation p. 236</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Yellow Musk Creeper</name>
+    <sortname>Yellow Musk, Creeper</sortname>
+    <ancestry>Yellow Musk</ancestry>
     <size>M</size>
     <type>plant</type>
     <alignment>Unaligned</alignment>
@@ -4364,14 +4438,14 @@ Source:	Tomb of Annihilation p. 236</description>
     <int>1</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>blinded, deafened, exhaustion, prone</conditionImmune>
     <senses>blindsight 30 ft.</senses>
     <trait>
@@ -4401,10 +4475,12 @@ Small Yellow Musk Zombies:
 A Medium humanoid transformed into a yellow musk zombie uses the stat block presented in this section. A Small humanoid transformed into a yellow musk zombie becomes a Small undead with 27 (6d6 + 6) hit points, but otherwise has the same statistics.
 
 Source:	Tomb of Annihilation p. 237</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Yellow Musk Zombie</name>
+    <sortname>Yellow Musk, Zombie</sortname>
+    <ancestry>Yellow Musk, Zombie</ancestry>
     <size>M</size>
     <type>undead</type>
     <alignment>Unaligned</alignment>
@@ -4417,14 +4493,14 @@ Source:	Tomb of Annihilation p. 237</description>
     <int>1</int>
     <wis>6</wis>
     <cha>3</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>8</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
+    <vulnerable/>
+    <resist/>
+    <immune/>
     <conditionImmune>charmed, exhaustion</conditionImmune>
     <senses>blindsight 30 ft.</senses>
     <trait>
@@ -4445,10 +4521,11 @@ Small Yellow Musk Zombies:
 A Medium humanoid transformed into a yellow musk zombie uses the stat block presented in this section. A Small humanoid transformed into a yellow musk zombie becomes a Small undead with 27 (6d6 + 6) hit points, but otherwise has the same statistics.
 
 Source:	Tomb of Annihilation p. 237</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Yorb</name>
+    <npc>YES</npc>
     <size>S</size>
     <type>humanoid (grung)</type>
     <alignment>Lawful Evil</alignment>
@@ -4466,11 +4543,11 @@ Source:	Tomb of Annihilation p. 237</description>
     <passive>12</passive>
     <languages>Grung</languages>
     <cr>2</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
-    <senses />
+    <senses/>
     <trait>
       <name>Amphibious</name>
       <text>Yorb can breathe air and water.</text>
@@ -4521,6 +4598,9 @@ Gold: The poisoned creature is charmed and can speak Grung.</text>
   </monster>
   <monster>
     <name>Yuan-ti Priest</name>
+    <sortname>Priest, Yuan-ti</sortname>
+    <ancestry>Priest</ancestry>
+    <npc>YES</npc>
     <size>M</size>
     <type>monstrosity (shapechanger, yuan-ti)</type>
     <alignment>Neutral Evil</alignment>
@@ -4533,14 +4613,14 @@ Gold: The poisoned creature is charmed and can speak Grung.</text>
     <int>14</int>
     <wis>12</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Stealth +4</skill>
     <passive>11</passive>
     <languages>Abyssal, Common, Draconic</languages>
     <cr>3</cr>
-    <resist />
+    <vulnerable/>
+    <resist/>
     <immune>poison</immune>
-    <vulnerable />
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 60 ft.</senses>
     <trait>
@@ -4560,6 +4640,13 @@ Gold: The poisoned creature is charmed and can speak Grung.</text>
 	• Type 2: Human head and body with snakes for arms
 
 	• Type 3: Human head and upper body with a serpentine lower body instead of legs</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting (Yuan-ti Form Only)</name>
+      <text>The yuan-ti's innate spellcasting ability is Charisma (spell save DC 13). The yuan-ti can innately cast the following spells, requiring no material components:
+
+	• At will: animal friendship (snakes only)
+	• 3/Day: suggestion</text>
     </trait>
     <action>
       <name>Multiattack (Yuan-ti Form Only)</name>
@@ -4582,13 +4669,6 @@ Until this grapple ends, the target is restrained, and the yuan-ti can't constri
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.</text>
       <attack>Scimitar (Yuan-ti Form Only)|+5|1d6+3</attack>
     </action>
-    <trait>
-      <name>Innate Spellcasting (Yuan-ti Form Only)</name>
-      <text>The yuan-ti's innate spellcasting ability is Charisma (spell save DC 13). The yuan-ti can innately cast the following spells, requiring no material components:
-
-	• At will: animal friendship (snakes only)
-	• 3/Day: suggestion</text>
-    </trait>
     <spells>animal friendship, suggestion</spells>
     <description>Source:	Tomb of Annihilation p. 118</description>
     <environment>forest, swamp, desert</environment>
@@ -4607,15 +4687,15 @@ Until this grapple ends, the target is restrained, and the yuan-ti can't constri
     <int>12</int>
     <wis>13</wis>
     <cha>15</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +4, Perception +4, Stealth +5</skill>
     <passive>14</passive>
     <languages>Common</languages>
     <cr>6</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <trait>
       <name>Petrifying Gaze</name>
@@ -4649,6 +4729,8 @@ If Zalkoré sees itself reflected on a polished surface within 30 feet of it and
   </monster>
   <monster>
     <name>Zaroum Al-Saryak</name>
+    <sortname>Al-Saryak, Zaroum</sortname>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any Non-Lawful Alignment</alignment>
@@ -4666,11 +4748,11 @@ If Zalkoré sees itself reflected on a polished surface within 30 feet of it and
     <passive>10</passive>
     <languages>any two languages</languages>
     <cr>2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Multiattack</name>
       <text>Zaroum makes three melee attacks: two with its scimitar and one with its dagger. Or Zaroum makes two ranged attacks with its daggers.</text>
@@ -4690,7 +4772,7 @@ If Zalkoré sees itself reflected on a polished surface within 30 feet of it and
       <text>Zaroum adds 2 to its AC against one melee attack that would hit it. To do so, Zaroum must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Tomb of Annihilation p. 67</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Zebra</name>
@@ -4706,16 +4788,16 @@ If Zalkoré sees itself reflected on a polished surface within 30 feet of it and
     <int>2</int>
     <wis>11</wis>
     <cha>7</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
+    <languages/>
     <cr>1/4</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Hooves</name>
       <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.</text>
@@ -4726,6 +4808,7 @@ If Zalkoré sees itself reflected on a polished surface within 30 feet of it and
   </monster>
   <monster>
     <name>Zhanthi</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (any race)</type>
     <alignment>Any alignment</alignment>
@@ -4738,16 +4821,16 @@ If Zalkoré sees itself reflected on a polished surface within 30 feet of it and
     <int>12</int>
     <wis>14</wis>
     <cha>16</cha>
-    <save />
+    <save/>
     <skill>Deception +5, Insight +4, Persuasion +5</skill>
     <passive>12</passive>
     <languages>any two languages</languages>
     <cr>1/8</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <action>
       <name>Rapier</name>
       <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.</text>
@@ -4758,10 +4841,11 @@ If Zalkoré sees itself reflected on a polished surface within 30 feet of it and
       <text>Zhanthi adds 2 to its AC against one melee attack that would hit it. To do so, Zhanthi must see the attacker and be wielding a melee weapon.</text>
     </reaction>
     <description>Source:	Tomb of Annihilation p. 27</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Zindar</name>
+    <npc>YES</npc>
     <size>M</size>
     <type>humanoid (half-dragon)</type>
     <alignment>Lawful Good</alignment>
@@ -4779,14 +4863,27 @@ If Zalkoré sees itself reflected on a polished surface within 30 feet of it and
     <passive>12</passive>
     <languages>Common, Draconic, Dwarvish, Primordial</languages>
     <cr>8</cr>
+    <vulnerable/>
     <resist>fire</resist>
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <immune/>
+    <conditionImmune/>
     <senses>blindsight 10 ft., darkvision 60 ft.</senses>
     <trait>
       <name>Dragon Wings</name>
       <text>As a bonus action on his turn, Zindar can sprout a pair of dragon wings from his back, gaining a flying speed of 30 feet until he dismisses them as a bonus action.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>Zindar is a 14th-level spellcaster. His spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). Zindar knows the following sorcerer spells:
+
+	• Cantrips (at will): fire bolt, friends, light, mage hand, mending, message
+	• 1st level (6 slots): magic missile, shield, sleep
+	• 2nd level (4 slots): detect thoughts, knock
+	• 3rd level (3 slots): clairvoyance, tongues
+	• 4th level (3 slots): dominate beast, stoneskin
+	• 5th level (3 slots): hold monster, telekinesis
+	• 6th level (1 slots): true seeing
+	• 7th level (1 slots): fire storm</text>
     </trait>
     <action>
       <name>Quarterstaff</name>
@@ -4807,20 +4904,7 @@ If Zalkoré sees itself reflected on a polished surface within 30 feet of it and
       <name>Weakening Breath</name>
       <text>Zindar exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
     </action>
-    <trait>
-      <name>Spellcasting</name>
-      <text>Zindar is a 14th-level spellcaster. His spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). Zindar knows the following sorcerer spells:
-
-	• Cantrips (at will): fire bolt, friends, light, mage hand, mending, message
-	• 1st level (6 slots): magic missile, shield, sleep
-	• 2nd level (4 slots): detect thoughts, knock
-	• 3rd level (3 slots): clairvoyance, tongues
-	• 4th level (3 slots): dominate beast, stoneskin
-	• 5th level (3 slots): hold monster, telekinesis
-	• 6th level (1 slots): true seeing
-	• 7th level (1 slots): fire storm</text>
-    </trait>
-    <slots>6, 4, 3, 3, 3, 1, 1</slots>
+    <slots>6,4,3,3,3,1,1</slots>
     <spells>fire bolt, friends, light, mage hand, mending, message, magic missile, shield, sleep, detect thoughts, knock, clairvoyance, tongues, dominate beast, stoneskin, hold monster, telekinesis, true seeing, fire storm</spells>
     <description>This half-gold dragon runs Port Nyanzaru's docks and keeps track of ship manifests. A sorcerer of impressive ability, Zindar is well paid by the merchant princes for his work. He is also a key member of the Ytepka Society and a great source of information about the city. Zindar has a soft spot for adventurers, but he knows the dangers of Chult well enough to understand that most of those who embark on expeditions to explore the jungle never return.
 
@@ -4832,7 +4916,7 @@ Bond: "Port Nyanzaru is my home. I take a dim view of those who would bring harm
 Flaw: "I don't get mad. I get even."
 
 Source:	Tomb of Annihilation p. 239</description>
-    <environment />
+    <environment/>
   </monster>
   <monster>
     <name>Zorbo</name>
@@ -4848,16 +4932,16 @@ Source:	Tomb of Annihilation p. 239</description>
     <int>3</int>
     <wis>12</wis>
     <cha>7</cha>
-    <save />
+    <save/>
     <skill>Athletics +3</skill>
     <passive>11</passive>
-    <languages />
+    <languages/>
     <cr>1/2</cr>
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
-    <senses />
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
     <trait>
       <name>Magic Resistance</name>
       <text>The zorbo has advantage on saving throws against spells and other magical effects.</text>
@@ -4874,6 +4958,6 @@ Source:	Tomb of Annihilation p. 239</description>
     <description>A zorbo (pronounced ZOR-boh) is a ferocious omnivore similar in size and appearance to a koala. Living in trees and caves, it has long claws, a dour disposition, and a fondness for humanoid flesh. A zorbo alters its natural armor to match its surroundings, and it can weaken and destroy armor, shields, and protective magic items with its sharp claws.
 
 Source:	Tomb of Annihilation p. 241</description>
-    <environment />
+    <environment/>
   </monster>
 </compendium>
