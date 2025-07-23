@@ -12,6 +12,7 @@
 * Added missing schools to spell lists.
 * Formatted `Legacy [2024]` subclasses to match the modern format.
 * Added `Ranger (HeavyArms)` content.
+* Added `Tasha's Scrapped Book` content.
 * Added `Alternate Blood Hunter (LaserLlama)` content for PHB2014 and 2024, put together by @Deepseastronaut.
 * Added `Alternate Ranger (LaserLlama)` content for PHB2014 and 2024, partially put together by @rattatooey.
 * Addded homebrew dinosaurian race `Brutan` by @rattatooey.
