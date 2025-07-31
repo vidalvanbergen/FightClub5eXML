@@ -3,7 +3,7 @@
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
-* LaserLlama:
+* LaserLlama's
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
@@ -38,7 +38,7 @@
 * Added `Unearthed Arcana [2024]: Horror Subclasses`.
 * Added `Unearthed Arcana [2024]: The Psion`.
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
-* Added LaserLlama: `Psion (LaserLlama): Mystic Talents` spell list.
+* Added LaserLlama's `Psion (LaserLlama): Mystic Talents` spell list.
 * Complete `Heliana's Guide to Monster Hunting` items.
 * Updated `LaserLlama's Compendium of Spells`.
 * @recco added `Remley Farr`'s homebrew content.
@@ -53,7 +53,7 @@
 * Other changes and fixes.
 
 ### 2025-03-04
-* Added `Monster Manual 2024`.
+* Added `Monster Manual (2024)`.
   * Added monster descriptions.
   * Added monster lair actions.
   * Moved PHB24 monsters that are in MM24.
@@ -85,8 +85,8 @@
 * Other changes and fixes.
 
 ### 2024-12-04
-* Added `Dungeon Master's Guide 2024` content by @TheArchivist.
-* Updated `Player's Handbook 2024` content, which are now tagged with [2024].
+* Added `Dungeon Master's Guide (2024)` content by @TheArchivist.
+* Updated `Player's Handbook (2024)` content, which are now tagged with [2024].
 * Added a mixed 2014+2024 collection with the new content tagged with [2024].
 * Added Homebrew content by @reccho:
   * Added `Winghorn Press: The Wild Sheep Chase`.
@@ -125,7 +125,7 @@
 
 ### 2024-10-23
 * Streamlined some `Ranger` features.
-* Added `Player's Handbook 2024` content.
+* Added `Player's Handbook (2024)` content.
 * Merged legacy 2014 + 2024 content by @nikjft in https://github.com/vidalvanbergen/FightClub5eXML/pull/6
 * Added `The Dungeon Master` Homebrew.
 * Added `Ranger (Primal Awareness)` spell list.
