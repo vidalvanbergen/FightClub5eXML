@@ -110,7 +110,7 @@ Spell example:
   <text>At Higher Levels:</text>
   <text>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.</text>
   <text/>
-  <text>Source:	Player's Handbook p. 257</text>
+  <text>Source:	Player's Handbook (2014) p. 257</text>
   <roll>1d4+1</roll>
   <roll>(1d4+1)+(1d4+1)+(1d4+1)</roll>
 </spell>
@@ -223,7 +223,7 @@ Examples:
   <text/>
   <text>If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet.</text>
   <text/>
-  <text>Source:	Player's Handbook p. 145</text>
+  <text>Source:	Player's Handbook (2014) p. 145</text>
 </item>
 
 <item>
@@ -239,7 +239,7 @@ Examples:
   <text>Versatile: This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee Attack.</text>
   <text/>
   <text>Proficiency: martial, longsword</text>
-  <text>Source:	Player's Handbook p. 149</text>
+  <text>Source:	Player's Handbook (2014) p. 149</text>
 </item>
 
 <item>
@@ -265,7 +265,7 @@ Examples:
   <text>Heavy: Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</text>
   <text/>
   <text>Proficiency: martial, longbow</text>
-  <text>Source:	Player's Handbook p. 149</text>
+  <text>Source:	Player's Handbook (2014) p. 149</text>
 </item>
 ```
 
@@ -478,7 +478,7 @@ Race example:
     <text/>
     <text>Like other elves, sea elves can live to be over 750 years old.</text>
     <text/>
-    <text>Source:	Player's Handbook p. 23,</text>
+    <text>Source:	Player's Handbook (2014) p. 23,</text>
     <text>		Mordenkainen's Tome of Foes p. 62,</text>
     <text>		Mordenkainen Presents: Monsters of the Multiverse p. 30</text>
   </trait>
@@ -629,7 +629,7 @@ Class example:
       <text/>
       <text>Alternatively, you may start with 5d4 × 10 gp and choose your own equipment.</text>
       <text/>
-      <text>Source:	Player's Handbook p. 89</text>
+      <text>Source:	Player's Handbook (2014) p. 89</text>
     </feature>
     <feature optional="YES">
       <name>Multiclass Ranger</name>
@@ -649,7 +649,7 @@ Class example:
       <text>	• Tools: none</text>
       <text>	• Skills: Choose 1 from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth and Survival.</text>
       <text/>
-      <text>Source:	Player's Handbook p. 89</text>
+      <text>Source:	Player's Handbook (2014) p. 89</text>
     </feature>
   </autolevel>
 
@@ -666,7 +666,7 @@ Class example:
       <text/>
       <text>You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</text>
       <text/>
-      <text>Source:	Player's Handbook p. 91</text>
+      <text>Source:	Player's Handbook (2014) p. 91</text>
     </feature>
   </autolevel>
 
@@ -679,7 +679,7 @@ Class example:
       <text/>
       <text>If your DM allows the use of feats, you may instead take a feat.</text>
       <text/>
-      <text>Source:	Player's Handbook p. 89</text>
+      <text>Source:	Player's Handbook (2014) p. 89</text>
     </feature>
   </autolevel>
 
@@ -690,7 +690,7 @@ Class example:
       <name>Foe Slayer</name>
       <text>At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.</text>
       <text/>
-      <text>Source:	Player's Handbook p. 92</text>
+      <text>Source:	Player's Handbook (2014) p. 92</text>
     </feature>
   </autolevel>
 </class>
@@ -754,7 +754,7 @@ Background example:
     <text>	• Languages: Two of your choice</text>
     <text>	• Equipment: A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a belt pouch containing 15 gp</text>
     <text/>
-    <text>Source:	Player's Handbook p. 127</text>
+    <text>Source:	Player's Handbook (2014) p. 127</text>
   </trait>
   <trait>
     <name>Feature: Shelter of the Faithful</name>
