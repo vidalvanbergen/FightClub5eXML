@@ -2,10 +2,10 @@
 <compendium version="5" auto_indent="NO">
   <class>
     <name>Cleric</name>
-    <!-- Divine Domain: Guardian Domain -->
+    <!-- Divine Domain: Guardian Domain (HB) -->
     <autolevel level="1">
       <feature optional="YES">
-        <name>Divine Domain: Guardian Domain</name>
+        <name>Divine Domain: Guardian Domain (HB)</name>
         <text>Clerics of the Radiant Church are venerated as saint-like figures, and those who walk the path of the guardian even more so. Such overwhelming praise was only heightened by the arrival of the scourge, and the countless heroic actions performed by the Church anchored it as a beacon of salvation in the heart of the citizens of Luyarnha. This abundant reverence has its risks, of course, though few dare point it out; a zealous crowd is best left well alone.
 	Guardian domain clerics were the first to jump into combat against the beasts, and to this day haven't backed down from the battle, despite the pain and loss they have endured. Their protective spirit is embodied in their magic-summoning guardian angels-which swoop to their side, protecting any who would ask under their wings. Although the features of these angels can be unsettling, none would dare doubt their intentions.
 
@@ -23,13 +23,13 @@ Cleric level | Spells
 Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
       </feature>
       <feature optional="YES">
-        <name>Bonus Proficiencies (Guardian Domain)</name>
+        <name>Bonus Proficiencies (Guardian Domain (HB))</name>
         <text>At 1st level, you gain proficiency with heavy armor.
 
 Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
       </feature>
       <feature optional="YES">
-        <name>Protective Magic (Guardian Domain)</name>
+        <name>Protective Magic (Guardian Domain (HB))</name>
         <text>Starting at 1st level, when you cast a spell that restores hit points, the targeted creature also gains half as many temporary hit points (rounded down). If a spell targets multiple creatures, choose one creature that benefits from this effect.
 
 Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
@@ -37,7 +37,7 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
     </autolevel>
     <autolevel level="2">
       <feature optional="YES">
-        <name>Channel Divinity: Guardian Angel (Guardian Domain)</name>
+        <name>Channel Divinity: Guardian Angel (Guardian Domain (HB))</name>
         <text>At 2nd level, you can use your Channel Divinity to summon a divine emissary to your aid.
 	As an action, you present your holy symbol, and in a flash of radiance, a Guardian Angel appears in an empty space of your choice within 5 feet of you. The angel is friendly to you and your companions and obeys your commands. When you gain this feature, choose the nature of your angel: radiant or necrotic. This will affect abilities in the stat block.
 	See this creature's game statistics in the Guardian Angel stat block, which uses your proficiency bonus (PB) in several places. You determine the angel's appearance. Some angels take the form of a humanoid angelic figure dressed with pure garments, while many others espouse a more eldritch appearance.
@@ -49,7 +49,7 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
     </autolevel>
     <autolevel level="6">
       <feature optional="YES">
-        <name>Angelic Protection (Guardian Domain)</name>
+        <name>Angelic Protection (Guardian Domain (HB))</name>
         <text>Starting at 6th level, when you use your Channel Divinity to summon a Guardian Angel, it immediately casts warding bond (no action required) on a friendly creature that it can see (you included), ignoring the components of the spell.
 
 Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
@@ -57,7 +57,7 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
     </autolevel>
     <autolevel level="8">
       <feature optional="YES">
-        <name>Divine Strike (Guardian Domain)</name>
+        <name>Divine Strike (Guardian Domain (HB))</name>
         <text>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.
 	Your Guardian Angel also gains this feature.
 
@@ -68,7 +68,7 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
     </autolevel>
     <autolevel level="17">
       <feature optional="YES">
-        <name>Aura of Defense (Guardian Domain)</name>
+        <name>Aura of Defense (Guardian Domain (HB))</name>
         <text>At 17th level, when your Guardian Angel casts warding bond, it can target a number of allied creatures (including you) equal to your Wisdom modifier (minimum 1). The spell functions as if the angel had created a warding bond with each individual creature. In addition, upon being summoned, the Guardian Angel gains temporary hit points equal to 5 times the number of creatures targeted by the spell.
 	Once you use this feature, you can't use it again until you finish a long rest.
 
@@ -78,7 +78,7 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
         <name>Aura of Defense</name>
         <value>1</value>
         <reset>L</reset>
-        <subclass>Guardian Domain</subclass>
+        <subclass>Guardian Domain (HB)</subclass>
       </counter>
     </autolevel>
   </class>
@@ -107,16 +107,16 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
     <conditionImmune>blinded, charmed, frightened, grappled, prone, restrained</conditionImmune>
     <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
+      <name>Proficiency Bonus</name>
+      <text>Equals your bonus.</text>
+    </trait>
+    <trait>
       <name>Hit Points</name>
       <text>5 + 5 times your cleric level.</text>
     </trait>
     <trait>
       <name>Armor Class</name>
       <text>10 + Proficiency Bonus (natural armor)</text>
-    </trait>
-    <trait>
-      <name>Proficiency Bonus</name>
-      <text>Equals your bonus.</text>
     </trait>
     <trait>
       <name>Incorporeal Being</name>
@@ -138,4 +138,44 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 136 (Homebrew)</text>
     <description>Source:	Steinhardt's Guide to the Eldritch Hunt p. 138 (Homebrew)</description>
     <environment/>
   </monster>
+  <spell>
+    <name>Protection from Evil and Good</name>
+    <classes>Cleric (Guardian Domain (HB))</classes>
+  </spell>
+  <spell>
+    <name>Sanctuary</name>
+    <classes>Cleric (Guardian Domain (HB))</classes>
+  </spell>
+  <spell>
+    <name>Aid</name>
+    <classes>Cleric (Guardian Domain (HB))</classes>
+  </spell>
+  <spell>
+    <name>Warding Bond</name>
+    <classes>Cleric (Guardian Domain (HB))</classes>
+  </spell>
+  <spell>
+    <name>Protection from Energy</name>
+    <classes>Cleric (Guardian Domain (HB))</classes>
+  </spell>
+  <spell>
+    <name>Slow</name>
+    <classes>Cleric (Guardian Domain (HB))</classes>
+  </spell>
+  <spell>
+    <name>Guardian of Faith</name>
+    <classes>Cleric (Guardian Domain (HB))</classes>
+  </spell>
+  <spell>
+    <name>Resilient Sphere</name>
+    <classes>Cleric (Guardian Domain (HB))</classes>
+  </spell>
+  <spell>
+    <name>Antilife Shell</name>
+    <classes>Cleric (Guardian Domain (HB))</classes>
+  </spell>
+  <spell>
+    <name>Wall of Force</name>
+    <classes>Cleric (Guardian Domain (HB))</classes>
+  </spell>
 </compendium>
