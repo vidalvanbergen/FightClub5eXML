@@ -32,7 +32,7 @@ Starting with the official Wizards of the Coast material, these add:
 
 **+SemiOfficial**: Includes third-party content with limited or partial official endorsement.
 
-***Indie***: Independently created and published unofficial content.
+**+Indie**: Independently created and published unofficial content.
 
 **+MercerBrew**: Includes Matt Mercer's Bloodhunter class.
 
@@ -40,4 +40,4 @@ Starting with the official Wizards of the Coast material, these add:
 
 **+UnearthedArcana**: Officially released playtest material from Wizards of the Coast, used for testing and feedback before formal publication.
 
-**Legacy_2014**: Includes legacy 2014 content converted for use with the 2024 rules.
+**+Legacy_2014**: Includes legacy 2014 content converted for use with the 2024 rules.
