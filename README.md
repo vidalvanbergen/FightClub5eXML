@@ -1,3 +1,7 @@
+[![GitHub release](https://img.shields.io/github/v/release/vidalvanbergen/fightclub5exml)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest)
+[![Last Nightly](https://img.shields.io/github/last-commit/vidalvanbergen/FightClub5eXML?label=last%20nightly)](https://img.shields.io/github/last-commit/vidalvanbergen/fightclub5exml)
+
+
 # Fight Club 5e XML
 
 Creating XML files for all official D&D sources and unofficial homebrew compatible with Fight Club 5e and Game Master 5e apps for macOS, iOS, and Android.
@@ -41,7 +45,7 @@ Open a command-line terminal (such as PowerShell on Windows or Terminal on macOS
 Next, execute the `xsltproc` program to compile a collection file into a compendium file. For example, if you wanted to compile the `WotC_only.xml` collection, you would execute the following command:
 
 ```bash
-xsltproc -o Compendiums/WotC_only.xml Utilities/merge.xslt Collections/WotC_only.xml
+xsltproc --xinclude -o Compendiums/WotC_only.xml Utilities/merge.xslt Collections/WotC_only.xml
 ```
 
 After that command has completed, you should see a file called `WotC_only.xml` in the newly created `Compendiums` folder. You can then import it into Fight Club 5e.
@@ -50,7 +54,7 @@ After that command has completed, you should see a file called `WotC_only.xml` i
 
 The build-collection files are provided for your convenience to compile all the collections within your Collections directory into compendiums.
 
-```
+```bash
 Usage: 
 
 collections.sh [-2024] [-h/-?] [collection_names...]
@@ -101,3 +105,5 @@ If you'd like to contribute, feel free to fork the repository and submit pull re
 `@recco` for adding various homebrew sources to the compendium.
 
 `@nikjft` for converting legacy content to the 2024 format and adding to the utilities.
+
+`@Iggwilv` for adding several adventures.

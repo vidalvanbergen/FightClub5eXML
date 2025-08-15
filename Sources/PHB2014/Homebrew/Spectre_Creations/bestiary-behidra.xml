@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+  <monster>
+    <name>Behidra</name>
+    <size>G</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>19 (natural armor)</ac>
+    <hp>577 (33d20+231)</hp>
+    <speed>50 ft., climb 40 ft., swim 40ft.</speed>
+    <str>26</str>
+    <dex>17</dex>
+    <con>24</con>
+    <int>7</int>
+    <wis>16</wis>
+    <cha>9</cha>
+    <save>Dex +11, Con +15, Wis +11, Cha +7</save>
+    <skill>Intimidation +7, Perception +19, Stealth +11</skill>
+    <passive>29</passive>
+    <languages>Draconic</languages>
+    <cr>26</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune>blinded, charmed, deafened, frightened, stunned, unconscious</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The behidra can hold its breath for 8 hours.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If the behidra fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Multiple Heads</name>
+      <text>The behidra has seven heads. While it has more than one head, the behidra has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.
+
+Whenever the behidra takes 50 or more damage in a single turn, one of its heads dies. If all its heads die, the behidra dies.
+
+At the end of its turn, it grows two heads for each of its heads that died since its last turn. The behidra regains 20 hit points for each head regrown in this way. If the behidra takes fire damage, it must make a DC 25 Constitution saving throw. On a failure it doesn't regrow any heads on its next turn.</text>
+    </trait>
+    <trait>
+      <name>Reactive Heads</name>
+      <text>For each head the behidra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.</text>
+    </trait>
+    <trait>
+      <name>Wakeful</name>
+      <text>While the behidra sleeps, at least one of its heads is awake.</text>
+    </trait>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The behidra exhales a line of lightning that is 60 ft. long and 10 ft. wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save plus an extra 11 (2d10) lightning damage for each head the behidra has beyond one, or half as much damage on a successful one.</text>
+      <attack>Lightning Breath||4d10</attack>
+      <attack>Extra Lightning Damage||2d10</attack>
+    </action>
+    <action>
+      <name>Multiattack</name>
+      <text>The behidra can use its Staggering Shockwave. It then makes as many bite attacks as it has heads.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 13 (1d10+8) piercing damage + 5 (1d10) lightning damage. If the attack roll is a critical hit or exceeds the targets AC by 10 or more, the target is also grappled (escape DC 18). Until this grapple ends, the target is restrained, and the behidra can only make one bit attack against it per turn.</text>
+      <attack>Bite|16|1d10+8</attack>
+      <attack>Lightning Damage||1d10</attack>
+    </action>
+    <action>
+      <name>Staggering Shockwave</name>
+      <text>The behidra unleashes a debilitating surge of electrical and thunderous energy into the air surrounding it. Each creature of the behidra's choice that is within 60 feet of it must make a DC 23 Constitution saving throw. On a failure, until the end of the target's next turn, its speed is reduced to 0 and it can't take reactions. In addition, on its next turn, it can use either an action or bonus action, not both, and regardless of its abilities or magic items, it can't make more than one melee or ranged attack during its turn.</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The behidra can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. The behidra regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Move</name>
+      <text>The behidra moves up to its speed.</text>
+    </legendary>
+    <legendary>
+      <name>Reactive Stance</name>
+      <text>The next time the behidra takes damage from a creature that is within 15 feet of it before the start of its next turn, it can use the reaction granted by its Reactive Heads trait to make three bite attacks against that creature. A target can't become grappled by these attacks.</text>
+    </legendary>
+    <legendary>
+      <name>Swallow (Costs 2 Actions)</name>
+      <text>The behidra makes one bite attack against a Large or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behidra, and it takes 28 (8d6) acid damage at the start of each of the behidra's turns.
+
+If the behidra takes 50 damage or more on a single turn from the swallowed creature, the behidra must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 ft. of the behidra. If the behidra dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 ft. of movement, exiting prone.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.</text>
+      <attack>Acid Damage||8d6</attack>
+    </legendary>
+    <legendary>
+      <name>Snapping Frenzy (Costs 3 Actions)</name>
+      <text>The behidra moves up to twice its speed, making one bite attack against each creature of its choice that is within 15 feet of it at any point during this movement. It has advantage on each of these attack rolls, but a target can't become grappled by these bite attacks.</text>
+    </legendary>
+    <description>The mythical behidra is an amalgam of two monstrous horrors: the behir and the hydra - both abominations in their own right. Like a true hydra, it has multiple heads on long, serpentine necks, but its deep blue, leathery hide is a telltale sign of its behir roots.
+
+Forged In Hate. The ritual used to create this colossal horror was originally devised by Blurtnik Battlesting, a former leader of the Church of Kurtulmak, the kobold deity. Blurtnik sought vengeance for his excommunication, turning to Kuraulyek, the blue-skinned patron deity of urds and rival of Kurtulmak. Hatching a devious plot, Blurtnik allied himself with a nearby conclave of behirs, the mortal enemies of dragonkind. Imbued with divine authority by Kuraulyek and equipped with the blood of a freshly slain hydra, Blurtnik and his followers successfully fused the den of behirs into a single, terrifying entity - the first behidra.
+
+The Cult of The Viper. The successors of Blurtnik and other kobolds spurned or abandoned by their dragon overlords, swearing allegiance to the mighty behirs out of spiteful indignation. These kobolds are known as "vipers" as an allusion to their treachery as well as their new serpentine masters. The behidra is exalted as the pinnacle of power and has become a religious icon for these forsaken kobolds. Leaders of this cult, known as magistrates, are gifted with potent electrical abilities, which they wield as a show of superiority to keep their subordinates in check.
+
+Source:	Spectre Creations - Behidra (u/TheArenaGuy) (Homebrew)</description>
+    <environment>mountain, underdark</environment>
+  </monster>
+  <!-- Behidra -->
+  <!-- Greater Behirs -->
+  <monster>
+    <name>Behir Lich</name>
+    <sortname>Lich, Behir</sortname>
+    <ancestry>Lich, Behir</ancestry>
+    <size>G</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>20 (natural armor)</ac>
+    <hp>310 (20d20+100)</hp>
+    <speed>80 ft., climb 60 ft.</speed>
+    <str>26</str>
+    <dex>20</dex>
+    <con>21</con>
+    <int>10</int>
+    <wis>17</wis>
+    <cha>14</cha>
+    <save>Dex +11, Con +11, Int +6, Cha +8</save>
+    <skill>Perception +9, Stealth +11</skill>
+    <passive>19</passive>
+    <languages>Common, Draconic</languages>
+    <cr>21</cr>
+    <vulnerable/>
+    <resist>necrotic</resist>
+    <immune>lightning, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Legendary Resistance (3/Day).</name>
+      <text>If the behir fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Serpent's Flurry.</name>
+      <text>Once on each of its turns when it misses with a claw attack, the behir can make another claw attack as part of the same action.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The behir has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The behir's innate spellcasting ability is Charisma (spell save DC 16). The behir can innately cast the following spells, requiring no components.
+
+	• 2/Day each: bestow curse, danse macabre
+	• 1/Day each: chain lightning, power word stun</text>
+    </trait>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The behir exhales a line of lightning that is 60 ft. long and 5 ft. wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Lightning Breath||16d10</attack>
+    </action>
+    <action>
+      <name>Multiattack</name>
+      <text>The behir makes three attacks: one with its bite and two with its claws. It can replace both of its claw attacks with one constrict attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10+8) piercing damage.</text>
+      <attack>Bite|14|3d10+8</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (3d6+8) piercing damage.</text>
+      <attack>Bite|14|3d6+8</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 5 ft., one Large or smaller creature. Hit: 19 (2d10+8) bludgeoning damage plus 19 (2d10+8) slashing damage. The target is grappled (escape DC 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.
+
+Grappled:
+	• A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• The condition ends if the grappler is incapacitated.
+	• The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.</text>
+      <attack>Constrict|14|(2d10+8)+(2d10+8)</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The behir can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. The behir regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Bite</name>
+      <text>The behir makes a bite attack.</text>
+    </legendary>
+    <legendary>
+      <name>Move</name>
+      <text>The behir moves up to its speed.</text>
+    </legendary>
+    <legendary>
+      <name>Crush (Costs 2 Actions)</name>
+      <text>The behir squeezes the creature it is grappling. The creature takes 15 (2d6 + 8) bludgeoning damage and must succeed on a DC 22 Constitution saving throw or become unable to breathe until the grapple ends.</text>
+      <attack>Crush||2d6+8</attack>
+    </legendary>
+    <spells>bestow curse, danse macabre, chain lightning, power word stun</spells>
+    <description>Behirs were originally created by storm giants as fierce mounts in their conquests against dragons. All behirs still harbor eternal resentment for dragonkind, and an Elder Behir driven by vainglory may seek a path of undeath in order to endlessly execute their pursuits against their draconic adversaries.
+
+In a necromantic ritual ironically similar to that which creates a dracolich, a group of magically inclined followers can transform a willing Elder Behir into a lich-like being, capturing its spirit upon death and transferring it into a blue sapphire (akin to a lich's phylactery). As the flesh rots away from the corpse of the behir, its spirit is returned to animate its bones, granting it a vile form of immortality.
+
+Source:	Spectre Creations - Greater Behirs (u/TheArenaGuy) (Homebrew)</description>
+    <environment>mountain, underdark</environment>
+  </monster>
+  <!-- Behir Lich -->
+  <monster>
+    <name>Elder Behir</name>
+    <sortname>Behir, Elder</sortname>
+    <ancestry>Behir</ancestry>
+    <size>G</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>20 (natural armor)</ac>
+    <hp>310 (20d20+100)</hp>
+    <speed>80 ft., climb 60 ft.</speed>
+    <str>26</str>
+    <dex>20</dex>
+    <con>21</con>
+    <int>10</int>
+    <wis>17</wis>
+    <cha>14</cha>
+    <save>Dex +11, Con +11, Int +6, Cha +8</save>
+    <skill>Perception +9, Stealth +11</skill>
+    <passive>19</passive>
+    <languages>Common, Draconic</languages>
+    <cr>20</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If the behir fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Serpent's Flurry</name>
+      <text>Once on each of its turns when it misses with a claw attack, the behir can make another claw attack as part of the same action.</text>
+    </trait>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The behir exhales a line of lightning that is 60 ft. long and 5 ft. wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Lightning Breath||16d10</attack>
+    </action>
+    <action>
+      <name>Multiattack</name>
+      <text>The behir makes three attacks: one with its bite and two with its claws. It can replace both of its claw attacks with one attack to constrict.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10+8) piercing damage.</text>
+      <attack>Bite|14|3d10+8</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (3d6+8) piercing damage.</text>
+      <attack>Bite|14|3d6+8</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 5 ft., one Large or smaller creature. Hit: 19 (2d10+8) bludgeoning damage plus 19 (2d10+8) slashing damage. The target is grappled (escape DC 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.
+
+Grappled:
+	• A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• The condition ends if the grappler is incapacitated.
+	• The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.</text>
+      <attack>Constrict|14|(2d10+8)+(2d10+8)</attack>
+    </action>
+    <action>
+      <name>Swallow</name>
+      <text>The behir makes one bite attack against a Large or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 28 (8d6) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.
+If the behir takes 50 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 ft. of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 ft. of movement, exiting prone.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.</text>
+      <attack>Acid Damage||8d6</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The behir can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. The behir regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Bite</name>
+      <text>The behir makes a bite attack.</text>
+    </legendary>
+    <legendary>
+      <name>Move</name>
+      <text>The behir moves up to half its speed.</text>
+    </legendary>
+    <legendary>
+      <name>Crush (Costs 2 Actions)</name>
+      <text>The behir squeezes the creature it is grappling. The creature takes 15 (2d6 + 8) bludgeoning damage and must succeed on a DC 22 Constitution saving throw or become unable to breathe until the grapple ends.</text>
+    </legendary>
+    <description>While the average behir only lives for about 50-60 years in the wild, sometimes an exceptionally powerful and preeminent specimen rises up and gains a following of lesser behirs, willing to protect and serve their Elder Behir leader. A well-guarded, well-nourished behir can live for hundreds of years, growing stronger as it ages and laying claim to an ever-growing and progressively treacherous lair.
+
+Source:	Spectre Creations - Greater Behirs (u/TheArenaGuy) (Homebrew)</description>
+    <environment>mountain, underdark</environment>
+  </monster>
+  <!-- Elder Behir -->
+  <monster>
+    <name>Elder Behir, Stormsteed</name>
+    <size>G</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>20 (natural armor)</ac>
+    <hp>310 (20d20+100)</hp>
+    <speed>80 ft., climb 60 ft.</speed>
+    <str>26</str>
+    <dex>20</dex>
+    <con>21</con>
+    <int>10</int>
+    <wis>17</wis>
+    <cha>14</cha>
+    <save>Dex +11, Con +11, Int +6, Cha +8</save>
+    <skill>Perception +9, Stealth +11</skill>
+    <immune>lightning</immune>
+    <senses>darkvision 120 ft.</senses>
+    <passive>19</passive>
+    <languages>Common, Draconic</languages>
+    <cr>20</cr>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <text>If the behir fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Serpent's Flurry</name>
+      <text>Once on each of its turns when it misses with a claw attack, the behir can make another claw attack as part of the same action.</text>
+    </trait>
+    <trait>
+      <name>Voltaic Link</name>
+      <text>While a friendly creature is mounted on the behir, the behir can understand its rider's languages, the rider gains resistance to lightning damage, and the rider can make any spell it casts that targets only itself also target the behir.</text>
+    </trait>
+    <trait>
+      <name>Ride the Lightning</name>
+      <text>While the behir's Lightning Breath is charged, it has an effective flying speed equal to its climbing speed and it can hover.</text>
+    </trait>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The behir exhales a line of lightning that is 60 ft. long and 5 ft. wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Lightning Breath||16d10</attack>
+    </action>
+    <action>
+      <name>Multiattack</name>
+      <text>The behir makes three attacks: one with its bite and two with its claws. It can replace both of its claw attacks with one attack to constrict.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10+8) piercing damage.</text>
+      <attack>Bite|14|3d10+8</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (3d6+8) piercing damage.</text>
+      <attack>Bite|14|3d6+8</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 5 ft., one Large or smaller creature. Hit: 19 (2d10+8) bludgeoning damage plus 19 (2d10+8) slashing damage. The target is grappled (escape DC 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.
+
+Grappled:
+	• A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• The condition ends if the grappler is incapacitated.
+	• The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.</text>
+      <attack>Constrict|14|(2d10+8)+(2d10+8)</attack>
+    </action>
+    <action>
+      <name>Swallow</name>
+      <text>The behir makes one bite attack against a Large or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 28 (8d6) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.
+
+If the behir takes 50 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 ft. of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 ft. of movement, exiting prone.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.</text>
+      <attack>Acid Damage||8d6</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions (3/Turn)</name>
+      <recharge>3/TURN</recharge>
+      <text>The behir can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time, and only at the end of another creature's turn. The behir regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Bite</name>
+      <text>The behir makes a bite attack.</text>
+    </legendary>
+    <legendary>
+      <name>Move</name>
+      <text>The behir moves up to half its speed.</text>
+    </legendary>
+    <legendary>
+      <name>Crush (Costs 2 Actions)</name>
+      <text>The behir squeezes the creature it is grappling. The creature takes 15 (2d6 + 8) bludgeoning damage and must succeed on a DC 22 Constitution saving throw or become unable to breathe until the grapple ends.</text>
+      <attack>Crush||2d6+8</attack>
+    </legendary>
+    <spells/>
+    <slots/>
+    <description>While the average behir only lives for about 50-60 years in the wild, sometimes an exceptionally powerful and preeminent specimen rises up and gains a following of lesser behirs, willing to protect and serve their Elder Behir leader. A well-guarded, well-nourished behir can live for hundreds of years, growing stronger as it ages and laying claim to an ever-growing and progressively treacherous lair.
+
+Source:	Spectre Creations - Behir Minions (u/TheArenaGuy) (Homebrew)</description>
+    <environment>mountain, underdark</environment>
+  </monster>
+  <!-- Elder Behir, Stormsteed -->
+  <!-- Behir Minions -->
+  <monster>
+    <name>Behir, Stormsteed</name>
+    <size>H</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>168 (16d12+64)</hp>
+    <speed>50 ft., climb 40 ft.</speed>
+    <str>23</str>
+    <dex>16</dex>
+    <con>18</con>
+    <int>7</int>
+    <wis>14</wis>
+    <cha>12</cha>
+    <save/>
+    <skill>Perception +6, Stealth +7</skill>
+    <passive>16</passive>
+    <languages>Draconic</languages>
+    <cr>11</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
+    <trait>
+      <name>Voltaic Link</name>
+      <text>While a friendly creature is mounted on the behir, the behir can understand its rider's languages, the rider gains resistance to lightning damage, and the rider can make any spell it casts that targets only itself also target the behir.</text>
+    </trait>
+    <trait>
+      <name>Ride the Lightning</name>
+      <text>While the behir's Lightning Breath is charged, it has an effective flying speed equal to its climbing speed and it can hover.</text>
+    </trait>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The behir exhales a line of lightning that is 20 ft. long and 5 ft. wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Lightning Breath||12d10</attack>
+    </action>
+    <action>
+      <name>Multiattack</name>
+      <text>The behir makes two attacks: one with its bite and one to constrict.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 22 (3d10+6) piercing damage.</text>
+      <attack>Bite|10|3d10+6</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one Large or smaller creature. Hit: 17 (2d10+6) bludgeoning damage plus 17 (2d10+6) slashing damage. The target is grappled (escape DC 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.
+
+Grappled:
+• A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+• The condition ends if the grappler is incapacitated.
+• The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell.
+
+Restrained:
+• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+• The creature has disadvantage on Dexterity saving throws.</text>
+      <attack>Constrict|10|(2d10+6)+(2d10+6)</attack>
+    </action>
+    <action>
+      <name>Swallow</name>
+      <text>The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (6d6) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.
+
+If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 ft. of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 ft. of movement, exiting prone.
+
+Blinded:
+	• A blinded creature can't see and automatically fails any ability check that requires sight.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+
+Prone:
+	• A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.
+	• The creature has disadvantage on attack rolls.
+	• An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.</text>
+      <attack>Acid Damage||6d6</attack>
+    </action>
+    <description>A stormsteed is a behir that has been specifically groomed from birth as a mount. They are capable of channeling their lightning breath into a constant stream of arcing electricity at their feet, which they cling to and climb along.
+
+Source:	Spectre Creations - Behir Minions (u/TheArenaGuy) (Homebrew)</description>
+    <environment>mountain, underdark</environment>
+  </monster>
+  <!-- Behir, Stormsteed -->
+  <monster>
+    <name>Behir Bolter</name>
+    <sortname>Behir, Bolter</sortname>
+    <ancestry>Behir</ancestry>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>101 (13d10+30)</hp>
+    <speed>50 ft., climb 40 ft.</speed>
+    <str>19</str>
+    <dex>15</dex>
+    <con>16</con>
+    <int>6</int>
+    <wis>13</wis>
+    <cha>10</cha>
+    <save>Dex +5</save>
+    <skill>Perception +4, Stealth +5</skill>
+    <passive>14</passive>
+    <languages>Draconic</languages>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
+    <trait>
+      <name>Lightning Agility</name>
+      <text>The behir can take the Dash or Disengage action on its turn as a bonus action.</text>
+    </trait>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The behir exhales a line of lightning that is 15 ft. long and 5 ft. wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 44 (8d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Lightning Breath||8d10</attack>
+    </action>
+    <action>
+      <name>Multiattack</name>
+      <text>The behir makes two attacks: one with its bite and one to constrict.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8+4) piercing damage.</text>
+      <attack>Bite|7|2d8+4</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one Medium or smaller creature. Hit: 10 (1d12+4) bludgeoning damage plus 10 (1d12+4) slashing damage. The target is grappled (escape DC 14) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.
+
+Grappled:
+	• A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• The condition ends if the grappler is incapacitated.
+	• The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.</text>
+      <attack>Constrict|7|(1d12+4)+(1d12+4)</attack>
+    </action>
+    <description>A bolter is an adolescent behir, approximately between the ages of 5 and 15. Esteemed for their lightning-fast reflexes and speed, these young behirs move swiftly and silently through the twisting tunnels of their lair or along high caves in the cliffs they call home.
+
+Source:	Spectre Creations - Behir Minions (u/TheArenaGuy) (Homebrew)</description>
+    <environment>mountain, underdark</environment>
+  </monster>
+  <!-- Behir Bolter -->
+  <monster>
+    <name>Behir Bolter, Stormsteed</name>
+    <sortname>Behir, Bolter, Stormsteed</sortname>
+    <ancestry>Behir</ancestry>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>neutral evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>101 (13d10+30)</hp>
+    <speed>50 ft., climb 40 ft.</speed>
+    <str>19</str>
+    <dex>15</dex>
+    <con>16</con>
+    <int>6</int>
+    <wis>13</wis>
+    <cha>10</cha>
+    <save>Dex +5</save>
+    <skill>Perception +4, Stealth +5</skill>
+    <passive>14</passive>
+    <languages>Draconic</languages>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 90 ft.</senses>
+    <trait>
+      <name>Lightning Agility</name>
+      <text>The behir can take the Dash or Disengage action on its turn as a bonus action.</text>
+    </trait>
+    <trait>
+      <name>Voltaic Link</name>
+      <text>While a friendly creature is mounted on the behir, the behir can understand its rider's languages, the rider gains resistance to lightning damage, and the rider can make any spell it casts that targets only itself also target the behir.</text>
+    </trait>
+    <trait>
+      <name>Ride the Lightning</name>
+      <text>While the behir's Lightning Breath is charged, it has an effective flying speed equal to its climbing speed and it can hover.</text>
+    </trait>
+    <action>
+      <name>Lightning Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The behir exhales a line of lightning that is 15 ft. long and 5 ft. wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 44 (8d10) lightning damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Lightning Breath||8d10</attack>
+    </action>
+    <action>
+      <name>Multiattack</name>
+      <text>The behir makes two attacks: one with its bite and one to constrict.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8+4) piercing damage.</text>
+      <attack>Bite|7|2d8+4</attack>
+    </action>
+    <action>
+      <name>Constrict</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one Medium or smaller creature. Hit: 10 (1d12+4) bludgeoning damage plus 10 (1d12+4) slashing damage. The target is grappled (escape DC 14) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.
+
+Grappled:
+	• A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• The condition ends if the grappler is incapacitated.
+	• The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell.
+
+Restrained:
+	• A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+	• Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.
+	• The creature has disadvantage on Dexterity saving throws.</text>
+      <attack>Constrict|7|(1d12+4)+(1d12+4)</attack>
+    </action>
+    <description>A bolter is an adolescent behir, approximately between the ages of 5 and 15. Esteemed for their lightning-fast reflexes and speed, these young behirs move swiftly and silently through the twisting tunnels of their lair or along high caves in the cliffs they call home.
+
+Source:	Spectre Creations - Behir Minions (u/TheArenaGuy) (Homebrew)</description>
+    <environment>mountain, underdark</environment>
+  </monster>
+  <!-- Behir Bolter, Stormsteed -->
+  <monster>
+    <name>Guard Snake</name>
+    <sortname>Snake, Guard</sortname>
+    <ancestry>Snake</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>lawful evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>45 (7d8+14)</hp>
+    <speed>40 ft.</speed>
+    <str>10</str>
+    <dex>17</dex>
+    <con>14</con>
+    <int>4</int>
+    <wis>9</wis>
+    <cha>7</cha>
+    <save/>
+    <skill>Perception +3, Stealth +5</skill>
+    <passive>13</passive>
+    <languages>understands Draconic but can't speak</languages>
+    <cr>2</cr>
+    <vulnerable/>
+    <resist>lightning</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The snake can hold its breath for 1 hour.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) piercing damage + 3 (1d4) lightning damage, and the target must make a DC 12 Constitution saving throw. On a failure, the target can't take reactions until the start of its next turn. If the saving throw fails by 5 or more, the target is stunned until the end of the snake's next turn or until it takes damage.</text>
+      <attack>Bite|5|(1d8+3)</attack>
+      <attack>Lightning Damage||1d4</attack>
+    </action>
+    <description>A guard snake is a large, electrified serpent created and employed by behirs to explore their lairs and the nearby environs. They seek out potential weaknesses and serve as scouts, remaining ever-vigilant against intruders. Guard snakes are loyal and unquestioningly obey the commands of their behir master and its lieutenants, sometimes even serving kobold vipers as mounts.
+
+Source:	Spectre Creations - Behir Minions (u/TheArenaGuy) (Homebrew)</description>
+    <environment>Any</environment>
+  </monster>
+  <!-- Guard Snake -->
+  <monster>
+    <name>Kobold Viper</name>
+    <sortname>Viper, Kobold</sortname>
+    <ancestry>Viper</ancestry>
+    <size>S</size>
+    <type>humanoid (kobold)</type>
+    <alignment>lawful evil</alignment>
+    <ac>12</ac>
+    <hp>5 (2d6-2)</hp>
+    <speed>30 ft.</speed>
+    <str>7</str>
+    <dex>15</dex>
+    <con>9</con>
+    <int>8</int>
+    <wis>7</wis>
+    <cha>8</cha>
+    <save/>
+    <skill/>
+    <passive>8</passive>
+    <languages>Common, Draconic</languages>
+    <cr>1/4</cr>
+    <vulnerable/>
+    <resist>lightning</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 ft. of the creature and the ally isn't incapacitated.</text>
+    </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) piercing damage + 2 (1d4) lightning damage.</text>
+      <attack>Dagger|4|2d4+2</attack>
+      <attack>Lightning Damage||1d4</attack>
+    </action>
+    <action>
+      <name>Sling</name>
+      <text>Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4+2) bludgeoning damage + 2 (1d4) lightning damage.</text>
+      <attack>Sling|4|2d4+2</attack>
+      <attack>Lightning Damage||1d4</attack>
+    </action>
+    <description>Kobolds are known to deeply revere and serve dragons, but their dragon overlords rarely pay them much heed or show them gratitude. When a kobold is spurned or abandoned, it may seek revenge, defecting to one of the dragons' greatest rivals, a behir. These kobolds are known as "vipers" due to their treachery and spiteful indignation as well as the serpentine nature of their new master.
+
+Behirs greatly value these kobolds, who work tirelessly to further fortify their lairs - labyrinthine, winding tunnel systems with narrow 	passageways and ample opportunity to hide. They lie in wait, ambushing unwelcome intruders.
+
+Source:	Spectre Creations - Behir Minions (u/TheArenaGuy) (Homebrew)</description>
+    <environment>Any</environment>
+  </monster>
+  <!-- Kobold Viper -->
+  <monster>
+    <name>Kobold Viper Magistrate</name>
+    <sortname>Viper, Kobold Magistrate</sortname>
+    <ancestry>Viper</ancestry>
+    <size>S</size>
+    <type>humanoid (kobold)</type>
+    <alignment>lawful evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>36 (8d6+8)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <str>9</str>
+    <dex>17</dex>
+    <con>12</con>
+    <int>10</int>
+    <wis>9</wis>
+    <cha>12</cha>
+    <save/>
+    <skill/>
+    <passive>9</passive>
+    <languages>Common, Draconic</languages>
+    <cr>2</cr>
+    <vulnerable/>
+    <resist>lightning</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Pack Tactics</name>
+      <text>The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 ft. of the creature and the ally isn't incapacitated.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The kobold makes two attacks, either with its dagger or its sling.</text>
+    </action>
+    <action>
+      <name>Dagger</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4+3) piercing damage + 3 (1d6) lightning damage.</text>
+      <attack>Dagger|5|1d4+3</attack>
+      <attack>Lightning Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Sling</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 5 (1d4+3) bludgeoning damage + 3 (1d6) lightning damage.</text>
+      <attack>Sling|5|1d4+3</attack>
+      <attack>Lightning Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Discharge (Recharge 6)</name>
+      <recharge>D6</recharge>
+      <text>The kobold unleashes a beam of electricity in a 15-foot line that is 5 feet wide. Each creature in the line must make a DC 11 Dexterity saving throw, taking 18 (4d8) lightning damage on a failed save, or half as much on a success.</text>
+      <attack>Discharge||4d8</attack>
+    </action>
+    <reaction>
+      <name>Lightning Arc</name>
+      <text>When one of the kobold's allies deals lightning damage to a creature within 30 ft. of the kobold, it can amplify the damage, arcing its own electrical energy to the target and dealing and additional 4 (1d8) lightning damage to it.</text>
+      <attack>Lightning Arc||1d8</attack>
+    </reaction>
+    <description>Kobolds are known to deeply revere and serve dragons, but their dragon overlords rarely pay them much heed or show them gratitude. When a kobold is spurned or abandoned, it may seek revenge, defecting to one of the dragons' greatest rivals, a behir. These kobolds are known as "vipers" due to their treachery and spiteful indignation as well as the serpentine nature of their new master.
+
+Behirs greatly value these kobolds, who work tirelessly to further fortify their lairs - labyrinthine, winding tunnel systems with narrow 	passageways and ample opportunity to hide. They lie in wait, ambushing unwelcome intruders.
+
+Occasionally, one of these kobolds earns a rank of authority, gifted by an Elder Behir, often sprouting two (or more rarely, four) extra arms, making them exemplary climbers. These magistrates inherit potent electrical abilities, which they enjoy using as a show of superiority to keep their subordinates in check.
+
+Source:	Spectre Creations - Behir Minions (u/TheArenaGuy) (Homebrew)</description>
+    <environment>Any</environment>
+  </monster>
+  <!-- Kobold Viper Magistrate-->
+</compendium>

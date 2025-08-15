@@ -2,6 +2,8 @@ name: Compile all collections into compendiums
 on: 
   push:
     branches: [ master ]
+    tags:
+      - '*'
   workflow_dispatch:
   pull_request:
 
@@ -9,40 +11,45 @@ jobs:
   compile_collections:
     name: Compile collections
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install xsltproc
-        uses: awalsh128/cache-apt-pkgs-action@latest
+      - name: Install xsltproc and parallel
+        uses: awalsh128/cache-apt-pkgs-action@v1
         with:
           packages: xsltproc
           version: 1.0
 
       - name: Compile collections into compendiums
         run: |
-          cd Collections
-          for f in *.xml; do
-            xsltproc -o "../Compendiums/$f" "../Utilities/merge.xslt" "$f"
+          set -euxo pipefail
+          trap 'echo "Error occurred during compilation!"' ERR
+
+          mkdir -p Compendiums
+          for f in Collections/*.xml; do
+            filename=$(basename "$f")
+            echo "Compiling $filename ..."
+            xsltproc --xinclude -o "Compendiums/$filename" "Utilities/merge.xslt" "$f"
           done
-          cd ..
 
-      - name: Zip up compendiums
-        run: zip -r compendiums.zip Compendiums/*.xml
-
-      - name: Store resulting compendiums as artifact
+      - name: Upload compiled XML files as artifact
         uses: actions/upload-artifact@v4
         with: 
-          name: compendiums
-          path: compendiums.zip
+          name: compendiums-${{ github.ref_name }}
+          path: Compendiums/
 
-      - name: Create release
-        uses: softprops/action-gh-release@v1
+      # Create a GitHub release when a tag is pushed
+      - name: Create versioned release
         if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
         with:
           files: Compendiums/*
 
+      # Update the nightly release only on master branch push
       - name: Update nightly release
+        if: github.ref == 'refs/heads/master'
         uses: pyTooling/Actions/releaser@main
         with:
           tag: nightly

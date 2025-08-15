@@ -1,319 +1,72 @@
 <?xml version="1.0" ?>
-<collection>
+<collection xmlns:xi="http://www.w3.org/2001/XInclude">
   <!-- Contains only rules allowed for 2024 DDAL games set in the realms (including Spelljammer and Planescape) -->
 
-  <!-- # Core Rulebooks -->
-  <!-- 01. Player's Handbook 2024 - September 17, 2024 -->
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/backgrounds-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/bestiary-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-barbarian-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-bard-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-cleric-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-druid-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-fighter-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-monk-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-paladin-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-ranger-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-rogue-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-sorcerer-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-warlock-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/class-wizard-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/feats-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/items-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/optionalfeatures-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/races-phb24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/01_Players_Handbook_2024/spells-phb24.xml" />
+  <!-- # D&D 2024 -->
+  <!-- ## Core Rulebooks 2024 -->
+  <!-- The main three books, PHB24, DMG24 and MM25. -->
+  <xi:include href="../Sources/PHB2024/WizardsOfTheCoast24/01_Core/collection-01_core.xml" xpointer="xpointer(/collection/doc)" />
 
-  <!-- Dungeon Master's Guide 2024 - November 12, 2024 -->
-  <doc href="../Sources_2024/WizardsOfTheCoast/02_Dungeon_Masters_Guide_2024/bestiary-dmg24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/02_Dungeon_Masters_Guide_2024/items-dmg24.xml" />
-  <doc href="../Sources_2024/WizardsOfTheCoast/02_Dungeon_Masters_Guide_2024/backgrounds-dmg24.xml" />
+  <!-- # Legacy Homebrew -->
+  <!-- Legacy content from the 5th edition to fit with the 2024 rules. -->
 
-  <!-- Monster Manual 2024 - Februari 18, 2025 -->
-  <doc href="../Sources_2024/WizardsOfTheCoast/03_Monster_Manual_2024/bestiary_mm24.xml" />
+  <!-- Core Books -->
+  <xi:include pubdate="2014-08-19" source="Player's Handbook (2014)" href="../Sources/PHB2024/WizardsOfTheCoast24/01_Core/01_Players_Handbook_2024/source-phb24.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2014-09-30" source="Dungeon Master's Guide (2014)" href="../Sources/PHB2024/WizardsOfTheCoast24/01_Core/02_Dungeon_Masters_Guide_2024/source-dmg24.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2014-12-09" source="Monster Manual (2014)" href="../Sources/PHB2024/WizardsOfTheCoast24/01_Core/03_Monster_Manual_2024/source-mm24.xml" xpointer="xpointer(/source/collection/doc)" />
 
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy-->
+  <!-- Supplements -->
+  <xi:include pubdate="2016-11-15" source="Volo's Guide to Monsters" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/02_Supplements_Legacy/Volos_Guide_to_Monsters/source-vgtm.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2016-11-15" source="Xanathar's Guide to Everything" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/02_Supplements_Legacy/Xanathars_Guide_to_Everything/source-xgte.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2017-09-15" source="The Tortle Package" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/02_Supplements_Legacy/The_Tortle_Package/source-ttp.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2017-10-11" source="One Grung Above" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/02_Supplements_Legacy/One_Grung_Above/source-oga.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2018-05-29" source="Mordenkainen's Tome of Foes" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/02_Supplements_Legacy/Mordenkainens_Tome_of_Foes/source-mtof.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2020-11-17" source="Tasha's Cauldron of Everything" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/02_Supplements_Legacy/Tashas_Cauldron_of_Everything/source-tcoe.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2021-10-26" source="Fizban's Treasury of Dragons" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/02_Supplements_Legacy/Fizbans_Treasury_of_Dragons/source-ftod.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2022-05-17" source="Mordenkainen Presents: Monsters of the Multiverse" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/02_Supplements_Legacy/Mordenkainens_Monsters_of_the_Multiverse/source-mpmm.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2024-01-05" source="The Book of Many Things" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/02_Supplements_Legacy/Book_of_Many_Things/source-tbomt.xml" xpointer="xpointer(/source/collection/doc)" />
 
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/01_Players_Handbook-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/01_Players_Handbook/class-cleric-phb.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/01_Players_Handbook/class-wizard-phb.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/01_Players_Handbook/feats-phb.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/01_Players_Handbook/optionalfeatures-phb.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/01_Players_Handbook/bestiary-phb.xml" />
+  <!-- Campaign Settings -->
+  <xi:include pubdate="2015-11-03" source="Sword Coast Adventurer's Guide" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/03_Campaign_Settings_Legacy/Sword_Coast_Adventurers_Guide/source-scag.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2022-06-06" source="The Vecna Dossier" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/03_Campaign_Settings_Legacy/Vecna_Dossier/source-tvd.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2022-08-16" source="Spelljammer: Adventures in Space" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/03_Campaign_Settings_Legacy/Spelljammer_Adventures_in_Space/source-sais.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2023-08-15" source="Bigby Presents: Glory of the Giants" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/02_Supplements_Legacy/Bigby_Presents_Glory_of_the_Giants/source-bpgotg.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2023-10-17" source="Planescape: Adventures in the Multiverse" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/03_Campaign_Settings_Legacy/Planescape_Adventures_in_the_Multiverse/source-pam.xml" xpointer="xpointer(/source/collection/doc)" />
 
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/02_Dungeon_Masters_Guide-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/02_Dungeon_Masters_Guide/spells-phb+dmg.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/02_Dungeon_Masters_Guide/class-cleric-dmg.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/02_Dungeon_Masters_Guide/bestiary-dmg.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/02_Dungeon_Masters_Guide/class-paladin-dmg.xml" />
+  <!-- Monster Compendiums -->
+  <xi:include pubdate="2022-04-21" source="Monstrous Compendium Vol. 1 - Spelljammer Creatures" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/04_Monster_Compendiums_Legacy/Monstrous_Compendium_1_Spelljammer_Creatures/source-mc1sc.xml" xpointer="xpointer(/source/collection/doc)" />
 
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/03_Monster_Manual-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/03_Monster_Manual/items-mm.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/03_Monster_Manual/bestiary-mm.xml" />
-
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Bigby_Presents_Glory_of_the_Giants-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Bigby_Presents_Glory_of_the_Giants/backgrounds-gotg.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Bigby_Presents_Glory_of_the_Giants/class-barbarian-gotg.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Bigby_Presents_Glory_of_the_Giants/feats-gotg.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Bigby_Presents_Glory_of_the_Giants/bestiary-gotg.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Bigby_Presents_Glory_of_the_Giants/items-gotg.xml" />
-
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Book_of_Many_Things-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Book_of_Many_Things/optionalfeatures-bomt.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Book_of_Many_Things/backgrounds-bomt.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Book_of_Many_Things/spells-bomt.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Book_of_Many_Things/bestiary-bomt.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Book_of_Many_Things/items-bomt.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Fizbans_Treasury_of_Dragons-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Fizbans_Treasury_of_Dragons/class-monk-ftod.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Fizbans_Treasury_of_Dragons/class-ranger-ftod.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Fizbans_Treasury_of_Dragons/spells-ftod.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Fizbans_Treasury_of_Dragons/races-ftod.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Fizbans_Treasury_of_Dragons/bestiary-ftod.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Fizbans_Treasury_of_Dragons/feats-ftod.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Fizbans_Treasury_of_Dragons/items-ftod.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Misplaced_Monsters-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Misplaced_Monsters/bestiary-mmv1.xml" />
-
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Mordenkainens_Fiendish_Folio-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Mordenkainens_Fiendish_Folio/bestiary-mff.xml" />
-
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Mordenkainens_Monsters_of_the_Multiverse-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Mordenkainens_Monsters_of_the_Multiverse/races-mmm.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Mordenkainens_Monsters_of_the_Multiverse/bestiary-mmm.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/One_Grung_Above-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/One_Grung_Above/races-oga.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/One_Grung_Above/items-oga.xml" />
-
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Planescape_Adventures_in_the_Multiverse-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Planescape_Adventures_in_the_Multiverse/backgrounds-pam.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Planescape_Adventures_in_the_Multiverse/feats-pam.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Planescape_Adventures_in_the_Multiverse/spells-pam.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Planescape_Adventures_in_the_Multiverse/bestiary-pam.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Planescape_Adventures_in_the_Multiverse/items-pam.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Spelljammer_Adventures_in_Space-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Spelljammer_Adventures_in_Space/spells-ais.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Spelljammer_Adventures_in_Space/backgrounds-ais.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Spelljammer_Adventures_in_Space/bestiary-ais.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Spelljammer_Adventures_in_Space/items-ais.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Spelljammer_Adventures_in_Space/races-ais.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Spelljammer_Adventures_in_Space/vehicles-ais.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/class-rogue-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/class-sorcerer-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/spells-phb+scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/class-cleric-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/class-warlock-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/races-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/items-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/backgrounds-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/bestiary-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/class-barbarian-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/class-fighter-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/class-monk-scag.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Sword_Coast_Adventurers_Guide/class-paladin-scag.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-sidekick-export.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-sidekick-spellcaster.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-sidekick-warrior.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-artificer-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/spells-phb+tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/spells-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/bestiary-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-barbarian-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-bard-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-cleric-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-druid-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-fighter-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-monk-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-paladin-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-ranger-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-rogue-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-warlock-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/class-wizard-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/feats-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/items-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/optionalfeatures-tce.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Tashas_Cauldron_of_Everything/races-tce.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/The_Tortle_Package-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/The_Tortle_Package/bestiary-ttp.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/The_Tortle_Package/items-ttp.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Vecna_Dossier-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Vecna_Dossier/bestiary-vd.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Vecna_Dossier/items-vd.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Volos_Guide_to_Monsters-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Volos_Guide_to_Monsters/bestiary-vgm.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Volos_Guide_to_Monsters/items-vgm.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/spells-ai+xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/optionalfeatures-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/spells-phb+xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/spells-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-barbarian-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-bard-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-cleric-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-druid-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-fighter-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-monk-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-paladin-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-ranger-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-rogue-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-sorcerer-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-warlock-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/class-wizard-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/items-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/feats-xge.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Xanathars_Guide_to_Everything/bestiary-xge.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Monstrous_Compendium_1_Spelljammer_Creatures-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Monstrous_Compendium_1_Spelljammer_Creatures/bestiary-mc1sc.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Monstrous_Compendium_4_Eldraine_Creatures-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/WizardsOfTheCoast_homebrew_2014_legacy/Monstrous_Compendium_4_Eldraine_Creatures/bestiary-mc4ec.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy-->
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Adventurers_League-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Adventurers_League/backgrounds-al-cos.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Adventurers_League/backgrounds-al-ee.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Adventurers_League/backgrounds-al-rod.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Baldurs_Gate_Descent_Into_Avernus-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Baldurs_Gate_Descent_Into_Avernus/backgrounds-bgdia.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Baldurs_Gate_Descent_Into_Avernus/bestiary-bgdia.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Baldurs_Gate_Descent_Into_Avernus/items-bgdia.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Baldurs_Gate_Descent_Into_Avernus/vehicles-bgdia.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Candlekeep_Mysteries-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Candlekeep_Mysteries/bestiary-cm.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Candlekeep_Mysteries/items-cm.xml" />
-
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Descent_into_the_Lost_Caverns_of_Tsojcanth-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Descent_into_the_Lost_Caverns_of_Tsojcanth/bestiary-dlct.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Descent_into_the_Lost_Caverns_of_Tsojcanth/items-dlct.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Divine_Contention-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Divine_Contention/bestiary-dc.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Divine_Contention/items-dc.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Dragon_of_Icespire_Peak-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Dragon_of_Icespire_Peak/bestiary-dip.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Dragon_of_Icespire_Peak/bestiary-esk.xml" />
-
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Dragons_of_Stormwreck_Isle-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Dragons_of_Stormwreck_Isle/bestiary-dosi.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Ghosts_of_Saltmarsh-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Ghosts_of_Saltmarsh/backgrounds-gos.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Ghosts_of_Saltmarsh/bestiary-gos.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Ghosts_of_Saltmarsh/items-gos.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Ghosts_of_Saltmarsh/vehicles-gos.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Hunt_for_the_Thesselhydra-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Hunt_for_the_Thesselhydra/bestiary-hftt.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Hunt_for_the_Thesselhydra/items-hftt.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Icewind_Dale_Rime_of_the_Frostmaiden-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Icewind_Dale_Rime_of_the_Frostmaiden/spells-idrotf.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Icewind_Dale_Rime_of_the_Frostmaiden/bestiary-idrotf.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Icewind_Dale_Rime_of_the_Frostmaiden/items-idrotf.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Infernal_Machine_Rebuild-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Infernal_Machine_Rebuild/bestiary-imr.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Infernal_Machine_Rebuild/items-imr.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Journeys_Through_the_Radiant_Citadel-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Journeys_Through_the_Radiant_Citadel/bestiary-jttrc.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Journeys_Through_the_Radiant_Citadel/items-jttrc.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Keys_From_The_Golden_Vault-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Keys_From_The_Golden_Vault/bestiary-kgv.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Keys_From_The_Golden_Vault/items-kgv.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Locathah_Rising-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Locathah_Rising/bestiary-lr.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Locathah_Rising/races-lr.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Lost_Laboratory_of_Kwalish-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Lost_Laboratory_of_Kwalish/spells-llk.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Lost_Laboratory_of_Kwalish/bestiary-llk.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Lost_Laboratory_of_Kwalish/items-llk.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Lost_Mine_of_Phandelver-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Lost_Mine_of_Phandelver/bestiary-lmop.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Lost_Mine_of_Phandelver/items-lmop.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Out_of_the_Abyss-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Out_of_the_Abyss/bestiary-oota.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Out_of_the_Abyss/items-oota.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Phandelver_and_Below_the_Shattered_Obelisk-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Phandelver_and_Below_the_Shattered_Obelisk/bestiary-pabso.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Phandelver_and_Below_the_Shattered_Obelisk/items-pabso.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Princes_of_the_Apocalypse-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Princes_of_the_Apocalypse/bestiary-pota.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Princes_of_the_Apocalypse/items-pota.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Princes_of_the_Apocalypse/Elemental_Evil-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Princes_of_the_Apocalypse/Elemental_Evil/items-eet.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Quests_from_the_Infinite_Staircase-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Quests_from_the_Infinite_Staircase/bestiary-qis.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Quests_from_the_Infinite_Staircase/items-qis.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Sleeping_Dragons_Wake-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Sleeping_Dragons_Wake/bestiary-sdw.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Sleeping_Dragons_Wake/items-sdw.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Storm_Kings_Thunder-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Storm_Kings_Thunder/bestiary-skt.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Storm_Kings_Thunder/items-skt.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Storm_Lords_Wrath-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Storm_Lords_Wrath/bestiary-slw.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Tales_From_the_Yawning_Portal-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Tales_From_the_Yawning_Portal/bestiary-tftyp.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Tales_From_the_Yawning_Portal/items-tftyp.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/The_Wild_Beyond_the_Witchlight-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/The_Wild_Beyond_the_Witchlight/backgrounds-twbtw.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/The_Wild_Beyond_the_Witchlight/bestiary-twbtw.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/The_Wild_Beyond_the_Witchlight/items-twbtw.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Tomb_of_Annihilation-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Tomb_of_Annihilation/backgrounds-toa.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Tomb_of_Annihilation/bestiary-toa.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Tomb_of_Annihilation/items-toa.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Vecna_Eve_of_Ruin-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Vecna_Eve_of_Ruin/bestiary-ver.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Vecna_Eve_of_Ruin/items-ver.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Waterdeep_Dragon_Heist-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Waterdeep_Dragon_Heist/bestiary-wdh.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Waterdeep_Dragon_Heist/items-wdh.xml" />
-
-  <!--Files from /WizardsOfTheCoast2024/Homebrew_2014_legacy/Adventures_homebrew_2014_legacy/Waterdeep_Dungeon_of_the_Mad_Mage-->
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Waterdeep_Dungeon_of_the_Mad_Mage/items-wdmm.xml" />
-  <doc href="../Sources_2024/Homebrew/WotC_2014_legacy/Adventures_homebrew_2014_legacy/Waterdeep_Dungeon_of_the_Mad_Mage/bestiary-wdmm.xml" />
+  <!-- Adventures -->
+  <xi:include pubdate="2014-07-15" source="Phandelver and Below: Lost Mine of Phandelver" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Lost_Mine_of_Phandelver/source-lmop.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2014-08-19" source="Tyranny of Dragons: Hoard of the Dragon Queen" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Tyranny_of_Dragons/Hoard_of_the_Dragon_Queen/source-hotdq.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2014-11-04" source="Tyranny of Dragons: Rise of Tiamat" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Tyranny_of_Dragons/Rise_of_Tiamat/source-rot.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2015-03-01" source="Elemental Evil" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Princes_of_the_Apocalypse/Elemental_Evil/source-ee.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2015-04-07" source="Princes of the Apocalypse" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Princes_of_the_Apocalypse/source-pota.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2015-09-15" source="Out of the Abyss" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Out_of_the_Abyss/source-oota.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2016-03-15" source="Adventurer's League" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Adventurers_League/source-al.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2016-09-06" source="Adventurers League: Storm King's Thunder" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Storm_Kings_Thunder/source-skt.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2017-04-04" source="Adventurers League: Tales from the Yawning Portal" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Tales_From_the_Yawning_Portal/source-tftyp.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2017-09-19" source="Adventurers League: Tomb of Annihilation" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Tomb_of_Annihilation/source-toa.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2018-09-18" source="Adventurers League: Waterdeep: Dragon Heist" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Waterdeep_Dragon_Heist/source-wdh.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2018-11-10" source="Lost Laboratory of Kwalish" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Lost_Laboratory_of_Kwalish/source-llk.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2018-11-20" source="Adventurers League: Waterdeep: Dungeon of the Mad Mage" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Waterdeep_Dungeon_of_the_Mad_Mage/source-wdmm.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2019-05-21" source="Ghosts of Saltmarsh" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Ghosts_of_Saltmarsh/source-gos.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2019-09-03" source="Essentials Kit: Dragon of Icespire Peak" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Dragon_of_Icespire_Peak/source-dip.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2019-09-04" source="Beyond the Dragon of Icespire Peak Part 1: Storm Lord's Wrath" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Storm_Lords_Wrath/source-slw.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2019-09-04" source="Beyond the Dragon of Icespire Peak Part 2: Sleeping Dragon's Wake" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Sleeping_Dragons_Wake/source-sdw.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2019-09-04" source="Beyond the Dragon of Icespire Peak Part 3: Divine Contention" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Divine_Contention/source-dc.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2019-09-17" source="Baldur's Gate: Descent into Avernus" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Baldurs_Gate_Descent_Into_Avernus/source-bgdia.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2019-09-19" source="Locathah Rising" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Locathah_Rising/source-lr.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2019-11-12" source="Infernal Machine Rebuild" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Infernal_Machine_Rebuild/source-imr.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2020-09-15" source="Icewind Dale: Rime of the Frostmaiden" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Icewind_Dale_Rime_of_the_Frostmaiden/source-idrotf.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2021-03-16" source="Candlekeep Mysteries" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Candlekeep_Mysteries/source-cm.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2021-09-21" source="The Wild Beyond the Witchlight" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/The_Wild_Beyond_the_Witchlight/source-twbtw.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2022-06-21" source="Journeys through the Radiant Citadel" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Journeys_Through_the_Radiant_Citadel/source-jttrc.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2022-07-31" source="Dragons of Stormwreck Isle" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Dragons_of_Stormwreck_Isle/source-dosi.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2023-02-21" source="Keys From The Golden Vault" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Keys_From_The_Golden_Vault/source-kgv.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2023-08-29" source="Stranger Things: Hunt for the Thessalhydra" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Hunt_for_the_Thesselhydra/source-hftt.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2024-03-25" source="Descent into the Lost Caverns of Tsojcanth" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Descent_into_the_Lost_Caverns_of_Tsojcanth/source-dlct.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2024-05-21" source="Vecna: Eve of Ruin" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Vecna_Eve_of_Ruin/source-ver.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2024-07-16" source="Quests from the Infinite Staircase" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Quests_from_the_Infinite_Staircase/source-qis.xml" xpointer="xpointer(/source/collection/doc)" />
+  <xi:include pubdate="2024-09-19" source="Phandelver and Below: The Shattered Obelisk" href="../Sources/PHB2024/Legacy_2014/WizardsOfTheCoast_Legacy/05_Adventures_Legacy/Phandelver_and_Below_the_Shattered_Obelisk/source-pabso.xml" xpointer="xpointer(/source/collection/doc)" />
 </collection>
