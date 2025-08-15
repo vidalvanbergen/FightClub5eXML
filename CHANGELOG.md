@@ -18,6 +18,7 @@
 * Added `Alternate Blood Hunter (LaserLlama)` content for PHB2014 and 2024, put together by @Deepseastronaut.
 * Added `Alternate Ranger (LaserLlama)` content for PHB2014 and 2024, partially put together by @rattatooey.
 * Addded homebrew dinosaurian race `Brutan` by @rattatooey.
+* Updated Monsters of the Dungeon bestiary by @Reccho.
 * Tweaked starting gold message to clarify that it replaces both class and background gear.
 
 ### 2025-07-03
