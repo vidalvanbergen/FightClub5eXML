@@ -213,9 +213,180 @@ Hefty Hoard. Legends say that arcane dragons have larger hoards than any other k
 Source:	Monsters of the Dungeon p. 10 (Homebrew)</description>
     <environment>any</environment>
   </monster>  <!-- Dragon, Arcane -->
+  <monster>
+    <name>Archmage Ignatius of Nox</name>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>chaotic good</alignment>
+    <ac>13 (18 with mage armor and Staff of Aramoor)</ac>
+    <hp>10 (4d4)</hp>
+    <speed>130 (20d8 + 40)</speed>
+    <str>10</str>
+    <dex>16</dex>
+    <con>14</con>
+    <int>22</int>
+    <wis>18</wis>
+    <cha>16</cha>
+    <save>Int +11, Wis +9, Cha +8</save>
+    <skill>Arcana +11, History +11, Investigation +11</skill>
+    <immune>poison, psychic</immune>
+    <conditionImmune>blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <passive>14</passive>
+    <languages>Common, Dwarvish, Elvish, Halfling, Primordial, Deep Speech</languages>
+    <cr>15</cr>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The archmage has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The archmage is a 20th-level wizard. His spellcasting ability is Intelligence (spell save DC 19, +11 to hit with spell attacks). He has the following wizard spells prepared:
 
+        • Cantrips (at will): dancing lights, fire bolt, message, prestidigitation, ray of frost
+        • 1st level (5 slots): burning hands, find familiar, fog cloud, mage armor, magic missile, shield
+        • 2nd level (4 slots): darkvision, invisibility, misty step, suggestion
+        • 3rd level (4 slots): counterspell, dispel magic, fireball, haste, hypnotic pattern
+        • 4th level (3 slots): banishment, polymorph, wall of fire
+        • 5th level (3 slots): animate objects, cone of cold, modify memory, telekinesis
+        • 6th level (2 slots): chain lightning, disintegrate
+        • 7th level (2 slots): forcecage, teleport
+        • 8th level (1 slot): antimagic field
+        • 9th level (1 slot): time stop</text>
+    </trait>
+    <action>
+      <name>Staff of Aramoor</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage plus 24 (7d6) force damage. The staff also increases the user’s AC by 2.</text>
+      <attack>Staff|5|1d8+5+7d6</attack>
+    </action>
+    <spells>dancing lights, fire bolt, message, prestidigitation, ray of frost, burning hands, find familiar, fog cloud, mage armor, magic missile, shield, darkvision, invisibility, misty step, suggestion, counterspell, dispel magic, fireball, haste, hypnotic pattern, banishment, polymorph, wall of fire, animate objects, cone of cold, modify memory, telekinesis, chain lightning, disintegrate, forcecage, teleport, antimagic field, time stop</spells>
+    <slots/>
+    <description>The head of the Wizard Council rules the free city of Nox, also known as the city of Magic. Archmage Ignatius of Nox is one of the most influential mages on the continent of Myrr. He’s a good man, but his age is catching up to him. Ignatius has become rather absent minded and gets lost in thought. He is very independent and marches to his own drummer.
+      
+      Wizards Rule. Nox is a magocracy and the council has the ultimate say in everything. They even have their own soldiers, known as the Mage Guard.
 
+      Perpetual Pandemonium. The city is a chaotic environment, because the Wizard Council doesn’t concern itself with many day-to-day events. It is by far the most diverse city on the continent with elves, dwarves, and halflings mixing with humans.
+      
+      Magic Carpet Ride. The archmage often travels on a magical carpet of flying, which can be shrunk to fit in his pocket. His familiar is a stubborn, golden owl named Xaggy.
 
+      Source:	Monsters of the Dungeon p. 12 (Homebrew)</description>
+    <environment>any</environment>
+  </monster>  <!-- Archmage Ignatius of Nox -->
+  <monster>
+    <name>Blabberblub</name>
+    <size>L</size>
+    <type>aberration</type>
+    <alignment>chaotic evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>85 (9d10 + 36)</hp>
+    <speed>0 ft., fly 30 ft. (hover)</speed>
+    <str>22</str>
+    <dex>9</dex>
+    <con>18</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>3</cha>
+    <vulnerable>fire</vulnerable>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical attacks</resist>
+    <immune>poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, poisoned, unconscious</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <passive>11</passive>
+    <languages>Ancient Deep Speech</languages>
+    <cr>7</cr>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The blabberblub has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in direct sunlight, the blabberblub has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The blabberblub makes two melee attacks, only one of which can be a bite attack.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage.</text>
+      <attack>Bite|9|2d8+6</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage and 3 (1d6) necrotic damage. The target’s hit point maximum is reduced by an amount equal to the necrotic damage taken. The reduction lasts until the target finishes a short or long rest.</text>
+      <attack>Claws|9|2d6+6+1d6</attack>
+    </action>
+    <action>
+      <name>Blabber (3/Day)</name>
+      <text>The blabberblub speaks about random topics in Ancient Deep Speech. Each creature within 30 feet of the blabberblub that can hear the blabbering must succeed on a DC 14 Wisdom saving throw. On a failure, the target takes 17 (5d6) psychic damage, half damage on a success.</text>
+    </action>
+    <spells/>
+    <slots/>
+    <description>Lurking in the darkest corners of the dungeon are many kinds of monsters. One of the strangest is the blabberblub. The first sign of this creature is a bizarre string of nonsense words in the dark. It speaks Ancient Deep Speech from distant planes. The monster also emits an odd, musty smell.
+
+      Talkative Terror. These aberrations never stop talking and create chaos wherever they go. They babble incoherently, as few creatures can understand its forgotten language.
+
+      One-Sided Conversation. Blabberblubs are not interested in listening. They won’t make any attempt to understand what other creatures are saying or doing. The aberrations simply want their next meal and are just thinking out loud.
+
+      Source:	Monsters of the Dungeon p. 13 (Homebrew)</description>
+    <environment>any</environment>
+  </monster>  <!-- Blabberblub -->
+  <monster>
+    <name>Cauldron of Chaos</name>
+    <size>L</size>
+    <type>construct</type>
+    <alignment>unaligned</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>42 (5d10 + 15)</hp>
+    <speed>25 ft.</speed>
+    <str>16</str>
+    <dex>10</dex>
+    <con>16</con>
+    <int>1</int>
+    <wis>3</wis>
+    <cha>1</cha>
+    <immune>fire, poison, psychic</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
+    <passive>13</passive>
+    <languages>-</languages>
+    <cr>2</cr>
+    <trait>
+      <name>Antimagic Susceptibility</name>
+      <text>The cauldron is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the cauldron must succeed on a Constitution saving throw against the caster’s spell save DC or fall unconscious for 1 minute.</text>
+    </trait>
+    <trait>
+      <name>False Appearance</name>
+      <text>While the cauldron remains motionless, it is indistinguishable from a normal large cauldron.</text>
+    </trait>
+    <trait>
+      <name>Heated Form</name>
+      <text>A creature that touches the cauldron or hits it with a melee attack while within 5 feet of it takes 2 (1d4) fire damage.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The cauldron makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Boiling Blast</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 7 (1d8 + 3) fire damage.</text>
+      <attack>Blast|5|1d8+3</attack>
+    </action>
+    <spells/>
+    <slots/>
+    <description>After descending a set of stone stairs, the heroes spot a large, black cauldron. Without warning a red liquid begins bubbling inside. Then the boiling liquid sprays the shocked onlookers.
+
+      Hot Pot. These constructs blend into the dungeon environment quite easily. They spend most of their time sitting as still as a statue. When they activate, a liquid begins to boil inside. The cauldron heats up quickly to a dangerously hot temperature.
+
+      Constructed Nature. The cauldron doesn’t require air, food, drink, or sleep.
+
+      Source:	Monsters of the Dungeon p. 14 (Homebrew)</description>
+    <environment>any</environment>
+  </monster>  <!-- Cauldron of Chaos -->
+  
+  
+  
+  
   <!-- Castle Dungeons -->
   <!-- Manor Dungeons -->
   <!-- Thieves' Dungeons -->
