@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
+    <name>Lost Ones</name>
+    <size>G</size>
+    <type>monstrosity</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>10</ac>
+    <hp>1000</hp>
+    <speed>30 ft.</speed>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <languages/>
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Eldritch Resilience</name>
+      <text>The swarm has advantage on saving throws against spells and magical effects.</text>
+    </trait>
+    <trait>
+      <name>Litany's Influence</name>
+      <text>At the start of each of the swarm's turns, each character within 60 feet of it must make a DC 15 Wisdom saving throw. On a failure, the character takes psychic damage equal to the swarm's hit points divided by 20, rounded down, (e.g., 50 psychic damage at 1000 hit points) and cannot take reactions until the start of their next turn. On a success, they take half as much damage and are unaffected by the reaction restriction.</text>
+      <attack>Psychic Damage||50</attack>
+    </trait>
+    <trait>
+      <name>Swarm Movement</name>
+      <text>The swarm moves as a single entity, occupying a 25-foot by 25-foot space. For every 200 hit points the horde loses, each side of its area shrinks by 5 feet.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The swarm makes four Melee attacks.</text>
+    </action>
+    <action>
+      <name>Melee</name>
+      <text>Use a single attack roll with an attack bonus equal to the swarm's hit points divided by 70, rounded down (e.g., +14 at 1000 hit points), range: 15 ft., one target. Hit: (10d6) bludgeoning damage. This damage is reduced by 1d6 for each 100 hit points the swarm has lost.</text>
+      <attack>Bludgeoning Damage||10d6</attack>
+      <attack>Damage Reduction||1d6</attack>
+    </action>
+    <action>
+      <name>Overwhelm</name>
+      <text>If the swarm has more than half of its hit points remaining, it can use its action to attempt to overwhelm a character. The target must make a Strength (Athletics) check contested by the swarm's Strength (Athletics) check, with a bonus equal to the swarm's hit points divided by 50, rounded down (e.g., +20 at 1000 hit points). On a failure, the target is grappled (escape DC 20).</text>
+    </action>
+    <description>Source:	Steinhardt's Guide to the Eldritch Hunt p. 472 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
     <name>Parasitic Geist</name>
     <sortname>Geist, Parasitic</sortname>
     <ancestry>Geist</ancestry>
