@@ -371,4 +371,1235 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 313 (Homebrew)</description>
 Source:	Steinhardt's Guide to the Eldritch Hunt p. 314 (Homebrew)</description>
     <environment/>
   </monster>
+  <monster>
+    <name>Zealot</name>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (any race)</type>
+    <alignment>Any Alignment</alignment>
+    <ac>13 (chain shirt)</ac>
+    <hp>27 (5d8+5)</hp>
+    <speed>25 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>12</con>
+    <int>13</int>
+    <wis>16</wis>
+    <cha>13</cha>
+    <skill>Medicine +7, Persuasion +3, Religion +5</skill>
+    <passive>13</passive>
+    <languages>any two languages</languages>
+    <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The zealot is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The zealot has the following cleric spells prepared:
+
+	• Cantrips (at will): light, sacred flame, thaumaturgy
+	• 1st level (4 slots): cure wounds, guiding bolt, silvered shell
+	• 2nd level (3 slots): lesser restoration, spiritual weapon
+	• 3rd level (2 slots): mass healing word, protection from energy</text>
+      <attack>Spellcasting|+5|</attack>
+    </trait>
+    <trait>
+      <name>Call to Radiance</name>
+      <text>As a bonus action, the zealot can expend a spell slot to magically imbue its weapons with divine power. Until the end of the turn, its melee weapon attacks deal an extra 10 (3d6) radiant damage on a hit. If the zealot expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
+      <attack>Radiant Damage||3d6</attack>
+      <attack>Extra Damage||1d6</attack>
+    </trait>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
+    <spells>Light, Sacred Flame, Thaumaturgy, Cure Wounds, Guiding Bolt, Silvered Shell, Lesser Restoration, Spiritual Weapon, Mass Healing Word, Protection from Energy</spells>
+    <description>Zealots are fanatical followers of the Radiant Church. The Church believes that the Radiant One holds the key to free Luyarnha of its scourge, just as he brought them enlightenment. As such, these zealots do their utmost to spread their message and gather converts. They know that actions speak far louder than words and as such are always at the forefront of each hunt. They are trained in the art of combat, but they prefer to use their abilities to heal and support their allies, strengthening the faith of their comrades through their unwavering devotion. They are often willing to make the ultimate sacrifice in the name of their deity, if it means saving their kin.
+	Despite their peaceful demeanor, zealots are capable of incredible violence, driven by their faith to defend the Radiant Church and its followers. Although their doctrine is one of tolerance, direct insults to their god are deemed heretical and they will not hesitate to use their powers to quiet the offender. They are often seen leading Radiant Church expeditions, accompanied by a retinue of hunters, as they seek to bring the light back to Luyarnha after its fall from grace.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 315 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Butcher</name>
+    <size>L</size>
+    <type>humanoid &amp; monstrosity</type>
+    <alignment>Lawful Neutral</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>76 (9d10+27)</hp>
+    <speed>40 ft.</speed>
+    <str>20</str>
+    <dex>12</dex>
+    <con>17</con>
+    <int>3</int>
+    <wis>12</wis>
+    <cha>12</cha>
+    <skill>Perception +5</skill>
+    <passive>15</passive>
+    <languages/>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't silvered</resist>
+    <immune/>
+    <conditionImmune>madness</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Aberrant Eye</name>
+      <text>The butcher has an eye in the middle of its torso that it uses to dispel magic. The eye is closed unless the butcher uses its bonus action to open it, or uses its Dispelling Gaze. At the start of its next turn, it can choose to close the eye (no action required). While closed, the eye is considered behind total cover and is immune to all damage. While opened, the eye has AC 18, 15 HP, and no resistances or immunities, and the butcher has truesight to a range of 60 feet. Any damage dealt to the eye is also dealt to the butcher. If the eye is destroyed, the butcher is blinded and can't use its Dispelling Gaze.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The butcher makes two cleaver attacks.</text>
+    </action>
+    <action>
+      <name>Cleaver</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) slashing damage or 18 (2d12 + 5) slashing damage if used with two hand. It can only change its grip at the start of each of its turns.</text>
+      <attack>Slashing Damage|+7|2d8+5</attack>
+      <attack>Slashing Damage (Two-Handed)|+7|2d12+5</attack>
+    </action>
+    <action>
+      <name>Dispelling Gaze (Bonus Action)</name>
+      <text>The butcher opens the eye on its chest to cast dispel magic. The butcher's spellcasting ability for this spell is Charisma.</text>
+    </action>
+    <action>
+      <name>Fist (Bonus Action)</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 5 (2d4) bludgeoning damage and the butcher can choose to push the target back up to 10 feet in a straight line if the target is Large or smaller. The butcher can only make this attack if it has a free hand.</text>
+      <attack>Bludgeoning Damage|+7|2d4</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>The butcher adds 2 to its AC against one melee attack that would hit it. To do so, the butcher must see the attacker, and be wielding a melee weapon.</text>
+    </reaction>
+    <description>Cursed-bloods are brave beyond reason, beings willing to go to dangerous lengths to protect their family;
+butchers are part of the many that have sacrificed more than their lives to defend their loved ones.
+
+Lunar Rebirth. For a cursed-blood, removing their mask causes excruciating pain, akin to the agony of being scalped, before causing a horrific death. One dangerous way of acquiring power is for cursed-bloods to, as they approach the end of their life, perform such an act on a night where the Blood Moon is high. All die immediately, their hearts withering; but for a chosen few, a horrific rebirth is granted. Willful subjects to the twisted influence of the astral body, their flesh contorts and mutates in ways that defy the natural order; the lost twin embedded in their chest is resurrected, and its new eye opens to survey the world from within their abominable form. The transformation isn't without cost, as the cursed-blood's mind fractures and its memories fade away, leaving behind only a fierce bloodlust that compels them to slaughter the aberrant.
+
+Eternal Hunt. Now consumed by eldritch power and stripped of their intellect, they are immune to the creeping tendrils of madness that would drive others to insanity. Before their rebirth is complete, an elder of the tribe bestows upon them a red cloth that covers their face, so that the actions from their new body may not tarnish the previous life they led. The newly birthed butcher soon begins their hunt, relentlessly cleaving the beasts that plague the city, though in their mindless zealotry, they often strike down even those that have yet to transform.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 316 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Scourge Lycan</name>
+    <sortname>Lycan, Scourge</sortname>
+    <ancestry>Lycan</ancestry>
+    <size>M</size>
+    <type>beast &amp; humanoid</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>58 (9d8+18)</hp>
+    <speed>40 ft.</speed>
+    <str>17</str>
+    <dex>13</dex>
+    <con>14</con>
+    <int>7</int>
+    <wis>11</wis>
+    <cha>10</cha>
+    <skill>Perception +4</skill>
+    <passive>14</passive>
+    <languages/>
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune>bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't silvered</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Keen Hearing and Smell</name>
+      <text>The scourge lycan has advantage on Perception checks that rely on hearing or smell.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The scourge lycan makes two attacks: one with its bite and one with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.</text>
+      <attack>Piercing Damage|+5|1d8+3</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.</text>
+      <attack>Slashing Damage|+5|2d4+3</attack>
+    </action>
+    <action>
+      <name>Devour (recharge 4-6)</name>
+      <recharge>D4</recharge>
+      <text>The scourge lycan attempts to eat a creature within 5 feet of it. The target must make a DC 13 Dexterity saving throw. On a failure, the creature is crunched by the werewolf, taking 12 (2d8 + 3) piercing damage and falling prone. The scourge lycan regains hit points equal to the damage dealt.</text>
+      <attack>Piercing Damage||2d8+3</attack>
+    </action>
+    <description>As the scorching moon rises, beasts become restless, cobbles crack, and the air sizzles with savage suspense. Fiery claws cauterise as they rend, and Luyarnha is choked with the scent of charred flesh.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 317 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Guardian Gargoyle</name>
+    <sortname>Gargoyle, Guardian</sortname>
+    <ancestry>Gargoyle</ancestry>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Lawful Good</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>60 (8d8+24)</hp>
+    <speed>30 ft., fly 60 ft.</speed>
+    <str>15</str>
+    <dex>13</dex>
+    <con>16</con>
+    <int>7</int>
+    <wis>11</wis>
+    <cha>3</cha>
+    <skill>Perception +4</skill>
+    <passive>14</passive>
+    <languages>understands Celestial but can't speak</languages>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist>necrotic; bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't moongilded or silvered</resist>
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, frightened, petrified, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>False Appearance</name>
+      <text>While the gargoyle remains motionless, it is indistinguishable from an inanimate statue.</text>
+    </trait>
+    <trait>
+      <name>Warding Strikes</name>
+      <text>When the gargoyle hits a creature with an attack, it can mark the creature until the end of the gargoyle's next turn or until the creature is marked by another gargoyle. While it is within 30 feet of the gargoyle, the marked creature has disadvantage on attack rolls that don't target the gargoyle.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The gargoyle makes two attacks: one with its bite and one with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.</text>
+      <attack>Piercing Damage|+4|1d8+2</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.</text>
+      <attack>Slashing Damage|+4|2d4+2</attack>
+    </action>
+    <action>
+      <name>Boulder</name>
+      <text>Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 6 (1d10 + 1) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+4|1d10+1</attack>
+    </action>
+    <reaction>
+      <name>Stone Defense</name>
+      <text>When another creature within 5 feet of the gargoyle takes damage, the gargoyle can partially turn it to stone, giving the target resistance to the triggering damage type(s) until the start of the target's next turn.</text>
+    </reaction>
+    <description>Lining Luyarnha's many churches, one can find silent sentinels of faith: the guardian gargoyles. These constructs, carved from the very stone that forms the walls and balconies of these hallowed places, are more than mere decoration. For the most part, the gargoyles remain as still and silent as the rocks from which they were wrought, standing sentinel over the sacred spaces they protect, their unblinking eyes ever watchful and their monstrous visages a stern warning to those who might dare to defile the sanctity of the church. However, when such sanctity is threatened or the lives of those within its walls are in peril, these seemingly inert creatures are roused to life. Animated with the divine words of the clergy, they move with a singular purpose: to defend the church and its congregation.
+	As they spring into action, the stone forms of the gargoyles become supple and agile, their wings unfurling to reveal the full extent of their might, before swooping down upon their enemies with the wrath of the divine. Once their duty is complete, the guardian gargoyles return to their stone slumber, resuming their silent watch over the churches they were birthed to protect.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 318 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Hunter</name>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (any race)</type>
+    <alignment>Any Alignment</alignment>
+    <ac>17 (splint)</ac>
+    <hp>58 (9d8+18)</hp>
+    <speed>30 ft.</speed>
+    <str>16</str>
+    <dex>14</dex>
+    <con>14</con>
+    <int>10</int>
+    <wis>11</wis>
+    <cha>10</cha>
+    <skill>Athletics +5, Perception +2</skill>
+    <passive>12</passive>
+    <languages>any one language (usually Common)</languages>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Flexible Combatant</name>
+      <text>When the hunter draws or stows a weapon, it can draw or stow another weapon with the other hand. It can reload weapons with the loading, reload, or barrel properties without a free hand.
+	Additionally, if the hunter is carrying a one-handed melee weapon in one hand, and a one-handed ranged weapon in the other hand, it doesn't have disadvantage on attack rolls with ranged weapons from being within 5 feet of a hostile creature.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hunter makes two longsword attacks. If it has a firearm drawn, it can also make a firearm attack.</text>
+    </action>
+    <action>
+      <name>Longsword</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.</text>
+      <attack>Slashing Damage|+5|1d8+3</attack>
+      <attack>Slashing Damage (Two-Handed)|+5|1d10+3</attack>
+    </action>
+    <action>
+      <name>Firearm</name>
+      <text>Ranged Weapon Attack: +4 to hit, range 60/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
+      <attack>Piercing Damage|+4|1d6+2</attack>
+    </action>
+    <reaction>
+      <name>Dodge Step (3/short Rest)</name>
+      <recharge>3/DAY</recharge>
+      <text>If the hunter's speed isn't 0, and it is targeted by an attack, it dodges in defense. It moves 5 feet, and makes a Dexterity saving throw with a DC equal to the attacker's attack roll's total. On a success, it evades completely and the attack misses. On a failure, it halves the attack's damage against itself if the attack hits. This movement doesn't provoke opportunity attacks.</text>
+    </reaction>
+    <description>The motto of hunters is "survive together, or die together." They never hunt alone, unless they are forced to. After all, even the oft considered greatest hunter, Steinhardt, was always accompanied by Vicar Priscilla on all his hunts. The nights in Luyarnha can be brutal and the beasts relentless, and only a united front can hope to survive.
+	All jaegers are hunters, but not all hunters are jaegers. Where jaegers are relentless killers, hunters are often simple citizens wishing to protect their homes and those they love. They are often the first to perish, but fear the one who lives long in a profession where men die young. Hunters are an invaluable contribution to the survival of the city-state and its denizens, and successful hunters cut down hundreds of beasts throughout their life before succumbing to the fires of battle.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 319 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Razorblade Bitzer</name>
+    <sortname>Bitzer, Razorblade</sortname>
+    <ancestry>Bitzer</ancestry>
+    <size>M</size>
+    <type>construct</type>
+    <alignment>Unaligned</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>75 (10d8+30)</hp>
+    <str>16</str>
+    <dex>16</dex>
+    <con>16</con>
+    <int>4</int>
+    <wis>11</wis>
+    <cha>1</cha>
+    <skill>Athletics +4, Investigation +1</skill>
+    <passive>10</passive>
+    <languages>understands the languages of its master(s) but can't speak</languages>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, psychic</immune>
+    <conditionImmune>charmed, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Illumination</name>
+      <text>The bitzer sheds bright light in a 5-foot radius and dim light in an additional 5 feet.</text>
+    </trait>
+    <trait>
+      <name>Immutable Form</name>
+      <text>The bitzer is immune to any spell or effect that would alter its form.</text>
+    </trait>
+    <trait>
+      <name>Instilled Loyalty</name>
+      <text>The bitzer can't act in a manner that is harmful to its master(s).</text>
+    </trait>
+    <trait>
+      <name>Necrotic Negation (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>When the bitzer takes necrotic damage, it instead takes no damage.</text>
+    </trait>
+    <trait>
+      <name>Whirligig Saw</name>
+      <text>A creature that the bitzer is grappling takes 5 (2d4) slashing damage at the start of each of its turns and the bitzer's turns.</text>
+      <attack>Slashing Damage||2d4</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bitzer makes two melee attacks, only one of which can be with its bite</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage and the target is grappled (escape DC 13). Until this grapple ends, the bitzer can't bite another target.</text>
+      <attack>Piercing Damage|+5|2d8+3</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.</text>
+      <attack>Slashing Damage|+5|1d8+3</attack>
+    </action>
+    <action>
+      <name>Tail</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</text>
+      <attack>Piercing Damage|+5|1d6+3</attack>
+    </action>
+    <description>When the hunts first began, they were kept under wraps, only to be executed under cover of the night. Hunters swore an oath of secrecy to the Radiant Church: none were to speak of the Scourge; rumors would spread more virulently than a plague ever could. But the hunters were warriors, not propagandists, and thus the Scions, hungry for favors from the top, offered their help with creating a means of removing any trace of the horrors that occurred each night.
+
+Hunting dogs had been used for centuries in Luyarnha: for retrieving partridges, rounding up wild boar, and even as attack hounds by the city watch. However, all of these canines required a master, and all left the bones and inedible guts of their their prey festering in flycovered mounds. The Radiant Church needed an autonomous creature with fewer dietary scruples, one that would lick the cobbles clean of blood and decayed flesh alike.
+
+Using the technology of manikin creation, the Scions fused flesh to metal, creating a construct-canine with an insatiable appetite: razorblade bitzers. Released in the wake of a hunter's pursuit, or after an eldritch incursion decimates a neighborhood, these bitzers consume all. Bones were broken, liquids lapped up, and the gaze of Luyarnhians is protected from the brutality of the events that transpired the night before.
+
+Although the eldritch runes carved upon the steel of their skin ensures the loyalty of these hounds to the Church, many still roam the streets, forgotten and masterless. Only in death does their duty end.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 320 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Screechwing</name>
+    <size>M</size>
+    <type>beast &amp; humanoid</type>
+    <alignment>chaotic evil</alignment>
+    <ac>17 (half plate)</ac>
+    <hp>58 (9d8+18)</hp>
+    <speed>20 ft., fly 30 ft.</speed>
+    <str>15</str>
+    <dex>16</dex>
+    <con>14</con>
+    <int>3</int>
+    <wis>12</wis>
+    <cha>7</cha>
+    <passive>11</passive>
+    <languages/>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist>acid</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Disorienting Strikes</name>
+      <text>The screechwing has advantage on attack rolls against deafened creatures.</text>
+    </trait>
+    <trait>
+      <name>Echolocative Vision</name>
+      <text>The screechwing can see creatures it has hit with its Echoing Screech attack within the last minute past its blindsight range, up to 120 feet, and regardless of cover.</text>
+    </trait>
+    <trait>
+      <name>Swift Swordsmanship</name>
+      <text>After the screechwing hits a creature with a weapon attack, the screechwing can take the Disengage action as a bonus action that turn.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The screechwing makes two attacks with its shortswords.</text>
+    </action>
+    <action>
+      <name>Shortsword</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.</text>
+      <attack>Piercing Damage|+5|1d6+3</attack>
+    </action>
+    <action>
+      <name>Screech (recharge 4-6)</name>
+      <recharge>D4</recharge>
+      <text>The screechwing lets out a powerful screech in a 90-foot cone. Each creature in the area must succeed on a DC 12 Constitution saving throw or take 9 (2d8) thunder damage, become stunned until the end of its next turn, and become deafened for 1 minute. A deafened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Thunder Damage||2d8</attack>
+    </action>
+    <description>With wings that stretch the breadth of a grown man and sharp blades that can rend flesh from bone, a dire fate awaits any who dare cross paths with this warped creature. It is a stalker unparalleled, a being consumed by the very essence of fear that seeks solace in the embrace of darkness. Fortuitously, the denizens of Luyarnha rarely glimpse this monstrosity, for its senses far surpass those of sane mortals, rendering it vulnerable to the raucous cacophony and blinding luminescence of the bustling city-state. Instead, it lurks within the shadowy depths of the forests surrounding the metropolis, biding its time.
+
+Fallen Scourgeborne:
+Once a mere vespertilio, this beast has been twisted by madness, its soul devoured by the very darkness it sought refuge within. The vestiges of its humanoid features have been distorted into a grotesque visage, its eyes aglow with a feral hunger as it stalks its quarry. Yet despite its monstrous appearance, the screechwings take to the skies with a grace that belies its savagery, its acute senses guiding it to its prey with lethal precision. Employing its ear-rending shriek, it deafens all who hear, leaving them disoriented and vulnerable to its relentless assault.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 321 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Abductor</name>
+    <size>M</size>
+    <type>aberration &amp; humanoid</type>
+    <alignment>Lawful Evil</alignment>
+    <ac>16 (studded leather)</ac>
+    <hp>84 (13d8+26)</hp>
+    <speed>25 ft., climb 25 ft.</speed>
+    <str>14</str>
+    <dex>19</dex>
+    <con>14</con>
+    <int>12</int>
+    <wis>12</wis>
+    <cha>12</cha>
+    <save>Dex +6, Con +4</save>
+    <skill>Acrobatics +6, Athletics +6, Stealth +6</skill>
+    <passive>11</passive>
+    <languages>understands Deep Speech but can't speak</languages>
+    <cr>4</cr>
+    <vulnerable/>
+    <resist>cold, fire</resist>
+    <immune/>
+    <conditionImmune>charmed</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <action>
+      <name>Multiattack</name>
+      <text>The abductor makes two bushwhack attacks.</text>
+    </action>
+    <action>
+      <name>Bushwhack</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage. If the target is surprised, this attack is a critical hit.</text>
+      <attack>Bludgeoning Damage|+6|1d10+4</attack>
+    </action>
+    <action>
+      <name>Abduct</name>
+      <text>The abductor places an unconscious Medium or smaller creature within 5 feet of it into its body by opening the jaw located in its abdomen, abducting it. The abducted creature has total cover against effects outside the abductor and remains unconscious until released from the abductor's body. If the creature is dying, it becomes stable but can't gain hit points while in the abductor's body. If the abductor dies, or if it uses an action to release the abducted creature, the creature is released in an unoccupied space within 5 feet of the abductor. The abductor can have only one creature abducted at a time.</text>
+    </action>
+    <action>
+      <name>Darklight Candle</name>
+      <text>The abductor casts darkness at 3rd- level, without material components, targeting its candle. While touching the candle, a creature can see through the darkness created by the spell.</text>
+    </action>
+    <action>
+      <name>Empower (recharge 5-6) (Bonus Action)</name>
+      <recharge>D5</recharge>
+      <text>The abductor draws on dark powers. The next time it hits a creature with a melee attack before the end of its next turn, the target must make a DC 14 Constitution saving throw. On a failure, the target falls unconscious for 1 minute. The target repeats the saving throw whenever it takes damage and at the end of each of its turns, ending the effect on itself on a success.</text>
+    </action>
+    <action>
+      <name>Nimble Escape (Bonus Action)</name>
+      <text>The abductor takes the Disengage or Hide action.</text>
+    </action>
+    <description>In the moonlit nights of Luyarnha, deformed humanoids loom, their monstrous forms stalking unsuspecting prey, abducting them as test subjects for their masters' heinous rituals and experiments. These wretched beings are called abductors-altered cursed-bloods bound in eternal servitude to the Obitus Scholare.
+	Short and gaunt, shrouded in darkened robes, its mouth sewn shut, each abductor carries a candle, an enchanted light that burns its soul to cloak its twisted flesh in shadows. Despite their fragile appearance, abductors possess unparalleled strength, their power enough to subdue even skilled warriors. Rarely do they employ lethal force, preferring to incapacitate their targets before devouring them with the ravenous maw of their conjoined twin, tucking them safely within the confines of their abdomen before delivering them unto their new home.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 322 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Revenant Bear</name>
+    <sortname>Bear, Revenant</sortname>
+    <ancestry>Bear</ancestry>
+    <size>L</size>
+    <type>beast &amp; undead</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>12</ac>
+    <hp>110 (13d10+39)</hp>
+    <speed>40 ft., swim 40 ft.</speed>
+    <str>19</str>
+    <dex>14</dex>
+    <con>16</con>
+    <int>2</int>
+    <wis>13</wis>
+    <cha>7</cha>
+    <skill>Perception +3</skill>
+    <passive>13</passive>
+    <languages/>
+    <cr>4</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical attacks</resist>
+    <immune>acid, poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Emaciated Appetite</name>
+      <text>The bear is in a state of constant hunger. After hitting a non-construct creature with an attack, the bear eats part of it, regaining 8 (1d10 + 3) hit points.</text>
+      <attack>Emaciated Appetite||1d10+3</attack>
+    </trait>
+    <trait>
+      <name>Hold Breath</name>
+      <text>The bear can hold its breath for 3 hours.</text>
+    </trait>
+    <trait>
+      <name>False Appearance</name>
+      <text>While motionless and partly submerged in water or acid, the bear is indistinguishable from a normal mound of dirt.</text>
+    </trait>
+    <trait>
+      <name>Spiked Body</name>
+      <text>Whenever a creature within 5 feet of the bear hits it with a melee attack, the creature takes 5 (2d4) piercing damage.</text>
+      <attack>Piercing Damage||2d4</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bear makes two snapjaw attacks.</text>
+    </action>
+    <action>
+      <name>Snapjaw</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) piercing damage, and the target is grappled (escape DC 14). Until this grapple ends, the bear can't make snapjaw attacks against another target, and the target takes an extra 7 (2d6) damage when it's hit by this attack.</text>
+      <attack>Piercing Damage|+6|3d6+4</attack>
+      <attack>Snapjaw|+6|2d6</attack>
+    </action>
+    <description>On the outskirts of Luyarnha, there once stood a human village, soon to be engulfed by a cruel tragedy of fate, as their village was consumed by a catastrophic wave of corrosive acid, washing over their homes and extinguishing the lives within. The unbearable pain and despair that overtook them in their final moments cracked open the doors of their minds and souls, inviting a curse to take bed within.
+	As their mortal forms were twisted and broken by the relentless onslaught of acid, the curse seized upon their anguish, warping their beings into monstrous shapes. In place of the stalwart villagers, there now stood grotesque, undead bears, their singed fur barely concealing the corroded skeletons beneath. The disfiguration they had suffered in their death persisted in these new forms, a macabre testament to the catastrophic demise that had befallen them.
+	Now, these cursed beings lurk in the desolate acidic waters that swallowed their village, their anguished spirits consumed by the power that had claimed them. Driven by the lingering rage and despair of their human lives, these bears have become fearsome predators, their presence a warning for any intruder who dare venture into their forsaken homes.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 323 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Wisp Liege</name>
+    <sortname>Wisp, Liege</sortname>
+    <ancestry>Wisp</ancestry>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>68 (8d10+24)</hp>
+    <speed>40 ft., climb 40 ft.</speed>
+    <str>18</str>
+    <dex>15</dex>
+    <con>17</con>
+    <int>2</int>
+    <wis>13</wis>
+    <cha>6</cha>
+    <skill>Perception +4, Stealth +5</skill>
+    <passive>14</passive>
+    <languages/>
+    <cr>5</cr>
+    <vulnerable/>
+    <resist>necrotic; bludgeoning, piercing, and slashing damage from nonmagical attacks</resist>
+    <immune>acid, lightning</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Wispfather</name>
+      <text>While within 60 feet of the liege, a will-o'-wisp, can use its shock attack an additional time on each of its turns as a bonus action.</text>
+    </trait>
+    <trait>
+      <name>Dying Whisper</name>
+      <text>Whenever a will-o'-wisp is reduced to 0 hit points within 60 feet of the liege, the liege regains 5 hit points and gains advantage on its next attack roll before the end of its next turn.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The liege uses its Create Wisps (if available), then makes two attacks with its claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage plus 1 slashing damage for each will-o'-wisp within 5 feet of the target.</text>
+      <attack>Slashing Damage|+7|2d8+4</attack>
+    </action>
+    <action>
+      <name>Create Wisps (recharge 6)</name>
+      <recharge>D6</recharge>
+      <text>The liege opens its mouth to let out 1d4 will-o'-wisps. They share its initiative, but take their turn immediately after the liege's. The liege can command them telepathically (no action required by the liege), and they will follow its commands.</text>
+      <attack>Will-o'-wisps||1d4</attack>
+    </action>
+    <description>Will-o'-the-wisps are capricious sprites that delight in misleading the unwary, guiding them from the security of trodden paths and into the perilous embrace of the wilderness. Yet, when forests brim with hatred, a strange phenomenon occurs. This collective animosity converges, taking form into a singular, more potent entity known as a wisp liege, an embodiment of the wisps' evil spirits. After the cataclysm of the First War, such monsters began to dwell within the forests surrounding Luyarnha. It was as if the dark magic unleashed in that conflict had infused the land itself, altering its essence.
+	The wisp liege reigns over its lesser kin, its malevolent influence turning their harmless pranks into malefic acts. Under the liege's rule, the wisps' misdirections grow vicious and calculated. No longer are they merely content in leading travelers astray; they now revel in their ensuing demise, echoing the darkness within their sovereign.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 324 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Reviled Hound</name>
+    <sortname>Hound, Reviled</sortname>
+    <ancestry>Hound</ancestry>
+    <size>M</size>
+    <type>beast &amp; aberration</type>
+    <alignment>Unaligned</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>84 (13d8+26)</hp>
+    <speed>40 ft.</speed>
+    <str>17</str>
+    <dex>16</dex>
+    <con>15</con>
+    <int>4</int>
+    <wis>9</wis>
+    <cha>12</cha>
+    <save>Str +6, Con +5</save>
+    <skill>Perception +2</skill>
+    <passive>12</passive>
+    <languages>understands Common but can't speak</languages>
+    <cr>5</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't moongilded or silvered</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Protective Instinct</name>
+      <text>If the hound is not blinded, it has advantage on its initiative roll.</text>
+    </trait>
+    <trait>
+      <name>Crushing Grasp</name>
+      <text>Creatures the hound is grappling have disadvantage on attack rolls against it.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The hound makes three attacks, only one of which can be with its bite.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and the target is grappled (escape DC 14) if it is a Large or smaller creature. The target must also succeed on a DC 12 Intelligence saving throw or gain a short-term madness. Until the grapple ends, the hound can't bite another target.</text>
+      <attack>Piercing Damage|+6|2d8+3</attack>
+    </action>
+    <action>
+      <name>Tentacle</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target is grappled (escape DC 14) if it is a Large or smaller creature. Until the grapple ends, the hound can't use this tentacle on another target. The hound has five tentacles.</text>
+      <attack>Piercing Damage|+6|1d6+3</attack>
+    </action>
+    <action>
+      <name>Eldritch Tethers (recharge 3-6)</name>
+      <recharge>D3</recharge>
+      <text>If the hound isn't grappling any creatures with its tentacles, it can make a tentacle attack against up to five creatures within reach. Each attack must target a separate creature.</text>
+    </action>
+    <description>Even though the Obitus's engineering of the jaegers was praised for its scientific brilliance, they quickly discovered that they needed more to slake their insatiable thirst for knowledge. They shifted their attention to canines after observing the amazing advancements the Scions had achieved in developing the Razorblade Bitzers. After all, why couldn't the flesh of mongrels be altered if that of humans, elves, and even manikins could?
+	One of the few breeds with the strength to endure exposure to the primordial serum, the same serum which was used to awaken the powers of jaegers, is the Doberman Pinscher. However, like many of the earliest hunters, their bodies were incapable of handling the excess power, irrevocably mangling them.
+	Rare are the ones that hunt alongside these 'reviled hounds. In fact, only those who have been trained to see past outward appearances can comprehend that these pups, despite their horrifying features, will remain devoted, even if it means their deaths.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 325 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Scorched Adjudicator</name>
+    <sortname>Adjudicator, Scorched</sortname>
+    <ancestry>Adjudicator</ancestry>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>91 (14d8+28)</hp>
+    <speed>30 ft.</speed>
+    <str>18</str>
+    <dex>14</dex>
+    <con>15</con>
+    <int>14</int>
+    <wis>9</wis>
+    <cha>17</cha>
+    <save>Dex +5</save>
+    <skill>Acrobatics +5, Athletics +7, Perception +5</skill>
+    <passive>15</passive>
+    <languages/>
+    <cr>5</cr>
+    <vulnerable/>
+    <resist>fire, necrotic</resist>
+    <immune/>
+    <conditionImmune>blinded</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Guiding Light</name>
+      <text>The adjudicator sheds dim light in a 10- foot radius. When a creature starts its turn in the light, or enters it for the first time on a turn, it gains disadvantage on Charisma saving throws until the start of its next turn.</text>
+    </trait>
+    <trait>
+      <name>Limited Telepathy</name>
+      <text>The adjudicator can magically communicate ideas, emotions, and images telepathically with any creature within 120 feet of it. This form of telepathy doesn't allow the receiving creature to telepathically respond.</text>
+    </trait>
+    <trait>
+      <name>Reactive</name>
+      <text>The adjudicator can take one reaction on every turn in combat.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The adjudicator makes two handaxe attacks.</text>
+    </action>
+    <action>
+      <name>Handaxe</name>
+      <text>Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) slashing damage. On a hit, if the adjudicator isn't within 5 feet of the target, the adjudicator can teleport to an unoccupied space within 5 feet of the target.</text>
+      <attack>Slashing Damage|+7|2d6+4</attack>
+    </action>
+    <action>
+      <name>Soul Tear</name>
+      <text>Soul Tear. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 3) necrotic damage and the target must succeed on a DC 14 Charisma saving throw or its hit point maximum is reduced by an amount equal to the damage taken.
+	This reduction lasts until the creature finishes a long rest. If this effect reduces a creature's hit point maximum to 0, the creature dies. A creature killed by this reduction can't be resurrected until the adjudicator is killed.</text>
+      <attack>Necrotic Damage|+6|4d8+3</attack>
+    </action>
+    <action>
+      <name>Inferno (recharge 4-6)</name>
+      <recharge>D4</recharge>
+      <text>Flames pour down from the adjudicator's wings. Each creature between 10 and 40 feet of the adjudicator must make a DC 14 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Fire Damage||6d6</attack>
+    </action>
+    <reaction>
+      <name>Snuff Out the Light</name>
+      <text>When a spell that restores hit points is being cast within 120 feet of the adjudicator, the adjudicator teleports to an unoccupied space within 5 feet of the caster and makes a handaxe attack against it with advantage. On a hit, the spell fails and has no effect.</text>
+    </reaction>
+    <description>Failed Experiments:
+In their lust for power, the Obitus Scholare lead gruesome experiments, merging the flesh of soldiers with that of eldritch beings. Their labor gave birth to powerful combatants, and a sea of corpses. Scorched adjudicators are the fruits of such experiments, humanoids that couldn't become true warriors, failing to resist the call from beyond and losing their sanity. Yet, the scholars still found a use for these failures: they now act as perfect killers for their creators.
+
+Enforcers of Justice:
+Adjudicators enforce justice, more specifically, the brand of justice approved of by the Obitus Scholare. Indeed, these abominations are dispatched to remove any threat to the order, their otherworldly powers trapping the souls of their victims and ensuring an irreversible death. The murderous intent of these monsters is apparent in battle; they delight in causing suffering and their deadly instincts prevents healing. Deriving a twisted sense of pleasure from their hunts, adjudicators often carry the shrunken, decapitated heads of their victims as horrific mementos.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 328 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Ales Nebulae</name>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>Lawful Neutral</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>102 (12d10+36)</hp>
+    <speed>5 ft., fly 60 ft.</speed>
+    <str>14</str>
+    <dex>17</dex>
+    <con>17</con>
+    <int>16</int>
+    <wis>13</wis>
+    <cha>12</cha>
+    <skill>Perception +7, Stealth +6, Survival +7</skill>
+    <passive>17</passive>
+    <languages/>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical attacks; force</resist>
+    <immune/>
+    <conditionImmune>exhaustion</conditionImmune>
+    <senses>darkvision 180 ft.</senses>
+    <trait>
+      <name>Flyby</name>
+      <text>The ales nebulae doesn't provoke opportunity attacks when it flies out of an enemy's reach.</text>
+    </trait>
+    <trait>
+      <name>Gravity Field</name>
+      <text>The ales nebulae emits a gravitational field. The area within 30 feet of it is difficult terrain for other creatures.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The ales nebulae's innate spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:
+
+	• 3/Day: misty step
+	• 1/Day: dimension door</text>
+      <attack>Innate Spellcasting|+6|</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The ales nebulae makes three attacks: one with its beak and two with its talons. It can use erupting spikes in place of one or both attacks with its talons</text>
+    </action>
+    <action>
+      <name>Beak</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.</text>
+      <attack>Piercing Damage|+6|2d6+3</attack>
+    </action>
+    <action>
+      <name>Talons</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.</text>
+      <attack>Slashing Damage|+6|2d4+3</attack>
+    </action>
+    <action>
+      <name>Erupting Spike</name>
+      <text>The ales nebulae causes the earth to erupt into sharp stones below the feet of a creature that it can see on the ground within 90 feet of it. The target must succeed on a DC 14 Dexterity saving throw or take 9 (2d8) piercing damage.</text>
+      <attack>Piercing Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Invert Gravity (recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The ales nebulae's speed becomes 0 until the start of its next turn. Each creature within 5 feet of the ales nebulae must make a DC 14 Dexterity saving throw. On a tailed save, a creature is lifted 10 feet in the air and is stunned until the start of the ales nebulae's next turn. Any creature that enters the area during that time must also make the saving throw. At the start of the ales nebulae's next turn, gravity reverts again and all stunned creatures are slammed down, taking 27 (8d6) bludgeoning damage and falling prone. On a successful save, a creature can move up to half its speed until it is no longer in the area. If it doesn't leave the area, it suffers the effects of a failed save.</text>
+      <attack>Bludgeoning Damage||8d6</attack>
+    </action>
+    <spells>Misty Step, Dimension Door</spells>
+    <description>Lone Travelers:
+From the day it manifests into existence, until the day it is laid to rest, an ales nebulae has but one purpose, to find its lifelong partner, and to protect it until death. It travels the vast cosmos in search of the one to fill the void within, erring through the stars, for centuries, often in vain. Its whole existence could be considered a cruel cosmic joke. Yet, it does not falter, and its search continues.
+
+Vassals of Gravity:
+Its mysterious birth in the cosmos grants an ales nebulae powerful, and sometimes uncontrollable, gravitational powers. The other-worldly bird is able to invert gravity for a brief moment and bend the fabric of reality to teleport around, yet it can't control the crushing field of gravity it emits, preventing all from approaching it. All, but the one it's life was destined for.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 330 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Dullahan</name>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>Lawful Evil</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>95 (10d10+40)</hp>
+    <speed>60 ft.</speed>
+    <str>19</str>
+    <dex>18</dex>
+    <con>18</con>
+    <int>13</int>
+    <wis>15</wis>
+    <cha>17</cha>
+    <skill>Athletics +7, Intimidation +6, Perception +5</skill>
+    <passive>15</passive>
+    <languages>understands Common but can't speak</languages>
+    <cr>6</cr>
+    <vulnerable>bludgeoning, piercing, and slashing damage from moongilded attacks</vulnerable>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't moongilded</resist>
+    <immune>necrotic</immune>
+    <conditionImmune>charmed, exhaustion, frightened</conditionImmune>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Accursed Beacon</name>
+      <text>The dullahan knows the exact location of creatures that are under the effect of its spells as long as they are on the same plane of existence.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The dullahan's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). The dullahan can innately cast the following spells, requiring no material or somatic components:
+
+	• At will: bane, brittle bone throw (2d8, 2d4), chill touch (2d8), knock
+	• 2/day each: hex (5th level, damage can't break the dullahan's concentration), malicious rancor</text>
+      <attack>Innate Spellcasting|+6|2d4</attack>
+      <attack>Innate Spellcasting|+6|2d8</attack>
+    </trait>
+    <trait>
+      <name>Relentless Advance</name>
+      <text>The dullahan is unaffected by difficult terrain and can move over water and other liquids. It can't willingly enter consecrated areas such as churches; it takes 22 (4d10) radiant damage at the start of each of its turns while within such an area.</text>
+      <attack>Radiant Damage||4d10</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dullahan makes two attacks with its spine whip.</text>
+    </action>
+    <action>
+      <name>Spine Whip</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (2d4 + 4) slashing damage and 13 (3d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.</text>
+      <attack>Spine Whip|+7|(2d4+4)+(3d8)</attack>
+      <attack>Slashing Damage|+7|2d4+4</attack>
+      <attack>Bludgeoning Damage||3d8</attack>
+    </action>
+    <action>
+      <name>Cunning Action (Bonus Action)</name>
+      <text>The dullahan takes the Dash, Disengage, or Hide action.</text>
+    </action>
+    <reaction>
+      <name>Maddening Sight</name>
+      <text>When a creature within 30 feet of the dullahan targets it with an attack or spell, the dullahan can force the creature to gaze into its severed head. The target must succeed on a DC 14 Wisdom saving throw or become blinded for 1 minute and gain a short-term madness. A blinded creature can repeat the saving throw at the end of each of its turns, ending the blinded condition on a success.</text>
+    </reaction>
+    <spells>Bane, Brittle Bone Throw, Chill Touch, Knock, Hex, Malicious Rancor</spells>
+    <description>Dullahans owe their dreadful existence to the Circle of Symbiosis. When one of their own members dares to betray the sacred circle, they are condemned to the grim fate of becoming a dullahan. The transgressor is bound to an ancient stone altar, where, beneath the cold gaze of the moon, their head is severed in an act of macabre justice-yet life doesn't leave their body.
+
+Relentless Huntsmen. Unleashed into the world as a headless harbinger, the newly created dullahan is then merged with an undying steed and tasked with a dark purpose: to hunt. Their prey vary—for some, innocent individuals to be kidnapped from their everyday lives, and others, adversaries of the Circle, marked for death. The Circle's knowledge of their targets is eerily accurate, and so, once the dullahan sets its sightless gaze upon a target, relenting isn't an option that exists.
+
+Scorned by Radiance. The price of transmogrification into a dullahan is steep. The unholy essence that fueled their headless form etches an irreversible mark on their soul. Even when restored to their living state, they bear this cursed taint, which stands in stark opposition to the divine energies that brim in many places of worship. When a dullahan dares to breach the boundaries of these hallowed grounds, their bodies immediately ignite in a roaring blaze, punished by the radiant powers above.
+
+Eternal Curse. Should the dullahan weather its gruesome task and pay off the debt of its soul, the Circle takes it upon themselves to decide the creature's destiny. Some are mercifully put to rest, their spectral existences snuffed out as abruptly as they began. Others, who've shown their penitence throughout their servitude, are deemed worthy of a second chance. These fortunate few are restored to their former state, reinstated as druids in the Circle, but forever marked by the scars of their ordeal.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 331 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Living Artillery</name>
+    <ancestry>Living Artillery</ancestry>
+    <size>L</size>
+    <type>aberration &amp; humanoid</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>14 (studded leather)</ac>
+    <hp>112 (15d8+45)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <str>15</str>
+    <dex>14</dex>
+    <con>16</con>
+    <int>3</int>
+    <wis>13</wis>
+    <cha>3</cha>
+    <save>Con +6</save>
+    <skill>Acrobatics +8, Athletics +8</skill>
+    <passive>11</passive>
+    <languages/>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't silvered</resist>
+    <immune>fire</immune>
+    <conditionImmune>exhaustion</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Freedom of Movement</name>
+      <text>The living artillery ignores difficult terrain, and magical effects can't reduce its speed or cause it to be restrained. It can spend 5 feet of movement to escape from nonmagical restraints or being grappled</text>
+    </trait>
+    <trait>
+      <name>Grappler</name>
+      <text>The living artillery has advantage on attack rolls against any creature grappled by it.</text>
+    </trait>
+    <trait>
+      <name>Self-destruct</name>
+      <text>When the living artillery is reduced to 0 hit points, its unstable body detonates. Each creature within 20 feet of the living artillery must make a DC 14 Dexterity saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Fire Damage||8d6</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The living artillery makes four attacks: three with its tentacles and one with its cannon.</text>
+    </action>
+    <action>
+      <name>Tentacle</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (3d4 + 2) slashing damage. Instead of dealing damage, the living artillery can grapple the target it it's a creature (escape DC 16). The living artillery can have up to three creatures grappled at a time.</text>
+      <attack>Slashing Damage|+5|3d4+2</attack>
+    </action>
+    <action>
+      <name>Cannon</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 120/480 ft., one target. Hit: 21 (3d12 + 2) piercing damage and the living artillery rolls a d6. On a roll of 3 or higher, the ammunition detonates and each creature within 10 feet of the target must succeed on a DC 13 Dexterity saving throw or take 9 (2d8) fire damage. Flammable objects in the area take 9 (2d8) fire damage.</text>
+      <attack>Piercing Damage|+5|3d12+2</attack>
+      <attack>Fire Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Engage (Bonus Action)</name>
+      <text>If the living artillery has all its hit points, it moves up to its speed without provoking opportunity attacks.</text>
+    </action>
+    <description>Once humanoid, now grotesque monsters, the living artilleries are the result of the Obitus Scholare's first attempts at creating super-soldiers. Transformed beyond recognition, their bodies now boast multiple striking limbs and a heavy firearm grafted upon their bones.
+	Originally intended as weapons against the scourge of Luyarnha, the living artillery proved nearly impossible to control, as vestiges of their former selves still clung to their mutated forms, yearning for liberation from their gruesome fate. Hence, they are constrained and caged until they are needed. Whilst they ultimately failed to fulfill their creators' desires, these abominations have proven useful as cannon fodder on the battlefield, instinctively seeking lethal enemies as their desire for their life to end drives them towards ever more powerful foes. But one must be wary, for the living artillery are unstable, and in their quest for ultimate release, they often turn against those who would call themselves their "allies".
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 332 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Living Artillery, Gatling Gun</name>
+    <ancestry>Living Artillery</ancestry>
+    <size>L</size>
+    <type>aberration &amp; humanoid</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>14 (studded leather)</ac>
+    <hp>112 (15d8+45)</hp>
+    <speed>30 ft., climb 30 ft.</speed>
+    <str>15</str>
+    <dex>14</dex>
+    <con>16</con>
+    <int>3</int>
+    <wis>13</wis>
+    <cha>3</cha>
+    <save>Con +6</save>
+    <skill>Acrobatics +8, Athletics +8</skill>
+    <passive>11</passive>
+    <languages/>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical attacks that aren't silvered</resist>
+    <immune>fire</immune>
+    <conditionImmune>exhaustion</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Freedom of Movement</name>
+      <text>The living artillery ignores difficult terrain, and magical effects can't reduce its speed or cause it to be restrained. It can spend 5 feet of movement to escape from nonmagical restraints or being grappled</text>
+    </trait>
+    <trait>
+      <name>Grappler</name>
+      <text>The living artillery has advantage on attack rolls against any creature grappled by it.</text>
+    </trait>
+    <trait>
+      <name>Self-destruct</name>
+      <text>When the living artillery is reduced to 0 hit points, its unstable body detonates. Each creature within 20 feet of the living artillery must make a DC 14 Dexterity saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Fire Damage||8d6</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The living artillery makes four attacks: three with its tentacles and one with its cannon.</text>
+    </action>
+    <action>
+      <name>Tentacle</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (3d4 + 2) slashing damage. Instead of dealing damage, the living artillery can grapple the target it it's a creature (escape DC 16). The living artillery can have up to three creatures grappled at a time.</text>
+      <attack>Slashing Damage|+5|3d4+2</attack>
+    </action>
+    <action>
+      <name>Cannon</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 120/480 ft., one target. Hit: 21 (3d12 + 2) piercing damage and the living artillery rolls a d6. On a roll of 3 or higher, the ammunition detonates and each creature within 10 feet of the target must succeed on a DC 13 Dexterity saving throw or take 9 (2d8) fire damage. Flammable objects in the area take 9 (2d8) fire damage.</text>
+      <attack>Piercing Damage|+5|3d12+2</attack>
+      <attack>Fire Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Engage</name>
+      <text>If the living artillery has all its hit points, it moves up to its speed without provoking opportunity attacks.</text>
+    </action>
+    <action>
+      <name>Gatling Gun</name>
+      <text>Ranged Weapon Attack: +5 to hit, range 120/360 ft., one target. Hit: 5 (1d6 + 2) piercing damage. Until the start of its next turn, at the start of each creature's turn, the living artillery can make this attack again. Each time it makes this attack, it rolls a d6. On a roll of 1, the gun stops early and can't fire again until it uses this action again.</text>
+      <attack>Piercing Damage|+5|1d6+2</attack>
+      <attack>Gatling Gun Check|+5|1d6</attack>
+    </action>
+    <description>Once humanoid, now grotesque monsters, the living artilleries are the result of the Obitus Scholare's first attempts at creating super-soldiers. Transformed beyond recognition, their bodies now boast multiple striking limbs and a heavy firearm grafted upon their bones.
+	Originally intended as weapons against the scourge of Luyarnha, the living artillery proved nearly impossible to control, as vestiges of their former selves still clung to their mutated forms, yearning for liberation from their gruesome fate. Hence, they are constrained and caged until they are needed. Whilst they ultimately failed to fulfill their creators' desires, these abominations have proven useful as cannon fodder on the battlefield, instinctively seeking lethal enemies as their desire for their life to end drives them towards ever more powerful foes. But one must be wary, for the living artillery are unstable, and in their quest for ultimate release, they often turn against those who would call themselves their "allies".
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 332 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nightmare Centipede</name>
+    <sortname>Centipede, Nightmare</sortname>
+    <ancestry>Centipede</ancestry>
+    <size>L</size>
+    <type>aberration</type>
+    <alignment>Unaligned</alignment>
+    <ac>17 (natural armor)</ac>
+    <hp>120 (16d10+32)</hp>
+    <speed>40 ft., climb 30 ft., swim 30 ft.</speed>
+    <str>18</str>
+    <dex>15</dex>
+    <con>15</con>
+    <int>6</int>
+    <wis>12</wis>
+    <cha>16</cha>
+    <save>Wis +4</save>
+    <skill>Perception +4, Stealth +8</skill>
+    <passive>14</passive>
+    <languages/>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical attacks</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned, madness</conditionImmune>
+    <senses>darkvision 60 ft., truesight 60 ft.</senses>
+    <trait>
+      <name>Abhorrent Presence</name>
+      <text>When a creature starts its turn within 60 feet of the centipede, the creature must make a DC 14 Wisdom saving throw. If the creature has never encountered a centipede before, it gains a long-term madness on a failure, or a short-term madness on a success. A creature that has encountered a centipede before gains a short-term madness on a failure, and no madness on a success.</text>
+    </trait>
+    <trait>
+      <name>Hive Mind</name>
+      <text>Nightmare centipedes share a bond with other members of their hive that enhances their abilities. As long as a centipede is within 60 feet of at least one other centipede, it has advantage on initiative rolls and Perception checks. If one centipede is aware of a particular danger, all others in the hive are, too. No centipede in a hive mind is surprised at the beginning of an encounter unless all of them are. In addition, a centipede gains a bonus to attack and damage rolls equal to the number of centipedes within 60 feet of it (maximum +5).</text>
+    </trait>
+    <trait>
+      <name>Otherworldly Communication</name>
+      <text>The centipede can communicate via subsonic sounds with other aberrations, aquatic creatures with 6 or less Intelligence, and insects within 60 feet of it. This is a silent and instantaneous mode of communication that the other creatures can understand. As a bonus action, the centipede can use this trait to control and give orders to one creature or swarm of creatures (e.g. a swarm of insects) of CR 1 or lower that understands it within 60 feet of it.</text>
+    </trait>
+    <trait>
+      <name>Inexorable Movement</name>
+      <text>When the centipede moves into the space of a creature that is Large or smaller, the target must succeed on a DC 15 Athletics or Acrobatics check (creature's choice) or become grappled by the centipede. The centipede can grapple up to 100 creatures and its speed isn't halved by grappling creatures.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The centipede makes three attacks: one with its bite and two with its pincers.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage and 6 (1d12) poison damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw or become poisoned for 1 minute. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.</text>
+      <attack>Piercing Damage|+7|2d10+4</attack>
+      <attack>Poison Damage||1d12</attack>
+    </action>
+    <action>
+      <name>Pincer</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage and 3 (1d6) poison damage. The centipede has advantage on the attack roll if it is grappling the target.</text>
+      <attack>Slashing Damage|+7|2d8+4</attack>
+      <attack>Poison Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Crawl (Bonus Action)</name>
+      <text>The centipede moves up to its speed.</text>
+    </action>
+    <reaction>
+      <name>Regurgitate (recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>After being hit by an attack, the centipede exhales a stream of acidic ichor in a 40-foot line that is 5 feet wide. Each creature in that area must make a DO 13 Dexterity saving throw, taking 26 (4d12) poison damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Poison Damage||4d12</attack>
+    </reaction>
+    <description>These nightmarish entities, with an unsettling multitude of writhing limbs producing a continuous, disquieting clatter, are truly a sight to unhinge the mind. Even when seemingly at rest, their bodies appear to be in constant flux, ceaselessly shifting and pulsating in a grotesque dance of flesh and tendons, exuding a noxious miasma—a toxic byproduct of their repugnant feasts.
+
+Nightmare Denizens. Mercifully, the city of Luyarnha has been spared direct contact with these abominations, confined as they are to nightmare realms, unable to breach into the Material Plane. They are grotesque echoes of the absurdity that infests the dreams of the dormant Great Ones. Nightmare centipedes have the ability to ensnare entire communities caught adrift in the nightmare realms, causing them to disappear without trace. Whether these lost souls are consumed or subjected to some other fate is a chilling unknown.
+
+Hive Minds. A single nightmare centipede is sufficiently worrisome, but they become exponentially more dangerous when they gather, forming a collective consciousness. This hive mind amplifies their intellect and their lethality, coordinating their movements and strategies with terrifying efficiency.
+
+Nightmare centipedes produce a subsonic chittering noise, a sound beyond the auditory capabilities of most species, that serves as a communication tool, and as something far viler. They can use this sound to exert control over creatures weaker than themselves, particularly insects and other many-legged beasts, compelling these underlings to enact their gruesome will. Their unfortunate victims can do little more than writhe in agony as a horde of spiders, ants, centipedes, and cockroaches swarm over them, burrowing into their flesh and consuming them from within.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 335 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Skulking Shade</name>
+    <sortname>Shade, Skulking</sortname>
+    <ancestry>Shade</ancestry>
+    <size>H</size>
+    <type>fiend &amp; monstrosity</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>104 (11d12+33)</hp>
+    <speed>30 ft., fly 60 ft.</speed>
+    <str>21</str>
+    <dex>14</dex>
+    <con>17</con>
+    <int>7</int>
+    <wis>14</wis>
+    <cha>5</cha>
+    <save>Str +8</save>
+    <skill>Athletics +8, Perception +5, Stealth +5</skill>
+    <passive>15</passive>
+    <languages>understands Deep Speech but can't speak</languages>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing damage from nonmagical attacks; acid, necrotic, poison</resist>
+    <immune/>
+    <conditionImmune>poisoned, unconscious</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Cull the Herd</name>
+      <text>The shade has advantage on attack rolls against creatures which are within 5 feet of one of that creature's allies or against creatures that it is grappling.</text>
+    </trait>
+    <trait>
+      <name>Organ Ripper</name>
+      <text>Whenever the shade scores a critical hit against a creature with a melee attack, the target takes an additional 11 (2d10) piercing damage. If the attack reduces the target to 0 hit points, the shade rips out a vital organ from the creature (such as the heart or brain), recharges its Death Breath, and the creature dies.</text>
+      <attack>Piercing Damage||2d10</attack>
+    </trait>
+    <trait>
+      <name>Shadow Stealth</name>
+      <text>While in dim light or darkness, the shade can take the Hide action as a bonus action.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The shade makes three melee attacks, only one of which can be with its bite.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage. The shade regains hit points equal to the damage dealt.</text>
+      <attack>Piercing Damage|+8|2d6+5</attack>
+    </action>
+    <action>
+      <name>Crush</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target grappled by the shade. Hit: 14 (2d8 + 5) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+8|2d8+5</attack>
+    </action>
+    <action>
+      <name>Snatch</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) slashing damage and the target is grappled (escape DC 16). The shade can then fly up to its flying speed without provoking opportunity attacks.</text>
+      <attack>Slashing Damage|+8|1d8+5</attack>
+    </action>
+    <action>
+      <name>Death Breath (recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The shade exhales a breath of deathly energy in a 30-toot cone. Each creature in the area must make a DC 14 Constitution saving throw, taking 22 (4d10) necrotic damage on a failure, or half as much damage on a success. All non-creature organic material in the area, such as plants, wood, or food, begin to rot and wither.</text>
+      <attack>Necrotic Damage||4d10</attack>
+    </action>
+    <description>Skulking shades-grotesque amalgamations of corporeal flesh and shadows—rarely dare to encroach upon the luminous Luyarnha, as if the city's radiance terrifies them. Yet, as the city teeters further and further into the abyss, these nefarious beings have begun to increasingly venture past its walls, particularly in the poorly defended Ruby District, drawn to the banquet of organs innocent mortals offer.
+
+Muddled Origins. Chilling rumors whisper that skulking shades are the progeny of forgotten deities, unleashed upon this reality as punishment for the hubris of mortals who think they can ignore the gods, or even rival them. Other tales tell of these spectral beings as the vestiges of the ancient human empire, neighbors to Luyarnha long ago before its cataclysmic fall, now returning as harbingers of vengeance. Others posit that they are the restless spirits of warriors fallen during the wars, given form anew, eternally thirsting for blood. Whatever the truth may be, dark wielders of death's power have been known to call forth such skulking shades in battle, summoning them from the deepest shadows of this world.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 337 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Dreadcrow</name>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>13 (18 with Illusory Horror)</ac>
+    <hp>84 (13d8+26)</hp>
+    <speed>40 ft., climb 40 ft.</speed>
+    <str>11</str>
+    <dex>17</dex>
+    <con>14</con>
+    <int>5</int>
+    <wis>12</wis>
+    <cha>21</cha>
+    <save>Wis +4</save>
+    <skill>Perception +7, Stealth +9</skill>
+    <passive>17</passive>
+    <languages/>
+    <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune>blinded, charmed, frightened</conditionImmune>
+    <senses>blindsight 120 ft. (blind beyond this radius)</senses>
+    <trait>
+      <name>Fear Smith</name>
+      <text>Creatures can't have advantage on saving throws against the dreadcrow's effects that cause the frightened condition. While a creature is frightened of the dreadcrow, the creature has disadvantage on Intelligence and Wisdom checks, as the creature's reality crumbles.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The dreadcrow's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material or verbal components:
+
+	• 3/Day each: blind ambush, fear, pass without trace
+	• 1/Day: circle of death</text>
+    </trait>
+    <trait>
+      <name>Illusory Horror</name>
+      <text>Illusory Horror. The dreadcrow's appearance is an illusion, reflecting the worst tear of the observer. It gains a bonus to its AC equal to its Charisma modifier while it isn't incapacitated.
+	In addition, when a creature that can see the dreadcrow starts its turn within 30 feet of it, the creature must succeed on a DC 16 Wisdom saving throw or become frightened. A creature that isn't surprised can avert its eyes at the start of its turn to avoid the saving throw at the start of its turn. If the creature does so, it can't see the dreadcrow until the start of the creature's next turn, when it can avert its eyes again. If the creature looks at the dreadcrow in the meantime, it must immediately make the saving throw. Creatures within 5 feet of the dreadcrow have advantage on this saving throw, as they partially see its true form.
+	Creatures seeing the dreadcrow with truesight ignore this trait's effects.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The Dreadcrow has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The dreadcrow makes two attacks with its claws or Devour Fear. It can use Living Nightmare in place of one attack.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 16 (2d12 + 3) slashing damage and 5 (1d10) psychic damage.</text>
+      <attack>Claw|+6|(2d12+3)+(1d10)</attack>
+      <attack>Slashing Damage|+6|2d12+3</attack>
+      <attack>Psychic Damage||1d10</attack>
+    </action>
+    <action>
+      <name>Devour Fear</name>
+      <text>Ranged Spell Attack: +8 to hit, range 120 ft., one target. Hit: 21 (3d10 + 5) psychic damage. If the target is frightened, the dreadcrow has advantage on the attack roll and regains hit points equal to the damage dealt.</text>
+      <attack>Psychic Damage|+8|3d10+5</attack>
+    </action>
+    <action>
+      <name>Flay Sanity (recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The dreadcrow creates atrocious illusions that rend sanity. Each creature within 120 feet of it must succeed on a DC 16 Wisdom saving throw or gain a short-term madness and become frightened for 1 minute. Frightened creatures have disadvantage on this saving throw. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This action doesn't reveal the dreadcrow if it's hidden.</text>
+    </action>
+    <action>
+      <name>Living Nightmare (Recharges after a Long Rest)</name>
+      <recharge>LONG</recharge>
+      <text>The dreadcrow becomes the embodiment of terror for a creature that is frightened of it within 60 feet of it. This unleashes a primal tear within the target, causing the target to go insane. It must make a DC 16 Wisdom saving throw. On a tailed save, the target bellows a scream so powertul that it rips its own vocal cords and it loses the ability to speak. If the target is still frightened of the dreadcrow at the start of the dreadcrow's next turn and the target can see the dreadcrow, the terror becomes so untenable that it rips out its own eyes, becoming blinded.</text>
+    </action>
+    <action>
+      <name>Gaze Upon Me (Bonus Action)</name>
+      <text>The dreadcrow forces a creature that it can see within 30 feet to look at it. The target must succeed on a DC 16 Wisdom check or look directly at the Dreadcrow.</text>
+    </action>
+    <reaction>
+      <name>Skittering Walk</name>
+      <text>When a creature moves within 5 feet of the Dreadcrow, the Dreadcrow can move up to 20 feet. Its AC increases by 3 during this movement.</text>
+    </reaction>
+    <description>Of all beings that relish in the terror they cause, dreadcrows are among the most foul, embodying the worst fears of those who behold them. A dreadcrow's body is illusory, constantly changing and shifting to reflect its victims' deepest fears. Yet it rarely relies on this, instead opting to lie in wait, slowly eroding the minds of those who are unfortunate enough to cross it, driving them to madness. Victims often lose their grip on reality-and life—long before laying their eyes on a dreadcrow. If approached too closely, dreadcrows will retreat in darkness, snuffing any chance of seeing their true form, before assaulting the mind of their prey and plunging them into a smothering abyss of terror.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 338 (Homebrew)</description>
+    <environment/>
+  </monster>
 </compendium>
