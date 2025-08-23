@@ -3,23 +3,60 @@
 #### ToDo:
 * Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
 * Complete `Crown of the Oathbreaker` Bestiary.
-* Complete `Heliana's Guide to Monster Hunting` items.
-* LaserLlama:
+* LaserLlama's
   * Alternate Classes.
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
 ### 2025-##-##
+* Added Unearthed Arcana 2025 `Arcane Subclasses (UA)` content.
+* Added `Hoard of the Dragon Queen` to campaigns by @DauntedOne.
+* Added missing schools to spell lists.
+* Formatted `Legacy [2024]` subclasses to match the modern format.
+* Added `Ranger (HeavyArms)` content.
+* Added `Tasha's Scrapped Book` content.
+* Added `Alternate Blood Hunter (LaserLlama)` content for PHB2014 and 2024, put together by @Deepseastronaut.
+* Added `Alternate Ranger (LaserLlama)` content for PHB2014 and 2024, partially put together by @rattatooey.
+* Addded homebrew dinosaurian race `Brutan` by @rattatooey.
+* Updated Monsters of the Dungeon bestiary by @Reccho.
+* Tweaked starting gold message to clarify that it replaces both class and background gear.
+
+### 2025-07-03
+* Added `Valda's Spire of Secrets`.
+* Added `A Deadly Scarab`, `Dragon War`, `Hunt of the Thessalhydra`, `The Wild Beyond the Witchlight`, `Lost Mines of Phandelver`, and `Wild Sheep Chase` by @Iggwilv.
+* Improved `build-collections.sh` to be modular and support parallel processing for faster compendium builds.
+* Added `source-xml-collector.sh` to help generate modular 'partial' collections.
+* Modularized collections using 'partials' for easier updates and merging.
+* Moved all official Wizards of the Coast content into the `WizardsOfTheCoast/` folder, organized by content type (`Core`, `Supplements`, `Campaign Settings`, `Monster Compendiums`, `Adventures`).
+* Categorized third-party content into `Indie` (unofficial), `PartneredOfficial` (officially partnered with WotC), and `SemiOfficial` (unofficial but created by WotC team members).
+* Moved some `Homebrew` content into `ThirdParty/Indie`.
+* Reclassified original `ThirdParty` folder as `SemiOfficial` to better reflect its origin.
+* Marked select officially partnered content with `(HB)`.
+* Added ammo names for ranged weapons.
+* Updated templated magic items.
+* Various other fixes and improvements.
+
+### 2025-06-07
+* Added Dragon of Icespire Peak campaign template by @robcampav.
+* Added `Unearthed Arcana [2024]: Horror Subclasses`.
+* Added `Unearthed Arcana [2024]: The Psion`.
 * Moved `Heliana's Guide to Monster Hunting` to Partnered Content.
-* Added LaserLlama: `Psion Mystic Talents` spell list.
+* Added LaserLlama's `Psion (LaserLlama): Mystic Talents` spell list.
+* Complete `Heliana's Guide to Monster Hunting` items.
+* Updated `LaserLlama's Compendium of Spells`.
 * @recco added `Remley Farr`'s homebrew content.
 * @Garras fixed some important typos in https://github.com/vidalvanbergen/FightClub5eXML/pull/21.
 * Added missing Artificer Cartographer subclass.
 * Fixed a few mistakes in the new UA artificer classes.
-* Named (2014) sources.
+* Reformatted content to match original formatting a bit closer.
+* Reformatted and reworked some of the WotC sources' bestiaries, adding missing creature details and dice rolls.
+* Fixed up a lot of little errors and mistakes I came across during the big reformatting.
+* Named (2014) sources in descriptions.
+* Added useful importable Notes by Dave Rich and a Quick Reference overview.
+* Other changes and fixes.
 
 ### 2025-03-04
-* Added `Monster Manual 2024`.
+* Added `Monster Manual (2024)`.
   * Added monster descriptions.
   * Added monster lair actions.
   * Moved PHB24 monsters that are in MM24.
@@ -51,8 +88,8 @@
 * Other changes and fixes.
 
 ### 2024-12-04
-* Added `Dungeon Master's Guide 2024` content by @TheArchivist.
-* Updated `Player's Handbook 2024` content, which are now tagged with [2024].
+* Added `Dungeon Master's Guide (2024)` content by @TheArchivist.
+* Updated `Player's Handbook (2024)` content, which are now tagged with [2024].
 * Added a mixed 2014+2024 collection with the new content tagged with [2024].
 * Added Homebrew content by @reccho:
   * Added `Winghorn Press: The Wild Sheep Chase`.
@@ -91,7 +128,7 @@
 
 ### 2024-10-23
 * Streamlined some `Ranger` features.
-* Added `Player's Handbook 2024` content.
+* Added `Player's Handbook (2024)` content.
 * Merged legacy 2014 + 2024 content by @nikjft in https://github.com/vidalvanbergen/FightClub5eXML/pull/6
 * Added `The Dungeon Master` Homebrew.
 * Added `Ranger (Primal Awareness)` spell list.

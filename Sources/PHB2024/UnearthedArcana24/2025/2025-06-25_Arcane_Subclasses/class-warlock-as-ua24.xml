@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+  <class>
+    <name>Warlock [2024]</name>
+    <!-- Warlock subclass: Hexblade Patron (UA) -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Warlock subclass: Hexblade Patron (UA)</name>
+        <text>Forge a Pact with a Cursed Blade
+
+You've made a pact with a sentient magic weapon and the cursed forces contained within its blade. Such a weapon could be the sword sheathed at your side, or it could be a manifestation of an infamous magic weapon like Blackrazor or the Sword of Kas projecting its power to further its legend. To those willing to follow this weapon's whims, these inscrutable patrons offer the power to bestow malignant curses, deliver punishing blows, and bolster the wielder.
+
+DESIGN NOTE: HEXBLADE PATRON UPDATES
+Here are the main updates in this subclass since its latest appearance in Unearthed Arcana:
+
+	• Hexblade Spells have been revised.
+
+	• Hexblade's Curse has returned as a feature in its own right but can also loop through spells that place a curse on a creature, such as Bestow Curse and Hex. Hungering Hex has been moved to this
+
+	• Unyielding Will is a new feature that grants you benefits when maintaining Concentration on spells.
+
+	• Malign Brutality is a new feature that gives you additional benefits. Hindering Curse (formerly the Stymieing Mark maneuver) has been moved here.
+
+	• Armor of Hexes no longer has limited uses and scales with your Warlock level.
+
+	• Masterful Hex now increases the power and usability of the updated Hexblade's Curse feature.
+
+Source:	UA25-ArcaneSubclasses p. 6</text>
+      </feature>
+      <feature optional="YES">
+        <name>Level 3: Hexblade Spells (Hexblade Patron (UA))</name>
+        <text>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Hexblade Spells table, you thereafter always have the listed spells prepared.
+
+Hexblade Spells:
+Warlock Level | Spells
+3 | Arcane Vigor, Hex, Shield, Wrathful Smite
+5 | Bestow Curse, Conjure Barrage
+7 | Freedom of Movement, Staggering Smite
+9 | Animate Objects, Steel Wind Strike
+
+Source:	UA25-ArcaneSubclasses p. 6</text>
+      </feature>
+      <feature optional="YES">
+        <name>Level 3: Hexblade's Curse (Hexblade Patron (UA))</name>
+        <text>Your patron grants you the power to curse and hinder your foes. As a Bonus Action, choose one creature you can see within 30 feet of yourself. The target is cursed for 1 minute, during which you gain the benefits below. The curse ends early if you use this feature again, if you dismiss it (no action required), or die.
+	You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. When you cast a spell using a spell slot that curses a target, you can use your Hexblade's Curse as a part of casting that spell instead of taking a Bonus Action. When you do so, the target of the spell is the target of your Hexblade's Curse, and your Hexblade's Curse's duration is either 1 minute or the spell's duration, whichever is longer.
+
+Hungering Hex. When the target cursed by your Hexblade's Curse drops to 0 Hit Points, you regain Hit Points equal to 1d8 plus your Charisma modifier.
+
+Accursed Shield. While you aren't wearing armor or wielding a Shield, you gain a +2 bonus to AC while you are within 10 feet of the target cursed by your Hexblade's Curse.
+
+Source:	UA25-ArcaneSubclasses p. 6</text>
+        <roll description="Heal">1d8+%6</roll>
+      </feature>
+      <feature optional="YES">
+        <name>Level 3: Unyielding Will (Hexblade Patron (UA))</name>
+        <text>When you succeed on a saving throw to maintain Concentration, each creature of your choice in a 10-foot Emanation originating from you takes 2d6 Necrotic damage. Once you use this benefit, you can't do so again until the start of your next turn.
+	In addition, when you fail a saving throw to maintain Concentration, you can choose to succeed instead, and you gain a number of Temporary Hit Points equal to 1d10 plus your Warlock level. Once you use this feature, you can't do so again until you finish a Long Rest.
+
+Source:	UA25-ArcaneSubclasses p. 7</text>
+        <roll description="Necrotic Damage">2d6</roll>
+        <roll description="Temporary Hit Points">1d10</roll>
+      </feature>
+      <counter>
+        <name>Unyielding Will</name>
+        <value>1</value>
+        <reset>L</reset>
+        <subclass>Hexblade Patron (UA)</subclass>
+      </counter>
+    </autolevel>
+    <autolevel level="6">
+      <feature optional="YES">
+        <name>Level 6: Malign Brutality (Hexblade Patron (UA))</name>
+        <text>Your patron's might furthers your bloodthirst, granting you the following benefits.
+
+Harrowing Hex. After you cast a level 1+ spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
+
+Hindering Curse. When you hit the target cursed by your Hexblade's Curse with an attack roll, the target has Disadvantage on the next saving throw it makes before the start of your next turn.
+
+Inescapable Hex. When the target of your Hexblade's Curse ends its turn 30 feet or further from you, you can move up to your Speed straight toward the target.
+
+Source:	UA25-ArcaneSubclasses p. 7</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Level 10: Armor of Hexes (Hexblade Patron (UA))</name>
+        <text>When you take damage from the target cursed by your Hexblade's Curse, you can take a Reaction to reduce the damage taken by an amount equal to your Warlock level.
+
+Source:	UA25-ArcaneSubclasses p. 7</text>
+      </feature>
+    </autolevel>
+    <autolevel level="14">
+      <feature optional="YES">
+        <name>Level 14: Masterful Hex (Hexblade Patron (UA))</name>
+        <text>The power of your Hexblade's Curse increases, granting the following benefits.
+
+Accursed Critical. Any attack roll you make against the target cursed by your Hexblade's Curse scores a Critical Hit on a roll of a 19 or 20 on the d20.
+
+Explosive Hex. When you deal damage to the target cursed by your Hexblade's Curse, you can cause your curse to explode with sinister energy. The target and each creature of your choice in a 30-foot Emanation originating from the target take 3d6 Necrotic, Psychic, or Radiant damage (your choice), and their Speed is reduced by 10 feet until the start of your next turn. Once you use this benefit, you can't use it again until you finish a Long Rest unless you expend a Pact Magic slot (no action required) to restore your use of it.
+
+Hex Restoration. You regain one expended use of Hexblade's Curse when you finish a Short Rest or use your Magical Cunning feature.
+
+Source:	UA25-ArcaneSubclasses p. 7</text>
+        <roll description="Necrotic Damage">3d6</roll>
+      </feature>
+    </autolevel>
+  </class>
+  <spell>
+    <name>Arcane Vigor [2024]</name>
+    <classes>Warlock [2024] (Hexblade Patron (UA))</classes>
+  </spell>
+  <spell>
+    <name>Hex [2024]</name>
+    <classes>Warlock [2024] (Hexblade Patron (UA))</classes>
+  </spell>
+  <spell>
+    <name>Shield [2024]</name>
+    <classes>Warlock [2024] (Hexblade Patron (UA))</classes>
+  </spell>
+  <spell>
+    <name>Wrathful Smite [2024]</name>
+    <classes>Warlock [2024] (Hexblade Patron (UA))</classes>
+  </spell>
+  <spell>
+    <name>Bestow Curse [2024]</name>
+    <classes>Warlock [2024] (Hexblade Patron (UA))</classes>
+  </spell>
+  <spell>
+    <name>Conjure Barrage [2024]</name>
+    <classes>Warlock [2024] (Hexblade Patron (UA))</classes>
+  </spell>
+  <spell>
+    <name>Freedom of Movement [2024]</name>
+    <classes>Warlock [2024] (Hexblade Patron (UA))</classes>
+  </spell>
+  <spell>
+    <name>Staggering Smite [2024]</name>
+    <classes>Warlock [2024] (Hexblade Patron (UA))</classes>
+  </spell>
+  <spell>
+    <name>Animate Objects [2024]</name>
+    <classes>Warlock [2024] (Hexblade Patron (UA))</classes>
+  </spell>
+  <spell>
+    <name>Steel Wind Strike [2024]</name>
+    <classes>Warlock [2024] (Hexblade Patron (UA))</classes>
+  </spell>
+</compendium>
