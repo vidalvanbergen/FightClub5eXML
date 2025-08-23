@@ -42,15 +42,15 @@ choco install xsltproc -y --force
 
 for %%A in ("%1") do (
   if "%3"=="" (
-    xsltproc -o "%%~nxA" "%~f2" "%%~fA"
+    xsltproc --xinclude -o "%%~nxA" "%~f2" "%%~fA"
     if defined flag_2024 call :remove_2024 "%%~nxA"
   ) else (
     if exist "%3\" (
-      xsltproc -o "%~f3\%%~nxA" "%~f2" "%%~fA"
+      xsltproc --xinclude -o "%~f3\%%~nxA" "%~f2" "%%~fA"
       if defined flag_2024 call :remove_2024 "%~f3\%%~nxA"
     ) else (
       mkdir %3
-      xsltproc -o "%~f3\%%~nxA" "%~f2" "%%~fA"
+      xsltproc --xinclude -o "%~f3\%%~nxA" "%~f2" "%%~fA"
       if defined flag_2024 call :remove_2024 "%~f3\%%~nxA"
     )
   )

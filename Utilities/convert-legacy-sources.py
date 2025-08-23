@@ -21,13 +21,13 @@ def normalize_text(text):
 # Paths to directories
 current_dir = os.getcwd()
 master_dirs = [
-    #os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/01_Players_Handbook_2024"),
-    #os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/02_Dungeon_Masters_Guide_2024"),
-    os.path.join(current_dir, "../Sources_2024/WizardsOfTheCoast/03_Monster_Manual_2024")
+    #os.path.join(current_dir, "../Sources/PHB2014/WizardsOfTheCoast2024/01_Players_Handbook_2024"),
+    #os.path.join(current_dir, "../Sources/PHB2014/WizardsOfTheCoast2024/02_Dungeon_Masters_Guide_2024"),
+    os.path.join(current_dir, "../Sources/PHB2024/WizardsOfTheCoast/03_Monster_Manual_2024")
 
 ]
-#legacy_dir = os.path.join(current_dir, "../Sources/WizardsOfTheCoast2024/WotC_2014_legacy")
-legacy_dir = os.path.join(current_dir, "../Sources_2024/Homebrew/WotC_2014_legacy")
+#legacy_dir = os.path.join(current_dir, "../Sources/PHB2014/WizardsOfTheCoast2024/WotC_2014_legacy")
+legacy_dir = os.path.join(current_dir, "../Sources/PHB2024/Homebrew/WotC_2014_legacy")
 
 # Read master files into memory
 master_data = {}
