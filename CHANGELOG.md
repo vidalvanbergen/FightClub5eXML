@@ -10,6 +10,7 @@
 
 ### 2025-##-##
 * Added Unearthed Arcana 2025 `Arcane Subclasses (UA)` content.
+* Added Unearthed Arcana 2025 `Apocalyptic Subclasses (UA)` content.
 * Added `Hoard of the Dragon Queen` to campaigns by @DauntedOne.
 * Added missing schools to spell lists.
 * Formatted `Legacy [2024]` subclasses to match the modern format.
