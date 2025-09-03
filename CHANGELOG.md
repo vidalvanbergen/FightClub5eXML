@@ -8,20 +8,22 @@
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
-### 2025-##-##
-* Added Unearthed Arcana 2025 `Arcane Subclasses (UA)` content.
-* Added Unearthed Arcana 2025 `Apocalyptic Subclasses (UA)` content.
-* Added `Hoard of the Dragon Queen` to campaigns by @DauntedOne.
-* Added missing schools to spell lists.
-* Formatted `Legacy [2024]` subclasses to match the modern format.
+### 2025-09-03
 * Added `Ranger (HeavyArms)` content.
 * Added `Tasha's Scrapped Book` content.
+* Added `Steinhardt's Guide to the Eldritch Hunt` content.
+* Added `Hoard of the Dragon Queen` to campaigns by @DauntedOne.
 * Added `Alternate Blood Hunter (LaserLlama)` content for PHB2014 and 2024, put together by @Deepseastronaut.
 * Added `Alternate Ranger (LaserLlama)` content for PHB2014 and 2024, partially put together by @rattatooey.
+* Added Unearthed Arcana 2025 `Arcane Subclasses (UA24)` content.
+* Added Unearthed Arcana 2025 `Apocalyptic Subclasses (UA24)` content.
 * Added `SemiOfficial` and `PartneredOfficial` to 2024 `legacy` content.
+* Formatted `Legacy [2024]` subclasses to match the modern format.
 * Addded homebrew dinosaurian race `Brutan` by @rattatooey.
 * Updated Monsters of the Dungeon bestiary by @Reccho.
+* Added schools to spells which were missing.
 * Tweaked starting gold message to clarify that it replaces both class and background gear.
+* Other changes and fixes.
 
 ### 2025-07-03
 * Added `Valda's Spire of Secrets`.
@@ -36,7 +38,7 @@
 * Marked select officially partnered content with `(HB)`.
 * Added ammo names for ranged weapons.
 * Updated templated magic items.
-* Various other fixes and improvements.
+* Other changes and fixes.
 
 ### 2025-06-07
 * Added Dragon of Icespire Peak campaign template by @robcampav.
