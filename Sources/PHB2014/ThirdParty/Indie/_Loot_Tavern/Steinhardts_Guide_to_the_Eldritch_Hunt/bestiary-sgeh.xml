@@ -3207,8 +3207,8 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 367 (Homebrew)</description>
     <environment/>
   </monster>
   <monster>
-    <name>Extellax the Flayed</name>
-    <sortname>Dragon, Adult Eldritch, Extellax the Flayed</sortname>
+    <name>Ectellax the Flayed</name>
+    <sortname>Dragon, Adult Eldritch, Ectellax the Flayed</sortname>
     <ancestry>Dragon</ancestry>
     <size>H</size>
     <type>aberration &amp; dragon</type>
@@ -3455,6 +3455,18 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 370 (Homebrew)</description>
       <name>Cast a Spell (costs 3 Actions)</name>
       <text>Orr casts a spell from its Innate Spellcasting trait, expending a use as normal.</text>
     </legendary>
+    <legendary category="lair">
+      <name>Lair Actions</name>
+      <text>On initiative count 20 (losing initiative ties), the child-god takes a lair action to cause one of the following effects:
+
+Eldritch Summoning. The child-god summons 1d4+2 geists (Page 313) or 1d2+1 wraiths to fight for it. These creatures act on their own initiative and disappear when the child-god is defeated or when they reach 0 hit points.
+
+Warped Reality. The child-god warps the fabric of reality in a 20-foot radius centered on a point it can see within 60 feet. The area becomes difficult terrain, and any creature that starts its turn in the area or enters it for the first time on its turn must succeed on a DC 18 Intelligence saving throw or be stunned until the end of its next turn.
+
+Cosmic Wave. All creatures must succeed on a DC 22 Charisma saving throw or be displaced throughout the arena. The child-god chooses a point on the ground where they reappear. On a success, a creature isn't displaced. If it succeeds by 5 or more, the target can choose to teleport to a point that it can see instead.</text>
+      <attack>Geists||1d4+2</attack>
+      <attack>Wraiths||1d2+1</attack>
+    </legendary>
     <spells>Divine Order Reveal, Fling, Gravitational Distortion, Bury, Crush, Divine Order Transcend</spells>
     <description>Source:	Steinhardt's Guide to the Eldritch Hunt p. 372 (Homebrew)</description>
     <environment/>
@@ -3575,6 +3587,18 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 370 (Homebrew)</description>
     <legendary>
       <name>Cast a Spell (costs 2 Actions)</name>
       <text>Orr casts a spell from its Innate Spellcasting trait, expending a use as normal.</text>
+    </legendary>
+    <legendary category="lair">
+      <name>Lair Actions</name>
+      <text>On initiative count 20 (losing initiative ties), the child-god takes a lair action to cause one of the following effects:
+
+Eldritch Summoning. The child-god summons 1d4+2 geists (Page 313) or 1d2+1 wraiths to fight for it. These creatures act on their own initiative and disappear when the child-god is defeated or when they reach 0 hit points.
+
+Warped Reality. The child-god warps the fabric of reality in a 20-foot radius centered on a point it can see within 60 feet. The area becomes difficult terrain, and any creature that starts its turn in the area or enters it for the first time on its turn must succeed on a DC 18 Intelligence saving throw or be stunned until the end of its next turn.
+
+Cosmic Wave. All creatures must succeed on a DC 22 Charisma saving throw or be displaced throughout the arena. The child-god chooses a point on the ground where they reappear. On a success, a creature isn't displaced. If it succeeds by 5 or more, the target can choose to teleport to a point that it can see instead.</text>
+      <attack>Geists||1d4+2</attack>
+      <attack>Wraiths||1d2+1</attack>
     </legendary>
     <spells>Fling, Bury, Divine Order Sacrifice, Power Word Kill</spells>
     <description>Source:	Steinhardt's Guide to the Eldritch Hunt p. 375 (Homebrew)</description>
@@ -5082,6 +5106,777 @@ Zealots are fanatical followers of the Radiant Church. The Church believes that 
 	Despite their peaceful demeanor, zealots are capable of incredible violence, driven by their faith to defend the Radiant Church and its followers. Although their doctrine is one of tolerance, direct insults to their god are deemed heretical and they will not hesitate to use their powers to quiet the offender. They are often seen leading Radiant Church expeditions, accompanied by a retinue of hunters, as they seek to bring the light back to Luyarnha after its fall from grace.
 
 Source:	Steinhardt's Guide to the Eldritch Hunt p. 409 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Maddon Gillet</name>
+    <sortname>Gillet, Maddon</sortname>
+    <ancestry>spy</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (orc)</type>
+    <alignment>Any alignment</alignment>
+    <ac>12</ac>
+    <hp>27 (6d8)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>10</str>
+    <dex>15</dex>
+    <con>10</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>16</cha>
+    <skill>Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight Of Hand +4, Stealth +4</skill>
+    <passive>16</passive>
+    <languages>any two languages</languages>
+    <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Cunning Action</name>
+      <text>On each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action.</text>
+    </trait>
+    <trait>
+      <name>Sneak Attack (1/Turn)</name>
+      <recharge>1/TURN</recharge>
+      <text>The spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll.</text>
+      <attack>Sneak Attack||2d6</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The spy makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Shortsword</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
+      <attack>Piercing Damage|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Hand Crossbow</name>
+      <text>Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</text>
+      <attack>Piercing Damage|+4|1d6+2</attack>
+    </action>
+    <description>Maddon is a pale-skinned young orc with slicked-back dark brown hair and a crooked smile that he often uses to show off his gold-capped canine tooth. The rogue has worked for Lord Thomathin Rehwoldt for many years as a go-between for the noble and the city's more criminal elements. While his dark clothing helps him blend in with the shadows, his vanity and wealth are on full display in the form of gold trinkets that he often casually flashes.
+	The shady orc has a policy of always looking out for himself first, but the current situation in the city has him concerned. To protect his business interests, he provides assistance to the characters wherever and whenever possible.
+
+Spy:
+Rulers, nobles, merchants, guildmasters, and other wealthy individuals use spies to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loyal spies would rather die than divulge information that could compromise them or their employers.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 415 (Homebrew),
+		Monster Manual (2014) p. 349</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Lord Rehwoldt</name>
+    <sortname>Rehwoldt, Lord</sortname>
+    <ancestry>Noble</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (half-elf)</type>
+    <alignment>Lawful Neutral</alignment>
+    <ac>15 (breastplate)</ac>
+    <hp>9 (2d8)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>11</str>
+    <dex>12</dex>
+    <con>11</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>16</cha>
+    <skill>Deception +5, Insight +4, Persuasion +5</skill>
+    <passive>12</passive>
+    <languages>any two languages</languages>
+    <cr>1/8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <action>
+      <name>Rapier</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.</text>
+      <attack>Piercing Damage|+3|1d8+1</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.</text>
+    </reaction>
+    <description>Lord Thomathin Rehwoldt is a narcissist that values reputation and power above all else. It does not matter to him how the plague affects the city, only that the church has blamed him. It's apparent that Thomathin is not necessarily a good person, but he is true to his word and keeps his promises to friends and rivals. He is honestly unaware of the research the sect was conducting and is eager to accuse the Radiant Church simply out of retaliation for implicating him. Thomathin doesn't care who is blamed for the plague, that the beasts are infected citizens, or if the church is even truly guilty; repairing his reputation and power are all that matter to him.
+
+Noble:
+Nobles wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.
+	The noble's statistics can also be used to represent courtiers who aren't of noble birth.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 418 (Homebrew),
+		Monster Manual (2014) p. 348</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Borast Deepreaver</name>
+    <sortname>Deepreaver, Borast</sortname>
+    <ancestry>Jaeger</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (dwarf)</type>
+    <alignment>Neutral Good</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>123 (19d8+38)</hp>
+    <speed>45 ft.</speed>
+    <str>16</str>
+    <dex>19</dex>
+    <con>14</con>
+    <int>14</int>
+    <wis>13</wis>
+    <cha>12</cha>
+    <save>Dex +7, Int +5</save>
+    <skill>Athletics +6, Perception +4</skill>
+    <passive>14</passive>
+    <languages>any one language (usually Common)</languages>
+    <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Encircling Strikes</name>
+      <text>Encircling Strikes. Once per turn, when the jaeger attacks from the opposite side of a creature from where it started its turn, or attacks while on the opposite side of a creature from an ally, it deals an additional 3 (1d6) damage on a hit.</text>
+      <attack>Extra Damage||1d6</attack>
+    </trait>
+    <trait>
+      <name>Evasion</name>
+      <text>If the jaeger is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the jaeger instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</text>
+    </trait>
+    <trait>
+      <name>Flexible Combatant</name>
+      <text>When the jaeger draws or stows a weapon, it can draw or stow another weapon with the other hand. It can reload weapons with the loading, reload, or barrel properties without a free hand.
+ 	Additionally, if the jaeger is carrying a one-handed melee weapon in one hand, and a one-handed ranged weapon in the other hand, it doesn't have disadvantage on attack rolls with ranged weapons from being within 5 feet of a hostile creature.</text>
+    </trait>
+    <trait>
+      <name>Hemorrhaging Wound (recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The jaeger can't use this trait on the first round of combat. When the jaeger hits a creature with a blade attack, it rends a vicious wound. At the end of each of the target's turns, it loses 17 (5d6) hit points. Each time the target takes damage from this effect, the number of dice of damage it takes at the end of its next turn is reduced by one, and the bleeding stops when the number of dice is reduced to 0. A bleeding creature can make a Constitution saving throw at the end of each of its turns, after taking the damage, ending the effect on a success. The DC equals 15 + half the number of dice of damage remaining (rounded down).
+	If the jaeger hits a bleeding target with a blade attack, the target doesn't gain a new wound, but its wound's damage resets to 5d6.</text>
+      <attack>Hemorrhaging Wound||5d6</attack>
+    </trait>
+    <trait>
+      <name>Magic Weapons</name>
+      <text>The jaeger's weapon attacks are magical.</text>
+    </trait>
+    <trait>
+      <name>Piercing Gaze (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>The jaeger gains darkvision out to 120 feet and the effect of see invisibility for 1 hour (no action required).</text>
+    </trait>
+    <trait>
+      <name>Sharp Senses</name>
+      <text>Whenever the jaeger uses its Dodge Step, Weapon Parry, or Chasing Finisher, it gains advantage on its next attack roll.</text>
+    </trait>
+    <trait>
+      <name>Special Equipment</name>
+      <text>The jaeger wields a dream executioner. Alternatively it can be wielding an orphan's cradle, a serpent bladewhip, or a meat hookshot. Its blade attack and references to it are replaced with an attack made with the respective weapon.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The jaeger makes three blade attacks. If it is wielding a firearm, it can also make one firearm attack.</text>
+    </action>
+    <action>
+      <name>Blade</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) slashing damage.</text>
+      <attack>Slashing Damage|+7|1d10+4</attack>
+    </action>
+    <action>
+      <name>Firearm</name>
+      <text>Ranged Weapon Attack: +7 to hit, range 60/120 ft., one target. Hit: 8 (1d8 + 4) piercing damage.</text>
+      <attack>Piercing Damage|+7|1d8+4</attack>
+    </action>
+    <action>
+      <name>Chasing Finisher (recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The jaeger moves 40 feet and makes a blade attack. On a hit, the target takes an additional 14 (4d6) slashing damage.</text>
+      <attack>Slashing Damage||4d6</attack>
+    </action>
+    <reaction>
+      <name>Dodge Step (3/short Rest)</name>
+      <recharge>3/DAY</recharge>
+      <text>When a creature the jaeger can see attacks it, if its speed isn't 0, it moves up to 10 feet without provoking opportunity attacks and makes a Dexterity saving throw with a DC equal to the attack roll's result. On a success, it evades completely and the attack misses. On a failure, it takes only half damage if the attack hits.</text>
+    </reaction>
+    <reaction>
+      <name>Weapon Parry (3/short Rest)</name>
+      <recharge>3/DAY</recharge>
+      <text>The jaeger fires off a bullet to deflect an attack that it can see within 60 feet of it. To do so, the jaeger must be wielding a firearm. It reduces the attack's damage by 13 (1d10 + 8). If this reduces the damage to 0, the attacker is stunned until the start of its next turn, as the bullet hits a nervous junction.</text>
+      <attack>Weapon Parry||1d10+8</attack>
+    </reaction>
+    <description>Borast is an experienced monster hunter who specializes in eldritch creatures and supernatural events. He has leathery nutmeg skin, and his jet-black beard and hair are braided with silver wire. A creature's claw left three scars across his right cheek and eye. The gruff and suspicious dwarf prefers to work alone and is unhappy that Lord Rehwoldt hired the characters. However, he begrudgingly admits that his currently incapacitated state precludes him from completing the mission and helps the party in whatever way he can.
+
+Jaeger:
+The jaegers of Luyarnha stand as the city's premier line of defense, a formidable force whose might singlehandedly turned the tides of battle in the First War. These warriors exhibit an unwavering commitment to their city, always the first to answer the call of duty and often the last thing their adversaries see. In their hands, the jaegers wield potent trick weapons gifted to them by the Church and other factions dedicated to the city's salvation. With these instruments of destruction, they can decimate entire squadrons of beasts and humanoids, nimbly evading attacks and relentlessly pursuing their quarries until their blades sink into their targets.
+	The mysterious process of their creation is closely guarded by their creators, the enigmatic Obitus Scholare. With the ongoing city lockdown, however, the ranks of the jaegers have been gradually thinning. They fall in battle more rapidly than new jaegers can be forged. It is the hope of all citizens that Luyarnha can stem the tide of the Scourge before their mightiest shield shatters.
+	Every jaeger's life revolves around a strict regimen of training and battle, honing their skills and reflexes beyond the potential of mere mortals: with each kill, they sharpen their instincts, bolstering their own strength and becoming harder to kill-an unfortunate truth that applies even to those of them who lose their sanity. Jaegers are the city's greatest hope and the embodiment of its deepest fear-the jaegers, ever the hunters, ever the hunted.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 419 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Vicar Henri Inonder</name>
+    <sortname>Inonder, Henri (Vicar)</sortname>
+    <ancestry>Priest</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>Lawful Evil</alignment>
+    <ac>13 (chain shirt)</ac>
+    <hp>27 (5d8+5)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>12</con>
+    <int>13</int>
+    <wis>16</wis>
+    <cha>13</cha>
+    <skill>Medicine +7, Persuasion +3, Religion +5</skill>
+    <passive>13</passive>
+    <languages>any two languages</languages>
+    <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Divine Eminence</name>
+      <text>As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
+      <attack>Radiant Damage||3d6</attack>
+      <attack>Extra Damage||1d6</attack>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest has the following cleric spells prepared:
+
+	• Cantrips (at will): light, sacred flame, thaumaturgy
+	• 1st level (4 slots): cure wounds, guiding bolt, sanctuary
+	• 2nd level (3 slots): lesser restoration, spiritual weapon
+	• 3rd level (2 slots): dispel magic, spirit guardians</text>
+      <attack>Spellcasting|+5|</attack>
+    </trait>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
+    <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
+    <description>Vicar Henri Inonder is outwardly a good and righteous man who works tirelessly to give succor to the poor and needy. His perfect smile, warm brown eyes, and perfectly groomed appearance hide a bottomless pit of greed and corruption. Henri is a member of the Obitus Scholare, the secret sect that was harvesting the eldritch being's remains. His twin brother, Vargas Inonder, was transformed into the augmented assassin that devolved into madness. After the sect's destruction and himself being injured, Henri now works to conceal the truth behind accusations aimed at the aristocracy and Lord Thomathin in particular because of an old grudge between them. He feverishly works to find a cure before succumbing to the madness like his brother.
+	The Vicar is a master manipulator who is proficient in Deception and Persuasion. He hides his festering injury and resulting beast-like transformation behind an alter self spell while working to find a cure for himself. A successful DC 25 Arcana check or detect magic spell indicates the Vicar is using magic to alter his appearance. If dispelled, it reveals that he is almost entirely mutated into one of the bestial creatures.
+
+Priest:
+Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites. A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 421 (Homebrew),
+		Monster Manual (2014) p. 348</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Vargas the Scorched</name>
+    <sortname>Adjudicator, Scorched Vargas</sortname>
+    <ancestry>Adjudicator</ancestry>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>91 (14d8+28)</hp>
+    <speed>30 ft.</speed>
+    <str>18</str>
+    <dex>14</dex>
+    <con>15</con>
+    <int>14</int>
+    <wis>9</wis>
+    <cha>17</cha>
+    <save>Dex +5</save>
+    <skill>Acrobatics +5, Athletics +7, Perception +5</skill>
+    <passive>15</passive>
+    <languages/>
+    <cr>5</cr>
+    <vulnerable/>
+    <resist>fire, necrotic</resist>
+    <immune/>
+    <conditionImmune>blinded</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Guiding Light</name>
+      <text>The adjudicator sheds dim light in a 10- foot radius. When a creature starts its turn in the light, or enters it for the first time on a turn, it gains disadvantage on Charisma saving throws until the start of its next turn.</text>
+    </trait>
+    <trait>
+      <name>Limited Telepathy</name>
+      <text>The adjudicator can magically communicate ideas, emotions, and images telepathically with any creature within 120 feet of it. This form of telepathy doesn't allow the receiving creature to telepathically respond.</text>
+    </trait>
+    <trait>
+      <name>Reactive</name>
+      <text>The adjudicator can take one reaction on every turn in combat.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The adjudicator makes two handaxe attacks.</text>
+    </action>
+    <action>
+      <name>Handaxe</name>
+      <text>Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) slashing damage. On a hit, if the adjudicator isn't within 5 feet of the target, the adjudicator can teleport to an unoccupied space within 5 feet of the target.</text>
+      <attack>Slashing Damage|+7|2d6+4</attack>
+    </action>
+    <action>
+      <name>Soul Tear</name>
+      <text>Soul Tear. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 3) necrotic damage and the target must succeed on a DC 14 Charisma saving throw or its hit point maximum is reduced by an amount equal to the damage taken.
+	This reduction lasts until the creature finishes a long rest. If this effect reduces a creature's hit point maximum to 0, the creature dies. A creature killed by this reduction can't be resurrected until the adjudicator is killed.</text>
+      <attack>Necrotic Damage|+6|4d8+3</attack>
+    </action>
+    <action>
+      <name>Inferno (recharge 4-6)</name>
+      <recharge>D4</recharge>
+      <text>Flames pour down from the adjudicator's wings. Each creature between 10 and 40 feet of the adjudicator must make a DC 14 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Fire Damage||6d6</attack>
+    </action>
+    <reaction>
+      <name>Snuff Out the Light</name>
+      <text>When a spell that restores hit points is being cast within 120 feet of the adjudicator, the adjudicator teleports to an unoccupied space within 5 feet of the caster and makes a handaxe attack against it with advantage. On a hit, the spell fails and has no effect.</text>
+    </reaction>
+    <legendary category="lair">
+      <name>Lair Actions</name>
+      <text>On initiative count 20 (losing initiative ties), Vargas takes a lair action to cause one of the following effects; Vargas can't use the same effect two rounds in a row:
+
+	• Vargas siphons shadowy energy from the crucified elder being, increasing his power and mending his wounds. He regains 4d10 hit points, and until the start of the next round, his weapon attacks deal an additional 1d10 necrotic damage.
+
+	• Vargas wields the maddening energy of eldritch blood and sends a wave of madness at any creature he chooses within sight. Each creature must succeed on a DC 13 Wisdom saving throw or gain a short-term madness effect (see "Steinhardt's Madness System,"
+page 269).
+
+	• Vargas calls out for aid, and two fallen luyarnhians drop down from above, aiding him in the fight.</text>
+      <attack>Heal||4d10</attack>
+      <attack>Necrotic||1d10</attack>
+    </legendary>
+    <description>Failed Experiments:
+In their lust for power, the Obitus Scholare lead gruesome experiments, merging the flesh of soldiers with that of eldritch beings. Their labor gave birth to powerful combatants, and a sea of corpses. Scorched adjudicators are the fruits of such experiments, humanoids that couldn't become true warriors, failing to resist the call from beyond and losing their sanity. Yet, the scholars still found a use for these failures: they now act as perfect killers for their creators.
+
+Enforcers of Justice:
+Adjudicators enforce justice, more specifically, the brand of justice approved of by the Obitus Scholare. Indeed, these abominations are dispatched to remove any threat to the order, their otherworldly powers trapping the souls of their victims and ensuring an irreversible death. The murderous intent of these monsters is apparent in battle; they delight in causing suffering and their deadly instincts prevents healing. Deriving a twisted sense of pleasure from their hunts, adjudicators often carry the shrunken, decapitated heads of their victims as horrific mementos.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 425 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Lord Jasper Roth</name>
+    <sortname>Roth, Jasper</sortname>
+    <ancestry>Noble</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (half-elf)</type>
+    <alignment>Lawful Neutral</alignment>
+    <ac>15 (breastplate)</ac>
+    <hp>9 (2d8)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>11</str>
+    <dex>12</dex>
+    <con>11</con>
+    <int>12</int>
+    <wis>14</wis>
+    <cha>16</cha>
+    <skill>Deception +5, Insight +4, Persuasion +5</skill>
+    <passive>12</passive>
+    <languages>any two languages</languages>
+    <cr>1/8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <action>
+      <name>Rapier</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.</text>
+      <attack>Piercing Damage|+3|1d8+1</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.</text>
+    </reaction>
+    <description>Lord Jasper Roth is a successful nobleman from a minor house in Luyarnha. He is widely known for his philanthropic efforts and support of the Radiant Church, particularly in medicinal treatments. Lord Jasper hires the party to find alchemist Klaus von Brunheimer, who lives in Jägerweiler, a nearby village that has recently gone silent. In particular, he was funding Klaus's research into various tonics and remedies that might help alleviate the current pandemic sweeping the city. Since the nobleman paid for Klaus' research and he is no longer in contact, Lord Jasper wants the party to retrieve it for him. He stresses the need for professional discretion, offering a generous sum of 1,500 gp up front, and promises 3,000 gp when the party returns with the research.
+
+Noble:
+Nobles wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.
+	The noble's statistics can also be used to represent courtiers who aren't of noble birth.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 430 (Homebrew),
+		Monster Manual (2014) p. 348</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Lieutenant Captain Adelle Roux</name>
+    <sortname>Roux, Adelle</sortname>
+    <ancestry>Knight</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>Lawful Good</alignment>
+    <ac>18 (plate armor)</ac>
+    <hp>52 (8d8+16)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>16</str>
+    <dex>11</dex>
+    <con>14</con>
+    <int>11</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Con +4, Wis +2</save>
+    <passive>10</passive>
+    <languages>any one language (usually Common)</languages>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Brave</name>
+      <text>The knight has advantage on saving throws against being frightened.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The knight makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Greatsword</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.</text>
+      <attack>Slashing Damage|+5|2d6+3</attack>
+    </action>
+    <action>
+      <name>Heavy Crossbow</name>
+      <text>Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage.</text>
+      <attack>Piercing Damage|+2|1d10</attack>
+    </action>
+    <action>
+      <name>Leadership (Recharges after a Short or Long Rest)</name>
+      <recharge>SHORT</recharge>
+      <text>For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.</text>
+      <attack>Leadership||1d4</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.</text>
+    </reaction>
+    <description>Lieutenant Captain Adelle Roux (LG human knight) is a Luyarnhian loyalist dedicated to protecting its citizens. She is a stocky woman in her mid-thirties with tawny brown skin and a square face framed by short, ravenblack hair. Respected among the guards as a fair leader, Adelle works hard to maintain that reputation and is willing to work with the party as long as they do not threaten the city or its people. She is protective of her nephew Bram, but feels he needs to see the outside world a bit and sees the characters as an opportunity for him to get dirt under his nails for once.
+	The guard commander knows little about what is happening in the village below, but that little is enough to make her wonder and worry, especially with the increase in monster attacks coming from outside the gates. She agrees to let the party come and go, with the stipulation that Bram goes with them as a witness to their actions, and they give him a little advice about adventuring. If the party refuses to bring Bram with them, they must succeed on a DC 20 Charisma (Persuasion) check to convince Adelle to let them leave alone; she refuses to let them leave through the gates without him. This check can be made with advantage if the characters mention they are under contract by the Radiant Church. A failed check results in the characters being forced to get creative with how they leave the city. For example, they might hire smugglers with access to a secret tunnel or cross over the wall when the guards are distracted.
+
+Knight:
+Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight's alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.
+
+Source:	Monster Manual (2014) p. 347,
+		Curse of Strahd,
+		Hoard of the Dragon Queen,
+		Princes of the Apocalypse,
+		Rise of Tiamat,
+		Storm King's Thunder,
+		Tales from the Yawning Portal,
+		Tomb of Annihilation,
+		Waterdeep: Dragon Heist,
+		Ghosts of Saltmarsh,
+		Essentials Kit: Divine Contention,
+		Essentials Kit: Dragon of Icespire Peak,
+		Baldur's Gate: Descent Into Avernus,
+		Explorer's Guide to Wildemount,
+		Mythic Odysseys of Theros</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Bram LeGrand The Acolyte</name>
+    <sortname>LeGrand, Bram</sortname>
+    <ancestry>Priest</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (half-elf)</type>
+    <alignment>Neutral Good</alignment>
+    <ac>13 (chain shirt)</ac>
+    <hp>27 (5d8+5)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>10</str>
+    <dex>10</dex>
+    <con>12</con>
+    <int>13</int>
+    <wis>16</wis>
+    <cha>13</cha>
+    <skill>Medicine +7, Persuasion +3, Religion +5</skill>
+    <passive>13</passive>
+    <languages>any two languages</languages>
+    <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Divine Eminence</name>
+      <text>As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.</text>
+      <attack>Radiant Damage||3d6</attack>
+      <attack>Extra Damage||1d6</attack>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priest has the following cleric spells prepared:
+
+	• Cantrips (at will): light, sacred flame, thaumaturgy
+	• 1st level (4 slots): cure wounds, guiding bolt, sanctuary
+	• 2nd level (3 slots): lesser restoration, spiritual weapon
+	• 3rd level (2 slots): dispel magic, spirit guardians</text>
+      <attack>Spellcasting|+5|</attack>
+    </trait>
+    <action>
+      <name>Mace</name>
+      <text>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+2|1d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
+    <spells>light, sacred flame, thaumaturgy, cure wounds, guiding bolt, sanctuary, lesser restoration, spiritual weapon, dispel magic, spirit guardians</spells>
+    <description>Bram LeGrand is a quiet young man in his early twenties with a slight stammer and a nervous tick in his left eye. He spends most of his days cloistered with research books and studying the teachings of the Radiant Church. His aunt, Lieutenant Captain Adelle Roux of the city watch, stepped in after his mother (Adelle's sister) passed away years ago and has been looking out for him ever since. He respects his aunt, but feels smothered at times.
+	Bram stays out of harm's way as much as possible in combat, assisting where he can. As an observer and trainee, he has limited capabilities and often makes poor decisions that put his life in danger.
+
+Priest:
+Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites. A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 432 (Homebrew),
+		Monster Manual (2014) p. 348</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>The Veiled Hunter</name>
+    <sortname>Hunters, Veiled</sortname>
+    <ancestry>Fallen Hunters</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>12 (16 with barkskin)</ac>
+    <hp>91 (14d8+28)</hp>
+    <speed>30 ft.</speed>
+    <str>6</str>
+    <dex>14</dex>
+    <con>15</con>
+    <int>13</int>
+    <wis>15</wis>
+    <cha>19</cha>
+    <save>Wis +5, Cha +7</save>
+    <skill>Perception +5, Stealth +8</skill>
+    <passive>15</passive>
+    <languages>Common, Deep Speech, Sylvan</languages>
+    <cr>7</cr>
+    <vulnerable/>
+    <resist>acid, necrotic, poison</resist>
+    <immune/>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The Hunter's innate spellcasting ability is Charisma (spell save DC 15). The Hunter can innately cast the following spells, requiring no material components:
+
+	• At will: druidcraft
+	• 3/Day each: blight, dominate beast, spike growth</text>
+    </trait>
+    <trait>
+      <name>Eldritch Mask</name>
+      <text>The Hunter's mask is the source of its power. The mask has AC 22 and 25 hit points. The mask is immune to all damage except bludgeoning, fire, force, piercing, and slashing damage and it doesn't take damage from effects that target an area. While the Hunter is wearing its mask, it has advantage on saving throws against spells and other magical effects, can cast speak with animals and plants at will, and can't be deafened or magically put to sleep. If the mask is destroyed, it loses these benefits.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>If the Hunter fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Treestep</name>
+      <text>Once on its turn, the Hunter can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger. After using this trait, the hunter gains the benefits of the barkskin spell until the start of its next turn.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Hunter makes two attacks: one with its gravetouch and one with its maggotspit.</text>
+    </action>
+    <action>
+      <name>Gravetouch</name>
+      <text>Melee Spell Attack: +7 to hit, reach 15 ft., one target. Hit: 25 (6d6 + 4) necrotic damage.</text>
+      <attack>Necrotic Damage|+7|6d6+4</attack>
+    </action>
+    <action>
+      <name>Maggotspit</name>
+      <text>Melee Spell Attack: +7 to hit, reach 10 ft., one target. Hit: 24 (8d4 + 4) poison damage and the target must succeed on a DC 15 Constitution saving throw or become poisoned for 1 minute. A poisoned creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</text>
+      <attack>Poison Damage|+7|8d4+4</attack>
+    </action>
+    <action>
+      <name>Rootprison (recharge 4-6)</name>
+      <recharge>D4</recharge>
+      <text>The Hunter chooses up to five creatures within 30 feet of a tree the Hunter can see. Each creature must make a DC 15 Dexterity saving throw. On a failure, a creature takes 18 (4d8) piercing damage and is restrained for 1 minute. Whenever a restrained creature uses its action to make an attack or cast a spell, it takes 9 (2d8) piercing damage. A creature can use its action to make a DC 15 Athletics check to break itself or another creature within its reach free, ending the effect on that creature on a success.</text>
+      <attack>Piercing Damage||4d8</attack>
+      <attack>Piercing Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Wooden Labyrinth</name>
+      <text>The Hunter chooses a creature it can see within 120 feet of it. The target must make a DC 15 Wisdom saving throw. On a failure, the creature becomes magically lost, automatically failing all Nature and Survival checks it makes for the next 24 hours and being unable to escape the woods. The creature isn't aware of this effect. On a success, the creature is immune to this effect for the next 24 hours and knows it was targeted by some sort of magic.</text>
+    </action>
+    <action>
+      <name>They Have Eyes</name>
+      <text>The Hunter transport its senses into any tree within 500 miles of it that it has seen, seeing and hearing as if it occupied the tree's space, until it ends the effect (no action required). During this time, it is blind and deaf in regard to its own senses.</text>
+    </action>
+    <reaction>
+      <name>House of Leaves (3/Day)</name>
+      <recharge>3/DAY</recharge>
+      <text>When the Hunter is hit by an attack, it turns into a pile of leaves and reappears in the branches of a tree within 60 feet of it, causing the attack to miss.</text>
+    </reaction>
+    <spells>Druidcraft, Blight, Dominate Beast, Spike Growth</spells>
+    <description>The term "Fallen Hunter" refers to those hunters who, tragically, have fallen prey to the scourge that afflicts Luyarnha. They represent the unfortunate reality of the struggles faced by those who dedicate their lives to hunting the monstrous and the vile.
+	Importantly, it's worth noting that, while these scourge-claimed hunters are numerous, they are not all simultaneously active, or even alive, within Luyarnha. If they were, the city would have crumbled long ago. The Fallen Hunters detailed in this book are specifically designed to serve as named antagonists - potential villains who can add depth and challenge to a campaign. The stronger the original hunter, the stronger the transformed form.
+	However, despite their fearsome nature, the Fallen Hunters present an interesting divergence from many of the adversaries heroes may face. They hold the hope for redemption. This concept of potential redemption is key in defining their role in the world of Luyarnha. It offers unique storytelling opportunities, and it can shape narrative arcs in a campaign in compelling ways.
+	Such redemption might take the form of a miraculous recovery driven by the heroes, restoring them to their former self, free from the scourge's insidious grasp. Alternatively, it might present itself as an opportunity for a Fallen Hunter to engage in one final act of defiance against the dark forces corrupting Luyarnha—or in the case of those who haven't completely lost their sanity, the opportunity to give them a new goal and a new hope to fight once more. In either case, these narrative paths allow for Fallen Hunters to be more than just adversaries; they can be tragic figures, symbols of resilience, and catalysts for emotionally charged moments.
+
+The Veiled Hunter:
+Once a simple woodsman and hunter who lived a quiet life in Jägerweiler Village, Brayden Lilyguard was chosen by the Obitus Scholare as one of the first to undergo their eldritch experiments. After being infused with the dead cerebro-spinal fluid of an eldritch entity (see "Part Three: The Eldritch Temple," page 443), he gained inhuman strength, speed, and the ability to tap into the natural world of the forest he loved so dearly. But as time went on, he and his fellow huntsman began to change. They began hearing dark whispers in their minds that eventually became a cacophony of terrifying screams. Their bodies morphed and changed into feral creatures.
+	Brayden fared better than his comrades in retaining most of his sanity, but couldn't stop the change into the specter-like being he had become. In the church's attempt to wipe them out with a flood of acid, he died. Years later, under the sky of a Blood Moon of Rebirth he was brought back, a mask adorning his face. he gathered the mutated "survivors" and rebuilt the village into what it is today. As the Veiled Hunter, his only passion is for the survival of his remaining people and the utter destruction of those he holds responsible.
+	More information on the Veiled Hunter can be read in the Vile Village adventure. (Page 429)
+
+Roleplaying the Veiled Hunter:
+As intelligent as he is insane, the Veiled Hunter is far more dangerous than the lesser beasts and creatures within the village. The shadowy figure feeds on the fear his presence inspires in others, and prefers to toy with his prey when possible. He is well aware that his current appearance is another weapon in his arsenal, and he uses it to full effect. It is impossible to keep a conversation going while his barking laughter interrupts his own arguments with himself on how to kill and eat them, and the whole time, his head and body twist at impossible angles with disjointed limbs.
+	The Veiled Hunter appears as a putrid mockery of his former self, with rancid flesh peeking through the rents in his cloak and peeling around the bone mask that holds his face together. Thick stitching from the forced introduction of eldritch flesh into his body has created a tableau of scars, and the rot around them became a breeding ground for maggots. Their constant wriggling gives his decomposing skin the appearance of always being in flux. His favorite tactic is to grapple an opponent, expel these maggots onto their face, and laugh at their gagging screams.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 380 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Cerwyn Raolet, The Mad Mage</name>
+    <sortname>Raolet, Cerwyn, The Mad Mage</sortname>
+    <ancestry>Mage</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>Lawful Evil</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>40 (9d8)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>9</str>
+    <dex>14</dex>
+    <con>11</con>
+    <int>17</int>
+    <wis>12</wis>
+    <cha>11</cha>
+    <save>Int +6, Wis +4</save>
+    <skill>Arcana +6, History +6</skill>
+    <passive>11</passive>
+    <languages>any four languages</languages>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:
+
+	• Cantrips (at will): fire bolt, light, mage hand, prestidigitation
+	• 1st level (4 slots): detect magic, mage armor, magic missile, shield
+	• 2nd level (3 slots): misty step, suggestion
+	• 3rd level (3 slots): counterspell, fireball, fly
+	• 4th level (3 slots): greater invisibility, ice storm
+	• 5th level (1 slots): cone of cold</text>
+      <attack>Spellcasting|+6|</attack>
+    </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Piercing Damage|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
+    <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
+    <description>Cerwyn Raolet is an older man in his late sixties with tight leather skin covered in liver spots. His body has been mutated and twisted into unnatural angles from exposure to the eldritch powers mingling with his blood. A bitter and curmudgeonly person who prefers the company of books over people, Cerwyn was a recluse who specialized in combining alchemy with the arcane. The Obitus Scholare sought him out for this expertise, and used him to flood Jägerweiler with alchemical acid to kill their failed experiments and witnesses. Afterward, they attempted to kill the angry mage, but he managed to escape. He's now hiding in these ruins and plotting revenge against those who tricked and wronged him. The mad mage lacks empathy towards life and sees what he did to Jägerweiler Village as nothing more than experimentation in the name of progress. He has no qualms about murder if it furthers his research.
+
+Mage:
+Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 439 (Homebrew),
+		Monster Manual (2014) p. 347</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Percival Stanway</name>
+    <sortname>Stanway, Percival</sortname>
+    <ancestry>Mage</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>Lawful Neutral</alignment>
+    <ac>12 (15 with mage armor)</ac>
+    <hp>40 (9d8)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>9</str>
+    <dex>14</dex>
+    <con>11</con>
+    <int>17</int>
+    <wis>12</wis>
+    <cha>11</cha>
+    <save>Int +6, Wis +4</save>
+    <skill>Arcana +6, History +6</skill>
+    <passive>11</passive>
+    <languages>any four languages</languages>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:
+
+	• Cantrips (at will): fire bolt, light, mage hand, prestidigitation
+	• 1st level (4 slots): detect magic, mage armor, magic missile, shield
+	• 2nd level (3 slots): misty step, suggestion
+	• 3rd level (3 slots): counterspell, fireball, fly
+	• 4th level (3 slots): greater invisibility, ice storm
+	• 5th level (1 slots): cone of cold</text>
+      <attack>Spellcasting|+6|</attack>
+    </trait>
+    <action>
+      <name>Dagger</name>
+      <text>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.</text>
+      <attack>Piercing Damage|+5|1d4+2</attack>
+    </action>
+    <action>
+      <name>Variant: Familiars</name>
+      <text>Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.</text>
+    </action>
+    <slots>0,4,3,3,3,1</slots>
+    <spells>fire bolt, light, mage hand, prestidigitation, detect magic, mage armor, magic missile, shield, misty step, suggestion, counterspell, fireball, fly, greater invisibility, ice storm, cone of cold</spells>
+    <description>Percival (LN human mage) is an arcane scientist and has been with the Scions for three years. He is an expert in the magical and alchemical arts, focusing on studying arcane constructs. He IS an accomplished inventor, instrumental in the advancements made on the blue-flame custodians. He is often seen experimenting with new spells and enchantments, as well as researching ancient texts in search of lost knowledge. While his research has yielded some impressive results, he rarely reveals his findings to the public, preferring to stay anonymous. He is not pleased to be here in the temple and only came because the custodians were disappearing.
+
+Personality Trait. "I'm always tinkering with something new, even if I don't know what it is yet."
+Ideal. "Knowledge is power, and I strive to uncover secrets that others have overlooked."
+Bond. "I am devoted to my research and the Scions, and will do whatever it takes to help them succeed."
+Flaw. "My curiosity often gets the better of me, leading me to take risks that may be too great."
+Quote. "It's not enough to know something; you must understand it."
+
+Mage:
+Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 456 (Homebrew),
+		Monster Manual (2014) p. 347</description>
     <environment/>
   </monster>
 </compendium>
