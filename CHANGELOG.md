@@ -8,6 +8,9 @@
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
+### 2025-##-##
+* Added `Call of the Netherdeep` campaign file by Josh.
+
 ### 2025-09-03
 * Added `Ranger (HeavyArms)` content.
 * Added `Tasha's Scrapped Book` content.
