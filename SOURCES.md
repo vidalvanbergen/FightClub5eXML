@@ -840,7 +840,7 @@ Source:	Xanathar's Guide to Everything p. 75</text>
 
 ## [Adding a Source](#fightclub5e-xml)
 
-New material is added to D&D 5e quite frequently, especially through Unearthed Arcana which is typically used for beta testing. Keeping each source in its own file makes it easier to add new content and select which sources you want to include in your Compendium.
+New material is added to D&D quite frequently, especially through Unearthed Arcana which is typically used for beta testing, people creating their own homebrew, and third party indie publishers. Keeping each source in its own file makes it easier to add new content and select which sources you want to include in your Compendium.
 
 Each source is like its own Compendium, and could potentially be imported on its own, with two exceptions (classes and spells) which are explained below. The structure of the XML file should be:
 
@@ -870,7 +870,7 @@ Example:
   - class-classname-tce.xml
   - feats-tce.xml
   - items-tce.xml
-  - optionalfeatures-tce.xml (Used for special features such as fighting maneuvers, warlock invocations, monk techniques, etc. Usually as level 0 spells.)
+  - optionalfeatures-tce.xml (Used for special features such as fighting maneuvers, warlock invocations, monk techniques, etc. Usually set up as level 0 spells.)
   - races-tce.xml
   - spells-phb+tce.xml (Spell lists for subclasses that are merged with PHB content.)
   - spells-tce.xml
@@ -996,7 +996,7 @@ To help automate building partial collection files, there is a utility script lo
 /Utilities/source-xml-collector.sh
 ```
 
-- This script scans a directory you specify for all `source-*.xml` files which contains `<collection>` inside a `<source>`, containing `<doc>` elements.
+- This script scans a directory you specify for all `source-*.xml` files which contains a `<collection>` inside the `<source>` root element, containing one or more `<doc>` elements.
 - It generates a partial `collection.xml` file **inside that same directory**.
 - The generated collection file lists each found source file as an `<xi:include>` entry with appropriate attributes and correct `xpointer`.
 - This helps quickly assemble partial collections without manually writing the XML.
