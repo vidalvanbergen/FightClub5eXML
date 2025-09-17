@@ -57,8 +57,7 @@ The build-collection files are provided for your convenience to compile all the 
 ```bash
 Usage: 
 
-collections.sh [-2024] [-h/-?] [collection_names...]
-./build-
+./build-collections.sh [-2024] [-h/-?] [collection_names...]
   -2024   Remove '[2024]' from the generated compendiums.
   collection_names  Optional list of specific collections to compile.
   -h/-?   Display this help message.
@@ -79,7 +78,7 @@ See the [Sources README](SOURCES.md) to learn how to add your own homebrew conte
 
 ## Contributing
 
-If you'd like to contribute, feel free to fork the repository and submit pull requests with your changes. We are no longer accepting manual changes to the XML source files because these files are now generated from an external source.
+If you'd like to contribute, feel free to fork the repository and submit pull requests with your additions and changes.
 
 ## Additional Contributors
 
