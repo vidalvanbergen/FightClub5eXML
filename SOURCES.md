@@ -831,8 +831,8 @@ Feat example:
 	• You have advantage on any Strength (Athletics) or Dexterity (Acrobatics) check you make to escape from being grappled.
 
 Source:	Xanathar's Guide to Everything p. 75</text>
-  <modifier category="ability score">Dexterity +1</modifier>
-  <modifier category="bonus">Speed +5</modifier>
+  <modifier category="ability score">dexterity +1</modifier>
+  <modifier category="bonus">speed +5</modifier>
 </feat>
 ```
 
