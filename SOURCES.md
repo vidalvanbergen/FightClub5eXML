@@ -1,8 +1,8 @@
-# FightClub5e XML
+# Fight Club 5e XML
 
 This page is dedicated to helping you make your own XML files to be imported in the FightClub5e app. This is the tutorial found in the app but modified a bit, plus advice on how to add your own sources or homebrew to the repository.
 
-- [FightClub5e XML](#fightclub5e-xml)
+- [Fight Club 5e XML](#fight-club-5e-xml)
   - [Elements and Tags](#elements-and-tags)
   - [Terminology](#terminology)
   - [Creating an XML file](#creating-an-xml-file)
@@ -990,10 +990,10 @@ Example:
 
 ### Utility: Generating Partial Collection Files Automatically
 
-To help automate building partial collection files, there is a utility script located at:
+To help automate the creation of partial collection files, you can use a utility script located in the Utilities folder. The script generates the partial files by taking the path to a folder containing your source files:
 
 ```bash
-/Utilities/source-xml-collector.sh
+/Utilities/source-xml-collector.sh /path/to/source/
 ```
 
 - This script scans a directory you specify for all `source-*.xml` files which contains a `<collection>` inside the `<source>` root element, containing one or more `<doc>` elements.
