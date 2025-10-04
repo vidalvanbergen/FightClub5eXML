@@ -25,9 +25,6 @@ These include only the core books and official supplements.
 - **WotC_2014_Only**
 - **WotC_2024_Only**
 
-## \[UNTAGGED\] Files
-The same 2024 Content, but without the addition of the \[2024\] tags. These are for stand-alone use, do not use together with 2014 content since it will override each other.
-
 # Additions
 
 Starting with the official Wizards of the Coast core books and supplements, files tagged with these add the following content:
@@ -39,3 +36,4 @@ Starting with the official Wizards of the Coast core books and supplements, file
 - **+Homebrew** — Includes homebrew content like Matt Mercer's Bloodhunter class and fan-made or community created unofficial content.
 - **+UnearthedArcana** - Officially released playtest material from Wizards of the Coast, used for testing and feedback before formal publication.
 - **+Legacy_2014** — Includes legacy 2014 content converted for use with the 2024 rules.
+- **\[UNTAGGED\]** - The same 2024 Content, but without the addition of the \[2024\] tags. These are for stand-alone use, do not use together with 2014 content since it will override each other.
