@@ -15,6 +15,7 @@
 * Added `Grim Hollow: Player's Guide` content.
 * Added `Arcane Subclasses Update` Unearthed Arcana.
 * Added `Psion Update` Unearthed Arcana.
+* Other changes and fixes.
 
 ### 2025-09-03
 * Added `Ranger (HeavyArms)` content.
