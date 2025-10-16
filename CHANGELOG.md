@@ -11,9 +11,10 @@
 ### 2025-##-##
 * Added `Sebastian Crowe's Guide to Drakkenheim` content by @ThreeDawgs.
 * Added `Call of the Netherdeep` campaign file by Josh.
-* Added `Arcane Subclasses Update` Unearthed Arcana.
 * Added `Grim Hollow: Campaign Guide` content.
 * Added `Grim Hollow: Player's Guide` content.
+* Added `Arcane Subclasses Update` Unearthed Arcana.
+* Added `Psion Update` Unearthed Arcana.
 
 ### 2025-09-03
 * Added `Ranger (HeavyArms)` content.
