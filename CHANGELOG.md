@@ -8,7 +8,7 @@
   * Commoner, Shaman, Warlord Classes.
 * Adding `The Griffon's Saddlebag, Book 1` content.
 
-### 2025-##-##
+### 2025-10-18
 * Added `Sebastian Crowe's Guide to Drakkenheim` content by @ThreeDawgs.
 * Added `Call of the Netherdeep` campaign file by Josh.
 * Added `Grim Hollow: Campaign Guide` content.
