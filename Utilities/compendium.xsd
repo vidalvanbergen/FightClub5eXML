@@ -475,6 +475,8 @@
   <xs:complexType name="raceType">
     <xs:choice maxOccurs="unbounded">
       <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="displayname"/><!-- Not supported by FightClub -->
+      <xs:element type="xs:string" name="ancestry"/><!-- Not supported by FightClub -->
       <xs:element type="sizeEnum" name="size"/>
       <xs:element type="xs:integer" name="speed"/>
       <xs:element type="abilityAndSkillList" name="proficiency"/>
@@ -484,8 +486,10 @@
       <xs:element type="abilityEnum" name="spellAbility"/>
       <xs:element type="abilityBonusList" name="ability"/>
       <xs:element type="xs:string" name="spells"/><!-- Not supported by FightClub -->
+      <xs:element type="xs:string" name="vulnerable"/><!-- Not supported by FightClub -->
       <xs:element type="xs:string" name="resist"/><!-- Not supported by FightClub -->
-      <xs:element type="xs:string" name="immunity"/><!-- Not supported by FightClub -->
+      <xs:element type="xs:string" name="immune"/><!-- Not supported by FightClub -->
+      <xs:element type="xs:string" name="conditionImmune"/><!-- Not supported by FightClub -->
       <xs:element type="modifierType" name="modifier" minOccurs="0"/>
       <xs:element type="traitType" name="trait" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
