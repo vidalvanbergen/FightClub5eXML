@@ -1,12 +1,8 @@
 ## CHANGE LOG
 
-#### ToDo:
-* Add `Tasha's Crucible of Everything Else, Volume 2` Bestiary.
-* Complete `Crown of the Oathbreaker` Bestiary.
-* LaserLlama's
-  * Alternate Classes.
-  * Commoner, Shaman, Warlord Classes.
-* Adding `The Griffon's Saddlebag, Book 1` content.
+### 2025-##-##
+* Updated SRD24 to 5.2.1, adding missing items and statblocks.
+* Other changes and fixes.
 
 ### 2025-10-18
 * Added `Sebastian Crowe's Guide to Drakkenheim` content by @ThreeDawgs.
