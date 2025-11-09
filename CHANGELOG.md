@@ -1,6 +1,7 @@
 ## CHANGE LOG
 
 ### 2025-##-##
+* Added `Forgotten Realms: Heroes of Faerûn (2024)` content by @luke-mcdowall-yeo.
 * Updated SRD24 to 5.2.1, adding missing items and statblocks.
 * Other changes and fixes.
 
