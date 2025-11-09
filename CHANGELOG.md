@@ -6,6 +6,7 @@
 * Other changes and fixes.
 
 ### 2025-10-18
+* Added `Dungeons in a Box`'s GM Toolkit Content by @Cvamped.
 * Added `Sebastian Crowe's Guide to Drakkenheim` content by @ThreeDawgs.
 * Added `Call of the Netherdeep` campaign file by Josh.
 * Added `Grim Hollow: Campaign Guide` content.
