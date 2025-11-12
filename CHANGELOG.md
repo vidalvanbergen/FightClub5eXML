@@ -1,12 +1,12 @@
 ## CHANGE LOG
 
 ### 2025-##-##
-* Added `Forgotten Realms: Heroes of Faerûn (2024)` content by @luke-mcdowall-yeo.
+* Added `Dungeons in a Box`'s `GM Toolkit` Content, shared by @Cvamped.
+* Added `Forgotten Realms: Heroes of Faerûn (2024)` content, shared by @luke-mcdowall-yeo.
 * Updated SRD24 to 5.2.1, adding missing items and statblocks.
 * Other changes and fixes.
 
 ### 2025-10-18
-* Added `Dungeons in a Box`'s GM Toolkit Content by @Cvamped.
 * Added `Sebastian Crowe's Guide to Drakkenheim` content by @ThreeDawgs.
 * Added `Call of the Netherdeep` campaign file by Josh.
 * Added `Grim Hollow: Campaign Guide` content.
