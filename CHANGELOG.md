@@ -1,7 +1,8 @@
 ## CHANGE LOG
 
 ### 2025-##-##
-* Added `Dungeons in a Box`'s `GM Toolkit` Content, shared by @Cvamped.
+* Added `Griffon's Saddlebag: Griffons of the Multiverse` content, shared by @Cvamped.
+* Added `Dungeons in a Box`'s `GM Toolkit` content, shared by @Cvamped.
 * Added `Forgotten Realms: Heroes of Faerûn (2024)` content, shared by @luke-mcdowall-yeo.
 * Updated SRD24 to 5.2.1, adding missing items and statblocks.
 * Other changes and fixes.
