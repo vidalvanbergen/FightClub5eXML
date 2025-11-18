@@ -52,6 +52,12 @@ trap 'rm -f "$TEMP_FILE"' EXIT
 # --- Process each source-*.xml file safely ---
 find "$BASE_DIR" -type f -name 'source-*.xml' -print0 | while IFS= read -r -d '' file; do
 
+  # Skip files whose path contains a # character
+  if [[ "$file" == *'#'* ]]; then
+    echo "Skipping $file: path contains '#'" >&2
+    continue
+  fi
+
   # Check if <collection> element exists in the file; skip if not
   has_collection=$(xmllint --xpath 'boolean(//collection)' "$file" 2>/dev/null)
   if [[ "$has_collection" != "true" ]]; then
