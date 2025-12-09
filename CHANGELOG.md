@@ -3,6 +3,7 @@
 ### 2025-##-##
 * Added `Subclasses Update` Unearthed Arcana.
 * Added `Griffon's Saddlebag: Griffons of the Multiverse` content, shared by @Cvamped.
+* Added `Griffon's Saddlebag, Book 2` items, shared by @Cvamped.
 * Added `Dungeons in a Box`'s `GM Toolkit` content, shared by @Cvamped.
 * Added `Lorwyn: First Light` content, shared by @vokyal84.
 * Added `Forgotten Realms: Heroes of Faerûn (2024)` content, shared by @luke-mcdowall-yeo.
