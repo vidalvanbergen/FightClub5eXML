@@ -2,9 +2,9 @@ import os
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
-SOURCE_DIR = "../Sources/PHB2014/WizardsOfTheCoast2024"
+SOURCE_DIR = "../../Sources/PHB2014/WizardsOfTheCoast2024"
 DEST_FILE_NAME = "WotC_only_2024+Legacy.xml"
-DEST_FOLDER = "../Collections"
+DEST_FOLDER = "../../Collections"
 
 def prettify_xml(elem):
     """Return a pretty-printed XML string for the Element."""
@@ -24,7 +24,7 @@ def create_single_collection_file(source_dir, dest_file_path):
             file_path = os.path.join(folder_path, file_name)
             relative_file_path = os.path.relpath(file_path, start=os.path.dirname(source_dir))
             doc_element = ET.SubElement(root, "doc")
-            doc_element.set("href", f"../Sources/PHB2014/{relative_file_path}")
+            doc_element.set("href", f"../../Sources/PHB2014/{relative_file_path}")
 
     pretty_xml = prettify_xml(root)
     os.makedirs(os.path.dirname(dest_file_path), exist_ok=True)

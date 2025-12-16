@@ -25,17 +25,8 @@ This directory contains XML schemas, XSLT transformations, and scripts used to m
 
 ### Scripts
 
-- **`source-xml-collector.sh`**  
-  Bash script that recursively scans directories for `source-*.xml` files and generates a partial `collection.xml` file listing those source XML files. This helps automate the creation of collection manifests.
-
-- **`convert-legacy-content.py`**  
-  Python script that copies and converts content from the PHB2014 ruleset sources to be compatible with the PHB2024 ruleset. Useful for migrating legacy content to the latest ruleset.
-
-- **`create_collection.py`**  
-  Python script that likely creates or updates collection XML files, helping organize or generate collections based on source directories.
-
-- **`update-legacy-content.py`**  
-  Python script probably used to update or patch legacy content files to maintain compatibility or apply fixes.
+- **`generate-partial-collection.sh`**  
+  Bash script that recursively scans directories for `source-*.xml` files and generates a partial `collection.xml` file listing those source XML files. Main collection files reference these partial collections so sources can be updated in one place without duplication.
 
 ---
 

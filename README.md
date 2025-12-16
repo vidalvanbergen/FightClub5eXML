@@ -1,12 +1,12 @@
+# Fight Club 5e XML
+
+FightClub5eXML is a collection of XML source files for Dungeons & Dragons 5 and 5.5th Edition content that can be compiled into one a compendium — an importable XML file for use in apps such as Fight Club 5e, Game Master 5e, and Character Craft 5.5e.
+
 | Stable | Nightly | Repository |
 | :----: | :-----: | :--------: |
 |[![GitHub stable release version](https://img.shields.io/github/v/release/vidalvanbergen/FightClub5eXML.svg?label=Stable&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest) | [![GitHub pre-release version](https://img.shields.io/github/v/release/vidalvanbergen/FightClub5eXML?include_prereleases&label=Pre-release&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) | |
 | [![GitHub stable release date](https://img.shields.io/github/release-date/vidalvanbergen/FightClub5eXML.svg?label=Released&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest) | [![GitHub pre-release date](https://img.shields.io/github/release-date-pre/vidalvanbergen/FightClub5eXML.svg?label=Released&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) | [![Github last commit date](https://img.shields.io/github/last-commit/vidalvanbergen/FightClub5eXML.svg?label=Updated&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/commits) |
 | [![Github stable release downloads](https://img.shields.io/github/downloads/vidalvanbergen/FightClub5eXML/latest/total.svg?label=Downloads&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest) | [![Github pre-release downloads](https://img.shields.io/github/downloads-pre/vidalvanbergen/FightClub5eXML/latest/total.svg?label=Downloads&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) | [![Total downloads](https://img.shields.io/github/downloads/vidalvanbergen/FightClub5eXML/total.svg?label=Downloads&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) |
-
-# Fight Club 5e XML
-
-Creating XML files for all official D&D sources and unofficial homebrew compatible with Fight Club 5e and Game Master 5e apps for macOS, iOS, and Android.
 
 ## How-to Use This Repository
 
