@@ -43,14 +43,14 @@ jobs:
       # Create a GitHub release when a tag is pushed
       - name: Create versioned release
         if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: Compendiums/*
 
       # Update the nightly release only on master branch push
       - name: Update nightly release
         if: github.ref == 'refs/heads/master'
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: nightly
           name: Nightly release
