@@ -50,9 +50,10 @@ jobs:
       # Update the nightly release only on master branch push
       - name: Update nightly release
         if: github.ref == 'refs/heads/master'
-        uses: pyTooling/Actions/releaser@main
+        uses: softprops/action-gh-release@v1
         with:
-          tag: nightly
-          rm: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: nightly
+          name: Nightly release
           files: Compendiums/*
+          prerelease: true
+          make_latest: true
