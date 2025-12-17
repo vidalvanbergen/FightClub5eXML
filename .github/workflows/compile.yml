@@ -47,9 +47,21 @@ jobs:
         with:
           files: Compendiums/*
 
+      - name: Check for collection/source changes
+        id: changes
+        if: github.ref == 'refs/heads/master'
+        run: |
+          set -e
+          git fetch origin master --depth=2
+          if git diff --name-only HEAD~1 HEAD | grep -E '^(Collections|Sources)/'; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
       # Update the nightly release only on master branch push
       - name: Update nightly release
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master' && steps.changes.outputs.changed == 'true'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: nightly
