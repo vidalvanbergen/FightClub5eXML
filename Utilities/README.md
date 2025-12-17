@@ -56,10 +56,10 @@ xmllint --noout --schema compendium.xsd Source/bestiary.xml
 xsltproc --xinclude merge.xslt collection/collection.xml > Compendiums/compendium.xml
 ```
 
-### Generate a collection.xml manifest from source directories
+### Generate a collection xml for source directories
 
 ```bash
-./source-xml-collector.sh Sources/phb2014 > collection/collection_phb2014.xml
+./generate-partial-collection.sh Sources/PHB2014/Homebrew/
 ```
 
 ---
