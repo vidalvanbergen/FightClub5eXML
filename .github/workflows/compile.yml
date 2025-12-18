@@ -16,11 +16,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install xsltproc and parallel
+      - name: Install dependencies
         uses: awalsh128/cache-apt-pkgs-action@v1
         with:
           packages: xsltproc
-          version: 1.0
+          version: 1.6
 
       - name: Check for collection/source changes
         id: changes
