@@ -62,6 +62,7 @@ jobs:
           files: Compendiums/*
 
       - name: Force update nightly tag
+        if: github.ref == 'refs/heads/master' && steps.changes.outputs.changed == 'true'
         run: |
           git tag -f nightly
           git push origin nightly --force
@@ -76,4 +77,3 @@ jobs:
           files: Compendiums/*
           prerelease: true
           make_latest: true
-          target_commitish: master
