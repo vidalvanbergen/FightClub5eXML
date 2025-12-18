@@ -61,6 +61,11 @@ jobs:
         with:
           files: Compendiums/*
 
+      - name: Force update nightly tag
+        run: |
+          git tag -f nightly
+          git push origin nightly --force
+
       # Update the nightly release only on master branch push
       - name: Update nightly release
         if: github.ref == 'refs/heads/master' && steps.changes.outputs.changed == 'true'
