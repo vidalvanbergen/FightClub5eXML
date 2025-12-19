@@ -8,7 +8,7 @@
 * Added `Lorwyn: First Light` content, shared by @vokyal84.
 * Added `Forgotten Realms: Heroes of Faerûn (2024)` content, shared by @luke-mcdowall-yeo.
 * Added `Dragontortleborn` from `Book of Uncommon Ancestry`, shared by @reccho.
-* Added `Eberron: Forge of the Artificer` content, shared by @KnightCA.
+* Added `Eberron: Forge of the Artificer (2024)` content, shared by @KnightCA.
 * Added 2024 unarmed strike, improvised weapon and monk unarmed strike 'items', shared by @KnightCA.
 * Updated SRD24 to 5.2.1, adding missing items and statblocks.
 * Other changes and fixes.
