@@ -6,22 +6,19 @@
     <autolevel level="3">
       <feature optional="YES">
         <name>Roguish Archetype: Grim Surgeon (HB)</name>
-        <text>You've developed a unique familiarity with knives, bodies, and blood in your line of work. Like a tinkerer's knowledge of clockwork and gears, you've come to an understanding of how bodies are put together instead. 
-
-Medical experts in rough or war-torn cities and villages may follow this archetype, but so do rogues who take a particular interest in either clerical or necromantic magic. A grim surgeon uses medical knowledge and strange blood magic to dismantle foes, restore allies, and control bodies like puppets.
+        <text>You've developed a unique familiarity with knives, bodies, and blood in your line of work. Like a tinkerer's knowledge of clockwork and gears, you've come to an understanding of how bodies are put together instead. Medical experts in rough or war-torn cities and villages may follow this archetype, but so do rogues who take a particular interest in either clerical or necromantic magic. A grim surgeon uses medical knowledge and strange blood magic to dismantle foes, restore allies, and control bodies like puppets.
 
 Source:	The Griffon's Saddlebag: Book Two p. 224 (Third Party)</text>
       </feature>
       <feature optional="YES">
         <name>Medic (Grim Surgeon (HB))</name>
         <text>When you choose this archetype at 3rd level, you gain proficiency in the Medicine skill if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses this skill.
-
-In addition, your familiarity with blood has become magical, giving you some degree of control over it. As a result, you can use a bonus action to magically stabilize an unconscious creature within 5 feet of you. 
-
-You can use this same magic when you apply traditional healing techniques. You can use a bonus action to expend one use of a healer's kit on a creature. When you do, that creature regains hit points equal 1d4 + your proficiency bonus. The creature can't regain hit points from this feature again until it finishes a short or long rest.
+	In addition, your familiarity with blood has become magical, giving you some degree of control over it. As a result, you can use a bonus action to magically stabilize an unconscious creature within 5 feet of you.
+	You can use this same magic when you apply traditional healing techniques. You can use a bonus action to expend one use of a healer's kit on a creature. When you do, that creature regains hit points equal 1d4 + your proficiency bonus. The creature can't regain hit points from this feature again until it finishes a short or long rest.
 
 Source:	The Griffon's Saddlebag: Book Two p. 224 (Third Party)</text>
         <proficiency>Medicine</proficiency>
+        <roll description="Heal">1d4+%8</roll>
       </feature>
       <feature optional="YES">
         <name>Transfusion (Grim Surgeon (HB))</name>
@@ -37,6 +34,12 @@ Source:	The Griffon's Saddlebag: Book Two p. 224 (Third Party)</text>
 
 Source:	The Griffon's Saddlebag: Book Two p. 224 (Third Party)</text>
       </feature>
+      <counter>
+        <name>Field Surgeon</name>
+        <value>1</value>
+        <reset>L</reset>
+        <subclass>Grim Surgeon (HB)</subclass>
+      </counter>
     </autolevel>
     <autolevel level="13">
       <feature optional="YES">
@@ -49,14 +52,17 @@ Source:	The Griffon's Saddlebag: Book Two p. 224 (Third Party)</text>
     <autolevel level="17">
       <feature optional="YES">
         <name>Bloodbound (Grim Surgeon (HB))</name>
-        <text>By 17th level, you can command the blood inside certain creatures. Immediately after you deal Sneak Attack damage to a beast or humanoid, you can force that creature to make a Constitution saving throw. The DC is equal to 8 + your proficiency bonus + your Wisdom modifier. 
-
-On a failed save, that creature is under the effect of the dominate beast or dominate person spell, respectively, for 1 minute or until you choose to end the effect (no action required). 
-
-Once you use this feature, you can't use it again until you finish a short or long rest.
+        <text>By 17th level, you can command the blood inside certain creatures. Immediately after you deal Sneak Attack damage to a beast or humanoid, you can force that creature to make a Constitution saving throw. The DC is equal to 8 + your proficiency bonus + your Wisdom modifier. On a failed save, that creature is under the effect of the dominate beast or dominate person spell, respectively, for 1 minute or until you choose to end the effect (no action required).
+	Once you use this feature, you can't use it again until you finish a short or long rest.
 
 Source:	The Griffon's Saddlebag: Book Two p. 224 (Third Party)</text>
       </feature>
+      <counter>
+        <name>Bloodbound</name>
+        <value>1</value>
+        <reset>S</reset>
+        <subclass>Grim Surgeon (HB)</subclass>
+      </counter>
     </autolevel>
   </class>
 </compendium>
