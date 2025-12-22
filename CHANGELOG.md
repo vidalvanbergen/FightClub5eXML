@@ -1,6 +1,6 @@
 ## CHANGE LOG
 
-### 2025-##-##
+### 2025-12-22
 * Added `Subclasses Update` Unearthed Arcana.
 * Added `Griffon's Saddlebag: Griffons of the Multiverse` content, shared by @Cvamped.
 * Added `Griffon's Saddlebag, Book 2` content, shared by @Cvamped.
