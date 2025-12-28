@@ -52,7 +52,7 @@
 
   <xs:simpleType name="rechargeType">
     <xs:restriction base="xs:string">
-      <xs:pattern value="(SHORT|LONG|[0-9]+/DAY|[0-9]+/TURN|D[1-6])"/> <!-- Not officially supported: TURN -->
+      <xs:pattern value="(SHORT|LONG|[0-9]+/DAY|[0-9]+/TURN|D[1-6])"/><!-- Not officially supported: TURN -->
     </xs:restriction>
   </xs:simpleType>
 
@@ -77,6 +77,20 @@
   <xs:simpleType name="propertyList">
     <xs:restriction base="xs:string">
       <xs:pattern value="(A|F|H|L|LD|R|S|T|2H|V|M)*(, ?(A|F|H|L|LD|R|S|T|2H|V|M)*)*"/>
+      <!-- 
+      Properties:
+      * Ammunition (A)
+      * Finesse (F)
+      * Heavy (H)
+      * Light (L)
+      * Loading (LD)
+      * Reach (R)
+      * Special (S)
+      * Thrown (T)
+      * Two-Handed (2H)
+      * Versatile (V)
+      * Martial (M)
+      -->
     </xs:restriction>
   </xs:simpleType>
 
@@ -92,7 +106,7 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:simpleType name="skillList"> <!-- Unused since Fight Club generally uses abilityAndSkillList -->
+  <xs:simpleType name="skillList"><!-- Unused since Fight Club generally uses abilityAndSkillList -->
     <xs:restriction base="xs:string">
       <xs:pattern value="([Aa]crobatics|[Aa]thletics|[Aa]nimal [Hh]andling|[Aa]rcana|[Dd]eception|[Hh]istory|[Ii]nsight|[Ii]ntimidation|[Ii]nvestigation|[Mm]edicine|[Nn]ature|[Pp]erception|[Pp]erformance|[Pp]ersuasion|[Rr]eligion|[Ss]leight [Oo]f [Hh]and|[Ss]tealth|[Ss]urvival)*(, ?([Aa]crobatics|[Aa]thletics|[Aa]nimal [Hh]andling|[Aa]rcana|[Dd]eception|[Hh]istory|[Ii]nsight|[Ii]ntimidation|[Ii]nvestigation|[Mm]edicine|[Nn]ature|[Pp]erception|[Pp]erformance|[Pp]ersuasion|[Rr]eligion|[Ss]leight [Oo]f [Hh]and|[Ss]tealth|[Ss]urvival)*)*"/>
     </xs:restriction>
@@ -267,9 +281,9 @@
       <xs:element type="xs:string" name="special" minOccurs="0"/>
       <xs:element type="attackType" name="attack" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="roll" name="roll" maxOccurs="unbounded" minOccurs="0"/>
-      <xs:element type="modifierType" name="modifier"/><!-- Not supported by FightClub -->
+      <xs:element type="modifierType" name="modifier"/><!-- Not supported by Fight Club -->
     </xs:choice>
-    <xs:attribute name="category" type="xs:string" use="optional"/> <!-- Not officiall supported -->
+    <xs:attribute name="category" type="xs:string" use="optional"/><!-- Not supported by Fight Club -->
   </xs:complexType>
 
   <xs:complexType name="slotsType">
@@ -287,9 +301,9 @@
   <xs:complexType name="monsterType">
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="xs:string" name="name"/>
-      <xs:element type="xs:string" name="sortname"/> <!-- Unofficial -->
-      <xs:element type="xs:string" name="ancestry"/> <!-- Unofficial -->
-      <xs:element type="boolean" name="npc"/> <!-- Unofficial -->
+      <xs:element type="xs:string" name="sortname"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="ancestry"/><!-- Not supported by Fight Club -->
+      <xs:element type="boolean" name="npc"/><!-- Not supported by Fight Club -->
       <xs:element type="sizeEnum" name="size"/>
       <xs:element type="xs:string" name="type"/>
       <xs:element type="xs:string" name="alignment"/>
@@ -341,8 +355,8 @@
       <xs:element type="xs:string" name="classes"/>
       <xs:element type="xs:string" name="source" minOccurs="0"/>
       <xs:element type="xs:string" name="text" maxOccurs="unbounded" minOccurs="0"/>
-      <xs:element type="xs:string" name="special" minOccurs="0"/><!-- Not supported by FightClub -->
-      <xs:element type="modifierType" name="modifier" minOccurs="0"/><!-- Not supported by FightClub -->
+      <xs:element type="xs:string" name="special" minOccurs="0"/><!-- Not supported by Fight Club -->
+      <xs:element type="modifierType" name="modifier" minOccurs="0"/><!-- Not supported by Fight Club -->
       <xs:element type="roll" name="roll" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
   </xs:complexType>
@@ -354,7 +368,7 @@
   <xs:complexType name="backgroundType">
     <xs:choice maxOccurs="unbounded">
       <xs:element type="xs:string" name="name"/>
-      <xs:element type="xs:string" name="ancestry"/> <!-- Not officially supported -->
+      <xs:element type="xs:string" name="ancestry"/><!-- Not supported by Fight Club -->
       <xs:element type="abilityAndSkillList" name="proficiency"/>
       <xs:element type="modifierType" name="modifier"/>
       <xs:element type="traitType" name="trait" maxOccurs="unbounded" minOccurs="0"/>
@@ -387,7 +401,7 @@
       <xs:element type="xs:string" name="special" minOccurs="0"/>
       <xs:element type="modifierType" name="modifier"/>
       <xs:element type="xs:string" name="proficiency"/>
-      <xs:element type="roll" name="roll" maxOccurs="unbounded" minOccurs="0"/><!-- Not supported by FightClub -->
+      <xs:element type="roll" name="roll" maxOccurs="unbounded" minOccurs="0"/><!-- Not supported by Fight Club -->
     </xs:choice>
     <xs:attribute type="boolean" name="optional" use="optional"/>
   </xs:complexType>
@@ -395,7 +409,7 @@
   <xs:complexType name="counterType">
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="xs:string" name="name"/>
-      <xs:element type="xs:string" name="subclass"/><!-- Not supported by FightClub -->
+      <xs:element type="xs:string" name="subclass"/><!-- Not supported by Fight Club -->
       <xs:element type="xs:integer" name="value"/>
       <xs:element type="resetEnum" name="reset"/>
     </xs:choice>
@@ -423,7 +437,7 @@
       <xs:element type="xs:string" name="weapons"/>
       <xs:element type="xs:string" name="tools"/>
       <xs:element type="integer" name="numSkills"/>
-      <xs:element type="traitType" name="trait"/><!-- Not supported by FightClub -->
+      <xs:element type="traitType" name="trait"/><!-- Not supported by Fight Club -->
       <xs:element type="autolevelType" name="autolevel"/>
     </xs:choice>
   </xs:complexType>
@@ -461,17 +475,21 @@
   <xs:complexType name="raceType">
     <xs:choice maxOccurs="unbounded">
       <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="displayname"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="ancestry"/><!-- Not supported by Fight Club -->
       <xs:element type="sizeEnum" name="size"/>
       <xs:element type="xs:integer" name="speed"/>
       <xs:element type="abilityAndSkillList" name="proficiency"/>
-      <xs:element type="xs:string" name="armor"/><!-- Not supported by FightClub -->
-      <xs:element type="xs:string" name="weapons"/><!-- Not supported by FightClub -->
-      <xs:element type="xs:string" name="tools"/><!-- Not supported by FightClub -->
+      <xs:element type="xs:string" name="armor"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="weapons"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="tools"/><!-- Not supported by Fight Club -->
       <xs:element type="abilityEnum" name="spellAbility"/>
-      <xs:element type="xs:string" name="spells"/>
       <xs:element type="abilityBonusList" name="ability"/>
-      <xs:element type="xs:string" name="resist"/><!-- Not supported by FightClub -->
-      <xs:element type="xs:string" name="immunity"/><!-- Not supported by FightClub -->
+      <xs:element type="xs:string" name="spells"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="vulnerable"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="resist"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="immune"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="conditionImmune"/><!-- Not supported by Fight Club -->
       <xs:element type="modifierType" name="modifier" minOccurs="0"/>
       <xs:element type="traitType" name="trait" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
