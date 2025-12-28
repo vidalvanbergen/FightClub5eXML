@@ -1,8 +1,8 @@
-# FightClub5e XML
+# Fight Club 5e XML
 
 This page is dedicated to helping you make your own XML files to be imported in the FightClub5e app. This is the tutorial found in the app but modified a bit, plus advice on how to add your own sources or homebrew to the repository.
 
-- [FightClub5e XML](#fightclub5e-xml)
+- [Fight Club 5e XML](#fight-club-5e-xml)
   - [Elements and Tags](#elements-and-tags)
   - [Terminology](#terminology)
   - [Creating an XML file](#creating-an-xml-file)
@@ -20,11 +20,15 @@ This page is dedicated to helping you make your own XML files to be imported in 
   - [Manual Validation](#manual-validation)
   - [Build Your Own Compendium](#build-your-own-compendium)
     - [Create a collection file](#create-a-collection-file)
+    - [Method 1: Using `<doc href="..."/>`](#method-1-using-doc-href)
+    - [Method 2: Using XInclude `<xi:include>`](#method-2-using-xinclude-xiinclude)
+    - [Utility: Generating Partial Collection Files Automatically](#utility-generating-partial-collection-files-automatically)
+    - [Summary](#summary)
     - [Execute the merge](#execute-the-merge)
 
 ## [Elements and Tags](#fightclub5e-xml)
 
-The basic unit of an XMl document is an element. It consists of a start tag, content, and an end tag. The start tag is represented using ```<abc>```, while the end tag is represented using ```</abc>```. The "abc" is the element name that is between '&lt;' and '&gt;'. The description of that element is written between the start and end tags.
+The basic unit of an XML document is an element. It consists of a start tag, content, and an end tag. The start tag is represented using ```<abc>```, while the end tag is represented using ```</abc>```. The "abc" is the element name that is between '&lt;' and '&gt;'. The description of that element is written between the start and end tags.
 
 For example, ```<name>Wizard</name>```, is an element named, "name" and is set to "Wizard". If you're not using an element, you can either delete it or type it in this manner, '```<spells/>```'. It's usually used when you paste a template of something so you copy an element that you may or may not use in this way so that if you wish to use it, you simply delete the '/', type the content inside, and end it with the appropriate closing tag.
 
@@ -50,12 +54,12 @@ Making your own file is an easy but time-consuming job. But you've come to the r
 
 First off you'll need a Text Editor. You can definitely write everything using the default text editor on your machine, but there are applications that make the process much easier. I recommend using [Visual Studio Code](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/) since they are easy to use and have a lot of great features. Now that you've downloaded a text editor, let's begin!
 
-The file must begin with the following line: ```<?xml version="1.0" encoding="UTF-8"?>```. The first element needed is, "compendium". The element must contain an attribute named, "version" with its value set to "5". The content for the compendium element will be your lists of spells, items, creatures, races, classes, backgrounds, and/or feats.
+The file must begin with the following line: ```<?xml version="1.0" encoding="UTF-8"?>```. The first required element is `<compendium>`. The element must contain an attribute named, "version" with its value set to "5". You can add an optional "auto_indent" attribute with the value `YES` or `NO`, if set to YES the app will try to indent your text for you, if set to NO it will use the text as written. The content for the compendium element will be your lists of spells, items, creatures, races, classes, backgrounds, and/or feats.
 
 This is what your file should currently look like:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<compendium version="5">
+<compendium version="5" auto_indent="NO">
   your content
 </compendium>
 ```
@@ -106,7 +110,7 @@ Spell example:
   <text>At Higher Levels:</text>
   <text>When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.</text>
   <text/>
-  <text>Source:	Player's Handbook p. 257</text>
+  <text>Source:	Player's Handbook (2014) p. 257</text>
   <roll>1d4+1</roll>
   <roll>(1d4+1)+(1d4+1)+(1d4+1)</roll>
 </spell>
@@ -219,7 +223,7 @@ Examples:
   <text/>
   <text>If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet.</text>
   <text/>
-  <text>Source:	Player's Handbook p. 145</text>
+  <text>Source:	Player's Handbook (2014) p. 145</text>
 </item>
 
 <item>
@@ -235,7 +239,7 @@ Examples:
   <text>Versatile: This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee Attack.</text>
   <text/>
   <text>Proficiency: martial, longsword</text>
-  <text>Source:	Player's Handbook p. 149</text>
+  <text>Source:	Player's Handbook (2014) p. 149</text>
 </item>
 
 <item>
@@ -248,6 +252,8 @@ Examples:
   <dmg1>1d8</dmg1>
   <dmgType>P</dmgType>
   <range>150/600</range>
+  <text>Ammo: arrow</text>
+  <text/>
   <text>Ammunition: You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</text>
   <text/>
   <text>If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see "Improvised Weapons").</text>
@@ -258,8 +264,8 @@ Examples:
   <text/>
   <text>Heavy: Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</text>
   <text/>
-  <text>Proficiency: martial, longbow
-  <text>Source:	Player's Handbook p. 149</text>
+  <text>Proficiency: martial, longbow</text>
+  <text>Source:	Player's Handbook (2014) p. 149</text>
 </item>
 ```
 
@@ -339,7 +345,7 @@ Monster example:
   <senses>blindsight 60 ft., darkvision 120 ft.</senses>
   <trait>
     <name>Legendary Resistance (3/Day)</name>
-    <recharge>3/Day</recharge>
+    <recharge>3/DAY</recharge>
     <text>If the dragon fails a saving throw, it can choose to succeed instead.</text>
   </trait>
   <action>
@@ -373,7 +379,7 @@ Monster example:
   </action>
   <legendary>
     <name>Legendary Actions (3/Turn)</name>
-    <recharge>3/Turn</recharge>
+    <recharge>3/TURN</recharge>
     <text>The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.</text>
   </legendary>
   <legendary>
@@ -472,7 +478,7 @@ Race example:
     <text/>
     <text>Like other elves, sea elves can live to be over 750 years old.</text>
     <text/>
-    <text>Source:	Player's Handbook p. 23,</text>
+    <text>Source:	Player's Handbook (2014) p. 23,</text>
     <text>		Mordenkainen's Tome of Foes p. 62,</text>
     <text>		Mordenkainen Presents: Monsters of the Multiverse p. 30</text>
   </trait>
@@ -581,7 +587,6 @@ Class example:
   <wealth>5d4x10</wealth>
   <spellAbility>Wisdom</spellAbility>
   <slotsReset>L</slotsReset>
-  <subclass>Ranger Archetype</subclass>
 
   <autolevel level="2"><slots>0, 2</slots></autolevel>
   <autolevel level="3"><slots>0, 3</slots></autolevel>
@@ -624,7 +629,7 @@ Class example:
       <text/>
       <text>Alternatively, you may start with 5d4 × 10 gp and choose your own equipment.</text>
       <text/>
-      <text>Source:	Player's Handbook p. 89</text>
+      <text>Source:	Player's Handbook (2014) p. 89</text>
     </feature>
     <feature optional="YES">
       <name>Multiclass Ranger</name>
@@ -644,7 +649,7 @@ Class example:
       <text>	• Tools: none</text>
       <text>	• Skills: Choose 1 from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth and Survival.</text>
       <text/>
-      <text>Source:	Player's Handbook p. 89</text>
+      <text>Source:	Player's Handbook (2014) p. 89</text>
     </feature>
   </autolevel>
 
@@ -661,7 +666,7 @@ Class example:
       <text/>
       <text>You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</text>
       <text/>
-      <text>Source:	Player's Handbook p. 91</text>
+      <text>Source:	Player's Handbook (2014) p. 91</text>
     </feature>
   </autolevel>
 
@@ -670,11 +675,11 @@ Class example:
   <autolevel level="4" scoreImprovement="YES">
     <feature>
       <name>Ability Score Improvement</name>
-      <text>When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
+      <text>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</text>
       <text/>
       <text>If your DM allows the use of feats, you may instead take a feat.</text>
       <text/>
-      <text>Source:	Player's Handbook p. 89</text>
+      <text>Source:	Player's Handbook (2014) p. 89</text>
     </feature>
   </autolevel>
 
@@ -685,7 +690,7 @@ Class example:
       <name>Foe Slayer</name>
       <text>At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.</text>
       <text/>
-      <text>Source:	Player's Handbook p. 92</text>
+      <text>Source:	Player's Handbook (2014) p. 92</text>
     </feature>
   </autolevel>
 </class>
@@ -749,7 +754,7 @@ Background example:
     <text>	• Languages: Two of your choice</text>
     <text>	• Equipment: A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a belt pouch containing 15 gp</text>
     <text/>
-    <text>Source:	Player's Handbook p. 127</text>
+    <text>Source:	Player's Handbook (2014) p. 127</text>
   </trait>
   <trait>
     <name>Feature: Shelter of the Faithful</name>
@@ -826,8 +831,8 @@ Feat example:
 	• You have advantage on any Strength (Athletics) or Dexterity (Acrobatics) check you make to escape from being grappled.
 
 Source:	Xanathar's Guide to Everything p. 75</text>
-  <modifier category="ability score">Dexterity +1</modifier>
-  <modifier category="bonus">Speed +5</modifier>
+  <modifier category="ability score">dexterity +1</modifier>
+  <modifier category="bonus">speed +5</modifier>
 </feat>
 ```
 
@@ -835,7 +840,7 @@ Source:	Xanathar's Guide to Everything p. 75</text>
 
 ## [Adding a Source](#fightclub5e-xml)
 
-New material is added to D&D 5e quite frequently, especially through Unearthed Arcana which is typically used for beta testing. Keeping each source in its own file makes it easier to add new content and select which sources you want to include in your Compendium.
+New material is added to D&D quite frequently, especially through Unearthed Arcana which is typically used for beta testing, people creating their own homebrew, and third party indie publishers. Keeping each source in its own file makes it easier to add new content and select which sources you want to include in your Compendium.
 
 Each source is like its own Compendium, and could potentially be imported on its own, with two exceptions (classes and spells) which are explained below. The structure of the XML file should be:
 
@@ -865,7 +870,7 @@ Example:
   - class-classname-tce.xml
   - feats-tce.xml
   - items-tce.xml
-  - optionalfeatures-tce.xml (Used for special features such as fighting maneuvers, warlock invocations, monk techniques, etc. Usually as level 0 spells.)
+  - optionalfeatures-tce.xml (Used for special features such as fighting maneuvers, warlock invocations, monk techniques, etc. Usually set up as level 0 spells.)
   - races-tce.xml
   - spells-phb+tce.xml (Spell lists for subclasses that are merged with PHB content.)
   - spells-tce.xml
@@ -930,20 +935,86 @@ xmllint --noout --schema Utilities/compendium.xsd Sources/CoreRulebooks.xml
 
 ### [Create a collection file](#fightclub5e-xml)
 
-A collection file is an XML file that lists which sources you would like to merge into your custom Compendium. It must follow this format (assuming you create your file within the `Collections` directory):
+A collection file is an XML file that lists which sources you want to merge into your custom Compendium. It can include source files in one of two ways:
+
+---
+
+### Method 1: Using `<doc href="..."/>`
+
+This method is simple and common. Your collection file lists one or more `<doc>` elements, each referencing an XML file containing the source content. Each referenced XML file must have a `<compendium>` root element.
+
+Example (assuming your file is inside the `Collections` directory):
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <collection>
-  <doc href="../Sources/WizardsOfTheCoast/01_PlayersHandbook.xml" />
-  <doc href="../Sources/WizardsOfTheCoast/02_DungeonMastersGuide.xml" />
-  <doc href="../Sources/WizardsOfTheCoast/03_MonsterManual.xml" />
+  <doc href="../Sources/PHB2014/WizardsOfTheCoast/01_PlayersHandbook.xml" />
+  <doc href="../Sources/PHB2014/WizardsOfTheCoast/02_DungeonMastersGuide.xml" />
+  <doc href="../Sources/PHB2014/WizardsOfTheCoast/03_MonsterManual.xml" />
 </collection>
 ```
 
-You can have one or more `<doc>` tags. Each doc must reference an XML file with a `<compendium>` root element.
+- You can include one or more `<doc>` entries.
+- The `href` attribute points to the relative path of the source XML file.
+- Each source XML file should contain a `<compendium>` root element.
+- The collection file name determines the name of the final merged Compendium.
 
-The name of the collection file will be the name of the final Compendium.
+---
+
+### Method 2: Using XInclude `<xi:include>`
+
+Alternatively, you can build your collection using the XML XInclude standard. This method lets you include external XML files directly into your collection file by reference and selectively include specific XML nodes using XPointer expressions.
+
+Typically, the `<xi:include>` elements point to **partial collection XML files** located inside source folders (e.g. `partial-collection-foldername.xml`). These partial collection files list multiple source XML files (like `source-*.xml`) using `<doc>` elements nested inside `<collection>`. The partial collection files themselves can be automatically generated with the utility explained in the next section.
+
+Example:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../Sources/PHB2014/WizardsOfTheCoast/collection-wizardsofthecoast.xml" xpointer="xpointer(/collection/doc)" />
+  <xi:include href="../Sources/PHB2014/PartneredContent/collection-partneredcontent.xml" xpointer="xpointer(/collection/doc)" />
+  <xi:include href="../Sources/PHB2014/Homebrew/collection-homebrew.xml" xpointer="xpointer(/collection/doc)" />
+</collection>
+```
+
+* The `xmlns:xi="http://www.w3.org/2001/XInclude"` namespace declaration is required.
+* Each `<xi:include>` tag includes an external XML partial collection file.
+* The xpointer attribute typically uses `xpointer="xpointer(/collection/doc)"` since partial collection files contain `<doc>` elements inside a `<collection>`.
+* The partial collection files list individual source-*.xml files with `<doc href="..."/>`.
+* Each source-*.xml file contains a `<source>` root with its own `<collection>` of `<doc>` elements.
+* This nested structure allows modular inclusion and organization of sources.
+* Adjust the xpointer if your included XML files have a different internal structure.
+
+---
+
+### Utility: Generating Partial Collection Files Automatically
+
+To help automate the creation of partial collection files, you can use a utility script located in the Utilities folder. The script generates the partial files by taking the path to a folder containing your source files:
+
+```bash
+/Utilities/source-xml-collector.sh /path/to/source/
+```
+
+- This script scans a directory you specify for all `source-*.xml` files which contains a `<collection>` inside the `<source>` root element, containing one or more `<doc>` elements.
+- It generates a partial `collection.xml` file **inside that same directory**.
+- The generated collection file lists each found source file as an `<xi:include>` entry with appropriate attributes and correct `xpointer`.
+- This helps quickly assemble partial collections without manually writing the XML.
+
+---
+
+### Summary
+
+- Use `<doc href="..."/>` for a simple, straightforward listing of source XML files.
+- Use `<xi:include>` when you want to leverage XML XInclude's ability to include and merge partial collections into complete XML documents.
+- Remember to use the correct `xpointer` expression depending on the XML file's internal structure:
+  - `/collection/doc` for root-level collections
+  - `/source/collection/doc` for partial collections nested inside source files
+- Both methods result in a collection file that merges multiple source XMLs into one Compendium.
+- The collection file's name will be used as the name of the resulting merged Compendium.
+- Use `/Utilities/source-xml-collector.sh` to auto-generate partial collection files inside any directory containing your source XMLs.
+
+---
 
 ### [Execute the merge](#fightclub5e-xml)
 

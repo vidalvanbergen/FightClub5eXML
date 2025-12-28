@@ -1,6 +1,12 @@
 # Fight Club 5e XML
 
-Creating XML files for all official D&D sources and unofficial homebrew compatible with Fight Club 5e and Game Master 5e apps for macOS, iOS, and Android.
+FightClub5eXML is a collection of XML source files for Dungeons & Dragons 5 and 5.5th Edition content that can be compiled into one a compendium — an importable XML file for use in apps such as Fight Club 5e, Game Master 5e, and Character Craft 5.5e.
+
+| Stable | Nightly | Repository |
+| :----: | :-----: | :--------: |
+|[![GitHub stable release version](https://img.shields.io/github/v/release/vidalvanbergen/FightClub5eXML.svg?label=Stable&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest) | [![GitHub pre-release version](https://img.shields.io/github/v/release/vidalvanbergen/FightClub5eXML?include_prereleases&label=Pre-release&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) | |
+| [![GitHub stable release date](https://img.shields.io/github/release-date/vidalvanbergen/FightClub5eXML.svg?label=Released&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest) | [![GitHub pre-release date](https://img.shields.io/github/release-date-pre/vidalvanbergen/FightClub5eXML.svg?label=Released&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) | [![Github last commit date](https://img.shields.io/github/last-commit/vidalvanbergen/FightClub5eXML.svg?label=Updated&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/commits) |
+| [![Github stable release downloads](https://img.shields.io/github/downloads/vidalvanbergen/FightClub5eXML/latest/total.svg?label=Downloads&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest) | [![Github pre-release downloads](https://img.shields.io/github/downloads-pre/vidalvanbergen/FightClub5eXML/latest/total.svg?label=Downloads&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) | [![Total downloads](https://img.shields.io/github/downloads/vidalvanbergen/FightClub5eXML/total.svg?label=Downloads&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) |
 
 ## How-to Use This Repository
 
@@ -41,7 +47,7 @@ Open a command-line terminal (such as PowerShell on Windows or Terminal on macOS
 Next, execute the `xsltproc` program to compile a collection file into a compendium file. For example, if you wanted to compile the `WotC_only.xml` collection, you would execute the following command:
 
 ```bash
-xsltproc -o Compendiums/WotC_only.xml Utilities/merge.xslt Collections/WotC_only.xml
+xsltproc --xinclude -o Compendiums/WotC_only.xml Utilities/merge.xslt Collections/WotC_only.xml
 ```
 
 After that command has completed, you should see a file called `WotC_only.xml` in the newly created `Compendiums` folder. You can then import it into Fight Club 5e.
@@ -50,11 +56,10 @@ After that command has completed, you should see a file called `WotC_only.xml` i
 
 The build-collection files are provided for your convenience to compile all the collections within your Collections directory into compendiums.
 
-```
+```bash
 Usage: 
 
-collections.sh [-2024] [-h/-?] [collection_names...]
-./build-
+./build-collections.sh [-2024] [-h/-?] [collection_names...]
   -2024   Remove '[2024]' from the generated compendiums.
   collection_names  Optional list of specific collections to compile.
   -h/-?   Display this help message.
@@ -75,7 +80,7 @@ See the [Sources README](SOURCES.md) to learn how to add your own homebrew conte
 
 ## Contributing
 
-If you'd like to contribute, feel free to fork the repository and submit pull requests with your changes. We are no longer accepting manual changes to the XML source files because these files are now generated from an external source.
+If you'd like to contribute, feel free to fork the repository and submit pull requests with your additions and changes.
 
 ## Additional Contributors
 
@@ -101,3 +106,5 @@ If you'd like to contribute, feel free to fork the repository and submit pull re
 `@recco` for adding various homebrew sources to the compendium.
 
 `@nikjft` for converting legacy content to the 2024 format and adding to the utilities.
+
+`@Iggwilv` for adding several adventures.

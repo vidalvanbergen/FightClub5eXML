@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<compendium version="5" auto_indent="NO">
+  <!-- Armor of Ease -->
+  <itemtemplate>
+    <name>%name% of Ease</name>
+    <detail>uncommon</detail>
+    <type>MA</type>
+    <text>While the magic of this armor doesn't provide any additional protection, armor of ease can be slept in with no detrimental effects.</text>
+    <source>Xanathar's Lost Notes to Everything Else p. 61 (Homebrew)</source>
+  </itemtemplate>
+
+  <!-- Chaos Armor -->
+  <itemtemplate>
+    <name>Chaos %name%</name>
+    <detail>legendary (requires attunement)</detail>
+    <type>LA,MA,HA</type>
+    <text>This armor swirls with a multiverse of intoxicating colors. While wearing it, any critical hit against you awakens the armor, you roll a d20 to create a random effect. Each time you roll, the new effect replaces any previous effect. Unless otherwise stated, the armor returns to its normal state when you finish a short or long rest.
+
+Chaos Armor Effects:
+d20 | Effect
+1 | Roll on this table at the start of each of your turns for the next minute ignoring this result on subsequent rolls.
+2 | You have vulnerability to all damage, including damage from the activating attack, until the start of your next turn.
+3 | You gain resistance to magical damage, and vulnerability to bludgeoning, piercing, and slashing damage for the next minute.
+4 | For the next minute, you regain 5 hit points at the start of each of your turns.
+5 | If you die from this attack, you immediately come back to life as if by the reincarnate spell.
+6 | For the next minute, you can teleport up to 20 feet to a point you can see as a bonus action on each of your turns.
+7 | Creatures have advantage on attack rolls against you for the next minute.
+8 | You gain a +3 bonus to AC while wearing this armor.
+9 | You have a -2 penalty to AC while wearing this armor.
+10 | You gain a +1 bonus to AC while wearing this armor.
+11 | You have a -1 penalty to AC while wearing this armor.
+12 | You gain a +2 bonus to AC while wearing this armor.
+13 | You have a -3 penalty to AC while wearing this armor.
+14 | Creatures have disadvantage on attack rolls against you for the next minute.
+15 | The armor casts mirror image on you.
+16 | The armor sprouts wings and casts fly on you, requiring no concentration. When the spell ends, the wings disappear.
+17 | You gain resistance to bludgeoning, piercing, and slashing damage, and vulnerability to magical damage for the next minute.
+18 | You gain immunity to all damage, including damage from the activating attack, until the end of your next turn.
+19 | A spectral aura coats you for the next minute, granting you a +1 bonus to AC and immunity to magic missile.
+20 | Roll twice on this table, gaining both effects.</text>
+    <source>Xanathar's Lost Notes to Everything Else p. 63 (Homebrew)</source>
+    <roll description="Chaos Armor Effect">1d20</roll>
+  </itemtemplate>
+
+  <!-- Chaos Weapon -->
+  <itemtemplate>
+    <name>Chaos %name%</name>
+    <detail>legendary</detail>
+    <type>M,R</type>
+    <text>When you roll a 1 or a 20 on a d20, roll another d20 to create a random effect. Each time you roll, the new effect replaces any previous effect. Unless otherwise stated, the weapon returns to its normal state when you finish a short or long rest.
+
+Chaos Weapon Effects:
+d20 | Effect
+1 | Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls.
+2 | A spectral aura coats your weapon. Until the end of your next turn, whenever you hit with this weapon, it casts magic missile as a 1st-level spell.
+3 | Until the end of your next turn, you have advantage on attack rolls with this weapon.
+4 | You and all creatures within 30 feet of you gain vulnerability to slashing damage for the next minute.
+5 | Your attacks with this weapon deal an additional 1d8 radiant damage.
+6 | Your weapon casts entangle on the next creature you hit with it before the end of your next turn.
+7 | Instead of rolling, treat the result of this weapon's damage dice as 1 until the end of your next turn.
+8 | You gain a +3 bonus to attack and damage rolls made with this weapon.
+9 | You gain a -2 penalty to attack and damage rolls made with this weapon.
+10 | You gain a +1 bonus to attack and damage rolls made with this weapon.
+11 | You gain a -1 penalty to attack and damage rolls made with this weapon.
+12 | You gain a +2 bonus to attack and damage rolls made with this weapon.
+13 | You gain a -3 penalty to attack and damage rolls made with this weapon.
+14 | Instead of rolling, treat the result of this weapon's damage dice as the maximum result until the end of your next turn.
+15 | You and all creatures within 30 feet of you gain vulnerability to piercing damage for the next minute.
+16 | Your attacks with this weapon deal an additional 1d8 necrotic damage.
+17 | You and all creatures within 30 feet of you gain vulnerability to bludgeoning damage for the next minute.
+18 | You are surrounded by a faint, ethereal music for the next minute.
+19 | A glorious blaze flashes across your weapon, then vanishes. Immediately after, your weapon casts fireball as a 3rd-level spell, centered on yourself.
+20 | Roll twice on this table, gaining both effects.</text>
+    <source>Xanathar's Lost Notes to Everything Else p. 63 (Homebrew)</source>
+    <roll description="Chaos Weapon Effect">1d20</roll>
+    <roll description="Radiant Damage">1d8</roll>
+    <roll description="Necrotic Damage">1d8</roll>
+  </itemtemplate>
+
+  <!-- Healer's Crossbow -->
+  <itemtemplate>
+    <name>Healer's %name%</name>
+    <detail>very rare (requires attunement)</detail>
+    <match>Crossbow,Hand Crossbow,Heavy Crossbow,Light Crossbow,Light Repeating Crossbow</match>
+    <text>Made from the wood of yew trees charred by lighting, this heavy crossbow is studded with hearts carved of rose zircon. You gain a +1 bonus to attack and damage rolls made with the crossbow. Before shooting the crossbow you may turn a nonmagical bolt loaded in the weapon into a healing bolt as no action. If you don't use the bolt within an hour after converting it, it reverts back into a normal bolt. When struck with a healing bolt the target takes damage as normal and then heals a number of hit points equal to 4d10 + 4. You can't shoot another healing bolt from the crossbow until you complete a short or long rest.</text>
+    <source>Xanathar's Lost Notes to Everything Else p. 64 (Homebrew)</source>
+    <roll description="Heal">4d10+4</roll>
+    <modifier category="bonus">ranged attacks +1</modifier>
+    <modifier category="bonus">ranged damage +1</modifier>
+  </itemtemplate>
+</compendium>
