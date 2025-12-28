@@ -117,8 +117,7 @@ Source:	System Reference Document v5.2.1</text>
     <dmg1>1d6</dmg1>
     <dmgType>PY</dmgType>
     <range>20/60</range>
-    <text>
-Finesse: When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.
+    <text>Finesse: When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.
 
 Thrown: If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon.
 
@@ -852,7 +851,9 @@ Source:	System Reference Document v5.2.1</text>
     <dmg1>1d12</dmg1>
     <dmgType>P</dmgType>
     <range>40/120</range>
-    <text>Ammunition: You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of Ammunition: Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost.
+    <text>Ammo: firearm bullet [2024]
+
+Ammunition: You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of Ammunition: Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost.
 
 Loading: You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make.
 
@@ -861,6 +862,7 @@ Two-Handed: A Two-Handed weapon requires two hands when you attack with it.
 Slow (Mastery): If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.
 
 Ammo: firearm bullet [2024]
+
 Proficiency: martial, firearms
 Source:	System Reference Document v5.2.1</text>
   </item>
@@ -873,13 +875,16 @@ Source:	System Reference Document v5.2.1</text>
     <dmg1>1d10</dmg1>
     <dmgType>P</dmgType>
     <range>30/90</range>
-    <text>Ammunition: You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of Ammunition: Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost.
+    <text>Ammo: firearm bullet [2024]
+
+Ammunition: You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of Ammunition: Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost.
 
 Loading: You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make.
 
 Vex (Mastery): If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.
 
 Ammo: bullet, firearm [2024]
+
 Proficiency: martial, firearms
 Source:	System Reference Document v5.2.1</text>
   </item>
@@ -1525,6 +1530,17 @@ Arrows are typically stored in a Quiver (bought separately).
 Source:	System Reference Document v5.2.1</text>
   </item>
   <item>
+    <name>Arrow [2024]</name>
+    <type>A</type>
+    <weight>0.05</weight>
+    <value>0.05</value>
+    <text>Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+
+Arrows are typically stored in a Quiver (bought separately).
+
+Source:	System Reference Document v5.2.1</text>
+  </item>
+  <item>
     <name>Bolts (20) [2024]</name>
     <type>A</type>
     <weight>1.5</weight>
@@ -1536,7 +1552,18 @@ Bolts are typically stored in a Crossbow Bolt Case (bought separately).
 Source:	System Reference Document v5.2.1</text>
   </item>
   <item>
-    <name>Bullets, Firearm (10) [2024]</name>
+    <name>Bolt [2024]</name>
+    <type>A</type>
+    <weight>0.075</weight>
+    <value>0.05</value>
+    <text>Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+
+Bolts are typically stored in a Crossbow Bolt Case (bought separately).
+
+Source:	System Reference Document v5.2.1</text>
+  </item>
+  <item>
+    <name>Firearm Bullets (10) [2024]</name>
     <type>A</type>
     <weight>2</weight>
     <value>3</value>
@@ -1547,10 +1574,32 @@ Firearm Bullets are typically stored in a Pouch (bought separately).
 Source:	System Reference Document v5.2.1</text>
   </item>
   <item>
-    <name>Bullets, Sling (20) [2024]</name>
+    <name>Firearm Bullet [2024]</name>
+    <type>A</type>
+    <weight>0.2</weight>
+    <value>0.3</value>
+    <text>The ammunition of a firearm is destroyed upon use.
+
+Firearm Bullets are typically stored in a Pouch (bought separately).
+
+Source:	System Reference Document v5.2.1</text>
+  </item>
+  <item>
+    <name>Sling Bullets (20) [2024]</name>
     <type>A</type>
     <weight>1.5</weight>
     <value>0.04</value>
+    <text>Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+
+Sling Bullets are typically stored in a Pouch (bought separately).
+
+Source:	System Reference Document v5.2.1</text>
+  </item>
+  <item>
+    <name>Sling Bullet [2024]</name>
+    <type>A</type>
+    <weight>0.075</weight>
+    <value>0.002</value>
     <text>Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
 
 Sling Bullets are typically stored in a Pouch (bought separately).
@@ -1562,6 +1611,17 @@ Source:	System Reference Document v5.2.1</text>
     <type>A</type>
     <weight>1</weight>
     <value>1</value>
+    <text>Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+
+Needles are typically stored in a Pouch (bought separately).
+
+Source:	System Reference Document v5.2.1</text>
+  </item>
+  <item>
+    <name>Needle [2024]</name>
+    <type>A</type>
+    <weight>0.02</weight>
+    <value>0.02</value>
     <text>Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of Ammunition: Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
 
 Needles are typically stored in a Pouch (bought separately).
