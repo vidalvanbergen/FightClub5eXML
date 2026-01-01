@@ -1,10 +1,12 @@
-[![GitHub release](https://img.shields.io/github/v/release/vidalvanbergen/fightclub5exml)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest)
-[![Last Nightly](https://img.shields.io/github/last-commit/vidalvanbergen/FightClub5eXML?label=last%20nightly)](https://img.shields.io/github/last-commit/vidalvanbergen/fightclub5exml)
-
-
 # Fight Club 5e XML
 
-Creating XML files for all official D&D sources and unofficial homebrew compatible with Fight Club 5e and Game Master 5e apps for macOS, iOS, and Android.
+FightClub5eXML is a collection of XML source files for Dungeons & Dragons 5 and 5.5th Edition content that can be compiled into one a compendium — an importable XML file for use in apps such as Fight Club 5e, Game Master 5e, and Character Craft 5.5e.
+
+| Stable | Nightly | Repository |
+| :----: | :-----: | :--------: |
+|[![GitHub stable release version](https://img.shields.io/github/v/release/vidalvanbergen/FightClub5eXML.svg?label=Stable&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest) | [![GitHub pre-release version](https://img.shields.io/github/v/release/vidalvanbergen/FightClub5eXML?include_prereleases&label=Pre-release&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) | |
+| [![GitHub stable release date](https://img.shields.io/github/release-date/vidalvanbergen/FightClub5eXML.svg?label=Released&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest) | [![GitHub pre-release date](https://img.shields.io/github/release-date-pre/vidalvanbergen/FightClub5eXML.svg?label=Released&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) | [![Github last commit date](https://img.shields.io/github/last-commit/vidalvanbergen/FightClub5eXML.svg?label=Updated&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/commits) |
+| [![Github stable release downloads](https://img.shields.io/github/downloads/vidalvanbergen/FightClub5eXML/latest/total.svg?label=Downloads&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases/latest) | [![Github pre-release downloads](https://img.shields.io/github/downloads-pre/vidalvanbergen/FightClub5eXML/latest/total.svg?label=Downloads&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) | [![Total downloads](https://img.shields.io/github/downloads/vidalvanbergen/FightClub5eXML/total.svg?label=Downloads&cacheSeconds=600)](https://github.com/vidalvanbergen/FightClub5eXML/releases) |
 
 ## How-to Use This Repository
 
@@ -57,8 +59,7 @@ The build-collection files are provided for your convenience to compile all the 
 ```bash
 Usage: 
 
-collections.sh [-2024] [-h/-?] [collection_names...]
-./build-
+./build-collections.sh [-2024] [-h/-?] [collection_names...]
   -2024   Remove '[2024]' from the generated compendiums.
   collection_names  Optional list of specific collections to compile.
   -h/-?   Display this help message.
@@ -79,7 +80,7 @@ See the [Sources README](SOURCES.md) to learn how to add your own homebrew conte
 
 ## Contributing
 
-If you'd like to contribute, feel free to fork the repository and submit pull requests with your changes. We are no longer accepting manual changes to the XML source files because these files are now generated from an external source.
+If you'd like to contribute, feel free to fork the repository and submit pull requests with your additions and changes.
 
 ## Additional Contributors
 

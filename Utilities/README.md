@@ -25,17 +25,8 @@ This directory contains XML schemas, XSLT transformations, and scripts used to m
 
 ### Scripts
 
-- **`source-xml-collector.sh`**  
-  Bash script that recursively scans directories for `source-*.xml` files and generates a partial `collection.xml` file listing those source XML files. This helps automate the creation of collection manifests.
-
-- **`convert-legacy-content.py`**  
-  Python script that copies and converts content from the PHB2014 ruleset sources to be compatible with the PHB2024 ruleset. Useful for migrating legacy content to the latest ruleset.
-
-- **`create_collection.py`**  
-  Python script that likely creates or updates collection XML files, helping organize or generate collections based on source directories.
-
-- **`update-legacy-content.py`**  
-  Python script probably used to update or patch legacy content files to maintain compatibility or apply fixes.
+- **`generate-partial-collection.sh`**  
+  Bash script that recursively scans directories for `source-*.xml` files and generates a partial `collection.xml` file listing those source XML files. Main collection files reference these partial collections so sources can be updated in one place without duplication.
 
 ---
 
@@ -65,10 +56,10 @@ xmllint --noout --schema compendium.xsd Source/bestiary.xml
 xsltproc --xinclude merge.xslt collection/collection.xml > Compendiums/compendium.xml
 ```
 
-### Generate a collection.xml manifest from source directories
+### Generate a collection xml for source directories
 
 ```bash
-./source-xml-collector.sh Sources/phb2014 > collection/collection_phb2014.xml
+./generate-partial-collection.sh Sources/PHB2014/Homebrew/
 ```
 
 ---

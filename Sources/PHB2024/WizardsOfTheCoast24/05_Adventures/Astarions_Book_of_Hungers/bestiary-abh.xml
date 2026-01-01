@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+  <monster>
+    <name>Fiendish Icon</name>
+    <sortname>Icon, Fiendish</sortname>
+    <ancestry>Icon</ancestry>
+    <size>S</size>
+    <type>construct</type>
+    <alignment>Lawful Evil</alignment>
+    <ac>13</ac>
+    <hp>22 (5d6+5)</hp>
+    <speed>30 ft.</speed>
+    <init>+1</init>
+    <str>15</str>
+    <dex>12</dex>
+    <con>13</con>
+    <int>6</int>
+    <wis>11</wis>
+    <cha>6</cha>
+    <skill>Stealth +5</skill>
+    <passive>10</passive>
+    <languages>Understands Common and Infernal but can't speak</languages>
+    <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>fire, poison</immune>
+    <conditionImmune>charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned</conditionImmune>
+    <senses>Darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The icon has Advantage on saving throws against spells and other magical effects</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The icon makes two Slam attacks and uses Fiery Eruption.</text>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+4|1d4+2</attack>
+    </action>
+    <action>
+      <name>Fiery Eruption</name>
+      <text>Dexterity Saving Throw: DC 11, each creature in a 5-foot Emanation originating from the icon. Failure: 7 (2d6) Fire damage.</text>
+      <attack>Fire Damage||2d6</attack>
+    </action>
+    <description>Effigy Animated by Hellish Magic
+
+Fiendish icons are grotesque, sapient statues depicting fearsome fiends. These creatures gain life as a result of sinister rituals. Fiendish icons can explode with hellfire to roast their foes, and they often pretend to be ordinary statues until they leap up to ambush invaders.
+
+Roll on or choose a result from the Fiendish Icon Appearances table to inspire what a particular fiendish icon resembles.
+
+Fiendish Icon Appearances:
+1d6 | The Fiendish Icon Depicts...
+1 | A muscular, fiendish figure holding a lit candelabra.
+2 | A rotund imp licking a serrated knife.
+3 | A squat, robed figure with a forked tail poking from beneath its garments.
+4 | A cherub with sharp fangs and a hand outstretched in welcome.
+5 | Six crows perched atop each other in a roughly humanoid shape.
+6 | A horned fiend that bears an uncanny resemblance to one of the characters.
+
+Source:	Astarion's Book of Hungers</description>
+    <environment>urban</environment>
+  </monster>
+  <monster>
+    <name>Harvester Devil</name>
+    <sortname>Devil, Harvester</sortname>
+    <ancestry>Devil</ancestry>
+    <size>M</size>
+    <type>fiend (devil)</type>
+    <alignment>Lawful Evil</alignment>
+    <ac>14</ac>
+    <hp>65 (10d8+20)</hp>
+    <speed>30 ft.</speed>
+    <init>+3</init>
+    <str>12</str>
+    <dex>17</dex>
+    <con>14</con>
+    <int>14</int>
+    <wis>13</wis>
+    <cha>19</cha>
+    <save>Con +2, Wis +2</save>
+    <skill>Perception +3, Persuasion +8, Stealth +5</skill>
+    <passive>13</passive>
+    <languages>Common, Infernal; telepathy 120 ft</languages>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune>Fire, Poison; Charmed, Poisoned</immune>
+    <conditionImmune/>
+    <senses>Darkvision 120 ft. (unimpeded by magical Darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Diabolic Ward</name>
+      <text>Attack rolls against the devil have Disadvantage. If the devil makes an attack roll, this trait is suppressed until the start of its next turn.</text>
+    </trait>
+    <trait>
+      <name>Diabolical Restoration</name>
+      <text>If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The devil has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Implements: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The devil makes two attacks, using Infernal Blade or Confounding Ray in any combination.</text>
+    </action>
+    <action>
+      <name>Infernal Blade</name>
+      <text>Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage and 7 (2d6) Fire damage.</text>
+      <attack>Infernal Blade|+5|(1d6+3)+(2d6)</attack>
+      <attack>Slashing Damage|+5|1d6+3</attack>
+      <attack>Fire Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Confounding Ray</name>
+      <text>Ranged Attack Roll: +5, range 120 ft. Hit: 13 (2d12) Psychic damage. If the target is a creature, it can't make Opportunity Attacks until the start of the devil's next turn.</text>
+      <attack>Psychic Damage|+5|2d12</attack>
+    </action>
+    <action>
+      <name>Compelling Contract (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>Charisma Saving Throw: DC 14, one creature within 30 feet of the devil. Failure: The target has the Charmed condition. While it is Charmed, it has the Stunned condition, except the target can speak. If the target agrees to the devil's contract, the effect ends. Otherwise, the target repeats the save whenever it takes damage and at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</text>
+    </action>
+    <description>Devil of Guile and Temptation
+
+With a name that hints at their skill at gathering souls for the Nine Hells, harvester devils are smooth-talking creatures that resemble tieflings. Also known as falxugons among the ranks of the Nine Hells, harvester devils have short horns and expressive tails. Most harvester devils dress in flattering finery. They promise wealth or influence to corruptible mortals, often securing a deal with a contract they produce in a flash of brimstone. This contract binds the mortal signatory's soul to the Nine Hells.
+	Harvester devils' contracts are lengthy and convoluted, but these devils are quick to make deals and might leave loopholes that can save a signatory's soul.
+
+Roll on or choose a result from the Contract Loopholes table to inspire a loophole an astute reader might discover.
+
+Contract Loopholes:
+1d6 | The Contract Is Void if the Signatory...
+1 | Delivers ninety nine other souls to Mephistopheles.
+2 | Stands under the light of a full moon and a half-moon simultaneously.
+3 | Renounces the contract while in the Abyss.
+4 | Is under the protection of another fiend.
+5 | Has an identical twin or clone.
+6 | Tricks the devil into signing any other contract.
+
+Source:	Astarion's Book of Hungers</description>
+    <environment>planar</environment>
+  </monster>
+  <monster>
+    <name>Speaker Devil</name>
+    <sortname>Devil, Speaker</sortname>
+    <ancestry>Devil</ancestry>
+    <size>L</size>
+    <type>fiend (devil)</type>
+    <alignment>Lawful Evil</alignment>
+    <ac>17</ac>
+    <hp>189 (18d10+90)</hp>
+    <speed>30 ft., fly 30 ft.</speed>
+    <init>+4</init>
+    <str>21</str>
+    <dex>19</dex>
+    <con>20</con>
+    <int>22</int>
+    <wis>18</wis>
+    <cha>17</cha>
+    <save>Con +4, Int +4, Wis +4, Cha +4</save>
+    <skill>Arcana +10, History +10, Perception +8</skill>
+    <passive>18</passive>
+    <languages>Infernal; telepathy 120 ft</languages>
+    <cr>12</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune>Fire, Poison; Poisoned</immune>
+    <conditionImmune/>
+    <senses>Darkvision 120 ft. (unimpeded by magical Darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Armaments: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Diabolical Restoration</name>
+      <text>If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Nine Hells.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The devil has Advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The devil makes two Thundering Halberd attacks.</text>
+    </action>
+    <action>
+      <name>Thundering Halberd</name>
+      <text>Melee Attack Roll: +9, reach 10 ft. Hit: 16 (2d10 + 5) Slashing damage plus 14 (4d6) Thunder damage.</text>
+      <attack>Thundering Halberd|+9|(2d10+5)+(4d6)</attack>
+      <attack>Slashing Damage|+9|2d10+5</attack>
+      <attack>Thunder Damage||4d6</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The devil casts one of the following spells, requiring no Material components and using Intelligence as the spellcasting ability (spell save DC 18):
+
+	• At Will: Detect Magic, Detect Thoughts
+	• 2/Day Each: Dimension Door, Modify Memory</text>
+    </action>
+    <action>
+      <name>Utterance of Pain (Bonus Action)</name>
+      <text>Wisdom Saving Throw: DC 18, each creature in a 20-foot Emanation originating from the devil. Failure: The target has the Stunned condition until the end of the devil's next turn.</text>
+    </action>
+    <action>
+      <name>Utterance of Unmaking (Bonus Action)</name>
+      <text>Constitution Saving Throw: DC 18, each creature in a 20-foot Emanation originating from the devil. Failure: 22 (4d10) Force damage. Success: Half damage.</text>
+      <attack>Force Damage||4d10</attack>
+    </action>
+    <spells>Detect Magic, Detect Thoughts, Dimension Door, Modify Memory</spells>
+    <description>Speaker devils are hulking, four-armed devils who discover the secrets of creatures they then compel to perform wicked deeds. Despite their large tongues, speaker devils speak with clear and pleasing voices. Among the ranks of the Nine Hells, they are known as logokrons.
+	Many speaker devils are loyal to the archdevil Mephistopheles. These devils record the secrets they uncover in Mephistar, Mephistopheles's vast library in Cania. While greedy to uncover other creatures' secrets, speaker devils diligently redact any evidence of their own secrets, lest such knowledge be used against them.
+
+Source:	Astarion's Book of Hungers</description>
+    <environment>urban, planar</environment>
+  </monster>
+  <monster>
+    <name>Vampire Infernalist</name>
+    <sortname>Vampire, Infernalist</sortname>
+    <ancestry>Vampire</ancestry>
+    <size>M</size>
+    <type>undead (wizard)</type>
+    <alignment>Lawful Evil</alignment>
+    <ac>16</ac>
+    <hp>172 (23d8+69)</hp>
+    <speed>40 ft., fly 40 ft. (hover)</speed>
+    <init>13</init>
+    <str>19</str>
+    <dex>16</dex>
+    <con>17</con>
+    <int>20</int>
+    <wis>16</wis>
+    <cha>18</cha>
+    <save>Con +5, Int +5</save>
+    <skill>Arcana +10, Perception +8, Religion +10, Stealth +8</skill>
+    <passive>18</passive>
+    <languages>Common, Infernal</languages>
+    <cr>14</cr>
+    <vulnerable/>
+    <resist>Fire, Necrotic, Poison</resist>
+    <immune/>
+    <conditionImmune>Poisoned</conditionImmune>
+    <senses>Darkvision 120 ft. (unimpeded by magical Darkness)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+5</text>
+    </trait>
+    <trait>
+      <name>Treasure</name>
+      <text>Arcana: The monster's treasure hoard features magic items with the noted theme. The Dungeon Master's Guide details treasure hoards appropriate for each theme.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day, or 4/Day in Lair)</name>
+      <text>If the vampire fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Misty Escape</name>
+      <text>If the vampire drops to 0 Hit Points outside its resting place, the vampire uses Shape-Shift to become mist (no action required). If it can't use Shape-Shift, it is destroyed.
+	While it has 0 Hit Points in mist form, it can't return to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it returns to its vampire form and has the Paralyzed condition until it regains any Hit Points, and it regains 1 Hit Point after spending 1 hour there.</text>
+    </trait>
+    <trait>
+      <name>Vampire Weakness</name>
+      <text>The vampire has these weaknesses:
+
+	• Forbiddance. The vampire can't enter a residence without an invitation from an occupant.
+
+	• Running Water. The vampire takes 20 Acid damage if it ends its turn in running water.
+
+	• Stake to the Heart. If a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the Incapacitated condition in its resting place, the vampire has the Paralyzed condition until the weapon is removed.
+
+	• Sunlight. The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks.</text>
+    </trait>
+    <action>
+      <name>Multiattack (Vampire Form Only)</name>
+      <text>The vampire makes two Hellfire Claw attacks and uses Bite.</text>
+    </action>
+    <action>
+      <name>Hellfire Claw (Vampire Form Only)</name>
+      <text>Melee Attack Roll: +9, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage plus 10 (3d6) Fire damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 17) from one of two claws.</text>
+      <attack>Hellfire Claw|+9|(2d8+4)+(3d6)</attack>
+      <attack>Slashing Damage|+9|2d8+4</attack>
+      <attack>Fire Damage||3d6</attack>
+    </action>
+    <action>
+      <name>Bite (Imp or Vampire Form Only)</name>
+      <text>Constitution Saving Throw: DC 18, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 6 (1d4 + 4) Piercing damage plus 16 (3d10) Necrotic damage and the creature loses its highest-level available spell slot (if any). The target's Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a Vampire Spawn under the vampire's control.</text>
+      <attack>Bite||(1d4+4)+(3d10)</attack>
+      <attack>Piercing Damage||1d4+4</attack>
+      <attack>Necrotic Damage||3d10</attack>
+    </action>
+    <action>
+      <name>Spellcasting</name>
+      <text>The vampire casts one of the following spells, using Intelligence as the spellcasting ability (spell save DC 18):
+
+	• At Will: Detect Magic, Detect Thoughts, Dispel Magic, Fireball (level 4 version), Mage Hand, Prestidigitation
+	• 2/Day: Scrying
+	• 1/Day: Wall of Fire</text>
+    </action>
+    <action>
+      <name>Shape-Shift (Bonus Action)</name>
+      <text>If the vampire isn't in sunlight or running water, it shape-shifts into a Tiny imp (Speed 20 ft., Fly Speed 40 ft.), or a Medium cloud of mist (Speed 5 ft., Fly Speed 20 ft. [hover]), or it returns to its vampire form. Anything it is wearing transforms with it.
+	While in imp form, the vampire's game statistics, other than its size and Speed, are unchanged.
+	While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless and can enter an enemy's space and stop there. If air can pass through a space, the mist can do so, but it can't pass through liquid. It has Resistance to all damage, except the damage it takes from sunlight.</text>
+    </action>
+    <legendary>
+      <name>Legendary Actions
+Legendary Action Uses</name>
+      <text>Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the vampire can expend a use to take one of the following actions. The vampire regains all expended uses at the start of each of its turns.</text>
+    </legendary>
+    <legendary>
+      <name>Hellfire Strike</name>
+      <text>The vampire moves up to half its Speed, and it makes one Hellfire Claw attack.</text>
+    </legendary>
+    <legendary>
+      <name>Infernal Majesty</name>
+      <text>Charisma Saving Throw: DC 17, each creature in a 20-foot Emanation originating from the vampire. Failure: 9 (2d8) Psychic damage, and the target has the Frightened condition until the start of its next turn. Success: Half damage only. Failure or Success: The vampire can't take this action again until the start of its next turn.</text>
+      <attack>Psychic Damage||2d8</attack>
+    </legendary>
+    <legendary>
+      <name>Teleport</name>
+      <text>The vampire teleports up to 30 feet to an unoccupied space it can see.</text>
+    </legendary>
+    <legendary category="lair">
+      <name>Vampire Infernalist Lairs</name>
+      <text>Vampire infernalists lurk in gloomy libraries or ritual chambers, far from the sun's light.
+	The region containing an infernalist's lair is warped by its presence, creating the following effects, all of which happen at the vampire's discretion:
+
+	• Diabolic Beasts. Animals in the vampire's domain serve the vampire's will. From dusk until dawn, Medium or smaller Beasts have the Charmed condition while within 1 mile of the lair.
+
+	• Drained Essence. Grasping shadows within 1 mile of the lair sap the body and mind. Creatures (excluding the vampire and its allies) that finish a Short or Long Rest while within 1 mile of the lair make a DC 15 Wisdom saving throw. On a failed save, a creature can't spend Hit Point Dice at the end of the rest and doesn't regain Hit Points, Hit Point Dice, or spell slots at the end of the rest.
+
+	• Tenacious Lore. Within 1 mile of the lair, flame doesn't burn written material.
+
+If the infernalist dies or moves its lair elsewhere, these effects end immediately.</text>
+    </legendary>
+    <spells>Detect Magic, Detect Thoughts, Dispel Magic, Fireball (level 4 version), Mage Hand, Prestidigitation, Scrying, Wall of Fire</spells>
+    <description>Vampire Arcanist of the Nine Hells
+
+While mortal wizards tend to hesitate before bartering their souls to devils for magical power, vampire wizards often believe their immortality will exempt them from any infernal claim to their souls. The archdevil Mephistopheles happily exploits such hubris and proves that even undead aren't immune to the laws of the Nine Hells.
+	The greatest hell-bound vampires are masters of hellfire called infernalists, who prey on mages. Vampire infernalists are usually too arrogant to work together; even a large city isn't likely to harbor more than one vampire infernalist. Vampire infernalists are dormant during the day, retreating to resting places hidden from the sun's searing rays before emerging at night to commit unsavory deeds.
+
+Source:	Astarion's Book of Hungers</description>
+    <environment>planar, underdark, urban</environment>
+  </monster>
+  <monster>
+    <name>Vampire Warden</name>
+    <sortname>Vampire, Warden</sortname>
+    <ancestry>Vampire</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>18</ac>
+    <hp>190 (21d8+96)</hp>
+    <speed>30 ft.</speed>
+    <init>6</init>
+    <str>21</str>
+    <dex>15</dex>
+    <con>18</con>
+    <int>10</int>
+    <wis>14</wis>
+    <cha>17</cha>
+    <save>Con +4, Wis +4</save>
+    <skill>Athletics +9, Perception +10</skill>
+    <passive>20</passive>
+    <languages>Common</languages>
+    <cr>10</cr>
+    <vulnerable/>
+    <resist>necrotic</resist>
+    <immune/>
+    <conditionImmune>Exhaustion, Frightened</conditionImmune>
+    <senses>Darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The vampire has Advantage on saving throws against spells and other magical effects</text>
+    </trait>
+    <trait>
+      <name>Vampire Weakness</name>
+      <text>The vampire has these weaknesses:
+
+	• Forbiddance. The vampire can't enter a residence without an invitation from an occupant.
+
+	• Running Water. The vampire takes 20 Acid damage if it ends its turn in running water.
+
+	• Stake to the Heart. If a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the Incapacitated condition, the vampire has the Paralyzed condition until the weapon is removed.
+
+	• Sunlight. The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks.</text>
+    </trait>
+    <trait>
+      <name>Immobile Restoration</name>
+      <text>If the vampire drops to 0 Hit Points while it doesn't have the Petrified condition, it turns to stone, regains 50 Hit Points, and has the Petrified condition for 1 hour.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The vampire makes two Claw attacks and uses Bite or Guardian's Command.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Attack Roll: +9, reach 5 ft. Hit: 14 (2d8 + 5) Slashing damage plus 7 (2d6) Necrotic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 16) from one of two claws.</text>
+      <attack>Claw|+9|(2d8+5)+(2d6)</attack>
+      <attack>Slashing Damage|+9|2d8+5</attack>
+      <attack>Necrotic Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Constitution Saving Throw: DC 16, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. Failure: 7 (1d4 + 5) Piercing damage plus 7 (2d6) Necrotic damage. The target's Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount.</text>
+      <attack>Bite||(1d4+5)+(2d6)</attack>
+      <attack>Piercing Damage||1d4+5</attack>
+      <attack>Necrotic Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Guardian's Command</name>
+      <text>The vampire casts Compulsion, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 15).</text>
+    </action>
+    <reaction>
+      <name>Resilient Flesh</name>
+      <text>Trigger: The vampire is hit by a melee attack roll from an attacker the vampire can see. Response: The vampire reduces the damage it takes from the attack by 11 (2d6 + 4).</text>
+      <attack>Resilient Flesh||2d6+4</attack>
+    </reaction>
+    <spells>Compulsion</spells>
+    <description>Stone-Skinned, Blood-Drinking Guardian
+
+Vampires need trusted guards for their lairs, minions, and treasures. After all, vampire familiars don't live for long and are inattentive while sleeping or simpering. Monstrous servants are often too unpredictable or simply unreliable. To keep their lairs safe, some vampires create more durable spawn to serve as watchful guardians. These vampire wardens appear to have the same pallid flesh as most vampires but, through sheer force of will, can shrug off blows that might fell others. When most vampires would be destroyed, a warden turns to stone, heals itself, and is ready for service once again.
+
+Source:	Astarion's Book of Hungers</description>
+    <environment>underdark, urban</environment>
+  </monster>
+</compendium>

@@ -1,8 +1,8 @@
-# FightClub5e XML
+# Fight Club 5e XML
 
 This page is dedicated to helping you make your own XML files to be imported in the FightClub5e app. This is the tutorial found in the app but modified a bit, plus advice on how to add your own sources or homebrew to the repository.
 
-- [FightClub5e XML](#fightclub5e-xml)
+- [Fight Club 5e XML](#fight-club-5e-xml)
   - [Elements and Tags](#elements-and-tags)
   - [Terminology](#terminology)
   - [Creating an XML file](#creating-an-xml-file)
@@ -831,8 +831,8 @@ Feat example:
 	• You have advantage on any Strength (Athletics) or Dexterity (Acrobatics) check you make to escape from being grappled.
 
 Source:	Xanathar's Guide to Everything p. 75</text>
-  <modifier category="ability score">Dexterity +1</modifier>
-  <modifier category="bonus">Speed +5</modifier>
+  <modifier category="ability score">dexterity +1</modifier>
+  <modifier category="bonus">speed +5</modifier>
 </feat>
 ```
 
@@ -840,7 +840,7 @@ Source:	Xanathar's Guide to Everything p. 75</text>
 
 ## [Adding a Source](#fightclub5e-xml)
 
-New material is added to D&D 5e quite frequently, especially through Unearthed Arcana which is typically used for beta testing. Keeping each source in its own file makes it easier to add new content and select which sources you want to include in your Compendium.
+New material is added to D&D quite frequently, especially through Unearthed Arcana which is typically used for beta testing, people creating their own homebrew, and third party indie publishers. Keeping each source in its own file makes it easier to add new content and select which sources you want to include in your Compendium.
 
 Each source is like its own Compendium, and could potentially be imported on its own, with two exceptions (classes and spells) which are explained below. The structure of the XML file should be:
 
@@ -870,7 +870,7 @@ Example:
   - class-classname-tce.xml
   - feats-tce.xml
   - items-tce.xml
-  - optionalfeatures-tce.xml (Used for special features such as fighting maneuvers, warlock invocations, monk techniques, etc. Usually as level 0 spells.)
+  - optionalfeatures-tce.xml (Used for special features such as fighting maneuvers, warlock invocations, monk techniques, etc. Usually set up as level 0 spells.)
   - races-tce.xml
   - spells-phb+tce.xml (Spell lists for subclasses that are merged with PHB content.)
   - spells-tce.xml
@@ -990,13 +990,13 @@ Example:
 
 ### Utility: Generating Partial Collection Files Automatically
 
-To help automate building partial collection files, there is a utility script located at:
+To help automate the creation of partial collection files, you can use a utility script located in the Utilities folder. The script generates the partial files by taking the path to a folder containing your source files:
 
 ```bash
-/Utilities/source-xml-collector.sh
+/Utilities/source-xml-collector.sh /path/to/source/
 ```
 
-- This script scans a directory you specify for all `source-*.xml` files which contains `<collection>` inside a `<source>`, containing `<doc>` elements.
+- This script scans a directory you specify for all `source-*.xml` files which contains a `<collection>` inside the `<source>` root element, containing one or more `<doc>` elements.
 - It generates a partial `collection.xml` file **inside that same directory**.
 - The generated collection file lists each found source file as an `<xi:include>` entry with appropriate attributes and correct `xpointer`.
 - This helps quickly assemble partial collections without manually writing the XML.
