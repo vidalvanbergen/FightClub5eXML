@@ -35,6 +35,9 @@ Starting with the official Wizards of the Coast core books and supplements, file
 - **+MercerBrew** — Includes Matt Mercer's Bloodhunter class.
 - **+Homebrew** — Includes homebrew content like Matt Mercer's Bloodhunter class and fan-made or community created unofficial content.
 - **+UnearthedArcana** - Officially released playtest material from Wizards of the Coast, used for testing and feedback before formal publication.
-- **+Legacy_2014** — Includes legacy 2014 content converted for use with the 2024 rules.
+- **+Legacy_2014_All** — Includes legacy 2014 content converted for use with the 2024 rules.
+  - **Legacy_2024_WotC** - Includes only the legacy corebooks and official supplements.
+  - **Legacy_2014_WotC_SemiOfficial** - Includes the legacy corebooks, official supplements, and SemiOfficial content.
+  - **Legacy_2014_WotC_SemiOfficial_Partnered** - Includes the legacy corebooks, official supplements, SemiOfficial, and Partnered Content.
 - **\[UNTAGGED\]** - The same 2024 Content, but without the addition of the \[2024\] tags.
   - The untagged files are for stand-alone use, do not use together with 2014 content since it will override each other.

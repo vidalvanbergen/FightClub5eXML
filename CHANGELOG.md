@@ -1,5 +1,9 @@
 ## CHANGE LOG
 
+### 2026-##-##
+* Added new files to separate WotC, SemiOfficial, and Partnered legacy content.
+* Other changes and fixes.
+
 ### 2025-12-22
 * Added `Subclasses Update` Unearthed Arcana.
 * Added `Griffon's Saddlebag: Griffons of the Multiverse` content, shared by @Cvamped.
