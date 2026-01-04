@@ -2,6 +2,7 @@
 
 ### 2026-##-##
 * Added new files to separate WotC, SemiOfficial, and Partnered legacy content.
+* Added (Third Party) tags to Partnered Official content.
 * Other changes and fixes.
 
 ### 2025-12-22
