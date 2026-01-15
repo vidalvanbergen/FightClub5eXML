@@ -1,53 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
-    <name>Lost Ones</name>
-    <size>G</size>
-    <type>monstrosity</type>
-    <alignment>Chaotic Evil</alignment>
-    <ac>10</ac>
-    <hp>1000</hp>
-    <speed>30 ft.</speed>
-    <dex>10</dex>
-    <con>10</con>
-    <int>10</int>
-    <wis>10</wis>
-    <cha>10</cha>
-    <languages/>
+    <name>Guardian Angel</name>
+    <sortname>Angel, Guardian</sortname>
+    <ancestry>Angel</ancestry>
+    <size>M</size>
+    <type>celestial</type>
+    <alignment>Unaligned</alignment>
+    <ac>10 (natural armor)</ac>
+    <hp>5</hp>
+    <speed>0 ft., fly 10 ft. (hover)</speed>
+    <str>10</str>
+    <dex>14</dex>
+    <con>14</con>
+    <int>13</int>
+    <wis>15</wis>
+    <cha>11</cha>
+    <passive>12</passive>
+    <languages>understands the languages you speak</languages>
     <cr/>
     <vulnerable/>
     <resist/>
-    <immune/>
-    <conditionImmune/>
-    <senses>darkvision 60 ft.</senses>
+    <immune>radiant, necrotic</immune>
+    <conditionImmune>blinded, charmed, frightened, grappled, prone, restrained</conditionImmune>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
     <trait>
-      <name>Eldritch Resilience</name>
-      <text>The swarm has advantage on saving throws against spells and magical effects.</text>
+      <name>Proficiency Bonus</name>
+      <text>Equals your bonus.</text>
     </trait>
     <trait>
-      <name>Litany's Influence</name>
-      <text>At the start of each of the swarm's turns, each character within 60 feet of it must make a DC 15 Wisdom saving throw. On a failure, the character takes psychic damage equal to the swarm's hit points divided by 20, rounded down, (e.g., 50 psychic damage at 1000 hit points) and cannot take reactions until the start of their next turn. On a success, they take half as much damage and are unaffected by the reaction restriction.</text>
-      <attack>Psychic Damage||50</attack>
+      <name>Hit Points</name>
+      <text>5 + 5 times your cleric level.</text>
     </trait>
     <trait>
-      <name>Swarm Movement</name>
-      <text>The swarm moves as a single entity, occupying a 25-foot by 25-foot space. For every 200 hit points the horde loses, each side of its area shrinks by 5 feet.</text>
+      <name>Armor Class</name>
+      <text>10 + Proficiency Bonus (natural armor)</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Being</name>
+      <text>The angel can move through other creatures as if they were difficult terrain.</text>
     </trait>
     <action>
-      <name>Multiattack</name>
-      <text>The swarm makes four Melee attacks.</text>
+      <name>Divine Blade</name>
+      <text>Melee Weapon Attack: your spell attack modifier to hit, range 10 ft., one target you can see. Hit: 1d6 + PB radiant or necrotic damage and the angel regains half as many hit points.</text>
+      <attack>Radiant or Necrotic Damage||1d6</attack>
     </action>
     <action>
-      <name>Melee</name>
-      <text>Use a single attack roll with an attack bonus equal to the swarm's hit points divided by 70, rounded down (e.g., +14 at 1000 hit points), range: 15 ft., one target. Hit: (10d6) bludgeoning damage. This damage is reduced by 1d6 for each 100 hit points the swarm has lost.</text>
-      <attack>Bludgeoning Damage||10d6</attack>
-      <attack>Damage Reduction||1d6</attack>
+      <name>Reality Warp (Bonus Action)</name>
+      <text>The angel teleports to an empty space adjacent to an allied creature within 60 feet of it.</text>
     </action>
-    <action>
-      <name>Overwhelm</name>
-      <text>If the swarm has more than half of its hit points remaining, it can use its action to attempt to overwhelm a character. The target must make a Strength (Athletics) check contested by the swarm's Strength (Athletics) check, with a bonus equal to the swarm's hit points divided by 50, rounded down (e.g., +20 at 1000 hit points). On a failure, the target is grappled (escape DC 20).</text>
-    </action>
-    <description>Source:	Steinhardt's Guide to the Eldritch Hunt p. 472 (Homebrew)</description>
+    <reaction>
+      <name>Self Sacrifice</name>
+      <text>When a creature other than the angel is hit by an attack while within 30 feet of the angel, the angel can teleport into the creature's space, taking the damage instead of the creature. To do so, the angel must be able to see both the creature and the attacker.</text>
+    </reaction>
+    <description>Source:	Steinhardt's Guide to the Eldritch Hunt p. 138 (Homebrew)</description>
     <environment/>
   </monster>
   <monster>
@@ -2133,6 +2139,83 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 347 (Homebrew)</description>
     <environment/>
   </monster>
   <monster>
+    <name>Lieutenant Captain Adelle Roux</name>
+    <sortname>Roux, Adelle</sortname>
+    <ancestry>Knight</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>Lawful Good</alignment>
+    <ac>18 (plate armor)</ac>
+    <hp>52 (8d8+16)</hp>
+    <speed>walk 30 ft.</speed>
+    <str>16</str>
+    <dex>11</dex>
+    <con>14</con>
+    <int>11</int>
+    <wis>11</wis>
+    <cha>15</cha>
+    <save>Con +4, Wis +2</save>
+    <passive>10</passive>
+    <languages>any one language (usually Common)</languages>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Brave</name>
+      <text>The knight has advantage on saving throws against being frightened.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The knight makes two melee attacks.</text>
+    </action>
+    <action>
+      <name>Greatsword</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.</text>
+      <attack>Slashing Damage|+5|2d6+3</attack>
+    </action>
+    <action>
+      <name>Heavy Crossbow</name>
+      <text>Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage.</text>
+      <attack>Piercing Damage|+2|1d10</attack>
+    </action>
+    <action>
+      <name>Leadership (Recharges after a Short or Long Rest)</name>
+      <recharge>SHORT</recharge>
+      <text>For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.</text>
+      <attack>Leadership||1d4</attack>
+    </action>
+    <reaction>
+      <name>Parry</name>
+      <text>The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.</text>
+    </reaction>
+    <description>Lieutenant Captain Adelle Roux (LG human knight) is a Luyarnhian loyalist dedicated to protecting its citizens. She is a stocky woman in her mid-thirties with tawny brown skin and a square face framed by short, ravenblack hair. Respected among the guards as a fair leader, Adelle works hard to maintain that reputation and is willing to work with the party as long as they do not threaten the city or its people. She is protective of her nephew Bram, but feels he needs to see the outside world a bit and sees the characters as an opportunity for him to get dirt under his nails for once.
+	The guard commander knows little about what is happening in the village below, but that little is enough to make her wonder and worry, especially with the increase in monster attacks coming from outside the gates. She agrees to let the party come and go, with the stipulation that Bram goes with them as a witness to their actions, and they give him a little advice about adventuring. If the party refuses to bring Bram with them, they must succeed on a DC 20 Charisma (Persuasion) check to convince Adelle to let them leave alone; she refuses to let them leave through the gates without him. This check can be made with advantage if the characters mention they are under contract by the Radiant Church. A failed check results in the characters being forced to get creative with how they leave the city. For example, they might hire smugglers with access to a secret tunnel or cross over the wall when the guards are distracted.
+
+Knight:
+Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight's alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.
+
+Source:	Monster Manual (2014) p. 347,
+		Curse of Strahd,
+		Hoard of the Dragon Queen,
+		Princes of the Apocalypse,
+		Rise of Tiamat,
+		Storm King's Thunder,
+		Tales from the Yawning Portal,
+		Tomb of Annihilation,
+		Waterdeep: Dragon Heist,
+		Ghosts of Saltmarsh,
+		Essentials Kit: Divine Contention,
+		Essentials Kit: Dragon of Icespire Peak,
+		Baldur's Gate: Descent Into Avernus,
+		Explorer's Guide to Wildemount,
+		Mythic Odysseys of Theros</description>
+    <environment/>
+  </monster>
+  <monster>
     <name>Lunar Revenant</name>
     <sortname>Revenant, Lunar</sortname>
     <ancestry>Revenant</ancestry>
@@ -3878,6 +3961,109 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 380 (Homebrew)</description>
     <environment/>
   </monster>
   <monster>
+    <name>The Veiled Hunter</name>
+    <sortname>Hunters, Veiled</sortname>
+    <ancestry>Fallen Hunters</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>aberration</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>12 (16 with barkskin)</ac>
+    <hp>91 (14d8+28)</hp>
+    <speed>30 ft.</speed>
+    <str>6</str>
+    <dex>14</dex>
+    <con>15</con>
+    <int>13</int>
+    <wis>15</wis>
+    <cha>19</cha>
+    <save>Wis +5, Cha +7</save>
+    <skill>Perception +5, Stealth +8</skill>
+    <passive>15</passive>
+    <languages>Common, Deep Speech, Sylvan</languages>
+    <cr>7</cr>
+    <vulnerable/>
+    <resist>acid, necrotic, poison</resist>
+    <immune/>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The Hunter's innate spellcasting ability is Charisma (spell save DC 15). The Hunter can innately cast the following spells, requiring no material components:
+
+	• At will: druidcraft
+	• 3/Day each: blight, dominate beast, spike growth</text>
+    </trait>
+    <trait>
+      <name>Eldritch Mask</name>
+      <text>The Hunter's mask is the source of its power. The mask has AC 22 and 25 hit points. The mask is immune to all damage except bludgeoning, fire, force, piercing, and slashing damage and it doesn't take damage from effects that target an area. While the Hunter is wearing its mask, it has advantage on saving throws against spells and other magical effects, can cast speak with animals and plants at will, and can't be deafened or magically put to sleep. If the mask is destroyed, it loses these benefits.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>If the Hunter fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Treestep</name>
+      <text>Once on its turn, the Hunter can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger. After using this trait, the hunter gains the benefits of the barkskin spell until the start of its next turn.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The Hunter makes two attacks: one with its gravetouch and one with its maggotspit.</text>
+    </action>
+    <action>
+      <name>Gravetouch</name>
+      <text>Melee Spell Attack: +7 to hit, reach 15 ft., one target. Hit: 25 (6d6 + 4) necrotic damage.</text>
+      <attack>Necrotic Damage|+7|6d6+4</attack>
+    </action>
+    <action>
+      <name>Maggotspit</name>
+      <text>Melee Spell Attack: +7 to hit, reach 10 ft., one target. Hit: 24 (8d4 + 4) poison damage and the target must succeed on a DC 15 Constitution saving throw or become poisoned for 1 minute. A poisoned creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</text>
+      <attack>Poison Damage|+7|8d4+4</attack>
+    </action>
+    <action>
+      <name>Rootprison (recharge 4-6)</name>
+      <recharge>D4</recharge>
+      <text>The Hunter chooses up to five creatures within 30 feet of a tree the Hunter can see. Each creature must make a DC 15 Dexterity saving throw. On a failure, a creature takes 18 (4d8) piercing damage and is restrained for 1 minute. Whenever a restrained creature uses its action to make an attack or cast a spell, it takes 9 (2d8) piercing damage. A creature can use its action to make a DC 15 Athletics check to break itself or another creature within its reach free, ending the effect on that creature on a success.</text>
+      <attack>Piercing Damage||4d8</attack>
+      <attack>Piercing Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Wooden Labyrinth</name>
+      <text>The Hunter chooses a creature it can see within 120 feet of it. The target must make a DC 15 Wisdom saving throw. On a failure, the creature becomes magically lost, automatically failing all Nature and Survival checks it makes for the next 24 hours and being unable to escape the woods. The creature isn't aware of this effect. On a success, the creature is immune to this effect for the next 24 hours and knows it was targeted by some sort of magic.</text>
+    </action>
+    <action>
+      <name>They Have Eyes</name>
+      <text>The Hunter transport its senses into any tree within 500 miles of it that it has seen, seeing and hearing as if it occupied the tree's space, until it ends the effect (no action required). During this time, it is blind and deaf in regard to its own senses.</text>
+    </action>
+    <reaction>
+      <name>House of Leaves (3/Day)</name>
+      <recharge>3/DAY</recharge>
+      <text>When the Hunter is hit by an attack, it turns into a pile of leaves and reappears in the branches of a tree within 60 feet of it, causing the attack to miss.</text>
+    </reaction>
+    <spells>Druidcraft, Blight, Dominate Beast, Spike Growth</spells>
+    <description>The term "Fallen Hunter" refers to those hunters who, tragically, have fallen prey to the scourge that afflicts Luyarnha. They represent the unfortunate reality of the struggles faced by those who dedicate their lives to hunting the monstrous and the vile.
+	Importantly, it's worth noting that, while these scourge-claimed hunters are numerous, they are not all simultaneously active, or even alive, within Luyarnha. If they were, the city would have crumbled long ago. The Fallen Hunters detailed in this book are specifically designed to serve as named antagonists - potential villains who can add depth and challenge to a campaign. The stronger the original hunter, the stronger the transformed form.
+	However, despite their fearsome nature, the Fallen Hunters present an interesting divergence from many of the adversaries heroes may face. They hold the hope for redemption. This concept of potential redemption is key in defining their role in the world of Luyarnha. It offers unique storytelling opportunities, and it can shape narrative arcs in a campaign in compelling ways.
+	Such redemption might take the form of a miraculous recovery driven by the heroes, restoring them to their former self, free from the scourge's insidious grasp. Alternatively, it might present itself as an opportunity for a Fallen Hunter to engage in one final act of defiance against the dark forces corrupting Luyarnha—or in the case of those who haven't completely lost their sanity, the opportunity to give them a new goal and a new hope to fight once more. In either case, these narrative paths allow for Fallen Hunters to be more than just adversaries; they can be tragic figures, symbols of resilience, and catalysts for emotionally charged moments.
+
+The Veiled Hunter:
+Once a simple woodsman and hunter who lived a quiet life in Jägerweiler Village, Brayden Lilyguard was chosen by the Obitus Scholare as one of the first to undergo their eldritch experiments. After being infused with the dead cerebro-spinal fluid of an eldritch entity (see "Part Three: The Eldritch Temple," page 443), he gained inhuman strength, speed, and the ability to tap into the natural world of the forest he loved so dearly. But as time went on, he and his fellow huntsman began to change. They began hearing dark whispers in their minds that eventually became a cacophony of terrifying screams. Their bodies morphed and changed into feral creatures.
+	Brayden fared better than his comrades in retaining most of his sanity, but couldn't stop the change into the specter-like being he had become. In the church's attempt to wipe them out with a flood of acid, he died. Years later, under the sky of a Blood Moon of Rebirth he was brought back, a mask adorning his face. he gathered the mutated "survivors" and rebuilt the village into what it is today. As the Veiled Hunter, his only passion is for the survival of his remaining people and the utter destruction of those he holds responsible.
+	More information on the Veiled Hunter can be read in the Vile Village adventure. (Page 429)
+
+Roleplaying the Veiled Hunter:
+As intelligent as he is insane, the Veiled Hunter is far more dangerous than the lesser beasts and creatures within the village. The shadowy figure feeds on the fear his presence inspires in others, and prefers to toy with his prey when possible. He is well aware that his current appearance is another weapon in his arsenal, and he uses it to full effect. It is impossible to keep a conversation going while his barking laughter interrupts his own arguments with himself on how to kill and eat them, and the whole time, his head and body twist at impossible angles with disjointed limbs.
+	The Veiled Hunter appears as a putrid mockery of his former self, with rancid flesh peeking through the rents in his cloak and peeling around the bone mask that holds his face together. Thick stitching from the forced introduction of eldritch flesh into his body has created a tableau of scars, and the rot around them became a breeding ground for maggots. Their constant wriggling gives his decomposing skin the appearance of always being in flux. His favorite tactic is to grapple an opponent, expel these maggots onto their face, and laugh at their gagging screams.
+
+Source:	Steinhardt's Guide to the Eldritch Hunt p. 380 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
     <name>The Deviled Librarian</name>
     <sortname>Librarian, The Deviled</sortname>
     <ancestry>Librarian</ancestry>
@@ -5517,83 +5703,6 @@ Source:	Steinhardt's Guide to the Eldritch Hunt p. 430 (Homebrew),
     <environment/>
   </monster>
   <monster>
-    <name>Lieutenant Captain Adelle Roux</name>
-    <sortname>Roux, Adelle</sortname>
-    <ancestry>Knight</ancestry>
-    <npc>YES</npc>
-    <size>M</size>
-    <type>humanoid (human)</type>
-    <alignment>Lawful Good</alignment>
-    <ac>18 (plate armor)</ac>
-    <hp>52 (8d8+16)</hp>
-    <speed>walk 30 ft.</speed>
-    <str>16</str>
-    <dex>11</dex>
-    <con>14</con>
-    <int>11</int>
-    <wis>11</wis>
-    <cha>15</cha>
-    <save>Con +4, Wis +2</save>
-    <passive>10</passive>
-    <languages>any one language (usually Common)</languages>
-    <cr>3</cr>
-    <vulnerable/>
-    <resist/>
-    <immune/>
-    <conditionImmune/>
-    <senses/>
-    <trait>
-      <name>Brave</name>
-      <text>The knight has advantage on saving throws against being frightened.</text>
-    </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>The knight makes two melee attacks.</text>
-    </action>
-    <action>
-      <name>Greatsword</name>
-      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.</text>
-      <attack>Slashing Damage|+5|2d6+3</attack>
-    </action>
-    <action>
-      <name>Heavy Crossbow</name>
-      <text>Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage.</text>
-      <attack>Piercing Damage|+2|1d10</attack>
-    </action>
-    <action>
-      <name>Leadership (Recharges after a Short or Long Rest)</name>
-      <recharge>SHORT</recharge>
-      <text>For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.</text>
-      <attack>Leadership||1d4</attack>
-    </action>
-    <reaction>
-      <name>Parry</name>
-      <text>The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.</text>
-    </reaction>
-    <description>Lieutenant Captain Adelle Roux (LG human knight) is a Luyarnhian loyalist dedicated to protecting its citizens. She is a stocky woman in her mid-thirties with tawny brown skin and a square face framed by short, ravenblack hair. Respected among the guards as a fair leader, Adelle works hard to maintain that reputation and is willing to work with the party as long as they do not threaten the city or its people. She is protective of her nephew Bram, but feels he needs to see the outside world a bit and sees the characters as an opportunity for him to get dirt under his nails for once.
-	The guard commander knows little about what is happening in the village below, but that little is enough to make her wonder and worry, especially with the increase in monster attacks coming from outside the gates. She agrees to let the party come and go, with the stipulation that Bram goes with them as a witness to their actions, and they give him a little advice about adventuring. If the party refuses to bring Bram with them, they must succeed on a DC 20 Charisma (Persuasion) check to convince Adelle to let them leave alone; she refuses to let them leave through the gates without him. This check can be made with advantage if the characters mention they are under contract by the Radiant Church. A failed check results in the characters being forced to get creative with how they leave the city. For example, they might hire smugglers with access to a secret tunnel or cross over the wall when the guards are distracted.
-
-Knight:
-Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight's alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.
-
-Source:	Monster Manual (2014) p. 347,
-		Curse of Strahd,
-		Hoard of the Dragon Queen,
-		Princes of the Apocalypse,
-		Rise of Tiamat,
-		Storm King's Thunder,
-		Tales from the Yawning Portal,
-		Tomb of Annihilation,
-		Waterdeep: Dragon Heist,
-		Ghosts of Saltmarsh,
-		Essentials Kit: Divine Contention,
-		Essentials Kit: Dragon of Icespire Peak,
-		Baldur's Gate: Descent Into Avernus,
-		Explorer's Guide to Wildemount,
-		Mythic Odysseys of Theros</description>
-    <environment/>
-  </monster>
-  <monster>
     <name>Bram LeGrand The Acolyte</name>
     <sortname>LeGrand, Bram</sortname>
     <ancestry>Priest</ancestry>
@@ -5650,109 +5759,6 @@ Priests bring the teachings of their gods to the common folk. They are the spiri
 
 Source:	Steinhardt's Guide to the Eldritch Hunt p. 432 (Homebrew),
 		Monster Manual (2014) p. 348</description>
-    <environment/>
-  </monster>
-  <monster>
-    <name>The Veiled Hunter</name>
-    <sortname>Hunters, Veiled</sortname>
-    <ancestry>Fallen Hunters</ancestry>
-    <npc>YES</npc>
-    <size>M</size>
-    <type>aberration</type>
-    <alignment>Chaotic Evil</alignment>
-    <ac>12 (16 with barkskin)</ac>
-    <hp>91 (14d8+28)</hp>
-    <speed>30 ft.</speed>
-    <str>6</str>
-    <dex>14</dex>
-    <con>15</con>
-    <int>13</int>
-    <wis>15</wis>
-    <cha>19</cha>
-    <save>Wis +5, Cha +7</save>
-    <skill>Perception +5, Stealth +8</skill>
-    <passive>15</passive>
-    <languages>Common, Deep Speech, Sylvan</languages>
-    <cr>7</cr>
-    <vulnerable/>
-    <resist>acid, necrotic, poison</resist>
-    <immune/>
-    <conditionImmune>poisoned</conditionImmune>
-    <senses>darkvision 120 ft.</senses>
-    <trait>
-      <name>Proficiency Bonus</name>
-      <text>+3</text>
-    </trait>
-    <trait>
-      <name>Innate Spellcasting</name>
-      <text>The Hunter's innate spellcasting ability is Charisma (spell save DC 15). The Hunter can innately cast the following spells, requiring no material components:
-
-	• At will: druidcraft
-	• 3/Day each: blight, dominate beast, spike growth</text>
-    </trait>
-    <trait>
-      <name>Eldritch Mask</name>
-      <text>The Hunter's mask is the source of its power. The mask has AC 22 and 25 hit points. The mask is immune to all damage except bludgeoning, fire, force, piercing, and slashing damage and it doesn't take damage from effects that target an area. While the Hunter is wearing its mask, it has advantage on saving throws against spells and other magical effects, can cast speak with animals and plants at will, and can't be deafened or magically put to sleep. If the mask is destroyed, it loses these benefits.</text>
-    </trait>
-    <trait>
-      <name>Legendary Resistance (1/Day)</name>
-      <recharge>1/DAY</recharge>
-      <text>If the Hunter fails a saving throw, it can choose to succeed instead.</text>
-    </trait>
-    <trait>
-      <name>Treestep</name>
-      <text>Once on its turn, the Hunter can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger. After using this trait, the hunter gains the benefits of the barkskin spell until the start of its next turn.</text>
-    </trait>
-    <action>
-      <name>Multiattack</name>
-      <text>The Hunter makes two attacks: one with its gravetouch and one with its maggotspit.</text>
-    </action>
-    <action>
-      <name>Gravetouch</name>
-      <text>Melee Spell Attack: +7 to hit, reach 15 ft., one target. Hit: 25 (6d6 + 4) necrotic damage.</text>
-      <attack>Necrotic Damage|+7|6d6+4</attack>
-    </action>
-    <action>
-      <name>Maggotspit</name>
-      <text>Melee Spell Attack: +7 to hit, reach 10 ft., one target. Hit: 24 (8d4 + 4) poison damage and the target must succeed on a DC 15 Constitution saving throw or become poisoned for 1 minute. A poisoned creature can repeat this saving throw at the end of each of its turns, ending the effect on a success.</text>
-      <attack>Poison Damage|+7|8d4+4</attack>
-    </action>
-    <action>
-      <name>Rootprison (recharge 4-6)</name>
-      <recharge>D4</recharge>
-      <text>The Hunter chooses up to five creatures within 30 feet of a tree the Hunter can see. Each creature must make a DC 15 Dexterity saving throw. On a failure, a creature takes 18 (4d8) piercing damage and is restrained for 1 minute. Whenever a restrained creature uses its action to make an attack or cast a spell, it takes 9 (2d8) piercing damage. A creature can use its action to make a DC 15 Athletics check to break itself or another creature within its reach free, ending the effect on that creature on a success.</text>
-      <attack>Piercing Damage||4d8</attack>
-      <attack>Piercing Damage||2d8</attack>
-    </action>
-    <action>
-      <name>Wooden Labyrinth</name>
-      <text>The Hunter chooses a creature it can see within 120 feet of it. The target must make a DC 15 Wisdom saving throw. On a failure, the creature becomes magically lost, automatically failing all Nature and Survival checks it makes for the next 24 hours and being unable to escape the woods. The creature isn't aware of this effect. On a success, the creature is immune to this effect for the next 24 hours and knows it was targeted by some sort of magic.</text>
-    </action>
-    <action>
-      <name>They Have Eyes</name>
-      <text>The Hunter transport its senses into any tree within 500 miles of it that it has seen, seeing and hearing as if it occupied the tree's space, until it ends the effect (no action required). During this time, it is blind and deaf in regard to its own senses.</text>
-    </action>
-    <reaction>
-      <name>House of Leaves (3/Day)</name>
-      <recharge>3/DAY</recharge>
-      <text>When the Hunter is hit by an attack, it turns into a pile of leaves and reappears in the branches of a tree within 60 feet of it, causing the attack to miss.</text>
-    </reaction>
-    <spells>Druidcraft, Blight, Dominate Beast, Spike Growth</spells>
-    <description>The term "Fallen Hunter" refers to those hunters who, tragically, have fallen prey to the scourge that afflicts Luyarnha. They represent the unfortunate reality of the struggles faced by those who dedicate their lives to hunting the monstrous and the vile.
-	Importantly, it's worth noting that, while these scourge-claimed hunters are numerous, they are not all simultaneously active, or even alive, within Luyarnha. If they were, the city would have crumbled long ago. The Fallen Hunters detailed in this book are specifically designed to serve as named antagonists - potential villains who can add depth and challenge to a campaign. The stronger the original hunter, the stronger the transformed form.
-	However, despite their fearsome nature, the Fallen Hunters present an interesting divergence from many of the adversaries heroes may face. They hold the hope for redemption. This concept of potential redemption is key in defining their role in the world of Luyarnha. It offers unique storytelling opportunities, and it can shape narrative arcs in a campaign in compelling ways.
-	Such redemption might take the form of a miraculous recovery driven by the heroes, restoring them to their former self, free from the scourge's insidious grasp. Alternatively, it might present itself as an opportunity for a Fallen Hunter to engage in one final act of defiance against the dark forces corrupting Luyarnha—or in the case of those who haven't completely lost their sanity, the opportunity to give them a new goal and a new hope to fight once more. In either case, these narrative paths allow for Fallen Hunters to be more than just adversaries; they can be tragic figures, symbols of resilience, and catalysts for emotionally charged moments.
-
-The Veiled Hunter:
-Once a simple woodsman and hunter who lived a quiet life in Jägerweiler Village, Brayden Lilyguard was chosen by the Obitus Scholare as one of the first to undergo their eldritch experiments. After being infused with the dead cerebro-spinal fluid of an eldritch entity (see "Part Three: The Eldritch Temple," page 443), he gained inhuman strength, speed, and the ability to tap into the natural world of the forest he loved so dearly. But as time went on, he and his fellow huntsman began to change. They began hearing dark whispers in their minds that eventually became a cacophony of terrifying screams. Their bodies morphed and changed into feral creatures.
-	Brayden fared better than his comrades in retaining most of his sanity, but couldn't stop the change into the specter-like being he had become. In the church's attempt to wipe them out with a flood of acid, he died. Years later, under the sky of a Blood Moon of Rebirth he was brought back, a mask adorning his face. he gathered the mutated "survivors" and rebuilt the village into what it is today. As the Veiled Hunter, his only passion is for the survival of his remaining people and the utter destruction of those he holds responsible.
-	More information on the Veiled Hunter can be read in the Vile Village adventure. (Page 429)
-
-Roleplaying the Veiled Hunter:
-As intelligent as he is insane, the Veiled Hunter is far more dangerous than the lesser beasts and creatures within the village. The shadowy figure feeds on the fear his presence inspires in others, and prefers to toy with his prey when possible. He is well aware that his current appearance is another weapon in his arsenal, and he uses it to full effect. It is impossible to keep a conversation going while his barking laughter interrupts his own arguments with himself on how to kill and eat them, and the whole time, his head and body twist at impossible angles with disjointed limbs.
-	The Veiled Hunter appears as a putrid mockery of his former self, with rancid flesh peeking through the rents in his cloak and peeling around the bone mask that holds his face together. Thick stitching from the forced introduction of eldritch flesh into his body has created a tableau of scars, and the rot around them became a breeding ground for maggots. Their constant wriggling gives his decomposing skin the appearance of always being in flux. His favorite tactic is to grapple an opponent, expel these maggots onto their face, and laugh at their gagging screams.
-
-Source:	Steinhardt's Guide to the Eldritch Hunt p. 380 (Homebrew)</description>
     <environment/>
   </monster>
   <monster>
@@ -5877,6 +5883,56 @@ Mages spend their lives in the study and practice of magic. Good-aligned mages o
 
 Source:	Steinhardt's Guide to the Eldritch Hunt p. 456 (Homebrew),
 		Monster Manual (2014) p. 347</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Lost Ones</name>
+    <size>G</size>
+    <type>monstrosity</type>
+    <alignment>Chaotic Evil</alignment>
+    <ac>10</ac>
+    <hp>1000</hp>
+    <speed>30 ft.</speed>
+    <dex>10</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <languages/>
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Eldritch Resilience</name>
+      <text>The swarm has advantage on saving throws against spells and magical effects.</text>
+    </trait>
+    <trait>
+      <name>Litany's Influence</name>
+      <text>At the start of each of the swarm's turns, each character within 60 feet of it must make a DC 15 Wisdom saving throw. On a failure, the character takes psychic damage equal to the swarm's hit points divided by 20, rounded down, (e.g., 50 psychic damage at 1000 hit points) and cannot take reactions until the start of their next turn. On a success, they take half as much damage and are unaffected by the reaction restriction.</text>
+      <attack>Psychic Damage||50</attack>
+    </trait>
+    <trait>
+      <name>Swarm Movement</name>
+      <text>The swarm moves as a single entity, occupying a 25-foot by 25-foot space. For every 200 hit points the horde loses, each side of its area shrinks by 5 feet.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The swarm makes four Melee attacks.</text>
+    </action>
+    <action>
+      <name>Melee</name>
+      <text>Use a single attack roll with an attack bonus equal to the swarm's hit points divided by 70, rounded down (e.g., +14 at 1000 hit points), range: 15 ft., one target. Hit: (10d6) bludgeoning damage. This damage is reduced by 1d6 for each 100 hit points the swarm has lost.</text>
+      <attack>Bludgeoning Damage||10d6</attack>
+      <attack>Damage Reduction||1d6</attack>
+    </action>
+    <action>
+      <name>Overwhelm</name>
+      <text>If the swarm has more than half of its hit points remaining, it can use its action to attempt to overwhelm a character. The target must make a Strength (Athletics) check contested by the swarm's Strength (Athletics) check, with a bonus equal to the swarm's hit points divided by 50, rounded down (e.g., +20 at 1000 hit points). On a failure, the target is grappled (escape DC 20).</text>
+    </action>
+    <description>Source:	Steinhardt's Guide to the Eldritch Hunt p. 472 (Homebrew)</description>
     <environment/>
   </monster>
 </compendium>
