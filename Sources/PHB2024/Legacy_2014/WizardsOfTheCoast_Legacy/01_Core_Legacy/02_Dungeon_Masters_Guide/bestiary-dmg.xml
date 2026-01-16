@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <compendium version="5" auto_indent="NO">
   <monster>
     <name>Avatar of Death</name>
@@ -14,23 +14,24 @@
     <int>16</int>
     <wis>16</wis>
     <cha>16</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>13</passive>
     <languages>all languages known to its summoner</languages>
-    <cr />
-    <resist />
+    <cr/>
+    <vulnerable/>
+    <resist/>
     <immune>necrotic, poison</immune>
-    <vulnerable />
     <conditionImmune>charmed, frightened, paralyzed, petrified, poisoned, unconscious</conditionImmune>
     <senses>darkvision 60 ft., truesight 60 ft.</senses>
     <trait>
       <name>Hit Points</name>
-      <text>half the hit point maximum of its summoner</text>
+      <text>The Avatar of Death appears with hit points equal to half its summoner's maximum hit points.</text>
     </trait>
     <trait>
       <name>Incorporeal Movement</name>
       <text>The avatar can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
+      <attack>Force Damage||1d10</attack>
     </trait>
     <trait>
       <name>Turn Immunity</name>
@@ -39,12 +40,15 @@
     <action>
       <name>Reaping Scythe</name>
       <text>The avatar sweeps its spectral scythe through a creature within 5 feet of it, dealing 7 (1d8 + 3) slashing damage plus 4 (1d8) necrotic damage.</text>
+      <attack>Reaping Scythe||(1d8+3)+(1d8)</attack>
+      <attack>Slashing Damage||1d8+3</attack>
+      <attack>Necrotic Damage||1d8</attack>
     </action>
     <description>Summoned by the "Skull" card from the Deck of Many Things.
 
 Source:	Dungeon Master's Guide (2014) p. 164,
-		Tasha's Cauldron of Everything</description>
-    <environment />
+		Tasha's Cauldron of Everything p. 155</description>
+    <environment/>
   </monster>
   <monster>
     <name>Giant Fly</name>
@@ -60,17 +64,50 @@ Source:	Dungeon Master's Guide (2014) p. 164,
     <int>2</int>
     <wis>10</wis>
     <cha>3</cha>
-    <save />
-    <skill />
+    <save/>
+    <skill/>
     <passive>10</passive>
-    <languages />
-    <cr />
-    <resist />
-    <immune />
-    <vulnerable />
-    <conditionImmune />
+    <languages/>
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
     <senses>darkvision 60 ft.</senses>
     <description>Source:	Dungeon Master's Guide (2014) p. 169</description>
-    <environment />
+    <environment/>
   </monster>
-  </compendium>
+  <monster>
+    <name>Larva</name>
+    <size>M</size>
+    <type>fiend</type>
+    <alignment>Neutral Evil</alignment>
+    <ac>9</ac>
+    <hp>9 (2d8)</hp>
+    <speed>walk 20 ft.</speed>
+    <str>9</str>
+    <dex>9</dex>
+    <con>10</con>
+    <int>6</int>
+    <wis>10</wis>
+    <cha>2</cha>
+    <save/>
+    <skill/>
+    <passive>10</passive>
+    <languages>understands the languages it knew in life but can't speak</languages>
+    <cr>0</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage.</text>
+      <attack>Piercing Damage|+1|1d4-1</attack>
+    </action>
+    <description>Source:	Dungeon Master's Guide (2014) p. 63,
+		Baldur's Gate: Descent Into Avernus</description>
+    <environment/>
+  </monster>
+</compendium>
