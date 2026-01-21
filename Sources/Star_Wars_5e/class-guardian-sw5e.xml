@@ -11,8 +11,67 @@
     <wealth>1000+5d4x100</wealth>
     <slotsReset>L</slotsReset>
     <autolevel level="1">
-      <slots>4,2,0,0,0,0,0,0,0,0,</slots>
-      <feature>
+      <slots>4,2</slots>
+    </autolevel>
+    <autolevel level="2">
+      <slots>5,4</slots>
+    </autolevel>
+    <autolevel level="3">
+      <slots>6,6</slots>
+    </autolevel>
+    <autolevel level="4">
+      <slots>7,8</slots>
+    </autolevel>
+    <autolevel level="5">
+      <slots>9,0,10</slots>
+    </autolevel>
+    <autolevel level="6">
+      <slots>10,0,12</slots>
+    </autolevel>
+    <autolevel level="7">
+      <slots>11,0,14</slots>
+    </autolevel>
+    <autolevel level="8">
+      <slots>12,0,16</slots>
+    </autolevel>
+    <autolevel level="9">
+      <slots>14,0,0,18</slots>
+    </autolevel>
+    <autolevel level="10">
+      <slots>15,0,0,20</slots>
+    </autolevel>
+    <autolevel level="11">
+      <slots>16,0,0,22</slots>
+    </autolevel>
+    <autolevel level="12">
+      <slots>17,0,0,24</slots>
+    </autolevel>
+    <autolevel level="13">
+      <slots>19,0,0,0,26</slots>
+    </autolevel>
+    <autolevel level="14">
+      <slots>20,0,0,0,28</slots>
+    </autolevel>
+    <autolevel level="15">
+      <slots>21,0,0,0,30</slots>
+    </autolevel>
+    <autolevel level="16">
+      <slots>22,0,0,0,32</slots>
+    </autolevel>
+    <autolevel level="17">
+      <slots>24,0,0,0,0,34</slots>
+    </autolevel>
+    <autolevel level="18">
+      <slots>25,0,0,0,0,36</slots>
+    </autolevel>
+    <autolevel level="19">
+      <slots>26,0,0,0,0,38</slots>
+    </autolevel>
+    <autolevel level="20">
+      <slots>27,0,0,0,0,40</slots>
+    </autolevel>
+    <autolevel level="1">
+      <feature optional="YES">
         <name>Starting Guardian</name>
         <text>You start with proficiency in two skills. Choose two from Acrobatics, Athletics, Deception, Insight, Intimidation, Lore* (History), Perception, Persuasion, and Piloting* (Religion).
 
@@ -81,7 +140,6 @@ Your forcecasting ability varies based on the alignment of the powers you cast. 
       </feature>
     </autolevel>
     <autolevel level="2">
-      <slots>5,4,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Force-Empowered Strikes</name>
         <text>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend force points to deal additional damage to the target. The extra damage is 2d8 for a 1st-level force slot, plus 1d8 for each slot level higher than 1st, to a maximum of 5d8. The damage is the same type as the weapon's damage.
@@ -133,8 +191,7 @@ Your forcecasting ability varies based on the alignment of the powers you cast. 
       </feature>
     </autolevel>
     <autolevel level="3">
-      <slots>6,6,0,0,0,0,0,0,0,0,</slots>
-      <feature optional="YES">
+      <feature>
         <name>Guardian Foci</name>
         <text>Different guardians focus on different lightsaber fighting styles, called Forms, as they hone their powers.</text>
       </feature>
@@ -330,6 +387,7 @@ Your forcecasting ability varies based on the alignment of the powers you cast. 
       <feature optional="YES">
         <name>Fighting Style: Brawling</name>
         <text>You are skilled at using your weight to your advantage. As long as you are not wearing heavy armor or using a medium or heavy shield, you gain the following benefits:
+
 	• You are proficient with improvised weapons.
 	• Your unarmed strikes use a d4 for damage.
 	• When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target.</text>
@@ -345,6 +403,7 @@ When making a ranged weapon attack while you are within 5 feet of a hostile crea
         <name>Fighting Style: Defense</name>
         <special>Fighting Style: Defense</special>
         <text>You are skilled at the art of defending yourself. While you are wearing armor with which you are proficient, you gain the following benefits:
+
 	• You gain a +1 bonus to AC.
 	• You have advantage on ability checks and saving throws to avoid being moved.</text>
       </feature>
@@ -360,6 +419,7 @@ When making a ranged weapon attack while you are within 5 feet of a hostile crea
       <feature optional="YES">
         <name>Fighting Style: Equilibrium</name>
         <text>You are skilled at fighting while minimally armored. While you are wearing no armor and not wielding a medium or heavy shield, you gain the following benefits:
+
 	• You gain a +1 bonus to AC.
 	• You gain a +1 bonus to attack rolls you make with unarmed strikes and weapon attacks.</text>
       </feature>
@@ -381,6 +441,7 @@ When a creature you can see attacks a target other than you that is within 5 fee
       <feature optional="YES">
         <name>Fighting Style: Throwing</name>
         <text>You are skilled with the techniques of throwing weapons. While you are wielding a weapon with the thrown property with which you are proficient, you gain the following benefits:
+
 	• You gain a +1 bonus to ranged attack and damage rolls.
 	• Whenever you make a ranged attack with a thrown weapon, you can immediately draw another weapon as part of the attack.</text>
       </feature>
@@ -388,39 +449,37 @@ When a creature you can see attacks a target other than you that is within 5 fee
         <name>Fighting Style: Two-Weapon Fighting</name>
         <special>Fighting Style: Two-Weapon Fighting</special>
         <text>You are skilled at fighting with two weapons. While you are wielding separate weapons in each hand with which you are proficient, you gain the following benefits:
+
 	• When you engage in two-weapon fighting, you can add your ability modifier to the damage of your two-weapon fighting attack.
 	• When you make an opportunity attack, you can attack with both of your weapons.</text>
       </feature>
       <feature optional="YES">
         <name>Fighting Style: Versatile Fighting</name>
         <text>You are skilled at using weapons in different ways. While you are wielding a melee weapon with the versatile property with which you are proficient and no other weapons, you gain the following benefits:
+
 	• You gain a +1 bonus to attack rolls while wielding a weapon in one hand.
 	• You gain a +1 bonus to damage rolls while wielding a weapon in two hands.</text>
       </feature>
     </autolevel>
     <autolevel level="4" scoreImprovement="YES">
-      <slots>7,8,0,0,0,0,0,0,0,0,</slots>
-      <feature>
+      <feature optional="YES">
         <name>Ability Score Improvement</name>
         <text>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
     </autolevel>
     <autolevel level="5">
-      <slots>9,0,10,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Extra Attack</name>
         <text>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</text>
       </feature>
     </autolevel>
     <autolevel level="6">
-      <slots>10,0,12,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Force Purity</name>
         <text>By 6th level, the Force flowing through you makes you immune to poison and disease.</text>
       </feature>
     </autolevel>
     <autolevel level="7">
-      <slots>11,0,14,0,0,0,0,0,0,0,</slots>
       <feature optional="YES">
         <name>Form I: Shii-Cho: Unpredictable Motion</name>
         <text>Beginning at 7th level, while you are wielding a melee weapon, opportunity attacks against you are made at disadvantage.</text>
@@ -475,18 +534,13 @@ When a creature you can see attacks a target other than you that is within 5 fee
       </feature>
     </autolevel>
     <autolevel level="8" scoreImprovement="YES">
-      <slots>12,0,16,0,0,0,0,0,0,0,</slots>
-      <feature>
+      <feature optional="YES">
         <name>Ability Score Improvement (2nd)</name>
         <text>When you reach 8th level, and again at 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
     </autolevel>
-    <autolevel level="9">
-      <slots>14,0,0,18,0,0,0,0,0,0,</slots>
-    </autolevel>
     <autolevel level="10" scoreImprovement="YES">
-      <slots>15,0,0,20,0,0,0,0,0,0,</slots>
-      <feature>
+      <feature optional="YES">
         <name>Ability Score Improvement (3rd)</name>
         <text>When you reach 10th level, and again at 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
@@ -536,31 +590,24 @@ When a creature you can see attacks a target other than you that is within 5 fee
       </feature>
     </autolevel>
     <autolevel level="11">
-      <slots>16,0,0,22,0,0,0,0,0,0,</slots>
       <feature>
         <name>Improved Force-Empowered Strikes</name>
         <text>By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry the power of the Force with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 damage. If you also use your Force-Empowered Strikes with an attack, you add this damage to the extra damage of your Force-Empowered Strikes. The damage is the same type as the weapon's damage.</text>
       </feature>
     </autolevel>
     <autolevel level="12" scoreImprovement="YES">
-      <slots>17,0,0,24,0,0,0,0,0,0,</slots>
-      <feature>
+      <feature optional="YES">
         <name>Ability Score Improvement (4th)</name>
         <text>When you reach 12th level, and again at 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
     </autolevel>
-    <autolevel level="13">
-      <slots>19,0,0,0,26,0,0,0,0,0,</slots>
-    </autolevel>
     <autolevel level="14">
-      <slots>20,0,0,0,28,0,0,0,0,0,</slots>
       <feature>
         <name>Cleansing Touch</name>
         <text>Beginning at 14th level, you can use your action and expend a use of your Channel the Force ability to end one force power on yourself or on one willing creature that you touch.</text>
       </feature>
     </autolevel>
     <autolevel level="15">
-      <slots>21,0,0,0,30,0,0,0,0,0,</slots>
       <feature optional="YES">
         <name>Form I: Shii-Cho: Sarlaac Sweep</name>
         <text>Starting at 15th level, when a creature moves to within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature. If the attack hits, you can attempt to damage another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to your Strength or Dexterity modifier (your choice). The damage is of the same type dealt by the original attack.</text>
@@ -606,30 +653,22 @@ When a creature you can see attacks a target other than you that is within 5 fee
       </feature>
     </autolevel>
     <autolevel level="16" scoreImprovement="YES">
-      <slots>22,0,0,0,32,0,0,0,0,0,</slots>
-      <feature>
+      <feature optional="YES">
         <name>Ability Score Improvement (5th)</name>
         <text>When you reach 16th level, and again at 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
     </autolevel>
-    <autolevel level="17">
-      <slots>24,0,0,0,0,34,0,0,0,0,</slots>
-    </autolevel>
-    <autolevel level="18">
-      <slots>25,0,0,0,0,36,0,0,0,0,</slots>
-    </autolevel>
-    <autolevel level="19">
-      <slots>26,0,0,0,0,38,0,0,0,0,</slots>
-      <feature>
+    <autolevel level="19" scoreImprovement="YES">
+      <feature optional="YES">
         <name>Ability Score Improvement (6th)</name>
         <text>When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
     </autolevel>
     <autolevel level="20">
-      <slots>27,0,0,0,0,40,0,0,0,0,</slots>
       <feature optional="YES">
         <name>Form I: Shii-Cho: Master of Determination</name>
         <text>At 20th level, the erratic fluidity of your movement confounds even the most determined of foes. Your Strength or Dexterity and Wisdom or Charisma scores (your choice) increase by 2. Your maximum for these scores increases by 2. Additionally, you can use your action to gain the following benefits for 1 minute:
+
 	• You have resistance to kinetic and energy damage from unenhanced weapons.
 	• Attack rolls made against you can't have advantage.
 	• When more than one creature is within 5 feet of you, you gain a bonus to your Armor Class equal to the number of creatures within 5 feet of you, up to your Wisdom or Charisma modifier (your choice, minimum of one).
@@ -639,6 +678,7 @@ When a creature you can see attacks a target other than you that is within 5 fee
       <feature optional="YES">
         <name>Form II: Makashi: Master of Contention</name>
         <text>At 20th level, you are a duelist of the highest caliber. Your Dexterity and Wisdom or Charisma scores (your choice) increase by 2. Your maximum for those scores increases by 2. Additionally, you can use your action to gain the following benefits for 1 minute:
+
 	• You have resistance to kinetic and energy damage, and you ignore resistance to kinetic and energy damage.
 	• All melee attacks have disadvantage against you.
 	• Your melee weapon attacks inflict an additional damage die.
@@ -647,6 +687,7 @@ When a creature you can see attacks a target other than you that is within 5 fee
       <feature optional="YES">
         <name>Form III: Soresu: Master of Resilience</name>
         <text>At 20th level, your presence on the field of battle is an inspiration to your allies. Your Constitution and Wisdom or Charisma scores (your choice) increase by 2. Your maximum for those scores increases by 2. Additionally, you can use your action to gain the following benefits for 1 minute:
+
 	• You have resistance to kinetic and energy damage from unenhanced weapons.
 	• When you use the saber reflect force power, you can make a single melee attack on an enemy within 5ft of you as a part of that same reaction.
 	• You have advantage on Dexterity saving throws, as do your allies within 30 feet of you.
@@ -655,6 +696,7 @@ When a creature you can see attacks a target other than you that is within 5 fee
       <feature optional="YES">
         <name>Form IV: Ataru: Master of Aggression</name>
         <text>At 20th level, your presence on the field of battle is as a graceful blur of deadly blades and daring acrobatics. Your Dexterity and Wisdom or Charisma scores (your choice) increase by 2. Your maximum for those scores increases by 2. Additionally, you can use your action to gain the following benefits for 1 minute:
+
 	• You have resistance to kinetic and energy damage from unenhanced weapons.
 	• When an ally within 30 feet of you takes the Attack action, they can make one additional attack as a part of that same action.
 	• When you hit a creature with a weapon attack, you can move up to 10 feet. This movement does not provoke opportunity attacks.
@@ -663,6 +705,7 @@ When a creature you can see attacks a target other than you that is within 5 fee
       <feature optional="YES">
         <name>Form V: Djem So: Master of Perseverance</name>
         <text>At 20th level, your might overwhelms even the most implacable of foes. Your Strength and Constitution scores increase by 2. Your maximum for these scores increases by 2. Additionally, you can use your action to gain the following benefits for 1 minute:
+
 	• You have resistance to kinetic and energy damage from unenhanced weapons.
 	• Once per turn, when you hit with a melee weapon attack using Strength, you can use your Force-Empowered Strikes feature at 1st-level without expending force points. You gain temporary hit points equal to the extra damage dealt.
 	• When a creature within 5 feet of you makes an attack roll against you, you can use your reaction to make a single weapon attack with advantage against that creature. If the attack hits, impose disadvantage on the triggering attack roll.
@@ -671,6 +714,7 @@ When a creature you can see attacks a target other than you that is within 5 fee
       <feature optional="YES">
         <name>Form VI: Niman: Master of Moderation</name>
         <text>At 20th level, the Force flows in perfect concert with your weapon attacks. Your Dexterity and Wisdom or Charisma scores (your choice) increase by 2. Your maximum for these scores increases by 2. Additionally, you can use your action to gain the following benefits for 1 minute:
+
 	• You have resistance to kinetic and energy damage from unenhanced weapons.
 	• You have advantage on saving throws against force powers. Additionally, you have resistance against the damage of force powers.
 	• When you use your action to cast an at-will force power that targets only one creature, you can target an additional creature within 5 feet of the original target and within the power's range.
@@ -679,6 +723,7 @@ When a creature you can see attacks a target other than you that is within 5 fee
       <feature optional="YES">
         <name>Form VII: Juyo: Master of Ferocity</name>
         <text>At 20th level, you are a paragon of extraordinary martial prowess. Your Strength and Dexterity scores increase by 2. Your maximum for those scores increases by 2. Additionally, you can use your action to gain the following benefits for 1 minute:
+
 	• You have resistance to all damage.
 	• When you take the Attack action on your turn, you can make one additional attack as part of that action.
 	• Your melee weapon attacks score a critical hit on a roll of 19 or 20 on the d20.
@@ -687,6 +732,7 @@ When a creature you can see attacks a target other than you that is within 5 fee
       <feature optional="YES">
         <name>Form VIII: Sokan: Master of Persistence</name>
         <text>At 20th level, you are an unrelenting force on the field of battle. Your Strength and Wisdom or Charisma scores (your choice) increase by 2. Your maximum for these scores increases by 2. Additionally, you can use your action to gain the following benefits for 1 minute:
+
 	• You have resistance to kinetic and energy damage from unenhanced weapons.
 	• You ignore effects that would reduce your speed.
 	• Once per turn, when you push a creature, you can move up to 10 feet as a part of this push without provoking opportunity attacks. If you end this movement within 5 feet of that creature, you can make one melee weapon attack (no action required).

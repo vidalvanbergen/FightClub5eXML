@@ -11,8 +11,7 @@
     <wealth>1000+5d4x100</wealth>
     <slotsReset>L</slotsReset>
     <autolevel level="1">
-      <slots>4,2,0,0,0,0,0,0,0,0,</slots>
-      <feature>
+      <feature optional="YES">
         <name>Starting Fighter</name>
         <text>You start with the following equipment, in addition to the equipment granted by your background
 
@@ -42,17 +41,18 @@ You gain the following proficiencies
 	• Light armor, medium armor, all blasters, all vibroweapons</text>
       </feature>
       <feature>
-        <name>Fighting Style</name>
-        <text>Beginning at 1st level, you adopt a particular style of fighting as your specialty. Choose one of the Fighting Style options, detailed in Chapter 6. You can't take a Fighting Style option more than once, even if you later get to choose again.</text>
-      </feature>
-      <feature>
         <name>Second Wind</name>
         <text>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d 10 + your fighter level.
 	Once you've used this feature, you must finish a short or long rest before you can use it again.</text>
       </feature>
+      <feature>
+        <name>Fighting Style</name>
+        <text>Beginning at 1st level, you adopt a particular style of fighting as your specialty. Choose one of the Fighting Style options, detailed in Chapter 6. You can't take a Fighting Style option more than once, even if you later get to choose again.</text>
+      </feature>
       <feature optional="YES">
         <name>Fighting Style: Brawling</name>
         <text>You are skilled at using your weight to your advantage. As long as you are not wearing heavy armor or using a medium or heavy shield, you gain the following benefits:
+
 	• You are proficient with improvised weapons.
 	• Your unarmed strikes use a d4 for damage.
 	• When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target.</text>
@@ -68,6 +68,7 @@ When making a ranged weapon attack while you are within 5 feet of a hostile crea
         <name>Fighting Style: Defense</name>
         <special>Fighting Style: Defense</special>
         <text>You are skilled at the art of defending yourself. While you are wearing armor with which you are proficient, you gain the following benefits:
+
 	• You gain a +1 bonus to AC.
 	• You have advantage on ability checks and saving throws to avoid being moved.</text>
       </feature>
@@ -83,6 +84,7 @@ When making a ranged weapon attack while you are within 5 feet of a hostile crea
       <feature optional="YES">
         <name>Fighting Style: Equilibrium</name>
         <text>You are skilled at fighting while minimally armored. While you are wearing no armor and not wielding a medium or heavy shield, you gain the following benefits:
+
 	• You gain a +1 bonus to AC.
 	• You gain a +1 bonus to attack rolls you make with unarmed strikes and weapon attacks.</text>
       </feature>
@@ -104,6 +106,7 @@ When a creature you can see attacks a target other than you that is within 5 fee
       <feature optional="YES">
         <name>Fighting Style: Throwing</name>
         <text>You are skilled with the techniques of throwing weapons. While you are wielding a weapon with the thrown property with which you are proficient, you gain the following benefits:
+
 	• You gain a +1 bonus to ranged attack and damage rolls.
 	• Whenever you make a ranged attack with a thrown weapon, you can immediately draw another weapon as part of the attack.</text>
       </feature>
@@ -111,18 +114,19 @@ When a creature you can see attacks a target other than you that is within 5 fee
         <name>Fighting Style: Two-Weapon Fighting</name>
         <special>Fighting Style: Two-Weapon Fighting</special>
         <text>You are skilled at fighting with two weapons. While you are wielding separate weapons in each hand with which you are proficient, you gain the following benefits:
+
 	• When you engage in two-weapon fighting, you can add your ability modifier to the damage of your two-weapon fighting attack.
 	• When you make an opportunity attack, you can attack with both of your weapons.</text>
       </feature>
       <feature optional="YES">
         <name>Fighting Style: Versatile Fighting</name>
         <text>You are skilled at using weapons in different ways. While you are wielding a melee weapon with the versatile property with which you are proficient and no other weapons, you gain the following benefits:
+
 	• You gain a +1 bonus to attack rolls while wielding a weapon in one hand.
 	• You gain a +1 bonus to damage rolls while wielding a weapon in two hands.</text>
       </feature>
     </autolevel>
     <autolevel level="2">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Action Surge</name>
         <text>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.
@@ -143,6 +147,11 @@ Saving Throws:
 Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:
 
 	Maneuver save DC = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice)</text>
+      </feature>
+      <feature>
+        <name>Maneuvers</name>
+        <text>You learn two maneuvers of your choice, which are detailed under "Maneuvers" below, and you earn more at higher levels, as shown in the Maneuvers Known column of the fighter class table. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack, and you may only use each maneuver once per turn.
+	Each time you learn new maneuvers, you can also replace one maneuver you know with a diﬀerent one.</text>
       </feature>
       <feature optional="YES">
         <name>Maneuver: Commander's Strike</name>
@@ -211,231 +220,27 @@ Some of your maneuvers require your target to make a saving throw to resist the 
       </feature>
     </autolevel>
     <autolevel level="3">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature optional="YES">
         <name>Fighter Specialty</name>
         <text>At 3rd level, you choose a specialty that you strive to emulate in your combat styles and techniques, which is detailed at the end of the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.</text>
       </feature>
-      <feature optional="YES">
-        <name>Fighter Specilaty: Adept Specialist</name>
-        <text>Those fighters who choose to become Adept Specialists tap into a latent Force-sensitivity to augment their martial prowess, blending the two to accelerate their bodies and blows. An adept speeds across the battlefield, attacking opponents in a flurry of blows before dashing off again.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Adept Specialist: Forcecasting</name>
-        <text>When you choose this specialty at 3rd level, you have learned powers, fragments of knowledge that imbue you with an abiding force ability. See chapter 10 for the general rules of forcecasting and chapter 11 for the force powers list.
-
-Force Powers Known:
-You learn 4 force powers of your choice, and you learn more at higher levels, as shown in the Force Powers Known column of the Adept Specialist Forcecasting table. You may not learn a force power of a level higher than your Max Power Level, and you may learn a force power at the same time you learn its prerequisite.
-
-Force Points:
-You have a number of force points equal to your fighter level, as shown in the Force Points column of the Adept Specialist Forcecasting table, + your Wisdom or Charisma modifier (your choice). You use these force points to cast force powers. You regain all expended force points when you finish a long rest.
-
-Max Power Level:
-Many force powers can be overpowered, consuming more force points to create a greater effect. You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Adept Specialist Forcecasting table.
-	You may only cast force powers at 4th-level once. You regain the ability to do so after a long rest.
-
-Forcecasting Ability:
-Your forcecasting ability varies based on the alignment of the powers you cast. You use your Wisdom for light side powers, Charisma for dark side powers, and Wisdom or Charisma for universal powers (your choice). You use this ability score modifier whenever a power refers to your forcecasting ability. In addition, you use this ability score modifier when setting the saving throw DC for a force power you cast and when making an attack roll with one.
-
-	Force save DC = 8 + your proficiency bonus +your forcecasting ability modifier
-
-	Force attack modifier = your proficiency bonus +your forcecasting ability modifier</text>
-      </feature>
-      <feature optional="YES">
-        <name>Adept Specialist: Growing Momentum</name>
-        <text>Also at 3rd level, you can cast the burst of speed force power targeting yourself at 1st-level without expending force points. At 10th level, when you do so, your speed increases by an additional 10 feet. At 18th level, when you do so, your speed increases by an additional 10 feet.
-	You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Fighter Specilaty: Assault Specialist</name>
-        <text>Those fighters who choose to become Assault Specialists focus on the development of raw physical power honed to deadly perfection. Assault Specialists combine rigorous training with physical excellence to deal devastating blows.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Assault Specialist: Brute Force</name>
-        <text>When you choose this specialty at 3rd level, whenever you hit with a weapon that you're proficient with and deal damage, the weapon's damage increases by an amount based on your level in this class, as shown on the Assault Bonus Damage table.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Fighter Specilaty: Demolitions Specialist</name>
-        <text>Those fighters who choose to become Demolitions Specialists are experts in using explosives in combat. They have an explosive for every situation, whether it be breaching a fortified bunker, taking down a walker, or simply demonstrating that in combat, standing too close to your squadmates can be fatal.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Demolitions Specialist: Bonus Proficiencies</name>
-        <text>When you choose this specialty at 3rd level, you gain proficiency in demolitions kit. Additionally, when you would install a breaching charge, you can do so in half the time.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Demolitions Specialist: Explosive Charge</name>
-        <text>Also at 3rd level, you learn to create a number of small explosives known as charges. Over the course of a short or long rest, you can create a number of charges equal to your Intelligence modifier. You must have a demolitions kit in order to create these charges. Your charges can only be used by you, and they lose their potency at the end of your next short or long rest.
-	Once per turn, when you would make a ranged weapon attack, you can instead throw one of your charges. Your charges have a range equal to 30 feet + your Strength modifier x 5. You can throw a charge at a point you can see within range. Each creat-ure within 5 feet must make a Dexterity sav-ing throw (DC = 8 + your proficiency bonus + your Intelligence modifier + any bonuses to ranged weapon attack rolls). A creature takes 2d4 + your Intelligence modifier kin-etic damage on a failed save, or half as much on a successful one.
-	The damage of your charges increases to 3d4 at 7th level and 4d4 at 15th level.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Fighter Specilaty: Enhancement Specialist</name>
-        <text>Those fighters who choose to become Enhancement Specialists learn to apply their technological prowess to their blasters. With their deep understanding of both their weapon and how to manipulate its ammunition on the fly, they can often turn the tides of a battle with a single shot.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Enhancement Specialist: Studied Shooter</name>
-        <text>When you choose this specialty at 3rd level, you learn specialized theory typical for practitioners of the enhancement trade. You gain proficiency in your choice of the Lore* (History) or Technology* (Arcana) skills. Additionally, you learn your choice of the encrypted message or minor image tech power. Intelligence is your techcasting ability for these powers.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Enhancement Specialist: Special Ammunition</name>
-        <text>Also at 3rd level, you learn ammunition enhancements that are fueled by amplified shots to unleash special enhanced effects.
-
-Ammunition Enhancements:
-You know two ammunition enhancements of your choice, which are detailed under "Ammunition Enhancements" below, and you earn more at higher levels. Many ammunition enhancements boost an attack in some way. Once per turn when you fire a shot from a blaster as part of the Attack action, you can apply one of your Ammunition Enhancement options to that shot,
-	You gain an additional Ammunition Enhancement option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.
-	Each time you learn new ammunition enhancements, you can also replace one ammunition enhancement you know with a different one.
-
-Amplified Shots:
-You have two amplified shots, which you use to activate your ammunition enhancements. An amplified shot is expended when you use it. When you fire an amplified shot, your weapon is treated as enhanced for overcoming resistance and immunity to unenhanced attacks and damage. You decide to use the option when the shot hits a creature, unless the option doesn't involve an attack roll. You regain all of your amplified shots when you finish a short or long rest.
-
-Saving Throws:
-Some of your ammunition enhancements require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:
-
-	Ammunition save DC = 8 + your proficiency bonus + your Dexterity modifier</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Carbonite Shot</name>
-        <text>When this shot strikes its target, shards of carbonite wrap around the target. The creature hit by the shot takes an extra 2d6 cold damage, its speed is reduced by 10 feet, and it takes 2d6 kinetic damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the carbonite with a successful Strength (Athletics) check against your Special Ammunition save DC. Otherwise, the carbonite lasts for 1 minute or until you use this option again.
-	The cold damage and kinetic damage both increase to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Coercing Shot</name>
-        <text>You enhance your shot with chemicals that confuse the target. The creature hit by the shot takes an extra 2d6 poison damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw.
-	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Explosive Shot</name>
-        <text>You fire a shot set to explode on impact. The shot detonates after your attack. Immediately after the shot hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage each.
-	The fire damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Hallucinogen Shot</name>
-        <text>You enhance your shot with hallucinogenic chemicals. The creature hit by the shot takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.
-	The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Piercing Shot</name>
-        <text>You enhance your shot with armor-piercing properties. When you use this option, you don't make an attack roll for the attack. Instead, the shot shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The shot passes through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the shot, plus an extra 1d6 damage of the weapon's type. On a successful save, a target takes half as much damage.
-	The extra damage increases to 2d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Quell Shot</name>
-        <text>You fire a shot enhanced with a debilitating poison. The creature hit by the shot takes an extra 2d6 poison damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
-	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Seeking Shot</name>
-        <text>You apply a tracing signal to your shot. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The shot flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the shot to travel to the target, the target must make a Dexterity saving throw. Otherwise, the shot disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the shot, plus an extra 1d6 kinetic damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.
-	The kinetic damage increases to 2d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Fighter Specilaty: Heavy Weapons Specialist</name>
-        <text>Some manned instruments of war require their user to have superior physical prowess to overcome their weight and encumbrance. Those fighters who choose to become Heavy Weapons Specialists use their powerful bodies, and powerful armaments, to overwhelm their foes.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Heavy Weapons Specialist: Rock Steady</name>
-        <text>When you choose this specialty at 3rd level, you have learned to use the heft of your weapon to root yourself in place. At the end of each of your turns, if you move less than half your speed while wielding a weapon with the heavy or strength properties, you have advantage on saving throws to avoid being restrained, moved, or knocked prone. This advantage lasts until the end of your next turn.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Heavy Weapons Specialist: My Little Friend Says Hello There</name>
-        <text>Also at 3rd level, you know how to use the sheer size of your weapon to strike fear in those around you. You can add your Strength modifier to any Charisma (Intimidation) check you make while wielding a weapon with the heavy or strength properties that doesn't already include that modifier.
-	Additionally, if your size is Small, you no longer have disadvantage on attack rolls with heavy weapons due to being Small.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Fighter Specilaty: Mounted Specialist</name>
-        <text>Those fighters who choose to become Mounted Specialists excel at mounted combat. Mounted Specialists are most dangerous from the seat of a speeder or saddle of a varactyl, though they can hold their own from the ground. Their versatility often has them leading the charge or protecting the team.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Mounted Specialist: Bonus Proficiencies</name>
-        <text>When you choose this specialty at 3rd level, you gain proficiency in Animal Handling or Piloting* (Religion).</text>
-      </feature>
-      <feature optional="YES">
-        <name>Mounted Specialist: Born To The Saddle</name>
-        <text>Also at 3rd level, your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you're not incapacitated.
-	Finally, mounting or dismounting a creature or vehicle costs you only 5 feet of movement, rather than half your speed.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Mounted Specialist: Unwavering Mark</name>
-        <text>Lastly at 3rd level, you can menace your foes, foiling their attacks and punishing them for harming others. When you hit a creature with a melee weapon attack, you can mark the creature until the end of your next turn. This effect ends early if you are incapacitated or you die, or if someone else marks the creature. While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn't target you.
-	In addition, if a creature marked by you deals damage to anyone other than you, you can make a special melee weapon attack against the marked creature as a bonus action on your next turn. You have advantage on the attack roll, and if it hits, the attacks weapon deals extra damage to the target equal to half your fighter level.
-	Regardless of the number of creatures you mark, you can make this special attack a number of times equal to your Strength modifier (minimum of once), and you regain all expended uses when you finish a long rest.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Fighter Specilaty: Shield Specialist</name>
-        <text>Those fighters who choose to become Shield Specialists train to bolster those around them. They can inspire their allies with renewed vigor, lifting them to new heights, while simultaneously protecting them from harm.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Shield Specialist: Techcasting</name>
-        <text>When you choose this specialty at 3rd level, you have derived powers from schematics with the aid of your wristpad. See chapter 10 for the general rules of techcasting and chapter 12 for the tech powers list.
-
-Tech Powers Known:
-You learn 4 tech powers of your choice, and you learn more at higher levels, as shown in the Tech Powers Known column of the Shield Specialist Techcasting table. You may not learn a tech power of a level higher than your Max Power Level.
-
-Tech Points:
-You have a number of tech points equal to half of your fighter level (rounded up), as shown in the Tech Points column of the Shield Specialist Techcasting table, + your Intelligence modifier. You use these tech points to cast tech powers. You regain all expended tech points when you finish a short or long rest.
-
-Max Power Level:
-Many tech powers can be overcharged, consuming more tech points to create a greater effect. You can overcharge these powers to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Shield Specialist Techcasting table.
-	You may only cast tech powers at 4th-level once. You regain the ability to do so after a long rest.
-
-Techcasting Ability:
-Intelligence is your techcasting ability for your tech powers. You use your Intelligence whenever a power refers to your techcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a tech power you cast and when making an attack roll with one.
-
-	Tech save DC = 8 + your proficiency bonus +your Intelligence modifier
-
-	Tech attack modifier = your proficiency bonus +your Intelligence modifier
-
-Techcasting Focus:
-You use a wristpad (found in chapter 5) as a techcasting focus for your tech powers.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Fighter Specilaty: Tactical Specialist</name>
-        <text>Those fighters who choose to become Tactical Specialists employ martial techniques passed down through generations. To a Tactical Specialist, combat is an academic field, sometimes including subjects beyond battle such as armstech or armormech. Not every fighter absorbs the lessons of history, theory, and artistry that are reflected in the Tactical Specialty, but those who do are well-rounded fighters of great skill and knowledge.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Tactical Specialist: Improved Combat Superiority</name>
-        <text>When you choose this specialty at 3rd level, your tactical skill in combat improves, granting bonuses to your Combat Superiority.
-
-Additional Maneuvers
-You learn two additional maneuvers of your choice, and you earn more at higher levels, as shown in the Maneuvers Known column of the Tactical Specialist Combat Superiority table.
-
-Additional Superiority Dice
-You have two additional superiority dice, and you earn more at higher levels, as shown in the Superiority Dice column of the Tactical Specialist Combat Superiority table.
-
-Additionally, your superiority dice become d6s. This die changes as you gain fighter levels, as shown in the Combat Superiority column of the Tactical Specialist Combat Superiority table.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Tactical Specialist: Student Of War</name>
-        <text>Also at 3rd level, you gain proficiency with one type of artisan's tools of your choice.</text>
-      </feature>
     </autolevel>
     <autolevel level="4" scoreImprovement="YES">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
-      <feature>
+      <feature optional="YES">
         <name>Ability Score Improvement</name>
         <text>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
     </autolevel>
     <autolevel level="5">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Extra Attack</name>
         <text>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</text>
       </feature>
     </autolevel>
-    <autolevel level="6">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
-    </autolevel>
     <autolevel level="7">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Combat Superiority Dice Increase</name>
         <text>You now have three superiority dice, which are d4s. You regain all of your expended superiority dice when you finish a short or long rest.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Increased Maneuvers</name>
-        <text>You learn one additional maneuver of your choice, for a total of 3, which are detailed under "Maneuvers" below, and you earn more at higher levels, as shown in the Maneuvers Known column of the fighter class table.
-	Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</text>
       </feature>
       <feature optional="YES">
         <name>Commander's Strike</name>
@@ -444,6 +249,11 @@ Additionally, your superiority dice become d6s. This die changes as you gain fig
       <feature optional="YES">
         <name>Disarming Attack</name>
         <text>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</text>
+      </feature>
+      <feature>
+        <name>Increased Maneuvers</name>
+        <text>You learn one additional maneuver of your choice, for a total of 3, which are detailed under "Maneuvers" below, and you earn more at higher levels, as shown in the Maneuvers Known column of the fighter class table.
+	Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</text>
       </feature>
       <feature optional="YES">
         <name>Maneuver: Commander's Strike</name>
@@ -510,106 +320,14 @@ Additionally, your superiority dice become d6s. This die changes as you gain fig
         <name>Maneuver: Trip Attack</name>
         <text>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</text>
       </feature>
-      <feature optional="YES">
-        <name>Adept Specialist: Whirling Weapons</name>
-        <text>Beginning at 7th level, your constant blur of motion and attacks becomes an unending barrage as you build momentum. Once on your turn when you miss with a weapon attack you can make another weapon attack, no action required.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Assault Specialist: Brutish Durability</name>
-        <text>Beginning at 7th level, whenever you make a saving throw, roll 1d6 and add the die to your saving throw total. If applying this bonus to a death saving throw increases the total to 20 or higher, you gain the benefits of rolling a 20 on the d20.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Demolitions Specialist: Cause And Effect</name>
-        <text>Beginning at 7th level, you learn to throw grenades as a bonus action. Additionally, when a creature fails a saving throw against a charge or grenade, you can expend a superiority die to apply one of your maneuvers. You can only use this feature once per grenade.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Demolitions Specialist: Explosive Charge Increase (3d4)</name>
-        <text>The damage of your Explosive Charges increases to 3d4 at 7th level and 4d4 at 15th level.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Enhancement Specialist: Additional Ammunition Enhancement</name>
-        <text>You gain an additional Ammunition Enhancement option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.
-	Each time you learn new ammunition enhancements, you can also replace one ammunition enhancement you know with a different one.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Carbonite Shot</name>
-        <text>When this shot strikes its target, shards of carbonite wrap around the target. The creature hit by the shot takes an extra 2d6 cold damage, its speed is reduced by 10 feet, and it takes 2d6 kinetic damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the carbonite with a successful Strength (Athletics) check against your Special Ammunition save DC. Otherwise, the carbonite lasts for 1 minute or until you use this option again.
-	The cold damage and kinetic damage both increase to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Coercing Shot</name>
-        <text>You enhance your shot with chemicals that confuse the target. The creature hit by the shot takes an extra 2d6 poison damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw.
-	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Explosive Shot</name>
-        <text>You fire a shot set to explode on impact. The shot detonates after your attack. Immediately after the shot hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage each.
-	The fire damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Hallucinogen Shot</name>
-        <text>You enhance your shot with hallucinogenic chemicals. The creature hit by the shot takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.
-	The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Piercing Shot</name>
-        <text>You enhance your shot with armor-piercing properties. When you use this option, you don't make an attack roll for the attack. Instead, the shot shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The shot passes through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the shot, plus an extra 1d6 damage of the weapon's type. On a successful save, a target takes half as much damage.
-	The extra damage increases to 2d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Quell Shot</name>
-        <text>You fire a shot enhanced with a debilitating poison. The creature hit by the shot takes an extra 2d6 poison damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
-	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Seeking Shot</name>
-        <text>You apply a tracing signal to your shot. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The shot flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the shot to travel to the target, the target must make a Dexterity saving throw. Otherwise, the shot disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the shot, plus an extra 1d6 kinetic damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.
-	The kinetic damage increases to 2d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Enhancement Specialist: Enhanced Shot</name>
-        <text>Beginning at 7th level, you gain the ability to enhance your shots. Whenever you fire an unenhanced shot from a blaster, you can make it enhanced for the purpose of overcoming resistance and immunity to unenhanced attacks and damage.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Heavy Weapons Specialist: Maximum Output</name>
-        <text>Beginning at 7th level, when you take the Attack action while wielding a weapon with the heavy or strength properties, you can forgo one or more attacks. If you do so, you deal additional damage the first time you hit with an attack roll before the end of your next turn. For each attack you forgo in this fashion, you deal extra damage equal to 1d12 + half your fighter level (rounded down). If you miss with the first attack roll you make before the end of your next turn, you instead deal normal weapon damage.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Mounted Specialist: Warding Maneuver</name>
-        <text>Beginning at 7th level, you learn to fend off strikes directed at you, your mount, or other creatures nearby. If you or a creature you can see within 5 feet of you is hit by an attack, you can roll ld8 as a reaction if you're wielding a melee weapon or a shield. Roll the die, and add the number rolled to the target's AC against that attack. If the attack still hits, the target has resistance against the attacks damage.
-	You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Shield Specialist: Rallying Cry</name>
-        <text>Beginning at 7th level, you learn how to inspire your allies to fight on past their injuries. When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter level, provided that the creature can see or hear you.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Tactical Specialist: Combat Superiority Improvements (d8/3/3)</name>
-        <text>Your combat superiority die is now a d8 instead of a d6.
-	You have 3 superiority dice, and you earn more at higher levels, as shown in the Superiority Dice column of the Tactical Specialist Combat Superiority table.
-	You learn a additional maneuver of your choice (for a total of 3), and you earn more at higher levels, as shown in the Maneuvers Known column of the Tactical Specialist Combat Superiority table.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Tactical Specialist: Know Your Enemy</name>
-        <text>Beginning at 7th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The GM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:
-	• Strength score
-	• Dexterity score
-	• Constitution score
-	• Armor Class
-	• Current hit points
-	• Total class levels (if any)
-	• Fighter class levels (if any)</text>
-      </feature>
     </autolevel>
     <autolevel level="8" scoreImprovement="YES">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Ability Score Improvement (2nd)</name>
         <text>When you reach 8th level, and again at 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
     </autolevel>
     <autolevel level="9">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Indomitable</name>
         <text>Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.
@@ -617,27 +335,14 @@ Additionally, your superiority dice become d6s. This die changes as you gain fig
       </feature>
     </autolevel>
     <autolevel level="10" scoreImprovement="YES">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Ability Score Improvement (3rd)</name>
         <text>When you reach 10th level, and again at 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
       <feature optional="YES">
-        <name>Adept Specialist: Growing Momentum Increase</name>
-        <text>At 10th level, when you cast the burst of speed force power targeting yourself at 1st-level, your speed now increases by an 20 feet. At 18th level, when you do so, your speed increases by an additional 10 feet.
-	You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Adept Specialist: Focused Breathing</name>
-        <text>At 10th level, you learn to recover some of your expended power quickly. When you use your Second Wind you also regain a number of force points equal to your Wisdom modifier (a minimum of one).</text>
-      </feature>
-      <feature optional="YES">
-        <name>Assault Specialist: Additional Fighting Style</name>
-        <text>At 10th level, you can choose a second Fighting Style option.</text>
-      </feature>
-      <feature optional="YES">
         <name>Fighting Style: Brawling</name>
         <text>You are skilled at using your weight to your advantage. As long as you are not wearing heavy armor or using a medium or heavy shield, you gain the following benefits:
+
 	• You are proficient with improvised weapons.
 	• Your unarmed strikes use a d4 for damage.
 	• When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target.</text>
@@ -653,6 +358,7 @@ When making a ranged weapon attack while you are within 5 feet of a hostile crea
         <name>Fighting Style: Defense</name>
         <special>Fighting Style: Defense</special>
         <text>You are skilled at the art of defending yourself. While you are wearing armor with which you are proficient, you gain the following benefits:
+
 	• You gain a +1 bonus to AC.
 	• You have advantage on ability checks and saving throws to avoid being moved.</text>
       </feature>
@@ -668,6 +374,7 @@ When making a ranged weapon attack while you are within 5 feet of a hostile crea
       <feature optional="YES">
         <name>Fighting Style: Equilibrium</name>
         <text>You are skilled at fighting while minimally armored. While you are wearing no armor and not wielding a medium or heavy shield, you gain the following benefits:
+
 	• You gain a +1 bonus to AC.
 	• You gain a +1 bonus to attack rolls you make with unarmed strikes and weapon attacks.</text>
       </feature>
@@ -689,6 +396,7 @@ When a creature you can see attacks a target other than you that is within 5 fee
       <feature optional="YES">
         <name>Fighting Style: Throwing</name>
         <text>You are skilled with the techniques of throwing weapons. While you are wielding a weapon with the thrown property with which you are proficient, you gain the following benefits:
+
 	• You gain a +1 bonus to ranged attack and damage rolls.
 	• Whenever you make a ranged attack with a thrown weapon, you can immediately draw another weapon as part of the attack.</text>
       </feature>
@@ -696,86 +404,19 @@ When a creature you can see attacks a target other than you that is within 5 fee
         <name>Fighting Style: Two-Weapon Fighting</name>
         <special>Fighting Style: Two-Weapon Fighting</special>
         <text>You are skilled at fighting with two weapons. While you are wielding separate weapons in each hand with which you are proficient, you gain the following benefits:
+
 	• When you engage in two-weapon fighting, you can add your ability modifier to the damage of your two-weapon fighting attack.
 	• When you make an opportunity attack, you can attack with both of your weapons.</text>
       </feature>
       <feature optional="YES">
         <name>Fighting Style: Versatile Fighting</name>
         <text>You are skilled at using weapons in different ways. While you are wielding a melee weapon with the versatile property with which you are proficient and no other weapons, you gain the following benefits:
+
 	• You gain a +1 bonus to attack rolls while wielding a weapon in one hand.
 	• You gain a +1 bonus to damage rolls while wielding a weapon in two hands.</text>
       </feature>
-      <feature optional="YES">
-        <name>Assault Specialist: Assault Bonus Damage (1d6)</name>
-        <text>Whenever you hit with a weapon that you're proficient with and deal damage, the weapon's damage now increases by (1d6)</text>
-      </feature>
-      <feature optional="YES">
-        <name>Demolitions Specialist: Volatile Reflexes</name>
-        <text>At 10th level, when a creature within 5 feet of you makes a melee attack against you, you can use your reaction and throw a charge behind the target. If the target fails its saving throw against the charge, you impose disadvantage on the attack roll made against you.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Enhancement Specialist: Additional Ammunition Enhancement</name>
-        <text>You gain an additional Ammunition Enhancement option of your choice when you reach certain levels in this class: 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.
-	Each time you learn new ammunition enhancements, you can also replace one ammunition enhancement you know with a different one.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Carbonite Shot</name>
-        <text>When this shot strikes its target, shards of carbonite wrap around the target. The creature hit by the shot takes an extra 2d6 cold damage, its speed is reduced by 10 feet, and it takes 2d6 kinetic damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the carbonite with a successful Strength (Athletics) check against your Special Ammunition save DC. Otherwise, the carbonite lasts for 1 minute or until you use this option again.
-	The cold damage and kinetic damage both increase to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Coercing Shot</name>
-        <text>You enhance your shot with chemicals that confuse the target. The creature hit by the shot takes an extra 2d6 poison damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw.
-	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Explosive Shot</name>
-        <text>You fire a shot set to explode on impact. The shot detonates after your attack. Immediately after the shot hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage each.
-	The fire damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Hallucinogen Shot</name>
-        <text>You enhance your shot with hallucinogenic chemicals. The creature hit by the shot takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.
-	The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Piercing Shot</name>
-        <text>You enhance your shot with armor-piercing properties. When you use this option, you don't make an attack roll for the attack. Instead, the shot shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The shot passes through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the shot, plus an extra 1d6 damage of the weapon's type. On a successful save, a target takes half as much damage.
-	The extra damage increases to 2d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Quell Shot</name>
-        <text>You fire a shot enhanced with a debilitating poison. The creature hit by the shot takes an extra 2d6 poison damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
-	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Seeking Shot</name>
-        <text>You apply a tracing signal to your shot. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The shot flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the shot to travel to the target, the target must make a Dexterity saving throw. Otherwise, the shot disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the shot, plus an extra 1d6 kinetic damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.
-	The kinetic damage increases to 2d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Enhancement Specialist: Redirected Shot</name>
-        <text>At 10th level, you learn how to direct an errant shot toward a new target. When you make an attack roll with an enhanced shot and miss, you can use a bonus action to reroll the attack roll against a different target within 60 feet of the original target.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Heavy Weapons Specialist: Straight Through</name>
-        <text>At 10th level, when you score a critical hit on your turn while wielding a weapon with the heavy or strength properties, you can make one weapon attack against a creature within 5 feet of the target using your reaction.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Mounted Specialist: Hold The Line</name>
-        <text>At 10th level, you become a master of locking down your enemies. Creatures provoke an opportunity attack from you when they move 5 feet or more while within your reach, and if you hit a creature with an opportunity attack, the target's speed is reduced to 0 until the end of the current turn.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Shield Specialist: Inspiring Surge</name>
-        <text>At 10th level, when you use your Action Surge feature, you can choose one creature within 60 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Tactical Specialist: Signature Maneuver</name>
-        <text>At 10th level, you choose a maneuver as your signature maneuver. Whenever you use that maneuver, you can roll a d4 and use it instead of expending a Superiority Dice. You may only use this feature once per turn.</text>
-      </feature>
     </autolevel>
     <autolevel level="11">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Greater Extra Attack</name>
         <text>Beginning at 11th level, you can attack three times, instead of once, whenever you take the Attack action on your turn.
@@ -785,12 +426,6 @@ When a creature you can see attacks a target other than you that is within 5 fee
         <name>Increased Maneuvers</name>
         <text>You learn one additional maneuver of your choice, for a total of 4, which are detailed under "Maneuvers" below, and you earn more at higher levels, as shown in the Maneuvers Known column of the fighter class table.
 	Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Tactical Specialist: Combat Superiority Die Improvement (d10/3/4)</name>
-        <text>Your combat superiority die is now a d10 instead of a d8.
-	You still have 3 superiority dice, and you earn more at higher levels, as shown in the Superiority Dice column of the Tactical Specialist Combat Superiority table.
-	You learn a additional maneuver of your choice (for a total of 4), and you earn more at higher levels, as shown in the Maneuvers Known column of the Tactical Specialist Combat Superiority table.</text>
       </feature>
       <feature optional="YES">
         <name>Maneuver: Commander's Strike</name>
@@ -859,110 +494,26 @@ When a creature you can see attacks a target other than you that is within 5 fee
       </feature>
     </autolevel>
     <autolevel level="12" scoreImprovement="YES">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
-      <feature>
+      <feature optional="YES">
         <name>Ability Score Improvement (4th)</name>
         <text>When you reach 12th level, and again at 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
     </autolevel>
     <autolevel level="13">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Indomitable Increase (two uses)</name>
         <text>You can now use this feature twice between long rests starting. It increases to three times between long rests starting at 17th level.</text>
       </feature>
     </autolevel>
-    <autolevel level="14">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
-    </autolevel>
     <autolevel level="15">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Combat Superiority Dice Increase</name>
         <text>You now have four superiority dice, which are d4s. You regain all of your expended superiority dice when you finish a short or long rest.</text>
       </feature>
-      <feature optional="YES">
+      <feature>
         <name>Increased Maneuvers</name>
         <text>You learn one additional maneuver of your choice, for a total of 5, which are detailed under "Maneuvers" below, and you earn more at higher levels, as shown in the Maneuvers Known column of the fighter class table.
 	Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Adept Specialist: Unstoppable Force</name>
-        <text>Starting at 15th level, you learn to completely ignore many of the most devastating impediments of combat. You can expend a use of Indomitable to gain the effect of the freedom of movement force power until the end of your next turn.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Assault Specialist: Devastating Critical</name>
-        <text>Starting at 15th level, when you score a critical hit with a weapon attack, you gain a bonus to that weapon's damage roll equal to your fighter level.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Demolitions Specialist: Backup Plans</name>
-        <text>Starting at 15th level, when you roll initiative and have no charges remaining, you can create 2 charges. Additionally, whenever you create a charge, you can change the damage type to acid, energy, fire, ion, lightning, or sonic.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Demolitions Specialist: Explosive Charge Increase (4d4)</name>
-        <text>The damage of your Explosive Charges increases to 4d4 at 15th level.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Enhancement Specialist: Additional Ammunition Enhancement</name>
-        <text>You gain an additional Ammunition Enhancement option of your choice when you reach certain levels in this class: 15th, and 18th level. Each option also improves when you become an 18th-level fighter.
-	Each time you learn new ammunition enhancements, you can also replace one ammunition enhancement you know with a different one.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Carbonite Shot</name>
-        <text>When this shot strikes its target, shards of carbonite wrap around the target. The creature hit by the shot takes an extra 2d6 cold damage, its speed is reduced by 10 feet, and it takes 2d6 kinetic damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the carbonite with a successful Strength (Athletics) check against your Special Ammunition save DC. Otherwise, the carbonite lasts for 1 minute or until you use this option again.
-	The cold damage and kinetic damage both increase to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Coercing Shot</name>
-        <text>You enhance your shot with chemicals that confuse the target. The creature hit by the shot takes an extra 2d6 poison damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw.
-	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Explosive Shot</name>
-        <text>You fire a shot set to explode on impact. The shot detonates after your attack. Immediately after the shot hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage each.
-	The fire damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Hallucinogen Shot</name>
-        <text>You enhance your shot with hallucinogenic chemicals. The creature hit by the shot takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.
-	The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Piercing Shot</name>
-        <text>You enhance your shot with armor-piercing properties. When you use this option, you don't make an attack roll for the attack. Instead, the shot shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The shot passes through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the shot, plus an extra 1d6 damage of the weapon's type. On a successful save, a target takes half as much damage.
-	The extra damage increases to 2d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Quell Shot</name>
-        <text>You fire a shot enhanced with a debilitating poison. The creature hit by the shot takes an extra 2d6 poison damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
-	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Seeking Shot</name>
-        <text>You apply a tracing signal to your shot. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The shot flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the shot to travel to the target, the target must make a Dexterity saving throw. Otherwise, the shot disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the shot, plus an extra 1d6 kinetic damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.
-	The kinetic damage increases to 2d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Enhancement Specialist: Ever-Ready Shot</name>
-        <text>Starting at 15th level, your enhanced ammunition is available whenever battle starts. If you roll initiative and have no uses of Special Ammunition remaining, you regain one use of it.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Heavy Weapons Specialist: Overwhelm</name>
-        <text>Starting at 15th level, when you use your Second Wind while wielding a weapon with the heavy or strength properties, if you hit with the first attack roll you make before the end of your next turn, you treat the hit as a critical hit. If you miss with the first attack roll you make before the end of your next turn, you instead treat the miss as a hit.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Mounted Specialist: Ferocious Charger</name>
-        <text>Starting at 15th level, you can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can use this feature only once on each of your turns.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Shield Specialist: Bulwark</name>
-        <text>Starting at 15th level, you can extend the benefit of your Indomitable feature to an ally. When you decide to use Indomitable to reroll an Intelligence, a Wisdom, or a Charisma saving throw and you aren't incapacitated, you can choose one ally within 60 feet of you that also failed its saving throw against the same effect. If that creature can see or hear you, it can reroll its saving throw and must use the new roll.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Tactical Specialist: Combat Superiority Improvements (d12/4/3)</name>
-        <text>Your combat superiority die is now a d12 instead of a d10.
-	You have 4 superiority dice, and you earn more at higher levels, as shown in the Superiority Dice column of the Tactical Specialist Combat Superiority table.
-	You learn a additional maneuver of your choice (for a total of 3), and you earn more at higher levels, as shown in the Maneuvers Known column of the Tactical Specialist Combat Superiority table.</text>
       </feature>
       <feature optional="YES">
         <name>Maneuver: Commander's Strike</name>
@@ -1029,24 +580,14 @@ When a creature you can see attacks a target other than you that is within 5 fee
         <name>Maneuver: Trip Attack</name>
         <text>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</text>
       </feature>
-      <feature optional="YES">
-        <name>Tactical Specialist: Relentless</name>
-        <text>Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die.</text>
-      </feature>
     </autolevel>
     <autolevel level="16" scoreImprovement="YES">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
-      <feature>
+      <feature optional="YES">
         <name>Ability Score Improvement (5th)</name>
         <text>When you reach 16th level, and again at 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
-      <feature optional="YES">
-        <name>Assault Specialist: Assault Bonus Damage (1d8)</name>
-        <text>Whenever you hit with a weapon that you're proficient with and deal damage, the weapon's damage now increases by (1d8)</text>
-      </feature>
     </autolevel>
     <autolevel level="17">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Action Surge (two uses)</name>
         <text>Starting at 17th level, you can use your Action Surge twice before a rest, but only once on the same turn.</text>
@@ -1057,84 +598,6 @@ When a creature you can see attacks a target other than you that is within 5 fee
       </feature>
     </autolevel>
     <autolevel level="18">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
-      <feature optional="YES">
-        <name>Adept Specialist: Growing Momentum Increase</name>
-        <text>At 18th level, when you cast the burst of speed force power targeting yourself at 1st-level, your speed now increases by 30 feet.
-	You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Adept Specialist: Instant Acceleration</name>
-        <text>At 18th level you reach the pinnacle of your training, moving faster than eyes or most sensors can track. When you use Action Surge feature, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Assault Specialist: Survivor</name>
-        <text>At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Demolitions Specialist: Bombard</name>
-        <text>At 18th level, when a creature fails its saving throw against a charge or grenade thrown by you, it has disadvantage on the next Dexterity saving throw it makes before the end of your next turn.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Enhancement Specialist: Ammunition Upgrades</name>
-        <text>The damage of Carbonite Shot, Coercing Shot, Explosive Shot, and Hallucinogen Shot increase to 4d6. Piercing Shot increases to 2d6.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Enhancement Specialist: Additional Ammunition Enhancement</name>
-        <text>You gain an additional Ammunition Enhancement option of your choice when you reach certain levels in this class: 18th level. Each option also improves when you become an 18th-level fighter.
-	Each time you learn new ammunition enhancements, you can also replace one ammunition enhancement you know with a different one.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Carbonite Shot</name>
-        <text>When this shot strikes its target, shards of carbonite wrap around the target. The creature hit by the shot takes an extra 2d6 cold damage, its speed is reduced by 10 feet, and it takes 2d6 kinetic damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the carbonite with a successful Strength (Athletics) check against your Special Ammunition save DC. Otherwise, the carbonite lasts for 1 minute or until you use this option again.
-	The cold damage and kinetic damage both increase to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Coercing Shot</name>
-        <text>You enhance your shot with chemicals that confuse the target. The creature hit by the shot takes an extra 2d6 poison damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw.
-	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Explosive Shot</name>
-        <text>You fire a shot set to explode on impact. The shot detonates after your attack. Immediately after the shot hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage each.
-	The fire damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Hallucinogen Shot</name>
-        <text>You enhance your shot with hallucinogenic chemicals. The creature hit by the shot takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.
-	The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Piercing Shot</name>
-        <text>You enhance your shot with armor-piercing properties. When you use this option, you don't make an attack roll for the attack. Instead, the shot shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The shot passes through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the shot, plus an extra 1d6 damage of the weapon's type. On a successful save, a target takes half as much damage.
-	The extra damage increases to 2d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Quell Shot</name>
-        <text>You fire a shot enhanced with a debilitating poison. The creature hit by the shot takes an extra 2d6 poison damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
-	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Ammunition Enhancements: Seeking Shot</name>
-        <text>You apply a tracing signal to your shot. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The shot flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the shot to travel to the target, the target must make a Dexterity saving throw. Otherwise, the shot disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the shot, plus an extra 1d6 kinetic damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.
-	The kinetic damage increases to 2d6 when you reach 18th level in this class.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Heavy Weapons Specialist: Pure Performance</name>
-        <text>At 18th level, attack rolls you make while wielding a weapon with the heavy or strength properties can't suffer from disadvantage.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Mounted Specialist: Vigilant Defender</name>
-        <text>At 18th level, you respond to danger with extraordinary vigilance. In combat, you get a special reaction that you can take once on every creature's turn, except your turn. You can use this special reaction only to make an opportunity attack, and you can't use it on the same turn that you take your normal reaction.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Shield Specialist: Greater Inspiring Surge</name>
-        <text>At 18th level, you can choose two allies within 60 feet of you, rather than one, when you using your Inspiring Surge feature.</text>
-      </feature>
-      <feature optional="YES">
-        <name>Tactical Specialist: Greater Signature Maneuver</name>
-        <text>At 18th level, you can choose a second signature maneuver. Additionally, when you use your signature maneuver, you can roll a d6 instead of a d4.</text>
-      </feature>
       <feature optional="YES">
         <name>Maneuver: Commander's Strike</name>
         <text>When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll.</text>
@@ -1202,22 +665,647 @@ When a creature you can see attacks a target other than you that is within 5 fee
       </feature>
     </autolevel>
     <autolevel level="19">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
-      <feature>
+      <feature optional="YES">
         <name>Ability Score Improvement (6th)</name>
         <text>When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. Alternatively, you can choose a feat (see Chapter 6 for a list of feats).</text>
       </feature>
     </autolevel>
     <autolevel level="20">
-      <slots>0,0,0,0,0,0,0,0,0,0,</slots>
       <feature>
         <name>Master of Combat</name>
         <text>At 20th level, you are the master of combat. Your Strength or Dexterity score increases by 2, and your Constitution score increases by 2. Your maximum for those scores increases by 2.
 	Additionally, you can attack four times, instead of once, whenever you take the Attack action on your turn.</text>
       </feature>
+    </autolevel>
+    <!-- Fighter Specialty: Adept Specialist -->
+    <autolevel level="3">
       <feature optional="YES">
-        <name>Assault Specialist: Assault Bonus Damage (1d10)</name>
+        <name>Fighter Specialty: Adept Specialist</name>
+        <text>Those fighters who choose to become Adept Specialists tap into a latent Force-sensitivity to augment their martial prowess, blending the two to accelerate their bodies and blows. An adept speeds across the battlefield, attacking opponents in a flurry of blows before dashing off again.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Forcecasting (Adept Specialist)</name>
+        <text>When you choose this specialty at 3rd level, you have learned powers, fragments of knowledge that imbue you with an abiding force ability. See chapter 10 for the general rules of forcecasting and chapter 11 for the force powers list.
+
+Force Powers Known:
+You learn 4 force powers of your choice, and you learn more at higher levels, as shown in the Force Powers Known column of the Adept Specialist Forcecasting table. You may not learn a force power of a level higher than your Max Power Level, and you may learn a force power at the same time you learn its prerequisite.
+
+Force Points:
+You have a number of force points equal to your fighter level, as shown in the Force Points column of the Adept Specialist Forcecasting table, + your Wisdom or Charisma modifier (your choice). You use these force points to cast force powers. You regain all expended force points when you finish a long rest.
+
+Max Power Level:
+Many force powers can be overpowered, consuming more force points to create a greater effect. You can overpower these abilities to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Adept Specialist Forcecasting table.
+	You may only cast force powers at 4th-level once. You regain the ability to do so after a long rest.
+
+Forcecasting Ability:
+Your forcecasting ability varies based on the alignment of the powers you cast. You use your Wisdom for light side powers, Charisma for dark side powers, and Wisdom or Charisma for universal powers (your choice). You use this ability score modifier whenever a power refers to your forcecasting ability. In addition, you use this ability score modifier when setting the saving throw DC for a force power you cast and when making an attack roll with one.
+
+	Force save DC = 8 + your proficiency bonus +your forcecasting ability modifier
+
+	Force attack modifier = your proficiency bonus +your forcecasting ability modifier</text>
+      </feature>
+      <feature optional="YES">
+        <name>Growing Momentum (Adept Specialist)</name>
+        <text>Also at 3rd level, you can cast the burst of speed force power targeting yourself at 1st-level without expending force points. At 10th level, when you do so, your speed increases by an additional 10 feet. At 18th level, when you do so, your speed increases by an additional 10 feet.
+	You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Whirling Weapons (Adept Specialist)</name>
+        <text>Beginning at 7th level, your constant blur of motion and attacks becomes an unending barrage as you build momentum. Once on your turn when you miss with a weapon attack you can make another weapon attack, no action required.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Growing Momentum Increase (Adept Specialist)</name>
+        <text>At 10th level, when you cast the burst of speed force power targeting yourself at 1st-level, your speed now increases by an 20 feet. At 18th level, when you do so, your speed increases by an additional 10 feet.
+	You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Focused Breathing (Adept Specialist)</name>
+        <text>At 10th level, you learn to recover some of your expended power quickly. When you use your Second Wind you also regain a number of force points equal to your Wisdom modifier (a minimum of one).</text>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>Unstoppable Force (Adept Specialist)</name>
+        <text>Starting at 15th level, you learn to completely ignore many of the most devastating impediments of combat. You can expend a use of Indomitable to gain the effect of the freedom of movement force power until the end of your next turn.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="18">
+      <feature optional="YES">
+        <name>Growing Momentum Increase (Adept Specialist)</name>
+        <text>At 18th level, when you cast the burst of speed force power targeting yourself at 1st-level, your speed now increases by 30 feet.
+	You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Instant Acceleration (Adept Specialist)</name>
+        <text>At 18th level you reach the pinnacle of your training, moving faster than eyes or most sensors can track. When you use Action Surge feature, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action.</text>
+      </feature>
+    </autolevel>
+    <!-- Fighter Specialty: Assault Specialist -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Fighter Specialty: Assault Specialist</name>
+        <text>Those fighters who choose to become Assault Specialists focus on the development of raw physical power honed to deadly perfection. Assault Specialists combine rigorous training with physical excellence to deal devastating blows.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Brute Force (Assault Specialist)</name>
+        <text>When you choose this specialty at 3rd level, whenever you hit with a weapon that you're proficient with and deal damage, the weapon's damage increases by an amount based on your level in this class, as shown on the Assault Bonus Damage table.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Brutish Durability (Assault Specialist)</name>
+        <text>Beginning at 7th level, whenever you make a saving throw, roll 1d6 and add the die to your saving throw total. If applying this bonus to a death saving throw increases the total to 20 or higher, you gain the benefits of rolling a 20 on the d20.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Additional Fighting Style (Assault Specialist)</name>
+        <text>At 10th level, you can choose a second Fighting Style option.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Assault Bonus Damage (1d6) (Assault Specialist)</name>
+        <text>Whenever you hit with a weapon that you're proficient with and deal damage, the weapon's damage now increases by (1d6)</text>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>Devastating Critical (Assault Specialist)</name>
+        <text>Starting at 15th level, when you score a critical hit with a weapon attack, you gain a bonus to that weapon's damage roll equal to your fighter level.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="16">
+      <feature optional="YES">
+        <name>Assault Bonus Damage (1d8) (Assault Specialist)</name>
+        <text>Whenever you hit with a weapon that you're proficient with and deal damage, the weapon's damage now increases by (1d8)</text>
+      </feature>
+    </autolevel>
+    <autolevel level="18">
+      <feature optional="YES">
+        <name>Survivor (Assault Specialist)</name>
+        <text>At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="20">
+      <feature optional="YES">
+        <name>Assault Bonus Damage (1d10) (Assault Specialist)</name>
         <text>Whenever you hit with a weapon that you're proficient with and deal damage, the weapon's damage now increases by (1d10)</text>
+      </feature>
+    </autolevel>
+    <!-- Fighter Specialty: Demolitions Specialist -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Fighter Specialty: Demolitions Specialist</name>
+        <text>Those fighters who choose to become Demolitions Specialists are experts in using explosives in combat. They have an explosive for every situation, whether it be breaching a fortified bunker, taking down a walker, or simply demonstrating that in combat, standing too close to your squadmates can be fatal.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Bonus Proficiencies (Demolitions Specialist)</name>
+        <text>When you choose this specialty at 3rd level, you gain proficiency in demolitions kit. Additionally, when you would install a breaching charge, you can do so in half the time.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Explosive Charge (Demolitions Specialist)</name>
+        <text>Also at 3rd level, you learn to create a number of small explosives known as charges. Over the course of a short or long rest, you can create a number of charges equal to your Intelligence modifier. You must have a demolitions kit in order to create these charges. Your charges can only be used by you, and they lose their potency at the end of your next short or long rest.
+	Once per turn, when you would make a ranged weapon attack, you can instead throw one of your charges. Your charges have a range equal to 30 feet + your Strength modifier x 5. You can throw a charge at a point you can see within range. Each creat-ure within 5 feet must make a Dexterity sav-ing throw (DC = 8 + your proficiency bonus + your Intelligence modifier + any bonuses to ranged weapon attack rolls). A creature takes 2d4 + your Intelligence modifier kin-etic damage on a failed save, or half as much on a successful one.
+	The damage of your charges increases to 3d4 at 7th level and 4d4 at 15th level.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Cause And Effect (Demolitions Specialist)</name>
+        <text>Beginning at 7th level, you learn to throw grenades as a bonus action. Additionally, when a creature fails a saving throw against a charge or grenade, you can expend a superiority die to apply one of your maneuvers. You can only use this feature once per grenade.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Explosive Charge Increase (3d4) (Demolitions Specialist)</name>
+        <text>The damage of your Explosive Charges increases to 3d4 at 7th level and 4d4 at 15th level.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Volatile Reflexes (Demolitions Specialist)</name>
+        <text>At 10th level, when a creature within 5 feet of you makes a melee attack against you, you can use your reaction and throw a charge behind the target. If the target fails its saving throw against the charge, you impose disadvantage on the attack roll made against you.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>Backup Plans (Demolitions Specialist)</name>
+        <text>Starting at 15th level, when you roll initiative and have no charges remaining, you can create 2 charges. Additionally, whenever you create a charge, you can change the damage type to acid, energy, fire, ion, lightning, or sonic.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Explosive Charge Increase (4d4) (Demolitions Specialist)</name>
+        <text>The damage of your Explosive Charges increases to 4d4 at 15th level.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="18">
+      <feature optional="YES">
+        <name>Bombard (Demolitions Specialist)</name>
+        <text>At 18th level, when a creature fails its saving throw against a charge or grenade thrown by you, it has disadvantage on the next Dexterity saving throw it makes before the end of your next turn.</text>
+      </feature>
+    </autolevel>
+    <!-- Fighter Specialty: Enhancement Specialist -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Fighter Specialty: Enhancement Specialist</name>
+        <text>Those fighters who choose to become Enhancement Specialists learn to apply their technological prowess to their blasters. With their deep understanding of both their weapon and how to manipulate its ammunition on the fly, they can often turn the tides of a battle with a single shot.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Studied Shooter (Enhancement Specialist)</name>
+        <text>When you choose this specialty at 3rd level, you learn specialized theory typical for practitioners of the enhancement trade. You gain proficiency in your choice of the Lore* (History) or Technology* (Arcana) skills. Additionally, you learn your choice of the encrypted message or minor image tech power. Intelligence is your techcasting ability for these powers.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Special Ammunition (Enhancement Specialist)</name>
+        <text>Also at 3rd level, you learn ammunition enhancements that are fueled by amplified shots to unleash special enhanced effects.
+
+Ammunition Enhancements:
+You know two ammunition enhancements of your choice, which are detailed under "Ammunition Enhancements" below, and you earn more at higher levels. Many ammunition enhancements boost an attack in some way. Once per turn when you fire a shot from a blaster as part of the Attack action, you can apply one of your Ammunition Enhancement options to that shot,
+	You gain an additional Ammunition Enhancement option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.
+	Each time you learn new ammunition enhancements, you can also replace one ammunition enhancement you know with a different one.
+
+Amplified Shots:
+You have two amplified shots, which you use to activate your ammunition enhancements. An amplified shot is expended when you use it. When you fire an amplified shot, your weapon is treated as enhanced for overcoming resistance and immunity to unenhanced attacks and damage. You decide to use the option when the shot hits a creature, unless the option doesn't involve an attack roll. You regain all of your amplified shots when you finish a short or long rest.
+
+Saving Throws:
+Some of your ammunition enhancements require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:
+
+	Ammunition save DC = 8 + your proficiency bonus + your Dexterity modifier</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Carbonite Shot (Enhancement Specialist)</name>
+        <text>When this shot strikes its target, shards of carbonite wrap around the target. The creature hit by the shot takes an extra 2d6 cold damage, its speed is reduced by 10 feet, and it takes 2d6 kinetic damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the carbonite with a successful Strength (Athletics) check against your Special Ammunition save DC. Otherwise, the carbonite lasts for 1 minute or until you use this option again.
+	The cold damage and kinetic damage both increase to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Coercing Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with chemicals that confuse the target. The creature hit by the shot takes an extra 2d6 poison damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw.
+	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Explosive Shot (Enhancement Specialist)</name>
+        <text>You fire a shot set to explode on impact. The shot detonates after your attack. Immediately after the shot hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage each.
+	The fire damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Hallucinogen Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with hallucinogenic chemicals. The creature hit by the shot takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.
+	The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Piercing Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with armor-piercing properties. When you use this option, you don't make an attack roll for the attack. Instead, the shot shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The shot passes through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the shot, plus an extra 1d6 damage of the weapon's type. On a successful save, a target takes half as much damage.
+	The extra damage increases to 2d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Quell Shot (Enhancement Specialist)</name>
+        <text>You fire a shot enhanced with a debilitating poison. The creature hit by the shot takes an extra 2d6 poison damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
+	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Seeking Shot (Enhancement Specialist)</name>
+        <text>You apply a tracing signal to your shot. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The shot flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the shot to travel to the target, the target must make a Dexterity saving throw. Otherwise, the shot disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the shot, plus an extra 1d6 kinetic damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.
+	The kinetic damage increases to 2d6 when you reach 18th level in this class.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Enhanced Shot (Enhancement Specialist)</name>
+        <text>Beginning at 7th level, you gain the ability to enhance your shots. Whenever you fire an unenhanced shot from a blaster, you can make it enhanced for the purpose of overcoming resistance and immunity to unenhanced attacks and damage.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Additional Ammunition Enhancement (Enhancement Specialist)</name>
+        <text>You gain an additional Ammunition Enhancement option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.
+	Each time you learn new ammunition enhancements, you can also replace one ammunition enhancement you know with a different one.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Carbonite Shot (Enhancement Specialist)</name>
+        <text>When this shot strikes its target, shards of carbonite wrap around the target. The creature hit by the shot takes an extra 2d6 cold damage, its speed is reduced by 10 feet, and it takes 2d6 kinetic damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the carbonite with a successful Strength (Athletics) check against your Special Ammunition save DC. Otherwise, the carbonite lasts for 1 minute or until you use this option again.
+	The cold damage and kinetic damage both increase to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Coercing Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with chemicals that confuse the target. The creature hit by the shot takes an extra 2d6 poison damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw.
+	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Explosive Shot (Enhancement Specialist)</name>
+        <text>You fire a shot set to explode on impact. The shot detonates after your attack. Immediately after the shot hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage each.
+	The fire damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Hallucinogen Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with hallucinogenic chemicals. The creature hit by the shot takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.
+	The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Piercing Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with armor-piercing properties. When you use this option, you don't make an attack roll for the attack. Instead, the shot shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The shot passes through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the shot, plus an extra 1d6 damage of the weapon's type. On a successful save, a target takes half as much damage.
+	The extra damage increases to 2d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Quell Shot (Enhancement Specialist)</name>
+        <text>You fire a shot enhanced with a debilitating poison. The creature hit by the shot takes an extra 2d6 poison damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
+	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Seeking Shot (Enhancement Specialist)</name>
+        <text>You apply a tracing signal to your shot. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The shot flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the shot to travel to the target, the target must make a Dexterity saving throw. Otherwise, the shot disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the shot, plus an extra 1d6 kinetic damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.
+	The kinetic damage increases to 2d6 when you reach 18th level in this class.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Redirected Shot (Enhancement Specialist)</name>
+        <text>At 10th level, you learn how to direct an errant shot toward a new target. When you make an attack roll with an enhanced shot and miss, you can use a bonus action to reroll the attack roll against a different target within 60 feet of the original target.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Additional Ammunition Enhancement (Enhancement Specialist)</name>
+        <text>You gain an additional Ammunition Enhancement option of your choice when you reach certain levels in this class: 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter.
+	Each time you learn new ammunition enhancements, you can also replace one ammunition enhancement you know with a different one.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Carbonite Shot (Enhancement Specialist)</name>
+        <text>When this shot strikes its target, shards of carbonite wrap around the target. The creature hit by the shot takes an extra 2d6 cold damage, its speed is reduced by 10 feet, and it takes 2d6 kinetic damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the carbonite with a successful Strength (Athletics) check against your Special Ammunition save DC. Otherwise, the carbonite lasts for 1 minute or until you use this option again.
+	The cold damage and kinetic damage both increase to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Coercing Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with chemicals that confuse the target. The creature hit by the shot takes an extra 2d6 poison damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw.
+	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Explosive Shot (Enhancement Specialist)</name>
+        <text>You fire a shot set to explode on impact. The shot detonates after your attack. Immediately after the shot hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage each.
+	The fire damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Hallucinogen Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with hallucinogenic chemicals. The creature hit by the shot takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.
+	The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Piercing Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with armor-piercing properties. When you use this option, you don't make an attack roll for the attack. Instead, the shot shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The shot passes through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the shot, plus an extra 1d6 damage of the weapon's type. On a successful save, a target takes half as much damage.
+	The extra damage increases to 2d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Quell Shot (Enhancement Specialist)</name>
+        <text>You fire a shot enhanced with a debilitating poison. The creature hit by the shot takes an extra 2d6 poison damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
+	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Seeking Shot (Enhancement Specialist)</name>
+        <text>You apply a tracing signal to your shot. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The shot flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the shot to travel to the target, the target must make a Dexterity saving throw. Otherwise, the shot disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the shot, plus an extra 1d6 kinetic damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.
+	The kinetic damage increases to 2d6 when you reach 18th level in this class.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>Ever-Ready Shot (Enhancement Specialist)</name>
+        <text>Starting at 15th level, your enhanced ammunition is available whenever battle starts. If you roll initiative and have no uses of Special Ammunition remaining, you regain one use of it.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Additional Ammunition Enhancement (Enhancement Specialist)</name>
+        <text>You gain an additional Ammunition Enhancement option of your choice when you reach certain levels in this class: 15th, and 18th level. Each option also improves when you become an 18th-level fighter.
+	Each time you learn new ammunition enhancements, you can also replace one ammunition enhancement you know with a different one.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Carbonite Shot (Enhancement Specialist)</name>
+        <text>When this shot strikes its target, shards of carbonite wrap around the target. The creature hit by the shot takes an extra 2d6 cold damage, its speed is reduced by 10 feet, and it takes 2d6 kinetic damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the carbonite with a successful Strength (Athletics) check against your Special Ammunition save DC. Otherwise, the carbonite lasts for 1 minute or until you use this option again.
+	The cold damage and kinetic damage both increase to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Coercing Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with chemicals that confuse the target. The creature hit by the shot takes an extra 2d6 poison damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw.
+	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Explosive Shot (Enhancement Specialist)</name>
+        <text>You fire a shot set to explode on impact. The shot detonates after your attack. Immediately after the shot hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage each.
+	The fire damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Hallucinogen Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with hallucinogenic chemicals. The creature hit by the shot takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.
+	The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Piercing Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with armor-piercing properties. When you use this option, you don't make an attack roll for the attack. Instead, the shot shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The shot passes through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the shot, plus an extra 1d6 damage of the weapon's type. On a successful save, a target takes half as much damage.
+	The extra damage increases to 2d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Quell Shot (Enhancement Specialist)</name>
+        <text>You fire a shot enhanced with a debilitating poison. The creature hit by the shot takes an extra 2d6 poison damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
+	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Seeking Shot (Enhancement Specialist)</name>
+        <text>You apply a tracing signal to your shot. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The shot flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the shot to travel to the target, the target must make a Dexterity saving throw. Otherwise, the shot disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the shot, plus an extra 1d6 kinetic damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.
+	The kinetic damage increases to 2d6 when you reach 18th level in this class.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="18">
+      <feature optional="YES">
+        <name>Ammunition Upgrades (Enhancement Specialist)</name>
+        <text>The damage of Carbonite Shot, Coercing Shot, Explosive Shot, and Hallucinogen Shot increase to 4d6. Piercing Shot increases to 2d6.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Additional Ammunition Enhancement (Enhancement Specialist)</name>
+        <text>You gain an additional Ammunition Enhancement option of your choice when you reach certain levels in this class: 18th level. Each option also improves when you become an 18th-level fighter.
+	Each time you learn new ammunition enhancements, you can also replace one ammunition enhancement you know with a different one.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Carbonite Shot (Enhancement Specialist)</name>
+        <text>When this shot strikes its target, shards of carbonite wrap around the target. The creature hit by the shot takes an extra 2d6 cold damage, its speed is reduced by 10 feet, and it takes 2d6 kinetic damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the carbonite with a successful Strength (Athletics) check against your Special Ammunition save DC. Otherwise, the carbonite lasts for 1 minute or until you use this option again.
+	The cold damage and kinetic damage both increase to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Coercing Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with chemicals that confuse the target. The creature hit by the shot takes an extra 2d6 poison damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is charmed by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the charmed target, deals damage to it, or forces it to make a saving throw.
+	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Explosive Shot (Enhancement Specialist)</name>
+        <text>You fire a shot set to explode on impact. The shot detonates after your attack. Immediately after the shot hits the creature, the target and all other creatures within 10 feet of it take 2d6 fire damage each.
+	The fire damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Hallucinogen Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with hallucinogenic chemicals. The creature hit by the shot takes an extra 2d6 psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.
+	The psychic damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Piercing Shot (Enhancement Specialist)</name>
+        <text>You enhance your shot with armor-piercing properties. When you use this option, you don't make an attack roll for the attack. Instead, the shot shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The shot passes through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the shot, plus an extra 1d6 damage of the weapon's type. On a successful save, a target takes half as much damage.
+	The extra damage increases to 2d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Quell Shot (Enhancement Specialist)</name>
+        <text>You fire a shot enhanced with a debilitating poison. The creature hit by the shot takes an extra 2d6 poison damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.
+	The poison damage increases to 4d6 when you reach 18th level in this class.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Ammunition Enhancements: Seeking Shot (Enhancement Specialist)</name>
+        <text>You apply a tracing signal to your shot. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The shot flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the shot to travel to the target, the target must make a Dexterity saving throw. Otherwise, the shot disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the shot, plus an extra 1d6 kinetic damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.
+	The kinetic damage increases to 2d6 when you reach 18th level in this class.</text>
+      </feature>
+    </autolevel>
+    <!-- Fighter Specialty: Heavy Weapons Specialist -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Fighter Specialty: Heavy Weapons Specialist</name>
+        <text>Some manned instruments of war require their user to have superior physical prowess to overcome their weight and encumbrance. Those fighters who choose to become Heavy Weapons Specialists use their powerful bodies, and powerful armaments, to overwhelm their foes.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Rock Steady (Heavy Weapons Specialist)</name>
+        <text>When you choose this specialty at 3rd level, you have learned to use the heft of your weapon to root yourself in place. At the end of each of your turns, if you move less than half your speed while wielding a weapon with the heavy or strength properties, you have advantage on saving throws to avoid being restrained, moved, or knocked prone. This advantage lasts until the end of your next turn.</text>
+      </feature>
+      <feature optional="YES">
+        <name>My Little Friend Says Hello There (Heavy Weapons Specialist)</name>
+        <text>Also at 3rd level, you know how to use the sheer size of your weapon to strike fear in those around you. You can add your Strength modifier to any Charisma (Intimidation) check you make while wielding a weapon with the heavy or strength properties that doesn't already include that modifier.
+	Additionally, if your size is Small, you no longer have disadvantage on attack rolls with heavy weapons due to being Small.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Maximum Output (Heavy Weapons Specialist)</name>
+        <text>Beginning at 7th level, when you take the Attack action while wielding a weapon with the heavy or strength properties, you can forgo one or more attacks. If you do so, you deal additional damage the first time you hit with an attack roll before the end of your next turn. For each attack you forgo in this fashion, you deal extra damage equal to 1d12 + half your fighter level (rounded down). If you miss with the first attack roll you make before the end of your next turn, you instead deal normal weapon damage.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Straight Through (Heavy Weapons Specialist)</name>
+        <text>At 10th level, when you score a critical hit on your turn while wielding a weapon with the heavy or strength properties, you can make one weapon attack against a creature within 5 feet of the target using your reaction.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>Overwhelm (Heavy Weapons Specialist)</name>
+        <text>Starting at 15th level, when you use your Second Wind while wielding a weapon with the heavy or strength properties, if you hit with the first attack roll you make before the end of your next turn, you treat the hit as a critical hit. If you miss with the first attack roll you make before the end of your next turn, you instead treat the miss as a hit.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="18">
+      <feature optional="YES">
+        <name>Pure Performance (Heavy Weapons Specialist)</name>
+        <text>At 18th level, attack rolls you make while wielding a weapon with the heavy or strength properties can't suffer from disadvantage.</text>
+      </feature>
+    </autolevel>
+    <!-- Fighter Specialty: Mounted Specialist -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Fighter Specialty: Mounted Specialist</name>
+        <text>Those fighters who choose to become Mounted Specialists excel at mounted combat. Mounted Specialists are most dangerous from the seat of a speeder or saddle of a varactyl, though they can hold their own from the ground. Their versatility often has them leading the charge or protecting the team.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Bonus Proficiencies (Mounted Specialist)</name>
+        <text>When you choose this specialty at 3rd level, you gain proficiency in Animal Handling or Piloting* (Religion).</text>
+      </feature>
+      <feature optional="YES">
+        <name>Born To The Saddle (Mounted Specialist)</name>
+        <text>Also at 3rd level, your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you're not incapacitated.
+	Finally, mounting or dismounting a creature or vehicle costs you only 5 feet of movement, rather than half your speed.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Unwavering Mark (Mounted Specialist)</name>
+        <text>Lastly at 3rd level, you can menace your foes, foiling their attacks and punishing them for harming others. When you hit a creature with a melee weapon attack, you can mark the creature until the end of your next turn. This effect ends early if you are incapacitated or you die, or if someone else marks the creature. While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn't target you.
+	In addition, if a creature marked by you deals damage to anyone other than you, you can make a special melee weapon attack against the marked creature as a bonus action on your next turn. You have advantage on the attack roll, and if it hits, the attacks weapon deals extra damage to the target equal to half your fighter level.
+	Regardless of the number of creatures you mark, you can make this special attack a number of times equal to your Strength modifier (minimum of once), and you regain all expended uses when you finish a long rest.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Warding Maneuver (Mounted Specialist)</name>
+        <text>Beginning at 7th level, you learn to fend off strikes directed at you, your mount, or other creatures nearby. If you or a creature you can see within 5 feet of you is hit by an attack, you can roll ld8 as a reaction if you're wielding a melee weapon or a shield. Roll the die, and add the number rolled to the target's AC against that attack. If the attack still hits, the target has resistance against the attacks damage.
+	You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Hold The Line (Mounted Specialist)</name>
+        <text>At 10th level, you become a master of locking down your enemies. Creatures provoke an opportunity attack from you when they move 5 feet or more while within your reach, and if you hit a creature with an opportunity attack, the target's speed is reduced to 0 until the end of the current turn.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>Ferocious Charger (Mounted Specialist)</name>
+        <text>Starting at 15th level, you can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target must succeed on a Strength saving throw (DC = 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can use this feature only once on each of your turns.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="18">
+      <feature optional="YES">
+        <name>Vigilant Defender (Mounted Specialist)</name>
+        <text>At 18th level, you respond to danger with extraordinary vigilance. In combat, you get a special reaction that you can take once on every creature's turn, except your turn. You can use this special reaction only to make an opportunity attack, and you can't use it on the same turn that you take your normal reaction.</text>
+      </feature>
+    </autolevel>
+    <!-- Fighter Specialty: Shield Specialist -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Fighter Specialty: Shield Specialist</name>
+        <text>Those fighters who choose to become Shield Specialists train to bolster those around them. They can inspire their allies with renewed vigor, lifting them to new heights, while simultaneously protecting them from harm.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Techcasting (Shield Specialist)</name>
+        <text>When you choose this specialty at 3rd level, you have derived powers from schematics with the aid of your wristpad. See chapter 10 for the general rules of techcasting and chapter 12 for the tech powers list.
+
+Tech Powers Known:
+You learn 4 tech powers of your choice, and you learn more at higher levels, as shown in the Tech Powers Known column of the Shield Specialist Techcasting table. You may not learn a tech power of a level higher than your Max Power Level.
+
+Tech Points:
+You have a number of tech points equal to half of your fighter level (rounded up), as shown in the Tech Points column of the Shield Specialist Techcasting table, + your Intelligence modifier. You use these tech points to cast tech powers. You regain all expended tech points when you finish a short or long rest.
+
+Max Power Level:
+Many tech powers can be overcharged, consuming more tech points to create a greater effect. You can overcharge these powers to a maximum level, which increases at higher levels, as shown in the Max Power Level column of the Shield Specialist Techcasting table.
+	You may only cast tech powers at 4th-level once. You regain the ability to do so after a long rest.
+
+Techcasting Ability:
+Intelligence is your techcasting ability for your tech powers. You use your Intelligence whenever a power refers to your techcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a tech power you cast and when making an attack roll with one.
+
+	Tech save DC = 8 + your proficiency bonus +your Intelligence modifier
+
+	Tech attack modifier = your proficiency bonus +your Intelligence modifier
+
+Techcasting Focus:
+You use a wristpad (found in chapter 5) as a techcasting focus for your tech powers.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Rallying Cry (Shield Specialist)</name>
+        <text>Beginning at 7th level, you learn how to inspire your allies to fight on past their injuries. When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter level, provided that the creature can see or hear you.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Inspiring Surge (Shield Specialist)</name>
+        <text>At 10th level, when you use your Action Surge feature, you can choose one creature within 60 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>Bulwark (Shield Specialist)</name>
+        <text>Starting at 15th level, you can extend the benefit of your Indomitable feature to an ally. When you decide to use Indomitable to reroll an Intelligence, a Wisdom, or a Charisma saving throw and you aren't incapacitated, you can choose one ally within 60 feet of you that also failed its saving throw against the same effect. If that creature can see or hear you, it can reroll its saving throw and must use the new roll.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="18">
+      <feature optional="YES">
+        <name>Greater Inspiring Surge (Shield Specialist)</name>
+        <text>At 18th level, you can choose two allies within 60 feet of you, rather than one, when you using your Inspiring Surge feature.</text>
+      </feature>
+    </autolevel>
+    <!-- Fighter Specialty: Tactical Specialist -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Fighter Specialty: Tactical Specialist</name>
+        <text>Those fighters who choose to become Tactical Specialists employ martial techniques passed down through generations. To a Tactical Specialist, combat is an academic field, sometimes including subjects beyond battle such as armstech or armormech. Not every fighter absorbs the lessons of history, theory, and artistry that are reflected in the Tactical Specialty, but those who do are well-rounded fighters of great skill and knowledge.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Improved Combat Superiority (Tactical Specialist)</name>
+        <text>When you choose this specialty at 3rd level, your tactical skill in combat improves, granting bonuses to your Combat Superiority.
+
+Additional Maneuvers
+You learn two additional maneuvers of your choice, and you earn more at higher levels, as shown in the Maneuvers Known column of the Tactical Specialist Combat Superiority table.
+
+Additional Superiority Dice
+You have two additional superiority dice, and you earn more at higher levels, as shown in the Superiority Dice column of the Tactical Specialist Combat Superiority table.
+
+Additionally, your superiority dice become d6s. This die changes as you gain fighter levels, as shown in the Combat Superiority column of the Tactical Specialist Combat Superiority table.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Student Of War (Tactical Specialist)</name>
+        <text>Also at 3rd level, you gain proficiency with one type of artisan's tools of your choice.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Combat Superiority Improvements (d8/3/3) (Tactical Specialist)</name>
+        <text>Your combat superiority die is now a d8 instead of a d6.
+	You have 3 superiority dice, and you earn more at higher levels, as shown in the Superiority Dice column of the Tactical Specialist Combat Superiority table.
+	You learn a additional maneuver of your choice (for a total of 3), and you earn more at higher levels, as shown in the Maneuvers Known column of the Tactical Specialist Combat Superiority table.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Know Your Enemy (Tactical Specialist)</name>
+        <text>Beginning at 7th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The GM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:
+
+	• Strength score
+	• Dexterity score
+	• Constitution score
+	• Armor Class
+	• Current hit points
+	• Total class levels (if any)
+	• Fighter class levels (if any)</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Signature Maneuver (Tactical Specialist)</name>
+        <text>At 10th level, you choose a maneuver as your signature maneuver. Whenever you use that maneuver, you can roll a d4 and use it instead of expending a Superiority Dice. You may only use this feature once per turn.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="11">
+      <feature optional="YES">
+        <name>Combat Superiority Die Improvement (d10/3/4) (Tactical Specialist)</name>
+        <text>Your combat superiority die is now a d10 instead of a d8.
+	You still have 3 superiority dice, and you earn more at higher levels, as shown in the Superiority Dice column of the Tactical Specialist Combat Superiority table.
+	You learn a additional maneuver of your choice (for a total of 4), and you earn more at higher levels, as shown in the Maneuvers Known column of the Tactical Specialist Combat Superiority table.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>Combat Superiority Improvements (d12/4/3) (Tactical Specialist)</name>
+        <text>Your combat superiority die is now a d12 instead of a d10.
+	You have 4 superiority dice, and you earn more at higher levels, as shown in the Superiority Dice column of the Tactical Specialist Combat Superiority table.
+	You learn a additional maneuver of your choice (for a total of 3), and you earn more at higher levels, as shown in the Maneuvers Known column of the Tactical Specialist Combat Superiority table.</text>
+      </feature>
+      <feature optional="YES">
+        <name>Relentless (Tactical Specialist)</name>
+        <text>Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die.</text>
+      </feature>
+    </autolevel>
+    <autolevel level="18">
+      <feature optional="YES">
+        <name>Greater Signature Maneuver (Tactical Specialist)</name>
+        <text>At 18th level, you can choose a second signature maneuver. Additionally, when you use your signature maneuver, you can roll a d6 instead of a d4.</text>
       </feature>
     </autolevel>
   </class>
