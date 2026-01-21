@@ -1,6 +1,7 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Added a `Star Wars 5e` compendium, created by Stuart C. Mackey. (Incomplete at v0.9.1)
 * Added new files to separate WotC, SemiOfficial, and Partnered legacy content.
 * Added (Third Party) tags to Partnered Official content.
 * Added page numbers to Eberron: Forge of the Artificer content
