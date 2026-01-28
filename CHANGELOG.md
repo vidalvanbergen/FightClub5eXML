@@ -1,6 +1,7 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Added `Obojima: Tales from the Tall Grass` partnered content.
 * Added `Book of Ebon Tides` partnered content.
 * Added `Mystic Subclasses` Unearthed Arcana content.
 * Added a `Star Wars 5e` compendium, created by Stuart C. Mackey. (Incomplete at v0.9.1)
