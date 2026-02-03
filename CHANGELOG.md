@@ -1,6 +1,9 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Added `In Search of Smugglers Secrets` indie content, shared by @ThreeDawgs.
+* Added `Pluto Jacksons Monsters of Drakkenheim` indie content, shared by @ThreeDawgs.
+* Added `Sebastian Crowes Terror in Tierhaven` indie content, shared by @ThreeDawgs.
 * Added `Obojima: Tales from the Tall Grass` partnered content.
 * Added `Book of Ebon Tides` partnered content.
 * Added `Mystic Subclasses` Unearthed Arcana content.
