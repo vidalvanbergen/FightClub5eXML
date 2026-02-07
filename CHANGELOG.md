@@ -1,13 +1,14 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Added `Auroboros: Coils of the Serpent` indie content, shared by @Cvamped.
 * Added `In Search of Smugglers Secrets` indie content, shared by @ThreeDawgs.
 * Added `Pluto Jacksons Monsters of Drakkenheim` indie content, shared by @ThreeDawgs.
 * Added `Sebastian Crowes Terror in Tierhaven` indie content, shared by @ThreeDawgs.
 * Added `Obojima: Tales from the Tall Grass` partnered content.
 * Added `Book of Ebon Tides` partnered content.
 * Added `Mystic Subclasses` Unearthed Arcana content.
-* Added a `Star Wars 5e` compendium, created by Stuart C. Mackey. (Incomplete at v0.9.1)
+* Added a `Star Wars 5e` compendium, shared by Stuart C. Mackey. (Incomplete at v0.9.1)
 * Added (Third Party) tags to Partnered Official content.
 * Updated and added page numbers to `Eberron: Forge of the Artificer` and `Forgotten Realms: Heroes of Faerun` content.
 * Other changes and fixes.
