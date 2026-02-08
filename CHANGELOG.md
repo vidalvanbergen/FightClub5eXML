@@ -1,6 +1,7 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Added `A Quandary of Raiders` campaign, shared by @Iggwilv.
 * Added `Auroboros: Coils of the Serpent` indie content, shared by @Cvamped.
 * Added `In Search of Smugglers Secrets` indie content, shared by @ThreeDawgs.
 * Added `Pluto Jacksons Monsters of Drakkenheim` indie content, shared by @ThreeDawgs.
