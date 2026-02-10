@@ -1,6 +1,6 @@
 ## CHANGE LOG
 
-### 2026-##-##
+### 2026-02-10
 * Added `A Quandary of Raiders` and `Tomb of Annihilation` campaigns, shared by @Iggwilv.
 * Added `Auroboros: Coils of the Serpent` indie content, shared by @Cvamped.
 * Added `In Search of Smugglers Secrets` indie content, shared by @ThreeDawgs.
