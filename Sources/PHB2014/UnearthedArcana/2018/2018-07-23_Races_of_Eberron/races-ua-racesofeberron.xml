@@ -32,7 +32,7 @@ Source:	Unearthed Arcana: Races of Eberron p. 1</text>
 Changeling Names: Bin, Cas, Dox, Fie, Hars, Jin, Lam, Mas, Nix, Ot, Paik, Ruz, Sim, Toox, Vil, Yug</text>
     </trait>
     <trait>
-      <name>Ability Score Increases</name>
+      <name>Ability Score Increase</name>
       <text>Your Charisma score increases by 2, and either your Dexterity or your Intelligence increases by 1 (your choice).</text>
     </trait>
     <trait>
@@ -54,6 +54,10 @@ Height = 5 feet + 1 inch + your size modifier in inches
 Weight in pounds = 115 + (2d4 x your size modifier)</text>
       <roll description="Size Modifier">2d4</roll>
       <roll description="Weight Modifier">2d4</roll>
+    </trait>
+    <trait>
+      <name>Speed</name>
+      <text>Your base walking speed is 30 feet.</text>
     </trait>
     <trait category="species">
       <name>Change Appearance</name>
@@ -129,6 +133,10 @@ Female Quori Names: Ashana, Ashtai, Ishara, Nari, Tana, Tari, Vakri
 Kalashtar Names: Coratash, Dalavash, Dolishara, Halakosh, Khoratari, Koratana, Lanhareth, Molavakri, Nevitash, Sorashana, Torashtai, Valakhad, Vishara</text>
     </trait>
     <trait>
+      <name>Ability Score Increase</name>
+      <text>Your Charisma score increases by 1, and your Wisdom score increases by 1.</text>
+    </trait>
+    <trait>
       <name>Age</name>
       <text>Kalashtar develop physically at the same rate as humans do and have similar lifespans.</text>
     </trait>
@@ -147,6 +155,10 @@ Height = 5 feet + 4 inches + your size modifier in inches
 Weight in pounds = 110 + (1d6 × your size modifier)</text>
       <roll description="Size Modifier">2d6</roll>
       <roll description="Weight Modifier">1d6</roll>
+    </trait>
+    <trait>
+      <name>Speed</name>
+      <text>Your base walking speed is 30 feet.</text>
     </trait>
     <trait category="species">
       <name>Dual Mind</name>
@@ -174,26 +186,14 @@ Weight in pounds = 110 + (1d6 × your size modifier)</text>
       <text>You can speak, read, and write Common, Quori, and one other language of your choice.</text>
     </trait>
   </race>
-  <!-- <race>
-    <name>Shifter, Beasthide (UA Races of Eberron)</name>
-    <size>M</size>
-    <speed>30</speed>
-    <ability>Dex +1, Con +2</ability>
-    <proficiency>Athletics, Perception</proficiency>
-    <trait category="description">
-      <name>Description</name>
-      <text>"Geth's ancient heritage rose up from deep within him, spreading out from the core of his being. Some shifters manifested terrible claws, massive fangs, astounding speed, or heightened senses. Geth's gift from his lycanthrope ancestors was sheer toughness. Strength seeped into his bones and flooded his flesh. His skin hardened, and his hair became coarse like an animal's tough hide. A sense of invincibility spread through him. For the moment, at least, he felt unstoppable!"
+  <!-- <race><name>Shifter, Beasthide (UA Races of Eberron)</name><size>M</size><speed>30</speed><ability>Dex +1, Con +2</ability><proficiency>Athletics, Perception</proficiency><trait category="description"><name>Description</name><text>"Geth's ancient heritage rose up from deep within him, spreading out from the core of his being. Some shifters manifested terrible claws, massive fangs, astounding speed, or heightened senses. Geth's gift from his lycanthrope ancestors was sheer toughness. Strength seeped into his bones and flooded his flesh. His skin hardened, and his hair became coarse like an animal's tough hide. A sense of invincibility spread through him. For the moment, at least, he felt unstoppable!"
 —Don Bassingthwaite, The Binding Stone
 
 Shifters are sometimes called the weretouched, as many believe that they are the descendants of humans and lycanthropes. They are humanoids with a bestial aspect. While they can't fully change shape, they can temporarily enhance their animalistic features—a state they call shifting. Whatever their origins, shifters have evolved into a unique race. A shifter walks on the knife's edge between the wilds and the world around them. Do they embrace their primal instincts or the path of civilization?
 
 Stoic and solid, a beasthide shifter draws strength and stamina from the beast within. Beasthide shifters are typically tied to the bear or the boar, but any creature known for its toughness could apply.
 
-Source:	Unearthed Arcana: Races of Eberron p. 6</text>
-    </trait>
-    <trait category="description">
-      <name>The Beast Within</name>
-      <text>Early in childhood, a shifter forms a bond with a beast within: a totemic force that shapes their body and mind. Some shifters believe that these spirits are independent entities, and they might speak of Bear or Wolf as ancestors or guides. Most just see the beast within as a formidable expression of their inner nature, something that emerges over time as the shifter's personality takes shape. The beast within is a pool of powerful instincts, and its influence is revealed by the shifter's personality: a feline shifter might be cool and distant, driven by predatory instincts, while a shifter with a lupine spirit is drawn to find and protect a pack. When a shifter fully embraces this beast within, they physically transform for a short time.
+Source:	Unearthed Arcana: Races of Eberron p. 6</text></trait><trait category="description"><name>The Beast Within</name><text>Early in childhood, a shifter forms a bond with a beast within: a totemic force that shapes their body and mind. Some shifters believe that these spirits are independent entities, and they might speak of Bear or Wolf as ancestors or guides. Most just see the beast within as a formidable expression of their inner nature, something that emerges over time as the shifter's personality takes shape. The beast within is a pool of powerful instincts, and its influence is revealed by the shifter's personality: a feline shifter might be cool and distant, driven by predatory instincts, while a shifter with a lupine spirit is drawn to find and protect a pack. When a shifter fully embraces this beast within, they physically transform for a short time.
 	This beast within is reflected by the shifter's subrace. The following subraces are especially common:
 
 Beasthide often signifies the bear or boar: stoic, stubborn and thick-skinned.
@@ -204,90 +204,26 @@ Swiftstride shifters are often predatory and feline, but a swiftstride could als
 
 Wildhunt shifters are born from any creature that tracks its prey.
 
-While the beast within certainly has a physical impact on a shifter, it also has a spiritual and psychological effect. Two beasthide shifters share the same special ability, but if one has the aspect of the boar and the other is more like a bear, they'll be quite different in personality. With any shifter, identifying the beast within is a crucial part of understanding the character.</text>
-    </trait>
-    <trait category="description">
-      <name>Similar and Diverse</name>
-      <text>Shifters are similar to humans in height and build but are more naturally lithe and flexible. Their facial features have a bestial cast, with large eyes, flat noses, and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies.
-	The traits of the beast within affect a shifter's appearance as well. A swiftstride shifter might have catlike eyes and delicate build, while a beasthide shifter is likely a massive brute built like a bear. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.</text>
-    </trait>
-    <trait category="description">
-      <name>The Journey Yet to Come</name>
-      <text>Shifters have a strong presence in the Eldeen Reaches, and they often live among humans and can be found in rural areas across Khorvaire. While they form powerful bonds with friends and kin, shifters place great value on selfreliance and freedom. It's a shifter proverb to "always be prepared for the journey yet to come," and most shifters strive to be ready for change or opportunity.
-	Shifters have a natural inclination toward classes with a primal connection. A shifter barbarian draws their rage from the beast within. A shifter ranger indulges their urge to wander and hunt. A shifter rogue harnesses their own predatory instincts. But shifters can pursue any path or faith.</text>
-    </trait>
-    <trait category="description">
-      <name>Shifter Names</name>
-      <text>Shifters have no language of their own and often live in blended communities. As such, shifter names typically overlap with the names of other cultures in their region. Many shifters prefer to keep their personal names for their friends and use "wandering names" with strangers. These are usually tied to an obvious physical or personality trait.
+While the beast within certainly has a physical impact on a shifter, it also has a spiritual and psychological effect. Two beasthide shifters share the same special ability, but if one has the aspect of the boar and the other is more like a bear, they'll be quite different in personality. With any shifter, identifying the beast within is a crucial part of understanding the character.</text></trait><trait category="description"><name>Similar and Diverse</name><text>Shifters are similar to humans in height and build but are more naturally lithe and flexible. Their facial features have a bestial cast, with large eyes, flat noses, and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies.
+	The traits of the beast within affect a shifter's appearance as well. A swiftstride shifter might have catlike eyes and delicate build, while a beasthide shifter is likely a massive brute built like a bear. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.</text></trait><trait category="description"><name>The Journey Yet to Come</name><text>Shifters have a strong presence in the Eldeen Reaches, and they often live among humans and can be found in rural areas across Khorvaire. While they form powerful bonds with friends and kin, shifters place great value on selfreliance and freedom. It's a shifter proverb to "always be prepared for the journey yet to come," and most shifters strive to be ready for change or opportunity.
+	Shifters have a natural inclination toward classes with a primal connection. A shifter barbarian draws their rage from the beast within. A shifter ranger indulges their urge to wander and hunt. A shifter rogue harnesses their own predatory instincts. But shifters can pursue any path or faith.</text></trait><trait category="description"><name>Shifter Names</name><text>Shifters have no language of their own and often live in blended communities. As such, shifter names typically overlap with the names of other cultures in their region. Many shifters prefer to keep their personal names for their friends and use "wandering names" with strangers. These are usually tied to an obvious physical or personality trait.
 
-Shifter Names: Badger, Bear, Cat, Fang, Grace, Grim, Moon, Rain, Red, Scar, Stripe, Swift, Whiskers, Wolf</text>
-    </trait>
-    <trait>
-      <name>Age</name>
-      <text>Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old.</text>
-    </trait>
-    <trait>
-      <name>Alignment</name>
-      <text>Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive Shifters toward chaotic alignments.</text>
-    </trait>
-    <trait>
-      <name>Size</name>
-      <text>Shifters range from 5 to almost 7 feet tall, depending on their subrace. Your size is Medium.
+Shifter Names: Badger, Bear, Cat, Fang, Grace, Grim, Moon, Rain, Red, Scar, Stripe, Swift, Whiskers, Wolf</text></trait><trait><name>Age</name><text>Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old.</text></trait><trait><name>Alignment</name><text>Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive Shifters toward chaotic alignments.</text></trait><trait><name>Size</name><text>Shifters range from 5 to almost 7 feet tall, depending on their subrace. Your size is Medium.
 
 To set your height and weight randomly, start with rolling a size modifier:
 
 Size modifier = 2d8
 Height = 4 feet + 6 inches + your size modifier in inches
-Weight in pounds = 90 + (2d4 × your size modifier)</text>
-      <roll description="Size Modifier">2d8</roll>
-      <roll description="Weight Modifier">2d4</roll>
-    </trait>
-    <trait category="species">
-      <name>Darkvision</name>
-      <text>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
-    </trait>
-    <trait category="species">
-      <name>Keen Senses</name>
-      <text>You have proficiency with the Perception skill.</text>
-    </trait>
-    <trait category="species">
-      <name>Shifting</name>
-      <text>As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your Shifter subrace, described below.
-	Once you shift, you can't do so again until you finish a short or long rest.</text>
-    </trait>
-    <trait category="subspecies">
-      <name>Tough</name>
-      <text>You have proficiency with the Athletics skill.</text>
-    </trait>
-    <trait category="subspecies">
-      <name>Shifting Feature</name>
-      <text>Whenever you shift, you gain 1d6 additional temporary hit points, and while shifted, you have a +1 bonus to your AC.</text>
-    </trait>
-    <trait>
-      <name>Languages</name>
-      <text>You can speak, read, and write Common.</text>
-    </trait>
-  </race> -->
-  <!-- <race>
-    <name>Shifter, Longtooth (UA Races of Eberron)</name>
-    <size>M</size>
-    <speed>30</speed>
-    <ability>Dex +1, Str +2</ability>
-    <proficiency>Intimidation, Perception</proficiency>
-    <trait category="description">
-      <name>Description</name>
-      <text>"Geth's ancient heritage rose up from deep within him, spreading out from the core of his being. Some shifters manifested terrible claws, massive fangs, astounding speed, or heightened senses. Geth's gift from his lycanthrope ancestors was sheer toughness. Strength seeped into his bones and flooded his flesh. His skin hardened, and his hair became coarse like an animal's tough hide. A sense of invincibility spread through him. For the moment, at least, he felt unstoppable!"
+Weight in pounds = 90 + (2d4 × your size modifier)</text><roll description="Size Modifier">2d8</roll><roll description="Weight Modifier">2d4</roll></trait><trait category="species"><name>Darkvision</name><text>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text></trait><trait category="species"><name>Keen Senses</name><text>You have proficiency with the Perception skill.</text></trait><trait category="species"><name>Shifting</name><text>As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your Shifter subrace, described below.
+	Once you shift, you can't do so again until you finish a short or long rest.</text></trait><trait category="subspecies"><name>Tough</name><text>You have proficiency with the Athletics skill.</text></trait><trait category="subspecies"><name>Shifting Feature</name><text>Whenever you shift, you gain 1d6 additional temporary hit points, and while shifted, you have a +1 bonus to your AC.</text></trait><trait><name>Languages</name><text>You can speak, read, and write Common.</text></trait></race> -->
+  <!-- <race><name>Shifter, Longtooth (UA Races of Eberron)</name><size>M</size><speed>30</speed><ability>Dex +1, Str +2</ability><proficiency>Intimidation, Perception</proficiency><trait category="description"><name>Description</name><text>"Geth's ancient heritage rose up from deep within him, spreading out from the core of his being. Some shifters manifested terrible claws, massive fangs, astounding speed, or heightened senses. Geth's gift from his lycanthrope ancestors was sheer toughness. Strength seeped into his bones and flooded his flesh. His skin hardened, and his hair became coarse like an animal's tough hide. A sense of invincibility spread through him. For the moment, at least, he felt unstoppable!"
 —Don Bassingthwaite, The Binding Stone
 
 Shifters are sometimes called the weretouched, as many believe that they are the descendants of humans and lycanthropes. They are humanoids with a bestial aspect. While they can't fully change shape, they can temporarily enhance their animalistic features—a state they call shifting. Whatever their origins, shifters have evolved into a unique race. A shifter walks on the knife's edge between the wilds and the world around them. Do they embrace their primal instincts or the path of civilization?
 
 Longtooth shifters are fierce and aggressive, but they form deep bonds with their friends. Many longtooth shifters have canine traits that become more pronounced as they shift, but they might instead draw on tigers, hyenas, or other predators.
 
-Source:	Unearthed Arcana: Races of Eberron p. 6</text>
-    </trait>
-    <trait category="description">
-      <name>The Beast Within</name>
-      <text>Early in childhood, a shifter forms a bond with a beast within: a totemic force that shapes their body and mind. Some shifters believe that these spirits are independent entities, and they might speak of Bear or Wolf as ancestors or guides. Most just see the beast within as a formidable expression of their inner nature, something that emerges over time as the shifter's personality takes shape. The beast within is a pool of powerful instincts, and its influence is revealed by the shifter's personality: a feline shifter might be cool and distant, driven by predatory instincts, while a shifter with a lupine spirit is drawn to find and protect a pack. When a shifter fully embraces this beast within, they physically transform for a short time.
+Source:	Unearthed Arcana: Races of Eberron p. 6</text></trait><trait category="description"><name>The Beast Within</name><text>Early in childhood, a shifter forms a bond with a beast within: a totemic force that shapes their body and mind. Some shifters believe that these spirits are independent entities, and they might speak of Bear or Wolf as ancestors or guides. Most just see the beast within as a formidable expression of their inner nature, something that emerges over time as the shifter's personality takes shape. The beast within is a pool of powerful instincts, and its influence is revealed by the shifter's personality: a feline shifter might be cool and distant, driven by predatory instincts, while a shifter with a lupine spirit is drawn to find and protect a pack. When a shifter fully embraces this beast within, they physically transform for a short time.
 	This beast within is reflected by the shifter's subrace. The following subraces are especially common:
 
 Beasthide often signifies the bear or boar: stoic, stubborn and thick-skinned.
@@ -298,90 +234,26 @@ Swiftstride shifters are often predatory and feline, but a swiftstride could als
 
 Wildhunt shifters are born from any creature that tracks its prey.
 
-While the beast within certainly has a physical impact on a shifter, it also has a spiritual and psychological effect. Two beasthide shifters share the same special ability, but if one has the aspect of the boar and the other is more like a bear, they'll be quite different in personality. With any shifter, identifying the beast within is a crucial part of understanding the character.</text>
-    </trait>
-    <trait category="description">
-      <name>Similar and Diverse</name>
-      <text>Shifters are similar to humans in height and build but are more naturally lithe and flexible. Their facial features have a bestial cast, with large eyes, flat noses, and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies.
-	The traits of the beast within affect a shifter's appearance as well. A swiftstride shifter might have catlike eyes and delicate build, while a beasthide shifter is likely a massive brute built like a bear. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.</text>
-    </trait>
-    <trait category="description">
-      <name>The Journey Yet to Come</name>
-      <text>Shifters have a strong presence in the Eldeen Reaches, and they often live among humans and can be found in rural areas across Khorvaire. While they form powerful bonds with friends and kin, shifters place great value on selfreliance and freedom. It's a shifter proverb to "always be prepared for the journey yet to come," and most shifters strive to be ready for change or opportunity.
-	Shifters have a natural inclination toward classes with a primal connection. A shifter barbarian draws their rage from the beast within. A shifter ranger indulges their urge to wander and hunt. A shifter rogue harnesses their own predatory instincts. But shifters can pursue any path or faith.</text>
-    </trait>
-    <trait category="description">
-      <name>Shifter Names</name>
-      <text>Shifters have no language of their own and often live in blended communities. As such, shifter names typically overlap with the names of other cultures in their region. Many shifters prefer to keep their personal names for their friends and use "wandering names" with strangers. These are usually tied to an obvious physical or personality trait.
+While the beast within certainly has a physical impact on a shifter, it also has a spiritual and psychological effect. Two beasthide shifters share the same special ability, but if one has the aspect of the boar and the other is more like a bear, they'll be quite different in personality. With any shifter, identifying the beast within is a crucial part of understanding the character.</text></trait><trait category="description"><name>Similar and Diverse</name><text>Shifters are similar to humans in height and build but are more naturally lithe and flexible. Their facial features have a bestial cast, with large eyes, flat noses, and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies.
+	The traits of the beast within affect a shifter's appearance as well. A swiftstride shifter might have catlike eyes and delicate build, while a beasthide shifter is likely a massive brute built like a bear. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.</text></trait><trait category="description"><name>The Journey Yet to Come</name><text>Shifters have a strong presence in the Eldeen Reaches, and they often live among humans and can be found in rural areas across Khorvaire. While they form powerful bonds with friends and kin, shifters place great value on selfreliance and freedom. It's a shifter proverb to "always be prepared for the journey yet to come," and most shifters strive to be ready for change or opportunity.
+	Shifters have a natural inclination toward classes with a primal connection. A shifter barbarian draws their rage from the beast within. A shifter ranger indulges their urge to wander and hunt. A shifter rogue harnesses their own predatory instincts. But shifters can pursue any path or faith.</text></trait><trait category="description"><name>Shifter Names</name><text>Shifters have no language of their own and often live in blended communities. As such, shifter names typically overlap with the names of other cultures in their region. Many shifters prefer to keep their personal names for their friends and use "wandering names" with strangers. These are usually tied to an obvious physical or personality trait.
 
-Shifter Names: Badger, Bear, Cat, Fang, Grace, Grim, Moon, Rain, Red, Scar, Stripe, Swift, Whiskers, Wolf</text>
-    </trait>
-    <trait>
-      <name>Age</name>
-      <text>Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old.</text>
-    </trait>
-    <trait>
-      <name>Alignment</name>
-      <text>Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive Shifters toward chaotic alignments.</text>
-    </trait>
-    <trait>
-      <name>Size</name>
-      <text>Shifters range from 5 to almost 7 feet tall, depending on their subrace. Your size is Medium.
+Shifter Names: Badger, Bear, Cat, Fang, Grace, Grim, Moon, Rain, Red, Scar, Stripe, Swift, Whiskers, Wolf</text></trait><trait><name>Age</name><text>Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old.</text></trait><trait><name>Alignment</name><text>Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive Shifters toward chaotic alignments.</text></trait><trait><name>Size</name><text>Shifters range from 5 to almost 7 feet tall, depending on their subrace. Your size is Medium.
 
 To set your height and weight randomly, start with rolling a size modifier:
 
 Size modifier = 2d8
 Height = 4 feet + 6 inches + your size modifier in inches
-Weight in pounds = 90 + (2d4 × your size modifier)</text>
-      <roll description="Size Modifier">2d8</roll>
-      <roll description="Weight Modifier">2d4</roll>
-    </trait>
-    <trait category="species">
-      <name>Darkvision</name>
-      <text>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
-    </trait>
-    <trait category="species">
-      <name>Keen Senses</name>
-      <text>You have proficiency with the Perception skill.</text>
-    </trait>
-    <trait category="species">
-      <name>Shifting</name>
-      <text>As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your Shifter subrace, described below.
-	Once you shift, you can't do so again until you finish a short or long rest.</text>
-    </trait>
-    <trait category="subspecies">
-      <name>Fierce</name>
-      <text>You have proficiency with the Intimidation skill.</text>
-    </trait>
-    <trait category="subspecies">
-      <name>Shifting Feature</name>
-      <text>While shifted, you can use your elongated fangs to make an unarmed strike as a bonus action. If you hit with your fangs, you can deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</text>
-    </trait>
-    <trait>
-      <name>Languages</name>
-      <text>You can speak, read, and write Common.</text>
-    </trait>
-  </race> -->
-  <!-- <race>
-    <name>Shifter, Swiftstride (UA Races of Eberron)</name>
-    <size>M</size>
-    <speed>35</speed>
-    <ability>Dex +1, Dex +2, Cha +1</ability>
-    <proficiency>Acrobatics, Perception</proficiency>
-    <trait category="description">
-      <name>Description</name>
-      <text>"Geth's ancient heritage rose up from deep within him, spreading out from the core of his being. Some shifters manifested terrible claws, massive fangs, astounding speed, or heightened senses. Geth's gift from his lycanthrope ancestors was sheer toughness. Strength seeped into his bones and flooded his flesh. His skin hardened, and his hair became coarse like an animal's tough hide. A sense of invincibility spread through him. For the moment, at least, he felt unstoppable!"
+Weight in pounds = 90 + (2d4 × your size modifier)</text><roll description="Size Modifier">2d8</roll><roll description="Weight Modifier">2d4</roll></trait><trait category="species"><name>Darkvision</name><text>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text></trait><trait category="species"><name>Keen Senses</name><text>You have proficiency with the Perception skill.</text></trait><trait category="species"><name>Shifting</name><text>As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your Shifter subrace, described below.
+	Once you shift, you can't do so again until you finish a short or long rest.</text></trait><trait category="subspecies"><name>Fierce</name><text>You have proficiency with the Intimidation skill.</text></trait><trait category="subspecies"><name>Shifting Feature</name><text>While shifted, you can use your elongated fangs to make an unarmed strike as a bonus action. If you hit with your fangs, you can deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</text></trait><trait><name>Languages</name><text>You can speak, read, and write Common.</text></trait></race> -->
+  <!-- <race><name>Shifter, Swiftstride (UA Races of Eberron)</name><size>M</size><speed>35</speed><ability>Dex +1, Dex +2, Cha +1</ability><proficiency>Acrobatics, Perception</proficiency><trait category="description"><name>Description</name><text>"Geth's ancient heritage rose up from deep within him, spreading out from the core of his being. Some shifters manifested terrible claws, massive fangs, astounding speed, or heightened senses. Geth's gift from his lycanthrope ancestors was sheer toughness. Strength seeped into his bones and flooded his flesh. His skin hardened, and his hair became coarse like an animal's tough hide. A sense of invincibility spread through him. For the moment, at least, he felt unstoppable!"
 —Don Bassingthwaite, The Binding Stone
 
 Shifters are sometimes called the weretouched, as many believe that they are the descendants of humans and lycanthropes. They are humanoids with a bestial aspect. While they can't fully change shape, they can temporarily enhance their animalistic features—a state they call shifting. Whatever their origins, shifters have evolved into a unique race. A shifter walks on the knife's edge between the wilds and the world around them. Do they embrace their primal instincts or the path of civilization?
 
 Swiftstride shifters are graceful and quick. Typically feline in nature, swiftstride shifters are often aloof and difficult to pin down physically or socially.
 
-Source:	Unearthed Arcana: Races of Eberron p. 6</text>
-    </trait>
-    <trait category="description">
-      <name>The Beast Within</name>
-      <text>Early in childhood, a shifter forms a bond with a beast within: a totemic force that shapes their body and mind. Some shifters believe that these spirits are independent entities, and they might speak of Bear or Wolf as ancestors or guides. Most just see the beast within as a formidable expression of their inner nature, something that emerges over time as the shifter's personality takes shape. The beast within is a pool of powerful instincts, and its influence is revealed by the shifter's personality: a feline shifter might be cool and distant, driven by predatory instincts, while a shifter with a lupine spirit is drawn to find and protect a pack. When a shifter fully embraces this beast within, they physically transform for a short time.
+Source:	Unearthed Arcana: Races of Eberron p. 6</text></trait><trait category="description"><name>The Beast Within</name><text>Early in childhood, a shifter forms a bond with a beast within: a totemic force that shapes their body and mind. Some shifters believe that these spirits are independent entities, and they might speak of Bear or Wolf as ancestors or guides. Most just see the beast within as a formidable expression of their inner nature, something that emerges over time as the shifter's personality takes shape. The beast within is a pool of powerful instincts, and its influence is revealed by the shifter's personality: a feline shifter might be cool and distant, driven by predatory instincts, while a shifter with a lupine spirit is drawn to find and protect a pack. When a shifter fully embraces this beast within, they physically transform for a short time.
 	This beast within is reflected by the shifter's subrace. The following subraces are especially common:
 
 Beasthide often signifies the bear or boar: stoic, stubborn and thick-skinned.
@@ -392,94 +264,26 @@ Swiftstride shifters are often predatory and feline, but a swiftstride could als
 
 Wildhunt shifters are born from any creature that tracks its prey.
 
-While the beast within certainly has a physical impact on a shifter, it also has a spiritual and psychological effect. Two beasthide shifters share the same special ability, but if one has the aspect of the boar and the other is more like a bear, they'll be quite different in personality. With any shifter, identifying the beast within is a crucial part of understanding the character.</text>
-    </trait>
-    <trait category="description">
-      <name>Similar and Diverse</name>
-      <text>Shifters are similar to humans in height and build but are more naturally lithe and flexible. Their facial features have a bestial cast, with large eyes, flat noses, and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies.
-	The traits of the beast within affect a shifter's appearance as well. A swiftstride shifter might have catlike eyes and delicate build, while a beasthide shifter is likely a massive brute built like a bear. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.</text>
-    </trait>
-    <trait category="description">
-      <name>The Journey Yet to Come</name>
-      <text>Shifters have a strong presence in the Eldeen Reaches, and they often live among humans and can be found in rural areas across Khorvaire. While they form powerful bonds with friends and kin, shifters place great value on selfreliance and freedom. It's a shifter proverb to "always be prepared for the journey yet to come," and most shifters strive to be ready for change or opportunity.
-	Shifters have a natural inclination toward classes with a primal connection. A shifter barbarian draws their rage from the beast within. A shifter ranger indulges their urge to wander and hunt. A shifter rogue harnesses their own predatory instincts. But shifters can pursue any path or faith.</text>
-    </trait>
-    <trait category="description">
-      <name>Shifter Names</name>
-      <text>Shifters have no language of their own and often live in blended communities. As such, shifter names typically overlap with the names of other cultures in their region. Many shifters prefer to keep their personal names for their friends and use "wandering names" with strangers. These are usually tied to an obvious physical or personality trait.
+While the beast within certainly has a physical impact on a shifter, it also has a spiritual and psychological effect. Two beasthide shifters share the same special ability, but if one has the aspect of the boar and the other is more like a bear, they'll be quite different in personality. With any shifter, identifying the beast within is a crucial part of understanding the character.</text></trait><trait category="description"><name>Similar and Diverse</name><text>Shifters are similar to humans in height and build but are more naturally lithe and flexible. Their facial features have a bestial cast, with large eyes, flat noses, and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies.
+	The traits of the beast within affect a shifter's appearance as well. A swiftstride shifter might have catlike eyes and delicate build, while a beasthide shifter is likely a massive brute built like a bear. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.</text></trait><trait category="description"><name>The Journey Yet to Come</name><text>Shifters have a strong presence in the Eldeen Reaches, and they often live among humans and can be found in rural areas across Khorvaire. While they form powerful bonds with friends and kin, shifters place great value on selfreliance and freedom. It's a shifter proverb to "always be prepared for the journey yet to come," and most shifters strive to be ready for change or opportunity.
+	Shifters have a natural inclination toward classes with a primal connection. A shifter barbarian draws their rage from the beast within. A shifter ranger indulges their urge to wander and hunt. A shifter rogue harnesses their own predatory instincts. But shifters can pursue any path or faith.</text></trait><trait category="description"><name>Shifter Names</name><text>Shifters have no language of their own and often live in blended communities. As such, shifter names typically overlap with the names of other cultures in their region. Many shifters prefer to keep their personal names for their friends and use "wandering names" with strangers. These are usually tied to an obvious physical or personality trait.
 
-Shifter Names: Badger, Bear, Cat, Fang, Grace, Grim, Moon, Rain, Red, Scar, Stripe, Swift, Whiskers, Wolf</text>
-    </trait>
-    <trait>
-      <name>Age</name>
-      <text>Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old.</text>
-    </trait>
-    <trait>
-      <name>Alignment</name>
-      <text>Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive Shifters toward chaotic alignments.</text>
-    </trait>
-    <trait>
-      <name>Size</name>
-      <text>Shifters range from 5 to almost 7 feet tall, depending on their subrace. Your size is Medium.
+Shifter Names: Badger, Bear, Cat, Fang, Grace, Grim, Moon, Rain, Red, Scar, Stripe, Swift, Whiskers, Wolf</text></trait><trait><name>Age</name><text>Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old.</text></trait><trait><name>Alignment</name><text>Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive Shifters toward chaotic alignments.</text></trait><trait><name>Size</name><text>Shifters range from 5 to almost 7 feet tall, depending on their subrace. Your size is Medium.
 
 To set your height and weight randomly, start with rolling a size modifier:
 
 Size modifier = 2d8
 Height = 4 feet + 6 inches + your size modifier in inches
-Weight in pounds = 90 + (2d4 × your size modifier)</text>
-      <roll description="Size Modifier">2d8</roll>
-      <roll description="Weight Modifier">2d4</roll>
-    </trait>
-    <trait category="species">
-      <name>Darkvision</name>
-      <text>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
-    </trait>
-    <trait category="species">
-      <name>Keen Senses</name>
-      <text>You have proficiency with the Perception skill.</text>
-    </trait>
-    <trait category="species">
-      <name>Shifting</name>
-      <text>As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your Shifter subrace, described below.
-	Once you shift, you can't do so again until you finish a short or long rest.</text>
-    </trait>
-    <trait category="subspecies">
-      <name>Graceful</name>
-      <text>You have proficiency with the Acrobatics skill.</text>
-    </trait>
-    <trait category="subspecies">
-      <name>Swift Stride</name>
-      <text>Your walking speed increases by 5 feet.</text>
-    </trait>
-    <trait category="subspecies">
-      <name>Shifting Feature</name>
-      <text>While shifted, your walking speed increases by 5 feet. Additionally, you can move up to 10 feet as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn't provoke opportunity attacks.</text>
-    </trait>
-    <trait>
-      <name>Languages</name>
-      <text>You can speak, read, and write Common.</text>
-    </trait>
-  </race> -->
-  <!-- <race>
-    <name>Shifter, Wildhunt (UA Races of Eberron)</name>
-    <size>M</size>
-    <speed>30</speed>
-    <ability>Dex +1, Wis +2</ability>
-    <proficiency>Perception, Survival</proficiency>
-    <trait category="description">
-      <name>Description</name>
-      <text>"Geth's ancient heritage rose up from deep within him, spreading out from the core of his being. Some shifters manifested terrible claws, massive fangs, astounding speed, or heightened senses. Geth's gift from his lycanthrope ancestors was sheer toughness. Strength seeped into his bones and flooded his flesh. His skin hardened, and his hair became coarse like an animal's tough hide. A sense of invincibility spread through him. For the moment, at least, he felt unstoppable!"
+Weight in pounds = 90 + (2d4 × your size modifier)</text><roll description="Size Modifier">2d8</roll><roll description="Weight Modifier">2d4</roll></trait><trait category="species"><name>Darkvision</name><text>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text></trait><trait category="species"><name>Keen Senses</name><text>You have proficiency with the Perception skill.</text></trait><trait category="species"><name>Shifting</name><text>As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your Shifter subrace, described below.
+	Once you shift, you can't do so again until you finish a short or long rest.</text></trait><trait category="subspecies"><name>Graceful</name><text>You have proficiency with the Acrobatics skill.</text></trait><trait category="subspecies"><name>Swift Stride</name><text>Your walking speed increases by 5 feet.</text></trait><trait category="subspecies"><name>Shifting Feature</name><text>While shifted, your walking speed increases by 5 feet. Additionally, you can move up to 10 feet as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn't provoke opportunity attacks.</text></trait><trait><name>Languages</name><text>You can speak, read, and write Common.</text></trait></race> -->
+  <!-- <race><name>Shifter, Wildhunt (UA Races of Eberron)</name><size>M</size><speed>30</speed><ability>Dex +1, Wis +2</ability><proficiency>Perception, Survival</proficiency><trait category="description"><name>Description</name><text>"Geth's ancient heritage rose up from deep within him, spreading out from the core of his being. Some shifters manifested terrible claws, massive fangs, astounding speed, or heightened senses. Geth's gift from his lycanthrope ancestors was sheer toughness. Strength seeped into his bones and flooded his flesh. His skin hardened, and his hair became coarse like an animal's tough hide. A sense of invincibility spread through him. For the moment, at least, he felt unstoppable!"
 —Don Bassingthwaite, The Binding Stone
 
 Shifters are sometimes called the weretouched, as many believe that they are the descendants of humans and lycanthropes. They are humanoids with a bestial aspect. While they can't fully change shape, they can temporarily enhance their animalistic features—a state they call shifting. Whatever their origins, shifters have evolved into a unique race. A shifter walks on the knife's edge between the wilds and the world around them. Do they embrace their primal instincts or the path of civilization?
 
 Wildhunt shifters are sharp and insightful. Some are constantly alert, wary for possible threats. Others focus on their intuition, searching within. Wildhunt shifters are excellent hunters, and they also tend to become the spiritual leaders of shifter communities.
 
-Source:	Unearthed Arcana: Races of Eberron p. 6</text>
-    </trait>
-    <trait category="description">
-      <name>The Beast Within</name>
-      <text>Early in childhood, a shifter forms a bond with a beast within: a totemic force that shapes their body and mind. Some shifters believe that these spirits are independent entities, and they might speak of Bear or Wolf as ancestors or guides. Most just see the beast within as a formidable expression of their inner nature, something that emerges over time as the shifter's personality takes shape. The beast within is a pool of powerful instincts, and its influence is revealed by the shifter's personality: a feline shifter might be cool and distant, driven by predatory instincts, while a shifter with a lupine spirit is drawn to find and protect a pack. When a shifter fully embraces this beast within, they physically transform for a short time.
+Source:	Unearthed Arcana: Races of Eberron p. 6</text></trait><trait category="description"><name>The Beast Within</name><text>Early in childhood, a shifter forms a bond with a beast within: a totemic force that shapes their body and mind. Some shifters believe that these spirits are independent entities, and they might speak of Bear or Wolf as ancestors or guides. Most just see the beast within as a formidable expression of their inner nature, something that emerges over time as the shifter's personality takes shape. The beast within is a pool of powerful instincts, and its influence is revealed by the shifter's personality: a feline shifter might be cool and distant, driven by predatory instincts, while a shifter with a lupine spirit is drawn to find and protect a pack. When a shifter fully embraces this beast within, they physically transform for a short time.
 	This beast within is reflected by the shifter's subrace. The following subraces are especially common:
 
 Beasthide often signifies the bear or boar: stoic, stubborn and thick-skinned.
@@ -490,74 +294,18 @@ Swiftstride shifters are often predatory and feline, but a swiftstride could als
 
 Wildhunt shifters are born from any creature that tracks its prey.
 
-While the beast within certainly has a physical impact on a shifter, it also has a spiritual and psychological effect. Two beasthide shifters share the same special ability, but if one has the aspect of the boar and the other is more like a bear, they'll be quite different in personality. With any shifter, identifying the beast within is a crucial part of understanding the character.</text>
-    </trait>
-    <trait category="description">
-      <name>Similar and Diverse</name>
-      <text>Shifters are similar to humans in height and build but are more naturally lithe and flexible. Their facial features have a bestial cast, with large eyes, flat noses, and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies.
-	The traits of the beast within affect a shifter's appearance as well. A swiftstride shifter might have catlike eyes and delicate build, while a beasthide shifter is likely a massive brute built like a bear. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.</text>
-    </trait>
-    <trait category="description">
-      <name>The Journey Yet to Come</name>
-      <text>Shifters have a strong presence in the Eldeen Reaches, and they often live among humans and can be found in rural areas across Khorvaire. While they form powerful bonds with friends and kin, shifters place great value on selfreliance and freedom. It's a shifter proverb to "always be prepared for the journey yet to come," and most shifters strive to be ready for change or opportunity.
-	Shifters have a natural inclination toward classes with a primal connection. A shifter barbarian draws their rage from the beast within. A shifter ranger indulges their urge to wander and hunt. A shifter rogue harnesses their own predatory instincts. But shifters can pursue any path or faith.</text>
-    </trait>
-    <trait category="description">
-      <name>Shifter Names</name>
-      <text>Shifters have no language of their own and often live in blended communities. As such, shifter names typically overlap with the names of other cultures in their region. Many shifters prefer to keep their personal names for their friends and use "wandering names" with strangers. These are usually tied to an obvious physical or personality trait.
+While the beast within certainly has a physical impact on a shifter, it also has a spiritual and psychological effect. Two beasthide shifters share the same special ability, but if one has the aspect of the boar and the other is more like a bear, they'll be quite different in personality. With any shifter, identifying the beast within is a crucial part of understanding the character.</text></trait><trait category="description"><name>Similar and Diverse</name><text>Shifters are similar to humans in height and build but are more naturally lithe and flexible. Their facial features have a bestial cast, with large eyes, flat noses, and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies.
+	The traits of the beast within affect a shifter's appearance as well. A swiftstride shifter might have catlike eyes and delicate build, while a beasthide shifter is likely a massive brute built like a bear. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.</text></trait><trait category="description"><name>The Journey Yet to Come</name><text>Shifters have a strong presence in the Eldeen Reaches, and they often live among humans and can be found in rural areas across Khorvaire. While they form powerful bonds with friends and kin, shifters place great value on selfreliance and freedom. It's a shifter proverb to "always be prepared for the journey yet to come," and most shifters strive to be ready for change or opportunity.
+	Shifters have a natural inclination toward classes with a primal connection. A shifter barbarian draws their rage from the beast within. A shifter ranger indulges their urge to wander and hunt. A shifter rogue harnesses their own predatory instincts. But shifters can pursue any path or faith.</text></trait><trait category="description"><name>Shifter Names</name><text>Shifters have no language of their own and often live in blended communities. As such, shifter names typically overlap with the names of other cultures in their region. Many shifters prefer to keep their personal names for their friends and use "wandering names" with strangers. These are usually tied to an obvious physical or personality trait.
 
-Shifter Names: Badger, Bear, Cat, Fang, Grace, Grim, Moon, Rain, Red, Scar, Stripe, Swift, Whiskers, Wolf</text>
-    </trait>
-    <trait>
-      <name>Age</name>
-      <text>Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old.</text>
-    </trait>
-    <trait>
-      <name>Alignment</name>
-      <text>Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive Shifters toward chaotic alignments.</text>
-    </trait>
-    <trait>
-      <name>Size</name>
-      <text>Shifters range from 5 to almost 7 feet tall, depending on their subrace. Your size is Medium.
+Shifter Names: Badger, Bear, Cat, Fang, Grace, Grim, Moon, Rain, Red, Scar, Stripe, Swift, Whiskers, Wolf</text></trait><trait><name>Age</name><text>Shifters are quick to mature both physically and emotionally, reaching young adulthood at age 10. They rarely live to be more than 70 years old.</text></trait><trait><name>Alignment</name><text>Shifters tend toward neutrality, being more focused on survival than concepts of good and evil. A love of personal freedom can drive Shifters toward chaotic alignments.</text></trait><trait><name>Size</name><text>Shifters range from 5 to almost 7 feet tall, depending on their subrace. Your size is Medium.
 
 To set your height and weight randomly, start with rolling a size modifier:
 
 Size modifier = 2d8
 Height = 4 feet + 6 inches + your size modifier in inches
-Weight in pounds = 90 + (2d4 × your size modifier)</text>
-      <roll description="Size Modifier">2d8</roll>
-      <roll description="Weight Modifier">2d4</roll>
-    </trait>
-    <trait category="species">
-      <name>Darkvision</name>
-      <text>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text>
-    </trait>
-    <trait category="species">
-      <name>Keen Senses</name>
-      <text>You have proficiency with the Perception skill.</text>
-    </trait>
-    <trait category="species">
-      <name>Shifting</name>
-      <text>As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your Shifter subrace, described below.
-	Once you shift, you can't do so again until you finish a short or long rest.</text>
-    </trait>
-    <trait category="subspecies">
-      <name>Natural Tracker</name>
-      <text>You have proficiency with the Survival skill.</text>
-    </trait>
-    <trait category="subspecies">
-      <name>Mark the Scent</name>
-      <text>As a bonus action, you can mark one creature you can see within 10 feet of you. Until the end of your next long rest, your proficiency bonus is doubled for any ability check you make to find the marked creature, and you always know the location of that creature if it is within 60 feet of you. You can't use this trait again until you finish a short or long rest.</text>
-    </trait>
-    <trait category="subspecies">
-      <name>Shifting Feature</name>
-      <text>While shifted, you have advantage on Wisdom checks.</text>
-    </trait>
-    <trait>
-      <name>Languages</name>
-      <text>You can speak, read, and write Common.</text>
-    </trait>
-  </race> -->
+Weight in pounds = 90 + (2d4 × your size modifier)</text><roll description="Size Modifier">2d8</roll><roll description="Weight Modifier">2d4</roll></trait><trait category="species"><name>Darkvision</name><text>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text></trait><trait category="species"><name>Keen Senses</name><text>You have proficiency with the Perception skill.</text></trait><trait category="species"><name>Shifting</name><text>As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your Shifter subrace, described below.
+	Once you shift, you can't do so again until you finish a short or long rest.</text></trait><trait category="subspecies"><name>Natural Tracker</name><text>You have proficiency with the Survival skill.</text></trait><trait category="subspecies"><name>Mark the Scent</name><text>As a bonus action, you can mark one creature you can see within 10 feet of you. Until the end of your next long rest, your proficiency bonus is doubled for any ability check you make to find the marked creature, and you always know the location of that creature if it is within 60 feet of you. You can't use this trait again until you finish a short or long rest.</text></trait><trait category="subspecies"><name>Shifting Feature</name><text>While shifted, you have advantage on Wisdom checks.</text></trait><trait><name>Languages</name><text>You can speak, read, and write Common.</text></trait></race> -->
   <race>
     <name>Warforged, Envoy (UA Races of Eberron)</name>
     <size>M</size>
@@ -612,7 +360,7 @@ d10 | Quirk
 Warforged Names: Anchor, Banner, Bastion, Blade, Blue, Bow, Church, Crunch, Crystal, Dagger, Dent, Five, Glaive, Hammer, Iron, Lucky, Mace, Pants, Pierce, Red, Rusty, Scout, Seven, Shield, Slash, Smith, Spike, Stone, Temple, Vault, Wall, Wood</text>
     </trait>
     <trait>
-      <name>Ability Score Increases</name>
+      <name>Ability Score Increase</name>
       <text>Two ability scores of your choice increases by 1.</text>
     </trait>
     <trait>
@@ -634,6 +382,10 @@ Height = 5 feet + 10 inches + your size modifier in inches
 Weight in pounds = 270 + (1d4 × your size modifier)</text>
       <roll description="Size Modifier">2d6</roll>
       <roll description="Weight Modifier">1d4</roll>
+    </trait>
+    <trait>
+      <name>Speed</name>
+      <text>Your base walking speed is 30 feet.</text>
     </trait>
     <trait category="species">
       <name>Warforged Resilience</name>
@@ -741,7 +493,7 @@ d10 | Quirk
 Warforged Names: Anchor, Banner, Bastion, Blade, Blue, Bow, Church, Crunch, Crystal, Dagger, Dent, Five, Glaive, Hammer, Iron, Lucky, Mace, Pants, Pierce, Red, Rusty, Scout, Seven, Shield, Slash, Smith, Spike, Stone, Temple, Vault, Wall, Wood</text>
     </trait>
     <trait>
-      <name>Ability Score Increases</name>
+      <name>Ability Score Increase</name>
       <text>Two ability scores of your choice increases by 1.</text>
     </trait>
     <trait>
@@ -763,6 +515,10 @@ Height = 5 feet + 10 inches + your size modifier in inches
 Weight in pounds = 270 + (1d4 × your size modifier)</text>
       <roll description="Size Modifier">2d6</roll>
       <roll description="Weight Modifier">1d4</roll>
+    </trait>
+    <trait>
+      <name>Speed</name>
+      <text>Your base walking speed is 30 feet.</text>
     </trait>
     <trait category="species">
       <name>Warforged Resilience</name>
@@ -859,7 +615,7 @@ d10 | Quirk
 Warforged Names: Anchor, Banner, Bastion, Blade, Blue, Bow, Church, Crunch, Crystal, Dagger, Dent, Five, Glaive, Hammer, Iron, Lucky, Mace, Pants, Pierce, Red, Rusty, Scout, Seven, Shield, Slash, Smith, Spike, Stone, Temple, Vault, Wall, Wood</text>
     </trait>
     <trait>
-      <name>Ability Score Increases</name>
+      <name>Ability Score Increase</name>
       <text>Two ability scores of your choice increases by 1.</text>
     </trait>
     <trait>
@@ -881,6 +637,10 @@ Height = 5 feet + 10 inches + your size modifier in inches
 Weight in pounds = 270 + (1d4 × your size modifier)</text>
       <roll description="Size Modifier">2d6</roll>
       <roll description="Weight Modifier">1d4</roll>
+    </trait>
+    <trait>
+      <name>Speed</name>
+      <text>Your base walking speed is 35 feet.</text>
     </trait>
     <trait category="species">
       <name>Warforged Resilience</name>

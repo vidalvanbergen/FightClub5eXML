@@ -483,7 +483,7 @@ Race example:
     <text>		Mordenkainen Presents: Monsters of the Multiverse p. 30</text>
   </trait>
   <trait>
-    <name>Ability Score Increases</name>
+    <name>Ability Score Increase</name>
     <text>Increase one ability score by 2 and increase a different score by 1, or increase three different scores by 1.</text>
   </trait>
   <trait>
