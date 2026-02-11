@@ -1,5 +1,9 @@
 ## CHANGE LOG
 
+### 2026-##-##
+* Fixed the `Mystic (UA)` class.
+* Other changes and fixes.
+
 ### 2026-02-10
 * Added `A Quandary of Raiders` and `Tomb of Annihilation` campaigns, shared by @Iggwilv.
 * Added `Auroboros: Coils of the Serpent` indie content, shared by @Cvamped.
