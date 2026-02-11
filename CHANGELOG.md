@@ -1,6 +1,7 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Added `The Elder Scrolls: Delvebound` species content, shared by @GoldenTanager.
 * Fixed the `Mystic (UA)` class.
 * Other changes and fixes.
 
