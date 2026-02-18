@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+  <monster>
+    <name>Archlich</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>20 (natural armor)</ac>
+    <hp>361 (38d8+190)</hp>
+    <speed>30 ft., fly 60 ft. (hover)</speed>
+    <str>12</str>
+    <dex>18</dex>
+    <con>20</con>
+    <int>28</int>
+    <wis>16</wis>
+    <cha>16</cha>
+    <save>Con +14, Int +18, Wis +12</save>
+    <skill>Arcana +27, History +18, Insight +12, Perception +12</skill>
+    <passive>22</passive>
+    <languages>All</languages>
+    <cr>30</cr>
+    <vulnerable/>
+    <resist>lightning, cold, acid, force</resist>
+    <immune>necrotic, poison, bludgeoning, piercing and slashing damage from nonmagical weapons</immune>
+    <conditionImmune>charmed, exhaustion, frightened, poisoned, paralyzed, stunned</conditionImmune>
+    <senses>truesight 300 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+9</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <recharge>3/DAY</recharge>
+      <text>If the archlich fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Death Burst</name>
+      <text>When an undead under the archlich's control is reduced to 0 hit points, it explodes in a burst of necrotic energy. Each living creature within 5 feet of the undead must make a Dexterity saving throw, taking 27 (6d8) necrotic damage on a failed save or half damage on a success.</text>
+      <attack>Necrotic Damage||6d8</attack>
+    </trait>
+    <trait>
+      <name>Reanimating Presence</name>
+      <text>Whenever a humanoid dies within 60 feet of the archlich, it rises at the start of the archlich's next turn as a zombie under its control. If the humanoid's body was protected against raising or was too heavily damaged before being raised, such as through the disintegrate spell, the gentle repose spell, or decapitation, the rising fails.</text>
+    </trait>
+    <trait>
+      <name>Rejuvenation</name>
+      <text>If it has a phylactery, a destroyed lich gains a new body in 1d4 days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery.</text>
+      <attack>Days||1d4</attack>
+    </trait>
+    <trait>
+      <name>Spell Mastery</name>
+      <text>The archlich can cast magic missile and mirror image at their lowest level without expending a spell slot, and may add its Intelligence modifer to any damage dealt by a spell.</text>
+    </trait>
+    <trait>
+      <name>Turn Immunity</name>
+      <text>The archlich is immune to effects that turn undead.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The archlich is a 20th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 26, +18 to hit with spell attacks). The archlich has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch, mage hand, prestigitation, ray of frost
+	• 1st level (4 slots): detect magic, magic missile, shield, thunderwave
+	• 2nd level (3 slots): acid arrow, detect thoughts, invisibility, mirror image, scorching ray
+	• 3rd level (3 slots): counterspell, dispel magic, fireball
+	• 4th level (3 slots): banishment, blight, dimension door
+	• 5th level (3 slots): cloudkill, scrying, wall of force
+	• 6th level (2 slots): disintegrate, globe of invulnerability
+	• 7th level (2 slots): finger of death, plane shift
+	• 8th level (1 slots): dominate monster, power word stun
+	• 9th level (1 slots): power word kill</text>
+      <attack>Spellcasting|+18|</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The archlich can use its Frightful Presence, and then casts 2 spells with a casting time of 1 action, one of 1st level or higher and one cantrip. It then makes an attack with its paralyzing touch.</text>
+    </action>
+    <action>
+      <name>Paralyzing Touch</name>
+      <text>Melee Spell Attack: +18 to hit, reach 5 ft., one target. Hit: 18 (4d8) cold damage. The target must succeed on a DC 26 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+      <attack>Cold Damage|+18|4d8</attack>
+    </action>
+    <action>
+      <name>Frightful Presence</name>
+      <text>Each creature of the archlich's choice within 120 feet of it and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the archlich is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the archlich's Frightful Presence for the next 24 hours.</text>
+    </action>
+    <legendary>
+      <name>Legendary ActIons</name>
+      <recharge>3/TURN</recharge>
+      <text>The archlich can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The archlich regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Paralyzing Touch</name>
+      <text>The archlich uses its Paralyzing Touch.</text>
+    </legendary>
+    <legendary>
+      <name>Sacrifice</name>
+      <text>The archlich reduces an undead under its control to 0 hit points, and regains 2d10 + 20 hit points.</text>
+      <attack>Heal||2d10+20</attack>
+    </legendary>
+    <legendary>
+      <name>Disrupt Life (Costs 2 Actions)</name>
+      <text>Each living creature within 20 feet of the archlich must make a DC 20 Constitution saving throw against this magic, taking 54 (12d8) necrotic damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Necrotic Damage||12d8</attack>
+    </legendary>
+    <legendary category="lair">
+      <name>An Archlich's Lair</name>
+      <text>If an archlich were to escape its prison, it would be able to create a lair for itself fairly quickly. Using the armies of undead it easily amasses, an archlich can build great castles and towers for itself, designing grand halls, mighty defenses, and cunning traps meant to ward off all intrusion.
+	An archlich's lair would be filled with strategically placed undead, meant to emerge and surround unlucky visitors. The lair would also include a residence for those that have made a pact with the archlich, both to keep those allies in good standing and to help protect the lair.
+	An archlich encountered in its lair has a challenge rating of 31 (175,000 XP).</text>
+    </legendary>
+    <legendary category="lair">
+      <name>Lair Actions
+on Initiative Count 20 (Losing Initiative Ties), the Archlich Can Take
+a Lair Action to Cause One of the Following Magical Effects; the Lich
+can't Use the Same Effect Two Rounds in a Row</name>
+      <text>On initiative count 20 (losing initiative ties), the archlich can take a lair action to cause one of the following magical effects; the lich can't use the same effect two rounds in a row:
+
+	• The archlich rolls 2d8 and takes the higher roll, regaining a spell slot of the level rolled or lower. If it has no spent spell slots of that level or lower, nothing happens.
+
+	• The archlich targets one creature it can see within 30 feet of it. A crackling cord of negative energy tethers thelich to the target. Whenever the lich takes damage, the target must make a DC 20 Constitution saving throw. On a failed save, the lich takes half the damage (rounded down), and the target takes the remaining damage. This tether lasts until initiative count 20 on the next round or until the lich or the target is no longer in the lich's lair.
+
+	• The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a DC 20 Constitution saving throw, becoming paralyzed for 1 minute and taking 52 (15d6) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear. A paralyzed creature can repeat the saving throw at the start of each of its turns, ending the effect on a success.</text>
+      <attack>Regain Spell Slot||(1d8)+(1d8)</attack>
+      <attack>Necrotic Damage||15d6</attack>
+    </legendary>
+    <slots>0,4,3,3,3,3,2,2,1,1</slots>
+    <spells>Chill Touch, Mage Hand, Prestigitation, Ray of Frost, Detect Magic, Magic Missile, Shield, Thunderwave, Acid Arrow, Detect Thoughts, Invisibility, Mirror Image, Scorching Ray, Counterspell, Dispel Magic, Fireball, Banishment, Blight, Dimension Door, Cloudkill, Scrying, Wall of Force, Disintegrate, Globe of Invulnerability, Finger of Death, Plane Shift, Dominate Monster, Power Word Stun, Power Word Kill</spells>
+    <description>Archliches are beings of immense magical power outmatched by only the gods themselves. Through their many millennia of existence, archliches have mastered all arts of necromancy. But these beings are still not satisfied with their near limitless power — they still yearn for more, and they hunger for even greater arcane knowledge. Supremely intelligent, these creatures enact schemes that last for hundreds of years — which is just a blip in their unending existence.
+	An archlich appears almost completely skeletal, with only a few wisps of flesh and hair left on its frame. The lights of their eyes disappeared long ago, so all that remains are black, empty sockets. They choose to adorn themselves with kingly attire, believing themselves to be the rightful rulers of the land.
+
+Dark Creation. Archliches are the oldest beings known to exist, originally and only created during the Crown Wars over ten thousand years ago. Long tired of the unending war, a few elves yearned to gain the power that would allow them end the war themselves. So these few became high mages, sages with unmatched magical power for their time. But they still needed more, as this war couldn't be ended with normal magic in the span of a single mortal life.
+	So these mages devoted their entire lives to the study of necromancy, and learned the secrets to lichdom from their dealings with the dark gods of the time. These gods gave them the forbidden knowledge needed to ascend past even the most powerful liches, which hasn't been given to a mortal mind before or since. Using this knowledge, these mages began the arcane ritual. This ritual released a huge storm of necrotic power onto the world; an event now known as the Dark Disaster.
+	The Dark Disaster destroyed an entire elvish kingdom, and reduced the surrounding area to a barren wasteland. This power also proved too much for the minds of the mages, and they lost all memory of their original purpose and their mortal life, but they had gained the power they had so desired.
+
+Enemy of the Gods. Once the gods saw the destruction wrought by the Dark Disaster, they knew they needed to intervene. Celestial agents were sent to destroy these few archliches, but even the most powerful of angels couldn't fully destroy them. But eventually, after only a few months of destruction, all the archliches were banished to other planes, supposedly to never be seen again.
+	After they were all dispatched, the gods sought to never allow another mortal to ascend to that degree of lichdom again. They used all their power to hide that forbidden knowledge, and even convinced some of the most evil deities to never to part with the knowledge.
+
+Pact-makers. Although all the archliches were banished and trapped in their own demiplanes, a few of them have learned how to contact mortals in the material plane, though as of yet none have escaped the confines of their prison. By gaining mortal followers, an archlich hopes to free itself and become a ruler of the mortal world.
+	Those that are make a pact with an archlich are granted a degree of magical power, with the assumption that they will serve and put all their resources towards freeing their master. They believe that with the outside influence gained through these pacts, they will eventually find a creature capable of freeing them and inflicting them upon the world.
+
+Death and Restoration. An archlich's phylactery is located within its demiplane, and is completely indestructible and inaccessible to all but the archlich. However, this means that if an archlich were to escape from their confines and then allow their body to be destroyed, they would once again be trapped within the demiplane when their body reforms.
+	Since an archlich requires the assistance of powerful spell casters to return to the material plane, it is necessary for them to attempt to create and hold allegiances with mortals. If a mortal was to learn how to summon an archlich from their plane of existence, the archlich would be obligated to keep that mortal alive and allied, for the archlich may need that mortal again if their body is destroyed and they are restored to their plane.
+
+Undead Nature. An archlich doesn't require air, food, drink or sleep.
+
+Source:	Dark Arts Player's Companion p. 32 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Bloodbeast</name>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12</ac>
+    <hp>76 (8d10+32)</hp>
+    <speed>40 ft.</speed>
+    <str>17</str>
+    <dex>14</dex>
+    <con>18</con>
+    <int>3</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <skill>Perception +2</skill>
+    <passive>12</passive>
+    <languages/>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Transfusion</name>
+      <text>Once per turn, when the bloodbeast hits a creature with cruorwhip or with a bite attack, the target takes an extra 10 (3d6) damage, and the bloodbeast regains hit points equal to the extra damage dealt.</text>
+      <attack>Extra Damage||3d6</attack>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The bloodbeast's spellcasting ability is Constitution (spell save DC 14, +6 to hit with spell attacks). The bloodbeast can innately cast the following spells, requiring no material components:
+
+	• At will: cruorwhip
+	• 1/Day each: animate blood, tides of blood</text>
+      <attack>Innate Spellcasting|+6|</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The bloodbeast makes two bite attacks.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) piercing damage.</text>
+      <attack>Piercing Damage|+5|1d6+3</attack>
+    </action>
+    <spells>Cruorwhip (HB), Animate Blood (HB), Tides of Blood (HB)</spells>
+    <description>Bloodbeasts roam destroyed forests and barren plains, searching for signs of life that signal the presence of their prey. These savage creatures scour the landscape for small towns and dens, snatching and devouring any residents that they find. Their victims are often found days later, drained of all their blood.
+	Bloodbeasts take the form of thin, decrepit dire wolves, with crimson-hued fur and pale pink skin. Although these beasts look to be in ill health at first glance, the magic that runs through their veins makes them a powerful foe to face.
+
+Beasts of Yeenoghu. When a hyena feasts on a creature slain by a gnoll fang of Yeenoghu, that hyena undergoes a horrid transformation into a gnoll. However, there is also another lesser known, unintended transformation: the creation of bloodbeasts. When a dire wolf eats a creature that has been slain in that way, it instead undergoes a transformation into a bloodbeast, a creature imbued with the savagery and insatiable hunger of Yeenoghu himself. This process is extremely rare, since the territories of gnolls and dire wolves rarely intersect. But when they do, these powerful beasts can wreak havoc among the small packs of gnolls that dot the barren landscapes these beasts call home.
+
+Lone Hunters. When a bloodbeast is created, it quickly disappears from the scene of its creation and hides from the gnolls that accidentally brought it into existence. It is only after a few days that the beast is ready to venture out and search for its prey. Bloodbeasts stalk the landscape in the dead of night, searching for weak creatures that they can easily ambush and quickly kill. After becoming a blood beast, these creatures no longer have any desire to procreate or work in packs.
+
+Enemy of the Gnolls. Larger groups of gnolls that see a bloodbeast will kill it on sight, knowing that these creatures can easily pick off all but the most powerful gnolls in one-on-one combat.
+
+Source:	Dark Arts Player's Companion p. 34 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Cruorbat</name>
+    <ancestry>Cruor Beast</ancestry>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>unaligned</alignment>
+    <ac>13</ac>
+    <hp>32 (5d10+5)</hp>
+    <speed>10 ft., fly 60 ft.</speed>
+    <str>17</str>
+    <dex>16</dex>
+    <con>13</con>
+    <int>6</int>
+    <wis>12</wis>
+    <cha>8</cha>
+    <passive>11</passive>
+    <languages/>
+    <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Echolocation</name>
+      <text>The bat can't use its blindsight while deafened</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing</name>
+      <text>The bat has advantage on Wisdom (Perception) checks that rely on hearing.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The bat regains 5 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the bat takes radiant damage or damage from holy water, this trait doesn't function at the start of the bat's next turn.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) piercing damage.</text>
+      <attack>Piercing Damage|+5|1d6+3</attack>
+    </action>
+    <description>A cruorbat is the youngest form of cruorbeast, and it has the largest resemblance to its original form. These creatures appear to simply be giant bats at first glance, with their vampiric nature only coming into view upon closer inspection. They have deep crimson skin, larger fangs, and large red eyes. Otherwise, they behave exactly like a giant bat - they use echolocation, have large leathery wings, and swoop down to attack their foes.
+	Those that fight these beasts quickly realize their true nature, however, as their wounds magically stitch back together. Ranged weapons are necessary to defend against a cruorbat attack, as the beasts are intelligent enough to fly out of reach to regenerate their health when their enemies have no counter to this tactic.
+
+Cruorbeasts:
+Awakened from death by a vampire's bite, a cruorbeast serves as a loyal pet, protecting the vampire from harm and following its orders unquestioningly. Much like their undead masters, cruorbeasts do not cast shadows and abhor sunlight and running water. However, these vampiric weaknesses are not as apparent as they are in true vampires, so many vampires will use these beasts as guardians during the daylight hours, since they do not take direct damage from sunlight.
+
+Born from Death. While vampires usually do not bite non-humanoids, a special exception is made for giant bats. A relatively rare species, giant bats are highly sought after by upcoming vampires to become their servants. If one of these giant bats is slain by the vampire and then buried in the ground, it will rise the following night as a cruorbat under the vampire's control. These creatures are ravenous and bloodthirsty, much like the common vampire spawn that they accompany. Yet they manage to control their hunger at the request of their masters, only eating what is given to them - often the scraps of creatures killed by the vampire.
+
+Loyal in Death. Every cruorbeast is bound to the vampire that created it, and they hate to leave their master's side - at least when its a cruorbat or cruorgheist. These creatures are able to leave on excursions that disallow them from seeing their master for long periods of time, but they prefer to take shorter flights that keep them within a few miles of the vampire's lair. If a vampire dies, then all of that vampire's cruorbeasts, with the exception of crour hulks, perish as well within the next 24 hours, since their master is the only meaning to their existence.
+
+Protectors of the Lair. After they reawaken, cruorbeasts never sleep, remaining perpetually awake so that they may serve as constant watchdogs to their master. They sit on the balconies of their lair and in the treetops of the surrounding area, always looking out for potential intruders. If they spot any, they do not attack them. They instead opt to warn their master, waking them and alerting them to the intrusion. A cruorbeast will generally only attack if it has been ordered to by its master, in self-defense, or when severely underfed.
+
+Undead Nature. A cruorbeast does not require air or sleep.
+
+Source:	Dark Arts Player's Companion p. 35 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Cruorgheist</name>
+    <ancestry>Cruor Beast</ancestry>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>unaligned</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>76 (8d10+32)</hp>
+    <speed>30 ft., fly 50 ft.</speed>
+    <str>19</str>
+    <dex>16</dex>
+    <con>19</con>
+    <int>8</int>
+    <wis>13</wis>
+    <cha>11</cha>
+    <skill>Perception +4, Intimidation +3, Stealth +6</skill>
+    <passive>14</passive>
+    <languages/>
+    <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Echolocation</name>
+      <text>The cruorgheist can't use its blindsight while deafened</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing</name>
+      <text>The cruorgheist has advantage on Wisdom (Perception) checks that rely on hearing.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The cruorgheist regains 10 hit points at the start of its turn if it has at least 1 hit point. If the cruorgheist takes radiant damage, this trait doesn't function at the start of the cruorgheist's next turn.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The cruorgheist makes two attacks, one with its claws and one with its bite</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6+4) piercing damage. If the target is grappled, then this attack is made with advantage and deals an additional 3 (1d6) necrotic damage.</text>
+      <attack>Piercing Damage|+7|2d6+4</attack>
+      <attack>Necrotic Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d4+4) slashing damage. Instead of dealing damage, the cruorgheist can grapple the target (escape DC 15)</text>
+      <attack>Slashing Damage|+7|2d4+4</attack>
+    </action>
+    <description>As they feast on more corpses, cruorbats become larger, stronger and more intimidating. After a few years of meals, cruorbats gradually evolve into cruorgheists, a much more powerful enemy with a far greater constitution. These creatures are masters at hit-and-run tactics, where they dive onto their foes and then retreat as necromantic energy allows them to regenerate enough for another dive. Another common tactic is grabbing a foe and then taking off into the air, dropping them a few seconds later to potentially secure a kill.
+	In their transition, a cruorgheist has become far more monstrous in appearance. Their lithe body has been replaced with a far larger, more muscular frame, and their claws and fangs have become considerably larger. While a cruorbat can easily be mistaken as a regular bat, a cruorgheist's form is immediately noticeable. For this reason, cruorghiests typically aren't used as scouts, as they lack the cruorbat's capability of blending into the natural world.
+
+Cruorbeasts:
+Awakened from death by a vampire's bite, a cruorbeast serves as a loyal pet, protecting the vampire from harm and following its orders unquestioningly. Much like their undead masters, cruorbeasts do not cast shadows and abhor sunlight and running water. However, these vampiric weaknesses are not as apparent as they are in true vampires, so many vampires will use these beasts as guardians during the daylight hours, since they do not take direct damage from sunlight.
+
+Born from Death. While vampires usually do not bite non-humanoids, a special exception is made for giant bats. A relatively rare species, giant bats are highly sought after by upcoming vampires to become their servants. If one of these giant bats is slain by the vampire and then buried in the ground, it will rise the following night as a cruorbat under the vampire's control. These creatures are ravenous and bloodthirsty, much like the common vampire spawn that they accompany. Yet they manage to control their hunger at the request of their masters, only eating what is given to them - often the scraps of creatures killed by the vampire.
+
+Loyal in Death. Every cruorbeast is bound to the vampire that created it, and they hate to leave their master's side - at least when its a cruorbat or cruorgheist. These creatures are able to leave on excursions that disallow them from seeing their master for long periods of time, but they prefer to take shorter flights that keep them within a few miles of the vampire's lair. If a vampire dies, then all of that vampire's cruorbeasts, with the exception of crour hulks, perish as well within the next 24 hours, since their master is the only meaning to their existence.
+
+Protectors of the Lair. After they reawaken, cruorbeasts never sleep, remaining perpetually awake so that they may serve as constant watchdogs to their master. They sit on the balconies of their lair and in the treetops of the surrounding area, always looking out for potential intruders. If they spot any, they do not attack them. They instead opt to warn their master, waking them and alerting them to the intrusion. A cruorbeast will generally only attack if it has been ordered to by its master, in self-defense, or when severely underfed.
+
+Undead Nature. A cruorbeast does not require air or sleep.
+
+Source:	Dark Arts Player's Companion p. 36 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Cruorhulk</name>
+    <ancestry>Cruor Beast</ancestry>
+    <size>H</size>
+    <type>undead</type>
+    <alignment>unaligned</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>150 (12d12+72)</hp>
+    <speed>40 ft.</speed>
+    <str>23</str>
+    <dex>16</dex>
+    <con>22</con>
+    <int>13</int>
+    <wis>16</wis>
+    <cha>15</cha>
+    <skill>Athletics +10, Intimidation +6</skill>
+    <passive>13</passive>
+    <languages>Common, one language known by its creator</languages>
+    <cr>12</cr>
+    <vulnerable/>
+    <resist>necrotic, bludgeoning, piercing and slashing damage from nonmagical weapons</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Echolocation</name>
+      <text>The cruorhulk can't use its blindsight while deafened.</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing</name>
+      <text>The cruorhulk has advantage on Wisdom (Perception) checks that rely on hearing.</text>
+    </trait>
+    <trait>
+      <name>Flying Leap</name>
+      <text>Although it can no longer fly, the cruorhulk can still use its wings to increase the distance of its leaps. The cruorhulk's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The cruorhulk regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the cruorhulk takes radiant damage or damage from holy water, this trait doesn't function at the start of the cruorhulk's next turn.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The cruorhulk makes three attacks, two with its claws and one with its bite.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 28 (4d10+6) piercing damage. If the target is grappled, then this attack is made with advantage and deals an additional 5 (1d10) necrotic damage.</text>
+      <attack>Piercing Damage|+10|4d10+6</attack>
+      <attack>Necrotic Damage||1d10</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d8+6) slashing damage. Instead of dealing damage, the cruorhulk can grapple the target (escape DC 18).</text>
+      <attack>Slashing Damage|+10|2d8+6</attack>
+    </action>
+    <action>
+      <name>Deadly Leap</name>
+      <text>If the cruorhulk jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 18 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 22 (3d10 + 6) bludgeoning damage plus 17 (2d10 + 6) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the cruorhulk's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the cruorhulk's space.</text>
+      <attack>Deadly Leap||(3d10+6)+(2d10+6)</attack>
+      <attack>Bludgeoning Damage||3d10+6</attack>
+      <attack>Slashing Damage||2d10+6</attack>
+    </action>
+    <description>A cruorhulk is yet another stage in the life of a cruorbeast, and it is the most seldom achieved. By allowing a cruorgheist to drink the blood of its vampire master, that cruorghiest can undergo a transformation into a cruorhulk, which is a gigantic beast that rivals the strength of its master. Because of their immense power and the food required to sustain them, even the most powerful vampire will rarely have more than one cruorhulk at its side.
+	While the cruorhulk retains its loyalty to its master, it is no longer under their direct control, and its life is no longer connected with its master. This means that its master must take extra care in keeping a cruorhulk happy, since the beast is able to turn against them if it doesn't get enough food or care. However, this also means that if the vampire dies, then the cruorhulk will be able to take its revenge.
+	By transforming into a cruorhulk, a cruorghiest loses its flight capabilities due to its body becoming too heavy for its wings to lift. While it is no longer a skirmisher, it is instead a fantastic front-line fighter, capable of protecting its master against some of the most powerful threats they might face.
+
+Cruorbeasts:
+Awakened from death by a vampire's bite, a cruorbeast serves as a loyal pet, protecting the vampire from harm and following its orders unquestioningly. Much like their undead masters, cruorbeasts do not cast shadows and abhor sunlight and running water. However, these vampiric weaknesses are not as apparent as they are in true vampires, so many vampires will use these beasts as guardians during the daylight hours, since they do not take direct damage from sunlight.
+
+Born from Death. While vampires usually do not bite non-humanoids, a special exception is made for giant bats. A relatively rare species, giant bats are highly sought after by upcoming vampires to become their servants. If one of these giant bats is slain by the vampire and then buried in the ground, it will rise the following night as a cruorbat under the vampire's control. These creatures are ravenous and bloodthirsty, much like the common vampire spawn that they accompany. Yet they manage to control their hunger at the request of their masters, only eating what is given to them - often the scraps of creatures killed by the vampire.
+
+Loyal in Death. Every cruorbeast is bound to the vampire that created it, and they hate to leave their master's side - at least when its a cruorbat or cruorgheist. These creatures are able to leave on excursions that disallow them from seeing their master for long periods of time, but they prefer to take shorter flights that keep them within a few miles of the vampire's lair. If a vampire dies, then all of that vampire's cruorbeasts, with the exception of crour hulks, perish as well within the next 24 hours, since their master is the only meaning to their existence.
+
+Protectors of the Lair. After they reawaken, cruorbeasts never sleep, remaining perpetually awake so that they may serve as constant watchdogs to their master. They sit on the balconies of their lair and in the treetops of the surrounding area, always looking out for potential intruders. If they spot any, they do not attack them. They instead opt to warn their master, waking them and alerting them to the intrusion. A cruorbeast will generally only attack if it has been ordered to by its master, in self-defense, or when severely underfed.
+
+Undead Nature. A cruorbeast does not require air or sleep.
+
+Source:	Dark Arts Player's Companion p. 37 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Cursed Oak</name>
+    <sortname>Oak, Cursed</sortname>
+    <ancestry>Oak</ancestry>
+    <size>H</size>
+    <type>plant</type>
+    <alignment>chaotic evil</alignment>
+    <ac>16 (Natural Armor)</ac>
+    <hp>138 (12d12+60)</hp>
+    <speed>30 ft.</speed>
+    <str>19</str>
+    <dex>8</dex>
+    <con>21</con>
+    <int>11</int>
+    <wis>13</wis>
+    <cha>10</cha>
+    <passive>11</passive>
+    <languages>Common, Druidic, Elvish, Sylvan</languages>
+    <cr>7</cr>
+    <vulnerable>fire</vulnerable>
+    <resist>bludgeoning, piercing</resist>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>False Appearance</name>
+      <text>While the cursed oak remains motionless, it is indistinguishable from a fallen tree.</text>
+    </trait>
+    <trait>
+      <name>Siege Monster</name>
+      <text>The cursed oak deals double damage to objects and structures.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The cursed oak makes two swipe attacks.</text>
+    </action>
+    <action>
+      <name>Swipe</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 22 (4d8+4) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+7|4d8+4</attack>
+    </action>
+    <action>
+      <name>Ground Slam</name>
+      <text>The cursed oak slams its arms into the ground, causing the earth to erupt around it. Each creature within 5 feet of the oak must make a DC 15 Dexterity saving throw. A creature takes 27 (6d8) bludgeoning damage and is pushed 10 feet away from the oak on a failed save, or takes half as much damage and suffers no other effect on a successful one.</text>
+      <attack>Bludgeoning Damage||6d8</attack>
+    </action>
+    <action>
+      <name>Grasping Roots (Recharge 6)</name>
+      <recharge>D6</recharge>
+      <text>Grasping roots sprout in a 30-foot radius centered on the oak, withering away after 1 minute or when this action is used again. For the duration, that area is difficult terrain for non-plant creatures. In addition, each creature of the oak's choice in that area when the plants appear must succeed on a DC 15 Strength saving throw or become restrained. A creature can use its action to make a DC 15 Strength check, freeing itself or another entangled creature within reach on a success.</text>
+    </action>
+    <description>A cursed oak is a treant that has been blighted by an evil force, transforming into a living gulthias tree, an engine of spreading blight throughout once tranquil forests. This corrupted being tirelessly carries out the will of the ancient evil that controls it, and attempts to spread that evil wherever it can.
+
+Soul of Gulthias. A cursed oak is the soul of the ancient vampire Gulthias made manifest, and it harbors all of his evil within its branches. These creatures have no semblance of their former self left within them. Much like a normal gulthias tree, a cursed oak spreads blight and creates blighted creatures, with the only difference being its ability to move and act on its own.
+	Using this animation, a cursed oak forcibly uproots healthy trees and plants, cursing them and then harboring the growth of blighted brambles, toxic weeds, and others of their kind. Wherever the cursed oak walks, these cursed plants follow, growing with supernatural speed to engulf all that they come across. If they encounter a settlement, that settlement may disappear in a matter of days, or even a matter of hours, as plants overwhelm the buildings and roads.
+
+Blightlord. All other blights are beneath the cursed oak in the chain of superiority. The cursed oak commands other blights, creating strategies and tactics far beyond the mind of your average blight. A cursed oak is always surrounded by other blights, which serve as its spies and its bodyguards. Through its system of roots, it can communicate with other blights within its area of corruption, creating a vast network of command.
+
+Curing the Curse. The curse of Gulthias is powerful dark magic, and cannot be lifted by a remove curse alone. In order to lift the curse and restore the treant to its former self, the oak must first be knocked unconscious, such as through reducing its hit points to 0 without killing it outright. Once it is unconscious, another treant must perform an hour long ritual to lift the curse. If the ritual is interrupted, it must be restarted from the beginning.
+
+Source:	Dark Arts Player's Companion p. 38 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Deathcrest Ape</name>
+    <sortname>Ape, Deathcrest</sortname>
+    <ancestry>Ape</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>chaotic neutral</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>71 (11d8+22)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>19</dex>
+    <con>14</con>
+    <int>8</int>
+    <wis>12</wis>
+    <cha>9</cha>
+    <skill>Acrobatics +6, Athletics +3, Stealth +6, Survival +3</skill>
+    <passive>11</passive>
+    <languages>Undercommon</languages>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Leaping Attack</name>
+      <text>If the ape jumps at least 10 feet straight toward a creature and then hits it with a claw attack on the same turn, the attack deals an additional 3 (1d6) slashing damage.</text>
+      <attack>Slashing Damage||1d6</attack>
+    </trait>
+    <trait>
+      <name>Shadow Jaunt</name>
+      <text>When the ape hits a creature with its claw attack, it can immediately use its bonus action to teleport up to 15 feet.</text>
+    </trait>
+    <trait>
+      <name>Springy</name>
+      <text>The ape's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The deathcrest ape makes two claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6+4) slashing damage plus 3 (1d6) poison damage digest meat tainted by the necrotic energy that animated them, deathcrest apes have specifically adapted to this purpose, filling a very large niche in the food chain.</text>
+      <attack>Claw|+6|(1d6+4)+(1d6)</attack>
+      <attack>Slashing Damage|+6|1d6+4</attack>
+      <attack>Poison Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Protected by the Raven Queen</name>
+      <text>As one of the few natural predators of the undead, deathcrest apes are venerated by the followers of the Raven Queen. Since the Raven Queen believes the undead to be a blight on the the land, any creature that reduces their population is a welcome guest in her realm of the shadowfell.
+	Because of this, the followers of the Raven Queen actively seek to protect these creatures, and they do not hunt the apes, even when they are in grave need of food. If these creatures were to be hunted to extinction, the undead would be even more numerous in the shadow fell than they already are.</text>
+    </action>
+    <action>
+      <name>Companions of the Shadar-Kai</name>
+      <text>Due to a number of mutual interests and benefits, the shadar-kai occasionally domesticate deathcrest apes, making them serve as bodyguards against the undead. While the shadar-kai gain protection, the apes gain a food source and a shelter against the harsh storms of the shadowfell. However, these creatures are quick to anger and not loyal in the slightest, so they are quick to turn on their masters if they run out of food or are harmed by them.
+	A deathcrest ape can be as intelligent as a dim-witted human, and therefore they can easily understand the commands of the Shadar-kai, and some even learn undercommon. Those that do serve as leaders or communicators for a pack, and spend much more time in the presence of the Shadar-kai, using their communication skills to foster their relations.</text>
+    </action>
+    <description>Savage predators and skillful hunters, deathcrest apes climb through the dark chasms and destitute forests of the underdark, searching for sustenance. They hunt in small packs, devouring those that they come across in a frenzy of claws and teeth.
+
+Beastial Origins. Deathcrest apes are the descendants of normal apes from the material plane, brought to the shadowfell through the dark portals that occasionally manifest in the deep gloom of dense jungle caverns. Against all odds, a few of these creatures managed to survive long enough for the shadowfell to corrupt their bodies, causing their claws to become larger and more monstrous, and transforming their hind feet into hooves. The Shadowfell has a dispiriting effect on its denizens, such that the longer a creature remains on the plane, the more it accepts the plane's malaise. As the years passed, these creatures became aware of the transformation being wrought upon them, and yet could do nothing to prevent it.
+
+Devourers of All. In order to survive in the shadowfell, creatures must find a way to make do with whatever they find. One of the greatest adaptations of these creatures is their ability to eat any type of flesh - even the remains of an undead. While most creatures refuse to eat the undead due to their inability to
+
+Source:	Dark Arts Player's Companion p. 39 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Fleshfiend</name>
+    <size>L</size>
+    <type>fiend</type>
+    <alignment>lawful evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>110 (13d10+39)</hp>
+    <speed>30 ft., fly 60 ft.</speed>
+    <str>17</str>
+    <dex>14</dex>
+    <con>16</con>
+    <int>15</int>
+    <wis>12</wis>
+    <cha>11</cha>
+    <save>Dex +6, Wis +5</save>
+    <passive>11</passive>
+    <languages>Abyssal, telepathy 120 ft.</languages>
+    <cr>9</cr>
+    <vulnerable/>
+    <resist>cold, fire, lightning, bludgeoning, piercing and slashing damage from nonmagical weapons</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Chained Ones</name>
+      <text>The fleshfiend is accompanied by two chained ones, which act on the same turn as the fleshfiend, and must remain within 10 feet of it. The chained ones have the same statistics as the fleshfiend, except they are size medium, have 40 hit points, and they have no abilities besides the slash action option. A chained one immediately disappears if they or the fleshfiend are reduced to 0 hit points. After 24 hours, both chained ones reform if the fleshfiend is alive.</text>
+    </trait>
+    <trait>
+      <name>Flesh Defenders</name>
+      <text>For each chained one that is alive, the fleshfiend gains a +2 bonus to AC, for a total of +4 when both are alive.</text>
+    </trait>
+    <trait>
+      <name>Magic Resistance</name>
+      <text>The fleshfiend has advantage on saving throws against spells and other magical effects.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The fleshfiend makes two slash attacks.</text>
+    </action>
+    <action>
+      <name>Slash</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d10+3) slashing damage.</text>
+      <attack>Slashing Damage|+7|2d10+3</attack>
+    </action>
+    <action>
+      <name>Poison Burst (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>A burst of poison extends out of either the fleshfiend or one of its chained ones. The fleshfiend chooses either itself or one of the chained ones, and each creature within 5 feet of chosen creature must make a DC 15 Consitution saving throw. A creature takes 24 (7d6) poison damage on a failed save, or half damage on a successful one.</text>
+      <attack>Poison Damage||7d6</attack>
+    </action>
+    <description>A fleshfiend is a powerful warrior that is most often found in the service of other devils. Although not true devils themselves, fleshfiends are treated like lesser devils on the infernal hierarchy, and they only serve greater devils and archdevils.
+
+Evil Made Manifest. Fleshfiends originated in the Nine Hells many centuries ago, when powerful devils created a dark ritual to corrupt intruding humanoids, turning them into devilish fiends with no semblance of their mortal form remaining. The fleshfiends roam the Nine Hells, a gruesome reminder of the danger of remaining in that realm for too long.
+
+Chained Ones. When fleshfiends are created, they are the fusion of 3 different humanoids, with the most powerful among them becoming the fleshfiend, and the others becoming chained ones. Chained ones appear to be smaller versions of the fleshfiend, with similarly leathery wings and sharp claws. The chained ones are independent thinkers, though they must obey the commands of the fleshfiend, which are always given through telepathy.
+
+Source:	Dark Arts Player's Companion p. 40 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Fleshling Bloodletter</name>
+    <sortname>Fleshling, Bloodletter</sortname>
+    <ancestry>Fleshling</ancestry>
+    <size>M</size>
+    <type>humanoid (fleshling)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12 (leather armor)</ac>
+    <hp>76 (8d8+40)</hp>
+    <speed>30 ft.</speed>
+    <str>18</str>
+    <dex>12</dex>
+    <con>20</con>
+    <int>11</int>
+    <wis>16</wis>
+    <cha>10</cha>
+    <save>Wis +5</save>
+    <skill>Medicine +5, Athletics +6</skill>
+    <passive>13</passive>
+    <languages>Common, Fleshling</languages>
+    <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Reknit Flesh</name>
+      <text>While the fleshling has half of its hit points or fewer, it gains 10 temporary hit points at the start of each of its turns.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The fleshling bloodletter is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The fleshling bloodletter has the following cleric spells prepared:
+
+	• Cantrips (at will): bloodletting
+	• 1st level (4 slots): bloodburn, cruorwhip
+	• 2nd level (2 slots): blood seal</text>
+      <attack>Spellcasting|+5|</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The fleshling makes two claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d6+4) slashing damage.</text>
+      <attack>Slashing Damage|+4|1d6+4</attack>
+    </action>
+    <spells>Bloodletting (HB), Bloodburn (HB), Cruorwhip (HB), Blood Seal (HB)</spells>
+    <description>The title of bloodletter is given to fleshlings that have gained some level of mastery over hemomancy, becoming more intelligent and powerful in the process of their learning. A bloodletter acts as a war leader, commanding troops and sending them to battles. Although they aren't at the very top of the hierarchy, they are close to it and are highly respected by the lower members of a tribe.
+
+Fiendish Blessing. Asmodeus bestows special blessings upon a bloodletter, gifts that recognize their prowess in battle and in the arcane arts. Thusly, a bloodletter has far greater regenerative abilities and a more impressive constitution than their counterparts.
+
+Fleshlings:
+The dreaded fleshlings dwell in clans within vast deserts and wastelands, always warring with one another for supremacy in the eyes of their god; Asmodeus, Lord of the Nine Hells. Using their natural aptitude in hemomancy, these savage humanoids seek to expand their clans and rule alone over their barren landscapes. Each tribe has no interest in working together with other clans, instead opting to go to war with all that they can find.
+	Most fleshlings have pink, flesh colored skin, which is how they earned their name. Their features are completely monstrous, with serrated teeth, multiple pairs of eyes, sharp claws, and fleshy 'fins' on their back. They wear clothing made of hides and strong leathers, useful materials for protecting their skin against the harsh sun of the desert.
+
+Infernal Master. Fleshlings are the spawn of Asmodeus, Lord of the Nine Hells, and they revere him as their god. He offers them divine guidance and vengeance against their enemies while urging them towards even greater wars and bloodshed. These creatures erect dark temples devoted to their lord, and they tirelessly follow his every order.
+
+Warring Tribes. Fleshlings have no ties with other clans of their race, and they rarely keep allies for longer than a few weeks. They are just as quick to war with other tribes as they are to war with other races, so their clans stay relatively small as they remain in a constant state of war.
+	Within a tribe, fleshlings live in a hierarchy based on a fleshling's power and their proficiency with blood magic. As fleshlings become more proficient with their clans magic, they rise among the ranks and may eventually become a clan leader.
+
+Source:	Dark Arts Player's Companion p. 41 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Fleshling</name>
+    <ancestry>Fleshling</ancestry>
+    <size>M</size>
+    <type>humanoid (fleshling)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>12 (leather armor)</ac>
+    <hp>26 (4d8+8)</hp>
+    <speed>30 ft.</speed>
+    <str>15</str>
+    <dex>13</dex>
+    <con>15</con>
+    <int>9</int>
+    <wis>12</wis>
+    <cha>10</cha>
+    <skill>Athletics +4</skill>
+    <passive>11</passive>
+    <languages>Common, Fleshling</languages>
+    <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Reknit Flesh</name>
+      <text>While the fleshling has half of its hit points or fewer, it gains 5 temporary hit points at the start of each of its turns.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The fleshling makes two claw attacks.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) slashing damage.</text>
+      <attack>Slashing Damage|+4|1d6+2</attack>
+    </action>
+    <description>The dreaded fleshlings dwell in clans within vast deserts and wastelands, always warring with one another for supremacy in the eyes of their god; Asmodeus, Lord of the Nine Hells. Using their natural aptitude in hemomancy, these savage humanoids seek to expand their clans and rule alone over their barren landscapes. Each tribe has no interest in working together with other clans, instead opting to go to war with all that they can find.
+	Most fleshlings have pink, flesh colored skin, which is how they earned their name. Their features are completely monstrous, with serrated teeth, multiple pairs of eyes, sharp claws, and fleshy 'fins' on their back. They wear clothing made of hides and strong leathers, useful materials for protecting their skin against the harsh sun of the desert.
+
+Infernal Master. Fleshlings are the spawn of Asmodeus, Lord of the Nine Hells, and they revere him as their god. He offers them divine guidance and vengeance against their enemies while urging them towards even greater wars and bloodshed. These creatures erect dark temples devoted to their lord, and they tirelessly follow his every order.
+
+Warring Tribes. Fleshlings have no ties with other clans of their race, and they rarely keep allies for longer than a few weeks. They are just as quick to war with other tribes as they are to war with other races, so their clans stay relatively small as they remain in a constant state of war.
+	Within a tribe, fleshlings live in a hierarchy based on a fleshling's power and their proficiency with blood magic. As fleshlings become more proficient with their clans magic, they rise among the ranks and may eventually become a clan leader.
+
+Source:	Dark Arts Player's Companion p. 41 (Homebrew)</description>
+    <environment/>
+  </monster>
+</compendium>

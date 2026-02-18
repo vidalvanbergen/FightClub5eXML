@@ -1,6 +1,7 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Added `Dark Arts Player's Companion v3.0` homebrew content, shared by @ViannaEuphoria.
 * Added `Zamanora: Ballad of the Witch` core book v0.9 indie 2024 content, shared by @B.
 * Added `The Elder Scrolls: Delvebound` species content, shared by @GoldenTanager.
 * Fixed the `Mystic (UA)` class.
@@ -12,16 +13,16 @@
 * Added `In Search of Smugglers Secrets` indie content, shared by @ThreeDawgs.
 * Added `Pluto Jacksons Monsters of Drakkenheim` indie content, shared by @ThreeDawgs.
 * Added `Sebastian Crowes Terror in Tierhaven` indie content, shared by @ThreeDawgs.
-* Added `Obojima: Tales from the Tall Grass` partnered content.
-* Added `Book of Ebon Tides` partnered content.
-* Added `Mystic Subclasses` Unearthed Arcana content.
+* Added `Obojima: Tales from the Tall Grass` partnered content, shared by @ViannaEuphoria.
+* Added `Book of Ebon Tides` partnered content, shared by @ViannaEuphoria.
+* Added `Mystic Subclasses` Unearthed Arcana content, shared by @ViannaEuphoria.
 * Added a `Star Wars 5e` compendium, shared by Stuart C. Mackey. (Incomplete at v0.9.1)
 * Added `(Third Party)` tags to Partnered Official content.
 * Updated and added page numbers to `Eberron: Forge of the Artificer` and `Forgotten Realms: Heroes of Faerun` content.
 * Other changes and fixes.
 
 ### 2025-12-22
-* Added `Subclasses Update` Unearthed Arcana.
+* Added `Subclasses Update` Unearthed Arcana, shared by @ViannaEuphoria.
 * Added `Griffon's Saddlebag: Griffons of the Multiverse` content, shared by @Cvamped.
 * Added `Griffon's Saddlebag, Book 2` content, shared by @Cvamped.
 * Added `Dungeons in a Box`'s `GM Toolkit` content, shared by @Cvamped.
@@ -30,7 +31,7 @@
 * Added `Dragontortleborn` from `Book of Uncommon Ancestry`, shared by @reccho.
 * Added `Eberron: Forge of the Artificer (2024)` content, shared by @KnightCA.
 * Added `Astarion's Book of Hungers (2024)` content, shared by @Mochi.
-* Added `Tome of Heroes` content.
+* Added `Tome of Heroes` content, shared by @ViannaEuphoria.
 * Added 2024 unarmed strike, improvised weapon and monk unarmed strike 'items', shared by @KnightCA.
 * Updated SRD24 to 5.2.1, adding missing items and statblocks.
 * Other changes and fixes.
@@ -38,22 +39,22 @@
 ### 2025-10-18
 * Added `Sebastian Crowe's Guide to Drakkenheim` content by @ThreeDawgs.
 * Added `Call of the Netherdeep` campaign file by Josh.
-* Added `Grim Hollow: Campaign Guide` content.
-* Added `Grim Hollow: Player's Guide` content.
-* Added `Arcane Subclasses Update` Unearthed Arcana.
-* Added `Psion Update` Unearthed Arcana.
+* Added `Grim Hollow: Campaign Guide` content, shared by @ViannaEuphoria.
+* Added `Grim Hollow: Player's Guide` content, shared by @ViannaEuphoria.
+* Added `Arcane Subclasses Update` Unearthed Arcana, shared by @ViannaEuphoria.
+* Added `Psion Update` Unearthed Arcana, shared by @ViannaEuphoria.
 * Other changes and fixes.
 
 ### 2025-09-03
-* Added `Ranger (HeavyArms)` content.
-* Added `Tasha's Scrapped Book` content.
-* Added `Steinhardt's Guide to the Eldritch Hunt` content.
+* Added `Ranger (HeavyArms)` content, shared by @ViannaEuphoria.
+* Added `Tasha's Scrapped Book` content, shared by @ViannaEuphoria.
+* Added `Steinhardt's Guide to the Eldritch Hunt` content, shared by @ViannaEuphoria.
 * Added `Hoard of the Dragon Queen` to campaigns by @DauntedOne.
 * Added `Alternate Blood Hunter (LaserLlama)` content for PHB2014 and 2024, put together by @Deepseastronaut.
 * Added `Alternate Ranger (LaserLlama)` content for PHB2014 and 2024, partially put together by @rattatooey.
-* Added Unearthed Arcana 2025 `Arcane Subclasses (UA24)` content.
-* Added Unearthed Arcana 2025 `Apocalyptic Subclasses (UA24)` content.
-* Added `SemiOfficial` and `PartneredOfficial` to 2024 `legacy` content.
+* Added Unearthed Arcana 2025 `Arcane Subclasses (UA24)` content, shared by @ViannaEuphoria.
+* Added Unearthed Arcana 2025 `Apocalyptic Subclasses (UA24)` content, shared by @ViannaEuphoria.
+* Added `SemiOfficial` and `PartneredOfficial` to 2024 `legacy` content, shared by @ViannaEuphoria.
 * Formatted `Legacy [2024]` subclasses to match the modern format.
 * Addded homebrew dinosaurian race `Brutan` by @rattatooey.
 * Updated Monsters of the Dungeon bestiary by @Reccho.
@@ -62,7 +63,7 @@
 * Other changes and fixes.
 
 ### 2025-07-03
-* Added `Valda's Spire of Secrets`.
+* Added `Valda's Spire of Secrets` Partnered Content, shared by @ViannaEuphoria.
 * Added `A Deadly Scarab`, `Dragon War`, `Hunt of the Thessalhydra`, `The Wild Beyond the Witchlight`, `Lost Mines of Phandelver`, and `Wild Sheep Chase` by @Iggwilv.
 * Improved `build-collections.sh` to be modular and support parallel processing for faster compendium builds.
 * Added `source-xml-collector.sh` to help generate modular 'partial' collections.
