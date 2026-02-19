@@ -451,6 +451,10 @@ Source:	Dark Arts Player's Companion p. 37 (Homebrew)</description>
     <conditionImmune/>
     <senses/>
     <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
       <name>False Appearance</name>
       <text>While the cursed oak remains motionless, it is indistinguishable from a fallen tree.</text>
     </trait>
@@ -514,6 +518,10 @@ Source:	Dark Arts Player's Companion p. 38 (Homebrew)</description>
     <immune/>
     <conditionImmune/>
     <senses/>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
     <trait>
       <name>Leaping Attack</name>
       <text>If the ape jumps at least 10 feet straight toward a creature and then hits it with a claw attack on the same turn, the attack deals an additional 3 (1d6) slashing damage.</text>
@@ -581,6 +589,10 @@ Source:	Dark Arts Player's Companion p. 39 (Homebrew)</description>
     <conditionImmune>poisoned</conditionImmune>
     <senses>darkvision 120 ft.</senses>
     <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
       <name>Chained Ones</name>
       <text>The fleshfiend is accompanied by two chained ones, which act on the same turn as the fleshfiend, and must remain within 10 feet of it. The chained ones have the same statistics as the fleshfiend, except they are size medium, have 40 hit points, and they have no abilities besides the slash action option. A chained one immediately disappears if they or the fleshfiend are reduced to 0 hit points. After 24 hours, both chained ones reform if the fleshfiend is alive.</text>
     </trait>
@@ -642,6 +654,10 @@ Source:	Dark Arts Player's Companion p. 40 (Homebrew)</description>
     <immune/>
     <conditionImmune/>
     <senses/>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
     <trait>
       <name>Reknit Flesh</name>
       <text>While the fleshling has half of its hit points or fewer, it gains 10 temporary hit points at the start of each of its turns.</text>
@@ -706,6 +722,10 @@ Source:	Dark Arts Player's Companion p. 41 (Homebrew)</description>
     <conditionImmune/>
     <senses/>
     <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
       <name>Reknit Flesh</name>
       <text>While the fleshling has half of its hit points or fewer, it gains 5 temporary hit points at the start of each of its turns.</text>
     </trait>
@@ -727,6 +747,1156 @@ Warring Tribes. Fleshlings have no ties with other clans of their race, and they
 	Within a tribe, fleshlings live in a hierarchy based on a fleshling's power and their proficiency with blood magic. As fleshlings become more proficient with their clans magic, they rise among the ranks and may eventually become a clan leader.
 
 Source:	Dark Arts Player's Companion p. 41 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Fleshwurm</name>
+    <size>L</size>
+    <type>monstrosity (fleshling)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14 (hide armor)</ac>
+    <hp>115 (10d10+60)</hp>
+    <speed>30 ft., burrow 20 ft.</speed>
+    <str>20</str>
+    <dex>14</dex>
+    <con>22</con>
+    <int>11</int>
+    <wis>18</wis>
+    <cha>10</cha>
+    <save>Wis +5</save>
+    <skill>Perception +7, Athletics +8</skill>
+    <passive>17</passive>
+    <languages>Common, Fleshling</languages>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>tremorsense 30 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Reknit Flesh</name>
+      <text>While the fleshling has half of its hit points or fewer, it gains 15 temporary hit points at the start of each of its turns.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The fleshwurm is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). The fleshwurm has the following cleric spells prepared:
+
+	• Cantrips (at will): bloodletting
+	• 1st level (4 slots): bloodburn, cruorwhip
+	• 2nd level (3 slots): blood seal
+	• 3rd level (2 slots): tides of blood, vampiric touch</text>
+      <attack>Spellcasting|+7|</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The fleshling makes two longsword attacks and one siphon attack.</text>
+    </action>
+    <action>
+      <name>Longsword</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8+5) slashing damage.</text>
+      <attack>Slashing Damage|+8|1d8+5</attack>
+    </action>
+    <action>
+      <name>Siphon</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 12 (2d6+5) piercing damage. If the creature is below its hit point maximum, it takes an additional 7(2d6) necrotic damage</text>
+      <attack>Piercing Damage|+8|2d6+5</attack>
+      <attack>Necrotic Damage||2d6</attack>
+    </action>
+    <slots>0,4,3,2</slots>
+    <spells>Bloodletting (HB), Bloodburn (HB), Cruorwhip (HB), Blood Seal (HB), Tides of Blood (HB), Vampiric Touch</spells>
+    <description>Fleshwurms are fleshlings that were blessed at birth by Asmodeus himself, destined by divine right to become the leader of their clan. Imbued with an exceptional aptitude with blood magic, fleshwurms quickly outclass all other members of their tribe, and no fleshling lower in status than them dares to question their rule. Even the fleshlings of enemy tribes do not dare to attack a fleshwurm themselves, instead allowing their tribe's fleshwurm leader to have a one-on-one duel with the enemy.
+	Through their blessing, a fleshwurm has gained a vastly different body from that of its peers. Their legs have been replaced with a long abdomen, like that of a snake or a worm. Their hands are smaller and more humanlike, and are therefore capable of wielding human weapons. Additionally, their great strength allows them to burrow through loose earth, and ability which they use to ambush their foes, as well as to create underground passages that may be used by other tribe members.
+
+Source:	Dark Arts Player's Companion p. 42 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Lost Soul</name>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>any alignment</alignment>
+    <ac>12</ac>
+    <hp>66 (12d8+12)</hp>
+    <speed>0 ft., fly 60 ft.</speed>
+    <str>9</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>11</int>
+    <wis>12</wis>
+    <cha>18</cha>
+    <passive>11</passive>
+    <languages>any it knew in life</languages>
+    <cr>5</cr>
+    <vulnerable/>
+    <resist>acid, fire, lightning, thunder, bludgeoning, piercing and slashing damage from nonmagical weapons</resist>
+    <immune>cold, necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Ethereal Sight</name>
+      <text>The ghost can see 120 ft. into the Ethereal Plane when it is on The Material Plane, and vice versa.</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>The ghost can move through other creatures and Objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
+      <attack>Force Damage||1d10</attack>
+    </trait>
+    <action>
+      <name>Withering Touch</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (4d6+4) necrotic damage. If the target is a creature, then their Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.</text>
+      <attack>Necrotic Damage|+7|4d6+4</attack>
+      <attack>Reduce Strength Score||1d4</attack>
+    </action>
+    <action>
+      <name>Etherealness</name>
+      <text>The ghost enters the Ethereal Plane from The Material Plane, or vice versa. It is visible on The Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.</text>
+    </action>
+    <action>
+      <name>Horrifying Visage</name>
+      <text>Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a DC 15 Wisdom saving throw or be Frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 x 10 years. A Frightened target can repeat the saving throw at the end of each of its turns, ending the Frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a Greater Restoration spell, but only within 24 hours of it occurring.</text>
+      <attack>Years||1d4x10</attack>
+    </action>
+    <action>
+      <name>Possession (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>One humanoid that the ghost can see within 5 ft. of it must succeed on a DC 15 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is Incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any Attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being Charmed and Frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, Class Features, or proficiencies.
+	The possession lasts until the body drops to 0 hit points, the ghost ends it as a Bonus Action, or the ghost is turned or forced out by an effect like the Dispel Evil and Good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 ft. of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.</text>
+    </action>
+    <description>When a ghost has failed to complete its unfinished business for too long, it occasionally becomes a lost soul. A lost soul has existed for so long that is has no memory of its life or whatever unresolved task caused it to become a ghost, so it simply wanders across the world yearning to find a meaning to its existence.
+	Some lost souls seek out the living, hoping that they might find a way to put their soul to rest, while others may instead seek to kill the living in fits of spite and jealousy. Like regular ghosts, lost souls can still resolve their unfinished business, though it is often much harder to do so due to them not being tied to a specific location. Otherwise, the haunting of a lost soul is exactly the same as that of a regular ghost.
+
+Eternal Wanderers. Lost souls have lost their binding to whatever creature, place or object they may have haunted before, and they have no memory of it, so they instead wander the land.
+
+Undead Nature. A lost soul doesn't require air, food, drink, or sleep.
+
+Source:	Dark Arts Player's Companion p. 43 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Martial Lost Soul</name>
+    <sortname>Lost Soul, Martial</sortname>
+    <ancestry>Lost Soul</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>any alignment</alignment>
+    <ac>15 (chain shirt)</ac>
+    <hp>66 (12d8+12)</hp>
+    <speed>0 ft., fly 60 ft.</speed>
+    <str>16</str>
+    <dex>14</dex>
+    <con>12</con>
+    <int>11</int>
+    <wis>12</wis>
+    <cha>18</cha>
+    <passive>11</passive>
+    <languages>any it knew in life</languages>
+    <cr>7</cr>
+    <vulnerable/>
+    <resist>acid, fire, lightning, thunder, bludgeoning, piercing and slashing damage from nonmagical weapons</resist>
+    <immune>cold, necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Ethereal Sight</name>
+      <text>The ghost can see 120 ft. into the Ethereal Plane when it is on The Material Plane, and vice versa.</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>The ghost can move through other creatures and Objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
+      <attack>Force Damage||1d10</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The ghost makes two longsword attacks.</text>
+    </action>
+    <action>
+      <name>Longsword</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 8 (1d8 + 3) slashing damage, plus 13 (3d8) necrotic damage.</text>
+      <attack>Longsword|+6|(1d8+3)+(3d8)</attack>
+      <attack>Slashing Damage|+6|1d8+3</attack>
+      <attack>Necrotic Damage||3d8</attack>
+    </action>
+    <action>
+      <name>Withering Touch</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (4d6+4) necrotic damage. If the target is a creature, then their Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.</text>
+      <attack>Necrotic Damage|+7|4d6+4</attack>
+      <attack>Reduce Strength Score||1d4</attack>
+    </action>
+    <action>
+      <name>Etherealness</name>
+      <text>The ghost enters the Ethereal Plane from The Material Plane, or vice versa. It is visible on The Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.</text>
+    </action>
+    <action>
+      <name>Horrifying Visage</name>
+      <text>Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a DC 15 Wisdom saving throw or be Frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 x 10 years. A Frightened target can repeat the saving throw at the end of each of its turns, ending the Frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a Greater Restoration spell, but only within 24 hours of it occurring.</text>
+      <attack>Years||1d4x10</attack>
+    </action>
+    <action>
+      <name>Possession (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>One humanoid that the ghost can see within 5 ft. of it must succeed on a DC 15 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is Incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any Attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being Charmed and Frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, Class Features, or proficiencies.
+	The possession lasts until the body drops to 0 hit points, the ghost ends it as a Bonus Action, or the ghost is turned or forced out by an effect like the Dispel Evil and Good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 ft. of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.</text>
+    </action>
+    <description>When a ghost has failed to complete its unfinished business for too long, it occasionally becomes a lost soul. A lost soul has existed for so long that is has no memory of its life or whatever unresolved task caused it to become a ghost, so it simply wanders across the world yearning to find a meaning to its existence.
+	Some lost souls seek out the living, hoping that they might find a way to put their soul to rest, while others may instead seek to kill the living in fits of spite and jealousy. Like regular ghosts, lost souls can still resolve their unfinished business, though it is often much harder to do so due to them not being tied to a specific location. Otherwise, the haunting of a lost soul is exactly the same as that of a regular ghost.
+
+Some ghosts and lost souls had martial training and battlefield experience in life, granting them an increased strength in death.
+
+Eternal Wanderers. Lost souls have lost their binding to whatever creature, place or object they may have haunted before, and they have no memory of it, so they instead wander the land.
+
+Undead Nature. A lost soul doesn't require air, food, drink, or sleep.
+
+Source:	Dark Arts Player's Companion p. 43 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Martial Ghost</name>
+    <sortname>Ghost, Martial</sortname>
+    <ancestry>Ghost</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>Any alignment</alignment>
+    <ac>14 (Chain Shirt)</ac>
+    <hp>45 (10d8)</hp>
+    <speed>walk 0 ft., fly 40 ft.</speed>
+    <str>16</str>
+    <dex>13</dex>
+    <con>10</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>17</cha>
+    <passive>11</passive>
+    <languages>any languages it knew in life</languages>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist>acid, fire, lightning, thunder; bludgeoning, piercing, slashing from nonmagical attacks</resist>
+    <immune>cold, necrotic, poison</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Ethereal Sight</name>
+      <text>The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
+      <attack>Incorporeal Movement||1d10</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The ghost makes two longsword attacks.</text>
+    </action>
+    <action>
+      <name>Longsword</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 8 (1d8 + 3) slashing damage, plus 13 (3d8) necrotic damage.</text>
+      <attack>Longsword|+6|(1d8+3)+(3d8)</attack>
+      <attack>Slashing Damage|+6|1d8+3</attack>
+      <attack>Necrotic Damage||3d8</attack>
+    </action>
+    <action>
+      <name>Withering Touch</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 17 (4d6 + 3) necrotic damage.</text>
+      <attack>Necrotic Damage|+5|4d6+3</attack>
+    </action>
+    <action>
+      <name>Etherealness</name>
+      <text>The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.</text>
+    </action>
+    <action>
+      <name>Horrifying Visage</name>
+      <text>Each non-undead creature within 60 feet of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 × 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.</text>
+      <attack>Years||1d4x10</attack>
+    </action>
+    <action>
+      <name>Possession (Recharge 6)</name>
+      <recharge>D6</recharge>
+      <text>One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
+	The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.</text>
+    </action>
+    <description>A ghost is the soul of a once-living creature, bound to haunt a specific location, creature, or object that held significance to it in its life.
+
+Unfinished Business: A ghost yearns to complete some unresolved task from its life. It might seek to avenge its own death, fulfill an oath, or relay a message to a loved one. A ghost might not realize that it has died and continue the everyday routine of its life. Others are driven by wickedness or spite, as with a ghost that refuses to rest until every member of a certain family or organization is dead.
+	The surest way to rid an area of a ghost is to resolve its unfinished business. A ghost can be destroyed more easily by invoking a weakness tied to its former life. The ghost of a person tortured to death might be killed again by the implements of that torture. The ghost of a gardener might become more vulnerable when exposed to a potent floral fragrance.
+
+Ghostly Manifestations: Sensations of profound sadness, loneliness, and unfulfilled yearning emanate from places where ghostly hauntings occur. Strange sounds or unnatural silences create an unsettling atmosphere. Cold spots settle in rooms that have roaring fires. A choking stench might seep into the area, inanimate objects might move of their own accord, and corpses might rise from the grave. The ghost has no control over these manifestations; they simply occur.
+
+Undead Nature: A ghost doesn't require air, food, drink, or sleep.
+
+Source:	Dark Arts Player's Companion p. 43 (Homebrew),
+		Monster Manual (2014) p. 147</description>
+    <environment>underdark, urban</environment>
+  </monster>
+  <monster>
+    <name>Blood Ooze</name>
+    <sortname>Ooze, Blood</sortname>
+    <ancestry>Ooze</ancestry>
+    <size>L</size>
+    <type>ooze</type>
+    <alignment>unaligned</alignment>
+    <ac>8</ac>
+    <hp>76 (9d10+27)</hp>
+    <speed>15 ft., climb 15 ft.</speed>
+    <str>17</str>
+    <dex>7</dex>
+    <con>16</con>
+    <int>2</int>
+    <wis>6</wis>
+    <cha>1</cha>
+    <passive>8</passive>
+    <languages/>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist>acid, necrotic</resist>
+    <immune>lightning, slashing</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Amorphous</name>
+      <text>The ooze can move through a space as narrow as 1 inch wide without squeezing.</text>
+    </trait>
+    <trait>
+      <name>Changing Form</name>
+      <text>When the ooze is reduced to half of its maximum hit points, its size becomes Medium. When it is reduced to a fourth of its maximum hit points, its size becomes Small. If the ooze's hit points are restored above a fourth or a half, its size becomes Medium or Large, respectively.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The ooze regains 10 hit points at the start of its turn if it has at least 1 hit point. If the ooze takes radiant damage this trait doesn't function at the start of the ooze's next turn.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Pseudopod</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6+3) bludgeoning damage plus 3 (1d6) acid damage for each size category of the ooze above Tiny.</text>
+      <attack>Pseudopod|+5|(2d6+3)+(1d6)</attack>
+      <attack>Bludgeoning Damage|+5|2d6+3</attack>
+      <attack>Acid Damage||1d6</attack>
+    </action>
+    <reaction>
+      <name>Bloodshed</name>
+      <text>If the ooze's size changes and it becomes smaller, it can cause its lost mass to explode outward. Each creature within 5 feet of the ooze (based on the ooze's size before its size changed) must make a DC 13 Dexterity saving throw. A creature takes 7 (2d6) acid damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Acid Damage||2d6</attack>
+    </reaction>
+    <description>A blood ooze resembles a giant, sticky clot of blood, with a deep crimson color. They lay in wait on the ceilings of dark caves and deep caverns, waiting for their prey. Once they spot a creature below them, they drop down and devour them, feasting on their blood to increase their size.
+	Blood oozes are created when a large amount of blood is tampered with by chaotic magic, in much the same way a grey ooze is created out of stone. These beings then constantly search for more blood to add to their body.
+
+Oozes:
+Oozes thrive in the dark, shunning areas of bright light and extreme temperatures. They flow through the damp underground, feeding on any creature or object that can be dissolved, slinking along the ground, dripping from walls and ceilings, spreading across the edges of underground pools, and squeezing through cracks. The first warning an adventurer receives of an ooze's presence is often the searing pain of its acıdic touch.
+
+Ooze Nature. An ooze doesn't require sleep.
+
+Source:	Dark Arts Player's Companion p. 44 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Necrotic Slime</name>
+    <sortname>Slime, Necrotic</sortname>
+    <ancestry>Ooze</ancestry>
+    <size>H</size>
+    <type>ooze</type>
+    <alignment>chaotic evil</alignment>
+    <ac>9</ac>
+    <hp>180 (19d10+76)</hp>
+    <speed>25 ft., climb 25 ft.</speed>
+    <str>19</str>
+    <dex>9</dex>
+    <con>18</con>
+    <int>8</int>
+    <wis>11</wis>
+    <cha>1</cha>
+    <passive>10</passive>
+    <languages/>
+    <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>acid, cold, lightning, necrotic, slashing</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, prone</conditionImmune>
+    <senses>blindsight 60 ft. (blind beyond this radius)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Amorphous</name>
+      <text>If the slime has no creature engulfed, it can move through a space as narrow as 1 inch wide without squeezing.</text>
+    </trait>
+    <trait>
+      <name>Enveloping Slime</name>
+      <text>Other creatures can enter the slime's space, but a creature that does so is subjected to the slime's engulf and has disadvantage on the saving throw.
+	Creatures inside the slime can only be spotted with a successful DC 15 Wisdom (Perception) check, and have total cover.
+	A creature within 5 feet of the slime can take an action to pull a creature or object out of the slime. Doing so requires a successful DC 15 Strength check, and the creature making the attempt takes 13 (3d8) necrotic damage.
+	The slime can hold one huge or large creature, or up to nine Medium or smaller creatures inside it at a time.</text>
+      <attack>Necrotic Damage||3d8</attack>
+    </trait>
+    <trait>
+      <name>Necrotic Form</name>
+      <text>A creature that touches the slime or hits it with a melee attack while within 5 feet of it takes 4 (1d8) necrotic damage.</text>
+      <attack>Necrotic Damage||1d8</attack>
+    </trait>
+    <trait>
+      <name>Reanimator</name>
+      <text>A humanoid that dies while engulfed by the slime and then remains within the slime for 24 hours rises as a skeleton under the the slime's control. The slime can have no more than four skeletons under its control at one time.</text>
+    </trait>
+    <trait>
+      <name>Spider Climb</name>
+      <text>The slime can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The slime makes two attacks: one pseudopod attack and one grasp attack.</text>
+    </action>
+    <action>
+      <name>Pseudopod</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8+4) necrotic damage.</text>
+      <attack>Necrotic Damage|+7|3d8+4</attack>
+    </action>
+    <action>
+      <name>Grasp</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target not already engulfed by the slime. Hit: 7 (1d6+4) bludgeoning damage and the target is engulfed by the slime, suffering the same initial and ongoing effects as the engulf action.</text>
+      <attack>Bludgeoning Damage|+7|1d6+4</attack>
+    </action>
+    <action>
+      <name>Engulf</name>
+      <text>Engulf. The slime moves up to its speed. While doing so, it can enter Huge or smaller creatures' spaces. Whenever the slime enters a creature's space, the creature must make a DC 16 Dexterity saving throw.
+	On a successful save, the creature can choose to be pushed 5 feet back or to the side of the slime. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.
+	On a failed save, the slime enters the creature's space, and the creature takes 13 (3d8) necrotic damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 27 (6d8) necrotic damage at the start of each of the slime's turns. When the slime moves, the engulfed creature moves with it.
+	An engulfed creature can try to escabe by taking an action to make a DC 16 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the slime.</text>
+      <attack>Necrotic Damage||3d8</attack>
+      <attack>Necrotic Damage||6d8</attack>
+    </action>
+    <description>Necrotic slimes are the most powerful and feared among the oozes. These slimes take the form of huge black blobs, larger than any other ooze and capable of consuming creatures the size of giants. They bubble with a necrotic energy that reanimates those that it consumes, creating undead servants that help it by bringing prey for it to feast on. A creature that is engulfed by a necrotic slime is slowly eaten down to the bone, leaving behind a perfectly clean and intact skeleton.
+	Significantly more intelligent than their brethren, necrotic slimes are capable of strategic thought and know when they are outmatched. If a necrotic ooze detect the presence of a creature or group of creatures powerful enough to defeat it, it has enough intelligence to hide effectively and escape into the underground. A necrotic slime can also command its servants intelligently, and uses them for scouting and for diversions.
+
+Source:	Dark Arts Player's Companion p. 44 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Plaguebringer</name>
+    <size>G</size>
+    <type>monstrosity (shapechanger)</type>
+    <alignment>chaotic evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>214 (13d20+78)</hp>
+    <speed>40 ft.</speed>
+    <str>26</str>
+    <dex>16</dex>
+    <con>23</con>
+    <int>13</int>
+    <wis>18</wis>
+    <cha>11</cha>
+    <save>Str +14, Dex +9, Con +12, Wis +10</save>
+    <skill>Athletics +14, Perception +10</skill>
+    <passive>20</passive>
+    <languages>Common, Terran</languages>
+    <cr>20</cr>
+    <vulnerable/>
+    <resist>necrotic, bludgeoning, piercing and slashing damage from nonmagical weapons</resist>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>blindsight 60 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <recharge>3/DAY</recharge>
+      <text>If the Plaguebringer fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Plague Aura</name>
+      <text>At the start of each of the plaguebringer's turns, each creature within 5 feet of it takes 7 (2d6) poison damage, and becomes poisoned until the end of the plaguebringer's next turn.</text>
+      <attack>Poison Damage||2d6</attack>
+    </trait>
+    <trait>
+      <name>Shapechanger</name>
+      <text>If the plaguebringer hasn't taken damage since the end of its last turn, it can use its action to polymorph into a Gargantuan form of magical shadow, or back into its true form.
+	While in shadow form, the plaguebringer can't take any actions, speak or manipulate objects. It is weightless, has a flying speed of 150 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the form can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage. If the plaguebringer takes any damage while in this form, it immediately reverts back to its true form and falls to the ground, taking falling damage as normal.</text>
+    </trait>
+    <trait>
+      <name>Innate Spellcasting</name>
+      <text>The plaguebringer's spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). The plaguebringer can innately cast the following spells, requiring no material components:
+
+	• At will: cloudkill, contagion, insect plague</text>
+      <attack>Innate Spellcasting|+10|</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The plaguebringer can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 15 (2d6+8) slashing damage.</text>
+      <attack>Slashing Damage|+14|2d6+8</attack>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 17 (2d8+8) piercing damage. If the target is poisoned, then the plaguebringer can choose to expunge the poison. If it does so, the condition is removed and the plaguebringer regains 15 hit points.</text>
+      <attack>Piercing Damage|+14|2d8+8</attack>
+    </action>
+    <action>
+      <name>Frightful Presence</name>
+      <text>Each creature of the plaguebringer's choice that is within 120 feet of the plaguebringer and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the plaguebringer's Frightful Presence for the next 24 hours.</text>
+    </action>
+    <action>
+      <name>Plague Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The Plaguebringer exhales a virulent plague in a 60-foot cone. Each creature in the area must make a DC 22 Constitution saving throw. On a failed save, a creature takes 72 (16d8) poison damage and is poisoned until the end of the plaguebringer's next turn. On a successful save, a creature takes half as much damage and isn't poisoned.</text>
+      <attack>Poison Damage||16d8</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions</name>
+      <text>The plaguebringer can take legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The plaguebringer regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Detect</name>
+      <text>The plaguebringer makes a Wisdom (Perception) check.</text>
+    </legendary>
+    <legendary>
+      <name>Claw Attack</name>
+      <text>The plaguebringer makes a claw attack.</text>
+    </legendary>
+    <legendary>
+      <name>Slam (Costs 2 Actions)</name>
+      <text>The plaguebringer slams its claws into the ground, creating a shockwave. Each creature within 15 feet of the plaguebringer must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone.</text>
+      <attack>Bludgeoning Damage||2d6+8</attack>
+    </legendary>
+    <slots>0</slots>
+    <spells>Cloudkill, Contagion, Insect Plague</spells>
+    <description>Legendary creations formed from shadow and poisonous gases, plaguebringers scour the most desolate areas of the shadowfell, spreading disease and malice through that barren wasteland. They spend most of their time as a gigantic figure of pure shadow, a being that flies at great speed throughout the upper reaches of the shadowfell, only descending once every few years to inflict itself upon the surface world.
+	Occasionally, a plaguebringer finds a portal to the material plane during its visits to the surface. A plaguebringer that finds itself in the material plane is a terrible foe indeed, capable of rivaling the power of the most ancient dragons. It flies across the surface of the world, killing all in its wake and spreading disease throughout the land. It is from these occasional visits that the plaguebringers earned their name.
+
+Denizens of the Dark. In its shadow form, a plaguebringer is near invisible during a dark night. A creature looking up into the night sky may only see a plaguebringer by watching the stars and moon, waiting for them to momentarily blink out of existence as the shadow passes over them.
+	When a plaguebringer descends to the surface, it does so quickly and quietly, and then immediately transforms into its true form. It takes little time for one of these creatures to destroy an entire town or pollute a lake. Then they disappear again into the night sky, leaving behind nothing but the remnants of their destruction.
+	However, in the daylight a plaguebringer is extremely easy to spot: they look like a giant blob of darkness, after all. This means that any creature that wants to hunt a plaguebringer should do so during the day, when they can't simply vanish into night sky at a moment's notice.
+
+Foe of the Dragons. As one of the few creatures capable of battling a plaguebringer, these creatures seek to hunt down and destroy dragons both in the Shadowfell and out of it. When a dragon enters the Shadowfell, a plaguebringer will seek to destroy it before it can become an ancient shadow dragon - one of a plaguebringer's only true competitors in its home plane.
+	In the material plane, these two species still seek to mercilessly destroy one another. If a plaguebringer spots a dragon's nest, it will go out of its way to destroy it and bring its creator to ruin.
+	Dragons also recognize the threat of a plaguebringer, and seek to destroy them if they have gained enough power, or run if they have not.
+
+Origins in Shadow. A plaguebringer that has come to the material plane always attempts to eventually return. The eternal darkness of the shadowfell allows them to move stealthily during all times of day, and they simply have an innate draw to the shadowfell. They actively seek out portals to the shadowfell -
+dark circles within only the largest and darkest cave systems. If they cannot find one, they continue to scour the landscape until they find one or until they are defeated in the process.
+
+Hunger and Hibernation. Plaguebringers only seek to feast once every few years, and they "hibernate" in between these events, where they may devour countless creatures in a fit of voracious hunger. After non-stop eating for nearly half of a year, a plaguebringer seeks to return to the upper reaches of the Shadow fell, where it sleeps until its appetite is once again ravenous. If awoken during its sleep, such a by a dragon or some other flying visitor in the shadowfell, a plaguebringer goes into a rage. During this rage, it seeks to destroy whatever woke it, and then it continues to destroy until its anger is sated.
+	During its years of hibernation, a plaguebringer does not need to eat or drink.
+
+Source:	Dark Arts Player's Companion p. 46 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Swarm of Maggots</name>
+    <sortname>Maggot, Swarm</sortname>
+    <ancestry>Maggot</ancestry>
+    <size>M</size>
+    <type>swarm (of tiny undead)</type>
+    <alignment>unaligned</alignment>
+    <ac>12 (natural armor)</ac>
+    <hp>22 (5d8)</hp>
+    <speed>10 ft., climb 10 ft.</speed>
+    <str>3</str>
+    <dex>12</dex>
+    <con>10</con>
+    <int>1</int>
+    <wis>7</wis>
+    <cha>1</cha>
+    <passive>8</passive>
+    <languages/>
+    <cr>1/2</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, slashing</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened, paralyzed, petrified, prone, restrained, stunned</conditionImmune>
+    <senses>blindsight 10 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Swarm</name>
+      <text>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny maggot. The swarm can't regain hit points or gain temporary hit points.</text>
+    </trait>
+    <action>
+      <name>Bites</name>
+      <text>Melee Weapon Attack: +3 to hit, one target. Hit: 10(4d4) piercing damage or 5 (2d4) piercing damage if the swarm is has half of its hit points or fewer.</text>
+      <attack>Piercing Damage|+3|4d4</attack>
+      <attack>Piercing Damage (Half Swarm)|+3|2d4</attack>
+    </action>
+    <action>
+      <name>Infest</name>
+      <text>The swarm infests the body of a dead humanoid, causing all damage that would be dealt to them to be dealt to the body instead, and preventing them from taking any other actions. If the body takes 10 hit points of damage, the maggots are driven out, and cannot reenter that body for 24 hours. If the maggots remain in a body for 24 hours, the creature rises as a Rothorror. On its turn, the swarm can spend an amount of movement equal to half its speed to leave the body.</text>
+    </action>
+    <description>Source:	Dark Arts Player's Companion p. 48 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Rothorror</name>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>9</ac>
+    <hp>144 (17d10+51)</hp>
+    <speed>25 ft.</speed>
+    <str>19</str>
+    <dex>8</dex>
+    <con>16</con>
+    <int>8</int>
+    <wis>9</wis>
+    <cha>5</cha>
+    <save>Wis +2</save>
+    <passive>9</passive>
+    <languages/>
+    <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses/>
+    <trait>
+      <name>Death Burst</name>
+      <text>When the rothorror dies, it explodes in a burst of putrid gas. Each creature within 5 feet of it must make a DC 14 Dexterity Saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one. Four swarms of maggots crawl out of the exploded remains, spawning in the area the rothorror once occupied.</text>
+      <attack>Poison Damage||6d6</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The rothorror makes two claw attacks. If it has a creature grappled, it can also take the rotting stench action.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10+4) slashing damage. If a Medium or smaller target is hit by both claw attacks in the same turn, it is grappled (escape DC 15) if the rothorror isn't already grappling a creature.</text>
+      <attack>Slashing Damage|+7|2d10+4</attack>
+    </action>
+    <action>
+      <name>Rotting Stench</name>
+      <text>The rothorror releases a putrid stench on a creature it is grappling. That creature must succeed on a DC 14 Consitution saving throw or become incapacitated by the stench until the end of the rothorror's next turn.</text>
+    </action>
+    <action>
+      <name>Dominate (Recharge 6)</name>
+      <recharge>D6</recharge>
+      <text>The rothorror releases a maggot into the ear of an incapacitated creature that the rothorror is grappling. As the maggot reaches the brain, the creature must succeed on a Wisdom saving throw or lose control of its body as the maggot latches onto the creature's brain, taking total control of it. The creature's Intelligence, Wisdom, and Charisma scorce are replaced by the rothorrors, but it otherwise retains its statistics, though the rothorror doesn't gain access to the target's knowledge, class features, or proficiencies.
+	If the host body or the rothorror drops to 0 hit points, the maggot disintegrates and the creature regains control. A protection from evil and good spell cast on the body drives the maggot out. The target is immune to this rothorror's dominate for 24 hours after succeeding on the saving throw or after the domination ends.</text>
+    </action>
+    <description>A rothorror is an undead monstrosity, reanimated by a unique species of maggot-like beasts. Indistinguishable from true maggots, these creatures are able to create rothorrors by infesting the body of a dead humanoid. The body becomes bloated, grows in size, and gains large claws that are used to rip apart other creatures. When a rothorror dies, its body explodes and the maggots seek to infest new bodies.
+
+Undead Nature. A rothorror doesn't require air, food, drink, or sleep.
+
+Source:	Dark Arts Player's Companion p. 48 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Seafallen Crew</name>
+    <sortname>Seafallen, Crew</sortname>
+    <ancestry>Seafallen</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>12 (natural armor)</ac>
+    <hp>15 (2d8+6)</hp>
+    <speed>20 ft., swim 20 ft.</speed>
+    <str>13</str>
+    <dex>10</dex>
+    <con>16</con>
+    <int>4</int>
+    <wis>7</wis>
+    <cha>5</cha>
+    <passive>8</passive>
+    <languages>understands the it knew in life but can't speak</languages>
+    <cr>1/4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the seafallen to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the seafallen drops to 1 hit point instead.</text>
+    </trait>
+    <trait>
+      <name>Weakly Armored</name>
+      <text>Whenever the seafallen takes more than 10 damage in a single turn, a piece of its coral armor chips off, reducing its AC by 1. This reduction is cumulative, but cannot reduce the seafallen's AC below 10.</text>
+    </trait>
+    <action>
+      <name>Slam</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+3|1d6+1</attack>
+    </action>
+    <action>
+      <name>Water Whip (1/Day)</name>
+      <recharge>1/DAY</recharge>
+      <text>The seafallen releases a line of water in a 10-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw. On a failure, a target takes 7 (2d6) bludgeoning damage and, if it is Medium or smaller, is pushed up to 5 feet away from the seafallen. On a success, a target takes half as much damage and isn't pushed.</text>
+      <attack>Bludgeoning Damage||2d6</attack>
+    </action>
+    <description>Covered by a thick layer of fog, a dilapidated ship sails into view, piloted by the lifeless bodies of former sailors. Now turned into grotesque meldings of coral and flesh, these creatures seek to force other sailors to suffer their same fate.
+
+The Drowned Dead. When a large sailing ship becomes shipwrecked and its sailors drown, occasionally an inexplicable necromantic energy animates them, turning them into undead monsters of considerable power. Unlike most lowly undead, these creatures are not mindless: they stick together and behave much like a normal sailing crew. Until they can find a ship, however, they wander the ocean floor, looking for the dropped anchor of a potential target. Once they find one, they swim up to the surface and attempt to take it over for themselves, driven by an innate desire to command a ship.
+	Seafallen can be created from the bodies of any humanoid race, and they still show some resemblance to their living form, though they become melded with coral and their mouths are filled with serrated teeth. Their skin becomes tight and takes on a bluish hue, and their eyes become pearly white. The coral that covers their skin serves as a kind of makeshift armor, though it is weak and easily destroyed by heavily damaging attacks. If damaged, this armor naturally reforms within a few days as the coral grows at an unnaturally fast speed.
+
+Internal Hierarchy. A crew of seafallen has a well established hierarchy, with the captain at the top, hosts below them, and the crew at the lowest rank. The captain wields a large anchor as a weapon, an item that they can only lift because of their near inhuman strength. A seafallen host, so named because they are a willing host to a large octopus, instead fights with a trident and the help of its octopus companion. The crewmembers, on the other hand, fight without weapons. All of these creatures have the power to store water within their bodies, which they later release in a powerful blast that knocks creatures away.
+
+Driven by Hate. Seafallen seek to destroy their living counterparts, and they sail the sea with sinking other ships as their only intent. The necromantic energy that drives them forces them to attack without mercy and fight to the very last man.
+
+Undead Nature. A seafallen doesn't require air, food, drink, or sleep.
+
+Source:	Dark Arts Player's Companion p. 49 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Seafallen Captain</name>
+    <sortname>Seafallen, Captain</sortname>
+    <ancestry>Seafallen</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>76 (9d8+36)</hp>
+    <speed>20 ft., swim 20 ft.</speed>
+    <str>20</str>
+    <dex>12</dex>
+    <con>19</con>
+    <int>7</int>
+    <wis>8</wis>
+    <cha>9</cha>
+    <save>Wis +1</save>
+    <passive>9</passive>
+    <languages>the it knew in life</languages>
+    <cr>4</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the seafallen to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the seafallen drops to 1 hit point instead.</text>
+    </trait>
+    <trait>
+      <name>Weakly Armored</name>
+      <text>Whenever the seafallen takes more than 15 damage in a single turn, a piece of its coral armor chips off, reducing its AC by 1. This reduction is cumulative, but cannot reduce the seafallen's AC below 11.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The seafallen makes two anchor attacks</text>
+    </action>
+    <action>
+      <name>Anchor</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11(1d12+5) bludgeoning damage and the target must succeed on a DC 15 Strength saving throw or be knocked prone. If the creature was already prone, they are instead stunned until the end of their next turn on a failed save.</text>
+      <attack>Bludgeoning Damage|+7|1d12+5</attack>
+    </action>
+    <action>
+      <name>Water Jet (Recharge 6)</name>
+      <recharge>D6</recharge>
+      <text>The seafallen releases a line of water in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw. On a failure, a target takes 14 (4d6) bludgeoning damage and, if it is Medium or smaller, is pushed up to 10 feet away from the seafallen and knocked prone. On a success, a target takes half damage and isn't pushed or knocked prone.</text>
+      <attack>Bludgeoning Damage||4d6</attack>
+    </action>
+    <description>Covered by a thick layer of fog, a dilapidated ship sails into view, piloted by the lifeless bodies of former sailors. Now turned into grotesque meldings of coral and flesh, these creatures seek to force other sailors to suffer their same fate.
+
+The Drowned Dead. When a large sailing ship becomes shipwrecked and its sailors drown, occasionally an inexplicable necromantic energy animates them, turning them into undead monsters of considerable power. Unlike most lowly undead, these creatures are not mindless: they stick together and behave much like a normal sailing crew. Until they can find a ship, however, they wander the ocean floor, looking for the dropped anchor of a potential target. Once they find one, they swim up to the surface and attempt to take it over for themselves, driven by an innate desire to command a ship.
+	Seafallen can be created from the bodies of any humanoid race, and they still show some resemblance to their living form, though they become melded with coral and their mouths are filled with serrated teeth. Their skin becomes tight and takes on a bluish hue, and their eyes become pearly white. The coral that covers their skin serves as a kind of makeshift armor, though it is weak and easily destroyed by heavily damaging attacks. If damaged, this armor naturally reforms within a few days as the coral grows at an unnaturally fast speed.
+
+Internal Hierarchy. A crew of seafallen has a well established hierarchy, with the captain at the top, hosts below them, and the crew at the lowest rank. The captain wields a large anchor as a weapon, an item that they can only lift because of their near inhuman strength. A seafallen host, so named because they are a willing host to a large octopus, instead fights with a trident and the help of its octopus companion. The crewmembers, on the other hand, fight without weapons. All of these creatures have the power to store water within their bodies, which they later release in a powerful blast that knocks creatures away.
+
+Driven by Hate. Seafallen seek to destroy their living counterparts, and they sail the sea with sinking other ships as their only intent. The necromantic energy that drives them forces them to attack without mercy and fight to the very last man.
+
+Undead Nature. A seafallen doesn't require air, food, drink, or sleep.
+
+Source:	Dark Arts Player's Companion p. 50 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Seafallen Host</name>
+    <sortname>Seafallen, Host</sortname>
+    <ancestry>Seafallen</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>45 (6d8+18)</hp>
+    <speed>20 ft., swim 20 ft.</speed>
+    <str>15</str>
+    <dex>11</dex>
+    <con>16</con>
+    <int>5</int>
+    <wis>7</wis>
+    <cha>5</cha>
+    <passive>8</passive>
+    <languages>understands the it knew in life but can't speak</languages>
+    <cr>1</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the seafallen to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the seafallen drops to 1 hit point instead.</text>
+    </trait>
+    <trait>
+      <name>Weakly Armored</name>
+      <text>Whenever the seafallen takes more than 15 damage in a single turn, a piece of its coral armor chips off, reducing their AC by 1. This reduction is cumulative, but cannot reduce their AC below 10.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The seafallen makes two attacks: one with its trident, and one with its tentacles.</text>
+    </action>
+    <action>
+      <name>Trident</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+2) piercing damage.</text>
+      <attack>Piercing Damage|+4|1d8+2</attack>
+    </action>
+    <action>
+      <name>Tentacles</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) bludgeoning damage. If the target is Medium or smaller, it is grappled (escape DC 12) and is restrained for the duration of the grapple.</text>
+      <attack>Bludgeoning Damage|+4|1d4+2</attack>
+    </action>
+    <action>
+      <name>Water Whip (Recharge 6)</name>
+      <recharge>D6</recharge>
+      <text>The seafallen releases a line of water in a 10-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw. On a failure, a target takes 10 (3d6) bludgeoning damage and, if it is Medium or smaller, is pushed up to 5 feet away from the seafallen. On a success, a target takes half damage and isn't pushed.</text>
+      <attack>Bludgeoning Damage||3d6</attack>
+    </action>
+    <description>Covered by a thick layer of fog, a dilapidated ship sails into view, piloted by the lifeless bodies of former sailors. Now turned into grotesque meldings of coral and flesh, these creatures seek to force other sailors to suffer their same fate.
+
+The Drowned Dead. When a large sailing ship becomes shipwrecked and its sailors drown, occasionally an inexplicable necromantic energy animates them, turning them into undead monsters of considerable power. Unlike most lowly undead, these creatures are not mindless: they stick together and behave much like a normal sailing crew. Until they can find a ship, however, they wander the ocean floor, looking for the dropped anchor of a potential target. Once they find one, they swim up to the surface and attempt to take it over for themselves, driven by an innate desire to command a ship.
+	Seafallen can be created from the bodies of any humanoid race, and they still show some resemblance to their living form, though they become melded with coral and their mouths are filled with serrated teeth. Their skin becomes tight and takes on a bluish hue, and their eyes become pearly white. The coral that covers their skin serves as a kind of makeshift armor, though it is weak and easily destroyed by heavily damaging attacks. If damaged, this armor naturally reforms within a few days as the coral grows at an unnaturally fast speed.
+
+Internal Hierarchy. A crew of seafallen has a well established hierarchy, with the captain at the top, hosts below them, and the crew at the lowest rank. The captain wields a large anchor as a weapon, an item that they can only lift because of their near inhuman strength. A seafallen host, so named because they are a willing host to a large octopus, instead fights with a trident and the help of its octopus companion. The crewmembers, on the other hand, fight without weapons. All of these creatures have the power to store water within their bodies, which they later release in a powerful blast that knocks creatures away.
+
+Driven by Hate. Seafallen seek to destroy their living counterparts, and they sail the sea with sinking other ships as their only intent. The necromantic energy that drives them forces them to attack without mercy and fight to the very last man.
+
+Undead Nature. A seafallen doesn't require air, food, drink, or sleep.
+
+Source:	Dark Arts Player's Companion p. 50 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Shadow Elemental</name>
+    <sortname>Elemental, Shadow</sortname>
+    <ancestry>Elemental</ancestry>
+    <size>L</size>
+    <type>elemental</type>
+    <alignment>neutral evil</alignment>
+    <ac>14</ac>
+    <hp>90 (12d10+24)</hp>
+    <speed>0 ft., fly 60 ft. (hover)</speed>
+    <str>16</str>
+    <dex>19</dex>
+    <con>14</con>
+    <int>6</int>
+    <wis>10</wis>
+    <cha>7</cha>
+    <skill>Stealth +7</skill>
+    <passive>10</passive>
+    <languages/>
+    <cr>5</cr>
+    <vulnerable/>
+    <resist>cold, necrotic, bludgeoning, piercing and slashing damage from nonmagical weapons</resist>
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious</conditionImmune>
+    <senses>darkvision 120 ft.</senses>
+    <trait>
+      <name>Blinding Light</name>
+      <text>When the shadow elemental takes radiant damage, it must make a Consitution saving throw with a DC of 10 or half the radiant damage taken, whichever is higher. On a failed save, the elemental is blinded until the end of its next turn.</text>
+    </trait>
+    <trait>
+      <name>Shade's Sight</name>
+      <text>Magical darkness doesn't impede the elemental's darkvision.</text>
+    </trait>
+    <trait>
+      <name>Shadow Form</name>
+      <text>The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.</text>
+    </trait>
+    <trait>
+      <name>Shadow Stealth</name>
+      <text>While in dim light or darkness, the shadow elemental can take the Hide action as a bonus action.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The elemental makes two tendril attacks.</text>
+    </action>
+    <action>
+      <name>Tendril</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13(2d8+4) bludgeoning damage and the creature is pulled up to 5 feet towards the elemental.</text>
+      <attack>Bludgeoning Damage|+7|2d8+4</attack>
+    </action>
+    <action>
+      <name>Whirling Shadows (Recharge 4-6)</name>
+      <recharge>D4</recharge>
+      <text>A 10-foot radius of magical darkness extends out from the elemental, moves with it, and spreads around corners, lasting until the end of the elemental's next turn. Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.</text>
+    </action>
+    <description>Shadow elementals are creatures of living shade, brought into being from the depths of the Shadowfell. Appearing as nebulous forms of ever-shifting gloom, they lash out at the living with tendrils as insubstantial as darkness itself.
+
+Bound and Summoned. These elusive creatures rarely roam the Material plane of their own free will. When they do, it is almost exclusively deep underground, places the light has never touched. More frequently, they manifest as servants summoned from the Shadowfell, bound into service by powerful spellcasters.
+	Shadow elementals seem to understand the commands of their summoners, regardless of what language they speak. Beyond this, however, these creatures never seem to communicate in any manner. It is unknown whether they have any language at all.
+
+Enemy of the Light. Although these creatures are not directly harmed by sunlight, it does cause them considerable discomfort, and they do all that they can to escape or snuff out the hateful illumination. Similarly, shadow elementals find the presence of living beings not native to the shadowfell to be disturbing, although not nearly to the same extent as they do light itself. When not under a summoner's control, they make every effort to extinguish life and light both. They are as obedient as any elemental when summoned, so most shadow elementals are only as evil as their masters permit.
+
+Elemental Nature. Á shadow elemental doesn't require air, food, drink, or sleep.
+
+Source:	Dark Arts Player's Companion p. 51 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Shadowtouched Umber Hulk</name>
+    <sortname>Shadowtouched, Umber Hulk</sortname>
+    <ancestry>Shadowtouched</ancestry>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>chaotic evil</alignment>
+    <ac>14 (natural armor)</ac>
+    <hp>93 (11d10+33)</hp>
+    <speed>30 ft., burrow 20 ft.</speed>
+    <str>20</str>
+    <dex>13</dex>
+    <con>16</con>
+    <int>9</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <skill>Stealth +7</skill>
+    <passive>10</passive>
+    <languages>Umber Hulk</languages>
+    <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>darkvision 120 ft., tremorsense 60 ft.</senses>
+    <trait>
+      <name>Confusing Gaze</name>
+      <text>When a creature starts its turn within 30 feet of the shadowtouched and is able to see the shadowtoched's eyes, the shadowtouched can magically force it to make a DC 15 Charisma saving throw, unless the shadowtouched is incapacitated.
+	On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.
+	Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the shadowtouched until the start of its next turn, when it can avert its eyes again. If the creature looks at the shadowtouched in the meantime, it must immediately make the Save.</text>
+      <attack>Confusing Gaze||1d8</attack>
+    </trait>
+    <trait>
+      <name>Reanimate Shadow</name>
+      <text>If a non-evil humanoid dies from a melee weapon attack from the shadowtouched, a shadow rises from the corpse 1d4 hours later.</text>
+      <attack>Hours||1d4</attack>
+    </trait>
+    <trait>
+      <name>Shadow Stealth</name>
+      <text>While in dim light or darkness, the shadowtouched can take the Hide action as a bonus action.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Sensitivity</name>
+      <text>While in sunlight, the shadowtouched has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <trait>
+      <name>Tunneler</name>
+      <text>The shadowtoched can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The shadowtouched makes three attacks: two with its claws and one with its mandibles.</text>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8+5) slashing damage.</text>
+      <attack>Slashing Damage|+8|1d8+5</attack>
+    </action>
+    <action>
+      <name>Mandibles</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8+5) slashing damage.</text>
+      <attack>Slashing Damage|+8|2d8+5</attack>
+    </action>
+    <description>Shadowtouched are creatures that have been tainted through many years or generations spent within the dismal confines of the Shadowfell. Some of these creatures learn to embrace the Shadowfell, while others seek to return to their former homes on the Material plane.
+
+Dark Portals. Just like shadow dragons, most shadowtouched creatures first arrived in the Shadowfell after coming across portals deep within subterranean caverns and caves. Once they spend enough time in the Shadowfell, they slowly transform to become as harsh as the landscape itself.
+
+Shadowtouched Template:
+A beast, giant, humanoid, monstrosity, ooze, or plant can become shadowtouched. When it undergoes this transformation, it retains its statistics except as described below.
+
+	Damage Resistances. The shadowtouched has resistance to necrotic damage.
+
+	Reanimate Shadow. If a non-evil humanoid dies from a melee weapon attack from the shadowtouched, a shadow rises from the corpse 1d4 hours later.
+
+	Senses. The shadowtouched has darkvision with a radius of 120 feet.
+
+	Skill Proficiency: Stealth. The shadowtouched's proficiency bonus is doubled for its Dexterity (Stealth) checks.
+
+	Shadow Stealth. While in dim light or darkness, the shadowtouched can take the Hide action as a bonus action.
+
+	Sunlight Sensitivity. While in sunlight, the shadowtouched has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+Source:	Dark Arts Player's Companion p. 52 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Ogre Skeleton</name>
+    <sortname>Skeleton, Ogre</sortname>
+    <ancestry>Skeleton</ancestry>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>lawful evil</alignment>
+    <ac>9</ac>
+    <hp>52 (7d10+14)</hp>
+    <speed>40 ft.</speed>
+    <str>19</str>
+    <dex>8</dex>
+    <con>15</con>
+    <int>5</int>
+    <wis>7</wis>
+    <cha>5</cha>
+    <passive>8</passive>
+    <languages>understands Common and Giant but can't speak</languages>
+    <cr>2</cr>
+    <vulnerable>bludgeoning</vulnerable>
+    <resist/>
+    <immune>poison</immune>
+    <conditionImmune>exhaustion, poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <action>
+      <name>Greatclub</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8+4) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+6|2d8+4</attack>
+    </action>
+    <action>
+      <name>Javelin</name>
+      <text>Melee or Ranged Weapon Attack: +0 to hit, reach 5 ft., or range 30/120 ft., one target. Hit: 11 (2d6+4) piercing damage.</text>
+      <attack>Piercing Damage|+0|2d6+4</attack>
+    </action>
+    <description>Skeletons arise when a creature is animated by dark magic. They heed the summons of spellcasters who call them from their stony tombs and ancient battlefields, or rise of their own accord in places saturated with death and loss, awakened by stirrings of necromantic energy or the presence of corrupting evil. Skeletal undead can be created from the bones of other creatures besides humanoids, giving rise to a host of terrifying and unique forms.
+
+Skeleton Template:
+An aberration, beast, dragon, fey, fiend, giant, humanoid, or monstrosity can become a skeleton. When it undergoes this transformation, it retains its statistics except as described below.
+
+	Lost Characteristics. The skeleton loses its original saving throw and skill bonuses, as well as any special senses. Some special traits may be removed at your discretion, such as traits that assume a living body, like amphibious.
+
+	Type. The skeleton's type is Undead, and it loses any tags. It no longer requires air, food, drink, or sleep.
+
+	Alignment. The skeleton is Lawful Evil.
+
+	Ability Scores. The skeleton's ability scores change as follows: Con 15 (+2), Int 6 (-2), Wis: 8 (-1), Cha: 5 (-3). Int, Wis, and Cha can't be increased by this change.
+
+	Senses. The skeleton has darkvision with a radius of 60 feet.
+
+	Armor Class. The skeleton's AC is reduced by 2. This cannot reduce their AC below 10 + their Dexterity modifier.
+
+	Damage Vulnerabilities. The skeleton is vulnerable to bludgeoning damage.
+
+	Damage Immunities. The skeleton is immune to poison damage.
+
+	Condition Immunities. The skeleton can't be exhausted or poisoned.
+
+	Languages. The skeleton understands all languages it knew in life but can't speak.
+
+Source:	Dark Arts Player's Companion p. 53 (Homebrew)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Young Black Zombie Dragon</name>
+    <sortname>Zombie, Black Dragon, Young</sortname>
+    <ancestry>Zombie</ancestry>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>unaligned</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>161 (17d10+68)</hp>
+    <speed>30 ft., fly 70 ft., swim 30 ft.</speed>
+    <str>19</str>
+    <dex>8</dex>
+    <con>19</con>
+    <int>3</int>
+    <wis>6</wis>
+    <cha>5</cha>
+    <save>Wis +1</save>
+    <passive>8</passive>
+    <languages>understands Common and Draconic but can't speak</languages>
+    <cr>7</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>poison, acid</immune>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Undead Fortitude</name>
+      <text>If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The zombie makes three attacks: one with its bite and two with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10+4) piercing damage plus 4 (1d8) acid damage.</text>
+      <attack>Bite|+7|(2d10+4)+(1d8)</attack>
+      <attack>Piercing Damage|+7|2d10+4</attack>
+      <attack>Acid Damage||1d8</attack>
+    </action>
+    <action>
+      <name>Claw</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6+4) slashing damage.</text>
+      <attack>Slashing Damage|+7|2d6+4</attack>
+    </action>
+    <action>
+      <name>Acid Breath (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.</text>
+      <attack>Acid Damage||11d8</attack>
+    </action>
+    <description>Sinister necromantic magic infuses the remains of the dead, causing them to rise as zombies that do their creator's bidding without fear or hesitation. They move with a jerky, uneven gait, clad in the moldering apparel they wore when put to rest, and carrying the stench of decay.
+
+The flesh and bones of any formerly living creature can be imbued with some semblance of life, transforming them into a zombie. Necromantic magic, usually from spells, animates a zombie. Some zombies rise spontaneously when dark magic saturates an area. Once turned into a zombie, a creature can't be restored to life except by powerful magic.
+
+Zombie Template:
+An aberration, beast, dragon, fey, fiend, giant, humanoid, or monstrosity can become a zombie. When it undergoes this transformation, it retains its statistics except as described below.
+
+	Lost Characteristics. The zombie loses its original saving throw and skill bonuses, as well as any special senses or special traits.
+
+	Type. The zombie's type is Undead, and it loses any tags. It no longer requires air, food, drink, or sleep.
+
+	Alignment. The zombie is Neutral Evil.
+
+	Speed. Reduce all the zombie's speeds by 10 feet, to a minimum of 5 feet.
+
+	Ability Scores. The zombie's ability scores change as follows: Int 3 (-4), Wis: 6 (-2), Cha: 5 (-3). Int, Wis, and Cha can't be increased by this change. The zombie's Constitution score is increased by 2, and its Dexterity score is decreased by 6, to a minimum value of 6 (-2).
+
+	Senses. The zombie has darkvision with a radius of 60 feet.
+
+	Saving Throw: Wisdom. The zombie adds its proficiency modifier to its Wisdom saving throws
+
+	Damage Immunities. The zombie is immune to poison damage.
+
+	Condition Immunities. The zombie can't be poisoned.
+
+	Hit Dice. The zombie gains two additional hit dice, increasing its hit points by the regular amount.
+
+	Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.
+
+	Languages. The zombie understands all languages it knew in life but can't speak.
+
+Source:	Dark Arts Player's Companion p. 54 (Homebrew)</description>
     <environment/>
   </monster>
 </compendium>
