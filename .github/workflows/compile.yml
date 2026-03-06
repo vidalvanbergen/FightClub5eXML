@@ -47,6 +47,9 @@ jobs:
             xsltproc --xinclude -o "Compendiums/$filename" "Utilities/merge.xslt" "$f"
           done
 
+      - name: (Debug) List Compiled Compendiums
+        run: ls -lh Compendiums/
+
       - name: Upload compiled XML files as artifact
         uses: actions/upload-artifact@v4
         if: startsWith(github.ref, 'refs/tags/') || (github.ref == 'refs/heads/master' && steps.changes.outputs.changed == 'true')
