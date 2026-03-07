@@ -44,7 +44,7 @@ for master_dir in master_dirs:
                     for item in list(compendium):
                         name = item.find("name")
                         if name is not None:
-                            normalized_name = normalize_text(name.text.replace(" [2024]", ""))
+                            normalized_name = normalize_text(name.text.replace(" [5.5e]", ""))
                             item_key = (item.tag, normalized_name)
                             master_data[item_key] = item
                             logging.debug(f"Added master item: {item_key}")
@@ -187,7 +187,7 @@ for root, _, files in os.walk(legacy_dir):
                                     cls_cleaned = cls.strip()
                                     if cls_cleaned not in legacy_spell_classes:
                                         if cls_cleaned in base_classes:
-                                            updated_classes.append(f"{cls_cleaned} [2024]")
+                                            updated_classes.append(f"{cls_cleaned} [5.5e]")
                                         else:
                                             updated
                         elif item.tag == "race":

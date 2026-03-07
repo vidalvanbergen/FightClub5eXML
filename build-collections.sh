@@ -1,25 +1,25 @@
 #!/bin/bash
 
-# Remove '[2024]' from the compendium file
+# Remove '[5.5e]' from the compendium file
 remove_2024() {
   local infile="$1"
   local outfile="$2"
 
-  echo "> Removing [2024] tags from: '$(basename "$infile")'"
+  echo "> Removing [5.5e] tags from: '$(basename "$infile")'"
 
   if [ -z "$outfile" ]; then
     # In-place edit
     if sed --version >/dev/null 2>&1; then
-      sed -i 's/ \[2024\]//g' "$infile" # GNU sed (Linux)
+      sed -i 's/ \[5.5e\]//g' "$infile" # GNU sed (Linux)
     else
-      sed -i '' 's/ \[2024\]//g' "$infile" # BSD/macOS sed
+      sed -i '' 's/ \[5.5e\]//g' "$infile" # BSD/macOS sed
     fi
   else
     # In-memory stream to output
     if sed --version >/dev/null 2>&1; then
-      sed 's/ \[2024\]//g' "$infile" > "$outfile" # GNU sed (Linux)
+      sed 's/ \[5.5e\]//g' "$infile" > "$outfile" # GNU sed (Linux)
     else
-      sed -e 's/ \[2024\]//g' "$infile" > "$outfile" # BSD/macOS sed
+      sed -e 's/ \[5.5e\]//g' "$infile" > "$outfile" # BSD/macOS sed
     fi
   fi
 }
@@ -28,7 +28,7 @@ display_help() {
   cat <<EOF
 Usage: $0 [-2024] [--validate] [-h/-?] [collection_names...]
 
-  -2024           Remove '[2024]' from the generated compendiums.
+  -2024           Remove '[5.5e]' from the generated compendiums.
   --validate      Validate output XML against the schema (disabled by default).
   -h, -?          Display this help message.
   collection_names  Optional list of specific collections to compile.
@@ -39,13 +39,13 @@ Examples:
   $0
       Compile all collections.
   $0 -2024
-      Compile all collections and remove '[2024]'.
+      Compile all collections and remove '[5.5e]'.
   $0 --validate
       Compile all collections and validate them.
   $0 collection1.xml
       Compile only 'collection1.xml'.
   $0 -2024 collection1.xml collection2.xml
-      Compile specified collections and remove '[2024]'.
+      Compile specified collections and remove '[5.5e]'.
 EOF
   exit 0
 }
@@ -83,7 +83,7 @@ compile_file() {
     fi
   fi
 
-  # If filename contains 2024 but not 2014, create [UNTAGGED] version without [2024]
+  # If filename contains 2024 but not 2014, create [UNTAGGED] version without [5.5e]
   if [[ "$base_name" == *2024* && "$base_name" != *2014* ]]; then
     local untagged_name="${base_name%.xml}_[UNTAGGED].xml"
     local untagged_file="Compendiums/$untagged_name"

@@ -63,16 +63,16 @@ The build-collection files are provided for your convenience to compile all the 
 Usage: 
 
 ./build-collections.sh [-2024] [-h/-?] [collection_names...]
-  -2024   Remove '[2024]' from the generated compendiums.
+  -2024   Remove '[5.5e]' from the generated compendiums.
   collection_names  Optional list of specific collections to compile.
   -h/-?   Display this help message.
 
 If no collection names are provided, all XML files in the 'Collections' directory will be processed.
 Examples:
   ./build-collections.sh                Compile all collections.
-  ./build-collections.sh -2024          Compile all collections and remove '[2024]'.
+  ./build-collections.sh -2024          Compile all collections and remove '[5.5e]'.
   ./build-collections.sh collection1.xml  Compile only 'collection1.xml'.
-  ./build-collections.sh -2024 collection1.xml collection2.xml  Compile 'collection1.xml' and 'collection2.xml' and remove '[2024]'.
+  ./build-collections.sh -2024 collection1.xml collection2.xml  Compile 'collection1.xml' and 'collection2.xml' and remove '[5.5e]'.
   ```
 
 For Windows, use `WIN-build-collections.bat  [-2024] [-h/-?] [collection_names...]`.
