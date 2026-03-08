@@ -59,7 +59,7 @@ xsltproc --xinclude merge.xslt collection/collection.xml > Compendiums/compendiu
 ### Generate a collection xml for source directories
 
 ```bash
-./generate-partial-collection.sh Sources/PHB2014/Homebrew/
+./generate-partial-collection.sh Sources/DND_5e/Homebrew/
 ```
 
 ---
