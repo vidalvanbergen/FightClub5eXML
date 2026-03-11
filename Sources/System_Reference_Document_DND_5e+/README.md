@@ -1,1 +1,0 @@
-Updated and complete SRD 5.0 with proper formatting.

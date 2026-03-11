@@ -1,1 +1,1 @@
-Original SRD 5.0 from FightClub5eXML.
+Updated and complete SRD 5.0 with proper formatting.
