@@ -7,6 +7,7 @@
 * Added `Fredricks Fortunes - Grand Species Almanac v1.1` homebrew content, shared by @B.
 * Added `Wanderer's Guide To Merchants & Magic` indie content, shared by @Cvamped.
 * Added `The Elder Scrolls: Delvebound` species content, shared by @GoldenTanager.
+* Added an updated and formatted version of the 5th Edition SRD.
 * Fixed the `Mystic (UA)` class.
 * Changed `[2024]` name tags to `[5.5e]`.
 * Shortened `(Third Party)` tags in names to `(TP)`.
