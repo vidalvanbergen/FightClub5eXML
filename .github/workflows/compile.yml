@@ -1,11 +1,13 @@
 name: Compile all collections into compendiums
-on: 
+on:
   push:
     branches: [ master ]
     tags:
       - '*'
+    paths:
+      - 'Collections/**'
+      - 'Sources/**'
   workflow_dispatch:
-  pull_request:
 
 jobs:
   compile_collections:
@@ -14,42 +16,23 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Install dependencies
-        uses: awalsh128/cache-apt-pkgs-action@v1
-        with:
-          packages: xsltproc
-          version: 1.6
-
-      - name: Check for collection/source changes
-        id: changes
-        if: github.ref == 'refs/heads/master'
         run: |
-          set -e
-          git fetch origin master --depth=2
-          if git diff --name-only HEAD~1 HEAD | grep -E '^(Collections|Sources)/'; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          fi
+          sudo apt-get update -y -qq
+          sudo apt-get install -y --no-install-recommends xsltproc
 
       - name: Compile collections into compendiums
-        if: startsWith(github.ref, 'refs/tags/') || (github.ref == 'refs/heads/master' && steps.changes.outputs.changed == 'true')
+        if: github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/master'
         run: |
           set -euxo pipefail
-          trap 'echo "Error occurred during compilation!"' ERR
-
-          mkdir -p Compendiums
-          for f in Collections/*.xml; do
-            filename=$(basename "$f")
-            echo "Compiling $filename ..."
-            xsltproc --xinclude -o "Compendiums/$filename" "Utilities/merge.xslt" "$f"
-          done
+          chmod +x build-collections.sh
+          ./build-collections.sh
 
       - name: Upload compiled XML files as artifact
-        uses: actions/upload-artifact@v4
-        if: startsWith(github.ref, 'refs/tags/') || (github.ref == 'refs/heads/master' && steps.changes.outputs.changed == 'true')
+        uses: actions/upload-artifact@v7
+        if: github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/master'
         with: 
           name: compendiums-${{ github.ref_name }}
           path: Compendiums/
@@ -62,14 +45,14 @@ jobs:
           files: Compendiums/*
 
       - name: Force update nightly tag
-        if: github.ref == 'refs/heads/master' && steps.changes.outputs.changed == 'true'
+        if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/master'
         run: |
           git tag -f nightly
           git push origin nightly --force
 
-      # Update the nightly release only on master branch push
+      # Update the nightly release
       - name: Update nightly release
-        if: github.ref == 'refs/heads/master' && steps.changes.outputs.changed == 'true'
+        if: github.event_name == 'workflow_dispatch' || github.ref == 'refs/heads/master'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: nightly
