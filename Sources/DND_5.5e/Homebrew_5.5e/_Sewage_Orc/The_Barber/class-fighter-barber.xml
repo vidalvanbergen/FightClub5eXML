@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+  <class>
+    <name>Fighter [5.5e]</name>
+    <!-- Fighter Subclass: Barber [5.5e] (HB) -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Fighter Subclass: Barber [5.5e] (HB)</name>
+        <text>A barber focuses their studies on mundane healing. They are not born physicians—merely individuals who take up the profession out of necessity. Unlike divine or primal healers, barbers are not trained to manipulate the healing energies of the Weave. Instead, they rely on a sharp blade, a solid understanding of tonics and tinctures, and a little bit of brute force.
+	A barber's techniques may leave you with more cuts and scars than you started with—but at least you'll live to fight another day. And if all else fails, they'll trim your split ends and tidy up that beard of yours.
+
+Source:	The Barber by Sewage Orc</text>
+      </feature>
+      <feature optional="YES">
+        <name>Level 3: You'll Do (Barber [5.5e] (HB))</name>
+        <text>You gain proficiency with the Medicine skill. If you already have proficiency in Medicine, you can instead gain proficiency in another skill of your choice from the following: Nature, Survival, or Insight.
+	You also gain proficiency with the herbalism kit and barber's tools.
+
+Source:	The Barber by Sewage Orc</text>
+      </feature>
+      <feature optional="YES">
+        <name>Level 3: Tricky Tonics (Barber [5.5e] (HB))</name>
+        <text>As part of a long rest, you can concoct a number of questionable healing tonics equal to your Wisdom modifier (minimum of 1). These tonics can be consumed as a bonus action. When a creature drinks a tonic, they regain 2d8 hit points and must immediately roll a d6 on the Side Effect Table below to determine the tonic's secondary effect.
+
+Tonic Side Effects:
+d6 | Effect
+1 | Exhausted. The creature suffers 1 level of exhaustion until they finish a short or long rest.
+2 | Poisoned. The creature gains the poisoned condition for 1d6 rounds.
+3 | Clumsy. The creature's speed increases by 5 feet, but they suffer a -1 penalty to AC for 1d6 rounds.
+4 | Tipsy. For 1 hour, the creature has advantage on Charisma saving throws and Charisma-based skill checks, but disadvantage on Intelligence saving throws and Intelligence-based skill checks.
+5 | No Side Effect. The tonic functions as normal with no additional effects.
+6 | Potent Brew. The creature regains an additional 1d8 hit points.
+
+Any remaining tonics lose their potency when you use this trait again.
+
+Source:	The Barber by Sewage Orc</text>
+        <roll description="Heal">2d8</roll>
+        <roll description="Tonic Side Effect">1d6</roll>
+        <roll description="Rounds">1d6</roll>
+        <roll description="Heal">1d8</roll>
+      </feature>
+      <feature optional="YES">
+        <name>Level 3: Mundane Healing (Barber [5.5e] (HB))</name>
+        <text>Using your barber's tools, you can spend 1 minute tending to the wounds of yourself or an ally. Choose a creature within 5 feet of you and make a DC 5 Medicine check. On a success, the target regains hit points equal to 2d10 + your fighter level.
+	If you exceed the DC by 5 or more, or roll a natural 20, the target also gains temporary hit points equal to twice your proficiency bonus.
+	On a failure, the treatment is ineffective, and you cannot use this feature again on that target until you finish a short or long rest. On a natural 1, your attempt backfires, and the target takes 1d10 slashing damage instead. A creature can only benefit from this feature once per long rest.
+
+Source:	The Barber by Sewage Orc</text>
+        <roll description="Healing">2d10</roll>
+        <roll description="Backfire Damage">1d10</roll>
+      </feature>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Level 7: Risky Surgery (Barber [5.5e] (HB))</name>
+        <text>When you use your Mundane Healing feature, you can choose to increase the Medicine check DC to 10. On a success, the target regains 4d10 + your Fighter level hit points.
+	On a failure, regardless of the degree of failure, the target takes 2d10 slashing damage instead.
+
+Source:	The Barber by Sewage Orc</text>
+        <roll description="Risky Surgery Healing">4d10</roll>
+        <roll description="Risky Surgery Damage">2d10</roll>
+      </feature>
+      <feature optional="YES">
+        <name>Level 7: Refined Tonics (Barber [5.5e] (HB))</name>
+        <text>Your Tricky Tonics now restore 2d8 hit points.
+	When a creature rolls to determine the tonic's side effect, roll twice and choose either result.
+
+Source:	The Barber by Sewage Orc</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Level 10: Autodidact (Barber [5.5e] (HB))</name>
+        <text>You gain expertise in the medicine skill.
+
+Source:	The Barber by Sewage Orc</text>
+        <modifier category="skill">medicine +%0</modifier>
+      </feature>
+      <feature optional="YES">
+        <name>Level 10: Battle Medicine (Barber [5.5e] (HB))</name>
+        <text>The duration of your Mundane Healing (including Risky Procedure) is reduced to 1 action.
+	However, if you instead spend 1 minute performing the procedure, you do not roll to determine the number of hit points restored. Instead, the target regains hit points equal to the maximum value of the healing dice.
+
+Source:	The Barber by Sewage Orc</text>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>Level 15: Tonic Master (Barber [5.5e] (HB))</name>
+        <text>Your Tricky Tonics no longer have side effects.
+	In addition to restoring hit points, a creature that consumes one of your tonics can choose to end one level of exhaustion or one of the following conditions affecting them: Blinded, Deafened, Paralyzed, Petrified, or Poisoned.
+
+Source:	The Barber by Sewage Orc</text>
+      </feature>
+    </autolevel>
+    <autolevel level="18">
+      <feature optional="YES">
+        <name>Level 18: Patch and Go (Barber [5.5e] (HB))</name>
+        <text>As a bonus action, you can quickly treat a wound on yourself or an ally within 5 feet.
+	The target may immediately spend up to 3 unused Hit Dice and regains hit points equal to the roll + your Wisdom modifier.
+
+Source:	The Barber by Sewage Orc</text>
+      </feature>
+    </autolevel>
+  </class>
+</compendium>

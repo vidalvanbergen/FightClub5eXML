@@ -5,6 +5,7 @@
 * Added `Dark Arts Player's Companion v3.0` homebrew content, shared by @ViannaEuphoria.
 * Added `Zamanora: Ballad of the Witch` core book v0.9 indie 2024 content, shared by @B.
 * Added `Fredricks Fortunes - Grand Species Almanac v1.1` homebrew content, shared by @B.
+* Added several `Sewage Orc` homebrew content, shared by @B.
 * Added `Wanderer's Guide To Merchants & Magic` indie content, shared by @Cvamped.
 * Added `The Elder Scrolls: Delvebound` species content, shared by @GoldenTanager.
 * Added an updated and formatted version of the 5th Edition SRD.
