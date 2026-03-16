@@ -1,0 +1,38 @@
+name: ✨ Requests
+description: Give your suggestion for new additions
+title: '[Request]: '
+labels: ['request', 'triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a feature! Please fill out the form below.
+
+  - type: checkboxes
+    id: existing-request
+    attributes:
+      label: Is there an existing request for this?
+      description: Please search existing requests before creating a new one
+      options:
+        - label: I have searched the existing requests and this is a new one
+          required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: The Request
+      description: Is your feature request related to an issue? Describe it.
+      placeholder: "I can't seem to find..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this feature to you?
+      options:
+        - Nice to have
+        - Important
+        - Critical
+    validations:
+      required: true
