@@ -1,13 +1,14 @@
 ## CHANGE LOG
 
 ### 2026-##-##
-* Added `Exploring Eberron` content, shared by @ViannaEuphoria.
-* Added `Dark Arts Player's Companion v3.0` homebrew content, shared by @ViannaEuphoria.
-* Added `Zamanora: Ballad of the Witch` core book v0.9 indie 2024 content, shared by @B.
+* Added `Exploring Eberron` 5e content, shared by @ViannaEuphoria.
+* Added `Dark Arts Player's Companion v3.0` 5e homebrew content, shared by @ViannaEuphoria.
+* Added `Zamanora: Ballad of the Witch` core book v0.9 5.5e indie content, shared by @B.
 * Added `Fredricks Fortunes - Grand Species Almanac v1.1` homebrew content, shared by @B.
-* Added several `Sewage Orc` homebrew content, shared by @B.
-* Added `Wanderer's Guide To Merchants & Magic` indie content, shared by @Cvamped.
-* Added `The Elder Scrolls: Delvebound` species content, shared by @GoldenTanager.
+* Added several `Sewage Orc` 5.5e homebrew content, shared by @B.
+* Added `Alchemist Class` 5.5e homebrew content, shared by @B.
+* Added `Wanderer's Guide To Merchants & Magic` 5e indie content, shared by @Cvamped.
+* Added `The Elder Scrolls: Delvebound` 5e species content, shared by @GoldenTanager.
 * Added an updated and formatted version of the 5th Edition SRD.
 * Fixed the `Mystic (UA)` class.
 * Changed `[2024]` name tags to `[5.5e]`.
