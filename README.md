@@ -104,10 +104,12 @@ If you'd like to contribute, feel free to fork the repository and submit pull re
 `@the_archivist` for adding various sources to the compendium.  
 (You can find their collection of compendiums on [patreon.com/archivist5](https://patreon.com/archivist5))
 
-`@vidalvanbergen` for adding various sources and maintaining the compendium.
+`@vidalvanbergen` for adding various sources and maintaining the repository.
 
 `@recco` for adding various homebrew sources to the compendium.
 
 `@nikjft` for converting legacy content to the 2024 format and adding to the utilities.
 
-`@Iggwilv` for adding several adventures.
+[`@Iggwilv`](https://archive.org/details/the-wild-beyond-the-witchlight) for adding several adventures.
+
+[`@DM-Velek`](https://www.reddit.com/user/DM-Velek/) for adding content and adventures.

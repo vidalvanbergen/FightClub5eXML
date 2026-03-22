@@ -1,6 +1,7 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Added the 5.5e adventure `Stranger Things: Welcome to the Hellfire Club`, shared by @[DM-Velek](https://www.reddit.com/r/FightClub5e/comments/1ryp67m/comment/objripg/?context=1&target_user=ViannaEuphoria).
 * Added `Exploring Eberron` 5e content, shared by @ViannaEuphoria.
 * Added `Dark Arts Player's Companion v3.0` 5e homebrew content, shared by @ViannaEuphoria.
 * Added `Zamanora: Ballad of the Witch` core book v0.9 5.5e indie content, shared by @B.
