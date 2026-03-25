@@ -6,6 +6,7 @@
 * Added `Dark Arts Player's Companion v3.0` 5e homebrew content, shared by @ViannaEuphoria.
 * Added `Zamanora: Ballad of the Witch` core book v0.9 5.5e indie content, shared by @B.
 * Added `Fredricks Fortunes - Grand Species Almanac v1.1` homebrew content, shared by @B.
+* Added `The Old World's Might: Subclasses from Old Europe` 5.5e homebrew content, shared by @B.
 * Added several `Sewage Orc` 5.5e homebrew content, shared by @B.
 * Added `Alchemist Class` 5.5e homebrew content, shared by @B.
 * Added `Wanderer's Guide To Merchants & Magic` 5e indie content, shared by @Cvamped.
