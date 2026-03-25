@@ -10,6 +10,7 @@
 * Added `Alchemist Class` 5.5e homebrew content, shared by @B.
 * Added `Wanderer's Guide To Merchants & Magic` 5e indie content, shared by @Cvamped.
 * Added `The Elder Scrolls: Delvebound` 5e species content, shared by @GoldenTanager.
+* Added several 5.5e homebrew subclasses by `Niall Keegan`, shared by @B.
 * Added an updated and formatted version of the 5th Edition SRD.
 * Fixed the `Mystic (UA)` class.
 * Changed `[2024]` name tags to `[5.5e]`.
