@@ -84,10 +84,10 @@ White | Cold | 15 ft. cone (Con. save)</text>
       <text>You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.
 	When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
 	After you use your breath weapon, you can't use it again until you complete a short or long rest.</text>
-      <roll description="Damage" level="1">2d6</roll>
-      <roll description="Damage" level="6">3d6</roll>
-      <roll description="Damage" level="11">4d6</roll>
-      <roll description="Damage" level="16">5d6</roll>
+      <roll description="Draconic Damage" level="1">2d6</roll>
+      <roll description="Draconic Damage" level="6">3d6</roll>
+      <roll description="Draconic Damage" level="11">4d6</roll>
+      <roll description="Draconic Damage" level="16">5d6</roll>
       <roll description="Saving Throw">8+%3+%8</roll>
     </trait>
     <trait category="species">
@@ -98,6 +98,7 @@ White | Cold | 15 ft. cone (Con. save)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.</text>
     </trait>
+    <languages>Common, Draconic</languages>
   </race>
   <!--<race><name>Dwarf</name><size>M</size><speed>25</speed><ability>Con +2</ability><resist>poison</resist><weapons>Battleaxe, Handaxe, Light Hammer, Warhammer</weapons><trait category="description"><name>Description</name><text>Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs-these common threads unite all dwarves.
 
@@ -131,11 +132,11 @@ Height = 3 feet + 8 inches + your size modifier in inches
 Weight in pounds = 115 + (2d6 × your size modifier)</text><roll description="Size Modifier">2d4</roll><roll description="Weight Modifier">2d6</roll></trait><trait><name>Speed</name><text>Your speed is not reduced by wearing heavy armor.</text></trait><trait category="species"><name>Darkvision</name><text>Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text></trait><trait category="species"><name>Dwarven Resilience</name><text>You have advantage on saving throws against poison, and you have resistance against poison damage.</text></trait><trait category="species"><name>Dwarven Combat Training</name><text>You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.</text></trait><trait category="species"><name>Tool Proficiency</name><text>You gain proficiency with the artisan's tools of your choice: Smith's tools, brewer's supplies, or mason's tools.</text></trait><trait category="species"><name>Stonecunning</name><text>Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</text></trait><trait><name>Languages</name><text>You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.</text></trait></race>-->
   <race>
     <name>Dwarf, Hill</name>
+    <displayname>Hill Dwarf</displayname>
+    <ancestry>Dwarf</ancestry>
     <size>M</size>
     <speed>25</speed>
     <ability>Con +2, Wis +1</ability>
-    <resist>poison</resist>
-    <weapons>Battleaxe, Handaxe, Light Hammer, Warhammer</weapons>
     <trait category="description">
       <name>Description</name>
       <text>Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs-these common threads unite all dwarves.
@@ -238,21 +239,26 @@ Weight in pounds = 115 + (2d6 × your size modifier)</text>
     <trait category="subspecies">
       <name>Dwarven Toughness</name>
       <text>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</text>
-      <modifier category="bonus">HP +1</modifier>
+      <special>Toughness</special>
+      <modifier category="bonus">hp +1</modifier>
     </trait>
     <trait>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.</text>
     </trait>
+    <languages>Common, Dwarvish</languages>
+    <weapons>Battleaxe, Handaxe, Light Hammer, Warhammer</weapons>
+    <tools>Artisan's tools of your choice: Smith's tools, brewer's supplies, or mason's tools</tools>
+    <resist>poison</resist>
+    <conditionResist>poisoned</conditionResist>
   </race>
   <race>
     <name>Dwarf, Mountain</name>
+    <displayname>Mountain Dwarf</displayname>
+    <ancestry>Dwarf</ancestry>
     <size>M</size>
     <speed>25</speed>
     <ability>Con +2, Str +2</ability>
-    <resist>poison</resist>
-    <armor>Light Armor, Medium Armor</armor>
-    <weapons>Battleaxe, Handaxe, Light Hammer, Warhammer</weapons>
     <trait category="description">
       <name>Description</name>
       <text>Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs-these common threads unite all dwarves.
@@ -360,6 +366,12 @@ Weight in pounds = 115 + (2d6 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.</text>
     </trait>
+    <languages>Common, Dwarvish</languages>
+    <armor>Light Armor, Medium Armor</armor>
+    <weapons>Battleaxe, Handaxe, Light Hammer, Warhammer</weapons>
+    <tools>Artisan's tools of your choice: Smith's tools, brewer's supplies, or mason's tools.</tools>
+    <resist>poison</resist>
+    <conditionResist>poisoned</conditionResist>
   </race>
   <!--<race><name>Elf</name><size>M</size><speed>30</speed><ability>Dex +2</ability><proficiency>Perception</proficiency><weapons>Longsword, Shortsword, Shortbow, Longbow</weapons><spellAbility>Intelligence</spellAbility><trait category="description"><name>Description</name><text>Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.
 
@@ -386,11 +398,12 @@ Weight in pounds = 90 + (1d4 × your size modifier)</text><roll description="Siz
 If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.</text></trait><trait><name>Languages</name><text>You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.</text></trait></race>-->
   <race>
     <name>Elf, Drow / Dark</name>
+    <displayname>Dark Elf (Drow)</displayname>
+    <ancestry>Elf</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Dex +2, Cha +1</ability>
     <proficiency>Perception</proficiency>
-    <weapons>Rapier, Shortsword, Hand Crossbow</weapons>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -496,14 +509,20 @@ If you meditate during a long rest, you finish the rest after only 4 hours. You 
       <name>Languages</name>
       <text>You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.</text>
     </trait>
+    <languages>Common, Elvish</languages>
+    <weapons>Rapier, Shortsword, Hand Crossbow</weapons>
+    <spells>Dancing Lights, Faerie Fire, Darkness</spells>
+    <conditionResist>charmed</conditionResist>
+    <conditionImmune>asleep</conditionImmune>
   </race>
   <race>
     <name>Elf, High</name>
+    <displayname>High Elf</displayname>
+    <ancestry>Elf</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Dex +2, Int +1</ability>
     <proficiency>Perception</proficiency>
-    <weapons>Longsword, Shortsword, Shortbow, Longbow</weapons>
     <spellAbility>Intelligence</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -608,14 +627,19 @@ If you meditate during a long rest, you finish the rest after only 4 hours. You 
       <name>Extra Language</name>
       <text>You can speak, read, and write one extra language of your choosing.</text>
     </trait>
+    <languages>Common, Elvish, Any one language</languages>
+    <weapons>Longsword, Shortsword, Shortbow, Longbow</weapons>
+    <conditionResist>charmed</conditionResist>
+    <conditionImmune>asleep</conditionImmune>
   </race>
   <race>
     <name>Elf, Wood</name>
+    <displayname>Wood Elf</displayname>
+    <ancestry>Elf</ancestry>
     <size>M</size>
     <speed>35</speed>
     <ability>Dex +2, Wis +1</ability>
     <proficiency>Perception</proficiency>
-    <weapons>Longsword, Shortsword, Longbow, Shortbow</weapons>
     <trait category="description">
       <name>Description</name>
       <text>Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.
@@ -719,6 +743,10 @@ If you meditate during a long rest, you finish the rest after only 4 hours. You 
       <name>Languages</name>
       <text>You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.</text>
     </trait>
+    <languages>Common, Elvish</languages>
+    <weapons>Longsword, Shortsword, Longbow, Shortbow</weapons>
+    <conditionResist>charmed</conditionResist>
+    <conditionImmune>asleep</conditionImmune>
   </race>
   <!--<race><name>Gnome</name><size>S</size><speed>25</speed><ability>Int +2</ability><spellAbility>Intelligence</spellAbility><trait category="description"><name>Description</name><text>A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their close-knit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.
 
@@ -743,6 +771,8 @@ Height = 2 feet + 11 inches + your size modifier in inches
 Weight in pounds = 35 + your size modifier</text><roll description="Size Modifier">2d4</roll></trait><trait category="species"><name>Darkvision</name><text>Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</text></trait><trait category="species"><name>Gnome Cunning</name><text>You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.</text></trait><trait><name>Languages</name><text>You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.</text></trait></race>-->
   <race>
     <name>Gnome, Forest</name>
+    <displayname>Forest Gnome</displayname>
+    <ancestry>Gnome</ancestry>
     <size>S</size>
     <speed>25</speed>
     <ability>Int +2, Dex +1</ability>
@@ -834,9 +864,13 @@ Weight in pounds = 35 + your size modifier</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.</text>
     </trait>
+    <languages>Common, Gnomish</languages>
+    <spells>Minor Illusion</spells>
   </race>
   <race>
     <name>Gnome, Rock</name>
+    <displayname>Rock Gnome</displayname>
+    <ancestry>Gnome</ancestry>
     <size>S</size>
     <speed>25</speed>
     <ability>Int +2, Con +1</ability>
@@ -934,6 +968,7 @@ Weight in pounds = 35 + your size modifier</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world.</text>
     </trait>
+    <languages>Common, Gnomish</languages>
   </race>
   <race>
     <name>Half-Elf</name>
@@ -1003,6 +1038,9 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common, Elvish, and one extra language of your choice.</text>
     </trait>
+    <languages>Common, Elvish</languages>
+    <conditionResist>charmed</conditionResist>
+    <conditionImmune>asleep</conditionImmune>
   </race>
   <race>
     <name>Half-Orc</name>
@@ -1082,6 +1120,7 @@ Weight in pounds = 140 + (2d6 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.</text>
     </trait>
+    <languages>Common, Orc</languages>
   </race>
   <!--<race><name>Halfling</name><size>S</size><speed>25</speed><ability>Dex +2</ability><trait category="description"><name>Description</name><text>The comforts of home are the goals of most halflings' lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along a dirt road or a raft floating downriver.
 	Halflings work readily with others, and they are loyal to their friends, whether halfling or otherwise. They can display remarkable ferocity when their friends, families, or communities are threatened.
@@ -1106,6 +1145,8 @@ Height = 2 feet + 7 inches + your size modifier in inches
 Weight in pounds = 35 + your size modifie</text><roll description="Size Modifier">2d4</roll></trait><trait category="species"><name>Lucky</name><text>When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</text></trait><trait category="species"><name>Brave</name><text>You have advantage on saving throws against being frightened.</text></trait><trait category="species"><name>Halfling Nimbleness</name><text>You can move through the space of any creature that is of a size larger than yours.</text></trait><trait><name>Languages</name><text>You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.</text></trait></race>-->
   <race>
     <name>Halfling, Lightfoot</name>
+    <displayname>Lightfoot Halfling</displayname>
+    <ancestry>Halfling</ancestry>
     <size>S</size>
     <speed>25</speed>
     <ability>Dex +2, Cha +1</ability>
@@ -1201,13 +1242,16 @@ Weight in pounds = 35 + your size modifie</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.</text>
     </trait>
+    <languages>Common, Halfling</languages>
+    <conditionResist>frightened</conditionResist>
   </race>
   <race>
     <name>Halfling, Stout</name>
+    <displayname>Stout Halfling</displayname>
+    <ancestry>Halfling</ancestry>
     <size>S</size>
     <speed>25</speed>
     <ability>Dex +2, Con +1</ability>
-    <resist>poison</resist>
     <trait category="description">
       <name>Description</name>
       <text>The comforts of home are the goals of most halflings' lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along a dirt road or a raft floating downriver.
@@ -1299,6 +1343,9 @@ Weight in pounds = 35 + your size modifie</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.</text>
     </trait>
+    <languages>Common, Halfling</languages>
+    <resist>poison</resist>
+    <conditionResist>frightened, poisoned</conditionResist>
   </race>
   <race>
     <name>Human</name>
@@ -1410,9 +1457,12 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.</text>
     </trait>
+    <languages>Common, Any one language</languages>
   </race>
   <race>
     <name>Human, Variant</name>
+    <displayname>Variant Human</displayname>
+    <ancestry>Human</ancestry>
     <size>M</size>
     <speed>30</speed>
     <trait category="description">
@@ -1528,13 +1578,13 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.</text>
     </trait>
+    <languages>Common, Any one language</languages>
   </race>
   <race>
     <name>Tiefling</name>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Int +1</ability>
-    <resist>fire</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -1605,5 +1655,8 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Infernal.</text>
     </trait>
+    <languages>Common, Infernal</languages>
+    <spells>Thaumaturgy, Hellish Rebuke, Darkness</spells>
+    <resist>fire</resist>
   </race>
 </compendium>

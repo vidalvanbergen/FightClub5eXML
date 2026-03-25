@@ -2,6 +2,8 @@
 <compendium version="5" auto_indent="NO">
   <race>
     <name>Aarakocra (DMG)</name>
+    <displayname>Aarakocra</displayname>
+    <ancestry>Aarakocra</ancestry>
     <size>M</size>
     <speed>20</speed>
     <ability>Dex +2, Wis +2</ability>
@@ -41,19 +43,20 @@ Weight in pounds = 70 + (1d4 × your size modifier)</text>
     <trait category="species">
       <name>Talons</name>
       <text>You are proficient with your unarmed strikes, which deal 1d4 slashing damage on a hit.</text>
-      <roll description="Slashing Damage">1d4</roll>
+      <roll description="Unarmed Slashing Damage">1d4</roll>
     </trait>
     <trait>
       <name>Languages</name>
       <text>You can speak, read, and write Auran.</text>
     </trait>
+    <speedOther>Fly 50 ft.</speedOther>
+    <languages>Auran</languages>
   </race>
   <race>
     <name>Aasimar (DMG)</name>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Wis +1</ability>
-    <resist>necrotic, radiant</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -96,6 +99,9 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Celestial.</text>
     </trait>
+    <languages>Common, Celestial</languages>
+    <spells>Light, Lesser Restoration, Daylight</spells>
+    <resist>necrotic, radiant</resist>
   </race>
   <race>
     <name>Bullywug (DMG NPC)</name>
@@ -142,6 +148,8 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Bullywug.</text>
     </trait>
+    <speedOther>Swim 40 ft.</speedOther>
+    <languages>Bullywug</languages>
   </race>
   <race>
     <name>Elf, Eladrin (DMG)</name>
@@ -149,7 +157,6 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
     <speed>30</speed>
     <ability>Dex +2, Int +1</ability>
     <proficiency>Perception</proficiency>
-    <weapons>Longsword, Shortsword, Longbow, Shortbow</weapons>
     <trait category="description">
       <name>Description</name>
       <text>Elves are a magical people of otherworldly grace, living in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry.
@@ -242,6 +249,11 @@ Weight in pounds = 90 + (1d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires</text>
     </trait>
+    <languages>Common, Elvish</languages>
+    <weapons>Longsword, Shortsword, Longbow, Shortbow</weapons>
+    <spells>Misty Step</spells>
+    <conditionResist>charmed</conditionResist>
+    <conditionImmune>asleep</conditionImmune>
   </race>
   <race>
     <name>Gnoll (DMG NPC)</name>
@@ -351,6 +363,8 @@ Intelligence is your spellcasting ability for these spells.</text>
       <name>Languages</name>
       <text>You can speak, read, and write Gnomish, Terran, and Undercommon.</text>
     </trait>
+    <languages>Gnomish, Terran, Undercommon</languages>
+    <spells>Nondetection, Blindness/Deafness, Blur, Disguise Self</spells>
   </race>
   <race>
     <name>Goblin (DMG NPC)</name>
@@ -393,6 +407,7 @@ Weight in pounds = 35 + your size modifier</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Goblin.</text>
     </trait>
+    <languages>Common, Goblin</languages>
   </race>
   <race>
     <name>Grimlock (DMG NPC)</name>
@@ -419,6 +434,7 @@ Weight in pounds = 35 + your size modifier</text>
       <name>Languages</name>
       <text>You can speak, read, and write Undercommon.</text>
     </trait>
+    <languages>Undercommon</languages>
   </race>
   <race>
     <name>Hobgoblin (DMG NPC)</name>
@@ -461,6 +477,7 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Goblin.</text>
     </trait>
+    <languages>Common, Goblin</languages>
   </race>
   <race>
     <name>Kenku (DMG NPC)</name>
@@ -503,6 +520,7 @@ Weight in pounds = 50 + (1d6 × your size modifier)</text>
       <name>Languages</name>
       <text>You can read and write Common and Auran, but you can only speak using your Mimicry trait.</text>
     </trait>
+    <languages>Common, Auran</languages>
   </race>
   <race>
     <name>Kobold (DMG NPC)</name>
@@ -543,6 +561,7 @@ Source:	Dungeon Master's Guide (2014) p. 282</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Draconic.</text>
     </trait>
+    <languages>Common, Draconic</languages>
   </race>
   <race>
     <name>Kuo-Toa (DMG NPC)</name>
@@ -578,6 +597,7 @@ Source:	Dungeon Master's Guide (2014) p. 282</text>
       <name>Languages</name>
       <text>You can speak, read, and write Undercommon.</text>
     </trait>
+    <languages>Undercommon</languages>
   </race>
   <race>
     <name>Lizardfolk (DMG)</name>
@@ -624,12 +644,14 @@ d8 | Quirk
     <trait category="species">
       <name>Natural Armor</name>
       <text>Your scales function as natural armor, granting you a +3 bonus to Armor Class.</text>
+      <special>Natural Armor AC+3</special>
       <modifier category="bonus">ac +3</modifier>
     </trait>
     <trait>
       <name>Languages</name>
       <text>You can speak, read, and write Draconic.</text>
     </trait>
+    <languages>Draconic</languages>
   </race>
   <race>
     <name>Merfolk (DMG NPC)</name>
@@ -649,6 +671,7 @@ Source:	Dungeon Master's Guide (2014) p. 282</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Aquan.</text>
     </trait>
+    <languages>Common, Aquan</languages>
   </race>
   <race>
     <name>Orc (DMG)</name>
@@ -693,6 +716,7 @@ Weight in pounds = 175 + (2d6 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Orc.</text>
     </trait>
+    <languages>Common, Orc</languages>
   </race>
   <race>
     <name>Skeleton (DMG NPC)</name>
@@ -748,12 +772,14 @@ Weight in pounds = 175 + (2d6 × your size modifier)</text>
     <trait category="species">
       <name>Natural Armor</name>
       <text>Your thick hide grants you a +1 bonus to Armor Class.</text>
+      <special>Natural Armor AC+1</special>
       <modifier category="bonus">ac +1</modifier>
     </trait>
     <trait>
       <name>Languages</name>
       <text>You can speak, read, and write Troglodyte.</text>
     </trait>
+    <languages>Troglodyte</languages>
   </race>
   <race>
     <name>Zombie (DMG NPC)</name>
@@ -780,5 +806,8 @@ Weight in pounds = 175 + (2d6 × your size modifier)</text>
       <name>Languages</name>
       <text>You can't speak, but you can understand the languages you knew in life.</text>
     </trait>
+    <languages>The languages you knew in life</languages>
+    <immune>poison</immune>
+    <conditionImmune>poisoned, exhaustion</conditionImmune>
   </race>
 </compendium>

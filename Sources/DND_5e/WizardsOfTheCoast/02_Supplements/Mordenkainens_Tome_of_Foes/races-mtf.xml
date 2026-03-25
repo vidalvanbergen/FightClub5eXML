@@ -2,11 +2,11 @@
 <compendium version="5" auto_indent="NO">
   <race>
     <name>Gith, Githyanki (Legacy)</name>
+    <displayname>Githyanki (Legacy)</displayname>
+    <ancestry>Gith</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Int +1, Str +2</ability>
-    <armor>Light Armor, Medium Armor</armor>
-    <weapons>Shortswords, Longswords, Greatswords</weapons>
     <spellAbility>Intelligence</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -83,9 +83,15 @@ d4 | Githyanki Flaw
       <name>Languages</name>
       <text>You can speak, read, and write Common and Gith.</text>
     </trait>
+    <languages>Common, Gith</languages>
+    <armor>Light Armor, Medium Armor</armor>
+    <weapons>Shortswords, Longswords, Greatswords</weapons>
+    <spells>Mage Hand, Jump, Misty Step</spells>
   </race>
   <race>
     <name>Gith, Githzerai (Legacy)</name>
+    <displayname>Githzerai (Legacy)</displayname>
+    <ancestry>Gith</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Int +1, Wis +2</ability>
@@ -162,14 +168,17 @@ d4 | Githzerai Flaw
       <name>Languages</name>
       <text>You can speak, read, and write Common and Gith.</text>
     </trait>
+    <languages>Common, Gith</languages>
+    <spells>Mage Hand, Shield, Detect Thoughts</spells>
+    <conditionImmune>charmed, frightened</conditionImmune>
   </race>
   <race>
     <name>Dwarf, Duergar / Gray (Legacy)</name>
+    <displayname>Duergar (Gray Dwarf) (Legacy)</displayname>
+    <ancestry>Dwarf</ancestry>
     <size>M</size>
     <speed>25</speed>
     <ability>Con +2, Str +1</ability>
-    <resist>poison</resist>
-    <weapons>battleaxe, handaxe, light hammer, warhammer</weapons>
     <trait category="description">
       <name>Description</name>
       <text>Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs | these common threads unite all dwarves.
@@ -241,9 +250,17 @@ Weight in pounds = 115 + (2d6 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common, Dwarvish, and Undercommon</text>
     </trait>
+    <languages>Common, Dwarvish, Undercommon</languages>
+    <weapons>Battleaxe, Handaxe, Light Hammer, Warhammer</weapons>
+    <tools>Artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools</tools>
+    <spells>Enlarge/Reduce, Invisibility</spells>
+    <resist>poison</resist>
+    <conditionResist>poisoned, charmed, paralyzed</conditionResist>
   </race>
   <race>
     <name>Elf, Eladrin (Legacy)</name>
+    <displayname>Eladrin Elf (Legacy)</displayname>
+    <ancestry>Elf</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Dex +2, Cha +1</ability>
@@ -388,14 +405,18 @@ d4 | Summer Flaw
       <name>Languages</name>
       <text>You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires</text>
     </trait>
+    <languages>Common, Elvish</languages>
+    <conditionResist>charmed</conditionResist>
+    <conditionImmune>asleep</conditionImmune>
   </race>
   <race>
     <name>Elf, Sea (Legacy)</name>
+    <displayname>Sea Elf (Legacy)</displayname>
+    <ancestry>Elf</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Dex +2, Con +1</ability>
     <proficiency>Perception</proficiency>
-    <weapons>spear, trident, light crossbow, net</weapons>
     <trait category="description">
       <name>Description</name>
       <text>Elves are a magical people of otherworldly grace, living in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry.
@@ -473,13 +494,19 @@ Weight in pounds = 90 + (1d4 × your size modifier)</text>
       <name>Extra Language</name>
       <text>You can speak, read, and write Aquan</text>
     </trait>
+    <speedOther>Swim 30 ft.</speedOther>
+    <languages>Common, Elvish, Aquan</languages>
+    <weapons>Spear, Trident, Light Crossbow, Net</weapons>
+    <conditionResist>charmed</conditionResist>
+    <conditionImmune>asleep</conditionImmune>
   </race>
   <race>
     <name>Elf, Shadar-kai (Legacy)</name>
+    <displayname>Shadar-kai (Legacy)</displayname>
+    <ancestry>Elf</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Dex +2, Con +1</ability>
-    <resist>necrotic</resist>
     <proficiency>Perception</proficiency>
     <spellAbility>Wisdom</spellAbility>
     <trait category="description">
@@ -550,9 +577,15 @@ Weight in pounds = 90 + (1d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires</text>
     </trait>
+    <languages>Common, Elvish</languages>
+    <resist>necrotic</resist>
+    <conditionResist>charmed</conditionResist>
+    <conditionImmune>asleep</conditionImmune>
   </race>
   <race>
     <name>Gnome, Deep (Legacy)</name>
+    <displayname>Deep Gnome (Legacy)</displayname>
+    <ancestry>Gnome</ancestry>
     <size>S</size>
     <speed>25</speed>
     <ability>Int +2, Dex +1</ability>
@@ -610,13 +643,15 @@ Weight in pounds = 35 + your size modifier</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common, Gnomish, and Undercommon. The svirfneblin dialect is more guttural than surface Gnomish, and most svirfneblin know only a little bit of Common, but those who deal with outsiders (and that includes you as an adventurer) pick up enough Common to get by in other lands.</text>
     </trait>
+    <languages>Common, Gnomish, Undercommon</languages>
   </race>
   <race>
     <name>Tiefling of Asmodeus</name>
+    <displayname>Tiefling of Asmodeus</displayname>
+    <ancestry>Tiefling</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Int +1</ability>
-    <resist>fire</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -671,13 +706,17 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Infernal.</text>
     </trait>
+    <languages>Common, Infernal</languages>
+    <spells>Thaumaturgy, Hellish Rebuke, Darkness</spells>
+    <resist>fire</resist>
   </race>
   <race>
     <name>Tiefling of Baalzebul</name>
+    <displayname>Tiefling of Baalzebul</displayname>
+    <ancestry>Tiefling</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Int +1</ability>
-    <resist>fire</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -732,13 +771,17 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Infernal.</text>
     </trait>
+    <languages>Common, Infernal</languages>
+    <spells>Thaumaturgy, Ray of Sickness, Crown of Madness</spells>
+    <resist>fire</resist>
   </race>
   <race>
     <name>Tiefling of Dispater</name>
+    <displayname>Tiefling of Dispater</displayname>
+    <ancestry>Tiefling</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Dex +1</ability>
-    <resist>fire</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -793,13 +836,17 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Infernal.</text>
     </trait>
+    <languages>Common, Infernal</languages>
+    <spells>Thaumaturgy, Disguise Self, Detect Thoughts</spells>
+    <resist>fire</resist>
   </race>
   <race>
     <name>Tiefling of Fierna</name>
+    <displayname>Tiefling of Fierna</displayname>
+    <ancestry>Tiefling</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Wis +1</ability>
-    <resist>fire</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -854,13 +901,17 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Infernal.</text>
     </trait>
+    <languages>Common, Infernal</languages>
+    <spells>Friends, Charm Person, Suggestion</spells>
+    <resist>fire</resist>
   </race>
   <race>
     <name>Tiefling of Glasya</name>
+    <displayname>Tiefling of Glasya</displayname>
+    <ancestry>Tiefling</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Dex +1</ability>
-    <resist>fire</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -915,13 +966,17 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Infernal.</text>
     </trait>
+    <languages>Common, Infernal</languages>
+    <spells>Minor Illusion, Disguise Self, Invisibility</spells>
+    <resist>fire</resist>
   </race>
   <race>
     <name>Tiefling of Levistus</name>
+    <displayname>Tiefling of Levistus</displayname>
+    <ancestry>Tiefling</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Con +1</ability>
-    <resist>fire</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -976,13 +1031,17 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Infernal.</text>
     </trait>
+    <languages>Common, Infernal</languages>
+    <spells>Ray of Frost, Armor of Agathys, Darkness</spells>
+    <resist>fire</resist>
   </race>
   <race>
     <name>Tiefling of Mammon</name>
+    <displayname>Tiefling of Mammon</displayname>
+    <ancestry>Tiefling</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Int +1</ability>
-    <resist>fire</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -1037,13 +1096,17 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Infernal.</text>
     </trait>
+    <languages>Common, Infernal</languages>
+    <spells>Mage Hand, Arcane Lock, Tenser's Floating Disk</spells>
+    <resist>fire</resist>
   </race>
   <race>
     <name>Tiefling of Mephistopheles</name>
+    <displayname>Tiefling of Mephistopheles</displayname>
+    <ancestry>Tiefling</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Int +1</ability>
-    <resist>fire</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -1098,13 +1161,17 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Infernal.</text>
     </trait>
+    <languages>Common, Infernal</languages>
+    <spells>Mage Hand, Burning Hands, Flame Blade</spells>
+    <resist>fire</resist>
   </race>
   <race>
     <name>Tiefling of Zariel</name>
+    <displayname>Tiefling of Zariel</displayname>
+    <ancestry>Tiefling</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Cha +2, Str +1</ability>
-    <resist>fire</resist>
     <spellAbility>Charisma</spellAbility>
     <trait category="description">
       <name>Description</name>
@@ -1159,5 +1226,8 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Infernal.</text>
     </trait>
+    <languages>Common, Infernal</languages>
+    <spells>Thaumaturgy, Searing Smite, Branding Smite</spells>
+    <resist>fire</resist>
   </race>
 </compendium>
