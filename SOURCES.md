@@ -129,8 +129,8 @@ Roll modifiers:
   <roll>xdx+%8</roll> <!-- add PROF -->
   <roll>xdx+%9</roll> <!-- add current HP -->
   <roll>xdx+%10</roll> <!-- add LVL 1/2 -->
-  <roll>xdx+1o</roll> <!-- add 1wo -->
-  <roll>xdx+1w</roll> <!-- add 1w -->
+  <roll>xdx+1o</roll> <!-- add 1 x weapon offhand damage -->
+  <roll>xdx+1w</roll> <!-- add 1 x weapon mainhand damage -->
 ```
 
 For the Github repository, if you're adding a new class to a spell or want to add a new spell list, you can create a new XML file with spell names, and the class or classes you would like to add, as shown in the example below:
