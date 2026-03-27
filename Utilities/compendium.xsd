@@ -12,7 +12,7 @@
 
   <xs:simpleType name="rollFormula">
     <xs:restriction base="xs:string">
-      <xs:pattern value="SPELL|(\(?[0-9]*(d[0-9]+)?([+\-xX/][0-9]+)?([+\-xX/](S[Tt][Rr]|D[Ee][Xx]|C[Oo][Nn]|I[Nn][Tt]|W[Ii][Ss]|C[Hh][Aa]|PROF|%[0-9]+|LVL|W|W[Oo]|SPELL))?\)?)+"/>
+      <xs:pattern value="SPELL|%[0-9]+|(\(?[0-9]*(d[0-9]+)?([+\-xX/][0-9]+)?([+\-xX/](S[Tt][Rr]|D[Ee][Xx]|C[Oo][Nn]|I[Nn][Tt]|W[Ii][Ss]|C[Hh][Aa]|PROF|%[0-9]+|LVL|W|W[Oo]|SPELL))?\)?)+"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -214,15 +214,10 @@
   <xs:simpleType name="categoryEnum">
     <xs:restriction base="xs:string">
       <xs:enumeration value="bonus"/>
-      <xs:enumeration value="Bonus"/>
       <xs:enumeration value="ability score"/>
-      <xs:enumeration value="Ability Score"/>
       <xs:enumeration value="ability modifier"/>
-      <xs:enumeration value="Ability Modifier"/>
       <xs:enumeration value="saving throw"/>
-      <xs:enumeration value="Saving Throw"/>
       <xs:enumeration value="skill"/>
-      <xs:enumeration value="Skill"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -370,6 +365,8 @@
       <xs:element type="xs:string" name="name"/>
       <xs:element type="xs:string" name="ancestry"/><!-- Not supported by Fight Club -->
       <xs:element type="abilityAndSkillList" name="proficiency"/>
+      <xs:element type="xs:string" name="tools"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="languages"/><!-- Not supported by Fight Club -->
       <xs:element type="modifierType" name="modifier"/>
       <xs:element type="traitType" name="trait" maxOccurs="unbounded" minOccurs="0"/>
     </xs:choice>
@@ -401,6 +398,9 @@
       <xs:element type="xs:string" name="special" minOccurs="0"/>
       <xs:element type="modifierType" name="modifier"/>
       <xs:element type="xs:string" name="proficiency"/>
+      <xs:element type="xs:string" name="armor"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="weapons"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="tools"/><!-- Not supported by Fight Club -->
       <xs:element type="roll" name="roll" maxOccurs="unbounded" minOccurs="0"/><!-- Not supported by Fight Club -->
     </xs:choice>
     <xs:attribute type="boolean" name="optional" use="optional"/>
@@ -409,9 +409,9 @@
   <xs:complexType name="counterType">
     <xs:choice maxOccurs="unbounded" minOccurs="0">
       <xs:element type="xs:string" name="name"/>
-      <xs:element type="xs:string" name="subclass"/><!-- Not supported by Fight Club -->
-      <xs:element type="xs:integer" name="value"/>
+      <xs:element type="rollFormula" name="value"/><!-- Official type="xs:integer"-->
       <xs:element type="resetEnum" name="reset"/>
+      <xs:element type="xs:string" name="subclass"/><!-- Not supported by Fight Club -->
     </xs:choice>
   </xs:complexType>
 
@@ -485,6 +485,7 @@
       <xs:element type="xs:string" name="tools"/><!-- Not supported by Fight Club -->
       <xs:element type="abilityEnum" name="spellAbility"/>
       <xs:element type="abilityBonusList" name="ability"/>
+      <xs:element type="xs:string" name="speedOther"/><!-- Not supported by Fight Club -->
       <xs:element type="xs:string" name="languages"/><!-- Not supported by Fight Club -->
       <xs:element type="xs:string" name="spells"/><!-- Not supported by Fight Club -->
       <xs:element type="xs:string" name="vulnerable"/><!-- Not supported by Fight Club -->
