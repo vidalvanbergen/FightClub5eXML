@@ -140,6 +140,11 @@ Level | Martial Arts
 17th | 1d10
 
 Source:	Player's Handbook (2014) p. 76</text>
+        <roll description="In">1d4</roll>
+        <roll description="Unarmed Bludgeoning Damage" level="1">1d4</roll>
+        <roll description="Unarmed Bludgeoning Damage" level="5">1d6</roll>
+        <roll description="Unarmed Bludgeoning Damage" level="11">1d8</roll>
+        <roll description="Unarmed Bludgeoning Damage" level="17">1d10</roll>
       </feature>
     </autolevel>
     <autolevel level="2">
@@ -153,6 +158,7 @@ Source:	Player's Handbook (2014) p. 76</text>
 	Ki save DC = 8 + Wisdom modifier + Proficiency Bonus
 
 Source:	Player's Handbook (2014) p. 78</text>
+        <roll description="Ki Save DC">8+%5+%8</roll>
       </feature>
       <feature>
         <name>Flurry of Blows</name>
@@ -201,6 +207,7 @@ Source:	Player's Handbook (2014) p. 78</text>
 	If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack (range 20/60 feet) with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.
 
 Source:	Player's Handbook (2014) p. 78</text>
+        <roll description="Damage Reduction">1d10+%2+%7</roll>
       </feature>
       <feature>
         <name>Monastic Tradition</name>
@@ -647,6 +654,12 @@ Source:	Player's Handbook (2014) p. 79</text>
 
 Source:	Player's Handbook (2014) p. 79</text>
       </feature>
+      <counter>
+        <name>Wholeness of Body</name>
+        <value>1</value>
+        <reset>L</reset>
+        <subclass>Way of the Open Hand</subclass>
+      </counter>
     </autolevel>
     <autolevel level="11">
       <feature optional="YES">
@@ -654,6 +667,7 @@ Source:	Player's Handbook (2014) p. 79</text>
         <text>Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.
 
 Source:	Player's Handbook (2014) p. 80</text>
+        <roll description="Spell Saving Throw">8+%5+%8</roll>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -664,7 +678,28 @@ Source:	Player's Handbook (2014) p. 80</text>
 You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.
 
 Source:	Player's Handbook (2014) p. 79</text>
+        <roll description="Necrotic Damage">10d10</roll>
       </feature>
     </autolevel>
   </class>
+  <spell>
+    <name>Darkness</name>
+    <classes>Monk (Way of Shadow)</classes>
+  </spell>
+  <spell>
+    <name>Darkvision</name>
+    <classes>Monk (Way of Shadow)</classes>
+  </spell>
+  <spell>
+    <name>Pass without Trace</name>
+    <classes>Monk (Way of Shadow)</classes>
+  </spell>
+  <spell>
+    <name>Silence</name>
+    <classes>Monk (Way of Shadow)</classes>
+  </spell>
+  <spell>
+    <name>Minor Illusion</name>
+    <classes>Monk (Way of Shadow)</classes>
+  </spell>
 </compendium>

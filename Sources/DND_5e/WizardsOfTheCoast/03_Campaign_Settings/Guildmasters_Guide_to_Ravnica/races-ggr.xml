@@ -2,6 +2,8 @@
 <compendium version="5" auto_indent="NO">
   <race>
     <name>Centaur (Legacy)</name>
+    <displayname>Centaur (Legacy)</displayname>
+    <ancestry>Centaur</ancestry>
     <size>M</size>
     <speed>40</speed>
     <ability>Str +2, Wis +1</ability>
@@ -81,6 +83,7 @@ Weight in pounds = 600 + (2d12 × your size modifier)</text>
       <name>Equine Build</name>
       <text>You count as one size larger when determining your carrying capacity and the weight you can push or drag.
 	In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot.</text>
+      <special>Powerful Build</special>
     </trait>
     <trait category="subspecies">
       <name>Survivor</name>
@@ -90,9 +93,12 @@ Weight in pounds = 600 + (2d12 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Sylvan. Sylvan is widely spoken in the Selesnya Conclave, for it is rich in vocabulary to describe natural phenomena and spiritual forces.</text>
     </trait>
+    <languages>Common, Sylvan</languages>
   </race>
   <race>
     <name>Goblin (Ravnica)</name>
+    <displayname>Goblin (Ravnica)</displayname>
+    <ancestry>Goblin</ancestry>
     <size>S</size>
     <speed>30</speed>
     <ability>Dex +2, Con +1</ability>
@@ -165,9 +171,12 @@ Weight in pounds = 35 + your size modifier</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Goblin. In Ravnica, Goblin is a simplistic language with a limited vocabulary and fluid rules of grammar, unsuited for any sophisticated conversation.</text>
     </trait>
+    <languages>Common, Goblin</languages>
   </race>
   <race>
     <name>Loxodon</name>
+    <displayname>Loxodon</displayname>
+    <ancestry>Loxodon</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Con +2, Wis +1</ability>
@@ -242,6 +251,7 @@ Weight in pounds = 295 + (2d4 × your size modifier)</text>
     <trait category="species">
       <name>Natural Armor</name>
       <text>You have thick, leathery skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.</text>
+      <special>Natural Armor: 12+Con</special>
     </trait>
     <trait category="species">
       <name>Trunk</name>
@@ -256,9 +266,13 @@ Weight in pounds = 295 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Loxodon.</text>
     </trait>
+    <languages>Common, Loxodon.</languages>
+    <conditionResist>charmed, frightened</conditionResist>
   </race>
   <race>
     <name>Minotaur (Legacy)</name>
+    <displayname>Minotaur (Legacy)</displayname>
+    <ancestry>Minotaur</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Str +2, Con +1</ability>
@@ -344,9 +358,12 @@ Weight in pounds = 175 + (2d6 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common and Minotaur.</text>
     </trait>
+    <languages>Common, Minotaur</languages>
   </race>
   <race>
     <name>Simic Hybrid</name>
+    <displayname>Simic Hybrid</displayname>
+    <ancestry>Simic Hybrid</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Con +2</ability>
@@ -398,23 +415,26 @@ Source:	Guildmasters' Guide to Ravnica p. 20</text>
       <text>Your body has been altered to incorporate certain animal characteristics. You choose one animal enhancement now and a second enhancement at 5th level.
 	At 1st level, choose one of the following options:
 
-	• Manta Glide: You have ray-like fins that you can use as wings to slow your fall or allow you to glide. When you fall and aren't incapacitated, you can subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.
+	Manta Glide. You have ray-like fins that you can use as wings to slow your fall or allow you to glide. When you fall and aren't incapacitated, you can subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.
 
-	• Nimble Climber: You have a climbing speed equal to your walking speed.
+	Nimble Climber. You have a climbing speed equal to your walking speed.
 
-	• Underwater Adaptation: You can breathe air and water, and you have a swimming speed equal to your walking speed.
+	Underwater Adaptation. You can breathe air and water, and you have a swimming speed equal to your walking speed.
 
 At 5th level, your body evolves further, developing new characteristics. Choose one of the options you didn't take at 1st level, or one of the following options:
 
-	• Grappling Appendage: You have two special appendages growing alongside your arms. Choose whether they're both claws or tentacles. As an action, you can use one of them to try to grapple a creature. Each one is also a natural weapon, which you can use to make an unarmed strike. If you hit with it, the target takes bludgeoning damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Immediately after hitting, you can try to grapple the target as a bonus action. These appendages can't precisely manipulate anything and can't wield weapons, magic items, or other specialized equipment.
+	Grappling Appendage. You have two special appendages growing alongside your arms. Choose whether they're both claws or tentacles. As an action, you can use one of them to try to grapple a creature. Each one is also a natural weapon, which you can use to make an unarmed strike. If you hit with it, the target takes bludgeoning damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Immediately after hitting, you can try to grapple the target as a bonus action. These appendages can't precisely manipulate anything and can't wield weapons, magic items, or other specialized equipment.
 
-	• Carapace: Your skin in places is covered by a thick shell. You gain a +1 bonus to AC when you're not wearing heavy armor.
+	Carapace. Your skin in places is covered by a thick shell. You gain a +1 bonus to AC when you're not wearing heavy armor.
 
-	• Acid Spit: As an action, you can spray acid from glands in your mouth, targeting one creature or object you can see within 30 feet of you. The target takes 2d10 acid damage unless it succeeds on a Dexterity saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus. This damage increases by 1d10 when you reach 11th level (3d10) and 17th level (4d10). You can use this trait a number of times equal to your Consitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</text>
+	Acid Spit. As an action, you can spray acid from glands in your mouth, targeting one creature or object you can see within 30 feet of you. The target takes 2d10 acid damage unless it succeeds on a Dexterity saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus. This damage increases by 1d10 when you reach 11th level (3d10) and 17th level (4d10). You can use this trait a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</text>
     </trait>
+    <languages>Common, Elvish or Vedalken</languages>
   </race>
   <race>
     <name>Vedalken</name>
+    <displayname>Vedalken</displayname>
+    <ancestry>Vedalken</ancestry>
     <size>M</size>
     <speed>30</speed>
     <ability>Int +2, Wis +1</ability>
@@ -479,6 +499,7 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Tireless Precision</name>
       <text>You are proficient in one of the following skills of your choice: Arcana, History, Investigation, Medicine, Performance, or Sleight of Hand. You are also proficient with one tool of your choice.
 	Whenever you make an ability check with the chosen skill or tool, roll a d4 and add the number rolled to the check's total.</text>
+      <roll description="Add to Ability Check">1d4</roll>
     </trait>
     <trait category="species">
       <name>Partially Amphibious</name>
@@ -488,5 +509,6 @@ Weight in pounds = 110 + (2d4 × your size modifier)</text>
       <name>Languages</name>
       <text>You can speak, read, and write Common, Vedalken, and one other language of your choice.</text>
     </trait>
+    <tools>1 tool of your choice</tools>
   </race>
 </compendium>

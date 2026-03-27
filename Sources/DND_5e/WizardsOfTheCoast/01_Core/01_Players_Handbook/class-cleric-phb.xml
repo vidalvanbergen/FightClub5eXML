@@ -479,6 +479,7 @@ Source:	Player's Handbook (2014) p. 60</text>
         <text>When you choose this domain at 1st level, you gain proficiency with heavy armor.
 
 Source:	Player's Handbook (2014) p. 60</text>
+        <armor>Heavy Armor</armor>
       </feature>
       <feature optional="YES">
         <name>Disciple of Life (Life Domain)</name>
@@ -510,6 +511,8 @@ Source:	Player's Handbook (2014) p. 60</text>
         <text>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.
 
 Source:	Player's Handbook (2014) p. 60</text>
+        <roll description="Extra Radiant Damage" level="8">1d8</roll>
+        <roll description="Extra Radiant Damage" level="14">2d8</roll>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -552,6 +555,12 @@ Source:	Player's Handbook (2014) p. 61</text>
 
 Source:	Player's Handbook (2014) p. 61</text>
       </feature>
+      <counter>
+        <name>Warding Flare</name>
+        <value>%5</value>
+        <reset>L</reset>
+        <subclass>Light Domain</subclass>
+      </counter>
     </autolevel>
     <autolevel level="2">
       <feature optional="YES">
@@ -560,6 +569,7 @@ Source:	Player's Handbook (2014) p. 61</text>
 	As an action, you present your holy symbol, and any magical darkness within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 + your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected.
 
 Source:	Player's Handbook (2014) p. 61</text>
+        <roll description="Radiant Damage">2d10+%7</roll>
       </feature>
     </autolevel>
     <autolevel level="6">
@@ -616,6 +626,7 @@ Source:	Player's Handbook (2014) p. 62</text>
         <text>Also at 1st level, you gain proficiency with heavy armor.
 
 Source:	Player's Handbook (2014) p. 62</text>
+        <armor>Heavy Armor</armor>
       </feature>
     </autolevel>
     <autolevel level="2">
@@ -641,6 +652,8 @@ Source:	Player's Handbook (2014) p. 62</text>
         <text>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold, fire, or lightning damage (your choice) to the target. When you reach 14th level, the extra damage increases to 2d8.
 
 Source:	Player's Handbook (2014) p. 61</text>
+        <roll description="Extra Cold, Fire, or Lightning damage" level="8">1d8</roll>
+        <roll description="Extra Cold, Fire, or Lightning damage" level="14">2d8</roll>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -675,6 +688,8 @@ Source:	Player's Handbook (2014) p. 62</text>
         <text>At 1st level, you gain proficiency with martial weapons and heavy armor.
 
 Source:	Player's Handbook (2014) p. 62</text>
+        <armor>Heavy Armor</armor>
+        <weapons>Martial Weapons</weapons>
       </feature>
       <feature optional="YES">
         <name>Wrath of the Storm (Tempest Domain)</name>
@@ -682,7 +697,14 @@ Source:	Player's Handbook (2014) p. 62</text>
 	You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.
 
 Source:	Player's Handbook (2014) p. 62</text>
+        <roll description="Lightning or Thunder Damage">2d8</roll>
       </feature>
+      <counter>
+        <name>Wrath of the Storm</name>
+        <value>%5</value>
+        <reset>L</reset>
+        <subclass>Tempest Domain</subclass>
+      </counter>
     </autolevel>
     <autolevel level="2">
       <feature optional="YES">
@@ -707,6 +729,8 @@ Source:	Player's Handbook (2014) p. 62</text>
         <text>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target. When you reach 14th level, the extra damage increases to 2d8.
 
 Source:	Player's Handbook (2014) p. 62</text>
+        <roll description="Extra Thunder Damage" level="8">1d8</roll>
+        <roll description="Extra Thunder Damage" level="14">2d8</roll>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -768,8 +792,8 @@ Source:	Player's Handbook (2014) p. 63</text>
         <text>At 8th level, you gain the ability to infuse your weapon strikes with poison—a gift from your deity. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target. When you reach 14th level, the extra damage increases to 2d8.
 
 Source:	Player's Handbook (2014) p. 63</text>
-        <roll description="Poison Damage" level="8">1d8</roll>
-        <roll description="Poison Damage" level="14">2d8</roll>
+        <roll description="Extra Poison Damage" level="8">1d8</roll>
+        <roll description="Extra Poison Damage" level="14">2d8</roll>
       </feature>
     </autolevel>
     <autolevel level="17">
@@ -804,6 +828,8 @@ Source:	Player's Handbook (2014) p. 63</text>
         <text>At 1st level, you gain proficiency with martial weapons and heavy armor.
 
 Source:	Player's Handbook (2014) p. 63</text>
+        <armor>Heavy Armor</armor>
+        <weapons>Martial Weapons</weapons>
       </feature>
       <feature optional="YES">
         <name>War Priest (War Domain)</name>
@@ -812,6 +838,12 @@ Source:	Player's Handbook (2014) p. 63</text>
 
 Source:	Player's Handbook (2014) p. 63</text>
       </feature>
+      <counter>
+        <name>War Priest</name>
+        <value>%5</value>
+        <reset>L</reset>
+        <subclass>War Domain</subclass>
+      </counter>
     </autolevel>
     <autolevel level="2">
       <feature optional="YES">
@@ -835,6 +867,8 @@ Source:	Player's Handbook (2014) p. 63</text>
         <text>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.
 
 Source:	Player's Handbook (2014) p. 63</text>
+        <roll description="Extra Damage" level="8">1d8</roll>
+        <roll description="Extra Damage" level="14">2d8</roll>
       </feature>
     </autolevel>
     <autolevel level="17">

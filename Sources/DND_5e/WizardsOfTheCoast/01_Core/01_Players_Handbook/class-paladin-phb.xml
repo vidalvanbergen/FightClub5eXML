@@ -191,27 +191,29 @@ Source:	Player's Handbook (2014) p. 82</text>
         <value>5</value>
         <reset>L</reset>
       </counter>
+      <counter>
+        <name>Divine Sense</name>
+        <value>1+%6</value>
+        <reset>L</reset>
+      </counter>
     </autolevel>
     <autolevel level="2">
       <feature>
         <name>Spellcasting</name>
         <text>By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does. See chapter 10 for the general rules of spellcasting and chapter 11 for the paladin spell list.
 
-Preparing and Casting Spells:
-The Paladin table shows how many spell slots you have to cast your paladin spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+	Preparing and Casting Spells. The Paladin table shows how many spell slots you have to cast your paladin spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 	You prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.
 	For example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd-level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.
 	You can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.
 
-Spellcasting Ability:
-Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.
+	Spellcasting Ability. Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.
 
 	Spell save DC = 8 + Charisma modifier + Proficiency Bonus
 
 	Spell attack modifier = Charisma modifier + Proficiency Bonus
 
-Spellcasting Focus:
-You can use a holy symbol as a spellcasting focus for your paladin spells.
+	Spellcasting Focus. You can use a holy symbol as a spellcasting focus for your paladin spells.
 
 Source:	Player's Handbook (2014) p. 84</text>
       </feature>
@@ -220,10 +222,10 @@ Source:	Player's Handbook (2014) p. 84</text>
         <text>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8.
 
 Source:	Player's Handbook (2014) p. 85</text>
-        <roll description="The Damage" level="1">2d8</roll>
-        <roll description="The Damage" level="2">3d8</roll>
-        <roll description="The Damage" level="3">4d8</roll>
-        <roll description="The Damage" level="4">5d8</roll>
+        <roll description="Extra Radiant Damage" level="1">2d8</roll>
+        <roll description="Extra Radiant Damage" level="2">3d8</roll>
+        <roll description="Extra Radiant Damage" level="3">4d8</roll>
+        <roll description="Extra Radiant Damage" level="4">5d8</roll>
       </feature>
       <feature>
         <name>Fighting Style</name>
@@ -238,28 +240,28 @@ Source:	Player's Handbook (2014) p. 84</text>
         <text>While you are wearing armor, you gain a +1 bonus to AC.
 
 Source:	Player's Handbook (2014) p. 84</text>
-        <special>fighting style defense</special>
+        <special>Fighting Style: Defense</special>
       </feature>
       <feature optional="YES">
         <name>Fighting Style: Dueling</name>
         <text>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
 
 Source:	Player's Handbook (2014) p. 84</text>
-        <special>fighting style dueling</special>
+        <special>Fighting Style: Dueling</special>
       </feature>
       <feature optional="YES">
         <name>Fighting Style: Great Weapon Fighting</name>
         <text>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.
 
 Source:	Player's Handbook (2014) p. 84</text>
-        <special>fighting style great weapon fighting</special>
+        <special>Fighting Style: Great Weapon Fighting</special>
       </feature>
       <feature optional="YES">
         <name>Fighting Style: Protection</name>
         <text>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
 
 Source:	Player's Handbook (2014) p. 84</text>
-        <special>fighting style protection</special>
+        <special>Fighting Style: Protection</special>
       </feature>
       <counter>
         <name>Lay on Hands</name>
@@ -272,7 +274,7 @@ Source:	Player's Handbook (2014) p. 84</text>
         <name>Divine Health</name>
         <text>By 3rd level, the divine magic flowing through you makes you immune to disease.
 
-Source:	Player's Handbook (2014) p. 82</text>
+Source:	Player's Handbook (2014) p. 85</text>
       </feature>
       <feature>
         <name>Sacred Oath</name>
@@ -283,15 +285,7 @@ Oath Spells:
 Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.
 	If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you.
 
-Source:	Player's Handbook (2014) p. 82</text>
-      </feature>
-      <feature>
-        <name>Breaking Your Oath</name>
-        <text>A paladin tries to hold to the highest standards of conduct, but even the most virtuous paladin is fallible. Sometimes the right path proves too demanding, sometimes a situation calls for the lesser of two evils, and sometimes the heat of emotion causes a paladin to transgress his or her oath.
-	A paladin who has broken a vow typically seeks absolution from a cleric who shares his or her faith or from another paladin of the same order. The paladin might spend an all-night vigil in prayer as a sign of penitence, or undertake a fast or similar act of self-denial. After a rite of confession and forgiveness, the paladin starts fresh.
-	If a paladin willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the DM's discretion, an impenitent paladin might be forced to abandon this class and adopt another, or perhaps to take the Oathbreaker paladin option that appears in the Dungeon Master's Guide.
-
-Source:	Player's Handbook (2014) p. 82</text>
+Source:	Player's Handbook (2014) p. 85</text>
       </feature>
       <feature>
         <name>Channel Divinity</name>
@@ -300,6 +294,14 @@ Source:	Player's Handbook (2014) p. 82</text>
 	Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC.
 
 Source:	Player's Handbook (2014) p. 85</text>
+      </feature>
+      <feature>
+        <name>Breaking Your Oath</name>
+        <text>A paladin tries to hold to the highest standards of conduct, but even the most virtuous paladin is fallible. Sometimes the right path proves too demanding, sometimes a situation calls for the lesser of two evils, and sometimes the heat of emotion causes a paladin to transgress his or her oath.
+	A paladin who has broken a vow typically seeks absolution from a cleric who shares his or her faith or from another paladin of the same order. The paladin might spend an all-night vigil in prayer as a sign of penitence, or undertake a fast or similar act of self-denial. After a rite of confession and forgiveness, the paladin starts fresh.
+	If a paladin willfully violates his or her oath and shows no sign of repentance, the consequences can be more serious. At the DM's discretion, an impenitent paladin might be forced to abandon this class and adopt another, or perhaps to take the Oathbreaker paladin option that appears in the Dungeon Master's Guide.
+
+Source:	Player's Handbook (2014) p. 86</text>
       </feature>
       <counter>
         <name>Channel Divinity</name>
@@ -346,7 +348,7 @@ Source:	Player's Handbook (2014) p. 82</text>
         <text>Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.
 	At 18th level, the range of this aura increases to 30 feet.
 
-Source:	Player's Handbook (2014) p. 82</text>
+Source:	Player's Handbook (2014) p. 85</text>
       </feature>
       <counter>
         <name>Lay on Hands</name>
@@ -395,7 +397,7 @@ Source:	Player's Handbook (2014) p. 82</text>
         <text>Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.
 	At 18th level, the range of this aura increases to 30 feet.
 
-Source:	Player's Handbook (2014) p. 82</text>
+Source:	Player's Handbook (2014) p. 85</text>
       </feature>
       <counter>
         <name>Lay on Hands</name>
@@ -408,7 +410,8 @@ Source:	Player's Handbook (2014) p. 82</text>
         <name>Improved Divine Smite</name>
         <text>By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage.
 
-Source:	Player's Handbook (2014) p. 82</text>
+Source:	Player's Handbook (2014) p. 85</text>
+        <roll description="Extra Radiant Damage">1d8</roll>
       </feature>
       <counter>
         <name>Lay on Hands</name>
@@ -444,11 +447,16 @@ Source:	Player's Handbook (2014) p. 82</text>
         <text>Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.
 	You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.
 
-Source:	Player's Handbook (2014) p. 82</text>
+Source:	Player's Handbook (2014) p. 85</text>
       </feature>
       <counter>
         <name>Lay on Hands</name>
         <value>70</value>
+        <reset>L</reset>
+      </counter>
+      <counter>
+        <name>Cleansing Touch</name>
+        <value>%6</value>
         <reset>L</reset>
       </counter>
     </autolevel>
@@ -570,7 +578,7 @@ Source:	Player's Handbook (2014) p. 85</text>
         <text>As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.
 	You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.
 
-Source:	Player's Handbook (2014) p. 85</text>
+Source:	Player's Handbook (2014) p. 86</text>
       </feature>
       <feature optional="YES">
         <name>Channel Divinity: Turn the Unholy (Oath of Devotion)</name>
@@ -649,7 +657,7 @@ Source:	Player's Handbook (2014) p. 86</text>
         <text>You can use your Channel Divinity to invoke primeval forces to ensnare a foe.
 	As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish.
 
-Source:	Player's Handbook (2014) p. 86</text>
+Source:	Player's Handbook (2014) p. 87</text>
       </feature>
       <feature optional="YES">
         <name>Channel Divinity: Turn the Faithless (Oath of the Ancients)</name>
@@ -658,7 +666,7 @@ Source:	Player's Handbook (2014) p. 86</text>
 	A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.
 	If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned.
 
-Source:	Player's Handbook (2014) p. 86</text>
+Source:	Player's Handbook (2014) p. 87</text>
       </feature>
     </autolevel>
     <autolevel level="7">
@@ -667,7 +675,7 @@ Source:	Player's Handbook (2014) p. 86</text>
         <text>Beginning at 7th level, ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 10 feet of you have resistance to damage from spells.
 	At 18th level, the range of this aura increases to 30 feet.
 
-Source:	Player's Handbook (2014) p. 86</text>
+Source:	Player's Handbook (2014) p. 87</text>
       </feature>
     </autolevel>
     <autolevel level="15">
@@ -676,8 +684,14 @@ Source:	Player's Handbook (2014) p. 86</text>
         <text>Starting at 15th level, when you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can't use it again until you finish a long rest.
 	Additionally, you suffer none of the drawbacks of old age, and you can't be aged magically.
 
-Source:	Player's Handbook (2014) p. 86</text>
+Source:	Player's Handbook (2014) p. 87</text>
       </feature>
+      <counter>
+        <name>Undying Sentinel</name>
+        <value>1</value>
+        <reset>L</reset>
+        <subclass>Oath of the Ancients</subclass>
+      </counter>
     </autolevel>
     <autolevel level="20">
       <feature optional="YES">
@@ -691,7 +705,7 @@ Source:	Player's Handbook (2014) p. 86</text>
 
 Once you use this feature, you can't use it again until you finish a long rest.
 
-Source:	Player's Handbook (2014) p. 86</text>
+Source:	Player's Handbook (2014) p. 87</text>
       </feature>
       <counter>
         <name>Elder Champion</name>
@@ -736,13 +750,13 @@ Source:	Player's Handbook (2014) p. 87</text>
 	On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature's speed is 0, and it can't benefit from any bonus to its speed.
 	On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage.
 
-Source:	Player's Handbook (2014) p. 87</text>
+Source:	Player's Handbook (2014) p. 88</text>
       </feature>
       <feature optional="YES">
         <name>Channel Divinity: Vow of Enmity (Oath of Vengeance)</name>
         <text>As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious.
 
-Source:	Player's Handbook (2014) p. 87</text>
+Source:	Player's Handbook (2014) p. 88</text>
       </feature>
     </autolevel>
     <autolevel level="7">
@@ -750,7 +764,7 @@ Source:	Player's Handbook (2014) p. 87</text>
         <name>Relentless Avenger (Oath of Vengeance)</name>
         <text>By 7th level, your supernatural focus helps you close off a foe's retreat. When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the same reaction. This movement doesn't provoke opportunity attacks.
 
-Source:	Player's Handbook (2014) p. 87</text>
+Source:	Player's Handbook (2014) p. 88</text>
       </feature>
     </autolevel>
     <autolevel level="15">
@@ -758,7 +772,7 @@ Source:	Player's Handbook (2014) p. 87</text>
         <name>Soul of Vengeance (Oath of Vengeance)</name>
         <text>Starting at 15th level, the authority with which you speak your Vow of Enmity gives you greater power over your foe. When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range.
 
-Source:	Player's Handbook (2014) p. 87</text>
+Source:	Player's Handbook (2014) p. 88</text>
       </feature>
     </autolevel>
     <autolevel level="20">
@@ -771,7 +785,7 @@ Source:	Player's Handbook (2014) p. 87</text>
 
 Once you use this feature, you can't use it again until you finish a long rest.
 
-Source:	Player's Handbook (2014) p. 87</text>
+Source:	Player's Handbook (2014) p. 88</text>
       </feature>
       <counter>
         <name>Avenging Angel</name>
