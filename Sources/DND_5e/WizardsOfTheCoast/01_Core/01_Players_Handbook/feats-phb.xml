@@ -194,10 +194,12 @@ Source:	Player's Handbook (2014) p. 167</text>
 	• As an action, you can spend one use of a healer's kit to tend to a creature and restore 1d6 + 4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest.
 
 Source:	Player's Handbook (2014) p. 167</text>
+    <roll description="Heal">1d6+4</roll>
   </feat>
   <feat>
     <name>Heavily Armored</name>
     <prerequisite>Proficiency with medium armor</prerequisite>
+    <armor>Heavy Armor</armor>
     <text>You have trained to master the use of heavy armor, gaining the following benefits:
 
 	• Increase your Strength score by 1, to a maximum of 20.
@@ -225,6 +227,7 @@ Source:	Player's Handbook (2014) p. 167</text>
     <text>You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can't gain temporary hit points from this feat again until it has finished a short or long rest.
 
 Source:	Player's Handbook (2014) p. 167</text>
+    <roll description="Temporary Hit Points">%7+%6</roll>
   </feat>
   <feat>
     <name>Keen Mind</name>
@@ -243,6 +246,7 @@ Source:	Player's Handbook (2014) p. 167</text>
   </feat>
   <feat>
     <name>Lightly Armored (Dexterity)</name>
+    <armor>Light Armor</armor>
     <text>You have trained to master the use of light armor, gaining the following benefits:
 
 	• Increase your Strength or Dexterity score by 1, to a maximum of 20.
@@ -254,6 +258,7 @@ Source:	Player's Handbook (2014) p. 167</text>
   </feat>
   <feat>
     <name>Lightly Armored (Strength)</name>
+    <armor>Light Armor</armor>
     <text>You have trained to master the use of light armor, gaining the following benefits:
 
 	• Increase your Strength or Dexterity score by 1, to a maximum of 20.
@@ -265,6 +270,7 @@ Source:	Player's Handbook (2014) p. 167</text>
   </feat>
   <feat>
     <name>Linguist</name>
+    <languages>Any 3 languages</languages>
     <text>You have studied languages and codes, gaining the following benefits:
 
 	• Increase your Intelligence score by 1, to a maximum of 20.
@@ -354,6 +360,9 @@ Source:	Player's Handbook (2014) p. 168</text>
 	• You gain one superiority die, which is a d6 (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest.
 
 Source:	Player's Handbook (2014) p. 168</text>
+    <roll description="Strength Maneuver Saving Throw">8+%8+%1</roll>
+    <roll description="Dex Maneuver Saving Throw">8+%8+%2</roll>
+    <roll description="Superiority Die">1d6</roll>
   </feat>
   <feat>
     <name>Medium Armor Master</name>
@@ -382,6 +391,7 @@ Source:	Player's Handbook (2014) p. 168</text>
   <feat>
     <name>Moderately Armored (Dexterity)</name>
     <prerequisite>Proficiency with light armor</prerequisite>
+    <armor>Medium Armor, Shields</armor>
     <text>You have trained to master the use of medium armor and shields, gaining the following benefits:
 
 	• Increase your Strength or Dexterity score by 1, to a maximum of 20.
@@ -394,6 +404,7 @@ Source:	Player's Handbook (2014) p. 168</text>
   <feat>
     <name>Moderately Armored (Strength)</name>
     <prerequisite>Proficiency with light armor</prerequisite>
+    <armor>Medium Armor, Shields</armor>
     <text>You have trained to master the use of medium armor and shields, gaining the following benefits:
 
 	• Increase your Strength or Dexterity score by 1, to a maximum of 20.
@@ -427,7 +438,7 @@ Source:	Player's Handbook (2014) p. 168</text>
 
 Source:	Player's Handbook (2014) p. 168</text>
     <modifier category="ability score">intelligence +1</modifier>
-    <modifier category="bonus">Passive Wisdom +5</modifier>
+    <modifier category="bonus">passive wisdom +5</modifier>
   </feat>
   <feat>
     <name>Observant (Wisdom)</name>
@@ -441,7 +452,7 @@ Source:	Player's Handbook (2014) p. 168</text>
 
 Source:	Player's Handbook (2014) p. 168</text>
     <modifier category="ability score">wisdom +1</modifier>
-    <modifier category="bonus">Passive Wisdom +5</modifier>
+    <modifier category="bonus">passive wisdom +5</modifier>
   </feat>
   <feat>
     <name>Polearm Master</name>
@@ -455,6 +466,7 @@ Source:	Player's Handbook (2014) p. 168</text>
   </feat>
   <feat>
     <name>Resilient (Charisma)</name>
+    <proficiency>Charisma Saving Throws</proficiency>
     <text>Choose one ability score. You gain the following benefits:
 
 	• Increase the chosen ability score by 1, to a maximum of 20.
@@ -466,6 +478,7 @@ Source:	Player's Handbook (2014) p. 168</text>
   </feat>
   <feat>
     <name>Resilient (Constitution)</name>
+    <proficiency>Constitution Saving Throws</proficiency>
     <text>Choose one ability score. You gain the following benefits:
 
 	• Increase the chosen ability score by 1, to a maximum of 20.
@@ -477,6 +490,7 @@ Source:	Player's Handbook (2014) p. 168</text>
   </feat>
   <feat>
     <name>Resilient (Dexterity)</name>
+    <proficiency>Dexterity Saving Throws</proficiency>
     <text>Choose one ability score. You gain the following benefits:
 
 	• Increase the chosen ability score by 1, to a maximum of 20.
@@ -488,6 +502,7 @@ Source:	Player's Handbook (2014) p. 168</text>
   </feat>
   <feat>
     <name>Resilient (Intelligence)</name>
+    <proficiency>Intelligence Saving Throws</proficiency>
     <text>Choose one ability score. You gain the following benefits:
 
 	• Increase the chosen ability score by 1, to a maximum of 20.
@@ -499,6 +514,7 @@ Source:	Player's Handbook (2014) p. 168</text>
   </feat>
   <feat>
     <name>Resilient (Strength)</name>
+    <proficiency>Strength Saving Throws</proficiency>
     <text>Choose one ability score. You gain the following benefits:
 
 	• Increase the chosen ability score by 1, to a maximum of 20.
@@ -510,6 +526,7 @@ Source:	Player's Handbook (2014) p. 168</text>
   </feat>
   <feat>
     <name>Resilient (Wisdom)</name>
+    <proficiency>Wisdom Saving Throws</proficiency>
     <text>Choose one ability score. You gain the following benefits:
 
 	• Increase the chosen ability score by 1, to a maximum of 20.
@@ -649,6 +666,7 @@ Source:	Player's Handbook (2014) p. 170</text>
   </feat>
   <feat>
     <name>Tavern Brawler (Constitution)</name>
+    <weapons>Improvised Weapons</weapons>
     <text>Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:
 
 	• Increase your Strength or Constitution score by 1, to a maximum of 20.
@@ -661,9 +679,11 @@ Source:	Player's Handbook (2014) p. 170</text>
 
 Source:	Player's Handbook (2014) p. 170</text>
     <modifier category="ability score">constitution +1</modifier>
+    <roll description="Unarmed Damage">1d4</roll>
   </feat>
   <feat>
     <name>Tavern Brawler (Strength)</name>
+    <weapons>Improvised Weapons</weapons>
     <text>Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:
 
 	• Increase your Strength or Constitution score by 1, to a maximum of 20.
@@ -676,12 +696,14 @@ Source:	Player's Handbook (2014) p. 170</text>
 
 Source:	Player's Handbook (2014) p. 170</text>
     <modifier category="ability score">strength +1</modifier>
+    <roll description="Unarmed Damage">1d4</roll>
   </feat>
   <feat>
     <name>Tough</name>
     <text>Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.
 
 Source:	Player's Handbook (2014) p. 170</text>
+    <special>Toughness, Toughness</special>
   </feat>
   <feat>
     <name>War Caster</name>
