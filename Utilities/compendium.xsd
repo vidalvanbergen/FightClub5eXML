@@ -12,7 +12,7 @@
 
   <xs:simpleType name="rollFormula">
     <xs:restriction base="xs:string">
-      <xs:pattern value="SPELL|%[0-9]+|(\(?[0-9]*(d[0-9]+)?([+\-xX/][0-9]+)?([+\-xX/](S[Tt][Rr]|D[Ee][Xx]|C[Oo][Nn]|I[Nn][Tt]|W[Ii][Ss]|C[Hh][Aa]|PROF|%[0-9]+|LVL|W|W[Oo]|SPELL))?\)?)+"/>
+      <xs:pattern value="SPELL|%[0-9]+([+\-xX/]%[0-9]+)?|(\(?[0-9]*(d[0-9]+)?([+\-xX/][0-9]+)?([+\-xX/](S[Tt][Rr]|D[Ee][Xx]|C[Oo][Nn]|I[Nn][Tt]|W[Ii][Ss]|C[Hh][Aa]|PROF|%[0-9]+|LVL|W|W[Oo]|SPELL))?\)?)+"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -384,6 +384,11 @@
       <xs:element type="xs:string" name="text" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="abilityAndSkillList" name="proficiency" minOccurs="0"/>
       <xs:element type="modifierType" name="modifier" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="xs:string" name="armor"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="weapons"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="tools"/><!-- Not supported by Fight Club -->
+      <xs:element type="xs:string" name="languages"/><!-- Not supported by Fight Club -->
+      <xs:element type="roll" name="roll" maxOccurs="unbounded" minOccurs="0"/><!-- Not supported by Fight Club -->
     </xs:choice>
   </xs:complexType>
 
@@ -396,7 +401,7 @@
       <xs:element type="xs:string" name="name"/>
       <xs:element type="xs:string" name="text"/>
       <xs:element type="xs:string" name="special" minOccurs="0"/>
-      <xs:element type="modifierType" name="modifier"/>
+      <xs:element type="modifierType" name="modifier" maxOccurs="unbounded" minOccurs="0"/>
       <xs:element type="xs:string" name="proficiency"/>
       <xs:element type="xs:string" name="armor"/><!-- Not supported by Fight Club -->
       <xs:element type="xs:string" name="weapons"/><!-- Not supported by Fight Club -->
