@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+  <class>
+    <name>Fighter</name>
+    <autolevel level="5">
+      <feature optional="YES">
+        <name>Imrpoved Extra Attack (HB)</name>
+        <text>This feature replaces the Extra Attack feature and works with features that interact with Extra Attack.
+	You can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks you can make increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.
+	When you reach 7th level in this class, you build momentum with each swing you take. When you take the Attack action and make an attack roll against a creature, you can give yourself a +1 bonus to all subsequent attack rolls you make against that creature this turn, up to a maximum of +4.
+
+Source:	Ryoko's Guide to the Yokai Realm p. 149 (Indie)</text>
+      </feature>
+    </autolevel>
+    <!-- Martial Archetype: Skeletal Blade (HB) -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Martial Archetype: Skeletal Blade (HB)</name>
+        <text>"I saw one once in battle, a kaleidoscope of blinding white and crimson red. His body shifted on a whim, one moment a shield, then claws, then sprawling, skeletal wings. A one-man onslaught. A living weapon."
+
+Folklore tells of a caste of downtrodden serfs, forbidden to carry weapons, who were gifted the power to wield their own skeletons as lethal instruments of battle by a sympathetic yokai. With carapaces of dense bone and vicious, osseous claws bursting from their flesh, the serfs overthrew their masters, winning freedom and a bloodsoaked notoriety. Today, practitioners of this devastating technique are known as Skeletal Blades. Often finding work as mercenaries, bodyguards, and spies, they charge into battle clad in an ever-adapting armor of gleaming skeletal white.
+
+Source:	Ryoko's Guide to the Yokai Realm p. 178 (Indie)</text>
+      </feature>
+      <feature optional="YES">
+        <name>Malleable Physique (Skeletal Blade (HB))</name>
+        <text>You have the power to manipulate your skeleton, shifting your proportions, height, and appearance. As an action, you can alter your form, becoming up to 1 foot taller or shorter and changing your facial features by altering the shape of your skull.
+	You must remain in a form that has the same basic arrangement of limbs, and you can't change the color of your eyes, hair, or skin. Otherwise, the extent of the transformation is up to you.
+	To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check (DC equals 8 + your Constitution modifier + your proficiency bonus).
+	This transformation persists until you use your action to end it or until you begin a long rest. You can use this feature a number of times equal to your Constitution modifier (minimum of once), regaining all expended uses when you finish a short or long rest.
+
+Source:	Ryoko's Guide to the Yokai Realm p. 178 (Indie)</text>
+        <roll description="Investigation Check DC">8+%3+%8</roll>
+      </feature>
+      <feature optional="YES">
+        <name>Skeletal Form (Skeletal Blade (HB))</name>
+        <text>The control you wield over your own skeleton allows you to harness it as a weapon. As a bonus action, you can extrude your bones through your flesh to form armor, entering a Skeletal Form for 1 minute. You can end this form early as a bonus action, returning to normal. You can use this feature a number of times equal to your Constitution modifier (minimum of once), regaining all expended uses when you finish a long rest.
+	While in your Skeletal Form, you sprout a vicious, jagged weapon through your flesh; this weapon is a simple melee weapon with the Finesse property and the Skewer superior strike option, and it deals 1d8 piercing damage on a hit. It is magical for the purpose of overcoming resistances and immunities. You can't be disarmed of this weapon. You also gain one benefit of your choice from the list below:
+
+	• Your reach increases by 5 feet.
+	• Your walking speed increases by 10 feet.
+	• You gain a climbing speed equal to your walking speed.
+	• You gain a +1 bonus to AC.
+	• You gain temporary hit points equal to your Constitution modifier at the start of each of your turns (minimum of 1).
+
+As a bonus action while in your Skeletal Form, you can change your skeleton again, exchanging your current benefit for a new one.
+	The damage of your bladed weapon increases when you reach certain levels in this class: to 1d10 at 10th level and to 1d12 at 15th level.
+
+	Skewer. In a thrusting strike, you attempt to skewer an enemy with your weapon. Make an attack roll against a creature within your reach. On a hit, the target suffers the attack's normal effects and is also grappled by you. This grapple ends early if you use the weapon to make another attack or you let go of the weapon. When the grapple ends, the creature takes piercing damage equalling a number of d8s equal to your proficiency bonus.
+
+Source:	Ryoko's Guide to the Yokai Realm p. 178 (Indie)</text>
+        <roll description="Piercing Damage" level="3">1d8</roll>
+        <roll description="Piercing Damage" level="10">1d10</roll>
+        <roll description="Piercing Damage" level="15">1d12</roll>
+      </feature>
+      <counter>
+        <name>Malleable Physique</name>
+        <value>1</value>
+        <reset>L</reset>
+        <subclass>Skeletal Blade (HB)</subclass>
+      </counter>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Osseous Prodigy (Skeletal Blade (HB))</name>
+        <text>You have learned to simultaneously maintain multiple boney extrusions. When you enter your Skeletal Form, you can choose one additional benefit, and you can choose one of the following weapon properties and superior strike combinations for your extruded weapon: Impact &amp; Reeling Blow; Light &amp; Hamstring; or Heavy &amp; Shockwave.
+
+	Impact. This weapon deals double damage to objects and structures.
+
+	Reeling Blow. You unleash the full force of your strength and size in a weighty strike. Make an attack roll against a creature within your reach. On a hit, the target suffers the attack's normal effects and takes extra damage equal to your proficiency bonus. In addition, until the end of its next turn, the creature has disadvantage on all attack rolls, and on ability checks and saving throws that use Dexterity or Intelligence, and it can't take reactions. In addition, if this attack causes a creature to make a Constitution saving throw to maintain its concentration, the creature has disadvantage on the saving throw.
+
+	Hamstring. In a vicious attack, you attempt to debilitate an enemy. Make an attack roll against a creature within your reach. On a hit, the target suffers the attack's normal effects and takes extra damage equal to your proficiency bonus. In addition, until the end of its next turn, the creature's AC is reduced by a value equal to its Dexterity modifier (minimum 0), and its speed is reduced by a number of feet equal to 5 times your proficiency bonus (to a minimum of 0 feet).
+
+	Shockwave. You slam your weapon into the ground at your feet with ruinous force, detonating a shockwave of energy. Each creature within 10 feet of you must succeed on a Strength saving throw or take bludgeoning damage equalling a number of d6s equal to your proficiency bonus and be pushed 10 feet directly away from you.
+
+Source:	Ryoko's Guide to the Yokai Realm p. 178 (Indie)</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Skeletal Knight (Skeletal Blade (HB))</name>
+        <text>Your mastery of your skeleton allows you to focus it into more powerful forms. You gain a +1 bonus to attack and damage rolls made with your skeletal blade. This bonus increases to +2 when you reach 18th level.  Furthermore, when you enter your Skeletal Form, you can enhance yourself with one of the following additional benefits:
+
+	• You sprout skeletal wings and gain the ability to magically fly. You gain a flying speed equal to your walking speed, and you can hover.
+
+	• You gain resistance to cold, lightning, necrotic, and poison damage.
+
+	• When you hit with a melee attack, the attack deals an extra 1d8 necrotic damage.
+
+	• When a creature starts its turn grappled by you, it takes 2d12 piercing damage.
+
+Source:	Ryoko's Guide to the Yokai Realm p. 179 (Indie)</text>
+        <roll description="Extra Necrotic Damage">1d8</roll>
+        <roll description="Piercing Damage">2d12</roll>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>One With Nothing (Skeletal Blade (HB))</name>
+        <text>Your skeleton is empowered with regenerative magic. If you are reduced to 0 hit points while in your Skeletal Form, your transformation ends, and you are reduced to 1 hit point instead. 
+	Once you use this feature, you can't do so again until you finish a short or long rest.
+
+Source:	Ryoko's Guide to the Yokai Realm p. 179 (Indie)</text>
+      </feature>
+      <counter>
+        <name>One With Nothing</name>
+        <value>1</value>
+        <reset>S</reset>
+        <subclass>Skeletal Blade (HB)</subclass>
+      </counter>
+    </autolevel>
+    <autolevel level="18">
+      <feature optional="YES">
+        <name>Living Weapon (Skeletal Blade (HB))</name>
+        <text>When you enter your Skeletal Form, you gain two additional benefits for the duration of your transformation, which can be chosen from either the Skeletal Form or Skeletal Knight features.
+
+Source:	Ryoko's Guide to the Yokai Realm p. 179 (Indie)</text>
+      </feature>
+    </autolevel>
+  </class>
+</compendium>
