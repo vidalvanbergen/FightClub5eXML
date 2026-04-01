@@ -1,7 +1,7 @@
 ## CHANGE LOG
 
-### 2026-##-##
-* Added the 5.5e adventure `Stranger Things: Welcome to the Hellfire Club`, shared by @[DM-Velek](https://www.reddit.com/r/FightClub5e/comments/1ryp67m/comment/objripg/?context=1&target_user=ViannaEuphoria).
+### 2026-04-01
+* Added the 5.5e adventure `Stranger Things: Welcome to the Hellfire Club`, shared by @[DM-Velek](https://www.reddit.com/r/FightClub5e/comments/1ryp67m/comment/objripg).
 * Added `Ryoko's Guide to the Yokai Realms` 5e content, shared by @SillyK.
 * Added `Exploring Eberron` 5e content, shared by @ViannaEuphoria.
 * Added `Dark Arts Player's Companion v3.0` 5e homebrew content, shared by @ViannaEuphoria.
