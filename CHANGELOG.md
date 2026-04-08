@@ -2,6 +2,7 @@
 
 ### 2026-##-##
 * Added Ben Huffman's `The Pugilist Class` 5.5e edition, shared by @ViannaEuphoria.
+* Added additional `Witch (Valda)` Subclasses from the `Complete Witch`, shared by @ViannaEuphoria.
 
 ### 2026-04-01
 * Added the 5.5e adventure `Stranger Things: Welcome to the Hellfire Club`, shared by @[DM-Velek](https://www.reddit.com/r/FightClub5e/comments/1ryp67m/comment/objripg).
