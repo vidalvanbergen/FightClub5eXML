@@ -86,7 +86,7 @@ compile_file() {
   fi
 
   # If filename contains 5.5e but not 5e, create [UNTAGGED] version without [5.5e]
-  if [[ "$REMOVE_VERSION_TAG" = false && "$base_name" == *_5.5e* && "$base_name" != *_5e* ]]; then
+  if [[ "$REMOVE_VERSION_TAG" = false && "$base_name" == *_5.5e* ]]; then
     local untagged_name="${base_name%.xml}_[UNTAGGED].xml"
     local untagged_file="Compendiums/$untagged_name"
 
