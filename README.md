@@ -62,20 +62,20 @@ The build-collection files are provided for your convenience to compile all the 
 ```bash
 Usage: 
 
-./build-collections.sh [-2024] [-h/-?] [collection_names...]
-  -2024   Remove '[5.5e]' from the generated compendiums.
+./build-collections.sh [-5.5e] [-h/-?] [collection_names...]
+  -5.5e   Remove '[5.5e]' from the generated compendiums.
   collection_names  Optional list of specific collections to compile.
   -h/-?   Display this help message.
 
 If no collection names are provided, all XML files in the 'Collections' directory will be processed.
 Examples:
   ./build-collections.sh                Compile all collections.
-  ./build-collections.sh -2024          Compile all collections and remove '[5.5e]'.
+  ./build-collections.sh -5.5e          Compile all collections and remove '[5.5e]'.
   ./build-collections.sh collection1.xml  Compile only 'collection1.xml'.
-  ./build-collections.sh -2024 collection1.xml collection2.xml  Compile 'collection1.xml' and 'collection2.xml' and remove '[5.5e]'.
+  ./build-collections.sh -5.5e collection1.xml collection2.xml  Compile 'collection1.xml' and 'collection2.xml' and remove '[5.5e]'.
   ```
 
-For Windows, use `WIN-build-collections.bat  [-2024] [-h/-?] [collection_names...]`.
+For Windows, use `WIN-build-collections.bat  [-5.5e] [-h/-?] [collection_names...]`.
 
 ## Custom Content
 
@@ -108,7 +108,7 @@ If you'd like to contribute, feel free to fork the repository and submit pull re
 
 `@recco` for adding various homebrew sources to the compendium.
 
-`@nikjft` for converting legacy content to the 2024 format and adding to the utilities.
+`@nikjft` for converting legacy content to the 5.5e format and adding to the utilities.
 
 [`@Iggwilv`](https://archive.org/details/the-wild-beyond-the-witchlight) for adding several adventures.
 
