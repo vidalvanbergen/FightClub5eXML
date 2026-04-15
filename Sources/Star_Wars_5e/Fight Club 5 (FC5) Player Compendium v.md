@@ -1,7 +1,7 @@
 # Fight Club 5 (FC5) Player Compendium v0.9.1
 by @Stuartcmackey
 
-First, I am very thankful to everyone in the subreddit and discord for putting together this amazing system, especailly u/galiphile. Even though it is based on Standard 5e, it truly is a game all it's own.
+First, I am very thankful to everyone in the subreddit and discord for putting together this amazing system, especially u/galiphile. Even though it is based on Standard 5e, it truly is a game all it's own.
 
 With that preface, adapting the system to work in the popular Fight Club 5 app has been daunting, but a labor of love. u/toddmoonbounce was very helpful with some Excel techcasting to create much of the XML in a much more automatic process than my manual copy-and-paste method.
 
