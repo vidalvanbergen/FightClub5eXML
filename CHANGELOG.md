@@ -75,7 +75,7 @@
 * Added Unearthed Arcana 2025 `Apocalyptic Subclasses (UA24)` content, shared by @ViannaEuphoria.
 * Added `SemiOfficial` and `PartneredOfficial` to 2024 `legacy` content, shared by @ViannaEuphoria.
 * Formatted `Legacy [2024]` subclasses to match the modern format.
-* Addded homebrew dinosaurian race `Brutan` by @rattatooey.
+* Added homebrew dinosaurian race `Brutan` by @rattatooey.
 * Updated Monsters of the Dungeon bestiary by @Reccho.
 * Added schools to spells which were missing.
 * Tweaked starting gold message to clarify that it replaces both class and background gear.

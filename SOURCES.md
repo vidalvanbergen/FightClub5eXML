@@ -41,7 +41,7 @@ The content for elements will consist of text, numbers, dice rolls, formulas, or
 Here are the content we'll be using :
 
   - **ABC**. Any text may be inputted. There are a few characters that can't be used. &, &lt;, &gt;. These characters must be replaced with ```&amp;```, ```&lt;```, and ```&gt;```, respectively
-  - **###**. Any number may be inputted. Only unformated numbers are acceptable, meaning remove any commas and other characters, except for dots for decimal point numbers.
+  - **###**. Any number may be inputted. Only unformatted numbers are acceptable, meaning remove any commas and other characters, except for dots for decimal point numbers.
   - **D20**. A dice roll formula. For example, "1d10+5", "5d6", or "3d3+1d7-2". Use 'd' to denote a die. + and - operators are acceptable. Remove any white spaces.
   - The | denotes that the element can take a specific value from the given list. Acceptable values are separated the | character.
   - Some elements take multiple values. Acceptable values are separated by commas.
@@ -311,7 +311,7 @@ Monsters, beast shapes, companions, familiars, etc. are defined using an element
       - **#/Day** = # times per day
       - **D#** = Roll a D6, if the number is # or higher the action is available.
     - **text** (ABC) Item description. *Multiple text elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
-    - **attack** (ABC|[+/-]##|D20) *Attacks consist of three parts, separated by the '|' character. The first part is the attack label, which takes a text string. The s second is a number representing the attack roll bonus. The last is the damage roll. All of these parts are optional and can be left empty.*
+    - **attack** (ABC|[+/-]##|D20) *Attacks consist of three parts, separated by the '|' character. The first part is the attack label, which takes a text string. The second is a number representing the attack roll bonus. The last is the damage roll. All of these parts are optional and can be left empty.*
   - **spells** (ABC, ABC, ...) Spells prepared or known. *The spells need to be imported first for these to be shown.*
   - **slots** (###, ###, ###) Spell slots available for each increasing level.
   - **description** (ABC) Monster description. *Multiple description elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
