@@ -3,6 +3,7 @@
 ### 2026-##-##
 * Added Ben Huffman's `The Pugilist Class` 5.5e edition, shared by @ViannaEuphoria.
 * Added additional `Witch (Valda)` Subclasses from the `Complete Witch`, shared by @ViannaEuphoria.
+* Added `Villainous Options (UA24)` 5.5e Unearthed Arcana, shared by @ViannaEuphoria.
 * Fixed some XML formatting errors with help from @Garras.
 * Other changes and fixes.
 
