@@ -1,6 +1,7 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Updated Ben Huffman's `Pugilist` 5e class to v4.0, shared by @ViannaEuphoria.
 * Added Marco Giulio Fossati's `Treasures from Oerth` 5.5e homebrew, shared by @B.
 * Added Ben Huffman's `The Pugilist Class` 5.5e edition, shared by @ViannaEuphoria.
 * Added additional `Witch (Valda)` Subclasses from the `Complete Witch`, shared by @ViannaEuphoria.
