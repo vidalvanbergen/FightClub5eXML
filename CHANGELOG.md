@@ -6,6 +6,7 @@
 * Added `Tasha's Hideous Leftovers` 5e content, shared by @ViannaEuphoria.
 * Added Marco Giulio Fossati's `Treasures from Oerth` 5.5e homebrew, shared by @B.
 * Added additional `Necromancer (Valda)` Subclasses from the `Complete Necromancer`, shared by @ViannaEuphoria.
+* Added additional `Warmage (Valda)` Subclasses from the `Complete Warmage`, shared by @ViannaEuphoria.
 * Added additional `Witch (Valda)` Subclasses from the `Complete Witch`, shared by @ViannaEuphoria.
 * Added `Villainous Options (UA24)` 5.5e Unearthed Arcana, shared by @ViannaEuphoria.
 * Added `Villainous Options 2 (UA24)` 5.5e Unearthed Arcana, shared by @ViannaEuphoria.
