@@ -62,20 +62,24 @@ The build-collection files are provided for your convenience to compile all the 
 ```bash
 Usage: 
 
-./build-collections.sh [-5.5e] [-h/-?] [collection_names...]
-  -5.5e   Remove '[5.5e]' from the generated compendiums.
+./build-collections.sh [-5.5e] [--android] [--validate] [-h/-?] [collection_names...]
+  -5.5e     Remove '[5.5e]' from the generated compendiums.
+  --android Put item detail (rarity and attunement requirements) into the description text of items.
+            (Necessary for Android versions of Fight Club 5e which otherwise omit item details from the UI).
+  --validate Validate output XML against the schema.
   collection_names  Optional list of specific collections to compile.
-  -h/-?   Display this help message.
+  -h/-?     Display this help message.
 
 If no collection names are provided, all XML files in the 'Collections' directory will be processed.
 Examples:
-  ./build-collections.sh                Compile all collections.
-  ./build-collections.sh -5.5e          Compile all collections and remove '[5.5e]'.
+  ./build-collections.sh                  Compile all collections.
+  ./build-collections.sh -5.5e            Compile all collections and remove '[5.5e]'.
+  ./build-collections.sh --android        Compile all collections with Android compatibility.
+  ./build-collections.sh -5.5e --android  Compile all collections, remove '[5.5e]' and enable Android compatibility.
   ./build-collections.sh collection1.xml  Compile only 'collection1.xml'.
-  ./build-collections.sh -5.5e collection1.xml collection2.xml  Compile 'collection1.xml' and 'collection2.xml' and remove '[5.5e]'.
-  ```
+```
 
-For Windows, use `WIN-build-collections.bat  [-5.5e] [-h/-?] [collection_names...]`.
+For Windows, use `WIN-build-collections.bat [-2024] [-android] [-h/-?] path-to-collections\collection-file.xml path-to-utilities\merge.xslt [optional path-to-compendium-destination-directory]`.
 
 ## Custom Content
 
