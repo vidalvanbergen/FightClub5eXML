@@ -1,36 +1,36 @@
 #!/bin/bash
 
-# Remove '[2024]' from the compendium file
-remove_2024() {
+# Remove '[5.5e]' from the compendium file
+remove_version_tag() {
   local infile="$1"
   local outfile="$2"
-
-  echo "> Removing [2024] tags from: '$(basename "$infile")'"
 
   if [ -z "$outfile" ]; then
     # In-place edit
     if sed --version >/dev/null 2>&1; then
-      sed -i 's/ \[2024\]//g' "$infile" # GNU sed (Linux)
+      sed -i 's/ \[5.5e\]//g' "$infile" # GNU sed (Linux)
     else
-      sed -i '' 's/ \[2024\]//g' "$infile" # BSD/macOS sed
+      sed -i '' 's/ \[5.5e\]//g' "$infile" # BSD/macOS sed
     fi
   else
     # In-memory stream to output
     if sed --version >/dev/null 2>&1; then
-      sed 's/ \[2024\]//g' "$infile" > "$outfile" # GNU sed (Linux)
+      sed 's/ \[5.5e\]//g' "$infile" > "$outfile" # GNU sed (Linux)
     else
-      sed -e 's/ \[2024\]//g' "$infile" > "$outfile" # BSD/macOS sed
+      sed -e 's/ \[5.5e\]//g' "$infile" > "$outfile" # BSD/macOS sed
     fi
   fi
+
+  echo "> Created: '$(basename "$outfile")'" >&2
 }
 
 display_help() {
   cat <<EOF
-Usage: $0 [-2024] [--validate] [-h/-?] [collection_names...]
+Usage: $0 [-5.5e] [--validate] [-h/-?/--help] [collection_names...]
 
-  -2024           Remove '[2024]' from the generated compendiums.
-  --validate      Validate output XML against the schema (disabled by default).
-  -h, -?          Display this help message.
+  -5.5e             Remove '[5.5e]' from the generated compendiums.
+  --validate        Validate output XML against the schema (disabled by default).
+  -h, -?, --help    Display this help message.
   collection_names  Optional list of specific collections to compile.
 
 If no collection names are provided, all XML files in the 'Collections' directory will be processed.
@@ -38,14 +38,14 @@ If no collection names are provided, all XML files in the 'Collections' director
 Examples:
   $0
       Compile all collections.
-  $0 -2024
-      Compile all collections and remove '[2024]'.
+  $0 -5.5e
+      Compile all collections and remove '[5.5e]'.
   $0 --validate
       Compile all collections and validate them.
   $0 collection1.xml
       Compile only 'collection1.xml'.
-  $0 -2024 collection1.xml collection2.xml
-      Compile specified collections and remove '[2024]'.
+  $0 -5.5e collection1.xml collection2.xml
+      Compile specified collections and remove '[5.5e]'.
 EOF
   exit 0
 }
@@ -65,14 +65,16 @@ compile_file() {
   base_name="$(basename "$input_file")"
   local output_file="Compendiums/$base_name"
 
-  echo "> Compiling: '$base_name'"
+  # echo "> Compiling: '$base_name'"
   if ! xsltproc --xinclude -o "$output_file" Utilities/merge.xslt "$input_file"; then
     echo "❌ Error: Failed to compile '$input_file'" >&2
     return 1
+  else
+    echo "> Created: '$base_name'" >&2
   fi
 
-  if [ "$REMOVE_2024" = true ]; then
-    remove_2024 "$output_file"
+  if [ "$REMOVE_VERSION_TAG" = true ]; then
+    remove_version_tag "$output_file"
   fi
 
   if [ "$VALIDATE" = true ]; then
@@ -83,16 +85,16 @@ compile_file() {
     fi
   fi
 
-  # If filename contains 2024 but not 2014, create [UNTAGGED] version without [2024]
-  if [[ "$base_name" == *2024* && "$base_name" != *2014* ]]; then
+  # If filename contains 5.5e but not 5e, create [UNTAGGED] version without [5.5e]
+  if [[ "$REMOVE_VERSION_TAG" = false && "$base_name" == *_5.5e* ]]; then
     local untagged_name="${base_name%.xml}_[UNTAGGED].xml"
     local untagged_file="Compendiums/$untagged_name"
 
-    echo "> Creating untagged version: '$untagged_name'"
-    remove_2024 "$output_file" "$untagged_file"
+    # echo " > Creating untagged version: '$untagged_name'"
+    remove_version_tag "$output_file" "$untagged_file"
 
     if [ "$VALIDATE" = true ]; then
-      echo "> Validating: '$untagged_name'"
+      echo " > Validating: '$untagged_name'"
       if ! xmllint --noout --schema Utilities/compendium.xsd "$untagged_file"; then
         echo "❌ Validation failed for '$untagged_file'" >&2
         return 1
@@ -102,7 +104,7 @@ compile_file() {
 }
 
 # Initialize flags
-REMOVE_2024=false
+REMOVE_VERSION_TAG=false
 VALIDATE=false
 
 check_dependencies
@@ -113,11 +115,11 @@ mkdir -p Compendiums
 ARGS=()
 while [ $# -gt 0 ]; do
   case "$1" in
-    -h|-?)
+    -h|-?|--help)
       display_help
       ;;
-    -2024)
-      REMOVE_2024=true
+    -5.5e)
+      REMOVE_VERSION_TAG=true
       shift
       ;;
     --validate)
@@ -160,6 +162,8 @@ fi
 # Detect max number of CPUs for parallel jobs (fallback if unavailable)
 MAX_JOBS=$(nproc 2>/dev/null || sysctl -n hw.ncpu)
 
+echo "Starting compilation using $MAX_JOBS cores."
+
 # Function to control parallel jobs
 wait_for_jobs() {
   while [ "$(jobs -rp | wc -l)" -ge "$MAX_JOBS" ]; do
@@ -175,4 +179,4 @@ done
 
 wait # Wait for all background jobs to finish
 
-echo "> Compilation completed!"
+echo "Compilation completed!"

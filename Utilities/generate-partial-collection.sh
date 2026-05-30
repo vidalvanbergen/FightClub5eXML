@@ -12,7 +12,7 @@ Description:
 Arguments:
   <base_directory>   Required. Directory containing source-*.xml files.
   [output_file]      Optional. Output XML file path.
-                     Default: <base_directory>/collection-<basename>.xml
+                     Default: collection-base_directory_name.xml
 
 Options:
   -h, --help         Show this help message and exit.

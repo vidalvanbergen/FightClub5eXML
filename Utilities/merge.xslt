@@ -5,7 +5,8 @@
   xmlns:str="http://exslt.org/strings"
   extension-element-prefixes="exsl str">
 
-  <xsl:output method="xml" indent="yes" />
+  <xsl:output method="xml" indent="no" />
+  <xsl:strip-space elements="*" />
 
 
   <!-- Merge the compendiums together -->

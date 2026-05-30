@@ -41,7 +41,7 @@ The content for elements will consist of text, numbers, dice rolls, formulas, or
 Here are the content we'll be using :
 
   - **ABC**. Any text may be inputted. There are a few characters that can't be used. &, &lt;, &gt;. These characters must be replaced with ```&amp;```, ```&lt;```, and ```&gt;```, respectively
-  - **###**. Any number may be inputted. Only unformated numbers are acceptable, meaning remove any commas and other characters, except for dots for decimal point numbers.
+  - **###**. Any number may be inputted. Only unformatted numbers are acceptable, meaning remove any commas and other characters, except for dots for decimal point numbers.
   - **D20**. A dice roll formula. For example, "1d10+5", "5d6", or "3d3+1d7-2". Use 'd' to denote a die. + and - operators are acceptable. Remove any white spaces.
   - The | denotes that the element can take a specific value from the given list. Acceptable values are separated the | character.
   - Some elements take multiple values. Acceptable values are separated by commas.
@@ -129,8 +129,8 @@ Roll modifiers:
   <roll>xdx+%8</roll> <!-- add PROF -->
   <roll>xdx+%9</roll> <!-- add current HP -->
   <roll>xdx+%10</roll> <!-- add LVL 1/2 -->
-  <roll>xdx+1o</roll> <!-- add 1wo -->
-  <roll>xdx+1w</roll> <!-- add 1w -->
+  <roll>xdx+1o</roll> <!-- add 1 x weapon offhand damage -->
+  <roll>xdx+1w</roll> <!-- add 1 x weapon mainhand damage -->
 ```
 
 For the Github repository, if you're adding a new class to a spell or want to add a new spell list, you can create a new XML file with spell names, and the class or classes you would like to add, as shown in the example below:
@@ -311,7 +311,7 @@ Monsters, beast shapes, companions, familiars, etc. are defined using an element
       - **#/Day** = # times per day
       - **D#** = Roll a D6, if the number is # or higher the action is available.
     - **text** (ABC) Item description. *Multiple text elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
-    - **attack** (ABC|[+/-]##|D20) *Attacks consist of three parts, separated by the '|' character. The first part is the attack label, which takes a text string. The s second is a number representing the attack roll bonus. The last is the damage roll. All of these parts are optional and can be left empty.*
+    - **attack** (ABC|[+/-]##|D20) *Attacks consist of three parts, separated by the '|' character. The first part is the attack label, which takes a text string. The second is a number representing the attack roll bonus. The last is the damage roll. All of these parts are optional and can be left empty.*
   - **spells** (ABC, ABC, ...) Spells prepared or known. *The spells need to be imported first for these to be shown.*
   - **slots** (###, ###, ###) Spell slots available for each increasing level.
   - **description** (ABC) Monster description. *Multiple description elements may be inputted. Each one represents a paragraph. If the auto_indent attribute is set in the compendium element, paragraphs after the first will automatically indent the first line.*
@@ -483,7 +483,7 @@ Race example:
     <text>		Mordenkainen Presents: Monsters of the Multiverse p. 30</text>
   </trait>
   <trait>
-    <name>Ability Score Increases</name>
+    <name>Ability Score Increase</name>
     <text>Increase one ability score by 2 and increase a different score by 1, or increase three different scores by 1.</text>
   </trait>
   <trait>
@@ -948,9 +948,9 @@ Example (assuming your file is inside the `Collections` directory):
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <collection>
-  <doc href="../Sources/PHB2014/WizardsOfTheCoast/01_PlayersHandbook.xml" />
-  <doc href="../Sources/PHB2014/WizardsOfTheCoast/02_DungeonMastersGuide.xml" />
-  <doc href="../Sources/PHB2014/WizardsOfTheCoast/03_MonsterManual.xml" />
+  <doc href="../Sources/DND_5e/WizardsOfTheCoast/01_PlayersHandbook.xml" />
+  <doc href="../Sources/DND_5e/WizardsOfTheCoast/02_DungeonMastersGuide.xml" />
+  <doc href="../Sources/DND_5e/WizardsOfTheCoast/03_MonsterManual.xml" />
 </collection>
 ```
 
@@ -972,9 +972,9 @@ Example:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns:xi="http://www.w3.org/2001/XInclude">
-  <xi:include href="../Sources/PHB2014/WizardsOfTheCoast/collection-wizardsofthecoast.xml" xpointer="xpointer(/collection/doc)" />
-  <xi:include href="../Sources/PHB2014/PartneredContent/collection-partneredcontent.xml" xpointer="xpointer(/collection/doc)" />
-  <xi:include href="../Sources/PHB2014/Homebrew/collection-homebrew.xml" xpointer="xpointer(/collection/doc)" />
+  <xi:include href="../Sources/DND_5e/WizardsOfTheCoast/collection-wizardsofthecoast.xml" xpointer="xpointer(/collection/doc)" />
+  <xi:include href="../Sources/DND_5e/PartneredContent/collection-partneredcontent.xml" xpointer="xpointer(/collection/doc)" />
+  <xi:include href="../Sources/DND_5e/Homebrew/collection-homebrew.xml" xpointer="xpointer(/collection/doc)" />
 </collection>
 ```
 

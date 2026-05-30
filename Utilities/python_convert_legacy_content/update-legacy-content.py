@@ -21,8 +21,8 @@ def normalize_text(text):
 # Paths to directories
 current_dir = os.getcwd()
 master_dirs = [
-    os.path.join(current_dir, "../../Sources/PHB2024/WizardsOfTheCoast/01_Players_Handbook_2024"),
-    os.path.join(current_dir, "../../Sources/PHB2024/WizardsOfTheCoast/02_Dungeon_Masters_Guide_2024"),
+    os.path.join(current_dir, "../../Sources/DND_5.5e/WizardsOfTheCoast/01_Players_Handbook_2024"),
+    os.path.join(current_dir, "../../Sources/DND_5.5e/WizardsOfTheCoast/02_Dungeon_Masters_Guide_2024"),
     os.path.join(current_dir, "../../Sources_2024/WizardsOfTheCoast/03_Monster_Manual_2024")
 ]
 
@@ -46,7 +46,7 @@ for master_dir in master_dirs:
                     for item in list(compendium):
                         name = item.find("name")
                         if name is not None:
-                            normalized_name = normalize_text(name.text.replace(" [2024]", ""))
+                            normalized_name = normalize_text(name.text.replace(" [5.5e]", ""))
                             item_key = (item.tag, normalized_name)
                             master_data[item_key] = item
                             logging.debug(f"Added master item: {item_key}")
@@ -139,9 +139,9 @@ for root, _, files in os.walk(legacy_dir):
                             if text is None:
                                 if item_key in master_data:
                                     logging.info(f"Found spell: {original_name} in master data")
-                                    if " [2024]" not in original_name:
-                                        item.find("name").text = f"{original_name} [2024]"
-                                        logging.info(f"Updated spell name to include [2024]: {item.find('name').text}")
+                                    if " [5.5e]" not in original_name:
+                                        item.find("name").text = f"{original_name} [5.5e]"
+                                        logging.info(f"Updated spell name to include [5.5e]: {item.find('name').text}")
                                         updated = True
                         
                             classes = item.find("classes")
@@ -152,7 +152,7 @@ for root, _, files in os.walk(legacy_dir):
                                     cls_cleaned = cls.strip()
                                     if cls_cleaned not in excluded_casters:
                                         if cls_cleaned in base_classes:
-                                            updated_classes.append(f"{cls_cleaned} [2024]")
+                                            updated_classes.append(f"{cls_cleaned} [5.5e]")
                                         else:
                                             updated
                             updated = True
