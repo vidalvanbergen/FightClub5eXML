@@ -1,5 +1,12 @@
 ## CHANGE LOG
 
+### 2026-##-##
+* Added `Mystic Subclasses` Unearthed Arcana content.
+* Added a `Star Wars 5e` compendium, created by Stuart C. Mackey. (Incomplete at v0.9.1)
+* Added (Third Party) tags to Partnered Official content.
+* Added page numbers to Eberron: Forge of the Artificer content
+* Other changes and fixes.
+
 ### 2025-12-22
 * Added `Subclasses Update` Unearthed Arcana.
 * Added `Griffon's Saddlebag: Griffons of the Multiverse` content, shared by @Cvamped.
