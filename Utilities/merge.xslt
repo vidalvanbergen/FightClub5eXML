@@ -8,6 +8,8 @@
   <xsl:output method="xml" indent="no" />
   <xsl:strip-space elements="*" />
 
+  <xsl:param name="android" select="'false'"/>
+
 
   <!-- Merge the compendiums together -->
   <xsl:template match="collection">
@@ -22,7 +24,7 @@
         <xsl:with-param name="compendium" select="$compendium"/>
       </xsl:call-template>
 
-      <xsl:copy-of select="$compendium/item" />
+      <xsl:apply-templates select="$compendium/item" />
       <xsl:copy-of select="$compendium/race" />
       <xsl:copy-of select="$compendium/feat" />
       <xsl:copy-of select="$compendium/background" />
@@ -114,6 +116,49 @@
         </xsl:otherwise>
       </xsl:choose>
     </xsl:for-each>
+  </xsl:template>
+
+  <!-- Formats items for Android/default, capitalizing and duplicating <detail> into a new <text> element if needed -->
+  <xsl:template match="item">
+    <item>
+      <xsl:choose>
+        <xsl:when test="$android = 'true' and detail">
+          <xsl:choose>
+            <xsl:when test="text">
+              <xsl:for-each select="node()">
+                <xsl:choose>
+                  <xsl:when test="self::text and not(preceding-sibling::text)">
+                    <text>
+                      <xsl:variable name="detailText" select="../detail"/>
+                      <xsl:variable name="firstChar" select="substring($detailText, 1, 1)"/>
+                      <xsl:variable name="rest" select="substring($detailText, 2)"/>
+                      <xsl:value-of select="concat(translate($firstChar, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'), $rest)"/>
+                    </text>
+                    <text></text>
+                    <xsl:copy-of select="."/>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:copy-of select="."/>
+                  </xsl:otherwise>
+                </xsl:choose>
+              </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:copy-of select="node()"/>
+              <text>
+                <xsl:variable name="detailText" select="detail"/>
+                <xsl:variable name="firstChar" select="substring($detailText, 1, 1)"/>
+                <xsl:variable name="rest" select="substring($detailText, 2)"/>
+                <xsl:value-of select="concat(translate($firstChar, 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'), $rest)"/>
+              </text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:copy-of select="node()"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </item>
   </xsl:template>
 
 </xsl:transform>
