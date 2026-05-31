@@ -39,5 +39,6 @@ Starting with the official Wizards of the Coast core books and supplements, file
   - **Legacy_5.5e_WotC** - Includes only the legacy corebooks and official supplements.
   - **Legacy_5e_WotC_SemiOfficial** - Includes the legacy corebooks, official supplements, and SemiOfficial content.
   - **Legacy_5e_WotC_SemiOfficial_Partnered** - Includes the legacy corebooks, official supplements, SemiOfficial, and Partnered Content.
-- **\[UNTAGGED\]** - The same 5.5e Content, but without the addition of the \[5.5e\] tags.
+- **\[UNTAGGED\]** - The same 5.5e content, but without the addition of the \[5.5e\] tags.
   - The untagged files are for stand-alone use, do not use together with 5e compendium since it will override each other.
+- **\[ANDROID\]** - The same content but with the item detail tag's content (rarity and attunement requirements) copied into the description text of items. This is necessary for Android versions of Fight Club 5e which otherwise omit item details from the UI.

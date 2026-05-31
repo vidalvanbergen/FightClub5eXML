@@ -8,6 +8,8 @@
   <xsl:output method="xml" indent="no" />
   <xsl:strip-space elements="*" />
 
+  <xsl:param name="android" select="'false'"/>
+
 
   <!-- Merge the compendiums together -->
   <xsl:template match="collection">
@@ -22,7 +24,7 @@
         <xsl:with-param name="compendium" select="$compendium"/>
       </xsl:call-template>
 
-      <xsl:copy-of select="$compendium/item" />
+      <xsl:apply-templates select="$compendium/item" />
       <xsl:copy-of select="$compendium/race" />
       <xsl:copy-of select="$compendium/feat" />
       <xsl:copy-of select="$compendium/background" />
@@ -114,6 +116,45 @@
         </xsl:otherwise>
       </xsl:choose>
     </xsl:for-each>
+  </xsl:template>
+
+  <!-- Formats items for Android/default, capitalizing and duplicating <detail> into a new <text> element if needed -->
+  <xsl:template match="item">
+    <item>
+      <xsl:choose>
+        <xsl:when test="$android = 'true' and detail">
+          <xsl:variable name="detailText"
+            select="concat(
+              translate(
+                substring(detail,1,1),
+                'abcdefghijklmnopqrstuvwxyz',
+                'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+              ),
+              substring(detail,2)
+            )"/>
+          <xsl:choose>
+            <xsl:when test="text">
+              <xsl:for-each select="node()">
+                <xsl:if test="self::text and not(preceding-sibling::text)">
+                  <text>Detail: <xsl:value-of select="$detailText"/></text>
+                  <text/> <!-- Spacer paragraph -->
+                </xsl:if>
+                <xsl:copy-of select="."/>
+              </xsl:for-each>
+            </xsl:when>
+
+            <xsl:otherwise>
+              <xsl:copy-of select="node()"/>
+              <text>Detail: <xsl:value-of select="$detailText"/></text>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:when>
+
+        <xsl:otherwise>
+          <xsl:copy-of select="node()"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </item>
   </xsl:template>
 
 </xsl:transform>

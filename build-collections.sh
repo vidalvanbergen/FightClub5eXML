@@ -26,9 +26,10 @@ remove_version_tag() {
 
 display_help() {
   cat <<EOF
-Usage: $0 [-5.5e] [--validate] [-h/-?/--help] [collection_names...]
+Usage: $0 [-5.5e] [--android] [--validate] [-h/-?/--help] [collection_names...]
 
   -5.5e             Remove '[5.5e]' from the generated compendiums.
+  --android         Put item detail (rarity and attunement requirements) into description of items.
   --validate        Validate output XML against the schema (disabled by default).
   -h, -?, --help    Display this help message.
   collection_names  Optional list of specific collections to compile.
@@ -63,10 +64,18 @@ compile_file() {
   local input_file="$1"
   local base_name
   base_name="$(basename "$input_file")"
+
+  local xslt_args=("--xinclude")
+  if [ "$ANDROID" = true ]; then
+    xslt_args+=("--stringparam" "android" "true")
+    base_name="[ANDROID]_${base_name%.*}.xml"
+  fi
+
   local output_file="Compendiums/$base_name"
+  xslt_args+=("-o" "$output_file" "Utilities/merge.xslt" "$input_file")
 
   # echo "> Compiling: '$base_name'"
-  if ! xsltproc --xinclude -o "$output_file" Utilities/merge.xslt "$input_file"; then
+  if ! xsltproc "${xslt_args[@]}"; then
     echo "❌ Error: Failed to compile '$input_file'" >&2
     return 1
   else
@@ -106,6 +115,7 @@ compile_file() {
 # Initialize flags
 REMOVE_VERSION_TAG=false
 VALIDATE=false
+ANDROID=false
 
 check_dependencies
 
@@ -120,6 +130,10 @@ while [ $# -gt 0 ]; do
       ;;
     -5.5e)
       REMOVE_VERSION_TAG=true
+      shift
+      ;;
+    --android)
+      ANDROID=true
       shift
       ;;
     --validate)

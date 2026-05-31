@@ -11,6 +11,7 @@
 * Added `Villainous Options (UA24)` 5.5e Unearthed Arcana, shared by @ViannaEuphoria.
 * Added `Villainous Options 2 (UA24)` 5.5e Unearthed Arcana, shared by @ViannaEuphoria.
 * Fixed some XML formatting errors with help from @Garras.
+* Added an optional Android option for better Android support when merging compendiums, shared by @Nikjft.
 * Other changes and fixes.
 
 ### 2026-04-01

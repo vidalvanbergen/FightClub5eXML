@@ -29,6 +29,7 @@ jobs:
           set -euxo pipefail
           chmod +x build-collections.sh
           ./build-collections.sh
+          ./build-collections.sh --android
 
       - name: Upload compiled XML files as artifact
         uses: actions/upload-artifact@v7
