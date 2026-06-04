@@ -1,8 +1,9 @@
 ## CHANGE LOG
 
 ### 2026-##-##
-* Updated Ben Huffman's `Pugilist` 5e class to v4.0, shared by @ViannaEuphoria.
+* Added Avantris' `The Crooked Moon` 5e content, shared by @SillyK.
 * Added Ben Huffman's `The Pugilist Class` 5.5e edition, shared by @ViannaEuphoria.
+* Updated Ben Huffman's `Pugilist` 5e class to v4.0, shared by @ViannaEuphoria.
 * Added `Tasha's Hideous Leftovers` 5e content, shared by @ViannaEuphoria.
 * Added Marco Giulio Fossati's `Treasures from Oerth` 5.5e homebrew, shared by @B.
 * Added additional `Necromancer (Valda)` Subclasses from the `Complete Necromancer`, shared by @ViannaEuphoria.

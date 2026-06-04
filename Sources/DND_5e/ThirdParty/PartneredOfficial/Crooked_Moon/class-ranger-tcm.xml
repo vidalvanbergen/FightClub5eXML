@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+  <class>
+    <name>Ranger</name>
+    <!-- Ranger Archetype: Grim Harbinger (TP) -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Ranger Archetype: Grim Harbinger (TP)</name>
+        <text>Seal Fate as an Omen of Doom
+
+Grim harbingers wander places touched by death, serving as both a watcher of the dead and the herald of doom for those whose lives are running out. At their side is a guardian spirit and omen of death known as a grim, a constant companion that aids in performing their shared, grave duty.
+
+Source:	The Crooked Moon p. 84 (Third Party)</text>
+      </feature>
+      <feature optional="YES">
+        <name>Grim Harbinger Magic (Grim Harbinger (TP))</name>
+        <text>You learn an additional spell when you reach certain levels in this class, as shown in the Grim Harbinger Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
+
+Grim Harbinger Spells:
+Ranger Level | Spell
+3rd | Bane
+5th | Hold Person
+9th | Fear
+13th | Intrusive Despair*
+17th | Dream
+
+Source:	The Crooked Moon p. 84 (Third Party)</text>
+      </feature>
+      <feature optional="YES">
+        <name>Omen of Doom (Grim Harbinger (TP))</name>
+        <text>As a bonus action, you target a creature you can see within 90 feet of you and magically seal its doom for 1 hour. Once per turn when you hit the doomed target with an attack, it takes an extra 1d6 necrotic damage.
+	In addition, a ghostly creature called the Grim (See 'Grim' in the bestiary) appears in an unoccupied space within 30 feet of the target. Grims most often appear as black, spectral hounds, but you can choose an appearance appropriate to its stat block.
+	The grim is friendly to you and your allies, and it obeys your commands. It vanishes if you die, when the doomed creature dies, when it is reduced to 0 hit points, or when you use this feature again.
+	You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a short or long rest. You can also expend a spell slot to restore an expended use (no action required).
+
+	The Grim in Combat. In combat, the grim acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action unless you take a bonus action to command it to take an action in its stat block or some other action. You can also command it as part of the bonus action you take to use Omen of Doom, or you can sacrifice one of your attacks when you take the Attack action to command the grim to take the Ominous Rend action. If you are incapacitated, the grim acts on its own and is not limited to the Dodge action.
+
+Source:	The Crooked Moon p. 85 (Third Party)</text>
+        <roll description="Extra Necrotic Damage">1d6</roll>
+      </feature>
+      <counter>
+        <name>Omen of Doom</name>
+        <value>%5</value>
+        <reset>S</reset>
+        <subclass>Grim Harbinger (TP)</subclass>
+      </counter>
+    </autolevel>
+    <autolevel level="7">
+      <feature optional="YES">
+        <name>Harbinger of Doom (Grim Harbinger (TP))</name>
+        <text>Your control over doom grows stronger, granting the following benefits.
+
+	Graveyard Hunter. The Grim's Ominous Rend action deals an extra 1d6 necrotic damage on a hit.
+
+	Mortal Reminder. When you deal damage to a creature doomed by your Omen of Doom, you can change the damage type to necrotic.
+
+	Mounting Dread. Necrotic damage dealt by you or the grim ignores resistance.
+
+Source:	The Crooked Moon p. 85 (Third Party)</text>
+        <roll description="Extra Necrotic Damage">1d6</roll>
+      </feature>
+    </autolevel>
+    <autolevel level="11">
+      <feature optional="YES">
+        <name>Grave Bond (Grim Harbinger (TP))</name>
+        <text>You draw deeper strength from the grave. You gain the following benefits.
+
+	Ghastly Hound. The grim gains resistance to bludgeoning, piercing, and slashing damage.
+
+	Grave Fortitude. You gain resistance to necrotic damage.
+
+	Inescapable Fate. When the target of your Omen of Doom succeeds on a saving throw, you can use your reaction to force it to reroll the save with disadvantage and use the new roll. Once you cause a save to fail with this benefit, you can't use it again until the current Omen of Doom ends.
+
+Source:	The Crooked Moon p. 85 (Third Party)</text>
+      </feature>
+    </autolevel>
+    <autolevel level="15">
+      <feature optional="YES">
+        <name>Sealed Fate (Grim Harbinger (TP))</name>
+        <text>The strength of your Omen of Doom reaches its peak, granting the following benefits while it is active.
+
+	Jaws of Doom. The Grim's Ominous Rend action deals an extra 1d6 necrotic damage (for a total of 2d6 extra damage).
+
+	Marked for Death. When you use Omen of Doom, you can force the target to make a Charisma saving throw against your spell save DC. On a failed save, until the current Omen of Doom ends, the target has vulnerability to damage dealt by the grim and to the extra damage you deal with Omen of Doom. Once you use this benefit, you can't use it again until you finish a long rest. You can also restore your use of it by expending a spell slot of 4th level or higher (no action required).
+
+Source:	The Crooked Moon p. 85 (Third Party)</text>
+        <roll description="Necrotic Damage">1d6</roll>
+        <roll description="Extra Damage">2d6</roll>
+      </feature>
+    </autolevel>
+  </class>
+  <spell>
+    <name>Bane</name>
+    <classes>Ranger (Grim Harbinger (TP))</classes>
+  </spell>
+  <spell>
+    <name>Hold Person</name>
+    <classes>Ranger (Grim Harbinger (TP))</classes>
+  </spell>
+  <spell>
+    <name>Fear</name>
+    <classes>Ranger (Grim Harbinger (TP))</classes>
+  </spell>
+  <spell>
+    <name>Intrusive Despair (TP)</name>
+    <classes>Ranger (Grim Harbinger (TP))</classes>
+  </spell>
+  <spell>
+    <name>Dream</name>
+    <classes>Ranger (Grim Harbinger (TP))</classes>
+  </spell>
+  <monster>
+    <name>Grim</name>
+    <sortname>Grim</sortname>
+    <ancestry>Grim</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>Neutral</alignment>
+    <ac>13</ac>
+    <hp>5</hp>
+    <speed>40 ft.</speed>
+    <str>16</str>
+    <dex>16</dex>
+    <con>14</con>
+    <int>14</int>
+    <wis>10</wis>
+    <cha>10</cha>
+    <passive>10</passive>
+    <languages>understands the langauges you know</languages>
+    <cr/>
+    <vulnerable/>
+    <resist/>
+    <immune>necrotic</immune>
+    <conditionImmune>frightened, grappled, petrified, poisoned, prone, restrained</conditionImmune>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>equals your proficiency bonus</text>
+    </trait>
+    <trait>
+      <name>Armor Class</name>
+      <text>13 plus your Wisdom modifier.</text>
+    </trait>
+    <trait>
+      <name>Hit Points</name>
+      <text>5 plus five times your ranger level (the grim has a number of Hit Dice [d8s] equal to your ranger level)</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>The grim can move through other creatures and objects as if they were difficult terrain. The grim takes 1d10 force damage if it ends its turn inside an object.</text>
+      <attack>Force Damage||1d10</attack>
+    </trait>
+    <trait>
+      <name>Shared Fate</name>
+      <text>Add your proficiency bonus to any ability check or saving throw the grim makes.</text>
+    </trait>
+    <action>
+      <name>Ominous Rend</name>
+      <text>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d6 + 3 plus your Wisdom modifier necrotic damage, and if the target is a creature, it is frightened until the start of your next turn.</text>
+      <attack>Necrotic Damage||1d6+3</attack>
+    </action>
+    <reaction>
+      <name>Baleful Howl</name>
+      <text>When a creature moves out of the grim's reach, the target must succeed on a Wisdom saving throw against your spell save DC or its speed is 0 until the end of the turn.</text>
+    </reaction>
+    <description>Source:	The Crooked Moon p. 85 (Third Party)</description>
+    <environment/>
+  </monster>
+</compendium>
