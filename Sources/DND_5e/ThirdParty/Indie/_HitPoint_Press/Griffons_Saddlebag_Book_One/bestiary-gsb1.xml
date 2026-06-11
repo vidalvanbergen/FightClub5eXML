@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+  <monster>
+    <name>Glacier Bulette</name>
+    <sortname>Bulette, Glacier</sortname>
+    <ancestry>Bulette</ancestry>
+    <size>L</size>
+    <type>monstrosity</type>
+    <alignment>unaligned</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>92 (8d10+48)</hp>
+    <speed>40 ft., burrow 40 ft.</speed>
+    <str>19</str>
+    <dex>12</dex>
+    <con>22</con>
+    <int>2</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <skill>Perception +6</skill>
+    <passive>16</passive>
+    <languages/>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist>cold</resist>
+    <immune>fire</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft., tremorsense 60 ft.</senses>
+    <trait>
+      <name>Heated Body</name>
+      <text>A creature that touches the bulette or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage.</text>
+      <attack>Fire Damage||1d10</attack>
+    </trait>
+    <trait>
+      <name>Ice Walk</name>
+      <text>The bulette can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement.</text>
+    </trait>
+    <trait>
+      <name>Tunneler</name>
+      <text>The bulette can burrow through solid ice at its full burrow speed and leaves a smooth, slick, 10-foot-diameter tunnel in its wake.</text>
+    </trait>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 30 (4d12 + 4) piercing damage plus 7 (2d6) fire damage.</text>
+      <attack>Bite|+7|(4d12+4)+(2d6)</attack>
+      <attack>Piercing Damage|+7|4d12+4</attack>
+      <attack>Fire Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Steam Eruption (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>If the bulette starts its turn burrowed in solid ice at least 15 feet deep, it can then use its action to move up to its burrow speed to the surface, then erupt from the ice in an explosion of ice shards and steam, potentially in a space that contains one or more other creatures. Each of those creatures, as well as any other creatures within 10 feet of the bulette when it emerges, must make a DC 16 Dexterity saving throw. Any creature in the bulette's space when it emerges is pushed to the nearest unoccupied space and makes this saving throw with disadvantage.
+	A creature that fails the saving throw takes 11 (2d6 + 4) piercing damage plus 10 (3d6) fire damage and is knocked prone. A creature that succeeds on its save takes half as much damage and is not knocked prone.
+	As part of this same action, the bulette also jumps from the ice up to 10 feet in the air, landing in an unoccupied space of its choice within 15 feet of where it emerged.</text>
+      <attack>Steam Eruption||(2d6+4)+(3d6)</attack>
+      <attack>Piercing Damage||2d6+4</attack>
+      <attack>Fire Damage||3d6</attack>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 175 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Ice Gargoyle</name>
+    <sortname>Gargoyle, Ice</sortname>
+    <ancestry>Gargoyle</ancestry>
+    <size>M</size>
+    <type>elemental</type>
+    <alignment>chaotic evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>45 (7d8+14)</hp>
+    <speed>30 ft., climb 20 ft., fly 60 f.</speed>
+    <str>15</str>
+    <dex>14</dex>
+    <con>15</con>
+    <int>5</int>
+    <wis>12</wis>
+    <cha>8</cha>
+    <passive>10</passive>
+    <languages>Aquan, Auran</languages>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist>bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine</resist>
+    <immune>cold, poison</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>False Appearance</name>
+      <text>While the gargoyle remains motionless, it is indistinguishable from an inanimate ice statue.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The gargoyle makes two attacks: one with its bite and one with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 7 (2d6) cold damage.</text>
+      <attack>Bite|+4|(1d6+2)+(2d6)</attack>
+      <attack>Piercing Damage|+4|1d6+2</attack>
+      <attack>Cold Damage||2d6</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.</text>
+      <attack>Slashing Damage|+4|1d6+2</attack>
+    </action>
+    <action>
+      <name>Ice Darts</name>
+      <text>Ranged Weapon Attack: +4 to hit, range 30/60 ft., one target. Hit: 7 (2d4 + 2) piercing damage.</text>
+      <attack>Piercing Damage|+4|2d4+2</attack>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 176 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Weremammoth</name>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (any race, shapechanger)</type>
+    <alignment>neutral</alignment>
+    <ac>10</ac>
+    <hp>114 (12d8+60)</hp>
+    <speed>30 ft., 40 ft. in mammoth or hybrid form</speed>
+    <str>24</str>
+    <dex>10</dex>
+    <con>21</con>
+    <int>11</int>
+    <wis>12</wis>
+    <cha>11</cha>
+    <skill>Perception +4</skill>
+    <passive>14</passive>
+    <languages/>
+    <cr>8</cr>
+    <vulnerable/>
+    <resist/>
+    <immune>cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Armor Class</name>
+      <text>10 in humanoid form. (13 in mammoth and hybrid form)</text>
+    </trait>
+    <trait>
+      <name>Shapechanger</name>
+      <text>The weremammoth can use its action to polymorph into a Large mammoth-humanoid hybrid or into a Huge mammoth, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</text>
+    </trait>
+    <trait>
+      <name>Adapted</name>
+      <text>The weremammoth can tolerate temperatures as low as -50 degrees Fahrenheit without protection.</text>
+    </trait>
+    <trait>
+      <name>Trampling Charge (Mammoth or Hybrid Form Only)</name>
+      <text>If the weremammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone. If the target is prone, the weremammoth can make one stomp attack against it as a bonus action.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>In mammoth form, the weremammoth makes two gore attacks. In humanoid form, it makes two attacks with its maul or three attacks with its spears. In hybrid form, it can attack like a mammoth or a humanoid.</text>
+    </action>
+    <action>
+      <name>Gore (Mammoth or Hybrid Form Only)</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 16 (2d8 + 7) piercing damage.</text>
+      <attack>Piercing Damage|+11|2d8+7</attack>
+    </action>
+    <action>
+      <name>Stomp (Mammoth or Hybrid Form Only)</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one prone creature. Hit: 18 (2d10 + 7) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+11|2d10+7</attack>
+    </action>
+    <action>
+      <name>Maul (Humanoid or Hybrid Form Only)</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) bludgeoning damage.</text>
+      <attack>Bludgeoning Damage|+11|2d6+7</attack>
+    </action>
+    <action>
+      <name>Spear (Humanoid or Hybrid Form Only)</name>
+      <text>Melee or Ranged Weapon Attack: +10 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 10 (1d6 + 7) piercing damage, or 11 (1d8 + 7) piercing damage if wielded in melee with two hands.</text>
+      <attack>Piercing Damage|+10|1d6+7</attack>
+      <attack>Piercing Damage (Two-Handed)|+10|1d8+7</attack>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 176 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>White Wraith</name>
+    <sortname>Wraith, White</sortname>
+    <ancestry>Wraith</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>16 (natural armor)</ac>
+    <hp>60 (8d8+24)</hp>
+    <speed>30 ft., fly 60 ft. (hover)</speed>
+    <str>6</str>
+    <dex>16</dex>
+    <con>17</con>
+    <int>9</int>
+    <wis>16</wis>
+    <cha>15</cha>
+    <skill>Perception +6, Stealth +6</skill>
+    <passive>16</passive>
+    <languages>the languages it knew in life</languages>
+    <cr>6</cr>
+    <vulnerable/>
+    <resist>acid, fire, lightning, thunder; blud- geoning, piercing, and slashing from nonmagical attacks that aren't silvered</resist>
+    <immune>cold, necrotic, poison</immune>
+    <conditionImmune/>
+    <senses>darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+3</text>
+    </trait>
+    <trait>
+      <name>Blizzard Stalker</name>
+      <text>The wraith's vision and hearing are unimpeded by inclement weather such as wind, snow, and fog and it has advantage on all Dexterity (Stealth) checks it makes in such conditions.</text>
+    </trait>
+    <trait>
+      <name>Ambusher</name>
+      <text>The wraith has advantage on attack rolls against any creature it has surprised.</text>
+    </trait>
+    <trait>
+      <name>Incorporeal Movement</name>
+      <text>The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</text>
+      <attack>Force Damage||1d10</attack>
+    </trait>
+    <action>
+      <name>Life Drain</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 16 (3d8 + 3) necrotic damage plus 10 (3d6) cold damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</text>
+      <attack>Life Drain|+6|(3d8+3)+(3d6)</attack>
+      <attack>Necrotic Damage|+6|3d8+3</attack>
+      <attack>Cold Damage||3d6</attack>
+    </action>
+    <action>
+      <name>Freezing Gale</name>
+      <text>Ranged Weapon Attack: +6 to hit, range 30 ft., one target. Hit: 21 (6d6) cold damage, and if the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.</text>
+      <attack>Cold Damage|+6|6d6</attack>
+    </action>
+    <action>
+      <name>Create Walker (2/Day)</name>
+      <recharge>2/DAY</recharge>
+      <text>The wraith targets a humanoid within 10 feet of it that has died from either cold damage or exposure to the elements. The target's remains rise as either a zombie or skeleton (depending on the state of the corpse, as determined by the GM) that shares the wraith's damage immunities and its Blizzard Stalker trait. The reanimated creature is under the wraith's control and rises in the space of its remains. The wraith can have no more than ten such undead under its control at one time.</text>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 177 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Risen Sporehusk</name>
+    <sortname>Sporehusk, Risen</sortname>
+    <ancestry>Sporehusk</ancestry>
+    <size>M</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>9</ac>
+    <hp>37 (5d8+15)</hp>
+    <speed>20 ft.</speed>
+    <str>13</str>
+    <dex>6</dex>
+    <con>16</con>
+    <int>1</int>
+    <wis>5</wis>
+    <cha>3</cha>
+    <passive>10</passive>
+    <languages/>
+    <cr>1</cr>
+    <vulnerable>fire, radiant</vulnerable>
+    <resist>bludgeoning, piercing, poison</resist>
+    <immune/>
+    <conditionImmune>charmed, exhaustion, frightened, poisoned, unconscious</conditionImmune>
+    <senses>blindsight 30 ft. (blind beyond this radius)</senses>
+    <trait>
+      <name>Radiance Susceptibility</name>
+      <text>If the sporehusk takes radiant damage, it loses its damage resistances and gains vulnerability to bludgeoning, piercing, and slashing damage until the start of its next turn. If the sporehusk is ever within an area of sunlight, it has disadvantage on attack rolls, ability checks, and saving throws until the end of its next turn.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The sporehusk regains 5 hit points at the start of its turn. If it takes fire or radiant damage, this trait doesn't function at the start of the sporehusk's next turn. The sporehusk dies only if it starts its turn with 0 hit points and doesn't regenerate.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The sporehusk makes one grab attack. If that attack hits, the sporehusk can make one bite attack against the same target.</text>
+    </action>
+    <action>
+      <name>Grab</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage and if the target is a creature, it is grappled (escape DC 11).</text>
+      <attack>Bludgeoning Damage|+3|1d6+1</attack>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target grappled by the sporehusk. Hit: 5 (1d8 + 1) piercing damage.</text>
+      <attack>Piercing Damage|+3|1d8+1</attack>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 186 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Scout Sporehusk</name>
+    <sortname>Sporehusk, Scout</sortname>
+    <ancestry>Sporehusk</ancestry>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>neutral evil</alignment>
+    <ac>13 (natural armor)</ac>
+    <hp>37 (5d8+15)</hp>
+    <speed>30 ft.</speed>
+    <str>13</str>
+    <dex>12</dex>
+    <con>16</con>
+    <int>6</int>
+    <wis>11</wis>
+    <cha>9</cha>
+    <skill>Nature +2, Perception +2, Stealth +3, Survival +2</skill>
+    <passive>12</passive>
+    <languages>understands Common but can't speak</languages>
+    <cr>1</cr>
+    <vulnerable>fire, radiant</vulnerable>
+    <resist>poison</resist>
+    <immune/>
+    <conditionImmune>charmed, poisoned</conditionImmune>
+    <senses>blindsight 15 ft., darkvision 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing and Sight</name>
+      <text>The scout has advantage on Wis- dom (Perception) checks that rely on hearing or sight.</text>
+    </trait>
+    <trait>
+      <name>Regeneration</name>
+      <text>The sporehusk regains 5 hit points at the start of its turn. If it takes fire or radiant damage, this trait doesn't function at the start of the sporehusk's next turn. The sporehusk dies only if it starts its turn with 0 hit points and doesn't regenerate.</text>
+    </trait>
+    <trait>
+      <name>Sunlight Weakness</name>
+      <text>While in sunlight, the sporehusk has disadvantage on attack rolls, ability checks, and saving throws.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The sporehusk makes one grab attack. If that attack hits, the sporehusk can make one bite attack against the same target.</text>
+    </action>
+    <action>
+      <name>Grab</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one tar- get. Hit: 4 (1d6 + 1) bludgeoning damage and if the target is a creature, it is grappled (escape DC 11).</text>
+      <attack>Bludgeoning Damage|+3|1d6+1</attack>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target grappled by the sporehusk. Hit: 5 (1d8 + 1) piercing damage.</text>
+      <attack>Piercing Damage|+3|1d8+1</attack>
+    </action>
+    <action>
+      <name>Shortsword</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.</text>
+      <attack>Piercing Damage|+3|1d6+1</attack>
+    </action>
+    <action>
+      <name>Longbow</name>
+      <text>Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage.</text>
+      <attack>Piercing Damage|+3|1d8+1</attack>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 187 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Invisiboar</name>
+    <size>L</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>12 (natural armor)</ac>
+    <hp>42 (5d10+15)</hp>
+    <speed>40 ft.</speed>
+    <str>16</str>
+    <dex>12</dex>
+    <con>17</con>
+    <int>2</int>
+    <wis>10</wis>
+    <cha>5</cha>
+    <skill>Stealth +3</skill>
+    <passive>12</passive>
+    <languages/>
+    <cr>2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Charge</name>
+      <text>If the invisiboar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.</text>
+      <attack>Charge||2d6</attack>
+    </trait>
+    <trait>
+      <name>Death Flash</name>
+      <text>When the invisiboar dies, its invisibility ends and it emits a bright flash of light. Each creature within 10 feet of it must make a DC 13 Constitution saving throw or become blinded for 1 minute. A creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success.</text>
+    </trait>
+    <trait>
+      <name>Invisibility</name>
+      <text>The invisiboar is invisible.</text>
+    </trait>
+    <action>
+      <name>Tusk</name>
+      <text>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.</text>
+      <attack>Slashing Damage|+5|2d6+3</attack>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 194 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Swordbeak</name>
+    <size>H</size>
+    <type>beast</type>
+    <alignment>unaligned</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>102 (12d12+24)</hp>
+    <speed>10 ft., fly 80 ft.</speed>
+    <str>21</str>
+    <dex>17</dex>
+    <con>15</con>
+    <int>3</int>
+    <wis>10</wis>
+    <cha>7</cha>
+    <skill>Perception +3</skill>
+    <passive>13</passive>
+    <languages>- INT 3 (-4) WIS 10 (+0) CHA 7 (-2)</languages>
+    <cr>5</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses/>
+    <trait>
+      <name>Dive Attack</name>
+      <text>If the swordbeak is flying and dives at least 30 feet straight toward a target and then hits it with a beak attack on the same turn, the attack deals an extra 7 (2d6) damage to the target.</text>
+      <attack>Dive Attack||2d6</attack>
+    </trait>
+    <trait>
+      <name>Keen Sight</name>
+      <text>The swordbeak has advantage on Wisdom (Perception) checks that rely on sight.</text>
+    </trait>
+    <action>
+      <name>Beak</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 21 (3d10 + 5) slashing damage.</text>
+      <attack>Slashing Damage|+8|3d10+5</attack>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 194 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Winged Wretch</name>
+    <sortname>Winged Wretch</sortname>
+    <ancestry>Winged Wretch</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>chaotic evil</alignment>
+    <ac>13</ac>
+    <hp>33 (6d8+6)</hp>
+    <speed>30 ft., fly 50 ft.</speed>
+    <str>13</str>
+    <dex>16</dex>
+    <con>12</con>
+    <int>7</int>
+    <wis>12</wis>
+    <cha>7</cha>
+    <passive>11</passive>
+    <languages>Undercommon</languages>
+    <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Echolocation</name>
+      <text>The winged wretch can't use its blindsight while deafened.</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing</name>
+      <text>The winged wretch has advantage on Wisdom (Perception) checks that rely on hearing.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The winged wretch makes two attacks: one with its bite and one with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.</text>
+      <attack>Piercing Damage|+3|1d4+1</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.</text>
+      <attack>Slashing Damage|+3|1d6+1</attack>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 195 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Greater Winged Wretch</name>
+    <sortname>Winged Wretch, Greater</sortname>
+    <ancestry>Winged Wretch</ancestry>
+    <size>M</size>
+    <type>monstrosity</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15</ac>
+    <hp>75 (10d10+20)</hp>
+    <speed>40 ft., fly 60 ft.</speed>
+    <str>18</str>
+    <dex>17</dex>
+    <con>15</con>
+    <int>10</int>
+    <wis>12</wis>
+    <cha>9</cha>
+    <save>Str +6, Con +4, Wis +3</save>
+    <passive>11</passive>
+    <languages>Undercommon</languages>
+    <cr>1/2</cr>
+    <vulnerable/>
+    <resist/>
+    <immune/>
+    <conditionImmune/>
+    <senses>blindsight 60 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+2</text>
+    </trait>
+    <trait>
+      <name>Echolocation</name>
+      <text>The winged wretch can't use its blindsight while deafened.</text>
+    </trait>
+    <trait>
+      <name>Keen Hearing</name>
+      <text>The winged wretch has advantage on Wisdom (Perception) checks that rely on hearing.</text>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The winged wretch makes two attacks: one with its bite and one with its claws.</text>
+    </action>
+    <action>
+      <name>Bite</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) piercing damage.</text>
+      <attack>Piercing Damage|+6|1d12+4</attack>
+    </action>
+    <action>
+      <name>Claws</name>
+      <text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.</text>
+      <attack>Slashing Damage|+6|2d6+4</attack>
+    </action>
+    <action>
+      <name>Thunderous Shriek (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The greater winged wretch shrieks, emitting a wave of thunderous force in a 30-foot cone that originates from the wretch. Each creature in the area must make a DC 12 Constitution saving throw. On a failed save, a creature takes 17(5d6) thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn't deafened.</text>
+      <attack>Thunder Damage||5d6</attack>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 195 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Nicrone Dendallen</name>
+    <sortname>Dendallen, Nicrone</sortname>
+    <ancestry>Dendallen</ancestry>
+    <npc>YES</npc>
+    <size>M</size>
+    <type>humanoid (human)</type>
+    <alignment>neutral evil</alignment>
+    <ac>13</ac>
+    <hp>130 (20d8+40)</hp>
+    <speed>30 ft.</speed>
+    <str>11</str>
+    <dex>16</dex>
+    <con>14</con>
+    <int>20</int>
+    <wis>13</wis>
+    <cha>16</cha>
+    <skill>Arcana +9, History +9, Medicine +9</skill>
+    <passive>8</passive>
+    <languages>Common, (Any three others) CHA 16 (+3)</languages>
+    <cr>11</cr>
+    <vulnerable/>
+    <resist>necrotic, poison</resist>
+    <immune/>
+    <conditionImmune>poisoned</conditionImmune>
+    <senses/>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+4</text>
+    </trait>
+    <trait>
+      <name>Staff of Withering</name>
+      <text>This staff has 3 charges and regains 1d3 expended charges daily at dawn. On a hit, it deals damage as a normal quarterstaff, and Dendallen can expend 1 charge to deal an extra 11 (2d10) necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.</text>
+      <attack>Recharge||1d3</attack>
+      <attack>Extra Necrotic Damage||2d10</attack>
+    </trait>
+    <action>
+      <name>Unnamed</name>
+      <text>Spellcasting. Dendallen is a 19th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). He has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch, dancing lights, mage hand, poison spray, ray of frost
+	• 1st level (4 slots): false life, inflict wounds, magic missile, shield
+	• 2nd level (3 slots): blindness/deafness, darkness, hold person, ray of enfeeblement
+	• 3rd level (3 slots): bestow curse, counterspell, dispel magic, haste, slow
+	• 4th level (3 slots): blight, confusion, phantasmal killer
+	• 5th level (3 slots): cloudkill, telekinesis, wall of force
+	• 6th level (2 slots): circle of death, disintegrate
+	• 7th level (1 slot): finger of death, prismatic spray
+	• 8th level (1 slot): feeblemind
+	• 9th level (1 slot): weird</text>
+    </action>
+    <slots>0,4,3,3,3,3,2,1,1,1</slots>
+    <spells>Chill Touch, Dancing Lights, Mage Hand, Poison Spray, Ray of Frost, False Life, Inflict Wounds, Magic Missile, Shield, Blindness/Deafness, Darkness, Hold Person, Ray of Enfeeblement, Bestow Curse, Counterspell, Dispel Magic, Haste, Slow, Blight, Confusion, Phantasmal Killer, Cloudkill, Telekinesis, Wall of Force, Circle of Death, Disintegrate, Finger of Death, Prismatic Spray, Feeblemind, Weird</spells>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 197 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Spirit of Dendallen</name>
+    <sortname>Dendallen, Spirit of</sortname>
+    <ancestry>Dendallen</ancestry>
+    <npc>YES</npc>
+    <size>H</size>
+    <type>undead</type>
+    <alignment>neutral evil</alignment>
+    <ac>18 (natural armor)</ac>
+    <hp>237 (19d12+114)</hp>
+    <speed>0 ft. (see the Attuned Thrall ability)</speed>
+    <str>19</str>
+    <dex>17</dex>
+    <con>23</con>
+    <int>22</int>
+    <wis>19</wis>
+    <cha>17</cha>
+    <save>Dex +10, Int +13, Cha +10</save>
+    <skill>Arcana +13, Deception +10, Insight +9</skill>
+    <passive>14</passive>
+    <languages>Common, telepathy 120 ft.</languages>
+    <cr>21</cr>
+    <vulnerable/>
+    <resist>acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from magic weapons</resist>
+    <immune>necrotic, poison; bludgeoning, piercing, and slashing from nonmagical weapons</immune>
+    <conditionImmune>charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious</conditionImmune>
+    <senses>truesight 15 ft., darkvision 120 ft.</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+7</text>
+    </trait>
+    <trait>
+      <name>Attuned Thrall</name>
+      <text>The creature that attuned to three Remnants of Dendallen becomes the host to the Spirit of Dendallen, and a conduit through which it can exist on that plane of existence. The spirit can't move on its own and stays centered on the host's space, moving with the creature whenever they do.
+	At the start of each of the spirit's turns, its host must make a DC 21 Wisdom or Charisma saving throw (their choice) or become charmed, ignoring any immunity or resistance to charm or possession. The charm lasts until the start of the spirit's next turn when the host can repeat the saving throw. The DC of this saving throw lowers based on the spirit's current hit points, becoming 19 at 187 hit points, 17 at 137 hit points, 15 at 87 hit points, and 13 at 37 hit points.
+	While the hosted creature is controlled by the spirit, the spirit can issue them verbal or telepathic commands during its turn (no action required). The hosted creature obeys the commands to the best of its ability. While the spirit has control of its host, it can force the host to spend any amount of its movement from its upcoming turn in order to move on the spirit's turn instead.
+	In addition, the spirit has advantage on saving throws against any of its host's spells and magical effects.</text>
+    </trait>
+    <trait>
+      <name>Unstable Conduit</name>
+      <text>If the hosted creature dies, the spirit's body explodes: dispelling the spirit and forcing each creature within 30 feet of it to make a DC 16 Dexterity saving throw. On a failed save, a creature takes 33 (6d10) necrotic damage, or half as much damage on a successful one. When this happens, the hosted creature is disintegrated and lost, leaving any Remnants of Dendallen behind.</text>
+      <attack>Necrotic Damage||6d10</attack>
+    </trait>
+    <trait>
+      <name>Necromantic Form</name>
+      <text>The spirit's form allows it to move through any opening large enough for its host without squeezing. The spirit can occupy another creature's space and vice versa. The spirit is immune to any spell or effect that would alter its form.</text>
+    </trait>
+    <trait>
+      <name>Legendary Resistance (3/Day)</name>
+      <recharge>3/DAY</recharge>
+      <text>If the spirit fails a saving throw, it can choose to succeed instead.</text>
+    </trait>
+    <trait>
+      <name>Turn Immunity</name>
+      <text>The spirit is immune to effects that turn undead.</text>
+    </trait>
+    <trait>
+      <name>Create Tendril</name>
+      <text>If the spirit doesn't have any tendrils conjured, it can use a bonus action to conjure 1 Tendril of Dendallen at any point on a surface within 120 feet.</text>
+    </trait>
+    <trait>
+      <name>Spellcasting</name>
+      <text>The spirit is a 19th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 21, +13 to hit with spell attacks). It has the following wizard spells prepared:
+
+	• Cantrips (at will): chill touch, dancing lights, mage hand, poison spray, ray of frost
+	• 1st level (4 slots): false life, inflict wounds, magic missile, shield
+	• 2nd level (3 slots): blindness/deafness, darkness, hold person, ray of enfeeblement
+	• 3rd level (3 slots): bestow curse, counterspell, dispel magic, haste, slow
+	• 4th level (3 slots): blight, confusion, phantasmal killer
+	• 5th level (3 slots): cloudkill, telekinesis, wall of force
+	• 6th level (2 slots): circle of death, disintegrate
+	• 7th level (1 slot): finger of death, prismatic spray
+	• 8th level (1 slot): feeblemind
+	• 9th level (1 slot): weird</text>
+      <attack>Spellcasting|+13|</attack>
+    </trait>
+    <action>
+      <name>Multiattack</name>
+      <text>The spirit makes three slam attacks or two decaying ray attacks.</text>
+    </action>
+    <action>
+      <name>Slam</name>
+      <text>Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 18 (2d12 + 5) force damage plus 27 (6d8) acid damage.</text>
+      <attack>Slam|+11|(2d12+5)+(6d8)</attack>
+      <attack>Force Damage|+11|2d12+5</attack>
+      <attack>Acid Damage||6d8</attack>
+    </action>
+    <action>
+      <name>Decaying Ray</name>
+      <text>Ranged Weapon Attack: +12 to hit, range 60 ft., one creature. Hit: 17 (3d8 + 3) necrotic damage, and the target must succeed on a DC 20 Constitution saving throw or gain one cumulative level of exhaustion that lasts for 1 minute. A creature exhausted by this attack repeats the saving throw at the end of each of its turns, taking an additional 3 (1d6) necrotic damage for each level of exhaustion it has on a failed save, or removing all exhaustion on a successful one.</text>
+      <attack>Necrotic Damage|+12|3d8+3</attack>
+      <attack>Necrotic Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Conjure Tendrils (Recharge 5-6)</name>
+      <recharge>D5</recharge>
+      <text>The spirit conjures 1d4 + 1 Tendrils of Dendallen at points of its choice on surfaces within 120 feet of it, up to a maximum of six of them at once. Roll initiative for the tendrils, which have their own turns.</text>
+      <attack>Tendrils||1d4+1</attack>
+    </action>
+    <legendary>
+      <name>Legendary Actions</name>
+      <text>The spirit can take 4 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The spirit regains spent legendary actions at the start of its turn.</text>
+    </legendary>
+    <legendary>
+      <name>Quick Attack</name>
+      <text>The spirit makes a single slam or ray attack.</text>
+    </legendary>
+    <legendary>
+      <name>Command Tendrils</name>
+      <text>Up to 4 tendrils conjured by the spirit can either teleport or make a single grasp attack.</text>
+    </legendary>
+    <legendary>
+      <name>Sweep (Costs 2 Actions)</name>
+      <text>The spirit sweeps with the back of its massive arm. Each creature in a 20-foot cone must succeed on a DC 19 Dexterity saving throw or take 17 (2d12 + 4) force damage and be pushed back up to 15 feet and knocked prone.</text>
+      <attack>Force Damage||2d12+4</attack>
+    </legendary>
+    <legendary>
+      <name>Quick Cast (Costs 3 Actions)</name>
+      <text>The spirit casts one spell of 7th level or lower from its prepared spells that has a casting time of 1 action.</text>
+    </legendary>
+    <slots>0,4,3,3,3,3,2,1,1,1</slots>
+    <spells>Chill Touch, Dancing Lights, Mage Hand, Poison Spray, Ray of Frost, False Life, Inflict Wounds, Magic Missile, Shield, Blindness/Deafness, Darkness, Hold Person, Ray of Enfeeblement, Bestow Curse, Counterspell, Dispel Magic, Haste, Slow, Blight, Confusion, Phantasmal Killer, Cloudkill, Telekinesis, Wall of Force, Circle of Death, Disintegrate, Finger of Death, Prismatic Spray, Feeblemind, Weird</spells>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 200 (Indie)</description>
+    <environment/>
+  </monster>
+  <monster>
+    <name>Tendril of Dendallen</name>
+    <sortname>Dendallen, Tendril of</sortname>
+    <ancestry>Dendallen</ancestry>
+    <size>L</size>
+    <type>undead</type>
+    <alignment>chaotic evil</alignment>
+    <ac>15 (natural armor)</ac>
+    <hp>22 (3d10+6)</hp>
+    <speed>0 ft.</speed>
+    <str>22</str>
+    <dex>15</dex>
+    <con>15</con>
+    <int>2</int>
+    <wis>6</wis>
+    <cha>3</cha>
+    <skill>Athletics +8</skill>
+    <passive>8</passive>
+    <languages/>
+    <cr>3</cr>
+    <vulnerable/>
+    <resist>acid, cold, fire, lightning, psychic, thunder; bludgeoning, piercing, and slashing from nonmagical attacks</resist>
+    <immune>necrotic, poison</immune>
+    <conditionImmune>blinded, charmed, deafened, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious</conditionImmune>
+    <senses>blindsight 120 ft. (blind beyond this radius)</senses>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>+6</text>
+    </trait>
+    <trait>
+      <name>Necromantic Form</name>
+      <text>The tendril can occupy another creature's space and vice versa. The tendril is immune to any spell or effect that would alter its form.</text>
+    </trait>
+    <trait>
+      <name>Planted</name>
+      <text>The tendril isn't affected by forced movement, and it doesn't need to make a check to cling to difficult surfaces like walls or ceilings.</text>
+    </trait>
+    <trait>
+      <name>Will of Dendallen</name>
+      <text>The tendril shares a psychic link with the spirit as well as the hosted creature while it's controlled by the spirit. The tendril doesn't provide cover to hostile creatures against attacks made through the tendril's space by the Spirit of Dendallen or its enthralled host.</text>
+    </trait>
+    <action>
+      <name>Grasp</name>
+      <text>Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) force damage plus 9 (2d8) acid damage, and if the target is a creature, it is grappled (escape DC 16) and must succeed on a DC 16 Strength saving throw or be pulled up to 5 feet toward the tendril. Until this grapple ends, the tendril can't grasp another target.</text>
+      <attack>Grasp|+8|(2d10+6)+(2d8)</attack>
+      <attack>Force Damage|+8|2d10+6</attack>
+      <attack>Acid Damage||2d8</attack>
+    </action>
+    <action>
+      <name>Fling</name>
+      <text>One Medium or smaller object or creature grappled by the tendril is thrown up to 20 feet in a direction of the tendril's choice and knocked prone. If a thrown target strikes a solid surface, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 16 Dexterity saving throw or take the same damage and be knocked prone.</text>
+      <attack>Bludgeoning Damage||1d6</attack>
+    </action>
+    <action>
+      <name>Teleport</name>
+      <text>The tendril withdraws into the surface from which it appeared and emerges elsewhere, teleporting to an unoccupied space of its choice within 120 feet of Dendallen.</text>
+    </action>
+    <description>Source:	The Griffon's Saddlebag: Book One p. 201 (Indie)</description>
+    <environment/>
+  </monster>
+</compendium>
