@@ -8,6 +8,7 @@
 * Added `Griffon's Saddlebag: Book One` 5e content, shared by @ViannaEuphoria.
 * Added `Tasha's Hideous Leftovers` 5e content, shared by @ViannaEuphoria.
 * Added Marco Giulio Fossati's `Treasures from Oerth` 5.5e homebrew, shared by @B.
+* Added additional `Alchemist (Valda)` Subclasses from the `Complete Alchemist`, shared by @ViannaEuphoria.
 * Added additional `Necromancer (Valda)` Subclasses from the `Complete Necromancer`, shared by @ViannaEuphoria.
 * Added additional `Warmage (Valda)` Subclasses from the `Complete Warmage`, shared by @ViannaEuphoria.
 * Added additional `Witch (Valda)` Subclasses from the `Complete Witch`, shared by @ViannaEuphoria.
