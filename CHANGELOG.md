@@ -12,6 +12,7 @@
 * Added additional `Necromancer (Valda)` Subclasses from the `Complete Necromancer`, shared by @ViannaEuphoria.
 * Added additional `Warmage (Valda)` Subclasses from the `Complete Warmage`, shared by @ViannaEuphoria.
 * Added additional `Witch (Valda)` Subclasses from the `Complete Witch`, shared by @ViannaEuphoria.
+* Added Mage Hand Press' `Complete Binder` 5e class, shared by @ViannaEuphoria.
 * Added `Villainous Options (UA24)` 5.5e Unearthed Arcana, shared by @ViannaEuphoria.
 * Added `Villainous Options 2 (UA24)` 5.5e Unearthed Arcana, shared by @ViannaEuphoria.
 * Added `D&D Beyond Drops` 5.5e features from May and June as Unearthed Arcana, shared by @ViannaEuphoria.
