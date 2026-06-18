@@ -66,8 +66,8 @@ All PHB force and tech powers are in the XML file and more or less work as you'd
 Since a handful of powers have the same name as their 5e counterpart (such as Acid Splash), all powers' names are appended. Force Powers are appended (alignment force) and tech powers (tech).
 
 I considered making things like Gunslinger tricks, etc. as "spells" but instead included them as features. (If anyone thinks that might work better, I am open to suggestions)
-Class Features
 
+Class Features:
 All classes and class features from the PHB and EC are available as of the completion of this document. All Ability Score Improvements that normally happen at Level 4, 8, etc. are set to "YES" when you level up. All Class Features that level up at multiple levels are also listed at those levels, renamed and reworded as appropriate (i.e. At 7th Level, Operatives have a feature named "Sneak Attack (4d6)" and the wording is adjusted accordingly). Lots of the class features that would show in the Class Table are included as features as well, such as Superiority Die Increases and Maneuvers Known, but not traits that change every level, such as powers known, or traits you can swap out every level, like maneuvers, etc. I strongly encourage you to have a printout or the website open when creating a character or leveling up. Some classes have a lot of choices!
 
 As explained above, most classes that have Archetypes that can be either Force- or Tech-casters have their ability default to WIS. But is can be changed per the instructions below. Engineers and Scouts are the exception and are set to INT.
