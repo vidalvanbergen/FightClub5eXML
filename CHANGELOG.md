@@ -16,6 +16,7 @@
 * Added `Villainous Options (UA24)` 5.5e Unearthed Arcana, shared by @ViannaEuphoria.
 * Added `Villainous Options 2 (UA24)` 5.5e Unearthed Arcana, shared by @ViannaEuphoria.
 * Added `D&D Beyond Drops` 5.5e features from May and June as Unearthed Arcana, shared by @ViannaEuphoria.
+* Fixed Wild Magic Sorcerer's Wild Surge feature by adding the missing Wild Surge table, shared by @ViannaEuphoria.
 * Fixed some XML formatting errors with help from @Garras.
 * Added an optional Android option for better Android support when merging compendiums, shared by @Nikjft.
 * Other changes and fixes.
