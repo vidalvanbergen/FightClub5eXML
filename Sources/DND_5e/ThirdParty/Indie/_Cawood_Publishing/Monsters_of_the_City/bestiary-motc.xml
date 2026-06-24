@@ -580,7 +580,6 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 16 (Indie)</description>
     <int>12</int>
     <wis>12</wis>
     <cha>13</cha>
-    <save/>
     <skill>History +3, Perception +3, Persuasion +3</skill>
     <passive>13</passive>
     <languages>Common and two others</languages>
@@ -1483,18 +1482,20 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 32 (Indie)</description>
       <name>Card Feathers</name>
       <text>The feathers of the duck are playing cards, but only the face cards. Only 1 card can be removed each day and they don't grow back. When the last card is removed the duck explodes and does 10 (3d6) force damage in a 30 ft. radius. If one of these cards is pulled, the following effect occurs. Roll 1d12
 
-1. Jack of Clubs - Your Strength increases by 1
-2. Jack of Diamonds - a 1,000 gp diamond drops into your lap
-3. Jack of Hearts - You are charmed by the next NPC for 1 minute
-4. Jack of Spades - You have disadvantage on Initiative for a day
-5. Queen of Clubs - You do double damage on your next hit
-6. Queen of Diamonds - You have advantage on Initiative for a day
-7. Queen of Hearts - Your gender changes for a week
-8. Queen of Spades - Your next long rest is only a short rest
-9. King of Clubs - Your speed is cut in half for a day
-10. King of Diamonds - All the coins in your pockets vanish
-11. King of Hearts - You gain the benefits of a long rest
-12. King of Spades - Your Charisma increases by 1</text>
+Card Feathers:
+d12 | Card | Effect
+1 | Jack of Clubs | Your Strength increases by 1
+2 | Jack of Diamonds | a 1,000 gp diamond drops into your lap
+3 | Jack of Hearts | You are charmed by the next NPC for 1 minute
+4 | Jack of Spades | You have disadvantage on Initiative for a day
+5 | Queen of Clubs | You do double damage on your next hit
+6 | Queen of Diamonds | You have advantage on Initiative for a day
+7 | Queen of Hearts | Your gender changes for a week
+8 | Queen of Spades | Your next long rest is only a short rest
+9 | King of Clubs | Your speed is cut in half for a day
+10 | King of Diamonds | All the coins in your pockets vanish
+11 | King of Hearts | You gain the benefits of a long rest
+12 | King of Spades | Your Charisma increases by 1</text>
       <attack>Plates|5|1d4+3</attack>
     </action>
     <reaction>
@@ -5254,7 +5255,6 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 97 (Indie)</description>
     <int>9</int>
     <wis>12</wis>
     <cha>8</cha>
-    <save/>
     <skill>Perception +3, Survival +3</skill>
     <passive>13</passive>
     <languages>Common, Giant</languages>
@@ -5336,6 +5336,7 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 97 (Indie)</description>
 	• At will: friends, prestidigitation, vicious mockery (11th level)
 	• 3/day each: charm person, crown of madness, dancing lights, jump
 	• 1/day each: cloud of daggers (4th level), expeditious retreat, suggestion</text>
+      <attack>Innate Spellcasting|+14|</attack>
     </trait>
     <trait>
       <name>Legendary Resistance (3/Day)</name>
@@ -5361,11 +5362,14 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 97 (Indie)</description>
     <action>
       <name>Scimitar</name>
       <text>Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage plus 22 (5d8) poison damage.</text>
-      <attack>Scimitar|11|1d8+4+5d8</attack>
+      <attack>Scimitar|+11|(1d8+4)+(5d8)</attack>
+      <attack>Bludgeoning Damage|+11|1d8+4</attack>
+      <attack>Poison Damage||5d8</attack>
     </action>
     <action>
       <name>Whisper of Madness (Recharge 5-6)</name>
       <text>Envy chooses up to three creatures if can see within 60 feet of it. Each target must succeed on a DC 19 Wisdom saving throw or it takes 22 (5d8) psychic damage and must use its reaction to make a melee weapon attack against one creature of Envy's choice that she can see. Constructs and undead are immune to this effect.</text>
+      <attack>Psychic Damage||5d8</attack>
     </action>
     <legendary>
       <name>Sow Discord</name>
@@ -5563,7 +5567,6 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 104 (Indie)</description>
     <int>17</int>
     <wis>12</wis>
     <cha>10</cha>
-    <save/>
     <skill>Arcana +5, History +5</skill>
     <passive>11</passive>
     <languages>Common and one other</languages>
@@ -5582,26 +5585,29 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 104 (Indie)</description>
 	• 2nd level (2 slot): hold person, mirror image</text>
     </trait>
     <trait>
-      <name>Spider Climb</name>
-      <text>Spellcasting Chaos. Every time the apprentice casts a spell, roll a d4. On a roll of "4" the apprentice's spell doesn't work and the following occurs. Roll 1d10
+      <name>Spellcasting Chaos</name>
+      <text>Every time the apprentice casts a spell, roll a d4. On a roll of "4" the apprentice's spell doesn't work and the following occurs. Roll 1d10
 
-1. The spell works backwards
-2. The apprentice becomes the target of his spell
-3. Wand explodes and does 1d6 force damage in a 30 ft. radius
-4. The apprentice ends every sentence with "genius!" for a week
-5. Closest creature ages 1d4 years
-6. The apprentice turns invisible for 1 minute
-7. Closest creature teleports to another part of the city
-8. Closest creature gains 1d8 temporary hit points
-9. The closest creature changes gender for a week
-10. The apprentice turns into a frog for 1 minute</text>
+Spellcasting Chaos:
+d10 | Effect
+1 | The spell works backwards
+2 | The apprentice becomes the target of his spell
+3 | Wand explodes and does 1d6 force damage in a 30 ft. radius
+4 | The apprentice ends every sentence with "genius!" for a week
+5 | Closest creature ages 1d4 years
+6 | The apprentice turns invisible for 1 minute
+7 | Closest creature teleports to another part of the city
+8 | Closest creature gains 1d8 temporary hit points
+9 | The closest creature changes gender for a week
+10 | The apprentice turns into a frog for 1 minute</text>
     </trait>
     <action>
       <name>Dagger</name>
       <text>Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 2 (1d4) piercing damage.</text>
       <attack>Dagger|2|1d4</attack>
     </action>
-    <spells>fire bolt, light, prestidigitation, burning hands, mage armor, magic missile, hold person, mirror image</spells>
+    <slots>0,4,2</slots>
+    <spells>Fire Bolt, Light, Prestidigitation, Burning Hands, Mage Armor, Magic Missile, Hold Person, Mirror Image</spells>
     <description>Wizards study magic for their entire lifetime. They begin as anxious apprentices and learn from clever masters. The young wizards are wide-eyed and often get themselves in over their heads.
 
 	Clumsy Character. Apprentices are new to spellcasting and their spells are not always successful. There is a good chance that their spells will misfire and some strange arcane effect will occur. Some of these effects are mundane, others useful, and others cause mayhem.
@@ -5659,17 +5665,18 @@ Source:	Monsters of the City: Sins &amp; Virtues p. 105 (Indie)</description>
     <action>
       <name>Greatsword</name>
       <text>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) slashing damage.</text>
-      <attack>Greatsword|7|3d6+4</attack>
+      <attack>Slashing Damage|+7|3d6+4</attack>
     </action>
     <action>
       <name>Heavy Crossbow</name>
       <text>Ranged Weapon Attack: +4 to hit, range 100/400 ft., one target. Hit: 6 (1d10 + 1) piercing damage.</text>
-      <attack>Crossbow|4|1d10+1</attack>
+      <attack>Piercing Damage|+4|1d10+1</attack>
     </action>
     <action>
       <name>Leadership (2/Day)</name>
       <recharge>2/DAY</recharge>
       <text>For 1 minute, the bandit lord can utter a special command or warning whenever a nonhostile creature that it can see within 60 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the bandit lord. A creature can benefit from only one Leadership die at a time. This effect ends if the bandit lord is incapacitated.</text>
+      <attack>Leadership||1d4</attack>
     </action>
     <description>Some warriors have a code of honor, and then there are the bandits. Leading these clans of scoundrels are bandit lords. Powerful warriors, they are skilled commanders as well.
 
