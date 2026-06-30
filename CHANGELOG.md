@@ -1,6 +1,6 @@
 ## CHANGE LOG
 
-### 2026-##-##
+### 2026-06-30
 * Added `Ravenloft: The Horrors Within` 5.5e content, shared by @vokyal84.
 * Added Avantris' `The Crooked Moon` 5e content, shared by @SillyK.
 * Added Ben Huffman's `The Pugilist Class` 5.5e edition, shared by @ViannaEuphoria.
