@@ -19,6 +19,7 @@
 * Fixed Wild Magic Sorcerer's Wild Surge feature by adding the missing Wild Surge table, shared by @ViannaEuphoria.
 * Fixed some XML formatting errors with help from @Garras.
 * Added an optional Android option for better Android support when merging compendiums, shared by @Nikjft.
+* Split off 'Tenets' and 'Spells' from Paladin's Oath Features into their own features.
 * Other changes and fixes.
 
 ### 2026-04-01
