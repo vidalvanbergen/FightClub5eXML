@@ -1,6 +1,7 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Added `Forgotten Realms: Adventures in Faerûn` 5.5e content, shared by @KnightCA.
 * Other changes and fixes.
 
 ### 2026-06-30
