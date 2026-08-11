@@ -2,6 +2,7 @@
 
 ### 2026-##-##
 * Added `Forgotten Realms: Adventures in Faerûn` 5.5e content, shared by @KnightCA.
+* Added 2 classes from `Book of Classes` 5e kickstarter content (Ninja & Dimentionalist), shared by @ViannaEuphoria.
 * Other changes and fixes.
 
 ### 2026-06-30
