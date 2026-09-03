@@ -4,6 +4,7 @@
 * Added `Underdark Options` Unearthed Arcana 5.5e Content, shared by @ViannaEuphoria.
 * Added `The Lord of the Rings` 5e content, shared by @ViannaEuphoria.
 * Added `Forgotten Realms: Adventures in Faerûn` 5.5e content, shared by @KnightCA.
+* Added July and August D&D Beyond Drops, shared by @rexjiang.
 * Added 2 classes from `Book of Classes` 5e kickstarter content (Ninja & Dimentionalist), shared by @ViannaEuphoria.
 * Other changes and fixes.
 
