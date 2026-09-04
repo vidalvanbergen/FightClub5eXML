@@ -1,6 +1,7 @@
 ## CHANGE LOG
 
 ### 2026-##-##
+* Added `Arcana Unleashed` 5.5e Content, shared by @rexjiang.
 * Added `Underdark Options` Unearthed Arcana 5.5e Content, shared by @ViannaEuphoria.
 * Added `The Lord of the Rings` 5e content, shared by @ViannaEuphoria.
 * Added `Forgotten Realms: Adventures in Faerûn` 5.5e content, shared by @KnightCA.
