@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="5" auto_indent="NO">
+  <class>
+    <name>Warlock [5.5e]</name>
+    <!-- Warlock Subclass: Vestige Patron -->
+    <autolevel level="3">
+      <feature optional="YES">
+        <name>Warlock Subclass: Vestige Patron</name>
+        <text>Wield the Remnants of a Dying God's Power
+
+Your pact draws on the power of a dying god, a being once worshipped by countless followers but now abandoned and forgotten. This dying god, known as a vestige, might have been benevolent, evil, or strange and unknowable, but now it is driven to regain its former power. The vestige needs your help, and it is willing to share its remaining strength with you.
+
+Source:	Arcana Unleashed</text>
+      </feature>
+      <feature optional="YES">
+        <name>Level 3: Vestige Companion (Vestige Patron)</name>
+        <text>The vestige manifests, drawing strength from your pact. It uses the Vestige Companion stat block and is a Celestial, Fiend, or Undead (choose when you gain this feature). You determine what the vestige looks like, but regardless of its form, the vestige bears features indicating its supernatural origin. For example, you might decide your vestige is an oversize floating skull etched with sigils, a circle of glowing runes, or a constantly shifting abstract shape. The vestige is Friendly to you and your allies and obeys your commands. It vanishes if you die.
+
+	The Vestige in Combat. In combat, the vestige acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the vestige to take the Vestige's Strike action. If you have the Incapacitated condition, the vestige acts on its own and isn't limited to the Dodge action.
+
+	Disappearance of the Vestige. When the vestige drops to 0 Hit Points, it disappears. You can spend 1 minute performing a magical ceremony to manifest the vestige again; it reappears with its maximum Hit Points in an unoccupied space within 5 feet of you. As a Magic action, you can temporarily dismiss the vestige to a pocket dimension. As a Magic action while it is temporarily dismissed, you can cause the vestige to reappear in an unoccupied space within 30 feet of you. Whenever the vestige drops to 0 Hit Points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying.
+
+Whenever you finish a Long Rest, you can summon the vestige in a new form, which appears in an unoccupied space within 5 feet of you. You choose its appearance and whether it is a Celestial, Fiend, or Undead. If the vestige is already manifested from this feature, its form changes to the new one.
+
+Source:	Arcana Unleashed</text>
+        <roll description="Damage">1d6</roll>
+        <roll description="Healing">2d8</roll>
+      </feature>
+      <feature optional="YES">
+        <name>Level 3: Vestige Spells (Vestige Patron)</name>
+        <text>The magic of your Vestige Companion ensures you always have certain spells ready. Select one of the following Cleric domains: Life, Light, Trickery, or War. The Domain Spells of your chosen domain are Warlock spells for you. When you reach a Warlock level equal to a Cleric level listed on the Domain Spells table for the domain you have chosen, you thereafter always have the listed spells prepared.
+	For example, if you chose the War Domain for this feature, when you reach Warlock level 3, you would have the Guiding Bolt, Magic Weapon, Shield of Faith, and Spiritual Weapon spells prepared.
+
+Source:	Arcana Unleashed</text>
+      </feature>
+    </autolevel>
+    <autolevel level="6">
+      <feature optional="YES">
+        <name>Level 6: Vestige Power (Vestige Patron)</name>
+        <text>Your Vestige Companion now regains its use of Divine Power whenever you finish a Short or Long Rest or when you use your Magical Cunning feature. In addition, while within 30 feet of your Vestige Companion, you have Resistance to the same damage types as the vestige.
+
+Source:	Arcana Unleashed</text>
+      </feature>
+    </autolevel>
+    <autolevel level="10">
+      <feature optional="YES">
+        <name>Level 10: Vestige Recovery (Vestige Patron)</name>
+        <text>When your Vestige Companion would drop to 0 Hit Points, you can take a Reaction and expend a Pact Magic spell slot to instead change its Hit Points to its Hit Point maximum. The vestige then teleports to an unoccupied space you can see within 30 feet of it. Once you use this feature, you can't do so again until you finish a Long Rest.
+
+Source:	Arcana Unleashed</text>
+      </feature>
+    </autolevel>
+    <autolevel level="14">
+      <feature optional="YES">
+        <name>Level 14: Semblance of Life (Vestige Patron)</name>
+        <text>Your Vestige Companion continues to grow in strength, and with your assistance, it can briefly adopt a more powerful form. Depending on the vestige's type, you can take a Magic action while the vestige is within 90 feet of you to shape-shift it for 1 hour into one of the following forms: Celestial Spirit (Celestial vestige; see the Summon Celestial spell in the Player's Handbook), Fiendish Spirit (Fiend vestige; see the Summon Fiend spell in the Player's Handbook), or Undead Spirit (Undead vestige; see the Summon Undead spell in the Player's Handbook). The vestige's game statistics are replaced by the spirit's stat block, and the spell's level is equal to half your Warlock level (round down; maximum level 9), but the vestige retains its personality, Divine Power Bonus Action, Hit Points, and Hit Point Dice.
+	The vestige gains a number of Temporary Hit Points equal to the Hit Points of the spirit form. These Temporary Hit Points vanish if any remain after 1 hour, and the transformation ends early if it has no Temporary Hit Points left.
+	Once you use this feature, you can't do so again until you finish a Long Rest.
+
+Source:	Arcana Unleashed</text>
+        <roll description="Damage">1d6</roll>
+      </feature>
+      <counter>
+        <name>Semblance of Life</name>
+        <value>1</value>
+        <reset>L</reset>
+        <subclass>Vestige Patron</subclass>
+      </counter>
+    </autolevel>
+  </class>
+  <monster>
+    <name>Vestige Companion</name>
+    <sortname>Companion, Vestige</sortname>
+    <ancestry>Companion</ancestry>
+    <size>M</size>
+    <alignment>Neutral</alignment>
+    <ac>13</ac>
+    <hp>4</hp>
+    <speed>5 ft., fly 30 ft.</speed>
+    <init>+2</init>
+    <str>1</str>
+    <dex>14</dex>
+    <con>10</con>
+    <int>15</int>
+    <wis>15</wis>
+    <cha>16</cha>
+    <passive>12</passive>
+    <languages>Speaks the languages you know</languages>
+    <cr/>
+    <vulnerable/>
+    <resist>Fire (Fiend only); Necrotic (Undead only); Radiant (Celestial only)</resist>
+    <immune/>
+    <conditionImmune>charmed, frightened, prone</conditionImmune>
+    <senses/>
+    <trait>
+      <name>Proficiency Bonus</name>
+      <text>PB equals your Proficiency Bonus</text>
+    </trait>
+    <trait>
+      <name>Armor Class</name>
+      <text>13 + your Charisma modifier.</text>
+    </trait>
+    <trait>
+      <name>Hit Points</name>
+      <text>4 + four times your Warlock level (the vestige has a number of Hit Dice [d6s] equal to your Warlock level)</text>
+    </trait>
+    <trait>
+      <name>Pact Bond</name>
+      <text>Add your Proficiency Bonus to any ability check or saving throw the vestige makes.</text>
+    </trait>
+    <action>
+      <name>Vestige's Strike</name>
+      <text>Melee or Ranged Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. or range 60 ft. Hit: 1d6 + 3 plus your Charisma modifier Fire (Fiend), Necrotic (Undead), or Radiant (Celestial) damage.</text>
+      <attack>Fire, Necrotic, or Radiant Damage|+2|1d6+3</attack>
+    </action>
+    <action>
+      <name>Divine Power (1/Day) (Bonus Action)</name>
+      <recharge>1/DAY</recharge>
+      <text>Your vestige manifests a remnant of its divine power in one of the following ways, based on its form:
+
+	Cursed Invocation (Undead Only). The vestige places a curse on a creature you can see within 30 feet of the vestige for 1 minute. While cursed, the target has Disadvantage on attack rolls against you and the vestige.
+
+	Fiendish Swap (Fiend Only). If you and the vestige are within 60 feet of each other, you both teleport, swapping places.
+
+	Healing Touch (Celestial Only). The vestige touches another creature. The target regains Hit Points equal to 2d8 plus your Charisma modifier and ends one condition on it: Blinded, Deafened, or Poisoned.</text>
+      <attack>Heal||2d8</attack>
+    </action>
+    <environment/>
+  </monster>
+</compendium>
