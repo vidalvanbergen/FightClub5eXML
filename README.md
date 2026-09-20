@@ -79,7 +79,25 @@ Examples:
   ./build-collections.sh collection1.xml  Compile only 'collection1.xml'.
 ```
 
-For Windows, use `WIN-build-collections.bat [-5.5e] [-android] [-h/-?] path-to-collections\collection-file.xml path-to-utilities\merge.xslt [optional path-to-compendium-destination-directory]`.
+For Windows, use `build-collections.ps1`, which compiles the given collections in parallel (one `xsltproc` job per logical CPU). It accepts the same flags as `build-collections.sh` (`-RemoveVersionTag`, `-Android`, `-Validate`) plus `-MaxJobs`, `-MemoryPerJobMB`, and `-MinFreeMemoryMB`:
+
+```powershell
+.\build-collections.ps1                        # compile every collection into .\Compendiums
+.\build-collections.ps1 WotC_5e_only.xml       # compile a single collection
+.\build-collections.ps1 '*.xml'                # compile a subset (quote wildcards)
+.\build-collections.ps1 -RemoveVersionTag '*.xml'   # strip ' [5.5e]'
+.\build-collections.ps1 -Android               # Android item descriptions (prefixes [ANDROID]_)
+.\build-collections.ps1 -Validate              # validate against the schema (requires xmllint)
+.\build-collections.ps1 -MaxJobs 4             # cap parallel jobs
+```
+
+The optional output directory defaults to `Compendiums`. The job count is automatically reduced when free physical memory is low.
+
+From `cmd.exe`, invoke it through PowerShell:
+
+```bat
+powershell -NoProfile -ExecutionPolicy Bypass -File build-collections.ps1
+```
 
 ## Custom Content
 
