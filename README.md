@@ -62,21 +62,21 @@ The build-collection files are provided for your convenience to compile all the 
 ```bash
 Usage: 
 
-./build-collections.sh [-5.5e] [--android] [--validate] [-h/-?] [collection_names...]
-  -5.5e     Remove '[5.5e]' from the generated compendiums.
-  --android Put item detail (rarity and attunement requirements) into the description text of items.
-            (Necessary for Android versions of Fight Club 5e which otherwise omit item details from the UI).
-  --validate Validate output XML against the schema.
-  collection_names  Optional list of specific collections to compile.
-  -h/-?     Display this help message.
+./build-collections.sh [-RemoveVersionTag] [-Android] [-Validate] [-h/-?] [collection_names...]
+  -RemoveVersionTag     Remove '[5.5e]' from the generated compendiums.
+  -Android              Put item detail (rarity and attunement requirements) into the description text of items.
+                        (Necessary for Android versions of Fight Club 5e which otherwise omit item details from the UI).
+  -Validate             Validate output XML against the schema.
+  collection_names      Optional list of specific collections to compile.
+  -h/-?                 Display this help message.
 
 If no collection names are provided, all XML files in the 'Collections' directory will be processed.
 Examples:
-  ./build-collections.sh                  Compile all collections.
-  ./build-collections.sh -5.5e            Compile all collections and remove '[5.5e]'.
-  ./build-collections.sh --android        Compile all collections with Android compatibility.
-  ./build-collections.sh -5.5e --android  Compile all collections, remove '[5.5e]' and enable Android compatibility.
-  ./build-collections.sh collection1.xml  Compile only 'collection1.xml'.
+  ./build-collections.sh                               Compile all collections.
+  ./build-collections.sh -RemoveVersionTag             Compile all collections and remove '[5.5e]'.
+  ./build-collections.sh -Android                      Compile all collections with Android compatibility.
+  ./build-collections.sh -RemoveVersionTag -Android    Compile all collections, remove '[5.5e]' and enable Android compatibility.
+  ./build-collections.sh collection1.xml               Compile only 'collection1.xml'.
 ```
 
 For Windows, use `build-collections.ps1`, which compiles the given collections in parallel (one `xsltproc` job per logical CPU). It accepts the same flags as `build-collections.sh` (`-RemoveVersionTag`, `-Android`, `-Validate`) plus `-MaxJobs`, `-MemoryPerJobMB`, and `-MinFreeMemoryMB`:

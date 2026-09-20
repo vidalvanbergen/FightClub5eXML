@@ -26,11 +26,11 @@ remove_version_tag() {
 
 display_help() {
   cat <<EOF
-Usage: $0 [-5.5e] [--android] [--validate] [-h/-?/--help] [collection_names...]
+Usage: $0 [-RemoveVersionTag] [-Android] [-Validate] [-h/-?/--help] [collection_names...]
 
-  -5.5e             Remove '[5.5e]' from the generated compendiums.
-  --android         Put item detail (rarity and attunement requirements) into description of items.
-  --validate        Validate output XML against the schema (disabled by default).
+  -RemoveVersionTag             Remove '[5.5e]' from the generated compendiums.
+  -Android         Put item detail (rarity and attunement requirements) into description of items.
+  -Validate        Validate output XML against the schema (disabled by default).
   -h, -?, --help    Display this help message.
   collection_names  Optional list of specific collections to compile.
 
@@ -39,13 +39,13 @@ If no collection names are provided, all XML files in the 'Collections' director
 Examples:
   $0
       Compile all collections.
-  $0 -5.5e
+  $0 -RemoveVersionTag
       Compile all collections and remove '[5.5e]'.
-  $0 --validate
+  $0 -Validate
       Compile all collections and validate them.
   $0 collection1.xml
       Compile only 'collection1.xml'.
-  $0 -5.5e collection1.xml collection2.xml
+  $0 -RemoveVersionTag collection1.xml collection2.xml
       Compile specified collections and remove '[5.5e]'.
 EOF
   exit 0
@@ -128,15 +128,15 @@ while [ $# -gt 0 ]; do
     -h|-?|--help)
       display_help
       ;;
-    -5.5e)
+    -RemoveVersionTag)
       REMOVE_VERSION_TAG=true
       shift
       ;;
-    --android)
+    -Android)
       ANDROID=true
       shift
       ;;
-    --validate)
+    -Validate)
       VALIDATE=true
       shift
       ;;

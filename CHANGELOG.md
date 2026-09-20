@@ -1,5 +1,8 @@
 ## CHANGE LOG
 
+### TODO:
+* Change "-5.5e" command line to "-RemoveVersionTag".
+
 ### 2026-##-##
 * Added `Arcana Unleashed` 5.5e Content, shared by @rexjiang.
 * Added `Underdark Options` Unearthed Arcana 5.5e Content, shared by @ViannaEuphoria.
@@ -8,6 +11,8 @@
 * Added July and August D&D Beyond Drops, shared by @rexjiang.
 * Added 2 classes from `Book of Classes` 5e kickstarter content (Ninja & Dimentionalist), shared by @ViannaEuphoria.
 * Fixed and Updated the `Creature Codex` 5e content, shared by @ViannaEuphoria.
+* @JKEEPS improved the `merge.xslt` to greatly reduce compile times.
+* @JKEEPS improved the windows compile script to further improve compile times.
 * Other changes and fixes.
 
 ### 2026-06-30
