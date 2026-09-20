@@ -79,7 +79,27 @@ Examples:
   ./build-collections.sh collection1.xml  Compile only 'collection1.xml'.
 ```
 
-For Windows, use `WIN-build-collections.bat [-5.5e] [-android] [-h/-?] path-to-collections\collection-file.xml path-to-utilities\merge.xslt [optional path-to-compendium-destination-directory]`.
+For Windows, use `WIN-build-collections.bat`, which compiles the given collections in parallel (one `xsltproc` job per logical CPU) via `build-collections.ps1`:
+
+```bat
+Usage:
+
+WIN-build-collections.bat [-5.5e] [-android] [-validate] [-h/-?] path-to-collections\collection-file.xml path-to-utilities\merge.xslt [output-dir]
+  -5.5e      Remove ' [5.5e]' from the generated compendiums.
+  -android   Put item detail (rarity and attunement requirements) into the description text of items.
+  -validate  Validate output XML against the schema (requires xmllint).
+  -h/-?      Display this help message.
+
+The optional output directory defaults to 'Compendiums'.
+
+Examples:
+  WIN-build-collections.bat collections\*.xml Utilities\merge.xslt
+  WIN-build-collections.bat -5.5e -android collections\*.xml Utilities\merge.xslt Compendiums
+```
+
+Compilation runs in parallel (one `xsltproc` job per logical CPU). The job count is automatically reduced when free physical memory is low, and can be set explicitly with `-maxjobs N`.
+
+The underlying `build-collections.ps1` can also be run directly and accepts the same flags as `build-collections.sh` (`-RemoveVersionTag`, `-Android`, `-Validate`, etc.), plus `-MaxJobs`, `-MemoryPerJobMB`, and `-MinFreeMemoryMB`.
 
 ## Custom Content
 
