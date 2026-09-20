@@ -10,29 +10,35 @@
 
   <xsl:param name="android" select="'false'"/>
 
-  <!-- Name indexes. The merged compendium spans one source document per <doc>,
-       so collapse it into a single temporary tree (below) before using these;
-       key() only indexes the context node's document. -->
+  <!-- Name indexes for the deduplicated elements. key() only indexes the context
+       node's document, so the classes and spells are collapsed into one temporary
+       tree below before these are used. -->
   <xsl:key name="class-by-name" match="class" use="name"/>
   <xsl:key name="spell-by-name" match="spell" use="name"/>
 
 
   <!-- Merge the compendiums together -->
   <xsl:template match="collection">
-    <!-- Collapse all source documents into one tree so key() sees duplicates
-         that span multiple source files. -->
-    <xsl:variable name="source">
-      <xsl:copy-of select="document(doc/@href)/compendium"/>
+    <!-- The merged compendium spans one source document per <doc>. Only classes
+         and spells are deduplicated by name, so collapse just those into a single
+         temporary tree so key() sees duplicates spanning multiple source files.
+         Copying all content here would roughly double peak memory. -->
+    <xsl:variable name="dedupSource">
+      <xsl:copy-of select="document(doc/@href)/compendium/class"/>
+      <xsl:copy-of select="document(doc/@href)/compendium/spell"/>
     </xsl:variable>
-    <xsl:variable name="compendium" select="exsl:node-set($source)/compendium" />
+    <xsl:variable name="classesAndSpells" select="exsl:node-set($dedupSource)"/>
+
+    <!-- Everything else is copied verbatim and only needs the multi-document set. -->
+    <xsl:variable name="compendium" select="document(doc/@href)/compendium"/>
 
     <compendium version="5" auto_indent="NO">
       <xsl:call-template name="classes-with-subclasses">
-        <xsl:with-param name="compendium" select="$compendium"/>
+        <xsl:with-param name="classesAndSpells" select="$classesAndSpells"/>
       </xsl:call-template>
 
       <xsl:call-template name="spells-extendable">
-        <xsl:with-param name="compendium" select="$compendium"/>
+        <xsl:with-param name="classesAndSpells" select="$classesAndSpells"/>
       </xsl:call-template>
 
       <xsl:apply-templates select="$compendium/item" />
@@ -46,8 +52,8 @@
 
   <!-- Merges subclasses into classes -->
   <xsl:template name="classes-with-subclasses">
-    <xsl:param name="compendium"/>
-    <xsl:variable name="classes" select="$compendium/class" />
+    <xsl:param name="classesAndSpells"/>
+    <xsl:variable name="classes" select="$classesAndSpells/class" />
 
     <xsl:for-each select="$classes">
       <xsl:variable name="matching-classes" select="key('class-by-name', name)"/>
@@ -77,8 +83,8 @@
 
   <!-- Merges spell classes -->
   <xsl:template name="spells-extendable">
-    <xsl:param name="compendium"/>
-    <xsl:variable name="spells" select="$compendium/spell" />
+    <xsl:param name="classesAndSpells"/>
+    <xsl:variable name="spells" select="$classesAndSpells/spell" />
 
     <xsl:for-each select="$spells">
       <xsl:variable name="matching-spells" select="key('spell-by-name', name)"/>
