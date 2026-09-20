@@ -10,10 +10,21 @@
 
   <xsl:param name="android" select="'false'"/>
 
+  <!-- Name indexes. The merged compendium spans one source document per <doc>,
+       so collapse it into a single temporary tree (below) before using these;
+       key() only indexes the context node's document. -->
+  <xsl:key name="class-by-name" match="class" use="name"/>
+  <xsl:key name="spell-by-name" match="spell" use="name"/>
+
 
   <!-- Merge the compendiums together -->
   <xsl:template match="collection">
-    <xsl:variable name="compendium" select="document(doc/@href)/compendium" />
+    <!-- Collapse all source documents into one tree so key() sees duplicates
+         that span multiple source files. -->
+    <xsl:variable name="source">
+      <xsl:copy-of select="document(doc/@href)/compendium"/>
+    </xsl:variable>
+    <xsl:variable name="compendium" select="exsl:node-set($source)/compendium" />
 
     <compendium version="5" auto_indent="NO">
       <xsl:call-template name="classes-with-subclasses">
@@ -39,16 +50,16 @@
     <xsl:variable name="classes" select="$compendium/class" />
 
     <xsl:for-each select="$classes">
+      <xsl:variable name="matching-classes" select="key('class-by-name', name)"/>
       <xsl:choose>
         <!-- Check if there's a duplicate -->
-        <xsl:when test="count($classes[name = current()/name]) &gt; 1">
+        <xsl:when test="count($matching-classes) &gt; 1">
           <!-- Use the original class that includes the "hd" element -->
           <!-- Important: Subclasses should only contain "name" and "autolevel" elements -->
           <xsl:if test="hd">
             <class>
               <xsl:copy-of select="name | hd | proficiency | spellAbility | numSkills | armor | weapons | tools | wealth | slotsReset"/>
 
-              <xsl:variable name="matching-classes" select="$classes[name = current()/name]"/>
               <xsl:copy-of select="$matching-classes/trait"/>
               <xsl:copy-of select="$matching-classes/autolevel"/>
 
@@ -70,16 +81,17 @@
     <xsl:variable name="spells" select="$compendium/spell" />
 
     <xsl:for-each select="$spells">
+      <xsl:variable name="matching-spells" select="key('spell-by-name', name)"/>
       <xsl:choose>
         <!-- Check if there's a duplicate -->
-        <xsl:when test="count($spells[name = current()/name]) &gt; 1">
+        <xsl:when test="count($matching-spells) &gt; 1">
           <!-- Use the original spell that includes the "level" element -->
           <!-- Important: Duplicate spells should only contain "name" and "classes" elements -->
           <xsl:if test="level">
 
             <!-- Gather combination of all classes in comma separated list -->
             <xsl:variable name="class_list">
-              <xsl:for-each select="$spells[name = current()/name]/classes">
+              <xsl:for-each select="$matching-spells/classes">
                 <xsl:if test="position() > 1">,</xsl:if>
                 <xsl:value-of select="."/>
               </xsl:for-each>
