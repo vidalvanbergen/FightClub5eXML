@@ -26,10 +26,10 @@
 #>
 [CmdletBinding(PositionalBinding = $false)]
 param(
-    [string]$CollectionsDir = (Join-Path $PSScriptRoot 'Collections'),
-    [string]$Merge = (Join-Path $PSScriptRoot 'Utilities/merge.xslt'),
-    [string]$Schema = (Join-Path $PSScriptRoot 'Utilities/compendium.xsd'),
-    [string]$OutDir = (Join-Path $PSScriptRoot 'Compendiums'),
+    [string]$CollectionsDir,
+    [string]$Merge,
+    [string]$Schema,
+    [string]$OutDir,
     [switch]$RemoveVersionTag,
     [switch]$Android,
     [switch]$Validate,
@@ -40,6 +40,17 @@ param(
     [Parameter(ValueFromRemainingArguments = $true)]
     [string[]]$CollectionNames
 )
+
+# Resolve the repo root here rather than in the parameter defaults: $PSScriptRoot
+# is not always populated while parameter defaults are evaluated (notably on
+# Windows PowerShell 5.1), which made Join-Path fail with an empty path.
+$ScriptDir = $PSScriptRoot
+if (-not $ScriptDir) { $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path }
+if (-not $ScriptDir) { $ScriptDir = (Get-Location).Path }
+if (-not $CollectionsDir) { $CollectionsDir = Join-Path $ScriptDir 'Collections' }
+if (-not $Merge) { $Merge = Join-Path $ScriptDir 'Utilities/merge.xslt' }
+if (-not $Schema) { $Schema = Join-Path $ScriptDir 'Utilities/compendium.xsd' }
+if (-not $OutDir) { $OutDir = Join-Path $ScriptDir 'Compendiums' }
 
 function Show-Help {
     @"
@@ -93,20 +104,47 @@ function Start-Compile {
     $name = $File.Name
     if ($Android) { $name = '[ANDROID]_' + [System.IO.Path]::GetFileNameWithoutExtension($name) + '.xml' }
     $outPath = Join-Path $OutDir $name
-    $errFile = [System.IO.Path]::GetTempFileName()
 
+    # Run xsltproc from the collection's own directory and pass the bare filename.
+    # A relative base avoids libxml2's inability to resolve nested XInclude hrefs
+    # against a Windows drive path ("Building relative URI failed").
     $xsltArgs = New-Object System.Collections.Generic.List[string]
     $xsltArgs.Add('--xinclude')
     if ($Android) { $xsltArgs.Add('--stringparam'); $xsltArgs.Add('android'); $xsltArgs.Add('true') }
-    $xsltArgs.Add('-o'); $xsltArgs.Add($outPath); $xsltArgs.Add($Merge); $xsltArgs.Add($File.FullName)
+    $xsltArgs.Add('-o'); $xsltArgs.Add($outPath); $xsltArgs.Add($Merge); $xsltArgs.Add($File.Name)
 
-    $proc = Start-Process -FilePath 'xsltproc' -ArgumentList $xsltArgs -NoNewWindow -PassThru -RedirectStandardError $errFile
+    # ProcessStartInfo.Arguments is a single command line (there is no ArgumentList
+    # on .NET Framework), so quote any argument that contains whitespace.
+    $quoted = foreach ($arg in $xsltArgs) {
+        if ($arg -match '[\s"]') { '"' + ($arg -replace '"', '\"') + '"' } else { $arg }
+    }
+
+    # Use System.Diagnostics.Process rather than Start-Process -PassThru: the
+    # latter does not reliably retain the handle on Windows PowerShell 5.1, so
+    # ExitCode comes back empty and successful builds get reported as failures.
+    $psi = New-Object System.Diagnostics.ProcessStartInfo
+    $psi.FileName = 'xsltproc'
+    $psi.UseShellExecute = $false
+    $psi.CreateNoWindow = $true
+    $psi.WorkingDirectory = $File.DirectoryName
+    $psi.RedirectStandardOutput = $true
+    $psi.RedirectStandardError = $true
+    $psi.Arguments = ($quoted -join ' ')
+
+    $proc = New-Object System.Diagnostics.Process
+    $proc.StartInfo = $psi
+    [void]$proc.Start()
+    $stdoutTask = $proc.StandardOutput.ReadToEndAsync()
+    $stderrTask = $proc.StandardError.ReadToEndAsync()
+
     return [pscustomobject]@{
-        Process = $proc
-        File    = $File
-        Out     = $outPath
-        Name    = $name
-        ErrFile = $errFile
+        Process    = $proc
+        File       = $File
+        Out        = $outPath
+        Name       = $name
+        StdoutTask = $stdoutTask
+        StderrTask = $stderrTask
+        Command    = "xsltproc $($psi.Arguments)  (cwd: $($File.DirectoryName))"
     }
 }
 
@@ -133,7 +171,12 @@ if (-not $CollectionNames) {
 else {
     foreach ($n in $CollectionNames) {
         if ($n -match '[*?]') {
-            Get-ChildItem -Path (Join-Path $CollectionsDir $n) -File -ErrorAction SilentlyContinue | Sort-Object Name | ForEach-Object { $files.Add($_) }
+            # Split into directory + leaf and use -LiteralPath + -Filter rather than
+            # a -Path wildcard, which is more reliable across PowerShell versions.
+            $full = Join-Path $CollectionsDir $n
+            $dir = Split-Path -Parent $full
+            $leaf = Split-Path -Leaf $full
+            Get-ChildItem -LiteralPath $dir -Filter $leaf -File -ErrorAction SilentlyContinue | Sort-Object Name | ForEach-Object { $files.Add($_) }
         }
         elseif (Test-Path -LiteralPath (Join-Path $CollectionsDir $n)) {
             $files.Add((Get-Item -LiteralPath (Join-Path $CollectionsDir $n)))
@@ -147,6 +190,10 @@ if ($files.Count -eq 0) {
     Write-Host "No XML files to process." -ForegroundColor Red
     exit 1
 }
+
+Write-Host "Collections dir: $CollectionsDir"
+Write-Host "Requested      : $(if ($CollectionNames) { $CollectionNames -join ', ' } else { '(all)' })"
+Write-Host "Resolved       : $($files.Count) file(s)"
 
 if (-not (Test-Path -LiteralPath $OutDir)) {
     New-Item -ItemType Directory -Path $OutDir | Out-Null
@@ -184,15 +231,17 @@ while ($queue.Count -gt 0 -or $running.Count -gt 0) {
         if (-not $job.Process.HasExited) { continue }
 
         $running.RemoveAt($i)
-        $err = ''
-        if (Test-Path -LiteralPath $job.ErrFile) {
-            $err = (Get-Content -LiteralPath $job.ErrFile -Raw -ErrorAction SilentlyContinue)
-            Remove-Item -LiteralPath $job.ErrFile -Force -ErrorAction SilentlyContinue
-        }
+        try { $job.Process.WaitForExit() } catch { }
 
-        if ($job.Process.ExitCode -ne 0) {
-            Write-Host "Failed to compile '$($job.File.Name)'" -ForegroundColor Red
-            if ($err) { Write-Host $err.Trim() -ForegroundColor Red }
+        $err = if ($job.StderrTask) { [string]$job.StderrTask.Result } else { '' }
+        $out = if ($job.StdoutTask) { [string]$job.StdoutTask.Result } else { '' }
+        $exitCode = $job.Process.ExitCode
+
+        if ($exitCode -ne 0) {
+            Write-Host "Failed to compile '$($job.File.Name)' (exit code $exitCode)" -ForegroundColor Red
+            Write-Host "  command: $($job.Command)" -ForegroundColor DarkGray
+            if ($err) { Write-Host "  stderr: $($err.Trim())" -ForegroundColor Red }
+            if ($out) { Write-Host "  stdout: $($out.Trim())" -ForegroundColor Red }
             $failures++
             continue
         }

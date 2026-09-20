@@ -29,9 +29,11 @@ if "%~1"=="" goto display_help
 if "%~2"=="" goto display_help
 
 set "COLLDIR=%~dp1"
+if "%COLLDIR:~-1%"=="\" set "COLLDIR=%COLLDIR:~0,-1%"
 set "COLLNAME=%~nx1"
 set "MERGE=%~f2"
 if "%~3"=="" ( set "OUTDIR=%~dp0Compendiums" ) else ( set "OUTDIR=%~f3" )
+if "%OUTDIR:~-1%"=="\" set "OUTDIR=%OUTDIR:~0,-1%"
 
 where xsltproc >nul 2>nul
 if errorlevel 1 (
@@ -55,8 +57,11 @@ echo Compilation is run in parallel (one xsltproc job per logical CPU) via build
 echo automatically reducing parallelism when free physical memory is low.
 echo.
 echo Examples:
-echo   %~n0 collections\*.xml Utilities\merge.xslt
+echo   %~n0 "collections\*.xml" Utilities\merge.xslt
 echo       Compile all collections in collections\ into Compendiums\.
-echo   %~n0 -5.5e -android collections\*.xml Utilities\merge.xslt Compendiums
+echo   %~n0 -5.5e -android "collections\*.xml" Utilities\merge.xslt Compendiums
 echo       Compile all, remove ' [5.5e]', enable Android mode, output to Compendiums\.
+echo.
+echo In PowerShell, quote the wildcard so the shell does not expand it first; or run
+echo build-collections.ps1 with no arguments to compile every collection.
 exit /b 0

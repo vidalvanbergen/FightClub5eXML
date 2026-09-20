@@ -93,8 +93,14 @@ WIN-build-collections.bat [-5.5e] [-android] [-validate] [-h/-?] path-to-collect
 The optional output directory defaults to 'Compendiums'.
 
 Examples:
-  WIN-build-collections.bat collections\*.xml Utilities\merge.xslt
-  WIN-build-collections.bat -5.5e -android collections\*.xml Utilities\merge.xslt Compendiums
+  WIN-build-collections.bat "collections\*.xml" Utilities\merge.xslt
+  WIN-build-collections.bat -5.5e -android "collections\*.xml" Utilities\merge.xslt Compendiums
+```
+
+In PowerShell, quote the wildcard (`"collections\*.xml"`) so the shell doesn't expand it to the first match before the script sees it. Alternatively run the script directly, which compiles everything with no arguments:
+
+```powershell
+.\build-collections.ps1
 ```
 
 Compilation runs in parallel (one `xsltproc` job per logical CPU). The job count is automatically reduced when free physical memory is low, and can be set explicitly with `-maxjobs N`.
