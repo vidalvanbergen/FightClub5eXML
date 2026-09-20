@@ -79,33 +79,25 @@ Examples:
   ./build-collections.sh collection1.xml  Compile only 'collection1.xml'.
 ```
 
-For Windows, use `WIN-build-collections.bat`, which compiles the given collections in parallel (one `xsltproc` job per logical CPU) via `build-collections.ps1`:
-
-```bat
-Usage:
-
-WIN-build-collections.bat [-5.5e] [-android] [-validate] [-h/-?] path-to-collections\collection-file.xml path-to-utilities\merge.xslt [output-dir]
-  -5.5e      Remove ' [5.5e]' from the generated compendiums.
-  -android   Put item detail (rarity and attunement requirements) into the description text of items.
-  -validate  Validate output XML against the schema (requires xmllint).
-  -h/-?      Display this help message.
-
-The optional output directory defaults to 'Compendiums'.
-
-Examples:
-  WIN-build-collections.bat "collections\*.xml" Utilities\merge.xslt
-  WIN-build-collections.bat -5.5e -android "collections\*.xml" Utilities\merge.xslt Compendiums
-```
-
-In PowerShell, quote the wildcard (`"collections\*.xml"`) so the shell doesn't expand it to the first match before the script sees it. Alternatively run the script directly, which compiles everything with no arguments:
+For Windows, use `build-collections.ps1`, which compiles the given collections in parallel (one `xsltproc` job per logical CPU). It accepts the same flags as `build-collections.sh` (`-RemoveVersionTag`, `-Android`, `-Validate`) plus `-MaxJobs`, `-MemoryPerJobMB`, and `-MinFreeMemoryMB`:
 
 ```powershell
-.\build-collections.ps1
+.\build-collections.ps1                        # compile every collection into .\Compendiums
+.\build-collections.ps1 WotC_5e_only.xml       # compile a single collection
+.\build-collections.ps1 '*.xml'                # compile a subset (quote wildcards)
+.\build-collections.ps1 -RemoveVersionTag '*.xml'   # strip ' [5.5e]'
+.\build-collections.ps1 -Android               # Android item descriptions (prefixes [ANDROID]_)
+.\build-collections.ps1 -Validate              # validate against the schema (requires xmllint)
+.\build-collections.ps1 -MaxJobs 4             # cap parallel jobs
 ```
 
-Compilation runs in parallel (one `xsltproc` job per logical CPU). The job count is automatically reduced when free physical memory is low, and can be set explicitly with `-maxjobs N`.
+The optional output directory defaults to `Compendiums`. The job count is automatically reduced when free physical memory is low.
 
-The underlying `build-collections.ps1` can also be run directly and accepts the same flags as `build-collections.sh` (`-RemoveVersionTag`, `-Android`, `-Validate`, etc.), plus `-MaxJobs`, `-MemoryPerJobMB`, and `-MinFreeMemoryMB`.
+From `cmd.exe`, invoke it through PowerShell:
+
+```bat
+powershell -NoProfile -ExecutionPolicy Bypass -File build-collections.ps1
+```
 
 ## Custom Content
 

@@ -84,6 +84,19 @@ function Get-AvailableMemoryMB {
     return -1
 }
 
+function Ensure-Xsltproc {
+    if (Get-Command xsltproc -ErrorAction SilentlyContinue) { return $true }
+    if (Get-Command choco -ErrorAction SilentlyContinue) {
+        Write-Host "xsltproc not found on PATH; installing via Chocolatey (this may prompt for elevation)..."
+        & choco install xsltproc -y
+        # Chocolatey updates the machine/user PATH; refresh it for this process.
+        $machine = [System.Environment]::GetEnvironmentVariable('Path', 'Machine')
+        $user = [System.Environment]::GetEnvironmentVariable('Path', 'User')
+        $env:Path = (@($machine, $user) | Where-Object { $_ }) -join ';'
+    }
+    return [bool](Get-Command xsltproc -ErrorAction SilentlyContinue)
+}
+
 function Remove-VersionTag {
     param([Parameter(Mandatory)][string]$Path)
     $text = [System.IO.File]::ReadAllText($Path)
@@ -150,8 +163,8 @@ function Start-Compile {
 
 if ($Help) { Show-Help; exit 0 }
 
-if (-not (Get-Command xsltproc -ErrorAction SilentlyContinue)) {
-    Write-Host "xsltproc not found. Install it (e.g. 'choco install xsltproc') and ensure it is on PATH." -ForegroundColor Red
+if (-not (Ensure-Xsltproc)) {
+    Write-Host "xsltproc not found. Install it (e.g. 'choco install xsltproc -y') and ensure it is on PATH." -ForegroundColor Red
     exit 1
 }
 if ($Validate -and -not (Get-Command xmllint -ErrorAction SilentlyContinue)) {
