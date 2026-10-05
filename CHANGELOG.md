@@ -4,6 +4,7 @@
 * Change "-5.5e" command line to "-RemoveVersionTag".
 
 ### 2026-##-##
+* Updated and Added `Crooked Moon` 5.5e edition, shared by @SillyK.
 * Added `Volo's Complete Subrace Handbook` Indie 5e content, shared by @ViannaEuphoria.
 * Added `Arcana Unleashed` 5.5e Content, shared by @rexjiang.
 * Added `Underdark Options` Unearthed Arcana 5.5e Content, shared by @ViannaEuphoria.
