@@ -117,6 +117,8 @@ function Start-Compile {
     $name = $File.Name
     if ($Android) { $name = '[ANDROID]_' + [System.IO.Path]::GetFileNameWithoutExtension($name) + '.xml' }
     $outPath = Join-Path $OutDir $name
+    # xsltproc needs a file URI, including escaped brackets in Android filenames.
+    $outUri = [System.Uri]::new($ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($outPath)).AbsoluteUri.Replace('[', '%5B').Replace(']', '%5D')
 
     # Run xsltproc from the collection's own directory and pass the bare filename.
     # A relative base avoids libxml2's inability to resolve nested XInclude hrefs
@@ -124,7 +126,7 @@ function Start-Compile {
     $xsltArgs = New-Object System.Collections.Generic.List[string]
     $xsltArgs.Add('--xinclude')
     if ($Android) { $xsltArgs.Add('--stringparam'); $xsltArgs.Add('android'); $xsltArgs.Add('true') }
-    $xsltArgs.Add('-o'); $xsltArgs.Add($outPath); $xsltArgs.Add($Merge); $xsltArgs.Add($File.Name)
+    $xsltArgs.Add('-o'); $xsltArgs.Add($outUri); $xsltArgs.Add($Merge); $xsltArgs.Add($File.Name)
 
     # ProcessStartInfo.Arguments is a single command line (there is no ArgumentList
     # on .NET Framework), so quote any argument that contains whitespace.
